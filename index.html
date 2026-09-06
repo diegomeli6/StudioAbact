@@ -34,6 +34,11 @@
           <span class="tab-title">3. Stull — UX Design (43 cap)</span>
           <span class="tab-progress-mini" id="prog-mini-stull">0/43</span>
         </button>
+        <button class="pdf-tab" data-pdf="cards" id="tab-cards">
+          <span class="tab-indicator"></span>
+          <span class="tab-title">4. Codice Progetto (HTML & CSS)</span>
+          <span class="tab-progress-mini" id="prog-mini-cards">0/6</span>
+        </button>
       </nav>
 
       <!-- COMANDI E MODALITÀ -->
@@ -208,10 +213,11 @@
           <div class="cram-filter-bar">
             <label>Filtra per PDF:</label>
             <select id="cram-filter-select" class="form-select">
-              <option value="all">Tutti i 3 PDF</option>
+              <option value="all">Tutti (3 PDF + Codice Progetto)</option>
               <option value="dispense">Dispense Professore</option>
               <option value="krug">Krug — Don't Make Me Think</option>
               <option value="stull">Stull — UX Design</option>
+              <option value="cards">Codice Progetto Esame (HTML & CSS)</option>
             </select>
             <span class="cram-total" id="cram-total-label">Elementi da ripassare: 0</span>
           </div>
@@ -233,8 +239,9 @@
             <div class="setup-group">
               <label>Scegli l'ambito delle domande:</label>
               <select id="exam-scope-select" class="form-select">
-                <option value="current">Solo il PDF attivo attualmente</option>
-                <option value="all">Misto da tutti e 3 i PDF (Dispense + Krug + Stull)</option>
+                <option value="current">Solo il tema attivo attualmente</option>
+                <option value="cards">Solo Codice Progetto Esame (HTML & CSS)</option>
+                <option value="all">Misto completo (3 PDF + Codice Progetto)</option>
               </select>
             </div>
 
@@ -289,6 +296,7 @@
               <button class="filter-chip" data-source="Krug">Krug</button>
               <button class="filter-chip" data-source="Dispense">Dispense</button>
               <button class="filter-chip" data-source="Stull">Stull</button>
+              <button class="filter-chip" data-source="Codice">Codice Progetto</button>
             </div>
           </div>
 
@@ -341,6 +349,7 @@
   <script src="data/dispense-data.js"></script>
   <script src="data/krug-data.js"></script>
   <script src="data/stull-data.js"></script>
+  <script src="data/progetto-cards-data.js"></script>
   <script src="data/glossary-data.js"></script>
   <script src="app.js"></script>
 </body>

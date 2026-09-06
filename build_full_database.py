@@ -1,24 +1,7 @@
 # build_full_database.py
 import re, json
 
-print("Inizio costruzione database completo di studio approfondito...")
-
-# 1. GENERAZIONE GLOSSARIO UNIFICATO
-with open('extracted_stull.txt', 'r', encoding='utf-8') as f:
-    stull_raw = f.read()
-
-with open('extracted_krug.txt', 'r', encoding='utf-8') as f:
-    krug_raw = f.read()
-
-# Estrarre glossario Stull (Section A)
-pos_g_stull = stull_raw.rfind('A. Glossario ragionato')
-pos_g_end = stull_raw.rfind('B. Leggi, modelli')
-gloss_stull_chunk = stull_raw[pos_g_stull:pos_g_end] if (pos_g_stull != -1 and pos_g_end != -1) else ""
-
-# Estrarre glossario Krug (Appendice B)
-pos_g_krug = krug_raw.find('Appendice\tB')
-pos_g_krug_end = krug_raw.find('Appendice\tC')
-gloss_krug_chunk = krug_raw[pos_g_krug:pos_g_krug_end] if (pos_g_krug != -1 and pos_g_krug_end != -1) else ""
+print("Aggiornamento glossario con anche i termini di codice del Progetto Esame...")
 
 unified_glossary = [
     # Krug
@@ -63,10 +46,19 @@ unified_glossary = [
     {"term": "Wicked Problems (Problemi complessi / intrattabili)", "source": "Stull", "def": "Problemi mal definiti, interconnessi e privi di una soluzione finale assoluta (Rittel e Webber, 1973). Si affrontano non con soluzioni definitive ma con l'incrementalismo e la conciliazione continua."},
     {"term": "Effetto Kuleshov (1918)", "source": "Stull", "def": "Fenomeno psicologico per cui la percezione e il significato di un'immagine sono radicalmente influenzati da ciò che viene mostrato immediatamente prima o dopo. Nell'UX, l'ordine sequenziale modifica l'interpretazione dello stimolo."},
     {"term": "Effetto alone (Halo Effect - Edward Thorndike, 1920)", "source": "Stull", "def": "Tendenza cognitiva a generalizzare un singolo tratto positivo (es. una grafica elegante o una schermata pulita) all'intero prodotto, giudicandolo intuitivo e sicuro anche quando ha difetti funzionali."},
-    {"term": "MVP (Minimum Viable Product)", "source": "Stull", "def": "La versione minima di un prodotto sufficiente a raccogliere il massimo apprendimento validato dagli utenti reali con il minimo sforzo. Il suo limite è che se è troppo rozzo non offre una reale utilità né soddisfazione."}
+    {"term": "MVP (Minimum Viable Product)", "source": "Stull", "def": "La versione minima di un prodotto sufficiente a raccogliere il massimo apprendimento validato dagli utenti reali con il minimo sforzo. Il suo limite è che se è troppo rozzo non offre una reale utilità né soddisfazione."},
+    
+    # Codice Progetto Esame Cards
+    {"term": "box-sizing: border-box", "source": "Codice Progetto", "def": "Regola CSS che include padding e bordi all'interno della larghezza e altezza dichiarate dell'elemento, evitando che si espanda e scompigli la griglia di layout."},
+    {"term": ":root e Custom Properties (Variabili CSS)", "source": "Codice Progetto", "def": "La pseudo-classe :root fa riferimento all'elemento radice <html>; definire variabili al suo interno (es. --rosso: #ce3021;) permette di riutilizzare e modificare centralmente i colori e valori in tutto il CSS."},
+    {"term": "Checkbox Hack (Menu hamburger CSS-only)", "source": "Codice Progetto", "def": "Tecnica per creare menu responsive senza JavaScript: un tag <input type='checkbox'> nascosto viene attivato tramite un <label for='...'> e controlla l'apertura del <nav> con lo pseudo-selettore :checked e il combinatore fratello ~."},
+    {"term": "Combinatore Fratello Generale (~)", "source": "Codice Progetto", "def": "Selettore CSS che punta a tutti gli elementi fratelli che seguono un determinato elemento nello stesso genitore (es. .menu-toggle:checked ~ nav seleziona il menu quando il checkbox è spuntato)."},
+    {"term": "object-fit: cover", "source": "Codice Progetto", "def": "Proprietà CSS che scala un'immagine o video per riempire l'intero contenitore mantenendo le proporzioni native, ritagliando le parti eccedenti per evitare qualsiasi deformazione o stiramento."},
+    {"term": "position: sticky", "source": "Codice Progetto", "def": "Posizionamento CSS ibrido: l'elemento si comporta come 'relative' durante il normale flusso della pagina, ma diventa fisso ('fixed') ancorandosi alla coordinata definita (es. top: 0) non appena viene raggiunto dallo scorrimento."},
+    {"term": "CSS Grid repeat(3, 1fr)", "source": "Codice Progetto", "def": "Istruzione di CSS Grid che genera 3 colonne identiche, ciascuna occupante una frazione (1fr) dello spazio orizzontale disponibile nel contenitore."}
 ]
 
 with open('data/glossary-data.js', 'w', encoding='utf-8') as f:
-    f.write(f"// Glossario ragionato unificato dei 3 testi di studio\nwindow.GLOSSARY_DATA = {json.dumps(unified_glossary, indent=2, ensure_ascii=False)};\n")
+    f.write(f"// Glossario ragionato unificato dei 3 testi di studio e del codice di Progetto_Esame_Cards\nwindow.GLOSSARY_DATA = {json.dumps(unified_glossary, indent=2, ensure_ascii=False)};\n")
 
-print(f"data/glossary-data.js generato con {len(unified_glossary)} termini unificati.")
+print(f"data/glossary-data.js aggiornato con {len(unified_glossary)} termini unificati.")

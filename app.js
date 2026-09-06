@@ -70,11 +70,12 @@
     }
   }
 
-  // Recupera la lista capitoli per il PDF corrente
+  // Recupera la lista capitoli per il PDF/Progetto corrente
   function getCurrentPdfChapters() {
     if (state.activePdf === 'dispense') return window.DISPENSE_DATA || [];
     if (state.activePdf === 'krug') return window.KRUG_DATA || [];
     if (state.activePdf === 'stull') return window.STULL_DATA || [];
+    if (state.activePdf === 'cards') return window.CARDS_DATA || [];
     return [];
   }
 
@@ -82,6 +83,7 @@
     if (key === 'dispense') return '1. Dispense Professore';
     if (key === 'krug') return "2. Steve Krug — Don't Make Me Think";
     if (key === 'stull') return '3. Edward Stull — UX Design';
+    if (key === 'cards') return '4. Codice Progetto Esame (HTML & CSS)';
     return key;
   }
 
@@ -666,12 +668,13 @@
 
   // AGGIORNA PERCENTUALI E MINI COUNTERS
   function updateProgressIndicators() {
-    const allPdfs = ['dispense', 'krug', 'stull'];
+    const allPdfs = ['dispense', 'krug', 'stull', 'cards'];
     allPdfs.forEach(pdfKey => {
       let chaps = [];
       if (pdfKey === 'dispense') chaps = window.DISPENSE_DATA || [];
       if (pdfKey === 'krug') chaps = window.KRUG_DATA || [];
       if (pdfKey === 'stull') chaps = window.STULL_DATA || [];
+      if (pdfKey === 'cards') chaps = window.CARDS_DATA || [];
 
       let done = 0;
       chaps.forEach(c => {
@@ -711,7 +714,8 @@
     const allPdfs = [
       { key: 'dispense', name: 'Dispense Professore', data: window.DISPENSE_DATA || [] },
       { key: 'krug', name: "Krug — Don't Make Me Think", data: window.KRUG_DATA || [] },
-      { key: 'stull', name: 'Stull — UX Design', data: window.STULL_DATA || [] }
+      { key: 'stull', name: 'Stull — UX Design', data: window.STULL_DATA || [] },
+      { key: 'cards', name: 'Codice Progetto Esame', data: window.CARDS_DATA || [] }
     ];
 
     const itemsToReview = [];
@@ -869,10 +873,13 @@
     if (scope === 'current') {
       const currentList = getCurrentPdfChapters();
       getQuizzesFromChapters(currentList, getPdfDisplayName(state.activePdf));
+    } else if (scope === 'cards') {
+      getQuizzesFromChapters(window.CARDS_DATA || [], 'Codice Progetto Esame (HTML & CSS)');
     } else {
       getQuizzesFromChapters(window.DISPENSE_DATA || [], 'Dispense Professore');
       getQuizzesFromChapters(window.KRUG_DATA || [], "Krug — Don't Make Me Think");
       getQuizzesFromChapters(window.STULL_DATA || [], 'Stull — UX Design');
+      getQuizzesFromChapters(window.CARDS_DATA || [], 'Codice Progetto Esame (HTML & CSS)');
     }
 
     if (pool.length === 0) {
