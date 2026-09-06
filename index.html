@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piattaforma di Studio UX & Web Design</title>
+  <meta name="description" content="Web app locale e minimale per lo studio approfondito dei 3 testi d'esame: Dispense professore, Don't Make Me Think di Krug, UX Design di Stull.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-light">
+  <div id="app" class="app-container">
+    
+    <!-- HEADER MINIMALE SUPERIORE -->
+    <header class="top-header">
+      <div class="header-brand">
+        <span class="brand-badge">STUDIO D'ESAME</span>
+        <h1 class="brand-title">UX & Web Design</h1>
+      </div>
+
+      <!-- SELETTORE DEI 3 TESTI PDF -->
+      <nav class="pdf-selector" aria-label="Selezione documento di studio">
+        <button class="pdf-tab active" data-pdf="dispense" id="tab-dispense">
+          <span class="tab-indicator"></span>
+          <span class="tab-title">1. Dispense Professore</span>
+          <span class="tab-progress-mini" id="prog-mini-dispense">0/14</span>
+        </button>
+        <button class="pdf-tab" data-pdf="krug" id="tab-krug">
+          <span class="tab-indicator"></span>
+          <span class="tab-title">2. Krug — Don't Make Me Think</span>
+          <span class="tab-progress-mini" id="prog-mini-krug">0/14</span>
+        </button>
+        <button class="pdf-tab" data-pdf="stull" id="tab-stull">
+          <span class="tab-indicator"></span>
+          <span class="tab-title">3. Stull — UX Design (43 cap)</span>
+          <span class="tab-progress-mini" id="prog-mini-stull">0/43</span>
+        </button>
+      </nav>
+
+      <!-- COMANDI E MODALITÀ -->
+      <div class="header-actions">
+        <div class="view-mode-pills" role="tablist">
+          <button class="pill-btn active" data-view="study" id="pill-study" title="Studio guidato capitoli">📖 Studio</button>
+          <button class="pill-btn" data-view="cram" id="pill-cram" title="Ripasso mirato errori e flashcard">
+            ⚡ Ripasso <span class="cram-counter" id="cram-badge">0</span>
+          </button>
+          <button class="pill-btn" data-view="exam" id="pill-exam" title="Simulatore quiz d'esame">🎯 Test</button>
+          <button class="pill-btn" data-view="glossary" id="pill-glossary" title="Glossario e definizioni">📚 Glossario</button>
+        </div>
+
+        <div class="utility-btns">
+          <button id="btn-theme-toggle" class="icon-btn" title="Cambia tema chiaro/scuro" aria-label="Cambia tema">🌓</button>
+          <button id="btn-data-modal" class="icon-btn" title="Gestione sessione e backup locale" aria-label="Gestione dati">💾</button>
+          <button id="btn-sidebar-toggle" class="icon-btn" title="Nascondi o mostra indice capitoli" aria-label="Indice">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- STATUS BAR LOCALE SOTTO L'HEADER -->
+    <div class="session-bar">
+      <div class="session-info">
+        <span class="session-dot"></span>
+        <span id="active-pdf-name">Dispense Professore</span>
+        <span class="divider">/</span>
+        <span id="active-pdf-progress-text">Progresso: 0% (0 di 14 capitoli)</span>
+      </div>
+      <div class="session-storage-badge" title="Tutti i dati risiedono esclusivamente nel browser del tuo PC">
+        🔒 Dati salvati in locale nel PC
+      </div>
+    </div>
+
+    <!-- CORPO PRINCIPALE DELL'APP -->
+    <div class="main-layout">
+      
+      <!-- SIDEBAR CON INDICE CAPITOLI -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <h2 class="sidebar-title">Indice dei Capitoli</h2>
+          <span class="sidebar-stats" id="sidebar-stats-count">0/14</span>
+        </div>
+        
+        <!-- BARRA DI AVANZAMENTO VISUALE -->
+        <div class="progress-track" title="Progresso complessivo di questo PDF">
+          <div class="progress-fill" id="sidebar-progress-fill" style="width: 0%;"></div>
+        </div>
+
+        <!-- LISTA CAPITOLI -->
+        <div class="chapter-list-container" id="chapter-list">
+          <!-- Popolato dinamicamente da JS -->
+        </div>
+      </aside>
+
+      <!-- CONTENUTO PRINCIPALE A SCHERMO -->
+      <main class="content-area" id="content-area">
+        
+        <!-- VISTA 1: STUDIO GUIDATO CAPITOLO -->
+        <section id="view-study" class="view-panel active">
+          
+          <div class="chapter-hero">
+            <div class="hero-meta">
+              <span class="hero-part-badge" id="chap-part-badge" style="display: none;">Parte I</span>
+              <span class="hero-number" id="chap-number">Capitolo 1</span>
+              <span class="hero-time" id="chap-read-time">Tempo stimato: 8 min</span>
+            </div>
+            <h2 class="hero-title" id="chap-title">Caricamento titolo...</h2>
+            <p class="hero-subtitle" id="chap-subtitle">Caricamento sottotitolo o storia-ancora...</p>
+          </div>
+
+          <!-- TAB INTERNI DEL CAPITOLO -->
+          <div class="chapter-subtabs">
+            <button class="subtab-btn active" data-subtab="summary">📖 Sintesi & Concetti</button>
+            <button class="subtab-btn" data-subtab="flashcards">🃏 Flashcard (<span id="count-fc">0</span>)</button>
+            <button class="subtab-btn" data-subtab="quiz">❓ Quiz con Spiegazione</button>
+            <button class="subtab-btn" data-subtab="open">📝 Domande d'Esame</button>
+            <button class="subtab-btn" data-subtab="notes">✏️ Mie Note</button>
+          </div>
+
+          <!-- CONTENUTO TAB 1: SINTESI E CONCETTI -->
+          <div id="subtab-panel-summary" class="subtab-panel active">
+            
+            <!-- BOX STORIA ANCORA (PER STULL) -->
+            <div id="anchor-story-box" class="story-anchor-box" style="display: none;">
+              <div class="story-anchor-header">
+                <span class="story-icon">⚓</span>
+                <strong>STORIA-ANCORA MNEMONICA</strong>: <span id="story-anchor-title"></span>
+              </div>
+              <p id="story-anchor-text" class="story-anchor-text"></p>
+            </div>
+
+            <!-- CORPO SINTESI APPROFONDITA -->
+            <div class="study-text-body" id="chap-summary-body">
+              <!-- Inserito dinamicamente -->
+            </div>
+
+            <!-- PUNTI CHIAVE D'ESAME -->
+            <div class="key-points-section">
+              <h3 class="key-points-heading">📌 Punti Chiave da Sapere all'Esame</h3>
+              <ul class="key-points-list" id="chap-key-points">
+                <!-- Inserito dinamicamente -->
+              </ul>
+            </div>
+          </div>
+
+          <!-- CONTENUTO TAB 2: FLASHCARD -->
+          <div id="subtab-panel-flashcards" class="subtab-panel">
+            <div class="flashcards-container">
+              <div class="flashcards-intro">
+                <p>Clicca sulla scheda per girarla e visualizzare la risposta. Valuta se la ricordavi bene o se preferisci aggiungerla al ripasso.</p>
+              </div>
+              <div class="flashcards-list" id="chap-flashcards-list">
+                <!-- Popolato da JS -->
+              </div>
+            </div>
+          </div>
+
+          <!-- CONTENUTO TAB 3: QUIZ -->
+          <div id="subtab-panel-quiz" class="subtab-panel">
+            <div class="quiz-container">
+              <div class="quiz-intro">
+                <p>Rispondi alle domande di verifica per consolidare i concetti. Riceverai subito la spiegazione didattica con i riferimenti precisi del testo.</p>
+              </div>
+              <div class="quiz-list" id="chap-quiz-list">
+                <!-- Popolato da JS -->
+              </div>
+            </div>
+          </div>
+
+          <!-- CONTENUTO TAB 4: DOMANDE D'ESAME APERTE -->
+          <div id="subtab-panel-open" class="subtab-panel">
+            <div class="open-questions-container">
+              <div class="open-intro">
+                <p>Domande d'esame frequenti e tracce di autoverifica. Prova a rispondere a voce o mentalmente, poi apri la risposta modello per confrontare la tua preparazione.</p>
+              </div>
+              <div class="open-list" id="chap-open-list">
+                <!-- Popolato da JS -->
+              </div>
+            </div>
+          </div>
+
+          <!-- CONTENUTO TAB 5: NOTE PERSONALI -->
+          <div id="subtab-panel-notes" class="subtab-panel">
+            <div class="notes-container">
+              <label for="chap-notes-input" class="notes-label">Note personali per questo capitolo (salvate automaticamente in locale):</label>
+              <textarea id="chap-notes-input" class="notes-textarea" placeholder="Inserisci qui i tuoi appunti, collegamenti, o note date a lezione dal professore..."></textarea>
+              <div class="notes-status" id="notes-save-status">Salvato in locale</div>
+            </div>
+          </div>
+
+          <!-- NAVIGAZIONE A PIÈ DI PAGINA -->
+          <footer class="chapter-footer">
+            <button id="btn-prev-chap" class="nav-btn">⬅️ Precedente</button>
+            <div class="complete-action">
+              <button id="btn-toggle-complete" class="btn-complete">
+                <span id="complete-icon">⚪</span> <span id="complete-text">Segna come completato</span>
+              </button>
+            </div>
+            <button id="btn-next-chap" class="nav-btn">Successivo ➡️</button>
+          </footer>
+
+        </section>
+
+        <!-- VISTA 2: RIPASSO MIRATO (FLASHCARD & ERRORI) -->
+        <section id="view-cram" class="view-panel">
+          <div class="panel-header">
+            <h2 class="panel-title">⚡ Coda di Ripasso Mirato (Smart Cramming)</h2>
+            <p class="panel-description">Tutti gli elementi (flashcard, quiz errati, domande d'esame) che hai contrassegnato con «Da rivedere». Ripassali finché non li hai padroneggiati.</p>
+          </div>
+
+          <div class="cram-filter-bar">
+            <label>Filtra per PDF:</label>
+            <select id="cram-filter-select" class="form-select">
+              <option value="all">Tutti i 3 PDF</option>
+              <option value="dispense">Dispense Professore</option>
+              <option value="krug">Krug — Don't Make Me Think</option>
+              <option value="stull">Stull — UX Design</option>
+            </select>
+            <span class="cram-total" id="cram-total-label">Elementi da ripassare: 0</span>
+          </div>
+
+          <div class="cram-list" id="cram-items-list">
+            <!-- Popolato dinamicamente da JS -->
+          </div>
+        </section>
+
+        <!-- VISTA 3: SIMULAZIONE ESAME (QUIZ RANDOM) -->
+        <section id="view-exam" class="view-panel">
+          <div class="panel-header">
+            <h2 class="panel-title">🎯 Simulatore d'Esame</h2>
+            <p class="panel-description">Mettiti alla prova con un test a domande casuali estratte dal database di studio.</p>
+          </div>
+
+          <!-- CONFIGURATORE DEL TEST -->
+          <div class="exam-setup-card" id="exam-setup-box">
+            <div class="setup-group">
+              <label>Scegli l'ambito delle domande:</label>
+              <select id="exam-scope-select" class="form-select">
+                <option value="current">Solo il PDF attivo attualmente</option>
+                <option value="all">Misto da tutti e 3 i PDF (Dispense + Krug + Stull)</option>
+              </select>
+            </div>
+
+            <div class="setup-group">
+              <label>Numero di domande:</label>
+              <div class="num-pills">
+                <button class="num-btn active" data-count="10">10 domande</button>
+                <button class="num-btn" data-count="20">20 domande</button>
+                <button class="num-btn" data-count="30">30 domande</button>
+              </div>
+            </div>
+
+            <button id="btn-start-exam" class="btn-primary-action">Inizia il Test d'Esame</button>
+          </div>
+
+          <!-- CONTENITORE DEL TEST IN CORSO -->
+          <div id="exam-active-box" style="display: none;">
+            <div class="exam-header-bar">
+              <span id="exam-question-counter">Domanda 1 di 10</span>
+              <button id="btn-abort-exam" class="btn-secondary-link">Annulla test</button>
+            </div>
+            
+            <div id="exam-card-container">
+              <!-- Domanda corrente renderizzata da JS -->
+            </div>
+          </div>
+
+          <!-- RISULTATI FINALI DEL TEST -->
+          <div id="exam-result-box" style="display: none;" class="exam-result-card">
+            <h3 class="result-title" id="exam-score-title">Punteggio: 8 / 10 (80%)</h3>
+            <p class="result-feedback" id="exam-score-feedback"></p>
+            <div class="result-actions">
+              <button id="btn-retry-exam" class="btn-primary-action">Ripeti Nuovo Test</button>
+            </div>
+            <div class="result-review-list" id="exam-review-list">
+              <!-- Elenco risposte ed errori -->
+            </div>
+          </div>
+        </section>
+
+        <!-- VISTA 4: GLOSSARIO COMPLETO -->
+        <section id="view-glossary" class="view-panel">
+          <div class="panel-header">
+            <h2 class="panel-title">📚 Glossario Tecnico e Leggi</h2>
+            <p class="panel-description">Definizioni formali, formule ed esperimenti citati nei tre testi. Cerca rapidamente qualsiasi concetto.</p>
+          </div>
+
+          <div class="glossary-search-bar">
+            <input type="text" id="glossary-search-input" class="search-input" placeholder="🔍 Cerca termine, autore, legge (es. Satisficing, Hick, Gestalt, Box model)...">
+            <div class="glossary-filters" id="glossary-source-filters">
+              <button class="filter-chip active" data-source="all">Tutti</button>
+              <button class="filter-chip" data-source="Krug">Krug</button>
+              <button class="filter-chip" data-source="Dispense">Dispense</button>
+              <button class="filter-chip" data-source="Stull">Stull</button>
+            </div>
+          </div>
+
+          <div class="glossary-grid" id="glossary-items-container">
+            <!-- Termini renderizzati da JS -->
+          </div>
+        </section>
+
+      </main>
+    </div>
+
+    <!-- MODAL GESTIONE DATI E BACKUP LOCALE -->
+    <div class="modal-overlay" id="data-modal" style="display: none;">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h3>💾 Gestione Sessione e Privacy Locale</h3>
+          <button class="modal-close" id="btn-close-modal">✕</button>
+        </div>
+        <div class="modal-body">
+          <p>Tutti i tuoi progressi, note, risposte ai quiz e flashcard da rivedere sono memorizzati <strong>esclusivamente nella memoria locale del tuo browser (localStorage)</strong>.</p>
+          <p>Nessun dato viene inviato a server esterni.</p>
+
+          <div class="backup-actions">
+            <div class="backup-box">
+              <h4>Esporta Backup</h4>
+              <p>Scarica un file JSON con tutti i tuoi progressi da conservare o trasferire su un altro computer.</p>
+              <button id="btn-export-backup" class="btn-backup">📥 Scarica Backup (JSON)</button>
+            </div>
+
+            <div class="backup-box">
+              <h4>Importa Backup</h4>
+              <p>Ripristina una sessione salvata in precedenza da un file JSON.</p>
+              <input type="file" id="input-import-file" accept=".json" style="display: none;">
+              <button id="btn-trigger-import" class="btn-backup">📤 Carica File Backup</button>
+            </div>
+          </div>
+
+          <div class="danger-zone">
+            <h4>Azzera Dati</h4>
+            <p>Cancella tutti i progressi e le note salvate per ricominciare da zero lo studio.</p>
+            <button id="btn-reset-data" class="btn-danger">🗑️ Azzera Tutti i Progressi</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SCRIPT DATI E LOGICA -->
+  <script src="data/dispense-data.js"></script>
+  <script src="data/krug-data.js"></script>
+  <script src="data/stull-data.js"></script>
+  <script src="data/glossary-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
