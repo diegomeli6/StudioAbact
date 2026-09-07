@@ -1,0 +1,754 @@
+{
+  "stull-c29": {
+    "quiz": [
+      {
+        "question": "Per quale motivo epistemologico la disciplina della User Experience si scontra frequentemente con i ritmi rigidi dello sviluppo Agile?",
+        "options": [
+          "Perché Agile nasce per lo sviluppo software e ragiona in logica binaria (il codice funziona o fallisce il test); la UX è invece una disciplina olistica, sfumata, cumulativa e non binaria, incentrata sulla comprensione umana",
+          "Perché i designer rifiutano per principio di utilizzare strumenti digitali di tracciamento dei task come Jira o Trello",
+          "Perché il manifesto Agile vieta esplicitamente l'esecuzione di qualsiasi test con utenti finali",
+          "Perché i fogli di stile CSS non possono essere versionati con sistemi di controllo come Git"
+        ],
+        "correctIndex": 0,
+        "explanation": "Un software può compilare al 100% (successo ingegneristico Agile) ma essere un totale fallimento di UX se risolve il problema sbagliato o se l'utente non capisce l'interfaccia."
+      },
+      {
+        "question": "Quale compromesso dannoso si verifica quando un team applica 'Agile UX' in modo frettoloso e scorretto?",
+        "options": [
+          "Si barattano la riflessione, l'architettura sistemica e la ricerca qualitativa con la velocità cieca dei rilasci bisettimanali, accumulando un enorme debito di usabilità",
+          "Il server web riduce automaticamente la capacità di elaborazione delle query SQL",
+          "Tutti i file di grafica vettoriale vengono sovrascritti da immagini a bassa risoluzione",
+          "L'azienda viene esclusa dalle graduatorie di certificazione di qualità ISO 9001"
+        ],
+        "correctIndex": 0,
+        "explanation": "Correre in sprint di due settimane senza tempo per la ricerca porta a rilasciare velocemente codice pessimo: si ottimizza la velocità di produzione a scapito del valore per l'utente."
+      },
+      {
+        "question": "Come risolve il modello 'Dual-Track Agile' (traccia parallela) la frizione tra ricerca UX e sviluppo software?",
+        "options": [
+          "Separando il lavoro in due tracce continue e coordinate: una traccia di 'Discovery' (ricerca, validazione e prototipazione avanzata con utenti) che precede di 1 o 2 sprint la traccia di 'Delivery' (sviluppo del codice)",
+          "Assegnando lo sviluppo software ai programmatori maschi e il design grafico alle femmine",
+          "Lavorando sul codice durante le ore diurne e conducendo i test con gli utenti esclusivamente durante la notte",
+          "Duplicando fisicamente il numero di server cloud per eseguire due versioni contemporanee del sito"
+        ],
+        "correctIndex": 0,
+        "explanation": "Dual-Track Agile garantisce che gli sviluppatori implementino solo funzionalità la cui usabilità e utilità siano già state validate nella traccia di Discovery precedente."
+      },
+      {
+        "question": "Cosa postula la filosofia della 'Lean UX' formulata da Jeff Gothelf e Josh Seiden?",
+        "options": [
+          "Sostituire la produzione di pesanti documenti di specifica statica con cicli rapidi di ipotesi, prototipi minimi e apprendimento validato continuo (Build-Measure-Learn)",
+          "Licenziare tutti i ricercatori UX per affidare il design interamente a script algoritmici automatici",
+          "Realizzare software esclusivamente per dispositivi a basso consumo energetico",
+          "Impedire agli sviluppatori di apportare modifiche all'interfaccia dopo il primo rilascio"
+        ],
+        "correctIndex": 0,
+        "explanation": "Lean UX combatte lo spreco: anziché redigere wireframe di 200 pagine che nessuno legge, formula ipotesi falsificabili e le testa subito con utenti reali."
+      },
+      {
+        "question": "Qual è il limite strutturale del vecchio modello di sviluppo 'Waterfall' (a cascata) applicato alla UX?",
+        "options": [
+          "La rigidità sequenziale: se un grave errore di usabilità o di comprensione del problema emerge alla fine durante il collaudo, i costi e i tempi per tornare indietro e riprogettare sono proibitivi",
+          "L'eccessiva rapidità con cui il codice viene rilasciato agli utenti finali",
+          "L'assenza di diagrammi di Gantt per la pianificazione economica delle risorse",
+          "L'incompatibilità con i moderni sistemi operativi a 64 bit"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nel Waterfall passi mesi a definire requisiti e creare grafica prima di mostrare alcunché all'utente: scoprire al collaudo finale che il concetto era sbagliato è un disastro economico."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Un Product Owner Agile dice al Lead UX: 'Non abbiamo tempo per intervistare gli utenti: abbiamo uno sprint da chiudere venerdì, disegna solo i pulsanti e mettiti al passo col backlog degli sviluppatori!'. Come si definisce questa patologia di processo?",
+        "options": [
+          "La 'Feature Factory' (fabbrica di funzionalità): il team misura il successo solo dalla quantità di codice sfornato per sprint anziché dal valore e dall'efficacia dell'esperienza per l'utente finale",
+          "Un'applicazione virtuosa del principio di conservazione della complessità di Tesler",
+          "Un modello canonico di Continuous Integration e Continuous Deployment (CI/CD)",
+          "Una procedura standard raccomandata dalle linee guida del W3C per i team di design"
+        ],
+        "correctIndex": 0,
+        "explanation": "Diventare una Feature Factory significa produrre spazzatura a ciclo continuo: si festeggia il rilascio di funzioni che nessuno usa e che rendono l'app sempre più complessa e inusabile."
+      },
+      {
+        "question": "In un'azienda che adotta Scrum, come si garantisce che le storie utente (User Stories) contengano criteri di qualità legati all'usabilità?",
+        "options": [
+          "Includendo criteri di usabilità e accessibilità espliciti nella 'Definition of Done' (DoD) e validando i prototipi con almeno un mini-test prima del rilascio definitivo",
+          "Aumentando il numero di punti storia (Story Points) stimati per ogni singola riunione di stand-up",
+          "Rendendo obbligatoria l'approvazione formale dell'ufficio commerciale su tutti i commit di Git",
+          "Eliminando le sessioni di retrospettiva per dedicare più ore alla programmazione pura"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se la Definition of Done include 'validato con 3 utenti' e 'conforme al contrasto WCAG AA', il codice non può essere approvato se non rispetta l'esperienza dell'utente."
+      },
+      {
+        "question": "Un team Lean UX deve validare l'interesse per un nuovo servizio di abbonamento premium per animali prima di sviluppare l'infrastruttura backend. Quale tecnica di 'esperimento minimo' è raccomandata?",
+        "options": [
+          "Creare una 'Fake Door' (pagina descrittiva con pulsante 'Scopri il piano') misurando quanti utenti manifestano l'intenzione di cliccare e raccogliendo feedback esplorativo",
+          "Programmare l'intero database e le API di pagamento per 6 mesi prima di pubblicare il sito",
+          "Inviare un questionario cartaceo per posta ordinaria a tutti i veterinari d'Italia",
+          "Acquistare 10.000 follower fittizi su Instagram per dimostrare trazione commerciale"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il test 'Fake Door' (o Wizard of Oz) verifica la domanda reale in 24 ore a costo zero: se nessuno clicca sul pulsante, hai risparmiato mesi di lavoro inutile sul backend."
+      }
+    ]
+  },
+  "stull-c30": {
+    "quiz": [
+      {
+        "question": "Cosa dimostra l'aneddoto del bizzarro utensile 'Hutzler 571' (il contenitore di plastica a forma di banana) analizzato da Edward Stull?",
+        "options": [
+          "Il valore reale, l'utilità e il significato d'uso che le persone attribuiscono a un artefatto differiscono radicalmente dalla percezione superficiale o dalle intenzioni originarie dei progettisti",
+          "Gli utensili da cucina in plastica non possono essere commercializzati sulle piattaforme digitali",
+          "I consumatori acquistano prodotti alimentari esclusivamente se recensiti da chef stellati",
+          "Il packaging industriale deve essere sempre realizzato in materiali metallici inossidabili"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'Hutzler 571 sembrava un oggetto ridicolo e inutile, ma su Amazon divenne un fenomeno virale con migliaia di recensioni ironiche: il valore percepito è sempre co-costruito dal pubblico."
+      },
+      {
+        "question": "Quale distinzione fondamentale separa lo 'Spazio del Problema' dallo 'Spazio della Soluzione' nel design thinking?",
+        "options": [
+          "Lo spazio del problema indaga a fondo i bisogni, le cause radice, i vincoli e il contesto dell'utente; lo spazio della soluzione esplora, prototipa e collauda le possibili risposte progettuali",
+          "Lo spazio del problema riguarda il codice sorgente; lo spazio della soluzione riguarda i server cloud",
+          "Lo spazio del problema si conclude in due minuti; lo spazio della soluzione dura per l'intero decennio",
+          "Non sussiste distinzione: un buon designer disegna immediatamente la soluzione senza analizzare il problema"
+        ],
+        "correctIndex": 0,
+        "explanation": "Charles Kettering: 'Un problema ben definito è un problema per metà risolto'. Saltare subito ai wireframe senza aver capito il problema porta a creare soluzioni perfette per bisogni inesistenti."
+      },
+      {
+        "question": "Cosa si intende per 'Analisi delle Cause Radice' (Root Cause Analysis) attraverso la tecnica dei '5 Perché' di Sakichi Toyoda?",
+        "options": [
+          "L'abitudine metodologica di domandarsi 'Perché?' iterativamente di fronte a un problema per superare i sintomi superficiali e identificare la vera causa originaria sistemica",
+          "Una riunione di 5 ore consecutive obbligatoria per tutti i dipendenti dell'azienda",
+          "Un algoritmo di ordinamento a cinque stadi utilizzato per indicizzare le pagine web",
+          "La verifica della presenza di cinque parole chiave identiche all'interno del meta-tag description"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se l'utente sbaglia a cliccare, il sintomo è 'errore umano'. Chiedendo 5 volte 'Perché?' scopri che il font era piccolo, l'etichetta era ambigua e il bottone era posizionato al posto sbagliato."
+      },
+      {
+        "question": "Come si formula un 'Problem Statement' (definizione del problema) rigoroso ed efficace secondo Stull?",
+        "options": [
+          "Definendo con chiarezza: Chi è l'utente, Qual è il suo obiettivo ostacolato, In quale contesto specifico si manifesta la difficoltà e Qual è l'impatto negativo causato dal problema",
+          "Scrivendo una lista di 20 funzionalità tecniche da implementare nel prossimo sprint",
+          "Calcolando il fatturato totale previsto dall'ufficio contabile nei successivi tre anni",
+          "Inserendo un diagramma delle classi orientato agli oggetti privo di spiegazioni testuali"
+        ],
+        "correctIndex": 0,
+        "explanation": "Un buon Problem Statement non menziona mai la soluzione tecnologica: focalizza la sofferenza umana da alleviare ('Gli infermieri perdono 15 minuti a turno cercando le cartelle cliniche...')."
+      },
+      {
+        "question": "Quale pericolo comporta accettare la richiesta di un committente formulata come 'Abbiamo bisogno di un'app per vendere scarpe' senza indagare oltre?",
+        "options": [
+          "Confondere la soluzione presunta con il problema reale: un'app potrebbe essere lo strumento più costoso e fallimentare se il vero problema è la logistica dei resi o la visibilità sui motori di ricerca",
+          "Violare i brevetti commerciali registrati dai produttori di calzature sportive",
+          "Provocare il rigetto automatico dell'applicazione da parte dell'App Store di Apple",
+          "Raddoppiare i costi di connessione alla rete telefonica per i clienti finali"
+        ],
+        "correctIndex": 0,
+        "explanation": "I clienti arrivano chiedendo soluzioni ('Vogliamo una blockchain! Vogliamo un'app!'). Il ruolo del designer è fare un passo indietro e chiedere: 'Quale problema stiamo cercando di risolvere?'."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Il direttore di un museo lamenta: 'I visitatori non usano la nostra bellissima audioguida interattiva su smartphone, servono manifesti più grandi all'ingresso!'. Un'indagine sul campo rivela che all'interno del museo non c'è copertura 4G e l'app pesa 450 MB. Qual è il vero problema?",
+        "options": [
+          "Il problema non è la consapevolezza o la promozione, ma la barriera infrastrutturale di accesso: l'impossibilità di scaricare 450 MB senza Wi-Fi rende inutilizzabile l'audioguida",
+          "Il formato dei file audio deve essere convertito da MP3 a WAV per migliorare la fedeltà",
+          "I quadri esposti nel museo violano il copyright della galleria d'arte moderna",
+          "I visitatori preferiscono leggere cartelli scritti in caratteri gotici medievali"
+        ],
+        "correctIndex": 0,
+        "explanation": "Mettere manifesti più grandi avrebbe sprecato budget: l'analisi della causa radice mostra che bastava fornire una Web App leggera senza download o il Wi-Fi gratuito all'ingresso."
+      },
+      {
+        "question": "Un team progetta una soluzione per ridurre i ritardi dei treni inserendo un gioco digitale alle stazioni per intrattenere i viaggiatori. Come giudica Stull questa operazione rispetto alla definizione del problema?",
+        "options": [
+          "Un mascheramento superficiale del sintomo: non risolve il problema primario (la puntualità dei treni e la gestione dell'ansia da disservizio) e rischia di irritare ulteriormente i pendolari",
+          "Una geniale applicazione della gamification intesa come leva di fidelizzazione empatica",
+          "Una soluzione conforme alle direttive europee sull'intrattenimento ferroviario",
+          "Un intervento tecnicamente valido a patto che il videogioco sia scaricabile in formato open source"
+        ],
+        "correctIndex": 0,
+        "explanation": "Intrattenere con un giochino chi deve andare al lavoro ed è bloccato dal treno in ritardo è offensivo: la UX deve risolvere il problema dell'informazione trasparente e del servizio reale."
+      },
+      {
+        "question": "Come si passa correttamente dalla fase di 'Definizione del Problema' alla fase di 'Ideazione delle Soluzioni' nel design process?",
+        "options": [
+          "Formulando domande 'How Might We' (Come potremmo...?) che trasformano i vincoli e le sofferenze scoperte in opportunità progettuali aperte e collaborative",
+          "Scegliendo a caso una libreria CSS su GitHub e implementandola immediatamente",
+          "Chiedendo al designer con maggiore anzianità di prendere tutte le decisioni da solo",
+          "Interrompendo qualsiasi contatto con gli stakeholder aziendali per evitare interferenze"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le domande HMW ('Come potremmo aiutare i pendolari a conoscere l'orario effettivo del treno con 10 minuti di anticipo?') aprono lo spazio creativo mantenendo il vincolo sul bisogno reale."
+      }
+    ]
+  },
+  "stull-c31": {
+    "quiz": [
+      {
+        "question": "Quale dovere di autoconsapevolezza impone Stull ai ricercatori UX quando si avvicinano a un settore merceologico sconosciuto?",
+        "options": [
+          "Riconoscere e mettere tra parentesi i propri pregiudizi personali e bias cognitivi, poiché ciò che sembra banale, bizzarro o privo di valore al ricercatore può essere essenziale per il target reale",
+          "Memorizzare l'intero codice civile prima di iniziare qualsiasi attività di progettazione",
+          "Rifiutare commesse da aziende che non utilizzano computer con sistema operativo macOS",
+          "Fingere di essere esperti del settore durante le interviste per intimidire gli utenti"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se devi progettare un'app per appassionati di pesca o collezionisti di francobolli e non ne sai nulla, devi avvicinarti con umiltà antropologica e curiosità priva di giudizio."
+      },
+      {
+        "question": "In che modo l'uso combinato di Google con i suffissi 'notizie', 'tecnologia' e 'confronto' accelera la mappatura iniziale di un nuovo dominio?",
+        "options": [
+          "Permette di ottenere una panoramica tridimensionale rapida: le notizie rivelano l'attualità e i temi caldi; la tecnologia svela i vincoli e gli standard; il confronto mappa la concorrenza e il posizionamento",
+          "Consente di scaricare illegalmente i database riservati delle aziende rivali",
+          "Serve ad aumentare il posizionamento SEO del browser utilizzato dal ricercatore",
+          "Raddoppia la velocità di trasmissione dei pacchetti di dati su fibra ottica"
+        ],
+        "correctIndex": 0,
+        "explanation": "Questa triade di ricerca rapida fornisce un orientamento istantaneo: capisci di cosa parla il settore oggi, con quali strumenti tecnici lavora e come si dividono il mercato i player attuali."
+      },
+      {
+        "question": "Come si definisce la 'Ricerca Esplorativa' (o Generativa) all'inizio di un ciclo di progettazione?",
+        "options": [
+          "L'indagine aperta mirata a comprendere i bisogni inespressi, i comportamenti e il contesto degli utenti per scoprire quali problemi valga davvero la pena risolvere",
+          "La misurazione millimetrica della distanza tra il monitor e gli occhi del designer",
+          "Il collaudo di conformità dei protocolli di rete TCP/IP effettuato dagli ingegneri",
+          "L'analisi quantitativa dei log degli errori di sistema dopo cinque anni dal lancio"
+        ],
+        "correctIndex": 0,
+        "explanation": "La ricerca generativa non testa soluzioni: esplora l'ignoto. Serve a scoprire quali opportunità esistono prima ancora di avere un'idea di cosa costruire."
+      },
+      {
+        "question": "Cosa caratterizza invece la 'Ricerca Valutativa' (Evaluative Research)?",
+        "options": [
+          "La verifica e il test di prototipi, wireframe o prodotti esistenti con utenti reali per valutare quanto siano usabili, efficaci e privi di frizioni rispetto agli obiettivi prefissati",
+          "L'assegnazione di un voto scolastico numerico da 1 a 10 a ciascun programmatore",
+          "La stima del valore di mercato dell'azienda effettuata da periti contabili indipendenti",
+          "La determinazione della retribuzione oraria dei partecipanti ai focus group"
+        ],
+        "correctIndex": 0,
+        "explanation": "La ricerca valutativa risponde a: 'La soluzione che abbiamo progettato funziona davvero? Le persone riescono a completare il compito o si bloccano?'."
+      },
+      {
+        "question": "In quale tipologia di ricerca rientra il 'Benchmarking Competitivo' condotto sulle applicazioni rivali?",
+        "options": [
+          "Nella ricerca secondaria e comparativa: analizza i punti di forza, le carenze di usabilità e i pattern adottati dai concorrenti per individuare opportunità di differenziazione",
+          "Nella ricerca clinica sperimentale in doppio cieco con placebo",
+          "Nello spionaggio industriale illegale punito dal codice penale internazionale",
+          "Nell'ottimizzazione automatica delle tabelle di routing dei server di posta"
+        ],
+        "correctIndex": 0,
+        "explanation": "Studiare i competitor non significa copiare: significa capire cosa gli utenti si aspettano già (modelli mentali condivisi) e dove i rivali stanno deludendo i clienti per fare di meglio."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Un designer viene incaricato di progettare un'app per allevatori di cavalli da corsa. Il designer dichiara: 'Non mi piacciono gli animali e trovo questo settore noioso, userò un template per e-commerce generico'. Quale violazione etico-metodologica è evidente?",
+        "options": [
+          "Grave chiusura ai bias personali e rifiuto dell'immersione esplorativa: senza comprendere il lessico, i bisogni specifici e il mondo vitale degli allevatori, l'app sarà un fallimento assoluto",
+          "Violazione delle linee guida di Material Design sulle icone equestri",
+          "Mancata adozione del protocollo di pagamento rateale Klarna all'interno del carrello",
+          "Incompatibilità della piattaforma con gli standard di cifratura biometrica"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il fascino della UX è proprio l'esplorazione antropologica: mettere da parte i propri gusti personali per scoprire con passione e rigore le dinamiche di un settore mai visto prima."
+      },
+      {
+        "question": "Nel pianificare la ricerca per un nuovo servizio di consulenza legale online, quale combinazione di metodi incarna la 'Triangolazione Metodologica'?",
+        "options": [
+          "Combinare dati quantitativi di mercato (ricerca secondaria), interviste in profondità con cittadini (ricerca qualitativa generativa) e test di usabilità sui prototipi (ricerca valutativa)",
+          "Utilizzare tre computer identici della stessa marca per analizzare lo stesso foglio Excel",
+          "Sottoporre la stessa domanda a tre colleghi dell'ufficio contabilità durante la pausa caffè",
+          "Scrivere il codice HTML utilizzando tre linguaggi di programmazione concorrenti"
+        ],
+        "correctIndex": 0,
+        "explanation": "Triangolare significa incrociare fonti e metodi diversi: i numeri ti dicono COSA accade, le interviste ti dicono PERCHÉ, i test ti confermano SE la soluzione funziona."
+      },
+      {
+        "question": "Un team vuole comprendere perché il tasso di rinnovo degli abbonamenti a un quotidiano digitale è calato del 25%. Quale tipologia di ricerca è metodologicamente adatta per scoprirne la causa?",
+        "options": [
+          "Ricerca qualitativa esplorativa: condurre interviste approfondite con lettori che hanno cancellato l'abbonamento per indagare motivazioni, delusioni e mutamenti di abitudini",
+          "Aumentare il numero di visualizzazioni dei banner promozionali sui motori di ricerca",
+          "Reinstallare il sistema operativo del server centrale di posta elettronica",
+          "Modificare il colore del pulsante di iscrizione da verde a viola acceso"
+        ],
+        "correctIndex": 0,
+        "explanation": "I dati di analytics dicono già CHE se ne sono andati (25%). Per capire il MOTIVO serve solo ascoltare la voce di chi ha disdetto (interviste qualitative d'uscita)."
+      }
+    ]
+  },
+  "stull-c32": {
+    "quiz": [
+      {
+        "question": "A quale suggestiva immagine fa ricorso Stull per spiegare i limiti intrinseci dei dati quantitativi?",
+        "options": [
+          "Alla 'scia della nave': la scia mostra con impeccabile precisione matematica dove la nave è già passata nel passato, ma non rivela nulla su dove stia andando né spiega perché il capitano abbia virato",
+          "Al faro nella tempesta che illumina la scogliera per le imbarcazioni in avvicinamento",
+          "All'ancora di ferro gettata sul fondale sabbioso per arrestare il galleggiamento",
+          "Alla bussola magnetica che punta costantemente verso il polo nord geografico"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'analytics quantitativo registra il passato: sappiamo che 10.000 persone hanno abbandonato alla pagina 3, ma l'analytics non sa se se ne sono andate per rabbia, confusione o perché hanno trovato la risposta."
+      },
+      {
+        "question": "Quale distinzione fondamentale separa il 'Campione' dalla 'Popolazione' nella statistica applicata alla UX?",
+        "options": [
+          "La popolazione è l'intero insieme universale di tutti gli utenti reali e potenziali; il campione è il sottoinsieme ristretto di individui effettivamente misurati durante l'indagine",
+          "La popolazione è composta da esseri umani; il campione è composto da simulazioni algoritmiche",
+          "La popolazione riguarda i residenti urbani; il campione riguarda solo gli abitanti rurali",
+          "Non sussiste alcuna distinzione: ogni campione contiene obbligatoriamente tutta la popolazione"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se intervisti 100 persone (campione), devi chiederti se rappresentano fedelmente i 500.000 clienti reali (popolazione). Se il campione è distorto, i dati sono spazzatura."
+      },
+      {
+        "question": "Cosa significa il celebre principio epistemologico 'La correlazione non implica causalità'?",
+        "options": [
+          "Il fatto che due variabili numeriche varino insieme contemporaneamente non dimostra in alcun modo che l'una sia la causa diretta dell'altra (potrebbe esserci una terza variabile nascosta o pura casualità)",
+          "I calcoli matematici eseguiti con la calcolatrice sono immuni da qualsiasi margine di errore",
+          "Tutti i dati quantitativi raccolti online sono falsi e non devono essere presi in considerazione",
+          "I grafici statistici devono essere disegnati sempre con barre verticali e mai con linee spezzate"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le vendite di gelati e gli annegamenti aumentano contemporaneamente: non sono i gelati a far annegare, la causa comune è il caldo estivo che spinge le persone a fare il bagno."
+      },
+      {
+        "question": "Cosa indica il 'p-value' (valore di probabilità) nei test quantitativi A/B?",
+        "options": [
+          "La probabilità che la differenza osservata tra le due varianti sia dovuta al puro caso; per convenzione scientifica deve essere inferiore a 0,05 (5%) affinché il risultato sia considerato statisticamente significativo",
+          "Il prezzo monetario medio di acquisto per ogni singolo cliente del portale",
+          "La percentuale di visitatori che utilizzano password complesse con caratteri speciali",
+          "Il tempo in secondi necessario per scaricare il codice JavaScript dal server"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se p < 0.05 significa che c'è meno del 5% di probabilità che la vittoria della variante B sia un colpo di fortuna: possiamo essere ragionevolmente certi che il nuovo design sia davvero superiore."
+      },
+      {
+        "question": "Quale grave trappola interpretativa colpisce i team ossessionati unicamente dalle metriche quantitative (Metric Obsession)?",
+        "options": [
+          "La Legge di Goodhart: quando una misura diventa un bersaglio aziendale da raggiungere a ogni costo, cessa di essere una buona misura (si ottimizza il numero drogando l'esperienza con dark pattern)",
+          "L'aumento automatico dei costi di connessione alla rete Internet del fornitore",
+          "La perdita permanente delle chiavi di cifratura del database aziendale",
+          "La cancellazione accidentale dei fogli di stile CSS dal server di produzione"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se l'obiettivo è 'aumentare i click', il team metterà bottoni enormi ingannevoli: i click saliranno alle stelle, ma la soddisfazione crollerà. Hanno centrato il numero distruggendo il prodotto."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Un A/B test su una landing page registra 12 conversioni per la variante A e 15 per la variante B su un totale di 40 visitatori complessivi. Il Product Manager dichiara: 'La variante B vince del 25%, mettiamola in produzione!'. Quale errore statistico marchiano sta compiendo?",
+        "options": [
+          "Campione minuscolo e assenza totale di significatività statistica: con soli 40 utenti la differenza è puro rumore casuale (p-value altissimo); servono centinaia o migliaia di visitatori per validare il test",
+          "Mancata adozione del test di Rorschach sui partecipanti all'esperimento",
+          "Violazione delle linee guida di accessibilità sul contrasto tra testo e immagini",
+          "Utilizzo improprio del font Helvetica sui pulsanti di azione della variante B"
+        ],
+        "correctIndex": 0,
+        "explanation": "Prendere decisioni aziendali su campioni microscopici equivale a lanciare una moneta tre volte e concludere che la testa esce al 66% dei casi."
+      },
+      {
+        "question": "L'analytics rileva che sulla pagina del carrello il tempo di permanenza medio è salito da 1 a 6 minuti. Il team esulta: 'L'engagement degli utenti è aumentato del 500%!'. Quale ipotesi alternativa più realistica deve avanzare l'esperto UX?",
+        "options": [
+          "Gli utenti sono bloccati da un nuovo bug, da campi confusi o da errori di calcolo che li costringono a faticare per 6 minuti nel disperato tentativo di pagare prima di arrendersi",
+          "I clienti si sono addormentati contemporaneamente davanti ai propri monitor",
+          "Il browser web ha ridotto la frequenza di clock del processore per risparmiare energia",
+          "I visitatori stanno ammirando i colori del footer con profonda commozione estetica"
+        ],
+        "correctIndex": 0,
+        "explanation": "Più tempo su una pagina di carrello o di form non significa 'amore': significa quasi sempre frustrazione, dubbi, intoppi e disperata fatica a completare il compito."
+      },
+      {
+        "question": "Come si integrano metodologicamente i dati quantitativi di Google Analytics con i test qualitativi di usabilità?",
+        "options": [
+          "L'analytics quantitativo accende la spia d'allarme mostrando 'DOVE' si verifica il collo di bottiglia; i test qualitativi osservano gli utenti per capire 'PERCHÉ' si bloccano e come correggere l'interfaccia",
+          "Sostituendo completamente i ricercatori umani con tabelle di calcolo automatico su Excel",
+          "Ignorando qualsiasi dato che contenga cifre decimali o percentuali",
+          "Pubblicando i dati statistici sulla prima pagina del quotidiano locale"
+        ],
+        "correctIndex": 0,
+        "explanation": "La combinazione perfetta: Analytics individua il funnel bucato (il 'cosa'); la ricerca qualitativa guarda le persone agire e rivela il perché del buco."
+      }
+    ]
+  },
+  "stull-c33": {
+    "quiz": [
+      {
+        "question": "Quale scandalo reputazionale epocale coinvolse la multinazionale McDonald's con il portale 'McResources' citato da Edward Stull?",
+        "options": [
+          "L'azienda pubblicò una guida al bilancio familiare per i propri dipendenti che consigliava di vendere regali online, farsi prestare soldi e trovare un secondo lavoro per sopravvivere, ammettendo implicitamente che i propri stipendi erano insostenibili",
+          "I server del portale vennero violati da un attacco informatico che diffuse ricette segrete",
+          "L'azienda impose ai dipendenti di acquistare esclusivamente automobili di fabbricazione estera",
+          "Il portale conteneva link a siti di gioco d'azzardo vietati dalle normative vigenti"
+        ],
+        "correctIndex": 0,
+        "explanation": "McResources divenne lo zimbello mondiale: consigliare ai propri lavoratori di fare due lavori e spegnere il riscaldamento per far quadrare i conti dimostrò un distacco grottesco dalla realtà dei dipendenti."
+      },
+      {
+        "question": "Cosa intende Stull con la pratica della 'Ricerca con la calcolatrice' (o verifica aritmetica di plausibilità)?",
+        "options": [
+          "Un calcolo di buon senso di 5 minuti (Back-of-the-envelope calculation) sui numeri fondamentali del target (stipendi reali, tempi disponibili, costi vivi) prima di progettare qualunque proposta o consiglio",
+          "La revisione contabile formale eseguita da una società di revisione finanziaria internazionale",
+          "L'obbligo di inserire un calcolatore JavaScript all'interno della barra laterale di ogni sito",
+          "La memorizzazione delle tabelline matematiche da parte di tutti i membri del team grafico"
+        ],
+        "correctIndex": 0,
+        "explanation": "Bastava una calcolatrice e 3 minuti di conti elementari per capire che un lavoratore a 8$/ora non può pagare 600$ di assicurazione sanitaria: i designer devono fare i conti con la realtà."
+      },
+      {
+        "question": "Cosa si intende per 'Problema di Fermi' nella stima ingegneristica e di design?",
+        "options": [
+          "Un metodo per stimare con rapida approssimazione grandezze ignote o complesse formulando ipotesi logiche ragionevoli scomposte in passaggi aritmetici semplici",
+          "Una contraddizione insolubile tra i principi della fisica quantistica e della termodinamica",
+          "Un difetto di progettazione dei reattori nucleari a fissione controllata",
+          "L'impossibilità di comprimere le immagini digitali oltre un determinato bitrate"
+        ],
+        "correctIndex": 0,
+        "explanation": "Enrico Fermi stimava quanti accordatori di pianoforti c'erano a Chicago con pochi ragionamenti logici: la UX deve stimare volumetrie e vincoli del target prima di spendere milioni in software."
+      },
+      {
+        "question": "Perché la totale disconnessione tra le condizioni socio-economiche del team di design e quelle del target reale produce fallimenti catastrofici?",
+        "options": [
+          "Perché professionisti ben retribuiti della Silicon Valley tendono a dare per scontati dispositivi top di gamma, connessioni ultraveloci e disponibilità economica che il 90% degli utenti non possiede",
+          "Perché i programmatori informatici non sono autorizzati ad aprire conti correnti bancari",
+          "Perché le leggi internazionali impongono la parità di stipendio tra progettisti e utenti",
+          "Perché i dispositivi economici rifiutano di interpretare il codice scritto con linguaggi moderni"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se progetti per chi ha 15€ sul conto e deve far durare 1 GB di traffico dati, non puoi creare un'app pesante da 200 MB che richiede abbonamenti mensili e carte di credito esclusive."
+      },
+      {
+        "question": "Quale controllo preventivo di 'sanità mentale economica' dovrebbe compiere qualsiasi team prima di lanciare una campagna di fidelizzazione?",
+        "options": [
+          "Calcolare se i costi, gli sforzi e i requisiti richiesti all'utente siano matematicamente proporzionati al beneficio reale offerto in cambio (evitando premi ridicoli a fronte di spese folli)",
+          "Verificare che il bilancio aziendale sia stato depositato presso la camera di commercio",
+          "Controllare che i tassi di interesse della banca centrale siano rimasti stabili",
+          "Accertarsi che il direttore finanziario abbia approvato il colore del logo sociale"
+        ],
+        "correctIndex": 0,
+        "explanation": "Offrire 1 euro di sconto dopo che l'utente ha speso 5.000 euro e compilato 40 form è un insulto matematico che suscita ilarità e indignazione verso l'azienda."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Una startup crea un'app di risparmio per studenti universitari con borsa di studio. L'algoritmo imposta come default: 'Metti da parte 800€ al mese per le vacanze estive'. Gli studenti si infuriano e cancellano l'app. Quale verifica aritmetica è stata clamorosamente omessa?",
+        "options": [
+          "La stima di plausibilità socio-economica: la borsa di studio media di uno studente è di 400€/mese; chiedere di risparmiarne 800€ dimostra totale ignoranza della realtà del target",
+          "L'applicazione della regola di simmetria assiale della scuola della Gestalt",
+          "La conversione dei tassi di cambio tra valute europee e dollaro australiano",
+          "Il calcolo dell'indice di massa corporea all'interno del profilo utente"
+        ],
+        "correctIndex": 0,
+        "explanation": "È la replica esatta del caso McResources: pretendere da un target risorse che non possiede rivela che nessuno nel team ha mai preso in mano una calcolatrice per fare due conti basilari."
+      },
+      {
+        "question": "Un'azienda di e-commerce propone una promozione: 'Accumula 10.000 punti per vincere un portachiavi di plastica! Ogni euro speso vale 1 punto'. Come reagisce l'utente dotato di buon senso?",
+        "options": [
+          "Percepisce lo squilibrio grottesco tra spesa richiesta (10.000€) e premio offerto (1€), vivendo la promozione come una presa in giro sfacciata che degrada la considerazione del brand",
+          "Spende immediatamente 10.000 euro per assicurarsi l'esclusivo portachiavi da collezione",
+          "Invia un encomio scritto alla direzione generale per la generosità dell'omaggio",
+          "Non compie alcun calcolo poiché la mente umana non comprende le proporzioni numeriche"
+        ],
+        "correctIndex": 0,
+        "explanation": "Gli utenti sanno fare i conti: se lo scambio di valore è ridicolo, la promozione ottiene l'effetto opposto, trasformandosi in una pessima pubblicità virale."
+      },
+      {
+        "question": "Prima di avviare lo sviluppo di una nuova app mobile di video in streaming per pendolari, quale stima con la calcolatrice deve condurre il team UX?",
+        "options": [
+          "Calcolare quanti gigabyte di traffico consumerà un'ora di visione rispetto ai piani dati medi del target e simulare l'uso in galleria con frequenti perdite di segnale di rete",
+          "Calcolare quanti kilowattora consumano i condizionatori d'aria della sede aziendale",
+          "Verificare quante parole al minuto è in grado di pronunciare il doppiatore dei video",
+          "Contare quante stazioni ferroviarie in Italia possiedono un distributore automatico di caffè"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se l'app prosciuga l'intero piano mensile da 10 GB in tre giorni di treno, l'utente la disinstallerà subito. Fare i conti su banda, batteria e costi evita fallimenti annunciati."
+      }
+    ]
+  },
+  "stull-c34": {
+    "quiz": [
+      {
+        "question": "Quale grave scandalo internazionale coinvolse il colosso Nike nel 2013 per il lancio di una linea di leggings sportivi femminili?",
+        "options": [
+          "I leggings riproducevano fedelmente i motivi sacri del tatuaggio tradizionale maschile samoano (Pe'a), riservato esclusivamente a capi tribali e uomini di alto rango, scatenando proteste per profanazione culturale e costringendo Nike al ritiro immediato e alle scuse globali",
+          "I pantaloni contenevano fibre sintetiche infiammabili che violavano le norme di sicurezza",
+          "Il prezzo di vendita era stato erroneamente inserito a zero centesimi sul sito internet",
+          "I capi di abbigliamento erano stati cuciti utilizzando filati di colore non conforme al pantone"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nike considerò i simboli Maori/Samoani come 'semplici pattern grafici carini'. La totale assenza di ricerca antropologica e qualitativa causò un'offesa culturale gravissima e un disastro di pubbliche relazioni."
+      },
+      {
+        "question": "Cosa è in grado di rivelare la 'Ricerca Qualitativa' che nessuna metrica quantitativa potrà mai catturare?",
+        "options": [
+          "I significati profondi, le convenzioni culturali, i valori identitari, le paure emotive e le motivazioni intime che guidano le decisioni e i comportamenti degli esseri umani",
+          "Il numero esatto di pixel visualizzati su uno schermo a risoluzione 4K",
+          "La quantità di memoria cache consumata dal server durante un picco di traffico",
+          "La posizione geometrica esatta delle linee elettriche sotterranee"
+        ],
+        "correctIndex": 0,
+        "explanation": "La ricerca qualitativa scava nel tessuto umano: non conta le persone, ascolta le loro storie, capisce i loro tabù, le loro aspirazioni e il significato che danno agli oggetti."
+      },
+      {
+        "question": "Quale metodologia qualitativa è considerata la spina dorsale per la comprensione dei bisogni degli utenti?",
+        "options": [
+          "L'intervista semi-strutturata in profondità (con domande aperte, rilanci non giudicanti e ascolto empatico nel contesto dell'utente)",
+          "L'invio di questionari a crocette con risposte obbligatorie su scala da 1 a 5",
+          "L'estrazione massiva di parole chiave da forum pubblici tramite web scraping",
+          "La lettura dei commenti anonimi lasciati su portali satirici online"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'intervista semi-strutturata ha una traccia guida flessibile che permette al ricercatore di esplorare percorsi inattesi aperti dalle parole autentiche del partecipante."
+      },
+      {
+        "question": "Cosa si intende per 'Saturazione dei Dati' (Data Saturation) nella ricerca qualitativa?",
+        "options": [
+          "Il momento metodologico in cui condurre ulteriori interviste non produce più nuove informazioni, temi o problemi significativi, indicando che il campione è sufficiente",
+          "Il momento in cui l'hard disk del computer del ricercatore esaurisce lo spazio libero",
+          "Il raggiungimento del cento per cento di risposte affermative durante un sondaggio",
+          "La presenza di troppi colori accesi all'interno di una mappa di calore visiva"
+        ],
+        "correctIndex": 0,
+        "explanation": "Jakob Nielsen insegna che con 5-8 partecipanti scopri l'85% dei problemi: dopo le prime 6-8 interviste le persone iniziano a ripetere le stesse cose. Quello è il punto di saturazione."
+      },
+      {
+        "question": "Qual è il rischio principale dell'ignorare la sensibilità antropologica e culturale nel design di servizi globali?",
+        "options": [
+          "Alienarsi intere comunità e culture, apparire arroganti o offensivi ed essere boicottati per mancanza di rispetto verso norme, tradizioni e sensibilità locali",
+          "Ridurre la velocità di risposta dei DNS internazionali dell'infrastruttura cloud",
+          "Rendere incompatibile l'applicazione con i protocolli di crittografia a 256 bit",
+          "Provocare l'inversione automatica dei colori nei monitor dei clienti asiatici"
+        ],
+        "correctIndex": 0,
+        "explanation": "Colori, gesti, simboli e parole cambiano significato radicalmente nel mondo: il bianco è lutto in Oriente, il pollice alzato è un insulto grave in Medio Oriente. Ricerca qualitativa è rispetto."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Un'azienda americana lancia un'app di salute in Giappone usando il colore verde per indicare la guarigione e il bianco per la morte, ignorando che in Giappone il bianco è tradizionalmente legato al lutto e il verde ha connotazioni diverse. Gli utenti provano repulsione. Quale lezione del caso Nike è stata dimenticata?",
+        "options": [
+          "L'imperativo della ricerca qualitativa transculturale: i codici simbolici e cromatici non sono universali ma radicati nella storia antropologica dei singoli popoli",
+          "L'incompatibilità dei monitor giapponesi con i profili colore sRGB occidentali",
+          "La necessità di tradurre le etichette unicamente utilizzando ideogrammi Kanji arcaici",
+          "La violazione delle leggi sui brevetti industriali grafici registrati a Tokyo"
+        ],
+        "correctIndex": 0,
+        "explanation": "Progettare per mercati internazionali senza una ricerca antropologica sul campo porta a gaffe imbarazzanti e rigetto istantaneo da parte delle comunità locali."
+      },
+      {
+        "question": "Un ricercatore conduce 6 interviste approfondite su un portale di adozioni e nota che tutti i partecipanti scoppiano a piangere nello stesso punto del percorso a causa di una domanda burocratica brutale. Qual è il valore di questa evidenza qualitativa?",
+        "options": [
+          "Altissimo e definitivo: l'intensità del vissuto emotivo condiviso rivela una lacerazione profonda nell'esperienza che richiede una riscrittura empatica immediata del flusso, a prescindere da statistiche numeriche",
+          "Nullo: sei persone non rappresentano un campione statisticamente significativo a livello di p-value",
+          "Metodologicamente nullo fino a quando non viene confermato da un sondaggio su 100.000 persone",
+          "Irrilevante poiché le emozioni personali non devono interferire con i processi amministrativi"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se vedi 6 persone su 6 piangere disperate davanti a un form, non ti serve un campione statistico da 10.000: hai trovato una ferita lacerante nell'usabilità che va guarita subito."
+      },
+      {
+        "question": "Come si evita l''Effetto Hawthorne' (la tendenza dei partecipanti a modificare il proprio comportamento sentendosi osservati) durante una sessione di ricerca qualitativa?",
+        "options": [
+          "Creando un clima informale e accogliente, spiegando che si sta testando l'interfaccia e non la persona, e lasciando che l'utente agisca senza interruzioni giudicanti",
+          "Filmando l'utente con telecamere nascoste senza il suo consenso informato",
+          "Minacciando il partecipante di non pagargli il compenso se commette errori",
+          "Obbligando l'utente a indossare un visore di realtà virtuale oscurato"
+        ],
+        "correctIndex": 0,
+        "explanation": "Rassicurare il partecipante è il dovere del facilitatore: 'Non ci sono risposte giuste o sbagliate, siamo noi sotto esame, non tu'. Questo fa cadere la tensione e ripristina la naturalezza."
+      }
+    ]
+  },
+  "stull-c35": {
+    "quiz": [
+      {
+        "question": "Secondo Edward Stull nel Capitolo 35, qual è la causa profonda della stragrande maggioranza dei fallimenti e delle frizioni di usabilità?",
+        "options": [
+          "La mancata 'Conciliazione' tra requisiti tecnici del codice, obiettivi economici dell'azienda e modelli mentali ed emotivi degli utenti reali",
+          "L'assenza di processori grafici dedicati a bordo dei computer dei programmatori",
+          "La scadenza temporale dei contratti di lavoro a tempo determinato nel settore IT",
+          "L'impiego di schermi touch screen con sensibilità al tocco inferiore a dieci millisecondi"
+        ],
+        "correctIndex": 0,
+        "explanation": "La buona UX è l'arte della conciliazione: fare incontrare la fattibilità tecnologica, la redditività del business e la felicità/facilità dell'essere umano. Se uno di questi tre elementi è sacrificato, il sistema crolla."
+      },
+      {
+        "question": "Cosa si intende per 'Scambio Equo di Valore' (Fair Exchange of Value) nella filosofia della sostenibilità di prodotto?",
+        "options": [
+          "Un patto trasparente e bilanciato in cui l'utente riceve un beneficio tangibile, utile e soddisfacente in cambio del proprio tempo, denaro o attenzione concessi al servizio",
+          "La vendita di beni digitali a un prezzo imposto per legge dal parlamento",
+          "Il baratto di componenti hardware usati tra dipendenti della stessa azienda",
+          "L'obbligo contrattuale di non effettuare resi di merce dopo sette giorni dall'acquisto"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se pretendi che l'utente compili 20 campi, gli devi dare in cambio qualcosa che valga ampiamente lo sforzo; se prendi senza dare, l'utente scappa e ti cancella dalla sua vita."
+      },
+      {
+        "question": "Quale pericolo insito nella 'Avidità Predatoria' (Greed) distrugge la relazione fiduciaria con l'utente?",
+        "options": [
+          "Cercare di estrarre il massimo profitto immediato a discapito della trasparenza e del benessere del cliente (es. ricarichi occulti, abbonamenti trappola), distruggendo il valore del brand a lungo termine",
+          "Aumentare gli investimenti nel dipartimento di ricerca e sviluppo sui materiali",
+          "Assumere personale altamente qualificato con contratti a tempo indeterminato",
+          "Rilasciare aggiornamenti software gratuiti con frequenza settimanale"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'avidità è miope: ti fa guadagnare 10 euro oggi con un tranello contrattuale, ma ti costa 1.000 euro di reputazione distrutta, passaparola negativo e recensioni feroci."
+      },
+      {
+        "question": "Come si conciliano gli obiettivi di business legittimi (monetizzazione) con un'esperienza utente eccellente?",
+        "options": [
+          "Rendendo la monetizzazione una conseguenza naturale del valore fornito: l'utente paga volentieri un prezzo trasparente perché sperimenta un risparmio di tempo, serenità ed efficacia concreta",
+          "Nascondendo i pulsanti di disdetta dell'abbonamento all'interno di sottomenu segreti",
+          "Aggiungendo automaticamente prodotti a pagamento all'interno del carrello della spesa",
+          "Obbligando gli utenti a guardare 30 minuti di pubblicità prima di accedere alle funzioni base"
+        ],
+        "correctIndex": 0,
+        "explanation": "I servizi migliori (es. Apple, Spotify, Amazon Prime) non ti truffano: ti danno così tanto valore quotidiano che paghi il canone con il sorriso."
+      },
+      {
+        "question": "Quale ruolo diplomatico deve esercitare il Lead UX Designer all'interno delle trattative con gli stakeholder aziendali?",
+        "options": [
+          "Fungere da mediatore e avvocato dell'utente, dimostrando con evidenze empiriche e calcoli di ROI che rispettare i bisogni dell'utente è la via più sicura per proteggere i profitti e la crescita dell'azienda",
+          "Imporre le proprie decisioni estetiche rifiutando qualsiasi dialogo con i manager commerciali",
+          "Accettare passivamente qualsiasi richiesta dei dirigenti anche se palesemente dannosa per l'usabilità",
+          "Abbandonare le riunioni di progetto ogni volta che si discute di budget o bilancio"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il designer non è un artista isolato: è un negoziatore empatico che parla la lingua del business per proteggere la dignità e la facilità dell'utente reale."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "In un'app di incontri, gli algoritmi vengono modificati dai manager per non mostrare profili compatibili ai clienti paganti, al fine di prolungare la loro solitudine e costringerli a rinnovare l'abbonamento mensile. Come giudica Stull questa operazione dal punto di vista della Conciliazione?",
+        "options": [
+          "Una rottura predatoria e immorale dello scambio equo di valore: antepone il saccheggio economico alla missione del prodotto, scavando un abisso di risentimento e portando alla morte del brand",
+          "Un'applicazione virtuosa del modello di Kano per la massimizzazione del profitto",
+          "Una strategia raccomandata dalle linee guida Agile per ottimizzare il Customer Lifetime Value",
+          "Una prassi commerciale neutrale conforme ai regolamenti europei sul commercio elettronico"
+        ],
+        "correctIndex": 0,
+        "explanation": "È la perversione del design: boicottare il proprio scopo per avidità commerciale. Quando gli utenti lo scoprono (e lo scoprono sempre), il crollo della reputazione è totale e irreversibile."
+      },
+      {
+        "question": "Durante la progettazione di un portale di scommesse sportive, il team UX introduce limiti di deposito personalizzabili, timer di gioco visibili e pulsanti di auto-esclusione immediata. Quale conciliazione etica si sta attuando?",
+        "options": [
+          "La conciliazione tra sostenibilità del business e tutela della salute psicologica ed economica del cliente (Responsible Gaming), proteggendo la dignità umana prima dell'estrazione monetaria",
+          "L'ottimizzazione del bounce rate attraverso la divulgazione progressiva dei dati di gioco",
+          "La violazione delle linee guida antitrust sulla concorrenza tra bookmaker digitali",
+          "La conformità tecnica con le specifiche hardware delle macchine da gioco fisiche"
+        ],
+        "correctIndex": 0,
+        "explanation": "Questo è il design etico: dare alle persone strumenti di controllo per non distruggersi, anteponendo la tutela dell'individuo al profitto predatorio."
+      },
+      {
+        "question": "Un'azienda fornitrice di energia ha un modulo online per cambiare fornitore in 2 clic, ma per recedere dal contratto impone l'invio di una raccomandata A/R cartacea con marca da bollo. Quale asimmetria relazionale viene denunciata da Stull?",
+        "options": [
+          "Il pattern 'Roach Motel' (Trappola per scarafaggi): facilissimo entrare, impossibile uscire. Una violazione dello scambio equo che genera odio verso il brand e reclami alle autorità garanti",
+          "Un'applicazione rigorosa del principio di familiarità visiva di Donald Norman",
+          "Una soluzione approvata dall'euristica di Nielsen sulla flessibilità ed efficienza d'uso",
+          "Una prassi amministrativa raccomandata per garantire la sicurezza crittografica dei dati"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se per entrare basta un click, per uscire deve bastare un click. Rendere l'uscita un labirinto burocratico è disonesto e spinge l'utente a denunciare l'azienda all'Antitrust."
+      }
+    ]
+  },
+  "stull-c36": {
+    "quiz": [
+      {
+        "question": "Qual è la funzione strategica della 'Documentazione' nel processo di progettazione UX secondo Edward Stull?",
+        "options": [
+          "Fungere da memoria storica condivisa delle decisioni progettuali, motivandone le ragioni con evidenze di ricerca per evitare 'riunioni circolari' in cui si ridiscute periodicamente tutto da capo",
+          "Riempire gli archivi aziendali per giustificare le ore di straordinario dei dipendenti",
+          "Fornire materiale cartaceo da distribuire ai clienti durante le fiere di settore",
+          "Sostituire la necessità di scrivere codice sorgente funzionante nel computer"
+        ],
+        "correctIndex": 0,
+        "explanation": "Senza documentazione, ogni 3 mesi arriva un nuovo manager che dice 'perché non facciamo il carrello verde?' e si ricomincia la stessa discussione: il documento chiude il cerchio ricordando perché si è scelta quella strada."
+      },
+      {
+        "question": "Quale convenzione rigorosa di denominazione dei file (File Naming Convention) prescrive Stull per eliminare il caos nei team?",
+        "options": [
+          "L'adozione dello standard cronologico internazionale ISO 8601 (AAAAMMGG_Progetto_Descrizione_v01), che ordina naturalmente i file per data ed elimina l'illusione fallace della parola 'definitivo'",
+          "L'uso esclusivo di nomi composti da consonanti maiuscole privi di spazi e numeri",
+          "L'assegnazione casuale di numeri progressivi generati da un algoritmo automatico",
+          "La denominazione dei documenti con il nome di battesimo del designer che li ha creati"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chiunque nomini i file 'Progetto_Finale_v2_DEFINITIVO_davvero.pdf' è condannato al caos. La data AAAAMMGG (es. 20260907_Checkout_v03.fig) ordina i file cronologicamente in automatico."
+      },
+      {
+        "question": "Perché la parola 'Definitivo' (o 'Finale') nel mondo del software e del Web Design è definita da Stull come una pericolosa illusione?",
+        "options": [
+          "Perché i prodotti digitali sono organismi viventi che evolvono continuamente: nessun software è mai veramente 'finito', poiché cambiano gli utenti, i dispositivi, le normative e le tecnologie",
+          "Perché la lingua italiana non riconosce il valore legale dell'aggettivo 'definitivo'",
+          "Perché i sistemi operativi moderni rifiutano di salvare file che contengono quella parola",
+          "Perché i brevetti software hanno una durata illimitata che non necessita di aggiornamenti"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il software non è una cattedrale di pietra: un'interfaccia si aggiorna, si corregge, itera sui feedback. Definire qualcosa 'finale' blocca la mentalità evolutiva."
+      },
+      {
+        "question": "Cosa si intende per 'Design System' nella documentazione viva di un'azienda matura?",
+        "options": [
+          "L'ecosistema integrato di componenti UI riutilizzabili, pattern di interazione, linee guida di accessibilità e token di stile documentati sia a livello visivo che di codice sorgente condiviso",
+          "Un archivio cartaceo custodito all'interno di una cassaforte di sicurezza aziendale",
+          "Un software antivirus utilizzato per proteggere le cartelle di grafica da attacchi hacker",
+          "Il catalogo dei prezzi di vendita al dettaglio concordato con i fornitori esterni"
+        ],
+        "correctIndex": 0,
+        "explanation": "Un Design System (come Material Design o Polaris) è documentazione vivente: collega Figma a GitHub, garantendo che sviluppatori e designer usino gli stessi componenti coerenti."
+      },
+      {
+        "question": "Qual è il formato ideale per documentare i risultati di un test di usabilità affinché vengano recepiti dal team?",
+        "options": [
+          "Un report esecutivo sintetico con evidenziazione dei problemi critici ordinati per gravità, brevi videoclip dimostrativi delle difficoltà reali degli utenti e raccomandazioni pratiche azionabili",
+          "Un volume rilegato in pelle di quattrocento pagine privo di immagini e sommario",
+          "La registrazione integrale non tagliata di trenta ore di video su chiavetta USB",
+          "Un file di testo con la trascrizione fonetica letterale di ogni respiro dei partecipanti"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nessuno legge 100 pagine di relazione: mostrare a sviluppatori e manager un video di 30 secondi in cui un cliente reale sbatte la testa contro un form ha un impatto persuasivo mille volte superiore."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "In un'agenzia, sul server condiviso ci sono cinque file: 'Wireframe_Home_Nuovo.sketch', 'Wireframe_Home_Final.sketch', 'Wireframe_Home_Final2.sketch', 'Wireframe_Home_OK.sketch', 'Wireframe_Home_definitivo_venerdi.sketch'. Uno sviluppatore implementa la versione sbagliata. Di chi è la responsabilità sistemica?",
+        "options": [
+          "Dell'assenza totale di una convenzione formale di documentazione e versioning: nominare i file in modo approssimativo genera confusione inevitabile; serve una convenzione ISO rigorosa o un repository con branch tracciati",
+          "Dello sviluppatore che avrebbe dovuto tirare a indovinare quale fosse il file più recente",
+          "Del fornitore del server cloud che non ordina i file in base alle dimensioni in kilobyte",
+          "Del cliente che ha richiesto troppe modifiche al layout iniziale della home page"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il caos dei file non è una fatalità: è una colpa organizzativa. Con '20260907_Home_v05' chiunque sa quale sia l'ultima versione senza possibilità di errore."
+      },
+      {
+        "question": "Un nuovo Lead Designer entra in azienda e propone di cancellare il carrello attuale per rifarlo completamente da zero. Il Product Manager apre il documento storico del 2024 che dimostra che quel carrello era stato testato con 40 utenti dopo 3 fallimenti delle alternative. Quale valore ha avuto la documentazione?",
+        "options": [
+          "Ha evitato di sprecare mesi di lavoro ripercorrendo strade già dimostratesi fallimentari, preservando l'eredità intellettuale e le evidenze scientifiche già acquisite dal team",
+          "Ha violato il diritto del nuovo designer di esprimere la propria creatività senza vincoli",
+          "Ha rallentato la velocità di compilazione del codice durante la pipeline di rilascio",
+          "Non ha prodotto alcun valore poiché le ricerche del 2024 sono automaticamente obsolete"
+        ],
+        "correctIndex": 0,
+        "explanation": "La memoria documentata protegge l'azienda dall'amnesia collettiva e dall'ego dei nuovi arrivati che vogliono azzerare tutto senza sapere perché le cose sono state fatte così."
+      },
+      {
+        "question": "Come si documentano le linee guida di accessibilità (WCAG) all'interno di un Design System aziendale?",
+        "options": [
+          "Indicando per ogni componente UI il contrasto cromatico testato, le scorciatoie da tastiera previste, gli attributi ARIA necessari e i comportamenti attesi dagli screen reader",
+          "Inserendo un link generico al sito del parlamento europeo a piè di pagina",
+          "Stampando il testo delle direttive WCAG su poster cartacei appesi lungo i corridoi",
+          "Demandando la verifica dell'accessibilità all'utente finale tramite segnalazione email"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nel design system ogni componente (bottone, modale, campo) deve specificare le regole di accessibilità: solo così gli sviluppatori possono montarlo in modo sicuro e accessibile di default."
+      }
+    ]
+  }
+}

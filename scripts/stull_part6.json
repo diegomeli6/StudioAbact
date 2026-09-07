@@ -1,0 +1,566 @@
+{
+  "stull-c23": {
+    "quiz": [
+      {
+        "question": "Nella triade fondamentale dell'Architettura dell'Informazione (Rosenfeld & Morville), cosa rappresentano rispettivamente Ontologia, Tassonomia e Coreografia?",
+        "options": [
+          "Ontologia definisce il significato specifico dei concetti (cosa intendiamo con le parole); Tassonomia ne stabilisce la gerarchia e le categorie; Coreografia governa il modo in cui l'utente interagisce e si muove tra di esse",
+          "Ontologia è il database SQL; Tassonomia è il foglio di stile CSS; Coreografia è l'animazione JavaScript",
+          "Sono tre tipologie di licenze commerciali per la distribuzione del software all'estero",
+          "Rappresentano tre figure professionali che compongono il consiglio di amministrazione aziendale"
+        ],
+        "correctIndex": 0,
+        "explanation": "Questa tripartizione classica di Morville chiarisce tutto: prima concordiamo il senso delle etichette (ontologia), poi le ordiniamo ad albero (tassonomia) e infine disegniamo i percorsi di navigazione (coreografia)."
+      },
+      {
+        "question": "Quale differenza separa un 'Albero Tassonomico a Matrice' da una classica 'Struttura ad Albero Gerarchica Rigida'?",
+        "options": [
+          "Nell'albero gerarchico ogni elemento appartiene a un solo ramo esclusivo (es. Cartella > Sottocartella); nella matrice poligerarchica o a faccette un elemento può essere raggiunto attraverso filtri e percorsi multipli indipendenti",
+          "L'albero a matrice funziona solo sui monitor con frequenza a 144Hz",
+          "L'albero gerarchico è vietato per i siti di commercio elettronico",
+          "Non sussiste alcuna differenza reale, trattandosi di sinonimi"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nei moderni e-commerce (navigazione sfaccettata/Faceted Search), un paio di scarpe rosse può essere trovato filtrando per 'Calzature', ma anche per 'Rosso', o per 'Offerte speciali': percorsi multipli per lo stesso oggetto."
+      },
+      {
+        "question": "Cosa si intende per 'Card Sorting Chiuso' (Closed Card Sorting) rispetto a quello Aperto?",
+        "options": [
+          "Nel sorting chiuso le categorie madri sono già predeterminate dal team di ricerca e i partecipanti devono collocare ciascuna scheda all'interno della categoria ritenuta più appropriata",
+          "Nel sorting chiuso i partecipanti sono bendati durante l'intera prova",
+          "Nel sorting chiuso le schede sono scritte unicamente in codice numerico binario",
+          "Nel sorting chiuso non è consentito parlare durante la sessione di lavoro"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il sorting aperto serve a scoprire come le persone raggruppano e nominano le cose (fase generativa); il sorting chiuso serve a validare se le categorie che abbiamo inventato noi sono intuitive per gli utenti (fase di verifica)."
+      },
+      {
+        "question": "Cosa misura il 'Treejack' (o Tree Testing) nella validazione di un'architettura informativa?",
+        "options": [
+          "La facilità e l'accuratezza con cui le persone trovano un contenuto specifico navigando una gerarchia testuale pura a rami espandibili, priva di qualsiasi elemento visivo o grafico",
+          "La velocità di taglio del legname nelle foreste canadesi",
+          "Il numero di rami del codice sorgente presenti su GitHub",
+          "La compatibilità del codice HTML con gli screen reader per non vedenti"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il Tree Testing isola l'architettura pura: niente grafica, niente colori, niente banner. Se l'utente trova il prodotto nell'albero di solo testo, le parole e la tassonomia funzionano; se si perde, l'albero è sbagliato."
+      },
+      {
+        "question": "Quale problema strutturale provoca una 'Tassonomia Piatta' (Flat Taxonomy) che presenta 40 voci al primo livello?",
+        "options": [
+          "Sovraccarico visivo e cognitivo: l'utente viene bombardato da un elenco sterminato e fatica a compiere una scansione efficace (violazione della legge di Hick)",
+          "Il crash del server a causa dell'eccessivo peso del foglio di stile",
+          "L'impossibilità di registrare il nome a dominio sui registri internazionali",
+          "La chiusura automatica del browser da parte del sistema operativo"
+        ],
+        "correctIndex": 0,
+        "explanation": "Né troppo piatto né troppo profondo: 40 voci in una schermata soffocano l'occhio; 8 livelli di profondità costringono a cliccare all'infinito. L'equilibrio sta in 5-7 macro-voci con 4-6 sotto-voci logiche."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Un'azienda pubblica categorizza i servizi per i cittadini sotto le voci: 'Area IV', 'Ripartizione Contabile' e 'Ufficio Affari Generali'. Quale patologia di architettura dell'informazione è presente?",
+        "options": [
+          "Tassonomia autoreferenziale 'Inside-Out': specchia l'organigramma interno burocratico dell'ente, ignorando totalmente i compiti reali e il vocabolario del cittadino ('Outside-In')",
+          "Un'architettura ideale conforme a tutte le normative internazionali di accessibilità",
+          "Un errore di sincronizzazione del database con il server centrale",
+          "Un requisito imposto dalla Costituzione della Repubblica Italiana"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'utente non deve fare un master in burocrazia per pagare una multa: le categorie devono riflettere i suoi compiti (Tasse, Scuola, Casa), non i nomi degli uffici fisici dell'ente."
+      },
+      {
+        "question": "In un Card Sorting, il 70% degli utenti colloca 'Cuffie Bluetooth' sia sotto 'Informatica' che sotto 'Audio/Musica'. Quale decisione architetturale deve prendere il designer?",
+        "options": [
+          "Consentire la classificazione poligerarchica o cross-linking: inserire il prodotto in entrambe le sezioni per garantire che chiunque lo trovi, a prescindere dal modello mentale adottato",
+          "Eliminare il prodotto dal catalogo per evitare ambiguità nel database",
+          "Forzare il prodotto unicamente nella sezione che costa meno di spedizione",
+          "Obbligare l'utente a sostenere un test prima di mostrare la scheda prodotto"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nel digitale il vincolo fisico della libreria non esiste: un libro può stare su due scaffali diversi contemporaneamente senza costi aggiuntivi. Se la mente dell'utente lo cerca in due posti, offritelo in entrambi."
+      },
+      {
+        "question": "Quale ruolo svolge un 'Vocabolario Controllato' (Controlled Vocabulary) all'interno di un portale di grandi dimensioni?",
+        "options": [
+          "Stabilisce un elenco standardizzato di termini ammessi, sinonimi e varianti lessicali per garantire coerenza nell'etichettatura tra redattori diversi e migliorare i risultati della ricerca interna",
+          "Impedisce agli utenti di utilizzare parole volgari all'interno delle recensioni",
+          "Traduce automaticamente i testi della pagina web in tutte le lingue europee",
+          "Riduce le dimensioni dei caratteri tipografici all'interno dei titoli"
+        ],
+        "correctIndex": 0,
+        "explanation": "Senza vocabolario controllato, un redattore scrive 'Docente', uno 'Professore' e un altro 'Insegnante', creando tre categorie separate per la stessa cosa e spaccando l'architettura del sito."
+      }
+    ]
+  },
+  "stull-c24": {
+    "quiz": [
+      {
+        "question": "Cos'è uno 'User Flow' (Flusso Utente) nella progettazione dell'esperienza digitale?",
+        "options": [
+          "La sequenza visiva passo-passo delle schermate, delle decisioni (bivi logici) e delle azioni che un utente compie dal punto di ingresso fino al compimento del suo obiettivo",
+          "Il volume di dati scaricati dalla scheda di rete dello smartphone al secondo",
+          "La frequenza cardiaca media registrata durante una sessione di navigazione",
+          "La velocità con cui il designer traccia wireframe sulla carta millimetrata"
+        ],
+        "correctIndex": 0,
+        "explanation": "Lo User Flow è il percorso logico prima dei pixel: mostra la mappa dei bivi, dei vicoli ciechi e delle conferme che l'utente incontra (es. Se loggato -> Vai al carrello; Se non loggato -> Mostra login)."
+      },
+      {
+        "question": "Cosa si intende per 'Happy Path' (Percorso Felice) in un diagramma di flusso utente?",
+        "options": [
+          "Lo scenario ideale e privo di intoppi in cui l'utente compie il percorso perfetto senza incontrare errori, rifiuti di pagamento o deviazioni impreviste",
+          "Una pagina web che visualizza unicamente fotografie di paesaggi festosi",
+          "Il tragitto compiuto dal corriere durante le giornate di sole",
+          "La sequenza di schermate che genera il maggior numero di recensioni a 5 stelle"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'Happy Path è il sentiero diritto dove tutto va liscio: l'utente inserisce dati perfetti, la carta ha fondi, il prodotto è disponibile. Ma il bravo designer progetta soprattutto per ciò che accade fuori dal sentiero felice."
+      },
+      {
+        "question": "Cosa sono gli 'Edge Cases' (Casi Limite o casi d'angolo) che un solido User Flow deve obbligatoriamente contemplare?",
+        "options": [
+          "Scenari rari ma critici che possono verificarsi durante l'uso reale: carta di credito scaduta, perdita della connessione di rete a metà operazione, carrello vuoto, nome utente con caratteri speciali o sessione scaduta",
+          "I pixel collocati lungo il bordo perimetrale del monitor del computer",
+          "Le custodie di protezione in silicone vendute per gli smartphone",
+          "I contratti commerciali stipulati con aziende residenti in paradisi fiscali"
+        ],
+        "correctIndex": 0,
+        "explanation": "I principianti disegnano solo per l'Happy Path; i maestri della UX passano l'80% del tempo a gestire gli Edge Cases: cosa accade se la batteria si spegne durante l'acquisto? L'app salva il carrello o perde i soldi?"
+      },
+      {
+        "question": "Quale forma geometrica standard viene utilizzata nei diagrammi di flusso di processo per rappresentare un bivio decisionale (punto di scelta sì/no)?",
+        "options": [
+          "Il Rombo (Diamante decisionale)",
+          "Il Rettangolo con bordi arrotondati",
+          "Il Cerchio pieno colorato di rosso",
+          "Il Triangolo equilatero rovesciato"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nello standard ANSI per i diagrammi di flusso: il rettangolo indica un'azione (schermata), il rombo indica una decisione/bivio condizionale (es. 'Ha un account? Sì/No') e l'ovale indica inizio o fine del flusso."
+      },
+      {
+        "question": "Cosa si intende per 'Task Analysis' (Analisi dei Compiti) propedeutica alla creazione di uno User Flow?",
+        "options": [
+          "La scomposizione metodica di un'attività complessa in tutte le sue singole micro-operazioni cognitive, visive e motorie necessarie affinché l'utente raggiunga il traguardo",
+          "La valutazione delle ore di straordinario lavorate dai dipendenti dell'azienda",
+          "L'analisi del consumo di memoria RAM durante l'esecuzione del programma",
+          "Il controllo fiscale sui registri contabili dell'impresa committente"
+        ],
+        "correctIndex": 0,
+        "explanation": "Scomporre il compito svela le complessità nascoste: 'Comprare un volo' sembra un'azione singola, ma scomposta include 18 passaggi (scegliere date, aeroporti, bagagli, posti, assicurazione, anagrafica, pagamento)."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "In un flusso di recupero password, l'utente riceve un codice via email. Quando torna sull'app per inserire il codice, la pagina si è ricaricata tornando alla schermata iniziale, costringendolo a ricominciare da zero. Quale errore di flusso si è verificato?",
+        "options": [
+          "Mancanza di persistenza dello stato nel flusso (State Management difettoso): l'uscita temporanea dall'app per controllare l'email ha azzerato il contesto anziché congelare la schermata di inserimento codice",
+          "Un errore provocato dalla scarsa velocità di elaborazione della scheda madre",
+          "La violazione delle normative sul commercio elettronico internazionale",
+          "Una corretta applicazione dei protocolli di sicurezza crittografica militare"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il classico 'flusso spezzato': il sistema non tiene conto che su mobile l'utente deve saltare da un'app all'altra. Se l'app si azzera a ogni cambio di finestra, il flusso diventa un incubo invalicabile."
+      },
+      {
+        "question": "Perché è fondamentale disegnare e concordare lo User Flow completo PRIMA di iniziare a progettare le singole schermate in wireframe?",
+        "options": [
+          "Perché garantisce la coerenza logica della sequenza e la copertura di tutti i rami di errore, evitando di dover buttare via decine di schermate rifinite quando ci si accorge che il percorso logico è sbagliato",
+          "Perché i software di prototipazione impediscono di disegnare senza un flusso salvato",
+          "Perché la legge richiede la firma notarile sui diagrammi di flusso prima del codice",
+          "Perché i programmatori non sanno leggere disegni privi di frecce e rettangoli"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'architettura prima dei mattoni: se il labirinto ha vicoli ciechi, renderizzare muri splendidi in 4K servirà solo a intrappolare gli utenti. Prima si sistema la mappa dei passaggi, poi si disegnano le stanze."
+      },
+      {
+        "question": "Come si gestisce un 'vicolo cieco' (Dead End) in uno User Flow quando un'operazione non può essere completata (es. 'Nessun risultato trovato')?",
+        "options": [
+          "Fornendo sempre una via d'uscita costruttiva e proattiva: suggerire ricerche alternative, mostrare categorie correlate o offrire un contatto diretto, senza mai lasciare l'utente davanti a un muro bianco vuoto",
+          "Chiudendo automaticamente l'applicazione senza mostrare alcun messaggio",
+          "Mostrando una schermata completamente nera per dieci minuti",
+          "Reindirizzando forzatamente l'utente sulla homepage di un sito concorrente"
+        ],
+        "correctIndex": 0,
+        "explanation": "Mai lasciare l'utente in un cul-de-sac: la schermata 'Zero Risultati' deve essere un trampolino (prodotti popolari, controlla gli errori di battitura, chiedi a un consulente), non un cartello di divieto d'accesso."
+      }
+    ]
+  },
+  "stull-c25": {
+    "quiz": [
+      {
+        "question": "Cosa caratterizza un 'Wireframe a Bassa Fedeltà' (Low-Fidelity Wireframe o Paper Prototype)?",
+        "options": [
+          "Schizzi rapidi su carta o bozze grezze in scala di grigi privi di dettagli visivi rifiniti, usati per esplorare layout, disposizione dei blocchi e gerarchia con la massima velocità e a costo minimo",
+          "Pagine web definitive pronte per essere caricate sui server di produzione",
+          "Disegni ad acquerello a colori realizzati da illustratori professionisti",
+          "File video in alta definizione che mostrano attori all'interno del negozio"
+        ],
+        "correctIndex": 0,
+        "explanation": "La bassa fedeltà è libertà pura: niente distrazioni di font, colori o ombre; solo scatole, frecce e titoli per verificare se la struttura scheletrica del layout funziona prima di rifinirla."
+      },
+      {
+        "question": "Qual è il più grande beneficio dell'utilizzare 'Carta e Matita' nelle fasi iniziali di progettazione rispetto ai complessi software di prototipazione digitale?",
+        "options": [
+          "La velocità di esecuzione e la facilità di buttare via un'idea sbagliata in due secondi, impedendo al designer di innamorarsi prematuramente della prima soluzione",
+          "Il fatto che la carta non consuma memoria RAM sul computer portatile",
+          "L'impossibilità di commettere errori di ortografia sul supporto cartaceo",
+          "La possibilità di inviare i fogli di carta via fax direttamente al browser dell'utente"
+        ],
+        "correctIndex": 0,
+        "explanation": "Disegnare su software costa tempo: dopo aver passato tre ore a sistemare i pixel in Figma, cancellare la schermata fa male al cuore. Su carta si straccia il foglio in mezzo secondo senza rimpianti."
+      },
+      {
+        "question": "Cosa si intende per 'Fallire Presto per Imparare Presto' (Fail Fast, Learn Faster) associato ai wireframe low-fi?",
+        "options": [
+          "Identificare le falle strutturali, i percorsi contorti e i difetti logici quando il costo della modifica è nullo (su carta), anziché scoprirli mesi dopo a codice scritto con costi devastanti",
+          "Dichiarare fallimento aziendale per usufruire di sgravi fiscali governativi",
+          "Rilasciare software difettoso appositamente per far arrabbiare i clienti concorrenti",
+          "Licenziare i designer che non riescono a completare il disegno in dieci minuti"
+        ],
+        "correctIndex": 0,
+        "explanation": "La regola di Pressman 1:10:100: correggere un errore concettuale su uno schizzo cartaceo costa 1 euro; correggerlo nel wireframe digitale costa 10 euro; riscriverlo nel software in produzione costa 100 euro."
+      },
+      {
+        "question": "Quale livello di dettaglio testuale è opportuno inserire all'interno di un wireframe a bassa fedeltà?",
+        "options": [
+          "I titoli principali delle sezioni, le etichette chiave dei comandi (CTA) e parole chiave reali, evitando paragrafi rifiniti e sostituendo il testo secondario con linee orizzontali stilizzate",
+          "L'intero testo legale delle condizioni di servizio tradotto in cinque lingue",
+          "Il codice sorgente JavaScript delle funzioni asincrone",
+          "Solo simboli numerici binari senza alcuna parola alfabetica"
+        ],
+        "correctIndex": 0,
+        "explanation": "Niente fuffa: bastano i titoli per far capire cosa c'è nella scatola ('Catalogo Corsi', 'Carrello') e l'azione ('Acquista ora'). Il resto sono solo linee di testo tracciate a mano per simulare i paragrafi."
+      },
+      {
+        "question": "In che modo gli schizzi a bassa fedeltà favoriscono il feedback sincero da parte di clienti e stakeholder durante le revisioni?",
+        "options": [
+          "Poiché il disegno appare palesemente grezzo e provvisorio, le persone si sentono libere di criticare, proporre modifiche e strappare il foglio senza il timore di ferire l'orgoglio del designer",
+          "Perché i clienti preferiscono non pagare le prestazioni grafiche rifinite",
+          "Perché i disegni su carta sono considerati opere d'arte contemporanea collezionabili",
+          "Perché la carta impedisce la trasmissione di virus informatici"
+        ],
+        "correctIndex": 0,
+        "explanation": "Psicologia del feedback: se mostrate una schermata luccicante e perfetta, il cliente pensa 'Ormai è finita, non posso dire che l'idea è sbagliata'. Se mostrate uno schizzo a penna, prende la matita e partecipa."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Un designer junior passa 4 giorni in Figma a perfezionare i raggi di curvatura degli angoli (border-radius) e le ombre delle card di una schermata che il giorno dopo viene completamente cancellata perché il flusso era errato. Quale lezione metodologica ne scaturisce?",
+        "options": [
+          "Ha confuso la finitura cosmetica con la solidità strutturale: non si rifiniscono i dettagli prima che la struttura sia validata su prototipi grezzi a bassa fedeltà",
+          "I raggi di curvatura devono essere impostati sempre sul valore fisso di zero pixel",
+          "I software di prototipazione digitale devono essere vietati ai designer con meno di trent'anni",
+          "Il designer avrebbe dovuto lavorare anche durante le ore notturne per salvare il lavoro"
+        ],
+        "correctIndex": 0,
+        "explanation": "Lucidare le maniglie di una casa senza fondamenta: lavorare sui micro-dettagli visivi prima di aver convalidato che la stanza serva davvero è lo spreco di tempo più frequente e tragico nel design acerbo."
+      },
+      {
+        "question": "Come si esegue un 'Paper Prototyping Test' (Test di usabilità con prototipo cartaceo) con un utente reale?",
+        "options": [
+          "Il facilitatore assegna un compito, l'utente tocca lo schizzo su carta con il dito, e un membro del team (l'Uomo-Computer) sposta, cambia o sovrappone manualmente foglietti di carta simulando le reazioni del sistema",
+          "Si costringe l'utente a mangiare il foglio di carta al termine della sessione",
+          "Si fotocopiano i fogli di carta e si inviano per posta ordinaria a cento famiglie",
+          "Si verifica la resistenza meccanica della carta allo strappo con un dinamometro"
+        ],
+        "correctIndex": 0,
+        "explanation": "La magia del 'Wizard of Oz' su carta: l'utente tocca il pulsante disegnato, e la mano del ricercatore fa scivolare sopra il foglio con il menu a tendina aperto. In mezz'ora scoprite se il modello mentale regge."
+      },
+      {
+        "question": "Cosa si intende per 'Guerilla Usability Testing' condotto con prototipi a bassa fedeltà?",
+        "options": [
+          "Scendere in un bar o in una biblioteca pubblica, fermare educatamente 5 passanti offrendo un caffè in cambio di 5 minuti del loro tempo per testare uno schizzo su carta al volo",
+          "Condurre test di usabilità armati di pistole ad aria compressa nei boschi",
+          "Spiare i dipendenti dei concorrenti attraverso cannocchiali a lungo raggio",
+          "Hackerare i sistemi informatici delle aziende rivali per testare la vulnerabilità"
+        ],
+        "correctIndex": 0,
+        "explanation": "La guerriglia UX: niente budget, niente laboratori sontuosi. Basta un prototipo cartaceo, un bar affollato e la gentilezza di offrire un cornetto per avere 5 test veri in un'ora."
+      }
+    ]
+  },
+  "stull-c26": {
+    "quiz": [
+      {
+        "question": "Cosa contraddistingue un 'Wireframe a Media Fedeltà' (Mid-Fidelity Wireframe) rispetto a uno schizzo grezzo a bassa fedeltà?",
+        "options": [
+          "È realizzato al computer utilizzando griglie modulari precise, proporzioni spaziali esatte e gerarchie tipografiche definite, ma rigorosamente in scala di grigi e privo di elementi cosmetici rifiniti",
+          "Contiene tutte le fotografie e le illustrazioni a colori definitive",
+          "È già programmato in linguaggio HTML e CSS con database collegato",
+          "È stampato unicamente su fogli metallici in alluminio satinato"
+        ],
+        "correctIndex": 0,
+        "explanation": "La media fedeltà è lo scheletro architettonico digitale: fissa le distanze, gli ingombri esatti, le griglie di layout e la gerarchia dei testi, ma senza il colore che distrarrebbe l'attenzione dalla struttura."
+      },
+      {
+        "question": "Perché nei wireframe a media fedeltà si evita categoricamente l'uso di colori reali (tranne sfumature di grigio e al massimo un colore funzionale)?",
+        "options": [
+          "Per impedire che le discussioni con clienti e stakeholder deraglino su preferenze soggettive ('A me il blu non piace, preferisco l'arancione'), mantenendo il focus sulla gerarchia, sui contenuti e sui flussi",
+          "Perché i computer dei designer non sono in grado di visualizzare file a colori",
+          "Perché il consorzio W3C impone sanzioni sui wireframe colorati",
+          "Per risparmiare sui costi di consumo della cartuccia della stampante"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il colore è un catalizzatore di pregiudizi: se mettete il rosso, il cliente discute per mezz'ora del rosso. Usando il grigio, il cliente è costretto a guardare cosa c'è scritto e come sono posizionate le informazioni."
+      },
+      {
+        "question": "Quale pratica è sconsigliata nell'inserimento dei contenuti all'interno di un wireframe a media fedeltà avanzato?",
+        "options": [
+          "L'uso indiscriminato di 'Lorem Ipsum' falso in tutti i blocchi, poiché impedisce di valutare la reale lunghezza, la densità informativa e la leggibilità dei testi che andranno a popolare l'interfaccia",
+          "L'inserimento dei titoli esatti dei prodotti e dei prezzi reali di vendita",
+          "L'allineamento dei testi lungo una griglia tipografica a 8 punti",
+          "L'utilizzo di icone standard per identificare le funzioni di navigazione"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il falso latino uccide il design reale: tre righe di 'Lorem Ipsum' sembrano sempre armoniose; quando poi inserite i veri testi del cliente lunghi 20 righe o i nomi tedeschi di 40 lettere, il layout si spezza miseramente."
+      },
+      {
+        "question": "Come vengono convenzionalmente rappresentate le immagini e i video all'interno di un wireframe a media fedeltà?",
+        "options": [
+          "Come rettangoli grigi con una 'X' diagonale tracciata al loro interno (e un'icona o testo descrittivo dell'ingombro proporzionale richiesto)",
+          "Con animazioni gif a colori vivaci prese da archivi pubblici online",
+          "Con specchi riflettenti in miniatura incollati sullo schermo",
+          "Con fotogrammi cinematografici di film d'autore in bianco e nero"
+        ],
+        "correctIndex": 0,
+        "explanation": "La scatola con la X è la convenzione universale del wireframe: dice al programmatore e al cliente 'Qui andrà una foto orizzontale in 16:9', senza costringere a cercare l'immagine perfetta in questa fase."
+      },
+      {
+        "question": "Quale ruolo svolge il wireframe a media fedeltà nella comunicazione tra il designer UX e il programmatore frontend?",
+        "options": [
+          "Funge da schema costruttivo (blueprint) inequivocabile che definisce la griglia, la disposizione delle colonne responsive, la densità dei dati e gli stati dei componenti prima della scrittura del codice",
+          "Serve per calcolare lo stipendio orario del programmatore",
+          "Costituisce una prova documentale per la richiesta di marchi registrati",
+          "Viene impiegato unicamente come sfondo per il desktop dei computer"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il wireframe è il disegno esecutivo dell'ingegnere: il programmatore vede subito se un componente è una griglia a 3 colonne, se il testo va a capo o se c'è un'area fissa laterale, facilitando la stima dei tempi."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Un cliente guarda un wireframe a media fedeltà in scala di grigi e chiede allarmato: 'Ma il nostro sito sarà davvero tutto grigio e triste così?'. Come deve rispondere professionalmente il designer?",
+        "options": [
+          "Rassicurandolo con la metafora della casa: questo è il progetto strutturale dell'architetto con muri portanti e tubature; la pittura delle pareti, i pavimenti e l'arredamento (UI e colori) verranno subito dopo",
+          "Affermando che il grigio è il colore obbligatorio per tutti i siti web del futuro",
+          "Cancellando il progetto e scusandosi per aver utilizzato il software in modalità difettosa",
+          "Raddoppiando la parcella di consulenza per compensare l'ansia del cliente"
+        ],
+        "correctIndex": 0,
+        "explanation": "Educare il cliente è parte del lavoro: spiegare che stiamo collaudando le fondamenta e i percorsi. Se scegliamo i cuscini del divano prima di aver deciso dove mettere le porte, la casa sarà invivibile."
+      },
+      {
+        "question": "Perché l'uso di una Griglia a 8 Punti (8-Point Grid) è raccomandato già a partire dalla fase di wireframing a media fedeltà?",
+        "options": [
+          "Perché garantisce che tutte le spaziature (padding, margin, altezze) siano multipli matematici armonici (8, 16, 24, 32px), rendendo l'interfaccia pulita e facilitando enormemente la codifica CSS",
+          "Perché gli schermi dei computer sono composti unicamente da otto pixel fisici",
+          "Perché i motori di ricerca penalizzano i layout basati su numeri dispari",
+          "Perché la legge impone l'uso del sistema ottale nell'informatica industriale"
+        ],
+        "correctIndex": 0,
+        "explanation": "La griglia a 8pt elimina l'anarchia: niente più spazi a caso (13px qui, 19px là). Tutto respira con un ritmo matematico coerente e modulare, perfetto per il responsive design."
+      },
+      {
+        "question": "Quale problema di usabilità si manifesta se un wireframe a media fedeltà viene testato con gli utenti senza spiegare loro la natura schematica del prototipo?",
+        "options": [
+          "Gli utenti inesperti potrebbero pensare che il sito sia rotto o incompiuto a causa della mancanza di fotografie e colori, commentando l'assenza visiva anziché la logica del compito",
+          "Gli utenti si rifiutano categoricamente di toccare il mouse del computer",
+          "Il computer entra automaticamente in modalità di ripristino di emergenza",
+          "Le risposte degli utenti vengono convertite automaticamente in lingua greca antica"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il briefing preliminare è cruciale: 'Questo è un disegno schematico preliminare in bianco e nero, come la pianta di un appartamento. Non guardi l'assenza di colori, ci interessa vedere se trova i comandi'."
+      }
+    ]
+  },
+  "stull-c27": {
+    "quiz": [
+      {
+        "question": "Cosa si intende per 'Design Token' all'interno di un'architettura moderna di UI Design?",
+        "options": [
+          "Variabili semantiche centralizzate che memorizzano le decisioni di design atomiche (valori cromatici, font, spaziature, ombreggiature, raggi di curvatura) in formati agnostici (come JSON)",
+          "Gettoni metallici per accedere ai laboratori di usabilità delle università",
+          "Monete virtuali impiegate per pagare gli stipendi dei grafici freelance",
+          "Codici di sicurezza temporanei inviati via SMS per l'autenticazione a due fattori"
+        ],
+        "correctIndex": 0,
+        "explanation": "I token sono il DNA del Design System: un nome come 'color-brand-primary' racchiude l'esadecimale '#0066cc'. Se il brand cambia colore, si modifica solo il token e l'intero ecosistema su iOS, Android e Web si aggiorna all'istante."
+      },
+      {
+        "question": "Cosa caratterizza una 'Scala Tipografica Modulare' (Modular Type Scale) nella progettazione dell'interfaccia?",
+        "options": [
+          "Una serie di dimensioni di font correlate tra loro attraverso un rapporto matematico costante (es. Major Third 1.25, o Perfect Fourth 1.333), che garantisce armonia e proporzione tra titoli, sottotitoli e corpo del testo",
+          "Una raccolta di caratteri tipografici scelti a caso da venti siti web differenti",
+          "Un righello di plastica utilizzato per misurare lo spessore dei monitor dei computer",
+          "L'obbligo di utilizzare caratteri tipografici con un corpo fisso di cento punti"
+        ],
+        "correctIndex": 0,
+        "explanation": "Come le note musicali in una scala armonica: partendo da 16px con rapporto 1.25 otteniamo 16, 20, 25, 31, 39px. Le gerarchie visive risultano naturali, eleganti e matematicamente bilanciate."
+      },
+      {
+        "question": "Quale principio governa l'applicazione del Colore Semantico (Functional Color) nell'UI Design?",
+        "options": [
+          "L'assegnazione coerente e rigorosa di significati di sistema universali ai colori (Verde = Successo/Conferma, Rosso = Errore/Distruzione, Giallo = Avviso, Blu = Informazione, Grigi = Neutralità)",
+          "L'uso casuale dei colori in base all'umore giornaliero del programmatore",
+          "La scelta di colori diversi per ciascuna schermata della stessa applicazione",
+          "L'obbligo di utilizzare esclusivamente colori fluorescenti per tutti i testi"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il colore semantico parla un linguaggio intuitivo: l'utente riconosce all'istante che un banner verde è una buona notizia e uno rosso è un problema che richiede attenzione immediata."
+      },
+      {
+        "question": "Cos'è la 'Legge di Fitts' applicata alla dimensione e al posizionamento dei componenti di UI su dispositivi mobili?",
+        "options": [
+          "I pulsanti primari devono avere touch target ampi e trovarsi nella zona inferiore dello schermo (facilmente raggiungibile dal pollice), riducendo la distanza di movimento e aumentando la superficie cliccabile",
+          "I pulsanti devono muoversi continuamente per attirare lo sguardo dell'utente",
+          "Tutti i controlli devono essere collocati nell'angolo superiore sinistro",
+          "La dimensione dei pulsanti deve essere inversamente proporzionale all'età dell'utente"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ergonomia Fitts su smartphone: le Call to Action chiave vanno incollate in basso (Thumb Zone) con altezza generosa (48-56px), consentendo un tap fulmineo a una mano senza sforzo articolare."
+      },
+      {
+        "question": "Cosa si intende per 'Stati del Componente' (Component States) nella documentazione di una libreria UI?",
+        "options": [
+          "Tutte le varianti visive che un elemento interattivo assume a seconda del contesto: Default (riposo), Hover (sorvolo), Focus (tastiera), Active/Pressed (premuto), Disabled (disattivato) e Loading (caricamento)",
+          "I paesi del mondo in cui il software è legalmente commercializzabile",
+          "Le versioni storiche del codice sorgente salvate nei depositi di backup",
+          "I diversi dipartimenti aziendali che hanno approvato il disegno dell'icona"
+        ],
+        "correctIndex": 0,
+        "explanation": "Un bottone non è una foto statica: è un oggetto reattivo vivente. Documentare tutti i suoi stati garantisce che lo sviluppatore gestisca cosa accade quando l'utente ci passa sopra, lo preme o quando la rete sta caricando."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Un designer definisce nel suo progetto 38 tonalità diverse di grigio e 14 dimensioni di font arbitrarie (13px, 14px, 14.5px, 15px...). Quale patologia di design sta creando e come si risana?",
+        "options": [
+          "Incoerenza visiva e debito tecnico da frammentazione: si risana introducendo un Design System rigoroso basato su Design Token (massimo 6-8 grigi semantici e una scala tipografica a 5 livelli)",
+          "Una corretta applicazione dell'estetica decostruzionista postmoderna",
+          "Un problema risolvibile aumentando la luminosità dello schermo del computer",
+          "Una richiesta esplicita imposta dalle direttive di accessibilità del W3C"
+        ],
+        "correctIndex": 0,
+        "explanation": "La giungla delle variabili: troppi grigi e troppe grandezze generano disordine visivo e fanno impazzire i programmatori. Un Design System toglie la libertà arbitraria e dona coerenza granitica all'interfaccia."
+      },
+      {
+        "question": "Perché l'uso esclusivo del colore per comunicare uno stato di errore (es. solo un bordo rosso attorno a un campo) è una grave violazione delle linee guida di accessibilità WCAG?",
+        "options": [
+          "Perché le persone affette da daltonismo (es. protanopia o deuteranopia) non riescono a distinguere il rosso dal verde o dal grigio: il colore deve sempre essere affiancato da un'icona e da un testo esplicito",
+          "Perché il colore rosso consuma più energia nei display a cristalli liquidi",
+          "Perché i motori di ricerca non indicizzano i bordi colorati degli input",
+          "Perché la legge vieta l'uso del colore rosso all'interno dei siti web aziendali"
+        ],
+        "correctIndex": 0,
+        "explanation": "WCAG Success Criterion 1.4.1: mai usare il solo colore per trasmettere informazioni. Il bordo rosso deve essere sempre accompagnato da un'icona di punto esclamativo e dal messaggio di testo chiaro sotto il campo."
+      },
+      {
+        "question": "Quale vantaggio strategico offre l'approccio 'Single Source of Truth' (Singola Fonte di Verità) garantito dai Design Token sincronizzati con GitHub?",
+        "options": [
+          "Quando il designer aggiorna un valore di token nel file sorgente centrale (es. Figma), la modifica si propaga automaticamente via codice nei repository di tutti i team di sviluppo, azzerando le discrepanze",
+          "Elimina la necessità di avere programmatori all'interno dell'azienda",
+          "Garantisce che il software non contenga mai bug funzionali nel codice",
+          "Consente di vendere il software senza pagare le tasse sul diritto d'autore"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il ponte perfetto tra Design e Codice: niente più riunioni infinite per dire 'quel blu non è il nostro blu'. Il token in JSON è la legge suprema condivisa da designer, sviluppatori iOS, Android e Web."
+      }
+    ]
+  },
+  "stull-c28": {
+    "quiz": [
+      {
+        "question": "Qual è lo scopo precipuo della 'Prototipazione Interattiva' nella metodologia di progettazione UX?",
+        "options": [
+          "Simulare in modo realistico il comportamento dinamico, le transizioni e l'interattività del prodotto finale prima di scrivere codice reale, per testare la validità dell'esperienza con utenti e stakeholder",
+          "Costruire un modello tridimensionale in scala 1:1 da esporre nelle fiere commerciali",
+          "Registrare un brevetto industriale prima della concorrenza",
+          "Sostituire definitivamente i manuali d'uso cartacei dei macchinari industriali"
+        ],
+        "correctIndex": 0,
+        "explanation": "Un'immagine statica non rivela come si 'sente' l'esperienza. Il prototipo interattivo (in Figma, ProtoPie o codice) si tocca, si naviga e si mette alla prova, rivelando intoppi di flusso e tempi di reazione."
+      },
+      {
+        "question": "Cosa si intende per prototipo ad 'Alta Fedeltà' (High-Fidelity Prototype)?",
+        "options": [
+          "Un prototipo digitale interattivo che riproduce fedelmente l'aspetto grafico definitivo (colori, font, immagini reali), le microinterazioni e le animazioni, simulando quasi alla perfezione l'app reale finita",
+          "Un dispositivo audio ad altissima fedeltà sonora per musicisti professionisti",
+          "Una stampante laser ad altissima risoluzione per documenti contrattuali",
+          "Un prototipo che rispetta rigorosamente i dogmi di una fede religiosa"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'Hi-Fi è indistinguibile dall'app vera: i bottoni cliccano, i menu scivolano con transizioni a 60fps e i dati sono realistici, consentendo test di usabilità avanzati sul campo di altissima precisione."
+      },
+      {
+        "question": "Qual è il rischio nell'utilizzare prototipi ad ALTA fedeltà nelle primissime fasi di ideazione del progetto?",
+        "options": [
+          "Richiedono troppo tempo per essere costruiti, inducono gli stakeholder a focalizzarsi su dettagli visivi marginali (colori, foto) e rendono il team restio a scartare l'idea a causa del tempo investito (Sunk Cost Fallacy)",
+          "Possono causare il blocco permanente del processore del computer",
+          "I browser non supportano l'interattività nei file digitali preliminari",
+          "La legge impone di utilizzare unicamente carta e matita fino al lancio sul mercato"
+        ],
+        "correctIndex": 0,
+        "explanation": "La trappola dei costi sommersi: più tempo passi a lucidare il prototipo, più farà male ammettere che il concetto di fondo era sbagliato. All'inizio si prototipa grezzo e veloce; l'alta fedeltà arriva solo dopo."
+      },
+      {
+        "question": "Cosa contraddistingue una 'Microinterazione' (Micro-interaction) all'interno di un prototipo interattivo avanzato?",
+        "options": [
+          "Un dettaglio di animazione sottile e funzionale legato a un singolo compito (es. il feedback aptico alla pressione di un tasto, lo spinner di caricamento, l'effetto pull-to-refresh, l'icona del cuore che batte al like)",
+          "Una transazione bancaria di valore inferiore a un centesimo di euro",
+          "Una conversazione vocale di durata inferiore a cinque secondi",
+          "La visualizzazione di un banner pubblicitario di dimensioni microscopiche"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le microinterazioni (Dan Saffer) donano anima e vita al digitale: comunicano lo stato del sistema in modo elegante, gratificano il gesto dell'utente e trasformano un'interfaccia fredda in un'esperienza deliziosa."
+      },
+      {
+        "question": "In quale situazione la prototipazione rapida in codice (HTML, CSS e JS grezzi) è preferibile rispetto a Figma?",
+        "options": [
+          "Quando è necessario testare l'accessibilità reale con screen reader, la digitazione da tastiera su form complessi, la reattività a dati reali di API o algoritmi di calcolo dinamici",
+          "Quando il designer non possiede un computer con connessione a internet",
+          "Quando l'applicazione deve essere venduta unicamente all'interno di negozi fisici",
+          "Quando si desidera stampare il prototipo su fogli di carta millimetrata"
+        ],
+        "correctIndex": 0,
+        "explanation": "Figma simula lo schermo, il codice simula la realtà: se dovete verificare se un lettore vocale per ciechi legge i campi o testare un calcolo finanziario con 20 variabili, il prototipo in codice batte qualsiasi mockup."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Durante un test di usabilità con un prototipo Figma ad alta fedeltà, un utente clicca su un'icona non programmata e il prototipo non reagisce, generando un brusco momento di smarrimento. Come si definisce questo problema e come si mitiga?",
+        "options": [
+          "È l'illusione della completezza (Uncanny Valley del prototipo): l'utente pensa che sia l'app reale e si aspetta che tutto funzioni; si mitiga gestendo i percorsi chiave e spiegando chiaramente i confini del prototipo nel briefing",
+          "Un guasto hardware della scheda video che richiede la sostituzione del monitor",
+          "Un errore di violazione del copyright delle icone vettoriali",
+          "La dimostrazione scientifica che l'utente ha un quoziente intellettivo insufficiente"
+        ],
+        "correctIndex": 0,
+        "explanation": "Più il prototipo sembra vero, più l'aspettativa sale alle stelle. Se l'utente clicca su una voce secondaria e non accade nulla, si spezza l'incanto dell'interazione: delimitare sempre l'area del compito da svolgere."
+      },
+      {
+        "question": "Qual è la differenza tra un 'Prototipo Orizzontale' e un 'Prototipo Verticale'?",
+        "options": [
+          "Il prototipo orizzontale mostra l'intera ampiezza delle sezioni del sito ma con pochissima profondità (tante schermate ma pochi passaggi cliccabili); il verticale esplora un singolo flusso dall'inizio alla fine con massima profondità",
+          "L'orizzontale si usa solo su tablet e il verticale solo su smartphone",
+          "L'orizzontale riguarda solo la grafica e il verticale solo il codice di programmazione",
+          "Non sussiste alcuna distinzione tecnica, essendo sinonimi commerciali"
+        ],
+        "correctIndex": 0,
+        "explanation": "Orizzontale dà la panoramica dello zoo (mostra tutte le gabbie da lontano); Verticale scava a fondo nella gabbia del leone (testa l'intero checkout passo dopo passo con tutti i dettagli e gli errori possibili)."
+      },
+      {
+        "question": "Perché si dice che 'Un prototipo vale più di mille riunioni' (A prototype is worth a thousand meetings)?",
+        "options": [
+          "Perché trasforma discussioni astratte, opinioni soggettive e incomprensioni teoriche in un artefatto tangibile che tutti possono toccare, usare e valutare sui fatti",
+          "Perché i programmatori non hanno il permesso di partecipare alle riunioni aziendali",
+          "Perché la legge vieta di tenere più di tre riunioni alla settimana nei paesi europei",
+          "Perché i file di prototipazione occupano meno spazio rispetto ai verbali scritti"
+        ],
+        "correctIndex": 0,
+        "explanation": "Massima celebre di IDEO: in riunione il marketing immagina una cosa e lo sviluppo un'altra, scontrandosi per ore. Portate un prototipo interattivo sul tavolo: i dubbi svaniscono e il team si allinea in 5 minuti."
+      }
+    ]
+  }
+}

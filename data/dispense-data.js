@@ -1,4 +1,4 @@
-// Dati di studio approfonditi estratti da 'Dispense professore.pdf'
+// Dispense del professore strutturate per lo studio approfondito del Web Design
 window.DISPENSE_DATA = [
   {
     "id": "dispense-c1",
@@ -29,65 +29,100 @@ window.DISPENSE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Secondo il modello illustrato nelle dispense, qual è la funzione primaria del designer nella trasmissione del messaggio?",
+        "question": "Secondo la definizione teleologica del design (ripresa anche da Bruno Munari), quale distinzione separa fondamentalmente il design dall'arte pura?",
         "options": [
-          "Imporre un proprio stile visivo soggettivo indipendentemente dagli obiettivi dell'emittente",
-          "Costruire analogie visive mirate che colleghino le intenzioni del mittente ai modelli del destinatario",
-          "Aggiungere ornamenti estetici a un messaggio già interamente codificato e immodificabile",
-          "Sostituirsi integralmente al destinatario anticipandone ogni decisione di acquisto"
-        ],
-        "correctIndex": 1,
-        "explanation": "Il designer agisce come mediatore attivo: traduce gli obiettivi astratti del mittente in un linguaggio visivo comprensibile ed efficace per il destinatario."
-      },
-      {
-        "question": "Per quale motivo la percezione di attributi come 'divertente' o 'serio' varia tra diversi utenti?",
-        "options": [
-          "Perché la decodifica del messaggio visivo è filtrata dal background culturale e dalle attese del ricevente",
-          "A causa esclusivamente delle diverse impostazioni di calibrazione cromatica dei monitor digitali",
-          "Perché tali concetti dipendono unicamente dalla velocità di caricamento delle pagine web",
-          "In quanto le convenzioni tipografiche non possiedono alcun legame con la storia sociale"
+          "L'arte persegue primariamente l'espressione soggettiva dell'autore, mentre il design è un'attività progettuale volta a risolvere problemi concreti di comunicazione e d'uso per un destinatario",
+          "Il design non ammette l'impiego del colore né della creatività visiva, limitandosi al calcolo matematico",
+          "L'arte si occupa unicamente di oggetti tridimensionali, mentre il design riguarda esclusivamente supporti bidimensionali",
+          "Non sussiste alcuna differenza reale, trattandosi di discipline coincidenti per metodologie e scopi"
         ],
         "correctIndex": 0,
-        "explanation": "La semiotica del design insegna che il significato delle analogie visive non è innato ma scaturisce dalle convenzioni culturali del destinatario."
+        "explanation": "A differenza dell'arte pura, il design è un'attività teleologica (orientata a uno scopo): risponde a specifici bisogni funzionali, contestuali e informativi di un pubblico identificato."
       },
       {
-        "question": "Cosa si intende per 'rumore comunicativo' nel contesto della progettazione visiva?",
+        "question": "Nella dinamica comunicativa 'Mittente — Progettista — Destinatario', quale ruolo nodale compete al designer?",
         "options": [
-          "Il segnale audio o sonoro riprodotto automaticamente durante la visita a una pagina web",
-          "Qualsiasi ambiguità, distrazione o incoerenza grafica che ostacola la corretta ricezione del messaggio",
-          "L'eccessiva quantità di codice CSS caricata dal browser durante il primo rendering visivo",
-          "Il volume delle conversazioni tra designer e stakeholder durante le riunioni di brief"
+          "Sostituirsi al committente ridefinendo gli obiettivi economici dell'azienda secondo il proprio gusto artistico",
+          "Agire da mediatore e interprete visivo, traducendo il messaggio del mittente in forme comprensibili ed efficaci per le capacità percettive del destinatario",
+          "Limitarsi a impaginare testi preconfezionati senza intervenire sulla gerarchia delle informazioni",
+          "Eliminare ogni elemento visivo a favore del solo testo alfabetico per massimizzare la leggibilità"
         ],
         "correctIndex": 1,
-        "explanation": "Il rumore comunicativo è ogni elemento di disturbo percettivo, incoerenza stilistica o confusione strutturale che devia l'attenzione dal nucleo del messaggio."
+        "explanation": "Il designer opera come ponte cognitivo: comprende le intenzioni del mittente e le modella attraverso gerarchia visiva, tipografia e layout affinché il destinatario le decodifichi con il minimo sforzo."
       },
       {
-        "question": "Quale ruolo svolge la cultura visiva pregressa del designer nella creazione di interfacce?",
+        "question": "In che modo l'usabilità interagisce con la componente estetica di un manufatto digitale secondo i principi moderni di design?",
         "options": [
-          "Consente di selezionare figure retoriche e analogie visive più accurate ed efficaci per il target",
-          "Permette di evitare del tutto l'esecuzione di test con utenti prima del lancio commerciale",
-          "Garantisce che ogni progetto grafico risulti gradito a qualsiasi fascia demografica di utenti",
-          "Serve esclusivamente a velocizzare la stesura del codice front-end in HTML e CSS"
-        ],
-        "correctIndex": 0,
-        "explanation": "Un ricco bagaglio di riferimenti visivi permette al designer di utilizzare metafore ed espressioni formali calibrate sulle specifiche capacità interpretative del pubblico."
-      },
-      {
-        "question": "In che termini il design si differenzia dalla pura decorazione artistica personale?",
-        "options": [
-          "Il design impiega solo figure geometriche regolari mentre l'arte impiega forme libere",
-          "L'arte richiede software vettoriali avanzati mentre il design si affida a tecniche tradizionali",
-          "Il design persegue l'efficacia funzionale e comunicativa orientata a un utente, non la mera espressione",
-          "Non sussiste alcuna differenza reale, trattandosi di discipline formalmente coincidenti"
+          "L'estetica è irrilevante: un'interfaccia usabile deve essere priva di qualsiasi cura cromatica o compositiva",
+          "L'usabilità riguarda solo il codice di programmazione server-side e non impatta l'esperienza utente",
+          "L'estetica e l'usabilità sono sinergiche: una buona estetica riduce la frizione percepita (Aesthetic-Usability Effect) ma non può compensare gravi falle funzionali o di flusso",
+          "Un'estetica accattivante rende superflua qualsiasi verifica di facilità d'uso o accessibilità"
         ],
         "correctIndex": 2,
-        "explanation": "A differenza dell'arte pura, il design è un'attività orientata a uno scopo (teleologica), progettata per risolvere problemi e comunicare con destinatari specifici."
+        "explanation": "La ricerca empirica (Kurosu e Kashimura, Norman) dimostra l'Aesthetic-Usability Effect: gli utenti percepiscono interfacce esteticamente armoniose come più facili da usare, purché la struttura di supporto sia solida."
+      },
+      {
+        "question": "Cosa si intende per 'rumore' (noise) all'interno del processo di comunicazione visiva?",
+        "options": [
+          "Il volume sonoro emesso dai dispositivi hardware durante la navigazione web",
+          "La risoluzione in megapixel dei display ad altissima densità",
+          "La velocità di trasmissione in gigabit della connessione a fibra ottica",
+          "Qualsiasi interferenza visiva, sovraccarico informativo o incoerenza grafica che ostacola la corretta ricezione del messaggio"
+        ],
+        "correctIndex": 3,
+        "explanation": "Nel modello classico di Shannon-Weaver applicato alla grafica, il rumore è ogni fattore di disturbo: clutter visivo, contrasti insufficienti, font illeggibili o layout caotici che degradano il segnale informativo."
+      },
+      {
+        "question": "Quale principio stabilisce che la forma di un oggetto debba discendere direttamente dalla funzione che è chiamato a svolgere?",
+        "options": [
+          "L'assioma razionalista 'Form follows function' (La forma segue la funzione) di Louis Sullivan e del Bauhaus",
+          "Il principio decostruzionista dell'ornamento primario di Robert Venturi",
+          "La teoria del caos visivo applicata al responsive design",
+          "La legge di Fitts sulla velocità dei puntatori mouse"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il principio 'Form follows function' ha plasmato il design moderno: la configurazione formale, i comandi e la disposizione visiva devono essere subordinati allo scopo pratico e comunicativo dell'oggetto."
       }
     ],
     "openQuestions": [
       {
         "question": "Spiega come il designer si colloca tra mittente e destinatario e perché la sua funzione non è puramente estetica.",
         "modelAnswer": "Il designer funge da traduttore e ponte cognitivo: analizza il messaggio e gli obiettivi del mittente e li adatta alle capacità percettive del destinatario. La funzione non è puramente estetica perché la grafica orienta l'attenzione, stabilisce gerarchie di importanza, facilita la scansione visiva e permette all'utente di compiere azioni corrette senza esitazioni o fraintendimenti."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Un committente richiede di inserire animazioni continue, musica di sottofondo e grafiche decorative in tutte le schermate di un portale di pagamenti tributari. Quale argomentazione professionale di design ne sconsiglia l'adozione?",
+        "options": [
+          "Il design teleologico vieta espressamente l'utilizzo di colori vivaci nei servizi pubblici",
+          "I browser moderni bloccano qualsiasi sito contenente più di tre colori primari",
+          "Tali elementi aumentano il rumore visivo e il carico cognitivo dell'utente, rallentando il compimento del task e violando i principi di usabilità funzionale",
+          "L'impiego di animazioni riduce automaticamente la larghezza di banda del server"
+        ],
+        "correctIndex": 2,
+        "explanation": "Nei sistemi transazionali il design teleologico esige linearità, trasparenza e minimo sforzo cognitivo: elementi superflui generano distrazione visiva e frustrazione operativa."
+      },
+      {
+        "question": "Nella celebre riflessione di Bruno Munari 'Da cosa nasce cosa', come viene descritto il metodo progettuale?",
+        "options": [
+          "Come un atto mistico e imperscrutabile riservato a geni solitari privi di vincoli",
+          "Come la replica seriale di stili storici del passato senza alcuna sperimentazione",
+          "Come la mera applicazione di griglie matematiche senza considerazione per l'utente umano",
+          "Come una serie logica e iterativa di fasi: definizione del problema, scomposizione in elementi, analisi dei dati, creatività vincolata e verifica empirica"
+        ],
+        "correctIndex": 3,
+        "explanation": "Munari demistifica la creatività: il metodo progettuale è un percorso analitico e rigoroso in cui i vincoli e la scomposizione del problema guidano verso soluzioni eleganti e funzionali."
+      },
+      {
+        "question": "Qual è il rischio principale quando un team di sviluppo confonde il 'Problem Framing' con la scelta anticipata della tecnologia?",
+        "options": [
+          "Si rischia di implementare con perizia tecnica la soluzione sbagliata a un problema non compreso o inesistente per gli utenti",
+          "Il codice sorgente perde la conformità con lo standard ECMAScript",
+          "I file CSS non possono essere minificati per la produzione",
+          "L'interfaccia non può essere visualizzata su sistemi operativi Linux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il Problem Framing indaga il 'cosa' e il 'perché' prima del 'come': scegliere in anticipo una libreria o un formato senza aver compreso le reali necessità d'uso conduce al fallimento dell'esperienza."
       }
     ]
   },
@@ -120,65 +155,100 @@ window.DISPENSE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Secondo le dispense, in quale livello rientrano i feedback visivi al passaggio del mouse e le transizioni di caricamento?",
+        "question": "Secondo le dispense, in quale livello strutturale del digitale rientrano i feedback visivi alle azioni dell'utente, gli stati :hover e le animazioni di caricamento?",
         "options": [
-          "Nel livello dell'Architettura Server",
+          "Nel livello dell'Interfaccia grafica statica (UI pura)",
           "Nel livello del Comportamento (Interaction Design)",
-          "Nel livello dello Style Tile",
-          "Nel livello della Semantica Tipografica"
+          "Nel livello dell'Architettura Hardware del client",
+          "Nel livello del Flusso globale (User Flow)"
         ],
         "correctIndex": 1,
-        "explanation": "Il Comportamento definisce la reattività dinamica del sistema e i feedback visivi innescati dalle azioni dell'utente sullo schermo."
+        "explanation": "Il Comportamento descrive la reattività dinamica e la dimensione temporale del sistema: cosa accade a fronte di un'azione dell'utente (microinterazioni, feedback di transizione, stati attivi ed errori)."
       },
       {
-        "question": "Cosa definisce il 'Flusso' (User Flow) all'interno di un'applicazione o sito web?",
+        "question": "Cosa descrive il 'Flusso' (User Flow) all'interno dell'architettura dell'esperienza digitale?",
         "options": [
-          "La velocità di trasmissione dati tra la scheda di rete e il server di hosting",
-          "La sequenza temporale e logica di schermate per consentire all'utente di compiere un task",
-          "Il numero totale di caratteri tipografici impiegati all'interno della pagina principale",
-          "L'alternanza dei colori complementari stabiliti all'interno della guida di stile"
-        ],
-        "correctIndex": 1,
-        "explanation": "Il flusso rappresenta il percorso strutturato passo dopo passo che guida l'utente dall'inizio alla conclusione del suo obiettivo."
-      },
-      {
-        "question": "Perché la fase di 'Problem Framing' è considerata prioritaria rispetto al 'Problem Solving'?",
-        "options": [
-          "Perché scrivere codice HTML privo di CSS richiede l'approvazione preliminare del cliente",
-          "Perché risolvere con grande cura il problema sbagliato non genera alcun reale valore per l'utente",
-          "In quanto il problem framing riduce automaticamente i costi di hosting del server cloud",
-          "Perché consente di delegare l'intera progettazione grafica a librerie esterne prefabbricate"
-        ],
-        "correctIndex": 1,
-        "explanation": "Inquadrare correttamente il problema (Framing) garantisce che gli sforzi progettuali siano indirizzati verso i veri bisogni e non su supposizioni sterili."
-      },
-      {
-        "question": "Se un sito possiede una grafica elegante ma presenta passaggi contorti per concludere l'acquisto, cosa ne consegue?",
-        "options": [
-          "L'interfaccia eccellente compensa integralmente qualsiasi difetto presente nel percorso",
-          "L'esperienza utente complessiva (UX) risulta gravemente compromessa dal fallimento del flusso",
-          "Il browser web corregge autonomamente il codice del flusso per agevolare la navigazione",
-          "Il comportamento dinamico del sistema viene disattivato automaticamente dal server"
-        ],
-        "correctIndex": 1,
-        "explanation": "La UX nasce dall'equilibrio armonico di interfaccia, comportamento e flusso; se uno dei tre pilastri cede, l'esperienza globale fallisce."
-      },
-      {
-        "question": "Quale peculiarità distingue un manufatto digitale rispetto a un'opera a stampa tradizionale?",
-        "options": [
-          "Il prodotto digitale viene concepito una sola volta e non subisce mai aggiornamenti",
-          "Il supporto a stampa permette interazioni reattive mentre il web è puramente statico",
-          "Il prodotto digitale è dinamico, monitorabile nei dati e sottoposto a continue iterazioni",
-          "La stampa consente di modificare il layout istantaneamente dopo la pubblicazione"
+          "La frequenza di campionamento delle tracce audio inserite nelle pagine web",
+          "La velocità di trasmissione dei pacchetti TCP/IP tra client e server",
+          "La sequenza logica, temporale e funzionale di passaggi e schermate che collegano il punto di partenza dell'utente al compimento del suo obiettivo",
+          "La quantità di memoria virtuale allocata dal browser per il rendering del DOM"
         ],
         "correctIndex": 2,
-        "explanation": "Il digitale ha una natura iterativa: viene costantemente misurato mediante analytics e test di usabilità, evolvendo nel corso del tempo."
+        "explanation": "Lo User Flow mappa il viaggio dell'utente schermata dopo schermata: ad esempio, dalla ricerca del prodotto al carrello fino alla schermata di conferma del pagamento."
+      },
+      {
+        "question": "Quale formula sintetizza la visione olistica del design digitale proposta nel testo?",
+        "options": [
+          "Tipografia + Palette cromatica = Architettura dell'Informazione",
+          "HTML + CSS = Web Application",
+          "Grafica vettoriale * Risoluzione schermo = Usabilità",
+          "Interfaccia + Comportamento + Flusso = User Experience (UX)"
+        ],
+        "correctIndex": 3,
+        "explanation": "La User Experience è la risultante sistemica e inscindibile di ciò che si vede (Interfaccia), di come reagisce il sistema (Comportamento) e di come sono coordinati i passaggi (Flusso)."
+      },
+      {
+        "question": "In cosa differisce concettualmente un artefatto digitale da un prodotto grafico destinato alla stampa tradizionale?",
+        "options": [
+          "Il prodotto digitale è intrinsecamente dinamico, iterativo, reattivo al contesto d'uso e suscettibile di continuo aggiornamento empirico",
+          "Il digitale non impiega mai elementi tipografici né regole di composizione visiva",
+          "La stampa richiede l'uso esclusivo del linguaggio di marcatura XML",
+          "Il prodotto a stampa è interattivo mentre quello digitale è immutabile nel tempo"
+        ],
+        "correctIndex": 0,
+        "explanation": "A differenza della stampa (scultura conclusa e definitiva), il software e il web sono 'organismi vivi' plasmati dall'interazione in tempo reale e dall'evoluzione continua basata sui dati."
+      },
+      {
+        "question": "Qual è il focus distintivo della fase di 'Problem Framing'?",
+        "options": [
+          "Scrivere immediatamente il codice JavaScript per gestire le chiamate asincrone",
+          "Comprendere, circoscrivere e validare la natura del problema reale prima di ipotizzare qualsiasi soluzione esecutiva",
+          "Disegnare pixel per pixel il mockup definitivo ad altissima fedeltà",
+          "Definire i contratti legali di licenza del software"
+        ],
+        "correctIndex": 1,
+        "explanation": "Il Framing evita di gettarsi impulsivamente a progettare: analizza il contesto, scardina supposizioni non provate e garantisce che il team risponda al vero bisogno dell'utente."
       }
     ],
     "openQuestions": [
       {
         "question": "Definisci i concetti di Interfaccia, Comportamento e Flusso, spiegando come concorrono alla User Experience.",
         "modelAnswer": "L'interfaccia rappresenta il livello visivo e spaziale degli elementi con cui l'utente interagisce. Il comportamento riguarda la risposta dinamica del sistema agli stimoli dell'utente (feedback, cambi di stato, microinterazioni). Il flusso è l'architettura dei passaggi che collegano gli stati del sistema per consentire il completamento di un task. Dalla corretta sinergia di questi tre livelli nasce l'esperienza utente (UX): se uno di essi è difettoso (es. flusso contorto o assenza di feedback), l'intera UX ne risulta compromessa."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Un'applicazione bancaria presenta una grafica impeccabile (UI eccellente) e transizioni reattive (ottimo comportamento), ma per effettuare un bonifico richiede 14 passaggi tortuosi e dispersivi. Su quale livello risiede il fallimento?",
+        "options": [
+          "Sul livello dell'Interfaccia (UI)",
+          "Sul livello del DNS",
+          "Sul livello della compilazione del server",
+          "Sul livello del Flusso (User Flow)"
+        ],
+        "correctIndex": 3,
+        "explanation": "Il cedimento si colloca nello User Flow: la navigazione e i passaggi procedurali sono mal strutturati, invalidando l'intera User Experience nonostante la bellezza estetica della singola schermata."
+      },
+      {
+        "question": "Cosa si intende per 'Interaction Design' (IxD) all'interno del design digitale?",
+        "options": [
+          "La disciplina che definisce la struttura e il comportamento dei sistemi interattivi, facilitando il dialogo tra persone e tecnologia",
+          "La progettazione dei modelli relazionali per database SQL",
+          "L'attività commerciale di vendita degli spazi pubblicitari banner",
+          "La procedura di calibrazione cromatica delle stampanti offset industriali"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'IxD crea interazioni comprensibili ed eleganti, curando come il sistema risponde agli input (tocco, click, voce), minimizzando gli errori e fornendo conferme immediate di stato."
+      },
+      {
+        "question": "Perché un prototipo interattivo 'a media fedeltà' (wireframe navigabile) è fondamentale prima della fase di sviluppo codice?",
+        "options": [
+          "Sostituisce definitivamente la necessità di avere programmatori nel team",
+          "Permette di validare flussi e gerarchie informative con utenti reali a costi minimi, prima di immobilizzare risorse nello sviluppo finale",
+          "Garantisce che l'applicazione occupi meno di 10 kilobyte sul server",
+          "Risolve automaticamente le problematiche legali sul copyright"
+        ],
+        "correctIndex": 1,
+        "explanation": "I prototipi consentono l'apprendimento precoce e a basso costo: testare precocemente il flusso permette di correggere errori di architettura che in fase di codice costerebbero 10 volte tanto."
       }
     ]
   },
@@ -211,65 +281,100 @@ window.DISPENSE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Cosa dimostrò Jan Tschichold nei suoi trattati sulla 'Nuova Tipografia'?",
+        "question": "Quale celebre metafora utilizza Riccardo Falcinelli per spiegare il concetto e lo scopo del 'Layout' grafico?",
         "options": [
-          "Che le gabbie modulari e gli allineamenti razionali migliorano drasticamente leggibilità e ordine",
-          "Che ogni composizione grafica deve obbligatoriamente adottare caratteri gotici e simmetria rigida",
-          "Che l'impiego di immagini a colori rende del tutto superfluo l'uso di griglie compositive",
-          "Che il testo deve occupare il 100% dello spazio disponibile sulla pagina per non sprecare carta"
+          "La costruzione di una cattedrale gotica dalle fondamenta ai pinnacoli",
+          "La composizione di una partitura orchestrale per soli strumenti a fiato",
+          "L'apparecchiare una tavola da pranzo: disporre gli oggetti con ordine logico e funzionalità affinché il commensale sappia subito come muoversi",
+          "La navigazione marittima a vista in condizioni di tempesta notturna"
+        ],
+        "correctIndex": 2,
+        "explanation": "Falcinelli paragona il layout all'apparecchiatura della tavola: posate, piatti e bicchieri hanno posizioni canoniche e funzionali che comunicano istantaneamente senso, ordine e modalità d'uso."
+      },
+      {
+        "question": "In base alle leggi della Gestalt, cosa stabilisce il 'Principio di Prossimità' nella composizione visiva?",
+        "options": [
+          "Gli elementi con font serif non possono mai essere affiancati a elementi con font sans-serif",
+          "Gli elementi con colori caldi sembrano sempre fisicamente più vicini rispetto a quelli freddi",
+          "Le immagini devono trovarsi a una distanza esatta di 10 centimetri dal bordo dello schermo",
+          "Elementi spazialmente vicini tra loro vengono percepiti automaticamente dal cervello come appartenenti alla medesima unità o categoria concettuale"
+        ],
+        "correctIndex": 3,
+        "explanation": "La prossimità spaziale è uno dei raggruppamenti gestaltici primari: riducendo lo spazio tra elementi correlati e aumentandolo verso elementi estranei, si creano gruppi logici chiari e intuitivi."
+      },
+      {
+        "question": "Qual è il ruolo progettuale dello 'Spazio Bianco' (Negative Space) all'interno di un'interfaccia?",
+        "options": [
+          "Un elemento attivo di composizione che conferisce respiro, isola i punti focali, riduce l'affaticamento percettivo e definisce le gerarchie",
+          "È uno spreco di pixel che andrebbe colmato inserendo quanti più banner e testi possibili",
+          "Un vincolo imposto dai browser per limitare l'uso della memoria video",
+          "Un errore di layout causato dal mancato caricamento del file CSS"
         ],
         "correctIndex": 0,
-        "explanation": "Tschichold teorizzò l'uso della griglia, dell'asimmetria funzionale e della gerarchia visiva per trasformare la tipografia in uno strumento moderno e leggibile."
+        "explanation": "Lo spazio negativo non è 'vuoto inerte': è lo strumento compositivo più potente per guidare lo sguardo, stabilire pause cognitive e separare blocchi informativi."
       },
       {
-        "question": "In base al principio della Prossimità (Gestalt), cosa percepisce la mente umana?",
+        "question": "Quale principio della percezione visiva impone che due elementi con funzioni o pesi gerarchici differenti appaiano visivamente molto diversi?",
         "options": [
-          "Gli elementi colorati con tinte calde vengono interpretati come geograficamente più vicini",
-          "Gli oggetti collocati fisicamente vicini nello spazio vengono raggruppati nella medesima unità logica",
-          "I testi scritti in caratteri sans-serif vengono elaborati più rapidamente dei caratteri graziati",
-          "Tutti gli elementi dotati di bordo spesso vengono isolati come minacce visive per l'utente"
+          "Il principio di omologazione simmetrica",
+          "Il principio di Contrasto (per dimensione, peso, colore o orientamento)",
+          "La legge della chiusura monocromatica",
+          "La regola aurea del bilanciamento isometrico"
         ],
         "correctIndex": 1,
-        "explanation": "La legge della prossimità stabilisce che la vicinanza spaziale è il primo fattore automatico di raggruppamento percettivo impiegato dal cervello."
+        "explanation": "Il contrasto evita ambiguità: se due elementi sono solo leggermente diversi, generano conflitto e confusione visiva. La differenza formale deve essere netta e decisa per chiarire la gerarchia."
       },
       {
-        "question": "Quale funzione costruttiva svolge lo Spazio Bianco (Negative Space) all'interno di un'interfaccia?",
+        "question": "Cosa garantisce l'Allineamento rigoroso degli elementi lungo assi verticali e orizzontali condivisi?",
         "options": [
-          "Serve esclusivamente come area di scorta per inserire futuri annunci pubblicitari",
-          "Separa i blocchi di contenuto, riduce il carico visivo e orienta l'occhio verso i punti focali",
-          "Indica che il designer non ha completato la stesura dei testi della pagina web",
-          "Rallenta intenzionalmente la lettura dell'utente per aumentare il tempo medio di sessione"
+          "Obbliga il motore di rendering a disattivare la scheda video",
+          "Impedisce agli utenti di visualizzare la pagina su monitor widescreen",
+          "Genera connessioni visive invisibili ma potenti, conferendo ordine, coerenza strutturale e ritmo di scansione",
+          "Rallenta la scansione visiva forzando l'utente a leggere ogni singola parola"
         ],
-        "correctIndex": 1,
-        "explanation": "Lo spazio negativo è una componente attiva del design: dona respiro, definisce i confini dei gruppi e valorizza il contenuto primario."
-      },
-      {
-        "question": "Qual è la differenza sostanziale tra l'unità di misura CSS 'em' e l'unità 'rem'?",
-        "options": [
-          "Il valore 'em' si riferisce alla larghezza del monitor, mentre 'rem' si riferisce all'altezza",
-          "L'unità 'em' è scalabile sul font del genitore, mentre 'rem' fa riferimento unicamente alla radice html",
-          "Il valore 'rem' funziona solo con caratteri serif, mentre 'em' richiede font monospazio",
-          "Non sussiste alcuna differenza pratica, trattandosi di sinonimi intercambiabili nel codice"
-        ],
-        "correctIndex": 1,
-        "explanation": "'rem' (root em) è ancorato alla dimensione del font dichiarata sul tag radice `html`, evitando i problemi di moltiplicazione cumulativa tipici di 'em'."
-      },
-      {
-        "question": "Cosa accade se in un layout il contrasto tra il titolo primario e il testo del paragrafo è appena accennato?",
-        "options": [
-          "La pagina risulta più elegante poiché priva di elementi graficamente invasivi",
-          "La gerarchia informativa diventa ambigua e l'utente fatica a scandire i blocchi di lettura",
-          "I motori di ricerca indicizzano automaticamente il titolo assegnandogli massima priorità",
-          "Il browser aumenta autonomamente il peso tipografico del titolo per correggere l'errore"
-        ],
-        "correctIndex": 1,
-        "explanation": "Un contrasto debole o timido genera confusione gerarchica: l'occhio non comprende se si tratti di due elementi distinti o di una svista d'impaginazione."
+        "correctIndex": 2,
+        "explanation": "Nulla deve apparire posizionato per caso: allineare elementi a un asse comune crea pulizia, guida l'occhio e trasmette solidità e professionalità."
       }
     ],
     "openQuestions": [
       {
         "question": "Spiega i 4 principi cardine del layout descritti nelle dispense e fornisci un esempio pratico di applicazione per ciascuno.",
         "modelAnswer": "I 4 principi sono: 1. Contrasto: differenziare in modo netto pesi e scale (es. titolo h1 a 32px bold scuro rispetto a testo body a 16px regular). 2. Prossimità: raggruppare visivamente elementi correlati (es. distanza minima tra etichetta input e relativo campo modulo). 3. Spazio Bianco: isolare i blocchi informativi con padding generoso per facilitare la scansione senza soffocare la pagina. 4. Allineamento: ancorare tutti i blocchi a una griglia invisibile (es. allineamento a sinistra comune tra logo, titoli e card di contenuto)."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "In una pagina web di notizie, il titolo di un articolo si trova a 24px di distanza dal paragrafo del testo sottostante, ma a soli 8px dal paragrafo dell'articolo precedente. Quale principio fondamentale della Gestalt è gravemente violato?",
+        "options": [
+          "Il principio di Prossimità",
+          "Il principio di Destino Comune",
+          "Il principio di Buona Forma",
+          "Il principio di Esperienza Passata"
+        ],
+        "correctIndex": 0,
+        "explanation": "La legge di prossimità impone che il titolo stia più vicino al proprio testo che non ai contenuti precedenti. Una spaziatura invertita fa percepire erroneamente il titolo come conclusione del blocco precedente."
+      },
+      {
+        "question": "Cosa si intende per 'Gerarchia Visiva' all'interno di una pagina web?",
+        "options": [
+          "L'ordine di grandezza dei server all'interno del data center",
+          "L'organizzazione degli elementi visivi in modo da comunicare istantaneamente l'ordine di importanza e guidare la sequenza di lettura dell'occhio",
+          "La gerarchia di permessi di accesso per gli utenti amministratori del database",
+          "La graduatoria dei siti web più visitati secondo le classifiche di traffico"
+        ],
+        "correctIndex": 1,
+        "explanation": "La gerarchia visiva assegna priorità: l'occhio deve cogliere per primo il messaggio principale (H1, hero), poi i livelli intermedi (H2, categorie) e infine i dettagli analitici (corpo del testo)."
+      },
+      {
+        "question": "Perché l'uso eccessivo e indistinto di elementi ad alto contrasto (troppi colori accesi, badge intermittenti, testi evidenziati) annulla l'efficacia del contrasto stesso?",
+        "options": [
+          "Perché il browser attiva la modalità scala di grigi di emergenza",
+          "Perché i monitor a LED non possono visualizzare più di due colori contrastanti contemporaneamente",
+          "Perché quando tutto urla per attirare l'attenzione, nulla si distingue più e si genera saturazione sensoriale",
+          "Perché le specifiche W3C vietano la combinazione di più di tre colori primari"
+        ],
+        "correctIndex": 2,
+        "explanation": "Il contrasto vive di complementarità con la quiete visiva: se ogni elemento compete per essere primario, l'occhio non trova ancoraggi e l'utente sperimenta sovraccarico percettivo."
       }
     ]
   },
@@ -302,65 +407,100 @@ window.DISPENSE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Per quale motivo font digitali con un'ampia 'x-height' sono considerati ideali per il testo di lettura su schermi web?",
+        "question": "Quale modello cromatico additivo è impiegato dai display digitali (monitor, smartphone, tablet) per generare i colori attraverso l'emissione di luce?",
         "options": [
-          "Perché occupano meno spazio nella memoria RAM della scheda video del dispositivo",
-          "Perché mantengono le lettere minuscole ben distinte e leggibili anche a corpi di testo ridotti",
-          "Perché impediscono al browser di eseguire il download di caratteri esterni da Google Fonts",
-          "Perché forzano l'utente a leggere più lentamente aumentando l'assorbimento cognitivo"
+          "Il modello sottrattivo CMYK (Ciano, Magenta, Giallo, Nero)",
+          "Il modello di campionamento Lab a quadrupla densità",
+          "Il modello monocromatico Pantone Matching System",
+          "Il modello additivo RGB (Rosso, Verde, Blu)"
         ],
-        "correctIndex": 1,
-        "explanation": "L'ampia x-height ingrandisce la porzione centrale delle minuscole, rendendo i caratteri nitidi e immediatamente riconoscibili anche a basse risoluzioni."
+        "correctIndex": 3,
+        "explanation": "I display digitali generano i colori emettendo luce tramite pixel RGB: la somma alla massima intensità dei tre canali (255, 255, 255) genera il bianco puro (sintesi additiva)."
       },
       {
-        "question": "Quale tra le seguenti affermazioni descrive con accuratezza il carattere 'Helvetica'?",
+        "question": "Secondo le linee guida internazionali WCAG 2.1 a livello AA, quale rapporto minimo di contrasto cromatico deve sussistere tra testo standard e sfondo?",
         "options": [
-          "È un carattere graziato del periodo rinascimentale progettato unicamente per libri liturgici",
-          "È un sans-serif svizzero neutrale e funzionale, disegnato per non sovrapporre una voce propria al messaggio",
-          "È un font corsivo decorativo concepito per simulare la calligrafia a mano libera su pergamena",
-          "È un carattere monospazio creato esclusivamente per i terminali a riga di comando di Unix"
+          "Almeno 4.5:1 per testo normale (e 3.0:1 per testo grande oltre 18pt/24px)",
+          "Almeno 3.0:1 per testo normale e 1.5:1 per testo grande",
+          "Almeno 2.0:1",
+          "Almeno 10.0:1 per qualsiasi elemento grafico"
         ],
-        "correctIndex": 1,
-        "explanation": "Disegnato nel 1957 da Miedinger e Hoffmann, Helvetica incarna l'ideale svizzero di neutralità e massima chiarezza razionale."
+        "correctIndex": 0,
+        "explanation": "La soglia WCAG AA impone un contrasto di almeno 4.5:1 per testo normale. Questa proporzione garantisce leggibilità a persone con ipovisione o alterata sensibilità cromatica, oltre che sotto luce solare diretta."
       },
       {
-        "question": "Quale valore di interlinea (line-height) è generalmente raccomandato per garantire la leggibilità di un paragrafo web?",
+        "question": "Nel sistema cromatico HSL, cosa rappresentano rispettivamente le tre coordinate?",
         "options": [
-          "Un valore pari a 0.8 volte la dimensione del font per compattare il testo ed evitare lo scrolling",
-          "Un valore compreso indicativamente tra 1.4 e 1.6 volte il font-size per far respirare le righe",
-          "Un valore rigorosamente fisso a 10 pixel a prescindere dalla grandezza effettiva dei caratteri",
-          "Un valore infinito gestito unicamente dall'accelerazione hardware della scheda grafica"
+          "High-definition, Shadow, Luminance",
+          "Hue (Tonalità/Tinta in gradi da 0° a 360°), Saturation (Saturazione in %), Lightness (Luminosità in %)",
+          "Hardware, System, Layout",
+          "Horizontal, Symmetrical, Linear"
         ],
         "correctIndex": 1,
-        "explanation": "Un'interlinea proporzionale tra 1.4 e 1.6 (o 140%-160%) evita che le aste ascendenti e discendenti si tocchino, guidando l'occhio da una riga all'altra."
+        "explanation": "HSL è il modello più intuitivo per i designer: Hue individua il punto sulla ruota cromatica (0° rosso, 120° verde, 240° blu), la saturazione ne definisce la purezza e la luminosità il grado di chiarezza."
       },
       {
-        "question": "In quale categoria rientrano font come Courier, Consolas e Fira Code?",
+        "question": "Perché è considerato un grave errore di usabilità e accessibilità affidare il significato di un'informazione (es. stato di errore o successo) unicamente al colore?",
         "options": [
-          "Nella categoria dei caratteri Display ad alto impatto decorativo",
-          "Nella categoria dei caratteri Monospaced a spaziatura fissa e costante per ogni glifo",
-          "Nella categoria dei caratteri Serif con grazie ad angolo retto (Slab Serif)",
-          "Nella categoria dei font calligrafici Script basati su corsivo inglese"
+          "Perché i browser mobili convertono tutti i colori in toni di grigio durante il caricamento",
+          "Perché i motori di ricerca indicizzano solo il testo in bianco e nero",
+          "Perché le persone daltoniche (es. con deuteranopia o protanopia) non riuscirebbero a distinguere lo stato senza icone o testi di supporto",
+          "Perché i file CSS non consentono la dichiarazione di colori per i messaggi di form"
         ],
-        "correctIndex": 1,
-        "explanation": "Nei font monospazio ogni carattere occupa esattamente lo stesso ingombro orizzontale, rendendoli ideali per codice sorgente e allineamenti numerici."
+        "correctIndex": 2,
+        "explanation": "Circa l'8% degli uomini e lo 0.5% delle donne presentano forme di daltonismo (spesso rosso/verde). Il colore deve sempre essere accompagnato da forme, icone, testi o pattern distintivi."
       },
       {
-        "question": "Qual è il criterio primario che deve guidare il visual designer nella selezione della coppia di font per un'interfaccia?",
+        "question": "Come si definiscono due colori collocati in posizioni diametralmente opposte sulla ruota cromatica (es. blu e arancione)?",
         "options": [
-          "Scegliere sempre i caratteri più decorati e stravaganti presenti nelle librerie di sistema",
-          "Valutare la destinazione d'uso, la leggibilità funzionale e la coerenza con il tono di voce del progetto",
-          "Impiegare almeno cinque famiglie tipografiche diverse per arricchire la varietà visiva della pagina",
-          "Utilizzare unicamente font proprietari a pagamento per dimostrare il valore commerciale del lavoro"
+          "Colori analoghi",
+          "Colori monocromatici",
+          "Colori acromatici",
+          "Colori complementari"
         ],
-        "correctIndex": 1,
-        "explanation": "La scelta tipografica deve essere dettata dall'ergonomia di lettura, dal contesto operativo dell'utente e dalla risonanza psicologica del brand."
+        "correctIndex": 3,
+        "explanation": "I colori complementari offrono il massimo contrasto cromatico e visivo reciproco: utilizzati con sapienza (uno dominante, l'altro per dettagli/CTA), creano vivacità e dinamismo."
       }
     ],
     "openQuestions": [
       {
         "question": "Descrivi i concetti di Typeface, Font e x-height, spiegando come influenzano la leggibilità di un'interfaccia digitale.",
         "modelAnswer": "La typeface è il disegno concettuale e stilistico della famiglia tipografica (es. Inter, Helvetica, Georgia). Il font è l'implementazione fisica o digitale specifica a un determinato corpo e peso (es. Inter Semi-Bold a 14px). L'x-height è l'altezza delle lettere minuscole prive di aste (come x, c, e). Sul web, una generosa x-height è cruciale perché garantisce che i caratteri rimangano leggibili e riconoscibili anche a basse risoluzioni o su schermi piccoli da smartphone, prevenendo l'affaticamento visivo dell'utente."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Un designer sceglie un testo grigio chiaro (#999999) su sfondo bianco (#FFFFFF) per i campi di un modulo di registrazione. Il contrast ratio risulta di circa 2.8:1. Qual è la valutazione tecnica?",
+        "options": [
+          "È conforme, poiché i campi di input non sono soggetti alle linee guida di accessibilità",
+          "È non conforme alle WCAG AA per testo standard, causando gravi difficoltà di lettura per utenti ipovedenti o su schermi a bassa luminosità",
+          "È un'ottima soluzione minimale raccomandata per alleggerire il carico visivo",
+          "È conforme purché il font utilizzato appartenga alla famiglia Helvetica"
+        ],
+        "correctIndex": 1,
+        "explanation": "Un rapporto di 2.8:1 è insufficiente: viola lo standard minimo di 4.5:1, rendendo il testo praticamente invisibile sotto luce solare o per utenti con cataratta e deficit visivi."
+      },
+      {
+        "question": "Cosa si intende per 'Palette Funzionale' (o semantica) all'interno di un Design System moderno?",
+        "options": [
+          "L'elenco dei colori preferiti dal direttore marketing dell'azienda",
+          "Una raccolta di colori generata in modo casuale ad ogni caricamento di pagina",
+          "La mappatura dei colori su ruoli di sistema specifici (es. Success/Verde, Error/Rosso, Warning/Giallo, Info/Blu, Neutral/Grigi per testi e superfici)",
+          "I colori riservati esclusivamente alla stampa delle brochure promozionali"
+        ],
+        "correctIndex": 2,
+        "explanation": "I colori semantici collegano la cromia a un significato universale e costante: l'utente impara a riconoscere istantaneamente se un avviso è di successo, pericolo o informazione di sistema."
+      },
+      {
+        "question": "Quale fenomeno percettivo descrive l'alterazione del tono di un colore provocata dalla vicinanza o dalla sovrapposizione con un altro colore di sfondo?",
+        "options": [
+          "La latenza gamma del driver video",
+          "L'interferenza termica dei fosfori",
+          "La dispersione refrattiva del silicio",
+          "Il contrasto simultaneo (teorizzato da Michel-Eugène Chevreul)"
+        ],
+        "correctIndex": 3,
+        "explanation": "Il contrasto simultaneo dimostra che nessun colore viene percepito isolato: un grigio neutro appare caldo su sfondo blu e freddo su sfondo arancione, influenzando la leggibilità dell'interfaccia."
       }
     ]
   },
@@ -393,65 +533,100 @@ window.DISPENSE_DATA = [
     ],
     "quiz": [
       {
-        "question": "In base alle linee guida di accessibilità WCAG (livello AA), qual è il contrasto minimo consentito per il testo di lettura ordinario?",
+        "question": "Qual è la differenza tecnica rigorosa tra i termini 'Typeface' e 'Font'?",
         "options": [
-          "Un rapporto di 2:1 per preservare l'eleganza minimalista dei toni pastello",
-          "Un rapporto di almeno 4.5:1 tra il colore del testo e il relativo sfondo",
-          "Un rapporto pari a 10:1 valido unicamente per monitor ad altissima definizione",
-          "Le linee guida non specificano valori numerici lasciando libertà estetica al designer"
-        ],
-        "correctIndex": 1,
-        "explanation": "Il livello AA delle WCAG impone un contrasto minimo di 4.5:1 per garantire la leggibilità anche a persone con ipovisione lieve o sotto luce solare intensa."
-      },
-      {
-        "question": "Per quale motivo il modello cromatico HSL è ampiamente apprezzato nella progettazione di Design System?",
-        "options": [
-          "Perché permette di creare sfumature chiare e scure dello stesso colore modificando solo il valore di Lightness",
-          "Perché comprime automaticamente il peso dei file immagine nel formato compresso WebP",
-          "Perché impedisce l'esecuzione di script dannosi all'interno del browser dell'utente",
-          "Perché garantisce la corrispondenza esatta con i cataloghi d'inchiostro per la stampa rotativa"
+          "Typeface è la famiglia tipografica disegnata (es. Helvetica), mentre Font è la specifica istanza fisica o file digitale a un determinato peso e corpo (es. Helvetica Bold a 16px)",
+          "Non sussiste alcuna differenza, sono sinonimi perfettamente intercambiabili",
+          "Typeface si riferisce solo ai caratteri su carta, Font ai caratteri digitali",
+          "Typeface indica i caratteri con grazie, Font indica i caratteri senza grazie"
         ],
         "correctIndex": 0,
-        "explanation": "Mantenendo invariati Hue e Saturation e variando Lightness (luminosità), si generano con facilità stati hover, sfondi e bordi armonici."
+        "explanation": "La Typeface è l'opera di design concettuale (il disegno delle lettere). Il Font (dal francese 'fonte', fusione) è l'oggetto tecnologico (file .woff2, piombo) che consente di stampare o visualizzare quello specifico stile."
       },
       {
-        "question": "Quale grave errore di usabilità e accessibilità si commette segnalando un campo modulo errato colorandone solo il bordo di rosso?",
+        "question": "Cosa si intende per 'x-height' (altezza delle x) in anatomia tipografica?",
         "options": [
-          "Si aumenta eccessivamente la velocità di caricamento del form sul server remoto",
-          "Si escludono gli utenti con daltonismo che non percepiscono la variazione cromatica senza un'icona o testo",
-          "Si viola la convenzione che riserva il colore rosso unicamente ai pulsanti di conferma acquisto",
-          "Si impedisce ai motori di ricerca di indicizzare correttamente il codice sorgente della pagina"
+          "L'altezza complessiva del foglio di stampa",
+          "L'altezza delle lettere minuscole prive di aste ascendenti o discendenti (come la lettera 'x', 'a', 'e', 'o')",
+          "La distanza tra due margini verticali di una pagina",
+          "Il numero totale di caratteri per riga di testo"
         ],
         "correctIndex": 1,
-        "explanation": "Il principio cardine dell'accessibilità impone che il colore non sia mai l'unico indicatore visivo di stato; occorre sempre affiancare testo o icone."
+        "explanation": "L'x-height determina l'ampiezza del corpo visivo del carattere. A parità di corpo tipografico (es. 16px), un carattere con x-height generosa risulta notevolmente più leggibile a dimensioni ridotte su display digitali."
       },
       {
-        "question": "All'interno di un Design System digitale, quale ruolo ricoprono i cosiddetti 'colori semantici'?",
+        "question": "Quale caratteristica strutturale contraddistingue i caratteri tipografici 'Serif' (con grazie) rispetto ai 'Sans-Serif' (a bastoni)?",
         "options": [
-          "Colori scelti esclusivamente per abbinarsi al logo aziendale nelle campagne pubblicitarie",
-          "Colori codificati per trasmettere stati sistemici universali come successo, errore, avviso e informazione",
-          "Tonalità invisibili all'occhio umano lette unicamente dai lettori di codice a barre",
-          "Colori che cambiano casualmente a ogni visita dell'utente per ravvivare l'interfaccia"
+          "I caratteri Serif sono composti esclusivamente da linee rette a 90 gradi",
+          "I caratteri Serif non possiedono lettere maiuscole",
+          "I caratteri Serif presentano piccoli prolungamenti terminali orizzontali o arcuati alle estremità delle aste delle lettere",
+          "I caratteri Serif possono essere renderizzati solo in formato raster BMP"
         ],
-        "correctIndex": 1,
-        "explanation": "I colori semantici associano a ciascuna tonalità uno stato logico chiaro (es. verde=success, rosso=danger, giallo=warning, azzurro=info)."
+        "correctIndex": 2,
+        "explanation": "Le 'grazie' (serif) derivano dall'incisione lapidaria romana. Nei testi a stampa continui favoriscono la continuità della riga, mentre i sans-serif offrono massima nitidezza anche a basse risoluzioni."
       },
       {
-        "question": "Cosa caratterizza la sintesi cromatica additiva RGB impiegata dagli schermi digitali?",
+        "question": "Quale intervallo di caratteri per riga (lunghezza della linea o measure) è considerato ottimale per la lettura continua di un testo su display?",
         "options": [
-          "La somma di tutti e tre i canali di luce alla massima intensità genera la luce bianca",
-          "I colori si ottengono sottraendo luce attraverso strati successivi d'inchiostro fisico",
-          "L'assenza di tutti i canali genera una luminosità brillante e fluorescente",
-          "Funziona esattamente come la mescolanza di tempere e acquerelli su foglio cartaceo"
+          "Tra 15 e 25 caratteri per riga",
+          "Esattamente 10 parole fisse per riga a qualsiasi risoluzione",
+          "Almeno 180-220 caratteri per sfruttare tutta la larghezza dei monitor moderni",
+          "Circa 50-75 caratteri (inclusi gli spazi), per evitare affaticamento visivo e salti di riga errati"
+        ],
+        "correctIndex": 3,
+        "explanation": "Se la riga è troppo lunga (oltre 85 caratteri), l'occhio fatica a trovare l'inizio della riga successiva; se è troppo corta (sotto i 40 caratteri), il ritmo di lettura si spezza continuamente."
+      },
+      {
+        "question": "Cosa indicano rispettivamente 'Leading' (interlinea) e 'Tracking' nella formattazione tipografica?",
+        "options": [
+          "Leading è la spaziatura verticale tra le linee di base delle righe di testo; Tracking è la spaziatura orizzontale uniforme applicata a un intero blocco di caratteri",
+          "Leading è il grassetto e Tracking è il corsivo",
+          "Leading misura l'altezza delle lettere maiuscole e Tracking la larghezza dei margini",
+          "Leading riguarda i font serif e Tracking i font sans-serif"
         ],
         "correctIndex": 0,
-        "explanation": "Nei display la sintesi additiva combina fasci luminosi di Red, Green e Blue: la sovrapposizione totale produce il bianco."
+        "explanation": "Il leading (dalle lamine di piombo) regola l'ariosità verticale tra le righe (in CSS line-height). Il tracking (letter-spacing) dilata o comprime proporzionalmente lo spazio tra tutte le lettere."
       }
     ],
     "openQuestions": [
       {
         "question": "Descrivi i requisiti di contrasto cromatico stabiliti dalle WCAG e illustra l'architettura dei colori in un Design System professionale.",
         "modelAnswer": "Le WCAG (livello AA) richiedono un contrasto minimo di 4.5:1 per il testo normale e di 3:1 per testi grandi (>=18pt) o componenti interattivi. In un Design System, la palette si articola in: 1. Colore Primario (brand e call-to-action principali), 2. Secondario/Accento (enfasi mirata), 3. Neutri (scala di grigi per sfondi, divisori e testi di lettura gerarchizzati), 4. Semantici (Success/Verde, Warning/Arancione, Error/Rosso, Info/Blu per comunicare stati operativi inequivocabili senza dipendere solo dal colore)."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Un sito di divulgazione scientifica presenta un corpo del testo a 14px con line-height: 1.05. Gli utenti lamentano rapido affaticamento durante la lettura dei saggi. Qual è la causa tecnica del problema?",
+        "options": [
+          "Il contrasto tra pixel è incompatibile con il formato TrueType",
+          "I browser non possono renderizzare caratteri a 14 pixel",
+          "L'interlinea è eccessivamente compressa: le aste discendenti sfiorano o si sovrappongono a quelle ascendenti della riga sotto, ostacolando il tracciamento visivo",
+          "Il testo avrebbe dovuto essere formattato tutto in lettere maiuscole"
+        ],
+        "correctIndex": 2,
+        "explanation": "Per testi di lettura continua, il line-height ottimale oscilla tra 1.4 e 1.6 (140%-160%). Un valore di 1.05 comprime le righe, rendendo faticosa la scansione e provocando regressioni oculari."
+      },
+      {
+        "question": "Cosa garantisce l'utilizzo della proprietà CSS 'font-display: swap' nel caricamento dei font web (@font-face)?",
+        "options": [
+          "Impedisce agli utenti di copiare il testo dagli articoli",
+          "Converte automaticamente i font OpenType in grafica vettoriale SVG",
+          "Scarica simultaneamente tutte le 800 varianti di peso del font",
+          "Impedisce il fenomeno del FOIT (Flash of Invisible Text), mostrando subito un font di fallback di sistema e sostituendolo non appena il custom font è scaricato"
+        ],
+        "correctIndex": 3,
+        "explanation": "'font-display: swap' è cruciale per la web performance e la UX: il testo rimane immediatamente leggibile tramite il font di sistema, evitando che l'utente si trovi davanti a una schermata vuota durante il download."
+      },
+      {
+        "question": "Perché è buona norma limitare l'abbinamento di font (font pairing) a un massimo di 2 o 3 famiglie distinte all'interno di un progetto?",
+        "options": [
+          "Perché troppi font generano disordine visivo, indeboliscono la gerarchia e appesantiscono i tempi di caricamento delle pagine",
+          "Perché i sistemi operativi moderni non consentono l'installazione di più di tre font per dominio",
+          "Perché il CSS non supporta la dichiarazione di più di un selettore font-family",
+          "Perché altrimenti i motori di ricerca classificano il sito come spam"
+        ],
+        "correctIndex": 0,
+        "explanation": "La regola aurea della tipografia digitale: 2 famiglie contrastanti e complementari (es. un serif per i titoli e un sans-serif per il testo o viceversa) garantiscono pulizia, coerenza e performance ottimale."
       }
     ]
   },
@@ -484,65 +659,100 @@ window.DISPENSE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Quale formato di file è preferibile per esportare icone di interfaccia che devono rimanere nitide su display a qualsiasi risoluzione?",
+        "question": "Qual è la differenza strutturale fondamentale tra una grafica raster (bitmap) e una vettoriale?",
         "options": [
-          "Il formato JPEG a compressione elevata per minimizzare i tempi di caricamento",
-          "Il formato SVG basato su codice vettoriale scalabile all'infinito senza perdita di qualità",
-          "Il formato GIF limitato a una tavolozza di sedici colori indicizzati",
-          "Il formato BMP non compresso per preservare ogni singolo pixel fisico del file"
+          "La grafica raster funziona solo su schermi CRT e la vettoriale su schermi OLED",
+          "La grafica raster è composta da una griglia fissa di pixel colorati dipendente dalla risoluzione, mentre la grafica vettoriale si basa su formule matematiche scalabili all'infinito senza perdita di qualità",
+          "La grafica vettoriale non supporta i colori sfumati o gradienti",
+          "La grafica raster occupa sempre meno spazio su disco rispetto alla vettoriale"
         ],
         "correctIndex": 1,
-        "explanation": "SVG è un formato vettoriale: le forme geometriche vengono ricalcolate matematicamente a qualsiasi dimensione o densità di schermo senza sgranare."
+        "explanation": "I file raster (JPEG, PNG, WebP) descrivono la griglia di pixel: ingrandendoli sgranano. I file vettoriali (SVG) descrivono punti, curve e tracciati matematici: scalano a qualsiasi risoluzione mantenendo nitidezza assoluta."
       },
       {
-        "question": "In semiotica visiva, cosa si intende per 'ancoraggio' del testo rispetto all'immagine?",
+        "question": "In quale formato web è preferibile salvare loghi, icone dell'interfaccia e diagrammi grafici?",
         "options": [
-          "Il blocco fisico della posizione dell'immagine tramite la proprietà CSS position: sticky",
-          "La capacità del testo di guidare l'interpretazione delimitando i molteplici significati dell'immagine",
-          "L'assegnazione di un hyperlink che conduce l'utente alla pagina di download del file",
-          "La conversione automatica dell'immagine fotografica in un file di testo leggibile"
+          "In formato JPEG ad altissima compressione",
+          "In formato BMP non compresso",
+          "In formato SVG (Scalable Vector Graphics), per garantire perfetta nitidezza a qualsiasi densità di pixel e peso ridotto",
+          "In formato TIFF multipagina"
         ],
-        "correctIndex": 1,
-        "explanation": "Come spiegato da Roland Barthes, l'ancoraggio fissa il senso dell'immagine, impedendo all'osservatore di deviare verso interpretazioni divergenti."
+        "correctIndex": 2,
+        "explanation": "L'SVG è lo standard ideale per icone e marchi: è leggero, scalabile, integrabile direttamente nel DOM HTML e manipolabile dinamicamente con stili CSS (come colore fill in hover)."
       },
       {
-        "question": "Cosa accade se un'immagine raster standard a 72 DPI viene visualizzata su uno schermo Retina ad altissima densità di pixel?",
+        "question": "Quale formato moderno di compressione per immagini fotografiche offre un'efficienza superiore rispetto a JPEG e PNG sia con compressione lossy che lossless?",
         "options": [
-          "Il monitor adatta automaticamente i fotoni rendendo l'immagine quattro volte più nitida",
-          "L'immagine appare sgranata, sfocata e priva di nitidezza perché i pixel fisici sono più piccoli",
-          "Il sistema operativo blocca la pagina web per evitare il surriscaldamento del processore",
-          "L'immagine si converte autonomamente nel formato vettoriale SVG del consorzio W3C"
+          "Il formato ICO a 16 bit",
+          "Il formato GIF a 256 colori",
+          "Il formato EPS per postscript",
+          "Il formato WebP (e AVIF)"
         ],
-        "correctIndex": 1,
-        "explanation": "Sugli schermi ad alta densità (Retina), ogni pixel CSS logico corrisponde a più pixel fisici: un'immagine non ottimizzata (@2x) risulta sfocata."
+        "correctIndex": 3,
+        "explanation": "WebP (sviluppato da Google) riduce il peso dei file del 25-35% rispetto a JPEG mantenendo qualità visiva equivalente e supportando la trasparenza alfa, accelerando significativamente il caricamento web."
       },
       {
-        "question": "Qual è il principale punto di forza del formato moderno WebP rispetto a JPEG e PNG?",
+        "question": "Cosa si intende per 'Compressione Lossy' (con perdita di dati)?",
         "options": [
-          "Offre una compressione superiore con un risparmio del 25-35% di peso a parità di qualità visiva",
-          "Consente di visualizzare immagini tridimensionali olografiche senza l'uso di visori VR",
-          "Elimina del tutto la necessità di scrivere l'attributo 'alt' per l'accessibilità degli screen reader",
-          "È l'unico formato riconosciuto ufficialmente dai motori di ricerca per la scansione delle pagine"
+          "Un algoritmo che rimuove permanentemente informazioni visive e frequenze impercettibili all'occhio umano per ridurre drasticamente la dimensione del file",
+          "Un errore di scrittura del file che rende l'immagine corrotta",
+          "Una procedura di cifratura militare per proteggere i dati delle immagini",
+          "Un metodo che raddoppia i pixel per aumentare la nitidezza artificiale"
         ],
         "correctIndex": 0,
-        "explanation": "WebP (sviluppato da Google) supporta sia compressione lossy che lossless con trasparenza, garantendo file sensibilmente più leggeri e veloci da scaricare."
+        "explanation": "La compressione lossy (usata in JPEG e WebP) scarta dettagli ad alta frequenza che l'occhio umano percepisce a stento, ottenendo file molto compatti a costo di una lieve degradazione invisibile all'uso comune."
       },
       {
-        "question": "Perché l'uso di fotografie di stock impersonali con modelli che sorridono alla fotocamera è sconsigliato nelle dispense?",
+        "question": "Perché sui moderni display 'Retina' o ad alta densità (DPR 2x o 3x) un'immagine raster a risoluzione standard può apparire sfocata?",
         "options": [
-          "Perché aumentano eccessivamente il peso del foglio di stile CSS del sito web",
-          "Perché vengono percepite come rumore visivo poco credibile e ignorate dagli utenti (banner blindness)",
-          "Perché violano le norme sulla sicurezza crittografica dei protocolli di rete HTTPS",
-          "Perché impediscono al browser di eseguire la renderizzazione corretta del font tipografico"
+          "Perché i monitor Retina supportano solo immagini in bianco e nero",
+          "Perché il display ha più pixel fisici per ogni pixel CSS logico: se l'immagine non è fornita a doppia risoluzione, il browser deve interpolare e dilatare i pixel esistenti",
+          "Perché la frequenza di aggiornamento a 120Hz degrada la saturazione dei pixel",
+          "Perché le immagini raster non possono essere caricate su sistemi operativi macOS"
         ],
         "correctIndex": 1,
-        "explanation": "Gli utenti web sviluppano una naturale diffidenza verso immagini artificiali che non mostrano il prodotto o le persone reali, ignorandole come fossero pubblicità."
+        "explanation": "Un display 2x possiede 4 pixel fisici per ogni pixel CSS: un'immagine da 100x100px viene spalmata su 200x200 pixel fisici, risultando morbida e sgranata se non si fornisce una versione @2x."
       }
     ],
     "openQuestions": [
       {
         "question": "Spiega le differenze tecniche tra i formati JPEG, PNG, SVG e WebP e illustra come ottimizzare le immagini per i display Retina.",
         "modelAnswer": "JPEG è un formato lossy ideale per fotografie ricche di colori ma privo di trasparenza; PNG è un formato lossless con canale alfa ottimo per screenshot e campiture piatte con testi; SVG è un formato vettoriale XML scalabile all'infinito perfetto per icone e loghi; WebP è un formato moderno che offre una compressione superiore sia con che senza perdita. Per gli schermi Retina (ad alta densità di pixel), le immagini raster devono essere fornite a dimensione doppia (@2x) e servite tramite l'elemento HTML5 <picture> o l'attributo srcset per garantire massima nitidezza senza appesantire i dispositivi standard."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Come si implementa in HTML5 una gestione corretta delle immagini responsive fornendo diverse risoluzioni in base alla larghezza schermo o densità del display?",
+        "options": [
+          "Scaricando via JavaScript l'immagine a risoluzione massima e rimpicciolendola con width",
+          "Inserendo più tag <img> consecutivi e nascondendoli con display: none in CSS",
+          "Duplicando l'intera pagina web per ciascuna tipologia di smartphone",
+          "Utilizzando l'elemento <picture> con tag <source media='...'> oppure il tag <img> con attributo srcset e sizes"
+        ],
+        "correctIndex": 3,
+        "explanation": "L'elemento <picture> e l'attributo 'srcset' consentono al browser di negoziare prima del download l'immagine più adatta alle dimensioni e alla densità del dispositivo, risparmiando dati e memoria."
+      },
+      {
+        "question": "Quale impatto produce il mancato inserimento degli attributi 'width' e 'height' espliciti sul tag <img> nell'HTML?",
+        "options": [
+          "Provoca il fenomeno del CLS (Cumulative Layout Shift): il browser non sa quanto spazio riservare e il layout salta bruscamente non appena l'immagine finisce di scaricarsi",
+          "L'immagine non viene renderizzata in nessun browser moderno",
+          "Il browser blocca l'esecuzione degli script analitici",
+          "Il file CSS associato viene rimosso dalla memoria cache"
+        ],
+        "correctIndex": 0,
+        "explanation": "Specificare width e height (o l'aspect-ratio in CSS) permette al browser di calcolare il rapporto di forma e riservare l'area esatta nel flusso di layout prima che l'immagine sia scaricata, eliminando scatti fastidiosi."
+      },
+      {
+        "question": "In quale situazione l'uso di un file PNG a 24 bit con trasparenza alfa è preferibile rispetto a un JPEG?",
+        "options": [
+          "Per fotografie naturalistiche di paesaggi ad alta definizione",
+          "Quando l'immagine deve sovrapporsi a sfondi colorati variabili o texture complesse mantenendo bordi perfettamente sfumati e nitidi",
+          "Quando si desidera massimizzare la compressione con perdita per risparmiare banda",
+          "Esclusivamente per la stampa litografica industriale"
+        ],
+        "correctIndex": 1,
+        "explanation": "Il formato JPEG non supporta alcun canale di trasparenza; il PNG a 24 bit offre un canale alfa completo a 8 bit (256 livelli di semitrasparenza), ideale per badge, grafiche isolate e sovrapposizioni fluide."
       }
     ]
   },
@@ -575,65 +785,100 @@ window.DISPENSE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Quale tra i seguenti elementi progettuali costituisce il cuore dell'architettura di un sito E-Commerce?",
+        "question": "Quali elementi strutturali compongono una griglia tipografica compositiva modulare?",
         "options": [
-          "Un blog narrativo privo di prezzi per non distrarre il visitatore con questioni commerciali",
-          "Un catalogo con filtri precisi, una scheda prodotto trasparente e un funnel di checkout fluido",
-          "Un video introduttivo a schermo intero con riproduzione automatica e audio ad alto volume",
-          "L'assenza di qualsiasi modulo di contatto per incoraggiare unicamente gli acquisti d'impulso"
+          "File audio, canali video e frequenze di rendering",
+          "Solo pixel singoli e coordinate assolute top/left",
+          "Colonne (aree verticali di contenuto), Margini (spazi perimetrali di respiro) e Gutter (spazi intermedi tra le colonne)",
+          "Paragrafi di testo e codici di stato HTTP"
         ],
-        "correctIndex": 1,
-        "explanation": "L'E-Commerce si fonda sulla facilità di ricerca del bene e su un percorso di pagamento privo di incertezze o attriti che causerebbero l'abbandono del carrello."
+        "correctIndex": 2,
+        "explanation": "La griglia classica organizza lo spazio tramite colonne verticali, canali di separazione (gutter) che impediscono collisioni visive e margini perimetrali che staccano il contenuto dal bordo."
       },
       {
-        "question": "Come viene definita una soluzione software complessa erogata via browser come strumento di lavoro (es. Canva o Figma)?",
+        "question": "Perché il sistema a 12 colonne è diventato lo standard più diffuso nel web design e nei framework responsive?",
         "options": [
-          "Sito vetrina a scorrimento orizzontale",
-          "Prodotto Digitale o applicazione SaaS (Software as a Service)",
-          "Documento PDF multimediale sfogliabile",
-          "Sito di pura informazione istituzionale statica"
+          "Perché consente di visualizzare unicamente 12 righe di testo per schermata",
+          "Perché i display dei computer hanno un numero di pixel multiplo di 12",
+          "Perché è stato imposto da un decreto dell'Unione Europea nel 2005",
+          "Perché il numero 12 è altamente divisibile: consente di suddividere facilmente il layout in 1, 2, 3, 4, 6 o 12 porzioni uguali e combinazioni asimmetriche (es. 8+4, 9+3)"
         ],
-        "correctIndex": 1,
-        "explanation": "I SaaS sono applicazioni web dense e complesse pensate per la produttività operativa continua dell'utente nel browser."
+        "correctIndex": 3,
+        "explanation": "Il numero 12 offre la massima flessibilità modulare: divide la larghezza a metà (6+6), in terzi (4+4+4), in quarti (3+3+3+3) o in layout con sidebar (8+4 oppure 9+3) senza frazioni complesse."
       },
       {
-        "question": "Cosa contraddistingue primariamente le 'Piattaforme Web' (come Airbnb o forum specialistici) rispetto ai siti tradizionali?",
+        "question": "Cosa si intende per 'Ritmo Verticale' (Vertical Rhythm) nella composizione di una pagina web?",
         "options": [
-          "La totale impossibilità per gli utenti di effettuare ricerche all'interno dei database",
-          "La centralità dei Contenuti Generati dagli Utenti (UGC) e delle interazioni tra la community",
-          "L'utilizzo esclusivo di codice sorgente scritto a mano senza ricorrere a fogli di stile CSS",
-          "Il divieto di memorizzare qualsiasi dato di sessione o preferenza dell'utente nel browser"
-        ],
-        "correctIndex": 1,
-        "explanation": "Nelle piattaforme il valore principale risiede nella rete di utenti che creano, scambiano contenuti e si valutano reciprocamente."
-      },
-      {
-        "question": "In quale tipologia di sito l'architettura tipografica e la gerarchia di lettura assumono il peso più determinante?",
-        "options": [
-          "Nei siti di comunicazione, informazione ed editoriali dove il testo è il fulcro del valore",
-          "Nei videogiochi web basati unicamente su motori grafici tridimensionali WebGL",
-          "Nelle pagine temporanee di errore 404 generate automaticamente dai server web",
-          "Nei portali di gestione automatica dei contratti crittografici della blockchain"
+          "L'alternanza armoniosa e proporzionata di altezze dei testi, interlinee e margini basata su un'unità di misura modulare costante (es. 4px o 8px)",
+          "La velocità di scrolling automatico dal basso verso l'alto",
+          "La frequenza con cui i banner promozionali compaiono durante la navigazione",
+          "Il numero di collegamenti ipertestuali inseriti nel piè di pagina"
         ],
         "correctIndex": 0,
-        "explanation": "Nei siti editoriali e informativi la scansione, il contrasto tipografico e il ritmo della lettura definiscono l'intera efficacia del prodotto."
+        "explanation": "Il ritmo verticale conferisce cadenza musicale allo spazio: legando line-height, margini e spaziature a una griglia base (spesso il modulo a 8px), l'intera composizione guadagna ordine e respiro uniforme."
       },
       {
-        "question": "Quale elemento dell'E-Commerce è responsabile della maggior percentuale di conversioni mancate?",
+        "question": "In un sistema a griglia, cosa rappresenta il 'Gutter'?",
         "options": [
-          "L'eccessiva chiarezza nella spiegazione dei tempi e costi di consegna del pacco",
-          "Un processo di checkout complicato, obblighi di registrazione faticosi e costi nascosti",
-          "La presenza di recensioni verificate lasciate da acquirenti reali del prodotto",
-          "L'utilizzo di fotografie ad alta risoluzione che mostrano il prodotto da più angolazioni"
+          "Il bordo perimetrale metallico del monitor hardware",
+          "La spaziatura interna tra colonne adiacenti che impedisce agli elementi di toccarsi e fondersi visivamente",
+          "L'area di intestazione che racchiude il menu",
+          "L'icona di chiusura delle finestre popup modali"
         ],
         "correctIndex": 1,
-        "explanation": "L'attrito cognitivo e procedurale (registrazioni forzate, campi inutili, sorprese sul costo finale) è la prima causa di abbandono del carrello."
+        "explanation": "I gutter sono i canali di scorrimento visivo tra una colonna e l'altra: definiscono la distanza tra blocchi e card, garantendo autonomia e chiarezza percettiva."
+      },
+      {
+        "question": "Quale vantaggio offre l'adozione di un 'Sistema a Griglia a 8 Punti' (8pt Grid System) nello sviluppo di UI moderne?",
+        "options": [
+          "Impedisce l'utilizzo di immagini rettangolari",
+          "Forza tutti i font ad avere un corpo fisso di 8 pixel",
+          "Semplifica le decisioni di design e riduce gli attriti tra designer e programmatori, poiché tutti i valori di padding, margin e dimensioni sono multipli coerenti di 8 (8, 16, 24, 32, 40...)",
+          "Rende superfluo il controllo di accessibilità sul contrasto"
+        ],
+        "correctIndex": 2,
+        "explanation": "La griglia a 8 punti è lo standard de facto dell'industria digitale: la maggior parte delle risoluzioni è divisibile per 8, elimina decisioni arbitrarie (13px o 15px?) e crea armonia visiva immediata."
       }
     ],
     "openQuestions": [
       {
         "question": "Descrivi le quattro tipologie di siti web delineate nelle dispense, indicando per ciascuna le principali sfide progettuali e di UX.",
         "modelAnswer": "Le quattro tipologie sono: 1. Siti di Comunicazione/Informazione: sfide incentrate sulla gerarchia tipografica, ritmo editoriale e leggibilità senza distrazioni. 2. E-Commerce: sfide focalizzate sulla rimozione di friction nel funnel di acquisto, chiarezza sui costi e sicurezza percepita. 3. Piattaforme Web: sfide legate all'organizzazione e moderazione di User Generated Content (UGC), profili e sistemi di rating e fiducia. 4. Prodotti Digitali SaaS: sfide di ergonomia lavorativa continua, scorciatoie da tastiera, densità informativa ordinata e sincronizzazione in tempo reale dello stato applicativo."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "In un layout responsive progettato su griglia a 12 colonne, come viene gestita tipicamente la transizione da schermi desktop a schermi smartphone?",
+        "options": [
+          "Il numero di colonne attive si riduce (tipicamente a 4 o 1 colonna a larghezza piena), e gli elementi disposti su più colonne affiancate scorrono verticalmente uno sotto l'altro",
+          "Le 12 colonne si comprimono a pochi millimetri rendendo il testo microscopico",
+          "I browser mobili disabilitano l'uso del CSS imponendo una tabella HTML nativa",
+          "Vengono eliminati tutti i contenuti lasciando solo l'immagine di testata"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nel passaggio a mobile la griglia si riadatta (Reflow): elementi che su desktop occupavano 4 colonne su 12 (un terzo) passano a occupare l'intera ampiezza (100% o 4 colonne su 4), impilandosi con ordine."
+      },
+      {
+        "question": "Quale rischio compositivo si manifesta se i margini esterni della pagina (page margins) sono più stretti dei gutter interni tra le card?",
+        "options": [
+          "Il file CSS raddoppia i tempi di compilazione nel browser",
+          "Il layout appare soffocato e deborda visivamente verso i bordi fisici dello schermo, rompendo la sensazione di unità e contenimento",
+          "Le tecnologie assistive non riescono a individuare il corpo principale del testo",
+          "I font sans-serif vengono convertiti automaticamente in caratteri con grazie"
+        ],
+        "correctIndex": 1,
+        "explanation": "I margini esterni fungono da cornice di rispetto: devono essere pari o preferibilmente superiori ai gutter interni per incorniciare il contenuto e mantenerlo centrato nel campo visivo."
+      },
+      {
+        "question": "Cosa si intende per 'Modularità' all'interno di un sistema di layout digitale?",
+        "options": [
+          "La programmazione in linguaggio Assembly dei driver video",
+          "L'obbligo di utilizzare solo moduli di pagamento online certificati",
+          "La capacità di costruire schermate complesse combinando componenti e blocchi standardizzati che condividono le medesime regole geometriche e proporzionali",
+          "La suddivisione del testo in paragrafi di esattamente 100 caratteri"
+        ],
+        "correctIndex": 2,
+        "explanation": "La modularità permette scalabilità e coerenza: le card, i form, i banner e i bottoni condividono il medesimo DNA geometrico e possono essere ricombinati senza spezzare l'armonia della pagina."
       }
     ]
   },
@@ -666,65 +911,100 @@ window.DISPENSE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Durante quale fase progettuale viene realizzata la 'Sitemap' (mappa del sito)?",
+        "question": "Qual è lo scopo precipuo dell'Architettura dell'Informazione (IA) nella progettazione di un prodotto digitale?",
         "options": [
-          "Durante la fase di configurazione dei server di database relazionali",
-          "Durante la fase di Architettura dell'Informazione per strutturare la gerarchia dei contenuti",
-          "Durante la fase finale di collaudo e validazione degli standard di sicurezza",
-          "Durante la campagna di marketing digitale per calcolare il costo dei click pubblicitari"
+          "Disegnare le animazioni 3D per il caricamento iniziale delle schermate",
+          "Installare e configurare i sistemi operativi sui server aziendali",
+          "Definire i prezzi dei prodotti e le politiche di reso dell'e-commerce",
+          "Organizzare, strutturare ed etichettare i contenuti in modo logico e coerente per consentire agli utenti di orientarsi e trovare facilmente le informazioni cercate"
         ],
-        "correctIndex": 1,
-        "explanation": "La sitemap definisce l'ossatura logica e la ramificazione gerarchica delle pagine all'interno dell'Architettura dell'Informazione."
+        "correctIndex": 3,
+        "explanation": "L'Architettura dell'Informazione è la mappa concettuale del sito: organizza tassonomie, schemi di categorizzazione e sistemi di etichettatura (labeling) affinché l'utente navighi senza smarrirsi."
       },
       {
-        "question": "In cosa consiste la tecnica del 'Card Sorting' condotta con utenti reali?",
+        "question": "In quale tecnica di ricerca UX gli utenti raggruppano schede contenenti argomenti o funzioni in categorie, aiutando a definire l'albero di navigazione?",
         "options": [
-          "Nel far ordinare carte di credito agli utenti per verificare quale layout di pagamento preferiscono",
-          "Nel chiedere ai partecipanti di raggruppare schede con argomenti in categorie logiche per loro naturali",
-          "Nel mostrare rapidamente carte con immagini per misurare i riflessi oculari dei visitatori",
-          "Nel testare la resistenza meccanica degli schermi touch a pressioni ripetute delle dita"
-        ],
-        "correctIndex": 1,
-        "explanation": "Il card sorting fa emergere i modelli mentali degli utenti, evidenziando quali contenuti appartengano secondo loro alle medesime sezioni."
-      },
-      {
-        "question": "Quale vantaggio strategico offre la produzione preliminare di Wireframe a bassa fedeltà?",
-        "options": [
-          "Consente di caricare il sito sui server di produzione senza dover scrivere codice CSS",
-          "Focalizza la discussione su struttura, pesi informativi e usabilità senza farsi distrarre dall'estetica",
-          "Garantisce che il sito raggiunga immediatamente la prima posizione su Google",
-          "Elimina la necessità di eseguire test di compatibilità sui dispositivi mobili"
-        ],
-        "correctIndex": 1,
-        "explanation": "I wireframe a bassa fedeltà neutralizzano le discussioni soggettive su colori o font, concentrando il team sulla funzionalità e sulla gerarchia."
-      },
-      {
-        "question": "Cosa rappresentano le 'Personas' create durante la fase di User Research?",
-        "options": [
-          "Modelli fittizi di computer usati per simulare il carico di traffico dei server",
-          "Archetipi realistici basati su dati reali che incarnano bisogni, scopi e ostacoli del pubblico target",
-          "Dipendenti dell'azienda committente che firmano l'approvazione del budget di spesa",
-          "Attori professionisti ingaggiati per recitare negli spot televisivi di lancio del prodotto"
-        ],
-        "correctIndex": 1,
-        "explanation": "Le Personas sintetizzano i dati della ricerca qualitativa in figure archetipiche a cui l'intero team può fare costante riferimento empatico."
-      },
-      {
-        "question": "Perché l'analisi dei dati quantitativi (es. Google Analytics) deve essere affiancata dalla ricerca qualitativa?",
-        "options": [
-          "I dati quantitativi mostrano COSA fanno gli utenti, ma solo la ricerca qualitativa spiega il PERCHÉ lo fanno",
-          "I dati quantitativi sono considerati illegali dalle recenti direttive europee sulla privacy",
-          "La ricerca qualitativa permette di azzerare i costi di registrazione del dominio internet",
-          "Gli analytics quantitativi funzionano unicamente se la pagina è programmata in linguaggio Python"
+          "Il Card Sorting (aperto o chiuso)",
+          "Il Test di Turing",
+          "L'analisi euristica retroattiva",
+          "La regressione lineare multivariata"
         ],
         "correctIndex": 0,
-        "explanation": "Le metriche mostrano dove gli utenti abbandonano o cliccano, ma solo osservando e parlando con gli utenti si comprende la causa del problema."
+        "explanation": "Il Card Sorting è il metodo principe dell'IA: nel sorting aperto gli utenti raggruppano le schede e creano loro stessi i nomi delle categorie; nel sorting chiuso inseriscono le schede in categorie già definite."
+      },
+      {
+        "question": "Cosa si intende per 'Tree Testing' (test dell'albero)?",
+        "options": [
+          "Un test di resistenza del server all'aumento delle connessioni concorrenti",
+          "Un test di usabilità quantitativo che valuta la navigabilità e la reperibilità di un contenuto all'interno della struttura ad albero priva di grafica o distrazioni visive",
+          "L'analisi ecologica dell'impatto di CO2 prodotto dai datacenter",
+          "La verifica del caricamento di font tipografici a foglia singola"
+        ],
+        "correctIndex": 1,
+        "explanation": "Il Tree Testing verifica l'architettura pura: ai partecipanti viene chiesto dove cercherebbero una determinata informazione all'interno della gerarchia testuale, isolando la qualità dei termini da fattori estetici."
+      },
+      {
+        "question": "Quale problema strutturale si verifica quando un'architettura dell'informazione è eccessivamente profonda (troppi livelli gerarchici)?",
+        "options": [
+          "La pagina web non può essere indicizzata dai motori di ricerca",
+          "Il browser esaurisce lo spazio su disco rigido",
+          "Gli utenti sono costretti a compiere troppi clic di penetrazione e faticano a costruire una mappa mentale della propria posizione nel sistema",
+          "I collegamenti ipertestuali cambiano automaticamente colore"
+        ],
+        "correctIndex": 2,
+        "explanation": "Una gerarchia troppo profonda (Deep Architecture) nasconde i contenuti sotto troppi livelli; una troppo piatta (Flat) sovraccarica la pagina di scelte. La soluzione è un bilanciamento equilibrato."
+      },
+      {
+        "question": "Cosa contraddistingue un sistema di etichettatura (Labeling) efficace all'interno di un menu?",
+        "options": [
+          "L'adozione esclusiva della lingua latina per conferire autorevolezza",
+          "L'invenzione di neologismi poetici e misteriosi per stimolare la curiosità",
+          "L'uso di etichette composte da frasi di almeno venti parole",
+          "L'uso di termini chiari, familiari e univoci che rispecchiano il linguaggio naturale degli utenti anziché il gergo burocratico interno dell'azienda"
+        ],
+        "correctIndex": 3,
+        "explanation": "Le etichette devono essere autoesplicative: utilizzare il linguaggio dell'utente (User-centric vocabulary) garantisce che la persona capisca dove porta il link prima ancora di cliccarlo."
       }
     ],
     "openQuestions": [
       {
         "question": "Illustra le fasi iniziali di produzione di un sito web (Discovery, Research, IA e Wireframing), evidenziandone gli artefatti tipici.",
         "modelAnswer": "1. Discovery: definizione obiettivi di business e vincoli tecnici (artefatto: Project Brief e Benchmark concorrenti). 2. User Research: interviste, osservazioni ed analytics per comprendere i comportamenti reali (artefatti: Personas ed Empathy Maps). 3. Architettura dell'Informazione: definizione di tassonomie e percorsi logici tramite Card Sorting (artefatto: Sitemap). 4. Wireframing: schematizzazione bidimensionale in scala di grigi per convalidare gerarchie e posizionamento dei contenuti prima del design visivo (artefatto: Wireframe a bassa fedeltà)."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Un portale universitario colloca il modulo per la domanda di borsa di studio sotto: 'Ateneo > Strutture Amministrative > Ripartizione IV > Settore Servizi agli Studenti > Procedure Contabili'. Qual è la diagnosi dal punto di vista dell'IA?",
+        "options": [
+          "La tassonomia è perfetta perché rispetta la gerarchia burocratica dell'ente",
+          "La tassonomia rispecchia l'organigramma interno dell'amministrazione (Inside-Out) anziché il modello mentale e il compito dell'utente (Outside-In), ostacolando il ritrovamento",
+          "Il percorso è corretto purché il testo sia evidenziato con font serif",
+          "Non sussistono problemi poiché tutti gli studenti utilizzano la ricerca interna"
+        ],
+        "correctIndex": 1,
+        "explanation": "È il classico vizio 'Inside-Out': progettare il sito specchiando la suddivisione degli uffici interni costringe l'utente a conoscere l'organigramma per compiere un'azione ordinaria."
+      },
+      {
+        "question": "Cosa sono le 'Breadcrumbs' (Briciole di Pane) e quale funzione svolgono per la navigabilità?",
+        "options": [
+          "Errori di sintassi generati dal server durante la compilazione delle pagine",
+          "File temporanei di tracciamento pubblicitario installati nel browser",
+          "Un elemento di navigazione secondaria che mostra il percorso gerarchico dalla homepage alla pagina corrente, fornendo orientamento spaziale e una scorciatoia per risalire i livelli",
+          "Icone decorative prive di collegamenti ipertestuali"
+        ],
+        "correctIndex": 2,
+        "explanation": "Le breadcrumbs (es. Home > Scarpe > Uomo > Sneaker) rispondono alla domanda 'Dove mi trovo rispetto al tutto?' e permettono di risalire la tassonomia con un solo clic."
+      },
+      {
+        "question": "In quale scenario la ricerca interna (Search) e la navigazione strutturata (Browse) devono convivere come percorsi complementari?",
+        "options": [
+          "Esclusivamente quando il server ha una connessione satellitare",
+          "Solo nei siti web dedicati ai bambini e alle scuole primarie",
+          "Mai: i siti moderni devono eliminare del tutto le barre di ricerca in favore dei menu a tendina",
+          "Sempre, nei portali con patrimonio informativo consistente: una parte consistente degli utenti cerca direttamente per parole chiave (search-dominant), mentre altri preferiscono esplorare le categorie (browse-dominant)"
+        ],
+        "correctIndex": 3,
+        "explanation": "Le persone navigano con stili cognitivi diversi: chi sa esattamente cosa cerca usa la barra di ricerca; chi ha un bisogno sfumato o vuole confrontare alternative esplora l'albero delle categorie."
       }
     ]
   },
@@ -757,65 +1037,100 @@ window.DISPENSE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Per quale motivo un Design System rappresenta un valore fondamentale per i team digitali moderni?",
+        "question": "Secondo Don Norman, cosa si intende per 'Affordance' di un elemento d'interfaccia?",
         "options": [
-          "Perché garantisce coerenza visiva e un linguaggio condiviso riducendo sprechi tra design e codice",
-          "Perché disabilita automaticamente la necessità di eseguire test di sicurezza sui server",
-          "Perché converte autonomamente i file video pesanti in file di testo scaricabili",
-          "Perché impone l'adozione esclusiva del sistema operativo Linux a tutti i componenti del team"
+          "La proprietà percepita o reale dell'oggetto che suggerisce intuitivamente come possa essere utilizzato e manipolato",
+          "Il costo economico di sviluppo del componente software",
+          "Il tempo necessario per scaricare l'elemento sulla memoria cache",
+          "La compatibilità dell'elemento con i motori di ricerca"
         ],
         "correctIndex": 0,
-        "explanation": "Un design system formalizza token e componenti riutilizzabili, accelerando la produzione e garantendo perfetta coerenza di marca."
+        "explanation": "L'affordance (introdotta da Gibson e portata al design da Norman) è la 'chiamata all'azione' intrinseca: una maniglia suggerisce di tirare, una superficie sopraelevata e con bordo suggerisce di essere premuta (bottone)."
       },
       {
-        "question": "In fase di Quality Assurance (QA), quale dimensione minima per i bersagli di tocco (touch target) raccomandano le linee guida per smartphone?",
+        "question": "Quali sono i quattro stati interattivi canonici che ogni pulsante o campo interattivo deve possedere per comunicare chiarezza all'utente?",
         "options": [
-          "Circa 10x10 pixel per consentire l'inserimento di decine di icone ravvicinate",
-          "Almeno 44-48 pixel sia in altezza che in larghezza per agevolare il tocco delle dita",
-          "Non meno di 200x200 pixel occupando gran parte della superficie dello schermo",
-          "La dimensione deve essere rigorosamente pari a un centimetro quadrato su qualsiasi monitor"
+          "Stato Alfa, Stato Beta, Stato Gamma e Stato Delta",
+          "Stato di riposo (Default), Passaggio del mouse (Hover), Pressione/Attivazione (Active) e Stato disabilitato (Disabled) o Focalizzato (Focus)",
+          "Invisibile, Trasparente, Solido e Riflettente",
+          "Solo Stato Iniziale e Stato Finale"
         ],
         "correctIndex": 1,
-        "explanation": "Apple e Google raccomandano un'area minima cliccabile di almeno 44x44 / 48x48 pixel per evitare errori di tocco involontari con il polpastrello."
+        "explanation": "La gestione degli stati è fondamentale nell'UI: l'utente deve sapere se un elemento è cliccabile (default), se il cursore lo ha intercettato (hover), se è stato premuto (active) o se è selezionato da tastiera (focus)."
       },
       {
-        "question": "Cosa si intende per stato di 'Focus' di un campo o pulsante interattivo?",
+        "question": "Cosa si intende per 'Signifier' (Segnalatore visivo)?",
         "options": [
-          "Lo stato in cui l'elemento viene disabilitato in modo permanente per manutenzione",
-          "L'indicatore visivo attivo quando l'elemento viene selezionato tramite navigazione da tastiera (Tab)",
-          "L'ingrandimento automatico dell'elemento a schermo intero durante il salvataggio dei dati",
-          "L'eliminazione dei bordi visivi per rendere la grafica completamente piatta"
+          "Il certificato crittografico HTTPS della connessione",
+          "Un messaggio pubblicitario popup che copre la schermata",
+          "Qualsiasi segnale visivo esplicito (testo, icona, ombra, freccia) che comunica dove l'azione debba avvenire quando l'affordance naturale non è immediatamente percepibile",
+          "Il logo del brand aziendale collocato nella testata"
         ],
-        "correctIndex": 1,
-        "explanation": "Lo stato :focus è essenziale per l'accessibilità: rende palese quale elemento della pagina stia ricevendo l'input da tastiera."
+        "correctIndex": 2,
+        "explanation": "Norman ha chiarito che nel digitale le affordance sono spesso simulate: i 'signifiers' (es. la scritta 'Scorri in basso' o la freccia accanto a un menu) segnalano chiaramente all'utente dove e come agire."
       },
       {
-        "question": "In cosa consiste la metodologia degli A/B Test condotta dopo la pubblicazione di un sito web?",
+        "question": "Qual è la funzione delle 'Microinterazioni' (micro-interactions) nel design di un'interfaccia?",
         "options": [
-          "Nel riscrivere l'intero codice del sito in due linguaggi di programmazione concorrenti",
-          "Nel mostrare a gruppi casuali di utenti due varianti di una pagina per misurare quale genera conversioni migliori",
-          "Nel testare la pagina alternativamente solo di giorno (versione A) e solo di notte (versione B)",
-          "Nel cancellare periodicamente metà dei database aziendali per verificare la prontezza dei backup"
+          "Comprimere il codice sorgente HTML eliminando gli spazi vuoti",
+          "Ridurre il consumo elettrico della batteria dello smartphone",
+          "Cancellare i cookie di navigazione dopo ogni singolo clic",
+          "Fornire feedback immediato, confermare il successo di un'azione (es. toggle che cambia stato, animazione di invio completato) e rendere l'interazione umana e gratificante"
         ],
-        "correctIndex": 1,
-        "explanation": "L'A/B testing divide il traffico reale tra due opzioni per validare empiricamente quale soluzione massimizzi il raggiungimento degli obiettivi."
+        "correctIndex": 3,
+        "explanation": "Le microinterazioni (Dan Saffer) sono momenti singoli e focalizzati attorno a un compito: comunicano lo stato del sistema con grazia, riducendo l'ansia dell'utente e donando piacere d'uso."
       },
       {
-        "question": "Cosa accade durante la fase di 'Developer Handoff' tra designer e sviluppatori front-end?",
+        "question": "Perché un bottone 'Primario' deve essere visivamente predominante rispetto a un bottone 'Secondario' all'interno della stessa schermata?",
         "options": [
-          "Il designer cessa ogni comunicazione con l'azienda e consegna file grafici non modificabili",
-          "Vengono condivisi prototipi, specifiche di layout, asset ottimizzati e token CSS pronti per la scrittura del codice",
-          "Gli sviluppatori cancellano i wireframe e ripartono da zero con un layout a loro scelta",
-          "Il server cloud disattiva la modalità di sviluppo passando direttamente al dominio commerciale"
+          "Per guidare inequivocabilmente l'utente verso l'azione cardine desiderata (Call to Action), minimizzando il dubbio decisionale",
+          "Perché i browser non permettono la presenza di due bottoni con lo stesso colore",
+          "Perché i bottoni secondari non possono eseguire script di salvataggio",
+          "Per rispettare una direttiva internazionale sul copyright dei font"
         ],
-        "correctIndex": 1,
-        "explanation": "L'handoff è il momento di allineamento tecnico in cui i designer consegnano specifiche, asset ed esaustive indicazioni di comportamento dinamico."
+        "correctIndex": 0,
+        "explanation": "Gerarchia d'azione: se 'Conferma Ordine' e 'Annulla' avessero lo stesso peso visivo, l'utente esiterebbe o rischierebbe clic accidentali. L'azione primaria deve risaltare con chiarezza immediata."
       }
     ],
     "openQuestions": [
       {
         "question": "Spiega il ruolo e la struttura di un Design System moderno e descrivi le fasi di QA e iterazione post-lancio.",
         "modelAnswer": "Un Design System è una libreria viva e condivisa tra design e sviluppo che centralizza Design Tokens (colori, spaziature, font tradotti in variabili CSS) e componenti modulari con i rispettivi stati interattivi (:hover, :focus, :active, :disabled). Nelle fasi finali, il QA Testing verifica la compatibilità cross-browser, l'accessibilità da tastiera e l'ergonomia dei touch targets (minimo 44px). Dopo il lancio, l'approccio iterativo analizza i dati di traffico reali ed esegue A/B test per ottimizzare costantemente flussi e conversioni."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Un sito web di commercio elettronico rimuove il bordo, l'ombra e il colore di sfondo da tutti i pulsanti 'Aggiungi al carrello', lasciando solo un testo grigio non sottolineato. Quale principio di UI viene gravemente compromesso?",
+        "options": [
+          "L'indicizzazione dei metadati OpenGraph sui social media",
+          "La velocità di rendering della scheda grafica integrata",
+          "La percezione dell'affordance di cliccabilità: l'utente fatica a distinguere gli elementi azionabili dal testo statico informativo",
+          "La risoluzione DPI delle fotografie dei prodotti"
+        ],
+        "correctIndex": 2,
+        "explanation": "Questo è il classico errore del cosiddetto 'Flat Design estremo': eliminando tutti i signifier (bordi, rilievi, contrasti), gli utenti non riconoscono i pulsanti come tali, con drastico calo delle conversioni."
+      },
+      {
+        "question": "In un modulo convalidato lato client, quando è opportuno mostrare il messaggio di errore su un campo obbligatorio?",
+        "options": [
+          "Dopo aver forzato il ricaricamento completo dell'intera pagina web",
+          "Non appena l'utente digita il primo carattere nel campo vuoto",
+          "Esclusivamente tramite una finestra popup che blocca l'intero browser",
+          "Dopo che l'utente ha abbandonato il campo (evento 'blur' o 'onchange') o al momento della sottomissione del modulo, evitando di segnalare errore mentre sta ancora digitando"
+        ],
+        "correctIndex": 3,
+        "explanation": "Segnalare errore mentre l'utente sta ancora scrivendo genera ansia e frustrazione. Il feedback migliore si attiva quando il campo perde il focus ('blur') o al tentativo di invio dell'intero form."
+      },
+      {
+        "question": "Quale criterio deve guidare la progettazione della 'Dark Mode' (modalità scura) di un'interfaccia utente?",
+        "options": [
+          "Evitare l'uso di nero puro (#000000) su bianco puro (#FFFFFF) che genera bagliore e affaticamento visivo (aloning), preferendo superfici grigio scuro con contrasti dosati",
+          "Invertire matematicamente tutti i colori dei pixel senza alterare le immagini",
+          "Sostituire tutti i caratteri tipografici con font monospazio",
+          "Rendere invisibili tutti i bottoni per risparmiare energia sui display OLED"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le migliori linee guida (Google Material, Apple HIG) sconsigliano il contrasto estremo nero/bianco in dark mode: grigi scuri a diversi livelli di elevazione (superfici) permettono di comunicare profondità e riducono l'abbagliamento."
       }
     ]
   },
@@ -848,65 +1163,100 @@ window.DISPENSE_DATA = [
     ],
     "quiz": [
       {
-        "question": "In base al concetto di 'Satisficing' di Herbert Simon ripreso da Krug, come agisce l'utente medio su una pagina web?",
+        "question": "Cos'è un 'Design System' nella moderna produzione digitale?",
         "options": [
-          "Esamina metodicamente tutti i link della pagina prima di selezionare il più autorevole",
-          "Clicca sulla prima opzione che sembra plausibile per raggiungere l'obiettivo con il minimo sforzo cognitivo",
-          "Memorizza la mappa del sito prima di iniziare la navigazione nei contenuti interni",
-          "Attende il caricamento completo di tutti gli script analitici prima di compiere qualsiasi azione"
+          "Un software antivirus per la scansione dei fogli di stile CSS",
+          "Un ecosistema unificato di standard condivisi, principi visivi, pattern interattivi, componenti riutilizzabili codificati e linee guida per garantire coerenza e scalabilità tra team",
+          "Un archivio di immagini fotografiche acquistate da banche dati esterne",
+          "Un modello contrattuale per il pagamento dei diritti d'autore ai grafici"
         ],
         "correctIndex": 1,
-        "explanation": "L'utente web non ottimizza alla perfezione, ma adotta la prima scelta ragionevole per risparmiare tempo ed energia mentale."
+        "explanation": "Un Design System è la singola fonte di verità (Single Source of Truth) dell'azienda: include token, linee guida di tono di voce e componenti reali in codice (React, Vue, Web Components)."
       },
       {
-        "question": "Quale funzione svolgono le 'briciole di pane' (breadcrumbs) all'interno dell'architettura di navigazione?",
+        "question": "Nella metodologia 'Atomic Design' ideata da Brad Frost, quali sono i 5 livelli gerarchici di composizione dei componenti?",
         "options": [
-          "Mostrano il percorso gerarchico dalla Home fino alla pagina corrente e offrono una via di risalita rapida",
-          "Memorizzano i cookie di tracciamento pubblicitario per le campagne di remarketing",
-          "Riducono il consumo di banda internet cancellando le immagini già visualizzate dall'utente",
-          "Indicano il numero di volte che l'utente ha inserito una password errata durante il login"
+          "Variabili, Funzioni, Classi, Oggetti e Moduli",
+          "Pixel, Linee, Forme, Vettori e Immagini",
+          "Atomi, Molecole, Organismi, Template e Pagine",
+          "Bozze, Revisioni, Mockup, Prototipi e Rilasci"
+        ],
+        "correctIndex": 2,
+        "explanation": "Brad Frost modella la chimica: gli Atomi (font, colori, bottoni singoli) formano Molecole (barra di ricerca con input e bottone), che formano Organismi (la testata), posizionati in Template e popolati nelle Pagine reali."
+      },
+      {
+        "question": "Cos'è uno 'Style Tile' (artefatto visivo ideato da Samantha Warren)?",
+        "options": [
+          "Una tipologia di banner pubblicitario a scomparsa rapida",
+          "Una piastrella ceramica serigrafata con il logo del sito web",
+          "Un file di configurazione del server web per la gestione dei cookie",
+          "Un documento di design intermedio tra la moodboard concettuale e il mockup completo, che raccoglie font, palette, pulsanti e texture per calibrare lo stile con il cliente senza disegnare intere schermate"
+        ],
+        "correctIndex": 3,
+        "explanation": "Lo Style Tile è uno strumento agile straordinario: permette di concordare il 'mood visivo' (colori, bottoni, tipografia) risparmiando settimane di lavoro su mockup completi suscettibili di rifiuto."
+      },
+      {
+        "question": "Cosa sono i 'Design Token' all'interno di un'architettura di design scalabile?",
+        "options": [
+          "Valori atomici nominati (es. color-primary: #1a73e8; spacing-md: 16px) memorizzati in formati neutri (come JSON) per sincronizzare automaticamente design tool (Figma) e codice di sviluppo",
+          "Monete virtuali o criptovalute per acquistare template preconfezionati",
+          "Codici di sicurezza inviati via SMS per l'accesso a due fattori",
+          "Licenze commerciali temporanee per l'utilizzo di caratteri tipografici"
         ],
         "correctIndex": 0,
-        "explanation": "I breadcrumbs mostrano la gerarchia strutturale della pagina all'interno del sito e consentono con un clic di risalire ai livelli superiori."
+        "explanation": "I token sono le particelle elementari: astraggono i valori (colori, spazi, ombre, font) in variabili semantiche riutilizzabili su iOS, Android e Web, consentendo modifiche globali con un solo aggiornamento."
       },
       {
-        "question": "Perché le convenzioni di design consolidate (es. logo in alto a sinistra, carrello in alto a destra) NON andrebbero stravolte?",
+        "question": "Quale beneficio primario apporta un Design System ben strutturato ai team di ingegneria e design?",
         "options": [
-          "Perché violare le convenzioni comporta sanzioni pecuniarie da parte del consorzio W3C",
-          "Perché sfruttano i modelli mentali già acquisiti dagli utenti, rendendo la navigazione istintiva e immediata",
-          "Perché i moderni browser web rifiutano di compilare fogli di stile con posizionamenti insoliti",
-          "Perché impediscono al server di eseguire la compressione gzip del codice sorgente HTML"
+          "Elimina la necessità di eseguire test di compatibilità tra i diversi browser",
+          "Riduce drasticamente la duplicazione del lavoro, accelera i tempi di rilascio delle nuove funzionalità (time-to-market) e garantisce coerenza stilistica e di accessibilità a tutto l'ecosistema",
+          "Consente di caricare il sito web senza l'utilizzo di una connessione a internet",
+          "Impedisce agli utenti di personalizzare i propri profili personali"
         ],
         "correctIndex": 1,
-        "explanation": "Le convenzioni abbattono lo sforzo di apprendimento: l'utente sa già dove cercare i comandi senza dover decifrare l'interfaccia."
-      },
-      {
-        "question": "In un'interfaccia web usabile, quale compito assolve l'indicatore 'Tu sei qui'?",
-        "options": [
-          "Mostra le coordinate geografiche GPS dell'utente per scopi di geolocalizzazione",
-          "Evidenzia in modo evidente nella barra di navigazione la sezione o pagina in cui ci si trova",
-          "Segnala l'indirizzo IP del computer dell'utente per prevenire attacchi informatici",
-          "Attiva un suono acustico ogni volta che l'utente passa con il mouse sul menu principale"
-        ],
-        "correctIndex": 1,
-        "explanation": "L'indicatore visivo 'Tu sei qui' fornisce orientamento spaziale immediato, prevenendo il disorientamento durante la navigazione."
-      },
-      {
-        "question": "Cosa intende Krug con l'espressione 'Happy Talk' da eliminare sistematicamente dai siti web?",
-        "options": [
-          "I messaggi di ringraziamento inviati via email al termine dell'acquisto di un prodotto",
-          "I testi introduttivi autocelebrativi e privi di informazioni utili (es. 'Benvenuti nel nostro sito')",
-          "I pulsanti grafici dedicati alla condivisione dei contenuti sui social network",
-          "I sistemi di chat automatica per il supporto clienti basati su intelligenza artificiale"
-        ],
-        "correctIndex": 1,
-        "explanation": "L'happy talk è testo promozionale vuoto che gli utenti scavalcano sistematicamente e che aggiunge solo rumore visivo inutile."
+        "explanation": "Senza Design System ogni team reinventa la ruota (ciascuno crea la sua versione del bottone o della card). Con esso, i componenti sono testati, accessibili e pronti all'uso, liberando tempo per i veri problemi dell'utente."
       }
     ],
     "openQuestions": [
       {
         "question": "Spiega perché gli utenti scansionano invece di leggere e illustra come applicare la Prima Legge di Krug alla navigazione persistente.",
         "modelAnswer": "Gli utenti scansionano perché vanno di fretta, sanno che non serve leggere tutto per raggiungere il loro scopo e adottano il satisficing (scelta della prima opzione plausibile). La Prima Legge di Krug ('Non farmi pensare!') si applica alla navigazione persistente rendendo ogni elemento ovvio e convenzionale: il logo in alto a sinistra rimanda sempre alla Home, i link principali sono chiaramente cliccabili, la barra di ricerca è visibile con bottone esplicito e l'indicatore visivo 'Tu sei qui' segnala inequivocabilmente dove l'utente si trova nella gerarchia."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "In un'applicazione complessa, l'azienda decide di aggiornare il colore primario del marchio. In quale scenario questa modifica richiederà pochi secondi anziché settimane di ricerca e sostituzione manuale?",
+        "options": [
+          "Se il font utilizzato all'interno dei titoli appartiene alla famiglia serif",
+          "Se tutti i file HTML sono stati scritti a mano da un unico programmatore",
+          "Se il sito è ospitato su un server con disco a stato solido NVMe",
+          "Se l'interfaccia è costruita impiegando un Design Token per il colore primario condiviso tra repository CSS e componenti"
+        ],
+        "correctIndex": 3,
+        "explanation": "Questo è il potere dei Design Token: aggiornando il valore della variabile centrale, la modifica si propaga istantaneamente su tutte le interfacce, bottoni, link e stati del sistema."
+      },
+      {
+        "question": "Qual è il limite metodologico nel presentare al cliente tre layout definitivi ad altissima fedeltà (mockup complessi) nelle prime fasi di un progetto?",
+        "options": [
+          "Il cliente tende a focalizzarsi su dettagli superficiali (la foto specifica, il testo di prova) anziché sulla struttura logica, e qualsiasi variazione richiede rifacimenti costosi",
+          "I browser moderni non riescono a visualizzare file immagine a risoluzione elevata",
+          "I mockup ad alta fedeltà non possono essere esportati in formato PDF",
+          "Le specifiche W3C vietano la presentazione di mockup prima della stipula contrattuale"
+        ],
+        "correctIndex": 0,
+        "explanation": "Troppi dettagli prematuri creano attrito: il committente perde la visione d'insieme e discute su elementi marginali, mentre strumenti sintetici come wireframe e Style Tile mantengono il focus sulla strategia."
+      },
+      {
+        "question": "Cosa si intende per 'Documentazione Viva' (Living Style Guide) associata a un Design System?",
+        "options": [
+          "Un manuale cartaceo a fogli mobili stampato ogni settimana",
+          "Una piattaforma interattiva (come Storybook) in cui i componenti visualizzati sono generati dal codice sorgente reale impiegato in produzione, aggiornandosi in tempo reale",
+          "Un video tutorial registrato dagli sviluppatori per illustrare l'interfaccia",
+          "Una pagina web che visualizza unicamente le statistiche di accesso degli utenti"
+        ],
+        "correctIndex": 1,
+        "explanation": "Una style guide 'morta' (un PDF) diventa obsoleta in un mese. Una 'Living Style Guide' esegue i componenti reali del codice: se un ingegnere aggiorna il codice del componente, la documentazione riflette istantaneamente la modifica."
       }
     ]
   },
@@ -939,65 +1289,100 @@ window.DISPENSE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Cosa differenzia uno Style Tile rispetto a una tradizionale Moodboard artistica?",
+        "question": "Qual è il principio architetturale alla base della separazione dei compiti (Separation of Concerns) nel World Wide Web?",
         "options": [
-          "La moodboard è scritta in codice HTML mentre lo Style Tile si disegna unicamente su tela ad olio",
-          "Lo Style Tile usa i reali elementi di interfaccia (font veri, bottoni, colori) invece di foto astratte di suggestione",
-          "La moodboard definisce la struttura del database mentre lo Style Tile gestisce le API esterne",
-          "Non sussiste alcuna differenza reale, trattandosi esattamente dello stesso documento di lavoro"
+          "I tre linguaggi devono essere scritti tutti all'interno di un unico tag per migliorare la velocità",
+          "HTML si occupa dei pagamenti bancari, CSS dei testi e JavaScript della sicurezza del server",
+          "HTML gestisce la struttura semantica del contenuto, CSS controlla la presentazione visiva ed estetica, JavaScript governa il comportamento e la dinamicità interattiva",
+          "JavaScript è riservato ai computer desktop mentre HTML e CSS funzionano solo su smartphone"
+        ],
+        "correctIndex": 2,
+        "explanation": "La triade del web moderno separa nettamente: Contenuto e Semantica (HTML), Stile e Layout (CSS), Logica e Interazione (JavaScript). Questa separazione assicura manutenibilità, accessibilità e standard W3C."
+      },
+      {
+        "question": "Cosa si intende per 'Document Object Model' (DOM)?",
+        "options": [
+          "Un algoritmo di cifratura per impedire la lettura del codice sorgente delle pagine",
+          "Un formato proprietario per la memorizzazione dei testi su floppy disk",
+          "Il modulo di alimentazione hardware della scheda madre del computer",
+          "La rappresentazione ad albero strutturato in memoria che il browser costruisce analizzando il codice HTML, consentendo a linguaggi come JavaScript di manipolare elementi, attributi e contenuti"
+        ],
+        "correctIndex": 3,
+        "explanation": "Il DOM è l'interfaccia ad albero viva del documento: ogni tag HTML diventa un nodo manipolabile (aggiungere classi, ascoltare eventi click, alterare stili in tempo reale tramite script)."
+      },
+      {
+        "question": "Perché l'uso di tag semantici HTML5 (<header>, <main>, <article>, <nav>, <aside>, <footer>) è nettamente superiore all'uso indiscriminato di tag generici <div>?",
+        "options": [
+          "Fornisce significato intrinseco alla struttura (Landmark), migliorando l'accessibilità per le tecnologie assistive e favorendo l'indicizzazione gerarchica da parte dei motori di ricerca (SEO)",
+          "I tag semantici sono gli unici che supportano l'applicazione di colori di sfondo via CSS",
+          "I tag generici <div> sono stati formalmente aboliti e vengono ignorati dai browser",
+          "L'uso dei tag semantici riduce automaticamente il peso del file HTML del 90%"
+        ],
+        "correctIndex": 0,
+        "explanation": "La semantica trasforma il testo in significato strutturato: gli screen reader permettono all'utente cieco di navigare saltando da un landmark all'altro (da 'nav' a 'main'), cosa impossibile con un mare di anonimi <div>."
+      },
+      {
+        "question": "Quale consorzio internazionale sviluppa e mantiene gli standard tecnici aperti per il World Wide Web (come HTML e CSS)?",
+        "options": [
+          "La corporazione privata dei produttori di microprocessori della Silicon Valley",
+          "Il W3C (World Wide Web Consortium), fondato da Tim Berners-Lee",
+          "Il Dipartimento del Commercio del governo degli Stati Uniti",
+          "L'Associazione Internazionale dei Provider di Telefonia Mobile"
         ],
         "correctIndex": 1,
-        "explanation": "Mentre la moodboard raccoglie ispirazioni generiche, lo Style Tile mostra già i veri mattoni dell'interfaccia (font, colori, pulsanti)."
+        "explanation": "Il W3C (guidato da Tim Berners-Lee con WHATWG) definisce le specifiche aperte, garantendo che il web rimanga universale, accessibile e interoperabile su qualsiasi dispositivo e browser."
       },
       {
-        "question": "Per quale motivo presentare direttamente mockup completi ad alta fedeltà può rivelarsi rischioso?",
+        "question": "Cosa stabiliscono le linee guida WCAG (Web Content Accessibility Guidelines)?",
         "options": [
-          "Perché se il cliente rifiuta la direzione stilistica, decine di ore di impaginazione dettagliata vanno sprecate",
-          "Perché i mockup ad alta fedeltà non possono essere visualizzati su computer moderni",
-          "Perché la legge vieta di mostrare schermate complete prima della registrazione del marchio",
-          "Perché i mockup impediscono al programmatore di scegliere la versione di JavaScript preferita"
+          "La configurazione obbligatoria per le antenne Wi-Fi pubbliche",
+          "I prezzi di vendita raccomandati per i domini web di primo livello",
+          "I requisiti tecnici, progettuali e contenutistici per rendere il web accessibile a persone con disabilità visive, uditive, motorie o cognitive (basati sui 4 principi: Percepibile, Utilizzabile, Comprensibile, Robusto)",
+          "I criteri per la creazione di algoritmi pubblicitari comportamentali"
         ],
-        "correctIndex": 0,
-        "explanation": "Disegnare subito tutte le pagine è inefficiente: lo Style Tile consente di convalidare prima il tono visivo in poche ore."
-      },
-      {
-        "question": "Quale tra i seguenti elementi NON appartiene tipicamente alla composizione di uno Style Tile?",
-        "options": [
-          "I campioni delle tonalità cromatiche primarie e secondarie del brand",
-          "Il codice sorgente del database relazionale SQL per l'autenticazione degli utenti",
-          "Esempi di titoli H1 e paragrafi formattati con i font tipografici selezionati",
-          "Pulsanti interattivi di test con i relativi stati visivi di riposo e passaggio mouse"
-        ],
-        "correctIndex": 1,
-        "explanation": "Lo Style Tile è un artefatto puramente visivo e linguistico; non contiene architettura di server né codice di backend."
-      },
-      {
-        "question": "In che misura lo Style Tile agevola il dialogo tra designer e committente?",
-        "options": [
-          "Consente di discutere e concordare l'atmosfera estetica prima di affrontare la complessità del layout",
-          "Costringe il committente ad accettare qualsiasi scelta grafica senza possibilità di critica",
-          "Elimina la necessità di definire il budget economico preventivo per la realizzazione del sito",
-          "Permette di calcolare in automatico il numero di visitatori che frequenteranno il portale"
-        ],
-        "correctIndex": 0,
-        "explanation": "Focalizza la conversazione sulle qualità percettive (elegante, amichevole, autorevole) senza confonderle con la disposizione degli elementi."
-      },
-      {
-        "question": "Quale legame sussiste tra gli elementi di uno Style Tile approvato e il successivo Design System?",
-        "options": [
-          "Gli elementi visivi dello Style Tile diventano i valori base (Design Tokens) dei fogli di stile CSS",
-          "Tutti gli elementi dello Style Tile vengono distrutti e ricreati da capo in fase di programmazione",
-          "Lo Style Tile serve solo per la stampa e non ha alcuna relazione con il codice CSS del web",
-          "Il browser estrae le password di sistema a partire dai codici esadecimali dello Style Tile"
-        ],
-        "correctIndex": 0,
-        "explanation": "I font, i codici esadecimali e i raggi di curvatura dello Style Tile diventano le variabili CSS (`:root`) del design system."
+        "correctIndex": 2,
+        "explanation": "Le WCAG (articolate nei livelli A, AA, AAA) sono lo standard etico e legale globale dell'accessibilità: assicurano che nessuno sia escluso dalla partecipazione alla vita digitale."
       }
     ],
     "openQuestions": [
       {
         "question": "Definisci il concetto di Style Tile ideato da Samantha Warren, illustrandone la struttura e spiegando perché ottimizza il processo di approvazione visiva.",
         "modelAnswer": "Lo Style Tile è un artefatto visivo concepito da Samantha Warren che colma il divario tra la vaghezza concettuale delle moodboard e l'eccessiva rigidità temporale dei mockup definitivi. Si compone di una scheda che raccoglie palette cromatica, coppie tipografiche reali (titoli e corpo del testo), stili dei bottoni con stati hover, icone e pattern visivi, slegati dalla struttura della pagina. Consente di produrre rapidamente alternative di stile diverse da concordare con il committente, evitando sprechi di lavoro prima dell'impaginazione completa."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Un sito di e-commerce costruisce un pulsante cliccabile utilizzando il tag '<div onclick='checkout()'>Acquista</div>' senza attributi aggiuntivi. Quale gravissima violazione di accessibilità si verifica?",
+        "options": [
+          "Il <div> non è focalizzabile da tastiera con il tasto Tab, non ha ruolo 'button' annunciato dagli screen reader e non risponde alla barra spaziatrice o al tasto Invio, escludendo gli utenti con disabilità motorie o visive",
+          "Il browser non può eseguire la funzione JavaScript se invocata da un tag div",
+          "I fogli di stile CSS non possono assegnare margini o padding a un elemento div",
+          "Il server rifiuta la transazione economica se non originata da un elemento form"
+        ],
+        "correctIndex": 0,
+        "explanation": "Un elemento <button> nativo possiede gratuitamente accessibilità da tastiera (Tab, Enter, Space) e annuncio semantico. Simulando un bottone con un <div> si creano barriere insormontabili se non si ricreano tutti i comportamenti via ARIA e script."
+      },
+      {
+        "question": "Qual è la conseguenza del mancato rispetto della gerarchia delle intestazioni (es. saltare direttamente da <h1> a <h4> per motivi puramente grafici)?",
+        "options": [
+          "Provoca il crash immediato del motore di rendering del browser",
+          "Disorienta gli utenti che utilizzano tecnologie assistive per scansionare la struttura del documento saltando tra livelli gerarchici di intestazione",
+          "I browser convertono automaticamente tutti i testi sottostanti in corsivo",
+          "I motori di ricerca bloccano l'accesso al dominio web"
+        ],
+        "correctIndex": 1,
+        "explanation": "Gli utenti non vedenti usano l'elenco dei titoli per esplorare la pagina: una gerarchia discontinua o saltata (h1 -> h4) fa presumere che intere sezioni informative siano state omesse o danneggiate."
+      },
+      {
+        "question": "Cosa indica l'acronimo 'ARIA' (Accessible Rich Internet Applications) nelle specifiche web?",
+        "options": [
+          "Un framework CSS per la creazione di layout tridimensionali",
+          "Un protocollo di compressione video ad alta fedeltà per il web",
+          "Un insieme di attributi e ruoli HTML da aggiungere al markup per comunicare ruoli semantici, stati e proprietà quando gli elementi HTML nativi non sono sufficienti per interfacce complesse",
+          "Una tecnologia proprietaria per il controllo vocale delle smart TV"
+        ],
+        "correctIndex": 2,
+        "explanation": "ARIA (es. role='dialog', aria-expanded, aria-live) colma il divario nei widget interattivi avanzati (modali, caroselli, tab) spiegando allo screen reader cosa sta accadendo sullo schermo."
       }
     ]
   },
@@ -1030,65 +1415,100 @@ window.DISPENSE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Quale tra i seguenti tag HTML appartiene alla categoria degli elementi nativi di tipo 'Block'?",
+        "question": "Cosa definisce il concetto di 'Cascata' (Cascade) nel linguaggio CSS?",
         "options": [
-          "Il tag <span> impiegato per colorare singole parole all'interno di una frase",
-          "Il tag <p> utilizzato per strutturare interi paragrafi di testo autonomi",
-          "Il tag <strong> impiegato per evidenziare visivamente una parola in grassetto",
-          "Il tag <a> utilizzato per definire un collegamento ipertestuale in linea"
+          "La conversione dei caratteri tipografici in numeri binari",
+          "La caduta fisica delle immagini verso il fondo della pagina web durante il rendering",
+          "Il flusso di traffico di rete che scorre dal server al router domestico",
+          "L'algoritmo che risolve i conflitti tra più regole applicate allo stesso elemento, determinando quale stile prevale in base a origine, specificità del selettore e ordine di apparizione nel codice"
         ],
-        "correctIndex": 1,
-        "explanation": "Il tag `<p>` è un elemento di blocco: inizia su una nuova riga e occupa l'intera larghezza orizzontale a disposizione."
+        "correctIndex": 3,
+        "explanation": "La Cascata è il cuore del CSS: se due regole entrano in conflitto per lo stesso elemento, il browser le pesa valutando la specificità del selettore; a parità di specificità, l'ultima regola dichiarata sovrascrive la precedente."
       },
       {
-        "question": "Perché è considerata una cattiva pratica di sviluppo usare tag HTML con stili visivi obsoleti come <font> o <center>?",
+        "question": "Quale tra i seguenti selettori CSS possiede il grado di Specificità più elevato secondo le regole standard W3C?",
         "options": [
-          "Perché vìola il principio cardine di separazione tra struttura semantica (HTML) e presentazione grafica (CSS)",
-          "Perché i moderni processori per smartphone non supportano più la lettura dei tag HTML",
-          "Perché tali tag richiedono la sottoscrizione di un abbonamento a pagamento con il W3C",
-          "Perché aumentano il rischio che il sito web venga infettato da virus informatici durante il rendering"
+          "Un selettore per identificatore univoco '#header-logo' (Specificità: 0, 1, 0, 0)",
+          "Un selettore per classe '.main-button' (Specificità: 0, 0, 1, 0)",
+          "Un selettore per tag di elemento 'p' (Specificità: 0, 0, 0, 1)",
+          "Il selettore universale '*' (Specificità: 0, 0, 0, 0)"
         ],
         "correctIndex": 0,
-        "explanation": "HTML deve descrivere unicamente il significato logico dei dati; tutto l'aspetto estetico e visivo spetta al foglio di stile CSS."
+        "explanation": "La specificità si calcola su base posizionale: Stili inline > ID (0,1,0,0) > Classi/Pseudo-classi/Attributi (0,0,1,0) > Elementi/Pseudo-elementi (0,0,0,1). Un ID supera sempre anche un lungo elenco di classi concatenate."
       },
       {
-        "question": "Quale elemento semantico introdotto da HTML5 è specificamente designato per racchiudere un contenuto autonomo e riutilizzabile (come una card di un articolo)?",
+        "question": "Come si calcolano le dimensioni totali di un elemento quando è impostata la proprietà 'box-sizing: border-box'?",
         "options": [
-          "Il tag <nav>",
-          "Il tag <article>",
-          "Il tag <aside>",
-          "Il tag <footer>"
+          "La larghezza totale è la somma di width + padding raddoppiato + bordo raddoppiato",
+          "La larghezza (width) dichiarata include al proprio interno sia il padding che il bordo, preservando l'ingombro esterno esatto",
+          "Il padding e il bordo vengono eliminati dal rendering del browser",
+          "La larghezza dell'elemento si adatta automaticamente all'altezza della finestra"
         ],
         "correctIndex": 1,
-        "explanation": "<article> rappresenta un blocco di contenuto autosufficiente che avrebbe senso compiuto anche se distribuito separatamente (es. post o card)."
+        "explanation": "Con border-box, width è il perimetro complessivo esterno: se imposti width: 200px con padding 20px, il contenuto si stringe a 160px mantenendo la scatola esattamente a 200px."
       },
       {
-        "question": "Quale selettore CSS possiede la specificità (peso gerarchico) maggiore nella risoluzione dei conflitti di stile a cascata?",
+        "question": "Quale differenza intercorre tra un elemento con 'display: block' e uno con 'display: inline'?",
         "options": [
-          "Il selettore di tag generico (es. p)",
-          "Il selettore di classe (es. .card)",
-          "Il selettore di ID (es. #bottone-principale)",
-          "Il selettore universale asterisco (*)"
+          "Gli elementi inline possono contenere solo immagini e mai testo",
+          "Gli elementi block possono essere colorati, mentre gli inline sono sempre trasparenti",
+          "L'elemento block occupa tutta la larghezza disponibile della riga e va a capo automaticamente, accettando width e height; l'elemento inline occupa solo lo spazio del contenuto, non va a capo e non accetta width/height",
+          "Non sussiste alcuna differenza reale di visualizzazione"
         ],
         "correctIndex": 2,
-        "explanation": "Nella scala di specificità CSS standard, un ID ha un peso nettamente superiore rispetto a classi, pseudo-classi o selettori di tag."
+        "explanation": "Un elemento 'block' (come <p> o <div>) genera una scatola a tutta riga con controllo dimensionale; un elemento 'inline' (come <span> o <a>) scorre all'interno del testo senza spezzare la riga."
       },
       {
-        "question": "Quale attributo obbligatorio deve essere sempre fornito sul tag <img> per garantire l'accessibilità visiva?",
+        "question": "Qual è il comportamento della proprietà 'position: absolute' applicata a un elemento CSS?",
         "options": [
-          "L'attributo alt che fornisce una descrizione testuale per gli screen reader dei non vedenti",
-          "L'attributo style contenente istruzioni di animazione tridimensionale",
-          "L'attributo target che impone l'apertura dell'immagine in una nuova scheda",
-          "L'attributo download per forzare il salvataggio del file sul disco rigido dell'utente"
+          "L'elemento scompare dallo schermo diventando trasparente",
+          "L'elemento rimane fisso al centro dello schermo indipendentemente dallo scorrimento della pagina",
+          "L'elemento assume automaticamente un display: flex all'interno del proprio box",
+          "L'elemento viene rimosso dal normale flusso del documento e posizionato alle coordinate top/left rispetto al primo genitore antenato che possieda un posizionamento diverso da static"
         ],
-        "correctIndex": 0,
-        "explanation": "L'attributo `alt` (alternative text) è il requisito cardine per descrivere l'immagine a chi non può vederla o se l'immagine non si carica."
+        "correctIndex": 3,
+        "explanation": "L'elemento assoluto non occupa più spazio nel flusso della pagina (i fratelli collassano nello spazio vuoto) e si aggancia alle coordinate del genitore posizionato (solitamente con position: relative)."
       }
     ],
     "openQuestions": [
       {
         "question": "Spiega la separazione delle responsabilità tra HTML e CSS, illustrando la differenza tra elementi block e inline e il valore della semantica HTML5.",
         "modelAnswer": "HTML definisce la struttura semantica dei contenuti, mentre CSS governa l'aspetto visivo e il layout. Gli elementi block (div, p, article, header) vanno a capo e occupano il 100% della larghezza, accettando dimensioni su tutti i lati; gli elementi inline (span, a, strong) scorrono nel flusso del testo senza andare a capo e non accettano width o height. I tag semantici HTML5 (header, nav, main, article, section, footer) sono fondamentali perché attribuiscono significato strutturale al codice, consentendo ai motori di ricerca di indicizzare i contenuti e agli screen reader di fornire navigazione autonoma tramite landmarks."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Due regole CSS si applicano allo stesso paragrafo: 'article p { color: blue; }' e '.testo-evidenziato { color: red; }'. Di quale colore apparirà il testo?",
+        "options": [
+          "Blu, perché 'article p' contiene due elementi e quindi ha valore numerico doppio",
+          "Rosso, perché la classe '.testo-evidenziato' ha specificità (0,0,1,0), che supera i due selettori di elemento di 'article p' aventi specificità (0,0,0,2)",
+          "Nero, perché il browser entra in stallo e applica il colore predefinito di sistema",
+          "Viola, fondendo i due colori in base al principio additivo RGB"
+        ],
+        "correctIndex": 1,
+        "explanation": "Una singola classe (peso 10) batte qualsiasi combinazione di soli elementi (peso 1 ciascuno): (0,0,1,0) prevale nettamente su (0,0,0,2)."
+      },
+      {
+        "question": "Perché l'uso indiscriminato della direttiva '!important' nel codice CSS è considerato un pessimo pattern di sviluppo?",
+        "options": [
+          "Perché i browser mobili non supportano la direttiva !important",
+          "Perché disabilita il caricamento dei font tipografici personalizzati",
+          "Perché rompe la normale gerarchia della cascata naturale, rendendo difficilissimo il debugging e la manutenzione futura del foglio di stile",
+          "Perché provoca la cancellazione automatica della cronologia di navigazione"
+        ],
+        "correctIndex": 2,
+        "explanation": "!important è un'arma nucleare: per sovrascriverla in seguito si è costretti a usarne un'altra ancora, innescando una spirale incontrollabile di codice caotico e fragile."
+      },
+      {
+        "question": "Cosa contraddistingue 'position: sticky' rispetto a 'position: fixed'?",
+        "options": [
+          "L'elemento fixed scompare quando l'utente scorre la pagina verso il basso",
+          "L'elemento sticky funziona unicamente sui monitor con frequenza superiore a 60Hz",
+          "L'elemento sticky non supporta le coordinate top o bottom",
+          "L'elemento sticky si comporta come posizionamento relativo finché non raggiunge una certa soglia di scroll, dopodiché diventa fisso rimanendo però vincolato all'interno del proprio contenitore genitore"
+        ],
+        "correctIndex": 3,
+        "explanation": "'fixed' ancora l'elemento al viewport globale; 'sticky' segue il flusso finché non tocca la soglia (es. top: 0), si blocca a schermo e poi 'si stacca' e risale quando il suo genitore finisce lo scorrimento."
       }
     ]
   },
@@ -1121,65 +1541,100 @@ window.DISPENSE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Chi ha teorizzato e formalizzato per la prima volta nel 2010 i principi del Responsive Web Design?",
+        "question": "Quali tre elementi cardine compongono la formula storica del 'Responsive Web Design' teorizzata da Ethan Marcotte nel 2010?",
         "options": [
-          "Steve Jobs",
-          "Ethan Marcotte",
-          "Jakob Nielsen",
-          "Tim Berners-Lee"
-        ],
-        "correctIndex": 1,
-        "explanation": "Ethan Marcotte pubblicò il fondamentale articolo 'Responsive Web Design' nel maggio 2010 su A List Apart, coniando la disciplina."
-      },
-      {
-        "question": "Cosa accade se a un'immagine web non viene applicata la proprietà 'max-width: 100%' all'interno di una colonna fluida?",
-        "options": [
-          "L'immagine conserva i suoi pixel fissi e se è più grande del contenitore genera uno sgradevole scroll orizzontale",
-          "Il browser rimpicciolisce automaticamente tutti i caratteri tipografici della pagina per compensare",
-          "L'immagine viene cancellata dalla memoria del browser per motivi di sicurezza informatica",
-          "Il server di hosting converte automaticamente il file da JPEG a vettoriale SVG"
+          "Griglie fluide (percentuali), Immagini flessibili e Media Queries CSS",
+          "Database SQL, Server Apache e Linguaggio PHP",
+          "Font vettoriali, Colori HSL e Tabelle HTML",
+          "Touch screen, Mouse ottico e Tastiera ergonomica"
         ],
         "correctIndex": 0,
-        "explanation": "Senza max-width: 100%, l'immagine mantiene la sua dimensione nativa e travalica i bordi del contenitore quando questo si restringe."
+        "explanation": "Marcotte definisce il RWD come la sinergia di tre tecniche: una struttura a griglia elastica basata su percentuali, immagini che scalano entro il loro contenitore e media queries per riorganizzare il layout a soglie critiche."
       },
       {
-        "question": "Nel paradigma 'Mobile First', dove e come viene definito il layout per gli schermi degli smartphone?",
+        "question": "Quale filosofia architetturale propone la metodologia 'Mobile First' nella scrittura del codice CSS?",
         "options": [
-          "All'interno di una complessa media query impostata su max-width: 320px",
-          "Nel codice CSS principale all'inizio del file, senza alcuna media query protettiva",
-          "In un secondo file CSS separato caricato tramite script dinamico JavaScript",
-          "Esclusivamente attraverso attributi di stile inline all'interno dei tag HTML"
+          "Creare siti web destinati unicamente ed esclusivamente agli smartphone ignorando i desktop",
+          "Scrivere gli stili base per gli schermi piccoli (layout lineare, leggero, senza fronzoli) e introdurre complessità per schermi ampi tramite media queries con 'min-width' (Progressive Enhancement)",
+          "Scrivere codice JavaScript per bloccare l'accesso al sito dai computer portatili",
+          "Comprimere il database per farlo risiedere nella memoria dello smartphone"
         ],
         "correctIndex": 1,
-        "explanation": "Mobile First impone che lo stile base naturale sia proprio quello per smartphone; le media queries min-width intervengono solo per allargare."
+        "explanation": "Mobile First parte dal vincolo più stretto: costringe a selezionare le informazioni essenziali, assicura caricamenti velocissimi su reti cellulari e arricchisce progressivamente il layout man mano che lo schermo si allarga."
       },
       {
-        "question": "In base a quale criterio dovrebbero essere scelti i punti di interruzione (breakpoint) in un foglio di stile responsivo?",
+        "question": "Cosa indica il termine 'Breakpoint' nel Responsive Web Design?",
         "options": [
-          "Rincorrendo esattamente i pixel dei modelli di iPhone appena usciti sul mercato commerciale",
-          "Nel punto esatto in cui il contenuto e il layout iniziano a 'rompersi' o risultare scomposti",
-          "A intervalli rigorosamente identici e costanti di cento pixel a partire da zero",
-          "Unicamente su raccomandazione scritta formulata dai motori di ricerca nelle console web"
+          "L'interruzione temporanea della connessione Wi-Fi durante il download dei dati",
+          "Un errore irreversibile di caricamento che blocca la visualizzazione della pagina",
+          "La dimensione della finestra del browser a cui una Media Query attiva un cambiamento strutturale nel layout per preservare la leggibilità e l'armonia dei contenuti",
+          "Il punto in cui l'utente abbandona il carrello dell'e-commerce"
         ],
-        "correctIndex": 1,
-        "explanation": "I breakpoint efficaci non inseguono la miriade di schermi sul mercato, ma si posizionano dove il contenuto necessita di una riorganizzazione strutturale."
+        "correctIndex": 2,
+        "explanation": "I breakpoint sono i 'punti di snodo' del layout: ad esempio a 768px la navigazione passa da hamburger mobile a menu orizzontale e le card passano da colonna singola a griglia affiancata."
       },
       {
-        "question": "Quale unità di misura moderna in CSS consente di creare dimensioni tipografiche che scalano fluidamente tra un minimo e un massimo?",
+        "question": "Cosa stabilisce l'approccio 'Content-out' per la scelta dei breakpoint rispetto all'approccio orientato al dispositivo (Device-specific)?",
         "options": [
-          "La funzione clamp(minimo, ideale, massimo)",
-          "L'unità fissa in millimetri tipografici pt",
-          "La pseudo-classe :nth-child",
-          "La proprietà z-index a incremento automatico"
+          "Il contenuto deve essere riscritto ogni volta che viene rilasciato un nuovo iPhone",
+          "Tutti i testi devono essere esportati in formato PDF prima dell'impaginazione",
+          "I breakpoint devono essere calcolati in base alla dimensione dei pixel fisici del processore",
+          "I breakpoint devono essere stabiliti dove il contenuto naturale comincia a rompersi o degradare (linee troppo lunghe, colonne compresse), non sulle dimensioni commerciali di uno specifico modello di smartphone"
+        ],
+        "correctIndex": 3,
+        "explanation": "I modelli di telefoni cambiano ogni sei mesi; il design robusto ascolta il contenuto: se a 640px le due colonne diventano illeggibili, quello è il breakpoint naturale, a prescindere dal brand del dispositivo."
+      },
+      {
+        "question": "Quale direttiva HTML è indispensabile affinché un foglio di stile responsive funzioni correttamente sui browser mobili?",
+        "options": [
+          "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+          "<meta http-equiv='refresh' content='30'>",
+          "<link rel='icon' href='favicon.ico'>",
+          "<base href='https://www.w3.org/'>"
         ],
         "correctIndex": 0,
-        "explanation": "La funzione CSS `clamp()` definisce un valore ideale fluido (es. con unità di viewport vw) racchiuso tra una soglia minima e una massima."
+        "explanation": "Senza il meta viewport, i browser mobili ignorano le media queries e renderizzano la pagina come fosse un desktop da 980px zoomato indietro, vanificando qualsiasi regola responsive CSS."
       }
     ],
     "openQuestions": [
       {
         "question": "Descrivi i tre pilastri del Responsive Web Design formulati da Ethan Marcotte e spiega la logica metodologica dell'approccio Mobile First.",
         "modelAnswer": "I tre pilastri sono: 1. Griglie Fluide (layout proporzionali basati su percentuali o unità fr anziché pixel fissi); 2. Immagini Flessibili (immagini vincolate da max-width: 100% e height: auto per scalare senza deformarsi né debordare); 3. Media Queries (regole condizionali CSS per adattare il layout alle dimensioni dello schermo). L'approccio Mobile First progetta preliminarmente per lo schermo mobile (il vincolo più rigoroso) scrivendo il CSS base senza media queries, e utilizza successivamente media queries min-width per arricchire progressivamente il layout su tablet e desktop, ottimizzando velocità e pulizia del codice."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Un'applicazione web adotta Media Queries basate unicamente su '@media (max-width: 600px)' sovrascrivendo le regole scritte inizialmente per schermi desktop larghi 1920px. Quale problematica metodologica presenta questo approccio?",
+        "options": [
+          "Il file CSS viene rifiutato dalla validazione automatica del consorzio W3C",
+          "I browser Android non riconoscono la parola chiave 'max-width'",
+          "Adotta la logica di Desktop Degradation anziché Mobile First: i dispositivi mobili a larghezza di banda ridotta sono costretti a scaricare ed elaborare tutte le regole desktop prima di applicare le sovrascritture",
+          "Le immagini in formato SVG non possono scalare all'interno di query max-width"
+        ],
+        "correctIndex": 2,
+        "explanation": "Con max-width (Desktop First), il dispositivo mobile riceve prima la complessità pesante e poi la disfa. Mobile First (min-width) carica le basi leggere ed espande solo se lo schermo ha lo spazio per accoglierle."
+      },
+      {
+        "question": "Qual è la differenza fondamentale tra 'Responsive Web Design' e 'Adaptive Web Design'?",
+        "options": [
+          "Non sussiste alcuna differenza reale, trattandosi di sinonimi",
+          "L'adaptive funziona solo senza connessione internet mentre il responsive richiede il 5G",
+          "Il responsive non supporta il codice JavaScript mentre l'adaptive non usa CSS",
+          "Il responsive è un layout unico e fluido basato su percentuali e media query che si adatta a qualsiasi larghezza continua; l'adaptive serve schermate statiche preconfezionate a scatti fissi prestabiliti (es. solo a 320, 768 e 1024px)"
+        ],
+        "correctIndex": 3,
+        "explanation": "Il responsive è un continuum fluido che scorre come l'acqua tra qualsiasi risoluzione; l'adaptive è una serie di layout discreti a scatto, che rischiano di non coprire risoluzioni intermedie o insolite."
+      },
+      {
+        "question": "Come si previene il troncamento imprevisto o la deformazione dei layout sui telefoni dotati di 'Notch' o 'Dynamic Island'?",
+        "options": [
+          "Utilizzando le variabili ambientali CSS 'env(safe-area-inset-top)' e 'viewport-fit=cover' per garantire aree di respiro rispetto ai ritagli fisici dello schermo",
+          "Imponendo una risoluzione fissa di 300px per tutte le pagine web",
+          "Disabilitando lo scorrimento verticale della pagina",
+          "Convertendo l'intero sito in un'applicazione puramente audio"
+        ],
+        "correctIndex": 0,
+        "explanation": "La proprietà 'safe-area-inset' informa il CSS su dove terminano i sensori hardware fisici (notch, barra home), permettendo di distanziare gli elementi interattivi ed evitare sovrapposizioni critiche."
       }
     ]
   },
@@ -1212,65 +1667,100 @@ window.DISPENSE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Cosa accade nel browser quando JavaScript esegue il metodo 'classList.toggle('active')' su un elemento?",
+        "question": "Qual è la ripartizione dei compiti nel modello architetturale 'Client-Server' alla base del World Wide Web?",
         "options": [
-          "Aggiunge la classe se non presente, oppure la rimuove se è già presente, aggiornando lo stile CSS",
-          "Elimina permanentemente l'elemento dal codice sorgente salvato sul server",
-          "Invia una notifica di avvenuta violazione di copyright al consorzio internazionale W3C",
-          "Forza il riavvio del sistema operativo dell'utente per applicare la modifica"
-        ],
-        "correctIndex": 0,
-        "explanation": "`classList.toggle()` alterna la presenza di una classe CSS: se c'è la toglie, se manca la aggiunge, permettendo cambi di stato dinamici."
-      },
-      {
-        "question": "Quale tra le seguenti attività NON può essere delegata in sicurezza al solo ambiente Client (browser)?",
-        "options": [
-          "Il cambio di colore di un bottone durante il passaggio del mouse con la pseudo-classe :hover",
-          "L'autenticazione della password di un utente e l'addebito su carta di credito di un acquisto",
-          "L'apertura di un menu hamburger a tendina su dispositivo mobile",
-          "Il controllo preliminare che una casella di testo non sia stata lasciata vuota"
+          "Il Client gestisce i database bancari e il Server si occupa unicamente di renderizzare i font",
+          "Il Client (il browser dell'utente) richiede le risorse, elabora l'interfaccia visiva e gestisce le interazioni locali; il Server ascolta le richieste, gestisce la logica di business, interroga i database e restituisce i dati protetti",
+          "Client e Server sono due componenti software installati sullo stesso chip dello smartphone",
+          "Il Server serve unicamente a stampare i fogli di carta negli uffici postali"
         ],
         "correctIndex": 1,
-        "explanation": "Il client è controllato dall'utente e può essere manomesso; operazioni critiche come autenticazione e pagamenti devono risiedere sul server."
+        "explanation": "Il Client (front-end) è l'ambiente locale dell'utente dove gira l'interfaccia; il Server (back-end) è il motore centrale remoto che custodisce i dati, protegge le password e garantisce la persistenza."
       },
       {
-        "question": "Cosa si intende per 'Event Listener' in linguaggio JavaScript?",
+        "question": "Cosa garantisce il protocollo sicuro 'HTTPS' rispetto al vecchio protocollo HTTP non protetto?",
         "options": [
-          "Un componente hardware che registra l'audio ambientale nella stanza del programmatore",
-          "Una funzione in attesa di un'azione specifica dell'utente (come un click o un tasto premuto) per eseguire codice",
-          "Un virus informatico che rallenta la velocità di navigazione sul World Wide Web",
-          "Un tag HTML speciale deputato unicamente alla riproduzione di file musicali"
+          "Impedisce agli utenti di chiudere la finestra del browser prima del pagamento",
+          "Aumenta la velocità fisica della connessione internet a fibra ottica",
+          "Cifra l'intera sessione di comunicazione tramite protocolli TLS/SSL, impedendo a terzi di intercettare o alterare password, carte di credito e dati sensibili in transito (evitando attacchi Man-in-the-Middle)",
+          "Rende superfluo l'utilizzo di password per accedere ai propri account personali"
+        ],
+        "correctIndex": 2,
+        "explanation": "HTTPS certifica l'identità del server ed esegue crittografia end-to-end: un malintenzionato su una rete Wi-Fi pubblica vedrà solo dati incomprensibili cifrati, garantendo privacy e integrità."
+      },
+      {
+        "question": "Qual è la differenza semantica fondamentale tra un metodo di richiesta HTTP 'GET' e uno 'POST'?",
+        "options": [
+          "Non sussiste alcuna differenza tecnica di funzionamento",
+          "GET serve per inviare file pesanti e POST serve solo per leggere immagini",
+          "GET funziona solo sui telefoni cellulari e POST solo sui computer da tavolo",
+          "GET richiede una risorsa al server senza alterarne lo stato (idempotente) passando i parametri nell'URL; POST invia dati nel corpo della richiesta (body) per creare o modificare informazioni persistenti sul server"
+        ],
+        "correctIndex": 3,
+        "explanation": "GET è una richiesta di sola lettura sicura: non altera il database ed è memorizzabile nei segnalibri; POST trasmette payload strutturati (es. compilazione di un form d'ordine o credenziali) alterando lo stato sul server."
+      },
+      {
+        "question": "A cosa serve il meccanismo di 'Caching' nei browser e nei server web?",
+        "options": [
+          "A memorizzare copie temporanee di risorse statiche (immagini, CSS, file JS) in memoria locale per evitare di riscaricarle a ogni visita, riducendo drasticamente i tempi di caricamento e il traffico dati",
+          "A registrare tutte le conversazioni vocali degli utenti per fini pubblicitari",
+          "A cancellare periodicamente i file dal disco rigido per fare spazio",
+          "A convertire i file HTML in fogli di calcolo Excel"
+        ],
+        "correctIndex": 0,
+        "explanation": "La cache è il salvavita della web performance: se il logo o il file CSS non sono cambiati, il browser li carica istantaneamente dalla memoria locale senza interrogare il server remoto a chilometri di distanza."
+      },
+      {
+        "question": "Cosa indica un codice di stato HTTP della famiglia '4xx' (es. 404 o 403) restituito dal server?",
+        "options": [
+          "Una conferma di operazione avvenuta con pieno successo",
+          "Un errore originato dal Client (es. 404 Pagina non trovata per URL errato, o 403 Accesso non autorizzato a una risorsa protetta)",
+          "Un guasto hardware irreversibile che richiede la sostituzione del server",
+          "Un reindirizzamento permanente verso un nuovo indirizzo web"
         ],
         "correctIndex": 1,
-        "explanation": "Un listener (es. `addEventListener('click', fn)`) intercetta gli eventi innescati dall'utente ed esegue la logica associata."
-      },
-      {
-        "question": "In quale formato strutturato viaggiano tipicamente i dati scambiati tra Server e Client nelle moderne API web?",
-        "options": [
-          "Nel formato JSON (JavaScript Object Notation), leggero e facilmente interpretabile",
-          "In file eseguibili compressi in formato binario proprietario .exe",
-          "In documenti fotografici raster non compressi a risoluzione cinematografica",
-          "In nastri magnetici digitalizzati privi di qualsiasi indice di ricerca"
-        ],
-        "correctIndex": 0,
-        "explanation": "JSON è lo standard universale per trasmettere dati strutturati (array e oggetti) tra server e applicazioni web."
-      },
-      {
-        "question": "Quale vantaggio offrono le Single Page Application (SPA) basate su JavaScript rispetto ai siti web tradizionali?",
-        "options": [
-          "Aggiornano dinamicamente porzioni della schermata senza dover ricaricare l'intera pagina a ogni clic",
-          "Funzionano anche su monitor spenti grazie alla trasmissione delle onde radio a bassa frequenza",
-          "Eliminano del tutto la necessità di avere un server per conservare le informazioni del database",
-          "Consentono di visualizzare siti internet anche in assenza di un collegamento elettrico"
-        ],
-        "correctIndex": 0,
-        "explanation": "Le SPA aggiornano il DOM localmente in modo reattivo, offrendo un'esperienza d'uso fluida e istantanea simile a un'app nativa."
+        "explanation": "Classi di stato HTTP: 2xx = Successo; 3xx = Reindirizzamento; 4xx = Errore Client (risorsa inesistente o permessi mancanti); 5xx = Errore Server (crash o sovraccarico del server)."
       }
     ],
     "openQuestions": [
       {
         "question": "Illustra il ruolo di JavaScript nel front-end web (DOM ed eventi) e analizza le differenze funzionali e di sicurezza tra Client e Server.",
         "modelAnswer": "JavaScript governa il comportamento dinamico del front-end: interagisce con il DOM (l'albero degli elementi in memoria) per manipolare stili, classi e contenuti in tempo reale e risponde alle interazioni dell'utente tramite Event Listeners. Il Client (il browser) è deputato al rendering grafico e alla reattività immediata, ma è un ambiente insicuro poiché accessibile e modificabile dall'utente. Il Server (back-end) opera in ambiente protetto: gestisce la persistenza sui database, la sicurezza crittografica, le transazioni e le logiche di business, dialogando con il client tramite API che scambiano dati strutturati in formato JSON."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Un utente compila un form d'ordine e clicca 'Invia'. A causa della connessione lenta, non vede feedback visivo immediato e riclicca il bottone più volte. Se la richiesta è inviata via POST senza misure di protezione, quale grave disservizio si rischia?",
+        "options": [
+          "La cancellazione di tutti i cookie salvati nella cronologia di navigazione",
+          "La disinstallazione automatica del browser dal computer dell'utente",
+          "Il reset dei driver grafici della scheda video",
+          "L'invio multiplo dell'ordine con conseguente duplicazione involontaria dell'addebito economico e dei prodotti acquistati"
+        ],
+        "correctIndex": 3,
+        "explanation": "Le richieste POST non sono idempotenti: ogni click invia un nuovo record al database. L'UI deve disabilitare immediatamente il pulsante al primo click mostrando uno spinner (microinterazione) per evitare doppi addebiti."
+      },
+      {
+        "question": "In termini di Web Performance Optimization, cosa rappresenta il parametro 'Time to First Byte' (TTFB)?",
+        "options": [
+          "Il tempo che intercorre tra l'invio della richiesta HTTP dal client e la ricezione del primissimo byte di risposta elaborato dal server",
+          "Il tempo impiegato dal designer per scrivere il primo carattere del codice HTML",
+          "La durata complessiva del download di tutte le immagini fotografiche",
+          "La velocità di digitazione dell'utente sulla tastiera del computer"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il TTFB misura la reattività pura del server e della rete: un TTFB alto segnala che il server impiega troppo tempo per elaborare la richiesta (query database lente, assenza di cache o server sovraccarico)."
+      },
+      {
+        "question": "Cosa indica l'acronimo 'API' (Application Programming Interface) nel contesto web (es. REST o GraphQL)?",
+        "options": [
+          "Un'estensione software per visualizzare contenuti grafici tridimensionali",
+          "Un insieme strutturato di endpoint e regole standard che consentono a due applicazioni o sistemi software differenti di scambiarsi dati in modo automatizzato e sicuro (tipicamente in formato JSON)",
+          "Un algoritmo per la calibrazione cromatica delle stampanti digitali",
+          "Una tecnologia proprietaria per bloccare la navigazione nei siti concorrenti"
+        ],
+        "correctIndex": 1,
+        "explanation": "Le API sono i contratti di scambio dati del mondo moderno: ad esempio, il client richiede via API meteo o tassi di cambio al server, ricevendo pacchetti JSON leggeri e aggiornati senza ricaricare la pagina."
       }
     ]
   }

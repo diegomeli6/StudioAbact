@@ -1,0 +1,848 @@
+{
+  "stull-c11": {
+    "quiz": [
+      {
+        "question": "Come si articola la Gerarchia dei Bisogni della UX derivata dalla piramide di Maslow e illustrata da Stull?",
+        "options": [
+          "Alla base si colloca la Funzionalità (il prodotto fa ciò per cui serve), seguita da Affidabilità, Usabilità (facilità d'uso) e infine Piacevolezza/Delight (soddisfazione emotiva)",
+          "Alla base si trova l'Estetica visiva, seguita dalla Condivisione social, dal Prezzo scontato e infine dalla Funzionalità tecnica",
+          "La piramide comprende unicamente livelli di sicurezza informatica e protocolli di cifratura delle chiavi di rete",
+          "La gerarchia pone al vertice la complessità del codice e alla base la velocità di download dei file multimediali"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nessuna interfaccia splendida può salvare un prodotto inutile. La gerarchia parte dall'utilità funzionale: solo se il sistema risolve un vero problema hanno valore l'usabilità e la bellezza estetica."
+      },
+      {
+        "question": "Cosa accade quando un team si concentra ossessivamente sull'estetica ('delight') di un'applicazione trascurando l'utilità funzionale di base?",
+        "options": [
+          "Si produce un manufatto graficamente seducente ma inutile, che gli utenti abbandonano non appena realizzano che non risolve il loro problema pratico primario",
+          "L'applicazione raddoppia spontaneamente il valore delle proprie azioni sui mercati azionari",
+          "I tassi di fidelizzazione superano il 95% indipendentemente dai compiti completati",
+          "I browser web correggono automaticamente i difetti di programmazione del backend"
+        ],
+        "correctIndex": 0,
+        "explanation": "La cosmesi visiva senza utilità è solo decorazione fine a se stessa: una bellissima app per ordinare cibo che fallisce nell'inviare l'ordine al ristorante non ha alcun valore."
+      },
+      {
+        "question": "Quale concetto distingue il 'Valore Utilitario' dal 'Valore Edonico' nell'esperienza d'uso di un servizio digitale?",
+        "options": [
+          "Il valore utilitario riguarda l'efficacia e l'efficienza nel completare un compito pratico; il valore edonico riguarda il piacere sensoriale, il divertimento e l'appagamento emotivo vissuto dall'utente",
+          "Il valore utilitario si calcola in euro; il valore edonico si calcola in dollari statunitensi",
+          "Il valore utilitario appartiene ai dispositivi hardware; il valore edonico appartiene al cloud computing",
+          "Non sussiste distinzione: in ambito scientifico l'usabilità coincide al 100% con la piacevolezza visiva"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'home banking richiede anzitutto valore utilitario (precisione, chiarezza dei bonifici); un videogioco o Spotify combinano utilità e forte valore edonico/emotivo."
+      },
+      {
+        "question": "Come si accerta la reale 'Utilità' di una nuova funzionalità prima di scriverne il codice sorgente?",
+        "options": [
+          "Validando il bisogno reale sul campo attraverso interviste esplorative sul contesto d'uso e test di concetto (concept testing) con potenziali utenti",
+          "Chiedendo al Lead Developer se ritiene interessante la tecnologia software necessaria per svilupparla",
+          "Analizzando quanti gigabyte di traffico consumerà il database nei successivi cinque anni",
+          "Sostituendo l'intero piano di sviluppo con sondaggi anonimi a risposta multipla su Twitter"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'utilità si verifica indagando i problemi reali delle persone (Jobs-to-be-Done): capire cosa cercano di ottenere e quali ostacoli incontrano oggi nel farlo."
+      },
+      {
+        "question": "In base al modello di utilità di Stull, quale relazione sussiste tra 'Usabilità' e 'Utilità'?",
+        "options": [
+          "L'utilità definisce se il sistema fa ciò di cui l'utente ha bisogno; l'usabilità definisce quanto sia facile, intuitivo ed efficiente farlo: l'una è cieca senza l'altra",
+          "L'usabilità sostituisce interamente l'utilità nei software rilasciati con licenza open source",
+          "L'utilità è di competenza esclusiva del marketing, mentre l'usabilità appartiene al collaudo finale di fabbrica",
+          "L'usabilità si riferisce ai comandi vocali, mentre l'utilità riguarda solo la navigazione con il mouse"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se un'applicazione fa qualcosa di inutile con facilità estrema, rimane inutile. Se fa qualcosa di utilissimo ma è impossibile da usare, le persone cercheranno un'alternativa migliore."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Una startup crea un'app con micro-interazioni lussuose, animazioni 3D ed effetti sonori per tenere traccia delle bollette domestiche, ma omette l'integrazione automatica con i conti bancari costringendo a digitare a mano 20 codici IBAN al mese. Gli utenti fuggono. Quale errore gerarchico è stato commesso?",
+        "options": [
+          "Violazione della piramide della UX: è stato sovradimensionato il livello della piacevolezza sensoriale sacrificando l'utilità funzionale e la riduzione del carico operativo",
+          "Mancata adozione del protocollo crittografico SHA-256 per i salvataggi in cache locale",
+          "Applicazione eccessiva della legge di Hick dovuta all'assenza di menu a tendina",
+          "Violazione del principio di continuità visiva della scuola della Gestalt"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'app ha fallito nel fornire il valore primario: automatizzare una noiosa incombenza. Le animazioni sfavillanti non compensano 30 minuti di digitazione manuale frustrante."
+      },
+      {
+        "question": "In una sessione di design review, si discute se aggiungere una funzione di generazione di avatar 3D all'interno di un software per la gestione dei turni del pronto soccorso ospedaliero. Quale criterio di utilità dovrebbe guidare la decisione?",
+        "options": [
+          "Rifiutare la proposta: in un contesto critico ad alto stress l'utilità è misurata da velocità, leggibilità e assenza di distrazioni; funzioni edoniche futili compromettono l'efficacia operativa",
+          "Accettare la proposta purché gli avatar siano resi obbligatori per tutti i medici di turno",
+          "Demandare la scelta a un test A/B misurando il tempo medio di permanenza degli infermieri sul portale",
+          "Introdurre gli avatar ma visualizzarli esclusivamente in scala di grigi per non affaticare la vista"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il contesto d'uso determina l'utilità: in emergenza ospedaliera ogni pixel deve servire a salvare vite e ridurre errori, non a intrattenere con orpelli grafici."
+      },
+      {
+        "question": "Come si misura oggettivamente se un'innovazione introdotta in un portale universitario ha apportato un reale incremento di 'Utilità' per gli studenti?",
+        "options": [
+          "Verificando l'aumento della percentuale di studenti che riescono a completare con successo l'iscrizione agli esami senza dover ricorrere allo sportello di segreteria",
+          "Misurando quanti nuovi colori CSS sono stati aggiunti al foglio di stile dell'ateneo",
+          "Registrando il numero complessivo di visualizzazioni della home page durante i giorni festivi",
+          "Controllando se la dimensione del logo dell'università nell'header rispetta le proporzioni auree"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'utilità reale produce un impatto concreto sui compiti della vita reale: meno code fisiche, meno errori burocratici, completamento autonomo ed efficace dell'obiettivo."
+      }
+    ]
+  },
+  "stull-c12": {
+    "quiz": [
+      {
+        "question": "Cosa postula la Scuola della Gestalt (psicologia della forma) riguardo alla percezione visiva umana?",
+        "options": [
+          "La mente umana percepisce la totalità come qualcosa di qualitativamente diverso dalla semplice somma delle sue singole parti, organizzando attivamente stimoli sparsi in insiemi coerenti",
+          "L'occhio umano scansiona le pagine pixel per pixel esattamente come il sensore ottico di uno scanner digitale",
+          "I colori caldi vengono percepiti con una velocità tripla rispetto ai colori freddi dalla retina umana",
+          "La percezione visiva è determinata esclusivamente dalla risoluzione DPI dello schermo utilizzato"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il principio cardine della Gestalt è che il cervello non registra stimoli isolati ma cerca costantemente pattern, strutture, raggruppamenti e figure dotate di significato."
+      },
+      {
+        "question": "Cosa stabilisce la legge della Gestalt della 'Prossimità' (Proximity) applicata ai form web?",
+        "options": [
+          "Gli elementi visivamente più vicini tra loro vengono percepiti spontaneamente come correlati e appartenenti alla medesima unità concettuale (es. un'etichetta deve stare più vicina al proprio campo che al campo successivo)",
+          "Gli elementi posizionati agli angoli dello schermo attraggono il doppio dell'attenzione dell'utente",
+          "Gli oggetti grafici devono trovarsi a una distanza esatta di 16 pixel dal bordo del viewport",
+          "I pulsanti di invio devono essere collocati sempre in prossimità del logo aziendale"
+        ],
+        "correctIndex": 0,
+        "explanation": "La prossimità governa la comprensione immediata: se l'etichetta è a metà strada tra due campi, l'utente esita perché non sa a quale casella si riferisca."
+      },
+      {
+        "question": "Come agisce la legge della 'Somiglianza' (Similarity) nella categorizzazione degli elementi di un'interfaccia?",
+        "options": [
+          "Elementi che condividono caratteristiche visive identiche (stesso colore, forma, dimensione, tipografia) vengono automaticamente percepiti come aventi la medesima funzione o importanza",
+          "Tutte le immagini presenti in una pagina web devono avere proporzioni quadrate identiche",
+          "I link testuali devono possedere sempre la stessa lunghezza in caratteri alfabetici",
+          "Le intestazioni H1 e H2 devono utilizzare la medesima dimensione di font per non confondere l'utente"
+        ],
+        "correctIndex": 0,
+        "explanation": "La somiglianza crea gerarchia visiva: se tutti i link sono blu e sottolineati, l'utente riconosce all'istante che condividono la stessa natura interattiva."
+      },
+      {
+        "question": "Cosa descrive il principio di 'Figura/Sfondo' (Figure/Ground) e come viene sfruttato nei modali sovrapposti (modal overlays)?",
+        "options": [
+          "La tendenza visiva a isolare un elemento focale in primo piano (figura) separandolo dal contesto retrostante (sfondo); oscurare o sfocare lo sfondo fa risaltare la finestra di dialogo come figura prioritaria",
+          "L'obbligo di utilizzare immagini di paesaggi naturali come sfondo di tutte le schermate di login",
+          "La regola che impone che il testo sia sempre di colore nero su sfondo bianco assoluto",
+          "La conversione automatica delle illustrazioni vettoriali in immagini raster a 300 DPI"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'overlay scuro o semi-trasparente (backdrop) retrostante il modale 'spegne' lo sfondo trasformandolo in contesto inattivo, concentrando tutta la percezione sulla finestra attiva."
+      },
+      {
+        "question": "Cosa afferma la legge della 'Chiusura' (Closure) nella percezione di elementi grafici e caroselli orizzontali?",
+        "options": [
+          "Il cervello tende a completare mentalmente figure o schemi incompleti; tagliare visivamente a metà l'ultima card di un carosello suggerisce che il contenuto continua oltre il bordo dello schermo",
+          "Una pagina web deve chiudere automaticamente tutte le sessioni inattive dopo 180 secondi",
+          "Ogni tag HTML di apertura deve possedere il corrispondente tag di chiusura per essere validato",
+          "I menu di navigazione devono ripiegarsi ad ogni cambio di pagina del portale"
+        ],
+        "correctIndex": 0,
+        "explanation": "La chiusura fa intuire la continuità: vedere una card parzialmente tagliata sul margine destro fa capire al volo che c'è altro da scorrere orizzontalmente senza bisogno di spiegazioni."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "In un modulo online, ogni campo di input dista 24px dall'etichetta sovrastante e 24px dall'etichetta del campo successivo. Gli utenti compilano frequentemente i campi associando i testi sbagliati. Quale violazione della Gestalt è in atto?",
+        "options": [
+          "Violazione della legge di Prossimità: l'equidistanza annulla la relazione semantica. L'etichetta deve distare pochissimo dal suo campo (es. 6px) e molto di più dal gruppo successivo (es. 28px)",
+          "Mancata applicazione del principio di continuità di direzione della linea dello sguardo",
+          "Assenza del contrasto di luminanza minima prescritto dalle WCAG 2.1 per la dislessia",
+          "Violazione della legge di Fitts sul tempo di raggiungimento del cursore mouse"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'equidistanza genera caos percettivo. Avvicinare l'etichetta al proprio campo e distanziare i gruppi adiacenti ripristina la gerarchia visiva istantanea."
+      },
+      {
+        "question": "Un'interfaccia usa lo stesso stile visivo (rettangolo rosso con testo bianco in maiuscolo grassetto) sia per il pulsante 'Elimina account' sia per il badge informativo 'Offerta del giorno'. Qual è la conseguenza cognitiva per l'utente?",
+        "options": [
+          "Violazione della legge di Somiglianza: elementi visivamente identici inducono ad attribuire loro la stessa funzione; l'utente rischia di cliccare l'azione distruttiva credendola una promozione o viceversa",
+          "Diminuzione automatica della frequenza di rendering dello schermo da 120Hz a 60Hz",
+          "Miglioramento dell'attenzione grazie alla memorizzazione dell'associazione tra rosso e testo bianco",
+          "Nessuna conseguenza, poiché il contenuto del testo alfabetico sovrascrive ogni percezione visiva"
+        ],
+        "correctIndex": 0,
+        "explanation": "La percezione visiva precede la lettura del testo: stili identici su funzioni antitetiche (azione distruttiva vs badge promozionale) inducono errori gravissimi."
+      },
+      {
+        "question": "In una dashboard con decine di grafici, come si applica il principio di 'Destino Comune' (Common Fate) per rendere comprensibile l'interazione?",
+        "options": [
+          "Facendo muovere o animare sincronicamente gli elementi correlati (es. quando l'utente passa sopra un punto della serie storica, tutti i grafici si aggiornano mostrando la medesima data)",
+          "Disponendo tutti i grafici lungo una circonferenza visiva concentrica perfetta",
+          "Colorando tutti i grafici con la medesima sfumatura di grigio per non distrarre l'operatore",
+          "Impedendo l'aggiornamento dei dati se l'utente non fa clic su ogni singolo riquadro"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il 'destino comune' stabilisce che elementi che si muovono o mutano insieme vengono percepiti come un unico sistema coordinato (es. tooltip sincronizzati cross-chart)."
+      }
+    ]
+  },
+  "stull-c13": {
+    "quiz": [
+      {
+        "question": "Cosa ha dimostrato il celebre esperimento psicologico del 'Gorilla Invisibile' condotto da Christopher Chabris e Daniel Simons?",
+        "options": [
+          "Il fenomeno della 'Cecità da disattenzione': quando le persone sono fortemente concentrate su un compito impegnativo (contare i passaggi di palla), non notano stimoli visivi enormi e palesi che attraversano la scena",
+          "I primati antropomorfi possiedono una memoria a breve termine superiore a quella dell'essere umano",
+          "La visione periferica dell'occhio umano è in grado di decifrare testi complessi ad alta velocità",
+          "Le persone con deficit visivo preferiscono interfacce basate su segnali audio stereofonici"
+        ],
+        "correctIndex": 0,
+        "explanation": "La cecità da disattenzione prova che guardare non coincide con vedere: se l'utente è focalizzato a inserire il codice fiscale, ignorerà un banner gigantesco in cima allo schermo."
+      },
+      {
+        "question": "Cosa intende Stull con la metafora culinaria del 'Pawpaw' (frutto autoctono americano poco diffuso)?",
+        "options": [
+          "Ciò che non riceve attenzione cosciente e non viene elaborato dalla mente è come se non esistesse affatto nell'esperienza vissuta dell'utente",
+          "I prodotti software complessi richiedono una maturazione lenta prima del lancio sul mercato",
+          "La frutta deperibile non deve mai essere venduta su piattaforme prive di certificati SSL",
+          "I sapori amari attivano l'emisfero cerebrale destro deputato alla creatività grafica"
+        ],
+        "correctIndex": 0,
+        "explanation": "Non basta che un pulsante sia presente sulla pagina HTML: se l'attenzione dell'utente non ci cade sopra, per lui quella funzione non esiste."
+      },
+      {
+        "question": "Come si definisce l''Effetto Alone' (Halo Effect) nel contesto del Web Design e dell'usabilità?",
+        "options": [
+          "La tendenza cognitiva per cui un'interfaccia visivamente molto curata ed esteticamente attraente induce l'utente a giudicare il sistema come più usabile, affidabile e sicuro anche in presenza di difetti minori",
+          "Il cerchio luminoso che compare attorno ai pulsanti cliccati con il touchscreen",
+          "La perdita di nitidezza dei caratteri tipografici sui monitor a bassa densità di pixel",
+          "L'aura di riverbero generata dalle animazioni JavaScript con filtri CSS drop-shadow"
+        ],
+        "correctIndex": 0,
+        "explanation": "Esperimenti di Tractinsky (2000): 'Ciò che è bello è percepito come usabile'. Una grafica professionale genera indulgenza iniziale e fiducia, anche se non può colmare voragini funzionali."
+      },
+      {
+        "question": "Perché l'attenzione umana è considerata la 'risorsa più scarsa e volatile' dell'era digitale?",
+        "options": [
+          "Perché la capacità di elaborazione cosciente è severamente limitata e continuamente bombardata da notifiche, interruzioni e stimoli concorrenti",
+          "Perché i moderni smartphone riducono la luminosità dello schermo per risparmiare batteria",
+          "Perché gli utenti navigano su internet unicamente durante le ore serali prima di dormire",
+          "Perché la memoria a lungo termine si cancella completamente ad ogni ciclo di sonno REM"
+        ],
+        "correctIndex": 0,
+        "explanation": "Herbert Simon: 'L'abbondanza di informazione crea povertà di attenzione'. Progettare significa guidare parsimoniosamente il faro dell'attenzione sui compiti primari."
+      },
+      {
+        "question": "Cosa si intende per 'Banner Blindness' (cecità ai banner) identificata dagli studi di eye-tracking?",
+        "options": [
+          "Il comportamento appreso e quasi istintivo degli utenti di ignorare sistematicamente qualsiasi elemento visivo che assomigli a una pubblicità o che si trovi nelle posizioni tipiche dei banner",
+          "Una patologia oftalmica causata dall'eccessiva esposizione alla luce blu degli schermi",
+          "L'oscuramento automatico degli annunci promozionali operato dai filtri di rete aziendali",
+          "L'impossibilità di leggere testi posizionati su sfondi con gradiente cromatico a tre vie"
+        ],
+        "correctIndex": 0,
+        "explanation": "Gli utenti hanno imparato a non guardare la colonna destra o i grandi rettangoli colorati. Se mettete un avviso vitale dentro una grafica simile a un banner, nessuno lo leggerà."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Un'applicazione sanitaria pubblica posiziona l'avviso fondamentale 'Prima dell'esame rimanere a digiuno da 12 ore' all'interno di un rettangolo animato lampeggiante sulla colonna di destra. Il 60% dei pazienti si presenta non a digiuno. Quale fenomeno spiega questo fallimento?",
+        "options": [
+          "Banner Blindness e cecità da disattenzione: la collocazione periferica e lo stile promozionale inducono gli utenti a filtrare inconsciamente l'informazione ignorandola",
+          "Incompatibilità dei fogli di stile CSS con le risoluzioni dei tablet ospedalieri",
+          "Violazione del teorema del limite centrale nella statistica medica",
+          "Mancata traduzione del testo in lingua inglese per i turisti stranieri"
+        ],
+        "correctIndex": 0,
+        "explanation": "Gli elementi lampeggianti a destra attivano la cecità ai banner. L'avviso critico deve essere integrato direttamente nel flusso centrale di conferma prenotazione."
+      },
+      {
+        "question": "Durante un test di usabilità di un software di editing, i partecipanti devono ritagliare un'immagine. L'icona del ritaglio è collocata accanto a un'illustrazione animata in loop di un gatto che salta. I tester non vedono l'icona. Come interviene il designer?",
+        "options": [
+          "Rimuove l'animazione estranea per eliminare la cattura involontaria dell'attenzione e ripristinare il focus visivo sugli strumenti operativi",
+          "Raddoppia le dimensioni dell'illustrazione animata per renderla più piacevole",
+          "Aggiunge un secondo gatto animato sulla barra di stato inferiore",
+          "Sostituisce l'icona del ritaglio con una sequenza di tre comandi da tastiera segreti"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il movimento nel campo visivo cattura inevitabilmente l'attenzione involontaria (riflesso di orientamento). Le animazioni superflue distraggono dal compito primario."
+      },
+      {
+        "question": "Un sito di e-commerce ha un checkout pieno di bug, ma grazie a un design grafico raffinato ed elegante riceve inizialmente recensioni positive. Dopo due settimane, i resi aumentano e le vendite crollano. Quale fenomeno descrive questo andamento?",
+        "options": [
+          "L'Effetto Alone ha mascherato i problemi di usabilità al primo impatto, ma l'accumulo di frizioni nell'uso continuativo ha inevitabilmente distrutto la soddisfazione",
+          "L'applicazione errata della legge di Hick sui menu a fisarmonica",
+          "La saturazione della memoria cache del browser dei clienti",
+          "La violazione delle regole di sintassi ECMAScript 6 nello script di tracking"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'effetto alone compra la pazienza iniziale: l'utente pensa 'sarò io a sbagliare, il sito è così bello'. Ma col tempo la frustrazione pratica travolge l'estetica superficiale."
+      }
+    ]
+  },
+  "stull-c14": {
+    "quiz": [
+      {
+        "question": "Come definisce lo psicologo Mihaly Csikszentmihalyi lo 'Stato di Flow' (Esperienza Ottimale)?",
+        "options": [
+          "Uno stato di profondo e totale assorbimento in un'attività, in cui la persona perde la cognizione del tempo e prova intensa gratificazione grazie al perfetto bilanciamento tra la sfida affrontata e le proprie capacità",
+          "La velocità di trasmissione in gigabit al secondo di una connessione a banda larga",
+          "Il processo di liquidazione contabile delle fatture all'interno di un software gestionale",
+          "La transizione automatica delle schermate di un prototipo interattivo su Figma"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nel Flow l'utente è immerso, concentrato e privo di distrazioni: l'interfaccia scompare e rimane solo il compito (es. scrivere un testo, comporre musica, giocare)."
+      },
+      {
+        "question": "Quali sono le due variabili fondamentali che determinano l'ingresso nello stato di Flow nel modello teorico originale?",
+        "options": [
+          "Il livello di difficoltà percepita della sfida (Challenge) e il livello di abilità percepita dell'individuo (Skill)",
+          "La risoluzione grafica dello schermo e la luminosità ambientale della stanza",
+          "Il costo dell'abbonamento mensile e la velocità di clock del processore",
+          "Il numero di follower sui social network e la frequenza delle notifiche email"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se la sfida supera l'abilità si genera Ansia e Frustrazione; se l'abilità supera di molto la sfida si genera Noia; quando sfida e abilità crescono in equilibrio si entra nel canale del Flow."
+      },
+      {
+        "question": "Qual è il nemico principale dello stato di Flow nell'interazione con un'applicazione digitale?",
+        "options": [
+          "Le interruzioni impreviste, le finestre modali invasive, i crash di sistema e i rallentamenti improvvisi che spezzano il filo del pensiero dell'utente",
+          "L'utilizzo di tastiere fisiche ergonomiche al posto degli schermi touch",
+          "La presenza di documentazione tecnica consultabile su richiesta",
+          "L'impiego di una tavolozza di colori sobria basata su tonalità neutre"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ogni popup inopportuno ('Valuta la nostra app!', 'Iscriviti alla newsletter!') frantuma il flusso cognitivo: ricostruire lo stato di concentrazione richiede minuti preziosi."
+      },
+      {
+        "question": "Come supporta un software professionale (es. Adobe Photoshop, Figma o VS Code) il mantenimento del Flow?",
+        "options": [
+          "Fornendo scorciatoie da tastiera rapide, feedback in tempo reale immediato, cronologia delle modifiche reversibile (Undo) e un'area di lavoro pulita e priva di ostacoli",
+          "Obbligando l'utente a confermare ogni singolo click tramite password biometrica",
+          "Nascondendo l'opera creata ogni cinque minuti per mostrare video sponsorizzati",
+          "Disabilitando l'accelerazione grafica per impedire movimenti rapidi del cursore"
+        ],
+        "correctIndex": 0,
+        "explanation": "Gli strumenti professionali migliori diventano trasparenti: risposte a zero latenza e scorciatoie muscolari permettono alla mano di eseguire il pensiero senza attrito."
+      },
+      {
+        "question": "Cosa accade sul piano cognitivo quando un'interfaccia costringe l'utente a un continuo 'Task Switching' (passaggio continuo tra compiti diversi)?",
+        "options": [
+          "Si verifica il fenomeno del 'Residuo di attenzione' (Attention Residue): parte dell'energia mentale rimane bloccata sul compito precedente, moltiplicando la fatica e gli errori",
+          "Il quoziente intellettivo dell'utente aumenta grazie alla stimolazione contemporanea di entrambi gli emisferi",
+          "Il consumo energetico della batteria del computer si azzera automaticamente",
+          "La velocità di digitazione dei testi subisce un incremento costante del quaranta per cento"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il multitasking è un'illusione: saltare da una schermata all'altra disperde energie cognitive, lasciando un residuo mentale che degrada l'accuratezza del lavoro."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Uno scrittore sta componendo un testo in un editor online. Ogni 4 minuti appare una finestra modale al centro dello schermo che chiede: 'Ti piace il nostro servizio? Lascia un feedback!'. Qual è l'effetto di questa scelta di design?",
+        "options": [
+          "Distruzione sistematica dello stato di Flow e collasso dell'usabilità: l'utente prova profonda rabbia per l'interruzione ingiustificata del suo processo creativo",
+          "Aumento virtuoso del Net Promoter Score (NPS) grazie alla frequenza della misurazione",
+          "Ottimizzazione del funnel di conversione attraverso la tempestività della richiesta",
+          "Miglioramento dell'accessibilità conformemente ai criteri WCAG 2.1 sul feedback attivo"
+        ],
+        "correctIndex": 0,
+        "explanation": "Interrompere l'utente mentre sta producendo valore per chiedere una recensione egoistica è la violazione suprema del Flow: genera solo risposte negative e disinstallazioni."
+      },
+      {
+        "question": "In un videogioco educativo per l'apprendimento delle lingue, i primi esercizi sono così difficili che l'80% degli studenti fallisce al primo tentativo e abbandona. Come si riequilibra il sistema secondo la matrice di Csikszentmihalyi?",
+        "options": [
+          "Adattando dinamicamente la difficoltà alla progressione dello studente: partire con compiti semplici per infondere sicurezza e aumentare gradualmente la sfida man mano che cresce l'abilità",
+          "Rendendo gli esercizi impossibili da completare per stimolare l'ostinazione dell'utente",
+          "Sostituendo la lingua straniera con quiz su nozioni di geografia generale",
+          "Eliminando ogni forma di punteggio o riscontro visivo sul risultato degli esercizi"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se la sfida è troppo alta rispetto all'abilità iniziale, si genera ansia e abbandono. Il Flow richiede che la curva di difficoltà cresca di pari passo con la competenza acquisita."
+      },
+      {
+        "question": "Quale pattern di interazione protegge il Flow dell'utente durante il salvataggio continuo dei documenti?",
+        "options": [
+          "Il salvataggio automatico in background (Autosave) con un indicatore discreto e non bloccante ('Tutte le modifiche salvate')",
+          "Una finestra popup a comparsa ogni 60 secondi che blocca lo schermo chiedendo dove salvare il file",
+          "Un allarme sonoro acuto che avvisa l'utente ogni volta che un paragrafo viene modificato",
+          "L'obbligo di inserire il codice CAPTCHA prima di ogni salvataggio sul cloud"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'autosave silenzioso in background consente all'utente di lavorare senza ansia da perdita dati e senza dover interrompere il pensiero per cliccare 'Salva con nome'."
+      }
+    ]
+  },
+  "stull-c15": {
+    "quiz": [
+      {
+        "question": "Cosa postula il concetto psicologico di 'Pigrizia cognitiva' o Principio del Minimo Sforzo formulato da George Zipf?",
+        "options": [
+          "L'essere umano tende naturalmente ad adottare la strategia d'azione che richiede il minor consumo complessivo di tempo ed energie cognitive per raggiungere un risultato soddisfacente",
+          "Gli utenti rifiutano di acquistare prodotti tecnologici se non contengono un manuale illustrato",
+          "Il cervello umano consuma il 90% delle sue calorie unicamente durante il movimento muscolare fisico",
+          "Tutte le persone navigano su internet solo se premiate con incentivi economici tangibili"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'evoluzione biologica ha selezionato cervelli che risparmiano energie. Se un'operazione richiede 10 click anziché 2, l'utente cercherà la via più breve o lascerà perdere."
+      },
+      {
+        "question": "Cosa intende il premio Nobel Herbert Simon con il celebre termine 'Satisficing' (neologismo tra satisfy e suffice)?",
+        "options": [
+          "La tendenza delle persone a scegliere la prima opzione ragionevole e sufficientemente buona per il proprio scopo, anziché analizzare esaustivamente tutte le alternative per trovare la soluzione ottimale assoluta",
+          "Il raggiungimento del cento per cento di gradimento positivo nei test di customer satisfaction",
+          "La procedura matematica per calcolare il punto di pareggio tra costi e ricavi aziendali",
+          "L'obbligo contrattuale di garantire la conformità degli standard di sicurezza informatica"
+        ],
+        "correctIndex": 0,
+        "explanation": "Gli utenti non ottimizzano: scelgono la prima opzione plausibile che salta all'occhio. Steve Krug lo descrive in 'Don't Make Me Think': le persone non leggono le istruzioni, tirano a indovinare."
+      },
+      {
+        "question": "Quale ruolo ricoprono le 'Impostazioni predefinite' (Smart Defaults) alla luce della pigrizia cognitiva dell'utente?",
+        "options": [
+          "Hanno un impatto enorme, poiché la maggior parte degli utenti accetta e non modifica mai i valori proposti di default: preimpostare le opzioni più sicure e vantaggiose guida virtuosamente l'esperienza",
+          "Non hanno alcuna rilevanza, dato che tutti gli utenti personalizzano minuziosamente le preferenze del software",
+          "Servono unicamente a rallentare la procedura di installazione per verificare la licenza d'uso",
+          "Riducono il tempo di accensione del computer azzerando i controlli del BIOS"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'effetto default è potentissimo: oltre l'80-90% delle persone non cambia mai le impostazioni predefinite. Se il default è pessimo, l'esperienza sarà pessima per la stragrande maggioranza."
+      },
+      {
+        "question": "Come si riduce l'attrito cognitivo nei form online sfruttando la propensione dell'utente a evitare sforzi inutili?",
+        "options": [
+          "Utilizzando l'autocompletamento dell'indirizzo (browser autofill), rilevando automaticamente città e provincia dal CAP e chiedendo solo i dati strettamente indispensabili",
+          "Aumentando il numero di domande a risposta aperta da compilare obbligatoriamente",
+          "Disabilitando la funzione di copia e incolla per costringere a digitare manualmente ogni codice",
+          "Richiedendo la conferma telefonica vocale per ogni singolo dato inserito nel form"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se chiedi solo 3 campi anziché 15 e compili da solo il CAP o la città, rispetti il principio del minimo sforzo e fai salire le conversioni alle stelle."
+      },
+      {
+        "question": "Cosa si intende per 'Carico cognitivo intrinseco' ed 'estraneo' secondo la teoria del carico cognitivo di Sweller?",
+        "options": [
+          "L'intrinseco è la difficoltà naturale legata alla complessità del concetto da comprendere; l'estraneo è lo sforzo mentale sprecato a causa di un'interfaccia confusa, istruzioni opache o grafica disordinata",
+          "L'intrinseco è causato dal monitor del PC; l'estraneo è causato dal rumore di fondo della stanza",
+          "L'intrinseco riguarda i grafici vettoriali; l'estraneo riguarda i testi scritti in lingua straniera",
+          "Non sussiste distinzione teorica: qualsiasi carico mentale è dannoso e deve essere eliminato"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il designer deve azzerare il carico estraneo (comandi nascosti, icone bizzarre, testi arzigogolati) per lasciare intatte le energie mentali sul compito reale dell'utente."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "In un'app di donazioni per beneficenza, l'opzione di default per la frequenza è 'Donazione singola una tantum', con 1.000 sostenitori al mese. Il team imposta di default 'Donazione mensile ricorrente (disattivabile con un clic)'. Le donazioni ricorrenti decuplicano. Quale principio spiega l'effetto?",
+        "options": [
+          "La forza delle opzioni di default e l'euristica della minima resistenza: gli utenti tendono ad accettare la configurazione predefinita purché percepita come ragionevole e reversibile",
+          "L'incompatibilità delle schede di credito ricaricabili con i pagamenti una tantum",
+          "La violazione delle direttive WCAG 2.1 sull'accessibilità cognitiva dei form",
+          "Il cambiamento improvviso del modello mentale da utilitario a edonico"
+        ],
+        "correctIndex": 0,
+        "explanation": "I 'default virtuosi' (Nudge teorizzati da Thaler e Sunstein) sfruttano l'inerzia positiva: le persone mantengono la scelta predefinita se coerente con i loro valori."
+      },
+      {
+        "question": "Durante un test con utenti su un sito di noleggio auto, l'85% dei partecipanti sceglie la prima automobile visibile nell'elenco filtrato anziché scorrere le 40 alternative economicamente più vantaggiose. Quale concetto di Herbert Simon descrive il comportamento?",
+        "options": [
+          "Satisficing: l'utente non cerca la perfezione assoluta ma si accontenta rapidamente della prima vettura che soddisfa i criteri minimi di prezzo e capienza",
+          "Paralisi decisionale derivante dalla violazione del rasoio di Ockham",
+          "Dissonanza cognitiva post-decisionale indotta dalla fretta del test",
+          "Effetto priming negativo generato dai filtri laterali a checkbox"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le persone non passano ore a confrontare tutte le 40 auto: appena ne vedono una buona, la prendono. Questo è il puro satisficing nella vita quotidiana."
+      },
+      {
+        "question": "Un'applicazione bancaria costringe gli utenti a reinserire manualmente il proprio codice fiscale e IBAN ogni volta che vogliono ricaricare una carta prepagata. Come interviene un UX designer per azzerare questo carico parassita?",
+        "options": [
+          "Memorizzando in modo sicuro i dati già associati al profilo e proponendo la selezione a tocco singolo dal conto principale",
+          "Inserendo un pulsante che apre il sito web dell'Agenzia delle Entrate in una nuova scheda",
+          "Rendendo il codice fiscale un campo obbligatorio da digitare due volte per verifica",
+          "Stampando il codice IBAN a caratteri giganti nella schermata iniziale dell'app"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chiedere all'utente dati che il sistema già possiede è un insulto al principio del minimo sforzo: il software deve ricordare i dati ricorrenti e pre-compilarli."
+      }
+    ]
+  },
+  "stull-c16": {
+    "quiz": [
+      {
+        "question": "Cosa stabilisce la celebre ricerca dello psicologo George Miller sul 'Magico Numero 7 ± 2' nella memoria a breve termine?",
+        "options": [
+          "La memoria di lavoro umana ha una capacità di elaborazione limitata e può trattenere contemporaneamente tra 5 e 9 'chunk' (unità di informazione) indipendenti prima di iniziare a dimenticare",
+          "I siti web devono contenere un massimo di 7 pagine per essere indicizzati da Google",
+          "Gli utenti navigano su internet per non più di 7 minuti consecutivi",
+          "Un form di checkout non può contenere più di due campi obbligatori per legge"
+        ],
+        "correctIndex": 0,
+        "explanation": "La memoria a breve termine (working memory) è un collo di bottiglia strettissimo: non possiamo tenere a mente troppe informazioni slegate contemporaneamente."
+      },
+      {
+        "question": "Cos'è la tecnica del 'Chunking' applicata all'architettura dell'informazione e ai form web?",
+        "options": [
+          "La suddivisione di lunghe stringhe di dati o flussi complessi in piccoli blocchi logici raggruppati e facili da digerire (es. formattare i numeri di telefono in 3-3-4 o le carte di credito in 4-4-4-4)",
+          "La compressione dei file audio MP3 in blocchi binari per la trasmissione via streaming",
+          "L'eliminazione casuale di informazioni non necessarie per ridurre il peso del database",
+          "L'inserimento di interruzioni di riga forzate all'interno dei testi descrittivi di prodotto"
+        ],
+        "correctIndex": 0,
+        "explanation": "Leggere 16 cifre consecutive (4023601234567890) è massacrante per la memoria; spezzarle in 4 blocchi da 4 rende la lettura, la verifica e la digitazione immediate e prive di errori."
+      },
+      {
+        "question": "Cosa prescrive la sesta euristica di Jakob Nielsen: 'Riconoscimento superiore al richiamo mnemonico' (Recognition over Recall)?",
+        "options": [
+          "L'interfaccia deve rendere visibili e disponibili le opzioni, le azioni e gli elementi, affinché l'utente possa riconoscerli a vista anziché dover ricordare nozioni a memoria da una schermata all'altra",
+          "I loghi aziendali devono essere registrati presso l'ufficio marchi e brevetti per essere validi",
+          "Tutti i dati dell'utente devono essere memorizzati su supporti a stato solido anziché su cloud",
+          "L'utente deve superare un test di riconoscimento facciale prima di ogni transazione online"
+        ],
+        "correctIndex": 0,
+        "explanation": "Riconoscere è facilissimo per il cervello (es. scegliere una pietanza da un menu scritto); ricordare a memoria senza indizi visivi (recall) richiede grande sforzo e produce frequenti fallimenti."
+      },
+      {
+        "question": "Perché le interfacce a riga di comando (CLI) impongono un carico mnemonico molto più severo rispetto alle interfacce grafiche (GUI)?",
+        "options": [
+          "Perché la CLI si basa sul puro 'richiamo mnemonico' (l'utente deve ricordare a memoria la sintassi esatta di ogni comando), mentre la GUI mostra le opzioni visivamente (riconoscimento tramite menu e icone)",
+          "Perché la CLI utilizza solo monitor in bianco e nero che stancano la retina",
+          "Perché i comandi da terminale consumano più memoria RAM del processore centrale",
+          "Perché i linguaggi di scripting non supportano le scorciatoie da tastiera"
+        ],
+        "correctIndex": 0,
+        "explanation": "In DOS/Linux devi ricordare 'grep -rnI ...'; in una GUI vedi la casella di ricerca con scritto 'Cerca'. La GUI ha trionfato perché ha sostituito il richiamo con il riconoscimento visivo."
+      },
+      {
+        "question": "In un percorso di acquisto multi-step, quale strumento di design previene il sovraccarico della memoria di lavoro?",
+        "options": [
+          "Un riepilogo laterale sintetico sempre visibile (Order Summary) che mostra carrello, prezzi, spedizione e dettagli scelti nei passaggi precedenti",
+          "L'eliminazione di tutti i pulsanti per tornare alla schermata precedente",
+          "L'invio di un promemoria SMS ogni volta che l'utente clicca su un campo input",
+          "La visualizzazione di un timer a conto alla rovescia di 60 secondi che costringe a decidere in fretta"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se l'utente deve ricordare a memoria quanto costava l'oggetto o quale opzione di spedizione ha scelto tre schermate fa, andrà nel panico. Un riquadro riassuntivo elimina ogni sforzo mnemonico."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "In un software gestionale per magazzinieri, gli operatori devono digitare a memoria codici a 12 cifre senza separatori per confermare lo spostamento merci, provocando il 22% di errori di inserimento. Quale correzione applica i principi di Miller e del chunking?",
+        "options": [
+          "Formattare visivamente il codice in blocchi logici (es. ABC-123-XYZ) con spaziatura automatica, e implementare la ricerca predittiva basata sul nome del prodotto",
+          "Rendere il codice a 12 cifre invisibile all'operatore per evitare distrazioni",
+          "Obbligare i magazzinieri a sostenere un test di memoria prima di ogni turno lavorativo",
+          "Aumentare il codice da 12 a 24 cifre per ridurre le probabilità di duplicazione accidentale"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il chunking strutturato (blocchi da 3-4 caratteri con trattini) e l'autocompletamento trasformano uno sforzo di memoria bruta in un facile riconoscimento visivo guidato."
+      },
+      {
+        "question": "Un'app di viaggi costringe l'utente a digitare manualmente da una schermata all'altra il codice di prenotazione del volo per poter selezionare il posto a sedere nella pagina successiva. Quale violazione dell'euristica 'Recognition over Recall' è evidente?",
+        "options": [
+          "Costringere l'utente a ricordare o trascrivere su carta dati interni che il sistema già possiede e dovrebbe semplicemente visualizzare e trasferire automaticamente",
+          "Mancata adozione del protocollo di autenticazione a due fattori (2FA)",
+          "Violazione del principio della Gestalt relativo al destino comune degli elementi",
+          "Utilizzo di font con interlinea non conforme alle normative ISO 9241"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'app sa già qual è il codice del volo appena selezionato: costringere l'utente a memorizzarlo o annotarlo per reinserirlo è il massimo della cattiva progettazione."
+      },
+      {
+        "question": "Come si sfrutta il principio del riconoscimento visivo nella cronologia di navigazione di un e-commerce di arredamento?",
+        "options": [
+          "Mostrando nella barra inferiore le anteprime visive in miniatura (thumbnail) degli ultimi prodotti consultati con prezzo e titolo chiaro",
+          "Fornendo un file di log testuale con gli indirizzi URL completi delle pagine visitate",
+          "Cancellando la cronologia ad ogni clic per non sovraccaricare la memoria cache",
+          "Inviando un'email di riepilogo il giorno successivo alla visita del portale"
+        ],
+        "correctIndex": 0,
+        "explanation": "La sezione 'Visti di recente' con foto dei divani e tavoli permette all'utente di riconoscere istantaneamente gli oggetti guardati poco prima, riagganciando l'interesse senza sforzo."
+      }
+    ]
+  },
+  "stull-c17": {
+    "quiz": [
+      {
+        "question": "Cosa si intende per 'Razionalizzazione post-acquisto' (o post-decisionale) nella psicologia comportamentale analizzata da Stull?",
+        "options": [
+          "Il processo cognitivo inconscio con cui una persona, dopo aver preso una decisione guidata da fattori emotivi o impulsi irrazionali, costruisce a posteriori giustificazioni logiche e razionali per confermare la bontà della propria scelta",
+          "Il calcolo delle imposte e delle detrazioni fiscali al termine dell'anno contabile",
+          "La procedura automatica di rimborso fondi in caso di merce difettosa",
+          "La riduzione della larghezza di banda del server dopo il completamento del download"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le decisioni sono guidate dalle emozioni; la ragione interviene dopo per difendere l'autostima e dimostrare a noi stessi e agli altri che abbiamo fatto una scelta saggia e ponderata."
+      },
+      {
+        "question": "Cosa definisce la teoria della 'Dissonanza Cognitiva' formulata dallo psicologo Leon Festinger?",
+        "options": [
+          "Lo stato di profondo disagio psicologico sperimentato da un individuo quando si trova a detenere due credenze tra loro contraddittorie o quando compie un'azione in contrasto con le proprie convinzioni",
+          "Il ritardo temporale nella ricezione del segnale audio durante una videochiamata",
+          "L'interferenza elettromagnetica tra display touchscreen e router Wi-Fi",
+          "La perdita di nitidezza dei colori primari in condizioni di luce solare diretta"
+        ],
+        "correctIndex": 0,
+        "explanation": "Se spendo 1.500 euro per uno smartphone e scopro un piccolo difetto, provo dissonanza: per ridurla, tenderò a minimizzare il difetto ed esaltare la raffinatezza del design."
+      },
+      {
+        "question": "Come supporta una buona UX la fase di 'Razionalizzazione' nella pagina di conferma d'ordine di un e-commerce?",
+        "options": [
+          "Fornendo conferme rassicuranti (es. 'Ottima scelta!', riepilogo dei benefici pratici, garanzie di reso gratuito e tempi precisi di consegna) che dissipano il rimorso dell'acquirente (Buyer's Remorse)",
+          "Nascondendo la ricevuta di pagamento per evitare che l'utente si ricordi della spesa",
+          "Mostrando immediatamente un conto alla rovescia minaccioso che invita a comprare altro entro tre minuti",
+          "Inviando un questionario di 40 domande sulla conformità contabile dell'ordine"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il 'rimorso dell'acquirente' insorge subito dopo il pagamento. Messaggi empatici, riepiloghi dei vantaggi e garanzie di reso solido aiutano a razionalizzare positivamente la decisione."
+      },
+      {
+        "question": "Cos'è il 'Bias di conferma' (Confirmation Bias) e come condiziona sia gli utenti che i designer?",
+        "options": [
+          "La tendenza umana a cercare, interpretare e ricordare con fervore le informazioni che confermano le proprie convinzioni preesistenti, ignorando o svalutando attivamente i dati contrari",
+          "L'obbligo di cliccare su una checkbox prima di inviare un modulo online",
+          "La validazione automatica della sintassi del codice da parte del linter IDE",
+          "La visualizzazione della spunta verde accanto ai campi di testo correttamente compilati"
+        ],
+        "correctIndex": 0,
+        "explanation": "Un designer innamorato della sua idea cercherà solo conferme nei test e ignorerà le prove del fallimento; un utente cercherà recensioni che confermino che il prodotto comprato è il migliore."
+      },
+      {
+        "question": "Perché le recensioni e le testimonianze degli altri acquirenti (Social Proof) sono fondamentali nella fase di razionalizzazione?",
+        "options": [
+          "Perché forniscono una validazione sociale esterna che rassicura l'individuo sul fatto che molte altre persone simili a lui hanno già fatto la stessa scelta traendone soddisfazione",
+          "Perché aumentano il numero di righe di codice HTML presenti nel DOM della pagina",
+          "Perché consentono di ridurre le spese di spedizione per accordi con i corrieri",
+          "Perché le testimonianze positive sono imposte dalla legge per tutti i negozi fisici"
+        ],
+        "correctIndex": 0,
+        "explanation": "La social proof è l'argomento razionale supremo: 'Se 10.000 persone lo usano con 4.8 stelle, non posso aver sbagliato'. Convalida la decisione a livello logico e sociale."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Un utente acquista un corso online professionale da 800€. Subito dopo aver cliccato 'Paga', lo schermo diventa bianco per 5 secondi e poi mostra solo la scritta secca: 'Transazione 98402 eseguita'. L'utente prova ansia acuta e rimpianto. Quale gravissima lacuna di UX è evidente?",
+        "options": [
+          "Assenza totale di rassicurazione e supporto alla razionalizzazione post-acquisto: manca una pagina di ringraziamento accogliente, la conferma dei benefici sbloccati e la guida ai primi passi",
+          "Mancata adozione del protocollo di cifratura TLS 1.3 sul gateway bancario",
+          "Violazione della legge di Fitts dovuta alla dimensione del testo di conferma",
+          "Assenza di un banner pubblicitario di terze parti nella schermata finale"
+        ],
+        "correctIndex": 0,
+        "explanation": "Dopo una spesa importante, l'utente è psicologicamente vulnerabile: trattarlo con un freddo codice transazione scatena il panico. Serve accoglienza calorosa, riepilogo e chiarezza."
+      },
+      {
+        "question": "In un'app di investimenti finanziari, quando un utente seleziona un fondo etico, l'interfaccia evidenzia chiaramente sia i rendimenti storici sia l'impatto ambientale positivo generato (es. '120 alberi piantati'). Come agisce questa informazione sulla psicologia dell'utente?",
+        "options": [
+          "Fornisce solidi argomenti etici e razionali che consentono all'investitore di giustificare a se stesso e agli altri l'accettazione di una commissione di gestione leggermente superiore",
+          "Rallenta la velocità di esecuzione degli ordini di borsa sul mercato telematico",
+          "Attiva la cecità da banner verso i grafici di rendimento finanziario",
+          "Costringe l'utente a revocare l'ordine entro ventiquattro ore dall'operazione"
+        ],
+        "correctIndex": 0,
+        "explanation": "La razionalizzazione necessita di pilastri tangibili: 'Pago un po' di più, ma sto salvando il pianeta e i dati storici sono solidi'. Questo dissipa ogni dissonanza cognitiva."
+      },
+      {
+        "question": "Durante un test di usabilità, un ricercatore nota che un utente ha impiegato 10 minuti per trovare un comando. Alla domanda finale, l'utente dichiara: 'Il sito è chiarissimo, sono io che oggi ero distratto'. Quale meccanismo psicologico è all'opera?",
+        "options": [
+          "Razionalizzazione auto-colpevolizzante: gli utenti tendono a difendere l'interfaccia incolpando se stessi della propria inadeguatezza per proteggere la propria autostima",
+          "Un'applicazione consapevole del principio di divulgazione progressiva",
+          "Un malfunzionamento della memoria a lungo termine causato dall'età",
+          "L'effetto alone inverso provocato da font tipografici privi di grazie"
+        ],
+        "correctIndex": 0,
+        "explanation": "Come insegna Steve Krug, l'utente dice 'colpa mia'. Il ricercatore deve saper riconoscere la razionalizzazione difensiva: se l'utente ha faticato, il colpevole è il sistema, non la persona."
+      }
+    ]
+  },
+  "stull-c18": {
+    "quiz": [
+      {
+        "question": "Qual è il principio cardine dell''Accessibilità Web' (a11y) e a chi si rivolge?",
+        "options": [
+          "Garantire che prodotti e servizi digitali possano essere compresi, navigati e utilizzati agevolmente da chiunque, comprese persone con disabilità visive, uditive, motorie, cognitive, temporanee o situazionali",
+          "Rendere i siti web compatibili esclusivamente con computer dotati di tastiere speciali per non vedenti",
+          "Fornire versioni semplificate del sito scritte in formato solo testo prive di stili grafici",
+          "Limitare l'accesso ai contenuti digitali unicamente alle persone dotate di certificazione medica"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'accessibilità non riguarda solo una minoranza con disabilità permanente, ma chiunque abbia un braccio ingessato (temporanea), tenga un neonato in braccio o sia sotto la luce accecante del sole (situazionale)."
+      },
+      {
+        "question": "Quali sono i quattro principi fondanti delle linee guida WCAG (Web Content Accessibility Guidelines)?",
+        "options": [
+          "POUR: Percepibile (Perceivable), Utilizzabile (Operable), Comprensibile (Understandable), Robusto (Robust)",
+          "FAST: Facile (Fast), Accessibile (Accessible), Sicuro (Safe), Tecnico (Technical)",
+          "CLEAN: Chiaro (Clear), Leggibile (Legible), Economico (Affordable), Naturale (Natural)",
+          "SAFE: Stabile (Stable), Autonomo (Autonomous), Flessibile (Flexible), Efficiente (Efficient)"
+        ],
+        "correctIndex": 0,
+        "explanation": "I 4 pilastri WCAG: Percepibile (non solo visivo), Utilizzabile (navigabile da tastiera), Comprensibile (linguaggio e interazioni chiare), Robusto (compatibile con screen reader e tecnologie assistive)."
+      },
+      {
+        "question": "Cosa stabilisce la regola del 'Rapporto di contrasto minimo' (Contrast Ratio) WCAG Livello AA per il testo normale?",
+        "options": [
+          "Un rapporto di contrasto di luminanza di almeno 4,5:1 tra il colore del testo e il colore dello sfondo (3:1 per testo grande superiore a 18pt o 14pt grassetto)",
+          "Un rapporto di contrasto di esattamente 1:1 per evitare affaticamento oculare",
+          "L'obbligo di utilizzare solo testo giallo fluorescente su sfondo blu scuro",
+          "Un rapporto di 20:1 riservato unicamente alle intestazioni di primo livello (H1)"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il testo grigio chiaro su sfondo bianco (es. contrasto 2:1) è illegibile per chiunque abbia una vista non perfetta o si trovi all'aperto con luce solare. Lo standard AA impone minimo 4.5:1."
+      },
+      {
+        "question": "Cosa si intende per 'Curb-Cut Effect' (Effetto Scivolo del Marciapiede) nella progettazione inclusiva?",
+        "options": [
+          "Il fenomeno per cui una modifica introdotta per persone con disabilità (es. gli scivoli sui marciapiedi per sedie a rotelle) finisce per migliorare l'esperienza e la vita di tutti (passeggini, valigie, biciclette)",
+          "L'eliminazione dei bordi arrotondati dai pulsanti delle interfacce grafiche",
+          "Il calo progressivo dei prezzi dei computer portatili nel mercato dell'elettronica",
+          "La riduzione della velocità di navigazione degli utenti che usano connessioni mobili lente"
+        ],
+        "correctIndex": 0,
+        "explanation": "I sottotitoli nei video (nati per i non udenti) vengono usati da chiunque sia sui mezzi pubblici o in ufficio; i testi ad alto contrasto aiutano chi guida o legge al sole. L'accessibilità aiuta tutti."
+      },
+      {
+        "question": "Perché è un grave errore di accessibilità affidare la trasmissione di un'informazione fondamentale (es. errore in un campo) unicamente al cambiamento di colore?",
+        "options": [
+          "Perché le persone affette da daltonismo (circa l'8% degli uomini) o che navigano con schermi in scala di grigi non riuscirebbero a percepire la variazione cromatica: serve sempre un testo, un'icona o un simbolo esplicito",
+          "Perché i fogli di stile CSS non supportano l'assegnazione simultanea di più colori a un bordo",
+          "Perché i motori di ricerca considerano il cambio di colore un tentativo di frode pubblicitaria",
+          "Perché la modifica del colore richiede l'installazione di plugin esterni nel browser"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criterio WCAG 1.4.1 'Use of Color': non usare mai solo il colore. Se un campo è errato, non limitarti a farlo diventare rosso: aggiungi un'icona di errore e un messaggio testuale chiaro."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Un designer progetta un form in cui il tasto 'Tab' salta casualmente da un campo all'altro, il bordo di focus visivo (outline) è stato rimosso via CSS con 'outline: none' e il form non si può inviare premendo 'Invio'. Quale violazione critica è presente?",
+        "options": [
+          "Distruzione totale della navigabilità da tastiera (WCAG Principio 2 - Utilizzabile): rende il sito inaccessibile a persone cieche, a chi ha disabilità motorie e a chiunque non possa usare il mouse",
+          "Mancata conformità con l'indice di leggibilità linguistica di Flesch-Kincaid",
+          "Violazione della legge di Hick dovuta all'assenza di menu a discesa contestuali",
+          "Incompatibilità della pagina con i protocolli di crittografia asimmetrica HTTPS"
+        ],
+        "correctIndex": 0,
+        "explanation": "Rimuovere l'indicatore di focus ('outline: none' senza rimpiazzo) e rompere l'ordine di tabulazione esclude chiunque navighi da tastiera o tramite tecnologia assistiva. È una violazione gravissima."
+      },
+      {
+        "question": "Un portale di notizie inserisce immagini con grafici di bilancio economico senza compilare l'attributo 'alt' o inserendo 'alt=\"immagine 1\"'. Qual è la conseguenza per un utente non vedente con screen reader?",
+        "options": [
+          "Lo screen reader leggerà solo il nome del file o salterà l'elemento, lasciando l'utente all'oscuro totale dei dati e delle analisi economiche contenute nel grafico",
+          "Il browser bloccherà il caricamento del foglio di stile dell'intera pagina",
+          "La scheda video del dispositivo aumenterà automaticamente la frequenza di refresh",
+          "Il portale riceverà una sanzione contabile per evasione delle tasse sui media"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il testo alternativo ('alt text') deve descrivere il significato e i dati dell'immagine: un non vedente ha il diritto di conoscere le stesse informazioni di chi guarda la figura."
+      },
+      {
+        "question": "Come si progetta un carosello multimediale che rispetti rigorosamente i requisiti di accessibilità cognitiva e motoria?",
+        "options": [
+          "Prevedendo comandi evidenti di Pausa/Riproduzione, evitando lo scorrimento automatico aggressivo, garantendo il controllo completo da tastiera e supporto per la riduzione del movimento (prefers-reduced-motion)",
+          "Rendendo lo scorrimento del carosello velocissimo (ogni 0,5 secondi) per massimizzare le visualizzazioni",
+          "Impedendo all'utente di mettere in pausa le animazioni per non rovinare il design visivo",
+          "Sostituendo tutte le immagini del carosello con codice binario stampato a schermo"
+        ],
+        "correctIndex": 0,
+        "explanation": "I caroselli che girano da soli e non si possono fermare causano distrazione per chi ha disturbi dell'attenzione e impediscono la lettura a chi legge lentamente o usa screen reader."
+      }
+    ]
+  },
+  "stull-c19": {
+    "quiz": [
+      {
+        "question": "Qual è il ruolo dello 'Storytelling' (narrazione strutturata) nella progettazione dell'esperienza utente?",
+        "options": [
+          "Connettere razionalità ed emozione, dando un senso coerente, memorabile e motivante all'interazione dell'utente con il servizio attraverso una struttura narrativa ad arco",
+          "Scrivere romanzi di fantasia da pubblicare nella sezione blog del sito aziendale",
+          "Aumentare il numero di parole all'interno della privacy policy per scopi contrattuali",
+          "Sostituire tutte le tabelle dati con illustrazioni disegnate a mano libera"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il cervello umano è cablato per le storie: ricordiamo molto meglio un percorso con un protagonista, un ostacolo da superare e una ricompensa rispetto a una lista di funzioni isolate."
+      },
+      {
+        "question": "Nel framework narrativo applicato alla UX (derivato dal Viaggio dell'Eroe di Campbell), chi è il vero 'Eroe' della storia?",
+        "options": [
+          "L'utente, che parte da una situazione ordinaria, incontra un problema e compie una trasformazione migliorativa nella sua vita grazie all'uso dello strumento",
+          "L'azienda fornitrice che produce il software e ne incassa i profitti",
+          "Il Lead Developer che ha scritto l'algoritmo di routing delle chiamate API",
+          "L'amministratore delegato dell'agenzia di comunicazione pubblicitaria"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'errore comune delle aziende è pensarsi come l'Eroe. La buona UX mette l'utente al centro come Eroe, mentre il prodotto è la Guida saggia (come Yoda o Gandalf) o la spada magica."
+      },
+      {
+        "question": "Cosa si intende per 'Tone of Voice' (Tono di Voce) nella scrittura per l'interfaccia (UX Writing)?",
+        "options": [
+          "L'espressione della personalità del brand declinata attraverso il registro linguistico, il ritmo, la scelta dei termini e il livello di empatia adattato allo stato d'animo dell'utente",
+          "Il volume in decibel con cui l'altoparlante del computer riproduce i suoni di errore",
+          "La frequenza in Hertz dei messaggi audio preregistrati nel centralino telefonico",
+          "La lingua straniera selezionata come predefinita nelle impostazioni del browser"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il tono di voce deve essere coerente ma flessibile: gioioso e celebrativo quando raggiungi un traguardo; serio, sobrio e rassicurante quando si verifica un problema di pagamento."
+      },
+      {
+        "question": "Come si struttura virtuosamente l'esperienza di 'Onboarding' (accoglienza e primo utilizzo) tramite lo storytelling?",
+        "options": [
+          "Accompagnando l'utente attraverso una narrazione guidata che chiarisce il valore promesso, mostra i primi passi con successo immediato (Quick Win) e lo fa sentire subito capace e vincente",
+          "Mostrando un tutorial statico di 30 schermate prima di consentire l'accesso alla dashboard",
+          "Obbligando l'utente a leggere l'intera storia della fondazione societaria dal 1980 a oggi",
+          "Inviando 10 notifiche push nei primi cinque minuti di installazione dell'applicazione"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'onboarding narrativo non fa lezioni teoriche: ti fa fare la prima azione gratificante in 30 secondi ('Hai appena creato il tuo primo progetto, fantastico!')."
+      },
+      {
+        "question": "Quale rischio comporta l'adozione di un tono di voce eccessivamente spiritoso o sarcastico nei messaggi di errore critici?",
+        "options": [
+          "Fa sentire l'utente deriso, sminuito e non ascoltato mentre si trova in una condizione di stress, esasperando la frustrazione e distruggendo la fiducia nel brand",
+          "Aumenta la probabilità che il server web venga attaccato da hacker informatici",
+          "Provoca l'incompatibilità dei fogli di stile CSS con le versioni precedenti dei browser",
+          "Elimina automaticamente i certificati di crittografia asimmetrica dal database"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'umorismo fuori luogo nei momenti di crisi ('Oopsie daisy! I tuoi soldi sono spariti, colpa nostra!') è offensivo. Quando qualcosa va storto servono scuse sincere, sobrietà e soluzioni chiare."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Un'app bancaria fallisce un bonifico urgente di affitto e mostra un'illustrazione di un cagnolino triste con la scritta: 'Ops! Qualcosa è andato storto nei nostri biscottini! Riprova più tardi con un sorriso!'. Come giudica Stull questa scelta di UX Writing?",
+        "options": [
+          "Un disastroso mismatch empatico: banalizzare un problema finanziario urgente con battute infantili genera rabbia estrema; il tono deve essere sollecito, professionale e orientato alla risoluzione immediata",
+          "Una brillante strategia di storytelling che riduce lo stress dell'utente grazie al potere terapeutico degli animali domestici",
+          "Una soluzione conforme alle direttive ISO 9241 per la gestione amichevole dei conflitti procedurali",
+          "Un intervento neutro che non produce alcun impatto sulla percezione di affidabilità della banca"
+        ],
+        "correctIndex": 0,
+        "explanation": "Il tono deve adattarsi al contesto emotivo: se perdi soldi o rischi lo sfratto, le battute sui cagnolini ti fanno chiudere il conto all'istante per manifesta inaffidabilità."
+      },
+      {
+        "question": "Nel design di un'applicazione per il fitness, come si applica l'arco narrativo per stimolare la motivazione a lungo termine dell'utente?",
+        "options": [
+          "Celebrando i progressi con milestone narrative, badge di superamento ostacoli e visualizzazione dell'evoluzione dell'utente verso la versione migliore di se stesso",
+          "Inviando un messaggio di allarme ogni volta che l'utente non compie 10.000 passi al giorno",
+          "Nascondendo lo storico delle sessioni passate per non generare sentimenti nostalgici",
+          "Rendendo l'abbonamento mensile più costoso ogni volta che l'utente salta un allenamento"
+        ],
+        "correctIndex": 0,
+        "explanation": "Lo storytelling trasforma la fatica in un'avventura: mostrare la crescita del personaggio (l'utente) lungo il suo viaggio rende gratificante la perseveranza."
+      },
+      {
+        "question": "Un'agenzia immobiliare rinnova il sito sostituendo lo slogan autocelebrativo 'Siamo i leader del settore dal 1975' con 'Trova la casa dei tuoi sogni dove far crescere la tua famiglia: noi ti guidiamo passo dopo passo'. Quale cambio di prospettiva narrativa si è compiuto?",
+        "options": [
+          "Lo spostamento del ruolo di Eroe dal brand all'utente, posizionando l'azienda nel ruolo corretto di Guida empatica e facilitatore del suo obiettivo di vita",
+          "L'adozione esclusiva della tassonomia faceted per i filtri di ricerca degli appartamenti",
+          "La violazione delle linee guida di benchmarking quantitativo sul mercato immobiliare",
+          "L'applicazione della legge di Hick mediante riduzione dei metadati visibili nelle schede"
+        ],
+        "correctIndex": 0,
+        "explanation": "All'utente non importa della gloria aziendale: vuole la SUA casa per la SUA famiglia. Mettere al centro i sogni e i problemi dell'utente è la base dello storytelling efficace."
+      }
+    ]
+  }
+}

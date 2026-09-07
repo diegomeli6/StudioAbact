@@ -1,0 +1,484 @@
+# -*- coding: utf-8 -*-
+"""
+High-level academic quiz and exam questions for Stull UX Design - Chapters 6 to 10.
+"""
+
+import json
+
+stull_c6_to_10 = {
+    "stull-c6": {
+        "quiz": [
+            {
+                "question": "Cosa stabilisce la celebre Legge di Hick-Hyman formulata dagli psicologi William Hick e Ray Hyman nel 1952?",
+                "options": [
+                    "Il tempo necessario per prendere una decisione logaritmica cresce all'aumentare del numero e della complessità delle opzioni disponibili: T = b * log2(n + 1)",
+                    "La velocità di digitazione sulla tastiera dipende dalla lunghezza delle dita",
+                    "Il contrasto tra testo e sfondo deve raddoppiare ogni tre anni",
+                    "Il numero di errori di programmazione è proporzionale alle righe di codice scritte"
+                ],
+                "correctIndex": 0,
+                "explanation": "La legge di Hick è la base della semplificazione: ogni scelta aggiuntiva rallenta l'utente logaritmicamente. Troppe opzioni creano esitazione e affaticamento decisionale."
+            },
+            {
+                "question": "Cosa descrive il 'Paradosso della Scelta' teorizzato dallo psicologo Barry Schwartz?",
+                "options": [
+                    "Contrariamente all'opinione comune secondo cui più opzioni aumentano la libertà, un eccesso di alternative genera ansia, paralisi decisionale e maggiore insoddisfazione post-acquisto",
+                    "Gli utenti scelgono sempre l'opzione più costosa per ragioni di prestigio sociale",
+                    "L'assenza totale di alternative rende felici tutti i consumatori mondiali",
+                    "Le persone preferiscono non avere accesso a internet durante i fine settimana"
+                ],
+                "correctIndex": 0,
+                "explanation": "Il celebre esperimento delle marmellate di Sheena Iyengar: un banco con 24 marmellate attirava curiosi ma vendeva al 3%; un banco con sole 6 marmellate convertiva al 30%."
+            },
+            {
+                "question": "Quale tecnica di progettazione applica direttamente la Legge di Hick per aiutare l'utente a scegliere in menu o moduli complessi?",
+                "options": [
+                    "La 'Divulgazione Progressiva' (Progressive Disclosure) e la categorizzazione gerarchica, mostrando prima poche macro-scelte ed espandendo i dettagli solo se necessario",
+                    "Mostrare contemporaneamente tutte le 80 opzioni disponibili in un unico lungo elenco alfabetico",
+                    "Eliminare del tutto i menu di navigazione sostituendoli con comandi da terminale",
+                    "Raddoppiare la grandezza del font per ciascuna riga successiva"
+                ],
+                "correctIndex": 0,
+                "explanation": "La Progressive Disclosure riduce il numero di scelte contemporanee (n): l'utente prende decisioni a piccoli passi senza sentirsi sommerso da una valanga di alternative."
+            },
+            {
+                "question": "In un piano tariffario SaaS (Software as a Service), perché è buona norma limitare le alternative proposte a 3 o 4 livelli (es. Basic, Pro, Enterprise)?",
+                "options": [
+                    "Per ridurre il carico decisionale, consentire un confronto istantaneo dei benefit e guidare la scelta verso il piano intermedio (spesso evidenziato come 'Più Popolare')",
+                    "Perché i database non supportano la fatturazione di più di quattro tariffe",
+                    "Perché le leggi commerciali vietano la creazione di più di cinque piani di abbonamento",
+                    "Per costringere gli utenti ad acquistare tutte le opzioni contemporaneamente"
+                ],
+                "correctIndex": 0,
+                "explanation": "Offrire 15 opzioni di prezzo paralizza il cliente: 3 opzioni creano un'ancora psicologica chiara (l'opzione 'Goldilocks': né troppo economica né troppo cara, quella giusta nel mezzo)."
+            },
+            {
+                "question": "Qual è il limite di applicabilità della Legge di Hick?",
+                "options": [
+                    "Non si applica quando l'utente sa già esattamente cosa cerca e deve compiere una ricerca sistematica o visiva (es. cercare la propria nazione in un elenco ordinato alfabeticamente o usare un comando ben noto)",
+                    "Non si applica alle persone che utilizzano computer portatili",
+                    "Si applica solo alle decisioni prese in orario notturno",
+                    "È valida unicamente per le scelte alimentari e non per il software"
+                ],
+                "correctIndex": 0,
+                "explanation": "La legge di Hick riguarda decisioni non familiari: se cerco 'Italia' in una lista di 200 paesi, la scansione alfabetica è guidata e rapida; il problema sorge quando devo 'decidere' tra alternative ambigue."
+            }
+        ],
+        "examQuiz": [
+            {
+                "question": "Un'applicazione di ristorazione mostra in homepage un elenco caotico di 120 categorie gastronomiche affiancate. Gli utenti abbandonano l'app prima di ordinare. Quale rimedio suggerisce la Legge di Hick?",
+                "options": [
+                    "Raggruppare le 120 voci in 6-8 macro-categorie logiche ben distinte (es. Pizza, Sushi, Hamburger, Dolci) e utilizzare un motore di ricerca semantico per i dettagli specifici",
+                    "Aumentare il numero delle categorie a 200 per coprire qualsiasi piatto possibile",
+                    "Rimuovere tutte le immagini e lasciare solo i codici numerici dei piatti",
+                    "Forzare l'utente a guardare un video introduttivo di dieci minuti sui sapori della cucina"
+                ],
+                "correctIndex": 0,
+                "explanation": "Raggruppare riduce 'n' da 120 a 6: l'utente sceglie 'Pizza' in un secondo, e all'interno vedrà solo le tipologie di pizza, azzerando la paralisi decisionale iniziale."
+            },
+            {
+                "question": "Perché la pre-selezione intelligente di un'opzione di default (Smart Default) riduce drasticamente l'attrito decisionale descritto dalla legge di Hick?",
+                "options": [
+                    "Perché riduce a zero il tempo decisionale per la maggioranza degli utenti che si riconoscono nell'opzione consigliata, lasciando la libertà di cambiare solo a chi ha bisogni specifici",
+                    "Perché impedisce agli utenti di commettere reati finanziari online",
+                    "Perché azzera i costi di connessione al server cloud",
+                    "Perché i motori di ricerca richiedono opzioni di default per indicizzare le pagine"
+                ],
+                "correctIndex": 0,
+                "explanation": "I default sono una delle armi più potenti dell'usabilità: selezionare già la spedizione standard più comune o il paese corretto tramite geolocalizzazione toglie un peso decisionale dall'utente."
+            },
+            {
+                "question": "Cosa si intende per 'Affaticamento Decisionale' (Decision Fatigue) nel contesto dell'esperienza d'acquisto online?",
+                "options": [
+                    "Il progressivo deterioramento della qualità delle decisioni e della forza di volontà causato dal dover compiere troppe scelte consecutive, portando all'abbandono del carrello o a scelte impulsive irrazionali",
+                    "La stanchezza fisica dei muscoli facciali durante la lettura sullo schermo",
+                    "La perdita di memoria a lungo termine provocata dall'uso dei social media",
+                    "Il surriscaldamento del processore dello smartphone durante lo shopping"
+                ],
+                "correctIndex": 0,
+                "explanation": "La forza di volontà è una risorsa finita: se costringete l'utente a scegliere colore, taglia, materiale, tipo di colletto, bottoni, imballaggio e corriere, a metà strada si stancherà e rinuncerà all'acquisto."
+            }
+        ]
+    },
+    "stull-c7": {
+        "quiz": [
+            {
+                "question": "Cosa stabilisce la celebre Legge di Fitts formulata dallo psicologo Paul Fitts nel 1954?",
+                "options": [
+                    "Il tempo necessario per raggiungere e selezionare un bersaglio dipende logaritmicamente dal rapporto tra la distanza del bersaglio e la sua ampiezza fisica: MT = a + b * log2(2D / W)",
+                    "La luminosità dello schermo influenza direttamente il battito cardiaco dell'utente",
+                    "I colori caldi aumentano la probabilità di clic del 50%",
+                    "I cavi in fibra ottica trasmettono i dati alla velocità della luce nel vuoto"
+                ],
+                "correctIndex": 0,
+                "explanation": "Fitts ha formalizzato la biomeccanica del puntamento: bersagli più vicini e più grandi sono più veloci e facili da colpire con precisione; bersagli piccoli e lontani provocano rallentamenti ed errori."
+            },
+            {
+                "question": "Perché nei sistemi operativi desktop (come macOS e Windows) i bordi e gli angoli dello schermo sono considerati 'bersagli di dimensione infinita' secondo la legge di Fitts?",
+                "options": [
+                    "Perché il puntatore del mouse si blocca contro il confine fisico dello schermo e non può oltrepassarlo: l'utente può lanciare il cursore con forza massima senza rischiare di mancare il bersaglio",
+                    "Perché gli angoli dello schermo contengono una memoria RAM dedicata",
+                    "Perché la risoluzione dei monitor è raddoppiata lungo la cornice esterna",
+                    "Perché il codice sorgente dei sistemi operativi impedisce di spostare le finestre al centro"
+                ],
+                "correctIndex": 0,
+                "explanation": "Un'intuizione geniale di Fitts applicata da Apple: il menu in cima allo schermo su Mac ha ampiezza W virtualmente 'infinita' perché il cursore si ferma contro il bordo, rendendolo ultra-rapido da cliccare."
+            },
+            {
+                "question": "Quale conseguenza diretta ha la Legge di Fitts per la progettazione delle interfacce touch su smartphone?",
+                "options": [
+                    "I pulsanti primari devono essere sufficientemente grandi da accogliere il polpastrello umano (minimo 44-48 pixel) e posizionati nelle aree più vicine al pollice (Bottom Bar)",
+                    "Tutti i testi devono essere trasformati in comandi vocali",
+                    "I display tattili devono essere utilizzati esclusivamente con penne capacitive in metallo",
+                    "I pulsanti devono rimpicciolirsi man mano che si scende verso il basso"
+                ],
+                "correctIndex": 0,
+                "explanation": "Su touch la 'D' (distanza) è la traiettoria del pollice e la 'W' (ampiezza) è il bersaglio: bottoni grandi in basso si toccano all'istante; micro-link minuscoli in alto costringono a cambiare presa con rischio di caduta del telefono."
+            },
+            {
+                "question": "Cosa accade quando due comandi con effetti opposti (es. 'Salva modifiche' ed 'Elimina tutto') sono posizionati a brevissima distanza l'uno dall'altro con dimensioni ridotte?",
+                "options": [
+                    "Si crea una gravissima trappola ergonomica: il rumore motorio e l'imprecisione del puntatore provocano frequenti clic accidentali catastrofici",
+                    "Il browser aumenta automaticamente il tempo di latenza della scheda madre",
+                    "I due pulsanti si fondono in un unico comando polifunzionale",
+                    "Viene generato un avviso di sicurezza dal provider di rete internet"
+                ],
+                "correctIndex": 0,
+                "explanation": "Violazione letale di Fitts: separare fisicamente l'azione positiva da quella distruttiva, differenziandone dimensione e contrasto, previene il disastro di cliccare 'Elimina' per errore."
+            },
+            {
+                "question": "Cos'è l'Indice di Difficoltà (Index of Difficulty - ID) nella formula di Fitts?",
+                "options": [
+                    "Il valore calcolato come log2(2D / W), che misura la complessità biomeccanica richiesta per compiere il movimento di puntamento verso un dato bersaglio",
+                    "Il punteggio assegnato dagli utenti nei questionari di fine sessione",
+                    "Il numero di ore necessarie per scrivere il codice CSS di un bottone",
+                    "La percentuale di batteria consumata dal sensore touch dello schermo"
+                ],
+                "correctIndex": 0,
+                "explanation": "Più aumenta la distanza 'D' e più si rimpicciolisce 'W', più sale l'Indice di Difficoltà (ID), e con esso il tempo e la probabilità di fallimento dell'azione motoria."
+            }
+        ],
+        "examQuiz": [
+            {
+                "question": "In una pagina web desktop, un menu contestuale (tasto destro del mouse) o un menu radiale a torta (Pie Menu) risulta nettamente più rapido da usare rispetto alla barra dei menu in cima allo schermo. Perché la Legge di Fitts spiega questo fenomeno?",
+                "options": [
+                    "Perché la distanza di partenza (D) tra il cursore e le voci del menu contestuale è virtualmente pari a zero, comparendo esattamente dove si trova già il puntatore",
+                    "Perché il tasto destro del mouse invia i dati con un cavo più veloce",
+                    "Perché i menu contestuali non sono soggetti alle regole di rendering della GPU",
+                    "Perché la memoria cache del browser privilegia i comandi del tasto destro"
+                ],
+                "correctIndex": 0,
+                "explanation": "Se D = 0, il tempo di puntamento crolla al minimo teorico: i Pie Menu e i menu contestuali annullano il tragitto del mouse, consentendo selezioni immediate con minimi movimenti muscolari."
+            },
+            {
+                "question": "Un designer inserisce un checkbox minuscolo di 10x10 pixel senza collegarlo con il tag <label for='...'> al testo adiacente. Quale problema di usabilità genera alla luce di Fitts?",
+                "options": [
+                    "Costringe l'utente a mirare con precisione millimetrica su una superficie microscopica, mentre collegando la label l'area cliccabile (W) si estenderebbe all'intero testo aumentando enormemente la facilità di tocco",
+                    "Il checkbox non può essere memorizzato all'interno del database relazionale",
+                    "La pagina web non può essere condivisa sui canali di messaggistica istantanea",
+                    "I browser mobili disabilitano l'uso del colore verde all'interno dei moduli"
+                ],
+                "correctIndex": 0,
+                "explanation": "Regola d'oro del form design: l'elemento <label> collegato ingrandisce il bersaglio (W). Chi naviga può cliccare su tutta la frase 'Accetto le condizioni' anziché dover centrare un quadratino minuscolo."
+            },
+            {
+                "question": "Perché un pulsante fluttuante ancorato in basso a destra su mobile (FAB - Floating Action Button) è un'applicazione eccellente della Legge di Fitts?",
+                "options": [
+                    "Perché risiede in modo persistente vicinissimo alla posizione naturale di riposo del pollice della maggioranza degli utenti (bassa distanza D), con una dimensione generosa (grande W)",
+                    "Perché impedisce alle altre app di inviare notifiche push",
+                    "Perché riduce il riscaldamento termico del display OLED",
+                    "Perché è stato inventato da ingegneri aerospaziali della NASA"
+                ],
+                "correctIndex": 0,
+                "explanation": "Il FAB unisce Fitts e Material Design: minima distanza D dal dito dominante e ampia area W circolare, permettendo di innescare l'azione chiave (nuovo messaggio, scatta foto) in un battito di ciglia."
+            }
+        ]
+    },
+    "stull-c8": {
+        "quiz": [
+            {
+                "question": "Cosa teorizza il Modello della Probabilità di Elaborazione (Elaboration Likelihood Model - ELM) formulato da Richard Petty e John Cacioppo nel 1986?",
+                "options": [
+                    "Un modello psicologico della persuasione che identifica due percorsi cognitivi distinti attraverso cui le persone elaborano i messaggi e prendono decisioni: il Percorso Centrale e il Percorso Periferico",
+                    "Una formula per calcolare la probabilità di perdita dei pacchetti di dati su reti Wi-Fi",
+                    "Un algoritmo per stimare i costi di produzione dei componenti elettronici",
+                    "Una teoria economica sulla fluttuazione dei tassi di interesse nei paesi occidentali"
+                ],
+                "correctIndex": 0,
+                "explanation": "L'ELM spiega come cambiano gli atteggiamenti: a seconda della nostra motivazione e della nostra capacità cognitiva del momento, valutiamo le cose razionalmente o ci affidiamo a indizi superficiali."
+            },
+            {
+                "question": "Quali caratteristiche contraddistinguono il 'Percorso Centrale' (Central Route) nell'ELM?",
+                "options": [
+                    "Richiede alta motivazione, concentrazione e abilità critica: l'utente esamina approfonditamente la qualità logica degli argomenti, i dati tecnici, i confronti e le prove concrete, generando cambiamenti di atteggiamento duraturi",
+                    "Si basa su reazioni emotive impulsive provocate da colori vivaci e testimonial famosi",
+                    "Viene attivato unicamente quando si naviga in condizioni di sonnolenza o stanchezza estrema",
+                    "È un percorso di navigazione riservato unicamente agli sviluppatori di software"
+                ],
+                "correctIndex": 0,
+                "explanation": "Quando compriamo una casa o un'auto costosa, attiviamo il percorso centrale: leggiamo le schede tecniche, confrontiamo i consumi e soppesiamo la solidità delle argomentazioni razionali."
+            },
+            {
+                "question": "Quali caratteristiche contraddistinguono invece il 'Percorso Periferico' (Peripheral Route)?",
+                "options": [
+                    "Si attiva con bassa motivazione o scarse risorse cognitive: la persona si affida a euristiche rapide, indizi superficiali, appeal estetico, prestigio del brand, recensioni altrui o simpatia del testimonial",
+                    "Richiede la lettura meticolosa di manuali scientifici di cinquecento pagine",
+                    "Comporta calcoli algebrici complessi prima di ogni singola interazione",
+                    "Viene impiegato esclusivamente dai docenti universitari di filosofia della scienza"
+                ],
+                "correctIndex": 0,
+                "explanation": "Se dobbiamo scegliere una bottiglia d'acqua o un film leggero su Netflix, non facciamo un'analisi scientifica: ci lasciamo sedurre dalla bella etichetta, dalle 5 stelline o dalla copertina attraente."
+            },
+            {
+                "question": "Quali due fattori determinano se un utente seguirà il Percorso Centrale o quello Periferico di fronte a un messaggio digitale?",
+                "options": [
+                    "La Motivazione (quanto il tema è rilevante e importante per lui) e l'Abilità/Capacità cognitiva (tempo a disposizione, assenza di distrazioni, comprensibilità del linguaggio)",
+                    "Il sistema operativo del dispositivo e la memoria RAM installata",
+                    "L'età anagrafica e il colore degli occhi dell'osservatore",
+                    "La tipologia di abbonamento alla rete internet domestica"
+                ],
+                "correctIndex": 0,
+                "explanation": "Se non mi interessa (bassa motivazione) o se sono di fretta e stanco (bassa abilità), scelgo col percorso periferico. Solo se il tema mi sta a cuore e ho la lucidità per farlo, attivo il percorso centrale."
+            },
+            {
+                "question": "In che modo una buona landing page deve armonizzare entrambi i percorsi dell'ELM?",
+                "options": [
+                    "Deve sedurre subito il Percorso Periferico con design pulito, autorevolezza visiva e social proof (loghi dei clienti, recensioni), offrendo al contempo dati solidi, specifiche dettagliate e trasparenza per il Percorso Centrale",
+                    "Deve eliminare del tutto il testo affidandosi unicamente a musica e video ipnotici",
+                    "Deve nascondere i prezzi e mostrare solo schemi matematici incomprensibili",
+                    "Deve obbligare tutti i visitatori a registrarsi tramite impronta digitale"
+                ],
+                "correctIndex": 0,
+                "explanation": "Il design persuasivo a due canali: l'occhio vuole la sua parte subito (periferico: pulizia, fiducia a pelle), ma quando l'utente decide di approfondire deve trovare sostanza razionale inattaccabile (centrale)."
+            }
+        ],
+        "examQuiz": [
+            {
+                "question": "Un utente deve scegliere un mutuo ipotecario trentennale per acquistare la propria prima casa. Inizialmente atterra sul sito attratto dalla grafica moderna (Periferico), ma poi cerca tassi TAEG, clausole e costi di estinzione. Come deve strutturarsi l'interfaccia?",
+                "options": [
+                    "Fornire trasparenza assoluta, simulatori di calcolo interattivi e schede informative analitiche per nutrire il Percorso Centrale, poiché per decisioni così rilevanti l'estetica da sola non genera conversione",
+                    "Nascondere il TAEG dietro una richiesta di contatto telefonico obbligatorio",
+                    "Mostrare unicamente la fotografia di una famiglia felice che sorride nel giardino",
+                    "Impedire all'utente di confrontare le rate mensili tra tasso fisso e variabile"
+                ],
+                "correctIndex": 0,
+                "explanation": "Su acquisti ad alto coinvolgimento emotivo ed economico, l'utente scivola inevitabilmente nel Percorso Centrale: se la banca offre solo slogan ma nasconde i numeri, il cliente scappa da chi gli dà cifre chiare."
+            },
+            {
+                "question": "Quale ruolo svolgono le 'Recensioni a cinque stelle' e i badge 'Scelto da oltre 100.000 clienti' secondo l'ELM?",
+                "options": [
+                    "Fungono da potenti euristiche del Percorso Periferico (Riprova Sociale di Cialdini): rassicurano all'istante l'utente pigro senza costringerlo a verificare ogni singolo dettaglio dell'offerta",
+                    "Dimostrano matematicamente la conformità dell'azienda con gli standard ISO 9001",
+                    "Aumentano la velocità di download dei fogli di stile CSS",
+                    "Costituiscono un obbligo imposto dalle direttive antitrust europee"
+                ],
+                "correctIndex": 0,
+                "explanation": "'Se 100.000 persone lo usano, deve essere buono': una scorciatoia periferica istintiva che abbatte la paura del rischio nell'utente e accelera la decisione d'acquisto."
+            },
+            {
+                "question": "Perché un atteggiamento modificato attraverso il 'Percorso Centrale' è molto più duraturo e resistente alla concorrenza rispetto a uno ottenuto per 'Percorso Periferico'?",
+                "options": [
+                    "Perché poggia su argomenti razionali integrati profondamente nella rete di convinzioni della persona, rendendola immune a offerte superficiali o ribassi dei competitor",
+                    "Perché il percorso centrale cancella la memoria dei marchi concorrenti",
+                    "Perché i contratti stipulati con il percorso centrale sono legalmente irrevocabili",
+                    "Perché il cervello umano non può dimenticare le informazioni apprese per via logica"
+                ],
+                "correctIndex": 0,
+                "explanation": "Chi è convinto dai fatti e dalla qualità logica diventa un ambasciatore fedele del marchio (brand loyalty profonda); chi è stato catturato solo da una bella grafica o da uno sconto transitorio cambierà bandiera al prossimo spot."
+            }
+        ]
+    },
+    "stull-c9": {
+        "quiz": [
+            {
+                "question": "Cos'è la 'Just Noticeable Difference' (JND - Differenza Appena Percettibile) teorizzata dal fisiologo Ernst Heinrich Weber?",
+                "options": [
+                    "La quantità minima di cambiamento necessaria affinché una differenza tra due stimoli sensoriali venga consapevolmente notata dall'essere umano almeno il 50% delle volte (Legge di Weber-Fechner)",
+                    "La differenza di prezzo minima tra due prodotti concorrenti",
+                    "La variazione di frequenza di campionamento delle tracce musicali MP3",
+                    "La soglia di memoria virtuale allocata dai browser moderni"
+                ],
+                "correctIndex": 0,
+                "explanation": "La legge di Weber dimostra che la nostra sensibilità al cambiamento è proporzionale allo stimolo iniziale: per notare un aumento di peso su un chilo servono grammi, su cento chili servono chili."
+            },
+            {
+                "question": "Come si applica il principio della JND alla strategia di 'Redesign' di un'applicazione o di un sito web con milioni di utenti attivi?",
+                "options": [
+                    "Attuando un'evoluzione visiva e funzionale progressiva, incrementale e 'sotto soglia JND', per modernizzare il prodotto senza disorientare gli utenti storici e senza rompere le loro abitudini motorie",
+                    "Ridisegnando da zero ogni sei mesi l'intera interfaccia stravolgendo tutte le posizioni dei menu",
+                    "Cancellando tutti i profili e obbligando gli utenti a re-imparare il sistema da capo",
+                    "Mantenendo il sito identico per vent'anni senza mai aggiornare alcun componente"
+                ],
+                "correctIndex": 0,
+                "explanation": "I giganti del web (Google, Amazon, Facebook) cambiano continuamente ma a minuscoli passi sotto soglia JND: se stravolgessero tutto in una notte, milioni di persone infuriate si troverebbero perse."
+            },
+            {
+                "question": "Cosa accade tipicamente quando un'azienda lancia un 'Big Bang Redesign' (stravolgimento totale e improvviso di un servizio consolidato)?",
+                "options": [
+                    "Scatena una rivolta di utenti (User Backlash): le persone non trovano più i comandi abituali, si sentono disorientate, subiscono un blocco delle performance e inondano l'azienda di proteste furiose",
+                    "Gli utenti inviano spontaneamente lettere di ringraziamento e raddoppiano il tempo di permanenza",
+                    "Il costo di gestione dei server si azzera istantaneamente",
+                    "Il software acquisisce automaticamente un milione di nuovi utenti in un'ora"
+                ],
+                "correctIndex": 0,
+                "explanation": "Casi storici celebri (Snapchat 2018, Digg 2010): il redesign improvviso e calato dall'alto genera una reazione di rigetto violenta che può distruggere la reputazione e il valore di mercato dell'azienda."
+            },
+            {
+                "question": "In quale circostanza un designer desidera invece che un cambiamento sia NETTAMENTE SUPERIORE alla soglia JND?",
+                "options": [
+                    "Quando si deve segnalare un avviso di sicurezza critico, un errore grave di compilazione o un cambiamento di stato importante che richiede l'attenzione immediata e cosciente dell'utente",
+                    "Quando si aggiornano le note a piè di pagina del copyright aziendale",
+                    "Durante il cambio di password programmato annuale del database",
+                    "Quando si modificano i margini di respiro tra due paragrafi secondari"
+                ],
+                "correctIndex": 0,
+                "explanation": "La JND funziona in due direzioni: la teniamo bassa quando vogliamo aggiornare senza disturbare la memoria muscolare; la superiamo nettamente (rosso brillante, vibrazione, icona) quando l'utente deve accorgersi subito di un pericolo."
+            },
+            {
+                "question": "Quale vantaggio metodologico offre il modello di rilascio 'Continuo e Incrementale' (Continuous Deployment) rispetto ai grandi rilasci annuali?",
+                "options": [
+                    "Permette di testare e validare ogni minima modifica tramite A/B testing con utenti reali, correggendo il tiro in tempo reale e riducendo a zero il rischio di shock d'uso",
+                    "Raddoppia il numero di bug critici presenti all'interno del codice sorgente",
+                    "Impedisce agli sviluppatori di usufruire delle ferie estive",
+                    "Rende superfluo qualsiasi controllo di sicurezza sulle transazioni bancarie"
+                ],
+                "correctIndex": 0,
+                "explanation": "Rilasciare piccole modifiche ogni settimana consente di misurare i dati: se il nuovo pulsante performa peggio lo si corregge in un'ora, senza scommettere il futuro dell'azienda su un unico grande lancio al buio."
+            }
+        ],
+        "examQuiz": [
+            {
+                "question": "Nel celebre redesign del logo di Google nel 2014, l'azienda spostò la lettera 'g' a destra di un pixel e la 'l' in basso di un pixel. Perché questa modifica quasi invisibile è una perfetta dimostrazione della Legge di Weber?",
+                "options": [
+                    "Era un raffinato aggiustamento di regolarizzazione metrica ottica mantenuto rigorosamente sotto soglia JND, migliorando la leggibilità universale senza generare alcun disorientamento negli utenti",
+                    "Era un errore involontario commesso da un programmatore distratto",
+                    "Serviva a nascondere un messaggio crittografico per gli azionisti",
+                    "Era un requisito imposto dai tribunali antitrust americani"
+                ],
+                "correctIndex": 0,
+                "explanation": "La cura del dettaglio invisibile: allineare geometricamente i glifi ha perfezionato la resa del logo su schermi di qualsiasi dimensione senza che nessun utente si sentisse violentato nelle proprie abitudini."
+            },
+            {
+                "question": "Un portale di notizie decide di cambiare la disposizione di tutte le categorie, i colori sociali e il font principale contemporaneamente. Gli utenti fedeli minacciano di cancellare l'abbonamento. Quale strategia di mitigazione avrebbe dovuto adottare il team?",
+                "options": [
+                    "Offrire una modalità 'Opt-in' transitoria che permetta agli utenti di provare la nuova versione potendo temporaneamente tornare alla vecchia, raccogliendo feedback e abituandoli con gradualità",
+                    "Chiudere il forum dei commenti e ignorare completamente le proteste",
+                    "Raddoppiare il numero dei banner pubblicitari per compensare le perdite",
+                    "Cancellare definitivamente il sito web e dichiarare bancarotta"
+                ],
+                "correctIndex": 0,
+                "explanation": "La transizione dolce (come fece Reddit o Twitter): dare il controllo all'utente ('Prova la nuova grafica, puoi tornare indietro quando vuoi') disinnesca la sensazione di violazione e trasforma la resistenza in adozione spontanea."
+            },
+            {
+                "question": "Come si relaziona la JND con il concetto di 'Memoria Muscolare' (Muscle Memory) nell'utilizzo delle interfacce digitali frequenti?",
+                "options": [
+                    "La memoria muscolare memorizza le posizioni fisiche abituali dei comandi: un cambiamento sopra soglia JND rompe l'automatismo corporeo, forzando l'utente a un rallentamento frustrante",
+                    "La memoria muscolare si applica unicamente all'allenamento in palestra e non alle dita",
+                    "La memoria muscolare impedisce agli utenti di visualizzare schermi a colori",
+                    "I comandi software non possono essere memorizzati dal sistema motorio umano"
+                ],
+                "correctIndex": 0,
+                "explanation": "Chi usa un'app tutti i giorni clicca a occhi chiusi con la memoria motoria. Se spostate il pulsante 'Cerca' dall'altra parte dello schermo, il dito colpirà a vuoto, scatenando un fastidio viscerale immediato."
+            }
+        ]
+    },
+    "stull-c10": {
+        "quiz": [
+            {
+                "question": "Quale celebre modello sociologico formulato da Everett Rogers nel 1962 descrive come le nuove idee e tecnologie si diffondono attraverso le popolazioni?",
+                "options": [
+                    "La Curva di Adozione delle Innovazioni (Diffusion of Innovations)",
+                    "La Legge di Moore sulla densità dei transistor",
+                    "La Piramide dei bisogni di Abraham Maslow",
+                    "Il Dilemma del Prigioniero nella teoria dei giochi"
+                ],
+                "correctIndex": 0,
+                "explanation": "Rogers ha dimostrato che le persone non adottano le novità contemporaneamente: la diffusione segue una curva a campana che attraversa segmenti psicografici e comportamentali ben distinti."
+            },
+            {
+                "question": "Quali sono i cinque segmenti canonici di adottanti identificati da Everett Rogers e le loro relative percentuali?",
+                "options": [
+                    "Innovatori (2.5%), Primi Adottanti (13.5%), Maggioranza Precoce (34%), Maggioranza Tardiva (34%) e Ritardatari (16%)",
+                    "Principianti (20%), Medi (60%) ed Esperti (20%)",
+                    "Bambini (25%), Adulti (50%) e Anziani (25%)",
+                    "Poveri (33%), Ceto medio (33%) e Ricchi (33%)"
+                ],
+                "correctIndex": 0,
+                "explanation": "La curva normale di Rogers: dai pionieri visionari amanti del rischio tecnologico (Innovatori ed Early Adopters) fino alla maggioranza pragmatica e ai ritardatari conservatori."
+            },
+            {
+                "question": "Cosa teorizza Geoffrey Moore nel suo celebre saggio 'Crossing the Chasm' (Attraversare il baratro, 1991)?",
+                "options": [
+                    "L'esistenza di un profondo abisso o baratro (Chasm) tra i Primi Adottanti (visionari entusiasti della novità) e la Maggioranza Precoce (pragmatici che pretendono soluzioni stabili, referenziate e senza difetti)",
+                    "Il divario di ricchezza tra le nazioni sviluppate e i paesi del terzo mondo",
+                    "La distanza geografica tra i server di New York e quelli di Tokyo",
+                    "La differenza di prestazioni tra i dischi rigidi meccanici e le memorie flash"
+                ],
+                "correctIndex": 0,
+                "explanation": "Il punto critico dove muoiono l'80% delle startup: i visionari comprano il vostro prodotto acerbo perché amano la novità; la maggioranza pragmatica non comprerà MAI finché non vedrà che funziona alla perfezione e ha recensioni solide."
+            },
+            {
+                "question": "Quali caratteristiche definiscono la 'Maggioranza Precoce' (Early Majority) nel modello di Rogers e Moore?",
+                "options": [
+                    "Sono consumatori pragmatici, avversi al rischio e guidati dall'utilità reale: non cercano la novità per il gusto della tecnologia, ma soluzioni affidabili, collaudate e validate da leader di settore",
+                    "Amano i bug del software e si divertono a risolverli programmando di notte",
+                    "Comprano qualsiasi prodotto non appena compare sul mercato a qualsiasi costo",
+                    "Rifiutano categoricamente l'uso dell'elettricità nelle proprie abitazioni"
+                ],
+                "correctIndex": 0,
+                "explanation": "I pragmatici cercano stabilità e referenze: chiedono 'Chi altro lo sta usando nel mio settore?'. Se non potete mostrare colleghi soddisfatti e un prodotto finito impeccabile, non lo compreranno."
+            },
+            {
+                "question": "Come deve evolvere la User Experience di un prodotto quando tenta di 'attraversare il baratro' (Crossing the Chasm)?",
+                "options": [
+                    "Deve passare da un'interfaccia complessa e flessibile per esperti nerd a un'esperienza radicalmente semplificata, robusta, priva di attriti, autoevidente e chiavi in mano (Whole Product)",
+                    "Deve diventare più astratta e complicata per selezionare solo clienti con un quoziente intellettivo elevato",
+                    "Deve eliminare il supporto clienti telefonico ed erogare solo documentazione in codice binario",
+                    "Deve quadruplicare il prezzo di vendita per creare un'illusione di lusso esclusivo"
+                ],
+                "correctIndex": 0,
+                "explanation": "Gli Early Adopters perdonano i bug e le istruzioni mancanti; la Maggioranza non perdona nulla. Per attraversare il baratro la UX deve diventare perfetta, solida e senza alcuno sforzo richiesto."
+            }
+        ],
+        "examQuiz": [
+            {
+                "question": "Un'azienda lancia un visore di realtà aumentata pesante, con autonomia di 40 minuti e una configurazione di tre ore tramite riga di comando. 50.000 sviluppatori entusiasti lo acquistano (Innovatori), ma poi le vendite si azzerano completamente. In quale trappola è caduta l'azienda?",
+                "options": [
+                    "È rimasta intrappolata nel baratro di Moore (The Chasm): ha scambiato l'entusiasmo dei pionieri per un successo di massa, dimenticando che il consumatore comune rifiuta un prodotto così grezzo e faticoso",
+                    "Un problema causato unicamente dalla scarsità di silicio sul mercato asiatico",
+                    "Una violazione delle norme sulle emissioni di onde radio a corto raggio",
+                    "Una corretta applicazione della strategia di penetrazione commerciale globale"
+                ],
+                "correctIndex": 0,
+                "explanation": "La classica trappola dell'illusione da pioniere: gli smanettoni amano armeggiare con la tecnologia acerba; la famiglia comune vuole indossare il visore e vedere subito il film senza dover configurare nulla."
+            },
+            {
+                "question": "Cosa si intende per concetto di 'Prodotto Completo' (Whole Product) teorizzato da Moore per conquistare la Maggioranza Precoce?",
+                "options": [
+                    "Non solo il software o l'hardware centrale, ma l'intero pacchetto che rende la soluzione usabile immediatamente: formazione, supporto clienti eccellente, garanzie, accessori e compatibilità senza intoppi",
+                    "Un'applicazione che include tutti i videogiochi disponibili sul mercato",
+                    "Un dispositivo venduto insieme a una fornitura decennale di batterie stilo",
+                    "Un contratto a tempo indeterminato che impedisce all'utente di cambiare fornitore"
+                ],
+                "correctIndex": 0,
+                "explanation": "I pragmatici non comprano un pezzo grezzo: vogliono la soluzione a 360 gradi. Se compri il gestionale, vuoi che si integri con le fatture, che ci sia l'assistenza che risponde al volo e la garanzia totale."
+            },
+            {
+                "question": "Perché i 'Ritardatari' (Laggards - 16%) decidono infine di adottare una nuova tecnologia?",
+                "options": [
+                    "Soltanto quando la vecchia alternativa tradizionale è stata completamente ritirata dal mercato o è diventata insostenibile, rendendo l'adozione un obbligo forzato e non una scelta desiderata",
+                    "Perché improvvisamente si innamorano del codice di programmazione",
+                    "Perché ricevono in regalo il dispositivo dal proprio comune di residenza",
+                    "Perché desiderano impressionare i propri colleghi di lavoro con le ultime novità"
+                ],
+                "correctIndex": 0,
+                "explanation": "I ritardatari sono profondamente scettici verso la tecnologia: hanno comprato lo smartphone solo quando le compagnie telefoniche hanno spento le cabine e le banche hanno chiuso gli sportelli fisici obbligando all'app."
+            }
+        ]
+    }
+}
+
+with open("scripts/stull_part2.json", "w", encoding="utf-8") as f:
+    json.dump(stull_c6_to_10, f, indent=2, ensure_ascii=False)
+
+print(f"Salvata tranche capitoli 6-10 ({len(stull_c6_to_10)} capitoli)")

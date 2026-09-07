@@ -1077,7 +1077,9 @@
 
     const getQuizzesFromChapters = (chapList, sourceName) => {
       chapList.forEach(chap => {
-        (chap.quiz || []).forEach(q => {
+        // Privilegia il banco dedicato d'esame per il Test, con fallback sui quiz del capitolo
+        const list = (chap.examQuiz && chap.examQuiz.length > 0) ? chap.examQuiz : (chap.quiz || []);
+        list.forEach(q => {
           pool.push({
             ...q,
             sourceName: sourceName,
@@ -1114,13 +1116,31 @@
       return;
     }
 
-    // Mescola pool (Fisher-Yates)
+    // Mescola pool delle domande (Fisher-Yates)
     for (let i = pool.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [pool[i], pool[j]] = [pool[j], pool[i]];
     }
 
-    const selectedQuestions = pool.slice(0, Math.min(count, pool.length));
+    const rawSelected = pool.slice(0, Math.min(count, pool.length));
+
+    // Rimescola dinamicamente le opzioni per ogni domanda del test
+    // garantendo che la risposta corretta non si trovi sempre in prima o seconda posizione
+    const selectedQuestions = rawSelected.map(q => {
+      const opts = q.options.map((opt, idx) => ({
+        text: opt,
+        isCorrect: idx === q.correctIndex
+      }));
+      for (let i = opts.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [opts[i], opts[j]] = [opts[j], opts[i]];
+      }
+      return {
+        ...q,
+        options: opts.map(o => o.text),
+        correctIndex: opts.findIndex(o => o.isCorrect)
+      };
+    });
 
     state.examSession = {
       questions: selectedQuestions,

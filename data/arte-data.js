@@ -1,6 +1,4 @@
-// Database di Studio Approfondito — Storia dell'Arte Contemporanea
-// 16 Capitoli completi: Arte Anni '80, Damien Hirst (YBA), Olafur Eliasson e Miguel Chevalier (Arte Digitale & IA)
-// 80 Quiz bilanciati a 4 opzioni, sintesi accademiche arricchite e flashcard d'esame.
+// Dataset Storia dell'Arte Contemporanea (Anni '80, Hirst/YBAs, Eliasson, Chevalier)
 window.ARTE_DATA = [
   {
     "id": "arte-c1",
@@ -37,59 +35,94 @@ window.ARTE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Quale tesi filosofica centrale di Jean-François Lyotard ha influenzato profondamente l'arte degli anni Ottanta?",
+        "question": "Quale tesi filosofica centrale di Jean-François Lyotard ne 'La condizione postmoderna' (1979) ha influenzato l'arte degli anni Ottanta?",
         "options": [
-          "L'annuncio della fine delle grandi narrazioni universali a favore di una molteplicità frammentaria di linguaggi.",
-          "L'affermazione dell'arte informale come unico strumento di redenzione spirituale per le classi operaie urbane.",
-          "La teorizzazione dell'intelligenza artificiale come forma superiore di computazione e di estetica figurativa.",
-          "L'obbligo etico per gli artisti di abbandonare le gallerie commerciali per operare solo nello spazio pubblico."
+          "Il tramonto delle grandi narrazioni totalizzanti (meta-racconti illuministi e marxisti) a favore di una molteplicità frammentaria di linguaggi e micro-storie",
+          "L'affermazione dell'arte concettuale come unico strumento di redenzione politica globale",
+          "Il rifiuto categorico di qualsiasi tecnica pittorica tradizionale a favore dei soli media digitali",
+          "La teorizzazione dell'estetica minimalista come punto d'arrivo definitivo della civiltà occidentale"
         ],
         "correctIndex": 0,
-        "explanation": "Lyotard nel 1979 definisce la condizione postmoderna come il tramonto delle meta-narrazioni illuministe e marxiste, aprendo la strada all'eclettismo e alla pluralità delle espressioni visive."
+        "explanation": "Lyotard sancisce la fine della fede nel progresso lineare: l'artista postmoderno non cerca più un'utopia universale, ma si riappropria liberamente di frammenti storici ed eclettismo stilistico."
       },
       {
-        "question": "In quale quartiere di New York si concentrarono le gallerie più influenti che guidarono il mercato internazionale negli anni '80?",
+        "question": "Quale ruolo ha svolto il quartiere newyorkese di SoHo nello sviluppo del sistema dell'arte degli anni Ottanta?",
         "options": [
-          "Upper East Side, all'interno dei palazzi storici dell'aristocrazia newyorkese.",
-          "SoHo, nei vecchi edifici industriali in ghisa riconvertiti in grandi spazi espositivi.",
-          "Staten Island, nelle aree portuali dismesse aperte ai collettivi autogestiti di street art.",
-          "Harlem, grazie al supporto dei teatri musicali e delle accademie universitarie di quartiere."
+          "È stato un ghetto isolato in cui era vietata la vendita commerciale delle opere d'arte",
+          "È stato il polo nevralgico della commercializzazione globale, dove galleristi innovativi hanno trasformato ex spazi industriali (loft) in templi del mercato internazionale",
+          "Ha ospitato esclusivamente collettivi di artisti anonimi legati all'agit-prop politica",
+          "È stato sede esclusiva dei musei statali accademici dell'Ottocento"
         ],
         "correctIndex": 1,
-        "explanation": "SoHo (e poco dopo l'East Village) divenne il centro vitale con galleristi del calibro di Leo Castelli e Mary Boone che trasformarono i loft in templi del mercato dell'arte."
+        "explanation": "Con figure come Leo Castelli, Mary Boone e Tony Shafrazi, SoHo ha incarnato l'esplosione delle gallerie private e dell'art-star system, legando l'arte contemporanea alla finanza e ai mass media."
       },
       {
         "question": "Rispetto al rigore concettuale e poverista del decennio precedente, cosa rappresenta il 'ritorno alla pittura' degli anni Ottanta?",
         "options": [
-          "Il recupero della manualità, della narrazione visiva, della sensualità del colore e della citazione storica.",
-          "L'obbligo accademico di dipingere esclusivamente con la tecnica dell'affresco rinascimentale toscano.",
-          "Il rifiuto categorico di vendere opere su tela alle collezioni private e ai musei internazionali.",
-          "La riproduzione fotomeccanica di manifesti elettorali senza alcun intervento manuale dell'autore."
+          "Il divieto per gli artisti di esporre sculture o installazioni tridimensionali",
+          "Una restaurazione accademica che imponeva la copia pedissequa dei maestri del Rinascimento fiorentino",
+          "La rivendicazione della manualità, del piacere del colore, della figura e della libera citazione della memoria storica senza sensi di colpa",
+          "L'abbandono della tela in favore della sola pittura murale politica"
+        ],
+        "correctIndex": 2,
+        "explanation": "Dopo anni di smaterializzazione concettuale ('l'idea vale più dell'opera'), gli artisti riscoprono la sensualità della materia pittorica, il gesto, l'archetipo e il piacere del dipingere."
+      },
+      {
+        "question": "In che modo l'eclettismo postmoderno affronta il rapporto con la storia dell'arte del passato?",
+        "options": [
+          "Subordina l'invenzione figurativa alla rigorosa aderenza filologica ai canoni neoclassici",
+          "Rifiuta qualsiasi forma di figurazione per preservare l'iconoclastia concettuale",
+          "Impone la distruzione filologica di tutte le correnti artistiche precedenti alle avanguardie storiche",
+          "Considera il museo e la storia come un repertorio illimitato di stili ed epoche da 'saccheggiare', ibridare e citare liberamente fuori dal tempo"
+        ],
+        "correctIndex": 3,
+        "explanation": "Il Postmoderno abolisce la gerarchia temporale: Manierismo, Espressionismo, Barocco e fumetto possono convivere nella medesima opera come tessere di un collage nomade."
+      },
+      {
+        "question": "Quale dualismo linguistico caratterizza il panorama artistico internazionale degli anni Ottanta?",
+        "options": [
+          "La coesistenza non conflittuale tra il ritorno passionale e violento alla pittura figurativa da un lato, e le indagini analitiche e fredde su merce, media e simulacro dall'altro",
+          "La contrapposizione violenta tra artisti solo digitali e scultori in marmo",
+          "La scissione geografica tra arte americana esclusivamente astratta e arte europea solo figurativa",
+          "Il divieto per le donne artiste di esporre nelle gallerie commerciali"
         ],
         "correctIndex": 0,
-        "explanation": "Dopo anni di smaterializzazione dell'opera d'arte, gli artisti rivendicano il piacere fisico di dipingere, inventare immagini e saccheggiare liberamente la storia dell'arte."
-      },
+        "explanation": "Gli anni '80 vivono di questa polarità affascinante: da una parte l'impeto materico di Transavanguardia e Neoespressionismo; dall'altra la fredda riflessione di Neo-Geo, Appropriazionismo e Scuola di Düsseldorf."
+      }
+    ],
+    "examQuiz": [
       {
-        "question": "Quale fenomeno socio-economico contraddistingue in modo inedito il sistema dell'arte negli anni Ottanta?",
+        "question": "Perché la Biennale di Venezia del 1980 (e in particolare la sezione 'Aperto '80' curata da Achille Bonito Oliva e Harald Szeemann) è considerata uno spartiacque storico?",
         "options": [
-          "La scomparsa definitiva dei collezionisti privati a favore del solo mecenatismo ecclesiastico.",
-          "La totale coincidenza tra valore estetico e quotazione commerciale amplificata dalla stampa di massa.",
-          "L'abolizione dei cataloghi a colori per ridurre l'impatto ecologico delle esposizioni biennali.",
-          "Il divieto per le gallerie di rappresentare più di un artista vivente all'interno dello stesso anno solare."
+          "Ha abolito per sempre i padiglioni nazionali in favore di una mostra unicamente online",
+          "Ha consacrato sulla scena museale globale la nuova pittura figurativa giovanile (Transavanguardia e Neue Wilden), sancendo la fine dell'egemonia esclusiva del concettuale puro",
+          "Ha premiato con il Leone d'Oro le prime opere realizzate con computer grafica",
+          "Ha escluso tutti i pittori europei per dedicarsi solo all'arte sudamericana"
         ],
         "correctIndex": 1,
-        "explanation": "Gli anni Ottanta sanciscono la nascita del moderno 'art star system', dove le aste, i record di vendita e l'attenzione dei mass media consacrano gli artisti come celebrità."
+        "explanation": "'Aperto '80' nei Magazzini del Sale fu l'epifania internazionale: il pubblico e la critica videro per la prima volta riuniti i giovani protagonisti del ritorno alla pittura, decretandone il trionfo."
       },
       {
-        "question": "In che modo l'eclettismo postmoderno affronta il rapporto con la storia dell'arte passata?",
+        "question": "In quale modo il fenomeno dei 'Megacollezionisti' (come Charles Saatchi o Peter Ludwig) ha mutato gli equilibri del sistema dell'arte negli anni Ottanta?",
         "options": [
-          "Rifiutando qualsiasi richiamo figurativo per tutelare la purezza dell'astrazione geometrica pura.",
-          "Considerando il museo e la storia come un repertorio illimitato di immagini da prelevare e ibridare liberamente.",
-          "Imponendo la distruzione fisica delle opere realizzate prima della seconda rivoluzione industriale.",
-          "Limitando la pittura alla copia fedele e filologica dei reperti archeologici di età ellenistica."
+          "Hanno imposto agli artisti di non vendere mai opere all'estero",
+          "Hanno devoluto tutte le proprie risorse unicamente al restauro di monumenti archeologici romani",
+          "Hanno acquisito un potere d'orientamento del gusto paragonabile o superiore a quello dei direttori di museo, influenzando direttamente i prezzi d'asta e la carriera degli artisti",
+          "Hanno vietato l'accesso del pubblico alle proprie gallerie private"
         ],
-        "correctIndex": 1,
-        "explanation": "L'artista postmoderno non teme il passato ma lo 'saccheggia' gioiosamente, combinando citazioni manieriste, espressioniste o barocche in un libero collage temporale."
+        "correctIndex": 2,
+        "explanation": "I collezionisti-finanzieri acquistavano in blocco intere mostre, creando e consacrando movimenti dall'oggi al domani e trasformando le opere in asset di investimento speculativo globale."
+      },
+      {
+        "question": "Quale critica principale veniva mossa dai sostenitori dell'avanguardia intransigente (come Benjamin Buchloh) al ritorno alla pittura degli anni Ottanta?",
+        "options": [
+          "Di non rispettare le proporzioni della sezione aurea classica",
+          "Di essere un movimento troppo rivoluzionario e ostile all'ordine borghese",
+          "Di utilizzare pigmenti sintetici a bassa tossicità",
+          "Di rappresentare una restaurazione conservatrice, regressiva e nostalgica, asservita alle logiche di mercato dopo le conquiste politiche del Concettuale"
+        ],
+        "correctIndex": 3,
+        "explanation": "La critica teorica più severa (Buchloh su October) tacciava il neo-figurativismo di 'restaurazione autoritaria', vedendovi una fuga disimpegnata e commerciale dalla critica istituzionale."
       }
     ]
   },
@@ -128,59 +161,94 @@ window.ARTE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Quale significato attribuisce Achille Bonito Oliva al termine 'Transavanguardia'?",
+        "question": "Chi ha teorizzato il movimento della Transavanguardia nel 1979 sulle pagine della rivista Flash Art?",
         "options": [
-          "L'attraversamento libero e nomade dei territori dell'arte e della storia senza vincoli evolutivi.",
-          "L'adozione esclusiva della tecnologia informatica per la sostituzione della pittura a cavalletto.",
-          "L'obbligo per i pittori di operare all'interno di partiti politici per educare la classe operaia.",
-          "Il ripudio totale di ogni forma figurativa per abbracciare l'architettura funzionalista industriale."
+          "Germano Celant, teorico dell'Arte Povera",
+          "Il critico d'arte Achille Bonito Oliva",
+          "Renato Barilli, teorico dei Nuovi Nuovi",
+          "Gillo Dorfles, studioso del Kitsch"
         ],
-        "correctIndex": 0,
-        "explanation": "La Transavanguardia indica il superamento del mito dell'avanguardia lineare: l'artista transita tra linguaggi, miti ed epoche storiche in piena libertà espressiva."
+        "correctIndex": 1,
+        "explanation": "Achille Bonito Oliva (ABO) ha battezzato e teorizzato il movimento, formulando i concetti cardine di nomadismo culturale, transito stilistico e ritorno al 'manuale'."
       },
       {
-        "question": "Chi sono i cinque artisti che formano il nucleo storico della Transavanguardia italiana?",
+        "question": "Quali sono i cinque artisti che costituiscono il nucleo canonico della Transavanguardia italiana?",
         "options": [
-          "Sandro Chia, Francesco Clemente, Enzo Cucchi, Nicola De Maria, Mimmo Paladino.",
-          "Mario Merz, Jannis Kounellis, Michelangelo Pistoletto, Alighiero Boetti, Giuseppe Penone.",
-          "Giorgio de Chirico, Carlo Carrà, Alberto Savinio, Filippo de Pisis, Giorgio Morandi.",
-          "Lucio Fontana, Alberto Burri, Piero Manzoni, Enrico Castellani, Agostino Bonalumi."
+          "Lucio Fontana, Alberto Burri, Piero Manzoni, Enrico Castellani e Agostino Bonalumi",
+          "Mario Merz, Jannis Kounellis, Michelangelo Pistoletto, Alighiero Boetti e Luciano Fabro",
+          "Sandro Chia, Francesco Clemente, Enzo Cucchi, Nicola De Maria e Mimmo Paladino",
+          "Giorgio de Chirico, Carlo Carrà, Alberto Savinio, Filippo de Pisis e Mario Sironi"
         ],
-        "correctIndex": 0,
-        "explanation": "I 'magnifici cinque' battezzati da Bonito Oliva sono Chia, Clemente, Cucchi, De Maria e Paladino."
+        "correctIndex": 2,
+        "explanation": "I celebri 'magnifici cinque' di ABO: Chia, Clemente, Cucchi, De Maria e Paladino, ciascuno con una poetica figurativa o astratta radicata nella propria identità e memoria."
       },
       {
-        "question": "Quale artista della Transavanguardia si distingue per una pittura tellurica, densa e scura, ricca di teschi, colline e miti arcaici?",
+        "question": "Cosa indica il concetto di 'Nomadismo Culturale' coniato da Achille Bonito Oliva?",
         "options": [
-          "Enzo Cucchi.",
-          "Nicola De Maria.",
-          "Sandro Chia.",
-          "Francesco Clemente."
+          "L'uso esclusivo di materiali deperibili raccolti durante viaggi all'estero",
+          "L'obbligo per i pittori di risiedere in tende nel deserto durante la creazione artistica",
+          "Il divieto di esporre le proprie opere nella propria nazione d'origine",
+          "La libertà assoluta dell'artista di migrare attraverso stili, miti, epoche storiche e tradizioni geografiche senza vincoli evolutivi né obblighi di coerenza ideologica"
         ],
-        "correctIndex": 0,
-        "explanation": "Cucchi radica la sua opera nella terra marchigiana con tele cariche di materia oscura, ossa, fuoco e visioni drammatiche del paesaggio ancestrale."
+        "correctIndex": 3,
+        "explanation": "Nomadismo significa attraversamento: l'artista transita tra Manierismo, Futurismo, arte popolare o mitologie arcaiche come un viaggiatore disincantato che attinge liberamente alla storia."
       },
       {
-        "question": "In che modo l'esperienza nei soggiorni in India ha segnato l'opera di Francesco Clemente?",
+        "question": "Quale tra i cinque artisti della Transavanguardia si distingue per una ricerca basata sull'astrazione lirica e su stanze affrescate a colori puri anziché sulla figurazione antropomorfa?",
         "options": [
-          "Introducendo l'affresco su carta artigianale, miniature e un'iconografia intima legata alla metamorfosi e alla spiritualità.",
-          "Portandolo ad abbandonare la pittura figurativa per costruire grandi templi in cemento armato precompresso.",
-          "Spingendolo a dipingere unicamente locomotive a vapore e macchinari dell'era coloniale britannica.",
-          "Costringendolo a firmare le proprie opere con pseudonimi sanscriti per eludere il fisco italiano."
+          "Nicola De Maria",
+          "Sandro Chia",
+          "Enzo Cucchi",
+          "Mimmo Paladino"
         ],
         "correctIndex": 0,
-        "explanation": "Clemente ha assorbito la sapienza artigianale indiana, realizzando opere su carta grezza con pigmenti naturali dense di autoritratti, simbolismo erotico e mistico."
+        "explanation": "De Maria è il poeta del gruppo: rifiuta la figura umana per lavorare sull'intensità lirica del colore puro, trasformando intere pareti e sale espositive in 'Regni dei Fiori' e poesia visiva."
       },
       {
-        "question": "A quale importante rassegna internazionale la Transavanguardia si impose all'attenzione mondiale nel 1980?",
+        "question": "Quale immaginario iconografico contraddistingue in modo peculiare l'opera di Mimmo Paladino?",
         "options": [
-          "Alla Biennale di Venezia, all'interno della neonata sezione 'Aperto '80' curata ai Magazzini del Sale.",
-          "All'Esposizione Universale di Parigi allestita sotto la Torre Eiffel nel padiglione italiano.",
-          "Alla fiera Art Basel all'interno di un'asta clandestina riservata agli industriali elvetici.",
-          "Alla Quadriennale di Roma in un padiglione autogestito dagli operai della Fiat Mirafiori."
+          "Automobili da corsa futuriste e grattacieli metropolitani d'acciaio",
+          "Figure enigmatiche senza volto, scudi, cavalli, maschere primordiali e simboli intrisi della memoria arcaica del Mediterraneo e della cultura sannita/etrusca",
+          "Ritratti fotografici iperrealisti di celebrità hollywoodiane",
+          "Forme geometriche pure basate sulla teoria costruttivista russa"
+        ],
+        "correctIndex": 1,
+        "explanation": "Paladino attinge al mistero arcaico del Sud: geometrie primordiali, icone funerarie, guerrieri dormienti e sculture silenziose (come la 'Montagna di Sale') immerse nel mito mediterraneo."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "In che modo l'esperienza nei soggiorni in India ha plasmato il linguaggio pittorico di Francesco Clemente?",
+        "options": [
+          "Ha provocato il suo rifiuto totale di esporre nel mercato occidentale",
+          "Lo ha spinto ad abbandonare definitivamente la pittura per dedicarsi unicamente alla fotografia industriale",
+          "Ha introdotto tecniche tradizionali (miniatura, carta fatta a mano, affresco) e una riflessione intima sul corpo, sulla spiritualità induista, sulle metamorfosi e sull'eros",
+          "Gli ha fatto adottare uno stile puramente geometrico e monocromatico"
+        ],
+        "correctIndex": 2,
+        "explanation": "A Madras e Benares, Clemente sperimenta la fluidità dell'io: autoritratti frammentati, tecniche sapienziali e simbolismo orientale fusi con la cultura classica partenopea."
+      },
+      {
+        "question": "Analizzando la pittura di Enzo Cucchi, quale matrice culturale e geografica alimenta la drammaticità delle sue tele telluriche e scure?",
+        "options": [
+          "La cultura dei fumetti underground della California",
+          "Il razionalismo industriale e la nebbia metropolitana di Milano",
+          "L'architettura neoclassica parigina del secondo impero",
+          "Le radici contadine e marine delle Marche, cariche di miti arcaici, teschi, barche, colline tormentate e presenze ctonie"
+        ],
+        "correctIndex": 3,
+        "explanation": "Cucchi è il 'visionario tellurico': le sue opere vibrano di un'energia vulcanica e materica, dove la terra marchigiana, il fuoco, le barche nel buio e i santi popolari si fondono in visioni drammatiche."
+      },
+      {
+        "question": "Perché il prefisso 'Trans-' nella Transavanguardia segna una rottura rispetto al concetto tradizionale di Avanguardia?",
+        "options": [
+          "Perché indica il superamento del mito illuminista della marcia lineare in avanti (l'avanguardia che supera il passato): l'artista ora attraversa orizzontalmente la storia senza gerarchie evolutive",
+          "Perché imponeva la transizione verso la scultura digitale tridimensionale",
+          "Perché sanciva il trasferimento degli artisti italiani sul mercato americano",
+          "Perché indicava la trasformazione dei quadri in oggetti di arredamento d'interni"
         ],
         "correctIndex": 0,
-        "explanation": "La sezione Aperto '80 della Biennale di Venezia consacrò il gruppo a livello internazionale aprendo le porte dei più prestigiosi musei del mondo."
+        "explanation": "L'avanguardia storica credeva nel futuro e nel progresso; la Transavanguardia prende atto della fine delle utopie e si concede il transito libero e nomadico tra tutti i linguaggi possibili."
       }
     ]
   },
@@ -219,59 +287,94 @@ window.ARTE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Per quale ragione artistica Georg Baselitz decide di dipingere i propri soggetti capovolti a testa in giù?",
+        "question": "Come viene definita la corrente pittorica che negli anni Ottanta in Germania ha incarnato la riscoperta violenta della pittura figurativa espressionista?",
         "options": [
-          "Per neutralizzare la componente narrativa dell'immagine ed esaltare la pura materia pittorica e il gesto.",
-          "A causa di un difetto visivo congenito che gli impediva di percepire le coordinate ortogonali.",
-          "Per agevolare il trasporto delle tele all'interno dei carrelli degli ascensori di piccolo taglio.",
-          "Perché obbligato dai regolamenti sindacali delle accademie d'arte della Germania orientale."
+          "Il Movimento De Stijl berlinese",
+          "Il Realismo Socialista della Germania Est",
+          "I Nuovi Selvaggi (Neue Wilden) o Neoespressionismo tedesco",
+          "La Nuova Oggettività di Weimar"
         ],
-        "correctIndex": 0,
-        "explanation": "Baselitz svuota il soggetto di significato narrativo: capovolgendo l'albero o l'uomo, costringe lo spettatore a guardare pennellate, pesi, colori e densità."
+        "correctIndex": 2,
+        "explanation": "I Neue Wilden (Kiefer, Baselitz, Polke, Penck, Lupertz, Immendorff) esplodono con tele monumentali, pennellate rabbiose e una drammatica riflessione sull'identità e la storia tedesca."
       },
       {
-        "question": "Quale allievo di Joseph Beuys ha fatto della cenere, del piombo e della memoria storica del dopoguerra la materia prima delle sue tele?",
+        "question": "Quale segno distintivo ha reso celebre la pittura di Georg Baselitz a partire dal 1969?",
         "options": [
-          "Anselm Kiefer.",
-          "Gerhard Richter.",
-          "Nam June Paik.",
-          "Haim Steinbach."
+          "L'inserimento di schermi televisivi all'interno della cornice",
+          "L'uso esclusivo di pittura spray su pareti di cemento armato",
+          "La cancellazione totale della figura tramite vernice bianca opaca",
+          "Il capovolgimento sistematico dei soggetti e delle figure sulla tela, per svuotare l'immagine della sua referenzialità narrativa ed esaltare la pura materia pittorica"
         ],
-        "correctIndex": 0,
-        "explanation": "Kiefer è il grande sciamano della memoria tedesca, le cui tele monumentali integrano piombo, libri bruciati, paglia e cenere come correlativi oggettivi della tragedia storica."
+        "correctIndex": 3,
+        "explanation": "Baselitz ribalta i quadri sottosopra: la figura rimane riconoscibile ma perde il suo primato tematico, costringendo l'osservatore a concentrarsi su colore, segno e forza compositiva."
       },
       {
-        "question": "Che cosa rappresenta il ciclo di dipinti intitolato 'Café Deutschland' realizzato da Jörg Immendorff?",
+        "question": "Quale grande tema storico e traumatico attraversa la produzione monumentale e materica di Anselm Kiefer?",
         "options": [
-          "Una sequenza di cartelloni pubblicitari commissionati dal ministero del turismo di Bonn.",
-          "Un'allegoria teatrale e claustrofobica delle contraddizioni politiche tra Germania Ovest e DDR.",
-          "Uno studio scientifico sulla composizione chimica della schiuma della birra bavarese.",
-          "La celebrazione trionfale della vittoria della nazionale tedesca nei mondiali di calcio."
+          "La memoria tragica del passato tedesco, il nazismo, la Shoah, la mitologia germanica e la cabala ebraica, espressi attraverso materiali pesanti (piombo, paglia, cenere, terra)",
+          "L'ottimismo tecnologico della rinascita industriale automobilistica",
+          "I paesaggi marittimi tropicali e la fauna esotica",
+          "L'architettura funzionalista del Bauhaus di Dessau"
+        ],
+        "correctIndex": 0,
+        "explanation": "Kiefer affronta il tabù della colpa tedesca senza reticenze: solchi arati coperti di cenere, ali di piombo, riferimenti a Paul Celan ('Sulamith') per elaborare il lutto storico (Trauerarbeit)."
+      },
+      {
+        "question": "Cosa caratterizza la pittura e la ricerca polimorfa di Sigmar Polke?",
+        "options": [
+          "Il rispetto rigoroso delle regole accademiche del disegno dal vero",
+          "L'ironia dissacrante, l'uso del retino tipografico raster ingrandito (Polke Dots), tessuti d'arredo a buon mercato come supporto e la sperimentazione alchemica con sostanze chimiche e veleni",
+          "L'uso esclusivo di colori a tempera all'uovo su tavola lignea dorata",
+          "L'adozione di forme geometriche matematiche generate al computer"
         ],
         "correctIndex": 1,
-        "explanation": "Nel Café Deutschland si accalcano figure grottesche, aquile imperiali, svastiche sommerse e reticolati, simbolo della lacerazione di una patria spaccata in due."
+        "explanation": "Polke è l'alchimista beffardo del gruppo: demistifica la retorica dei consumi e della cultura alta, mescolando pigmenti tossici (blu di Prussia, arsenico) che mutano con l'umidità dell'aria."
       },
       {
-        "question": "In cosa consiste la celebre tecnica dei 'Rasterbilder' sperimentata da Sigmar Polke?",
+        "question": "In quale celebre mostra londinese del 1981 alla Royal Academy of Arts il Neoespressionismo tedesco si è affermato definitivamente a livello mondiale?",
         "options": [
-          "Nella riproduzione ingigantita e imperfetta dei retini di stampa tipografica dei giornali a rotocalco.",
-          "Nell'intaglio di matrici lignee ispirate alla xilografia giapponese del periodo Edo.",
-          "Nel taglio longitudinale delle tele eseguito con bisturi chirurgici sterili.",
-          "Nella proiezione di ologrammi laser su pareti ricoperte di foglia d'oro zecchino."
+          "When Attitudes Become Form di Harald Szeemann",
+          "Documenta 5 di Kassel",
+          "A New Spirit in Painting (curata da Christos Joachimides, Norman Rosenthal e Nicholas Serota)",
+          "Freeze di Damien Hirst"
         ],
-        "correctIndex": 0,
-        "explanation": "Polke dipinge a mano i punti del retino retinico delle rotative di stampa, svelando la natura artificiale e manipolatoria delle immagini mediatiche di massa."
+        "correctIndex": 2,
+        "explanation": "'A New Spirit in Painting' consacrò internazionalmente la vitalità inarrestabile della nuova pittura europea (tedeschi e italiani) di fronte alla scena anglosassone."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Perché la serie fotografica 'Occupations' (1969) di Anselm Kiefer, in cui l'artista si ritraeva compiendo il saluto nazista in vari luoghi d'Europa, suscitò enorme scandalo in Germania?",
+        "options": [
+          "Perché l'artista rifiutò di stampare le fotografie su carta all'alogenuro d'argento",
+          "Perché violava il divieto di fotografare monumenti pubblici",
+          "Perché utilizzava una fotocamera di fabbricazione sovietica",
+          "Perché ruppe il silenzio e la rimozione collettiva post-bellica sul Terzo Reich, costringendo i tedeschi a confrontarsi brutalmente con l'eredità storica senza ipocrisie consolatorie"
+        ],
+        "correctIndex": 3,
+        "explanation": "Kiefer compì una mossa provocatoria e coraggiosa: personificando il mostro storico della Germania, scardinò l'amnesia di una nazione che fingeva che il nazismo non fosse mai esistito."
       },
       {
-        "question": "Quale differenza fondamentale separa il Neoespressionismo tedesco dalla Transavanguardia italiana?",
+        "question": "Quale ruolo svolge la stratificazione materica (matericità) nelle opere di Anselm Kiefer?",
         "options": [
-          "L'urgenza drammatica e dolorosa del confronto con la storia, il senso di colpa e le macerie del nazismo.",
-          "Il rifiuto categorico dei tedeschi di esporre le proprie opere in gallerie commerciali private.",
-          "L'utilizzo esclusivo di acquerelli trasparenti su pergamena vegetale di derivazione fiamminga.",
-          "L'assoluta assenza di figure umane all'interno delle composizioni pittoriche germaniche."
+          "I materiali reali (il piombo che schiaccia, la paglia che brucia e deperisce, la cenere e il ferro) non sono semplici colori ma incarnano fisicamente il tempo, la fragilità, la rovina e la resurrezione alchemica",
+          "Serve unicamente ad aumentare il peso fisico del quadro per impedirne il furto nei musei",
+          "È un rimedio chimico per proteggere la tela dall'attacco dei tarli",
+          "Costituisce una trovata puramente ornamentale per rendere i dipinti tridimensionali"
         ],
         "correctIndex": 0,
-        "explanation": "Mentre la Transavanguardia attinge con leggerezza al mito e al classico, i tedeschi scavano nel dolore indicibile della Seconda Guerra Mondiale e del silenzio post-bellico."
+        "explanation": "Per Kiefer la materia è spirito e storia: il piombo è il metallo saturnino della malinconia e della trasformazione; la paglia evoca i capelli biondi di Margarete della poesia di Celan."
+      },
+      {
+        "question": "Cosa accomuna il linguaggio figurativo di A.R. Penck (Ralf Winkler) e la pittura rupestre primitiva?",
+        "options": [
+          "L'obbligo di dipingere all'interno di caverne calcaree buie",
+          "L'uso di una stenografia grafica di omini stilizzati (Standart), segni arcaici e pittogrammi universali per narrare le tensioni politiche della Guerra Fredda tra Est e Ovest",
+          "L'impiego esclusivo di polvere di carbone vegetale legata con grasso animale",
+          "Il rifiuto totale di esporre le proprie opere in mostre illuminate da lampade elettriche"
+        ],
+        "correctIndex": 1,
+        "explanation": "Penck inventò il sistema 'Standart': figure lineari ridotte all'essenziale come graffiti preistorici ma cariche di segnali di conflitto, barriere, soldati e ideologie divise dalla cortina di ferro."
       }
     ]
   },
@@ -310,59 +413,94 @@ window.ARTE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Con quale pseudonimo operava Jean-Michel Basquiat sui muri di New York prima di esporre su tela?",
+        "question": "In quale contesto urbano e sociale ha mosso i primi passi la ricerca artistica di Keith Haring a New York?",
         "options": [
-          "SAMO©",
-          "TAKI 183",
+          "All'interno dei grandi istituti bancari di Wall Street",
+          "Nelle prestigiose accademie d'arte tradizionali dell'Upper East Side",
+          "Negli studi cinematografici di Hollywood come disegnatore di cartoni animati",
+          "Nella metropolitana di New York, disegnando con gesso bianco sui pannelli pubblicitari neri inutilizzati (Subway Drawings)"
+        ],
+        "correctIndex": 3,
+        "explanation": "Haring scelse la metropolitana come laboratorio pubblico gratuito: disegnava a ritmo febbrile davanti ai pendolari con gessetti bianchi sui cartelloni neri, democratizzando l'arte per tutti."
+      },
+      {
+        "question": "Quale pseudonimo utilizzava Jean-Michel Basquiat nei primi anni della sua attività per firmare i graffiti aforistici e poetici per le strade di Manhattan?",
+        "options": [
+          "SAMO© (Same Old Shit)",
           "BLADE",
-          "FUTURA 2000"
+          "TAKI 183",
+          "CRASH"
         ],
         "correctIndex": 0,
-        "explanation": "Basquiat siglava i suoi aforismi urbani con SAMO©, accompagnati dal simbolo del copyright, prima di debuttare nel mercato delle gallerie."
+        "explanation": "Insieme all'amico Al Diaz, Basquiat firmava 'SAMO©': frasi fulminanti, enigmi filosofici e critiche sociali vergate sui muri dell'East Village che attirarono l'attenzione dei media."
       },
       {
-        "question": "Per quale motivo Basquiat cancellava frequentemente parole e frasi all'interno dei suoi dipinti?",
+        "question": "Quali elementi iconografici ricorrenti contraddistinguono la pittura neoespressionista e viscerale di Jean-Michel Basquiat?",
         "options": [
-          "Perché sosteneva che cancellare una parola spinge lo spettatore a desiderare di leggerla con più attenzione.",
-          "Perché non ricordava la corretta ortografia delle parole della lingua francese.",
-          "Per nascondere messaggi militari in codice destinati ai dissidenti politici latinoamericani.",
-          "Per riutilizzare le tele grezze senza dover acquistare nuovi barattoli di colore acrilico."
+          "Paesaggi bucolici fioriti dipinti con tecnica impressionista all'aria aperta",
+          "Corone a tre punte, scheletri, teschi anatomici, parole cancellate e riscritture, figure di campioni ed eroi afroamericani (Miles Davis, Sugar Ray Robinson) e critica al razzismo",
+          "Composizioni puriste basate su griglie modulari in bianco e nero",
+          "Ritratti fotografici in posa di aristocratici dell'Ottocento"
         ],
-        "correctIndex": 0,
-        "explanation": "La celebre dichiarazione dell'artista chiarisce la strategia: barrare una parola la carica di mistero e ne amplifica la potenza visiva."
+        "correctIndex": 1,
+        "explanation": "Basquiat celebra il genio e il dolore della cultura nera: la corona santifica eroi, pugili e musicisti jazz, mentre teschi e citazioni del libro di anatomia Gray's Anatomy svelano la vulnerabilità umana."
       },
       {
-        "question": "Qual era l'obiettivo politico e culturale di Keith Haring nell'apertura del 'Pop Shop' a Manhattan nel 1986?",
+        "question": "Cosa rappresentano simbolicamente il 'Radiant Baby' (bambino raggiante) e il 'Barking Dog' (cane che abbaia) nel vocabolario iconografico di Keith Haring?",
         "options": [
-          "Rendere la propria arte accessibile a chiunque attraverso gadget a prezzi popolari, rompendo l'elitarismo del mercato.",
-          "Creare un magazzino esclusivo per ricchi collezionisti con ingresso su invito notarile.",
-          "Vendere illegalmente sostanze chimiche allucinogene ai frequentatori dei club notturni.",
-          "Fabbricare abbigliamento militare per i riservisti dell'esercito federale statunitense."
+          "Sono caricature satiriche dei presidenti degli Stati Uniti dell'epoca",
+          "Sono marchi commerciali registrati per una linea di cibo per animali domestici",
+          "Il Radiant Baby rappresenta la purezza dell'energia vitale, la gioia e la speranza innocente del futuro; il cane che abbaia incarna l'avvertimento, le forze autoritarie e la violenza sociale",
+          "Rappresentano illustrazioni mediche per manuali di pediatria clinica"
         ],
-        "correctIndex": 0,
-        "explanation": "Haring desiderava che chiunque potesse portarsi a casa il suo segno visivo, rifiutando l'idea che l'arte dovesse essere privilegio esclusivo dei musei o dei milionari."
+        "correctIndex": 2,
+        "explanation": "L'iconografia di Haring è un alfabeto visivo universale: figure sintetiche e radianti che parlano con immediatezza a chiunque, affrontando temi immensi come la vita, la morte, l'amore e l'AIDS."
       },
       {
-        "question": "Quale testo medico scientifico ha segnato profondamente l'immaginario visivo e anatomico di Jean-Michel Basquiat?",
+        "question": "Quale illustre protagonista della Pop Art ha stretto una profonda collaborazione artistica e umana con Basquiat e Haring negli anni Ottanta?",
         "options": [
-          "L'Anatomia del Gray (Gray's Anatomy), regalatogli dalla madre durante la convalescenza dopo un incidente d'auto.",
-          "Il trattato sulla fabbrica del corpo umano di Andrea Vesalio del sedicesimo secolo.",
-          "Il manuale di ottica fisiologica e rifrazione della luce di Hermann von Helmholtz.",
-          "I taccuini di botanica descrittiva e microscopia cellulare di Carl von Linné."
+          "Claes Oldenburg",
+          "Roy Lichtenstein",
+          "Jasper Johns",
+          "Andy Warhol (con cui Basquiat realizzò una celebre serie di dipinti a quattro mani)"
+        ],
+        "correctIndex": 3,
+        "explanation": "Warhol divenne mentore e padre spirituale per Basquiat e Haring: la collaborazione tra l'anziano re della Pop Art e il giovane prodigio della strada produsse opere iconiche e un sodalizio leggendario."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Perché Jean-Michel Basquiat cancellava frequentemente con una riga di vernice singole parole o frasi all'interno dei suoi dipinti?",
+        "options": [
+          "Perché — come dichiarò lui stesso — cancellando una parola la si rende molto più visibile e desiderabile per lo sguardo dell'osservatore, che si sforza di leggerla",
+          "Perché commetteva continui errori di ortografia che cercava goffamente di nascondere",
+          "Perché gli acquirenti dei quadri gli imponevano di censurare i testi politici",
+          "Perché la vernice nera costava meno di tutti gli altri pigmenti colorati"
         ],
         "correctIndex": 0,
-        "explanation": "A sette anni, investito da un'auto, Basquiat ricevette in ospedale il celebre manuale medico: teschi, gabbie toraciche e organi interni rimarranno la sua cifra visiva vitale."
+        "explanation": "'I cross out words so you will see them more; the fact that they are obscured makes you want to read them'. Un dispositivo concettuale raffinatissimo di valorizzazione per negazione."
       },
       {
-        "question": "Quale figura iconica dell'alfabeto visivo di Keith Haring simboleggia l'innocenza, l'energia vitale e la purezza originaria?",
+        "question": "Quale fu il significato politico e democratico dell'apertura del 'Pop Shop' a SoHo da parte di Keith Haring nel 1986?",
         "options": [
-          "Il Radiant Baby (Bambino Raggiante).",
-          "Il serpente a due teste alato.",
-          "L'angelo con la maschera antigas.",
-          "Il televisore con gli artigli meccanici."
+          "Abbandonare il mondo dell'arte per dedicarsi unicamente al commercio al dettaglio",
+          "Rendere la propria arte accessibile a chiunque tramite magliette, spille e poster a basso costo, scardinando l'esclusivismo elitario delle gallerie per miliardari",
+          "Vendere illegalmente opere d'arte sottratte ai musei federali",
+          "Dimostrare che solo i collezionisti facoltosi avevano il diritto di possedere le sue creazioni"
         ],
-        "correctIndex": 0,
-        "explanation": "Il neonato carponi circondato da raggi luminosi è il logo e il talismano supremo di Haring, simbolo dell'energia vitale e della speranza umana."
+        "correctIndex": 1,
+        "explanation": "Il Pop Shop incarnò l'etica sociale di Haring: 'La mia arte è per tutti'. Chiunque con un dollaro poteva comprare un pezzo della sua iconografia, portando l'arte fuori dalle torri d'avorio."
+      },
+      {
+        "question": "In che modo l'epidemia di AIDS ha segnato tragicamente l'ultima fase della produzione artistica di Keith Haring?",
+        "options": [
+          "Ha provocato la distruzione di tutte le sue tele conservate nei musei americani",
+          "Lo ha indotto a smettere di dipingere per dedicarsi alla pittura floreale decorativa",
+          "Ha trasformato la sua grafica in uno strumento militante di sensibilizzazione politica e denuncia contro l'omofobia e il silenzio dei governi ('Silence = Death')",
+          "Non ha influenzato minimamente le sue opere, rimaste puramente astratte"
+        ],
+        "correctIndex": 2,
+        "explanation": "Colpito egli stesso dal virus (di cui morì nel 1990 a soli 31 anni), Haring riversò la sua arte nella lotta per la vita, fondando la Keith Haring Foundation e realizzando manifesti indimenticabili."
       }
     ]
   },
@@ -401,59 +539,94 @@ window.ARTE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Quale critica teorica fondamentale esprime Cindy Sherman nella serie fotografica degli 'Untitled Film Stills'?",
+        "question": "Qual è il presupposto teorico alla base dell'Appropriazionismo (Appropriation Art) affermatosi tra la fine degli anni Settanta e gli anni Ottanta?",
         "options": [
-          "Che l'identità e i ruoli femminili sono recite fittizie modellate dagli stereotipi visivi del cinema e dei media.",
-          "Che le macchine fotografiche analogiche non sono in grado di catturare la luce artificiale dei set cinematografici.",
-          "Che la pittura a olio è uno strumento espressivo superiore rispetto alla fotografia documentaria.",
-          "Che le attrici di Hollywood dovrebbero ricevere un compenso fisso garantito dallo stato federale."
+          "Il prelievo diretto, la ri-fotografia o la duplicazione dichiarata di immagini preesistenti create da altri autori o dai mass media, per decostruire i miti di originalità, autorialità e unicità dell'opera d'arte",
+          "Il furto materiale di quadri custoditi nei musei statali europei",
+          "L'obbligo di dipingere unicamente su tele donate da altri colleghi pittori",
+          "La riproduzione a mano di stampe tipografiche su commissione governativa"
         ],
         "correctIndex": 0,
-        "explanation": "Sherman mette a nudo i cliché culturali: cambiando parrucca, abito e postura dimostra che la femminilità mediatica è un repertorio di pose codificate."
+        "explanation": "L'Appropriazionismo sancisce che nel mondo saturo di immagini non serve crearne di nuove: ri-fotografare o prelevare immagini esistenti svela i meccanismi di potere e stereotipo della società dei consumi."
       },
       {
-        "question": "Quale celebre campagna pubblicitaria seriale ha rifotografato Richard Prince per smontare il mito della virilità della frontiera americana?",
+        "question": "Quale celebre operazione concettuale ha reso celebre l'artista Sherrie Levine nella serie 'After Walker Evans' (1981)?",
         "options": [
-          "Le pubblicità delle sigarette Marlboro con i cowboy al pascolo nel Far West.",
-          "Gli annunci promozionali delle automobili decapottabili della General Motors.",
-          "I cartelloni turistici delle spiagge assolate della California meridionale.",
-          "Le fotografie commerciali delle bottiglie di Coca-Cola ghiacciate nei distributori."
+          "Ha colorato con bombolette spray le stampe d'epoca di Evans",
+          "Ha rifotografato le famose fotografie dei contadini dell'era della Depressione scattate da Walker Evans, esponendole a proprio nome senza alcuna alterazione visiva",
+          "Ha bruciato pubblicamente i negativi originali del fotografo americano",
+          "Ha sostituito i volti dei contadini con ritratti di attori di Hollywood"
         ],
-        "correctIndex": 0,
-        "explanation": "Prince fotografa i cowboy Marlboro eliminando il pacchetto e il logo: decontestualizzata, la foto rivela il trucco commerciale che trasforma un veleno letale in mito eroico."
+        "correctIndex": 1,
+        "explanation": "Levine compie l'atto di appropriazione radicale: ri-fotografando il catalogo di Evans, interroga il patriarcato artistico, il diritto d'autore e il feticcio dell'originale."
       },
       {
-        "question": "Quale stile grafico e tipografico caratterizza inconfondibilmente i collage di Barbara Kruger?",
+        "question": "Cosa caratterizza la celeberrima serie fotografica 'Untitled Film Stills' (1977-1980) di Cindy Sherman?",
         "options": [
-          "Fotografie d'archivio in bianco e nero sovrastate da barre rosse con testi in carattere Futura o Helvetica Bold.",
-          "Calligrafie arabe dorate applicate su tavole di legno di pioppo intagliate a mano.",
-          "Schizzi a carboncino su fogli di giornale economico privi di qualsiasi scritta tipografica.",
-          "Stampe serigrafiche multicolori su fogli di plastica fluorescente retroilluminata da neon."
+          "Ritratti di attrici famose fotografate a loro insaputa per strada",
+          "La raccolta di fotogrammi scartati dalle case cinematografiche di Los Angeles",
+          "Una sequenza di 69 autoritratti in bianco e nero in cui l'artista si traveste interpretando stereotipi femminili del cinema hollywoodiano e noir degli anni '50 e '60 (la casalinga, la vittima, la donna in carriera)",
+          "Fotografie di paesaggi urbani notturni completamente deserti"
         ],
-        "correctIndex": 0,
-        "explanation": "Kruger usa l'estetica aggressiva dei manifesti di propaganda e dei tabloid: il contrasto tra rosso, bianco e nero cattura istantaneamente lo sguardo come uno schiaffo visivo."
+        "correctIndex": 2,
+        "explanation": "Sherman non fotografa se stessa: usa il proprio corpo come tela per decostruire gli stereotipi visivi femminili costruiti dallo sguardo maschile (Male Gaze) nel cinema occidentale."
       },
       {
-        "question": "Qual è il titolo della storica mostra del 1977 all'Artists Space di New York che diede il nome alla 'Pictures Generation'?",
+        "question": "Cosa ha ri-fotografato Richard Prince nelle sue celebri opere della serie 'Cowboys'?",
         "options": [
-          "Pictures, curata da Douglas Crimp.",
-          "The Great American Dream, curata da Andy Warhol.",
-          "New Wave Art, curata da Leo Castelli.",
-          "Post-Human, curata da Jeffrey Deitch."
+          "Fotogrammi di pellicole cinematografiche con John Wayne",
+          "Veri butteri della maremma toscana durante la transumanza",
+          "I quadri storici dell'epopea del Far West conservati a Washington",
+          "Gli scatti pubblicitari delle sigarette Marlboro, eliminando il testo e il marchio commerciale per isolare l'archetipo mitologico del cowboy americano come pura finzione mediatica"
         ],
-        "correctIndex": 0,
-        "explanation": "Il saggio e la mostra di Douglas Crimp raggrupparono per la prima volta artisti come Sherman, Prince, Longo e Levine attorno al tema dell'immagine come simulacro."
+        "correctIndex": 3,
+        "explanation": "Prince estrapola la pubblicità: senza logo Marlboro, il cowboy appare per quello che è: un costrutto artificiale di mascolinità e libertà confezionato dall'industria del tabacco."
       },
       {
-        "question": "Cosa significa fare 'Appropriation Art' secondo i teorici del postmodernismo?",
+        "question": "Quale critica d'arte ha curato la storica mostra 'Pictures' (1977) all'Artists Space di New York che ha dato il nome alla 'Pictures Generation'?",
         "options": [
-          "Prelevare immagini già esistenti nella cultura di massa per risignificarle e mostrarne i meccanismi persuasivi.",
-          "Rifiutarsi di firmare i quadri per consentire al pubblico di attribuirsene la paternità legale.",
-          "Rubare quadri originali dai musei pubblici per rivenderli clandestinamente nelle aste estere.",
-          "Dipingere solo su supporti cartacei appartenenti a uffici governativi dismessi."
+          "Douglas Crimp",
+          "Rosalind Krauss",
+          "Lucy Lippard",
+          "Clement Greenberg"
         ],
         "correctIndex": 0,
-        "explanation": "L'artista non è più un creatore demiurgo: diventa un selezionatore critico che preleva frammenti del flusso mediatico per smascherarne l'ideologia."
+        "explanation": "Il saggio e la mostra di Douglas Crimp battezzarono la 'Pictures Generation' (Robert Longo, Cindy Sherman, Jack Goldstein, Sherrie Levine), cresciuta sotto il bombardamento delle immagini tv."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "In che modo le tesi filosofiche di Roland Barthes ('La morte dell'autore', 1967) si collegano direttamente alla poetica dell'Appropriazionismo?",
+        "options": [
+          "Impongono la soppressione legale della figura del curatore museale",
+          "Sostengono che un testo o un'opera non scaturiscono da un genio creatore isolato, ma sono un tessuto di citazioni preesistenti che prendono senso unicamente nello sguardo del fruitore",
+          "Affermano che l'unico vero autore è il fabbricante della macchina fotografica",
+          "Vietano la pubblicazione di cataloghi d'arte con saggi critici"
+        ],
+        "correctIndex": 1,
+        "explanation": "Barthes demolisce il mito romantico del creatore demiurgo: l'artista contemporaneo non crea ex nihilo, ma assembla e riconfigura codici culturali che appartengono al patrimonio collettivo."
+      },
+      {
+        "question": "Nelle fotografie di Cindy Sherman, perché l'artista non assegna mai un titolo esplicito alle sue opere, limitandosi alla dicitura 'Untitled' seguita da un numero progressivo?",
+        "options": [
+          "Perché le gallerie applicavano una tassa su ogni lettera del titolo dell'opera",
+          "Perché non ricordava i nomi dei personaggi interpretati durante gli scatti",
+          "Per lasciare aperta l'interpretazione ed evitare che un nome guidi o limiti la decodifica dell'osservatore, costringendolo a confrontarsi con i propri preconcetti",
+          "Perché le fotografie facevano parte di un archivio giudiziario segreto"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Untitled' nega la narrazione preconfezionata: lo spettatore crede di ricordare il film da cui è tratto il fotogramma, ma il film non esiste; è solo il repertorio visivo sedimentato nella sua mente."
+      },
+      {
+        "question": "Quale riflessione sul genere (gender) e sul concetto di identità emerge dalla pratica del travestimento di Cindy Sherman?",
+        "options": [
+          "L'uso del trucco è incompatibile con il messaggio dell'arte concettuale",
+          "L'abbigliamento femminile degli anni Cinquanta era superiore a quello moderno",
+          "Le donne non dovrebbero mai essere ritratte all'interno di set fotografici",
+          "L'identità femminile non è un'essenza biologica immutabile, ma una costruzione sociale, performativa e mediatica appresa attraverso la cultura visiva patriarcale"
+        ],
+        "correctIndex": 3,
+        "explanation": "Anticipando le teorie queer e di genere di Judith Butler ('Gender Trouble'), la Sherman dimostra che il genere è una maschera, una performance codificata dalle immagini di consumo."
       }
     ]
   },
@@ -492,59 +665,94 @@ window.ARTE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Cosa simboleggia l'inaccessibilità degli aspirapolvere sigillati nelle teche di plexiglas da Jeff Koons nella serie 'The New'?",
+        "question": "Quale concetto sociologico e filosofico di Jean Baudrillard ha costituito il fondamento teorico del movimento Neo-Geo (Neo-Geometric Conceptualism)?",
         "options": [
-          "L'immortalità asettica e la purezza verginale dell'oggetto di consumo che non sarà mai corrotto dall'usura del tempo.",
-          "L'inadeguatezza della tecnologia industriale americana rispetto ai motori a scoppio sovietici.",
-          "La protesta dei lavoratori delle pulizie contro l'introduzione delle macchine automatiche negli ospedali.",
-          "L'assenza di connessione elettrica all'interno delle gallerie di periferia della capitale newyorkese."
+          "La teoria dell'alienazione operaia nella fabbrica metallurgica",
+          "Il concetto di 'Simulacro e Simulazione': nella società dei consumi il segno ha sostituito la realtà, creando un'iperrealtà in cui l'originale non esiste più",
+          "Il principio di indeterminazione della meccanica quantistica",
+          "L'estetica romantica del sublime naturale di fronte all'infinito"
         ],
-        "correctIndex": 0,
-        "explanation": "Koons congela l'oggetto nel momento del massimo splendore commerciale: nuovo, mai toccato, desiderabile per sempre come una divinità incorruttibile."
+        "correctIndex": 1,
+        "explanation": "Baudrillard ispira il Neo-Geo: viviamo in una mappa che precede il territorio. La merce e i media generano modelli di una realtà che non rimanda più a nulla di concreto (simulacri)."
       },
       {
-        "question": "Quale materiale riflettente usa magistralmente Jeff Koons per sculture come 'Rabbit' o 'Balloon Dog'?",
+        "question": "Cosa rappresentano metaforicamente le geometrie colorate (prigioni e celle con condotti) nei quadri di Peter Halley?",
         "options": [
-          "Acciaio inossidabile lucidato a specchio, spesso rifinito con verniciature trasparenti colorate.",
-          "Gesso alabastrino ricoperto da lamine di piombo non saldato.",
-          "Resina epossidica ricavata dalla macerazione di pneumatici esausti.",
-          "Pietra leccese scolpita con antichi scalpelli da scalpellino medievale."
+          "Piante planimetriche di cattedrali rinascimentali toscane",
+          "Semplici studi formali di cromatologia pura senza alcun significato politico",
+          "L'organizzazione invisibile del potere e del controllo sociale nella società post-industriale: gli appartamenti, gli uffici, i microchip e i flussi di comunicazione che imprigionano e collegano gli individui",
+          "Decorazioni geometriche destinate alla tessitura di tappeti orientali"
         ],
-        "correctIndex": 0,
-        "explanation": "L'acciaio inox a specchio riflette lo spettatore e l'ambiente circostante, conferendo al giocattolo gonfiabile un'aura di lusso eterno e seduttiva monumentalità."
+        "correctIndex": 2,
+        "explanation": "Halley decostruisce l'astrazione geometrica di Mondrian e Malevic: le sue forme non sono armonie pure, ma celle carcerarie (prisons) collegate da tubi di conduzione (conduits), metafora della società disciplinare."
       },
       {
-        "question": "Che cosa rappresentano i quadrati colorati e le linee orizzontali nei dipinti di Peter Halley?",
+        "question": "Quale celebre serie di opere ha consacrato Jeff Koons nei primi anni Ottanta sigillando elettrodomestici nuovi in teche di plexiglas trasparente?",
         "options": [
-          "Celle abitative, prigioni e condotti sotterranei di comunicazione e controllo della società contemporanea.",
-          "Campi coltivati a grano e canali di irrigazione delle fattorie storiche dell'Ohio.",
-          "Partiture musicali per pianoforte accordato secondo scale dodecafoniche.",
-          "Rappresentazioni microscopiche delle catene proteiche del DNA vegetale."
+          "Equilibrium",
+          "Celebration",
+          "Made in Heaven",
+          "The New (aspirapolvere Hoover e lucidatrici immacolate illuminate da tubi al neon fluorescenti)"
         ],
-        "correctIndex": 0,
-        "explanation": "Halley teorizza che la geometria non è neutra: i rettangoli sono le stanze-loculo dove viviamo e le linee sono i cavi e i tubi attraverso cui riceviamo stimoli controllati."
+        "correctIndex": 3,
+        "explanation": "In 'The New', Koons santifica la merce intatta: gli aspirapolvere non hanno mai aspirato polvere, preservati in un'eterna purezza asessuata e seducente come nuovi idoli religiosi del consumo."
       },
       {
-        "question": "Su quali supporti allinea Haim Steinbach gli oggetti acquistati nei grandi magazzini per le sue opere?",
+        "question": "Cosa simboleggiano le sculture in acciaio inox lucidato a specchio di Jeff Koons (come 'Rabbit', 1986)?",
         "options": [
-          "Mensole triangolari a sezione costante rifinite in formica industriale colorata.",
-          "Tavole di legno grezzo recuperate dalle impalcature dei cantieri edili.",
-          "Banchi da lavoro di vecchie officine meccaniche abbandonate in Germania.",
-          "Lastre di marmo di Carrara modellate con scanalature d'ordine dorico."
+          "La trasformazione di un giocattolo gonfiabile da pochi centesimi in un feticcio di lusso riflettente, che attrae lo spettatore rispecchiandone il narcisismo e la bramosia di possesso",
+          "Uno studio scientifico sulla resistenza dei metalli alla corrosione atmosferica",
+          "La denuncia morale contro i produttori di palloncini in lattice",
+          "Un monumento funebre dedicato alla memoria degli animali da laboratorio"
         ],
         "correctIndex": 0,
-        "explanation": "La mensola a cuneo di Steinbach è essa stessa una scultura geometrica che nobilita e ordina in tassonomia gli oggetti del desiderio di massa."
+        "explanation": "'Rabbit' è l'icona suprema dell'iper-merce: un coniglietto gonfiabile d'aria convertito in metallo freddo e prezioso che rimanda allo spettatore la sua stessa immagine riflessa."
       },
       {
-        "question": "Quale messaggio etico ed estetico veicola la serie 'Banality' di Jeff Koons del 1988?",
+        "question": "Quale atteggiamento ideologico distingue il Neo-Geo e Jeff Koons rispetto alla Pop Art storica degli anni Sessanta?",
         "options": [
-          "La totale accettazione senza sensi di colpa del gusto popolare, del kitsch e della seduzione consumistica.",
-          "La condanna morale del capitalismo attraverso l'uso di materiali deteriorabili ed esalazioni maleodoranti.",
-          "La rinuncia a vendere opere d'arte per sostenere la riforestazione della foresta pluviale amazzonica.",
-          "L'invito ai giovani scultori a dedicarsi esclusivamente all'oreficeria sacra cattolica."
+          "Il ritorno al comunismo sovietico e il boicottaggio delle gallerie private",
+          "L'abbandono di qualsiasi critica o distanza ironica: una celebrazione e un'immersione totale, euforica e senza complessi nella logica del capitale, del marketing e del desiderio consumistico",
+          "Il rifiuto categorico di vendere le opere a collezionisti d'élite",
+          "L'adozione esclusiva di materiali organici deperibili"
+        ],
+        "correctIndex": 1,
+        "explanation": "Koons non critica il kitsch né la merce: li abbraccia con entusiasmo messianico, dichiarando che l'arte deve rassicurare la classe media e celebrare il godimento del presente."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Nelle opere della serie 'Equilibrium' (1985) di Jeff Koons, cosa rappresenta l'iconica palla da basket perfettamente sospesa al centro di una vasca d'acqua distillata?",
+        "options": [
+          "La sponsorizzazione commerciale ufficiale per la squadra dei Chicago Bulls",
+          "Un esperimento didattico per spiegare la legge di gravitazione universale",
+          "Uno stato irreale di perfetto equilibrio fisico e metafisico, metafora della promessa ingannevole di ascesa sociale che lo sport e la pubblicità offrono alle classi svantaggiate",
+          "Una scultura cinetica mossa da correnti marine artificiali"
+        ],
+        "correctIndex": 2,
+        "explanation": "Koons unì fisica e sociologia: con l'aiuto del premio Nobel Richard Feynman sospese i palloni in equilibrio statico, affiancandoli a poster Nike che promettevano sogni di riscatto sociale."
+      },
+      {
+        "question": "Perché Peter Halley ha scelto di dipingere i suoi quadri geometrici utilizzando esclusivamente vernici industriali sintetiche (come il Day-Glo e il Roll-a-Tex)?",
+        "options": [
+          "Perché le vernici fluorescenti costavano meno dei pigmenti naturali",
+          "Perché i colori tradizionali erano stati dichiarati fuorilegge negli Stati Uniti",
+          "Per consentire ai dipinti di essere lavati con candeggina nei musei",
+          "Per rifiutare l'aura romantica della pittura tradizionale ad olio, utilizzando i materiali ruvidi e fosforescenti tipici dei cantieri e dei segnali d'allarme metropolitani"
+        ],
+        "correctIndex": 3,
+        "explanation": "Il Roll-a-Tex è la vernice finta-intonaco dei condomini commerciali; il Day-Glo è la luce chimica dei giubbotti catarinfrangenti: Halley usa i materiali del condizionamento sociale moderno."
+      },
+      {
+        "question": "Quale paradosso sociologico incarna il record di vendita di 'Rabbit' di Jeff Koons, battuto all'asta da Christie's per oltre 91 milioni di dollari nel 2019?",
+        "options": [
+          "La consacrazione finale dell'opera come bene rifugio supremo della finanza globale, confermando la tesi di Baudrillard sulla coincidenza totale tra arte e feticismo del capitale",
+          "Il crollo definitivo del mercato dell'arte contemporanea a favore della pittura antica",
+          "L'acquisto dell'opera da parte di un consorzio di agricoltori canadesi",
+          "L'obbligo per l'artista di restituire il ricavato allo Stato federale"
         ],
         "correctIndex": 0,
-        "explanation": "Koons esorta il pubblico a liberarsi dalla vergogna borghese: il kitsch e i pupazzi sono memorie d'infanzia e consolazione rassicurante in un mondo spietato."
+        "explanation": "L'opera più costosa mai venduta di un artista vivente è un coniglietto gonfiabile finto: il trionfo assoluto del simulacro, dove il valore concettuale e finanziario sublima l'oggetto materiale."
       }
     ]
   },
@@ -583,59 +791,94 @@ window.ARTE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Quale caratteristica accomuna le serie fotografiche delle 'sculture anonime' realizzate da Bernd e Hilla Becher?",
+        "question": "Quali elementi contraddistinguono la poetica scultorea della New British Sculpture affermatasi in Inghilterra nei primi anni Ottanta?",
         "options": [
-          "L'inquadratura rigorosamente frontale, la luce uniforme senza ombre e l'assenza assoluta di presenza umana.",
-          "L'uso esclusivo di colori fluorescenti e lenti deformanti grandangolari per simulare vertigini ottiche.",
-          "L'inclusione di operai in sciopero che protestano con cartelli scritti a mano davanti alle fabbriche.",
-          "L'utilizzo di fotocamere istantanee Polaroid con sviluppo rapido a contatto manuale."
+          "La copia monumentale di archi di trionfo romani in gesso bianco",
+          "L'abbandono di qualsiasi materiale solido per dedicarsi unicamente alla realtà virtuale",
+          "Il superamento del minimalismo freddo attraverso la riscoperta della manualità, la reinvenzione dell'oggetto quotidiano di scarto e una forte carica metaforica e poetica",
+          "L'uso esclusivo di sculture meccaniche semoventi radiocomandate"
         ],
-        "correctIndex": 0,
-        "explanation": "I Becher hanno creato una catalogazione scientifica e oggettiva: cielo neutro, luce piatta e prospettiva ortogonale trasformano le architetture in tipi scultorei."
+        "correctIndex": 2,
+        "explanation": "Scultori come Cragg, Deacon, Woodrow e Kapoor rigenerano la scultura: riutilizzano frammenti di plastica, metallo, legno o pigmento per raccontare il rapporto tra uomo, natura e industria."
       },
       {
-        "question": "Quale tema cardine della contemporaneità viene indagato dalle panoramiche vertiginose di Andreas Gursky?",
+        "question": "Quale tecnica caratterizza le celebri prime opere di Tony Cragg composte da frammenti di plastica colorata trovati per strada o sulle spiagge?",
         "options": [
-          "La scala globale dei mercati finanziari, la produzione seriale e la subordinazione dell'individuo alle merci.",
-          "La solitudine intima dei pescatori di merluzzo dei fiordi della Norvegia settentrionale.",
-          "I segreti della cucina molecolare all'interno dei ristoranti di lusso parigini.",
-          "La catalogazione microscopica dei pollini floreali delle piante carnivore tropicali."
+          "L'incenerimento pubblico dei rifiuti per protestare contro l'inquinamento",
+          "La fusione della plastica per creare blocchi solidi indistinti",
+          "L'incisione a laser di codici a barre su contenitori di detersivo",
+          "La composizione a parete o a terra di tessere plastiche di scarto raggruppate per sfumatura cromatica, a formare silhouette di figure umane, bandiere o oggetti (come in 'Britain Seen from the North')"
         ],
-        "correctIndex": 0,
-        "explanation": "Gursky documenta il sublime tecnologico e capitalistico contemporaneo: borse valori, corridoi di supermercati infiniti e megalopoli brulicanti."
+        "correctIndex": 3,
+        "explanation": "Cragg fa archeologia del presente: raccoglie i fossili della civiltà dei consumi (pezzi di giocattoli, flaconi) e li ordina cromaticamente, ricreando immagini che denunciano il degrado urbano."
       },
       {
-        "question": "Cosa sono le celebri 'Lightboxes' create da Jeff Wall a partire dalla fine degli anni Settanta?",
+        "question": "Cosa caratterizza le celebri prime sculture di Anish Kapoor degli anni Ottanta ricoperte di pigmento puro in polvere?",
         "options": [
-          "Grandi diapositive fotografiche retroilluminate montate in cassonetti luminosi simili ai cartelloni pubblicitari.",
-          "Scatole di cartone grezzo con fori stenopeici utilizzate per riprendere il sole a mezzogiorno.",
-          "Lampade da lettura orientabili posizionate sui banchi delle biblioteche universitarie canadesi.",
-          "Monitor televisivi a tubo catodico che trasmettono segnali di disturbo statico in bianco e nero."
+          "Forme geometriche e organiche misteriose che sembrano affiorare dal pavimento o dalla parete, sature di polvere di pigmento intensissimo (blu, rosso, giallo) che ne dissolve i contorni fisici",
+          "L'uso di circuiti elettrici lampeggianti alimentati a energia solare",
+          "La presenza di scritte satiriche contro la famiglia reale britannica",
+          "La riproduzione in miniatura di locomotive a vapore dell'epoca vittoriana"
         ],
         "correctIndex": 0,
-        "explanation": "Wall ha mutuato il cassonetto pubblicitario luminoso per conferire alla fotografia la stessa intensità luminosa e grandiosità delle pale d'altare o dei dipinti storici del Louvre."
+        "explanation": "Il pigmento puro non è vernice stesa: è materia vibrante che fuoriesce dall'oggetto disperdendosi a terra. Il colore saturatissimo inganna l'occhio e trasforma la scultura in pura apparizione spirituale."
       },
       {
-        "question": "Cosa viene ritratto da Thomas Struth nella sua famosa serie intitolata 'Museum Photographs'?",
+        "question": "Quale incontro culturale alimenta la ricerca scultorea e metafisica di Anish Kapoor?",
         "options": [
-          "I visitatori intenti a osservare i capolavori nei musei, creando un rispecchiamento con lo spettatore reale.",
-          "I restauratori al lavoro nei laboratori sotterranei sui pigmenti a tempera rinascimentali.",
-          "I camion blindati utilizzati dalle ditte di trasloco per il trasporto delle statue di marmo.",
-          "Le sale dei musei completamente vuote di notte illuminate dai fari di sicurezza degli allarmi."
+          "La fusione tra l'arte aborigena australiana e il cinema muto svedese",
+          "La sintesi armonica tra la spiritualità e il misticismo della tradizione indiana e il rigore concettuale e formale della scultura occidentale contemporanea",
+          "L'architettura funzionalista sovietica e la calligrafia araba medievale",
+          "Il folklore musicale caraibico e la fisica nucleare sperimentale"
         ],
-        "correctIndex": 0,
-        "explanation": "Struth cattura la folla contemporanea che guarda dipinti storici, creando un cortocircuito temporale tra chi è dipinto, chi guarda e chi osserva la fotografia."
+        "correctIndex": 1,
+        "explanation": "Nato a Mumbai e formatosi a Londra, Kapoor fonde l'esperienza sensoriale dell'induismo (polveri votive, cavità, sacro) con la pulizia spaziale del modernismo occidentale."
       },
       {
-        "question": "Quale innovazione tecnica ha permesso ad Andreas Gursky di comporre immagini di sterminata profondità di campo senza sfocature?",
+        "question": "Cosa rappresenta il concetto di 'Vuoto' (The Void) nella poetica matura di Anish Kapoor?",
         "options": [
-          "Il montaggio e la fusione digitale di più scatti ad alta risoluzione fusi insieme al computer.",
-          "L'immersione della pellicola fotografica in bagni di mercurio riscaldato a ottanta gradi.",
-          "L'applicazione di filtri caleidoscopici montati su telescopi astronomici da osservatorio.",
-          "L'eliminazione della lente dell'obiettivo per esporre direttamente il sensore alla polvere atmosferica."
+          "La rimozione della scultura dalla sala per protesta sindacale",
+          "Uno spazio vuoto lasciato nel catalogo della mostra per risparmiare carta",
+          "Non un'assenza inerte, ma uno spazio gravido di possibilità, un abisso oscuro che assorbe lo sguardo dello spettatore provocando una sensazione di vertigine cosmica e introspezione psicologica",
+          "L'evacuazione forzata del pubblico dalle gallerie d'arte"
+        ],
+        "correctIndex": 2,
+        "explanation": "Il vuoto di Kapoor (es. cavità dipinte di blu oltremare scurissimo o Vantablack) è pieno di presenza: lo sguardo non riesce a misurare la profondità e precipita nell'infinito."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Nella celebre scultura pubblica monumentale 'Cloud Gate' (2006) a Chicago (soprannominata 'The Bean'), quale esperienza fenomenologica vive il visitatore?",
+        "options": [
+          "I visitatori sono obbligati a camminare sopra la scultura indossando speciali pattini a rotelle",
+          "La scultura emette vapore acqueo refrigerante a ciclo continuo per mitigare il calore estivo",
+          "L'opera è programmata per cambiare forma geometrica ogni tre ore tramite pistoni idraulici",
+          "La superficie di acciaio inox lucidata a specchio riflette e distorce lo skyline della città e i corpi dei visitatori, dissolvendo il confine tra spazio urbano, scultura e cielo"
+        ],
+        "correctIndex": 3,
+        "explanation": "Cloud Gate è un miracolo di ingegneria e percezione: privo di saldature visibili, attrae migliaia di persone che toccano il metallo e si vedono riflesse dentro la pancia concava del cielo liquido."
+      },
+      {
+        "question": "Quale controversia ha scatenato Anish Kapoor nel mondo dell'arte contemporanea acquisendo i diritti esclusivi sul 'Vantablack'?",
+        "options": [
+          "Ha ottenuto la licenza artistica monopolistica per il materiale più nero mai creato (capace di assorbire il 99.96% della luce), scatenando l'indignazione degli altri artisti per la privatizzazione di un colore",
+          "Ha impedito la vendita di qualsiasi vernice a tempera nera nelle cartolerie londinesi",
+          "Ha tentato di cancellare tutte le opere d'arte del Museo del Louvre dipingendole di nero",
+          "Ha imposto il pagamento di una royalty per chiunque utilizzi vestiti di colore scuro"
         ],
         "correctIndex": 0,
-        "explanation": "Gursky unisce scatti multipli con manipolazione digitale minuziosa, ottenendo una nitidezza totale e iperreale da un capo all'altro della monumentale inquadratura."
+        "explanation": "Il caso Vantablack ha aperto un dibattito etico senza precedenti: un artista che brevetta per sé l'uso esclusivo del buio assoluto, a cui altri colleghi (come Stuart Semple) hanno risposto con provocazioni beffarde."
+      },
+      {
+        "question": "Nelle opere in cera rossa e vaselina di Anish Kapoor (come 'Svayambhu' o 'Shooting into the Corner'), quale richiamo organico e corporeo viene evocato?",
+        "options": [
+          "L'industria alimentare della produzione di confetture di frutta",
+          "La carne, il sangue, la nascita e le funzioni viscerali del corpo femminile e universale, contrapposti alla pulizia asettica del cubo bianco museale",
+          "La celebrazione della pittura a cera dell'antico Egitto",
+          "La conservazione criogenica delle specie animali in via d'estinzione"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Svayambhu' (auto-generato in sanscrito) è un blocco gigantesco di cera rossa che attraversa lentamente gli archi del museo scorticandosi: un corpo monumentale sanguinolento che lascia residui densi nello spazio."
       }
     ]
   },
@@ -674,59 +917,94 @@ window.ARTE_DATA = [
     ],
     "quiz": [
       {
-        "question": "In quale sostanza chimica sono immersi gli animali della celebre serie 'Natural History' di Damien Hirst?",
+        "question": "Chi sono i maestri fondatori che hanno guidato la celebre cattedra di fotografia alla Kunstakademie di Düsseldorf a partire dal 1976?",
         "options": [
-          "In una soluzione liquida conservante al cinque per cento di formaldeide.",
-          "In olio di lino crudo bollito addizionato con resina dammar.",
-          "In acqua ossigenata iperconcentrata mista ad alcool etilico denaturato.",
-          "In silicone trasparente termoindurente vulcanizzato a freddo."
+          "Helmut Newton e Guy Bourdin",
+          "August Sander e Karl Blossfeldt",
+          "Henri Cartier-Bresson e Robert Capa",
+          "Bernd e Hilla Becher"
         ],
-        "correctIndex": 0,
-        "explanation": "La formaldeide è il liquido conservante usato in anatomia per ritardare la putrefazione; per Hirst simboleggia l'illusione umana di congelare la vita eterna."
+        "correctIndex": 3,
+        "explanation": "I coniugi Becher hanno formato un'intera generazione di geni della fotografia contemporanea (Gursky, Struth, Ruff, Hütte, Candida Höfer), rivoluzionando la fotografia d'arte mondiale."
       },
       {
-        "question": "Chi fu il celebre pubblicitario e collezionista londinese che acquistò in blocco le prime opere di Damien Hirst?",
+        "question": "Quale metodo di ripresa e archiviazione fotografica ha reso leggendaria la ricerca di Bernd e Hilla Becher?",
         "options": [
-          "Charles Saatchi.",
-          "Larry Gagosian.",
-          "Peggy Guggenheim.",
-          "Leo Castelli."
+          "La catalogazione sistematica e oggettiva di archeologie industriali (torri d'acqua, altiforni, silos) fotografate in bianco e nero frontale, luce diffusa senza ombre e ordinate in 'Tipologie' a griglia",
+          "Fotografie istantanee a colori scattate con fotocamere Polaroid durante le vacanze estive",
+          "Ritratti psicologici di operai siderurgici catturati con teleobiettivo nascosto",
+          "Scatti notturni ad altissima sensibilità con esposizioni multiple casuali"
         ],
         "correctIndex": 0,
-        "explanation": "Saatchi finanziò la realizzazione dello squalo e organizzò mostre epocali come 'Sensation' (1997), creando il fenomeno degli Young British Artists."
+        "explanation": "I Becher hanno creato cattedrali industriali della memoria: rigore geometrico assoluto, assenza di figure umane, cielo lattiginoso uniforme per confrontare le varianti morfologiche degli edifici industriali."
       },
       {
-        "question": "Quale esperienza fisica è consentita allo spettatore nell'opera 'Mother and Child (Divided)' del 1993?",
+        "question": "Cosa caratterizza le spettacolari fotografie monumentali di Andreas Gursky?",
         "options": [
-          "Camminare fisicamente nello spazio vuoto tra le due metà sezionate della mucca e del vitello.",
-          "Salire su una scala a pioli per accarezzare il pelo imbalsamato degli animali sospesi.",
-          "Nutrire gli animali vivi all'interno di un recinto metallico posizionato al centro del museo.",
-          "Azionare una manovella meccanica che ricompone i corpi degli animali all'unisono."
+          "Fotografie in bianco e nero sgranate scattate con vecchie fotocamere stenopeiche",
+          "Immagini di grandissimo formato, punto di vista panoramico elevato, nitidezza iperrealistica di ogni singolo dettaglio e fotoritocco digitale per esaltare le strutture seriali della globalizzazione capitalista",
+          "Ritratti intimi in penombra realizzati all'interno di camere da letto private",
+          "Collage di ritagli di giornale incollati su tavole di compensato grezzo"
         ],
-        "correctIndex": 0,
-        "explanation": "Le quattro vasche sono distanziate in modo che il visitatore possa passare 'attraverso' la sezione anatomica, vivendo un'esperienza viscerale e perturbante."
+        "correctIndex": 1,
+        "explanation": "Gursky ritrae l'infrastruttura del capitale globale: borse valori brulicanti, magazzini Amazon sterminati, concerti oceanici e negozi discount (99 Cent), elevati a sublimi arazzi della modernità."
       },
       {
-        "question": "Qual è il tema cardine ossessivamente indagato da Damien Hirst in tutta la sua produzione artistica?",
+        "question": "Quale celebre serie fotografica ha reso famoso Thomas Struth nei principali musei internazionali?",
         "options": [
-          "La morte, la caducità dell'esistenza e il fallimento consolatorio della medicina e della religione.",
-          "La vita quotidiana degli agricoltori inglesi del periodo tardo-vittoriano.",
-          "La progettazione aerodinamica delle monoposto da corsa del campionato di Formula 1.",
-          "L'astronomia tolemaica e il calcolo delle orbite dei satelliti naturali di Giove."
+          "Fotografie di gare automobilistiche di Formula 1 scattate ad alta velocità",
+          "Ritratti di animali selvatici in riserve naturali africane",
+          "Museum Photographs: ritratti di visitatori immersi nella contemplazione dei grandi capolavori della storia dell'arte (Louvre, Prado, Hermitage), creando un gioco di sguardi speculare tra pubblico e quadri",
+          "Documentazione fotografica di interventi chirurgici a cuore aperto"
         ],
-        "correctIndex": 0,
-        "explanation": "Tutta l'opera di Hirst ruota attorno alla morte: pillole farmaceutiche, farfalle morte, teschi e animali sezionati sono tutti memento mori contemporanei."
+        "correctIndex": 2,
+        "explanation": "Nelle 'Museum Photographs', Struth fotografa noi che guardiamo l'arte: il tempo presente dei turisti contemporanei si fonde e si confronta con il tempo eterno dei maestri dipinti sulla parete."
       },
       {
-        "question": "In che anno e con quale mostra autogestita esordiscono ufficialmente Damien Hirst e i suoi colleghi del Goldsmiths College?",
+        "question": "In cosa consistono i celebri 'Ritratti' (Portraits) dei primi anni Ottanta di Thomas Ruff?",
         "options": [
-          "Nel 1988 con la mostra intitolata 'Freeze'.",
-          "Nel 1977 con la rassegna concettuale 'Pictures'.",
-          "Nel 1995 con l'esposizione svizzera 'Art Unlimited'.",
-          "Nel 2000 con la retrospettiva biennale 'Apocalypse'."
+          "Fotografie di neonati scattate nelle sale parto ospedaliere",
+          "Ritratti scattati al buio tramite sensori termici a infrarossi",
+          "Autoritratti caricaturali in costume teatrale barocco",
+          "Ritratti frontali a colori di giovani amici, scattati con luce asettica priva di ombre come fotografie segnaletiche o da passaporto, ingranditi a scala monumentale e privi di qualsiasi espressione emotiva"
+        ],
+        "correctIndex": 3,
+        "explanation": "Ruff azzera la psicologia del ritratto borghese: l'ingrandimento gigante di un volto inespressivo e neutro trasforma il soggetto in una superficie enigmatica, interrogando la presunta verità dell'obiettivo."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Perché alla Biennale di Venezia del 1990 l'assegnazione del Leone d'Oro per la Scultura a Bernd e Hilla Becher rappresentò una pietra miliare?",
+        "options": [
+          "Perché riconobbe per la prima volta nella storia che una serie di fotografie tipologiche a griglia possedeva valore, monumentalità e rigore concettuale scultoreo",
+          "Perché i Becher avevano presentato sculture in marmo di Carrara anziché fotografie",
+          "Perché la giuria della Biennale era composta unicamente da fotografi tedeschi",
+          "Perché i Becher decisero di rifiutare pubblicamente il premio in segno di protesta"
         ],
         "correctIndex": 0,
-        "explanation": "Freeze è l'evento fondativo che segna l'irruzione della giovane arte britannica nel panorama globale con un approccio autonomo e ribelle."
+        "explanation": "Un trionfo concettuale: considerare la fotografia tipologica come scultura riconobbe la natura monumentale delle loro griglie architettoniche, cambiando la percezione della fotografia nei musei d'arte."
+      },
+      {
+        "question": "Nelle opere di Andreas Gursky (come 'Rhein II' o '99 Cent'), quale ruolo svolge la manipolazione digitale dei file fotografici?",
+        "options": [
+          "Serve unicamente a inserire personaggi famosi all'interno del paesaggio",
+          "Non serve a falsificare la realtà per ingannare, ma a perfezionare la composizione geometrica eliminando elementi di disturbo o clonando moduli per creare un 'iper-reale' tipico della contemporaneità",
+          "Viene impiegata per ridurre la risoluzione dell'immagine e mascherare errori di messa a fuoco",
+          "Viene utilizzata per convertire automaticamente le fotografie in disegni a carboncino"
+        ],
+        "correctIndex": 1,
+        "explanation": "Gursky interviene al computer come un pittore: in 'Rhein II' cancella una fabbrica e una pista ciclabile per ottenere la striscia perfetta del fiume; in '99 Cent' dilata all'infinito le corsie delle merci."
+      },
+      {
+        "question": "Quale legame storico unisce la Scuola di Düsseldorf alle ricerche fotografiche della Nuova Oggettività (Neue Sachlichkeit) degli anni Venti di August Sander?",
+        "options": [
+          "La condivisione del medesimo manifesto politico rivoluzionario comunista",
+          "L'uso esclusivo delle stesse identiche lastre di vetro originali del 1920",
+          "L'approccio enciclopedico, analitico, seriale e distaccato che rinuncia al sentimentalismo artistico per documentare il mondo attraverso categorie strutturali e tipologie formali rigorose",
+          "L'obbligo di ritrarre unicamente contadini della regione della Renania"
+        ],
+        "correctIndex": 2,
+        "explanation": "Sander catalogava i tipi umani ('Uomini del Ventesimo Secolo'); i Becher e i loro allievi catalogano le strutture della civiltà industriale: il filo rosso dell'oggettività analitica tedesca."
       }
     ]
   },
@@ -765,59 +1043,94 @@ window.ARTE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Quale materiale compone la struttura sottostante del teschio diamantato 'For the Love of God'?",
+        "question": "Cosa indica l'acronimo 'YBAs' nel panorama artistico internazionale degli anni Novanta?",
         "options": [
-          "Un calco fuso in platino massiccio ricavato da un teschio umano del diciottesimo secolo con denti autentici.",
-          "Una scultura in polistirolo espanso indurito con resine poliuretaniche bicomponenti.",
-          "Un masso di marmo nero del Belgio intagliato al tornio a controllo numerico.",
-          "Una fusione in bronzo dorato proveniente da scarti di fonderia bellica dismessa."
+          "Young British Artists (il gruppo di giovani artisti emergenti britannici guidati da Damien Hirst, Tracey Emin, Sarah Lucas e Gary Hume)",
+          "Yorkshire Brotherhood of Arts",
+          "Yellow Bauhaus Architecture Society",
+          "Youth Broadcasting Association of London"
         ],
         "correctIndex": 0,
-        "explanation": "Hirst acquistò un teschio umano del Settecento a Londra, ne ricavò un calco in platino purissimo e vi rimontò la dentatura originale autentica prima di incastonare i diamanti."
+        "explanation": "Gli YBAs hanno rivoluzionato l'arte britannica degli anni '90: irriverenti, imprenditoriali, scandalosi e abili strateghi dei media, hanno fatto di Londra la capitale mondiale dell'arte contemporanea."
       },
       {
-        "question": "Come risponde Damien Hirst alla critica sul fatto che gli 'Spot Paintings' sono materialmente dipinti dai suoi assistenti?",
+        "question": "Quale celebre mostra autogestita del 1988 in un edificio portuale dismesso dei Docklands di Londra ha segnato la nascita ufficiale degli YBAs?",
         "options": [
-          "Rivendica che l'idea concettuale è la vera opera d'arte e che i suoi assistenti possiedono una mano più precisa della sua.",
-          "Smentisce categoricamente accusando i giornalisti di diffamazione a mezzo stampa internazionale.",
-          "Sostiene che i suoi assistenti sono in realtà robot programmati con intelligenza artificiale avanzata.",
-          "Dichiara di dipingere personalmente ciascun cerchio durante la notte per evitare distrazioni."
+          "Sensation",
+          "Freeze (ideata e curata da Damien Hirst quando era ancora studente al Goldsmiths College)",
+          "Young Americans",
+          "This is Tomorrow"
         ],
-        "correctIndex": 0,
-        "explanation": "Riprendendo la bottega rinascimentale e la Factory warholiana, Hirst afferma che il valore risiede nella concezione e nel sistema, non nell'esecuzione materiale ripetitiva."
+        "correctIndex": 1,
+        "explanation": "Hirst capisce che non bisogna aspettare le gallerie ufficiali: affitta un magazzino vuoto nei Docklands, seleziona i compagni di corso del Goldsmiths, allestisce 'Freeze' e invita i collezionisti più influenti."
       },
       {
-        "question": "Quale particolarità contraddistingue le tele denominate 'Spin Paintings'?",
+        "question": "Quale figura di influente magnate pubblicitario e megacollezionista ha acquistato le opere degli YBAs consacrandoli a livello planetario?",
         "options": [
-          "Vengono create facendo ruotare la tela su un motore e colandovi vernice liquida mossa dalla forza centrifuga.",
-          "Vengono dipinte a occhi chiusi dall'artista mentre esegue piroette sul pavimento dello studio.",
-          "Sono tele tessute con filati di seta arricchiti da nanoparticelle magnetiche oscillanti.",
-          "Sono formate da strisce di tela intrecciate a canestro secondo modelli di cesteria tradizionale."
+          "Peggy Guggenheim",
+          "Leo Castelli",
+          "Charles Saatchi",
+          "Larry Gagosian"
         ],
-        "correctIndex": 0,
-        "explanation": "La macchina centrifuga getta il colore verso i bordi: il risultato è un'esplosione cromatica dinamica dove il controllo del pittore è ridotto alla scelta dei barattoli."
+        "correctIndex": 2,
+        "explanation": "Saatchi vide 'Freeze', intuì il potenziale dirompente del gruppo e ne divenne il mecenate principale: acquistò le opere di Hirst, Emin, Quinn e Chapman, organizzando mostre leggendarie."
       },
       {
-        "question": "Cosa rese rivoluzionaria per il mercato dell'arte l'asta 'Beautiful Inside My Head Forever' del 2008?",
+        "question": "Quale mostra epocale del 1997 alla Royal Academy of Arts di Londra ha scatenato scandali mediatici e proteste di piazza consacrando definitivamente gli YBAs?",
         "options": [
-          "L'artista vendette le proprie opere direttamente tramite una casa d'aste, escludendo le gallerie intermediarie.",
-          "Le opere furono vendute esclusivamente a cambio di lingotti d'oro e senza l'uso di moneta bancaria.",
-          "I compratori dovevano firmare un impegno a non rivendere le opere per i successivi cinquanta anni.",
-          "Tutti i quadri furono distrutti con trituratori meccanici al termine delle offerte dei collezionisti."
+          "Pop Life: Art in a Material World",
+          "A New Spirit in Painting",
+          "The Great British Art Show",
+          "Sensation: Young British Artists from the Saatchi Collection"
         ],
-        "correctIndex": 0,
-        "explanation": "Fino ad allora gli artisti vendevano tramite gallerie che proteggevano i prezzi; Hirst portò oltre duecento capolavori nuovi direttamente da Sotheby's, battendo ogni record."
+        "correctIndex": 3,
+        "explanation": "'Sensation' scosse l'opinione pubblica: folle sterminate, cortei di protesta contro il ritratto di Myra Hindley di Marcus Harvey, e l'affermazione definitiva del fenomeno YBAs nel costume globale."
       },
       {
-        "question": "Quale concetto simboleggia l'accostamento tra farmaci chimici e titoli degli 'Spot Paintings'?",
+        "question": "Quali caratteristiche tematiche e stilistiche hanno reso celebri e provocatorie le opere degli YBAs?",
         "options": [
-          "L'illusione dell'uomo moderno di affidare la propria salvezza e serenità alle pillole come a una nuova religione.",
-          "La protesta sindacale contro i brevetti farmaceutici sui vaccini antinfluenzali per neonati.",
-          "La passione dell'artista per la coltivazione biologica delle piante officinali nei giardini inglesi.",
-          "La celebrazione della pittura a tempera all'uovo come cura medica per i disturbi dell'umore."
+          "L'uso di materiali non convenzionali e scioccanti (animali morti in formalina, sangue, deiezioni, letti sfatti), umorismo nero, cinismo, estetica shock e un'inedita scaltrezza imprenditoriale",
+          "Il ritorno esclusivo all'acquerello di paesaggio all'aperto",
+          "L'adozione rigorosa del disegno a matita secondo i canoni accademici ottocenteschi",
+          "L'anonimato totale degli artisti che rifiutavano di farsi fotografare o intervistare"
         ],
         "correctIndex": 0,
-        "explanation": "Hirst osserva come le persone credano ciecamente nella medicina e nelle pillole per curare ogni dolore dell'anima, riponendovi una fede superiore a quella data a Dio o all'arte."
+        "explanation": "Gli YBAs infrangono ogni tabù: uniscono il retaggio del ready-made di Duchamp con l'attitudine sfacciata del punk e l'efficacia comunicativa dei cartelloni pubblicitari di massa."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Cosa distingueva la formazione al Goldsmiths College di Londra rispetto alle accademie d'arte tradizionali negli anni Ottanta?",
+        "options": [
+          "L'obbligo di frequentare cinque anni di studio del nudo dal vero in creta",
+          "L'abolizione della separazione tra le diverse tecniche (pittura, scultura, fotografia) a favore di un approccio concettuale libero, interdisciplinare e attento alla promozione e alla critica istituzionale",
+          "Il divieto assoluto di parlare di denaro o di mercato dell'arte",
+          "L'insegnamento esclusivo del restauro di affreschi medievali"
+        ],
+        "correctIndex": 1,
+        "explanation": "Il Goldsmiths guidato da Michael Craig-Martin formava artisti-manager concettuali: niente corporativismo di mestiere, ma pensiero critico, capacità di presentarsi e audacia espositiva."
+      },
+      {
+        "question": "Nella celebre opera 'Self' (1991) di Marc Quinn, quale materiale biologico estremo viene impiegato per realizzare il calco della testa dell'artista?",
+        "options": [
+          "Vino rosso d'annata solidificato tramite addensanti chimici",
+          "Resina epossidica colorata con pigmento rosso sintetico",
+          "Cinque litri del sangue dello stesso artista prelevato nell'arco di cinque mesi, congelato all'interno di una teca refrigerata",
+          "Cera d'api vergine proveniente da alveari londinesi"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Self' è un autoritratto biologico totale: se la spina elettrica della teca frigo viene staccata, l'opera si scioglie e muore, metafora cruda della fragilità e dipendenza della vita umana."
+      },
+      {
+        "question": "Perché l'opera 'My Bed' (1998) di Tracey Emin ha rappresentato un culmine scandaloso e intimo dell'estetica YBA?",
+        "options": [
+          "Era un'installazione interattiva che invitava i visitatori a dormire nel museo",
+          "Era una scultura in bronzo dorato raffigurante un letto reale del Seicento",
+          "Si trattava di una performance teatrale recitata da attori professionisti",
+          "Ha esposto nella prestigiosa cornice del Turner Prize il proprio letto sfatto circondato da rifiuti reali, lenzuola macchiate, mozziconi di sigaretta e biancheria usata, trasformando il dolore privato in confessione pubblica"
+        ],
+        "correctIndex": 3,
+        "explanation": "La Emin trasforma la propria crisi depressiva in ready-made confessionale: nessun filtro estetizzante, ma la nuda verità biografica di un momento di collasso emotivo offerta allo sguardo collettivo."
       }
     ]
   },
@@ -856,59 +1169,94 @@ window.ARTE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Quale frase si cela dietro l'anagramma del nome del collezionista 'Cif Amotan II' inventato da Damien Hirst?",
+        "question": "Qual è il titolo formale della celeberrima opera di Damien Hirst del 1991 raffigurante uno squalo tigre di oltre 4 metri immerso in formalina dentro una teca vetrata?",
         "options": [
-          "«I AM FICTION» (Io sono una finzione).",
-          "«I AM ANCIENT» (Io sono antico).",
-          "«ART IS MONEY» (L'arte è denaro).",
-          "«GOD IS DEAD» (Dio è morto)."
+          "Jaws: The Shark that Ate the Art Market",
+          "The Physical Impossibility of Death in the Mind of Someone Living (L'impossibilità fisica della morte nella mente di un essere vivente)",
+          "Natural History of Modern Fear",
+          "A Thousand Years of Swimming"
         ],
-        "correctIndex": 0,
-        "explanation": "Hirst inserisce l'indizio sfacciato nel nome stesso: l'intera spedizione archeologica e il ricco liberto sono una geniale bugia narrativa."
+        "correctIndex": 1,
+        "explanation": "Il titolo poetico e filosofico è parte integrante dell'opera: guardare negli occhi un predatore letale a pochi centimetri di distanza evoca il terrore della morte e l'incapacità umana di concepire la propria fine."
       },
       {
-        "question": "In quali due storiche sedi museali veneziane fu allestita la mostra 'Treasures from the Wreck of the Unbelievable' nel 2017?",
+        "question": "Quale grande tema universale costituisce il baricentro ossessivo dell'intera ricerca artistica di Damien Hirst?",
         "options": [
-          "Palazzo Grassi e Punta della Dogana (Collezione Pinault).",
-          "Gallerie dell'Accademia e Museo Correr.",
-          "Palazzo Ducale e la Scuola Grande di San Rocco.",
-          "La Fondazione Cini sull'Isola di San Giorgio e Ca' Pesaro."
+          "La celebrazione nostalgica dell'impero coloniale britannico",
+          "L'analisi matematica delle proprietà geometriche dei frattali",
+          "Il confronto ineludibile tra la vita, la morte, il decadimento biologico e i disperati tentativi umani (religione, scienza, medicina, arte) di eludere o ritardare la fine",
+          "La promozione delle diete alimentari vegetariane"
         ],
-        "correctIndex": 0,
-        "explanation": "François Pinault concesse entrambe le sue prestigiose sedi veneziane sul Canal Grande e sul bacino di San Marco per accogliere le quasi duecento opere."
+        "correctIndex": 2,
+        "explanation": "Tutta la produzione di Hirst (animali sezionati, armadietti di farmaci, farfalle morte, teschi) indaga il grande enigma: la nostra vulnerabilità fisica e la fede cieca che riponiamo nei farmaci per non morire."
       },
       {
-        "question": "Quale celebre citazione dello scrittore Jorge Luis Borges apre il catalogo della mostra veneziana di Hirst?",
+        "question": "In cosa consiste la celebre serie degli 'Spot Paintings' (o Pharmaceutical Paintings) di Damien Hirst?",
         "options": [
-          "«Accettiamo facilmente la realtà, forse perché intuiamo che nulla è reale».",
-          "«La bellezza è un lampo fugace che prelude alla distruzione atomica».",
-          "«Non esiste altro paradiso che quello delle biblioteche perdute».",
-          "«Il tempo è un fiume che mi trascina ma io sono il fiume»."
+          "Disegni a puntini realizzati a mano con inchiostro di china nero",
+          "Quadri dipinti a getti casuali di colore lanciati con pistole ad aria compressa",
+          "Fotografie ingrandite di macchie di muffa coltivate in piastre di Petri",
+          "Tele a fondo bianco su cui sono disposti a griglia rigorosa cerchi colorati di diametro identico, dove nessun colore si ripete mai all'interno della stessa tela, intitolati con nomi di composti chimici e farmaci"
         ],
-        "correctIndex": 0,
-        "explanation": "La citazione di Borges da 'L'Aleph' fissa il manifesto concettuale della mostra: la nostra disponibilità a credere alla menzogna purché sia meravigliosa."
+        "correctIndex": 3,
+        "explanation": "Gli Spot Paintings mimano l'estetica rassicurante e asettica dell'industria farmaceutica: pillole colorate gioiose che promettono salute e immortalità seriale disposte con precisione industriale."
       },
       {
-        "question": "Cosa ricopre la maggior parte delle statue in bronzo e marmo recuperate dalla finta nave sommersa?",
+        "question": "Cosa accade nella scioccante installazione 'A Thousand Years' (1990) di Damien Hirst?",
         "options": [
-          "Incrostazioni fittizie di madrepore, coralli colorati, alghe e spugne modellate in fonderia.",
-          "Strati di polvere vulcanica prelevata direttamente dalle pendici del Vesuvio.",
-          "Vernici chimiche trasparenti a base di piombo tossico essiccato al sole.",
-          "Ragnatele sintetiche filate da bachi da seta geneticamente modificati."
+          "All'interno di una doppia teca di vetro, le mosche nascono da una scatola di vermi, si nutrono di una testa di mucca decapitata e insanguinata e muoiono fulminate da una lampada elettrocutrice",
+          "Un computer elabora una sequenza numerica destinata a durare un millennio",
+          "Mille libri di storia vengono consumati lentamente da colonie di termiti",
+          "Una pianta di quercia cresce all'interno di una camera climatica controllata"
         ],
         "correctIndex": 0,
-        "explanation": "Hirst ha fatto applicare sculture marine iperrealistiche in resina e metallo per simulare duemila anni di permanenza sul fondale oceanico."
+        "explanation": "La vita e la morte condensate in un ciclo chiuso e crudele: la mosca nasce, si ciba del cadavere e trova la morte fulminea. Francis Bacon rimase talmente impressionato da quest'opera da ammirarla per un'ora intera."
       },
       {
-        "question": "Quale colossale statua acefala occupava per intero l'altezza del cortile coperto di Palazzo Grassi?",
+        "question": "Cosa caratterizza la serie delle 'Pharmacy' e degli armadietti medicinali (Medicine Cabinets)?",
         "options": [
-          "Demon with Bowl (Il Demone con la ciotola), alta 16 metri.",
-          "La Sfinge alata di Tebe, lunga 25 metri.",
-          "Il Nettuno bifronte con tridente di zaffiro.",
-          "Il Cavallo di Troia ricoperto di monete d'oro."
+          "Sculture in cartapesta dipinte con motivi floreali",
+          "Vetr 쇼teche e armadi chirurgici in acciaio inossidabile che ospitano migliaia di confezioni reali di farmaci, pillole e strumenti chirurgici ordinati secondo la loro funzione terapeutica",
+          "Distributori automatici funzionanti di aspirina collocati nelle sale del museo",
+          "Ritratti fotografici di medici e infermieri inglesi"
+        ],
+        "correctIndex": 1,
+        "explanation": "Hirst svela la nuova religione laica d'Occidente: non crediamo più nei santi, ma crediamo ciecamente che una compressa chimica possa salvarci l'anima e il corpo."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Quando lo squalo originale di 'The Physical Impossibility of Death...' iniziò a decomporsi nel 2006 a causa della conservazione imperfetta, cosa decise di fare Damien Hirst?",
+        "options": [
+          "Accusò il collezionista di aver violato il contratto di manutenzione",
+          "Distrusse l'opera ritirandola per sempre dal mercato dell'arte",
+          "Sostituì lo squalo deteriorato con un nuovo esemplare identico pescato in Australia, riaffermando il primato dell'idea concettuale rispetto alla singola reliquia organica fisica",
+          "Rimpiazzò lo squalo con un calco in resina plastica sintetica"
+        ],
+        "correctIndex": 2,
+        "explanation": "Il paradosso della nave di Teseo in salsa contemporanea: Hirst ribadì che l'opera non è il corpo biologico dello squalo, ma l'idea dell'incontro visivo con la bestia dentro la formalina."
+      },
+      {
+        "question": "Nelle opere della serie 'Kaleidoscope' (quadri a caleidoscopio), quale materiale naturale viene utilizzato per creare disegni che imitano le vetrate delle cattedrali gotiche?",
+        "options": [
+          "Scaglie di conchiglie fossili intagliate a mano",
+          "Piume di pavone raccolte nei giardini reali britannici",
+          "Petali di rosa stabilizzati chimicamente contro la disidratazione",
+          "Migliaia di vere ali di farfalla incollate sulla vernice lucida a smalto, combinando una bellezza seducente con il fatto macabro della strage di insetti necessari per comporla"
+        ],
+        "correctIndex": 3,
+        "explanation": "Da lontano sembrano vetrate luminose di Chartres; da vicino scoprite che sono ali strappate a migliaia di creature morte: il tipico cortocircuito di Hirst tra estasi estetica e memento mori."
+      },
+      {
+        "question": "Quale critica etica e artistica è stata più frequentemente indirizzata a Damien Hirst riguardo alla produzione seriale dei suoi 'Spin' e 'Spot Paintings'?",
+        "options": [
+          "L'utilizzo massiccio di decine di assistenti di studio per dipingere le tele al posto suo, trasformando l'atelier in una fabbrica commerciale (Warhol Factory) dove l'artista agisce da amministratore delegato del marchio",
+          "L'uso esclusivo di colori tossici che hanno causato intossicazioni nei musei",
+          "L'incapacità tecnica di utilizzare il software Photoshop per i bozzetti",
+          "Il rifiuto di apporre la propria firma autografa sul retro delle tele"
         ],
         "correctIndex": 0,
-        "explanation": "La scultura del demone sfiorava il soffitto di vetro del cortile veneziano, giganteggiando sui visitatori come un'apparizione mostruosa dal fondo degli abissi."
+        "explanation": "Hirst ha sempre risposto senza ipocrisie: 'I miei assistenti dipingono gli spot meglio di quanto saprei fare io; la mia maestria sta nel concepire l'idea e governare il sistema'."
       }
     ]
   },
@@ -947,59 +1295,94 @@ window.ARTE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Quale principio guida definisce il ruolo dello spettatore nelle installazioni di Olafur Eliasson?",
+        "question": "In cosa consiste la celebre e controversa opera 'For the Love of God' (Per l'amor di Dio) realizzata da Damien Hirst nel 2007?",
         "options": [
-          "Lo spettatore è un co-produttore indispensabile che completa e attiva l'opera attraverso la propria presenza fisica.",
-          "Lo spettatore deve rimanere rigorosamente all'esterno della sala per non alterare la temperatura del display.",
-          "Il pubblico deve firmare una liberatoria di acquisto prima di poter accedere alle sale oscurate.",
-          "L'osservatore ha il divieto assoluto di muovere gli occhi per conservare la stabilità dell'immagine."
+          "Un mosaico gigante composto da banconote da cinquecento euro autentiche",
+          "Una scultura in marmo di Carrara raffigurante San Pietro crocifisso a testa in giù",
+          "Un calco in platino di un vero teschio umano del Settecento, tempestato da 8.601 diamanti purissimi per un totale di 1.106 carati, con i denti umani originali incastonati",
+          "Un reliquiario medievale contenente ossa di martiri cristiani"
         ],
-        "correctIndex": 0,
-        "explanation": "Per Eliasson l'opera non è autosufficiente: esiste solo nell'atto incarnato della percezione del soggetto umano che la attraversa nello spazio e nel tempo."
+        "correctIndex": 2,
+        "explanation": "'For the Love of God' è il memento mori più costoso e splendente della storia dell'umanità: costato circa 15 milioni di sterline di produzione, esorcizza la morte coprendola di ricchezza accecante."
       },
       {
-        "question": "Cosa contraddistingue l'etica costruttiva di Eliasson rispetto alle simulazioni spettacolari commerciali?",
+        "question": "Quale significato culturale e filosofico racchiude l'uso dei diamanti applicati sul teschio di 'For the Love of God'?",
         "options": [
-          "Lascia sempre a vista i cavi elettrici, i tubi e i macchinari che generano gli effetti ottici e atmosferici.",
-          "Nasconde accuratamente ogni congegno tecnologico per far credere al pubblico che si tratti di miracoli divini.",
-          "Utilizza esclusivamente legni fossili non trattati chimicamente e pietre focaie preistoriche.",
-          "Rifiuta qualsiasi forma di illuminazione artificiale affidandosi solo a candele di cera d'api."
+          "Una critica ecologica all'inquinamento delle miniere di carbone fossile",
+          "La sponsorizzazione commerciale delle aziende diamantifere sudafricane",
+          "La celebrazione del valore monetario delle riserve della Banca d'Inghilterra",
+          "La sfida suprema alla caducità: il diamante (la materia più dura e incorruttibile dell'universo, simbolo di eternità e ricchezza terrena) che riveste e cancella la decomposizione della carne"
         ],
-        "correctIndex": 0,
-        "explanation": "Eliasson non vuole ingannare ma 'rendere consapevoli': vedere i tubi della nebbia o i cavi del sole artificiale stimola la mente a capire come costruiamo la realtà."
+        "correctIndex": 3,
+        "explanation": "Il diamante non muore mai, il corpo umano si disfa: accostare il cranio al diamante è il tentativo disperato e sfarzoso di vincere la morte trasformando il teschio in un gioiello immortale."
       },
       {
-        "question": "In quale installazione storica del 1993 Eliasson fa comparire un arcobaleno attraverso una tenda di goccioline d'acqua?",
+        "question": "Quale evento rivoluzionario e senza precedenti ha organizzato Damien Hirst nel settembre del 2008 presso la casa d'aste Sotheby's a Londra?",
         "options": [
-          "Beauty.",
-          "The Weather Project.",
-          "Ice Watch.",
-          "Green River."
+          "L'asta storica 'Beautiful Inside My Head Forever': ha venduto 223 opere nuove saltando completamente le sue gallerie di riferimento (disintermediazione), incassando oltre 111 milioni di sterline proprio mentre crollava Lehman Brothers",
+          "La vendita di beneficenza di tutti i suoi averi per finanziare la ricerca medica",
+          "Un'asta al ribasso in cui le opere venivano regalate ai visitatori disoccupati",
+          "La distruzione col fuoco di cento quadri per protestare contro le banche"
         ],
         "correctIndex": 0,
-        "explanation": "In Beauty l'arcobaleno appare sospeso nel buio grazie alla refrazione: ogni persona vede un arcobaleno unico in base alla propria altezza e posizione."
+        "explanation": "Un atto di audacia economica senza precedenti: bypassando galleristi influenti come White Cube e Gagosian, Hirst ha venduto direttamente all'asta, ridefinendo il potere dell'artista nel mercato."
       },
       {
-        "question": "Quale paesaggio naturale della giovinezza ha influenzato profondamente la sensibilità ecologica e percettiva di Eliasson?",
+        "question": "Cosa si intende per 'Disintermediazione' nel mercato dell'arte contemporanea applicata da Damien Hirst?",
         "options": [
-          "I paesaggi selvaggi dell'Islanda, fatti di ghiacciai, rocce laviche nere e orizzonti luminosi cangianti.",
-          "Le foreste tropicali dell'arcipelago indonesiano solcate da fiumi melmosi.",
-          "Le steppe ghiacciate della Siberia orientale abitate da tribù di cacciatori nomadi.",
-          "Le dune sabbiose del deserto del Sahara battute dal vento caldo di scirocco."
+          "L'eliminazione dei critici d'arte dalla redazione delle riviste specializzate",
+          "La prassi con cui l'artista scavalca il tradizionale intermediario (la galleria privata) per vendere direttamente le proprie creazioni ai collezionisti finali o tramite case d'asta",
+          "La vendita di opere d'arte unicamente tramite canali televisivi commerciali",
+          "L'obbligo di pagare le transazioni artistiche esclusivamente in monete d'oro"
         ],
-        "correctIndex": 0,
-        "explanation": "Eliasson, nato a Copenaghen da genitori islandesi, ha trascorso lunghi periodi in Islanda, rimanendo folgorato dalla mutevolezza di luce, acqua, vapore e roccia."
+        "correctIndex": 1,
+        "explanation": "Hirst ha dimostrato che un artista con un marchio personale potente e planetario può trattare direttamente col mercato primario, sovvertendo le gerarchie consolidate del sistema delle gallerie."
       },
       {
-        "question": "Cosa intende l'artista con la celebre formula «Seeing yourself sensing» (Vedere se stessi mentre si percepisce)?",
+        "question": "Quale celebre frase pronunciò la madre di Damien Hirst quando il figlio le annunciò l'idea di voler realizzare un teschio di diamanti?",
         "options": [
-          "Sviluppare un'auto-riflessione critica su come il nostro cervello, i sensi e la cultura filtrano e costruiscono la percezione del mondo.",
-          "Scattarsi fotografie con lo smartphone davanti a specchi dorati per condividerle sulle piattaforme social.",
-          "Sottoporsi a sedute di ipnosi regressiva guidate da maestri spirituali tibetani prima dell'ingresso al museo.",
-          "Dipingere il proprio volto riflesso nell'acqua stagnante di uno stagno cittadino."
+          "'Non dovresti mai scherzare con le cose della religione'",
+          "'I diamanti sono i migliori amici delle donne'",
+          "'For the love of God, what are you going to do next?' (Per l'amor di Dio, cos'altro ti inventerai adesso?), frase che diede il titolo all'opera",
+          "'Spero che le banche ti concedano un prestito abbastanza generoso'"
+        ],
+        "correctIndex": 2,
+        "explanation": "La tipica esclamazione esasperata della madre di fronte alle stravaganze del figlio artista ha fornito a Hirst il titolo perfetto per un'opera intrisa di stupore, blasfemia e misticismo."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Cosa accadde sui mercati finanziari globali nelle stesse identiche ore del 15 settembre 2008 in cui si apriva la trionfale asta di Damien Hirst da Sotheby's?",
+        "options": [
+          "Le borse asiatiche chiudevano per festività nazionale prolungata",
+          "Il prezzo del petrolio scendeva a zero dollari al barile",
+          "Veniva introdotta la moneta unica europea in tutti i paesi del G8",
+          "Dichiarava bancarotta la banca d'affari americana Lehman Brothers, innescando la peggiore crisi finanziaria mondiale dal 1929, mentre l'asta di Hirst registrava record assoluti"
+        ],
+        "correctIndex": 3,
+        "explanation": "Una coincidenza storica surreale: mentre il cuore della finanza mondiale collassava, la stanza d'asta di Sotheby's batteva squali e vitelli d'oro a cifre folli, segnando l'apogeo dell'iper-capitalismo nell'arte."
+      },
+      {
+        "question": "Quale confronto antropologico e storico ha instaurato la critica tra il teschio di Hirst e i reperti delle civiltà mesoamericane (Aztechi e Maya)?",
+        "options": [
+          "Il teschio di Hirst rinnova la tradizione dei teschi di cristallo e delle maschere turchesi azteche, in cui il cranio del defunto viene trasformato in oggetto votivo abbagliante per dialogare con le divinità della morte",
+          "Dimostra che gli Aztechi conoscevano le tecniche moderne di fusione del platino industriale",
+          "Conferma che Hirst ha trafugato reperti archeologici dal museo antropologico di Città del Messico",
+          "Non sussiste alcun nesso, trattandosi di fenomeni totalmente incompatibili"
         ],
         "correctIndex": 0,
-        "explanation": "È il vertice dell'esperienza estetica: prendere coscienza del funzionamento dei nostri sensi per diventare cittadini più consapevoli, empatici e critici."
+        "explanation": "Hirst ha citato esplicitamente la fascinazione per i teschi aztechi visti al British Museum: un rito antico quanto l'umanità che veste lo scheletro di pietre preziose per vincere il terrore dell'oblio."
+      },
+      {
+        "question": "In che modo l'attività di Damien Hirst mette in discussione la tradizionale separazione tra 'creazione artistica' e 'strategia finanziaria'?",
+        "options": [
+          "Provoca l'annullamento del valore estetico di tutti i dipinti realizzati prima del 2000",
+          "Dimostra che nel mondo contemporaneo il marketing, la costruzione del prezzo, la speculazione e la gestione del marchio non sono fattori esterni all'opera, ma costituiscono il medium stesso dell'opera d'arte",
+          "Dimostra che per avere successo artistico è obbligatorio possedere una laurea in economia bancaria",
+          "Esclude i musei pubblici dalla possibilità di acquistare opere d'arte contemporanea"
+        ],
+        "correctIndex": 1,
+        "explanation": "Come Warhol disse 'La Business Art è il gradino successivo all'Arte', Hirst trasforma la transazione economica in performance artistica: il denaro e la quotazione sono parte integrante del significato concettuale."
       }
     ]
   },
@@ -1038,59 +1421,94 @@ window.ARTE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Quale reazione comportamentale spontanea e collettiva si manifestò tra i visitatori di 'The Weather Project' alla Tate Modern?",
+        "question": "Quale colossale mostra personale ha allestito Damien Hirst a Venezia nel 2017 occupando contemporaneamente Palazzo Grassi e Punta della Dogana?",
         "options": [
-          "Si sdraiarono a migliaia sul pavimento per osservare il proprio riflesso minuscolo sul soffitto a specchio.",
-          "Fuggirono dalla sala credendo che il sole artificiale stesse per causare un'esplosione nucleare.",
-          "Iniziarono a lanciare monetine contro le lampade al sodio come offerta votiva al dio sole egizio.",
-          "Manifestarono con striscioni sindacali per chiedere la riapertura della centrale termoelettrica."
+          "Sensation 2: The Venetian Collection",
+          "The Miraculous Journey",
+          "Relics from the Deep Ocean",
+          "Treasures from the Wreck of the Unbelievable (Tesori dal naufragio dell'Incredibile)"
         ],
-        "correctIndex": 0,
-        "explanation": "La vastità arancione dello spazio e il cielo a specchio invitarono a una contemplazione rilassata e comunitaria senza precedenti nella storia delle mostre d'arte contemporanea."
+        "correctIndex": 3,
+        "explanation": "Frutto di 10 anni di lavoro segreto e decine di milioni di investimento, 'Treasures' è stata una delle mostre più monumentali e spiazzanti della storia dell'arte del ventunesimo secolo."
       },
       {
-        "question": "Come agivano le lampade al sodio monocromatiche utilizzate da Eliasson per il sole di 'The Weather Project'?",
+        "question": "Qual è la grandiosa finzione narrativa (mockumentary archeologico) costruita da Hirst per giustificare le centinaia di opere esposte in 'Treasures'?",
         "options": [
-          "Emettendo una frequenza luminosa ristretta che annullava tutti i colori dello spazio, riducendoli a sfumature di grigio e nero.",
-          "Riscaldando l'aria della sala fino a cinquanta gradi per simulare il clima torrido del deserto del Sahara.",
-          "Emettendo impulsi stroboscopici ad alta velocità per indurre allucinazioni visive ipnagogiche.",
-          "Proiettando immagini tridimensionali di nuvole in tempesta registrate nell'atmosfera del pianeta Saturno."
+          "Il ritrovamento sottomarino, al largo delle coste dell'Africa orientale, del tesoro inabissatosi duemila anni fa appartenuto a un ricco liberto romano collezionista d'arte di nome Cif Amotan II",
+          "Il recupero dei resti della mitica città scomparsa di Atlantide nel mezzo dell'oceano Atlantico",
+          "Il ritrovamento della stiva del relitto del Titanic contenente sculture di Michelangelo",
+          "La scoperta di sculture aliene sepolte sotto i ghiacci dell'Antartide"
         ],
         "correctIndex": 0,
-        "explanation": "La luce monocromatica al sodio elimina la capacità dei coni oculari di distinguere i colori cromatici: chiunque entrasse vedeva i vestiti degli altri trasformati in bianco e nero."
+        "explanation": "Hirst fabbrica una bugia sublime: gira finti documentari subacquei con sub che ripescano colossi corallini dal fondale marino, attribuendoli alla collezione perduta del liberto Cif Amotan II (anagramma di 'I am a fiction')."
       },
       {
-        "question": "Qual era l'effetto visivo ricercato dall'artista nel colorare i fiumi cittadini con l'uranina nella serie 'Green River'?",
+        "question": "Cosa rivela l'anagramma del nome del collezionista fittizio 'Cif Amotan II' ideato da Damien Hirst?",
         "options": [
-          "Rendere visibile all'improvviso il flusso delle acque urbane che i cittadini attraversano distrattamente ogni giorno.",
-          "Sterminare le colonie di alghe infestanti che intasavano le eliche dei traghetti turistici.",
-          "Celebrare la festa nazionale irlandese di San Patrizio nei canali di Venezia e Stoccolma.",
-          "Testare la resistenza dei piloni di cemento dei ponti storici alla corrosione acida."
+          "'Art is dead'",
+          "'I am a fiction' (Io sono una finzione)",
+          "'Gold and money'",
+          "'Faith and love'"
         ],
-        "correctIndex": 0,
-        "explanation": "L'improvvisa comparsa di un verde smeraldo acceso bloccava il traffico e le persone sui ponti: il fiume, da sfondo invisibile e scontato, tornava al centro dell'attenzione civica."
+        "correctIndex": 1,
+        "explanation": "Hirst dissemina indizi ironici: ammette apertamente che tutto è finto, sfidando l'osservatore a decidere se credere alla favola o smascherare l'inganno."
       },
       {
-        "question": "Da dove provenivano i blocchi di ghiaccio disposti a forma di quadrante d'orologio nell'installazione 'Ice Watch'?",
+        "question": "Quali elementi anacronistici e spiazzanti compaiono tra le statue 'archeologiche' ricoperte di falsi coralli sottomarini in 'Treasures'?",
         "options": [
-          "Dal fiordo di Nuuk in Groenlandia, prelevati dal mare dove si erano staccati naturalmente dalla calotta.",
-          "Dalle celle frigorifere industriali dei mercati ittici della periferia portuale di Rotterdam.",
-          "Dalle cime innevate delle vette dolomitiche trasportati a valle con elicotteri di soccorso.",
-          "Da una fabbrica di ghiaccio sintetico trasparente brevettato nei laboratori chimici bavaresi."
+          "Telefoni cellulari e tastiere di computer incrostati di conchiglie",
+          "Modelli in scala di automobili Ferrari e pneumatici da corsa",
+          "Personaggi della cultura pop contemporanea (Topolino, Pippo, Mowgli e Baloo, Transformer) riprodotti come reperti antichi insieme a busti che ritraggono lo stesso Hirst o Kate Moss",
+          "Bandiere degli Stati moderni con scritte al neon"
         ],
-        "correctIndex": 0,
-        "explanation": "I blocchi erano frammenti di iceberg già staccati che galleggiavano verso l'oceano: portarli a Parigi e Londra ha permesso a tutti di toccare la preistoria che muore."
+        "correctIndex": 2,
+        "explanation": "Il cortocircuito tra antico e pop: Topolino coperto di coralli duemila anni dopo o una dea sumera che assomiglia a Kate Moss. Hirst demolisce il confine tra archeologia autentica e mito contemporaneo."
       },
       {
-        "question": "Quale radicale trasformazione architettonica fu operata da Eliasson nella mostra 'Riverbed' al Louisiana Museum (2014)?",
+        "question": "Quale riflessione contemporanea sull'era della 'Post-Verità' (Post-Truth) e delle Fake News solleva la mostra 'Treasures from the Wreck'?",
         "options": [
-          "Ricoprì l'intera ala del museo con tonnellate di rocce basaltiche islandesi e un vero torrente d'acqua corrente.",
-          "Demolì le pareti perimetrali dell'edificio lasciando le sale esposte al vento freddo del Mare del Nord.",
-          "Sostituì il pavimento di parquet con una pista di pattinaggio su ghiaccio sintetico refrigerato.",
-          "Allagò completamente il seminterrato costringendo i custodi a spostarsi su canotti di salvataggio gonfiabili."
+          "Sostiene che tutti i musei di antichità del mondo espongono esclusivamente copie false",
+          "Dimostra che la tecnologia archeologica sottomarina è obsoleta",
+          "Invita i musei a non esporre mai opere prive di datazione al carbonio 14",
+          "Dimostra come la fede, l'autorità dell'istituzione museale e una narrazione spettacolare ben orchestrata possano convincere il pubblico a credere a qualsiasi finzione spacciata per verità storica"
+        ],
+        "correctIndex": 3,
+        "explanation": "Nel secolo delle fake news, Hirst mette in scena il potere della narrazione: se l'opera è collocata in un palazzo storico con targhette accademiche e finti video, la gente desidera credere all'illusione."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Nella monumentale statua 'Demon with Bowl' alta oltre 16 metri collocata nel cortile di Palazzo Grassi, a quale scultura visionaria di William Blake si è ispirato Damien Hirst?",
+        "options": [
+          "Al disegno 'The Ghost of a Flea' (Il fantasma di una pulce)",
+          "Al dipinto 'Il Grande Drago Rosso e la Donna vestita di Sole'",
+          "All'incisione 'L'Antico dei Giorni'",
+          "All'illustrazione della 'Divina Commedia' dantesca"
         ],
         "correctIndex": 0,
-        "explanation": "In Riverbed il museo danese è stato trasformato in un paesaggio roccioso primordiale dove il visitatore camminava sul pietrisco e lungo un ruscello tra le sale d'arte."
+        "explanation": "Il mostruoso demone senza testa che svettava nel cortile è la trasposizione tridimensionale gigante della pulce vampiro di William Blake: un colosso di resina dipinto come bronzo millenario ripescato dal mare."
+      },
+      {
+        "question": "Perché le opere di 'Treasures' venivano presentate contemporaneamente in tre versioni distinte (The Collector's Edition, The Copy, The Museum Translation)?",
+        "options": [
+          "Perché l'artista aveva esaurito le idee per creare nuove forme scultoree",
+          "Per decostruire il concetto di autenticità museale, mostrando il reperto incrostato dai coralli marini, la sua copia integra di restauro e la riproduzione commerciale contemporanea",
+          "Per consentire ai non vedenti di toccare la versione in plastica morbida",
+          "Per rispettare una direttiva della dogana marittima italiana"
+        ],
+        "correctIndex": 1,
+        "explanation": "Hirst svela la stratificazione dell'industria archeologica: c'è l'oggetto 'ripescato' sporco di alghe, la versione pulita per il museo e il souvenir per il bookshop, svelando come il museo 'fabbrica' la storia."
+      },
+      {
+        "question": "Quale fu il giudizio della critica d'arte internazionale di fronte alla titanica operazione di 'Treasures from the Wreck' a Venezia?",
+        "options": [
+          "Indifferente, tanto che la mostra registrò meno di cento visitatori",
+          "Totalmente unanime nell'assegnare all'artista il premio Nobel per la pace",
+          "Profondamente polarizzato: da una parte chi la giudicò un capolavoro concettuale vertiginoso sulla finzione e la megalomania del collezionismo; dall'altra chi la stroncò come un kitsch faraonico degno di Las Vegas o Disneyland",
+          "Di condanna unanime per violazione delle leggi sui diritti marittimi internazionali"
+        ],
+        "correctIndex": 2,
+        "explanation": "La critica si spaccò: monumentale trionfo barocco della post-verità o baracconata disneyana miliardaria? Hirst ha polarizzato il mondo, confermando la sua capacità di dominare il discorso culturale globale."
       }
     ]
   },
@@ -1129,59 +1547,94 @@ window.ARTE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Quale struttura geometrica caratterizza la passerella panoramica 'Your Rainbow Panorama' sul tetto dell'ARoS Museum?",
+        "question": "Qual è il metodo di lavoro e la struttura organizzativa dello Studio Olafur Eliasson fondato a Berlino nel 1995?",
         "options": [
-          "Un anello circolare sospeso continuo di 150 metri con vetrate che coprono tutte le sfumature dell'arcobaleno.",
-          "Una piramide a gradoni in acciaio cor-ten accessibile solo attraverso una scala a chiocciola.",
-          "Un ponte rettilineo levatoio che si solleva durante le ore di punta del traffico navale.",
-          "Una cupola geodetica trasparente ricoperta di rampicanti sempreverdi e pannelli termici."
+          "Un grande laboratorio multidisciplinare e interdisciplinare che riunisce oltre novanta professionisti tra architetti, ingegneri, programmatori, artigiani, cuochi, storici dell'arte e filosofi",
+          "Uno studio solitario in cui l'artista dipinge isolato senza alcun contatto con collaboratori esterni",
+          "Un'agenzia pubblicitaria commerciale che produce loghi per multinazionali",
+          "Una scuola elementare d'arte per bambini della città di Berlino"
         ],
         "correctIndex": 0,
-        "explanation": "Camminando lungo l'anello, il visitatore attraversa l'intero spettro cromatico, vedendo la città tingersi progressivamente di tutti i colori della luce visibile."
+        "explanation": "Lo studio di Eliasson a Prenzlauer Berg è una fucina rinascimentale del ventunesimo secolo: ricerca scientifica, modelli geometrici, prototipi ottici ed ecologia convivono in un ecosistema collettivo."
       },
       {
-        "question": "Qual è il combustibile nocivo e inquinante che il progetto solare 'Little Sun' mira a sostituire nelle comunità rurali?",
+        "question": "Quale corrente filosofica costituisce la pietra angolare della ricerca artistica di Olafur Eliasson?",
         "options": [
-          "Il cherosene delle lampade a stoppino, causa di intossicazioni polmonari e incendi domestici.",
-          "Il carbone fossile antracite impiegato per la fusione dei metalli pesanti.",
-          "Il gas propano liquido compresso nelle bombole da campeggio portatili.",
-          "L'alcol denaturato ad alta gradazione utilizzato per riscaldare le serre orticole."
+          "Il Nichilismo radicale nietzschiano",
+          "La Fenomenologia della percezione (Merleau-Ponty), che pone al centro l'esperienza corporea e sensoriale diretta dello spettatore nel qui-e-ora ('Your engagement has consequences')",
+          "Il Razionalismo cartesiano che disprezza i sensi come fonte di inganno",
+          "L'idealismo platonico del mondo delle idee incorporee"
         ],
-        "correctIndex": 0,
-        "explanation": "Nei paesi senza rete elettrica, il cherosene è costoso e tossico: una lampada solare restituisce ore di studio ai bambini e sicurezza alla famiglia."
+        "correctIndex": 1,
+        "explanation": "Per Eliasson 'L'opera non è nell'oggetto, ma nell'incontro tra l'oggetto e lo spettatore'. Il visitatore non è un osservatore passivo ma il co-produttore dell'esperienza attraverso i suoi sensi."
       },
       {
-        "question": "Quale figura professionale NON fa parte del team multidisciplinare attivo nello Studio Olafur Eliasson a Berlino?",
+        "question": "Quali elementi e fenomeni fisici naturali costituiscono i 'materiali da costruzione' primari nelle installazioni di Eliasson?",
         "options": [
-          "Tributaristi specializzati nella compravendita clandestina di armi da fuoco d'epoca.",
-          "Architetti e modellatori tridimensionali di geometrie spaziali complesse.",
-          "Cuochi professionisti dedicati all'alimentazione biologica e sostenibile del team.",
-          "Artigiani soffiatori di vetro e costruttori di prismi e lenti dicroiche."
+          "Vernici fluorescenti sintetiche e motori a scoppio alimentati a benzina",
+          "Gesso alabastrino, marmo di Carrara e bronzo fuso a cera persa",
+          "Luce, nebbia artificiale, vapore acqueo, riflessi di specchi, vento, temperatura, muschio e prismi ottici",
+          "Cavi telefonici in rame e componenti hardware dismessi"
         ],
-        "correctIndex": 0,
-        "explanation": "Lo studio berlinese di Eliasson è una comunità celebre per l'etica del lavoro, la sostenibilità e la cooperazione tra scienziati, artisti e artigiani."
+        "correctIndex": 2,
+        "explanation": "Eliasson dematerializza l'arte: plasma l'aria, la luce gialla monocromatica, la condensa e la rifrazione ottica per risvegliare la consapevolezza sensoriale e il rapporto con la natura."
       },
       {
-        "question": "Come funziona il modello economico di vendita differenziata adottato per le lampade 'Little Sun'?",
+        "question": "Perché nelle sue installazioni tecnologiche Olafur Eliasson sceglie quasi sempre di lasciare a vista i macchinari (ventilatori, cavi, pompe della nebbia, proiettori)?",
         "options": [
-          "Il prezzo pieno pagato dagli acquirenti occidentali sussidia la vendita a basso costo nelle comunità senza elettricità in Africa.",
-          "Le lampade vengono distribuite unicamente ai possessori di carte di credito platino delle banche svizzere.",
-          "Il governo danese impone una tassa obbligatoria del venti per cento su ogni lampada venduta all'estero.",
-          "Le lampade vengono regalate solo a chi dimostra di aver visitato almeno tre mostre di Eliasson."
+          "Per consentire ai visitatori di spegnere i macchinari quando desiderano",
+          "Perché lo studio non aveva fondi economici sufficienti per costruire pareti di cartongesso",
+          "Perché le normative di sicurezza dei musei impongono l'ispezione visiva dei cavi elettrici",
+          "Perché non intende creare un'illusione ingannevole o magica, ma svelare la natura artificiale e costruita del fenomeno, rendendo il pubblico consapevole del meccanismo percettivo"
         ],
-        "correctIndex": 0,
-        "explanation": "È un modello di 'social business': il profitto dei mercati ricchi crea posti di lavoro e finanzia l'accesso a prezzi accessibili nei villaggi subsahariani."
+        "correctIndex": 3,
+        "explanation": "Trasparenza fenomenologica: Eliasson mostra l'artificio. Quando vedi il ventilatore o la lampada al sodio, capisci come la tua percezione viene costruita e diventi un osservatore critico, non ingannato."
       },
       {
-        "question": "Quale concetto esprime la celebre opera 'Your Rainbow Panorama' riguardo all'oggettività del mondo circostante?",
+        "question": "Cosa indica l'uso ricorrente del pronome possessivo 'Your' (Tuo) nei titoli delle opere di Eliasson (es. 'Your atmospheric colour atlas', 'Your waste of time')?",
         "options": [
-          "Che la realtà visibile non ha un colore immutabile, ma è sempre mediata dal filtro ottico e percettivo attraverso cui la osserviamo.",
-          "Che il sole scandinavo ha una temperatura di colore identica a quella delle latitudini equatoriali.",
-          "Che le città portuali dovrebbero dipingere i tetti delle case solo con tonalità di vernice giallo canarino.",
-          "Che il vetro temperato non consente il passaggio delle radiazioni infrarosse durante il periodo invernale."
+          "Sottolinea la natura soggettiva e unica dell'esperienza: ogni persona percepisce i colori e lo spazio in modo diverso, e l'opera esiste solo attraverso la presenza attiva dell'individuo",
+          "Indica che l'opera appartiene legalmente al visitatore che ha acquistato il biglietto",
+          "È un omaggio formale alla regina Elisabetta II del Regno Unito",
+          "Costituisce un trucco pubblicitario per vendere merchandising all'uscita del museo"
         ],
         "correctIndex": 0,
-        "explanation": "Passando dal blu freddo al rosso caldo, la percezione della stessa piazza muta radicalmente, ricordandoci la soggettività e la plasticità della visione umana."
+        "explanation": "Il 'Tuo' è un appello etico e percettivo: non c'è una verità oggettiva del museo, ma 'il tuo colore', 'la tua percezione', 'la tua responsabilità' ecologica verso il pianeta."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Quale collaborazione pluridecennale con un celebre architetto e geometra islandese ha permesso a Eliasson di sviluppare le sue complesse strutture spaziali poliedriche e reticolari?",
+        "options": [
+          "La collaborazione con Renzo Piano",
+          "La collaborazione con Einar Thorsteinn (già allievo di Buckminster Fuller e pioniere delle geometrie spaziali complesse)",
+          "La consulenza ingegneristica con Norman Foster",
+          "Il sodalizio artistico con Frank Gehry"
+        ],
+        "correctIndex": 1,
+        "explanation": "Thorsteinn ha portato nello studio di Eliasson la magia dei poliedri non euclidei, delle cupole geodetiche e della cristallografia, traducendo formule matematiche in spazi abitabili di luce e specchi."
+      },
+      {
+        "question": "In che modo l'esperienza nei paesaggi primordiali dell'Islanda ha forgiato la sensibilità visiva ed ecologica di Olafur Eliasson fin dall'infanzia?",
+        "options": [
+          "Lo ha spinto a rifiutare qualsiasi forma di tecnologia moderna all'interno dell'arte",
+          "Lo ha convinto a dedicarsi unicamente all'estrazione mineraria del carbone",
+          "Il contatto costante con ghiacciai, vulcani, distese di lava muschiata, cascate e la luce boreale mutevole gli ha insegnato che la natura non è uno sfondo fisso ma un processo vivo e dinamico",
+          "Gli ha fatto scegliere di vivere in solitudine senza mai viaggiare nelle metropoli mondiali"
+        ],
+        "correctIndex": 2,
+        "explanation": "L'Islanda è un pianeta in formazione: camminando sui ghiacciai con il padre, Eliasson ha imparato a misurare il tempo geologico e a comprendere la vulnerabilità degli ecosistemi fragili."
+      },
+      {
+        "question": "Nelle celebri stanze a 'Luce Monocromatica' (Mono-frequency light) di Eliasson illuminate con lampade a vapori di sodio a banda stretta, quale fenomeno ottico sperimentano i visitatori?",
+        "options": [
+          "L'aria all'interno della stanza diventa immediatamente trasparente ai raggi infrarossi",
+          "I visitatori sperimentano una temporanea cecità notturna irreversibile",
+          "Tutti gli oggetti metallici assumono una colorazione blu fosforescente brillante",
+          "Tutti i colori della stanza e dei vestiti scompaiono istantaneamente, riducendo l'intera visione a sfumature di giallo ocra e grigio, aumentando paradossalmente la percezione dei dettagli e delle forme"
+        ],
+        "correctIndex": 3,
+        "explanation": "Le lampade al sodio emettono una sola lunghezza d'onda (circa 589 nanometri): i recettori del colore nell'occhio non possono distinguere le tinte e il cervello decodifica tutto come un bianco e nero dorato iper-dettagliato."
       }
     ]
   },
@@ -1220,59 +1673,94 @@ window.ARTE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Quale elemento grafico minimale viene definito da Miguel Chevalier come il 'nuovo pigmento' dell'arte contemporanea?",
+        "question": "Quale leggendaria installazione ambientale del 2003 all'interno della gigantesca Turbine Hall della Tate Modern di Londra ha consacrato Olafur Eliasson sulla scena globale?",
         "options": [
-          "Il pixel, l'unità minima di colore e luce dei display elettronici digitali.",
-          "Il granello di grafite polverizzata derivato dalle scorie delle fonderie d'acciaio.",
-          "La goccia di inchiostro di china soffiata con cannucce di vetro borosilicato.",
-          "La pagliuzza di bronzo dorato incollata a mano con cera vergine d'api."
+          "The Weather Station",
+          "The Weather Project",
+          "The Solar System",
+          "The Sun Machine"
         ],
-        "correctIndex": 0,
-        "explanation": "Chevalier ha compreso fin dal 1983 che il pixel è la molecola fondamentale della visione contemporanea, l'equivalente della pennellata per Cézanne o Seurat."
+        "correctIndex": 1,
+        "explanation": "'The Weather Project' è una delle pietre miliari dell'arte del nuovo millennio: oltre 2 milioni di persone visitarono la Turbine Hall, trasformandola in una cattedrale laica di luce, nebbia e raccoglimento collettivo."
       },
       {
-        "question": "Cosa caratterizza in modo distintivo un software 'generativo' nelle installazioni di Miguel Chevalier?",
+        "question": "Come era costruito tecnicamente il colossale 'Sole' che dominava lo spazio in 'The Weather Project'?",
         "options": [
-          "Genera costantemente variazioni cromatiche e formali calcolate in tempo reale senza mai ripetersi identico.",
-          "Riproduce una sequenza fissa registrata su nastro magnetico VHS a ciclo continuo.",
-          "Richiede la presenza di un operatore che digiti manualmente le coordinate di ogni singolo pixel a tastiera.",
-          "Formatta l'hard disk del computer ogni venti minuti per eliminare la memoria cache temporanea."
+          "Un proiettore cinematografico 70mm puntato su una tela bianca circolare",
+          "Un enorme pallone aerostatico gonfiato a elio e dipinto con smalto arancione",
+          "Un semicerchio di centinaia di lampade monofrequenza a vapori di sodio gialle, montato contro la parete di fondo sotto un soffitto interamente rivestito di specchi che ne rifletteva l'altra metà completando la sfera perfetta",
+          "Una lente convergente che convogliava la vera luce solare dall'esterno dell'edificio"
         ],
-        "correctIndex": 0,
-        "explanation": "L'algoritmo generativo è autonomo: segue parametri matematici ma introduce casualità e interattività, dando vita a un flusso visivo infinito e irripetibile."
+        "correctIndex": 2,
+        "explanation": "L'illusione era magistrale: il sole era in realtà solo un mezzo cerchio. Lo specchio al soffitto raddoppiava lo spazio, completando la sagoma solare e rispecchiando i visitatori come minuscole ombre nere sul pavimento."
       },
       {
-        "question": "Dove è nato Miguel Chevalier prima di stabilirsi ed essere naturalizzato in Francia?",
+        "question": "Quale comportamento sociale spontaneo e inedito assunsero i milioni di visitatori all'interno di 'The Weather Project'?",
         "options": [
-          "A Città del Messico nel 1959.",
-          "A Buenos Aires nel 1968.",
-          "A Madrid nel 1945.",
-          "A San Paolo del Brasile nel 1972."
+          "Rimasero in silenzio assoluto senza muoversi per tutta la durata dell'esposizione",
+          "Iniziarono a protestare violentemente chiedendo la rimozione dell'opera d'arte",
+          "Fuggirono spaventati temendo un incendio a causa della fitta nebbia artificiale",
+          "Si sdraiarono sul pavimento di cemento freddo della Turbine Hall a guardarsi riflessi nel soffitto a specchio, parlando sottovoce, meditando o formando figure umane collettive in un'atmosfera di comunità condivisa"
         ],
-        "correctIndex": 0,
-        "explanation": "Chevalier è nato in Messico, terra ricca di muralismo e colori vivaci, per poi completare la sua formazione artistica e informatica a Parigi."
+        "correctIndex": 3,
+        "explanation": "Eliasson creò uno spazio di cittadinanza sensoriale: le persone si sdraiavano a terra come in un parco pubblico, salutando la propria immagine riflessa a 35 metri di altezza in una quiete quasi religiosa."
       },
       {
-        "question": "Come interagiscono le installazioni proiettive 'Magic Carpets' con il pubblico che cammina nella navata delle chiese?",
+        "question": "Cosa simboleggiava il tema del 'Tempo meteorologico' (Weather) scelto da Eliasson per la Tate Modern di Londra?",
         "options": [
-          "Sensori e telecamere tracciano i movimenti delle persone, aprendo varchi e onde di pixel sotto i loro passi.",
-          "Gli spettatori devono indossare elmetti di piombo per non interferire con le onde radio dei trasmettitori.",
-          "I visitatori vengono pesati da bilance industriali posizionate all'ingresso della sagrestia.",
-          "Le proiezioni si spengono istantaneamente non appena entra più di una persona nella sala."
+          "Il clima come grande costrutto sociale e argomento di conversazione quotidiano britannico, ma anche come indicatore del cambiamento climatico globale che unisce il destino di tutti gli esseri viventi",
+          "La celebrazione delle previsioni del tempo trasmesse dalla televisione di stato BBC",
+          "La memoria delle piogge acide che hanno colpito l'Inghilterra nell'Ottocento",
+          "Una ricerca meteorologica per calcolare l'umidità dell'aria del fiume Tamigi"
         ],
         "correctIndex": 0,
-        "explanation": "Grazie a telecamere a infrarossi e sensori, i corpi dei fedeli e dei visitatori alterano le traiettorie dei disegni di luce, creando una coreografia tra uomo e architettura."
+        "explanation": "Il meteo è l'argomento rompighiaccio universale: parlando del tempo parliamo della nostra vulnerabilità e del pianeta che condividiamo, unendo natura interiore e atmosfera esteriore."
       },
       {
-        "question": "Quale dialogo culturale instaura Chevalier proiettando pattern di computer su monumenti gotici e rinascimentali?",
+        "question": "Quale ruolo svolgeva la nebbia artificiale (mist) diffusa costantemente nello spazio in 'The Weather Project'?",
         "options": [
-          "Connette la memoria storica della pietra con la leggerezza immateriale della luce informatica contemporanea.",
-          "Intende accelerare il degrado strutturale delle pareti antiche per costringere gli stati al restauro.",
-          "Dimostra che gli architetti medievali utilizzavano segretamente computer a schede perforate.",
-          "Vuole coprire gli affreschi storici per evitare che vengano fotografati dai turisti senza permesso."
+          "Serviva a disinfettare l'ambiente per prevenire epidemie influenzali",
+          "Materializzava i fasci di luce dorata rendendo visibile l'aria e lo spazio volumetrico, disperdendo le ombre nette e creando un senso di sospensione temporale",
+          "Raffreddava la temperatura della stanza fino a sotto lo zero termico",
+          "Nascondeva i visitatori per garantire la loro privacy durante l'esperienza"
+        ],
+        "correctIndex": 1,
+        "explanation": "La nebbia creava corpo: l'aria non era più vuota ma densa di particelle d'acqua e zucchero che catturavano la radiazione luminosa monocromatica, avvolgendo i corpi in un tramonto senza fine."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Quale concetto sociologico definisce la capacità di opere come 'The Weather Project' di trasformare un museo in un luogo di incontro democratico e intersoggettivo?",
+        "options": [
+          "La teoria della scelta razionale applicata al tempo libero",
+          "Il Funzionalismo strutturale sociologico",
+          "L'Estetica Relazionale (teorizzata dal critico Nicolas Bourriaud negli anni Novanta), in cui l'opera d'arte produce relazioni umane dirette e comunità temporanee",
+          "Il determinismo tecnologico dei mass media"
+        ],
+        "correctIndex": 2,
+        "explanation": "Bourriaud descrive l'arte come 'stato di incontro': The Weather Project non era un feticcio da comprare, ma una piazza comune dove le persone interagivano e sperimentavano la coesistenza."
+      },
+      {
+        "question": "Perché Eliasson definisce 'The Weather Project' come un modello di 'vedere se stessi mentre si fa esperienza' (Seeing yourself sensing)?",
+        "options": [
+          "Perché i visitatori dovevano compilare un diario di bordo delle proprie emozioni",
+          "Perché l'artista forniva occhiali speciali polarizzati a tutti i visitatori all'ingresso",
+          "Perché telecamere a circuito chiuso registravano i volti per proiettarli sul web",
+          "Perché lo specchio al soffitto costringe l'osservatore a vedere il proprio corpo dal di fuori mentre vive la sensazione sensoriale, sviluppando una coscienza meta-cognitiva del proprio atto percettivo"
+        ],
+        "correctIndex": 3,
+        "explanation": "'Seeing yourself sensing': non solo guardare il sole, ma vedere se stessi minuscoli mentre guardano. Questa sdoppiatura fenomenologica trasforma l'esperienza in consapevolezza critica di sé."
+      },
+      {
+        "question": "In che modo l'installazione delle quattro cascate artificiali monumentali 'The New York City Waterfalls' (2008) lungo l'East River ha riletto il paesaggio urbano di Manhattan?",
+        "options": [
+          "Ha introdotto la forza primordiale e scrosciante dell'acqua nel cuore della metropoli d'acciaio, interrompendo la velocità frenetica dei newyorkesi e riconnettendoli alla natura del porto fluviale",
+          "Ha fornito acqua potabile a tutti i quartieri degradati di Brooklyn",
+          "Ha generato energia idroelettrica per illuminare i ponti sospesi della città",
+          "Ha impedito alle imbarcazioni mercantili di navigare lungo il fiume per motivi ecologici"
         ],
         "correctIndex": 0,
-        "explanation": "La luce non danneggia la pietra, ma la fa risuonare: l'algoritmo matematico moderno dialoga con la geometria sacra dei costruttori delle cattedrali."
+        "explanation": "Quattro cascate monumentali alte fino a 35 metri: l'acqua sollevata su impalcature industriali precipitava nell'East River, regalando alla metropoli il suono e la potenza dimenticata dell'elemento naturale."
       }
     ]
   },
@@ -1311,59 +1799,94 @@ window.ARTE_DATA = [
     ],
     "quiz": [
       {
-        "question": "Quale concetto scientifico scoperto dal matematico Benoît Mandelbrot è fondamentale per la creazione delle piante virtuali di Chevalier?",
+        "question": "In quale memorabile azione di arte pubblica non autorizzata del 1998 Olafur Eliasson ha colorato le acque dei fiumi di Brema, Moss, Stoccolma, Los Angeles e Venezia senza preavviso?",
         "options": [
-          "La geometria dei frattali, figure geometriche che si ripetono identiche su scale diverse.",
-          "Il principio di indeterminazione della meccanica quantistica applicato agli atomi di elio.",
-          "La teoria della gravitazione universale newtoniana sui corpi celesti in caduta libera.",
-          "Il teorema del limite centrale della statistica inferenziale univariata."
+          "The Toxic River Tour",
+          "Red Waters of Venice",
+          "Green River (utilizzando uranina, un colorante atossico biodegradabile impiegato dai biologi per tracciare le correnti)",
+          "Liquid Nature Project"
         ],
-        "correctIndex": 0,
-        "explanation": "I frattali consentono al software di generare rami, foglie e fiori con la stessa complessità organica della natura vivente senza dover disegnare ogni foglia a mano."
+        "correctIndex": 2,
+        "explanation": "Green River fu un'epifania improvvisa: svegliarsi e vedere il Canal Grande di un verde acido radioattivo. L'acqua non era più invisibile o scontata; la gente si fermava, guardava la città e riscopriva il fiume."
       },
       {
-        "question": "Cosa accade nel ciclo di vita delle piante virtuali dell'installazione 'Sur-Natures'?",
+        "question": "Cosa intendeva provocare Eliasson tingendo improvvisamente l'acqua dei fiumi metropolitani in 'Green River'?",
         "options": [
-          "Nascono, fioriscono, perdono i petali e appassiscono in tempo reale per poi rigenerarsi con mutazioni sempre nuove.",
-          "Rimangono congelate come sculture metalliche indistruttibili per non consumare la scheda video del server.",
-          "Si trasformano dopo tre minuti in automobili sportive che corrono su circuiti di Formula 1 virtuali.",
-          "Vengono cancellate definitivamente dall'hard disk non appena la galleria d'arte chiude al pubblico la sera."
+          "Dimostrare l'efficacia di un nuovo brevetto di depurazione fognaria",
+          "Protestare contro i costi del trasporto pubblico locale sui battelli",
+          "Promuovere un nuovo marchio di bibite energetiche sportive",
+          "Svegliare i cittadini dall'anestesia urbana quotidiana, costringendoli a notare lo scorrere della corrente e a ridefinire il loro rapporto emotivo con lo spazio comune che attraversano distrattamente ogni giorno"
         ],
-        "correctIndex": 0,
-        "explanation": "Chevalier programma il ciclo vitale biologico: nascita, crescita, fioritura, decomposizione e rinascita genetica in perpetua metamorfosi."
+        "correctIndex": 3,
+        "explanation": "'La gente guarda l'acqua solo quando accade qualcosa': colorarla di verde smeraldo brillante senza avvisare nessuno ha rotto l'abitudine mentale, trasformando la città in un punto interrogativo vivente."
       },
       {
-        "question": "Come definisce se stesso Miguel Chevalier quando governa la crescita delle sue foreste algoritmiche?",
+        "question": "Cosa ha portato fisicamente Olafur Eliasson nelle piazze di Copenaghen (2014), Parigi (Cop21 nel 2015) e Londra (2018) per la monumentale opera 'Ice Watch'?",
         "options": [
-          "Un 'giardiniere cibernetico' che semina algoritmi e cura l'evoluzione di specie botaniche virtuali.",
-          "Un hacker anarchico che tenta di sabotare i sistemi bancari internazionali con virus grafici.",
-          "Un pittore neoclassico che copia fedelmente i trattati di anatomia floreale di Linneo.",
-          "Un collezionista di farfalle secche che cerca di digitalizzare le ali con scanner piani."
+          "Decine di enormi blocchi di ghiaccio millenario staccatisi dalla calotta polare della Groenlandia, disposti a cerchio come un orologio affinché i passanti potessero toccarli, ascoltarli e vederli sciogliersi davanti ai propri occhi",
+          "Ghiaccio sintetico refrigerato artificialmente con compressori elettrici",
+          "Sculture di orologi da polso giganti realizzate in resina trasparente",
+          "Fotografie satellitari del polo nord stampate su grandi cartelloni pubblicitari"
         ],
         "correctIndex": 0,
-        "explanation": "L'artista non dipinge la foglia, ma scrive il codice che la genera: è un giardiniere del codice che coltiva specie sintetiche nel terreno della luce."
+        "explanation": "L'emergenza climatica non è più un dato statistico astratto: in 'Ice Watch' puoi posare l'orecchio sul blocco di ghiaccio, sentire lo scricchiolio millenario dell'aria intrappolata e vederlo liquefarsi al sole."
       },
       {
-        "question": "Quale sensore ottico a infrarossi è stato frequentemente impiegato da Chevalier per captare i movimenti del pubblico nelle sale?",
+        "question": "Quale dispositivo solare portatile a forma di fiore giallo ha co-fondato e progettato Olafur Eliasson insieme all'ingegnere Frederik Ottesen nel 2012?",
         "options": [
-          "Sensori di movimento e profondità come il sensore Kinect o telecamere ottiche avanzate.",
-          "Tubi a raggi X utilizzati per la diagnostica delle fratture ossee ospedaliere.",
-          "Sismografi terrestri tarati per rilevare le onde telluriche dei terremoti sottomarini.",
-          "Contatori Geiger per la misurazione della radioattività naturale dei graniti alpini."
+          "Solar Flower Battery",
+          "Little Sun (una piccola lampada solare ad alta efficienza per portare luce pulita ed economica a comunità prive di rete elettrica in Africa e nel mondo)",
+          "Yellow Pocket Phone",
+          "Eco-Light Power"
         ],
-        "correctIndex": 0,
-        "explanation": "I sensori di profondità mappano lo scheletro e il volume delle persone, consentendo al software di piegare le piante virtuali al passaggio della mano o del corpo."
+        "correctIndex": 1,
+        "explanation": "Con Little Sun, l'arte diventa impresa sociale: sostituendo le tossiche lampade a cherosene con l'energia del sole, la luce dona ai bambini ore di studio la notte e riduce le emissioni di carbonio."
       },
       {
-        "question": "Quale metafora contemporanea esprime l'opera 'Sur-Natures' attraverso la sua natura interattiva?",
+        "question": "In che modo il progetto fotografico 'The Glacier Melt Series' (1999-2019) di Eliasson documenta drammaticamente il cambiamento climatico?",
         "options": [
-          "La responsabilità ecologica dell'essere umano, i cui gesti possono nutrire o distruggere la biosfera circostante.",
-          "La superiorità della tecnologia cibernetica rispetto a qualsiasi forma di vita naturale a base di carbonio.",
-          "L'invito a sostituire tutti gli alberi dei parchi urbani con schermi televisivi retroilluminati a LED.",
-          "La dimostrazione che le piante acquatiche non necessitano di luce solare per la fotosintesi clorofilliana."
+          "Scattando fotografie notturne illuminate da razzi di segnalazione navali",
+          "Colorando i ghiacciai con inchiostro nero per accelerare l'assorbimento termico",
+          "Rifotografando esattamente dagli stessi identici punti aerei trenta ghiacciai islandesi a distanza di vent'anni, rivelando la loro devastante contrazione e scomparsa",
+          "Confrontando i ghiacciai islandesi con le dune sabbiose del deserto del Sahara"
+        ],
+        "correctIndex": 2,
+        "explanation": "La prova provata della crisi ecologica: accostando lo scatto del 1999 e quello del 2019, la parete monumentale di ghiaccio si è ritirata di chilometri, trasformandosi in una pozza di sassi e fango."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Quale tesi etica sostiene Olafur Eliasson nel suo saggio 'Your engagement has consequences'?",
+        "options": [
+          "L'esperienza estetica riguarda unicamente i visitatori che appartengono alle classi sociali abbienti",
+          "L'arte contemporanea deve essere disinteressata e non occuparsi mai di problemi sociali o ambientali",
+          "Gli artisti hanno il dovere di pagare le tasse sulle emissioni di anidride carbonica delle proprie mostre",
+          "La conoscenza razionale dei dati climatici non basta a cambiare i comportamenti: serve un'esperienza sensoriale ed emotiva incarnata nel corpo per trasformare l'informazione in azione etica e politica concreta"
+        ],
+        "correctIndex": 3,
+        "explanation": "Se diciamo 'si sono sciolti cento milioni di tonnellate di ghiaccio', la mente non reagisce. Se tocchi il ghiaccio che piange a gocce sulla tua mano, senti la responsabilità sulla tua pelle: l'arte colma il divario tra capire e agire."
+      },
+      {
+        "question": "Come viene gestito il bilancio ecologico (Carbon Footprint) del trasporto dei blocchi di ghiaccio dalla Groenlandia all'Europa per il progetto 'Ice Watch'?",
+        "options": [
+          "I blocchi vengono prelevati da quelli già staccati naturalmente e galleggianti nei fiordi, caricati su navi commerciali già in rotta e l'impronta di carbonio viene rigorosamente calcolata e compensata con progetti di riforestazione certificati",
+          "Il ghiaccio viene trasportato con aerei militari ad altissima velocità",
+          "I blocchi vengono lasciati sciogliere durante la navigazione marittima senza alcuna protezione",
+          "L'artista non si occupa dell'impatto ambientale, ritenendo l'arte superiore alle leggi della termodinamica"
         ],
         "correctIndex": 0,
-        "explanation": "La risposta immediata della pianta virtuale al movimento del visitatore è un monito poetico: ogni nostra azione sul pianeta produce conseguenze ambientali tangibili."
+        "explanation": "Eliasson collabora con climatologi come Minik Rosing: il ghiaccio viaggiava nei container frigo di navi commerciali che tornavano vuote dalla Groenlandia, e ogni grammo di CO2 è stato documentato e compensato."
+      },
+      {
+        "question": "Quale modello economico virtuoso adotta il progetto sociale 'Little Sun' di Eliasson?",
+        "options": [
+          "Tutte le lampade vengono donate gratuitamente tramite elicotteri militari",
+          "Le lampade sono vendute a prezzo maggiorato nei musei e nelle nazioni ricche, consentendo di sussidiare la vendita a prezzi popolari accessibili nelle comunità rurali africane off-grid, creando posti di lavoro locali",
+          "Il progetto è finanziato esclusivamente tramite la vendita di armi leggere",
+          "Le lampade funzionano unicamente se connesse a una rete internet a fibra ottica"
+        ],
+        "correctIndex": 1,
+        "explanation": "Un modello di micro-economia sostenibile: il visitatore del museo a New York compra Little Sun a 30 euro, permettendo all'imprenditore locale in Etiopia di acquistarla a poco e rivenderla a prezzo calmierato nella sua comunità."
       }
     ]
   },
@@ -1402,59 +1925,94 @@ window.ARTE_DATA = [
     ],
     "quiz": [
       {
-        "question": "In quale celebre spazio espositivo parigino è allestita la retrospettiva immersiva 'PIXELS' di Miguel Chevalier nel 2024?",
+        "question": "Quale posizione pionieristica occupa l'artista francese Miguel Chevalier nella storia dell'arte contemporanea internazionale?",
         "options": [
-          "Al Grand Palais Immersif di Parigi.",
-          "Nelle catacombe storiche di Montparnasse.",
-          "Sul tetto della cattedrale di Notre-Dame.",
-          "Nelle scuderie reali del castello di Versailles."
+          "È stato il primo artista a dipingere su tela utilizzando smalti sintetici automobilistici",
+          "È stato il fondatore del movimento della Pop Art parigina negli anni Cinquanta",
+          "È l'inventore della tecnica di incisione all'acquaforte su rame",
+          "È considerato uno dei massimi pionieri mondiali della Computer Art e della Digital Art, avendo iniziato a utilizzare il computer come medium artistico esclusivo fin dal 1978"
         ],
-        "correctIndex": 0,
-        "explanation": "Il Grand Palais Immersif ha ospitato la spettacolare mostra su due piani, celebrando i quarant'anni di ricerca pionieristica tra arte e nuove tecnologie."
+        "correctIndex": 3,
+        "explanation": "Fin dagli albori dell'informatica (fine anni '70), Chevalier ha compreso che il computer non era una calcolatrice da ufficio ma una nuova tavolozza infinita per esplorare luce, algoritmi e codice."
       },
       {
-        "question": "Come addestra Miguel Chevalier i modelli di intelligenza artificiale che collaborano alle sue nuove creazioni?",
+        "question": "Cosa si intende per 'Arte Generativa' (Generative Art) nella poetica di Miguel Chevalier?",
         "options": [
-          "Alimentando le reti neurali con il proprio archivio quarantennale di disegni, pixel art e installazioni storiche.",
-          "Scaricando casualmente milioni di fotografie di automobili e gatti da forum telematici aperti.",
-          "Inserendo nel computer esclusivamente le registrazioni vocali delle commedie radiofoniche degli anni Trenta.",
-          "Bloccando l'algoritmo su un unico comando ripetuto per evitare qualsiasi forma di apprendimento automatico."
+          "Opere create attraverso algoritmi e software che generano autonomamente forme visive in costante mutazione e auto-rigenerazione in tempo reale, senza mai ripetersi identiche nel tempo",
+          "Opere generate riproducendo all'infinito la stessa fotografia stampata su carta",
+          "Dipinti a olio realizzati da più generazioni di pittori della stessa famiglia",
+          "Sculture che cambiano colore solo se scaldate a fuoco vivo"
         ],
         "correctIndex": 0,
-        "explanation": "Chevalier insegna all'algoritmo la propria personale 'lingua visiva': l'IA diventa così un'estensione della mente dell'artista, capace di generare variazioni imprevedibili del suo stile."
+        "explanation": "Nell'arte generativa l'artista non disegna l'immagine finale, ma programma le regole e le leggi genetiche del codice: il computer calcola e genera un flusso infinito di forme organiche viventi."
       },
       {
-        "question": "Cosa accade sul pavimento dell'installazione monumentale 'Pixel Wave' quando i visitatori vi camminano sopra?",
+        "question": "Quale grande tema contraddistingue celebri installazioni di Chevalier come 'Fractal Flowers' o 'Extra-Natural'?",
         "options": [
-          "I pixel reagiscono al calpestio aprendosi in onde fluide di colore che seguono e tracciano i passi dei visitatori.",
-          "Il pavimento emette una scossa elettrica a bassa tensione che allontana chi calpesta i cerchi rossi.",
-          "La proiezione si interrompe all'istante visualizzando un messaggio di errore del sistema operativo.",
-          "I colori si congelano in un mosaico di tessere vitree che blocca il movimento delle scarpe."
+          "L'analisi delle malattie infettive all'interno delle foreste tropicali",
+          "Il dialogo poetico e filosofico tra Natura e Artificio: la creazione di giardini virtuali e piante digitali mutanti che imitano i cicli biologici di crescita, fioritura e morte nel regno dei pixel",
+          "La documentazione fotografica dei parchi urbani della città di Parigi",
+          "La coltivazione idroponica di specie vegetali commestibili nei musei"
         ],
-        "correctIndex": 0,
-        "explanation": "Il pavimento interattivo è un fluido ottico reattivo: ogni passo genera increspature, rifrazioni e correnti di luce che trasformano la camminata in una danza visiva."
+        "correctIndex": 1,
+        "explanation": "I 'Fractal Flowers' sono una flora transgenica virtuale: semi di codice matematico germogliano in fiori poligonali giganti che reagiscono al vento cibernetico, esplorando l'ibridazione tra biologia e silicio."
       },
       {
-        "question": "Con quale tecnologia innovativa Chevalier trasforma i flussi immateriali dei pixel in sculture solide tridimensionali?",
+        "question": "Cosa caratterizza le installazioni immersive e monumentali 'Site-Specific' proiettate da Chevalier su grandi architetture storiche (come 'Magic Carpets' o nelle cattedrali)?",
         "options": [
-          "Attraverso la stampa tridimensionale (3D printing) e il taglio laser su polimeri e lastre metalliche.",
-          "Tramite la battitura manuale a caldo del ferro incandescente su incudini di ghisa medievali.",
-          "Scolpendo a mano blocchi di tufo vulcanico impregnati di catrame e resina fossile.",
-          "Incollando a mano miliardi di minuscoli chicchi di riso colorati con acquerello vegetale."
+          "La copertura delle facciate con teli di plastica colorata non illuminata",
+          "Proiezioni di filmati pubblicitari muti senza interattività",
+          "Tappeti luminosi interattivi di pixel e trame geometriche proiettati su pavimenti e volte, che ondeggiano, si deformano e si ricompongono in tempo reale reagendo al passaggio e ai movimenti del pubblico",
+          "L'emissione di raggi laser concentrati che incidono la pietra degli edifici"
         ],
-        "correctIndex": 0,
-        "explanation": "Dalla luce alla materia: Chevalier usa stampanti 3D e frese laser robotizzate per dare corpo, peso, ombra e tangibilità fisica alla geometria nata nello spazio virtuale."
+        "correctIndex": 2,
+        "explanation": "In 'Magic Carpets' il pubblico cammina sulla luce: sensori a infrarossi captano i passi dei visitatori, scatenando onde fluide di colori caleidoscopici che trasformano lo spazio monumentale in un sogno interattivo."
       },
       {
-        "question": "Quale riflessione culturale propone Miguel Chevalier sul ruolo dell'artista nell'era dell'Intelligenza Artificiale?",
+        "question": "Come interagisce lo spettatore nelle opere digitali interattive di Miguel Chevalier?",
         "options": [
-          "L'artista non viene sostituito dalla macchina, ma diventa il filosofo e il curatore critico che guida l'immaginazione dell'algoritmo verso la poesia visiva.",
-          "L'artista deve smettere per sempre di lavorare e lasciare che i server eseguano autonomamente la programmazione della cultura mondiale.",
-          "L'intelligenza artificiale dovrebbe essere dichiarata illegale dai tribunali internazionali per proteggere i fabbricanti di cavalletti in legno.",
-          "L'unico scopo dei computer moderni è la clonazione perfetta delle opere a tempera di Giotto e Masaccio."
+          "Lo spettatore può solo guardare l'opera da uno spioncino senza entrare nella sala",
+          "Lo spettatore deve rimanere seduto e immobile con gli occhi bendati",
+          "Lo spettatore deve inserire monete all'interno di un lettore ottico per attivare lo schermo",
+          "Lo spettatore diventa parte attiva e co-autore dell'opera: i suoi movimenti corporei, la sua velocità e la sua vicinanza (rilevati da sensori ottici e telecamere) alterano la forma, i colori e la musica dell'installazione in tempo reale"
+        ],
+        "correctIndex": 3,
+        "explanation": "Senza visitatore l'opera dorme: il corpo della persona è l'interruttore cinetico che risveglia l'algoritmo, dissolvendo la barriera tra spettatore passivo e creatore dell'immagine."
+      }
+    ],
+    "examQuiz": [
+      {
+        "question": "Nelle opere storiche della serie 'De l'argentique au numérique' degli anni Ottanta, come operava Miguel Chevalier per esplorare le possibilità del pixel?",
+        "options": [
+          "Scomponeva e ingrandiva la struttura a mosaico dei pixel fino al limite della leggibilità dell'immagine, anticipando la riflessione sulla risoluzione, sulla perdita di definizione e sulla nuova retina digitale",
+          "Dipingeva i pixel a mano con pennelli di martora su pergamena medievale",
+          "Distruggeva fisicamente i monitor televisivi a colpi di martello",
+          "Utilizzava solo tubi catodici rotti per mostrare immagini deformate"
         ],
         "correctIndex": 0,
-        "explanation": "Per Chevalier la tecnologia è uno straordinario amplificatore di creatività: la macchina produce calcoli vertiginosi, ma sono la sensibilità, l'intenzione e l'occhio dell'uomo a trasformarli in arte."
+        "explanation": "Quando il mondo vedeva il pixel come un difetto di bassa risoluzione, Chevalier ne ha colto l'essenza estetica: il pixel è l'atomo luminoso della nuova pittura del futuro, il tassello del mosaico contemporaneo."
+      },
+      {
+        "question": "Cosa si intende per 'Realtà Virtuale e Aumentata' all'interno delle sperimentazioni più recenti di Miguel Chevalier?",
+        "options": [
+          "La registrazione di documentari didattici sulla vita dei programmatori di computer",
+          "L'uso di visori VR (come Oculus) per immergere completamente il fruitore a 360 gradi all'interno delle sue architetture generiche e delle foreste poligonali, consentendogli di volare dentro il codice visivo",
+          "La vendita di videogiochi commerciali d'azione sugli store digitali",
+          "L'installazione di webcam di sicurezza lungo le strade delle città"
+        ],
+        "correctIndex": 1,
+        "explanation": "Con la VR, Chevalier abbatte l'ultimo diaframma: lo spettatore non guarda più uno schermo piatto appeso al muro, ma entra fisicamente dentro il dipinto digitale, navigando tra costellazioni di dati mutanti."
+      },
+      {
+        "question": "Quale legame filosofico e storico unisce le proiezioni digitali di Miguel Chevalier all'arte optical (Op Art) e cinetica degli anni Sessanta (Vasarely, Le Parc)?",
+        "options": [
+          "La firma di manifesti programmatici che vietavano l'impiego dell'elettricità",
+          "L'uso esclusivo di sculture meccaniche azionate da motori a molla",
+          "L'indagine sulla cinetica visiva, l'instabilità percettiva, le illusioni ottiche di movimento e il coinvolgimento fisiologico dell'osservatore, aggiornati attraverso la potenza di calcolo del software contemporaneo",
+          "L'adesione formale alle regole compositive del Neoclassicismo canoviano"
+        ],
+        "correctIndex": 2,
+        "explanation": "Chevalier è l'erede diretto dell'Op Art e dell'arte programmata: Vasarely sognava un alfabeto plastico universale; Chevalier realizza quel sogno attraverso il codice binario e la computazione in tempo reale."
       }
     ]
   }
