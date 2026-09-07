@@ -17,28 +17,55 @@
         <h1 class="brand-title" id="brand-main-title">UX & Web Design</h1>
       </div>
 
-      <!-- SELETTORE DEI 4 TESTI PDF/PROGETTO -->
+      <!-- SELETTORE DEI TESTI / MODULI DIDATTICI -->
       <nav class="pdf-selector" id="pdf-selector-nav" aria-label="Selezione documento di studio">
-        <button class="pdf-tab active" data-pdf="dispense" id="tab-dispense">
-          <span class="tab-indicator"></span>
-          <span class="tab-title">1. Dispense Professore</span>
-          <span class="tab-progress-mini" id="prog-mini-dispense">0/14</span>
-        </button>
-        <button class="pdf-tab" data-pdf="krug" id="tab-krug">
-          <span class="tab-indicator"></span>
-          <span class="tab-title">2. Krug — Don't Make Me Think</span>
-          <span class="tab-progress-mini" id="prog-mini-krug">0/14</span>
-        </button>
-        <button class="pdf-tab" data-pdf="stull" id="tab-stull">
-          <span class="tab-indicator"></span>
-          <span class="tab-title">3. Stull — UX Design (43 cap)</span>
-          <span class="tab-progress-mini" id="prog-mini-stull">0/43</span>
-        </button>
-        <button class="pdf-tab" data-pdf="cards" id="tab-cards">
-          <span class="tab-indicator"></span>
-          <span class="tab-title">4. Codice Progetto (HTML & CSS)</span>
-          <span class="tab-progress-mini" id="prog-mini-cards">0/6</span>
-        </button>
+        <!-- Gruppo 1: UX & Web Design -->
+        <div class="subject-tabs-group" id="tabs-group-webdesign">
+          <button class="pdf-tab active" data-pdf="dispense" id="tab-dispense">
+            <span class="tab-indicator"></span>
+            <span class="tab-title">1. Dispense Professore</span>
+            <span class="tab-progress-mini" id="prog-mini-dispense">0/14</span>
+          </button>
+          <button class="pdf-tab" data-pdf="krug" id="tab-krug">
+            <span class="tab-indicator"></span>
+            <span class="tab-title">2. Krug — Don't Make Me Think</span>
+            <span class="tab-progress-mini" id="prog-mini-krug">0/14</span>
+          </button>
+          <button class="pdf-tab" data-pdf="stull" id="tab-stull">
+            <span class="tab-indicator"></span>
+            <span class="tab-title">3. Stull — UX Design (43 cap)</span>
+            <span class="tab-progress-mini" id="prog-mini-stull">0/43</span>
+          </button>
+          <button class="pdf-tab" data-pdf="cards" id="tab-cards">
+            <span class="tab-indicator"></span>
+            <span class="tab-title">4. Codice Progetto (HTML & CSS)</span>
+            <span class="tab-progress-mini" id="prog-mini-cards">0/6</span>
+          </button>
+        </div>
+
+        <!-- Gruppo 2: Storia dell'Arte Contemporanea -->
+        <div class="subject-tabs-group" id="tabs-group-arte" style="display: none;">
+          <button class="pdf-tab active" data-pdf="arte-anni80" id="tab-arte-anni80">
+            <span class="tab-indicator"></span>
+            <span class="tab-title">1. Arte Anni '80 (7 cap)</span>
+            <span class="tab-progress-mini" id="prog-mini-arte-anni80">0/7</span>
+          </button>
+          <button class="pdf-tab" data-pdf="arte-hirst" id="tab-arte-hirst">
+            <span class="tab-indicator"></span>
+            <span class="tab-title">2. Damien Hirst & YBA</span>
+            <span class="tab-progress-mini" id="prog-mini-arte-hirst">0/3</span>
+          </button>
+          <button class="pdf-tab" data-pdf="arte-eliasson" id="tab-arte-eliasson">
+            <span class="tab-indicator"></span>
+            <span class="tab-title">3. Olafur Eliasson</span>
+            <span class="tab-progress-mini" id="prog-mini-arte-eliasson">0/3</span>
+          </button>
+          <button class="pdf-tab" data-pdf="arte-chevalier" id="tab-arte-chevalier">
+            <span class="tab-indicator"></span>
+            <span class="tab-title">4. Miguel Chevalier & IA</span>
+            <span class="tab-progress-mini" id="prog-mini-arte-chevalier">0/3</span>
+          </button>
+        </div>
       </nav>
 
       <!-- COMANDI E MODALITÀ -->
@@ -152,29 +179,39 @@
               <div class="subject-card-header">
                 <div class="subject-icon-box art-icon">🏛️</div>
                 <div class="subject-header-meta">
-                  <span class="subject-status-pill status-ready">6 PDF Rilevati nella Cartella ✓</span>
-                  <h3 class="subject-name">Storia dell'Arte</h3>
+                  <span class="subject-status-pill status-ready">Pronto per lo Studio ✓</span>
+                  <h3 class="subject-name">Storia dell'Arte Contemporanea</h3>
                 </div>
               </div>
               
               <p class="subject-desc">
-                Dispense caricate con successo nella cartella dedicata. La piattaforma è pronta a strutturare i capitoli approfonditi, le schede artisti, le flashcard e i quiz d'esame.
+                Corso universitario strutturato su 4 moduli: Arte Anni '80 (Postmodernismo, Transavanguardia, Neoespressionismo, Graffitismo, Düsseldorf), Damien Hirst & YBA, Olafur Eliasson, Miguel Chevalier & Pixel IA. 16 capitoli approfonditi, flashcard e 80 quiz bilanciati.
               </p>
 
-              <div class="subject-folder-info">
-                <span class="folder-label">📁 Cartella locale:</span>
-                <code>/Storia dell'Arte (6 PDF presenti)</code>
+              <div class="subject-stats-bar">
+                <div class="sub-stat-item">
+                  <span class="sub-stat-val">16</span>
+                  <span class="sub-stat-label">Capitoli</span>
+                </div>
+                <div class="sub-stat-item">
+                  <span class="sub-stat-val">80</span>
+                  <span class="sub-stat-label">Quiz con feedback</span>
+                </div>
+                <div class="sub-stat-item">
+                  <span class="sub-stat-val">4</span>
+                  <span class="sub-stat-label">Moduli Didattici</span>
+                </div>
               </div>
 
               <div class="subject-sources-list">
-                <span class="source-tag">🏛️ Storia dell'Arte.pdf (66 MB)</span>
-                <span class="source-tag">💡 Eliasson & Luce (41 MB)</span>
-                <span class="source-tag">💀 Damien Hirst (2.3 MB)</span>
-                <span class="source-tag">💻 Chevalier & Pixel IA (174 MB)</span>
+                <span class="source-tag">🏛️ Modulo 1: Arte Anni '80 (7 cap)</span>
+                <span class="source-tag">💀 Modulo 2: Damien Hirst & YBA (3 cap)</span>
+                <span class="source-tag">💡 Modulo 3: Olafur Eliasson (3 cap)</span>
+                <span class="source-tag">💻 Modulo 4: Miguel Chevalier & IA (3 cap)</span>
               </div>
 
-              <button class="btn-enter-subject secondary-subject" id="btn-view-art-info">
-                Visualizza Documenti Rilevati 📋
+              <button class="btn-enter-subject btn-enter-art" id="btn-enter-arte">
+                Accedi a Storia dell'Arte →
               </button>
             </div>
           </div>
@@ -322,9 +359,9 @@
             <div class="setup-group">
               <label>Scegli l'ambito delle domande:</label>
               <select id="exam-scope-select" class="form-select">
-                <option value="current">Solo il tema attivo attualmente</option>
-                <option value="cards">Solo Codice Progetto Esame (HTML & CSS)</option>
-                <option value="all">Misto completo (3 PDF + Codice Progetto)</option>
+                <option value="current">Solo il documento/modulo attivo attualmente</option>
+                <option value="cards" id="exam-scope-cards-opt">Solo Codice Progetto Esame (HTML & CSS)</option>
+                <option value="all">Misto completo (Tutti i capitoli della materia)</option>
               </select>
             </div>
 
@@ -434,6 +471,7 @@
   <script src="data/stull-data.js"></script>
   <script src="data/progetto-cards-data.js"></script>
   <script src="data/glossary-data.js"></script>
+  <script src="data/arte-data.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

@@ -128,6 +128,12 @@ body {
   overflow-x: auto;
 }
 
+.subject-tabs-group {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
 .pdf-tab {
   background: transparent;
   border: 1px solid var(--border-color);
@@ -1608,6 +1614,14 @@ body {
   background: #4338ca;
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
+}
+
+.btn-enter-art {
+  background: #d97706 !important;
+}
+
+.btn-enter-art:hover {
+  background: #b45309 !important;
 }
 
 .btn-enter-subject.secondary-subject {

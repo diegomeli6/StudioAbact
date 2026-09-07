@@ -75,8 +75,16 @@
     }
   }
 
-  // Recupera la lista capitoli per il PDF/Progetto corrente
+  // Recupera la lista capitoli per il PDF/Modulo corrente
   function getCurrentPdfChapters() {
+    if (state.currentSubject === 'arte' || (state.activePdf && state.activePdf.startsWith('arte-'))) {
+      const allArte = window.ARTE_DATA || [];
+      if (state.activePdf === 'arte-anni80') return allArte.filter(c => c.module === 'anni80');
+      if (state.activePdf === 'arte-hirst') return allArte.filter(c => c.module === 'hirst');
+      if (state.activePdf === 'arte-eliasson') return allArte.filter(c => c.module === 'eliasson');
+      if (state.activePdf === 'arte-chevalier') return allArte.filter(c => c.module === 'chevalier');
+      return allArte.filter(c => c.module === 'anni80');
+    }
     if (state.activePdf === 'dispense') return window.DISPENSE_DATA || [];
     if (state.activePdf === 'krug') return window.KRUG_DATA || [];
     if (state.activePdf === 'stull') return window.STULL_DATA || [];
@@ -89,6 +97,10 @@
     if (key === 'krug') return "2. Steve Krug — Don't Make Me Think";
     if (key === 'stull') return '3. Edward Stull — UX Design';
     if (key === 'cards') return '4. Codice Progetto Esame (HTML & CSS)';
+    if (key === 'arte-anni80') return "1. Arte Contemporanea Anni '80";
+    if (key === 'arte-hirst') return '2. Damien Hirst & Young British Artists';
+    if (key === 'arte-eliasson') return '3. Olafur Eliasson — Luce e Percezione';
+    if (key === 'arte-chevalier') return '4. Miguel Chevalier — Pixel, IA & Virtuale';
     return key;
   }
 
@@ -97,6 +109,38 @@
     loadLocalState();
     applyTheme(state.theme);
     setupEventListeners();
+
+    // Sincronizza gruppi tab con la materia attiva
+    const groupWeb = document.getElementById('tabs-group-webdesign');
+    const groupArte = document.getElementById('tabs-group-arte');
+    const cardsOpt = document.getElementById('exam-scope-cards-opt');
+    const brandTitle = document.getElementById('brand-main-title');
+
+    if (state.currentSubject === 'arte') {
+      if (groupWeb) groupWeb.style.display = 'none';
+      if (groupArte) groupArte.style.display = 'flex';
+      if (brandTitle) brandTitle.textContent = "Storia dell'Arte Contemporanea";
+      if (cardsOpt) cardsOpt.style.display = 'none';
+      if (!state.activePdf || !state.activePdf.startsWith('arte-')) {
+        state.activePdf = 'arte-anni80';
+        state.activeChapIndex = 0;
+      }
+      document.querySelectorAll('#tabs-group-arte .pdf-tab').forEach(t => {
+        t.classList.toggle('active', t.dataset.pdf === state.activePdf);
+      });
+    } else {
+      if (groupWeb) groupWeb.style.display = 'flex';
+      if (groupArte) groupArte.style.display = 'none';
+      if (brandTitle) brandTitle.textContent = "UX & Web Design";
+      if (cardsOpt) cardsOpt.style.display = 'block';
+      if (!state.activePdf || state.activePdf.startsWith('arte-')) {
+        state.activePdf = 'dispense';
+        state.activeChapIndex = 0;
+      }
+      document.querySelectorAll('#tabs-group-webdesign .pdf-tab').forEach(t => {
+        t.classList.toggle('active', t.dataset.pdf === state.activePdf);
+      });
+    }
 
     if (state.activeView === 'hub') {
       switchView('hub');
@@ -213,18 +257,14 @@
     const enterWebBtn = document.getElementById('btn-enter-webdesign');
     if (enterWebBtn) {
       enterWebBtn.addEventListener('click', () => {
-        state.currentSubject = 'web-design';
-        switchView('study');
-        renderSidebar();
-        renderCurrentChapter();
-        saveLocalState();
+        switchSubject('web-design');
       });
     }
 
-    const artInfoBtn = document.getElementById('btn-view-art-info');
-    if (artInfoBtn) {
-      artInfoBtn.addEventListener('click', () => {
-        alert("🏛️ File rilevati con successo nella cartella 'Storia dell\\'Arte':\n\n1. Storia dell'Arte.pdf (66.6 MB)\n2. ELIASSON 1.pdf (41.7 MB)\n3. OLAFUR ELIASSON.pdf (45 KB)\n4. HIRST.pdf (2.3 MB)\n5. MIGUEL CHEVALIER.pdf (988 KB)\n6. Miguel Chevalier PIXELS IA (174.4 MB)\n\nI file sono posizionati correttamente! Nel prossimo passaggio potrai richiedere l'estrazione didattica per attivare l'intero ambiente di studio per Storia dell'Arte con sintesi accademiche, schede artisti e quiz.");
+    const enterArteBtn = document.getElementById('btn-enter-arte');
+    if (enterArteBtn) {
+      enterArteBtn.addEventListener('click', () => {
+        switchSubject('arte');
       });
     }
 
@@ -315,6 +355,52 @@
     });
   }
 
+  // CAMBIO MATERIA (Web Design <-> Storia dell'Arte)
+  function switchSubject(subjectKey, targetPdf) {
+    state.currentSubject = subjectKey;
+    const groupWeb = document.getElementById('tabs-group-webdesign');
+    const groupArte = document.getElementById('tabs-group-arte');
+    const cardsOpt = document.getElementById('exam-scope-cards-opt');
+    const brandTitle = document.getElementById('brand-main-title');
+
+    if (subjectKey === 'arte') {
+      if (groupWeb) groupWeb.style.display = 'none';
+      if (groupArte) groupArte.style.display = 'flex';
+      if (brandTitle) brandTitle.textContent = "Storia dell'Arte Contemporanea";
+      if (cardsOpt) cardsOpt.style.display = 'none';
+
+      if (!state.activePdf || !state.activePdf.startsWith('arte-')) {
+        state.activePdf = targetPdf || 'arte-anni80';
+        state.activeChapIndex = 0;
+      }
+      document.querySelectorAll('#tabs-group-arte .pdf-tab').forEach(t => {
+        t.classList.toggle('active', t.dataset.pdf === state.activePdf);
+      });
+    } else {
+      state.currentSubject = 'web-design';
+      if (groupWeb) groupWeb.style.display = 'flex';
+      if (groupArte) groupArte.style.display = 'none';
+      if (brandTitle) brandTitle.textContent = "UX & Web Design";
+      if (cardsOpt) cardsOpt.style.display = 'block';
+
+      if (!state.activePdf || state.activePdf.startsWith('arte-')) {
+        state.activePdf = targetPdf || 'dispense';
+        state.activeChapIndex = 0;
+      }
+      document.querySelectorAll('#tabs-group-webdesign .pdf-tab').forEach(t => {
+        t.classList.toggle('active', t.dataset.pdf === state.activePdf);
+      });
+    }
+
+    state.activeSubtab = 'summary';
+    switchView('study');
+    renderSidebar();
+    renderCurrentChapter();
+    updateProgressIndicators();
+    updateCramCounter();
+    saveLocalState();
+  }
+
   // CAMBIO VISTA (Hub / Studio / Ripasso / Test / Glossario)
   function switchView(viewName) {
     state.activeView = viewName;
@@ -345,7 +431,7 @@
       if (pdfNav) pdfNav.style.display = 'flex';
       if (sessionBar) sessionBar.style.display = 'flex';
       if (viewPills) viewPills.style.opacity = '1';
-      if (brandTitle) brandTitle.textContent = 'UX & Web Design';
+      if (brandTitle) brandTitle.textContent = state.currentSubject === 'arte' ? "Storia dell'Arte Contemporanea" : "UX & Web Design";
       if (contentArea) contentArea.style.maxWidth = '900px';
     }
 
@@ -765,8 +851,8 @@
 
   // AGGIORNA PERCENTUALI E MINI COUNTERS
   function updateProgressIndicators() {
-    const allPdfs = ['dispense', 'krug', 'stull', 'cards'];
-    allPdfs.forEach(pdfKey => {
+    const webPdfs = ['dispense', 'krug', 'stull', 'cards'];
+    webPdfs.forEach(pdfKey => {
       let chaps = [];
       if (pdfKey === 'dispense') chaps = window.DISPENSE_DATA || [];
       if (pdfKey === 'krug') chaps = window.KRUG_DATA || [];
@@ -781,7 +867,31 @@
       const badge = document.getElementById(`prog-mini-${pdfKey}`);
       if (badge) badge.textContent = `${done}/${chaps.length}`;
 
-      if (pdfKey === state.activePdf) {
+      if (state.currentSubject === 'web-design' && pdfKey === state.activePdf) {
+        const pct = chaps.length > 0 ? Math.round((done / chaps.length) * 100) : 0;
+        const barText = document.getElementById('active-pdf-progress-text');
+        if (barText) barText.textContent = `Progresso: ${pct}% (${done} di ${chaps.length} completati)`;
+      }
+    });
+
+    const artePdfs = ['arte-anni80', 'arte-hirst', 'arte-eliasson', 'arte-chevalier'];
+    const allArte = window.ARTE_DATA || [];
+    artePdfs.forEach(pdfKey => {
+      let chaps = [];
+      if (pdfKey === 'arte-anni80') chaps = allArte.filter(c => c.module === 'anni80');
+      if (pdfKey === 'arte-hirst') chaps = allArte.filter(c => c.module === 'hirst');
+      if (pdfKey === 'arte-eliasson') chaps = allArte.filter(c => c.module === 'eliasson');
+      if (pdfKey === 'arte-chevalier') chaps = allArte.filter(c => c.module === 'chevalier');
+
+      let done = 0;
+      chaps.forEach(c => {
+        if (state.completed[c.id]) done++;
+      });
+
+      const badge = document.getElementById(`prog-mini-${pdfKey}`);
+      if (badge) badge.textContent = `${done}/${chaps.length}`;
+
+      if (state.currentSubject === 'arte' && pdfKey === state.activePdf) {
         const pct = chaps.length > 0 ? Math.round((done / chaps.length) * 100) : 0;
         const barText = document.getElementById('active-pdf-progress-text');
         if (barText) barText.textContent = `Progresso: ${pct}% (${done} di ${chaps.length} completati)`;
@@ -808,12 +918,23 @@
     if (!listEl) return;
     listEl.innerHTML = '';
 
-    const allPdfs = [
-      { key: 'dispense', name: 'Dispense Professore', data: window.DISPENSE_DATA || [] },
-      { key: 'krug', name: "Krug — Don't Make Me Think", data: window.KRUG_DATA || [] },
-      { key: 'stull', name: 'Stull — UX Design', data: window.STULL_DATA || [] },
-      { key: 'cards', name: 'Codice Progetto Esame', data: window.CARDS_DATA || [] }
-    ];
+    let allPdfs = [];
+    if (state.currentSubject === 'arte') {
+      const allArte = window.ARTE_DATA || [];
+      allPdfs = [
+        { key: 'arte-anni80', name: "Arte Anni '80", data: allArte.filter(c => c.module === 'anni80') },
+        { key: 'arte-hirst', name: 'Damien Hirst & YBA', data: allArte.filter(c => c.module === 'hirst') },
+        { key: 'arte-eliasson', name: 'Olafur Eliasson', data: allArte.filter(c => c.module === 'eliasson') },
+        { key: 'arte-chevalier', name: 'Miguel Chevalier & IA', data: allArte.filter(c => c.module === 'chevalier') }
+      ];
+    } else {
+      allPdfs = [
+        { key: 'dispense', name: 'Dispense Professore', data: window.DISPENSE_DATA || [] },
+        { key: 'krug', name: "Krug — Don't Make Me Think", data: window.KRUG_DATA || [] },
+        { key: 'stull', name: 'Stull — UX Design', data: window.STULL_DATA || [] },
+        { key: 'cards', name: 'Codice Progetto Esame', data: window.CARDS_DATA || [] }
+      ];
+    }
 
     const itemsToReview = [];
 
@@ -967,16 +1088,25 @@
       });
     };
 
-    if (scope === 'current') {
-      const currentList = getCurrentPdfChapters();
-      getQuizzesFromChapters(currentList, getPdfDisplayName(state.activePdf));
-    } else if (scope === 'cards') {
-      getQuizzesFromChapters(window.CARDS_DATA || [], 'Codice Progetto Esame (HTML & CSS)');
+    if (state.currentSubject === 'arte') {
+      if (scope === 'current') {
+        const currentList = getCurrentPdfChapters();
+        getQuizzesFromChapters(currentList, getPdfDisplayName(state.activePdf));
+      } else {
+        getQuizzesFromChapters(window.ARTE_DATA || [], "Storia dell'Arte Contemporanea");
+      }
     } else {
-      getQuizzesFromChapters(window.DISPENSE_DATA || [], 'Dispense Professore');
-      getQuizzesFromChapters(window.KRUG_DATA || [], "Krug — Don't Make Me Think");
-      getQuizzesFromChapters(window.STULL_DATA || [], 'Stull — UX Design');
-      getQuizzesFromChapters(window.CARDS_DATA || [], 'Codice Progetto Esame (HTML & CSS)');
+      if (scope === 'current') {
+        const currentList = getCurrentPdfChapters();
+        getQuizzesFromChapters(currentList, getPdfDisplayName(state.activePdf));
+      } else if (scope === 'cards') {
+        getQuizzesFromChapters(window.CARDS_DATA || [], 'Codice Progetto Esame (HTML & CSS)');
+      } else {
+        getQuizzesFromChapters(window.DISPENSE_DATA || [], 'Dispense Professore');
+        getQuizzesFromChapters(window.KRUG_DATA || [], "Krug — Don't Make Me Think");
+        getQuizzesFromChapters(window.STULL_DATA || [], 'Stull — UX Design');
+        getQuizzesFromChapters(window.CARDS_DATA || [], 'Codice Progetto Esame (HTML & CSS)');
+      }
     }
 
     if (pool.length === 0) {
