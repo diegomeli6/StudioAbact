@@ -13,12 +13,12 @@
     <!-- HEADER MINIMALE SUPERIORE -->
     <header class="top-header">
       <div class="header-brand">
-        <span class="brand-badge">STUDIO D'ESAME</span>
-        <h1 class="brand-title">UX & Web Design</h1>
+        <button id="btn-hub-nav" class="brand-hub-badge" title="Torna alla selezione materie">📚 MATERIE</button>
+        <h1 class="brand-title" id="brand-main-title">UX & Web Design</h1>
       </div>
 
-      <!-- SELETTORE DEI 3 TESTI PDF -->
-      <nav class="pdf-selector" aria-label="Selezione documento di studio">
+      <!-- SELETTORE DEI 4 TESTI PDF/PROGETTO -->
+      <nav class="pdf-selector" id="pdf-selector-nav" aria-label="Selezione documento di studio">
         <button class="pdf-tab active" data-pdf="dispense" id="tab-dispense">
           <span class="tab-indicator"></span>
           <span class="tab-title">1. Dispense Professore</span>
@@ -43,7 +43,7 @@
 
       <!-- COMANDI E MODALITÀ -->
       <div class="header-actions">
-        <div class="view-mode-pills" role="tablist">
+        <div class="view-mode-pills" id="header-view-pills" role="tablist">
           <button class="pill-btn active" data-view="study" id="pill-study" title="Studio guidato capitoli">📖 Studio</button>
           <button class="pill-btn" data-view="cram" id="pill-cram" title="Ripasso mirato errori e flashcard">
             ⚡ Ripasso <span class="cram-counter" id="cram-badge">0</span>
@@ -61,7 +61,7 @@
     </header>
 
     <!-- STATUS BAR LOCALE SOTTO L'HEADER -->
-    <div class="session-bar">
+    <div class="session-bar" id="session-bar">
       <div class="session-info">
         <span class="session-dot"></span>
         <span id="active-pdf-name">Dispense Professore</span>
@@ -74,7 +74,7 @@
     </div>
 
     <!-- CORPO PRINCIPALE DELL'APP -->
-    <div class="main-layout">
+    <div class="main-layout" id="main-layout">
       
       <!-- SIDEBAR CON INDICE CAPITOLI -->
       <aside class="sidebar" id="sidebar">
@@ -97,6 +97,89 @@
       <!-- CONTENUTO PRINCIPALE A SCHERMO -->
       <main class="content-area" id="content-area">
         
+        <!-- VISTA 0: SUBJECT HUB / SELEZIONE MATERIE -->
+        <section id="view-hub" class="view-panel">
+          <div class="hub-hero">
+            <span class="hub-badge">PIATTAFORMA DI STUDIO UNIVERSITARIO</span>
+            <h2 class="hub-title">Scegli la Materia di Studio</h2>
+            <p class="hub-subtitle">Seleziona una materia per accedere ai capitoli approfonditi, alle storie-ancora, alle flashcard e ai simulatori d'esame interattivi.</p>
+          </div>
+
+          <div class="hub-grid">
+            <!-- SCHEDA 1: WEB DESIGN & UX -->
+            <div class="subject-card active-subject-card" id="card-subject-webdesign">
+              <div class="subject-card-header">
+                <div class="subject-icon-box webdesign-icon">🎨</div>
+                <div class="subject-header-meta">
+                  <span class="subject-status-pill status-ready">Pronto per lo Studio ✓</span>
+                  <h3 class="subject-name">Web Design & UX Design</h3>
+                </div>
+              </div>
+              
+              <p class="subject-desc">
+                Corso completo strutturato su 4 fonti ufficiali: sintesi accademiche arricchite, 385 quiz bilanciati, flashcard di autoverifica e analisi tecnica del codice di progetto.
+              </p>
+
+              <div class="subject-stats-bar">
+                <div class="sub-stat-item">
+                  <span class="sub-stat-val">77</span>
+                  <span class="sub-stat-label">Capitoli</span>
+                </div>
+                <div class="sub-stat-item">
+                  <span class="sub-stat-val">385</span>
+                  <span class="sub-stat-label">Quiz con feedback</span>
+                </div>
+                <div class="sub-stat-item">
+                  <span class="sub-stat-val">4</span>
+                  <span class="sub-stat-label">Fonti di Studio</span>
+                </div>
+              </div>
+
+              <div class="subject-sources-list">
+                <span class="source-tag">📘 Dispense Professore (14 cap)</span>
+                <span class="source-tag">📗 Steve Krug (14 cap)</span>
+                <span class="source-tag">📙 Edward Stull (43 cap)</span>
+                <span class="source-tag">💻 Codice Progetto Cards (6 cap)</span>
+              </div>
+
+              <button class="btn-enter-subject" id="btn-enter-webdesign">
+                Accedi a Web Design & UX →
+              </button>
+            </div>
+
+            <!-- SCHEDA 2: STORIA DELL'ARTE -->
+            <div class="subject-card art-subject-card" id="card-subject-art">
+              <div class="subject-card-header">
+                <div class="subject-icon-box art-icon">🏛️</div>
+                <div class="subject-header-meta">
+                  <span class="subject-status-pill status-ready">6 PDF Rilevati nella Cartella ✓</span>
+                  <h3 class="subject-name">Storia dell'Arte</h3>
+                </div>
+              </div>
+              
+              <p class="subject-desc">
+                Dispense caricate con successo nella cartella dedicata. La piattaforma è pronta a strutturare i capitoli approfonditi, le schede artisti, le flashcard e i quiz d'esame.
+              </p>
+
+              <div class="subject-folder-info">
+                <span class="folder-label">📁 Cartella locale:</span>
+                <code>/Storia dell'Arte (6 PDF presenti)</code>
+              </div>
+
+              <div class="subject-sources-list">
+                <span class="source-tag">🏛️ Storia dell'Arte.pdf (66 MB)</span>
+                <span class="source-tag">💡 Eliasson & Luce (41 MB)</span>
+                <span class="source-tag">💀 Damien Hirst (2.3 MB)</span>
+                <span class="source-tag">💻 Chevalier & Pixel IA (174 MB)</span>
+              </div>
+
+              <button class="btn-enter-subject secondary-subject" id="btn-view-art-info">
+                Visualizza Documenti Rilevati 📋
+              </button>
+            </div>
+          </div>
+        </section>
+
         <!-- VISTA 1: STUDIO GUIDATO CAPITOLO -->
         <section id="view-study" class="view-panel active">
           

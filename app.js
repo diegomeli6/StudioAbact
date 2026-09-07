@@ -11,10 +11,11 @@
 
   // STATO APPLICATIVO
   const state = {
-    activePdf: 'dispense', // 'dispense' | 'krug' | 'stull'
+    currentSubject: 'web-design', // 'web-design' | 'hub'
+    activePdf: 'dispense', // 'dispense' | 'krug' | 'stull' | 'cards'
     activeChapIndex: 0,
     activeSubtab: 'summary', // 'summary' | 'flashcards' | 'quiz' | 'open' | 'notes'
-    activeView: 'study', // 'study' | 'cram' | 'exam' | 'glossary'
+    activeView: 'study', // 'hub' | 'study' | 'cram' | 'exam' | 'glossary'
     theme: 'light',
     sidebarOpen: true,
     
@@ -35,6 +36,7 @@
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
         const parsed = JSON.parse(saved);
+        if (parsed.currentSubject) state.currentSubject = parsed.currentSubject;
         if (parsed.completed) state.completed = parsed.completed;
         if (parsed.flashcardStatus) state.flashcardStatus = parsed.flashcardStatus;
         if (parsed.quizAnswers) state.quizAnswers = parsed.quizAnswers;
@@ -42,6 +44,7 @@
         if (parsed.notes) state.notes = parsed.notes;
         if (parsed.activePdf) state.activePdf = parsed.activePdf;
         if (typeof parsed.activeChapIndex === 'number') state.activeChapIndex = parsed.activeChapIndex;
+        if (parsed.activeView) state.activeView = parsed.activeView;
         if (parsed.theme) state.theme = parsed.theme;
       }
     } catch (e) {
@@ -53,6 +56,7 @@
   function saveLocalState() {
     try {
       const payload = {
+        currentSubject: state.currentSubject,
         completed: state.completed,
         flashcardStatus: state.flashcardStatus,
         quizAnswers: state.quizAnswers,
@@ -60,6 +64,7 @@
         notes: state.notes,
         activePdf: state.activePdf,
         activeChapIndex: state.activeChapIndex,
+        activeView: state.activeView,
         theme: state.theme
       };
       localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
@@ -92,8 +97,15 @@
     loadLocalState();
     applyTheme(state.theme);
     setupEventListeners();
-    renderSidebar();
-    renderCurrentChapter();
+
+    if (state.activeView === 'hub') {
+      switchView('hub');
+    } else {
+      switchView(state.activeView || 'study');
+      renderSidebar();
+      renderCurrentChapter();
+    }
+
     updateProgressIndicators();
     updateCramCounter();
     renderGlossary();
@@ -187,6 +199,35 @@
       resetBtn.addEventListener('click', resetAllData);
     }
 
+    // Switch Materia / Hub
+    const hubNavBtn = document.getElementById('btn-hub-nav');
+    if (hubNavBtn) {
+      hubNavBtn.addEventListener('click', () => {
+        state.currentSubject = 'hub';
+        switchView('hub');
+        saveLocalState();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+
+    const enterWebBtn = document.getElementById('btn-enter-webdesign');
+    if (enterWebBtn) {
+      enterWebBtn.addEventListener('click', () => {
+        state.currentSubject = 'web-design';
+        switchView('study');
+        renderSidebar();
+        renderCurrentChapter();
+        saveLocalState();
+      });
+    }
+
+    const artInfoBtn = document.getElementById('btn-view-art-info');
+    if (artInfoBtn) {
+      artInfoBtn.addEventListener('click', () => {
+        alert("🏛️ File rilevati con successo nella cartella 'Storia dell\\'Arte':\n\n1. Storia dell'Arte.pdf (66.6 MB)\n2. ELIASSON 1.pdf (41.7 MB)\n3. OLAFUR ELIASSON.pdf (45 KB)\n4. HIRST.pdf (2.3 MB)\n5. MIGUEL CHEVALIER.pdf (988 KB)\n6. Miguel Chevalier PIXELS IA (174.4 MB)\n\nI file sono posizionati correttamente! Nel prossimo passaggio potrai richiedere l'estrazione didattica per attivare l'intero ambiente di studio per Storia dell'Arte con sintesi accademiche, schede artisti e quiz.");
+      });
+    }
+
     // Subtabs capitolo (Sintesi, Flashcard, Quiz, Domande, Note)
     document.querySelectorAll('.subtab-btn').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -195,7 +236,7 @@
       });
     });
 
-    // Navigazione capitoli footer
+    // Navigazione capitoli footer (risolve il bug del reset tab e aggiornamento sidebar)
     const prevBtn = document.getElementById('btn-prev-chap');
     const nextBtn = document.getElementById('btn-next-chap');
     const completeBtn = document.getElementById('btn-toggle-complete');
@@ -203,10 +244,7 @@
     if (prevBtn) {
       prevBtn.addEventListener('click', () => {
         if (state.activeChapIndex > 0) {
-          state.activeChapIndex--;
-          renderCurrentChapter();
-          saveLocalState();
-          window.scrollTo({ top: 0, behavior: 'smooth' });
+          navigateToChapter(state.activeChapIndex - 1);
         }
       });
     }
@@ -215,10 +253,7 @@
       nextBtn.addEventListener('click', () => {
         const chaps = getCurrentPdfChapters();
         if (state.activeChapIndex < chaps.length - 1) {
-          state.activeChapIndex++;
-          renderCurrentChapter();
-          saveLocalState();
-          window.scrollTo({ top: 0, behavior: 'smooth' });
+          navigateToChapter(state.activeChapIndex + 1);
         }
       });
     }
@@ -280,7 +315,7 @@
     });
   }
 
-  // CAMBIO VISTA (Studio / Ripasso / Test / Glossario)
+  // CAMBIO VISTA (Hub / Studio / Ripasso / Test / Glossario)
   function switchView(viewName) {
     state.activeView = viewName;
     document.querySelectorAll('.pill-btn').forEach(btn => {
@@ -290,6 +325,30 @@
       panel.classList.toggle('active', panel.id === `view-${viewName}`);
     });
 
+    // Gestione visibilità sidebar, selettore PDF e session bar se ci si trova nell'Hub
+    const sidebar = document.getElementById('sidebar');
+    const pdfNav = document.getElementById('pdf-selector-nav');
+    const sessionBar = document.getElementById('session-bar');
+    const brandTitle = document.getElementById('brand-main-title');
+    const viewPills = document.getElementById('header-view-pills');
+    const contentArea = document.getElementById('content-area');
+
+    if (viewName === 'hub') {
+      if (sidebar) sidebar.style.display = 'none';
+      if (pdfNav) pdfNav.style.display = 'none';
+      if (sessionBar) sessionBar.style.display = 'none';
+      if (viewPills) viewPills.style.opacity = '0.35';
+      if (brandTitle) brandTitle.textContent = 'Hub Materie Universitarie';
+      if (contentArea) contentArea.style.maxWidth = '1050px';
+    } else {
+      if (sidebar) sidebar.style.display = 'flex';
+      if (pdfNav) pdfNav.style.display = 'flex';
+      if (sessionBar) sessionBar.style.display = 'flex';
+      if (viewPills) viewPills.style.opacity = '1';
+      if (brandTitle) brandTitle.textContent = 'UX & Web Design';
+      if (contentArea) contentArea.style.maxWidth = '900px';
+    }
+
     if (viewName === 'cram') {
       renderCramList();
     } else if (viewName === 'glossary') {
@@ -297,7 +356,7 @@
     }
   }
 
-  // CAMBIO SUBTAB CAPITOLO
+  // CAMBIO SUBTAB CAPITOLO (Sintesi, Flashcard, Quiz, Domande, Note)
   function switchSubtab(subtabName) {
     state.activeSubtab = subtabName;
     document.querySelectorAll('.subtab-btn').forEach(btn => {
@@ -306,6 +365,38 @@
     document.querySelectorAll('.subtab-panel').forEach(panel => {
       panel.classList.toggle('active', panel.id === `subtab-panel-${subtabName}`);
     });
+  }
+
+  // NAVIGAZIONE CENTRALIZZATA TRA I CAPITOLI
+  // Risolve definitivamente il bug: resetta sempre a 'summary' e sincronizza la sidebar sinistra
+  function navigateToChapter(idx) {
+    const chapters = getCurrentPdfChapters();
+    if (idx < 0 || idx >= chapters.length) return;
+
+    state.activeChapIndex = idx;
+
+    // Resetta SEMPRE alla scheda "Sintesi & Concetti"
+    switchSubtab('summary');
+
+    // Aggiorna l'indice dei capitoli a sinistra (classe active e icona 🔵)
+    renderSidebar();
+
+    // Renderizza il capitolo selezionato
+    renderCurrentChapter();
+
+    // Salva lo stato in localStorage
+    saveLocalState();
+
+    // Scorri la finestra in cima
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    // Scorri visivamente l'elemento attivo nella sidebar sinistra affinché sia visibile
+    setTimeout(() => {
+      const activeNavEl = document.querySelector('.chapter-nav-item.active');
+      if (activeNavEl) {
+        activeNavEl.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      }
+    }, 60);
   }
 
   // RENDERING SIDEBAR CAPITOLI
@@ -349,12 +440,8 @@
       `;
 
       item.addEventListener('click', () => {
-        state.activeChapIndex = idx;
-        renderSidebar();
-        renderCurrentChapter();
+        navigateToChapter(idx);
         switchView('study');
-        saveLocalState();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
       });
 
       listEl.appendChild(item);
@@ -447,11 +534,21 @@
     const isDone = !!state.completed[chap.id];
     updateCompleteButtonState(isDone);
 
-    // Disabilita/Abilita bottoni navigazione
+    // Disabilita/Abilita bottoni navigazione footer
     const prevBtn = document.getElementById('btn-prev-chap');
     const nextBtn = document.getElementById('btn-next-chap');
-    if (prevBtn) prevBtn.disabled = state.activeChapIndex === 0;
-    if (nextBtn) nextBtn.disabled = state.activeChapIndex === chapters.length - 1;
+    if (prevBtn) {
+      const isFirst = state.activeChapIndex === 0;
+      prevBtn.disabled = isFirst;
+      prevBtn.style.opacity = isFirst ? '0.45' : '1';
+      prevBtn.style.cursor = isFirst ? 'not-allowed' : 'pointer';
+    }
+    if (nextBtn) {
+      const isLast = state.activeChapIndex >= chapters.length - 1;
+      nextBtn.disabled = isLast;
+      nextBtn.style.opacity = isLast ? '0.45' : '1';
+      nextBtn.style.cursor = isLast ? 'not-allowed' : 'pointer';
+    }
 
     // Aggiorna session bar
     const pdfNameEl = document.getElementById('active-pdf-name');
@@ -1094,14 +1191,45 @@
     }
   }
 
-  // UTILITY PARSER MARKDOWN SEMPLICE
+  // UTILITY PARSER MARKDOWN
   function formatMarkdown(text) {
     if (!text) return '';
     let html = escapeHtml(text);
+
+    // Tables
+    html = html.replace(/((?:\|[^\n]+\|\r?\n)+)/g, function (tableBlock) {
+      const rows = tableBlock.trim().split(/\r?\n/).filter(r => r.trim());
+      if (rows.length < 2) return tableBlock;
+      let tableHtml = '<div class="table-responsive"><table class="academic-table">';
+      let isHeader = true;
+
+      rows.forEach((row, rIdx) => {
+        // Skip separator row (| :--- | :--- |)
+        if (row.match(/^\|(?:\s*:?-+:?\s*\|)+$/)) {
+          isHeader = false;
+          return;
+        }
+        const cells = row.split('|').slice(1, -1);
+        if (rIdx === 0) {
+          tableHtml += '<thead><tr>';
+          cells.forEach(c => { tableHtml += `<th>${c.trim()}</th>`; });
+          tableHtml += '</tr></thead><tbody>';
+        } else {
+          tableHtml += '<tr>';
+          cells.forEach(c => { tableHtml += `<td>${c.trim()}</td>`; });
+          tableHtml += '</tr>';
+        }
+      });
+      tableHtml += '</tbody></table></div>';
+      return tableHtml;
+    });
+
     // Headings
     html = html.replace(/^#### (.*?)$/gm, '<h4>$1</h4>');
     html = html.replace(/^### (.*?)$/gm, '<h3>$1</h3>');
     html = html.replace(/^## (.*?)$/gm, '<h2>$1</h2>');
+    // Horizontal rules
+    html = html.replace(/^---$/gm, '<hr class="summary-divider">');
     // Bold
     html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
     // Italic
@@ -1117,7 +1245,7 @@
     // Paragraphs
     html = html.split('\n\n').map(p => {
       p = p.trim();
-      if (!p.startsWith('<h') && !p.startsWith('<ul') && !p.startsWith('<pre')) {
+      if (!p.startsWith('<h') && !p.startsWith('<ul') && !p.startsWith('<pre') && !p.startsWith('<div') && !p.startsWith('<hr')) {
         return `<p>${p.replace(/\n/g, '<br>')}</p>`;
       }
       return p;

@@ -1,0 +1,22 @@
+# Sistema Operativo macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# File PDF pesanti (superano il limite di GitHub)
+*.pdf
+*.PDF
+
+# Cache e artefatti Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# File di dump intermedi / temporanei
+*.tmp
+*.temp

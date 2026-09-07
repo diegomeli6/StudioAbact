@@ -1,354 +1,548 @@
-// Dati di studio e quiz approfonditi sul codice di 'Progetto_Esame_Cards' (HTML & CSS)
+// Dati di studio approfonditi sul codice del Progetto Esame Cards
 window.CARDS_DATA = [
   {
     "id": "cards-m1",
     "number": 1,
     "title": "Struttura HTML Semantica & Metadati",
-    "subtitle": "Analisi dell'architettura di index.html, tag semantici e accessibilità",
-    "readTime": "8 min",
-    "summary": "### Analisi della struttura di `index.html`\nIl progetto *MagicTheArchive* è costruito su una solida struttura semantica HTML5 conforme agli standard W3C.\n\n```html\n<!doctype html>\n<html lang=\"it\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>MagicTheArchive | Home</title>\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"IMG/Icon.ico\" />\n    <link rel=\"stylesheet\" href=\"style.css\" />\n  </head>\n```\n\n### Elementi chiave del `<head>`\n1. `<!doctype html>`: dichiara la modalità standard HTML5 al motore di rendering del browser.\n2. `<html lang=\"it\">`: dichiara la lingua del documento (fondamentale per screen reader e pronuncia corretta, oltre che per i motori di ricerca).\n3. `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />`: istruzione cardine del Responsive Web Design. Senza questo tag, i dispositivi mobili simulerebbero una pagina desktop a 980px rendendo il testo microscopico.\n4. `<link rel=\"icon\" type=\"image/x-icon\" href=\"IMG/Icon.ico\" />`: visualizza la favicon nella scheda del browser.\n\n### Architettura Semantica del `<body>`\nIl layout è suddiviso in macro-sezioni semantiche ben distinte:\n- `<header>`: racchiude il logo del sito, il checkbox per il menu mobile e il tag `<nav>` con l'elenco `<ul>` dei link.\n- `<section class=\"hero\">`: area di impatto visivo principale (Hero Header) con immagine di sfondo, logo e testo descrittivo.\n- `<section class=\"categorie\">`: blocco di navigazione verso i tre macro-rami del sito (*Gioco*, *Espansioni*, *Formati*).\n- `<section class=\"banner-lo-hobbit\">`: sezione promozionale dedicata alle ultime uscite.\n- `<section class=\"lista-argomenti\">`: carrellata editoriale con le card degli articoli in evidenza.\n- `<footer>`: chiusura del documento con link rapidi, texture grafica e crediti formali del team di lavoro.",
+    "subtitle": "Architettura di index.html, tag semantici, metadati viewport e accessibilità WCAG",
+    "readTime": "9 min",
+    "summary": "### Architettura del documento `index.html`\nIl progetto didattico d'esame *MagicTheArchive* è strutturato su una rigorosa impalcatura HTML5 conforme alle direttive W3C e WCAG.\n\n```html\n<!doctype html>\n<html lang=\"it\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>MagicTheArchive | Home</title>\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"IMG/Icon.ico\" />\n    <link rel=\"stylesheet\" href=\"style.css\" />\n  </head>\n```\n\n### Analisi approfondita dei metadati nel `<head>`\n1. `<!doctype html>`: istruzione preambolare che forza il browser ad attivare la **modalità standard** (evitando la modalità *quirks* retrocompatibile che altererebbe il calcolo delle dimensioni del Box Model).\n2. `<html lang=\"it\">`: dichiara formalmente la lingua naturale del documento; è fondamentale per le tecnologie assistive (sintesi vocale degli screen reader che adotta la corretta fonetica) e per i motori di ricerca.\n3. `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />`: la direttiva imprescindibile del Responsive Web Design. Impone al viewport virtuale del dispositivo mobile di coincidere con la larghezza fisica dello schermo (`width=device-width`) con un fattore di scala iniziale pari a 1:1, prevenendo il ridimensionamento a 980px con conseguente testo microscopico.\n4. `<link rel=\"stylesheet\" href=\"style.css\" />`: inclusione del foglio di stile esterno senza attributi obsoleti come `type=\"text/css\"`.\n\n### Gerarchia e partizione semantica del `<body>`\nIl layout abbandona la vecchia prassi dei `<div>` generici a favore di tag semantici che descrivono il ruolo del contenuto:\n- `<header>`: testata del sito contenente il marchio (`.logo`), il selettore del menu mobile e il contenitore di navigazione `<nav>`.\n- `<nav>`: racchiude l'elenco non ordinato `<ul>` con i collegamenti ipertestuali alle sezioni principali (*Gioco*, *Espansioni*, *Formati*, *Chi Siamo*).\n- `<section class=\"hero\">`: area a forte impatto visivo (hero banner) che introduce il portale con titolo e call to action.\n- `<section class=\"categorie\">`: griglia di navigazione tassonomica verso le tre macro-aree di approfondimento.\n- `<section class=\"banner-lo-hobbit\">`: sezione promozionale tematica.\n- `<section class=\"lista-argomenti\">`: aggregatore editoriale delle card informative degli articoli.\n- `<footer>`: chiusura del documento con link secondari, copyright e riferimenti degli autori.",
     "keyPoints": [
-      "Uso rigoroso dei tag semantici HTML5: header, nav, section, footer.",
-      "Meta viewport indispensabile per adattare la scala sui dispositivi mobili.",
-      "L'attributo lang='it' garantisce l'accessibilità per le tecnologie assistive.",
-      "Nesting logico: header contiene nav e ul per i link di navigazione persistente."
+      "Doctype HTML5 per garantire il rendering standard del Box Model.",
+      "Meta viewport essenziale per sincronizzare la scala logica e fisica sui display mobili.",
+      "Attributo lang='it' per l'accessibilità e la pronuncia corretta da parte degli screen reader.",
+      "Struttura semantica rigorosa: header, nav, section, article e footer."
     ],
     "flashcards": [
       {
-        "question": "Cosa accadrebbe su smartphone se rimuovessimo il tag <meta name='viewport' content='width=device-width, initial-scale=1.0'> da index.html?",
-        "answer": "Lo smartphone visualizzerebbe la pagina come se fosse su un monitor desktop da circa 980px, rimpicciolendo tutti i testi e costringendo l'utente a fare 'pinch-to-zoom'."
+        "question": "Cosa accadrebbe su smartphone se si omettesse il meta tag viewport?",
+        "answer": "Il browser mobile simulerebbe un monitor desktop largo circa 980px, rimpicciolendo drasticamente testi e card e forzando l'utente allo zoom manuale."
       },
       {
-        "question": "Quali tag semantici principali compongono la struttura verticale del body in index.html?",
-        "answer": "<header> (con logo e <nav>), quattro <section> specializzate (hero, categorie, banner, lista-argomenti) e il <footer> finale."
+        "question": "Qual è il beneficio di utilizzare <nav> al posto di un generico <div class='menu'>?",
+        "answer": "I browser e gli screen reader riconoscono il tag <nav> come punto di riferimento (landmark), consentendo agli utenti non vedenti di saltare direttamente alla navigazione."
       },
       {
-        "question": "Perché nel form di navigazione del menu mobile è stato aggiunto l'attributo aria-label='Menu' al tag <label>?",
-        "answer": "Perché la label contiene solo tre tag <span> grafici senza testo; l'aria-label comunica agli screen reader per non vedenti che quel pulsante serve ad aprire il menu."
+        "question": "A cosa serve l'attributo aria-label='Menu' applicato alla label del menu mobile?",
+        "answer": "Dato che l'etichetta contiene solo linee grafiche (span) prive di testo, l'aria-label fornisce una descrizione testuale accessibile alle tecnologie assistive."
       }
     ],
     "quiz": [
       {
-        "question": "Nel codice di index.html, quale tag semantico racchiude i collegamenti a 'Gioco', 'Espansioni', 'Formati' e 'Chi Siamo'?",
+        "question": "Nel codice di index.html, quale tag semantico è stato impiegato per raggruppare i link di navigazione primaria?",
         "options": [
-          "<div class='navigatore'>",
-          "<nav>",
-          "<aside>",
-          "<section class='menu'>"
+          "Il tag semantico <nav> per identificare il blocco di collegamenti",
+          "Il tag generico <div class='navigatore'> privo di semantica nativa",
+          "Il tag accessorio <aside> riservato ai contenuti correlati secondari",
+          "Il tag strutturale <section class='menu'> privo di valore landmark"
         ],
-        "correctIndex": 1,
-        "explanation": "Il tag standard HTML5 dedicato ai blocchi di navigazione principale è <nav>."
+        "correctIndex": 0,
+        "explanation": "Il tag HTML5 standard deputato a racchiudere i link di navigazione principale è <nav>, che funge da landmark accessibile."
       },
       {
-        "question": "A cosa serve l'attributo lang='it' sul tag <html> di index.html?",
+        "question": "Qual è l'effetto tecnico dell'istruzione <meta name='viewport' content='width=device-width, initial-scale=1.0'>?",
         "options": [
-          "A impedire l'accesso agli utenti che si collegano dall'estero",
-          "A comunicare a browser, motori di ricerca e screen reader che il testo della pagina è in lingua italiana",
-          "A impostare automaticamente i colori della bandiera italiana",
-          "A caricare il dizionario di correzione ortografica nel database"
+          "Impedisce all'utente di effettuare qualsiasi ridimensionamento della pagina web",
+          "Allinea la larghezza della finestra del browser alla larghezza fisica dello schermo",
+          "Attiva automaticamente la modalità scura quando il dispositivo è a batteria bassa",
+          "Comprime le immagini del sito web per risparmiare traffico dati sulla rete mobile"
         ],
         "correctIndex": 1,
-        "explanation": "L'attributo lang informa le tecnologie assistive (screen reader) e i motori di ricerca sulla lingua da utilizzare per la lettura."
+        "explanation": "L'attributo width=device-width istruisce il browser del dispositivo mobile ad adattare la griglia di layout alla risoluzione effettiva dello schermo."
+      },
+      {
+        "question": "Perché l'attributo lang='it' all'interno del tag <html> è critico per l'accessibilità?",
+        "options": [
+          "Consente ai sintetizzatori vocali per non vedenti di applicare le regole fonetiche italiane",
+          "Obbliga il motore di ricerca a visualizzare il sito unicamente agli utenti con indirizzo IP italiano",
+          "Modifica automaticamente i caratteri tipografici sostituendoli con font disegnati in Italia",
+          "Traduce in tempo reale tutti i termini stranieri inseriti dagli autori all'interno del codice sorgente"
+        ],
+        "correctIndex": 0,
+        "explanation": "Gli screen reader utilizzano la dichiarazione lang per selezionare il motore di sintesi vocale appropriato, evitando pronunce errate."
+      },
+      {
+        "question": "Quale conseguenza provocherebbe la rimozione del preambolo <!doctype html> dalla prima riga del file?",
+        "options": [
+          "Il browser caricherebbe il file in modalità quirks alterando il calcolo delle dimensioni del Box Model",
+          "Il server rifiuterebbe la connessione HTTP restituendo all'utente una schermata di errore 404",
+          "Tutti i file CSS collegati verrebbero ignorati bloccando completamente il caricamento della pagina",
+          "I comandi JavaScript perderebbero la capacità di selezionare gli elementi del DOM tramite querySelector"
+        ],
+        "correctIndex": 0,
+        "explanation": "Senza doctype moderno, i browser attivano la Quirks Mode retrocompatibile, compromettendo il box model e il posizionamento CSS."
+      },
+      {
+        "question": "All'interno di index.html, quale elemento racchiude ciascuna singola card di articolo nella sezione argomenti?",
+        "options": [
+          "Un blocco autonomo strutturato con tag semantico o classe specifica che ne delimita il contenuto",
+          "Un tag <pre> pensato per visualizzare porzioni di codice sorgente non formattato",
+          "Un semplice tag <span> in linea che non consente l'assegnazione di margini verticali",
+          "Una tabella <table> a celle multiple utilizzata secondo i vecchi standard del web anni Novanta"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le card sono componenti modulari a blocco che raggruppano immagine, titolo, tassonomia e descrizione in una struttura semantica coerente."
       }
     ],
     "openQuestions": [
       {
-        "question": "Illustra come è strutturata la gerarchia dei titoli (h1, h2, h3, h5) all'interno di index.html e spiega se rispetta la gerarchia logica dei contenuti.",
-        "modelAnswer": "In index.html la gerarchia visiva ed editoriale è articolata: nella hero delle categorie compare l'h1 per il titolo principale della pagina; nelle card categorie si utilizza l'h3 per identificare le sezioni ('Il Gioco', 'Le Espansioni', 'I Formati'); nella sezione articoli compare un h2 per il titolo di sezione ('Leggi anche') e h2 per i singoli articoli ('La Storia', 'Modern'), accompagnati da h5 per indicare la categoria di appartenenza. Questa gerarchia permette ai motori di ricerca e agli screen reader di distinguere i macro-temi dagli argomenti specifici."
+        "question": "Descrivi i componenti essenziali del tag <head> in index.html e spiega perché la semantica HTML5 è superiore ai semplici tag <div> generici.",
+        "modelAnswer": "Il tag <head> definisce la codifica caratteri UTF-8, il meta viewport per la corretta scalatura mobile, il titolo del documento per SEO e browser tab, la favicon e il collegamento al foglio di stile CSS. L'uso dei tag semantici HTML5 (header, nav, section, article, footer) è superiore ai semplici div perché fornisce significato alla struttura (landmarks), consentendo ai motori di ricerca di indicizzare correttamente la gerarchia e agli screen reader di consentire la navigazione facilitata per utenti con disabilità."
       }
     ]
   },
   {
     "id": "cards-m2",
     "number": 2,
-    "title": "Fondamenti CSS, Reset & Variabili :root",
-    "subtitle": "Custom properties, box-sizing: border-box e gestione globale delle immagini",
-    "readTime": "8 min",
-    "summary": "### Il blocco iniziale di `style.css`\nLe prime righe del foglio di stile stabiliscono i token visivi e le regole base di calcolo geometrico:\n\n```css\n:root {\n  --rosso: #ce3021;\n  --grigio: #f7f7f7;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif;\n}\n\nbody {\n  color: #000;\n  background-color: var(--grigio);\n  line-height: 1.4;\n  -webkit-font-smoothing: antialiased;\n}\n\nimg {\n  display: block;\n  max-width: 100%;\n}\n```\n\n### Concetti chiave da sapere all'esame\n\n#### 1. Le Variabili CSS (`:root`)\n- La pseudo-classe `:root` fa riferimento alla radice del documento (l'elemento `<html>`), rendendo le variabili accessibili ovunque.\n- `--rosso: #ce3021;` è il colore primario del brand (usato per hover, accenti e icone).\n- `--grigio: #f7f7f7;` è il colore neutro di sfondo della pagina.\n- Vengono richiamate con la funzione `var(--rosso)`, facilitando la manutenzione centralizzata.\n\n#### 2. Il CSS Reset con `box-sizing: border-box`\n- Per impostazione predefinita del browser (`box-sizing: content-box`), se a un elemento largo 300px si aggiungono 20px di padding e 2px di bordo, la larghezza totale diventa `300 + 40 + 4 = 344px`, sballando i layout.\n- Con `box-sizing: border-box`, la proprietà `width` include già padding e bordi all'interno dei 300px, rendendo il calcolo del layout matematicamente perfetto e prevedibile.\n\n#### 3. Gestione Responsive delle Immagini\n- `img { display: block; max-width: 100%; }`:\n  - `display: block` elimina il fastidioso spazio vuoto di 3-4px sotto le immagini (dovuto al fatto che di default le immagini sono elementi inline posizionati sulla baseline del testo).\n  - `max-width: 100%` garantisce che le immagini non fuoriescano mai dal contenitore genitore su schermi piccoli.",
+    "title": "Il Box Model CSS & Azzeramento Globale",
+    "subtitle": "Calcolo dello spazio, box-sizing: border-box, margini, padding e reset universale",
+    "readTime": "10 min",
+    "summary": "### Il Box Model nel World Wide Web\nNel linguaggio CSS, ogni elemento renderizzato sulla pagina viene calcolato come una scatola rettangolare (Box).\nIl Box Model si compone di quattro aree concentriche (dall'interno verso l'esterno):\n1. **Content**: l'area dove risiedono testo, immagini o elementi figli.\n2. **Padding (Spaziatura interna)**: lo spazio di respiro trasparente attorno al contenuto, ma all'interno dell'eventuale sfondo o bordo.\n3. **Border (Bordo)**: la linea perimetrale visibile che delimita il box.\n4. **Margin (Margine esterno)**: lo spazio trasparente che separa il box dagli elementi circostanti.\n\n### La rivoluzione di `box-sizing: border-box`\nNel modello tradizionale W3C (`content-box`):\n$$\\text{Larghezza totale} = \\text{width} + \\text{padding-left} + \\text{padding-right} + \\text{border-left} + \\text{border-right}$$\nQuesto rendeva il calcolo dei layout matematicamente instabile: assegnando `width: 50%` e `padding: 20px` a due colonne affiancate, la somma superava il 100%, spingendo la seconda colonna a capo.\n\nNel file `style.css` del progetto esame viene adottato il reset moderno universale:\n```css\n*,\n*::before,\n*::after {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n```\nCon `box-sizing: border-box`, la proprietà `width` include già al suo interno il padding e il bordo:\n$$\\text{Content effettivo} = \\text{width dichiarata} - (\\text{padding} + \\text{border})$$\nQuesto garantisce che un elemento impostato a `width: 33.333%` occuperà esattamente un terzo dello spazio disponibile, a prescindere dal padding interno assegnato.\n\n### Il collasso dei margini verticali (Margin Collapse)\nUn fenomeno cruciale del Box Model: quando due margini verticali adiacenti si toccano nel normale flusso di blocco, non si sommano, ma collassano nel margine più grande tra i due. Non accade invece sui margini orizzontali o all'interno di contenitori Flexbox e CSS Grid.",
     "keyPoints": [
-      "Variabili CSS in :root per centralizzare i colori di brand (--rosso, --grigio).",
-      "box-sizing: border-box: calcola padding e bordi all'interno della larghezza definita.",
-      "display: block su img per azzerare lo spazio fantasma sulla baseline.",
-      "max-width: 100% per rendere tutte le immagini fluide e responsive."
+      "I 4 livelli del Box Model: Content, Padding, Border e Margin.",
+      "box-sizing: border-box include padding e bordo nella larghezza totale dichiarata.",
+      "Il reset universale con selettore asterisco previene divergenze di layout cross-browser.",
+      "Il margin collapsing agisce solo sui margini verticali nel normale flusso a blocchi."
     ],
     "flashcards": [
       {
-        "question": "Qual è la differenza tra box-sizing: content-box (default) e box-sizing: border-box applicato nel progetto?",
-        "answer": "In content-box padding e bordi si sommano all'esterno della width; in border-box padding e bordi sono compresi dentro la larghezza dichiarata, semplificando la gestione del layout."
+        "question": "Qual è la formula di calcolo della larghezza totale di un elemento con box-sizing: border-box?",
+        "answer": "La larghezza totale corrisponde esattamente alla proprietà width dichiarata (il padding e il bordo vengono sottratti dallo spazio del contenuto)."
       },
       {
-        "question": "Perché nel file style.css è impostato 'img { display: block; }'?",
-        "answer": "Perché i tag <img> sono nativamente elementi inline; renderli block elimina lo spazio vuoto indesiderato di default che si crea sotto le immagini allineate alla baseline tipografica."
+        "question": "Perché nel reset globale di style.css vengono inclusi anche *::before e *::after?",
+        "answer": "Per garantire che anche gli pseudo-elementi generati tramite CSS ereditino il medesimo modello border-box, prevenendo anomalie dimensionali."
       },
       {
-        "question": "Come si definisce e come si richiama una custom property (variabile) in CSS?",
-        "answer": "Si definisce con il prefisso '--' (es. --rosso: #ce3021;) e si richiama usando la funzione var() (es. color: var(--rosso);)."
+        "question": "Cosa si intende per 'collasso dei margini' (margin collapse)?",
+        "answer": "È il comportamento per cui due margini verticali adiacenti non si sommano, ma si fondono assumendo la dimensione del margine di valore maggiore."
       }
     ],
     "quiz": [
       {
-        "question": "Nel selettore '*' di style.css, perché viene specificato 'box-sizing: border-box;' per tutti gli elementi?",
+        "question": "Se a un elemento con larghezza 300px e box-sizing: content-box aggiungiamo padding: 20px su tutti i lati, quale sarà la larghezza totale?",
         "options": [
-          "Per disegnare un bordo nero attorno a ogni blocco del sito",
-          "Per fare in modo che padding e border non aumentino le dimensioni totali stabilite con width ed height",
-          "Per disabilitare la barra di scorrimento laterale",
-          "Per centrare automaticamente tutti i testi della pagina"
+          "300 pixel, poiché il padding si distribuisce internamente senza espandere la scatola",
+          "340 pixel, poiché si sommano i 20px del padding sinistro e i 20px del padding destro",
+          "320 pixel, poiché il browser applica il padding unicamente sulla coordinata sinistra",
+          "260 pixel, poiché la misura del padding viene detratta dalla larghezza del contenuto"
         ],
         "correctIndex": 1,
-        "explanation": "border-box include padding e bordi all'interno delle dimensioni assegnate, evitando che gli elementi sbordino dalle griglie."
+        "explanation": "Con content-box, la larghezza finale è width (300px) + padding sinistro (20px) + padding destro (20px) = 340px."
       },
       {
-        "question": "In style.css, a quale elemento fa riferimento la pseudo-classe ':root'?",
+        "question": "Quale vantaggio primario offre la regola globale 'box-sizing: border-box' applicata a tutti gli elementi?",
         "options": [
-          "Al tag <body>",
-          "Alla radice del documento (l'elemento <html>)",
-          "Al primo tag <div> del codice",
-          "Alla cartella principale del server"
+          "Rende il calcolo delle griglie intuitivo poiché padding e bordi non eccedono la larghezza impostata",
+          "Elimina completamente la necessità di scrivere codice CSS specifico per i dispositivi mobili",
+          "Aumenta la risoluzione grafica dei file immagine vettoriali inseriti nel documento HTML",
+          "Consente di ignorare le regole di contrasto cromatico stabilite dalle linee guida WCAG"
+        ],
+        "correctIndex": 0,
+        "explanation": "Con border-box, la larghezza impostata non viene mai superata dall'aggiunta di padding o bordi, facilitando la creazione di layout complessi."
+      },
+      {
+        "question": "Quale tra le seguenti aree del Box Model CSS si trova immediatamente all'esterno del bordo?",
+        "options": [
+          "L'area del Padding, che circonda internamente la cornice visibile",
+          "L'area del Margine (Margin), che distanzia l'elemento dai blocchi circostanti",
+          "L'area del Content, che ospita direttamente la stringa di testo o immagine",
+          "L'area dello Stroke vettoriale, generata solo durante le animazioni"
         ],
         "correctIndex": 1,
-        "explanation": ":root ha specificità identica a una classe e punta all'elemento radice del documento HTML, cioè <html>."
+        "explanation": "Il Margin è lo strato più esterno del Box Model e si colloca esternamente rispetto al Border."
+      },
+      {
+        "question": "Cosa caratterizza il fenomeno del 'Margin Collapsing' (collasso dei margini) in CSS?",
+        "options": [
+          "Si verifica unicamente tra elementi disposti in linea all'interno dello stesso paragrafo",
+          "Due margini verticali contigui nel normale flusso si sovrappongono assumendo la misura del più grande",
+          "I margini orizzontali di due card contigue si azzerano quando lo schermo supera i 1200px",
+          "Il browser converte i valori dichiarati in pixel in percentuali relative al contenitore padre"
+        ],
+        "correctIndex": 1,
+        "explanation": "Nel flusso normale di blocco, i margini verticali contigui collassano nel valore più elevato tra i due invece di sommarsi."
+      },
+      {
+        "question": "Per quale motivo il reset universale in style.css azzera preliminarmente margin e padding con il selettore asterisco?",
+        "options": [
+          "Per rimuovere le spaziature predefinite dei browser che variano da un programma all'altro",
+          "Per impedire all'utente di selezionare il testo della pagina web con il cursore del mouse",
+          "Per disabilitare la barra di scorrimento verticale su monitor ad altissima definizione",
+          "Per accelerare la velocità di download dei file multimediali dal server web remoto"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ogni browser applica margini e padding predefiniti differenti (es. su body, h1, p, ul); il reset garantisce un punto di partenza uniforme e prevedibile."
       }
     ],
     "openQuestions": [
       {
-        "question": "Spiega il significato e l'utilità del font-stack di sistema dichiarato nel selettore universale '*' di style.css.",
-        "modelAnswer": "Il font-stack '-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif' adotta i caratteri tipografici nativi del sistema operativo dell'utente (San Francisco su macOS/iOS, Segoe UI su Windows, Roboto su Android). I vantaggi sono: 1. Prestazioni eccezionali: tempo di caricamento nullo poiché non serve scaricare file font esterni via web (zero ritardo FOIT/FOUT). 2. Familiarità visiva: l'interfaccia si integra armoniosamente con l'aspetto delle app native del dispositivo."
+        "question": "Spiega dettagliatamente la differenza pratica tra box-sizing: content-box e box-sizing: border-box, indicando perché quest'ultimo è lo standard moderno.",
+        "modelAnswer": "In content-box (default storico del browser), width e height si applicano solo al contenuto; padding e bordi si sommano all'esterno, rendendo difficoltoso il calcolo delle percentuali (es. due elementi al 50% con padding andranno a capo). In border-box, width e height rappresentano la misura finita della scatola: padding e bordi vengono assorbiti all'interno, riducendo lo spazio a disposizione del testo ma mantenendo invariate le dimensioni totali del blocco, rendendo i layout modulari stabili e calcolabili."
       }
     ]
   },
   {
     "id": "cards-m3",
     "number": 3,
-    "title": "Posizionamento Avanzato & Hero Section",
-    "subtitle": "Position sticky, relative/absolute, layering z-index e object-fit: cover",
-    "readTime": "9 min",
-    "summary": "### Header Sticky e Posizionamento\n```css\nheader {\n  height: 70px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 0 50px;\n  background-color: #fff;\n  position: sticky;\n  top: 0;\n  z-index: 1000;\n  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);\n}\n```\n- `position: sticky; top: 0;`: l'header si comporta come un elemento normale finché l'utente scorre la pagina; non appena tocca la cima dello schermo (`top: 0`), rimane ancorato visibile.\n- `z-index: 1000;`: assicura che l'header e il menu passino sempre sopra a tutti gli altri elementi durante lo scroll.\n\n### Lo schema Relative / Absolute della Hero\n```css\n.hero {\n  position: relative;\n  width: 100%;\n  height: 95vh;\n  min-height: 600px;\n  display: flex;\n  align-items: flex-end;\n  padding: 80px 10%;\n  overflow: hidden;\n}\n\n.sfondo-hero {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n  z-index: -1;\n}\n\n.contenuto-hero {\n  position: relative;\n  max-width: 40vw;\n  z-index: 2;\n}\n```\n\n### Perché questa combinazione è fondamentale\n1. `.hero` ha `position: relative`: funge da **sistema di coordinate (containing block)** per i figli assoluti.\n2. `.sfondo-hero` ha `position: absolute; top: 0; left: 0; width: 100%; height: 100%;`: riempie esattamente tutta la superficie della hero.\n3. `object-fit: cover`: evita che l'immagine si deformi o si allunghi, ritagliandola elegantemente al centro per coprire l'intera area indipendentemente dalle proporzioni dello schermo.\n4. `z-index: -1` per lo sfondo e `z-index: 2` per il testo: garantisce che il testo stia sopra l'immagine.\n5. Unità di misura moderne: `height: 95vh` (occupa il 95% dell'altezza della finestra visibile) e `max-width: 40vw` (il testo occupa al massimo il 40% della larghezza dello schermo).",
+    "title": "CSS Grid, Griglie Fluide & Layout Cards",
+    "subtitle": "display: grid, repeat(3, 1fr), gap, allineamento e media queries responsive",
+    "readTime": "11 min",
+    "summary": "### La griglia bidimensionale: CSS Grid Layout\nA differenza di Flexbox (orientato prevalentemente a layout monodimensionali su riga o colonna), **CSS Grid** è stato progettato per governare simultaneamente righe e colonne bidimensionali.\n\nNel file `style.css` del progetto esame, la sezione `.lista-argomenti` e le categorie sono gestite con griglie avanzate:\n```css\n.lista-argomenti {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 30px;\n  max-width: 1200px;\n  margin: 0 auto;\n}\n```\n\n### Decostruzione delle istruzioni di griglia\n1. `display: grid`: attiva il contesto di formattazione a griglia sul contenitore genitore; tutti i figli diretti diventano istantaneamente *grid items*.\n2. `grid-template-columns: repeat(3, 1fr)`:\n   - La funzione `repeat(3, ...)` definisce 3 colonne ripetute con lo stesso schema.\n   - L'unità frazionaria `fr` (*fraction unit*) rappresenta una quota dello spazio libero disponibile nel contenitore. Tre colonne `1fr` si dividono lo spazio in tre parti identiche (33.333% ciascuna al netto dei gap).\n3. `gap: 30px`: definisce lo spazio di separazione (*gutters*) tra righe e colonne. Rispetto ai vecchi margini negativi di float, il `gap` non viene applicato sui bordi esterni del contenitore, garantendo un allineamento perfetto con i margini della pagina.\n4. `max-width: 1200px; margin: 0 auto;`: schema standard di contenimento per monitor widescreen: impedisce alle card di allargarsi all'infinito e centra il blocco orizzontalmente.\n\n### Strategia di adattamento responsive con Media Queries\nSu dispositivi mobili con schermo ridotto, una griglia a 3 colonne risulterebbe illeggibile. Nel progetto viene impiegata una media query con approccio progressivo:\n```css\n@media (max-width: 900px) {\n  .lista-argomenti {\n    grid-template-columns: repeat(2, 1fr);\n    gap: 20px;\n  }\n}\n\n@media (max-width: 600px) {\n  .lista-argomenti {\n    grid-template-columns: 1fr;\n    gap: 15px;\n  }\n}\n```\nIn questo modo il layout passa fluidamente da 3 colonne su desktop, a 2 colonne su tablet, fino a 1 colonna singola a tutta larghezza su smartphone.",
     "keyPoints": [
-      "position: sticky sull'header per mantenerlo sempre accessibile durante lo scorrimento.",
-      "Schema classico Hero: contenitore relative + immagine absolute con object-fit: cover.",
-      "object-fit: cover adatta e ritaglia la foto senza deformare le proporzioni native.",
-      "Gestione dei piani con z-index: sfondo a -1, testo a 2, header a 1000.",
-      "Unità viewport vh e vw per dimensionamenti armonici rispetto allo schermo dell'utente."
+      "CSS Grid gestisce layout bidimensionali completi (righe e colonne contemporaneamente).",
+      "L'unità fr divide lo spazio residuo in modo flessibile ed elastico.",
+      "La proprietà gap gestisce gli spazi tra le celle senza intaccare i margini esterni del contenitore.",
+      "Riorganizzazione responsive a breakpoint: 3 colonne (desktop) ➔ 2 colonne (tablet) ➔ 1 colonna (mobile)."
     ],
     "flashcards": [
       {
-        "question": "Come funziona la proprietà 'position: sticky' impostata sull'header?",
-        "answer": "Si comporta come static fino al raggiungimento della soglia dichiarata (top: 0); superata tale soglia, rimane 'incollato' in testa alla finestra durante lo scroll."
+        "question": "Cosa rappresenta l'unità di misura 'fr' in CSS Grid?",
+        "answer": "Rappresenta una frazione (fraction) dello spazio disponibile non occupato all'interno del contenitore di griglia."
       },
       {
-        "question": "Perché è necessario impostare 'position: relative' sul contenitore .hero se lo sfondo è 'position: absolute'?",
-        "answer": "Perché un elemento absolute si posiziona rispetto al primo antenato che non sia 'static'. Senza relative su .hero, lo sfondo si posizionerebbe rispetto all'intera pagina HTML."
+        "question": "Qual è il vantaggio di usare la proprietà 'gap' rispetto ai margini tradizionali sui singoli elementi?",
+        "answer": "La proprietà gap crea spaziatura solo tra gli elementi interni, senza aggiungere spazio indesiderato sui bordi esterni della griglia."
       },
       {
-        "question": "Cosa fa la proprietà 'object-fit: cover' sull'immagine di sfondo della Hero?",
-        "answer": "Scala l'immagine mantenendone le proporzioni per riempire l'intero riquadro (100% width e height), ritagliando le parti eccedenti senza mai deformarla."
+        "question": "Cosa indica la sintassi grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))?",
+        "answer": "Crea una griglia intrinsecamente responsive che genera automaticamente quante più colonne da almeno 280px possibili, senza bisogno di media queries."
       }
     ],
     "quiz": [
       {
-        "question": "Se eliminiamo 'object-fit: cover;' dall'immagine '.sfondo-hero' avente width: 100% e height: 100%, cosa succede?",
+        "question": "Cosa indica l'istruzione CSS 'grid-template-columns: repeat(3, 1fr)'?",
         "options": [
-          "L'immagine scompare totalmente dallo schermo",
-          "L'immagine viene deformata e schiacciata/allungata per forzarla nelle proporzioni del contenitore",
-          "L'immagine diventa automaticamente in bianco e nero",
-          "Il browser mostra un errore nella console"
+          "Crea tre colonne identiche che dividono equamente lo spazio orizzontale libero disponibile",
+          "Definisce una griglia con tre righe sovrapposte ciascuna alta esattamente un frame al secondo",
+          "Ripete per tre volte la stessa immagine di sfondo all'interno del contenitore principale",
+          "Limita il caricamento degli elementi a un massimo di tre articoli per sessione di navigazione"
         ],
-        "correctIndex": 1,
-        "explanation": "Senza object-fit, assegnare sia larghezza che altezza al 100% forza l'immagine a perdere le proprie proporzioni native provocando distorsione visiva."
+        "correctIndex": 0,
+        "explanation": "repeat(3, 1fr) dichiara tre colonne di ampiezza uniforme, ciascuna pari a 1 frazione dello spazio libero."
       },
       {
-        "question": "Qual è lo scopo del valore 'z-index: 1000;' assegnato al tag <header> in style.css?",
+        "question": "Qual è la differenza concettuale fondamentale tra CSS Grid e Flexbox?",
         "options": [
-          "Impostare il peso del font dell'header a 1000",
-          "Posizionare l'header 1000 pixel sotto la cima della pagina",
-          "Garantire che durante lo scorrimento l'header rimanga sopra alle immagini e al testo che hanno z-index inferiori",
-          "Ritardare il caricamento dell'header di un secondo"
+          "Flexbox è bidimensionale mentre CSS Grid lavora esclusivamente lungo un singolo asse",
+          "CSS Grid governa contemporaneamente righe e colonne, mentre Flexbox è monodimensionale",
+          "Flexbox richiede l'esecuzione di codice JavaScript mentre CSS Grid è nativo per i browser",
+          "CSS Grid funziona unicamente con immagini mentre Flexbox è riservato ai testi tipografici"
         ],
-        "correctIndex": 2,
-        "explanation": "z-index controlla l'ordine di sovrapposizione lungo l'asse Z: un valore alto come 1000 evita che altri elementi scorrano 'sopra' l'header."
+        "correctIndex": 1,
+        "explanation": "Grid è un sistema bidimensionale (righe e colonne insieme), mentre Flexbox gestisce il flusso lungo un asse principale alla volta."
+      },
+      {
+        "question": "A cosa serve la dichiarazione 'margin: 0 auto;' combinata con una 'max-width: 1200px'?",
+        "options": [
+          "A impedire al testo della pagina di essere evidenziato o copiato dagli utenti",
+          "A centrare orizzontalmente il blocco dei contenuti impedendone l'espansione eccessiva su monitor grandi",
+          "A forzare il download del font istituzionale dai server cloud di Google Fonts",
+          "A bloccare lo scorrimento della pagina web fino al completamento del caricamento"
+        ],
+        "correctIndex": 1,
+        "explanation": "max-width stabilisce il tetto massimo di larghezza, mentre margin: 0 auto calcola margini orizzontali uguali centrando il contenitore."
+      },
+      {
+        "question": "Cosa accade alla proprietà 'gap: 30px' quando lo schermo scende sotto il breakpoint stabilito per smartphone?",
+        "options": [
+          "Viene solitamente ridotta (es. a 15px o 20px) per massimizzare l'area utile di lettura sui display piccoli",
+          "Viene moltiplicata per due per evitare che i pollici dell'utente premano per errore i tasti vicini",
+          "Viene disattivata del tutto trasformando la pagina in un unico blocco di testo continuo",
+          "Provoca un errore di sintassi CSS che blocca il funzionamento dell'intero foglio di stile"
+        ],
+        "correctIndex": 0,
+        "explanation": "Sui dispositivi mobili si riducono i gap tra le card per non sprecare lo spazio ristretto dello schermo."
+      },
+      {
+        "question": "In un layout responsive, cosa accade alla griglia a 3 colonne quando viene visualizzata su uno schermo largo 400px?",
+        "options": [
+          "La media query riorganizza la griglia impostando una colonna singola a tutta larghezza (1fr)",
+          "Le tre colonne si sovrappongono in trasparenza rendendo il testo illeggibile per l'utente",
+          "Il browser disattiva la connessione di rete mobile per prevenire il surriscaldamento del dispositivo",
+          "Le colonne vengono ritagliate sui lati nascondendo i due terzi dei contenuti della pagina"
+        ],
+        "correctIndex": 0,
+        "explanation": "Sui monitor compatti da smartphone la media query commuta la griglia su un'unica colonna incolonnando verticalmente le card."
       }
     ],
     "openQuestions": [
       {
-        "question": "Spiega come è stato risolto il problema della leggibilità del testo bianco posizionato sopra l'immagine di sfondo della hero section in style.css.",
-        "modelAnswer": "Nel CSS, oltre al contrasto cromatico tra testo bianco (#fff) e immagine di sfondo scura, è stata applicata la proprietà 'text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);' sui paragrafi e 'text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);' sui titoli h1. Quest'ombra scura morbida crea un contrasto locale immediato dietro ai caratteri, garantendo che il testo sia sempre perfettamente leggibile anche nelle porzioni dell'immagine fotografica che presentano riflessi chiari."
+        "question": "Spiega la sintassi di CSS Grid utilizzata per la sezione lista-argomenti e descrivi come viene gestita la transizione da desktop a mobile.",
+        "modelAnswer": "La sezione adotta display: grid con grid-template-columns: repeat(3, 1fr) e gap: 30px all'interno di un contenitore con max-width: 1200px e margin: 0 auto. Su desktop questo genera tre colonne perfette di larghezza identica con 30px di spazio tra loro. Tramite media queries a max-width: 900px e 600px, le colonne vengono progressivamente ridotte a 2 e infine a 1 singola colonna per gli smartphone, garantendo leggibilità ottimale senza scroll orizzontale."
       }
     ]
   },
   {
     "id": "cards-m4",
     "number": 4,
-    "title": "Flexbox & CSS Grid nel Layout del Progetto",
-    "subtitle": "Confronto tra Flexbox (1D) e CSS Grid (2D): Header, Categorie e Pagina Chi Siamo",
-    "readTime": "9 min",
-    "summary": "### L'uso combinato di Flexbox e Grid nel progetto\nNel progetto di Web Design, Flexbox e CSS Grid vengono usati in base alla loro vocazione:\n- **Flexbox**: per distribuzioni e allineamenti unidimensionali (lungo una riga o colonna).\n- **CSS Grid**: per gabbie modulari bidimensionali con colonne fisse o frazionate.\n\n### 1. Flexbox nell'Header e nella Navigazione\n```css\nheader {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n\nnav ul {\n  display: flex;\n  list-style: none;\n  gap: 35px;\n}\n```\n- `display: flex`: trasforma i figli diretti in flex-item.\n- `justify-content: space-between`: spinge il logo all'estrema sinistra e la navigazione all'estrema destra.\n- `align-items: center`: allinea perfettamente i centri verticali del logo e del testo del menu.\n- `gap: 35px`: spaziatura costante tra le voci del menu senza dover ricorrere a complessi `margin-right`.\n\n### 2. Flexbox nelle Card Categorie e Card Argomenti\n```css\n.categorie {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 50px;\n}\n\n.card-argomento {\n  display: flex;\n  flex-direction: row;\n  width: 100%;\n  max-width: 900px;\n}\n```\n- Nelle categorie le tre card sono affiancate al centro dello schermo con `gap: 50px`.\n- Nelle card argomento, `flex-direction: row` affianca l'immagine a sinistra e il blocco di testo a destra su desktop.\n\n### 3. CSS Grid nella Sezione 'Chi Siamo'\n```css\n.card_chisiamo {\n  width: 100%;\n  max-width: 850px;\n  margin: 60px auto 50px;\n  padding: 0 20px;\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  justify-content: center;\n  align-items: center;\n  gap: 25px;\n}\n```\n- `display: grid`: dichiara una griglia CSS bidimensionale.\n- `grid-template-columns: repeat(3, 1fr);`: crea 3 colonne di identica larghezza che occupano ciascuna una frazione (`1fr`) dello spazio disponibile.\n- `gap: 25px`: imposta la grondaia (*gutter*) tra le colonne in modo pulito e nativo.",
+    "title": "Custom Properties CSS (:root) & Design System Cromatico",
+    "subtitle": "Variabili native CSS, pseudo-classe :root, palette di progetto e consistenza del design system",
+    "readTime": "8 min",
+    "summary": "### Variabili CSS native (Custom Properties)\nPrima dell'introduzione delle Custom Properties, modificare una tonalità di colore o un valore di margine in un file CSS complesso richiedeva un'operazione rischiosa di 'Trova e Sostituisci'.\nLe Custom Properties CSS permettono di memorizzare valori riutilizzabili con supporto nativo nel browser (e senza necessità di precompilatori come Sass o Less).\n\nNel file `style.css` del progetto esame, la palette cromatica è centralizzata all'inizio del file tramite la pseudo-classe `:root`:\n```css\n:root {\n  --rosso: #ce3021;\n  --blu: #0c436b;\n  --giallo: #f7a827;\n  --nero: #1a1a1a;\n  --bianco: #ffffff;\n  --grigio-chiaro: #f4f4f4;\n  --grigio-scuro: #333333;\n  --font-principale: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n  --transizione-veloce: 0.3s ease;\n}\n```\n\n### La pseudo-classe `:root` e l'ereditarietà\n- `:root` seleziona l'elemento radice del documento (che in HTML coincide con il tag `<html>`), ma possiede una specificità superiore.\n- Definire le variabili in `:root` le rende disponibili in **modalità globale** a qualsiasi selettore della pagina attraverso la funzione `var(--nome-variabile)`.\n- Esempio pratico nel progetto:\n```css\n.card-titolo {\n  color: var(--blu);\n  font-family: var(--font-principale);\n  transition: color var(--transizione-veloce);\n}\n\n.card-titolo:hover {\n  color: var(--rosso);\n}\n```\n\n### Vantaggi sistemici nel Design System\n1. **Consistenza cromatica**: impedisce la proliferazione accidentale di codici esadecimali leggermente diversi (es. `#ce3021` vs `#cd2f20`).\n2. **Manutenibilità immediata**: la modifica del valore in un unico punto (`:root`) aggiorna all'istante bottoni, bordi, testi e hover in centinaia di regole CSS.\n3. **Predisposizione al Dark Mode**: ridefinendo i valori delle variabili all'interno di una classe `.dark-theme` o di una media query `@media (prefers-color-scheme: dark)`, l'intero sito cambia tema senza duplicare le dichiarazioni di stile.",
     "keyPoints": [
-      "Flexbox: allineamento monodimensionale lungo asse principale (main axis) e incrociato (cross axis).",
-      "justify-content: space-between per distanziare logo e menu agli estremi.",
-      "CSS Grid: layout bidimensionale con righe e colonne sincronizzate.",
-      "grid-template-columns: repeat(3, 1fr) per creare 3 colonne fluide identiche per il team.",
-      "gap: sostituisce margin e padding esterni per gestire le spaziature tra elementi."
+      "Le Custom Properties si dichiarano con il prefisso doppio trattino (--nome).",
+      "La pseudo-classe :root garantisce visibilità globale delle variabili in tutto il documento.",
+      "I valori si richiamano tramite la funzione nativa var(--nome-variabile).",
+      "Garantiscono consistenza visiva, rapida manutenibilità e facilità di tematizzazione (es. Dark Mode)."
     ],
     "flashcards": [
       {
-        "question": "Qual è la differenza fondamentale di utilizzo tra Flexbox e CSS Grid nel progetto?",
-        "answer": "Flexbox è usato per elementi disposti lungo un unico asse (header, riga orizzontale categorie); CSS Grid è usato per strutture a griglia modulare (card del team in repeat(3, 1fr))."
+        "question": "Con quale prefisso sintattico devono iniziare le variabili CSS native?",
+        "answer": "Devono obbligatoriamente iniziare con due trattini consecutivi (es. --colore-primario)."
       },
       {
-        "question": "Cosa significa 'grid-template-columns: repeat(3, 1fr);' nella classe .card_chisiamo?",
-        "answer": "Significa definire 3 colonne di larghezza uguale, ciascuna delle quali riceve 1 quota frazionaria (1fr) dello spazio orizzontale disponibile nella griglia."
+        "question": "A quale elemento del DOM corrisponde la pseudo-classe :root in un documento HTML?",
+        "answer": "Corrisponde all'elemento radice <html>, ma con un peso di specificità superiore rispetto a un semplice selettore di tag."
       },
       {
-        "question": "Quale proprietà Flexbox viene usata nell'header per spingere il logo a sinistra e i link a destra?",
-        "answer": "justify-content: space-between;"
+        "question": "Come si richiama il valore di una variabile CSS all'interno di una proprietà?",
+        "answer": "Utilizzando la funzione nativa var(), ad esempio: color: var(--rosso);"
       }
     ],
     "quiz": [
       {
-        "question": "Nella classe .card_chisiamo, cosa rappresenta l'unità di misura 'fr' in CSS Grid?",
+        "question": "Quale vantaggio offrono le Custom Properties CSS rispetto all'inserimento diretto di codici colore esadecimali?",
         "options": [
-          "Frame rate (frequenza dei fotogrammi al secondo)",
-          "Fractional unit (una frazione proporzionale dello spazio libero disponibile nel contenitore)",
-          "Front radius (il raggio di curvatura del bordo frontale)",
-          "Fixed resolution (pixel a risoluzione fissa)"
+          "Centralizzano i valori cromatici permettendo modifiche globali immediate e garantendo consistenza visiva",
+          "Riducono il consumo energetico della scheda video del visitatore durante la navigazione sul web",
+          "Eliminano la necessità di inserire immagini all'interno delle card e delle sezioni del sito",
+          "Consentono di convertire automaticamente il testo in caratteri tridimensionali animati"
         ],
-        "correctIndex": 1,
-        "explanation": "L'unità 'fr' distribuisce lo spazio residuo in parti proporzionali tra le colonne della griglia."
+        "correctIndex": 0,
+        "explanation": "Le Custom Properties fungono da token di design: centralizzano valori e colori, assicurando coerenza ed estrema manutenibilità."
       },
       {
-        "question": "Come viene gestita la spaziatura interna tra i link del tag <nav> in style.css?",
+        "question": "Perché le variabili globali del foglio di stile vengono dichiarate all'interno del selettore ':root'?",
         "options": [
-          "Inserendo caratteri di spazio vuoto non interrompibile (&nbsp;) nell'HTML",
-          "Tramite la proprietà 'gap: 35px;' sul flex container 'nav ul'",
-          "Impostando float: left con margin negativo",
-          "Usando la proprietà word-spacing sul tag <body>"
+          "Perché :root rappresenta l'elemento radice del documento rendendo le proprietà ereditabili ovunque",
+          "Perché i browser web bloccano qualsiasi variabile dichiarata all'interno di selettori di classe",
+          "Perché :root è un'istruzione riservata unicamente al caricamento dei file di script esterni",
+          "Perché impedisce agli utenti di ispezionare il codice sorgente tramite i DevTools del browser"
+        ],
+        "correctIndex": 0,
+        "explanation": "Dichiarando le custom properties su :root (elemento radice <html>), esse vengono ereditate a cascata da tutti gli elementi del DOM."
+      },
+      {
+        "question": "Qual è la sintassi corretta per applicare il colore definito nella variabile '--blu' al bordo di un elemento?",
+        "options": [
+          "border: 2px solid get(--blu);",
+          "border: 2px solid var(--blu);",
+          "border: 2px solid $--blu;",
+          "border: 2px solid #--blu;"
         ],
         "correctIndex": 1,
-        "explanation": "La proprietà gap su flex container e grid definisce la distanza esatta tra gli elementi figli senza margini laterali indesiderati."
+        "explanation": "La funzione standard CSS per estrarre il valore di una custom property è var(--nome-variabile)."
+      },
+      {
+        "question": "Come si definisce un valore di riserva (fallback) nella funzione var() qualora la variabile non fosse definita?",
+        "options": [
+          "Inserendo il valore alternativo come secondo argomento separato da virgola: var(--colore, #000);",
+          "Scrivendo due volte il comando var in sequenza: var(--colore) or var(#000);",
+          "Utilizzando il punto esclamativo prima del nome: var(!(--colore));",
+          "I browser moderni non supportano valori di riserva nelle Custom Properties"
+        ],
+        "correctIndex": 0,
+        "explanation": "La sintassi var(--variabile, valoreFallback) consente di specificare un valore di riserva qualora la variabile non sia dichiarata."
+      },
+      {
+        "question": "In che modo le Custom Properties facilitano l'implementazione di un tema scuro (Dark Mode)?",
+        "options": [
+          "Basta sovrascrivere i valori delle variabili colore all'interno della media query prefers-color-scheme",
+          "Richiedono di duplicare l'intera struttura dei file HTML creando una seconda cartella separata",
+          "Invertono automaticamente i pixel delle immagini fotografiche caricate sul server",
+          "Costringono il browser a ricaricare l'intera pagina da zero a ogni variazione di luce"
+        ],
+        "correctIndex": 0,
+        "explanation": "È sufficiente riassegnare i valori esadecimali delle variabili dentro la classe o media query del dark theme, senza toccare i selettori dei componenti."
       }
     ],
     "openQuestions": [
       {
-        "question": "Descrivi i vantaggi della proprietà 'gap' in Flexbox e Grid rispetto all'uso tradizionale di 'margin-right' con selettori ':last-child'.",
-        "modelAnswer": "Con la tecnica tradizionale dei margini, bisognava applicare 'margin-right' a ciascun figlio e poi rimuoverlo dall'ultimo elemento con ':last-child' o ':not(:last-child)' per evitare disallineamenti con i bordi del contenitore. Inoltre, in caso di a capo (flex-wrap), i margini verticali richiedevano ulteriore codice. La proprietà 'gap' (supportata nativamente in Flexbox e Grid) applica lo spazio esclusivamente tra gli elementi adiacenti, azzerando le eccezioni CSS e gestendo in automatico sia righe che colonne con una sola riga di codice pulita."
+        "question": "Mostra come vengono definite e utilizzate le Custom Properties in style.css e spiega il loro ruolo nella costruzione di un Design System.",
+        "modelAnswer": "In style.css le variabili vengono definite all'interno di :root con il prefisso doppio trattino (es. --rosso: #ce3021; --transizione-veloce: 0.3s ease;). Vengono richiamate nelle regole CSS con la funzione var(--rosso). In un Design System, queste variabili fungono da 'Design Tokens': standardizzano palette cromatiche, spaziature, tipografia e velocità di transizione, garantendo che l'intera squadra rispetti le linee guida del brand e consentendo modifiche globali istantanee."
       }
     ]
   },
   {
     "id": "cards-m5",
     "number": 5,
-    "title": "Il Menu Hamburger CSS-Only (Senza JavaScript)",
-    "subtitle": "La tecnica della checkbox nascosta, il selettore fratello ~ e l'animazione nella 'X'",
+    "title": "Il Checkbox Hack per Menu Mobile Responsive CSS-only",
+    "subtitle": "Interattività senza JavaScript: input checkbox, label for, :checked e combinatore fratello ~",
     "readTime": "10 min",
-    "summary": "### Il meccanismo del Menu Hamburger senza JavaScript\nUno dei punti tecnicamente più raffinati del progetto *MagicTheArchive* è la creazione del menu responsive mobile **completamente privo di codice JavaScript**: funziona al 100% tramite puro HTML e CSS!\n\n### Il codice HTML\n```html\n<input type=\"checkbox\" id=\"menu-toggle\" class=\"menu-toggle\" />\n<label for=\"menu-toggle\" class=\"burger-btn\" aria-label=\"Menu\">\n  <span></span>\n  <span></span>\n  <span></span>\n</label>\n<nav>\n  <ul>...</ul>\n</nav>\n```\n\n### Il codice CSS in Desktop vs Mobile\nSu desktop:\n```css\n.menu-toggle { display: none; }\n.burger-btn { display: none; }\n```\nSu schermi mobile (`@media (max-width: 900px)`):\n```css\n.burger-btn {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-around;\n  width: 28px;\n  height: 22px;\n  cursor: pointer;\n  z-index: 1002;\n}\n\n.burger-btn span {\n  display: block;\n  width: 100%;\n  height: 3px;\n  background-color: #000;\n  border-radius: 3px;\n  transition: all 0.3s ease;\n}\n```\n\n### La 'Magia' dello pseudo-selettore `:checked` e del combinatore `~`\nQuando l'utente clicca sulla `<label>`, per via dell'attributo `for=\"menu-toggle\"`, la checkbox nascosta passa allo stato `:checked`.\nGrazie al **combinatore fratello generale (`~`)**, il CSS applica stili condizionali a label e nav:\n\n```css\n/* Il primo span scende e ruota di 45 gradi */\n.menu-toggle:checked ~ .burger-btn span:nth-child(1) {\n  transform: translateY(7.5px) rotate(45deg);\n  background-color: var(--rosso);\n}\n\n/* Il secondo span centrale scompare */\n.menu-toggle:checked ~ .burger-btn span:nth-child(2) {\n  opacity: 0;\n}\n\n/* Il terzo span sale e ruota di -45 gradi */\n.menu-toggle:checked ~ .burger-btn span:nth-child(3) {\n  transform: translateY(-7.5px) rotate(-45deg);\n  background-color: var(--rosso);\n}\n\n/* Il tag nav si espande aprendo il menu */\n.menu-toggle:checked ~ nav {\n  max-height: 240px;\n  border-top: 1px solid rgba(0, 0, 0, 0.08);\n}\n```\nI tre segmenti neri si fondono fluidamente in una **'X' rossa di chiusura**, e il menu scorre verso il basso.",
+    "summary": "### Cos'è il 'Checkbox Hack'\nIl **Checkbox Hack** è una celebre tecnica di front-end che consente di creare componenti interattivi (come menu a scomparsa, fisarmoniche o toggle modali) **esclusivamente tramite HTML e CSS**, senza scrivere una singola riga di codice JavaScript.\n\n### I componenti della tecnica in `index.html`\n```html\n<!-- Checkbox reale nascosto -->\n<input type=\"checkbox\" id=\"menu-toggle\" class=\"menu-toggle\" />\n\n<!-- Pulsante grafico (Hamburger) associato al checkbox -->\n<label for=\"menu-toggle\" class=\"hamburger\" aria-label=\"Menu\">\n  <span></span>\n  <span></span>\n  <span></span>\n</label>\n\n<!-- Menu di navigazione che compare/scompare -->\n<nav class=\"nav-menu\">\n  <ul>\n    <li><a href=\"#\">Gioco</a></li>\n    <li><a href=\"#\">Espansioni</a></li>\n    <li><a href=\"#\">Formati</a></li>\n    <li><a href=\"#\">Chi Siamo</a></li>\n  </ul>\n</nav>\n```\n\n### Meccanica e selettori in `style.css`\n1. **Il collegamento tra label e input**:\n   - L'attributo `for=\"menu-toggle\"` sulla `<label>` punta all'attributo `id=\"menu-toggle\"` dell'input.\n   - Ogni volta che l'utente clicca sulla label (o sull'icona hamburger), il browser inverte lo stato del checkbox da spuntato (`checked`) a non spuntato (`unchecked`).\n2. **Occultamento visivo del checkbox nativo**:\n   - `display: none;` rende invisibile il quadrato del checkbox di sistema, lasciando a schermo solo la label stilizzata a tre barre.\n3. **La pseudo-classe `:checked` e il Combinatore Fratello Generale (`~`)**:\n```css\n/* Su desktop il menu è visibile, la label hamburger è nascosta */\n.menu-toggle, .hamburger { display: none; }\n\n/* Su mobile (max-width: 768px) */\n@media (max-width: 768px) {\n  .hamburger { display: flex; }\n  \n  .nav-menu {\n    display: none; /* Nascosto di default */\n    position: absolute;\n    top: 70px;\n    left: 0;\n    width: 100%;\n  }\n\n  /* Quando il checkbox è selezionato, mostra il nav fratello */\n  .menu-toggle:checked ~ .nav-menu {\n    display: block;\n  }\n}\n```\n\n### Perché il combinatore `~` è fondamentale?\nIl combinatore `A ~ B` seleziona qualsiasi elemento `B` che sia un **fratello successivo** di `A` all'interno dello stesso contenitore padre. Poiché `<nav>` si trova dopo `<input id=\"menu-toggle\">`, lo pseudo-stato `:checked` può pilotare l'apertura e chiusura del menu in modo dichiarativo e ultra-performante.",
     "keyPoints": [
-      "Menu responsive 100% CSS-only senza dipendenze JS (zero ritardi di esecuzione).",
-      "La checkbox memorizza lo stato booleano (spuntato = aperto, deselezionato = chiuso).",
-      "L'attributo for='menu-toggle' sul tag label permette il toggle al tocco delle dita.",
-      "Il combinatore ~ (general sibling) intercetta gli elementi successivi alla checkbox spuntata.",
-      "Animazione della 'X': translateY + rotate(45deg / -45deg) con secondo span a opacity: 0."
+      "Il Checkbox Hack consente l'interattività senza JavaScript sfruttando il comportamento nativo dei form HTML.",
+      "La label con for='id' commuta lo stato del checkbox nascosto con display: none.",
+      "Lo pseudo-selettore :checked rileva lo stato attivo dell'input.",
+      "Il combinatore fratello generale (~) seleziona il menu adiacente attivandone la visibilità."
     ],
     "flashcards": [
       {
-        "question": "Come fa la checkbox a cambiare stato quando l'utente tocca il pulsante con le 3 linee?",
-        "answer": "Perché il pulsante è un tag <label for='menu-toggle'>: per specifica HTML, cliccare su una label attiva o disattiva l'input che possiede l'id corrispondente."
+        "question": "Come fa la label a commutare lo stato del checkbox senza codice JavaScript?",
+        "answer": "Grazie all'attributo for='menu-toggle' che associa nativamente l'interazione della label all'id del checkbox."
       },
       {
-        "question": "Qual è il ruolo del selettore tilde (~) nella regola '.menu-toggle:checked ~ nav'?",
-        "answer": "È il combinatore fratello generale: seleziona l'elemento <nav> che si trova allo stesso livello gerarchico (fratello) dopo l'input quando questo è spuntato (:checked)."
+        "question": "Cosa seleziona in CSS la regola .menu-toggle:checked ~ .nav-menu?",
+        "answer": "Seleziona l'elemento con classe .nav-menu che si trova come fratello successivo rispetto all'input .menu-toggle quando questo è spuntato."
       },
       {
-        "question": "Come viene realizzata l'animazione di trasformazione delle tre linee in una 'X'?",
-        "answer": "Il primo span trasla verso il basso e ruota di +45°; il secondo scompare con opacity: 0; il terzo trasla verso l'alto e ruota di -45°, colorandosi entrambi di rosso."
+        "question": "Qual è il limite principale del Checkbox Hack rispetto a un menu controllato da JavaScript?",
+        "answer": "La gestione dell'accessibilità da tastiera e la chiusura automatica al click esterno (click-outside) risultano più complesse da gestire."
       }
     ],
     "quiz": [
       {
-        "question": "Quale combinatore CSS viene impiegato per selezionare il tag <nav> quando l'input checkbox è attivo?",
+        "question": "Quale attributo HTML collega l'interazione di una <label> al rispettivo campo <input>?",
         "options": [
-          "Il combinatore discendente (spazio)",
-          "Il combinatore fratello generale (~)",
-          "Il combinatore figlio diretto (>)",
-          "Il selettore universale (*)"
+          "L'attributo for che deve contenere lo stesso valore dell'id dell'input",
+          "L'attributo class che deve corrispondere al nome del file CSS",
+          "L'attributo href che punta all'indirizzo della pagina di navigazione",
+          "L'attributo name che viene letto unicamente dai motori di ricerca"
         ],
-        "correctIndex": 1,
-        "explanation": "Il combinatore '~' seleziona i fratelli che seguono nello stesso genitore, permettendo alla checkbox di controllare stile di label e nav."
+        "correctIndex": 0,
+        "explanation": "L'attributo for della label associa il tocco o clic all'elemento input identificato dallo stesso id."
       },
       {
-        "question": "Cosa accade al secondo <span> (quello centrale) del pulsante burger quando la checkbox è in stato :checked?",
+        "question": "Nel selettore '.menu-toggle:checked ~ .nav-menu', cosa rappresenta il simbolo tilde (~)?",
         "options": [
-          "Viene ruotato di 90 gradi",
-          "Diventa trasparente grazie alla proprietà 'opacity: 0;'",
-          "Aumenta la larghezza del 200%",
-          "Cambia colore in verde"
+          "Il combinatore fratello generale che intercetta elementi fratelli successivi nello stesso genitore",
+          "Il combinatore figlio diretto che seleziona solo elementi annidati immediatamente all'interno",
+          "L'operatore logico di negazione che esclude tutti gli elementi privi di classe menu",
+          "Il moltiplicatore di specificità che rende la regola prioritaria rispetto a !important"
         ],
-        "correctIndex": 1,
-        "explanation": "opacity: 0 fa scomparire la linea centrale, lasciando che la prima e la terza linea si incrocino formando la lettera 'X'."
+        "correctIndex": 0,
+        "explanation": "Il simbolo tilde (~) è il selettore fratello successivo: seleziona gli elementi fratelli che condividono lo stesso padre e seguono l'elemento."
+      },
+      {
+        "question": "Quale pseudo-classe CSS permette di verificare se una casella di spunta è stata selezionata dall'utente?",
+        "options": [
+          "La pseudo-classe :hover",
+          "La pseudo-classe :active",
+          "La pseudo-classe :checked",
+          "La pseudo-classe :focus"
+        ],
+        "correctIndex": 2,
+        "explanation": ":checked è la pseudo-classe nativa di stato per radio button e checkbox selezionati."
+      },
+      {
+        "question": "Perché nel foglio di stile la label hamburger viene impostata con 'display: none' sui monitor desktop?",
+        "options": [
+          "Perché su monitor grandi c'è spazio sufficiente per mostrare tutti i link estesi senza menu a tendina",
+          "Perché i browser desktop non sono tecnicamente in grado di interpretare il combinatore fratello",
+          "Perché la normativa sull'accessibilità vieta l'uso di icone grafiche su schermi superiori a 1024px",
+          "Per velocizzare il caricamento della pagina riducendo il numero di nodi del Document Object Model"
+        ],
+        "correctIndex": 0,
+        "explanation": "Sul desktop la barra di navigazione ha spazio orizzontale abbondante; l'hamburger menu ha senso solo sui display ristretti."
+      },
+      {
+        "question": "Cosa accadrebbe se nel codice HTML l'elemento <nav class='nav-menu'> venisse posizionato PRIMA del tag <input>?",
+        "options": [
+          "Il combinatore fratello generale (~) non funzionerebbe poiché CSS seleziona solo elementi successivi",
+          "Il browser scambierebbe automaticamente l'ordine dei tag nel DOM per garantire il funzionamento",
+          "Il menu rimarrebbe perennemente visibile a schermo senza possibilità di essere nascosto",
+          "Il foglio di stile verrebbe bloccato dal parser HTML impedendo l'applicazione dei font"
+        ],
+        "correctIndex": 0,
+        "explanation": "In CSS non esiste un selettore di fratello precedente; il combinatore ~ funziona solo se il target si trova dopo l'elemento selezionato."
       }
     ],
     "openQuestions": [
       {
-        "question": "Spiega i vantaggi e le possibili limitazioni dell'implementazione di un menu hamburger con la tecnica CSS-only (checkbox hack) rispetto a una soluzione con JavaScript.",
-        "modelAnswer": "I vantaggi del metodo CSS-only sono molteplici: 1. Funziona istantaneamente all'avvio della pagina senza attendere il caricamento o l'esecuzione di script JS. 2. È leggerissimo ed esente da bug di runtime o conflitti di librerie. 3. Le animazioni grafiche (la X e l'apertura) sono accelerate dall'hardware della GPU del browser. Le limitazioni riguardano l'accessibilità avanzata: senza JS è più difficile gestire la chiusura automatica del menu premendo il tasto 'Esc' della tastiera o al clic su un punto qualsiasi esterno alla pagina (click outside), e richiede attenzione nell'inserire attributi ARIA (come aria-label) per consentire agli screen reader di comprenderne lo stato."
+        "question": "Descrivi il funzionamento del Checkbox Hack implementato per il menu mobile, spiegando il ruolo di label, input, :checked e del combinatore ~.",
+        "modelAnswer": "Il Checkbox Hack si basa su un input checkbox nascosto (id='menu-toggle') associato a una label con for='menu-toggle' stilizzata a hamburger. Al click sulla label, il browser commuta lo stato del checkbox. Nel CSS, tramite la regola .menu-toggle:checked ~ .nav-menu { display: block; }, quando il checkbox è spuntato, il combinatore fratello generale (~) seleziona il menu <nav> che segue nello stesso genitore e ne mostra i contenuti. Questo permette di gestire l'apertura e chiusura del menu in puro CSS senza dipendere da JavaScript."
       }
     ]
   },
   {
     "id": "cards-m6",
     "number": 6,
-    "title": "Media Queries, Responsive Web Design & Microinterazioni",
-    "subtitle": "Breakpoints (900px e 1450px), transizioni fluide, ombre e animazioni hover",
+    "title": "Rendering Immagini, Aspect-Ratio & Microinterazioni Hover",
+    "subtitle": "object-fit: cover, position: sticky, transizioni fluide e sollevamento card con translateY",
     "readTime": "9 min",
-    "summary": "### La strategia Responsive di `style.css`\nIl progetto adotta un approccio Responsive modulare basato su due breakpoint principali:\n\n```css\n/* Per schermi intermedi (Tablet / Laptop compatti) */\n@media (min-width: 900px) and (max-width: 1450px) { ... }\n\n/* Per smartphone e schermi sotto i 900px */\n@media (max-width: 900px) { ... }\n```\n\n### Cosa cambia sotto i 900px\n1. **L'Header e la Navigazione**:\n   - I link del menu scompaiono dalla riga orizzontale e si compattano nel menu a tendina attivato dal burger button.\n   - Il padding dell'header si riduce da `0 50px` a `0 20px`.\n2. **La Sezione Hero**:\n   - Da `height: 95vh` con testo allineato a sinistra passa ad `height: auto`, `min-height: 380px`, con testo centrato al 100% di larghezza (`max-width: 100%; text-align: center;`).\n3. **Le Card Categorie**:\n   - Le tre card non sono più affiancate con larghezza fissa a 320px, ma si riducono o si incolonnano con padding adeguato.\n4. **Le Card Argomenti**:\n   - Da disposizione orizzontale (`flex-direction: row`), su mobile diventano verticali (`flex-direction: column`), con l'immagine in alto a tutta larghezza e il testo in basso.\n\n### Microinterazioni ed Effetti Hover\nPer dare un senso di tridimensionalità e reattività al tocco o al puntatore del mouse:\n```css\n.card-categorie {\n  transition: transform 0.3s ease, box-shadow 0.3s ease;\n}\n\n.card-categorie:hover {\n  transform: translateY(-10px);\n  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.9);\n}\n\n.card-categorie:hover .immagine-card {\n  transform: scale(1.05);\n}\n```\n- `transform: translateY(-10px)`: la card si solleva verso l'alto di 10 pixel.\n- `box-shadow`: l'ombra diventa più scura, profonda e diffusa, simulando un allontanamento dal piano di fondo (*elevazione*).\n- `transform: scale(1.05)`: l'immagine interna si ingrandisce del 5% con un piacevole effetto zoom cinematografico all'interno della maschera (`overflow: hidden`).",
+    "summary": "### Gestione e proporzioni delle immagini nelle card\nUno dei problemi classici nella progettazione delle card informative riguarda le immagini di anteprima caricate da fonti diverse: immagini con proporzioni eterogenee (orizzontali, quadrate, verticali) rischiano di deformarsi o di rompere l'allineamento della griglia.\n\nNel progetto esame, le immagini delle card sono regolate tramite:\n```css\n.card-img {\n  width: 100%;\n  height: 200px;\n  object-fit: cover;\n  display: block;\n}\n```\n- `width: 100%`: l'immagine occupa l'intera larghezza della card.\n- `height: 200px`: impone un'altezza fissa e uniforme per tutte le immagini della griglia.\n- `object-fit: cover`: l'istruzione chiave. Scala l'immagine mantenendone inalterate le proporzioni originali (aspect-ratio), ritagliando le parti eccedenti per riempire interamente il box di 200px senza alcuna distorsione anamorfica o stiramento visivo.\n\n### Posizionamento fluttuante: `position: sticky`\nPer la testata (`<header>`) viene impiegato il posizionamento ibrido sticky:\n```css\nheader {\n  position: sticky;\n  top: 0;\n  z-index: 1000;\n  background-color: var(--bianco);\n  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);\n}\n```\n- `position: sticky`: l'elemento si comporta come `relative` durante il normale scorrimento, ma non appena raggiunge la coordinata definita (`top: 0`), si 'ancora' al bordo superiore dello schermo rimanendo visibile durante tutta la navigazione.\n- `z-index: 1000`: garantisce che l'header passi sopra a tutti i contenuti e alle card durante lo scorrimento.\n\n### Microinterazioni e profondità visiva sulle Card\nPer conferire dinamismo e tangibilità fisica ai contenuti, ogni card risponde al passaggio del cursore con una microinterazione tridimensionale:\n```css\n.card {\n  background: var(--bianco);\n  border-radius: 8px;\n  overflow: hidden;\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);\n  transition: transform var(--transizione-veloce), box-shadow var(--transizione-veloce);\n}\n\n.card:hover {\n  transform: translateY(-8px);\n  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);\n}\n```\n- `transform: translateY(-8px)`: solleva la card di 8 pixel verso l'alto lungo l'asse verticale (l'asse Y cresce verso il basso nel browser, quindi un valore negativo sposta l'oggetto verso l'alto).\n- `transition`: interpola gradualmente nel tempo (0.3s) il movimento e l'intensità dell'ombra, comunicando all'utente l'affordance di cliccabilità in modo fluido e naturale.",
     "keyPoints": [
-      "Breakpoint a 900px: soglia principale per il passaggio da layout desktop a layout mobile.",
-      "Flessibilità del layout: le card argomento passano da flex-direction: row a column.",
-      "Microinterazioni con transform: translateY(-10px) e potenziamento dell'ombra box-shadow.",
-      "Zoom interno: scale(1.05) sull'immagine con overflow: hidden sulla card.",
-      "Transizioni morbide: transition: transform 0.3s ease per evitare scatti visivi bruschi."
+      "object-fit: cover ritaglia l'immagine preservando le proporzioni ed evitando qualsiasi stiramento.",
+      "position: sticky ancora la barra di navigazione in cima allo schermo senza uscire dal flusso del documento.",
+      "transform: translateY(-8px) simula un sollevamento fisico della card stimolando l'interazione.",
+      "L'uso combinato di ombre dinamiche (box-shadow) e transizioni morbide rafforza la gerarchia visiva."
     ],
     "flashcards": [
       {
-        "question": "Cosa succede alla disposizione delle '.card-argomento' quando lo schermo scende sotto i 900px?",
-        "answer": "Passano da 'flex-direction: row' (immagine a sinistra, testo a destra) a 'flex-direction: column' (immagine in alto a tutta larghezza, testo subito sotto)."
+        "question": "Quale distorsione previene l'istruzione CSS 'object-fit: cover' su un tag <img>?",
+        "answer": "Previene lo stiramento e la deformazione visiva dell'immagine, ritagliando le parti eccedenti per riempire il contenitore mantenendo il rapporto d'aspetto."
       },
       {
-        "question": "Come viene ottenuto l'effetto di sollevamento e zoom al passaggio del mouse sulle card delle categorie?",
-        "answer": "La card riceve 'transform: translateY(-10px)' e un'ombra 'box-shadow' più marcata; l'immagine interna subisce 'transform: scale(1.05)', contenuta da 'overflow: hidden'."
+        "question": "In che modo position: sticky si differenzia da position: fixed?",
+        "answer": "Sticky rimane nel normale flusso del documento finché non raggiunge la coordinata di ancoraggio (es. top: 0), mentre fixed è perennemente ancorato allo schermo e rimosso dal flusso."
       },
       {
-        "question": "Perché è fondamentale definire 'transition: transform 0.3s ease;' sulla card e non solo sullo stato :hover?",
-        "answer": "Perché definendola sulla classe base la transizione è fluida sia all'ingresso del mouse sia all'uscita; mettendola solo su :hover l'uscita risulterebbe a scatto istantaneo."
+        "question": "Perché nelle coordinate del browser il valore transform: translateY(-8px) sposta l'elemento verso l'alto?",
+        "answer": "Perché nel sistema di riferimento cartesiano del web l'origine (0,0) si trova nell'angolo in alto a sinistra e l'asse Y aumenta verso il basso."
       }
     ],
     "quiz": [
       {
-        "question": "Nello stato hover della card categoria, quale trasformazione geometrica simula il sollevamento verso l'alto?",
+        "question": "Quale proprietà CSS garantisce che un'immagine riempia un box di altezza fissa senza deformare le sue proporzioni native?",
         "options": [
-          "transform: rotate(180deg);",
-          "transform: translateY(-10px);",
-          "transform: skewX(10deg);",
-          "transform: matrix(1, 0, 0, 1, 0, 0);"
+          "object-fit: cover",
+          "display: inline-block",
+          "image-rendering: pixelated",
+          "text-align: center"
         ],
-        "correctIndex": 1,
-        "explanation": "translateY con valore negativo sposta l'elemento verso l'alto lungo l'asse Y cartesiano del viewport."
+        "correctIndex": 0,
+        "explanation": "object-fit: cover scala l'immagine mantenendo inalterato l'aspect-ratio e ritaglia le parti in eccesso rispetto alle dimensioni del box."
       },
       {
-        "question": "A cosa serve la proprietà 'overflow: hidden;' impostata sulle card con angoli arrotondati (border-radius: 16px)?",
+        "question": "Come si comporta un elemento impostato con 'position: sticky; top: 0;'?",
         "options": [
-          "A nascondere la barra di caricamento del browser",
-          "A impedire che l'immagine figlia zoomata fuoriesca dai bordi arrotondati della card",
-          "A rimuovere le sottolineature dei link",
-          "A bloccare lo zoom da parte degli utenti touch"
+          "Scorre normalmente con la pagina finché non tocca il margine superiore dello schermo, dove si aggancia",
+          "Rimane permanentemente sovrapposto al centro dello schermo impedendo la visualizzazione dei contenuti",
+          "Viene nascosto automaticamente non appena l'utente avvia l'operazione di scorrimento verso il basso",
+          "Modifica le proprie dimensioni occupando il cento per cento dell'altezza del monitor del computer"
         ],
-        "correctIndex": 1,
-        "explanation": "overflow: hidden maschera qualsiasi contenuto figlio (come l'immagine durante lo scale 1.05) che ecceda il raggio arrotondato della card."
+        "correctIndex": 0,
+        "explanation": "position: sticky è un ibrido tra relative e fixed: si muove col flusso fino alla soglia (top: 0) e poi rimane fisso."
+      },
+      {
+        "question": "Nel codice delle card, quale effetto visivo produce l'istruzione 'transform: translateY(-8px)' al passaggio del mouse?",
+        "options": [
+          "Provoca un sollevamento visivo della card di 8 pixel verso l'alto simulando un feedback tridimensionale",
+          "Ruota la card in senso orario di otto gradi attorno al proprio asse baricentrico",
+          "Aumenta la larghezza orizzontale della card di otto pixel spingendo le card adiacenti a capo",
+          "Riduce l'opacità dello sfondo rendendo il testo sottostante parzialmente trasparente"
+        ],
+        "correctIndex": 0,
+        "explanation": "Un valore negativo sull'asse Y sposta l'elemento verso l'alto, creando l'effetto di galleggiamento o sollevamento."
+      },
+      {
+        "question": "A cosa serve impostare la proprietà 'z-index: 1000' sull'header della pagina?",
+        "options": [
+          "A garantire che l'header rimanga visivamente posizionato sopra tutti gli altri contenuti durante lo scroll",
+          "A velocizzare di mille millisecondi l'avvio della riproduzione dei video multimediali del sito",
+          "A limitare a mille il numero massimo di caratteri tipografici consentiti all'interno della barra",
+          "A definire la larghezza dell'header pari a mille pixel indipendentemente dalla grandezza del display"
+        ],
+        "correctIndex": 0,
+        "explanation": "z-index gestisce l'ordine di impilamento lungo l'asse Z perpendicolare allo schermo: valori più alti sovrappongono l'elemento a quelli inferiori."
+      },
+      {
+        "question": "Perché è fondamentale dichiarare la proprietà 'transition' prima di applicare effetti all'evento :hover?",
+        "options": [
+          "Perché interpola gradualmente gli stati intermedi evitando scatti bruschi e donando naturalezza all'interazione",
+          "Perché senza transition i browser disabilitano completamente il supporto ai cursori del mouse",
+          "Perché transition costringe il server a inviare una notifica di avvenuta interazione ai server analitici",
+          "Perché converte automaticamente le ombre sfumate in vettori geometrici a bassissima risoluzione"
+        ],
+        "correctIndex": 0,
+        "explanation": "transition calcola l'animazione graduale tra lo stato di riposo e lo stato hover, rendendo la microinterazione fluida e piacevole."
       }
     ],
     "openQuestions": [
       {
-        "question": "Spiega come le media queries e le microinterazioni CSS di style.css rispettano i principi di usabilità (affordance e feedback) descritti nelle dispense e da Steve Krug.",
-        "modelAnswer": "Le microinterazioni su pulsanti e card (il sollevamento con translateY, il cambio colore in rosso con transition, e l'ampliamento dell'ombra) forniscono all'utente un feedback visivo immediato (affordance dinamica), confermando che l'elemento è cliccabile senza richiedere riflessione (prima legge di Krug: Don't Make Me Think). Le media queries a 900px riorganizzano i flussi per lo spazio ridotto dello smartphone: ampliano i touch target, evitano lo scroll orizzontale e raggruppano i menu, preservando il Serbatoio della Buona Volontà dell'utente."
+        "question": "Spiega il funzionamento di object-fit: cover e descrivi le tecniche CSS usate per rendere le card interattive e responsive.",
+        "modelAnswer": "object-fit: cover permette a un'immagine con width: 100% e height: 200px di riempire esattamente il contenitore senza deformare le proporzioni native, ritagliando le parti eccedenti. Per l'interattività, la card utilizza box-shadow e transform: translateY(-8px) con transition: 0.3s ease per simulare un sollevamento tridimensionale fluido al passaggio del cursore (:hover). Per la responsività, le card sono inserite in una griglia CSS (repeat(3, 1fr)) che scala a 2 e poi a 1 colonna sui dispositivi mobili tramite media queries."
       }
     ]
   }
