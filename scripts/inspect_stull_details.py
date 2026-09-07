@@ -1,31 +1,26 @@
-import glob, re, json
+import re
 
-with open('data/stull-data.js', 'r', encoding='utf-8') as f:
-    text = f.read()
+files = [
+    'scripts/build_stull_p1_complete.py',
+    'scripts/build_stull_p2_complete.py',
+    'scripts/build_stull_p3_complete.py',
+    'scripts/build_stull_p4_complete.py'
+]
 
-start = text.find('[')
-end = text.rfind(']') + 1
-stull = json.loads(text[start:end])
-
-print("=== STULL-DATA ISPEZIONI DETTAGLIATE ===")
-for c in stull:
-    cid = c['id']
-    num = c['number']
-    title = c['title']
-    summary = c.get('summary', '')
-    
-    # Cerca $$ o comandi LaTeX o ```
-    latex_matches = re.findall(r'(\$\$[\s\S]*?\$\$|\\text\{[^}]+\}|\$[^$\n]+\$)', summary)
-    code_matches = re.findall(r'```([\s\S]*?)```', summary)
-    
-    if latex_matches or code_matches:
-        print(f"\n[Capitolo {num}: {title}] ({cid})")
-        if latex_matches:
-            print("   LATEX / FORMULE TROVATE:")
-            for m in latex_matches:
-                print("      >>>", m.replace('\n', ' '))
-        if code_matches:
-            print("   BLOCCHI CODICE TROVATI:")
-            for b in code_matches:
-                first_line = b.strip().split('\n')[0]
-                print(f"      >>> ```{first_line}... ({len(b.splitlines())} righe)```")
+for p in files:
+    with open(p, 'r', encoding='utf-8') as f:
+        content = f.read()
+    print(f"=== {p} ===")
+    cb = re.findall(r'```[\s\S]*?```', content)
+    print(f"Code blocks found: {len(cb)}")
+    for b in cb:
+        print("  BLOCK:", repr(b[:60]), "... len:", len(b))
+    formulas = re.findall(r'\$\$[\s\S]*?\$\$', content)
+    print(f"$$ formulas found: {len(formulas)}")
+    for form in formulas:
+        print("  FORMULA:", repr(form))
+    singles = re.findall(r'(?<!\$)\$([^\$\n]+)\$(?!\$)', content)
+    print(f"Single $ found: {len(singles)}")
+    for s in singles:
+        if any(k in s for k in ['\\', 'approx', 'pm', 'log', 'times', 'cdot']):
+            print("  MATH SINGLE:", repr(s))
