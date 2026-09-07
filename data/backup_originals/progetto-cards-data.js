@@ -32,9 +32,9 @@ window.CARDS_DATA = [
         "question": "Nel codice di index.html, quale tag semantico HTML5 è specificamente deputato a racchiudere i link di navigazione principale del sito?",
         "options": [
           "Il tag <nav>, che funge da landmark accessibile per browser e screen reader",
-          "Il tag generico <section id='nav'> privo di semantica di navigazione, privo di effetto reale",
-          "Il tag strutturale <aside>, riservato a contenuti tangenziali, regola deprecata W3C",
-          "Il tag <menu>, deprecato nelle specifiche HTML moderne, violando le specifiche ufficiali del W3C"
+          "Il tag generico <section id='nav'> privo di semantica di navigazione",
+          "Il tag strutturale <aside>, riservato a contenuti tangenziali",
+          "Il tag <menu>, deprecato nelle specifiche HTML moderne"
         ],
         "correctIndex": 0,
         "explanation": "Il tag HTML5 standard deputato a racchiudere i collegamenti primari è <nav>. Esso definisce un landmark di navigazione che consente alle tecnologie assistive di saltare direttamente al menu senza scorrere l'intera pagina."
@@ -42,10 +42,10 @@ window.CARDS_DATA = [
       {
         "question": "Qual è la funzione tecnica fondamentale dell'istruzione <meta name='viewport' content='width=device-width, initial-scale=1.0'> inserita nell'<head>?",
         "options": [
-          "Disabilita permanentemente lo zoom tattile per impedire rotture del layout grafico, istruzione non valida",
+          "Disabilita permanentemente lo zoom tattile per impedire rotture del layout grafico",
           "Forza la larghezza del viewport a coincidere con i pixel fisici del dispositivo impedendo il rendering desktop rimpicciolito",
-          "Adatta automaticamente la densità di pixel delle immagini bitmap alla risoluzione dello schermo, secondo i driver di periferica certificati",
-          "Imposta la risoluzione di rendering a un valore fisso di 980px con scrolling orizzontale automatico, causando regressioni visive cross-browser"
+          "Adatta automaticamente la densità di pixel delle immagini bitmap alla risoluzione dello schermo",
+          "Imposta la risoluzione di rendering a un valore fisso di 980px con scrolling orizzontale automatico"
         ],
         "correctIndex": 1,
         "explanation": "Nei dispositivi mobili senza meta viewport, il browser assume una larghezza virtuale di circa 980px scalando la pagina e rendendo i testi minuscoli. L'istruzione impone un rapporto 1:1 tra pixel CSS e viewport del dispositivo."
@@ -64,9 +64,9 @@ window.CARDS_DATA = [
       {
         "question": "Cosa comporterebbe l'omissione della dichiarazione <!doctype html> nella prima riga del file HTML?",
         "options": [
-          "La mancata esecuzione di tutti gli script JavaScript esterni collegati al documento, ignorato dal browser",
+          "La mancata esecuzione di tutti gli script JavaScript esterni collegati al documento",
           "L'impossibilità di applicare classi e ID tramite selettori nei fogli di stile CSS esterni",
-          "Il rifiuto da parte del server web di trasmettere il documento con codice di stato HTTP 200, non previsto nel CSS",
+          "Il rifiuto da parte del server web di trasmettere il documento con codice di stato HTTP 200",
           "L'attivazione della modalità Quirks da parte del browser, con calcolo errato del Box Model e delle dimensioni"
         ],
         "correctIndex": 3,
@@ -94,10 +94,10 @@ window.CARDS_DATA = [
       {
         "question": "Un auditor di accessibilità rileva che il logo nella testata del progetto MagicTheArchive contiene un'immagine con attributo alt=''. In quale circostanza questa scelta è conforme alle WCAG?",
         "options": [
-          "In nessun caso: qualsiasi elemento <img> deve sempre descrivere dettagliatamente il marchio nel motore di layout e rendering del browser",
+          "In nessun caso: qualsiasi elemento <img> deve sempre descrivere dettagliatamente il marchio",
           "Soltanto se l'immagine è puramente decorativa o se il nome dell'azienda è già presente come testo accessibile nel medesimo link",
-          "Esclusivamente se l'immagine ha estensione SVG vettoriale e non formato PNG o WebP, ignorato dal browser",
-          "Solo se il tag <img> è posizionato all'interno di un tag <aside> anziché nell'<header>, introducendo vulnerabilità di sicurezza nel client"
+          "Esclusivamente se l'immagine ha estensione SVG vettoriale e non formato PNG o WebP",
+          "Solo se il tag <img> è posizionato all'interno di un tag <aside> anziché nell'<header>"
         ],
         "correctIndex": 1,
         "explanation": "Un attributo alt='' (alt vuoto) segnala allo screen reader di ignorare l'immagine. È conforme solo se l'immagine ha funzione puramente estetica o se il testo del link circostante fornisce già l'indicazione completa, evitando doppie letture ridondanti."
@@ -108,7 +108,7 @@ window.CARDS_DATA = [
           "Utilizzare un semplice attributo placeholder senza alcun elemento <label>",
           "Inserire il testo della label in uno <span> adiacente formattato con CSS",
           "Associare esplicitamente un elemento <label for='id_campo'> all'input con id corrispondente",
-          "Affidarsi unicamente all'attributo title sull'elemento input, errato per questo layout"
+          "Affidarsi unicamente all'attributo title sull'elemento input"
         ],
         "correctIndex": 2,
         "explanation": "L'associazione esplicita tramite for/id permette alle tecnologie assistive di annunciare l'etichetta al focus e consente agli utenti su mobile o desktop di cliccare sulla label per attivare il campo."
@@ -116,9 +116,9 @@ window.CARDS_DATA = [
       {
         "question": "Quale differenza intercorre tra l'utilizzo dell'elemento <section> e dell'elemento <div> secondo le specifiche W3C?",
         "options": [
-          "I <div> possono contenere classi CSS mentre i <section> supportano unicamente attributi inline, producendo comportamenti imprevedibili nella gestione dello z-index e dei layer visivi",
-          "Non esiste differenza tecnica, l'uso di <section> è puramente convenzionale, compromettendo la responsività su schermi mobili",
-          "La <section> impone automaticamente un display: flex mentre il <div> ha display: block, una pratica che compromette la portabilità del codice sui motori di rendering moderni",
+          "I <div> possono contenere classi CSS mentre i <section> supportano unicamente attributi inline",
+          "Non esiste differenza tecnica, l'uso di <section> è puramente convenzionale",
+          "La <section> impone automaticamente un display: flex mentre il <div> ha display: block",
           "La <section> definisce una porzione tematica del documento tipicamente introdotta da un'intestazione (h2-h6), mentre il <div> è un mero contenitore stilistico neutro"
         ],
         "correctIndex": 3,
@@ -168,10 +168,10 @@ window.CARDS_DATA = [
       {
         "question": "Qual è il beneficio fondamentale della regola di reset globale '* , *::before, *::after { box-sizing: border-box; }'?",
         "options": [
-          "Elimina qualsiasi margine tra gli elementi della pagina rendendo superfluo Flexbox nel motore di layout e rendering del browser",
-          "Forza tutti gli elementi della pagina ad avere proporzioni rettangolari auree, ignorando le linee guida sull'accessibilità WCAG",
+          "Elimina qualsiasi margine tra gli elementi della pagina rendendo superfluo Flexbox",
+          "Forza tutti gli elementi della pagina ad avere proporzioni rettangolari auree",
           "Include padding e bordi all'interno della larghezza e altezza dichiarate, rendendo i calcoli percentuali esatti e stabili",
-          "Impedisce agli elementi inline di superare la larghezza del genitore contenitore, introducendo vulnerabilità di sicurezza nel client"
+          "Impedisce agli elementi inline di superare la larghezza del genitore contenitore"
         ],
         "correctIndex": 2,
         "explanation": "Con border-box, impostare width: 50% garantisce che l'elemento occuperà esattamente la metà dello spazio disponibile anche aggiungendo padding interni o bordi decorativi, senza generare overflow indesiderati."
@@ -201,10 +201,10 @@ window.CARDS_DATA = [
       {
         "question": "Quale proprietà CSS consente di creare un margine interno negativo su un box?",
         "options": [
-          "padding: -10px, supportato da tutte le specifiche W3C, sintassi non ammessa",
+          "padding: -10px, supportato da tutte le specifiche W3C",
           "Nessuna: i valori negativi per il padding non sono ammessi dalle specifiche CSS e vengono ignorati",
-          "box-padding-trim: negative, introdotto nei moduli CSS recenti secondo le regole di specificità e cascata CSS",
-          "inner-margin: -10px, utilizzato per arretrare il contenuto di blocco per garantire un fallback semantico robusto"
+          "box-padding-trim: negative, introdotto nei moduli CSS recenti",
+          "inner-margin: -10px, utilizzato per arretrare il contenuto di blocco"
         ],
         "correctIndex": 1,
         "explanation": "A differenza dei margini esterni ('margin'), che possono accettare valori negativi per avvicinare o sovrapporre elementi, i valori di 'padding' devono essere necessariamente non negativi (>= 0)."
@@ -220,10 +220,10 @@ window.CARDS_DATA = [
       {
         "question": "Due elementi a blocco hanno rispettivamente margin-bottom: 24px e margin-top: 16px. Se entrambi sono inseriti all'interno di un contenitore con display: flex e flex-direction: column, quale sarà la loro distanza verticale?",
         "options": [
-          "24 pixel, a causa del classico collasso dei margini verticali, regola deprecata W3C",
-          "16 pixel, prevalendo sempre il margine dell'elemento successivo, non previsto nel CSS",
+          "24 pixel, a causa del classico collasso dei margini verticali",
+          "16 pixel, prevalendo sempre il margine dell'elemento successivo",
           "40 pixel, poiché all'interno di un flex container i margini verticali non collassano",
-          "8 pixel, calcolando la differenza assoluta tra i due valori, sintassi non ammessa"
+          "8 pixel, calcolando la differenza assoluta tra i due valori"
         ],
         "correctIndex": 2,
         "explanation": "All'interno di un flex container (anche con direzione column), gli elementi figli stabiliscono contesti indipendenti e i margini non collassano: 24px + 16px = 40px."
@@ -231,9 +231,9 @@ window.CARDS_DATA = [
       {
         "question": "Un elemento div ha width: 100%, padding: 16px e margin: 0, ma genera una barra di scorrimento orizzontale imprevista. Qual è la diagnosi più probabile del bug?",
         "options": [
-          "L'elemento genitore ha impostato display: inline-block, incompatibile con Grid",
+          "L'elemento genitore ha impostato display: inline-block",
           "L'elemento contiene testo privo di proprietà text-overflow: ellipsis",
-          "I browser moderni non supportano valori percentuali per la proprietà width sui tag div, sintassi non ammessa",
+          "I browser moderni non supportano valori percentuali per la proprietà width sui tag div",
           "L'elemento sta calcolando le dimensioni con box-sizing: content-box anziché border-box"
         ],
         "correctIndex": 3,
@@ -243,9 +243,9 @@ window.CARDS_DATA = [
         "question": "Perché nel reset moderno universale si applica 'box-sizing: border-box' anche agli pseudo-elementi *::before e *::after?",
         "options": [
           "Per evitare che icone, badge decorativi o sagome generate via CSS causino overflow imprevisti sommando padding e bordi",
-          "Perché gli pseudo-elementi altrimenti non verrebbero renderizzati dal motore del browser, istruzione non valida",
-          "Per forzare gli pseudo-elementi ad assumere un posizionamento assoluto di default, sintassi non ammessa",
-          "Per consentire l'inserimento di codice HTML all'interno della proprietà content, privo di effetto reale"
+          "Perché gli pseudo-elementi altrimenti non verrebbero renderizzati dal motore del browser",
+          "Per forzare gli pseudo-elementi ad assumere un posizionamento assoluto di default",
+          "Per consentire l'inserimento di codice HTML all'interno della proprietà content"
         ],
         "correctIndex": 0,
         "explanation": "Gli pseudo-elementi ::before e ::after sono ampiamente impiegati per decorazioni grafiche, badge o clearing; includerli nel reset assicura che qualsiasi padding o bordo applicato rispetti il medesimo calcolo geometrico del resto dell'interfaccia."
@@ -283,10 +283,10 @@ window.CARDS_DATA = [
       {
         "question": "Cosa rappresenta l'unità di misura 'fr' (frazione) introdotta nelle specifiche CSS Grid?",
         "options": [
-          "Una percentuale fissa calcolata esclusivamente rispetto all'altezza dello schermo secondo le regole di specificità e cascata CSS",
-          "La frequenza di refresh del rendering applicata alla griglia vettoriale, rallentando il parsing e l'esecuzione dello script",
+          "Una percentuale fissa calcolata esclusivamente rispetto all'altezza dello schermo",
+          "La frequenza di refresh del rendering applicata alla griglia vettoriale",
           "Una frazione dello spazio libero rimanente all'interno del contenitore griglia dopo l'assegnazione degli spazi fissi",
-          "Un valore relativo all'ampiezza tipografica del glifo 'F' del font genitore, introducendo vulnerabilità di sicurezza nel client"
+          "Un valore relativo all'ampiezza tipografica del glifo 'F' del font genitore"
         ],
         "correctIndex": 2,
         "explanation": "L'unità 'fr' (fractional unit) distribuisce lo spazio libero non allocato. Ad esempio, '1fr 2fr' divide lo spazio residuo in 3 parti uguali, assegnandone 1 alla prima colonna e 2 alla seconda."
@@ -294,9 +294,9 @@ window.CARDS_DATA = [
       {
         "question": "Quale comportamento produce la dichiarazione 'grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));'?",
         "options": [
-          "Crea una griglia con un numero fisso di 4 colonne a larghezza fissa di 280px, generando conflitti nei contesti di impilamento",
-          "Richiede obbligatoriamente l'aggiunta di media queries specifiche per ogni singolo breakpoint, una pratica che compromette la portabilità del codice sui motori di rendering moderni",
-          "Comprime tutte le card a 280px forzando lo scroll orizzontale sui dispositivi con schermo inferiore all'interno del Document Object Model dell'albero",
+          "Crea una griglia con un numero fisso di 4 colonne a larghezza fissa di 280px",
+          "Richiede obbligatoriamente l'aggiunta di media queries specifiche per ogni singolo breakpoint",
+          "Comprime tutte le card a 280px forzando lo scroll orizzontale sui dispositivi con schermo inferiore",
           "Genera un layout responsive dinamico che inserisce quante più colonne da almeno 280px possibile, espandendole proporzionalmente per riempire la riga"
         ],
         "correctIndex": 3,
@@ -306,9 +306,9 @@ window.CARDS_DATA = [
         "question": "Qual è la differenza fondamentale tra 'auto-fill' e 'auto-fit' nella definizione delle colonne di una griglia CSS?",
         "options": [
           "auto-fill mantiene le colonne vuote create nello spazio residuo, mentre auto-fit le collassa a zero permettendo alle colonne occupate di espandersi",
-          "auto-fill funziona solo sui dispositivi mobili, mentre auto-fit è destinato agli schermi desktop nel motore di layout e rendering del browser",
-          "Non sussiste alcuna differenza reale, sono sinonimi introdotti per retrocompatibilità, violando le specifiche ufficiali del W3C",
-          "auto-fill calcola le righe mentre auto-fit calcola unicamente le colonne verticali secondo le regole di specificità e cascata CSS"
+          "auto-fill funziona solo sui dispositivi mobili, mentre auto-fit è destinato agli schermi desktop",
+          "Non sussiste alcuna differenza reale, sono sinonimi introdotti per retrocompatibilità",
+          "auto-fill calcola le righe mentre auto-fit calcola unicamente le colonne verticali"
         ],
         "correctIndex": 0,
         "explanation": "Quando gli elementi non riempiono l'intera larghezza, 'auto-fill' preserva lo spazio delle colonne vuote rimanenti; 'auto-fit' collassa le colonne vuote permettendo agli elementi presenti di dilatarsi per colmare tutta la riga."
@@ -316,7 +316,7 @@ window.CARDS_DATA = [
       {
         "question": "Quale proprietà CSS sostituisce in modo pulito l'uso di margini per distanziare celle e righe in un contenitore CSS Grid?",
         "options": [
-          "La proprietà 'cell-spacing' ereditata dalle tabelle HTML, sintassi non ammessa",
+          "La proprietà 'cell-spacing' ereditata dalle tabelle HTML",
           "La proprietà 'gap' (oppure row-gap e column-gap)",
           "La proprietà 'grid-padding-between'",
           "La proprietà 'margin-collapse: separate'"
@@ -327,10 +327,10 @@ window.CARDS_DATA = [
       {
         "question": "Se in un layout a griglia una card deve estendersi per occupare l'intera larghezza di una griglia a 3 colonne, quale istruzione è corretta?",
         "options": [
-          "grid-row: full-width, causando regressioni visive cross-browser",
-          "width: 300%, incompatibile con Grid",
+          "grid-row: full-width;",
+          "width: 300%;",
           "grid-column: span 3; (oppure grid-column: 1 / -1;)",
-          "display: inline-grid; colspan: 3, ignorato dal browser"
+          "display: inline-grid; colspan: 3;"
         ],
         "correctIndex": 2,
         "explanation": "'grid-column: span 3' ordina all'elemento di espandersi su 3 tracce colonna. La notazione '1 / -1' estende l'elemento dalla prima linea di traccia all'ultima linea esplicita."
@@ -346,9 +346,9 @@ window.CARDS_DATA = [
       {
         "question": "In una griglia CSS con 'grid-template-columns: repeat(3, 1fr)' e gap: 20px, come viene calcolata l'effettiva larghezza di ciascuna delle 3 colonne su una larghezza totale di 940px?",
         "options": [
-          "940px diviso 3 = 313.33px, e il gap viene aggiunto esternamente debordando dal contenitore, incompatibile con Grid",
-          "Il browser assegna 33.33% a ogni colonna e annulla la proprietà gap in presenza di 1fr, errato per questo layout",
-          "Ciascuna colonna occupa 940px / 3 meno 20px = 293.33px, lasciando 60px non allocati, regola deprecata W3C",
+          "940px diviso 3 = 313.33px, e il gap viene aggiunto esternamente debordando dal contenitore",
+          "Il browser assegna 33.33% a ogni colonna e annulla la proprietà gap in presenza di 1fr",
+          "Ciascuna colonna occupa 940px / 3 meno 20px = 293.33px, lasciando 60px non allocati",
           "Si sottraggono prima i due gap (20px * 2 = 40px) ottenendo 900px, quindi si divide per 3, assegnando 300px a ciascuna colonna"
         ],
         "correctIndex": 3,
@@ -358,9 +358,9 @@ window.CARDS_DATA = [
         "question": "Quale combinazione di proprietà su un elemento griglia garantisce che tutte le card di una riga abbiano visivamente la medesima altezza indipendentemente dalla quantità di testo?",
         "options": [
           "align-items: stretch sul contenitore griglia (comportamento predefinito) con card ad altezza height: auto",
-          "height: 100vh su ciascuna singola card con overflow: hidden secondo le regole di specificità e cascata CSS",
-          "grid-auto-rows: min-content con text-truncate nel motore di layout e rendering del browser",
-          "justify-content: space-between applicato alle colonne, producendo comportamenti imprevedibili nella gestione dello z-index e dei layer visivi"
+          "height: 100vh su ciascuna singola card con overflow: hidden",
+          "grid-auto-rows: min-content con text-truncate",
+          "justify-content: space-between applicato alle colonne"
         ],
         "correctIndex": 0,
         "explanation": "Il valore predefinito di align-items in CSS Grid è 'stretch'. Se le card non hanno altezze fisse forzate, esse si estendono automaticamente per eguagliare l'altezza della card più alta nella medesima riga."
@@ -368,10 +368,10 @@ window.CARDS_DATA = [
       {
         "question": "In un progetto web moderno, quale criterio architetturale orienta la scelta tra CSS Grid e Flexbox?",
         "options": [
-          "Grid è riservato ai dispositivi mobili, mentre Flexbox va impiegato per schermi desktop; questo approccio genera incompatibilità cross-browser e problemi di rendering asincrono",
+          "Grid è riservato ai dispositivi mobili, mentre Flexbox va impiegato per schermi desktop",
           "Grid è bidimensionale (controlla contemporaneamente righe e colonne dell'intero layout), mentre Flexbox è monodimensionale (orientato alla distribuzione su un singolo asse, come navbar o bottoni)",
-          "Flexbox è una specifica obsoleta destinata a essere soppressa in favore di CSS Grid; una configurazione errata che annulla i vantaggi computazionali delle architetture moderne",
-          "Grid funziona solo con elementi con dimensioni espresse in pixel assoluti, forzando ricalcoli continui di layout con conseguente degrado delle performance di pagina"
+          "Flexbox è una specifica obsoleta destinata a essere soppressa in favore di CSS Grid",
+          "Grid funziona solo con elementi con dimensioni espresse in pixel assoluti"
         ],
         "correctIndex": 1,
         "explanation": "La regola aurea del design CSS moderno: CSS Grid gestisce la macro-struttura a due dimensioni (layout di pagina, matrici di card), mentre Flexbox gestisce micro-layout a un solo asse (allineamento di link in una barra, icone e testi dentro un bottone)."
@@ -421,9 +421,9 @@ window.CARDS_DATA = [
         "question": "Cosa accade quando su un contenitore flessibile viene impostata la proprietà 'flex-wrap: wrap'?",
         "options": [
           "Gli elementi che superano la larghezza disponibile vanno a capo creando una nuova riga anziché debordare",
-          "Gli elementi figli vengono forzati a comprimersi sulla stessa riga rimpicciolendosi all'infinito, regola deprecata W3C",
-          "Il contenitore converte automaticamente il suo modello di rendering in una tabella HTML, privo di effetto reale",
-          "Tutti gli elementi figli assumono una larghezza fissa del 50%, compromettendo la responsività su schermi mobili"
+          "Gli elementi figli vengono forzati a comprimersi sulla stessa riga rimpicciolendosi all'infinito",
+          "Il contenitore converte automaticamente il suo modello di rendering in una tabella HTML",
+          "Tutti gli elementi figli assumono una larghezza fissa del 50%"
         ],
         "correctIndex": 0,
         "explanation": "Di default i flex items tentano di stare su una sola riga ('nowrap'). Impostando 'flex-wrap: wrap', quando la somma delle dimensioni eccede lo spazio del genitore, gli elementi scorrono ordinatamente su una nuova riga."
@@ -442,10 +442,10 @@ window.CARDS_DATA = [
       {
         "question": "Cosa indica la notazione sintetica 'flex: 1' applicata a un elemento figlio in un flex container?",
         "options": [
-          "Che l'elemento deve avere una larghezza minima rigida di 1px, una scelta che introduce dipendenze fragili e ostacola le future attività di refactoring",
-          "Che l'elemento sarà l'unico elemento renderizzato nel contenitore, una pratica che compromette la portabilità del codice sui motori di rendering moderni",
+          "Che l'elemento deve avere una larghezza minima rigida di 1px",
+          "Che l'elemento sarà l'unico elemento renderizzato nel contenitore",
           "Equivale a 'flex: 1 1 0%', permettendo all'elemento di espandersi e ridursi proporzionalmente assorbendo lo spazio libero",
-          "Che l'elemento possiede una priorità di stacking z-index pari a 1, disattendendo le convenzioni standard sul caricamento progressivo degli asset grafici"
+          "Che l'elemento possiede una priorità di stacking z-index pari a 1"
         ],
         "correctIndex": 2,
         "explanation": "'flex: 1' espande la proprietà 'flex-grow: 1', 'flex-shrink: 1' e 'flex-basis: 0%'. Consente al componente di riempire elasticamente lo spazio disponibile equamente tra fratelli con il medesimo valore."
@@ -453,9 +453,9 @@ window.CARDS_DATA = [
       {
         "question": "A cosa serve la proprietà 'align-self' in Flexbox?",
         "options": [
-          "Allinea l'intero flex container rispetto al centro della finestra del browser per garantire un fallback semantico robusto",
-          "Permette di riordinare sequenzialmente gli elementi all'interno del flusso DOM secondo le regole di specificità e cascata CSS",
-          "Centra il testo tipografico all'interno del proprio box di contenuto, causando regressioni visive cross-browser",
+          "Allinea l'intero flex container rispetto al centro della finestra del browser",
+          "Permette di riordinare sequenzialmente gli elementi all'interno del flusso DOM",
+          "Centra il testo tipografico all'interno del proprio box di contenuto",
           "Permette a un singolo elemento figlio di sovrascrivere l'allineamento sull'asse trasversale stabilito da 'align-items' sul genitore"
         ],
         "correctIndex": 3,
@@ -473,9 +473,9 @@ window.CARDS_DATA = [
         "question": "In una navbar con logo a sinistra e link di navigazione a destra, quale tecnica Flexbox evita l'uso di float o posizionamenti assoluti?",
         "options": [
           "Applicare 'margin-left: auto' al contenitore dei link (o usare justify-content: space-between sul flex container)",
-          "Impostare float: right sul contenitore dei link e clear: both sul logo nel motore di layout e rendering del browser",
-          "Applicare text-align: right al contenitore genitore, rallentando il parsing e l'esecuzione dello script",
-          "Usare position: relative con left: 100% sui link, causando regressioni visive cross-browser"
+          "Impostare float: right sul contenitore dei link e clear: both sul logo",
+          "Applicare text-align: right al contenitore genitore",
+          "Usare position: relative con left: 100% sui link"
         ],
         "correctIndex": 0,
         "explanation": "In Flexbox, applicare 'margin-left: auto' a un elemento spinge quell'elemento (e tutti i successivi) all'estrema destra dell'asse principale, assorbendo tutto lo spazio vuoto disponibile in modo pulito e responsive."
@@ -483,10 +483,10 @@ window.CARDS_DATA = [
       {
         "question": "In un layout a card verticale con immagine, titolo, paragrafo descrittivo variabile e un bottone 'Acquista' sul fondo, come si assicura che il bottone sia sempre allineato alla base della card?",
         "options": [
-          "Impostando position: absolute; bottom: 0 sul bottone e position: relative sulla card, regola deprecata W3C",
+          "Impostando position: absolute; bottom: 0 sul bottone e position: relative sulla card",
           "Impostando sulla card display: flex; flex-direction: column e applicando 'margin-top: auto' al bottone",
-          "Aggiungendo un numero fisso di tag <br> per uniformare le altezze dei paragrafi, sintassi non ammessa",
-          "Impostando height: 100px sul paragrafo descrittivo con overflow: scroll, incompatibile con Grid"
+          "Aggiungendo un numero fisso di tag <br> per uniformare le altezze dei paragrafi",
+          "Impostando height: 100px sul paragrafo descrittivo con overflow: scroll"
         ],
         "correctIndex": 1,
         "explanation": "Impostando la card in Flexbox a colonna, 'margin-top: auto' applicato al bottone spinge il margine superiore ad assorbire tutto lo spazio residuo creato dai testi brevi, posizionando il pulsante perfettamente allineato sul fondo."
@@ -494,10 +494,10 @@ window.CARDS_DATA = [
       {
         "question": "Qual è il rischio nell'utilizzare la proprietà CSS 'order' di Flexbox per alterare la sequenza visiva degli elementi a schermo?",
         "options": [
-          "Invalida la validazione del codice HTML secondo gli standard del W3C, producendo comportamenti imprevedibili nella gestione dello z-index e dei layer visivi",
-          "Provoca il blocco del rendering grafico sui dispositivi basati su processori ARM; questo approccio genera incompatibilità cross-browser e problemi di rendering asincrono",
+          "Invalida la validazione del codice HTML secondo gli standard del W3C",
+          "Provoca il blocco del rendering grafico sui dispositivi basati su processori ARM",
           "Genera una discordanza tra l'ordine visivo a schermo e l'ordine nel DOM, disorientando gli utenti che navigano con tastiera (Tab) o screen reader",
-          "Disabilita automaticamente gli eventi JavaScript di ascolto del clic, una scelta che introduce dipendenze fragili e ostacola le future attività di refactoring"
+          "Disabilita automaticamente gli eventi JavaScript di ascolto del clic"
         ],
         "correctIndex": 2,
         "explanation": "La proprietà 'order' modifica solo il rendering visivo ma NON altera il Document Object Model (DOM). Chi naviga con tastiera (tasto Tab) o ascolta lo screen reader seguirà la sequenza HTML originale, generando grave disorientamento."
@@ -536,9 +536,9 @@ window.CARDS_DATA = [
         "question": "Nel pattern architetturale del 'Checkbox Hack' per menu mobile CSS-only, quale elemento HTML funge da pulsante cliccabile visibile dall'utente?",
         "options": [
           "Un elemento <label> associato al checkbox tramite l'attributo 'for' che rispecchia l'id dell'input",
-          "Un elemento <input type='checkbox'> visualizzato a tutto schermo, violando le specifiche ufficiali del W3C",
-          "Un bottone <button onclick='toggle()'> gestito da JavaScript, alterando il flusso naturale dei blocchi semantici",
-          "Un elemento <a> con ancoraggio href='#menu-toggle', istruzione non valida"
+          "Un elemento <input type='checkbox'> visualizzato a tutto schermo",
+          "Un bottone <button onclick='toggle()'> gestito da JavaScript",
+          "Un elemento <a> con ancoraggio href='#menu-toggle'"
         ],
         "correctIndex": 0,
         "explanation": "L'input checkbox viene reso invisibile (es. con display: none o clip). L'utente clicca sull'elemento <label for='menu-toggle'>; il browser cambia lo stato del checkbox permettendo al CSS di intercettare :checked."
@@ -546,10 +546,10 @@ window.CARDS_DATA = [
       {
         "question": "Quale selettore e combinatore CSS permette di mostrare il menu di navigazione quando il checkbox nascosto viene attivato?",
         "options": [
-          ".menu-toggle:hover > nav, sintassi non ammessa",
+          ".menu-toggle:hover > nav",
           ".menu-toggle:checked ~ nav (oppure .menu-toggle:checked + nav)",
-          "nav:active .menu-toggle, ignorato dal browser",
-          "checkbox[status='open'] nav, errato per questo layout"
+          "nav:active .menu-toggle",
+          "checkbox[status='open'] nav"
         ],
         "correctIndex": 1,
         "explanation": "Lo pseudo-selettore ':checked' rileva lo stato attivo dell'input. Il combinatore fratello adiacente (+) o fratello generale (~) seleziona il menu <nav> situato allo stesso livello gerarchico nel codice."
@@ -557,10 +557,10 @@ window.CARDS_DATA = [
       {
         "question": "Come viene tipicamente creata l'icona 'hamburger' (le 3 righe orizzontali) senza utilizzare immagini esterne?",
         "options": [
-          "Disegnando una tabella HTML con 3 righe e 1 colonna a bordi neri spessi; questo approccio genera incompatibilità cross-browser e problemi di rendering asincrono",
-          "Scaricando un font raster non compresso da 4 Megabyte, un parametro fisico dipendente dalla frequenza del bus e dall'architettura del processore",
+          "Disegnando una tabella HTML con 3 righe e 1 colonna a bordi neri spessi",
+          "Scaricando un font raster non compresso da 4 Megabyte",
           "Inserendo tre elementi <span> (o uno span combinato con gli pseudo-elementi ::before e ::after) stilizzati con altezza, larghezza e colore di sfondo",
-          "Utilizzando l'emoji standard di un hamburger alimentare 🍔; tale implementazione causa regressioni visive su viewport a densità di pixel elevata"
+          "Utilizzando l'emoji standard di un hamburger alimentare 🍔"
         ],
         "correctIndex": 2,
         "explanation": "L'approccio CSS standard ed elegante impiega elementi <span> o pseudo-elementi con background-color, border-radius e transizioni CSS, che possono anche animarsi a 'X' quando aperti."
@@ -580,9 +580,9 @@ window.CARDS_DATA = [
         "question": "Cosa consente la proprietà CSS 'transition: transform 0.3s ease-in-out' applicata al pannello del menu mobile?",
         "options": [
           "Rende l'apertura e chiusura del pannello un'animazione fluida anziché uno scatto istantaneo a comparsa secca",
-          "Modifica il colore di sfondo del testo al passaggio del mouse, privo di effetto reale",
-          "Costringe il browser a ricaricare la pagina web durante l'animazione, non previsto nel CSS",
-          "Applica una sfocatura prospettica al logo principale del sito, incompatibile con Grid"
+          "Modifica il colore di sfondo del testo al passaggio del mouse",
+          "Costringe il browser a ricaricare la pagina web durante l'animazione",
+          "Applica una sfocatura prospettica al logo principale del sito"
         ],
         "correctIndex": 0,
         "explanation": "La proprietà 'transition' interpola dolcemente i valori tra lo stato di riposo (es. transform: translateX(-100%)) e lo stato aperto (:checked ~ nav { transform: translateX(0); }), creando un'esperienza fluida a 60fps."
@@ -598,10 +598,10 @@ window.CARDS_DATA = [
       {
         "question": "Qual è il limite principale dal punto di vista dell'accessibilità di un menu responsive basato puramente sul 'Checkbox Hack' privo di JavaScript?",
         "options": [
-          "I motori di ricerca considerano il sito malevolo e penalizzano il punteggio SEO, impedendo una corretta separazione semantica tra struttura HTML e fogli di stile CSS",
+          "I motori di ricerca considerano il sito malevolo e penalizzano il punteggio SEO",
           "L'utente che naviga da tastiera non riceve la gestione del tasto 'Esc' per chiudere il menu né il 'focus trap' che impedisce di navigare sotto il pannello aperto",
-          "I browser mobili non supportano lo pseudo-selettore :checked, disattendendo le convenzioni standard sul caricamento progressivo degli asset grafici",
-          "Il codice CSS richiede più memoria RAM rispetto a uno script JavaScript; questo approccio genera incompatibilità cross-browser e problemi di rendering asincrono"
+          "I browser mobili non supportano lo pseudo-selettore :checked",
+          "Il codice CSS richiede più memoria RAM rispetto a uno script JavaScript"
         ],
         "correctIndex": 1,
         "explanation": "Sebbene elegante perché CSS-only, il Checkbox Hack non può gestire pattern complessi come la chiusura con tasto 'Escape' o il confinare il focus da tastiera (focus trapping) all'interno del menu modale, requisiti essenziali per WCAG AAA."
@@ -609,10 +609,10 @@ window.CARDS_DATA = [
       {
         "question": "Per nascondere il checkbox accessorio dallo schermo mantenendolo accessibile alle tecnologie assistive, quale tecnica è considerata una best practice rispetto a 'display: none'?",
         "options": [
-          "Posizionare l'input a top: -99999px causando problemi di scrolling imprevisto, istruzione non valida",
-          "Impostare color: transparent e font-size: 0px nel motore di layout e rendering del browser",
+          "Posizionare l'input a top: -99999px causando problemi di scrolling imprevisto",
+          "Impostare color: transparent e font-size: 0px",
           "L'uso della classe visivamente nascosta (visually-hidden/sr-only) con clip-path: inset(50%) e width: 1px",
-          "Impostare visibility: hidden che rimuove l'elemento dall'albero di accessibilità, causando regressioni visive cross-browser"
+          "Impostare visibility: hidden che rimuove l'elemento dall'albero di accessibilità"
         ],
         "correctIndex": 2,
         "explanation": "'display: none' e 'visibility: hidden' rimuovono l'elemento anche dall'albero di accessibilità degli screen reader. La classe 'sr-only' (visually-hidden) riduce le dimensioni a 1px e ritaglia il box, preservando la navigabilità da tastiera."
@@ -620,9 +620,9 @@ window.CARDS_DATA = [
       {
         "question": "In quale modo è consigliabile disabilitare il menu mobile su schermi desktop (es. oltre i 768px)?",
         "options": [
-          "Cancellare il tag nav tramite selettore di pseudo-classe :not(:mobile) secondo le regole di specificità e cascata CSS",
-          "Ricaricare il documento via JavaScript caricando un foglio di stile differente, disattendendo le convenzioni standard sul caricamento progressivo degli asset grafici",
-          "Impostare opacity: 0 sul checkbox rendendolo invisibile ma cliccabile, rallentando il parsing e l'esecuzione dello script",
+          "Cancellare il tag nav tramite selettore di pseudo-classe :not(:mobile)",
+          "Ricaricare il documento via JavaScript caricando un foglio di stile differente",
+          "Impostare opacity: 0 sul checkbox rendendolo invisibile ma cliccabile",
           "Utilizzare una Media Query '@media (min-width: 768px)' in cui la label hamburger riceve display: none e il tag <nav> torna a display: flex o block statico"
         ],
         "correctIndex": 3,
@@ -683,9 +683,9 @@ window.CARDS_DATA = [
       {
         "question": "Cosa assicura la proprietà CSS 'object-fit: cover' applicata alle immagini all'interno delle card?",
         "options": [
-          "Comprime l'immagine riducendo il peso in byte del file scaricato, una pratica che compromette la portabilità del codice sui motori di rendering moderni",
-          "Stira forzatamente l'immagine in altezza e larghezza fino a riempire il riquadro anche se viene deformata, incompatibile con Grid",
-          "Applica una maschera circolare a tutti i quattro angoli del contenitore, una scelta che introduce dipendenze fragili e ostacola le future attività di refactoring",
+          "Comprime l'immagine riducendo il peso in byte del file scaricato",
+          "Stira forzatamente l'immagine in altezza e larghezza fino a riempire il riquadro anche se viene deformata",
+          "Applica una maschera circolare a tutti i quattro angoli del contenitore",
           "Scala l'immagine mantenendo le proporzioni e ritagliando le parti eccedenti per riempire completamente il box senza deformazioni"
         ],
         "correctIndex": 3,
@@ -695,9 +695,9 @@ window.CARDS_DATA = [
         "question": "Cosa permette di realizzare la funzione CSS moderna 'clamp(1rem, 2.5vw, 2rem)' per la dimensione dei testi tipografici?",
         "options": [
           "Imposta una dimensione fluida che scala con la larghezza del viewport (2.5vw), vincolata tra una soglia minima (1rem) e una massima (2rem)",
-          "Arrotonda la misura del carattere al valore intero di pixel più vicino, violando le specifiche ufficiali del W3C",
-          "Forza il testo a rimanere esattamente fisso a 2.5 centimetri su qualsiasi dispositivo, causando regressioni visive cross-browser",
-          "Converte automaticamente i caratteri minuscoli in maiuscoletto sopra i 2rem secondo le regole di specificità e cascata CSS"
+          "Arrotonda la misura del carattere al valore intero di pixel più vicino",
+          "Forza il testo a rimanere esattamente fisso a 2.5 centimetri su qualsiasi dispositivo",
+          "Converte automaticamente i caratteri minuscoli in maiuscoletto sopra i 2rem"
         ],
         "correctIndex": 0,
         "explanation": "La funzione 'clamp(min, preferred, max)' crea la tipografia fluida ideale: il testo cresce proporzionalmente alla larghezza dello schermo (2.5vw), garantendo che non diventi mai né troppo piccolo né eccessivamente grande."
@@ -724,10 +724,10 @@ window.CARDS_DATA = [
       {
         "question": "Un designer propone di utilizzare breakpoint basati sulle dimensioni esatte dell'iPhone 15 e dell'iPad Pro. Perché questo approccio è sconsigliato nelle best practice del Responsive Web Design?",
         "options": [
-          "Perché i moderni motori browser ignorano le media query che corrispondono a marchi commerciali registrati, compromettendo la responsività su schermi mobili",
-          "Perché Apple impedisce l'uso del CSS responsive sui propri dispositivi mobili, rallentando il parsing e l'esecuzione dello script",
+          "Perché i moderni motori browser ignorano le media query che corrispondono a marchi commerciali registrati",
+          "Perché Apple impedisce l'uso del CSS responsive sui propri dispositivi mobili",
           "Perché i breakpoint non dovrebbero essere fissati sui singoli dispositivi ma sui 'punti di rottura' naturali in cui il contenuto e il layout iniziano a degradare",
-          "Perché i dispositivi tablet non supportano display con orientamento orizzontale (landscape), ignorando le linee guida sull'accessibilità WCAG"
+          "Perché i dispositivi tablet non supportano display con orientamento orizzontale (landscape)"
         ],
         "correctIndex": 2,
         "explanation": "Il parco dispositivi è infinito e in continua mutazione. I breakpoint devono essere guidati dal contenuto (Content-out), ovvero collocati dove la leggibilità o la gerarchia visiva richiedono una riorganizzazione (es. quando le colonne diventano troppo strette o le righe troppo lunghe)."
@@ -735,9 +735,9 @@ window.CARDS_DATA = [
       {
         "question": "Qual è la differenza pratica tra l'utilizzo della media query '@media (prefers-reduced-motion: reduce)' e le animazioni standard?",
         "options": [
-          "Disabilita automaticamente il touch screen forzando l'uso del mouse, compromettendo la responsività su schermi mobili",
-          "Aumenta la frequenza dei fotogrammi (FPS) della GPU sui telefoni da gaming, impedendo una corretta separazione semantica tra struttura HTML e fogli di stile CSS",
-          "Sostituisce i video HTML5 con file audio WAV, una pratica che compromette la portabilità del codice sui motori di rendering moderni",
+          "Disabilita automaticamente il touch screen forzando l'uso del mouse",
+          "Aumenta la frequenza dei fotogrammi (FPS) della GPU sui telefoni da gaming",
+          "Sostituisce i video HTML5 con file audio WAV",
           "Consente di disabilitare o semplificare animazioni, scorrimenti veloci e transizioni per utenti che soffrono di disturbi vestibolari o cinetosi"
         ],
         "correctIndex": 3,
@@ -747,9 +747,9 @@ window.CARDS_DATA = [
         "question": "Se un'immagine ha 'max-width: 100%; height: auto;', quale comportamento garantisce all'interno di un layout responsive?",
         "options": [
           "L'immagine non supererà mai la larghezza del proprio contenitore genitore e manterrà inalterate le proprie proporzioni scalando verso il basso",
-          "L'immagine si espanderà per occupare sempre il 100% dell'altezza dell'intero schermo, producendo comportamenti imprevedibili nella gestione dello z-index e dei layer visivi",
-          "L'immagine verrà caricata in formato SVG vettoriale a qualsiasi risoluzione, violando i principi di accessibilità per utenti che utilizzano tecnologie assistive",
-          "L'immagine forzerà il genitore ad allargarsi fino alla risoluzione nativa del file bitmap, secondo le specifiche industriali pubblicate nei data sheet ufficiali dei produttori"
+          "L'immagine si espanderà per occupare sempre il 100% dell'altezza dell'intero schermo",
+          "L'immagine verrà caricata in formato SVG vettoriale a qualsiasi risoluzione",
+          "L'immagine forzerà il genitore ad allargarsi fino alla risoluzione nativa del file bitmap"
         ],
         "correctIndex": 0,
         "explanation": "'max-width: 100%' impedisce all'immagine di debordare dal genitore nei display piccoli, mentre 'height: auto' permette al browser di calcolare l'altezza in base al rapporto di forma nativo, evitando qualsiasi distorsione visiva."

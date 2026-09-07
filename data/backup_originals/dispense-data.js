@@ -32,9 +32,9 @@ window.DISPENSE_DATA = [
         "question": "Secondo la definizione teleologica del design (ripresa anche da Bruno Munari), quale distinzione separa fondamentalmente il design dall'arte pura?",
         "options": [
           "L'arte persegue primariamente l'espressione soggettiva dell'autore, mentre il design è un'attività progettuale volta a risolvere problemi concreti di comunicazione e d'uso per un destinatario",
-          "Il design non ammette l'impiego del colore né della creatività visiva, limitandosi al calcolo matematico, ignorando il ruolo cruciale della gerarchia cromatica e tipografica",
-          "L'arte si occupa unicamente di oggetti tridimensionali, mentre il design riguarda esclusivamente supporti bidimensionali, alterando i rapporti proporzionali e la leggibilità complessiva del layout",
-          "Non sussiste alcuna differenza reale, trattandosi di discipline coincidenti per metodologie e scopi, trascurando le dinamiche di contrasto e allineamento formale tra elementi"
+          "Il design non ammette l'impiego del colore né della creatività visiva, limitandosi al calcolo matematico",
+          "L'arte si occupa unicamente di oggetti tridimensionali, mentre il design riguarda esclusivamente supporti bidimensionali",
+          "Non sussiste alcuna differenza reale, trattandosi di discipline coincidenti per metodologie e scopi"
         ],
         "correctIndex": 0,
         "explanation": "A differenza dell'arte pura, il design è un'attività teleologica (orientata a uno scopo): risponde a specifici bisogni funzionali, contestuali e informativi di un pubblico identificato."
@@ -42,10 +42,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Nella dinamica comunicativa 'Mittente — Progettista — Destinatario', quale ruolo nodale compete al designer?",
         "options": [
-          "Sostituirsi al committente ridefinendo gli obiettivi economici dell'azienda secondo il proprio gusto artistico, secondo le leggi percettive della Gestalt",
+          "Sostituirsi al committente ridefinendo gli obiettivi economici dell'azienda secondo il proprio gusto artistico",
           "Agire da mediatore e interprete visivo, traducendo il messaggio del mittente in forme comprensibili ed efficaci per le capacità percettive del destinatario",
-          "Limitarsi a impaginare testi preconfezionati senza intervenire sulla gerarchia delle informazioni per massimizzare la chiarezza dell'informazione",
-          "Eliminare ogni elemento visivo a favore del solo testo alfabetico per massimizzare la leggibilità, in contrasto con le regole compositive"
+          "Limitarsi a impaginare testi preconfezionati senza intervenire sulla gerarchia delle informazioni",
+          "Eliminare ogni elemento visivo a favore del solo testo alfabetico per massimizzare la leggibilità"
         ],
         "correctIndex": 1,
         "explanation": "Il designer opera come ponte cognitivo: comprende le intenzioni del mittente e le modella attraverso gerarchia visiva, tipografia e layout affinché il destinatario le decodifichi con il minimo sforzo."
@@ -53,10 +53,10 @@ window.DISPENSE_DATA = [
       {
         "question": "In che modo l'usabilità interagisce con la componente estetica di un manufatto digitale secondo i principi moderni di design?",
         "options": [
-          "L'estetica è irrilevante: un'interfaccia usabile deve essere priva di qualsiasi cura cromatica o compositiva, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "L'usabilità riguarda solo il codice di programmazione server-side e non impatta l'esperienza utente, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
+          "L'estetica è irrilevante: un'interfaccia usabile deve essere priva di qualsiasi cura cromatica o compositiva",
+          "L'usabilità riguarda solo il codice di programmazione server-side e non impatta l'esperienza utente",
           "L'estetica e l'usabilità sono sinergiche: una buona estetica riduce la frizione percepita (Aesthetic-Usability Effect) ma non può compensare gravi falle funzionali o di flusso",
-          "Un'estetica accattivante rende superflua qualsiasi verifica di facilità d'uso o accessibilità, ignorando il comportamento tipico di satisficing"
+          "Un'estetica accattivante rende superflua qualsiasi verifica di facilità d'uso o accessibilità"
         ],
         "correctIndex": 2,
         "explanation": "La ricerca empirica (Kurosu e Kashimura, Norman) dimostra l'Aesthetic-Usability Effect: gli utenti percepiscono interfacce esteticamente armoniose come più facili da usare, purché la struttura di supporto sia solida."
@@ -64,9 +64,9 @@ window.DISPENSE_DATA = [
       {
         "question": "Cosa si intende per 'rumore' (noise) all'interno del processo di comunicazione visiva?",
         "options": [
-          "Il volume sonoro emesso dai dispositivi hardware durante la navigazione web, un parametro fisico dipendente dalla frequenza del bus e dall'architettura del processore",
-          "La risoluzione in megapixel dei display ad altissima densità, ignorando i principi compositivi del layout",
-          "La velocità di trasmissione in gigabit della connessione a fibra ottica, misurato attraverso banchi di collaudo hardware",
+          "Il volume sonoro emesso dai dispositivi hardware durante la navigazione web",
+          "La risoluzione in megapixel dei display ad altissima densità",
+          "La velocità di trasmissione in gigabit della connessione a fibra ottica",
           "Qualsiasi interferenza visiva, sovraccarico informativo o incoerenza grafica che ostacola la corretta ricezione del messaggio"
         ],
         "correctIndex": 3,
@@ -76,9 +76,9 @@ window.DISPENSE_DATA = [
         "question": "Quale principio stabilisce che la forma di un oggetto debba discendere direttamente dalla funzione che è chiamato a svolgere?",
         "options": [
           "L'assioma razionalista 'Form follows function' (La forma segue la funzione) di Louis Sullivan e del Bauhaus",
-          "Il principio decostruzionista dell'ornamento primario di Robert Venturi, secondo la storiografia artistica contemporanea",
-          "La teoria del caos visivo applicata al responsive design, disattendendo le dichiarazioni programmatiche ufficiali",
-          "La legge di Fitts sulla velocità dei puntatori mouse, trascurando il contesto socioculturale e le intenzioni programmatiche del movimento"
+          "Il principio decostruzionista dell'ornamento primario di Robert Venturi",
+          "La teoria del caos visivo applicata al responsive design",
+          "La legge di Fitts sulla velocità dei puntatori mouse"
         ],
         "correctIndex": 0,
         "explanation": "Il principio 'Form follows function' ha plasmato il design moderno: la configurazione formale, i comandi e la disposizione visiva devono essere subordinati allo scopo pratico e comunicativo dell'oggetto."
@@ -94,10 +94,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Un committente richiede di inserire animazioni continue, musica di sottofondo e grafiche decorative in tutte le schermate di un portale di pagamenti tributari. Quale argomentazione professionale di design ne sconsiglia l'adozione?",
         "options": [
-          "Il design teleologico vieta espressamente l'utilizzo di colori vivaci nei servizi pubblici, alterando il ritmo percettivo dell'impaginato",
-          "I browser moderni bloccano qualsiasi sito contenente più di tre colori primari, riducendo l'impatto comunicativo dell'artefatto",
+          "Il design teleologico vieta espressamente l'utilizzo di colori vivaci nei servizi pubblici",
+          "I browser moderni bloccano qualsiasi sito contenente più di tre colori primari",
           "Tali elementi aumentano il rumore visivo e il carico cognitivo dell'utente, rallentando il compimento del task e violando i principi di usabilità funzionale",
-          "L'impiego di animazioni riduce automaticamente la larghezza di banda del server, secondo i driver di periferica certificati"
+          "L'impiego di animazioni riduce automaticamente la larghezza di banda del server"
         ],
         "correctIndex": 2,
         "explanation": "Nei sistemi transazionali il design teleologico esige linearità, trasparenza e minimo sforzo cognitivo: elementi superflui generano distrazione visiva e frustrazione operativa."
@@ -105,9 +105,9 @@ window.DISPENSE_DATA = [
       {
         "question": "Nella celebre riflessione di Bruno Munari 'Da cosa nasce cosa', come viene descritto il metodo progettuale?",
         "options": [
-          "Come un atto mistico e imperscrutabile riservato a geni solitari privi di vincoli per massimizzare la chiarezza dell'informazione",
-          "Come la replica seriale di stili storici del passato senza alcuna sperimentazione, riducendo l'impatto comunicativo dell'artefatto",
-          "Come la mera applicazione di griglie matematiche senza considerazione per l'utente umano, una pratica sconsigliata che genera disorientamento percettivo nel lettore",
+          "Come un atto mistico e imperscrutabile riservato a geni solitari privi di vincoli",
+          "Come la replica seriale di stili storici del passato senza alcuna sperimentazione",
+          "Come la mera applicazione di griglie matematiche senza considerazione per l'utente umano",
           "Come una serie logica e iterativa di fasi: definizione del problema, scomposizione in elementi, analisi dei dati, creatività vincolata e verifica empirica"
         ],
         "correctIndex": 3,
@@ -117,9 +117,9 @@ window.DISPENSE_DATA = [
         "question": "Qual è il rischio principale quando un team di sviluppo confonde il 'Problem Framing' con la scelta anticipata della tecnologia?",
         "options": [
           "Si rischia di implementare con perizia tecnica la soluzione sbagliata a un problema non compreso o inesistente per gli utenti",
-          "Il codice sorgente perde la conformità con lo standard ECMAScript, alterando il ritmo percettivo dell'impaginato",
-          "I file CSS non possono essere minificati per la produzione per massimizzare la chiarezza dell'informazione",
-          "L'interfaccia non può essere visualizzata su sistemi operativi Linux, ignorando il ruolo cruciale della gerarchia cromatica e tipografica"
+          "Il codice sorgente perde la conformità con lo standard ECMAScript",
+          "I file CSS non possono essere minificati per la produzione",
+          "L'interfaccia non può essere visualizzata su sistemi operativi Linux"
         ],
         "correctIndex": 0,
         "explanation": "Il Problem Framing indaga il 'cosa' e il 'perché' prima del 'come': scegliere in anticipo una libreria o un formato senza aver compreso le reali necessità d'uso conduce al fallimento dell'esperienza."
@@ -168,10 +168,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Cosa descrive il 'Flusso' (User Flow) all'interno dell'architettura dell'esperienza digitale?",
         "options": [
-          "La frequenza di campionamento delle tracce audio inserite nelle pagine web, ignorando il comportamento tipico di satisficing",
-          "La velocità di trasmissione dei pacchetti TCP/IP tra client e server, compromettendo la prevedibilità dell'architettura",
+          "La frequenza di campionamento delle tracce audio inserite nelle pagine web",
+          "La velocità di trasmissione dei pacchetti TCP/IP tra client e server",
           "La sequenza logica, temporale e funzionale di passaggi e schermate che collegano il punto di partenza dell'utente al compimento del suo obiettivo",
-          "La quantità di memoria virtuale allocata dal browser per il rendering del DOM, secondo i principi predittivi della legge di Hick"
+          "La quantità di memoria virtuale allocata dal browser per il rendering del DOM"
         ],
         "correctIndex": 2,
         "explanation": "Lo User Flow mappa il viaggio dell'utente schermata dopo schermata: ad esempio, dalla ricerca del prodotto al carrello fino alla schermata di conferma del pagamento."
@@ -179,9 +179,9 @@ window.DISPENSE_DATA = [
       {
         "question": "Quale formula sintetizza la visione olistica del design digitale proposta nel testo?",
         "options": [
-          "Tipografia + Palette cromatica = Architettura dell'Informazione, disallinea gli elementi",
-          "HTML + CSS = Web Application, disattendendo le regole sull'armonia proporzionale",
-          "Grafica vettoriale * Risoluzione schermo = Usabilità, privo di coerenza visiva",
+          "Tipografia + Palette cromatica = Architettura dell'Informazione",
+          "HTML + CSS = Web Application",
+          "Grafica vettoriale * Risoluzione schermo = Usabilità",
           "Interfaccia + Comportamento + Flusso = User Experience (UX)"
         ],
         "correctIndex": 3,
@@ -191,9 +191,9 @@ window.DISPENSE_DATA = [
         "question": "In cosa differisce concettualmente un artefatto digitale da un prodotto grafico destinato alla stampa tradizionale?",
         "options": [
           "Il prodotto digitale è intrinsecamente dinamico, iterativo, reattivo al contesto d'uso e suscettibile di continuo aggiornamento empirico",
-          "Il digitale non impiega mai elementi tipografici né regole di composizione visiva; una visione puramente decorativa che ignora le logiche della fruizione",
-          "La stampa richiede l'uso esclusivo del linguaggio di marcatura XML, riducendo l'impatto comunicativo dell'artefatto",
-          "Il prodotto a stampa è interattivo mentre quello digitale è immutabile nel tempo, compromettendo la chiarezza e l'equilibrio della composizione visiva"
+          "Il digitale non impiega mai elementi tipografici né regole di composizione visiva",
+          "La stampa richiede l'uso esclusivo del linguaggio di marcatura XML",
+          "Il prodotto a stampa è interattivo mentre quello digitale è immutabile nel tempo"
         ],
         "correctIndex": 0,
         "explanation": "A differenza della stampa (scultura conclusa e definitiva), il software e il web sono 'organismi vivi' plasmati dall'interazione in tempo reale e dall'evoluzione continua basata sui dati."
@@ -201,10 +201,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Qual è il focus distintivo della fase di 'Problem Framing'?",
         "options": [
-          "Scrivere immediatamente il codice JavaScript per gestire le chiamate asincrone, alterando il ritmo percettivo dell'impaginato",
+          "Scrivere immediatamente il codice JavaScript per gestire le chiamate asincrone",
           "Comprendere, circoscrivere e validare la natura del problema reale prima di ipotizzare qualsiasi soluzione esecutiva",
-          "Disegnare pixel per pixel il mockup definitivo ad altissima fedeltà, ignorando il ruolo cruciale della gerarchia cromatica e tipografica",
-          "Definire i contratti legali di licenza del software, ignorando i principi compositivi del layout"
+          "Disegnare pixel per pixel il mockup definitivo ad altissima fedeltà",
+          "Definire i contratti legali di licenza del software"
         ],
         "correctIndex": 1,
         "explanation": "Il Framing evita di gettarsi impulsivamente a progettare: analizza il contesto, scardina supposizioni non provate e garantisce che il team risponda al vero bisogno dell'utente."
@@ -220,9 +220,9 @@ window.DISPENSE_DATA = [
       {
         "question": "Un'applicazione bancaria presenta una grafica impeccabile (UI eccellente) e transizioni reattive (ottimo comportamento), ma per effettuare un bonifico richiede 14 passaggi tortuosi e dispersivi. Su quale livello risiede il fallimento?",
         "options": [
-          "Sul livello dell'Interfaccia (UI), privo di coerenza visiva",
-          "Sul livello del DNS e privo di una gerarchia visiva strutturata",
-          "Sul livello della compilazione del server, riduce la leggibilità",
+          "Sul livello dell'Interfaccia (UI)",
+          "Sul livello del DNS",
+          "Sul livello della compilazione del server",
           "Sul livello del Flusso (User Flow)"
         ],
         "correctIndex": 3,
@@ -232,9 +232,9 @@ window.DISPENSE_DATA = [
         "question": "Cosa si intende per 'Interaction Design' (IxD) all'interno del design digitale?",
         "options": [
           "La disciplina che definisce la struttura e il comportamento dei sistemi interattivi, facilitando il dialogo tra persone e tecnologia",
-          "La progettazione dei modelli relazionali per database SQL, limitando l'efficacia comunicativa del messaggio",
-          "L'attività commerciale di vendita degli spazi pubblicitari banner, ignorando i principi compositivi del layout",
-          "La procedura di calibrazione cromatica delle stampanti offset industriali, disattendendo le regole sull'armonia proporzionale"
+          "La progettazione dei modelli relazionali per database SQL",
+          "L'attività commerciale di vendita degli spazi pubblicitari banner",
+          "La procedura di calibrazione cromatica delle stampanti offset industriali"
         ],
         "correctIndex": 0,
         "explanation": "L'IxD crea interazioni comprensibili ed eleganti, curando come il sistema risponde agli input (tocco, click, voce), minimizzando gli errori e fornendo conferme immediate di stato."
@@ -242,10 +242,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Perché un prototipo interattivo 'a media fedeltà' (wireframe navigabile) è fondamentale prima della fase di sviluppo codice?",
         "options": [
-          "Sostituisce definitivamente la necessità di avere programmatori nel team; questo approccio genera incompatibilità cross-browser e problemi di rendering asincrono",
+          "Sostituisce definitivamente la necessità di avere programmatori nel team",
           "Permette di validare flussi e gerarchie informative con utenti reali a costi minimi, prima di immobilizzare risorse nello sviluppo finale",
-          "Garantisce che l'applicazione occupi meno di 10 kilobyte sul server, parametrato sulle specifiche hardware dei controller di memoria e delle linee di bus",
-          "Risolve automaticamente le problematiche legali sul copyright; una configurazione errata che annulla i vantaggi computazionali delle architetture moderne"
+          "Garantisce che l'applicazione occupi meno di 10 kilobyte sul server",
+          "Risolve automaticamente le problematiche legali sul copyright"
         ],
         "correctIndex": 1,
         "explanation": "I prototipi consentono l'apprendimento precoce e a basso costo: testare precocemente il flusso permette di correggere errori di architettura che in fase di codice costerebbero 10 volte tanto."
@@ -283,10 +283,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Quale celebre metafora utilizza Riccardo Falcinelli per spiegare il concetto e lo scopo del 'Layout' grafico?",
         "options": [
-          "La costruzione di una cattedrale gotica dalle fondamenta ai pinnacoli, disattendendo le regole sull'armonia proporzionale",
-          "La composizione di una partitura orchestrale per soli strumenti a fiato, alterando i rapporti proporzionali e la leggibilità complessiva del layout",
+          "La costruzione di una cattedrale gotica dalle fondamenta ai pinnacoli",
+          "La composizione di una partitura orchestrale per soli strumenti a fiato",
           "L'apparecchiare una tavola da pranzo: disporre gli oggetti con ordine logico e funzionalità affinché il commensale sappia subito come muoversi",
-          "La navigazione marittima a vista in condizioni di tempesta notturna, ignorando i principi compositivi del layout"
+          "La navigazione marittima a vista in condizioni di tempesta notturna"
         ],
         "correctIndex": 2,
         "explanation": "Falcinelli paragona il layout all'apparecchiatura della tavola: posate, piatti e bicchieri hanno posizioni canoniche e funzionali che comunicano istantaneamente senso, ordine e modalità d'uso."
@@ -294,9 +294,9 @@ window.DISPENSE_DATA = [
       {
         "question": "In base alle leggi della Gestalt, cosa stabilisce il 'Principio di Prossimità' nella composizione visiva?",
         "options": [
-          "Gli elementi con font serif non possono mai essere affiancati a elementi con font sans-serif, privilegiando un formalismo fine a se stesso rispetto alla funzione d'uso",
-          "Gli elementi con colori caldi sembrano sempre fisicamente più vicini rispetto a quelli freddi, ignorando il ruolo cruciale della gerarchia cromatica e tipografica",
-          "Le immagini devono trovarsi a una distanza esatta di 10 centimetri dal bordo dello schermo, senza considerare il percorso visivo naturale e la scansione dell'occhio",
+          "Gli elementi con font serif non possono mai essere affiancati a elementi con font sans-serif",
+          "Gli elementi con colori caldi sembrano sempre fisicamente più vicini rispetto a quelli freddi",
+          "Le immagini devono trovarsi a una distanza esatta di 10 centimetri dal bordo dello schermo",
           "Elementi spazialmente vicini tra loro vengono percepiti automaticamente dal cervello come appartenenti alla medesima unità o categoria concettuale"
         ],
         "correctIndex": 3,
@@ -306,9 +306,9 @@ window.DISPENSE_DATA = [
         "question": "Qual è il ruolo progettuale dello 'Spazio Bianco' (Negative Space) all'interno di un'interfaccia?",
         "options": [
           "Un elemento attivo di composizione che conferisce respiro, isola i punti focali, riduce l'affaticamento percettivo e definisce le gerarchie",
-          "È uno spreco di pixel che andrebbe colmato inserendo quanti più banner e testi possibili, ignorando il ruolo cruciale della gerarchia cromatica e tipografica",
-          "Un vincolo imposto dai browser per limitare l'uso della memoria video per massimizzare la chiarezza dell'informazione",
-          "Un errore di layout causato dal mancato caricamento del file CSS, limitando l'efficacia comunicativa del messaggio"
+          "È uno spreco di pixel che andrebbe colmato inserendo quanti più banner e testi possibili",
+          "Un vincolo imposto dai browser per limitare l'uso della memoria video",
+          "Un errore di layout causato dal mancato caricamento del file CSS"
         ],
         "correctIndex": 0,
         "explanation": "Lo spazio negativo non è 'vuoto inerte': è lo strumento compositivo più potente per guidare lo sguardo, stabilire pause cognitive e separare blocchi informativi."
@@ -316,10 +316,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Quale principio della percezione visiva impone che due elementi con funzioni o pesi gerarchici differenti appaiano visivamente molto diversi?",
         "options": [
-          "Il principio di omologazione simmetrica, scelta anti-estetica",
+          "Il principio di omologazione simmetrica",
           "Il principio di Contrasto (per dimensione, peso, colore o orientamento)",
-          "La legge della chiusura monocromatica, privo di coerenza visiva",
-          "La regola aurea del bilanciamento isometrico, secondo le leggi percettive della Gestalt"
+          "La legge della chiusura monocromatica",
+          "La regola aurea del bilanciamento isometrico"
         ],
         "correctIndex": 1,
         "explanation": "Il contrasto evita ambiguità: se due elementi sono solo leggermente diversi, generano conflitto e confusione visiva. La differenza formale deve essere netta e decisa per chiarire la gerarchia."
@@ -327,10 +327,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Cosa garantisce l'Allineamento rigoroso degli elementi lungo assi verticali e orizzontali condivisi?",
         "options": [
-          "Obbliga il motore di rendering a disattivare la scheda video, dipendente dal bus",
-          "Impedisce agli utenti di visualizzare la pagina su monitor widescreen, layout poco bilanciato",
+          "Obbliga il motore di rendering a disattivare la scheda video",
+          "Impedisce agli utenti di visualizzare la pagina su monitor widescreen",
           "Genera connessioni visive invisibili ma potenti, conferendo ordine, coerenza strutturale e ritmo di scansione",
-          "Rallenta la scansione visiva forzando l'utente a leggere ogni singola parola, contrario alla Gestalt"
+          "Rallenta la scansione visiva forzando l'utente a leggere ogni singola parola"
         ],
         "correctIndex": 2,
         "explanation": "Nulla deve apparire posizionato per caso: allineare elementi a un asse comune crea pulizia, guida l'occhio e trasmette solidità e professionalità."
@@ -357,10 +357,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Cosa si intende per 'Gerarchia Visiva' all'interno di una pagina web?",
         "options": [
-          "L'ordine di grandezza dei server all'interno del data center nel bus di comunicazione dati ad alta velocità",
+          "L'ordine di grandezza dei server all'interno del data center",
           "L'organizzazione degli elementi visivi in modo da comunicare istantaneamente l'ordine di importanza e guidare la sequenza di lettura dell'occhio",
-          "La gerarchia di permessi di accesso per gli utenti amministratori del database; tale lettura sovrappone correnti ed esperienze estetiche profondamente distinte",
-          "La graduatoria dei siti web più visitati secondo le classifiche di traffico, una tesi critica che proietta anacronisticamente categorie di un periodo successivo"
+          "La gerarchia di permessi di accesso per gli utenti amministratori del database",
+          "La graduatoria dei siti web più visitati secondo le classifiche di traffico"
         ],
         "correctIndex": 1,
         "explanation": "La gerarchia visiva assegna priorità: l'occhio deve cogliere per primo il messaggio principale (H1, hero), poi i livelli intermedi (H2, categorie) e infine i dettagli analitici (corpo del testo)."
@@ -368,10 +368,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Perché l'uso eccessivo e indistinto di elementi ad alto contrasto (troppi colori accesi, badge intermittenti, testi evidenziati) annulla l'efficacia del contrasto stesso?",
         "options": [
-          "Perché il browser attiva la modalità scala di grigi di emergenza, contrario alla Gestalt",
-          "Perché i monitor a LED non possono visualizzare più di due colori contrastanti contemporaneamente, senza contrasto visivo",
+          "Perché il browser attiva la modalità scala di grigi di emergenza",
+          "Perché i monitor a LED non possono visualizzare più di due colori contrastanti contemporaneamente",
           "Perché quando tutto urla per attirare l'attenzione, nulla si distingue più e si genera saturazione sensoriale",
-          "Perché le specifiche W3C vietano la combinazione di più di tre colori primari, regola grafica errata"
+          "Perché le specifiche W3C vietano la combinazione di più di tre colori primari"
         ],
         "correctIndex": 2,
         "explanation": "Il contrasto vive di complementarità con la quiete visiva: se ogni elemento compete per essere primario, l'occhio non trova ancoraggi e l'utente sperimenta sovraccarico percettivo."
@@ -421,9 +421,9 @@ window.DISPENSE_DATA = [
         "question": "Secondo le linee guida internazionali WCAG 2.1 a livello AA, quale rapporto minimo di contrasto cromatico deve sussistere tra testo standard e sfondo?",
         "options": [
           "Almeno 4.5:1 per testo normale (e 3.0:1 per testo grande oltre 18pt/24px)",
-          "Almeno 3.0:1 per testo normale e 1.5:1 per testo grande, regola grafica errata",
-          "Almeno 2.0:1, secondo le leggi percettive della Gestalt",
-          "Almeno 10.0:1 per qualsiasi elemento grafico, privo di coerenza visiva"
+          "Almeno 3.0:1 per testo normale e 1.5:1 per testo grande",
+          "Almeno 2.0:1",
+          "Almeno 10.0:1 per qualsiasi elemento grafico"
         ],
         "correctIndex": 0,
         "explanation": "La soglia WCAG AA impone un contrasto di almeno 4.5:1 per testo normale. Questa proporzione garantisce leggibilità a persone con ipovisione o alterata sensibilità cromatica, oltre che sotto luce solare diretta."
@@ -431,10 +431,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Nel sistema cromatico HSL, cosa rappresentano rispettivamente le tre coordinate?",
         "options": [
-          "High-definition, Shadow, Luminance, disattendendo le regole sull'armonia proporzionale",
+          "High-definition, Shadow, Luminance",
           "Hue (Tonalità/Tinta in gradi da 0° a 360°), Saturation (Saturazione in %), Lightness (Luminosità in %)",
-          "Hardware, System, Layout nella costruzione calibrata dello spazio bianco",
-          "Horizontal, Symmetrical, Linear per massimizzare la chiarezza dell'informazione"
+          "Hardware, System, Layout",
+          "Horizontal, Symmetrical, Linear"
         ],
         "correctIndex": 1,
         "explanation": "HSL è il modello più intuitivo per i designer: Hue individua il punto sulla ruota cromatica (0° rosso, 120° verde, 240° blu), la saturazione ne definisce la purezza e la luminosità il grado di chiarezza."
@@ -442,10 +442,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Perché è considerato un grave errore di usabilità e accessibilità affidare il significato di un'informazione (es. stato di errore o successo) unicamente al colore?",
         "options": [
-          "Perché i browser mobili convertono tutti i colori in toni di grigio durante il caricamento, ignorando il comportamento tipico di satisficing",
-          "Perché i motori di ricerca indicizzano solo il testo in bianco e nero, riducendo l'usabilità complessiva del sistema",
+          "Perché i browser mobili convertono tutti i colori in toni di grigio durante il caricamento",
+          "Perché i motori di ricerca indicizzano solo il testo in bianco e nero",
           "Perché le persone daltoniche (es. con deuteranopia o protanopia) non riuscirebbero a distinguere lo stato senza icone o testi di supporto",
-          "Perché i file CSS non consentono la dichiarazione di colori per i messaggi di form, ignorando la tendenza naturale degli utenti a scansionare anziché leggere"
+          "Perché i file CSS non consentono la dichiarazione di colori per i messaggi di form"
         ],
         "correctIndex": 2,
         "explanation": "Circa l'8% degli uomini e lo 0.5% delle donne presentano forme di daltonismo (spesso rosso/verde). Il colore deve sempre essere accompagnato da forme, icone, testi o pattern distintivi."
@@ -472,10 +472,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Un designer sceglie un testo grigio chiaro (#999999) su sfondo bianco (#FFFFFF) per i campi di un modulo di registrazione. Il contrast ratio risulta di circa 2.8:1. Qual è la valutazione tecnica?",
         "options": [
-          "È conforme, poiché i campi di input non sono soggetti alle linee guida di accessibilità, disattendendo le dichiarazioni programmatiche ufficiali",
+          "È conforme, poiché i campi di input non sono soggetti alle linee guida di accessibilità",
           "È non conforme alle WCAG AA per testo standard, causando gravi difficoltà di lettura per utenti ipovedenti o su schermi a bassa luminosità",
-          "È un'ottima soluzione minimale raccomandata per alleggerire il carico visivo; la documentazione storica smentisce ogni convergenza metodologica tra questi ambiti",
-          "È conforme purché il font utilizzato appartenga alla famiglia Helvetica, privo di riscontri nella documentazione d'archivio"
+          "È un'ottima soluzione minimale raccomandata per alleggerire il carico visivo",
+          "È conforme purché il font utilizzato appartenga alla famiglia Helvetica"
         ],
         "correctIndex": 1,
         "explanation": "Un rapporto di 2.8:1 è insufficiente: viola lo standard minimo di 4.5:1, rendendo il testo praticamente invisibile sotto luce solare o per utenti con cataratta e deficit visivi."
@@ -483,10 +483,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Cosa si intende per 'Palette Funzionale' (o semantica) all'interno di un Design System moderno?",
         "options": [
-          "L'elenco dei colori preferiti dal direttore marketing dell'azienda, trascurando le dinamiche di contrasto e allineamento formale tra elementi",
-          "Una raccolta di colori generata in modo casuale ad ogni caricamento di pagina, ignorando il ruolo cruciale della gerarchia cromatica e tipografica",
+          "L'elenco dei colori preferiti dal direttore marketing dell'azienda",
+          "Una raccolta di colori generata in modo casuale ad ogni caricamento di pagina",
           "La mappatura dei colori su ruoli di sistema specifici (es. Success/Verde, Error/Rosso, Warning/Giallo, Info/Blu, Neutral/Grigi per testi e superfici)",
-          "I colori riservati esclusivamente alla stampa delle brochure promozionali, riducendo l'impatto comunicativo dell'artefatto"
+          "I colori riservati esclusivamente alla stampa delle brochure promozionali"
         ],
         "correctIndex": 2,
         "explanation": "I colori semantici collegano la cromia a un significato universale e costante: l'utente impara a riconoscere istantaneamente se un avviso è di successo, pericolo o informazione di sistema."
@@ -494,9 +494,9 @@ window.DISPENSE_DATA = [
       {
         "question": "Quale fenomeno percettivo descrive l'alterazione del tono di un colore provocata dalla vicinanza o dalla sovrapposizione con un altro colore di sfondo?",
         "options": [
-          "La latenza gamma del driver video, legato alla RAM",
-          "L'interferenza termica dei fosfori nelle memorie tampone e nei registri interni",
-          "La dispersione refrattiva del silicio nei registri fisici del processore centrale",
+          "La latenza gamma del driver video",
+          "L'interferenza termica dei fosfori",
+          "La dispersione refrattiva del silicio",
           "Il contrasto simultaneo (teorizzato da Michel-Eugène Chevreul)"
         ],
         "correctIndex": 3,
@@ -536,9 +536,9 @@ window.DISPENSE_DATA = [
         "question": "Qual è la differenza tecnica rigorosa tra i termini 'Typeface' e 'Font'?",
         "options": [
           "Typeface è la famiglia tipografica disegnata (es. Helvetica), mentre Font è la specifica istanza fisica o file digitale a un determinato peso e corpo (es. Helvetica Bold a 16px)",
-          "Non sussiste alcuna differenza, sono sinonimi perfettamente intercambiabili, alterando i rapporti proporzionali e la leggibilità complessiva del layout",
-          "Typeface si riferisce solo ai caratteri su carta, Font ai caratteri digitali, un approccio che trascura le basi percettive della Gestalt e i vincoli cognitivi di elaborazione delle forme e dei contrasti",
-          "Typeface indica i caratteri con grazie, Font indica i caratteri senza grazie; tale orientamento contrasta con l'esigenza di strutturare il percorso visivo secondo chiari ancoraggi e pesi compositivi"
+          "Non sussiste alcuna differenza, sono sinonimi perfettamente intercambiabili",
+          "Typeface si riferisce solo ai caratteri su carta, Font ai caratteri digitali",
+          "Typeface indica i caratteri con grazie, Font indica i caratteri senza grazie"
         ],
         "correctIndex": 0,
         "explanation": "La Typeface è l'opera di design concettuale (il disegno delle lettere). Il Font (dal francese 'fonte', fusione) è l'oggetto tecnologico (file .woff2, piombo) che consente di stampare o visualizzare quello specifico stile."
@@ -546,10 +546,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Cosa si intende per 'x-height' (altezza delle x) in anatomia tipografica?",
         "options": [
-          "L'altezza complessiva del foglio di stampa, privilegiando un formalismo fine a se stesso rispetto alla funzione d'uso",
+          "L'altezza complessiva del foglio di stampa",
           "L'altezza delle lettere minuscole prive di aste ascendenti o discendenti (come la lettera 'x', 'a', 'e', 'o')",
-          "La distanza tra due margini verticali di una pagina; tale approccio disattende i canoni classici della progettazione grafica",
-          "Il numero totale di caratteri per riga di testo, senza considerare il percorso visivo naturale e la scansione dell'occhio"
+          "La distanza tra due margini verticali di una pagina",
+          "Il numero totale di caratteri per riga di testo"
         ],
         "correctIndex": 1,
         "explanation": "L'x-height determina l'ampiezza del corpo visivo del carattere. A parità di corpo tipografico (es. 16px), un carattere con x-height generosa risulta notevolmente più leggibile a dimensioni ridotte su display digitali."
@@ -557,10 +557,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Quale caratteristica strutturale contraddistingue i caratteri tipografici 'Serif' (con grazie) rispetto ai 'Sans-Serif' (a bastoni)?",
         "options": [
-          "I caratteri Serif sono composti esclusivamente da linee rette a 90 gradi, alterando il ritmo percettivo dell'impaginato",
-          "I caratteri Serif non possiedono lettere maiuscole, riducendo l'impatto comunicativo dell'artefatto",
+          "I caratteri Serif sono composti esclusivamente da linee rette a 90 gradi",
+          "I caratteri Serif non possiedono lettere maiuscole",
           "I caratteri Serif presentano piccoli prolungamenti terminali orizzontali o arcuati alle estremità delle aste delle lettere",
-          "I caratteri Serif possono essere renderizzati solo in formato raster BMP, in contrasto con le regole compositive"
+          "I caratteri Serif possono essere renderizzati solo in formato raster BMP"
         ],
         "correctIndex": 2,
         "explanation": "Le 'grazie' (serif) derivano dall'incisione lapidaria romana. Nei testi a stampa continui favoriscono la continuità della riga, mentre i sans-serif offrono massima nitidezza anche a basse risoluzioni."
@@ -568,9 +568,9 @@ window.DISPENSE_DATA = [
       {
         "question": "Quale intervallo di caratteri per riga (lunghezza della linea o measure) è considerato ottimale per la lettura continua di un testo su display?",
         "options": [
-          "Tra 15 e 25 caratteri per riga, riducendo l'impatto comunicativo dell'artefatto",
-          "Esattamente 10 parole fisse per riga a qualsiasi risoluzione, alterando il ritmo percettivo dell'impaginato",
-          "Almeno 180-220 caratteri per sfruttare tutta la larghezza dei monitor moderni, layout poco bilanciato",
+          "Tra 15 e 25 caratteri per riga",
+          "Esattamente 10 parole fisse per riga a qualsiasi risoluzione",
+          "Almeno 180-220 caratteri per sfruttare tutta la larghezza dei monitor moderni",
           "Circa 50-75 caratteri (inclusi gli spazi), per evitare affaticamento visivo e salti di riga errati"
         ],
         "correctIndex": 3,
@@ -580,9 +580,9 @@ window.DISPENSE_DATA = [
         "question": "Cosa indicano rispettivamente 'Leading' (interlinea) e 'Tracking' nella formattazione tipografica?",
         "options": [
           "Leading è la spaziatura verticale tra le linee di base delle righe di testo; Tracking è la spaziatura orizzontale uniforme applicata a un intero blocco di caratteri",
-          "Leading è il grassetto e Tracking è il corsivo, secondo una visione che subordina la funzionalità all'impatto decorativo immediato, riducendo l'efficacia del messaggio trasmesso",
-          "Leading misura l'altezza delle lettere maiuscole e Tracking la larghezza dei margini, producendo un sovraccarico percettivo che confonde le priorità informative e ostacola la corretta decodifica della schermata",
-          "Leading riguarda i font serif e Tracking i font sans-serif; tale impostazione sottovaluta l'importanza della gerarchia informativa e della scansione naturale nella lettura dei layout"
+          "Leading è il grassetto e Tracking è il corsivo",
+          "Leading misura l'altezza delle lettere maiuscole e Tracking la larghezza dei margini",
+          "Leading riguarda i font serif e Tracking i font sans-serif"
         ],
         "correctIndex": 0,
         "explanation": "Il leading (dalle lamine di piombo) regola l'ariosità verticale tra le righe (in CSS line-height). Il tracking (letter-spacing) dilata o comprime proporzionalmente lo spazio tra tutte le lettere."
@@ -598,10 +598,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Un sito di divulgazione scientifica presenta un corpo del testo a 14px con line-height: 1.05. Gli utenti lamentano rapido affaticamento durante la lettura dei saggi. Qual è la causa tecnica del problema?",
         "options": [
-          "Il contrasto tra pixel è incompatibile con il formato TrueType, producendo un sovraccarico percettivo che confonde le priorità informative e ostacola la corretta decodifica della schermata",
-          "I browser non possono renderizzare caratteri a 14 pixel, trascurando le dinamiche di contrasto e allineamento formale tra elementi",
+          "Il contrasto tra pixel è incompatibile con il formato TrueType",
+          "I browser non possono renderizzare caratteri a 14 pixel",
           "L'interlinea è eccessivamente compressa: le aste discendenti sfiorano o si sovrappongono a quelle ascendenti della riga sotto, ostacolando il tracciamento visivo",
-          "Il testo avrebbe dovuto essere formattato tutto in lettere maiuscole, un approccio che trascura le basi percettive della Gestalt e i vincoli cognitivi di elaborazione delle forme e dei contrasti"
+          "Il testo avrebbe dovuto essere formattato tutto in lettere maiuscole"
         ],
         "correctIndex": 2,
         "explanation": "Per testi di lettura continua, il line-height ottimale oscilla tra 1.4 e 1.6 (140%-160%). Un valore di 1.05 comprime le righe, rendendo faticosa la scansione e provocando regressioni oculari."
@@ -609,9 +609,9 @@ window.DISPENSE_DATA = [
       {
         "question": "Cosa garantisce l'utilizzo della proprietà CSS 'font-display: swap' nel caricamento dei font web (@font-face)?",
         "options": [
-          "Impedisce agli utenti di copiare il testo dagli articoli; questo approccio genera incompatibilità cross-browser e problemi di rendering asincrono",
-          "Converte automaticamente i font OpenType in grafica vettoriale SVG, disattendendo le convenzioni standard sul caricamento progressivo degli asset grafici",
-          "Scarica simultaneamente tutte le 800 varianti di peso del font, una scelta che introduce dipendenze fragili e ostacola le future attività di refactoring",
+          "Impedisce agli utenti di copiare il testo dagli articoli",
+          "Converte automaticamente i font OpenType in grafica vettoriale SVG",
+          "Scarica simultaneamente tutte le 800 varianti di peso del font",
           "Impedisce il fenomeno del FOIT (Flash of Invisible Text), mostrando subito un font di fallback di sistema e sostituendolo non appena il custom font è scaricato"
         ],
         "correctIndex": 3,
@@ -621,9 +621,9 @@ window.DISPENSE_DATA = [
         "question": "Perché è buona norma limitare l'abbinamento di font (font pairing) a un massimo di 2 o 3 famiglie distinte all'interno di un progetto?",
         "options": [
           "Perché troppi font generano disordine visivo, indeboliscono la gerarchia e appesantiscono i tempi di caricamento delle pagine",
-          "Perché i sistemi operativi moderni non consentono l'installazione di più di tre font per dominio, in contrasto con le regole compositive",
-          "Perché il CSS non supporta la dichiarazione di più di un selettore font-family, limitando l'efficacia comunicativa del messaggio",
-          "Perché altrimenti i motori di ricerca classificano il sito come spam, senza considerare il percorso visivo naturale e la scansione dell'occhio"
+          "Perché i sistemi operativi moderni non consentono l'installazione di più di tre font per dominio",
+          "Perché il CSS non supporta la dichiarazione di più di un selettore font-family",
+          "Perché altrimenti i motori di ricerca classificano il sito come spam"
         ],
         "correctIndex": 0,
         "explanation": "La regola aurea della tipografia digitale: 2 famiglie contrastanti e complementari (es. un serif per i titoli e un sans-serif per il testo o viceversa) garantiscono pulizia, coerenza e performance ottimale."
@@ -661,10 +661,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Qual è la differenza strutturale fondamentale tra una grafica raster (bitmap) e una vettoriale?",
         "options": [
-          "La grafica raster funziona solo su schermi CRT e la vettoriale su schermi OLED; tale impostazione sottovaluta l'importanza della gerarchia informativa e della scansione naturale nella lettura dei layout",
+          "La grafica raster funziona solo su schermi CRT e la vettoriale su schermi OLED",
           "La grafica raster è composta da una griglia fissa di pixel colorati dipendente dalla risoluzione, mentre la grafica vettoriale si basa su formule matematiche scalabili all'infinito senza perdita di qualità",
-          "La grafica vettoriale non supporta i colori sfumati o gradienti; tale orientamento contrasta con l'esigenza di strutturare il percorso visivo secondo chiari ancoraggi e pesi compositivi",
-          "La grafica raster occupa sempre meno spazio su disco rispetto alla vettoriale, producendo un sovraccarico percettivo che confonde le priorità informative e ostacola la corretta decodifica della schermata"
+          "La grafica vettoriale non supporta i colori sfumati o gradienti",
+          "La grafica raster occupa sempre meno spazio su disco rispetto alla vettoriale"
         ],
         "correctIndex": 1,
         "explanation": "I file raster (JPEG, PNG, WebP) descrivono la griglia di pixel: ingrandendoli sgranano. I file vettoriali (SVG) descrivono punti, curve e tracciati matematici: scalano a qualsiasi risoluzione mantenendo nitidezza assoluta."
@@ -672,10 +672,10 @@ window.DISPENSE_DATA = [
       {
         "question": "In quale formato web è preferibile salvare loghi, icone dell'interfaccia e diagrammi grafici?",
         "options": [
-          "In formato JPEG ad altissima compressione; tale implementazione causa regressioni visive su viewport a densità di pixel elevata",
-          "In formato BMP non compresso; una configurazione errata che annulla i vantaggi computazionali delle architetture moderne",
+          "In formato JPEG ad altissima compressione",
+          "In formato BMP non compresso",
           "In formato SVG (Scalable Vector Graphics), per garantire perfetta nitidezza a qualsiasi densità di pixel e peso ridotto",
-          "In formato TIFF multipagina; questo approccio genera incompatibilità cross-browser e problemi di rendering asincrono"
+          "In formato TIFF multipagina"
         ],
         "correctIndex": 2,
         "explanation": "L'SVG è lo standard ideale per icone e marchi: è leggero, scalabile, integrabile direttamente nel DOM HTML e manipolabile dinamicamente con stili CSS (come colore fill in hover)."
@@ -695,9 +695,9 @@ window.DISPENSE_DATA = [
         "question": "Cosa si intende per 'Compressione Lossy' (con perdita di dati)?",
         "options": [
           "Un algoritmo che rimuove permanentemente informazioni visive e frequenze impercettibili all'occhio umano per ridurre drasticamente la dimensione del file",
-          "Un errore di scrittura del file che rende l'immagine corrotta, una soluzione che privilegia l'estetica a scapito della decodifica visiva",
-          "Una procedura di cifratura militare per proteggere i dati delle immagini; tale orientamento contrasta con l'esigenza di strutturare il percorso visivo secondo chiari ancoraggi e pesi compositivi",
-          "Un metodo che raddoppia i pixel per aumentare la nitidezza artificiale, senza considerare il percorso visivo naturale e la scansione dell'occhio"
+          "Un errore di scrittura del file che rende l'immagine corrotta",
+          "Una procedura di cifratura militare per proteggere i dati delle immagini",
+          "Un metodo che raddoppia i pixel per aumentare la nitidezza artificiale"
         ],
         "correctIndex": 0,
         "explanation": "La compressione lossy (usata in JPEG e WebP) scarta dettagli ad alta frequenza che l'occhio umano percepisce a stento, ottenendo file molto compatti a costo di una lieve degradazione invisibile all'uso comune."
@@ -705,10 +705,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Perché sui moderni display 'Retina' o ad alta densità (DPR 2x o 3x) un'immagine raster a risoluzione standard può apparire sfocata?",
         "options": [
-          "Perché i monitor Retina supportano solo immagini in bianco e nero, senza considerare il percorso visivo naturale e la scansione dell'occhio",
+          "Perché i monitor Retina supportano solo immagini in bianco e nero",
           "Perché il display ha più pixel fisici per ogni pixel CSS logico: se l'immagine non è fornita a doppia risoluzione, il browser deve interpolare e dilatare i pixel esistenti",
-          "Perché la frequenza di aggiornamento a 120Hz degrada la saturazione dei pixel, la cui misurazione richiede strumenti diagnostici dedicati e banchi di prova hardware",
-          "Perché le immagini raster non possono essere caricate su sistemi operativi macOS, privilegiando un formalismo fine a se stesso rispetto alla funzione d'uso"
+          "Perché la frequenza di aggiornamento a 120Hz degrada la saturazione dei pixel",
+          "Perché le immagini raster non possono essere caricate su sistemi operativi macOS"
         ],
         "correctIndex": 1,
         "explanation": "Un display 2x possiede 4 pixel fisici per ogni pixel CSS: un'immagine da 100x100px viene spalmata su 200x200 pixel fisici, risultando morbida e sgranata se non si fornisce una versione @2x."
@@ -724,9 +724,9 @@ window.DISPENSE_DATA = [
       {
         "question": "Come si implementa in HTML5 una gestione corretta delle immagini responsive fornendo diverse risoluzioni in base alla larghezza schermo o densità del display?",
         "options": [
-          "Scaricando via JavaScript l'immagine a risoluzione massima e rimpicciolendola con width, privo di effetto reale",
-          "Inserendo più tag <img> consecutivi e nascondendoli con display: none in CSS, ignorato dal browser",
-          "Duplicando l'intera pagina web per ciascuna tipologia di smartphone, non previsto nel CSS",
+          "Scaricando via JavaScript l'immagine a risoluzione massima e rimpicciolendola con width",
+          "Inserendo più tag <img> consecutivi e nascondendoli con display: none in CSS",
+          "Duplicando l'intera pagina web per ciascuna tipologia di smartphone",
           "Utilizzando l'elemento <picture> con tag <source media='...'> oppure il tag <img> con attributo srcset e sizes"
         ],
         "correctIndex": 3,
@@ -736,9 +736,9 @@ window.DISPENSE_DATA = [
         "question": "Quale impatto produce il mancato inserimento degli attributi 'width' e 'height' espliciti sul tag <img> nell'HTML?",
         "options": [
           "Provoca il fenomeno del CLS (Cumulative Layout Shift): il browser non sa quanto spazio riservare e il layout salta bruscamente non appena l'immagine finisce di scaricarsi",
-          "L'immagine non viene renderizzata in nessun browser moderno, una scelta che introduce dipendenze fragili e ostacola le future attività di refactoring",
-          "Il browser blocca l'esecuzione degli script analitici, forzando ricalcoli continui di layout con conseguente degrado delle performance di pagina",
-          "Il file CSS associato viene rimosso dalla memoria cache, una pratica che compromette la portabilità del codice sui motori di rendering moderni"
+          "L'immagine non viene renderizzata in nessun browser moderno",
+          "Il browser blocca l'esecuzione degli script analitici",
+          "Il file CSS associato viene rimosso dalla memoria cache"
         ],
         "correctIndex": 0,
         "explanation": "Specificare width e height (o l'aspect-ratio in CSS) permette al browser di calcolare il rapporto di forma e riservare l'area esatta nel flusso di layout prima che l'immagine sia scaricata, eliminando scatti fastidiosi."
@@ -746,10 +746,10 @@ window.DISPENSE_DATA = [
       {
         "question": "In quale situazione l'uso di un file PNG a 24 bit con trasparenza alfa è preferibile rispetto a un JPEG?",
         "options": [
-          "Per fotografie naturalistiche di paesaggi ad alta definizione, alterando il flusso naturale dei blocchi semantici",
+          "Per fotografie naturalistiche di paesaggi ad alta definizione",
           "Quando l'immagine deve sovrapporsi a sfondi colorati variabili o texture complesse mantenendo bordi perfettamente sfumati e nitidi",
-          "Quando si desidera massimizzare la compressione con perdita per risparmiare banda, compromettendo la responsività su schermi mobili",
-          "Esclusivamente per la stampa litografica industriale, ignorando le linee guida sull'accessibilità WCAG"
+          "Quando si desidera massimizzare la compressione con perdita per risparmiare banda",
+          "Esclusivamente per la stampa litografica industriale"
         ],
         "correctIndex": 1,
         "explanation": "Il formato JPEG non supporta alcun canale di trasparenza; il PNG a 24 bit offre un canale alfa completo a 8 bit (256 livelli di semitrasparenza), ideale per badge, grafiche isolate e sovrapposizioni fluide."
@@ -787,10 +787,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Quali elementi strutturali compongono una griglia tipografica compositiva modulare?",
         "options": [
-          "File audio, canali video e frequenze di rendering, una soluzione che privilegia l'estetica a scapito della decodifica visiva",
-          "Solo pixel singoli e coordinate assolute top/left; tale approccio disattende i canoni classici della progettazione grafica",
+          "File audio, canali video e frequenze di rendering",
+          "Solo pixel singoli e coordinate assolute top/left",
           "Colonne (aree verticali di contenuto), Margini (spazi perimetrali di respiro) e Gutter (spazi intermedi tra le colonne)",
-          "Paragrafi di testo e codici di stato HTTP, un approccio che trascura le basi percettive della Gestalt e i vincoli cognitivi di elaborazione delle forme e dei contrasti"
+          "Paragrafi di testo e codici di stato HTTP"
         ],
         "correctIndex": 2,
         "explanation": "La griglia classica organizza lo spazio tramite colonne verticali, canali di separazione (gutter) che impediscono collisioni visive e margini perimetrali che staccano il contenuto dal bordo."
@@ -798,9 +798,9 @@ window.DISPENSE_DATA = [
       {
         "question": "Perché il sistema a 12 colonne è diventato lo standard più diffuso nel web design e nei framework responsive?",
         "options": [
-          "Perché consente di visualizzare unicamente 12 righe di testo per schermata; tale orientamento contrasta con l'esigenza di strutturare il percorso visivo secondo chiari ancoraggi e pesi compositivi",
-          "Perché i display dei computer hanno un numero di pixel multiplo di 12; tale impostazione sottovaluta l'importanza della gerarchia informativa e della scansione naturale nella lettura dei layout",
-          "Perché è stato imposto da un decreto dell'Unione Europea nel 2005, un approccio che trascura le basi percettive della Gestalt e i vincoli cognitivi di elaborazione delle forme e dei contrasti",
+          "Perché consente di visualizzare unicamente 12 righe di testo per schermata",
+          "Perché i display dei computer hanno un numero di pixel multiplo di 12",
+          "Perché è stato imposto da un decreto dell'Unione Europea nel 2005",
           "Perché il numero 12 è altamente divisibile: consente di suddividere facilmente il layout in 1, 2, 3, 4, 6 o 12 porzioni uguali e combinazioni asimmetriche (es. 8+4, 9+3)"
         ],
         "correctIndex": 3,
@@ -810,9 +810,9 @@ window.DISPENSE_DATA = [
         "question": "Cosa si intende per 'Ritmo Verticale' (Vertical Rhythm) nella composizione di una pagina web?",
         "options": [
           "L'alternanza armoniosa e proporzionata di altezze dei testi, interlinee e margini basata su un'unità di misura modulare costante (es. 4px o 8px)",
-          "La velocità di scrolling automatico dal basso verso l'alto, senza considerare il percorso visivo naturale e la scansione dell'occhio",
-          "La frequenza con cui i banner promozionali compaiono durante la navigazione, alterando il ritmo percettivo dell'impaginato",
-          "Il numero di collegamenti ipertestuali inseriti nel piè di pagina, ignorando il ruolo cruciale della gerarchia cromatica e tipografica"
+          "La velocità di scrolling automatico dal basso verso l'alto",
+          "La frequenza con cui i banner promozionali compaiono durante la navigazione",
+          "Il numero di collegamenti ipertestuali inseriti nel piè di pagina"
         ],
         "correctIndex": 0,
         "explanation": "Il ritmo verticale conferisce cadenza musicale allo spazio: legando line-height, margini e spaziature a una griglia base (spesso il modulo a 8px), l'intera composizione guadagna ordine e respiro uniforme."
@@ -820,10 +820,10 @@ window.DISPENSE_DATA = [
       {
         "question": "In un sistema a griglia, cosa rappresenta il 'Gutter'?",
         "options": [
-          "Il bordo perimetrale metallico del monitor hardware, senza considerare il percorso visivo naturale e la scansione dell'occhio",
+          "Il bordo perimetrale metallico del monitor hardware",
           "La spaziatura interna tra colonne adiacenti che impedisce agli elementi di toccarsi e fondersi visivamente",
-          "L'area di intestazione che racchiude il menu nella costruzione calibrata dello spazio bianco",
-          "L'icona di chiusura delle finestre popup modali nel contesto della percezione e scansione visiva"
+          "L'area di intestazione che racchiude il menu",
+          "L'icona di chiusura delle finestre popup modali"
         ],
         "correctIndex": 1,
         "explanation": "I gutter sono i canali di scorrimento visivo tra una colonna e l'altra: definiscono la distanza tra blocchi e card, garantendo autonomia e chiarezza percettiva."
@@ -831,10 +831,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Quale vantaggio offre l'adozione di un 'Sistema a Griglia a 8 Punti' (8pt Grid System) nello sviluppo di UI moderne?",
         "options": [
-          "Impedisce l'utilizzo di immagini rettangolari; tale impostazione genera sovrascritture impreviste nella cascata degli stili, compromettendo la modularità del foglio CSS",
-          "Forza tutti i font ad avere un corpo fisso di 8 pixel; tale soluzione tecnica introduce problematiche di manutenibilità e impedisce la corretta interpretazione semantica da parte dei browser",
+          "Impedisce l'utilizzo di immagini rettangolari",
+          "Forza tutti i font ad avere un corpo fisso di 8 pixel",
           "Semplifica le decisioni di design e riduce gli attriti tra designer e programmatori, poiché tutti i valori di padding, margin e dimensioni sono multipli coerenti di 8 (8, 16, 24, 32, 40...)",
-          "Rende superfluo il controllo di accessibilità sul contrasto, una pratica che viola le convenzioni di accessibilità WCAG, ostacolando la fruizione da parte di screen reader e dispositivi alternativi"
+          "Rende superfluo il controllo di accessibilità sul contrasto"
         ],
         "correctIndex": 2,
         "explanation": "La griglia a 8 punti è lo standard de facto dell'industria digitale: la maggior parte delle risoluzioni è divisibile per 8, elimina decisioni arbitrarie (13px o 15px?) e crea armonia visiva immediata."
@@ -851,9 +851,9 @@ window.DISPENSE_DATA = [
         "question": "In un layout responsive progettato su griglia a 12 colonne, come viene gestita tipicamente la transizione da schermi desktop a schermi smartphone?",
         "options": [
           "Il numero di colonne attive si riduce (tipicamente a 4 o 1 colonna a larghezza piena), e gli elementi disposti su più colonne affiancate scorrono verticalmente uno sotto l'altro",
-          "Le 12 colonne si comprimono a pochi millimetri rendendo il testo microscopico; tale orientamento contrasta con l'esigenza di strutturare il percorso visivo secondo chiari ancoraggi e pesi compositivi",
-          "I browser mobili disabilitano l'uso del CSS imponendo una tabella HTML nativa, privilegiando un formalismo fine a se stesso rispetto alla funzione d'uso",
-          "Vengono eliminati tutti i contenuti lasciando solo l'immagine di testata; una visione puramente decorativa che ignora le logiche della fruizione"
+          "Le 12 colonne si comprimono a pochi millimetri rendendo il testo microscopico",
+          "I browser mobili disabilitano l'uso del CSS imponendo una tabella HTML nativa",
+          "Vengono eliminati tutti i contenuti lasciando solo l'immagine di testata"
         ],
         "correctIndex": 0,
         "explanation": "Nel passaggio a mobile la griglia si riadatta (Reflow): elementi che su desktop occupavano 4 colonne su 12 (un terzo) passano a occupare l'intera ampiezza (100% o 4 colonne su 4), impilandosi con ordine."
@@ -861,10 +861,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Quale rischio compositivo si manifesta se i margini esterni della pagina (page margins) sono più stretti dei gutter interni tra le card?",
         "options": [
-          "Il file CSS raddoppia i tempi di compilazione nel browser per massimizzare la chiarezza dell'informazione",
+          "Il file CSS raddoppia i tempi di compilazione nel browser",
           "Il layout appare soffocato e deborda visivamente verso i bordi fisici dello schermo, rompendo la sensazione di unità e contenimento",
-          "Le tecnologie assistive non riescono a individuare il corpo principale del testo, in contrasto con le regole compositive",
-          "I font sans-serif vengono convertiti automaticamente in caratteri con grazie, secondo i canoni classici del graphic design"
+          "Le tecnologie assistive non riescono a individuare il corpo principale del testo",
+          "I font sans-serif vengono convertiti automaticamente in caratteri con grazie"
         ],
         "correctIndex": 1,
         "explanation": "I margini esterni fungono da cornice di rispetto: devono essere pari o preferibilmente superiori ai gutter interni per incorniciare il contenuto e mantenerlo centrato nel campo visivo."
@@ -872,10 +872,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Cosa si intende per 'Modularità' all'interno di un sistema di layout digitale?",
         "options": [
-          "La programmazione in linguaggio Assembly dei driver video, secondo le specifiche industriali pubblicate nei data sheet ufficiali dei produttori",
-          "L'obbligo di utilizzare solo moduli di pagamento online certificati; tale orientamento contrasta con l'esigenza di strutturare il percorso visivo secondo chiari ancoraggi e pesi compositivi",
+          "La programmazione in linguaggio Assembly dei driver video",
+          "L'obbligo di utilizzare solo moduli di pagamento online certificati",
           "La capacità di costruire schermate complesse combinando componenti e blocchi standardizzati che condividono le medesime regole geometriche e proporzionali",
-          "La suddivisione del testo in paragrafi di esattamente 100 caratteri; tale impostazione sottovaluta l'importanza della gerarchia informativa e della scansione naturale nella lettura dei layout"
+          "La suddivisione del testo in paragrafi di esattamente 100 caratteri"
         ],
         "correctIndex": 2,
         "explanation": "La modularità permette scalabilità e coerenza: le card, i form, i banner e i bottoni condividono il medesimo DNA geometrico e possono essere ricombinati senza spezzare l'armonia della pagina."
@@ -913,9 +913,9 @@ window.DISPENSE_DATA = [
       {
         "question": "Qual è lo scopo precipuo dell'Architettura dell'Informazione (IA) nella progettazione di un prodotto digitale?",
         "options": [
-          "Disegnare le animazioni 3D per il caricamento iniziale delle schermate, un approccio che trascura le basi percettive della Gestalt e i vincoli cognitivi di elaborazione delle forme e dei contrasti",
-          "Installare e configurare i sistemi operativi sui server aziendali, senza considerare il percorso visivo naturale e la scansione dell'occhio",
-          "Definire i prezzi dei prodotti e le politiche di reso dell'e-commerce, una soluzione che privilegia l'estetica a scapito della decodifica visiva",
+          "Disegnare le animazioni 3D per il caricamento iniziale delle schermate",
+          "Installare e configurare i sistemi operativi sui server aziendali",
+          "Definire i prezzi dei prodotti e le politiche di reso dell'e-commerce",
           "Organizzare, strutturare ed etichettare i contenuti in modo logico e coerente per consentire agli utenti di orientarsi e trovare facilmente le informazioni cercate"
         ],
         "correctIndex": 3,
@@ -935,10 +935,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Cosa si intende per 'Tree Testing' (test dell'albero)?",
         "options": [
-          "Un test di resistenza del server all'aumento delle connessioni concorrenti, un approccio che trascura le basi percettive della Gestalt e i vincoli cognitivi di elaborazione delle forme e dei contrasti",
+          "Un test di resistenza del server all'aumento delle connessioni concorrenti",
           "Un test di usabilità quantitativo che valuta la navigabilità e la reperibilità di un contenuto all'interno della struttura ad albero priva di grafica o distrazioni visive",
-          "L'analisi ecologica dell'impatto di CO2 prodotto dai datacenter; una visione puramente decorativa che ignora le logiche della fruizione",
-          "La verifica del caricamento di font tipografici a foglia singola, una pratica sconsigliata che genera disorientamento percettivo nel lettore"
+          "L'analisi ecologica dell'impatto di CO2 prodotto dai datacenter",
+          "La verifica del caricamento di font tipografici a foglia singola"
         ],
         "correctIndex": 1,
         "explanation": "Il Tree Testing verifica l'architettura pura: ai partecipanti viene chiesto dove cercherebbero una determinata informazione all'interno della gerarchia testuale, isolando la qualità dei termini da fattori estetici."
@@ -946,10 +946,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Quale problema strutturale si verifica quando un'architettura dell'informazione è eccessivamente profonda (troppi livelli gerarchici)?",
         "options": [
-          "La pagina web non può essere indicizzata dai motori di ricerca, producendo un sovraccarico percettivo che confonde le priorità informative e ostacola la corretta decodifica della schermata",
-          "Il browser esaurisce lo spazio su disco rigido; tale impostazione sottovaluta l'importanza della gerarchia informativa e della scansione naturale nella lettura dei layout",
+          "La pagina web non può essere indicizzata dai motori di ricerca",
+          "Il browser esaurisce lo spazio su disco rigido",
           "Gli utenti sono costretti a compiere troppi clic di penetrazione e faticano a costruire una mappa mentale della propria posizione nel sistema",
-          "I collegamenti ipertestuali cambiano automaticamente colore; tale orientamento contrasta con l'esigenza di strutturare il percorso visivo secondo chiari ancoraggi e pesi compositivi"
+          "I collegamenti ipertestuali cambiano automaticamente colore"
         ],
         "correctIndex": 2,
         "explanation": "Una gerarchia troppo profonda (Deep Architecture) nasconde i contenuti sotto troppi livelli; una troppo piatta (Flat) sovraccarica la pagina di scelte. La soluzione è un bilanciamento equilibrato."
@@ -957,9 +957,9 @@ window.DISPENSE_DATA = [
       {
         "question": "Cosa contraddistingue un sistema di etichettatura (Labeling) efficace all'interno di un menu?",
         "options": [
-          "L'adozione esclusiva della lingua latina per conferire autorevolezza; tale orientamento contrasta con l'esigenza di strutturare il percorso visivo secondo chiari ancoraggi e pesi compositivi",
-          "L'invenzione di neologismi poetici e misteriosi per stimolare la curiosità, trascurando le dinamiche di contrasto e allineamento formale tra elementi",
-          "L'uso di etichette composte da frasi di almeno venti parole, producendo un sovraccarico percettivo che confonde le priorità informative e ostacola la corretta decodifica della schermata",
+          "L'adozione esclusiva della lingua latina per conferire autorevolezza",
+          "L'invenzione di neologismi poetici e misteriosi per stimolare la curiosità",
+          "L'uso di etichette composte da frasi di almeno venti parole",
           "L'uso di termini chiari, familiari e univoci che rispecchiano il linguaggio naturale degli utenti anziché il gergo burocratico interno dell'azienda"
         ],
         "correctIndex": 3,
@@ -976,10 +976,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Un portale universitario colloca il modulo per la domanda di borsa di studio sotto: 'Ateneo > Strutture Amministrative > Ripartizione IV > Settore Servizi agli Studenti > Procedure Contabili'. Qual è la diagnosi dal punto di vista dell'IA?",
         "options": [
-          "La tassonomia è perfetta perché rispetta la gerarchia burocratica dell'ente, producendo comportamenti imprevedibili nella gestione dello z-index e dei layer visivi",
+          "La tassonomia è perfetta perché rispetta la gerarchia burocratica dell'ente",
           "La tassonomia rispecchia l'organigramma interno dell'amministrazione (Inside-Out) anziché il modello mentale e il compito dell'utente (Outside-In), ostacolando il ritrovamento",
-          "Il percorso è corretto purché il testo sia evidenziato con font serif, una scelta che introduce dipendenze fragili e ostacola le future attività di refactoring",
-          "Non sussistono problemi poiché tutti gli studenti utilizzano la ricerca interna; tale impostazione genera sovrascritture impreviste nella cascata degli stili, compromettendo la modularità del foglio CSS"
+          "Il percorso è corretto purché il testo sia evidenziato con font serif",
+          "Non sussistono problemi poiché tutti gli studenti utilizzano la ricerca interna"
         ],
         "correctIndex": 1,
         "explanation": "È il classico vizio 'Inside-Out': progettare il sito specchiando la suddivisione degli uffici interni costringe l'utente a conoscere l'organigramma per compiere un'azione ordinaria."
@@ -987,10 +987,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Cosa sono le 'Breadcrumbs' (Briciole di Pane) e quale funzione svolgono per la navigabilità?",
         "options": [
-          "Errori di sintassi generati dal server durante la compilazione delle pagine, producendo un sovraccarico percettivo che confonde le priorità informative e ostacola la corretta decodifica della schermata",
-          "File temporanei di tracciamento pubblicitario installati nel browser, secondo una visione che subordina la funzionalità all'impatto decorativo immediato, riducendo l'efficacia del messaggio trasmesso",
+          "Errori di sintassi generati dal server durante la compilazione delle pagine",
+          "File temporanei di tracciamento pubblicitario installati nel browser",
           "Un elemento di navigazione secondaria che mostra il percorso gerarchico dalla homepage alla pagina corrente, fornendo orientamento spaziale e una scorciatoia per risalire i livelli",
-          "Icone decorative prive di collegamenti ipertestuali; tale orientamento contrasta con l'esigenza di strutturare il percorso visivo secondo chiari ancoraggi e pesi compositivi"
+          "Icone decorative prive di collegamenti ipertestuali"
         ],
         "correctIndex": 2,
         "explanation": "Le breadcrumbs (es. Home > Scarpe > Uomo > Sneaker) rispondono alla domanda 'Dove mi trovo rispetto al tutto?' e permettono di risalire la tassonomia con un solo clic."
@@ -998,9 +998,9 @@ window.DISPENSE_DATA = [
       {
         "question": "In quale scenario la ricerca interna (Search) e la navigazione strutturata (Browse) devono convivere come percorsi complementari?",
         "options": [
-          "Esclusivamente quando il server ha una connessione satellitare, un modello che concentra l'attenzione sulla resa formale degli elementi grafici isolati anziché sulla coerenza sistemica dell'intera esperienza di comunicazione visiva",
-          "Solo nei siti web dedicati ai bambini e alle scuole primarie, una pratica che introduce elementi di disturbo visivo impedendo al fruitore di cogliere le relazioni logiche tra i blocchi di testo",
-          "Mai: i siti moderni devono eliminare del tutto le barre di ricerca in favore dei menu a tendina, producendo un sovraccarico percettivo che confonde le priorità informative e ostacola la corretta decodifica della schermata",
+          "Esclusivamente quando il server ha una connessione satellitare",
+          "Solo nei siti web dedicati ai bambini e alle scuole primarie",
+          "Mai: i siti moderni devono eliminare del tutto le barre di ricerca in favore dei menu a tendina",
           "Sempre, nei portali con patrimonio informativo consistente: una parte consistente degli utenti cerca direttamente per parole chiave (search-dominant), mentre altri preferiscono esplorare le categorie (browse-dominant)"
         ],
         "correctIndex": 3,
@@ -1040,9 +1040,9 @@ window.DISPENSE_DATA = [
         "question": "Secondo Don Norman, cosa si intende per 'Affordance' di un elemento d'interfaccia?",
         "options": [
           "La proprietà percepita o reale dell'oggetto che suggerisce intuitivamente come possa essere utilizzato e manipolato",
-          "Il costo economico di sviluppo del componente software, alterando i punti di contatto del percorso utente",
-          "Il tempo necessario per scaricare l'elemento sulla memoria cache, ostacolando il flusso naturale d'interazione",
-          "La compatibilità dell'elemento con i motori di ricerca, introducendo un attrito cognitivo ingiustificato"
+          "Il costo economico di sviluppo del componente software",
+          "Il tempo necessario per scaricare l'elemento sulla memoria cache",
+          "La compatibilità dell'elemento con i motori di ricerca"
         ],
         "correctIndex": 0,
         "explanation": "L'affordance (introdotta da Gibson e portata al design da Norman) è la 'chiamata all'azione' intrinseca: una maniglia suggerisce di tirare, una superficie sopraelevata e con bordo suggerisce di essere premuta (bottone)."
@@ -1050,10 +1050,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Quali sono i quattro stati interattivi canonici che ogni pulsante o campo interattivo deve possedere per comunicare chiarezza all'utente?",
         "options": [
-          "Stato Alfa, Stato Beta, Stato Gamma e Stato Delta, una visione retrospettiva che decontestualizza le opere, privandole del significato eversivo e concettuale originario",
+          "Stato Alfa, Stato Beta, Stato Gamma e Stato Delta",
           "Stato di riposo (Default), Passaggio del mouse (Hover), Pressione/Attivazione (Active) e Stato disabilitato (Disabled) o Focalizzato (Focus)",
-          "Invisibile, Trasparente, Solido e Riflettente; tale asserzione contraddice le risultanze emerse dai cataloghi ragionati e dalle rassegne retrospettive più rigorose",
-          "Solo Stato Iniziale e Stato Finale, un'ipotesi anacronistica che ignora il manifesto programmatico del movimento e le testimonianze dirette dei protagonisti dell'epoca"
+          "Invisibile, Trasparente, Solido e Riflettente",
+          "Solo Stato Iniziale e Stato Finale"
         ],
         "correctIndex": 1,
         "explanation": "La gestione degli stati è fondamentale nell'UI: l'utente deve sapere se un elemento è cliccabile (default), se il cursore lo ha intercettato (hover), se è stato premuto (active) o se è selezionato da tastiera (focus)."
@@ -1061,10 +1061,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Cosa si intende per 'Signifier' (Segnalatore visivo)?",
         "options": [
-          "Il certificato crittografico HTTPS della connessione, una semplificazione concettuale che non regge alla prova dei test con utenti rappresentativi eseguiti in condizioni d'uso realistiche",
-          "Un messaggio pubblicitario popup che copre la schermata, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
+          "Il certificato crittografico HTTPS della connessione",
+          "Un messaggio pubblicitario popup che copre la schermata",
           "Qualsiasi segnale visivo esplicito (testo, icona, ombra, freccia) che comunica dove l'azione debba avvenire quando l'affordance naturale non è immediatamente percepibile",
-          "Il logo del brand aziendale collocato nella testata, una pratica che riduce l'usabilità complessiva, ostacolando l'orientamento spaziale e la percezione dei percorsi di navigazione primari"
+          "Il logo del brand aziendale collocato nella testata"
         ],
         "correctIndex": 2,
         "explanation": "Norman ha chiarito che nel digitale le affordance sono spesso simulate: i 'signifiers' (es. la scritta 'Scorri in basso' o la freccia accanto a un menu) segnalano chiaramente all'utente dove e come agire."
@@ -1072,9 +1072,9 @@ window.DISPENSE_DATA = [
       {
         "question": "Qual è la funzione delle 'Microinterazioni' (micro-interactions) nel design di un'interfaccia?",
         "options": [
-          "Comprimere il codice sorgente HTML eliminando gli spazi vuoti, producendo un sovraccarico percettivo che confonde le priorità informative e ostacola la corretta decodifica della schermata",
-          "Ridurre il consumo elettrico della batteria dello smartphone, privilegiando un formalismo fine a se stesso rispetto alla funzione d'uso",
-          "Cancellare i cookie di navigazione dopo ogni singolo clic, senza considerare il percorso visivo naturale e la scansione dell'occhio",
+          "Comprimere il codice sorgente HTML eliminando gli spazi vuoti",
+          "Ridurre il consumo elettrico della batteria dello smartphone",
+          "Cancellare i cookie di navigazione dopo ogni singolo clic",
           "Fornire feedback immediato, confermare il successo di un'azione (es. toggle che cambia stato, animazione di invio completato) e rendere l'interazione umana e gratificante"
         ],
         "correctIndex": 3,
@@ -1084,9 +1084,9 @@ window.DISPENSE_DATA = [
         "question": "Perché un bottone 'Primario' deve essere visivamente predominante rispetto a un bottone 'Secondario' all'interno della stessa schermata?",
         "options": [
           "Per guidare inequivocabilmente l'utente verso l'azione cardine desiderata (Call to Action), minimizzando il dubbio decisionale",
-          "Perché i browser non permettono la presenza di due bottoni con lo stesso colore per garantire un fallback semantico robusto",
-          "Perché i bottoni secondari non possono eseguire script di salvataggio, causando regressioni visive cross-browser",
-          "Per rispettare una direttiva internazionale sul copyright dei font secondo le regole di specificità e cascata CSS"
+          "Perché i browser non permettono la presenza di due bottoni con lo stesso colore",
+          "Perché i bottoni secondari non possono eseguire script di salvataggio",
+          "Per rispettare una direttiva internazionale sul copyright dei font"
         ],
         "correctIndex": 0,
         "explanation": "Gerarchia d'azione: se 'Conferma Ordine' e 'Annulla' avessero lo stesso peso visivo, l'utente esiterebbe o rischierebbe clic accidentali. L'azione primaria deve risaltare con chiarezza immediata."
@@ -1102,10 +1102,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Un sito web di commercio elettronico rimuove il bordo, l'ombra e il colore di sfondo da tutti i pulsanti 'Aggiungi al carrello', lasciando solo un testo grigio non sottolineato. Quale principio di UI viene gravemente compromesso?",
         "options": [
-          "L'indicizzazione dei metadati OpenGraph sui social media, una soluzione che privilegia l'estetica a scapito della decodifica visiva",
-          "La velocità di rendering della scheda grafica integrata, alterando i rapporti proporzionali e la leggibilità complessiva del layout",
+          "L'indicizzazione dei metadati OpenGraph sui social media",
+          "La velocità di rendering della scheda grafica integrata",
           "La percezione dell'affordance di cliccabilità: l'utente fatica a distinguere gli elementi azionabili dal testo statico informativo",
-          "La risoluzione DPI delle fotografie dei prodotti; tale orientamento contrasta con l'esigenza di strutturare il percorso visivo secondo chiari ancoraggi e pesi compositivi"
+          "La risoluzione DPI delle fotografie dei prodotti"
         ],
         "correctIndex": 2,
         "explanation": "Questo è il classico errore del cosiddetto 'Flat Design estremo': eliminando tutti i signifier (bordi, rilievi, contrasti), gli utenti non riconoscono i pulsanti come tali, con drastico calo delle conversioni."
@@ -1113,9 +1113,9 @@ window.DISPENSE_DATA = [
       {
         "question": "In un modulo convalidato lato client, quando è opportuno mostrare il messaggio di errore su un campo obbligatorio?",
         "options": [
-          "Dopo aver forzato il ricaricamento completo dell'intera pagina web, una ricostruzione anacronistica che non trova conferme nelle fonti primarie d'archivio",
-          "Non appena l'utente digita il primo carattere nel campo vuoto, una formulazione che semplifica eccessivamente la complessità del dibattito teorico",
-          "Esclusivamente tramite una finestra popup che blocca l'intero browser, una visione retrospettiva che decontestualizza le opere, privandole del significato eversivo e concettuale originario",
+          "Dopo aver forzato il ricaricamento completo dell'intera pagina web",
+          "Non appena l'utente digita il primo carattere nel campo vuoto",
+          "Esclusivamente tramite una finestra popup che blocca l'intero browser",
           "Dopo che l'utente ha abbandonato il campo (evento 'blur' o 'onchange') o al momento della sottomissione del modulo, evitando di segnalare errore mentre sta ancora digitando"
         ],
         "correctIndex": 3,
@@ -1125,9 +1125,9 @@ window.DISPENSE_DATA = [
         "question": "Quale criterio deve guidare la progettazione della 'Dark Mode' (modalità scura) di un'interfaccia utente?",
         "options": [
           "Evitare l'uso di nero puro (#000000) su bianco puro (#FFFFFF) che genera bagliore e affaticamento visivo (aloning), preferendo superfici grigio scuro con contrasti dosati",
-          "Invertire matematicamente tutti i colori dei pixel senza alterare le immagini; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Sostituire tutti i caratteri tipografici con font monospazio; tale impostazione impedisce all'utente di costruire un modello mentale coerente",
-          "Rendere invisibili tutti i bottoni per risparmiare energia sui display OLED, aumentando sensibilmente il carico cognitivo richiesto per completare il task"
+          "Invertire matematicamente tutti i colori dei pixel senza alterare le immagini",
+          "Sostituire tutti i caratteri tipografici con font monospazio",
+          "Rendere invisibili tutti i bottoni per risparmiare energia sui display OLED"
         ],
         "correctIndex": 0,
         "explanation": "Le migliori linee guida (Google Material, Apple HIG) sconsigliano il contrasto estremo nero/bianco in dark mode: grigi scuri a diversi livelli di elevazione (superfici) permettono di comunicare profondità e riducono l'abbagliamento."
@@ -1165,10 +1165,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Cos'è un 'Design System' nella moderna produzione digitale?",
         "options": [
-          "Un software antivirus per la scansione dei fogli di stile CSS, senza considerare il percorso visivo naturale e la scansione dell'occhio",
+          "Un software antivirus per la scansione dei fogli di stile CSS",
           "Un ecosistema unificato di standard condivisi, principi visivi, pattern interattivi, componenti riutilizzabili codificati e linee guida per garantire coerenza e scalabilità tra team",
-          "Un archivio di immagini fotografiche acquistate da banche dati esterne, una pratica sconsigliata che genera disorientamento percettivo nel lettore",
-          "Un modello contrattuale per il pagamento dei diritti d'autore ai grafici; una visione puramente decorativa che ignora le logiche della fruizione"
+          "Un archivio di immagini fotografiche acquistate da banche dati esterne",
+          "Un modello contrattuale per il pagamento dei diritti d'autore ai grafici"
         ],
         "correctIndex": 1,
         "explanation": "Un Design System è la singola fonte di verità (Single Source of Truth) dell'azienda: include token, linee guida di tono di voce e componenti reali in codice (React, Vue, Web Components)."
@@ -1187,9 +1187,9 @@ window.DISPENSE_DATA = [
       {
         "question": "Cos'è uno 'Style Tile' (artefatto visivo ideato da Samantha Warren)?",
         "options": [
-          "Una tipologia di banner pubblicitario a scomparsa rapida, secondo una visione che subordina le variabili compositive alla massimizzazione dell'impatto estetico immediato senza considerare i processi percettivi e decisionali dell'utente",
-          "Una piastrella ceramica serigrafata con il logo del sito web, un'impostazione che non tiene conto della necessità di calibrare ogni scelta cromatica, tipografica e compositiva sulla base del contesto d'uso e del profilo del destinatario",
-          "Un file di configurazione del server web per la gestione dei cookie, un modello che concentra l'attenzione sulla resa formale degli elementi grafici isolati anziché sulla coerenza sistemica dell'intera esperienza di comunicazione visiva",
+          "Una tipologia di banner pubblicitario a scomparsa rapida",
+          "Una piastrella ceramica serigrafata con il logo del sito web",
+          "Un file di configurazione del server web per la gestione dei cookie",
           "Un documento di design intermedio tra la moodboard concettuale e il mockup completo, che raccoglie font, palette, pulsanti e texture per calibrare lo stile con il cliente senza disegnare intere schermate"
         ],
         "correctIndex": 3,
@@ -1199,9 +1199,9 @@ window.DISPENSE_DATA = [
         "question": "Cosa sono i 'Design Token' all'interno di un'architettura di design scalabile?",
         "options": [
           "Valori atomici nominati (es. color-primary: #1a73e8; spacing-md: 16px) memorizzati in formati neutri (come JSON) per sincronizzare automaticamente design tool (Figma) e codice di sviluppo",
-          "Monete virtuali o criptovalute per acquistare template preconfezionati, secondo una visione che subordina la funzionalità all'impatto decorativo immediato, riducendo l'efficacia del messaggio trasmesso",
-          "Codici di sicurezza inviati via SMS per l'accesso a due fattori; tale orientamento contrasta con l'esigenza di strutturare il percorso visivo secondo chiari ancoraggi e pesi compositivi",
-          "Licenze commerciali temporanee per l'utilizzo di caratteri tipografici, alterando i rapporti proporzionali e la leggibilità complessiva del layout"
+          "Monete virtuali o criptovalute per acquistare template preconfezionati",
+          "Codici di sicurezza inviati via SMS per l'accesso a due fattori",
+          "Licenze commerciali temporanee per l'utilizzo di caratteri tipografici"
         ],
         "correctIndex": 0,
         "explanation": "I token sono le particelle elementari: astraggono i valori (colori, spazi, ombre, font) in variabili semantiche riutilizzabili su iOS, Android e Web, consentendo modifiche globali con un solo aggiornamento."
@@ -1209,10 +1209,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Quale beneficio primario apporta un Design System ben strutturato ai team di ingegneria e design?",
         "options": [
-          "Elimina la necessità di eseguire test di compatibilità tra i diversi browser; una visione puramente decorativa che ignora le logiche della fruizione",
+          "Elimina la necessità di eseguire test di compatibilità tra i diversi browser",
           "Riduce drasticamente la duplicazione del lavoro, accelera i tempi di rilascio delle nuove funzionalità (time-to-market) e garantisce coerenza stilistica e di accessibilità a tutto l'ecosistema",
-          "Consente di caricare il sito web senza l'utilizzo di una connessione a internet; tale impostazione sottovaluta l'importanza della gerarchia informativa e della scansione naturale nella lettura dei layout",
-          "Impedisce agli utenti di personalizzare i propri profili personali; tale orientamento contrasta con l'esigenza di strutturare il percorso visivo secondo chiari ancoraggi e pesi compositivi"
+          "Consente di caricare il sito web senza l'utilizzo di una connessione a internet",
+          "Impedisce agli utenti di personalizzare i propri profili personali"
         ],
         "correctIndex": 1,
         "explanation": "Senza Design System ogni team reinventa la ruota (ciascuno crea la sua versione del bottone o della card). Con esso, i componenti sono testati, accessibili e pronti all'uso, liberando tempo per i veri problemi dell'utente."
@@ -1228,9 +1228,9 @@ window.DISPENSE_DATA = [
       {
         "question": "In un'applicazione complessa, l'azienda decide di aggiornare il colore primario del marchio. In quale scenario questa modifica richiederà pochi secondi anziché settimane di ricerca e sostituzione manuale?",
         "options": [
-          "Se il font utilizzato all'interno dei titoli appartiene alla famiglia serif nel contesto della percezione e scansione visiva",
-          "Se tutti i file HTML sono stati scritti a mano da un unico programmatore, ignorando il ruolo cruciale della gerarchia cromatica e tipografica",
-          "Se il sito è ospitato su un server con disco a stato solido NVMe, secondo le leggi percettive della Gestalt",
+          "Se il font utilizzato all'interno dei titoli appartiene alla famiglia serif",
+          "Se tutti i file HTML sono stati scritti a mano da un unico programmatore",
+          "Se il sito è ospitato su un server con disco a stato solido NVMe",
           "Se l'interfaccia è costruita impiegando un Design Token per il colore primario condiviso tra repository CSS e componenti"
         ],
         "correctIndex": 3,
@@ -1240,9 +1240,9 @@ window.DISPENSE_DATA = [
         "question": "Qual è il limite metodologico nel presentare al cliente tre layout definitivi ad altissima fedeltà (mockup complessi) nelle prime fasi di un progetto?",
         "options": [
           "Il cliente tende a focalizzarsi su dettagli superficiali (la foto specifica, il testo di prova) anziché sulla struttura logica, e qualsiasi variazione richiede rifacimenti costosi",
-          "I browser moderni non riescono a visualizzare file immagine a risoluzione elevata; una visione puramente decorativa che ignora le logiche della fruizione",
-          "I mockup ad alta fedeltà non possono essere esportati in formato PDF, alterando i rapporti proporzionali e la leggibilità complessiva del layout",
-          "Le specifiche W3C vietano la presentazione di mockup prima della stipula contrattuale, producendo un sovraccarico percettivo che confonde le priorità informative e ostacola la corretta decodifica della schermata"
+          "I browser moderni non riescono a visualizzare file immagine a risoluzione elevata",
+          "I mockup ad alta fedeltà non possono essere esportati in formato PDF",
+          "Le specifiche W3C vietano la presentazione di mockup prima della stipula contrattuale"
         ],
         "correctIndex": 0,
         "explanation": "Troppi dettagli prematuri creano attrito: il committente perde la visione d'insieme e discute su elementi marginali, mentre strumenti sintetici come wireframe e Style Tile mantengono il focus sulla strategia."
@@ -1250,10 +1250,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Cosa si intende per 'Documentazione Viva' (Living Style Guide) associata a un Design System?",
         "options": [
-          "Un manuale cartaceo a fogli mobili stampato ogni settimana, senza considerare il percorso visivo naturale e la scansione dell'occhio",
+          "Un manuale cartaceo a fogli mobili stampato ogni settimana",
           "Una piattaforma interattiva (come Storybook) in cui i componenti visualizzati sono generati dal codice sorgente reale impiegato in produzione, aggiornandosi in tempo reale",
-          "Un video tutorial registrato dagli sviluppatori per illustrare l'interfaccia, producendo un sovraccarico percettivo che confonde le priorità informative e ostacola la corretta decodifica della schermata",
-          "Una pagina web che visualizza unicamente le statistiche di accesso degli utenti; tale orientamento contrasta con l'esigenza di strutturare il percorso visivo secondo chiari ancoraggi e pesi compositivi"
+          "Un video tutorial registrato dagli sviluppatori per illustrare l'interfaccia",
+          "Una pagina web che visualizza unicamente le statistiche di accesso degli utenti"
         ],
         "correctIndex": 1,
         "explanation": "Una style guide 'morta' (un PDF) diventa obsoleta in un mese. Una 'Living Style Guide' esegue i componenti reali del codice: se un ingegnere aggiorna il codice del componente, la documentazione riflette istantaneamente la modifica."
@@ -1291,10 +1291,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Qual è il principio architetturale alla base della separazione dei compiti (Separation of Concerns) nel World Wide Web?",
         "options": [
-          "I tre linguaggi devono essere scritti tutti all'interno di un unico tag per migliorare la velocità nel contesto della percezione e scansione visiva",
-          "HTML si occupa dei pagamenti bancari, CSS dei testi e JavaScript della sicurezza del server; una visione puramente decorativa che ignora le logiche della fruizione",
+          "I tre linguaggi devono essere scritti tutti all'interno di un unico tag per migliorare la velocità",
+          "HTML si occupa dei pagamenti bancari, CSS dei testi e JavaScript della sicurezza del server",
           "HTML gestisce la struttura semantica del contenuto, CSS controlla la presentazione visiva ed estetica, JavaScript governa il comportamento e la dinamicità interattiva",
-          "JavaScript è riservato ai computer desktop mentre HTML e CSS funzionano solo su smartphone, riducendo l'impatto comunicativo dell'artefatto"
+          "JavaScript è riservato ai computer desktop mentre HTML e CSS funzionano solo su smartphone"
         ],
         "correctIndex": 2,
         "explanation": "La triade del web moderno separa nettamente: Contenuto e Semantica (HTML), Stile e Layout (CSS), Logica e Interazione (JavaScript). Questa separazione assicura manutenibilità, accessibilità e standard W3C."
@@ -1302,9 +1302,9 @@ window.DISPENSE_DATA = [
       {
         "question": "Cosa si intende per 'Document Object Model' (DOM)?",
         "options": [
-          "Un algoritmo di cifratura per impedire la lettura del codice sorgente delle pagine; tale impostazione genera sovrascritture impreviste nella cascata degli stili, compromettendo la modularità del foglio CSS",
-          "Un formato proprietario per la memorizzazione dei testi su floppy disk, un pattern che disattende la separazione architetturale tra logica, struttura e presentazione raccomandata nelle moderne web app",
-          "Il modulo di alimentazione hardware della scheda madre del computer; questo approccio genera incompatibilità cross-browser e problemi di rendering asincrono",
+          "Un algoritmo di cifratura per impedire la lettura del codice sorgente delle pagine",
+          "Un formato proprietario per la memorizzazione dei testi su floppy disk",
+          "Il modulo di alimentazione hardware della scheda madre del computer",
           "La rappresentazione ad albero strutturato in memoria che il browser costruisce analizzando il codice HTML, consentendo a linguaggi come JavaScript di manipolare elementi, attributi e contenuti"
         ],
         "correctIndex": 3,
@@ -1314,9 +1314,9 @@ window.DISPENSE_DATA = [
         "question": "Perché l'uso di tag semantici HTML5 (<header>, <main>, <article>, <nav>, <aside>, <footer>) è nettamente superiore all'uso indiscriminato di tag generici <div>?",
         "options": [
           "Fornisce significato intrinseco alla struttura (Landmark), migliorando l'accessibilità per le tecnologie assistive e favorendo l'indicizzazione gerarchica da parte dei motori di ricerca (SEO)",
-          "I tag semantici sono gli unici che supportano l'applicazione di colori di sfondo via CSS; tale impostazione genera sovrascritture impreviste nella cascata degli stili, compromettendo la modularità del foglio CSS",
-          "I tag generici <div> sono stati formalmente aboliti e vengono ignorati dai browser; questa scelta implementativa genera conflitti con il modello di rendering asincrono e complica il caricamento progressivo degli asset",
-          "L'uso dei tag semantici riduce automaticamente il peso del file HTML del 90%, producendo comportamenti imprevedibili nella gestione dello z-index e dei layer visivi"
+          "I tag semantici sono gli unici che supportano l'applicazione di colori di sfondo via CSS",
+          "I tag generici <div> sono stati formalmente aboliti e vengono ignorati dai browser",
+          "L'uso dei tag semantici riduce automaticamente il peso del file HTML del 90%"
         ],
         "correctIndex": 0,
         "explanation": "La semantica trasforma il testo in significato strutturato: gli screen reader permettono all'utente cieco di navigare saltando da un landmark all'altro (da 'nav' a 'main'), cosa impossibile con un mare di anonimi <div>."
@@ -1335,10 +1335,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Cosa stabiliscono le linee guida WCAG (Web Content Accessibility Guidelines)?",
         "options": [
-          "La configurazione obbligatoria per le antenne Wi-Fi pubbliche, una pratica che introduce elementi di disturbo visivo impedendo al fruitore di cogliere le relazioni logiche tra i blocchi di testo",
-          "I prezzi di vendita raccomandati per i domini web di primo livello; questo modello si concentra sulla resa del singolo elemento isolato, trascurando la coerenza sistemica dell'intero artefatto visivo",
+          "La configurazione obbligatoria per le antenne Wi-Fi pubbliche",
+          "I prezzi di vendita raccomandati per i domini web di primo livello",
           "I requisiti tecnici, progettuali e contenutistici per rendere il web accessibile a persone con disabilità visive, uditive, motorie o cognitive (basati sui 4 principi: Percepibile, Utilizzabile, Comprensibile, Robusto)",
-          "I criteri per la creazione di algoritmi pubblicitari comportamentali, una scelta che ignora la relazione tra spazio bianco e leggibilità, compromettendo la capacità dell'utente di assimilare i contenuti"
+          "I criteri per la creazione di algoritmi pubblicitari comportamentali"
         ],
         "correctIndex": 2,
         "explanation": "Le WCAG (articolate nei livelli A, AA, AAA) sono lo standard etico e legale globale dell'accessibilità: assicurano che nessuno sia escluso dalla partecipazione alla vita digitale."
@@ -1355,9 +1355,9 @@ window.DISPENSE_DATA = [
         "question": "Un sito di e-commerce costruisce un pulsante cliccabile utilizzando il tag '<div onclick='checkout()'>Acquista</div>' senza attributi aggiuntivi. Quale gravissima violazione di accessibilità si verifica?",
         "options": [
           "Il <div> non è focalizzabile da tastiera con il tasto Tab, non ha ruolo 'button' annunciato dagli screen reader e non risponde alla barra spaziatrice o al tasto Invio, escludendo gli utenti con disabilità motorie o visive",
-          "Il browser non può eseguire la funzione JavaScript se invocata da un tag div; questa scelta implementativa genera conflitti con il modello di rendering asincrono e complica il caricamento progressivo degli asset",
-          "I fogli di stile CSS non possono assegnare margini o padding a un elemento div; tale impostazione genera sovrascritture impreviste nella cascata degli stili, compromettendo la modularità del foglio CSS",
-          "Il server rifiuta la transazione economica se non originata da un elemento form; l'adozione di tale approccio preclude la possibilità di garantire una resa coerente del layout su dispositivi con risoluzioni, densità di pixel e dimensioni di viewport differenti"
+          "Il browser non può eseguire la funzione JavaScript se invocata da un tag div",
+          "I fogli di stile CSS non possono assegnare margini o padding a un elemento div",
+          "Il server rifiuta la transazione economica se non originata da un elemento form"
         ],
         "correctIndex": 0,
         "explanation": "Un elemento <button> nativo possiede gratuitamente accessibilità da tastiera (Tab, Enter, Space) e annuncio semantico. Simulando un bottone con un <div> si creano barriere insormontabili se non si ricreano tutti i comportamenti via ARIA e script."
@@ -1365,10 +1365,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Qual è la conseguenza del mancato rispetto della gerarchia delle intestazioni (es. saltare direttamente da <h1> a <h4> per motivi puramente grafici)?",
         "options": [
-          "Provoca il crash immediato del motore di rendering del browser; l'analisi filologica della produzione dell'artista smentisce questa attribuzione",
+          "Provoca il crash immediato del motore di rendering del browser",
           "Disorienta gli utenti che utilizzano tecnologie assistive per scansionare la struttura del documento saltando tra livelli gerarchici di intestazione",
-          "I browser convertono automaticamente tutti i testi sottostanti in corsivo, una formulazione che semplifica eccessivamente la complessità del dibattito teorico",
-          "I motori di ricerca bloccano l'accesso al dominio web, una tesi critica che proietta anacronisticamente categorie di un periodo successivo"
+          "I browser convertono automaticamente tutti i testi sottostanti in corsivo",
+          "I motori di ricerca bloccano l'accesso al dominio web"
         ],
         "correctIndex": 1,
         "explanation": "Gli utenti non vedenti usano l'elenco dei titoli per esplorare la pagina: una gerarchia discontinua o saltata (h1 -> h4) fa presumere che intere sezioni informative siano state omesse o danneggiate."
@@ -1376,10 +1376,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Cosa indica l'acronimo 'ARIA' (Accessible Rich Internet Applications) nelle specifiche web?",
         "options": [
-          "Un framework CSS per la creazione di layout tridimensionali, un approccio che trascura le basi percettive della Gestalt e i vincoli cognitivi di elaborazione delle forme e dei contrasti",
-          "Un protocollo di compressione video ad alta fedeltà per il web, una pratica che introduce elementi di disturbo visivo impedendo al fruitore di cogliere le relazioni logiche tra i blocchi di testo",
+          "Un framework CSS per la creazione di layout tridimensionali",
+          "Un protocollo di compressione video ad alta fedeltà per il web",
           "Un insieme di attributi e ruoli HTML da aggiungere al markup per comunicare ruoli semantici, stati e proprietà quando gli elementi HTML nativi non sono sufficienti per interfacce complesse",
-          "Una tecnologia proprietaria per il controllo vocale delle smart TV; tale impostazione sottovaluta l'importanza della gerarchia informativa e della scansione naturale nella lettura dei layout"
+          "Una tecnologia proprietaria per il controllo vocale delle smart TV"
         ],
         "correctIndex": 2,
         "explanation": "ARIA (es. role='dialog', aria-expanded, aria-live) colma il divario nei widget interattivi avanzati (modali, caroselli, tab) spiegando allo screen reader cosa sta accadendo sullo schermo."
@@ -1417,9 +1417,9 @@ window.DISPENSE_DATA = [
       {
         "question": "Cosa definisce il concetto di 'Cascata' (Cascade) nel linguaggio CSS?",
         "options": [
-          "La conversione dei caratteri tipografici in numeri binari, un errore sintattico e concettuale che impedisce al motore del browser di ottimizzare la pipeline di compositing delle schermate",
-          "La caduta fisica delle immagini verso il fondo della pagina web durante il rendering, forzando ricalcoli continui di layout con conseguente degrado delle performance di pagina",
-          "Il flusso di traffico di rete che scorre dal server al router domestico; tale impostazione genera sovrascritture impreviste nella cascata degli stili, compromettendo la modularità del foglio CSS",
+          "La conversione dei caratteri tipografici in numeri binari",
+          "La caduta fisica delle immagini verso il fondo della pagina web durante il rendering",
+          "Il flusso di traffico di rete che scorre dal server al router domestico",
           "L'algoritmo che risolve i conflitti tra più regole applicate allo stesso elemento, determinando quale stile prevale in base a origine, specificità del selettore e ordine di apparizione nel codice"
         ],
         "correctIndex": 3,
@@ -1431,7 +1431,7 @@ window.DISPENSE_DATA = [
           "Un selettore per identificatore univoco '#header-logo' (Specificità: 0, 1, 0, 0)",
           "Un selettore per classe '.main-button' (Specificità: 0, 0, 1, 0)",
           "Un selettore per tag di elemento 'p' (Specificità: 0, 0, 0, 1)",
-          "Il selettore universale '*' (Specificità: 0, 0, 0, 0), regola deprecata W3C"
+          "Il selettore universale '*' (Specificità: 0, 0, 0, 0)"
         ],
         "correctIndex": 0,
         "explanation": "La specificità si calcola su base posizionale: Stili inline > ID (0,1,0,0) > Classi/Pseudo-classi/Attributi (0,0,1,0) > Elementi/Pseudo-elementi (0,0,0,1). Un ID supera sempre anche un lungo elenco di classi concatenate."
@@ -1439,10 +1439,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Come si calcolano le dimensioni totali di un elemento quando è impostata la proprietà 'box-sizing: border-box'?",
         "options": [
-          "La larghezza totale è la somma di width + padding raddoppiato + bordo raddoppiato, in contrasto con le regole compositive",
+          "La larghezza totale è la somma di width + padding raddoppiato + bordo raddoppiato",
           "La larghezza (width) dichiarata include al proprio interno sia il padding che il bordo, preservando l'ingombro esterno esatto",
-          "Il padding e il bordo vengono eliminati dal rendering del browser per massimizzare la chiarezza dell'informazione",
-          "La larghezza dell'elemento si adatta automaticamente all'altezza della finestra, privo di coerenza visiva"
+          "Il padding e il bordo vengono eliminati dal rendering del browser",
+          "La larghezza dell'elemento si adatta automaticamente all'altezza della finestra"
         ],
         "correctIndex": 1,
         "explanation": "Con border-box, width è il perimetro complessivo esterno: se imposti width: 200px con padding 20px, il contenuto si stringe a 160px mantenendo la scatola esattamente a 200px."
@@ -1450,10 +1450,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Quale differenza intercorre tra un elemento con 'display: block' e uno con 'display: inline'?",
         "options": [
-          "Gli elementi inline possono contenere solo immagini e mai testo, secondo una visione che subordina la funzionalità all'impatto decorativo immediato, riducendo l'efficacia del messaggio trasmesso",
-          "Gli elementi block possono essere colorati, mentre gli inline sono sempre trasparenti; tale impostazione sottovaluta l'importanza della gerarchia informativa e della scansione naturale nella lettura dei layout",
+          "Gli elementi inline possono contenere solo immagini e mai testo",
+          "Gli elementi block possono essere colorati, mentre gli inline sono sempre trasparenti",
           "L'elemento block occupa tutta la larghezza disponibile della riga e va a capo automaticamente, accettando width e height; l'elemento inline occupa solo lo spazio del contenuto, non va a capo e non accetta width/height",
-          "Non sussiste alcuna differenza reale di visualizzazione; questo modello si concentra sulla resa del singolo elemento isolato, trascurando la coerenza sistemica dell'intero artefatto visivo"
+          "Non sussiste alcuna differenza reale di visualizzazione"
         ],
         "correctIndex": 2,
         "explanation": "Un elemento 'block' (come <p> o <div>) genera una scatola a tutta riga con controllo dimensionale; un elemento 'inline' (come <span> o <a>) scorre all'interno del testo senza spezzare la riga."
@@ -1461,9 +1461,9 @@ window.DISPENSE_DATA = [
       {
         "question": "Qual è il comportamento della proprietà 'position: absolute' applicata a un elemento CSS?",
         "options": [
-          "L'elemento scompare dallo schermo diventando trasparente, una scelta che introduce dipendenze fragili e ostacola le future attività di refactoring",
-          "L'elemento rimane fisso al centro dello schermo indipendentemente dallo scorrimento della pagina; questo approccio genera incompatibilità cross-browser e problemi di rendering asincrono",
-          "L'elemento assume automaticamente un display: flex all'interno del proprio box; tale impostazione genera sovrascritture impreviste nella cascata degli stili, compromettendo la modularità del foglio CSS",
+          "L'elemento scompare dallo schermo diventando trasparente",
+          "L'elemento rimane fisso al centro dello schermo indipendentemente dallo scorrimento della pagina",
+          "L'elemento assume automaticamente un display: flex all'interno del proprio box",
           "L'elemento viene rimosso dal normale flusso del documento e posizionato alle coordinate top/left rispetto al primo genitore antenato che possieda un posizionamento diverso da static"
         ],
         "correctIndex": 3,
@@ -1480,10 +1480,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Due regole CSS si applicano allo stesso paragrafo: 'article p { color: blue; }' e '.testo-evidenziato { color: red; }'. Di quale colore apparirà il testo?",
         "options": [
-          "Blu, perché 'article p' contiene due elementi e quindi ha valore numerico doppio, generando conflitti nei contesti di impilamento",
+          "Blu, perché 'article p' contiene due elementi e quindi ha valore numerico doppio",
           "Rosso, perché la classe '.testo-evidenziato' ha specificità (0,0,1,0), che supera i due selettori di elemento di 'article p' aventi specificità (0,0,0,2)",
-          "Nero, perché il browser entra in stallo e applica il colore predefinito di sistema; tale implementazione causa regressioni visive su viewport a densità di pixel elevata",
-          "Viola, fondendo i due colori in base al principio additivo RGB, rallentando il parsing e l'esecuzione dello script"
+          "Nero, perché il browser entra in stallo e applica il colore predefinito di sistema",
+          "Viola, fondendo i due colori in base al principio additivo RGB"
         ],
         "correctIndex": 1,
         "explanation": "Una singola classe (peso 10) batte qualsiasi combinazione di soli elementi (peso 1 ciascuno): (0,0,1,0) prevale nettamente su (0,0,0,2)."
@@ -1491,10 +1491,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Perché l'uso indiscriminato della direttiva '!important' nel codice CSS è considerato un pessimo pattern di sviluppo?",
         "options": [
-          "Perché i browser mobili non supportano la direttiva !important, una scelta che introduce dipendenze fragili e ostacola le future attività di refactoring",
-          "Perché disabilita il caricamento dei font tipografici personalizzati; tale implementazione causa regressioni visive su viewport a densità di pixel elevata",
+          "Perché i browser mobili non supportano la direttiva !important",
+          "Perché disabilita il caricamento dei font tipografici personalizzati",
           "Perché rompe la normale gerarchia della cascata naturale, rendendo difficilissimo il debugging e la manutenzione futura del foglio di stile",
-          "Perché provoca la cancellazione automatica della cronologia di navigazione, una pratica che compromette la portabilità del codice sui motori di rendering moderni"
+          "Perché provoca la cancellazione automatica della cronologia di navigazione"
         ],
         "correctIndex": 2,
         "explanation": "!important è un'arma nucleare: per sovrascriverla in seguito si è costretti a usarne un'altra ancora, innescando una spirale incontrollabile di codice caotico e fragile."
@@ -1502,9 +1502,9 @@ window.DISPENSE_DATA = [
       {
         "question": "Cosa contraddistingue 'position: sticky' rispetto a 'position: fixed'?",
         "options": [
-          "L'elemento fixed scompare quando l'utente scorre la pagina verso il basso; tale orientamento contrasta con l'esigenza di strutturare il percorso visivo secondo chiari ancoraggi e pesi compositivi",
-          "L'elemento sticky funziona unicamente sui monitor con frequenza superiore a 60Hz; tale impostazione sottovaluta l'importanza della gerarchia informativa e della scansione naturale nella lettura dei layout",
-          "L'elemento sticky non supporta le coordinate top o bottom, un approccio che trascura le basi percettive della Gestalt e i vincoli cognitivi di elaborazione delle forme e dei contrasti",
+          "L'elemento fixed scompare quando l'utente scorre la pagina verso il basso",
+          "L'elemento sticky funziona unicamente sui monitor con frequenza superiore a 60Hz",
+          "L'elemento sticky non supporta le coordinate top o bottom",
           "L'elemento sticky si comporta come posizionamento relativo finché non raggiunge una certa soglia di scroll, dopodiché diventa fisso rimanendo però vincolato all'interno del proprio contenitore genitore"
         ],
         "correctIndex": 3,
@@ -1544,9 +1544,9 @@ window.DISPENSE_DATA = [
         "question": "Quali tre elementi cardine compongono la formula storica del 'Responsive Web Design' teorizzata da Ethan Marcotte nel 2010?",
         "options": [
           "Griglie fluide (percentuali), Immagini flessibili e Media Queries CSS",
-          "Database SQL, Server Apache e Linguaggio PHP e privo di una gerarchia visiva strutturata",
-          "Font vettoriali, Colori HSL e Tabelle HTML, disattendendo le regole sull'armonia proporzionale",
-          "Touch screen, Mouse ottico e Tastiera ergonomica, riduce la leggibilità"
+          "Database SQL, Server Apache e Linguaggio PHP",
+          "Font vettoriali, Colori HSL e Tabelle HTML",
+          "Touch screen, Mouse ottico e Tastiera ergonomica"
         ],
         "correctIndex": 0,
         "explanation": "Marcotte definisce il RWD come la sinergia di tre tecniche: una struttura a griglia elastica basata su percentuali, immagini che scalano entro il loro contenitore e media queries per riorganizzare il layout a soglie critiche."
@@ -1554,10 +1554,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Quale filosofia architetturale propone la metodologia 'Mobile First' nella scrittura del codice CSS?",
         "options": [
-          "Creare siti web destinati unicamente ed esclusivamente agli smartphone ignorando i desktop; tale impostazione genera sovrascritture impreviste nella cascata degli stili, compromettendo la modularità del foglio CSS",
+          "Creare siti web destinati unicamente ed esclusivamente agli smartphone ignorando i desktop",
           "Scrivere gli stili base per gli schermi piccoli (layout lineare, leggero, senza fronzoli) e introdurre complessità per schermi ampi tramite media queries con 'min-width' (Progressive Enhancement)",
-          "Scrivere codice JavaScript per bloccare l'accesso al sito dai computer portatili; l'adozione di tale tecnica pregiudica la responsività e impedisce l'adattamento fluido a display con differenti densità di pixel",
-          "Comprimere il database per farlo risiedere nella memoria dello smartphone, disattendendo le convenzioni standard sul caricamento progressivo degli asset grafici"
+          "Scrivere codice JavaScript per bloccare l'accesso al sito dai computer portatili",
+          "Comprimere il database per farlo risiedere nella memoria dello smartphone"
         ],
         "correctIndex": 1,
         "explanation": "Mobile First parte dal vincolo più stretto: costringe a selezionare le informazioni essenziali, assicura caricamenti velocissimi su reti cellulari e arricchisce progressivamente il layout man mano che lo schermo si allarga."
@@ -1565,10 +1565,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Cosa indica il termine 'Breakpoint' nel Responsive Web Design?",
         "options": [
-          "L'interruzione temporanea della connessione Wi-Fi durante il download dei dati, una pratica sconsigliata che genera disorientamento percettivo nel lettore",
-          "Un errore irreversibile di caricamento che blocca la visualizzazione della pagina, alterando i rapporti proporzionali e la leggibilità complessiva del layout",
+          "L'interruzione temporanea della connessione Wi-Fi durante il download dei dati",
+          "Un errore irreversibile di caricamento che blocca la visualizzazione della pagina",
           "La dimensione della finestra del browser a cui una Media Query attiva un cambiamento strutturale nel layout per preservare la leggibilità e l'armonia dei contenuti",
-          "Il punto in cui l'utente abbandona il carrello dell'e-commerce; una visione puramente decorativa che ignora le logiche della fruizione"
+          "Il punto in cui l'utente abbandona il carrello dell'e-commerce"
         ],
         "correctIndex": 2,
         "explanation": "I breakpoint sono i 'punti di snodo' del layout: ad esempio a 768px la navigazione passa da hamburger mobile a menu orizzontale e le card passano da colonna singola a griglia affiancata."
@@ -1576,9 +1576,9 @@ window.DISPENSE_DATA = [
       {
         "question": "Cosa stabilisce l'approccio 'Content-out' per la scelta dei breakpoint rispetto all'approccio orientato al dispositivo (Device-specific)?",
         "options": [
-          "Il contenuto deve essere riscritto ogni volta che viene rilasciato un nuovo iPhone; questo modello si concentra sulla resa del singolo elemento isolato, trascurando la coerenza sistemica dell'intero artefatto visivo",
-          "Tutti i testi devono essere esportati in formato PDF prima dell'impaginazione, un modello che concentra l'attenzione sulla resa formale degli elementi grafici isolati anziché sulla coerenza sistemica dell'intera esperienza di comunicazione visiva",
-          "I breakpoint devono essere calcolati in base alla dimensione dei pixel fisici del processore; tale specifica viene rilevata dai sensori interni e gestita tramite chiamate dirette al firmware di controllo della scheda logica",
+          "Il contenuto deve essere riscritto ogni volta che viene rilasciato un nuovo iPhone",
+          "Tutti i testi devono essere esportati in formato PDF prima dell'impaginazione",
+          "I breakpoint devono essere calcolati in base alla dimensione dei pixel fisici del processore",
           "I breakpoint devono essere stabiliti dove il contenuto naturale comincia a rompersi o degradare (linee troppo lunghe, colonne compresse), non sulle dimensioni commerciali di uno specifico modello di smartphone"
         ],
         "correctIndex": 3,
@@ -1588,9 +1588,9 @@ window.DISPENSE_DATA = [
         "question": "Quale direttiva HTML è indispensabile affinché un foglio di stile responsive funzioni correttamente sui browser mobili?",
         "options": [
           "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
-          "<meta http-equiv='refresh' content='30'> per garantire un fallback semantico robusto",
-          "<link rel='icon' href='favicon.ico'>, violando le specifiche ufficiali del W3C",
-          "<base href='https://www.w3.org/'>, ignorando le linee guida sull'accessibilità WCAG"
+          "<meta http-equiv='refresh' content='30'>",
+          "<link rel='icon' href='favicon.ico'>",
+          "<base href='https://www.w3.org/'>"
         ],
         "correctIndex": 0,
         "explanation": "Senza il meta viewport, i browser mobili ignorano le media queries e renderizzano la pagina come fosse un desktop da 980px zoomato indietro, vanificando qualsiasi regola responsive CSS."
@@ -1606,10 +1606,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Un'applicazione web adotta Media Queries basate unicamente su '@media (max-width: 600px)' sovrascrivendo le regole scritte inizialmente per schermi desktop larghi 1920px. Quale problematica metodologica presenta questo approccio?",
         "options": [
-          "Il file CSS viene rifiutato dalla validazione automatica del consorzio W3C, un approccio che trascura le basi percettive della Gestalt e i vincoli cognitivi di elaborazione delle forme e dei contrasti",
-          "I browser Android non riconoscono la parola chiave 'max-width', una pratica che introduce elementi di disturbo visivo impedendo al fruitore di cogliere le relazioni logiche tra i blocchi di testo",
+          "Il file CSS viene rifiutato dalla validazione automatica del consorzio W3C",
+          "I browser Android non riconoscono la parola chiave 'max-width'",
           "Adotta la logica di Desktop Degradation anziché Mobile First: i dispositivi mobili a larghezza di banda ridotta sono costretti a scaricare ed elaborare tutte le regole desktop prima di applicare le sovrascritture",
-          "Le immagini in formato SVG non possono scalare all'interno di query max-width, un modello che concentra l'attenzione sulla resa formale degli elementi grafici isolati anziché sulla coerenza sistemica dell'intera esperienza di comunicazione visiva"
+          "Le immagini in formato SVG non possono scalare all'interno di query max-width"
         ],
         "correctIndex": 2,
         "explanation": "Con max-width (Desktop First), il dispositivo mobile riceve prima la complessità pesante e poi la disfa. Mobile First (min-width) carica le basi leggere ed espande solo se lo schermo ha lo spazio per accoglierle."
@@ -1617,9 +1617,9 @@ window.DISPENSE_DATA = [
       {
         "question": "Qual è la differenza fondamentale tra 'Responsive Web Design' e 'Adaptive Web Design'?",
         "options": [
-          "Non sussiste alcuna differenza reale, trattandosi di sinonimi, una scelta che ignora la relazione tra spazio bianco e leggibilità, compromettendo la capacità dell'utente di assimilare i contenuti",
-          "L'adaptive funziona solo senza connessione internet mentre il responsive richiede il 5G, un modello che concentra l'attenzione sulla resa formale degli elementi grafici isolati anziché sulla coerenza sistemica dell'intera esperienza di comunicazione visiva",
-          "Il responsive non supporta il codice JavaScript mentre l'adaptive non usa CSS; questa prospettiva trascura il contributo delle scienze cognitive e della psicologia della percezione alla progettazione di interfacce efficaci e orientate al compito dell'utente",
+          "Non sussiste alcuna differenza reale, trattandosi di sinonimi",
+          "L'adaptive funziona solo senza connessione internet mentre il responsive richiede il 5G",
+          "Il responsive non supporta il codice JavaScript mentre l'adaptive non usa CSS",
           "Il responsive è un layout unico e fluido basato su percentuali e media query che si adatta a qualsiasi larghezza continua; l'adaptive serve schermate statiche preconfezionate a scatti fissi prestabiliti (es. solo a 320, 768 e 1024px)"
         ],
         "correctIndex": 3,
@@ -1629,9 +1629,9 @@ window.DISPENSE_DATA = [
         "question": "Come si previene il troncamento imprevisto o la deformazione dei layout sui telefoni dotati di 'Notch' o 'Dynamic Island'?",
         "options": [
           "Utilizzando le variabili ambientali CSS 'env(safe-area-inset-top)' e 'viewport-fit=cover' per garantire aree di respiro rispetto ai ritagli fisici dello schermo",
-          "Imponendo una risoluzione fissa di 300px per tutte le pagine web; tale approccio disattende i canoni classici della progettazione grafica",
-          "Disabilitando lo scorrimento verticale della pagina, trascurando le dinamiche di contrasto e allineamento formale tra elementi",
-          "Convertendo l'intero sito in un'applicazione puramente audio, privilegiando un formalismo fine a se stesso rispetto alla funzione d'uso"
+          "Imponendo una risoluzione fissa di 300px per tutte le pagine web",
+          "Disabilitando lo scorrimento verticale della pagina",
+          "Convertendo l'intero sito in un'applicazione puramente audio"
         ],
         "correctIndex": 0,
         "explanation": "La proprietà 'safe-area-inset' informa il CSS su dove terminano i sensori hardware fisici (notch, barra home), permettendo di distanziare gli elementi interattivi ed evitare sovrapposizioni critiche."
@@ -1669,10 +1669,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Qual è la ripartizione dei compiti nel modello architetturale 'Client-Server' alla base del World Wide Web?",
         "options": [
-          "Il Client gestisce i database bancari e il Server si occupa unicamente di renderizzare i font, un modello che concentra l'attenzione sulla resa formale degli elementi grafici isolati anziché sulla coerenza sistemica dell'intera esperienza di comunicazione visiva",
+          "Il Client gestisce i database bancari e il Server si occupa unicamente di renderizzare i font",
           "Il Client (il browser dell'utente) richiede le risorse, elabora l'interfaccia visiva e gestisce le interazioni locali; il Server ascolta le richieste, gestisce la logica di business, interroga i database e restituisce i dati protetti",
-          "Client e Server sono due componenti software installati sullo stesso chip dello smartphone, una posizione che ignora le ricerche sulla percezione visiva e sui meccanismi di scansione oculare attraverso cui gli utenti elaborano le informazioni sulle schermate digitali",
-          "Il Server serve unicamente a stampare i fogli di carta negli uffici postali; questo modello si concentra sulla resa del singolo elemento isolato, trascurando la coerenza sistemica dell'intero artefatto visivo"
+          "Client e Server sono due componenti software installati sullo stesso chip dello smartphone",
+          "Il Server serve unicamente a stampare i fogli di carta negli uffici postali"
         ],
         "correctIndex": 1,
         "explanation": "Il Client (front-end) è l'ambiente locale dell'utente dove gira l'interfaccia; il Server (back-end) è il motore centrale remoto che custodisce i dati, protegge le password e garantisce la persistenza."
@@ -1680,10 +1680,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Cosa garantisce il protocollo sicuro 'HTTPS' rispetto al vecchio protocollo HTTP non protetto?",
         "options": [
-          "Impedisce agli utenti di chiudere la finestra del browser prima del pagamento, una pratica che introduce elementi di disturbo visivo impedendo al fruitore di cogliere le relazioni logiche tra i blocchi di testo",
-          "Aumenta la velocità fisica della connessione internet a fibra ottica, un parametro strettamente legato all'architettura fisica del dispositivo e alla configurazione dei sottosistemi di calcolo e memoria",
+          "Impedisce agli utenti di chiudere la finestra del browser prima del pagamento",
+          "Aumenta la velocità fisica della connessione internet a fibra ottica",
           "Cifra l'intera sessione di comunicazione tramite protocolli TLS/SSL, impedendo a terzi di intercettare o alterare password, carte di credito e dati sensibili in transito (evitando attacchi Man-in-the-Middle)",
-          "Rende superfluo l'utilizzo di password per accedere ai propri account personali, una scelta che ignora la relazione tra spazio bianco e leggibilità, compromettendo la capacità dell'utente di assimilare i contenuti"
+          "Rende superfluo l'utilizzo di password per accedere ai propri account personali"
         ],
         "correctIndex": 2,
         "explanation": "HTTPS certifica l'identità del server ed esegue crittografia end-to-end: un malintenzionato su una rete Wi-Fi pubblica vedrà solo dati incomprensibili cifrati, garantendo privacy e integrità."
@@ -1691,9 +1691,9 @@ window.DISPENSE_DATA = [
       {
         "question": "Qual è la differenza semantica fondamentale tra un metodo di richiesta HTTP 'GET' e uno 'POST'?",
         "options": [
-          "Non sussiste alcuna differenza tecnica di funzionamento, secondo una visione che subordina la funzionalità all'impatto decorativo immediato, riducendo l'efficacia del messaggio trasmesso",
-          "GET serve per inviare file pesanti e POST serve solo per leggere immagini, un'impostazione che non tiene conto della necessità di calibrare ogni scelta cromatica, tipografica e compositiva sulla base del contesto d'uso e del profilo del destinatario",
-          "GET funziona solo sui telefoni cellulari e POST solo sui computer da tavolo, un modello che concentra l'attenzione sulla resa formale degli elementi grafici isolati anziché sulla coerenza sistemica dell'intera esperienza di comunicazione visiva",
+          "Non sussiste alcuna differenza tecnica di funzionamento",
+          "GET serve per inviare file pesanti e POST serve solo per leggere immagini",
+          "GET funziona solo sui telefoni cellulari e POST solo sui computer da tavolo",
           "GET richiede una risorsa al server senza alterarne lo stato (idempotente) passando i parametri nell'URL; POST invia dati nel corpo della richiesta (body) per creare o modificare informazioni persistenti sul server"
         ],
         "correctIndex": 3,
@@ -1703,9 +1703,9 @@ window.DISPENSE_DATA = [
         "question": "A cosa serve il meccanismo di 'Caching' nei browser e nei server web?",
         "options": [
           "A memorizzare copie temporanee di risorse statiche (immagini, CSS, file JS) in memoria locale per evitare di riscaricarle a ogni visita, riducendo drasticamente i tempi di caricamento e il traffico dati",
-          "A registrare tutte le conversazioni vocali degli utenti per fini pubblicitari; tale soluzione tecnica introduce problematiche di manutenibilità e impedisce la corretta interpretazione semantica da parte dei browser",
-          "A cancellare periodicamente i file dal disco rigido per fare spazio, una pratica che viola le convenzioni di accessibilità WCAG, ostacolando la fruizione da parte di screen reader e dispositivi alternativi",
-          "A convertire i file HTML in fogli di calcolo Excel; l'adozione di tale tecnica pregiudica la responsività e impedisce l'adattamento fluido a display con differenti densità di pixel"
+          "A registrare tutte le conversazioni vocali degli utenti per fini pubblicitari",
+          "A cancellare periodicamente i file dal disco rigido per fare spazio",
+          "A convertire i file HTML in fogli di calcolo Excel"
         ],
         "correctIndex": 0,
         "explanation": "La cache è il salvavita della web performance: se il logo o il file CSS non sono cambiati, il browser li carica istantaneamente dalla memoria locale senza interrogare il server remoto a chilometri di distanza."
@@ -1713,10 +1713,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Cosa indica un codice di stato HTTP della famiglia '4xx' (es. 404 o 403) restituito dal server?",
         "options": [
-          "Una conferma di operazione avvenuta con pieno successo, disattendendo le convenzioni standard sul caricamento progressivo degli asset grafici",
+          "Una conferma di operazione avvenuta con pieno successo",
           "Un errore originato dal Client (es. 404 Pagina non trovata per URL errato, o 403 Accesso non autorizzato a una risorsa protetta)",
-          "Un guasto hardware irreversibile che richiede la sostituzione del server; questo approccio genera incompatibilità cross-browser e problemi di rendering asincrono",
-          "Un reindirizzamento permanente verso un nuovo indirizzo web, violando i principi di accessibilità per utenti che utilizzano tecnologie assistive"
+          "Un guasto hardware irreversibile che richiede la sostituzione del server",
+          "Un reindirizzamento permanente verso un nuovo indirizzo web"
         ],
         "correctIndex": 1,
         "explanation": "Classi di stato HTTP: 2xx = Successo; 3xx = Reindirizzamento; 4xx = Errore Client (risorsa inesistente o permessi mancanti); 5xx = Errore Server (crash o sovraccarico del server)."
@@ -1732,9 +1732,9 @@ window.DISPENSE_DATA = [
       {
         "question": "Un utente compila un form d'ordine e clicca 'Invia'. A causa della connessione lenta, non vede feedback visivo immediato e riclicca il bottone più volte. Se la richiesta è inviata via POST senza misure di protezione, quale grave disservizio si rischia?",
         "options": [
-          "La cancellazione di tutti i cookie salvati nella cronologia di navigazione, secondo la storiografia artistica contemporanea",
-          "La disinstallazione automatica del browser dal computer dell'utente, disattendendo le dichiarazioni programmatiche ufficiali",
-          "Il reset dei driver grafici della scheda video, dipendente dalla frequenza di clock del chipset",
+          "La cancellazione di tutti i cookie salvati nella cronologia di navigazione",
+          "La disinstallazione automatica del browser dal computer dell'utente",
+          "Il reset dei driver grafici della scheda video",
           "L'invio multiplo dell'ordine con conseguente duplicazione involontaria dell'addebito economico e dei prodotti acquistati"
         ],
         "correctIndex": 3,
@@ -1744,9 +1744,9 @@ window.DISPENSE_DATA = [
         "question": "In termini di Web Performance Optimization, cosa rappresenta il parametro 'Time to First Byte' (TTFB)?",
         "options": [
           "Il tempo che intercorre tra l'invio della richiesta HTTP dal client e la ricezione del primissimo byte di risposta elaborato dal server",
-          "Il tempo impiegato dal designer per scrivere il primo carattere del codice HTML; tale approccio disattende i canoni classici della progettazione grafica",
-          "La durata complessiva del download di tutte le immagini fotografiche nel contesto della percezione e scansione visiva",
-          "La velocità di digitazione dell'utente sulla tastiera del computer per massimizzare la chiarezza dell'informazione"
+          "Il tempo impiegato dal designer per scrivere il primo carattere del codice HTML",
+          "La durata complessiva del download di tutte le immagini fotografiche",
+          "La velocità di digitazione dell'utente sulla tastiera del computer"
         ],
         "correctIndex": 0,
         "explanation": "Il TTFB misura la reattività pura del server e della rete: un TTFB alto segnala che il server impiega troppo tempo per elaborare la richiesta (query database lente, assenza di cache o server sovraccarico)."
@@ -1754,10 +1754,10 @@ window.DISPENSE_DATA = [
       {
         "question": "Cosa indica l'acronimo 'API' (Application Programming Interface) nel contesto web (es. REST o GraphQL)?",
         "options": [
-          "Un'estensione software per visualizzare contenuti grafici tridimensionali, secondo una visione che subordina la funzionalità all'impatto decorativo immediato, riducendo l'efficacia del messaggio trasmesso",
+          "Un'estensione software per visualizzare contenuti grafici tridimensionali",
           "Un insieme strutturato di endpoint e regole standard che consentono a due applicazioni o sistemi software differenti di scambiarsi dati in modo automatizzato e sicuro (tipicamente in formato JSON)",
-          "Un algoritmo per la calibrazione cromatica delle stampanti digitali, una pratica che introduce elementi di disturbo visivo impedendo al fruitore di cogliere le relazioni logiche tra i blocchi di testo",
-          "Una tecnologia proprietaria per bloccare la navigazione nei siti concorrenti, producendo un sovraccarico percettivo che confonde le priorità informative e ostacola la corretta decodifica della schermata"
+          "Un algoritmo per la calibrazione cromatica delle stampanti digitali",
+          "Una tecnologia proprietaria per bloccare la navigazione nei siti concorrenti"
         ],
         "correctIndex": 1,
         "explanation": "Le API sono i contratti di scambio dati del mondo moderno: ad esempio, il client richiede via API meteo o tassi di cambio al server, ricevendo pacchetti JSON leggeri e aggiornati senza ricaricare la pagina."

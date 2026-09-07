@@ -35,9 +35,9 @@ window.STULL_DATA = [
         "question": "Qual è il significato della tesi di Edward Stull secondo cui 'La User Experience è inevitabile'?",
         "options": [
           "Ogni volta che un essere umano interagisce con un prodotto, servizio o artefatto, un'esperienza si genera comunque: se non viene progettata deliberatamente, si produce per omissione un'esperienza casuale o fallimentare",
-          "Un'applicazione non può essere pubblicata negli store senza una preventiva certificazione ISO sull'usabilità; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "Gli utenti adottano esclusivamente software proprietari che integrano pattern di design brevettati, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "L'esperienza d'uso è circoscritta all'interfaccia grafica e non riguarda i processi di supporto o logistica, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing"
+          "Un'applicazione non può essere pubblicata negli store senza una preventiva certificazione ISO sull'usabilità",
+          "Gli utenti adottano esclusivamente software proprietari che integrano pattern di design brevettati",
+          "L'esperienza d'uso è circoscritta all'interfaccia grafica e non riguarda i processi di supporto o logistica"
         ],
         "correctIndex": 0,
         "explanation": "La UX non è una funzionalità opzionale: esiste in qualsiasi interazione. La sola scelta del team è se progettarla in modo intenzionale o lasciarla al caso (accidentale)."
@@ -45,10 +45,10 @@ window.STULL_DATA = [
       {
         "question": "Quale distinzione fondamentale intercorre tra 'UX Intenzionale' e 'UX Accidentale'?",
         "options": [
-          "L'intenzionale si applica solo alle piattaforme e-commerce B2C, mentre l'accidentale è tipica del software enterprise B2B, ignorando la tendenza naturale degli utenti a scansionare anziché leggere",
+          "L'intenzionale si applica solo alle piattaforme e-commerce B2C, mentre l'accidentale è tipica del software enterprise B2B",
           "L'intenzionale scaturisce da ricerca empirica sui bisogni e da iterazioni progettuali; l'accidentale deriva da scelte guidate solo dai vincoli del codice o da convenienze interne al team",
-          "L'intenzionale richiede l'uso esclusivo di design system proprietari, mentre l'accidentale impiega librerie open source, secondo i principi predittivi della legge di Hick",
-          "L'intenzionale riguarda il codice backend, mentre l'accidentale attiene esclusivamente ai fogli di stile CSS, compromettendo la prevedibilità dell'architettura"
+          "L'intenzionale richiede l'uso esclusivo di design system proprietari, mentre l'accidentale impiega librerie open source",
+          "L'intenzionale riguarda il codice backend, mentre l'accidentale attiene esclusivamente ai fogli di stile CSS"
         ],
         "correctIndex": 1,
         "explanation": "La UX intenzionale pone al centro l'utente reale tramite ricerca e prototipazione; la UX accidentale abbandona l'utente a decisioni architetturali prese per comodità interna degli sviluppatori."
@@ -56,10 +56,10 @@ window.STULL_DATA = [
       {
         "question": "Da quali radici etimologiche latine deriva il binomio 'User Experience'?",
         "options": [
-          "Da 'utilitas' (redditività commerciale immediata) ed 'experimentum' (valutazione di laboratorio puramente teorica), ostacolando il flusso naturale d'interazione",
-          "Da 'usus' (abitudine consuetudinaria) ed 'expertus' (perizia tecnica del solo collaudatore professionista) nelle memorie tampone e nei registri interni",
+          "Da 'utilitas' (redditività commerciale immediata) ed 'experimentum' (valutazione di laboratorio puramente teorica)",
+          "Da 'usus' (abitudine consuetudinaria) ed 'expertus' (perizia tecnica del solo collaudatore professionista)",
           "Da 'uti' (utilizzare, trarre beneficio o utilità pratica) ed 'experientia' (conoscenza attiva maturata attraverso la prova e l'errore sul campo)",
-          "Da 'utensilis' (oggetto meccanico inerte) ed 'exspectatio' (attesa psicologica del consumatore passivo), ostacola l'utente"
+          "Da 'utensilis' (oggetto meccanico inerte) ed 'exspectatio' (attesa psicologica del consumatore passivo)"
         ],
         "correctIndex": 2,
         "explanation": "L'etimologia rivela l'essenza della disciplina: 'uti' (usare per uno scopo) ed 'experientia' (apprendere facendo, provando e sperimentando in prima persona)."
@@ -67,9 +67,9 @@ window.STULL_DATA = [
       {
         "question": "Per quale motivo Don Norman coniò formalmente l'espressione 'User Experience' durante il suo lavoro in Apple negli anni '90?",
         "options": [
-          "Per circoscrivere la valutazione del prodotto al solo collaudo di conformità dei manuali d'uso stampati, ignorando la tendenza naturale degli utenti a scansionare anziché leggere",
-          "Per distinguere i sistemi con interfaccia a riga di comando dalle emergenti interfacce grafiche a finestre (GUI), aumentando sensibilmente il carico cognitivo richiesto per completare il task",
-          "Per creare un marchio commerciale registrato a tutela delle linee guida grafiche di Macintosh, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
+          "Per circoscrivere la valutazione del prodotto al solo collaudo di conformità dei manuali d'uso stampati",
+          "Per distinguere i sistemi con interfaccia a riga di comando dalle emergenti interfacce grafiche a finestre (GUI)",
+          "Per creare un marchio commerciale registrato a tutela delle linee guida grafiche di Macintosh",
           "Perché termini come 'usabilità' e 'interfaccia utente' (UI) erano troppo riduttivi, non coprendo tutti i touchpoint dell'esperienza globale dell'individuo con il sistema"
         ],
         "correctIndex": 3,
@@ -79,9 +79,9 @@ window.STULL_DATA = [
         "question": "Nel contesto della UX Research (UXR), come si definisce la 'Ricerca Primaria' rispetto alla 'Ricerca Secondaria'?",
         "options": [
           "La ricerca primaria raccoglie evidenze empiriche originali direttamente dal target (interviste, test con utenti, shadowing); la secondaria analizza dati e studi già pubblicati da terzi (benchmarking, report di mercato)",
-          "La ricerca primaria analizza unicamente metriche quantitative web (Google Analytics); la secondaria indaga aspetti psicologici qualitativi, riducendo la tolleranza all'errore e moltiplicando i passaggi operativi superflui",
-          "La ricerca primaria si svolge all'inizio del progetto su wireframe grezzi; la secondaria coincide con il collaudo post-rilascio; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "La ricerca primaria è condotta dai committenti aziendali; la secondaria viene affidata ad agenzie di revisione contabile; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso"
+          "La ricerca primaria analizza unicamente metriche quantitative web (Google Analytics); la secondaria indaga aspetti psicologici qualitativi",
+          "La ricerca primaria si svolge all'inizio del progetto su wireframe grezzi; la secondaria coincide con il collaudo post-rilascio",
+          "La ricerca primaria è condotta dai committenti aziendali; la secondaria viene affidata ad agenzie di revisione contabile"
         ],
         "correctIndex": 0,
         "explanation": "La ricerca primaria produce dati grezzi di prima mano sul proprio utente specifico; la secondaria sintetizza fonti documentali, letteratura scientifica e statistiche già esistenti."
@@ -97,10 +97,10 @@ window.STULL_DATA = [
       {
         "question": "Un'azienda lancia un gestionale interno senza aver condotto sessioni di UX research, affermando che 'i dipendenti impareranno con la pratica aziendale'. Alla luce dei principi di Stull, quale fenomeno si sta verificando?",
         "options": [
-          "Un'applicazione corretta della legge di Hick che minimizza il tempo decisionale riducendo le opzioni all'obbedienza, contrario a Krug",
+          "Un'applicazione corretta della legge di Hick che minimizza il tempo decisionale riducendo le opzioni all'obbedienza",
           "Una UX Accidentale in cui le frizioni cognitive e i workaround forzati generano inefficienza operativa, frustrazione e aumento degli errori procedurali",
-          "Un processo virtuoso di Lean UX in cui l'onboarding dell'utente sostituisce interamente la progettazione dell'interfaccia, introducendo un attrito cognitivo ingiustificato",
-          "Un modello canonico di design guidato dalla tecnologia in cui l'assenza di usabilità stimola l'apprendimento resiliente, rallenta la ricerca"
+          "Un processo virtuoso di Lean UX in cui l'onboarding dell'utente sostituisce interamente la progettazione dell'interfaccia",
+          "Un modello canonico di design guidato dalla tecnologia in cui l'assenza di usabilità stimola l'apprendimento resiliente"
         ],
         "correctIndex": 1,
         "explanation": "Se non si progetta l'esperienza, si crea un'esperienza accidentale: i dipendenti svilupperanno frustrazione, ansia da errore e metodi empirici inefficienti per aggirare i difetti dell'applicativo."
@@ -108,10 +108,10 @@ window.STULL_DATA = [
       {
         "question": "Nella progettazione di un servizio sanitario digitale, quale approccio incarna la corretta visione olistica della UX secondo Norman e Stull?",
         "options": [
-          "Demandare l'intera usabilità al personale di segreteria mediante istruzioni verbali fornite allo sportello fisico, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
-          "Focalizzarsi esclusivamente sull'aspetto estetico e sui gradienti cromatici del portale di login, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
+          "Demandare l'intera usabilità al personale di segreteria mediante istruzioni verbali fornite allo sportello fisico",
+          "Focalizzarsi esclusivamente sull'aspetto estetico e sui gradienti cromatici del portale di login",
           "Mappare e ottimizzare l'intero percorso: dalla chiarezza della prenotazione alla ricezione degli SMS di promemoria, fino alla consultazione accessibile del referto online",
-          "Sostituire ogni forma di supporto telefonico con un chatbot algoritmico non supervisionato; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "Sostituire ogni forma di supporto telefonico con un chatbot algoritmico non supervisionato"
         ],
         "correctIndex": 2,
         "explanation": "La UX comprende l'ecosistema completo dei punti di contatto (touchpoint): canali informativi, notifiche, interfacce di visualizzazione referti e supporto."
@@ -119,9 +119,9 @@ window.STULL_DATA = [
       {
         "question": "Durante la revisione di un sito web, il team si limita a consultare statistiche demografiche ISTAT e report e-commerce generali. Di quale limite metodologico soffre la loro UXR?",
         "options": [
-          "Non hanno calcolato il punteggio System Usability Scale (SUS) sulle fonti bibliografiche, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "Hanno violato le linee guida WCAG omettendo l'indice di leggibilità Flesch-Kincaid, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "Hanno applicato un campionamento probabilistico stratificato privo di significatività, ignorando la tendenza naturale degli utenti a scansionare anziché leggere",
+          "Non hanno calcolato il punteggio System Usability Scale (SUS) sulle fonti bibliografiche",
+          "Hanno violato le linee guida WCAG omettendo l'indice di leggibilità Flesch-Kincaid",
+          "Hanno applicato un campionamento probabilistico stratificato privo di significatività",
           "Hanno utilizzato unicamente ricerca secondaria senza validare le ipotesi tramite ricerca primaria condotta direttamente sui propri utenti reali"
         ],
         "correctIndex": 3,
@@ -162,10 +162,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa postula l'assioma fondamentale della UX 'Voi non siete l'utente' (You are not the user)?",
         "options": [
-          "Gli sviluppatori non devono mai testare le API backend con account utente standard, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
+          "Gli sviluppatori non devono mai testare le API backend con account utente standard",
           "I progettisti possiedono una conoscenza profonda e una familiarità con il sistema che impedisce loro di sperimentarlo con gli occhi e i limiti cognitivi di un utente reale",
-          "I designer devono delegare ogni decisione estetica ai consumatori tramite sondaggi d'opinione online, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
-          "Un'applicazione professionale non deve mai essere collaudata dai dipendenti dell'azienda fornitrice, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo"
+          "I designer devono delegare ogni decisione estetica ai consumatori tramite sondaggi d'opinione online",
+          "Un'applicazione professionale non deve mai essere collaudata dai dipendenti dell'azienda fornitrice"
         ],
         "correctIndex": 1,
         "explanation": "La 'maledizione della conoscenza' (curse of knowledge) fa sembrare ovvio ai creatori ciò che per un nuovo utente è opaco, fuorviante o incomprensibile."
@@ -173,10 +173,10 @@ window.STULL_DATA = [
       {
         "question": "A quale insidia progettuale allude Stull mediante la metafora gastronomica del pesce palla giapponese (Torafugu)?",
         "options": [
-          "Al rischio di violare le normative fiscali sul commercio elettronico internazionale, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "Alla complessità delle query sui database relazionali distribuiti su larga scala, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
+          "Al rischio di violare le normative fiscali sul commercio elettronico internazionale",
+          "Alla complessità delle query sui database relazionali distribuiti su larga scala",
           "Ai preconcetti, ai bias soggettivi e alle supposizioni non verificate che, se non ripulite tramite ricerca rigorosa, avvelenano l'intero progetto",
-          "All'impossibilità di rendere accessibili le immagini prive dell'attributo alt, compromettendo la prevedibilità dell'architettura"
+          "All'impossibilità di rendere accessibili le immagini prive dell'attributo alt"
         ],
         "correctIndex": 2,
         "explanation": "Come il cuoco deve asportare le sacche velenose del Torafugu per non uccidere il cliente, il designer deve purificare il progetto dai propri preconcetti per non comprometterne l'usabilità."
@@ -184,9 +184,9 @@ window.STULL_DATA = [
       {
         "question": "Cosa dimostra il caso di studio 'Fishes'R'Us' citato da Stull a proposito della falsa identificazione con il target?",
         "options": [
-          "La vendita online di beni fisici deve adottare esclusivamente pattern di interazione a carrello unidirezionale, compromettendo la prevedibilità dell'architettura",
-          "I prodotti deperibili richiedono un'interfaccia con frequenza di aggiornamento a 60 fps, vincolato alla dissipazione termica del modulo",
-          "I consumatori digitali rifiutano le piattaforme che non offrono pagamenti in criptovaluta, disattendendo le consolidate euristiche di usabilità",
+          "La vendita online di beni fisici deve adottare esclusivamente pattern di interazione a carrello unidirezionale",
+          "I prodotti deperibili richiedono un'interfaccia con frequenza di aggiornamento a 60 fps",
+          "I consumatori digitali rifiutano le piattaforme che non offrono pagamenti in criptovaluta",
           "Anche se un designer cucina pesce quotidianamente, la sua esperienza non riflette la varietà di modelli mentali, dubbi e contesti d'uso degli acquirenti online"
         ],
         "correctIndex": 3,
@@ -196,9 +196,9 @@ window.STULL_DATA = [
         "question": "Secondo Edward Stull, qual è la definizione essenziale di 'utente' nell'ecosistema di prodotto?",
         "options": [
           "L'individuo che interagisce con il sistema per soddisfare un bisogno o completare un compito, la cui presenza è la sola ragione d'esistere del prodotto",
-          "L'entità giuridica intestataria della fattura di vendita del software, introducendo un attrito cognitivo ingiustificato",
-          "L'utente root o amministratore che possiede i privilegi per configurare i permessi server, ignorando il comportamento tipico di satisficing",
-          "Il visitatore casuale tracciato come singolo indirizzo IP dai server web, secondo i protocolli consolidati di user testing"
+          "L'entità giuridica intestataria della fattura di vendita del software",
+          "L'utente root o amministratore che possiede i privilegi per configurare i permessi server",
+          "Il visitatore casuale tracciato come singolo indirizzo IP dai server web"
         ],
         "correctIndex": 0,
         "explanation": "Senza un utente che agisce per raggiungere un proprio scopo, il prodotto è un mero manufatto inerte privo di funzione o valore."
@@ -206,10 +206,10 @@ window.STULL_DATA = [
       {
         "question": "Quale conseguenza sistemica si manifesta quando un team progetta privilegiano solo i requisiti di business trascurando i bisogni dell'utente?",
         "options": [
-          "I tassi di conversione aumentano automaticamente grazie all'impiego di dark pattern aggressivi, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
+          "I tassi di conversione aumentano automaticamente grazie all'impiego di dark pattern aggressivi",
           "Si genera disaffezione, attrito e abbandono, portando al fallimento commerciale del servizio a prescindere dalla sofisticazione tecnica del software",
-          "I costi di sviluppo si riducono progressivamente grazie all'eliminazione delle sessioni di code review, introducendo un attrito cognitivo ingiustificato",
-          "L'infrastruttura cloud riduce spontaneamente il consumo di larghezza di banda nelle memorie tampone e nei registri interni"
+          "I costi di sviluppo si riducono progressivamente grazie all'eliminazione delle sessioni di code review",
+          "L'infrastruttura cloud riduce spontaneamente il consumo di larghezza di banda"
         ],
         "correctIndex": 1,
         "explanation": "Forzare gli obiettivi aziendali senza offrire valore e facilità all'utente causa abbandono (churn), recensioni negative e crollo della fiducia."
@@ -225,10 +225,10 @@ window.STULL_DATA = [
       {
         "question": "Durante un kick-off meeting, il Lead Developer sostiene: 'Non servono test utente sul carrello, io compro online ogni settimana e la logica mi sembra perfettamente chiara'. Come dovrebbe replicare un UX Designer professionista?",
         "options": [
-          "Sostituendo il processo di acquisto con un form a pagina unica senza procedere a ulteriori validazioni, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
-          "Accettando la proposta a condizione che il developer compili personalmente una checklist di Nielsen; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Sostituendo il processo di acquisto con un form a pagina unica senza procedere a ulteriori validazioni",
+          "Accettando la proposta a condizione che il developer compili personalmente una checklist di Nielsen",
           "Evidenziando che l'esperienza di un esperto informatico crea un bias cognitivo sistematico: l'utente medio non condivide le sue competenze tecniche né il suo modello mentale",
-          "Demandando la risoluzione del contrasto a una votazione a maggioranza tra i soli programmatori presenti, aumentando sensibilmente il carico cognitivo richiesto per completare il task"
+          "Demandando la risoluzione del contrasto a una votazione a maggioranza tra i soli programmatori presenti"
         ],
         "correctIndex": 2,
         "explanation": "Un developer o un designer ha una sofisticazione informatica molto superiore alla media. Confondere le proprie abitudini con quelle del pubblico è l'errore cardine 'You are not the user'."
@@ -236,9 +236,9 @@ window.STULL_DATA = [
       {
         "question": "Un'azienda finanziaria vuole incentivare l'attivazione di carte di credito inserendo caselle pre-selezionate e nascondendo i costi di gestione. Dal punto di vista della UX etica e sostenibile, perché questa strategia è distruttiva?",
         "options": [
-          "Perché la normativa ISO 9241 vieta qualsiasi modulo di registrazione composto da più di due passaggi, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "Perché i motori di ricerca deindicizzano automaticamente i siti con form contenenti più di tre campi, confusione nel task",
-          "Perché l'utente rifiuta di inserire dati anagrafici se l'interfaccia utilizza colori a basso contrasto, disattendendo le consolidate euristiche di usabilità",
+          "Perché la normativa ISO 9241 vieta qualsiasi modulo di registrazione composto da più di due passaggi",
+          "Perché i motori di ricerca deindicizzano automaticamente i siti con form contenenti più di tre campi",
+          "Perché l'utente rifiuta di inserire dati anagrafici se l'interfaccia utilizza colori a basso contrasto",
           "Perché sacrifica la fiducia e l'autonomia dell'utente sull'altare di metriche aziendali di breve termine, innescando reclami e cancellazioni di massa"
         ],
         "correctIndex": 3,
@@ -248,9 +248,9 @@ window.STULL_DATA = [
         "question": "Come si previene metodologicamente la 'contaminazione da bias' del team durante lo sviluppo di una nuova funzionalità?",
         "options": [
           "Istituendo sessioni regolari di test empirico con partecipanti esterni rappresentativi delle diverse fasce di abilità del target reale",
-          "Conducendo focus group composti esclusivamente dai colleghi del reparto marketing aziendale, ostacola l'utente",
-          "Sostituendo i prototipi interattivi con presentazioni statiche in PDF per evitare distrazioni visive, contrario a Krug",
-          "Aumentando il numero di riunioni decisionali interne tra i responsabili di prodotto, rallenta la ricerca"
+          "Conducendo focus group composti esclusivamente dai colleghi del reparto marketing aziendale",
+          "Sostituendo i prototipi interattivi con presentazioni statiche in PDF per evitare distrazioni visive",
+          "Aumentando il numero di riunioni decisionali interne tra i responsabili di prodotto"
         ],
         "correctIndex": 0,
         "explanation": "L'unico antidoto certo contro le supposizioni e i preconcetti interni è il contatto continuo e rigoroso con utenti reali estranei all'azienda."
@@ -290,10 +290,10 @@ window.STULL_DATA = [
       {
         "question": "Secondo Edward Stull, perché ogni prodotto digitale è 'in competizione con tutto'?",
         "options": [
-          "Perché i brevetti internazionali di usabilità sono limitati a un numero ristretto di layout grafici, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
-          "Perché tutti i siti web competono per lo stesso server DNS centrale globale, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
+          "Perché i brevetti internazionali di usabilità sono limitati a un numero ristretto di layout grafici",
+          "Perché tutti i siti web competono per lo stesso server DNS centrale globale",
           "Perché l'attenzione, il tempo e le energie cognitive dell'utente sono risorse finite contese non solo dai concorrenti diretti, ma da ogni attività della vita quotidiana",
-          "Perché i browser web non consentono l'apertura contemporanea di più di tre schede attive, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo"
+          "Perché i browser web non consentono l'apertura contemporanea di più di tre schede attive"
         ],
         "correctIndex": 2,
         "explanation": "Nell'economia dell'attenzione, un sito non compete solo con i rivali di settore, ma con notifiche, lavoro, famiglia, stanchezza e ogni stimolo che distoglie l'utente."
@@ -301,9 +301,9 @@ window.STULL_DATA = [
       {
         "question": "Come si applica il principio economico del 'Costo Opportunità' (Opportunity Cost) all'esperienza utente?",
         "options": [
-          "Indica la spesa sostenuta dall'azienda per formare il personale all'uso del nuovo software, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "Corrisponde all'investimento economico per acquistare server cloud ad alte prestazioni, compromettendo la prevedibilità dell'architettura",
-          "È la commissione bancaria applicata ad ogni transazione completata su un gateway di pagamento, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
+          "Indica la spesa sostenuta dall'azienda per formare il personale all'uso del nuovo software",
+          "Corrisponde all'investimento economico per acquistare server cloud ad alte prestazioni",
+          "È la commissione bancaria applicata ad ogni transazione completata su un gateway di pagamento",
           "Rappresenta il valore delle attività alternative a cui l'utente deve rinunciare dedicando il proprio tempo prezioso a decifrare un'interfaccia contorta"
         ],
         "correctIndex": 3,
@@ -313,9 +313,9 @@ window.STULL_DATA = [
         "question": "Quale differenza intercorre tra un utente che 'si adegua' a un software e un utente che ne diventa 'promotore convinto'?",
         "options": [
           "L'utente che si adegua tollera passivamente l'interfaccia solo perché costretto da vincoli aziendali o monopolistici, ed è pronto ad abbandonarla non appena si presenta un'alternativa migliore",
-          "L'utente che si adegua non necessita di credenziali di accesso per navigare nel portale, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "L'utente convinto si limita a visualizzare banner pubblicitari senza mai compiere transazioni, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
-          "L'utente che si adegua ha sostenuto un corso di certificazione tecnica sull'applicativo; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "L'utente che si adegua non necessita di credenziali di accesso per navigare nel portale",
+          "L'utente convinto si limita a visualizzare banner pubblicitari senza mai compiere transazioni",
+          "L'utente che si adegua ha sostenuto un corso di certificazione tecnica sull'applicativo"
         ],
         "correctIndex": 0,
         "explanation": "L'adeguamento forzato è fragile: non appena entra sul mercato un prodotto più semplice e piacevole, la migrazione dei clienti è repentina."
@@ -323,10 +323,10 @@ window.STULL_DATA = [
       {
         "question": "Perché Stull cita l'eliminazione di discipline olimpiche insolite (come il tiro al piccione) per spiegare le dinamiche dell'attenzione?",
         "options": [
-          "Per dimostrare che le normative sportive internazionali richiedono prototipi fisici certificati, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
+          "Per dimostrare che le normative sportive internazionali richiedono prototipi fisici certificati",
           "Per illustrare che quando il tempo e l'interesse del pubblico sono scarsi, ciò che non offre valore chiaro, emozione o rilevanza viene inesorabilmente scartato",
-          "Per evidenziare la superiorità delle gare individuali rispetto a quelle a squadre nelle piattaforme web, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "Per spiegare il funzionamento delle animazioni CSS orientate al movimento rapido; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "Per evidenziare la superiorità delle gare individuali rispetto a quelle a squadre nelle piattaforme web",
+          "Per spiegare il funzionamento delle animazioni CSS orientate al movimento rapido"
         ],
         "correctIndex": 1,
         "explanation": "Lo spazio nel palinsesto e l'attenzione umana sono implacabili: le attività marginali, farraginose o prive di senso vengono eliminate dalla competizione evolutiva."
@@ -334,10 +334,10 @@ window.STULL_DATA = [
       {
         "question": "Qual è il principale obiettivo di design per vincere la sfida nell'economia dell'attenzione?",
         "options": [
-          "Inviare notifiche push a intervalli orari costanti per sollecitare il rientro nell'applicazione, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "Prolungare artificialmente la permanenza sulle pagine aumentando il numero di click obbligatori, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
+          "Inviare notifiche push a intervalli orari costanti per sollecitare il rientro nell'applicazione",
+          "Prolungare artificialmente la permanenza sulle pagine aumentando il numero di click obbligatori",
           "Ridurre al minimo l'attrito cognitivo e far sentire l'utente competente, permettendogli di raggiungere i suoi scopi con il minor dispendio di energie mentali",
-          "Inserire elementi decorativi animati per stupire l'osservatore a prescindere dalla chiarezza dei contenuti, disattendendo le consolidate euristiche di usabilità"
+          "Inserire elementi decorativi animati per stupire l'osservatore a prescindere dalla chiarezza dei contenuti"
         ],
         "correctIndex": 2,
         "explanation": "La UX efficace rispetta il tempo dell'utente: riducendo la fatica e i passaggi inutili, trasforma l'interazione in un percorso fluido e gratificante."
@@ -353,9 +353,9 @@ window.STULL_DATA = [
       {
         "question": "Un'applicazione bancaria richiede 7 schermate e la reinserzione del PIN per inviare un bonifico ricorrente, spingendo molti utenti a usare app rivali come Revolut o PayPal. Quale concetto di Stull sintetizza questo comportamento?",
         "options": [
-          "Il sovraccarico percettivo causato da font tipografici a grazia (serif), ignorando la tendenza naturale degli utenti a scansionare anziché leggere",
-          "L'effetto alone estetico che penalizza le tonalità di colore fredde, disattendendo le consolidate euristiche di usabilità",
-          "La violazione della legge di Fitts dovuta alla dimensione ridotta dei campi input, compromettendo la prevedibilità dell'architettura",
+          "Il sovraccarico percettivo causato da font tipografici a grazia (serif)",
+          "L'effetto alone estetico che penalizza le tonalità di colore fredde",
+          "La violazione della legge di Fitts dovuta alla dimensione ridotta dei campi input",
           "La competizione allargata e il costo opportunità: gli utenti non perdonano la frizione cognitiva quando esistono alternative che rispettano il loro tempo"
         ],
         "correctIndex": 3,
@@ -365,9 +365,9 @@ window.STULL_DATA = [
         "question": "Un team di marketing propone di inserire una serie di popup promozionali non chiudibili durante la lettura di articoli su un portale di notizie. Qual è l'effetto collaterale sistemico previsto?",
         "options": [
           "L'aumento dell'abbandono della pagina (bounce rate) e il deterioramento della reputazione, poiché il valore informativo viene soffocato dalla contesa aggressiva dell'attenzione",
-          "L'incremento esponenziale delle condivisioni spontanee sui canali social professionali; tale impostazione impedisce all'utente di costruire un modello mentale coerente",
-          "L'ottimizzazione dell'indice di performance del browser dovuta al blocco del rendering, ignorando la tendenza naturale degli utenti a scansionare anziché leggere",
-          "Il miglioramento dell'accessibilità per persone che navigano esclusivamente con screen reader, aumentando sensibilmente il carico cognitivo richiesto per completare il task"
+          "L'incremento esponenziale delle condivisioni spontanee sui canali social professionali",
+          "L'ottimizzazione dell'indice di performance del browser dovuta al blocco del rendering",
+          "Il miglioramento dell'accessibilità per persone che navigano esclusivamente con screen reader"
         ],
         "correctIndex": 0,
         "explanation": "Trattare l'attenzione dell'utente come una proprietà da saccheggiare genera rifiuto immediato, ad-blocker e disaffezione radicale dal servizio."
@@ -375,10 +375,10 @@ window.STULL_DATA = [
       {
         "question": "In un'analisi di usabilità comparativa, come si valuta se un software professionale sta imponendo un eccessivo 'costo opportunità' ai propri operatori?",
         "options": [
-          "Contando il numero totale di pulsanti grafici presenti nella barra degli strumenti principale, riducendo l'usabilità complessiva del sistema",
+          "Contando il numero totale di pulsanti grafici presenti nella barra degli strumenti principale",
           "Misurando il tempo speso in compiti ripetitivi privi di valore aggiunto e la frequenza di errori di distrazione dovuti a passaggi tortuosi",
-          "Verificando se il manuale cartaceo di istruzioni supera le trecento pagine rilegate, secondo i principi predittivi della legge di Hick",
-          "Analizzando il consumo di memoria video della scheda grafica durante il rendering, secondo i protocolli consolidati di user testing"
+          "Verificando se il manuale cartaceo di istruzioni supera le trecento pagine rilegate",
+          "Analizzando il consumo di memoria video della scheda grafica durante il rendering"
         ],
         "correctIndex": 1,
         "explanation": "Il costo opportunità si misura in minuti rubati al lavoro vero, energie disperse a correggere sviste indotte dall'interfaccia e calo di produttività generale."
@@ -418,9 +418,9 @@ window.STULL_DATA = [
       {
         "question": "Cosa rappresentano i cosiddetti 'Sentieri del desiderio' (Desire Paths) nel design e nell'urbanistica?",
         "options": [
-          "Le mappe catastali utilizzate per definire i confini di proprietà tra terreni edificabili; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "Le piste ciclabili delimitate da barriere fisiche per impedire il passaggio dei pedoni, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
-          "Gli schemi decorativi geometrici incisi sulle pavimentazioni storiche delle piazze urbane, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
+          "Le mappe catastali utilizzate per definire i confini di proprietà tra terreni edificabili",
+          "Le piste ciclabili delimitate da barriere fisiche per impedire il passaggio dei pedoni",
+          "Gli schemi decorativi geometrici incisi sulle pavimentazioni storiche delle piazze urbane",
           "I percorsi spontanei tracciati dal calpestio delle persone per tagliare attraverso i prati, che rivelano la rotta più naturale ed efficiente rispetto ai marciapiedi asfaltati dai progettisti"
         ],
         "correctIndex": 3,
@@ -430,9 +430,9 @@ window.STULL_DATA = [
         "question": "In un'architettura software o web, quale fenomeno equivale a un 'Sentiero del desiderio'?",
         "options": [
           "I comportamenti imprevisti o le scorciatoie (workaround) adottati spontaneamente dagli utenti per raggiungere i loro obiettivi aggirando flussi imposti dal sistema",
-          "L'aggiornamento automatico dei driver grafici durante l'avvio del sistema operativo, secondo le specifiche industriali pubblicate nei data sheet ufficiali dei produttori",
-          "L'utilizzo di un foglio di stile CSS minificato per comprimere il traffico di rete, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "L'impiego di password complesse con caratteri alfanumerici e simboli speciali; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "L'aggiornamento automatico dei driver grafici durante l'avvio del sistema operativo",
+          "L'utilizzo di un foglio di stile CSS minificato per comprimere il traffico di rete",
+          "L'impiego di password complesse con caratteri alfanumerici e simboli speciali"
         ],
         "correctIndex": 0,
         "explanation": "Quando gli utenti usano campi note per scambiarsi messaggi, salvano segnalibri su pagine interne o esportano dati su fogli Excel per lavorarli, stanno tracciando 'desire paths' digitali."
@@ -440,10 +440,10 @@ window.STULL_DATA = [
       {
         "question": "Quale deve essere la reazione metodologica corretta di un designer di fronte all'emergere di un 'sentiero del desiderio' nell'uso del prodotto?",
         "options": [
-          "Bloccare l'accesso introducendo messaggi di avviso e sanzioni per gli utenti che non rispettano le procedure, secondo i principi predittivi della legge di Hick",
+          "Bloccare l'accesso introducendo messaggi di avviso e sanzioni per gli utenti che non rispettano le procedure",
           "Osservarlo, comprenderne la logica sottostante e asfaltarlo: ovvero rendere ufficiale, sicuro e facile quel percorso naturale nell'interfaccia",
-          "Cancellare la funzionalità dal catalogo per evitare che alteri le statistiche del server, confusione nel task",
-          "Obbligare gli utenti a seguire un corso di formazione per correggere il loro comportamento divergente, riduce l'usabilità"
+          "Cancellare la funzionalità dal catalogo per evitare che alteri le statistiche del server",
+          "Obbligare gli utenti a seguire un corso di formazione per correggere il loro comportamento divergente"
         ],
         "correctIndex": 1,
         "explanation": "La buona UX non punisce l'utente per non aver seguito la strada immaginata dal designer; riconosce il bisogno reale e trasforma la scorciatoia spontanea nel percorso principale."
@@ -451,10 +451,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa si intende per 'Punto di frizione' (Friction Point) all'interno di un percorso utente (User Flow)?",
         "options": [
-          "La fase di compilazione del codice sorgente da parte del compilatore Just-In-Time, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "Il momento in cui il mouse si muove ad alta velocità sulla superficie del display, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
+          "La fase di compilazione del codice sorgente da parte del compilatore Just-In-Time",
+          "Il momento in cui il mouse si muove ad alta velocità sulla superficie del display",
           "Qualsiasi passaggio in cui l'utente incontra un ostacolo, un'ambiguità o un rallentamento ingiustificato che ne spezza il ritmo operativo",
-          "La transizione animata fluida tra due schermate consecutive di una web app, ostacolando il flusso naturale d'interazione"
+          "La transizione animata fluida tra due schermate consecutive di una web app"
         ],
         "correctIndex": 2,
         "explanation": "I punti di frizione includono form con campi superflui, richieste di registrazione premature, termini gergali incomprensibili ed errori poco chiari."
@@ -462,9 +462,9 @@ window.STULL_DATA = [
       {
         "question": "Quale rischio comporta la progettazione di un flusso eccessivamente rigido e lineare per un compito intrinsecamente esplorativo?",
         "options": [
-          "Elimina automaticamente la necessità di condurre test di accessibilità visiva, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "Riduce il consumo di memoria RAM del server web aumentandone l'efficienza per facilitare il rapido completamento del task",
-          "Migliora l'indicizzazione delle singole sotto-pagine sui motori di ricerca, ignorando il comportamento tipico di satisficing",
+          "Elimina automaticamente la necessità di condurre test di accessibilità visiva",
+          "Riduce il consumo di memoria RAM del server web aumentandone l'efficienza",
+          "Migliora l'indicizzazione delle singole sotto-pagine sui motori di ricerca",
           "Frustra l'utente impedendogli di confrontare opzioni, tornare sui propri passi o salvare bozze, inducendolo all'abbandono del processo"
         ],
         "correctIndex": 3,
@@ -482,9 +482,9 @@ window.STULL_DATA = [
         "question": "In un e-commerce B2B, l'analytics rivela che molti clienti usano il campo 'Note di spedizione' per digitare codici articolo e quantità, ignorando il catalogo a schede. Qual è la risposta progettuale raccomandata da Stull?",
         "options": [
           "Riconoscere il 'sentiero del desiderio' e progettare una funzione ufficiale di 'Ordine rapido tramite codici' per velocizzare gli acquisti all'ingrosso",
-          "Aggiungere un controllo regex che blocchi l'inserimento di numeri nel campo note di spedizione, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "Inviare un'email di richiamo agli utenti che compilano il campo in modo non conforme, riducendo l'usabilità complessiva del sistema",
-          "Eliminare del tutto il campo note per forzare l'uso esclusivo del motore di ricerca interno, aumentando sensibilmente il carico cognitivo richiesto per completare il task"
+          "Aggiungere un controllo regex che blocchi l'inserimento di numeri nel campo note di spedizione",
+          "Inviare un'email di richiamo agli utenti che compilano il campo in modo non conforme",
+          "Eliminare del tutto il campo note per forzare l'uso esclusivo del motore di ricerca interno"
         ],
         "correctIndex": 0,
         "explanation": "I clienti all'ingrosso sanno già cosa ordinare e vogliono farlo in 10 secondi. Asfaltare il sentiero significa fornire loro lo strumento di inserimento rapido codici che stavano chiedendo con le loro azioni."
@@ -492,10 +492,10 @@ window.STULL_DATA = [
       {
         "question": "Durante l'audit di un checkout, si nota che il 40% degli utenti abbandona alla schermata 2 perché obbligato a creare un account con password complessa prima di visualizzare i costi di spedizione. Come si elimina questa frizione critica?",
         "options": [
-          "Aumentare i requisiti minimi di complessità della password per rafforzare la sicurezza per facilitare il rapido completamento del task",
+          "Aumentare i requisiti minimi di complessità della password per rafforzare la sicurezza",
           "Consentire il checkout come ospite (Guest Checkout) e mostrare i costi di spedizione in modo trasparente già nel riepilogo carrello",
-          "Nascondere il pulsante per annullare l'ordine costringendo l'utente a proseguire, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "Sostituire la registrazione con una richiesta di login tramite account social obbligatorio, disattendendo le consolidate euristiche di usabilità"
+          "Nascondere il pulsante per annullare l'ordine costringendo l'utente a proseguire",
+          "Sostituire la registrazione con una richiesta di login tramite account social obbligatorio"
         ],
         "correctIndex": 1,
         "explanation": "La registrazione forzata prima del pagamento è una delle massime frizioni nell'e-commerce: rimuoverla a favore del guest checkout incrementa istantaneamente le conversioni."
@@ -503,10 +503,10 @@ window.STULL_DATA = [
       {
         "question": "Come si documenta visivamente il confronto tra il 'percorso ideale pianificato' e il 'percorso reale effettivo' percorso dagli utenti sul campo?",
         "options": [
-          "Confrontando i fogli di stile CSS mediante uno strumento di diffing testuale, ignorando la tendenza naturale degli utenti a scansionare anziché leggere",
-          "Redigendo un diagramma delle classi UML privo di riferimenti temporali, compromettendo la prevedibilità dell'architettura",
+          "Confrontando i fogli di stile CSS mediante uno strumento di diffing testuale",
+          "Redigendo un diagramma delle classi UML privo di riferimenti temporali",
           "Sovrapponendo i flussi effettivi tracciati tramite heatmaps, session recording e funnel analytics sopra il diagramma formale del task flow",
-          "Compilando un bilancio economico preventivo dei costi di sviluppo software, riducendo l'usabilità complessiva del sistema"
+          "Compilando un bilancio economico preventivo dei costi di sviluppo software"
         ],
         "correctIndex": 2,
         "explanation": "Mappare il percorso effettivo accanto a quello ideale evidenzia immediatamente deviazioni, cicli di loop a ritroso, rimbalzi e uscite impreviste."
@@ -547,9 +547,9 @@ window.STULL_DATA = [
         "question": "Cosa stabilisce formalmente la Legge di Hick-Hyman (Hick's Law)?",
         "options": [
           "Il tempo necessario per prendere una decisione cresce logaritmicamente all'aumentare del numero e della complessità delle opzioni disponibili: T = b * log2(n + 1)",
-          "La velocità di lettura su schermo digitale è inversamente proporzionale all'interlinea del testo; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Il tempo necessario per raggiungere un bersaglio dipende dalla distanza e dalla larghezza del bersaglio stesso, disattendendo le consolidate euristiche di usabilità",
-          "La memoria umana a breve termine può trattenere contemporaneamente un massimo di tre elementi astratti, una scelta progettuale che viola le convenzioni d'uso consolidate nel web"
+          "La velocità di lettura su schermo digitale è inversamente proporzionale all'interlinea del testo",
+          "Il tempo necessario per raggiungere un bersaglio dipende dalla distanza e dalla larghezza del bersaglio stesso",
+          "La memoria umana a breve termine può trattenere contemporaneamente un massimo di tre elementi astratti"
         ],
         "correctIndex": 0,
         "explanation": "La Legge di Hick dimostra che troppe alternative paralizzano l'utente. Raggruppare, filtrare e ridurre le opzioni velocizza e facilita drasticamente la decisione."
@@ -557,10 +557,10 @@ window.STULL_DATA = [
       {
         "question": "In che modo il principio filosofico del 'Rasoio di Ockham' si traduce nella pratica del Web Design?",
         "options": [
-          "I layout web devono eliminare tassativamente qualsiasi immagine decorativa o fotografia, disattendendo le consolidate euristiche di usabilità",
+          "I layout web devono eliminare tassativamente qualsiasi immagine decorativa o fotografia",
           "A parità di efficacia funzionale, la soluzione progettuale più semplice e lineare è sempre preferibile a quella che moltiplica inutilmente elementi ed entità",
-          "I menu di navigazione devono essere composti da un'unica voce che raggruppa tutti i link secondari, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "Il codice JavaScript deve essere scritto su una sola riga senza indentazioni per ridurre le dimensioni, una semplificazione che disattende le euristiche fondamentali di usabilità"
+          "I menu di navigazione devono essere composti da un'unica voce che raggruppa tutti i link secondari",
+          "Il codice JavaScript deve essere scritto su una sola riga senza indentazioni per ridurre le dimensioni"
         ],
         "correctIndex": 1,
         "explanation": "Il rasoio di Ockham impone di tagliare il superfluo: se un elemento visivo o un passaggio procedurale non è indispensabile all'obiettivo, va eliminato."
@@ -568,10 +568,10 @@ window.STULL_DATA = [
       {
         "question": "Qual è la differenza tra 'complessità intrinseca' di un dominio e 'complessità superflua' (o accidentale) introdotta dal design?",
         "options": [
-          "La complessità intrinseca è generata dagli utenti inesperti; la superflua è causata dai browser obsoleti, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
-          "La complessità intrinseca riguarda solo i sistemi embedded; la superflua riguarda le interfacce grafiche desktop, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
+          "La complessità intrinseca è generata dagli utenti inesperti; la superflua è causata dai browser obsoleti",
+          "La complessità intrinseca riguarda solo i sistemi embedded; la superflua riguarda le interfacce grafiche desktop",
           "La complessità intrinseca fa parte della natura del problema (es. dichiarazione dei redditi); la superflua è causata da cattiva architettura, gergo oscuro o interfacce confuse create dal designer",
-          "Non esiste alcuna differenza: ogni forma di complessità percepita è un difetto del sistema operativo, una semplificazione che disattende le euristiche fondamentali di usabilità"
+          "Non esiste alcuna differenza: ogni forma di complessità percepita è un difetto del sistema operativo"
         ],
         "correctIndex": 2,
         "explanation": "Legge di Tesler (conservazione della complessità): ogni processo ha un nucleo di complessità irriducibile. Il dovere del designer è farsi carico di quella complessità affinché non gravi sull'utente."
@@ -579,9 +579,9 @@ window.STULL_DATA = [
       {
         "question": "Cos'è la tecnica della 'Divulgazione progressiva' (Progressive Disclosure) formulata nella UX?",
         "options": [
-          "La pubblicazione parziale dei risultati dei test di usabilità per non allarmare i committenti, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
-          "Il rilascio graduale di nuove funzionalità del software a intervalli settimanali prestabiliti, alterando i punti di contatto del percorso utente",
-          "L'animazione progressiva di elementi grafici mediante transizioni CSS ad opacità variabile, compromettendo la prevedibilità dell'architettura",
+          "La pubblicazione parziale dei risultati dei test di usabilità per non allarmare i committenti",
+          "Il rilascio graduale di nuove funzionalità del software a intervalli settimanali prestabiliti",
+          "L'animazione progressiva di elementi grafici mediante transizioni CSS ad opacità variabile",
           "La strategia di mostrare inizialmente solo le informazioni e le opzioni essenziali, rendendo accessibili i dettagli avanzati solo su richiesta esplicita dell'utente"
         ],
         "correctIndex": 3,
@@ -591,9 +591,9 @@ window.STULL_DATA = [
         "question": "Cosa accade quando un'interfaccia soffre del cosiddetto 'Feature Creep' (sovraccumulo di funzionalità)?",
         "options": [
           "Il prodotto perde chiarezza e facilità d'uso, poiché l'accumulo disordinato di pulsanti e impostazioni disorienta l'utente medio per soddisfare richieste marginali",
-          "Il software diventa immune da vulnerabilità di sicurezza informatica, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "I tempi di risposta del database scendono automaticamente a zero millisecondi; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "L'applicazione ottiene la certificazione automatica di accessibilità universale, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo"
+          "Il software diventa immune da vulnerabilità di sicurezza informatica",
+          "I tempi di risposta del database scendono automaticamente a zero millisecondi",
+          "L'applicazione ottiene la certificazione automatica di accessibilità universale"
         ],
         "correctIndex": 0,
         "explanation": "Aggiungere funzioni senza criterio trasforma un prodotto agile in un labirinto illeggibile. 'Semplice è meglio' richiede il coraggio di dire 'no' alle funzioni non essenziali."
@@ -609,10 +609,10 @@ window.STULL_DATA = [
       {
         "question": "Una homepage presenta un mega-menu con 78 voci non gerarchizzate distribuite su un'unica schermata. Gli utenti impiegano oltre 25 secondi per trovare una sezione e lamentano frustrazione. Quale principio psicologico è violato?",
         "options": [
-          "Il principio di chiusura della Gestalt relativo al contrasto cromatico nel modello mentale condiviso dell'utente finale",
+          "Il principio di chiusura della Gestalt relativo al contrasto cromatico",
           "La Legge di Hick-Hyman: l'eccesso di scelte non strutturate sovraccarica la memoria di lavoro e rallenta drasticamente il tempo di reazione",
-          "La legge di conservazione dell'energia applicata ai transistor del monitor, alterando i punti di contatto del percorso utente",
-          "Il modello a due vie ELM di Petty e Cacioppo nella fase periferica, compromettendo la prevedibilità dell'architettura"
+          "La legge di conservazione dell'energia applicata ai transistor del monitor",
+          "Il modello a due vie ELM di Petty e Cacioppo nella fase periferica"
         ],
         "correctIndex": 1,
         "explanation": "78 voci piatte generano un sovraccarico decisionale paralizzante. La soluzione è categorizzare gerarchicamente in pochi macro-temi (4-7 categorie) con progressive disclosure."
@@ -620,10 +620,10 @@ window.STULL_DATA = [
       {
         "question": "Nel ridisegnare un form di configurazione per un software di contabilità, quale soluzione applica correttamente la 'Divulgazione progressiva'?",
         "options": [
-          "Distribuire i 25 campi su 25 pagine separate da scorrere una alla volta; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Mostrare tutti i 25 campi contemporaneamente per garantire che nulla sia nascosto all'utente, ignorando la tendenza naturale degli utenti a scansionare anziché leggere",
+          "Distribuire i 25 campi su 25 pagine separate da scorrere una alla volta",
+          "Mostrare tutti i 25 campi contemporaneamente per garantire che nulla sia nascosto all'utente",
           "Presentare i 5 campi fondamentali di base e racchiudere le 20 impostazioni fiscali avanzate all'interno di una sezione espandibile 'Opzioni avanzate'",
-          "Rendere invisibili le etichette testuali dei campi sostituendole con icone astratte, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo"
+          "Rendere invisibili le etichette testuali dei campi sostituendole con icone astratte"
         ],
         "correctIndex": 2,
         "explanation": "La divulgazione progressiva separa ciò che serve a tutti (campi primari) da ciò che serve solo a casi specifici (opzioni avanzate espandibili)."
@@ -631,9 +631,9 @@ window.STULL_DATA = [
       {
         "question": "Un committente insiste per inserire contemporaneamente 6 call-to-action visivamente identiche nella 'above the fold' della landing page. Quale argomentazione basata sul Rasoio di Ockham dovrebbe opporre il designer?",
         "options": [
-          "L'algoritmo di Google penalizza i siti con pulsanti aventi un raggio di curvatura del bordo (border-radius) identico, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "La presenza di più di due pulsanti impedisce al browser di applicare l'accelerazione hardware; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "I fogli di stile CSS standard vietano l'uso del colore primario su più di due elementi nella stessa pagina; tale impostazione impedisce all'utente di costruire un modello mentale coerente",
+          "L'algoritmo di Google penalizza i siti con pulsanti aventi un raggio di curvatura del bordo (border-radius) identico",
+          "La presenza di più di due pulsanti impedisce al browser di applicare l'accelerazione hardware",
+          "I fogli di stile CSS standard vietano l'uso del colore primario su più di due elementi nella stessa pagina",
           "Troppe azioni primarie in concorrenza si annullano a vicenda generando paralisi decisionale; concentrare l'attenzione su un'unica azione cardine massimizza le conversioni"
         ],
         "correctIndex": 3,
@@ -674,10 +674,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa postula la celebre 'Legge di Jakob' (Jakob's Law) formulata da Jakob Nielsen?",
         "options": [
-          "Il numero ideale di tester per scoprire l'85% dei problemi di usabilità è pari a venti partecipanti; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
+          "Il numero ideale di tester per scoprire l'85% dei problemi di usabilità è pari a venti partecipanti",
           "Gli utenti trascorrono la maggior parte del loro tempo su altri siti web: ciò significa che desiderano che il vostro sito funzioni nello stesso modo di tutti gli altri siti che già conoscono",
-          "La dimensione di un'immagine compressa non deve superare il 10% del viewport complessivo, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "Le transazioni e-commerce devono concludersi entro novanta secondi dall'accesso iniziale, una semplificazione che disattende le euristiche fondamentali di usabilità"
+          "La dimensione di un'immagine compressa non deve superare il 10% del viewport complessivo",
+          "Le transazioni e-commerce devono concludersi entro novanta secondi dall'accesso iniziale"
         ],
         "correctIndex": 1,
         "explanation": "Gli utenti portano con sé modelli mentali consolidati da centinaia di ore trascorse su Amazon, Google o YouTube. Rompere le convenzioni senza motivo genera solo smarrimento."
@@ -685,10 +685,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa si intende per 'Modello Mentale' nella psicologia cognitiva applicata alla UX?",
         "options": [
-          "La matrice matematica utilizzata dall'algoritmo di intelligenza artificiale per classificare i dati durante le sessioni empiriche con utenti reali",
-          "Il diagramma ad albero dei file memorizzati nella cartella di installazione del software, secondo i protocolli consolidati di user testing",
+          "La matrice matematica utilizzata dall'algoritmo di intelligenza artificiale per classificare i dati",
+          "Il diagramma ad albero dei file memorizzati nella cartella di installazione del software",
           "La rappresentazione interna e la previsione concettuale che una persona ha riguardo a come un sistema funziona, basata sulle sue esperienze passate",
-          "Il protocollo di test psicometrico somministrato ai candidati durante i colloqui di lavoro, ignorando il comportamento tipico di satisficing"
+          "Il protocollo di test psicometrico somministrato ai candidati durante i colloqui di lavoro"
         ],
         "correctIndex": 2,
         "explanation": "Il modello mentale non descrive come il codice funziona realmente nel server, ma come l'utente *crede* che funzioni in base alle sue abitudini pregresse."
@@ -696,9 +696,9 @@ window.STULL_DATA = [
       {
         "question": "Quale conseguenza negativa si produce quando un designer introduce una 'innovazione arbitraria' su un pattern consolidato (es. spostare il carrello in basso a sinistra)?",
         "options": [
-          "I collegamenti ipertestuali perdono la capacità di trasmettere parametri via query string, ignorando il comportamento tipico di satisficing",
-          "Il sistema operativo blocca l'esecuzione degli script JavaScript per motivi di sicurezza, disattendendo le consolidate euristiche di usabilità",
-          "I browser web non riescono a caricare i fogli di stile esterni a causa di errori di sintassi, una semplificazione che disattende le euristiche fondamentali di usabilità",
+          "I collegamenti ipertestuali perdono la capacità di trasmettere parametri via query string",
+          "Il sistema operativo blocca l'esecuzione degli script JavaScript per motivi di sicurezza",
+          "I browser web non riescono a caricare i fogli di stile esterni a causa di errori di sintassi",
           "Si genera una violazione delle aspettative che costringe l'utente a fermarsi a riflettere e a cercare comandi ovvi, provocando frizione, irritazione e abbandono"
         ],
         "correctIndex": 3,
@@ -708,9 +708,9 @@ window.STULL_DATA = [
         "question": "Cosa intende Stull quando afferma che 'Gli utenti collezionano esperienze'?",
         "options": [
           "Ogni applicazione usata nella vita plasma e aggiorna costantemente il bagaglio di aspettative e standard di qualità con cui l'utente giudicherà il prossimo prodotto",
-          "Gli utenti registrano screenshot di tutte le schermate visitate per conservarle in cartelle personali; tale impostazione impedisce all'utente di costruire un modello mentale coerente",
-          "I consumatori digitali accumulano punti fedeltà spendibili su piattaforme di cashback, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "I profili utente memorizzano cronologie di navigazione unicamente all'interno della memoria RAM volatile, aumentando sensibilmente il carico cognitivo richiesto per completare il task"
+          "Gli utenti registrano screenshot di tutte le schermate visitate per conservarle in cartelle personali",
+          "I consumatori digitali accumulano punti fedeltà spendibili su piattaforme di cashback",
+          "I profili utente memorizzano cronologie di navigazione unicamente all'interno della memoria RAM volatile"
         ],
         "correctIndex": 0,
         "explanation": "L'esperienza non è un'isola: se un utente prova il tracciamento in tempo reale di Uber o la fluidità di Netflix, si aspetterà lo stesso livello anche dal sito della sua banca o dell'università."
@@ -718,10 +718,10 @@ window.STULL_DATA = [
       {
         "question": "In quale circostanza è metodologicamente giustificato deviare da un pattern o convenzione consolidata?",
         "options": [
-          "Ogni volta che il grafico aziendale desidera dimostrare la propria originalità artistica, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
+          "Ogni volta che il grafico aziendale desidera dimostrare la propria originalità artistica",
           "Solo quando la nuova soluzione apporta un miglioramento dell'efficienza o dell'efficacia così clamoroso ed evidente da compensare ampiamente lo sforzo di apprendimento richiesto",
-          "Quando la convenzione esistente è stata ideata più di due anni prima della versione attuale; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Soltanto se il sito web si rivolge a un pubblico universitario specializzato in informatica; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso"
+          "Quando la convenzione esistente è stata ideata più di due anni prima della versione attuale",
+          "Soltanto se il sito web si rivolge a un pubblico universitario specializzato in informatica"
         ],
         "correctIndex": 1,
         "explanation": "Si devia dalle convenzioni solo per un salto evolutivo sostanziale (come lo scroll touch di iPhone rispetto ai vecchi tasti fisici). L'originalità fine a se stessa è dannosa."
@@ -737,10 +737,10 @@ window.STULL_DATA = [
       {
         "question": "Un designer propone di sostituire l'icona canonica della 'Lente d'ingrandimento' con un'icona a forma di 'Cannocchiale marinaresco' e di collocarla a piè di pagina per distinguersi dai concorrenti. Come valuta Stull questa scelta?",
         "options": [
-          "Una soluzione conforme alle direttive WCAG 2.1 livello AAA per la navigazione personalizzata, riducendo la tolleranza all'errore e moltiplicando i passaggi operativi superflui",
-          "Un'innovazione visiva lodevole che incrementa l'interazione grazie alla sorpresa e all'effetto nostalgia, ignorando la tendenza naturale degli utenti a scansionare anziché leggere",
+          "Una soluzione conforme alle direttive WCAG 2.1 livello AAA per la navigazione personalizzata",
+          "Un'innovazione visiva lodevole che incrementa l'interazione grazie alla sorpresa e all'effetto nostalgia",
           "Un errore grave che viola la Legge di Jakob e i modelli mentali: obbliga gli utenti a decifrare un simbolo insolito in un punto imprevisto, azzerando l'usabilità",
-          "Un intervento neutro che non influisce sui tassi di utilizzo del motore di ricerca interno; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "Un intervento neutro che non influisce sui tassi di utilizzo del motore di ricerca interno"
         ],
         "correctIndex": 2,
         "explanation": "La lente d'ingrandimento in alto è un segnale visivo (signifier) universale. Sostituirla con un cannocchiale in fondo alla pagina costringe l'utente a cercare invano la ricerca."
@@ -748,9 +748,9 @@ window.STULL_DATA = [
       {
         "question": "Un'azienda ospedaliera rifà il portale pazienti importando la logica di 'Aggiungi al carrello' tipica dell'e-commerce per la selezione delle visite mediche. Gli utenti si bloccano cercando 'Procedi al checkout'. Qual è la causa del problema?",
         "options": [
-          "La mancata installazione di un certificato di cifratura SSL sul server applicativo, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
-          "Un malfunzionamento del database SQL che non supporta le tabelle relazionali per i referti; tale impostazione impedisce all'utente di costruire un modello mentale coerente",
-          "L'uso di font con grazie (serif) nelle schede informative dei medici specialisti, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
+          "La mancata installazione di un certificato di cifratura SSL sul server applicativo",
+          "Un malfunzionamento del database SQL che non supporta le tabelle relazionali per i referti",
+          "L'uso di font con grazie (serif) nelle schede informative dei medici specialisti",
           "Una collisione tra modelli mentali: il frame concettuale commerciale (carrello/checkout) stride con il dominio sanitario (prenotazione/visita medica), creando disorientamento"
         ],
         "correctIndex": 3,
@@ -760,9 +760,9 @@ window.STULL_DATA = [
         "question": "Come si sfrutta virtuosamente il bagaglio di esperienze pregresse degli utenti quando si progetta una nuova applicazione SaaS complessa?",
         "options": [
           "Adottando scorciatoie da tastiera standard (Ctrl+Z, Ctrl+S), layout con barra laterale collassabile e icone convenzionali già note da software diffusi come Google Docs o Slack",
-          "Inventando un vocabolario esclusivo di termini brevettati per descrivere le normali azioni di copia/incolla, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
-          "Eliminando ogni pulsante visibile a schermo e basando l'interazione su gesture con quattro dita, secondo i protocolli consolidati di user testing",
-          "Impedendo l'uso del mouse e consentendo l'input esclusivamente tramite comandi testuali da terminale, introducendo un attrito cognitivo ingiustificato"
+          "Inventando un vocabolario esclusivo di termini brevettati per descrivere le normali azioni di copia/incolla",
+          "Eliminando ogni pulsante visibile a schermo e basando l'interazione su gesture con quattro dita",
+          "Impedendo l'uso del mouse e consentendo l'input esclusivamente tramite comandi testuali da terminale"
         ],
         "correctIndex": 0,
         "explanation": "Utilizzare convenzioni consolidate (scorciatoie, icone, pattern di navigazione) riduce la curva di apprendimento a zero e permette all'utente di lavorare immediatamente."
@@ -802,10 +802,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa prescrive la seconda euristica di Jakob Nielsen, strettamente richiamata da Stull: 'Corrispondenza tra sistema e mondo reale'?",
         "options": [
-          "Ogni pagina web deve includere una mappa satellitare georeferenziata della sede aziendale, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "L'interfaccia deve riprodurre fedelmente texture tridimensionali del mondo reale (scheuomorfismo estremo obbligatorio), disattendendo le consolidate euristiche di usabilità",
+          "Ogni pagina web deve includere una mappa satellitare georeferenziata della sede aziendale",
+          "L'interfaccia deve riprodurre fedelmente texture tridimensionali del mondo reale (scheuomorfismo estremo obbligatorio)",
           "Il sistema deve esprimersi con il linguaggio dell'utente, impiegando parole, frasi e concetti a lui familiari anziché terminologie e acronimi interni orientati al sistema",
-          "Il software deve sincronizzare l'orario di sistema con l'ora solare rilevata tramite GPS, ostacolando il flusso naturale d'interazione"
+          "Il software deve sincronizzare l'orario di sistema con l'ora solare rilevata tramite GPS"
         ],
         "correctIndex": 2,
         "explanation": "Il sistema deve comunicare nel registro linguistico naturale dell'utente, evitando termini ingegneristici, codici d'errore o gergo burocratico incomprensibile."
@@ -825,9 +825,9 @@ window.STULL_DATA = [
         "question": "Cosa si intende per 'Gergo insider' (Insider Jargon) nel Web Design?",
         "options": [
           "Il vocabolario tecnico, acronimi aziendali o sigle procedurali comprensibili solo ai dipendenti interni ma del tutto oscuri ai clienti finali",
-          "Il linguaggio di programmazione utilizzato per implementare l'algoritmo di machine learning, secondo i principi predittivi della legge di Hick",
-          "Le convenzioni di denominazione delle classi CSS stabilite dalla metodologia BEM, riducendo l'usabilità complessiva del sistema",
-          "I codici segreti utilizzati dagli amministratori di rete per accedere ai router Cisco, secondo i protocolli consolidati di user testing"
+          "Il linguaggio di programmazione utilizzato per implementare l'algoritmo di machine learning",
+          "Le convenzioni di denominazione delle classi CSS stabilite dalla metodologia BEM",
+          "I codici segreti utilizzati dagli amministratori di rete per accedere ai router Cisco"
         ],
         "correctIndex": 0,
         "explanation": "Un sito bancario che parla di 'Disposizione SEPA SCT Inst' anziché di 'Bonifico istantaneo' usa gergo interno aziendale che disorienta il cliente comune."
@@ -835,10 +835,10 @@ window.STULL_DATA = [
       {
         "question": "Quale ruolo ricopre il 'Microcopy' nella comunicazione efficace tra interfaccia e utente?",
         "options": [
-          "Le clausole contrattuali scritte in caratteri minuscoli a piè di pagina per limitare la responsabilità legale, ostacolando il flusso naturale d'interazione",
+          "Le clausole contrattuali scritte in caratteri minuscoli a piè di pagina per limitare la responsabilità legale",
           "Le brevi etichette di testo, segnaposto nei campi, istruzioni nei pulsanti e testi di aiuto che guidano e rassicurano l'utente in ogni micro-interazione",
-          "I commenti inseriti all'interno del codice sorgente HTML per facilitare il lavoro dei programmatori, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "La compressione dei caratteri tipografici per consentire la visualizzazione su display a bassa risoluzione, secondo i principi predittivi della legge di Hick"
+          "I commenti inseriti all'interno del codice sorgente HTML per facilitare il lavoro dei programmatori",
+          "La compressione dei caratteri tipografici per consentire la visualizzazione su display a bassa risoluzione"
         ],
         "correctIndex": 1,
         "explanation": "Il microcopy trasforma la fredda UI in un dialogo collaborativo: un'etichetta chiara su un bottone ('Crea account gratuito' vs 'Submit') abbatte l'esitazione."
@@ -846,10 +846,10 @@ window.STULL_DATA = [
       {
         "question": "In che modo una ricerca qualitativa (interviste sul campo) supporta la redazione di testi e microcopy efficaci?",
         "options": [
-          "Serve a determinare quale font tipografico garantisce la massima velocità di download, secondo i principi predittivi della legge di Hick",
-          "Consente di calcolare l'indice matematico di densità delle parole chiave per scopi SEO, secondo i protocolli consolidati di user testing",
+          "Serve a determinare quale font tipografico garantisce la massima velocità di download",
+          "Consente di calcolare l'indice matematico di densità delle parole chiave per scopi SEO",
           "Permette di ascoltare i termini esatti, le metafore spontanee e i costrutti lessicali usati naturalmente dalle persone quando descrivono il proprio problema",
-          "Obbliga gli utenti a memorizzare la terminologia ufficiale del glossario aziendale, introducendo un attrito cognitivo ingiustificato"
+          "Obbliga gli utenti a memorizzare la terminologia ufficiale del glossario aziendale"
         ],
         "correctIndex": 2,
         "explanation": "Prendere nota delle parole usate dagli utenti nelle interviste permette di usarle direttamente nei titoli e nei menu, garantendo risonanza e comprensione immediata."
@@ -865,9 +865,9 @@ window.STULL_DATA = [
       {
         "question": "Un'applicazione governativa per i sussidi familiari ha una voce di menu intitolata 'Istanze d'accesso alle misure passive di welfare previdenziale'. Molti cittadini aventi diritto abbandonano il sito senza fare domanda. Quale correzione di microcopy è necessaria?",
         "options": [
-          "Tradurre la frase in latino giuridico per conferire maggiore solennità istituzionale durante le sessioni empiriche con utenti reali",
-          "Mantenere il titolo burocratico ma aggiungere una finestra modale di 10 pagine con il testo integrale della legge, ostacola l'utente",
-          "Sostituire la voce di menu con un codice alfanumerico corrispondente al decreto ministeriale, compromettendo la prevedibilità dell'architettura",
+          "Tradurre la frase in latino giuridico per conferire maggiore solennità istituzionale",
+          "Mantenere il titolo burocratico ma aggiungere una finestra modale di 10 pagine con il testo integrale della legge",
+          "Sostituire la voce di menu con un codice alfanumerico corrispondente al decreto ministeriale",
           "Rinominare la sezione in 'Richiedi il sussidio di sostegno economico per la tua famiglia', allineando il lessico al linguaggio naturale dei cittadini"
         ],
         "correctIndex": 3,
@@ -877,9 +877,9 @@ window.STULL_DATA = [
         "question": "In un form di checkout, un pulsante riporta la dicitura generica 'Procedi'. L'utente esita perché non sa se quel click addebiterà il denaro o mostrerà un riepilogo. Qual è il microcopy conforme alle best practice di trasparenza?",
         "options": [
           "'Controlla l'ordine prima di pagare' seguito, nella schermata finale, da 'Paga 45,00 € e completa l'acquisto'",
-          "'Invia dati al gateway crittografico bancario', una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "'Continua la sequenza procedurale transattiva', secondo i principi predittivi della legge di Hick",
-          "'OK', senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud"
+          "'Invia dati al gateway crittografico bancario'",
+          "'Continua la sequenza procedurale transattiva'",
+          "'OK'"
         ],
         "correctIndex": 0,
         "explanation": "I pulsanti devono descrivere chiaramente l'esito dell'azione: eliminano l'ansia da addebito imprevisto specificando esattamente cosa avverrà."
@@ -887,10 +887,10 @@ window.STULL_DATA = [
       {
         "question": "Come si verifica oggettivamente se i testi di un'interfaccia sono comprensibili per il target a cui sono destinati?",
         "options": [
-          "Sottoponendo i testi al vaglio esclusivo dell'ufficio legale aziendale, ostacolando il flusso naturale d'interazione",
+          "Sottoponendo i testi al vaglio esclusivo dell'ufficio legale aziendale",
           "Conducendo test di comprensione o 'Cloze test' con partecipanti del target e calcolando l'indice di leggibilità (es. Gulpease o Flesch-Vacca)",
-          "Contando il numero totale di vocali e consonanti presenti nel foglio di stile, disattendendo le consolidate euristiche di usabilità",
-          "Verificando se il revisore bozze dell'azienda ha conseguito una laurea in lettere classiche, compromettendo la prevedibilità dell'architettura"
+          "Contando il numero totale di vocali e consonanti presenti nel foglio di stile",
+          "Verificando se il revisore bozze dell'azienda ha conseguito una laurea in lettere classiche"
         ],
         "correctIndex": 1,
         "explanation": "Metriche di leggibilità (come Gulpease per l'italiano) e test con utenti reali permettono di verificare empiricamente se i testi sono scorrevoli e privi di ambiguità per il pubblico reale."
@@ -930,9 +930,9 @@ window.STULL_DATA = [
       {
         "question": "Cosa intende Donald Norman con il concetto di 'Affordance' ripreso e chiarito da Edward Stull?",
         "options": [
-          "La compatibilità retroattiva di un foglio di stile con browser web obsoleti, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "La capacità del server di sopportare carichi elevati di traffico contemporaneo, ignorando la tendenza naturale degli utenti a scansionare anziché leggere",
-          "Il costo monetario complessivo sostenuto per l'acquisto di licenze software nel modello mentale condiviso dell'utente finale",
+          "La compatibilità retroattiva di un foglio di stile con browser web obsoleti",
+          "La capacità del server di sopportare carichi elevati di traffico contemporaneo",
+          "Il costo monetario complessivo sostenuto per l'acquisto di licenze software",
           "Le proprietà fisiche o visive percepite di un oggetto che suggeriscono intuitivamente all'utente come esso possa essere utilizzato o azionato"
         ],
         "correctIndex": 3,
@@ -942,9 +942,9 @@ window.STULL_DATA = [
         "question": "Quale distinzione fondamentale intercorre tra 'Affordance' e 'Signifier' (Segnalatore) secondo la teoria di Norman?",
         "options": [
           "L'affordance è la possibilità d'azione effettiva; il signifier è qualsiasi indizio visivo o percettivo (testo, icona, freccia) che comunica esplicitamente dove e come compiere l'azione",
-          "L'affordance riguarda solo gli schermi touch; il signifier riguarda i mouse a tre pulsanti, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "L'affordance è scritta in HTML; il signifier è generato tramite script PHP lato server; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "Non sussiste alcuna distinzione: sono termini perfettamente sinonimi e intercambiabili, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito"
+          "L'affordance riguarda solo gli schermi touch; il signifier riguarda i mouse a tre pulsanti",
+          "L'affordance è scritta in HTML; il signifier è generato tramite script PHP lato server",
+          "Non sussiste alcuna distinzione: sono termini perfettamente sinonimi e intercambiabili"
         ],
         "correctIndex": 0,
         "explanation": "Un vetro trasparente ha l'affordance di far passare la luce, ma senza un cartello o una barra (signifier) le persone vi sbattono contro perché non sanno dove spingere."
@@ -952,10 +952,10 @@ window.STULL_DATA = [
       {
         "question": "Perché le interfacce cosiddette 'Flat Design' estremo hanno storicamente subito un crollo di usabilità?",
         "options": [
-          "Perché il codice CSS necessario per creare sfondi piatti è troppo pesante per le connessioni mobili, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
+          "Perché il codice CSS necessario per creare sfondi piatti è troppo pesante per le connessioni mobili",
           "Perché eliminando ogni tridimensionalità, ombreggiatura e rilievo, hanno rimosso i signifier visivi che permettevano di distinguere un pulsante cliccabile da un testo statico",
-          "Perché i motori di rendering dei browser non supportano i colori a tinta unita privi di sfumature; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Perché gli utenti rifiutano le interfacce che non contengono icone animate in formato GIF, ignorando il comportamento tipico di satisficing"
+          "Perché i motori di rendering dei browser non supportano i colori a tinta unita privi di sfumature",
+          "Perché gli utenti rifiutano le interfacce che non contengono icone animate in formato GIF"
         ],
         "correctIndex": 1,
         "explanation": "Il flat design radicale ha generato il fenomeno del 'click and pray': gli utenti non capivano più cosa fosse interattivo e cosa no, a causa dell'assenza di confini e rilievi visivi sui pulsanti."
@@ -963,10 +963,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa si intende per 'Metafora concettuale' nel Web Design (es. il 'Cestino' o la 'Cartella')?",
         "options": [
-          "La rappresentazione grafica dei server di rete sotto forma di nuvole nel diagramma di architettura, riducendo la tolleranza all'errore e moltiplicando i passaggi operativi superflui",
-          "Un espediente retorico utilizzato dai copywriter negli spot pubblicitari televisivi, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
+          "La rappresentazione grafica dei server di rete sotto forma di nuvole nel diagramma di architettura",
+          "Un espediente retorico utilizzato dai copywriter negli spot pubblicitari televisivi",
           "L'associazione mentale tra un'operazione informatica astratta e un oggetto del mondo fisico familiare, che consente all'utente di dedurne immediatamente il comportamento",
-          "Un metodo per criptare i dati personali prima di archiviarli nel database relazionale; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "Un metodo per criptare i dati personali prima di archiviarli nel database relazionale"
         ],
         "correctIndex": 2,
         "explanation": "Le metafore (desktop, cestino, cartella, carrello) colmano il divario tra codice e realtà: tutti sanno che se trascini un foglio nel cestino lo stai eliminando."
@@ -974,9 +974,9 @@ window.STULL_DATA = [
       {
         "question": "Quale problema sistemico sorge quando un'applicazione inventa un'icona astratta per una funzione primaria senza aggiungere un'etichetta testuale?",
         "options": [
-          "La pagina web viola le normative sui cookie di profilazione di terze parti nel modello mentale condiviso dell'utente finale",
-          "I crawler dei motori di ricerca non riescono a scaricare le immagini in formato SVG, compromettendo la prevedibilità dell'architettura",
-          "La memoria video dello smartphone viene saturata dal rendering del tracciato vettoriale, una semplificazione che disattende le euristiche fondamentali di usabilità",
+          "La pagina web viola le normative sui cookie di profilazione di terze parti",
+          "I crawler dei motori di ricerca non riescono a scaricare le immagini in formato SVG",
+          "La memoria video dello smartphone viene saturata dal rendering del tracciato vettoriale",
           "L'icona risulta ambigua e indecifrabile per la grande maggioranza degli utenti, che esitano o evitano di usarla per paura di compiere errori irreversibili"
         ],
         "correctIndex": 3,
@@ -994,9 +994,9 @@ window.STULL_DATA = [
         "question": "Su una nuova piattaforma di home banking, i designer rimuovono i bordi e gli sfondi dai pulsanti, trasformandoli in parole azzurre piatte identiche ai titoli dei paragrafi. Gli utenti non completano i pagamenti. Come si risolve questo difetto?",
         "options": [
           "Ripristinando signifier chiari di cliccabilità: dare ai pulsanti una forma chiara (rettangolo con angoli arrotondati), uno sfondo solido a contrasto e uno stato di hover distinto",
-          "Aggiungendo un'animazione di scuotimento continuo a tutti i testi della pagina, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "Inserendo un testo esplicativo di 5 righe all'inizio della pagina che avvisa l'utente che le parole azzurre sono cliccabili, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "Sostituendo il testo azzurro con icone prive di etichetta per risparmiare spazio visivo; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso"
+          "Aggiungendo un'animazione di scuotimento continuo a tutti i testi della pagina",
+          "Inserendo un testo esplicativo di 5 righe all'inizio della pagina che avvisa l'utente che le parole azzurre sono cliccabili",
+          "Sostituendo il testo azzurro con icone prive di etichetta per risparmiare spazio visivo"
         ],
         "correctIndex": 0,
         "explanation": "Un pulsante deve sembrare un pulsante. Riconoscere la cliccabilità a prima vista è un cardine della familiarità e dell'usabilità (signifier solido)."
@@ -1004,10 +1004,10 @@ window.STULL_DATA = [
       {
         "question": "In un'applicazione medica salvavita, un interruttore digitale aziona una pompa di infusione. Non è chiaro se l'etichetta 'ATTIVO' indichi lo stato attuale o l'azione da compiere premendo. Quale principio di Norman è violato?",
         "options": [
-          "La legge di Fitts relativa al tempo di movimento dell'arto sul touchpad, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
+          "La legge di Fitts relativa al tempo di movimento dell'arto sul touchpad",
           "Feedback e stato del signifier: l'interfaccia deve rendere inequivocabile la distinzione tra lo 'stato corrente del sistema' e 'l'azione provocata dal clic'",
-          "Il principio di simmetria assiale della scuola della Gestalt, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "L'architettura dell'informazione gerarchica di Rosenfeld e Morville, aumentando sensibilmente il carico cognitivo richiesto per completare il task"
+          "Il principio di simmetria assiale della scuola della Gestalt",
+          "L'architettura dell'informazione gerarchica di Rosenfeld e Morville"
         ],
         "correctIndex": 1,
         "explanation": "Pulsanti che indicano sia l'etichetta dell'azione sia lo stato presente sono trappole cognitive pericolose. L'interruttore deve mostrare visivamente la posizione ON/OFF in modo inequivocabile."
@@ -1015,10 +1015,10 @@ window.STULL_DATA = [
       {
         "question": "Quando si progetta una versione mobile di un software aziendale, perché è consigliabile conformarsi ai design pattern nativi di iOS e Android (Human Interface Guidelines e Material Design)?",
         "options": [
-          "Perché l'uso di pattern nativi esonera il team dal rispetto della privacy europea GDPR, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
-          "Perché i sistemi operativi mobili bloccano l'installazione di app prive di componenti Material nativi, ignorando la tendenza naturale degli utenti a scansionare anziché leggere",
+          "Perché l'uso di pattern nativi esonera il team dal rispetto della privacy europea GDPR",
+          "Perché i sistemi operativi mobili bloccano l'installazione di app prive di componenti Material nativi",
           "Perché sfruttano la familiarità muscolare e cognitiva che l'utente ha già sviluppato con migliaia di ore d'uso del proprio smartphone, azzerando gli errori",
-          "Perché i server cloud riducono automaticamente i costi di hosting per le app conformi a Google Material, disattendendo le consolidate euristiche di usabilità"
+          "Perché i server cloud riducono automaticamente i costi di hosting per le app conformi a Google Material"
         ],
         "correctIndex": 2,
         "explanation": "Rispettare le convenzioni di piattaforma (gesti di swipe, posizione del tasto indietro, tab bar) rende l'app immediatamente naturale all'uso."
@@ -1059,9 +1059,9 @@ window.STULL_DATA = [
         "question": "Cosa prescrive la nona euristica di Jakob Nielsen sulla 'Gestione e prevenzione degli errori'?",
         "options": [
           "I sistemi devono prima di tutto prevenire il verificarsi di errori attraverso un design accurato; qualora si verifichino, devono formulare messaggi chiari in linguaggio naturale che suggeriscano una via d'uscita costruttiva",
-          "I sistemi devono nascondere ogni notifica d'errore all'utente per non causargli stress psicologico; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "I codici d'errore devono essere visualizzati unicamente all'interno della console per sviluppatori; tale impostazione impedisce all'utente di costruire un modello mentale coerente",
-          "Gli errori di digitazione devono comportare la chiusura immediata della sessione utente, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito"
+          "I sistemi devono nascondere ogni notifica d'errore all'utente per non causargli stress psicologico",
+          "I codici d'errore devono essere visualizzati unicamente all'interno della console per sviluppatori",
+          "Gli errori di digitazione devono comportare la chiusura immediata della sessione utente"
         ],
         "correctIndex": 0,
         "explanation": "La migliore gestione dell'errore è la prevenzione (es. campi con maschera guidata). Se l'errore avviene, il messaggio deve dire cosa è successo e come rimediare."
@@ -1069,10 +1069,10 @@ window.STULL_DATA = [
       {
         "question": "Qual è la differenza fondamentale tra uno 'Sbaglio' (Mistake) e una 'Svista' (Slip) nella tassonomia degli errori umani di Norman?",
         "options": [
-          "Lo sbaglio riguarda l'hardware del computer; la svista è un difetto del sistema operativo, una pratica che riduce l'usabilità complessiva, ostacolando l'orientamento spaziale e la percezione dei percorsi di navigazione primari",
+          "Lo sbaglio riguarda l'hardware del computer; la svista è un difetto del sistema operativo",
           "Lo sbaglio è un errore conscio dovuto a un modello mentale errato o a informazioni fuorvianti; la svista è un errore automatico e inconscio durante un'azione di routine (es. cliccare sul tasto adiacente)",
-          "Lo sbaglio è commesso dagli sviluppatori del software; la svista è causata unicamente dalla fretta dell'utente, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
-          "Non esiste distinzione teorica: ogni errore dell'utente è classificato come incompetenza procedurale; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso"
+          "Lo sbaglio è commesso dagli sviluppatori del software; la svista è causata unicamente dalla fretta dell'utente",
+          "Non esiste distinzione teorica: ogni errore dell'utente è classificato come incompetenza procedurale"
         ],
         "correctIndex": 1,
         "explanation": "Slips (sviste): volevo cliccare 'Salva' ma il dito ha toccato 'Elimina' perché troppo vicino. Mistakes (sbagli): ho cancellato un file pensando che fosse una copia di sicurezza perché l'etichetta era fuorviante."
@@ -1080,10 +1080,10 @@ window.STULL_DATA = [
       {
         "question": "Perché un design difensivo deve implementare la funzione 'Annulla' (Undo) anziché affidarsi unicamente a finestre modali di conferma ('Sei sicuro?')?",
         "options": [
-          "Perché la funzione Undo riduce lo spazio occupato dal database sui server applicativi, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
-          "Perché le finestre di dialogo modali non sono supportate dagli standard HTML5 moderni; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
+          "Perché la funzione Undo riduce lo spazio occupato dal database sui server applicativi",
+          "Perché le finestre di dialogo modali non sono supportate dagli standard HTML5 moderni",
           "Perché gli utenti sviluppano assuefazione alle finestre di conferma cliccando meccanicamente su 'OK' senza leggere; la reversibilità dell'azione conferisce invece serenità e controllo reale",
-          "Perché le linee guida ISO vietano qualsiasi finestra popup contenente pulsanti di cancellazione; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso"
+          "Perché le linee guida ISO vietano qualsiasi finestra popup contenente pulsanti di cancellazione"
         ],
         "correctIndex": 2,
         "explanation": "La modale 'Sei sicuro?' fallisce perché la risposta diventa un riflesso automatico. Poter annullare l'azione (es. 'Messaggio eliminato - Annulla' di Gmail) offre sicurezza totale senza interrompere il flusso."
@@ -1091,9 +1091,9 @@ window.STULL_DATA = [
       {
         "question": "Cosa si intende per 'Validazione in linea' (Inline Validation) nei form di inserimento dati?",
         "options": [
-          "La visualizzazione contemporanea di tutte le righe di codice sorgente all'interno del browser, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "Il controllo di conformità legale del contratto commerciale da parte dell'ufficio contabile, secondo i protocolli consolidati di user testing",
-          "La scansione antivirus in tempo reale di tutti i file residenti sull'hard disk locale, disattendendo le consolidate euristiche di usabilità",
+          "La visualizzazione contemporanea di tutte le righe di codice sorgente all'interno del browser",
+          "Il controllo di conformità legale del contratto commerciale da parte dell'ufficio contabile",
+          "La scansione antivirus in tempo reale di tutti i file residenti sull'hard disk locale",
           "La verifica e il feedback immediato fornito campo per campo man mano che l'utente compila, segnalando errori di formato prima dell'invio finale del modulo"
         ],
         "correctIndex": 3,
@@ -1103,9 +1103,9 @@ window.STULL_DATA = [
         "question": "In che modo l'affidabilità e la gestione degli errori influenzano la 'Fiducia percepita' (Perceived Trust) nel brand?",
         "options": [
           "Un sistema che si blocca, perde i dati già inseriti o mostra schermate bianche distrugge istantaneamente la percezione di sicurezza, spingendo l'utente a temere per i propri dati e il proprio denaro",
-          "Gli errori tecnici frequenti aumentano l'affetto dell'utente rendendo il software più simpatico e umano, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "La fiducia dell'utente dipende unicamente dal colore del logo aziendale e non dalla stabilità dell'applicazione; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "La percezione di affidabilità è rilevante solo nei sistemi militari e non riguarda i siti web commerciali, una semplificazione che disattende le euristiche fondamentali di usabilità"
+          "Gli errori tecnici frequenti aumentano l'affetto dell'utente rendendo il software più simpatico e umano",
+          "La fiducia dell'utente dipende unicamente dal colore del logo aziendale e non dalla stabilità dell'applicazione",
+          "La percezione di affidabilità è rilevante solo nei sistemi militari e non riguarda i siti web commerciali"
         ],
         "correctIndex": 0,
         "explanation": "Se un sito perde il carrello al checkout o si blocca durante il pagamento, l'utente sospetta truffe o incompetenza e non completerà mai la transazione."
@@ -1121,10 +1121,10 @@ window.STULL_DATA = [
       {
         "question": "Un modulo di iscrizione di 30 campi presenta una schermata d'errore dopo l'invio che cancella tutti i dati già digitati dall'utente, costringendolo a ricominciare da capo. Quale violazione grave di stabilità e rispetto dell'utente si è verificata?",
         "options": [
-          "Violazione della legge di Hick dovuta all'eccesso di opzioni contemporanee; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Violazione della legge di Hick dovuta all'eccesso di opzioni contemporanee",
           "Distruzione catastrofica del lavoro svolto: il sistema deve sempre conservare i dati validi già inseriti ed evidenziare unicamente i singoli campi da correggere con feedback specifico",
-          "Mancata applicazione del modello di Kano sui requisiti delighters, riducendo la tolleranza all'errore e moltiplicando i passaggi operativi superflui",
-          "Applicazione scorretta dell'euristica del gradiente di ricompensa percettiva, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo"
+          "Mancata applicazione del modello di Kano sui requisiti delighters",
+          "Applicazione scorretta dell'euristica del gradiente di ricompensa percettiva"
         ],
         "correctIndex": 1,
         "explanation": "Cancellare i dati inseriti è l'errore peggiore che un form possa compiere: genera rabbia immediata e causa l'abbandono definitivo del servizio."
@@ -1132,10 +1132,10 @@ window.STULL_DATA = [
       {
         "question": "Nella progettazione di un pannello di controllo cloud, il pulsante 'Elimina definitivamente cluster di database' è posizionato a 2 pixel dal pulsante 'Aggiorna statistiche' e ha lo stesso colore grigio. Come si previene la 'svista' (slip)?",
         "options": [
-          "Rendendo il pulsante 'Elimina' visibile solo se l'utente tiene premuto il mouse per 10 minuti, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "Aggiungendo un'icona decorativa identica su entrambi i pulsanti per garantire coerenza grafica; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Rendendo il pulsante 'Elimina' visibile solo se l'utente tiene premuto il mouse per 10 minuti",
+          "Aggiungendo un'icona decorativa identica su entrambi i pulsanti per garantire coerenza grafica",
           "Separando fisicamente i comandi, colorando l'azione distruttiva di rosso, richiedendo la digitazione esplicita del nome del database per confermare e fornendo un backup di ripristino",
-          "Sostituendo entrambi i pulsanti con un collegamento ipertestuale testuale di colore blu, aumentando sensibilmente il carico cognitivo richiesto per completare il task"
+          "Sostituendo entrambi i pulsanti con un collegamento ipertestuale testuale di colore blu"
         ],
         "correctIndex": 2,
         "explanation": "Prevenire le sviste catastrofiche richiede distanziamento, differenziazione cromatica d'avvertimento e una barriera deliberata (es. digitare 'ELIMINA' o il nome del server) per interrompere gli automatismi inconsci."
@@ -1143,9 +1143,9 @@ window.STULL_DATA = [
       {
         "question": "Un utente dimentica la password. Il sistema invia un'email che dice: 'La tua password attuale è: Secret1234'. Quale gravissimo fallimento di sicurezza e affidabilità viene palesato?",
         "options": [
-          "Il client di posta elettronica non supporta i font a spaziatura fissa (monospace), un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "L'email non contiene l'attributo alt sulle immagini promozionali, una semplificazione concettuale che non regge alla prova dei test con utenti rappresentativi eseguiti in condizioni d'uso realistiche",
-          "La password inviata non rispetta le regole di divulgazione progressiva, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
+          "Il client di posta elettronica non supporta i font a spaziatura fissa (monospace)",
+          "L'email non contiene l'attributo alt sulle immagini promozionali",
+          "La password inviata non rispetta le regole di divulgazione progressiva",
           "Il sistema sta memorizzando le password in chiaro anziché utilizzare algoritmi di hashing crittografico unidirezionale (es. bcrypt o Argon2), violando ogni standard di sicurezza"
         ],
         "correctIndex": 3,
@@ -1186,10 +1186,10 @@ window.STULL_DATA = [
       {
         "question": "Quale impatto ha il tempo di caricamento di una pagina web sul tasso di abbandono (Bounce Rate) secondo gli studi analitici di settore citati da Stull?",
         "options": [
-          "I visitatori apprezzano le attese prolungate perché le associano all'elevata qualità dei contenuti elaborati dal server, riduce l'usabilità",
+          "I visitatori apprezzano le attese prolungate perché le associano all'elevata qualità dei contenuti elaborati dal server",
           "Un ritardo di pochi secondi provoca un aumento esponenziale degli abbandoni: gli utenti percepiscono l'attesa come disservizio e passano istantaneamente a un concorrente",
-          "Il tempo di caricamento influisce unicamente sul posizionamento SEO ma non condiziona il comportamento degli esseri umani, ostacolando il flusso naturale d'interazione",
-          "I tassi di conversione rimangono invariati fino a tempi di attesa superiori a sessanta secondi, secondo i principi predittivi della legge di Hick"
+          "Il tempo di caricamento influisce unicamente sul posizionamento SEO ma non condiziona il comportamento degli esseri umani",
+          "I tassi di conversione rimangono invariati fino a tempi di attesa superiori a sessanta secondi"
         ],
         "correctIndex": 1,
         "explanation": "Dati Google/Akamai: ogni secondo in più di attesa riduce le conversioni del 7% e fa schizzare il bounce rate oltre il 30-50% dopo appena 3 secondi di schermo inerte."
@@ -1197,10 +1197,10 @@ window.STULL_DATA = [
       {
         "question": "Qual è la differenza fondamentale tra 'Velocità Oggettiva' e 'Velocità Percepita' di un'applicazione?",
         "options": [
-          "La velocità oggettiva riguarda solo le connessioni in fibra ottica; la velocità percepita riguarda le reti mobili 4G, un parametro fisico dipendente dalla frequenza del bus e dall'architettura del processore",
-          "La velocità oggettiva si misura in gigahertz del processore; la velocità percepita si misura in megabyte di memoria RAM, la cui misurazione richiede strumenti diagnostici dedicati e banchi di prova hardware",
+          "La velocità oggettiva riguarda solo le connessioni in fibra ottica; la velocità percepita riguarda le reti mobili 4G",
+          "La velocità oggettiva si misura in gigahertz del processore; la velocità percepita si misura in megabyte di memoria RAM",
           "La velocità oggettiva è il tempo cronometrico di download dei pacchetti di dati; la velocità percepita è la sensazione soggettiva di rapidità e reattività vissuta dall'utente durante l'interazione",
-          "Non sussiste alcuna differenza: il cervello umano stima i millisecondi con precisione scientifica assoluta, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo"
+          "Non sussiste alcuna differenza: il cervello umano stima i millisecondi con precisione scientifica assoluta"
         ],
         "correctIndex": 2,
         "explanation": "Il tempo è psicologico: un'attesa passiva di 2 secondi davanti a uno schermo bianco sembra infinita; un'attesa di 2 secondi accompagnata da skeleton screen e animazioni di stato sembra istantanea."
@@ -1208,9 +1208,9 @@ window.STULL_DATA = [
       {
         "question": "Perché la tecnica degli 'Skeleton Screen' (scheletri di caricamento a segnaposto grigio) è superiore al tradizionale 'Spinner' rotante centrale?",
         "options": [
-          "Perché gli skeleton screen riducono fisicamente la latenza di rete dei router DNS; tale impostazione impedisce all'utente di costruire un modello mentale coerente",
-          "Perché il codice CSS degli skeleton screen consuma meno larghezza di banda rispetto alle immagini GIF, un parametro fisico dipendente dalla frequenza del bus e dall'architettura del processore",
-          "Perché gli spinner rotanti sono formalmente vietati dalle specifiche del World Wide Web Consortium (W3C), aumentando sensibilmente il carico cognitivo richiesto per completare il task",
+          "Perché gli skeleton screen riducono fisicamente la latenza di rete dei router DNS",
+          "Perché il codice CSS degli skeleton screen consuma meno larghezza di banda rispetto alle immagini GIF",
+          "Perché gli spinner rotanti sono formalmente vietati dalle specifiche del World Wide Web Consortium (W3C)",
           "Perché anticipa la struttura e il layout dei contenuti in arrivo, concentrando l'attenzione sul progresso graduale anziché richiamare l'attenzione sull'attesa come fa lo spinner"
         ],
         "correctIndex": 3,
@@ -1220,9 +1220,9 @@ window.STULL_DATA = [
         "question": "Entro quale soglia temporale massima (tempo di risposta) un'azione dell'interfaccia deve fornire un riscontro visivo per essere percepita come 'istantanea' (Nielsen / Miller)?",
         "options": [
           "Circa 0,1 secondi (100 millisecondi), tempo entro il quale l'utente percepisce che il risultato è provocato direttamente dal proprio tocco senza ritardi avvertibili",
-          "Circa 5 secondi, tempo standard di elaborazione delle schede grafiche commerciali; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Esattamente 30 secondi, corrispondenti al timeout predefinito delle chiamate HTTP, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
-          "Un minuto intero, considerato accettabile per qualunque applicazione web moderna; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso"
+          "Circa 5 secondi, tempo standard di elaborazione delle schede grafiche commerciali",
+          "Esattamente 30 secondi, corrispondenti al timeout predefinito delle chiamate HTTP",
+          "Un minuto intero, considerato accettabile per qualunque applicazione web moderna"
         ],
         "correctIndex": 0,
         "explanation": "Le 3 soglie di Nielsen: 0,1 s = sensazione di reazione istantanea; 1,0 s = l'utente avverte il ritardo ma mantiene il flusso di pensiero; 10 s = limite per mantenere l'attenzione focalizzata sul compito."
@@ -1230,10 +1230,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa si intende per 'Ottimizzazione ottimistica' (Optimistic UI) nelle interfacce reattive moderne?",
         "options": [
-          "Sperare che l'utente non utilizzi connessioni di rete lente durante la navigazione, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
+          "Sperare che l'utente non utilizzi connessioni di rete lente durante la navigazione",
           "Aggiornare visivamente l'interfaccia immediatamente dopo l'azione dell'utente (es. mostrare il 'Mi piace' acceso), assumendo che la chiamata al server andrà a buon fine e gestendo l'eventuale errore a posteriori",
-          "Aumentare il numero di messaggi incoraggianti e positivi all'interno dei testi di aiuto, una semplificazione concettuale che non regge alla prova dei test con utenti rappresentativi eseguiti in condizioni d'uso realistiche",
-          "Configurare il server affinché restituisca sempre un codice di stato HTTP 200 anche in caso di crash; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso"
+          "Aumentare il numero di messaggi incoraggianti e positivi all'interno dei testi di aiuto",
+          "Configurare il server affinché restituisca sempre un codice di stato HTTP 200 anche in caso di crash"
         ],
         "correctIndex": 1,
         "explanation": "L'Optimistic UI elimina la latenza percepita: quando premi 'Invia messaggio' su WhatsApp o 'Like' su Instagram, l'icona si illumina subito, senza farti attendere la risposta del server remoto."
@@ -1249,10 +1249,10 @@ window.STULL_DATA = [
       {
         "question": "Un'app di viaggi carica i risultati di ricerca in 3,2 secondi mostrando una schermata totalmente bianca; gli utenti toccano freneticamente lo schermo credendo che l'app sia andata in crash. Quale intervento di UX migliora istantaneamente la percezione?",
         "options": [
-          "Bloccare l'input dello schermo e mostrare una pubblicità video a tutto schermo per mascherare l'attesa, secondo i protocolli consolidati di user testing",
-          "Aggiungere un timer numerico a conto alla rovescia in millisecondi al centro dello schermo, disattendendo le consolidate euristiche di usabilità",
+          "Bloccare l'input dello schermo e mostrare una pubblicità video a tutto schermo per mascherare l'attesa",
+          "Aggiungere un timer numerico a conto alla rovescia in millisecondi al centro dello schermo",
           "Mostrare immediatamente skeleton screen con le card di anteprima degli hotel e un indicatore di caricamento graduale con microcopy descrittivo",
-          "Impedire all'utente di effettuare ricerche se la connettività di rete non è 5G, secondo i principi predittivi della legge di Hick"
+          "Impedire all'utente di effettuare ricerche se la connettività di rete non è 5G"
         ],
         "correctIndex": 2,
         "explanation": "Eliminare lo schermo bianco con skeleton screen e feedback di avanzamento elimina il dubbio di freeze e rende l'attesa attiva, tollerabile e percepita come molto più breve."
@@ -1260,9 +1260,9 @@ window.STULL_DATA = [
       {
         "question": "Un portale di notizie ha un tempo di caricamento reale di 1,8 secondi, ma inserisce annunci pubblicitari dinamici che causano continui salti improvvisi del testo durante la lettura (Cumulative Layout Shift - CLS). Come impatta questa dinamica sull'esperienza?",
         "options": [
-          "Non produce alcun impatto poiché il tempo di caricamento complessivo è inferiore a due secondi, ignorando la tendenza naturale degli utenti a scansionare anziché leggere",
-          "Migliora l'engagement visivo mantenendo l'attenzione del lettore costantemente allerta, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "Garantisce la conformità con gli standard di caricamento asincrono raccomandati da W3C, secondo i principi predittivi della legge di Hick",
+          "Non produce alcun impatto poiché il tempo di caricamento complessivo è inferiore a due secondi",
+          "Migliora l'engagement visivo mantenendo l'attenzione del lettore costantemente allerta",
+          "Garantisce la conformità con gli standard di caricamento asincrono raccomandati da W3C",
           "Genera una frustrazione gravissima: i salti di layout costringono a riposizionare lo sguardo e provocano clic errati su banner non desiderati, degradando l'usabilità"
         ],
         "correctIndex": 3,
@@ -1272,9 +1272,9 @@ window.STULL_DATA = [
         "question": "Quale principio di design guida la gestione delle operazioni che richiedono tempi di calcolo oggettivamente lunghi (es. esportazione di un report video di 2 minuti)?",
         "options": [
           "Fornire una barra di avanzamento percentuale trasparente con stima del tempo rimanente e consentire all'utente di continuare a lavorare in background",
-          "Congelare l'interfaccia con un cursore a clessidra finché il file non è pronto per il download, approccio non testato",
-          "Mostrare uno spinner indefinito senza specificare se l'elaborazione stia procedendo o sia fallita, disattendendo le consolidate euristiche di usabilità",
-          "Interrompere automaticamente l'operazione dopo 15 secondi per risparmiare risorse di calcolo sul server, introducendo un attrito cognitivo ingiustificato"
+          "Congelare l'interfaccia con un cursore a clessidra finché il file non è pronto per il download",
+          "Mostrare uno spinner indefinito senza specificare se l'elaborazione stia procedendo o sia fallita",
+          "Interrompere automaticamente l'operazione dopo 15 secondi per risparmiare risorse di calcolo sul server"
         ],
         "correctIndex": 0,
         "explanation": "Quando l'attesa supera i 10 secondi, la visibilità dello stato del sistema richiede un indicatore di progresso percentuale chiaro e la libertà di proseguire con altri compiti senza blocco forzato."
@@ -1314,10 +1314,10 @@ window.STULL_DATA = [
       {
         "question": "Come si articola la Gerarchia dei Bisogni della UX derivata dalla piramide di Maslow e illustrata da Stull?",
         "options": [
-          "La piramide comprende unicamente livelli di sicurezza informatica e protocolli di cifratura delle chiavi di rete, ignorando il comportamento tipico di satisficing",
-          "Alla base si trova l'Estetica visiva, seguita dalla Condivisione social, dal Prezzo scontato e infine dalla Funzionalità tecnica per facilitare il rapido completamento del task",
+          "La piramide comprende unicamente livelli di sicurezza informatica e protocolli di cifratura delle chiavi di rete",
+          "Alla base si trova l'Estetica visiva, seguita dalla Condivisione social, dal Prezzo scontato e infine dalla Funzionalità tecnica",
           "Alla base si colloca la Funzionalità (il prodotto fa ciò per cui serve), seguita da Affidabilità, Usabilità (facilità d'uso) e infine Piacevolezza/Delight (soddisfazione emotiva)",
-          "La gerarchia pone al vertice la complessità del codice e alla base la velocità di download dei file multimediali, secondo i protocolli consolidati di user testing"
+          "La gerarchia pone al vertice la complessità del codice e alla base la velocità di download dei file multimediali"
         ],
         "correctIndex": 2,
         "explanation": "Nessuna interfaccia splendida può salvare un prodotto inutile. La gerarchia parte dall'utilità funzionale: solo se il sistema risolve un vero problema hanno valore l'usabilità e la bellezza estetica."
@@ -1325,9 +1325,9 @@ window.STULL_DATA = [
       {
         "question": "Cosa accade quando un team si concentra ossessivamente sull'estetica ('delight') di un'applicazione trascurando l'utilità funzionale di base?",
         "options": [
-          "I browser web correggono automaticamente i difetti di programmazione del backend, introducendo un attrito cognitivo ingiustificato",
-          "L'applicazione raddoppia spontaneamente il valore delle proprie azioni sui mercati azionari, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "I tassi di fidelizzazione superano il 95% indipendentemente dai compiti completati, secondo i principi predittivi della legge di Hick",
+          "I browser web correggono automaticamente i difetti di programmazione del backend",
+          "L'applicazione raddoppia spontaneamente il valore delle proprie azioni sui mercati azionari",
+          "I tassi di fidelizzazione superano il 95% indipendentemente dai compiti completati",
           "Si produce un manufatto graficamente seducente ma inutile, che gli utenti abbandonano non appena realizzano che non risolve il loro problema pratico primario"
         ],
         "correctIndex": 3,
@@ -1337,9 +1337,9 @@ window.STULL_DATA = [
         "question": "Quale concetto distingue il 'Valore Utilitario' dal 'Valore Edonico' nell'esperienza d'uso di un servizio digitale?",
         "options": [
           "Il valore utilitario riguarda l'efficacia e l'efficienza nel completare un compito pratico; il valore edonico riguarda il piacere sensoriale, il divertimento e l'appagamento emotivo vissuto dall'utente",
-          "Il valore utilitario si calcola in euro; il valore edonico si calcola in dollari statunitensi, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
-          "Il valore utilitario appartiene ai dispositivi hardware; il valore edonico appartiene al cloud computing, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "Non sussiste distinzione: in ambito scientifico l'usabilità coincide al 100% con la piacevolezza visiva, un valore calibrato in fabbrica secondo gli standard industriali di collaudo e memorizzato nelle tabelle di configurazione della ROM"
+          "Il valore utilitario si calcola in euro; il valore edonico si calcola in dollari statunitensi",
+          "Il valore utilitario appartiene ai dispositivi hardware; il valore edonico appartiene al cloud computing",
+          "Non sussiste distinzione: in ambito scientifico l'usabilità coincide al 100% con la piacevolezza visiva"
         ],
         "correctIndex": 0,
         "explanation": "L'home banking richiede anzitutto valore utilitario (precisione, chiarezza dei bonifici); un videogioco o Spotify combinano utilità e forte valore edonico/emotivo."
@@ -1347,10 +1347,10 @@ window.STULL_DATA = [
       {
         "question": "Come si accerta la reale 'Utilità' di una nuova funzionalità prima di scriverne il codice sorgente?",
         "options": [
-          "Chiedendo al Lead Developer se ritiene interessante la tecnologia software necessaria per svilupparla, ignorando il comportamento tipico di satisficing",
+          "Chiedendo al Lead Developer se ritiene interessante la tecnologia software necessaria per svilupparla",
           "Validando il bisogno reale sul campo attraverso interviste esplorative sul contesto d'uso e test di concetto (concept testing) con potenziali utenti",
-          "Analizzando quanti gigabyte di traffico consumerà il database nei successivi cinque anni, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "Sostituendo l'intero piano di sviluppo con sondaggi anonimi a risposta multipla su Twitter, ignorando la tendenza naturale degli utenti a scansionare anziché leggere"
+          "Analizzando quanti gigabyte di traffico consumerà il database nei successivi cinque anni",
+          "Sostituendo l'intero piano di sviluppo con sondaggi anonimi a risposta multipla su Twitter"
         ],
         "correctIndex": 1,
         "explanation": "L'utilità si verifica indagando i problemi reali delle persone (Jobs-to-be-Done): capire cosa cercano di ottenere e quali ostacoli incontrano oggi nel farlo."
@@ -1358,10 +1358,10 @@ window.STULL_DATA = [
       {
         "question": "In base al modello di utilità di Stull, quale relazione sussiste tra 'Usabilità' e 'Utilità'?",
         "options": [
-          "L'utilità è di competenza esclusiva del marketing, mentre l'usabilità appartiene al collaudo finale di fabbrica per facilitare il rapido completamento del task",
-          "L'usabilità sostituisce interamente l'utilità nei software rilasciati con licenza open source, introducendo un attrito cognitivo ingiustificato",
+          "L'utilità è di competenza esclusiva del marketing, mentre l'usabilità appartiene al collaudo finale di fabbrica",
+          "L'usabilità sostituisce interamente l'utilità nei software rilasciati con licenza open source",
           "L'utilità definisce se il sistema fa ciò di cui l'utente ha bisogno; l'usabilità definisce quanto sia facile, intuitivo ed efficiente farlo: l'una è cieca senza l'altra",
-          "L'usabilità si riferisce ai comandi vocali, mentre l'utilità riguarda solo la navigazione con il mouse, compromettendo la prevedibilità dell'architettura"
+          "L'usabilità si riferisce ai comandi vocali, mentre l'utilità riguarda solo la navigazione con il mouse"
         ],
         "correctIndex": 2,
         "explanation": "Se un'applicazione fa qualcosa di inutile con facilità estrema, rimane inutile. Se fa qualcosa di utilissimo ma è impossibile da usare, le persone cercheranno un'alternativa migliore."
@@ -1377,9 +1377,9 @@ window.STULL_DATA = [
       {
         "question": "Una startup crea un'app con micro-interazioni lussuose, animazioni 3D ed effetti sonori per tenere traccia delle bollette domestiche, ma omette l'integrazione automatica con i conti bancari costringendo a digitare a mano 20 codici IBAN al mese. Gli utenti fuggono. Quale errore gerarchico è stato commesso?",
         "options": [
-          "Violazione del principio di continuità visiva della scuola della Gestalt; tale impostazione impedisce all'utente di costruire un modello mentale coerente",
-          "Mancata adozione del protocollo crittografico SHA-256 per i salvataggi in cache locale; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Applicazione eccessiva della legge di Hick dovuta all'assenza di menu a tendina, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
+          "Violazione del principio di continuità visiva della scuola della Gestalt",
+          "Mancata adozione del protocollo crittografico SHA-256 per i salvataggi in cache locale",
+          "Applicazione eccessiva della legge di Hick dovuta all'assenza di menu a tendina",
           "Violazione della piramide della UX: è stato sovradimensionato il livello della piacevolezza sensoriale sacrificando l'utilità funzionale e la riduzione del carico operativo"
         ],
         "correctIndex": 3,
@@ -1389,9 +1389,9 @@ window.STULL_DATA = [
         "question": "In una sessione di design review, si discute se aggiungere una funzione di generazione di avatar 3D all'interno di un software per la gestione dei turni del pronto soccorso ospedaliero. Quale criterio di utilità dovrebbe guidare la decisione?",
         "options": [
           "Rifiutare la proposta: in un contesto critico ad alto stress l'utilità è misurata da velocità, leggibilità e assenza di distrazioni; funzioni edoniche futili compromettono l'efficacia operativa",
-          "Accettare la proposta purché gli avatar siano resi obbligatori per tutti i medici di turno; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "Demandare la scelta a un test A/B misurando il tempo medio di permanenza degli infermieri sul portale; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "Introdurre gli avatar ma visualizzarli esclusivamente in scala di grigi per non affaticare la vista, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo"
+          "Accettare la proposta purché gli avatar siano resi obbligatori per tutti i medici di turno",
+          "Demandare la scelta a un test A/B misurando il tempo medio di permanenza degli infermieri sul portale",
+          "Introdurre gli avatar ma visualizzarli esclusivamente in scala di grigi per non affaticare la vista"
         ],
         "correctIndex": 0,
         "explanation": "Il contesto d'uso determina l'utilità: in emergenza ospedaliera ogni pixel deve servire a salvare vite e ridurre errori, non a intrattenere con orpelli grafici."
@@ -1399,10 +1399,10 @@ window.STULL_DATA = [
       {
         "question": "Come si misura oggettivamente se un'innovazione introdotta in un portale universitario ha apportato un reale incremento di 'Utilità' per gli studenti?",
         "options": [
-          "Misurando quanti nuovi colori CSS sono stati aggiunti al foglio di stile dell'ateneo, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
+          "Misurando quanti nuovi colori CSS sono stati aggiunti al foglio di stile dell'ateneo",
           "Verificando l'aumento della percentuale di studenti che riescono a completare con successo l'iscrizione agli esami senza dover ricorrere allo sportello di segreteria",
-          "Registrando il numero complessivo di visualizzazioni della home page durante i giorni festivi; tale impostazione impedisce all'utente di costruire un modello mentale coerente",
-          "Controllando se la dimensione del logo dell'università nell'header rispetta le proporzioni auree, una scelta progettuale che viola le convenzioni d'uso consolidate nel web"
+          "Registrando il numero complessivo di visualizzazioni della home page durante i giorni festivi",
+          "Controllando se la dimensione del logo dell'università nell'header rispetta le proporzioni auree"
         ],
         "correctIndex": 1,
         "explanation": "L'utilità reale produce un impatto concreto sui compiti della vita reale: meno code fisiche, meno errori burocratici, completamento autonomo ed efficace dell'obiettivo."
@@ -1442,9 +1442,9 @@ window.STULL_DATA = [
       {
         "question": "Cosa postula la Scuola della Gestalt (psicologia della forma) riguardo alla percezione visiva umana?",
         "options": [
-          "La percezione visiva è determinata esclusivamente dalla risoluzione DPI dello schermo utilizzato, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "L'occhio umano scansiona le pagine pixel per pixel esattamente come il sensore ottico di uno scanner digitale, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "I colori caldi vengono percepiti con una velocità tripla rispetto ai colori freddi dalla retina umana, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
+          "La percezione visiva è determinata esclusivamente dalla risoluzione DPI dello schermo utilizzato",
+          "L'occhio umano scansiona le pagine pixel per pixel esattamente come il sensore ottico di uno scanner digitale",
+          "I colori caldi vengono percepiti con una velocità tripla rispetto ai colori freddi dalla retina umana",
           "La mente umana percepisce la totalità come qualcosa di qualitativamente diverso dalla semplice somma delle sue singole parti, organizzando attivamente stimoli sparsi in insiemi coerenti"
         ],
         "correctIndex": 3,
@@ -1454,9 +1454,9 @@ window.STULL_DATA = [
         "question": "Cosa stabilisce la legge della Gestalt della 'Prossimità' (Proximity) applicata ai form web?",
         "options": [
           "Gli elementi visivamente più vicini tra loro vengono percepiti spontaneamente come correlati e appartenenti alla medesima unità concettuale (es. un'etichetta deve stare più vicina al proprio campo che al campo successivo)",
-          "Gli elementi posizionati agli angoli dello schermo attraggono il doppio dell'attenzione dell'utente; tale soluzione viola il principio di visibilità dello stato del sistema, lasciando l'utente incerto sull'esito della propria azione",
-          "Gli oggetti grafici devono trovarsi a una distanza esatta di 16 pixel dal bordo del viewport; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "I pulsanti di invio devono essere collocati sempre in prossimità del logo aziendale, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing"
+          "Gli elementi posizionati agli angoli dello schermo attraggono il doppio dell'attenzione dell'utente",
+          "Gli oggetti grafici devono trovarsi a una distanza esatta di 16 pixel dal bordo del viewport",
+          "I pulsanti di invio devono essere collocati sempre in prossimità del logo aziendale"
         ],
         "correctIndex": 0,
         "explanation": "La prossimità governa la comprensione immediata: se l'etichetta è a metà strada tra due campi, l'utente esita perché non sa a quale casella si riferisca."
@@ -1464,10 +1464,10 @@ window.STULL_DATA = [
       {
         "question": "Come agisce la legge della 'Somiglianza' (Similarity) nella categorizzazione degli elementi di un'interfaccia?",
         "options": [
-          "Tutte le immagini presenti in una pagina web devono avere proporzioni quadrate identiche, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
+          "Tutte le immagini presenti in una pagina web devono avere proporzioni quadrate identiche",
           "Elementi che condividono caratteristiche visive identiche (stesso colore, forma, dimensione, tipografia) vengono automaticamente percepiti come aventi la medesima funzione o importanza",
-          "I link testuali devono possedere sempre la stessa lunghezza in caratteri alfabetici, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "Le intestazioni H1 e H2 devono utilizzare la medesima dimensione di font per non confondere l'utente, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo"
+          "I link testuali devono possedere sempre la stessa lunghezza in caratteri alfabetici",
+          "Le intestazioni H1 e H2 devono utilizzare la medesima dimensione di font per non confondere l'utente"
         ],
         "correctIndex": 1,
         "explanation": "La somiglianza crea gerarchia visiva: se tutti i link sono blu e sottolineati, l'utente riconosce all'istante che condividono la stessa natura interattiva."
@@ -1475,10 +1475,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa descrive il principio di 'Figura/Sfondo' (Figure/Ground) e come viene sfruttato nei modali sovrapposti (modal overlays)?",
         "options": [
-          "La regola che impone che il testo sia sempre di colore nero su sfondo bianco assoluto, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "L'obbligo di utilizzare immagini di paesaggi naturali come sfondo di tutte le schermate di login; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
+          "La regola che impone che il testo sia sempre di colore nero su sfondo bianco assoluto",
+          "L'obbligo di utilizzare immagini di paesaggi naturali come sfondo di tutte le schermate di login",
           "La tendenza visiva a isolare un elemento focale in primo piano (figura) separandolo dal contesto retrostante (sfondo); oscurare o sfocare lo sfondo fa risaltare la finestra di dialogo come figura prioritaria",
-          "La conversione automatica delle illustrazioni vettoriali in immagini raster a 300 DPI; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "La conversione automatica delle illustrazioni vettoriali in immagini raster a 300 DPI"
         ],
         "correctIndex": 2,
         "explanation": "L'overlay scuro o semi-trasparente (backdrop) retrostante il modale 'spegne' lo sfondo trasformandolo in contesto inattivo, concentrando tutta la percezione sulla finestra attiva."
@@ -1486,9 +1486,9 @@ window.STULL_DATA = [
       {
         "question": "Cosa afferma la legge della 'Chiusura' (Closure) nella percezione di elementi grafici e caroselli orizzontali?",
         "options": [
-          "I menu di navigazione devono ripiegarsi ad ogni cambio di pagina del portale; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Una pagina web deve chiudere automaticamente tutte le sessioni inattive dopo 180 secondi; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "Ogni tag HTML di apertura deve possedere il corrispondente tag di chiusura per essere validato, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
+          "I menu di navigazione devono ripiegarsi ad ogni cambio di pagina del portale",
+          "Una pagina web deve chiudere automaticamente tutte le sessioni inattive dopo 180 secondi",
+          "Ogni tag HTML di apertura deve possedere il corrispondente tag di chiusura per essere validato",
           "Il cervello tende a completare mentalmente figure o schemi incompleti; tagliare visivamente a metà l'ultima card di un carosello suggerisce che il contenuto continua oltre il bordo dello schermo"
         ],
         "correctIndex": 3,
@@ -1506,9 +1506,9 @@ window.STULL_DATA = [
         "question": "In un modulo online, ogni campo di input dista 24px dall'etichetta sovrastante e 24px dall'etichetta del campo successivo. Gli utenti compilano frequentemente i campi associando i testi sbagliati. Quale violazione della Gestalt è in atto?",
         "options": [
           "Violazione della legge di Prossimità: l'equidistanza annulla la relazione semantica. L'etichetta deve distare pochissimo dal suo campo (es. 6px) e molto di più dal gruppo successivo (es. 28px)",
-          "Mancata applicazione del principio di continuità di direzione della linea dello sguardo, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "Assenza del contrasto di luminanza minima prescritto dalle WCAG 2.1 per la dislessia; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "Violazione della legge di Fitts sul tempo di raggiungimento del cursore mouse, una pratica che riduce l'usabilità complessiva, ostacolando l'orientamento spaziale e la percezione dei percorsi di navigazione primari"
+          "Mancata applicazione del principio di continuità di direzione della linea dello sguardo",
+          "Assenza del contrasto di luminanza minima prescritto dalle WCAG 2.1 per la dislessia",
+          "Violazione della legge di Fitts sul tempo di raggiungimento del cursore mouse"
         ],
         "correctIndex": 0,
         "explanation": "L'equidistanza genera caos percettivo. Avvicinare l'etichetta al proprio campo e distanziare i gruppi adiacenti ripristina la gerarchia visiva istantanea."
@@ -1516,10 +1516,10 @@ window.STULL_DATA = [
       {
         "question": "Un'interfaccia usa lo stesso stile visivo (rettangolo rosso con testo bianco in maiuscolo grassetto) sia per il pulsante 'Elimina account' sia per il badge informativo 'Offerta del giorno'. Qual è la conseguenza cognitiva per l'utente?",
         "options": [
-          "Diminuzione automatica della frequenza di rendering dello schermo da 120Hz a 60Hz, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
+          "Diminuzione automatica della frequenza di rendering dello schermo da 120Hz a 60Hz",
           "Violazione della legge di Somiglianza: elementi visivamente identici inducono ad attribuire loro la stessa funzione; l'utente rischia di cliccare l'azione distruttiva credendola una promozione o viceversa",
-          "Miglioramento dell'attenzione grazie alla memorizzazione dell'associazione tra rosso e testo bianco; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "Nessuna conseguenza, poiché il contenuto del testo alfabetico sovrascrive ogni percezione visiva; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "Miglioramento dell'attenzione grazie alla memorizzazione dell'associazione tra rosso e testo bianco",
+          "Nessuna conseguenza, poiché il contenuto del testo alfabetico sovrascrive ogni percezione visiva"
         ],
         "correctIndex": 1,
         "explanation": "La percezione visiva precede la lettura del testo: stili identici su funzioni antitetiche (azione distruttiva vs badge promozionale) inducono errori gravissimi."
@@ -1527,10 +1527,10 @@ window.STULL_DATA = [
       {
         "question": "In una dashboard con decine di grafici, come si applica il principio di 'Destino Comune' (Common Fate) per rendere comprensibile l'interazione?",
         "options": [
-          "Colorando tutti i grafici con la medesima sfumatura di grigio per non distrarre l'operatore; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "Disponendo tutti i grafici lungo una circonferenza visiva concentrica perfetta, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
+          "Colorando tutti i grafici con la medesima sfumatura di grigio per non distrarre l'operatore",
+          "Disponendo tutti i grafici lungo una circonferenza visiva concentrica perfetta",
           "Facendo muovere o animare sincronicamente gli elementi correlati (es. quando l'utente passa sopra un punto della serie storica, tutti i grafici si aggiornano mostrando la medesima data)",
-          "Impedendo l'aggiornamento dei dati se l'utente non fa clic su ogni singolo riquadro, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo"
+          "Impedendo l'aggiornamento dei dati se l'utente non fa clic su ogni singolo riquadro"
         ],
         "correctIndex": 2,
         "explanation": "Il 'destino comune' stabilisce che elementi che si muovono o mutano insieme vengono percepiti come un unico sistema coordinato (es. tooltip sincronizzati cross-chart)."
@@ -1571,9 +1571,9 @@ window.STULL_DATA = [
         "question": "Cosa ha dimostrato il celebre esperimento psicologico del 'Gorilla Invisibile' condotto da Christopher Chabris e Daniel Simons?",
         "options": [
           "Il fenomeno della 'Cecità da disattenzione': quando le persone sono fortemente concentrate su un compito impegnativo (contare i passaggi di palla), non notano stimoli visivi enormi e palesi che attraversano la scena",
-          "I primati antropomorfi possiedono una memoria a breve termine superiore a quella dell'essere umano, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
-          "La visione periferica dell'occhio umano è in grado di decifrare testi complessi ad alta velocità, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "Le persone con deficit visivo preferiscono interfacce basate su segnali audio stereofonici, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing"
+          "I primati antropomorfi possiedono una memoria a breve termine superiore a quella dell'essere umano",
+          "La visione periferica dell'occhio umano è in grado di decifrare testi complessi ad alta velocità",
+          "Le persone con deficit visivo preferiscono interfacce basate su segnali audio stereofonici"
         ],
         "correctIndex": 0,
         "explanation": "La cecità da disattenzione prova che guardare non coincide con vedere: se l'utente è focalizzato a inserire il codice fiscale, ignorerà un banner gigantesco in cima allo schermo."
@@ -1581,10 +1581,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa intende Stull con la metafora culinaria del 'Pawpaw' (frutto autoctono americano poco diffuso)?",
         "options": [
-          "I prodotti software complessi richiedono una maturazione lenta prima del lancio sul mercato durante le sessioni empiriche con utenti reali",
+          "I prodotti software complessi richiedono una maturazione lenta prima del lancio sul mercato",
           "Ciò che non riceve attenzione cosciente e non viene elaborato dalla mente è come se non esistesse affatto nell'esperienza vissuta dell'utente",
-          "La frutta deperibile non deve mai essere venduta su piattaforme prive di certificati SSL, secondo i principi predittivi della legge di Hick",
-          "I sapori amari attivano l'emisfero cerebrale destro deputato alla creatività grafica, ostacolando il flusso naturale d'interazione"
+          "La frutta deperibile non deve mai essere venduta su piattaforme prive di certificati SSL",
+          "I sapori amari attivano l'emisfero cerebrale destro deputato alla creatività grafica"
         ],
         "correctIndex": 1,
         "explanation": "Non basta che un pulsante sia presente sulla pagina HTML: se l'attenzione dell'utente non ci cade sopra, per lui quella funzione non esiste."
@@ -1592,10 +1592,10 @@ window.STULL_DATA = [
       {
         "question": "Come si definisce l''Effetto Alone' (Halo Effect) nel contesto del Web Design e dell'usabilità?",
         "options": [
-          "La perdita di nitidezza dei caratteri tipografici sui monitor a bassa densità di pixel, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "Il cerchio luminoso che compare attorno ai pulsanti cliccati con il touchscreen; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
+          "La perdita di nitidezza dei caratteri tipografici sui monitor a bassa densità di pixel",
+          "Il cerchio luminoso che compare attorno ai pulsanti cliccati con il touchscreen",
           "La tendenza cognitiva per cui un'interfaccia visivamente molto curata ed esteticamente attraente induce l'utente a giudicare il sistema come più usabile, affidabile e sicuro anche in presenza di difetti minori",
-          "L'aura di riverbero generata dalle animazioni JavaScript con filtri CSS drop-shadow; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "L'aura di riverbero generata dalle animazioni JavaScript con filtri CSS drop-shadow"
         ],
         "correctIndex": 2,
         "explanation": "Esperimenti di Tractinsky (2000): 'Ciò che è bello è percepito come usabile'. Una grafica professionale genera indulgenza iniziale e fiducia, anche se non può colmare voragini funzionali."
@@ -1603,9 +1603,9 @@ window.STULL_DATA = [
       {
         "question": "Perché l'attenzione umana è considerata la 'risorsa più scarsa e volatile' dell'era digitale?",
         "options": [
-          "Perché la memoria a lungo termine si cancella completamente ad ogni ciclo di sonno REM nel modello mentale condiviso dell'utente finale",
-          "Perché i moderni smartphone riducono la luminosità dello schermo per risparmiare batteria, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "Perché gli utenti navigano su internet unicamente durante le ore serali prima di dormire, ostacolando il flusso naturale d'interazione",
+          "Perché la memoria a lungo termine si cancella completamente ad ogni ciclo di sonno REM",
+          "Perché i moderni smartphone riducono la luminosità dello schermo per risparmiare batteria",
+          "Perché gli utenti navigano su internet unicamente durante le ore serali prima di dormire",
           "Perché la capacità di elaborazione cosciente è severamente limitata e continuamente bombardata da notifiche, interruzioni e stimoli concorrenti"
         ],
         "correctIndex": 3,
@@ -1615,9 +1615,9 @@ window.STULL_DATA = [
         "question": "Cosa si intende per 'Banner Blindness' (cecità ai banner) identificata dagli studi di eye-tracking?",
         "options": [
           "Il comportamento appreso e quasi istintivo degli utenti di ignorare sistematicamente qualsiasi elemento visivo che assomigli a una pubblicità o che si trovi nelle posizioni tipiche dei banner",
-          "Una patologia oftalmica causata dall'eccessiva esposizione alla luce blu degli schermi, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
-          "L'oscuramento automatico degli annunci promozionali operato dai filtri di rete aziendali, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "L'impossibilità di leggere testi posizionati su sfondi con gradiente cromatico a tre vie, riducendo la tolleranza all'errore e moltiplicando i passaggi operativi superflui"
+          "Una patologia oftalmica causata dall'eccessiva esposizione alla luce blu degli schermi",
+          "L'oscuramento automatico degli annunci promozionali operato dai filtri di rete aziendali",
+          "L'impossibilità di leggere testi posizionati su sfondi con gradiente cromatico a tre vie"
         ],
         "correctIndex": 0,
         "explanation": "Gli utenti hanno imparato a non guardare la colonna destra o i grandi rettangoli colorati. Se mettete un avviso vitale dentro una grafica simile a un banner, nessuno lo leggerà."
@@ -1633,10 +1633,10 @@ window.STULL_DATA = [
       {
         "question": "Un'applicazione sanitaria pubblica posiziona l'avviso fondamentale 'Prima dell'esame rimanere a digiuno da 12 ore' all'interno di un rettangolo animato lampeggiante sulla colonna di destra. Il 60% dei pazienti si presenta non a digiuno. Quale fenomeno spiega questo fallimento?",
         "options": [
-          "Incompatibilità dei fogli di stile CSS con le risoluzioni dei tablet ospedalieri; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Incompatibilità dei fogli di stile CSS con le risoluzioni dei tablet ospedalieri",
           "Banner Blindness e cecità da disattenzione: la collocazione periferica e lo stile promozionale inducono gli utenti a filtrare inconsciamente l'informazione ignorandola",
-          "Violazione del teorema del limite centrale nella statistica medica; tale impostazione impedisce all'utente di costruire un modello mentale coerente",
-          "Mancata traduzione del testo in lingua inglese per i turisti stranieri, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito"
+          "Violazione del teorema del limite centrale nella statistica medica",
+          "Mancata traduzione del testo in lingua inglese per i turisti stranieri"
         ],
         "correctIndex": 1,
         "explanation": "Gli elementi lampeggianti a destra attivano la cecità ai banner. L'avviso critico deve essere integrato direttamente nel flusso centrale di conferma prenotazione."
@@ -1644,10 +1644,10 @@ window.STULL_DATA = [
       {
         "question": "Durante un test di usabilità di un software di editing, i partecipanti devono ritagliare un'immagine. L'icona del ritaglio è collocata accanto a un'illustrazione animata in loop di un gatto che salta. I tester non vedono l'icona. Come interviene il designer?",
         "options": [
-          "Aggiunge un secondo gatto animato sulla barra di stato inferiore, secondo i principi predittivi della legge di Hick",
-          "Raddoppia le dimensioni dell'illustrazione animata per renderla più piacevole nel modello mentale condiviso dell'utente finale",
+          "Aggiunge un secondo gatto animato sulla barra di stato inferiore",
+          "Raddoppia le dimensioni dell'illustrazione animata per renderla più piacevole",
           "Rimuove l'animazione estranea per eliminare la cattura involontaria dell'attenzione e ripristinare il focus visivo sugli strumenti operativi",
-          "Sostituisce l'icona del ritaglio con una sequenza di tre comandi da tastiera segreti, aumentando sensibilmente il carico cognitivo richiesto per completare il task"
+          "Sostituisce l'icona del ritaglio con una sequenza di tre comandi da tastiera segreti"
         ],
         "correctIndex": 2,
         "explanation": "Il movimento nel campo visivo cattura inevitabilmente l'attenzione involontaria (riflesso di orientamento). Le animazioni superflue distraggono dal compito primario."
@@ -1655,9 +1655,9 @@ window.STULL_DATA = [
       {
         "question": "Un sito di e-commerce ha un checkout pieno di bug, ma grazie a un design grafico raffinato ed elegante riceve inizialmente recensioni positive. Dopo due settimane, i resi aumentano e le vendite crollano. Quale fenomeno descrive questo andamento?",
         "options": [
-          "La violazione delle regole di sintassi ECMAScript 6 nello script di tracking; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "L'applicazione errata della legge di Hick sui menu a fisarmonica; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "La saturazione della memoria cache del browser dei clienti; tale impostazione impedisce all'utente di costruire un modello mentale coerente",
+          "La violazione delle regole di sintassi ECMAScript 6 nello script di tracking",
+          "L'applicazione errata della legge di Hick sui menu a fisarmonica",
+          "La saturazione della memoria cache del browser dei clienti",
           "L'Effetto Alone ha mascherato i problemi di usabilità al primo impatto, ma l'accumulo di frizioni nell'uso continuativo ha inevitabilmente distrutto la soddisfazione"
         ],
         "correctIndex": 3,
@@ -1698,10 +1698,10 @@ window.STULL_DATA = [
       {
         "question": "Come definisce lo psicologo Mihaly Csikszentmihalyi lo 'Stato di Flow' (Esperienza Ottimale)?",
         "options": [
-          "La velocità di trasmissione in gigabit al secondo di una connessione a banda larga, secondo le specifiche definite nei data sheet dei produttori del chipset e validate attraverso cicli di stress test e certificazioni di conformità industriale",
+          "La velocità di trasmissione in gigabit al secondo di una connessione a banda larga",
           "Uno stato di profondo e totale assorbimento in un'attività, in cui la persona perde la cognizione del tempo e prova intensa gratificazione grazie al perfetto bilanciamento tra la sfida affrontata e le proprie capacità",
-          "Il processo di liquidazione contabile delle fatture all'interno di un software gestionale, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
-          "La transizione automatica delle schermate di un prototipo interattivo su Figma, un approccio che ignora la centralità dell'utente reale e le sue effettive modalità di interazione con il sistema nel contesto quotidiano e operativo di utilizzo"
+          "Il processo di liquidazione contabile delle fatture all'interno di un software gestionale",
+          "La transizione automatica delle schermate di un prototipo interattivo su Figma"
         ],
         "correctIndex": 1,
         "explanation": "Nel Flow l'utente è immerso, concentrato e privo di distrazioni: l'interfaccia scompare e rimane solo il compito (es. scrivere un testo, comporre musica, giocare)."
@@ -1709,10 +1709,10 @@ window.STULL_DATA = [
       {
         "question": "Quali sono le due variabili fondamentali che determinano l'ingresso nello stato di Flow nel modello teorico originale?",
         "options": [
-          "Il costo dell'abbonamento mensile e la velocità di clock del processore, clock di sistema",
-          "La risoluzione grafica dello schermo e la luminosità ambientale della stanza, secondo i principi predittivi della legge di Hick",
+          "Il costo dell'abbonamento mensile e la velocità di clock del processore",
+          "La risoluzione grafica dello schermo e la luminosità ambientale della stanza",
           "Il livello di difficoltà percepita della sfida (Challenge) e il livello di abilità percepita dell'individuo (Skill)",
-          "Il numero di follower sui social network e la frequenza delle notifiche email, secondo i protocolli consolidati di user testing"
+          "Il numero di follower sui social network e la frequenza delle notifiche email"
         ],
         "correctIndex": 2,
         "explanation": "Se la sfida supera l'abilità si genera Ansia e Frustrazione; se l'abilità supera di molto la sfida si genera Noia; quando sfida e abilità crescono in equilibrio si entra nel canale del Flow."
@@ -1720,9 +1720,9 @@ window.STULL_DATA = [
       {
         "question": "Qual è il nemico principale dello stato di Flow nell'interazione con un'applicazione digitale?",
         "options": [
-          "L'impiego di una tavolozza di colori sobria basata su tonalità neutre, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "L'utilizzo di tastiere fisiche ergonomiche al posto degli schermi touch, riducendo la tolleranza all'errore e moltiplicando i passaggi operativi superflui",
-          "La presenza di documentazione tecnica consultabile su richiesta, una semplificazione che disattende le euristiche fondamentali di usabilità",
+          "L'impiego di una tavolozza di colori sobria basata su tonalità neutre",
+          "L'utilizzo di tastiere fisiche ergonomiche al posto degli schermi touch",
+          "La presenza di documentazione tecnica consultabile su richiesta",
           "Le interruzioni impreviste, le finestre modali invasive, i crash di sistema e i rallentamenti improvvisi che spezzano il filo del pensiero dell'utente"
         ],
         "correctIndex": 3,
@@ -1732,9 +1732,9 @@ window.STULL_DATA = [
         "question": "Come supporta un software professionale (es. Adobe Photoshop, Figma o VS Code) il mantenimento del Flow?",
         "options": [
           "Fornendo scorciatoie da tastiera rapide, feedback in tempo reale immediato, cronologia delle modifiche reversibile (Undo) e un'area di lavoro pulita e priva di ostacoli",
-          "Obbligando l'utente a confermare ogni singolo click tramite password biometrica; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Nascondendo l'opera creata ogni cinque minuti per mostrare video sponsorizzati, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "Disabilitando l'accelerazione grafica per impedire movimenti rapidi del cursore, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing"
+          "Obbligando l'utente a confermare ogni singolo click tramite password biometrica",
+          "Nascondendo l'opera creata ogni cinque minuti per mostrare video sponsorizzati",
+          "Disabilitando l'accelerazione grafica per impedire movimenti rapidi del cursore"
         ],
         "correctIndex": 0,
         "explanation": "Gli strumenti professionali migliori diventano trasparenti: risposte a zero latenza e scorciatoie muscolari permettono alla mano di eseguire il pensiero senza attrito."
@@ -1742,10 +1742,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa accade sul piano cognitivo quando un'interfaccia costringe l'utente a un continuo 'Task Switching' (passaggio continuo tra compiti diversi)?",
         "options": [
-          "Il quoziente intellettivo dell'utente aumenta grazie alla stimolazione contemporanea di entrambi gli emisferi, ignorando la tendenza naturale degli utenti a scansionare anziché leggere",
+          "Il quoziente intellettivo dell'utente aumenta grazie alla stimolazione contemporanea di entrambi gli emisferi",
           "Si verifica il fenomeno del 'Residuo di attenzione' (Attention Residue): parte dell'energia mentale rimane bloccata sul compito precedente, moltiplicando la fatica e gli errori",
-          "Il consumo energetico della batteria del computer si azzera automaticamente, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
-          "La velocità di digitazione dei testi subisce un incremento costante del quaranta per cento; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "Il consumo energetico della batteria del computer si azzera automaticamente",
+          "La velocità di digitazione dei testi subisce un incremento costante del quaranta per cento"
         ],
         "correctIndex": 1,
         "explanation": "Il multitasking è un'illusione: saltare da una schermata all'altra disperde energie cognitive, lasciando un residuo mentale che degrada l'accuratezza del lavoro."
@@ -1761,10 +1761,10 @@ window.STULL_DATA = [
       {
         "question": "Uno scrittore sta componendo un testo in un editor online. Ogni 4 minuti appare una finestra modale al centro dello schermo che chiede: 'Ti piace il nostro servizio? Lascia un feedback!'. Qual è l'effetto di questa scelta di design?",
         "options": [
-          "Ottimizzazione del funnel di conversione attraverso la tempestività della richiesta, introducendo un attrito cognitivo ingiustificato",
-          "Aumento virtuoso del Net Promoter Score (NPS) grazie alla frequenza della misurazione, ignorando il comportamento tipico di satisficing",
+          "Ottimizzazione del funnel di conversione attraverso la tempestività della richiesta",
+          "Aumento virtuoso del Net Promoter Score (NPS) grazie alla frequenza della misurazione",
           "Distruzione sistematica dello stato di Flow e collasso dell'usabilità: l'utente prova profonda rabbia per l'interruzione ingiustificata del suo processo creativo",
-          "Miglioramento dell'accessibilità conformemente ai criteri WCAG 2.1 sul feedback attivo, aumentando sensibilmente il carico cognitivo richiesto per completare il task"
+          "Miglioramento dell'accessibilità conformemente ai criteri WCAG 2.1 sul feedback attivo"
         ],
         "correctIndex": 2,
         "explanation": "Interrompere l'utente mentre sta producendo valore per chiedere una recensione egoistica è la violazione suprema del Flow: genera solo risposte negative e disinstallazioni."
@@ -1772,9 +1772,9 @@ window.STULL_DATA = [
       {
         "question": "In un videogioco educativo per l'apprendimento delle lingue, i primi esercizi sono così difficili che l'80% degli studenti fallisce al primo tentativo e abbandona. Come si riequilibra il sistema secondo la matrice di Csikszentmihalyi?",
         "options": [
-          "Eliminando ogni forma di punteggio o riscontro visivo sul risultato degli esercizi, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
-          "Rendendo gli esercizi impossibili da completare per stimolare l'ostinazione dell'utente; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Sostituendo la lingua straniera con quiz su nozioni di geografia generale, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
+          "Eliminando ogni forma di punteggio o riscontro visivo sul risultato degli esercizi",
+          "Rendendo gli esercizi impossibili da completare per stimolare l'ostinazione dell'utente",
+          "Sostituendo la lingua straniera con quiz su nozioni di geografia generale",
           "Adattando dinamicamente la difficoltà alla progressione dello studente: partire con compiti semplici per infondere sicurezza e aumentare gradualmente la sfida man mano che cresce l'abilità"
         ],
         "correctIndex": 3,
@@ -1784,9 +1784,9 @@ window.STULL_DATA = [
         "question": "Quale pattern di interazione protegge il Flow dell'utente durante il salvataggio continuo dei documenti?",
         "options": [
           "Il salvataggio automatico in background (Autosave) con un indicatore discreto e non bloccante ('Tutte le modifiche salvate')",
-          "Una finestra popup a comparsa ogni 60 secondi che blocca lo schermo chiedendo dove salvare il file nel modello mentale condiviso dell'utente finale",
-          "Un allarme sonoro acuto che avvisa l'utente ogni volta che un paragrafo viene modificato, riduce l'usabilità",
-          "L'obbligo di inserire il codice CAPTCHA prima di ogni salvataggio sul cloud, approccio non testato"
+          "Una finestra popup a comparsa ogni 60 secondi che blocca lo schermo chiedendo dove salvare il file",
+          "Un allarme sonoro acuto che avvisa l'utente ogni volta che un paragrafo viene modificato",
+          "L'obbligo di inserire il codice CAPTCHA prima di ogni salvataggio sul cloud"
         ],
         "correctIndex": 0,
         "explanation": "L'autosave silenzioso in background consente all'utente di lavorare senza ansia da perdita dati e senza dover interrompere il pensiero per cliccare 'Salva con nome'."
@@ -1826,10 +1826,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa postula il concetto psicologico di 'Pigrizia cognitiva' o Principio del Minimo Sforzo formulato da George Zipf?",
         "options": [
-          "Il cervello umano consuma il 90% delle sue calorie unicamente durante il movimento muscolare fisico, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "Gli utenti rifiutano di acquistare prodotti tecnologici se non contengono un manuale illustrato; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Il cervello umano consuma il 90% delle sue calorie unicamente durante il movimento muscolare fisico",
+          "Gli utenti rifiutano di acquistare prodotti tecnologici se non contengono un manuale illustrato",
           "L'essere umano tende naturalmente ad adottare la strategia d'azione che richiede il minor consumo complessivo di tempo ed energie cognitive per raggiungere un risultato soddisfacente",
-          "Tutte le persone navigano su internet solo se premiate con incentivi economici tangibili, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo"
+          "Tutte le persone navigano su internet solo se premiate con incentivi economici tangibili"
         ],
         "correctIndex": 2,
         "explanation": "L'evoluzione biologica ha selezionato cervelli che risparmiano energie. Se un'operazione richiede 10 click anziché 2, l'utente cercherà la via più breve o lascerà perdere."
@@ -1837,9 +1837,9 @@ window.STULL_DATA = [
       {
         "question": "Cosa intende il premio Nobel Herbert Simon con il celebre termine 'Satisficing' (neologismo tra satisfy e suffice)?",
         "options": [
-          "L'obbligo contrattuale di garantire la conformità degli standard di sicurezza informatica; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Il raggiungimento del cento per cento di gradimento positivo nei test di customer satisfaction, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "La procedura matematica per calcolare il punto di pareggio tra costi e ricavi aziendali, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
+          "L'obbligo contrattuale di garantire la conformità degli standard di sicurezza informatica",
+          "Il raggiungimento del cento per cento di gradimento positivo nei test di customer satisfaction",
+          "La procedura matematica per calcolare il punto di pareggio tra costi e ricavi aziendali",
           "La tendenza delle persone a scegliere la prima opzione ragionevole e sufficientemente buona per il proprio scopo, anziché analizzare esaustivamente tutte le alternative per trovare la soluzione ottimale assoluta"
         ],
         "correctIndex": 3,
@@ -1849,9 +1849,9 @@ window.STULL_DATA = [
         "question": "Quale ruolo ricoprono le 'Impostazioni predefinite' (Smart Defaults) alla luce della pigrizia cognitiva dell'utente?",
         "options": [
           "Hanno un impatto enorme, poiché la maggior parte degli utenti accetta e non modifica mai i valori proposti di default: preimpostare le opzioni più sicure e vantaggiose guida virtuosamente l'esperienza",
-          "Non hanno alcuna rilevanza, dato che tutti gli utenti personalizzano minuziosamente le preferenze del software; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "Servono unicamente a rallentare la procedura di installazione per verificare la licenza d'uso, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "Riducono il tempo di accensione del computer azzerando i controlli del BIOS, una pratica che riduce l'usabilità complessiva, ostacolando l'orientamento spaziale e la percezione dei percorsi di navigazione primari"
+          "Non hanno alcuna rilevanza, dato che tutti gli utenti personalizzano minuziosamente le preferenze del software",
+          "Servono unicamente a rallentare la procedura di installazione per verificare la licenza d'uso",
+          "Riducono il tempo di accensione del computer azzerando i controlli del BIOS"
         ],
         "correctIndex": 0,
         "explanation": "L'effetto default è potentissimo: oltre l'80-90% delle persone non cambia mai le impostazioni predefinite. Se il default è pessimo, l'esperienza sarà pessima per la stragrande maggioranza."
@@ -1859,10 +1859,10 @@ window.STULL_DATA = [
       {
         "question": "Come si riduce l'attrito cognitivo nei form online sfruttando la propensione dell'utente a evitare sforzi inutili?",
         "options": [
-          "Aumentando il numero di domande a risposta aperta da compilare obbligatoriamente, ignorando la tendenza naturale degli utenti a scansionare anziché leggere",
+          "Aumentando il numero di domande a risposta aperta da compilare obbligatoriamente",
           "Utilizzando l'autocompletamento dell'indirizzo (browser autofill), rilevando automaticamente città e provincia dal CAP e chiedendo solo i dati strettamente indispensabili",
-          "Disabilitando la funzione di copia e incolla per costringere a digitare manualmente ogni codice; tale impostazione impedisce all'utente di costruire un modello mentale coerente",
-          "Richiedendo la conferma telefonica vocale per ogni singolo dato inserito nel form; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "Disabilitando la funzione di copia e incolla per costringere a digitare manualmente ogni codice",
+          "Richiedendo la conferma telefonica vocale per ogni singolo dato inserito nel form"
         ],
         "correctIndex": 1,
         "explanation": "Se chiedi solo 3 campi anziché 15 e compili da solo il CAP o la città, rispetti il principio del minimo sforzo e fai salire le conversioni alle stelle."
@@ -1870,10 +1870,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa si intende per 'Carico cognitivo intrinseco' ed 'estraneo' secondo la teoria del carico cognitivo di Sweller?",
         "options": [
-          "L'intrinseco riguarda i grafici vettoriali; l'estraneo riguarda i testi scritti in lingua straniera, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "L'intrinseco è causato dal monitor del PC; l'estraneo è causato dal rumore di fondo della stanza, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
+          "L'intrinseco riguarda i grafici vettoriali; l'estraneo riguarda i testi scritti in lingua straniera",
+          "L'intrinseco è causato dal monitor del PC; l'estraneo è causato dal rumore di fondo della stanza",
           "L'intrinseco è la difficoltà naturale legata alla complessità del concetto da comprendere; l'estraneo è lo sforzo mentale sprecato a causa di un'interfaccia confusa, istruzioni opache o grafica disordinata",
-          "Non sussiste distinzione teorica: qualsiasi carico mentale è dannoso e deve essere eliminato, una semplificazione concettuale che non regge alla prova dei test con utenti rappresentativi eseguiti in condizioni d'uso realistiche"
+          "Non sussiste distinzione teorica: qualsiasi carico mentale è dannoso e deve essere eliminato"
         ],
         "correctIndex": 2,
         "explanation": "Il designer deve azzerare il carico estraneo (comandi nascosti, icone bizzarre, testi arzigogolati) per lasciare intatte le energie mentali sul compito reale dell'utente."
@@ -1889,9 +1889,9 @@ window.STULL_DATA = [
       {
         "question": "In un'app di donazioni per beneficenza, l'opzione di default per la frequenza è 'Donazione singola una tantum', con 1.000 sostenitori al mese. Il team imposta di default 'Donazione mensile ricorrente (disattivabile con un clic)'. Le donazioni ricorrenti decuplicano. Quale principio spiega l'effetto?",
         "options": [
-          "Il cambiamento improvviso del modello mentale da utilitario a edonico, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "L'incompatibilità delle schede di credito ricaricabili con i pagamenti una tantum; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "La violazione delle direttive WCAG 2.1 sull'accessibilità cognitiva dei form, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
+          "Il cambiamento improvviso del modello mentale da utilitario a edonico",
+          "L'incompatibilità delle schede di credito ricaricabili con i pagamenti una tantum",
+          "La violazione delle direttive WCAG 2.1 sull'accessibilità cognitiva dei form",
           "La forza delle opzioni di default e l'euristica della minima resistenza: gli utenti tendono ad accettare la configurazione predefinita purché percepita come ragionevole e reversibile"
         ],
         "correctIndex": 3,
@@ -1901,9 +1901,9 @@ window.STULL_DATA = [
         "question": "Durante un test con utenti su un sito di noleggio auto, l'85% dei partecipanti sceglie la prima automobile visibile nell'elenco filtrato anziché scorrere le 40 alternative economicamente più vantaggiose. Quale concetto di Herbert Simon descrive il comportamento?",
         "options": [
           "Satisficing: l'utente non cerca la perfezione assoluta ma si accontenta rapidamente della prima vettura che soddisfa i criteri minimi di prezzo e capienza",
-          "Paralisi decisionale derivante dalla violazione del rasoio di Ockham; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Dissonanza cognitiva post-decisionale indotta dalla fretta del test, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
-          "Effetto priming negativo generato dai filtri laterali a checkbox, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing"
+          "Paralisi decisionale derivante dalla violazione del rasoio di Ockham",
+          "Dissonanza cognitiva post-decisionale indotta dalla fretta del test",
+          "Effetto priming negativo generato dai filtri laterali a checkbox"
         ],
         "correctIndex": 0,
         "explanation": "Le persone non passano ore a confrontare tutte le 40 auto: appena ne vedono una buona, la prendono. Questo è il puro satisficing nella vita quotidiana."
@@ -1911,10 +1911,10 @@ window.STULL_DATA = [
       {
         "question": "Un'applicazione bancaria costringe gli utenti a reinserire manualmente il proprio codice fiscale e IBAN ogni volta che vogliono ricaricare una carta prepagata. Come interviene un UX designer per azzerare questo carico parassita?",
         "options": [
-          "Inserendo un pulsante che apre il sito web dell'Agenzia delle Entrate in una nuova scheda durante le sessioni empiriche con utenti reali",
+          "Inserendo un pulsante che apre il sito web dell'Agenzia delle Entrate in una nuova scheda",
           "Memorizzando in modo sicuro i dati già associati al profilo e proponendo la selezione a tocco singolo dal conto principale",
-          "Rendendo il codice fiscale un campo obbligatorio da digitare due volte per verifica, crea attrito d'uso",
-          "Stampando il codice IBAN a caratteri giganti nella schermata iniziale dell'app, approccio non testato"
+          "Rendendo il codice fiscale un campo obbligatorio da digitare due volte per verifica",
+          "Stampando il codice IBAN a caratteri giganti nella schermata iniziale dell'app"
         ],
         "correctIndex": 1,
         "explanation": "Chiedere all'utente dati che il sistema già possiede è un insulto al principio del minimo sforzo: il software deve ricordare i dati ricorrenti e pre-compilarli."
@@ -1954,9 +1954,9 @@ window.STULL_DATA = [
       {
         "question": "Cosa stabilisce la celebre ricerca dello psicologo George Miller sul 'Magico Numero 7 ± 2' nella memoria a breve termine?",
         "options": [
-          "Un form di checkout non può contenere più di due campi obbligatori per legge, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
-          "I siti web devono contenere un massimo di 7 pagine per essere indicizzati da Google; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "Gli utenti navigano su internet per non più di 7 minuti consecutivi, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
+          "Un form di checkout non può contenere più di due campi obbligatori per legge",
+          "I siti web devono contenere un massimo di 7 pagine per essere indicizzati da Google",
+          "Gli utenti navigano su internet per non più di 7 minuti consecutivi",
           "La memoria di lavoro umana ha una capacità di elaborazione limitata e può trattenere contemporaneamente tra 5 e 9 'chunk' (unità di informazione) indipendenti prima di iniziare a dimenticare"
         ],
         "correctIndex": 3,
@@ -1966,9 +1966,9 @@ window.STULL_DATA = [
         "question": "Cos'è la tecnica del 'Chunking' applicata all'architettura dell'informazione e ai form web?",
         "options": [
           "La suddivisione di lunghe stringhe di dati o flussi complessi in piccoli blocchi logici raggruppati e facili da digerire (es. formattare i numeri di telefono in 3-3-4 o le carte di credito in 4-4-4-4)",
-          "La compressione dei file audio MP3 in blocchi binari per la trasmissione via streaming; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "L'eliminazione casuale di informazioni non necessarie per ridurre il peso del database; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "L'inserimento di interruzioni di riga forzate all'interno dei testi descrittivi di prodotto, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing"
+          "La compressione dei file audio MP3 in blocchi binari per la trasmissione via streaming",
+          "L'eliminazione casuale di informazioni non necessarie per ridurre il peso del database",
+          "L'inserimento di interruzioni di riga forzate all'interno dei testi descrittivi di prodotto"
         ],
         "correctIndex": 0,
         "explanation": "Leggere 16 cifre consecutive (4023601234567890) è massacrante per la memoria; spezzarle in 4 blocchi da 4 rende la lettura, la verifica e la digitazione immediate e prive di errori."
@@ -1976,10 +1976,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa prescrive la sesta euristica di Jakob Nielsen: 'Riconoscimento superiore al richiamo mnemonico' (Recognition over Recall)?",
         "options": [
-          "I loghi aziendali devono essere registrati presso l'ufficio marchi e brevetti per essere validi, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
+          "I loghi aziendali devono essere registrati presso l'ufficio marchi e brevetti per essere validi",
           "L'interfaccia deve rendere visibili e disponibili le opzioni, le azioni e gli elementi, affinché l'utente possa riconoscerli a vista anziché dover ricordare nozioni a memoria da una schermata all'altra",
-          "Tutti i dati dell'utente devono essere memorizzati su supporti a stato solido anziché su cloud, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "L'utente deve superare un test di riconoscimento facciale prima di ogni transazione online, una pratica che riduce l'usabilità complessiva, ostacolando l'orientamento spaziale e la percezione dei percorsi di navigazione primari"
+          "Tutti i dati dell'utente devono essere memorizzati su supporti a stato solido anziché su cloud",
+          "L'utente deve superare un test di riconoscimento facciale prima di ogni transazione online"
         ],
         "correctIndex": 1,
         "explanation": "Riconoscere è facilissimo per il cervello (es. scegliere una pietanza da un menu scritto); ricordare a memoria senza indizi visivi (recall) richiede grande sforzo e produce frequenti fallimenti."
@@ -1987,10 +1987,10 @@ window.STULL_DATA = [
       {
         "question": "Perché le interfacce a riga di comando (CLI) impongono un carico mnemonico molto più severo rispetto alle interfacce grafiche (GUI)?",
         "options": [
-          "Perché i comandi da terminale consumano più memoria RAM del processore centrale, un valore calibrato in fabbrica secondo gli standard industriali di collaudo e memorizzato nelle tabelle di configurazione della ROM",
-          "Perché la CLI utilizza solo monitor in bianco e nero che stancano la retina; tale soluzione viola il principio di visibilità dello stato del sistema, lasciando l'utente incerto sull'esito della propria azione",
+          "Perché i comandi da terminale consumano più memoria RAM del processore centrale",
+          "Perché la CLI utilizza solo monitor in bianco e nero che stancano la retina",
           "Perché la CLI si basa sul puro 'richiamo mnemonico' (l'utente deve ricordare a memoria la sintassi esatta di ogni comando), mentre la GUI mostra le opzioni visivamente (riconoscimento tramite menu e icone)",
-          "Perché i linguaggi di scripting non supportano le scorciatoie da tastiera, una pratica che riduce l'usabilità complessiva, ostacolando l'orientamento spaziale e la percezione dei percorsi di navigazione primari"
+          "Perché i linguaggi di scripting non supportano le scorciatoie da tastiera"
         ],
         "correctIndex": 2,
         "explanation": "In DOS/Linux devi ricordare 'grep -rnI ...'; in una GUI vedi la casella di ricerca con scritto 'Cerca'. La GUI ha trionfato perché ha sostituito il richiamo con il riconoscimento visivo."
@@ -1998,9 +1998,9 @@ window.STULL_DATA = [
       {
         "question": "In un percorso di acquisto multi-step, quale strumento di design previene il sovraccarico della memoria di lavoro?",
         "options": [
-          "La visualizzazione di un timer a conto alla rovescia di 60 secondi che costringe a decidere in fretta per facilitare il rapido completamento del task",
-          "L'eliminazione di tutti i pulsanti per tornare alla schermata precedente, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "L'invio di un promemoria SMS ogni volta che l'utente clicca su un campo input, una semplificazione che disattende le euristiche fondamentali di usabilità",
+          "La visualizzazione di un timer a conto alla rovescia di 60 secondi che costringe a decidere in fretta",
+          "L'eliminazione di tutti i pulsanti per tornare alla schermata precedente",
+          "L'invio di un promemoria SMS ogni volta che l'utente clicca su un campo input",
           "Un riepilogo laterale sintetico sempre visibile (Order Summary) che mostra carrello, prezzi, spedizione e dettagli scelti nei passaggi precedenti"
         ],
         "correctIndex": 3,
@@ -2018,9 +2018,9 @@ window.STULL_DATA = [
         "question": "In un software gestionale per magazzinieri, gli operatori devono digitare a memoria codici a 12 cifre senza separatori per confermare lo spostamento merci, provocando il 22% di errori di inserimento. Quale correzione applica i principi di Miller e del chunking?",
         "options": [
           "Formattare visivamente il codice in blocchi logici (es. ABC-123-XYZ) con spaziatura automatica, e implementare la ricerca predittiva basata sul nome del prodotto",
-          "Rendere il codice a 12 cifre invisibile all'operatore per evitare distrazioni, secondo i principi predittivi della legge di Hick",
-          "Obbligare i magazzinieri a sostenere un test di memoria prima di ogni turno lavorativo, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
-          "Aumentare il codice da 12 a 24 cifre per ridurre le probabilità di duplicazione accidentale, aumentando sensibilmente il carico cognitivo richiesto per completare il task"
+          "Rendere il codice a 12 cifre invisibile all'operatore per evitare distrazioni",
+          "Obbligare i magazzinieri a sostenere un test di memoria prima di ogni turno lavorativo",
+          "Aumentare il codice da 12 a 24 cifre per ridurre le probabilità di duplicazione accidentale"
         ],
         "correctIndex": 0,
         "explanation": "Il chunking strutturato (blocchi da 3-4 caratteri con trattini) e l'autocompletamento trasformano uno sforzo di memoria bruta in un facile riconoscimento visivo guidato."
@@ -2028,10 +2028,10 @@ window.STULL_DATA = [
       {
         "question": "Un'app di viaggi costringe l'utente a digitare manualmente da una schermata all'altra il codice di prenotazione del volo per poter selezionare il posto a sedere nella pagina successiva. Quale violazione dell'euristica 'Recognition over Recall' è evidente?",
         "options": [
-          "Mancata adozione del protocollo di autenticazione a due fattori (2FA); tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
+          "Mancata adozione del protocollo di autenticazione a due fattori (2FA)",
           "Costringere l'utente a ricordare o trascrivere su carta dati interni che il sistema già possiede e dovrebbe semplicemente visualizzare e trasferire automaticamente",
-          "Violazione del principio della Gestalt relativo al destino comune degli elementi; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Utilizzo di font con interlinea non conforme alle normative ISO 9241, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo"
+          "Violazione del principio della Gestalt relativo al destino comune degli elementi",
+          "Utilizzo di font con interlinea non conforme alle normative ISO 9241"
         ],
         "correctIndex": 1,
         "explanation": "L'app sa già qual è il codice del volo appena selezionato: costringere l'utente a memorizzarlo o annotarlo per reinserirlo è il massimo della cattiva progettazione."
@@ -2039,10 +2039,10 @@ window.STULL_DATA = [
       {
         "question": "Come si sfrutta il principio del riconoscimento visivo nella cronologia di navigazione di un e-commerce di arredamento?",
         "options": [
-          "Cancellando la cronologia ad ogni clic per non sovraccaricare la memoria cache, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "Fornendo un file di log testuale con gli indirizzi URL completi delle pagine visitate, disattendendo le consolidate euristiche di usabilità",
+          "Cancellando la cronologia ad ogni clic per non sovraccaricare la memoria cache",
+          "Fornendo un file di log testuale con gli indirizzi URL completi delle pagine visitate",
           "Mostrando nella barra inferiore le anteprime visive in miniatura (thumbnail) degli ultimi prodotti consultati con prezzo e titolo chiaro",
-          "Inviando un'email di riepilogo il giorno successivo alla visita del portale durante le sessioni empiriche con utenti reali"
+          "Inviando un'email di riepilogo il giorno successivo alla visita del portale"
         ],
         "correctIndex": 2,
         "explanation": "La sezione 'Visti di recente' con foto dei divani e tavoli permette all'utente di riconoscere istantaneamente gli oggetti guardati poco prima, riagganciando l'interesse senza sforzo."
@@ -2083,9 +2083,9 @@ window.STULL_DATA = [
         "question": "Cosa si intende per 'Razionalizzazione post-acquisto' (o post-decisionale) nella psicologia comportamentale analizzata da Stull?",
         "options": [
           "Il processo cognitivo inconscio con cui una persona, dopo aver preso una decisione guidata da fattori emotivi o impulsi irrazionali, costruisce a posteriori giustificazioni logiche e razionali per confermare la bontà della propria scelta",
-          "Il calcolo delle imposte e delle detrazioni fiscali al termine dell'anno contabile; questa interpretazione trascura la complessità dei modelli mentali degli utenti e la variabilità dei contesti d'uso che influenzano profondamente ogni interazione con il prodotto",
-          "La procedura automatica di rimborso fondi in caso di merce difettosa; tale riduzione semplificativa non contempla le dinamiche di apprendimento, le strategie di esplorazione e i processi di costruzione di fiducia che caratterizzano l'esperienza reale",
-          "La riduzione della larghezza di banda del server dopo il completamento del download; questo valore dipende dalla capacità di calcolo della pipeline di elaborazione e dalle latenze introdotte dai vari livelli di cache e dai bus di interconnessione"
+          "Il calcolo delle imposte e delle detrazioni fiscali al termine dell'anno contabile",
+          "La procedura automatica di rimborso fondi in caso di merce difettosa",
+          "La riduzione della larghezza di banda del server dopo il completamento del download"
         ],
         "correctIndex": 0,
         "explanation": "Le decisioni sono guidate dalle emozioni; la ragione interviene dopo per difendere l'autostima e dimostrare a noi stessi e agli altri che abbiamo fatto una scelta saggia e ponderata."
@@ -2093,10 +2093,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa definisce la teoria della 'Dissonanza Cognitiva' formulata dallo psicologo Leon Festinger?",
         "options": [
-          "Il ritardo temporale nella ricezione del segnale audio durante una videochiamata, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
+          "Il ritardo temporale nella ricezione del segnale audio durante una videochiamata",
           "Lo stato di profondo disagio psicologico sperimentato da un individuo quando si trova a detenere due credenze tra loro contraddittorie o quando compie un'azione in contrasto con le proprie convinzioni",
-          "L'interferenza elettromagnetica tra display touchscreen e router Wi-Fi; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "La perdita di nitidezza dei colori primari in condizioni di luce solare diretta, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo"
+          "L'interferenza elettromagnetica tra display touchscreen e router Wi-Fi",
+          "La perdita di nitidezza dei colori primari in condizioni di luce solare diretta"
         ],
         "correctIndex": 1,
         "explanation": "Se spendo 1.500 euro per uno smartphone e scopro un piccolo difetto, provo dissonanza: per ridurla, tenderò a minimizzare il difetto ed esaltare la raffinatezza del design."
@@ -2104,10 +2104,10 @@ window.STULL_DATA = [
       {
         "question": "Come supporta una buona UX la fase di 'Razionalizzazione' nella pagina di conferma d'ordine di un e-commerce?",
         "options": [
-          "Mostrando immediatamente un conto alla rovescia minaccioso che invita a comprare altro entro tre minuti, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "Nascondendo la ricevuta di pagamento per evitare che l'utente si ricordi della spesa; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
+          "Mostrando immediatamente un conto alla rovescia minaccioso che invita a comprare altro entro tre minuti",
+          "Nascondendo la ricevuta di pagamento per evitare che l'utente si ricordi della spesa",
           "Fornendo conferme rassicuranti (es. 'Ottima scelta!', riepilogo dei benefici pratici, garanzie di reso gratuito e tempi precisi di consegna) che dissipano il rimorso dell'acquirente (Buyer's Remorse)",
-          "Inviando un questionario di 40 domande sulla conformità contabile dell'ordine, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito"
+          "Inviando un questionario di 40 domande sulla conformità contabile dell'ordine"
         ],
         "correctIndex": 2,
         "explanation": "Il 'rimorso dell'acquirente' insorge subito dopo il pagamento. Messaggi empatici, riepiloghi dei vantaggi e garanzie di reso solido aiutano a razionalizzare positivamente la decisione."
@@ -2115,9 +2115,9 @@ window.STULL_DATA = [
       {
         "question": "Cos'è il 'Bias di conferma' (Confirmation Bias) e come condiziona sia gli utenti che i designer?",
         "options": [
-          "La visualizzazione della spunta verde accanto ai campi di testo correttamente compilati; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "L'obbligo di cliccare su una checkbox prima di inviare un modulo online, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
-          "La validazione automatica della sintassi del codice da parte del linter IDE, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
+          "La visualizzazione della spunta verde accanto ai campi di testo correttamente compilati",
+          "L'obbligo di cliccare su una checkbox prima di inviare un modulo online",
+          "La validazione automatica della sintassi del codice da parte del linter IDE",
           "La tendenza umana a cercare, interpretare e ricordare con fervore le informazioni che confermano le proprie convinzioni preesistenti, ignorando o svalutando attivamente i dati contrari"
         ],
         "correctIndex": 3,
@@ -2127,9 +2127,9 @@ window.STULL_DATA = [
         "question": "Perché le recensioni e le testimonianze degli altri acquirenti (Social Proof) sono fondamentali nella fase di razionalizzazione?",
         "options": [
           "Perché forniscono una validazione sociale esterna che rassicura l'individuo sul fatto che molte altre persone simili a lui hanno già fatto la stessa scelta traendone soddisfazione",
-          "Perché aumentano il numero di righe di codice HTML presenti nel DOM della pagina, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
-          "Perché consentono di ridurre le spese di spedizione per accordi con i corrieri, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
-          "Perché le testimonianze positive sono imposte dalla legge per tutti i negozi fisici; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso"
+          "Perché aumentano il numero di righe di codice HTML presenti nel DOM della pagina",
+          "Perché consentono di ridurre le spese di spedizione per accordi con i corrieri",
+          "Perché le testimonianze positive sono imposte dalla legge per tutti i negozi fisici"
         ],
         "correctIndex": 0,
         "explanation": "La social proof è l'argomento razionale supremo: 'Se 10.000 persone lo usano con 4.8 stelle, non posso aver sbagliato'. Convalida la decisione a livello logico e sociale."
@@ -2145,10 +2145,10 @@ window.STULL_DATA = [
       {
         "question": "Un utente acquista un corso online professionale da 800€. Subito dopo aver cliccato 'Paga', lo schermo diventa bianco per 5 secondi e poi mostra solo la scritta secca: 'Transazione 98402 eseguita'. L'utente prova ansia acuta e rimpianto. Quale gravissima lacuna di UX è evidente?",
         "options": [
-          "Mancata adozione del protocollo di cifratura TLS 1.3 sul gateway bancario; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
+          "Mancata adozione del protocollo di cifratura TLS 1.3 sul gateway bancario",
           "Assenza totale di rassicurazione e supporto alla razionalizzazione post-acquisto: manca una pagina di ringraziamento accogliente, la conferma dei benefici sbloccati e la guida ai primi passi",
-          "Violazione della legge di Fitts dovuta alla dimensione del testo di conferma, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "Assenza di un banner pubblicitario di terze parti nella schermata finale; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "Violazione della legge di Fitts dovuta alla dimensione del testo di conferma",
+          "Assenza di un banner pubblicitario di terze parti nella schermata finale"
         ],
         "correctIndex": 1,
         "explanation": "Dopo una spesa importante, l'utente è psicologicamente vulnerabile: trattarlo con un freddo codice transazione scatena il panico. Serve accoglienza calorosa, riepilogo e chiarezza."
@@ -2156,10 +2156,10 @@ window.STULL_DATA = [
       {
         "question": "In un'app di investimenti finanziari, quando un utente seleziona un fondo etico, l'interfaccia evidenzia chiaramente sia i rendimenti storici sia l'impatto ambientale positivo generato (es. '120 alberi piantati'). Come agisce questa informazione sulla psicologia dell'utente?",
         "options": [
-          "Attiva la cecità da banner verso i grafici di rendimento finanziario, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
-          "Rallenta la velocità di esecuzione degli ordini di borsa sul mercato telematico; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Attiva la cecità da banner verso i grafici di rendimento finanziario",
+          "Rallenta la velocità di esecuzione degli ordini di borsa sul mercato telematico",
           "Fornisce solidi argomenti etici e razionali che consentono all'investitore di giustificare a se stesso e agli altri l'accettazione di una commissione di gestione leggermente superiore",
-          "Costringe l'utente a revocare l'ordine entro ventiquattro ore dall'operazione, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo"
+          "Costringe l'utente a revocare l'ordine entro ventiquattro ore dall'operazione"
         ],
         "correctIndex": 2,
         "explanation": "La razionalizzazione necessita di pilastri tangibili: 'Pago un po' di più, ma sto salvando il pianeta e i dati storici sono solidi'. Questo dissipa ogni dissonanza cognitiva."
@@ -2167,9 +2167,9 @@ window.STULL_DATA = [
       {
         "question": "Durante un test di usabilità, un ricercatore nota che un utente ha impiegato 10 minuti per trovare un comando. Alla domanda finale, l'utente dichiara: 'Il sito è chiarissimo, sono io che oggi ero distratto'. Quale meccanismo psicologico è all'opera?",
         "options": [
-          "L'effetto alone inverso provocato da font tipografici privi di grazie, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "Un'applicazione consapevole del principio di divulgazione progressiva, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "Un malfunzionamento della memoria a lungo termine causato dall'età, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
+          "L'effetto alone inverso provocato da font tipografici privi di grazie",
+          "Un'applicazione consapevole del principio di divulgazione progressiva",
+          "Un malfunzionamento della memoria a lungo termine causato dall'età",
           "Razionalizzazione auto-colpevolizzante: gli utenti tendono a difendere l'interfaccia incolpando se stessi della propria inadeguatezza per proteggere la propria autostima"
         ],
         "correctIndex": 3,
@@ -2210,10 +2210,10 @@ window.STULL_DATA = [
       {
         "question": "Qual è il principio cardine dell''Accessibilità Web' (a11y) e a chi si rivolge?",
         "options": [
-          "Rendere i siti web compatibili esclusivamente con computer dotati di tastiere speciali per non vedenti, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
+          "Rendere i siti web compatibili esclusivamente con computer dotati di tastiere speciali per non vedenti",
           "Garantire che prodotti e servizi digitali possano essere compresi, navigati e utilizzati agevolmente da chiunque, comprese persone con disabilità visive, uditive, motorie, cognitive, temporanee o situazionali",
-          "Fornire versioni semplificate del sito scritte in formato solo testo prive di stili grafici, una semplificazione concettuale che non regge alla prova dei test con utenti rappresentativi eseguiti in condizioni d'uso realistiche",
-          "Limitare l'accesso ai contenuti digitali unicamente alle persone dotate di certificazione medica, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing"
+          "Fornire versioni semplificate del sito scritte in formato solo testo prive di stili grafici",
+          "Limitare l'accesso ai contenuti digitali unicamente alle persone dotate di certificazione medica"
         ],
         "correctIndex": 1,
         "explanation": "L'accessibilità non riguarda solo una minoranza con disabilità permanente, ma chiunque abbia un braccio ingessato (temporanea), tenga un neonato in braccio o sia sotto la luce accecante del sole (situazionale)."
@@ -2221,10 +2221,10 @@ window.STULL_DATA = [
       {
         "question": "Quali sono i quattro principi fondanti delle linee guida WCAG (Web Content Accessibility Guidelines)?",
         "options": [
-          "CLEAN: Chiaro (Clear), Leggibile (Legible), Economico (Affordable), Naturale (Natural), contrario a Krug",
-          "FAST: Facile (Fast), Accessibile (Accessible), Sicuro (Safe), Tecnico (Technical), viola le euristiche",
+          "CLEAN: Chiaro (Clear), Leggibile (Legible), Economico (Affordable), Naturale (Natural)",
+          "FAST: Facile (Fast), Accessibile (Accessible), Sicuro (Safe), Tecnico (Technical)",
           "POUR: Percepibile (Perceivable), Utilizzabile (Operable), Comprensibile (Understandable), Robusto (Robust)",
-          "SAFE: Stabile (Stable), Autonomo (Autonomous), Flessibile (Flexible), Efficiente (Efficient), riduce l'usabilità"
+          "SAFE: Stabile (Stable), Autonomo (Autonomous), Flessibile (Flexible), Efficiente (Efficient)"
         ],
         "correctIndex": 2,
         "explanation": "I 4 pilastri WCAG: Percepibile (non solo visivo), Utilizzabile (navigabile da tastiera), Comprensibile (linguaggio e interazioni chiare), Robusto (compatibile con screen reader e tecnologie assistive)."
@@ -2232,9 +2232,9 @@ window.STULL_DATA = [
       {
         "question": "Cosa stabilisce la regola del 'Rapporto di contrasto minimo' (Contrast Ratio) WCAG Livello AA per il testo normale?",
         "options": [
-          "Un rapporto di 20:1 riservato unicamente alle intestazioni di primo livello (H1), una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "Un rapporto di contrasto di esattamente 1:1 per evitare affaticamento oculare, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "L'obbligo di utilizzare solo testo giallo fluorescente su sfondo blu scuro, secondo i protocolli consolidati di user testing",
+          "Un rapporto di 20:1 riservato unicamente alle intestazioni di primo livello (H1)",
+          "Un rapporto di contrasto di esattamente 1:1 per evitare affaticamento oculare",
+          "L'obbligo di utilizzare solo testo giallo fluorescente su sfondo blu scuro",
           "Un rapporto di contrasto di luminanza di almeno 4,5:1 tra il colore del testo e il colore dello sfondo (3:1 per testo grande superiore a 18pt o 14pt grassetto)"
         ],
         "correctIndex": 3,
@@ -2244,9 +2244,9 @@ window.STULL_DATA = [
         "question": "Cosa si intende per 'Curb-Cut Effect' (Effetto Scivolo del Marciapiede) nella progettazione inclusiva?",
         "options": [
           "Il fenomeno per cui una modifica introdotta per persone con disabilità (es. gli scivoli sui marciapiedi per sedie a rotelle) finisce per migliorare l'esperienza e la vita di tutti (passeggini, valigie, biciclette)",
-          "L'eliminazione dei bordi arrotondati dai pulsanti delle interfacce grafiche, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
-          "Il calo progressivo dei prezzi dei computer portatili nel mercato dell'elettronica, una semplificazione concettuale che non regge alla prova dei test con utenti rappresentativi eseguiti in condizioni d'uso realistiche",
-          "La riduzione della velocità di navigazione degli utenti che usano connessioni mobili lente, una pratica che riduce l'usabilità complessiva, ostacolando l'orientamento spaziale e la percezione dei percorsi di navigazione primari"
+          "L'eliminazione dei bordi arrotondati dai pulsanti delle interfacce grafiche",
+          "Il calo progressivo dei prezzi dei computer portatili nel mercato dell'elettronica",
+          "La riduzione della velocità di navigazione degli utenti che usano connessioni mobili lente"
         ],
         "correctIndex": 0,
         "explanation": "I sottotitoli nei video (nati per i non udenti) vengono usati da chiunque sia sui mezzi pubblici o in ufficio; i testi ad alto contrasto aiutano chi guida o legge al sole. L'accessibilità aiuta tutti."
@@ -2254,10 +2254,10 @@ window.STULL_DATA = [
       {
         "question": "Perché è un grave errore di accessibilità affidare la trasmissione di un'informazione fondamentale (es. errore in un campo) unicamente al cambiamento di colore?",
         "options": [
-          "Perché i fogli di stile CSS non supportano l'assegnazione simultanea di più colori a un bordo; tale soluzione viola il principio di visibilità dello stato del sistema, lasciando l'utente incerto sull'esito della propria azione",
+          "Perché i fogli di stile CSS non supportano l'assegnazione simultanea di più colori a un bordo",
           "Perché le persone affette da daltonismo (circa l'8% degli uomini) o che navigano con schermi in scala di grigi non riuscirebbero a percepire la variazione cromatica: serve sempre un testo, un'icona o un simbolo esplicito",
-          "Perché i motori di ricerca considerano il cambio di colore un tentativo di frode pubblicitaria, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "Perché la modifica del colore richiede l'installazione di plugin esterni nel browser; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso"
+          "Perché i motori di ricerca considerano il cambio di colore un tentativo di frode pubblicitaria",
+          "Perché la modifica del colore richiede l'installazione di plugin esterni nel browser"
         ],
         "correctIndex": 1,
         "explanation": "Criterio WCAG 1.4.1 'Use of Color': non usare mai solo il colore. Se un campo è errato, non limitarti a farlo diventare rosso: aggiungi un'icona di errore e un messaggio testuale chiaro."
@@ -2273,10 +2273,10 @@ window.STULL_DATA = [
       {
         "question": "Un designer progetta un form in cui il tasto 'Tab' salta casualmente da un campo all'altro, il bordo di focus visivo (outline) è stato rimosso via CSS con 'outline: none' e il form non si può inviare premendo 'Invio'. Quale violazione critica è presente?",
         "options": [
-          "Violazione della legge di Hick dovuta all'assenza di menu a discesa contestuali, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "Mancata conformità con l'indice di leggibilità linguistica di Flesch-Kincaid; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Violazione della legge di Hick dovuta all'assenza di menu a discesa contestuali",
+          "Mancata conformità con l'indice di leggibilità linguistica di Flesch-Kincaid",
           "Distruzione totale della navigabilità da tastiera (WCAG Principio 2 - Utilizzabile): rende il sito inaccessibile a persone cieche, a chi ha disabilità motorie e a chiunque non possa usare il mouse",
-          "Incompatibilità della pagina con i protocolli di crittografia asimmetrica HTTPS; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso"
+          "Incompatibilità della pagina con i protocolli di crittografia asimmetrica HTTPS"
         ],
         "correctIndex": 2,
         "explanation": "Rimuovere l'indicatore di focus ('outline: none' senza rimpiazzo) e rompere l'ordine di tabulazione esclude chiunque navighi da tastiera o tramite tecnologia assistiva. È una violazione gravissima."
@@ -2284,9 +2284,9 @@ window.STULL_DATA = [
       {
         "question": "Un portale di notizie inserisce immagini con grafici di bilancio economico senza compilare l'attributo 'alt' o inserendo 'alt=\"immagine 1\"'. Qual è la conseguenza per un utente non vedente con screen reader?",
         "options": [
-          "Il portale riceverà una sanzione contabile per evasione delle tasse sui media, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
-          "Il browser bloccherà il caricamento del foglio di stile dell'intera pagina, ignorando la tendenza naturale degli utenti a scansionare anziché leggere",
-          "La scheda video del dispositivo aumenterà automaticamente la frequenza di refresh nelle memorie tampone e nei registri interni",
+          "Il portale riceverà una sanzione contabile per evasione delle tasse sui media",
+          "Il browser bloccherà il caricamento del foglio di stile dell'intera pagina",
+          "La scheda video del dispositivo aumenterà automaticamente la frequenza di refresh",
           "Lo screen reader leggerà solo il nome del file o salterà l'elemento, lasciando l'utente all'oscuro totale dei dati e delle analisi economiche contenute nel grafico"
         ],
         "correctIndex": 3,
@@ -2296,9 +2296,9 @@ window.STULL_DATA = [
         "question": "Come si progetta un carosello multimediale che rispetti rigorosamente i requisiti di accessibilità cognitiva e motoria?",
         "options": [
           "Prevedendo comandi evidenti di Pausa/Riproduzione, evitando lo scorrimento automatico aggressivo, garantendo il controllo completo da tastiera e supporto per la riduzione del movimento (prefers-reduced-motion)",
-          "Rendendo lo scorrimento del carosello velocissimo (ogni 0,5 secondi) per massimizzare le visualizzazioni, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "Impedendo all'utente di mettere in pausa le animazioni per non rovinare il design visivo; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Sostituendo tutte le immagini del carosello con codice binario stampato a schermo, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione"
+          "Rendendo lo scorrimento del carosello velocissimo (ogni 0,5 secondi) per massimizzare le visualizzazioni",
+          "Impedendo all'utente di mettere in pausa le animazioni per non rovinare il design visivo",
+          "Sostituendo tutte le immagini del carosello con codice binario stampato a schermo"
         ],
         "correctIndex": 0,
         "explanation": "I caroselli che girano da soli e non si possono fermare causano distrazione per chi ha disturbi dell'attenzione e impediscono la lettura a chi legge lentamente o usa screen reader."
@@ -2338,10 +2338,10 @@ window.STULL_DATA = [
       {
         "question": "Qual è il ruolo dello 'Storytelling' (narrazione strutturata) nella progettazione dell'esperienza utente?",
         "options": [
-          "Aumentare il numero di parole all'interno della privacy policy per scopi contrattuali, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "Scrivere romanzi di fantasia da pubblicare nella sezione blog del sito aziendale, ignorando la tendenza naturale degli utenti a scansionare anziché leggere",
+          "Aumentare il numero di parole all'interno della privacy policy per scopi contrattuali",
+          "Scrivere romanzi di fantasia da pubblicare nella sezione blog del sito aziendale",
           "Connettere razionalità ed emozione, dando un senso coerente, memorabile e motivante all'interazione dell'utente con il servizio attraverso una struttura narrativa ad arco",
-          "Sostituire tutte le tabelle dati con illustrazioni disegnate a mano libera, aumentando sensibilmente il carico cognitivo richiesto per completare il task"
+          "Sostituire tutte le tabelle dati con illustrazioni disegnate a mano libera"
         ],
         "correctIndex": 2,
         "explanation": "Il cervello umano è cablato per le storie: ricordiamo molto meglio un percorso con un protagonista, un ostacolo da superare e una ricompensa rispetto a una lista di funzioni isolate."
@@ -2349,9 +2349,9 @@ window.STULL_DATA = [
       {
         "question": "Nel framework narrativo applicato alla UX (derivato dal Viaggio dell'Eroe di Campbell), chi è il vero 'Eroe' della storia?",
         "options": [
-          "L'amministratore delegato dell'agenzia di comunicazione pubblicitaria, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
-          "L'azienda fornitrice che produce il software e ne incassa i profitti, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "Il Lead Developer che ha scritto l'algoritmo di routing delle chiamate API, ignorando la tendenza naturale degli utenti a scansionare anziché leggere",
+          "L'amministratore delegato dell'agenzia di comunicazione pubblicitaria",
+          "L'azienda fornitrice che produce il software e ne incassa i profitti",
+          "Il Lead Developer che ha scritto l'algoritmo di routing delle chiamate API",
           "L'utente, che parte da una situazione ordinaria, incontra un problema e compie una trasformazione migliorativa nella sua vita grazie all'uso dello strumento"
         ],
         "correctIndex": 3,
@@ -2361,9 +2361,9 @@ window.STULL_DATA = [
         "question": "Cosa si intende per 'Tone of Voice' (Tono di Voce) nella scrittura per l'interfaccia (UX Writing)?",
         "options": [
           "L'espressione della personalità del brand declinata attraverso il registro linguistico, il ritmo, la scelta dei termini e il livello di empatia adattato allo stato d'animo dell'utente",
-          "Il volume in decibel con cui l'altoparlante del computer riproduce i suoni di errore, un parametro strettamente legato all'architettura fisica del dispositivo e alla configurazione dei sottosistemi di calcolo e memoria",
-          "La frequenza in Hertz dei messaggi audio preregistrati nel centralino telefonico; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "La lingua straniera selezionata come predefinita nelle impostazioni del browser, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo"
+          "Il volume in decibel con cui l'altoparlante del computer riproduce i suoni di errore",
+          "La frequenza in Hertz dei messaggi audio preregistrati nel centralino telefonico",
+          "La lingua straniera selezionata come predefinita nelle impostazioni del browser"
         ],
         "correctIndex": 0,
         "explanation": "Il tono di voce deve essere coerente ma flessibile: gioioso e celebrativo quando raggiungi un traguardo; serio, sobrio e rassicurante quando si verifica un problema di pagamento."
@@ -2371,10 +2371,10 @@ window.STULL_DATA = [
       {
         "question": "Come si struttura virtuosamente l'esperienza di 'Onboarding' (accoglienza e primo utilizzo) tramite lo storytelling?",
         "options": [
-          "Mostrando un tutorial statico di 30 schermate prima di consentire l'accesso alla dashboard, riducendo la tolleranza all'errore e moltiplicando i passaggi operativi superflui",
+          "Mostrando un tutorial statico di 30 schermate prima di consentire l'accesso alla dashboard",
           "Accompagnando l'utente attraverso una narrazione guidata che chiarisce il valore promesso, mostra i primi passi con successo immediato (Quick Win) e lo fa sentire subito capace e vincente",
-          "Obbligando l'utente a leggere l'intera storia della fondazione societaria dal 1980 a oggi, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "Inviando 10 notifiche push nei primi cinque minuti di installazione dell'applicazione, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione"
+          "Obbligando l'utente a leggere l'intera storia della fondazione societaria dal 1980 a oggi",
+          "Inviando 10 notifiche push nei primi cinque minuti di installazione dell'applicazione"
         ],
         "correctIndex": 1,
         "explanation": "L'onboarding narrativo non fa lezioni teoriche: ti fa fare la prima azione gratificante in 30 secondi ('Hai appena creato il tuo primo progetto, fantastico!')."
@@ -2382,10 +2382,10 @@ window.STULL_DATA = [
       {
         "question": "Quale rischio comporta l'adozione di un tono di voce eccessivamente spiritoso o sarcastico nei messaggi di errore critici?",
         "options": [
-          "Provoca l'incompatibilità dei fogli di stile CSS con le versioni precedenti dei browser, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
-          "Aumenta la probabilità che il server web venga attaccato da hacker informatici; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Provoca l'incompatibilità dei fogli di stile CSS con le versioni precedenti dei browser",
+          "Aumenta la probabilità che il server web venga attaccato da hacker informatici",
           "Fa sentire l'utente deriso, sminuito e non ascoltato mentre si trova in una condizione di stress, esasperando la frustrazione e distruggendo la fiducia nel brand",
-          "Elimina automaticamente i certificati di crittografia asimmetrica dal database, secondo i protocolli consolidati di user testing"
+          "Elimina automaticamente i certificati di crittografia asimmetrica dal database"
         ],
         "correctIndex": 2,
         "explanation": "L'umorismo fuori luogo nei momenti di crisi ('Oopsie daisy! I tuoi soldi sono spariti, colpa nostra!') è offensivo. Quando qualcosa va storto servono scuse sincere, sobrietà e soluzioni chiare."
@@ -2401,9 +2401,9 @@ window.STULL_DATA = [
       {
         "question": "Un'app bancaria fallisce un bonifico urgente di affitto e mostra un'illustrazione di un cagnolino triste con la scritta: 'Ops! Qualcosa è andato storto nei nostri biscottini! Riprova più tardi con un sorriso!'. Come giudica Stull questa scelta di UX Writing?",
         "options": [
-          "Un intervento neutro che non produce alcun impatto sulla percezione di affidabilità della banca; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "Una brillante strategia di storytelling che riduce lo stress dell'utente grazie al potere terapeutico degli animali domestici; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Una soluzione conforme alle direttive ISO 9241 per la gestione amichevole dei conflitti procedurali, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
+          "Un intervento neutro che non produce alcun impatto sulla percezione di affidabilità della banca",
+          "Una brillante strategia di storytelling che riduce lo stress dell'utente grazie al potere terapeutico degli animali domestici",
+          "Una soluzione conforme alle direttive ISO 9241 per la gestione amichevole dei conflitti procedurali",
           "Un disastroso mismatch empatico: banalizzare un problema finanziario urgente con battute infantili genera rabbia estrema; il tono deve essere sollecito, professionale e orientato alla risoluzione immediata"
         ],
         "correctIndex": 3,
@@ -2413,9 +2413,9 @@ window.STULL_DATA = [
         "question": "Nel design di un'applicazione per il fitness, come si applica l'arco narrativo per stimolare la motivazione a lungo termine dell'utente?",
         "options": [
           "Celebrando i progressi con milestone narrative, badge di superamento ostacoli e visualizzazione dell'evoluzione dell'utente verso la versione migliore di se stesso",
-          "Inviando un messaggio di allarme ogni volta che l'utente non compie 10.000 passi al giorno, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
-          "Nascondendo lo storico delle sessioni passate per non generare sentimenti nostalgici, riducendo la tolleranza all'errore e moltiplicando i passaggi operativi superflui",
-          "Rendendo l'abbonamento mensile più costoso ogni volta che l'utente salta un allenamento; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "Inviando un messaggio di allarme ogni volta che l'utente non compie 10.000 passi al giorno",
+          "Nascondendo lo storico delle sessioni passate per non generare sentimenti nostalgici",
+          "Rendendo l'abbonamento mensile più costoso ogni volta che l'utente salta un allenamento"
         ],
         "correctIndex": 0,
         "explanation": "Lo storytelling trasforma la fatica in un'avventura: mostrare la crescita del personaggio (l'utente) lungo il suo viaggio rende gratificante la perseveranza."
@@ -2423,10 +2423,10 @@ window.STULL_DATA = [
       {
         "question": "Un'agenzia immobiliare rinnova il sito sostituendo lo slogan autocelebrativo 'Siamo i leader del settore dal 1975' con 'Trova la casa dei tuoi sogni dove far crescere la tua famiglia: noi ti guidiamo passo dopo passo'. Quale cambio di prospettiva narrativa si è compiuto?",
         "options": [
-          "L'adozione esclusiva della tassonomia faceted per i filtri di ricerca degli appartamenti, secondo i principi predittivi della legge di Hick",
+          "L'adozione esclusiva della tassonomia faceted per i filtri di ricerca degli appartamenti",
           "Lo spostamento del ruolo di Eroe dal brand all'utente, posizionando l'azienda nel ruolo corretto di Guida empatica e facilitatore del suo obiettivo di vita",
-          "La violazione delle linee guida di benchmarking quantitativo sul mercato immobiliare, introducendo un attrito cognitivo ingiustificato",
-          "L'applicazione della legge di Hick mediante riduzione dei metadati visibili nelle schede, riducendo l'usabilità complessiva del sistema"
+          "La violazione delle linee guida di benchmarking quantitativo sul mercato immobiliare",
+          "L'applicazione della legge di Hick mediante riduzione dei metadati visibili nelle schede"
         ],
         "correctIndex": 1,
         "explanation": "All'utente non importa della gloria aziendale: vuole la SUA casa per la SUA famiglia. Mettere al centro i sogni e i problemi dell'utente è la base dello storytelling efficace."
@@ -2466,9 +2466,9 @@ window.STULL_DATA = [
       {
         "question": "Quale distinzione fondamentale intercorre tra 'Empatia' e 'Compassione' (o pietà) nella disciplina della User Experience?",
         "options": [
-          "Non sussiste alcuna differenza: sono termini sinonimi utilizzati indifferentemente nei manuali di statistica, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "L'empatia riguarda solo i progetti senza scopo di lucro, mentre la compassione si applica alle aziende quotate in borsa; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "L'empatia è una metrica quantitativa misurabile in percentuale; la compassione è una variabile booleana del codice; tale soluzione viola il principio di visibilità dello stato del sistema, lasciando l'utente incerto sull'esito della propria azione",
+          "Non sussiste alcuna differenza: sono termini sinonimi utilizzati indifferentemente nei manuali di statistica",
+          "L'empatia riguarda solo i progetti senza scopo di lucro, mentre la compassione si applica alle aziende quotate in borsa",
+          "L'empatia è una metrica quantitativa misurabile in percentuale; la compassione è una variabile booleana del codice",
           "L'empatia è la comprensione cognitiva e profonda dei bisogni, modelli mentali e frustrazioni dell'utente per progettare soluzioni efficaci; la compassione è un sentimento passivo di dispiacere che non produce risposte progettuali"
         ],
         "correctIndex": 3,
@@ -2478,9 +2478,9 @@ window.STULL_DATA = [
         "question": "Perché la pratica dell''Ascolto Attivo' è metodologicamente superiore al semplice 'Rispecchiamento' (mirroring) nelle interviste con gli utenti?",
         "options": [
           "L'ascolto attivo indaga le motivazioni sottostanti, fa domande di approfondimento neutre e sospende il giudizio; il rispecchiamento rischia di ridursi a una ripetizione meccanica priva di comprensione reale",
-          "L'ascolto attivo richiede la presenza di un notaio per registrare legalmente le risposte del partecipante; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "Il rispecchiamento consuma troppa larghezza di banda durante le sessioni di intervista da remoto; tale specifica viene rilevata dai sensori interni e gestita tramite chiamate dirette al firmware di controllo della scheda logica",
-          "L'ascolto attivo è vietato dai regolamenti etici internazionali sulla sperimentazione clinica; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "L'ascolto attivo richiede la presenza di un notaio per registrare legalmente le risposte del partecipante",
+          "Il rispecchiamento consuma troppa larghezza di banda durante le sessioni di intervista da remoto",
+          "L'ascolto attivo è vietato dai regolamenti etici internazionali sulla sperimentazione clinica"
         ],
         "correctIndex": 0,
         "explanation": "Ascoltare attivamente significa cogliere ciò che l'utente non dice esplicitamente: le esitazioni, i silenzi, il linguaggio del corpo e i modelli mentali non espressi a parole."
@@ -2488,10 +2488,10 @@ window.STULL_DATA = [
       {
         "question": "Cos'è una 'Empathy Map' (Mappa dell'Empatia) creata da Dave Gray e come viene utilizzata dai team di prodotto?",
         "options": [
-          "Una cartina geografica che individua le aree con il maggior numero di download dell'applicazione durante le sessioni empiriche con utenti reali",
+          "Una cartina geografica che individua le aree con il maggior numero di download dell'applicazione",
           "Uno strumento visivo collaborativo che mappa ciò che l'utente Dice, Pensa, Fa e Sente durante l'interazione, evidenziando le sue sofferenze (Pains) e i suoi obiettivi (Gains)",
-          "Un diagramma a dispersione che confronta la frequenza di rimbalzo con il costo per clic pubblicitario, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
-          "Una tabella di corrispondenza tra i codici fiscali degli utenti e i loro indirizzi IP di navigazione, disattendendo le consolidate euristiche di usabilità"
+          "Un diagramma a dispersione che confronta la frequenza di rimbalzo con il costo per clic pubblicitario",
+          "Una tabella di corrispondenza tra i codici fiscali degli utenti e i loro indirizzi IP di navigazione"
         ],
         "correctIndex": 1,
         "explanation": "L'Empathy Map sintetizza la ricerca sul campo in 4 quadranti (Says, Thinks, Does, Feels) + Pains & Gains, allineando designer, sviluppatori e stakeholder sulla persona reale."
@@ -2499,10 +2499,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa si intende per 'Egocentrismo progettuale' e come viene debellato dall'approccio empatico?",
         "options": [
-          "L'impiego di una sola immagine di sfondo ad alta definizione nella pagina principale, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "La decisione di nominare il software con il nome del fondatore dell'azienda, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
+          "L'impiego di una sola immagine di sfondo ad alta definizione nella pagina principale",
+          "La decisione di nominare il software con il nome del fondatore dell'azienda",
           "La tendenza istintiva del team a progettare l'interfaccia a propria immagine e somiglianza; l'empatia costringe a uscire dall'ufficio e confrontarsi con la diversità degli utenti reali",
-          "La pubblicazione di codice proprietario con licenze di tipo GNU General Public License; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso"
+          "La pubblicazione di codice proprietario con licenze di tipo GNU General Public License"
         ],
         "correctIndex": 2,
         "explanation": "I team tendono a dare per scontate le proprie competenze. L'immersione empatica mostra che un utente anziano, dislessico o sotto stress vive l'app in modo completamente diverso."
@@ -2510,9 +2510,9 @@ window.STULL_DATA = [
       {
         "question": "Quale tra le seguenti tecniche sul campo rappresenta la massima espressione di ricerca empatica?",
         "options": [
-          "Una riunione di brainstorming interna tra i soli direttori commerciali dell'azienda, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
-          "L'invio di un sondaggio online automatizzato di 50 domande a risposta chiusa, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "L'analisi algoritmica dei file di log degli accessi notturni al server web; tale impostazione impedisce all'utente di costruire un modello mentale coerente",
+          "Una riunione di brainstorming interna tra i soli direttori commerciali dell'azienda",
+          "L'invio di un sondaggio online automatizzato di 50 domande a risposta chiusa",
+          "L'analisi algoritmica dei file di log degli accessi notturni al server web",
           "Lo 'Shadowing' (osservazione contestuale): seguire l'utente nel suo ambiente reale di lavoro o di vita quotidiana osservando senza interferire le sue difficoltà sul campo"
         ],
         "correctIndex": 3,
@@ -2530,9 +2530,9 @@ window.STULL_DATA = [
         "question": "Un'azienda di software per autisti di camion progetta un'interfaccia con pulsanti da 12 pixel, testi grigi e menu a comparsa annidati. Durante il lavoro reale, gli autisti fanno incidenti sfiorati cercando di toccare lo schermo con dita bagnate o guanti. Quale deficit metodologico è evidente?",
         "options": [
           "Totale assenza di empatia contestuale: il software è stato progettato al chiuso di un ufficio climatizzato ignorando completamente l'ambiente fisico, le vibrazioni e i vincoli d'uso del lavoratore",
-          "Mancata adozione del framework React Native per la compilazione del codice sorgente, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
-          "Violazione delle linee guida di sicurezza sulla crittografia asimmetrica dei dati GPS, riducendo la tolleranza all'errore e moltiplicando i passaggi operativi superflui",
-          "Incompatibilità dei caratteri tipografici sans-serif con gli schermi a cristalli liquidi; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "Mancata adozione del framework React Native per la compilazione del codice sorgente",
+          "Violazione delle linee guida di sicurezza sulla crittografia asimmetrica dei dati GPS",
+          "Incompatibilità dei caratteri tipografici sans-serif con gli schermi a cristalli liquidi"
         ],
         "correctIndex": 0,
         "explanation": "L'empatia non è una teoria astratta: significa capire che su un camion che vibra servono bottoni enormi ad alto contrasto azionabili con un tocco rapido senza distogliere lo sguardo dalla strada."
@@ -2540,10 +2540,10 @@ window.STULL_DATA = [
       {
         "question": "In un'intervista con un paziente oncologico sull'uso del portale per i farmaci chemioterapici, l'intervistatore interrompe il paziente ogni 30 secondi dicendo 'Sì, la capisco perfettamente, è capitato anche a mio zio'. Come si valuta la conduzione dell'intervista?",
         "options": [
-          "Eccellente: crea un legame amichevole che aumenta la precisione delle misurazioni psicometriche; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Eccellente: crea un legame amichevole che aumenta la precisione delle misurazioni psicometriche",
           "Pessima: confonde l'empatia con il rispecchiamento autoreferenziale, rubando la scena all'utente e inquinando la raccolta di bisogni autentici con aneddoti personali del ricercatore",
-          "Conforme alle linee guida di neutralità prescritti dall'euristica di Nielsen per i test medici; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "Metodologicamente valida a patto che il colloquio venga trascritto in lingua inglese; tale soluzione viola il principio di visibilità dello stato del sistema, lasciando l'utente incerto sull'esito della propria azione"
+          "Conforme alle linee guida di neutralità prescritti dall'euristica di Nielsen per i test medici",
+          "Metodologicamente valida a patto che il colloquio venga trascritto in lingua inglese"
         ],
         "correctIndex": 1,
         "explanation": "Il ricercatore deve ascoltare attivamente e restare in silenzio per far parlare l'utente. Parlare di sé e dei propri parenti sposta il centro sul ricercatore distruggendo la sessione."
@@ -2551,10 +2551,10 @@ window.STULL_DATA = [
       {
         "question": "Come si traduce l'empatia verso gli utenti in condizioni di stress o lutto nella progettazione del processo di cancellazione di un profilo social?",
         "options": [
-          "Inviando notifiche insistenti per convincere l'utente a ripensarci entro 48 ore, disattendendo le consolidate euristiche di usabilità",
-          "Nascondendo il pulsante di eliminazione dietro 12 schermate di conferma per scoraggiare l'uscita, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
+          "Inviando notifiche insistenti per convincere l'utente a ripensarci entro 48 ore",
+          "Nascondendo il pulsante di eliminazione dietro 12 schermate di conferma per scoraggiare l'uscita",
           "Rendendo la procedura lineare, rispettosa, chiara, priva di ricatti emotivi ('I tuoi amici piangeranno se te ne vai') e gestendo con dignità la memoria dell'individuo",
-          "Addebitando una commissione economica di recesso per compensare la perdita del cliente; tale valore viene monitorato direttamente a livello firmware dai registri di configurazione"
+          "Addebitando una commissione economica di recesso per compensare la perdita del cliente"
         ],
         "correctIndex": 2,
         "explanation": "L'empatia si vede soprattutto nei momenti difficili: rendere facile e rispettosa l'uscita da un servizio dimostra vera etica del design e rispetto per la sofferenza umana."
@@ -2595,9 +2595,9 @@ window.STULL_DATA = [
         "question": "Cosa ha rivelato il celebre esperimento sull'obbedienza condotto da Stanley Milgram nel 1963 presso l'Università di Yale?",
         "options": [
           "Circa il 65% delle persone comuni obbedisce a richieste eticamente inaccettabili (somministrare scosse elettriche dolorose) se ordinate da una figura percepita come autorità legittima (lo sperimentatore con camice bianco)",
-          "La memoria umana a lungo termine raddoppia la propria capacità se stimolata da impulsi elettrici, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "Gli individui con una laurea scientifica rifiutano qualsiasi forma di gerarchia aziendale; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "La propensione all'acquisto di beni di lusso dipende esclusivamente dall'estrazione sociale; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso"
+          "La memoria umana a lungo termine raddoppia la propria capacità se stimolata da impulsi elettrici",
+          "Gli individui con una laurea scientifica rifiutano qualsiasi forma di gerarchia aziendale",
+          "La propensione all'acquisto di beni di lusso dipende esclusivamente dall'estrazione sociale"
         ],
         "correctIndex": 0,
         "explanation": "L'esperimento di Milgram ha dimostrato l'immensa forza psicologica dell'Autorità percepita: i simboli formali di autorevolezza inducono fiducia e conformità automatica nel comportamento umano."
@@ -2605,10 +2605,10 @@ window.STULL_DATA = [
       {
         "question": "Come si manifesta il principio dell''Autorità' di Cialdini nel contesto del Web Design e dell'e-commerce?",
         "options": [
-          "Imponendo password obbligatorie di almeno quaranta caratteri per navigare nel catalogo nel modello mentale condiviso dell'utente finale",
+          "Imponendo password obbligatorie di almeno quaranta caratteri per navigare nel catalogo",
           "Attraverso l'uso di certificazioni di sicurezza riconosciute, loghi di partner prestigiosi, pareri di esperti indipendenti, premi di settore e trasparenza istituzionale",
-          "Bloccando la visualizzazione dei prodotti per gli utenti che non possiedono una laurea magistrale, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "Visualizzando messaggi pop-up che minacciano azioni legali per chi abbandona il carrello; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "Bloccando la visualizzazione dei prodotti per gli utenti che non possiedono una laurea magistrale",
+          "Visualizzando messaggi pop-up che minacciano azioni legali per chi abbandona il carrello"
         ],
         "correctIndex": 1,
         "explanation": "Badge di certificazione (TÜV, Norton, VeriSign), menzioni su testate autorevoli (Sole 24 Ore, Forbes) e firme di medici o scienziati trasmettono credibilità immediata al visitatore."
@@ -2616,10 +2616,10 @@ window.STULL_DATA = [
       {
         "question": "Perché un design formale, rigoroso e privo di errori grammaticali è un prerequisito di 'Autorità' per un sito web?",
         "options": [
-          "Perché il codice HTML5 non consente la compilazione di pagine con testi privi di correzione ortografica, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
-          "Perché i motori di ricerca bloccano l'indicizzazione dei siti che contengono doppi spaziature, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
+          "Perché il codice HTML5 non consente la compilazione di pagine con testi privi di correzione ortografica",
+          "Perché i motori di ricerca bloccano l'indicizzazione dei siti che contengono doppi spaziature",
           "Perché refusi, layout disallineati, immagini sgranate o link rotti trasmettono sciatteria e sospetto di truffa, annullando all'istante l'autorevolezza del brand",
-          "Perché le autorità postali rifiutano di spedire pacchi ordinati su siti con font non standard, riducendo la tolleranza all'errore e moltiplicando i passaggi operativi superflui"
+          "Perché le autorità postali rifiutano di spedire pacchi ordinati su siti con font non standard"
         ],
         "correctIndex": 2,
         "explanation": "L'autorità percepita è fragile: una sola frase sgrammaticata in un portale finanziario fa pensare immediatamente a un sito di phishing creato da criminali informatici."
@@ -2627,9 +2627,9 @@ window.STULL_DATA = [
       {
         "question": "Quale differenza intercorre tra 'Autorità Autentica' e 'Falsa Autorità' (o manipolazione) nella comunicazione digitale?",
         "options": [
-          "Non sussiste distinzione: qualunque simbolo di prestigio mostrato online è considerato pubblicità ingannevole; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "L'autorità autentica è registrata al catasto, mentre la falsa autorità è memorizzata su server cloud, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "L'autorità autentica è riservata alle università pubbliche, mentre le aziende private usano solo falsa autorità, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
+          "Non sussiste distinzione: qualunque simbolo di prestigio mostrato online è considerato pubblicità ingannevole",
+          "L'autorità autentica è registrata al catasto, mentre la falsa autorità è memorizzata su server cloud",
+          "L'autorità autentica è riservata alle università pubbliche, mentre le aziende private usano solo falsa autorità",
           "L'autorità autentica è fondata su competenze verificabili, trasparenza societaria e dati oggettivi; la falsa autorità impiega falsi esperti, testimonianze inventate o loghi contraffatti"
         ],
         "correctIndex": 3,
@@ -2639,9 +2639,9 @@ window.STULL_DATA = [
         "question": "In che modo la presenza di una chiara 'Pagina Chi Siamo' (About Us) con volti reali, biografie e dati aziendali rafforza l'autorità del servizio?",
         "options": [
           "Umanizza l'azienda e offre una prova tangibile di responsabilità: sapere chi c'è dietro dissipa l'ansia dell'ignoto e convalida l'affidabilità professionale",
-          "Consente di raddoppiare la velocità di caricamento delle immagini sul browser, secondo i protocolli consolidati di user testing",
-          "Serve unicamente a soddisfare i requisiti formali per ottenere sconti sulle tasse di registro, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "Impedisce agli utenti di presentare reclami per vie legali in caso di controversie; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "Consente di raddoppiare la velocità di caricamento delle immagini sul browser",
+          "Serve unicamente a soddisfare i requisiti formali per ottenere sconti sulle tasse di registro",
+          "Impedisce agli utenti di presentare reclami per vie legali in caso di controversie"
         ],
         "correctIndex": 0,
         "explanation": "La trasparenza societaria (indirizzo fisico, partita IVA, volti dei fondatori e del team) trasforma un'astratta pagina web in un'entità reale, autorevole e degna di fiducia."
@@ -2657,10 +2657,10 @@ window.STULL_DATA = [
       {
         "question": "Una nuova startup di telemedicina offre consulti oncologici online. La homepage mostra illustrazioni astratte colorate e avatar a cartoni animati, senza citare l'albo professionale dei medici o le università di provenienza. I pazienti non prenotano. Come si applica il principio di Autorità?",
         "options": [
-          "Aggiungere un gioco a premi con vincita immediata per chi prenota una visita oncologica, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
+          "Aggiungere un gioco a premi con vincita immediata per chi prenota una visita oncologica",
           "Sostituire la grafica infantile con un design clinico, sobrio e autorevole, mostrando fotografie reali dei medici con numero di iscrizione all'ordine, ospedali di appartenenza e pubblicazioni scientifiche",
-          "Rendere obbligatorio il pagamento anticipato tramite bonifico estero non tracciabile, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
-          "Inserire animazioni di coriandoli che festeggiano ogni click sul pulsante di prenotazione; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "Rendere obbligatorio il pagamento anticipato tramite bonifico estero non tracciabile",
+          "Inserire animazioni di coriandoli che festeggiano ogni click sul pulsante di prenotazione"
         ],
         "correctIndex": 1,
         "explanation": "In ambiti critici (salute e denaro) i cartoni animati creano angoscia e sfiducia. Servono simboli chiari di autorità scientifica: foto professionali, credenziali mediche e rigore formale."
@@ -2668,10 +2668,10 @@ window.STULL_DATA = [
       {
         "question": "Un sito di commercio elettronico aggiunge nella barra di checkout i loghi di 'Verified by Visa', 'Mastercard Identity Check' e un badge di garanzia 'Reso gratuito 30 giorni'. Quale impatto psicologico produce sull'utente esitante?",
         "options": [
-          "Aumenta la probabilità che l'acquirente richieda la fattura cartacea per posta ordinaria, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
-          "Rallenta la transazione a causa del tempo necessario a verificare i brevetti crittografici, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
+          "Aumenta la probabilità che l'acquirente richieda la fattura cartacea per posta ordinaria",
+          "Rallenta la transazione a causa del tempo necessario a verificare i brevetti crittografici",
           "Attiva una rassicurazione basata sull'autorità dei circuiti finanziari globali, riducendo l'ansia da frode e sbloccando la decisione di acquisto",
-          "Viola il principio di parsimonia visiva del rasoio di Ockham, introducendo un attrito cognitivo ingiustificato"
+          "Viola il principio di parsimonia visiva del rasoio di Ockham"
         ],
         "correctIndex": 2,
         "explanation": "I marchi noti di sicurezza bancaria fungono da garanti autorevoli di terza parte: l'utente si fida del brand globale anche se non conosce il singolo venditore."
@@ -2679,9 +2679,9 @@ window.STULL_DATA = [
       {
         "question": "Durante la revisione legale di una landing page di integratori alimentari, si scopre un badge inventato 'Approvato dall'Istituto Internazionale della Salute' (ente inesistente). Qual è la valutazione deontologica e di UX?",
         "options": [
-          "È una soluzione neutrale che non altera la percezione razionale dell'acquirente, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
-          "È una tattica lecita di persuasione periferica consigliata dal modello ELM di Petty e Cacioppo; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "È un elemento raccomandato per incrementare l'indicizzazione semantica sui motori di ricerca, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
+          "È una soluzione neutrale che non altera la percezione razionale dell'acquirente",
+          "È una tattica lecita di persuasione periferica consigliata dal modello ELM di Petty e Cacioppo",
+          "È un elemento raccomandato per incrementare l'indicizzazione semantica sui motori di ricerca",
           "È un grave dark pattern basato su falsa autorità, illegale e distruttivo per la reputazione: deve essere rimosso immediatamente a favore di prove cliniche autentiche e verificate"
         ],
         "correctIndex": 3,
@@ -2722,10 +2722,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa postula il 'Modello di Probabilità di Elaborazione' (Elaboration Likelihood Model - ELM) formulato dagli psicologi Richard Petty e John Cacioppo?",
         "options": [
-          "La probabilità di completamento di una transazione e-commerce è proporzionale alla velocità della CPU, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
+          "La probabilità di completamento di una transazione e-commerce è proporzionale alla velocità della CPU",
           "La persuasione e il cambiamento di atteggiamento avvengono attraverso due percorsi cognitivi distinti a seconda del livello di motivazione e capacità dell'individuo: il Percorso Centrale e il Percorso Periferico",
-          "Il cervello umano elabora esclusivamente stimoli visivi tridimensionali scartando i testi scritti, una semplificazione concettuale che non regge alla prova dei test con utenti rappresentativi eseguiti in condizioni d'uso realistiche",
-          "Gli utenti decidono se registrarsi a un portale web entro tre centesimi di secondo dal primo impatto, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo"
+          "Il cervello umano elabora esclusivamente stimoli visivi tridimensionali scartando i testi scritti",
+          "Gli utenti decidono se registrarsi a un portale web entro tre centesimi di secondo dal primo impatto"
         ],
         "correctIndex": 1,
         "explanation": "L'ELM dimostra che non siamo sempre razionali: se siamo motivati e attenti analizziamo i contenuti a fondo (Centrale); se siamo distratti o disinteressati decidiamo su indizi superficiali (Periferico)."
@@ -2733,10 +2733,10 @@ window.STULL_DATA = [
       {
         "question": "Come opera il 'Percorso Centrale' di persuasione nel modello ELM?",
         "options": [
-          "Avviene in modo inconscio e automatico durante la navigazione passiva a tarda notte, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
-          "Si basa unicamente sull'aspetto attraente del testimonial e sul colore accattivante dei banner; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Avviene in modo inconscio e automatico durante la navigazione passiva a tarda notte",
+          "Si basa unicamente sull'aspetto attraente del testimonial e sul colore accattivante dei banner",
           "Richiede alta motivazione, concentrazione e capacità critica: l'individuo esamina attentamente i dati razionali, confronta le specifiche tecniche e matura convinzioni solide e durature nel tempo",
-          "È guidato esclusivamente dalla paura di subire sanzioni economiche o legali, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo"
+          "È guidato esclusivamente dalla paura di subire sanzioni economiche o legali"
         ],
         "correctIndex": 2,
         "explanation": "Il percorso centrale è attivo quando compriamo una casa o scegliamo un software gestionale da 50.000€: leggiamo le clausole, confrontiamo le tabelle e soppesiamo i pro e i contro con rigore logico."
@@ -2744,9 +2744,9 @@ window.STULL_DATA = [
       {
         "question": "Come opera invece il 'Percorso Periferico' di persuasione nell'esperienza digitale?",
         "options": [
-          "Produce convinzioni stabili e immutabili che resistono a qualsiasi contro-argomentazione futura, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "Richiede la stesura di una perizia asseverata da parte di un ingegnere informatico, una semplificazione concettuale che non regge alla prova dei test con utenti rappresentativi eseguiti in condizioni d'uso realistiche",
-          "Si applica solo agli utenti che navigano tramite connessioni satellitari d'emergenza; tale soluzione viola il principio di visibilità dello stato del sistema, lasciando l'utente incerto sull'esito della propria azione",
+          "Produce convinzioni stabili e immutabili che resistono a qualsiasi contro-argomentazione futura",
+          "Richiede la stesura di una perizia asseverata da parte di un ingegnere informatico",
+          "Si applica solo agli utenti che navigano tramite connessioni satellitari d'emergenza",
           "Si attiva quando la motivazione o il tempo sono scarsi: l'utente si affida a 'scorciatoie euristiche' superficiali, come la piacevolezza estetica, la celebrità del testimonial o il numero di recensioni a 5 stelle"
         ],
         "correctIndex": 3,
@@ -2756,9 +2756,9 @@ window.STULL_DATA = [
         "question": "Qual è la differenza fondamentale tra 'Motivazione Intrinseca' e 'Motivazione Estrinseca' (Deci & Ryan)?",
         "options": [
           "La motivazione intrinseca scaturisce dal piacere interno, dalla curiosità e dal senso di realizzazione personale; l'estrinseca è guidata da ricompense esterne (denaro, sconti, punti, status) o dalla paura di punizioni",
-          "La motivazione intrinseca appartiene all'hardware del computer; l'estrinseca appartiene al codice software, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "La motivazione intrinseca dura pochi secondi; l'estrinseca genera abitudini che durano tutta la vita; una grandezza elettrica che varia in base al carico computazionale e alla temperatura operativa",
-          "Non sussiste differenza: ogni forma di motivazione è stimolata unicamente da premi in denaro contante, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo"
+          "La motivazione intrinseca appartiene all'hardware del computer; l'estrinseca appartiene al codice software",
+          "La motivazione intrinseca dura pochi secondi; l'estrinseca genera abitudini che durano tutta la vita",
+          "Non sussiste differenza: ogni forma di motivazione è stimolata unicamente da premi in denaro contante"
         ],
         "correctIndex": 0,
         "explanation": "Imparare una lingua per il piacere di comunicare è intrinseco; completare una lezione solo per non perdere la striscia di punti (streak) è un incentivo estrinseco (gamification)."
@@ -2766,10 +2766,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa accade quando un'applicazione abusa della 'Gamification estrinseca' (punti, badge, classifiche) soffocando la motivazione intrinseca (Overjustification Effect)?",
         "options": [
-          "L'utente continua a utilizzare il software con entusiasmo decuplicato per sempre, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
+          "L'utente continua a utilizzare il software con entusiasmo decuplicato per sempre",
           "Non appena i premi esterni cessano o diventano prevedibili, l'interesse e l'attività dell'utente crollano, poiché l'attività ha smesso di avere un valore intrinseco autentico",
-          "I server web bloccano l'account dell'utente per presunto accumulo fraudolento di punti; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Il software riceve una certificazione di conformità con gli standard di accessibilità motoria, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud"
+          "I server web bloccano l'account dell'utente per presunto accumulo fraudolento di punti",
+          "Il software riceve una certificazione di conformità con gli standard di accessibilità motoria"
         ],
         "correctIndex": 1,
         "explanation": "L'effetto di sovra-giustificazione prova che pagare o premiare con badge chi faceva qualcosa per pura passione distrugge il piacere intrinseco: quando il badge svanisce, l'utente scappa."
@@ -2785,10 +2785,10 @@ window.STULL_DATA = [
       {
         "question": "Un'azienda B2B vende un'infrastruttura di sicurezza cloud per banche da 100.000€ l'anno. Il team marketing crea una landing page con solo meme spiritosi e una sola frase 'Siamo fighissimi, fidati!'. I direttori IT scappano. Quale errore dell'ELM è stato commesso?",
         "options": [
-          "Violazione del limite di elaborazione della memoria a breve termine di Miller, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
-          "Utilizzo improprio di font tipografici a larghezza fissa (monospace), riducendo la tolleranza all'errore e moltiplicando i passaggi operativi superflui",
+          "Violazione del limite di elaborazione della memoria a breve termine di Miller",
+          "Utilizzo improprio di font tipografici a larghezza fissa (monospace)",
           "Mancata attivazione del Percorso Centrale: per una decisione complessa e ad alto rischio economico i decisori richiedono dati tecnici, white paper, certificazioni ISO e SLA dettagliati",
-          "Assenza del pixel di tracciamento conversioni per i motori di ricerca; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "Assenza del pixel di tracciamento conversioni per i motori di ricerca"
         ],
         "correctIndex": 2,
         "explanation": "Per acquisti critici ad altissimo coinvolgimento (Percorso Centrale), battute e slogan da social non funzionano: servono argomentazioni solide, benchmark di performance e prove di sicurezza inattaccabili."
@@ -2796,9 +2796,9 @@ window.STULL_DATA = [
       {
         "question": "Un'app di fitness introduce badge per ogni bicchiere d'acqua bevuto. Dopo tre giorni gli utenti si stufano delle notifiche e disinstallano l'app. Come avrebbe dovuto agire il designer per stimolare la motivazione intrinseca?",
         "options": [
-          "Sostituire i badge grafici con brevi filmati pubblicitari non saltabili, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "Aumentare il numero di notifiche a 20 promemoria all'ora per non far dimenticare l'acqua, riducendo la tolleranza all'errore e moltiplicando i passaggi operativi superflui",
-          "Minacciare di cancellare l'account dell'utente se non beve almeno due litri d'acqua al giorno, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
+          "Sostituire i badge grafici con brevi filmati pubblicitari non saltabili",
+          "Aumentare il numero di notifiche a 20 promemoria all'ora per non far dimenticare l'acqua",
+          "Minacciare di cancellare l'account dell'utente se non beve almeno due litri d'acqua al giorno",
           "Mostrare con grafici chiari come una corretta idratazione migliori i livelli di energia quotidiana, la qualità del sonno e la concentrazione, collegando l'azione al benessere reale percepito"
         ],
         "correctIndex": 3,
@@ -2808,9 +2808,9 @@ window.STULL_DATA = [
         "question": "Come si progetta una pagina di prodotto (es. smartphone di fascia alta) per soddisfare contemporaneamente sia gli utenti del Percorso Periferico che quelli del Percorso Centrale?",
         "options": [
           "Offrendo una visuale d'impatto con sintesi chiara dei benefici e recensioni per i periferici, accompagnata da una tabella comparativa tecnica esaustiva e scaricabile per i centrali",
-          "Mostrando esclusivamente codice sorgente non formattato per costringere tutti a un'analisi profonda, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
-          "Eliminando ogni fotografia per costringere gli utenti a leggere 40 pagine di manuale tecnico, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "Sostituendo l'intero catalogo prodotti con una chat dal vivo gestita da un operatore umano, ignorando la tendenza naturale degli utenti a scansionare anziché leggere"
+          "Mostrando esclusivamente codice sorgente non formattato per costringere tutti a un'analisi profonda",
+          "Eliminando ogni fotografia per costringere gli utenti a leggere 40 pagine di manuale tecnico",
+          "Sostituendo l'intero catalogo prodotti con una chat dal vivo gestita da un operatore umano"
         ],
         "correctIndex": 0,
         "explanation": "La divulgazione progressiva bilanciata accontenta entrambi: l'utente rapido vede estetica, prezzo e recensioni; il compratore analitico espande le specifiche tecniche complete."
@@ -2850,10 +2850,10 @@ window.STULL_DATA = [
       {
         "question": "Come si definisce la 'Formula della Rilevanza' illustrata da Edward Stull nel Capitolo 23?",
         "options": [
-          "Rilevanza = Larghezza di banda x Risoluzione dello schermo in pixel, secondo le specifiche industriali pubblicate nei data sheet ufficiali dei produttori",
-          "Rilevanza = Spesa pubblicitaria + Numero di impressioni / Costo per click, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
+          "Rilevanza = Larghezza di banda x Risoluzione dello schermo in pixel",
+          "Rilevanza = Spesa pubblicitaria + Numero di impressioni / Costo per click",
           "Rilevanza = Bisogno x Tempestività x Valore percepito (essendo una moltiplicazione, se anche uno solo dei tre fattori è pari a zero, la rilevanza complessiva si azzera totalmente)",
-          "Rilevanza = Anni di anzianità dell'azienda - Tasso di sconto applicato; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo"
+          "Rilevanza = Anni di anzianità dell'azienda - Tasso di sconto applicato"
         ],
         "correctIndex": 2,
         "explanation": "Se una persona ha fame (Bisogno) ma il ristorante è a 1.000 km (Valore/fattibilità 0) o riceve l'offerta alle 4 del mattino (Tempestività 0), la rilevanza finale è pari a ZERO."
@@ -2861,9 +2861,9 @@ window.STULL_DATA = [
       {
         "question": "A quale fenomeno allude Stull mediante la metafora botanica del fiore 'Neelakurinji' (pianta che sboccia una volta ogni 12 anni)?",
         "options": [
-          "All'obbligo di archiviare i dati contabili per un periodo minimo stabilito dalla legge, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "Alla necessità di rinnovare il layout grafico del sito ogni dodici anni di attività; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Al fatto che le tecnologie web open source richiedono tempi di incubazione ultradecennali; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
+          "All'obbligo di archiviare i dati contabili per un periodo minimo stabilito dalla legge",
+          "Alla necessità di rinnovare il layout grafico del sito ogni dodici anni di attività",
+          "Al fatto che le tecnologie web open source richiedono tempi di incubazione ultradecennali",
           "Alla scarsità temporale e al momento opportuno (Kairos): quando un bisogno si manifesta, la finestra di attenzione dell'utente è stretta e preziosa; mancare quel momento significa perdere l'opportunità per sempre"
         ],
         "correctIndex": 3,
@@ -2873,9 +2873,9 @@ window.STULL_DATA = [
         "question": "Cosa si intende per 'Personalizzazione Contestuale' (Contextual Personalization) nel Web Design?",
         "options": [
           "L'adattamento dinamico di contenuti, offerte e percorsi in base alla situazione contingente dell'utente (geolocalizzazione, dispositivo mobile, ora del giorno, stato del suo account)",
-          "L'obbligo per l'utente di caricare una propria fotografia per personalizzare il tema cromatico; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "La modifica casuale del font tipografico ad ogni ricaricamento della pagina, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
-          "La memorizzazione della cronologia di navigazione sul disco fisso del server aziendale, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo"
+          "L'obbligo per l'utente di caricare una propria fotografia per personalizzare il tema cromatico",
+          "La modifica casuale del font tipografico ad ogni ricaricamento della pagina",
+          "La memorizzazione della cronologia di navigazione sul disco fisso del server aziendale"
         ],
         "correctIndex": 0,
         "explanation": "Se un utente apre l'app della metro mentre si trova dentro la stazione alle 8:30, la schermata principale deve mostrare il QR code del biglietto, non gli abbonamenti annuali."
@@ -2883,10 +2883,10 @@ window.STULL_DATA = [
       {
         "question": "Quale grave errore compiono le aziende che inviano 'Notifiche Broadcast' identiche a tutta la propria base clienti indistintamente?",
         "options": [
-          "Consumano troppa memoria volatile sui server centrali del provider cloud, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
+          "Consumano troppa memoria volatile sui server centrali del provider cloud",
           "Violano la rilevanza individuale: bombardare tutti con offerte irrilevanti genera assuefazione negativa (notification fatigue), disattivazione dei permessi e cancellazione in massa dell'app",
-          "Violano le specifiche tecniche del protocollo HTTP/2 per la compressione degli header, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "Provocano il riavvio spontaneo degli smartphone degli utenti riceventi; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "Violano le specifiche tecniche del protocollo HTTP/2 per la compressione degli header",
+          "Provocano il riavvio spontaneo degli smartphone degli utenti riceventi"
         ],
         "correctIndex": 1,
         "explanation": "Mandare a un utente vegano la notifica dello sconto sulla carne alla brace distrugge la rilevanza: l'utente capisce che l'app non lo conosce e disattiva immediatamente le notifiche."
@@ -2894,10 +2894,10 @@ window.STULL_DATA = [
       {
         "question": "Come si intercetta l''Intento di Ricerca' (Search Intent) per massimizzare la rilevanza di una pagina d'atterraggio?",
         "options": [
-          "Reindirizzando l'utente a un video promozionale aziendale di 20 minuti senza possibilità di saltarlo, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "Inserendo la stessa parola chiave 500 volte nel testo con il colore del testo identico allo sfondo; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Reindirizzando l'utente a un video promozionale aziendale di 20 minuti senza possibilità di saltarlo",
+          "Inserendo la stessa parola chiave 500 volte nel testo con il colore del testo identico allo sfondo",
           "Allineando perfettamente il contenuto della pagina alla specifica domanda dell'utente (es. se cerca 'come riparare un rubinetto' vuole una guida pratica passo-passo, non un catalogo commerciale di vendita)",
-          "Impedendo l'accesso alla pagina a chi proviene da un motore di ricerca esterno, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud"
+          "Impedendo l'accesso alla pagina a chi proviene da un motore di ricerca esterno"
         ],
         "correctIndex": 2,
         "explanation": "La rilevanza si fonda sulla risposta esatta all'intento: dare una risposta commerciale a chi cercava un'istruzione tecnica causa rimbalzo istantaneo in 2 secondi."
@@ -2913,9 +2913,9 @@ window.STULL_DATA = [
       {
         "question": "Un'app di consegne cibo invia una notifica push alle 15:45 di un martedì dicendo: 'Hai fame? Ordina subito una pizza a domicilio!'. Perché questa notifica ottiene tassi di conversione vicini allo zero e molte disinstallazioni?",
         "options": [
-          "Violazione delle linee guida di Material Design sulle dimensioni delle icone di notifica, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "Incompatibilità della pizza con il sistema di tracciamento degli ordini via GPS; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Mancata inclusione del valore calorico in kilocalorie nel testo del messaggio, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
+          "Violazione delle linee guida di Material Design sulle dimensioni delle icone di notifica",
+          "Incompatibilità della pizza con il sistema di tracciamento degli ordini via GPS",
+          "Mancata inclusione del valore calorico in kilocalorie nel testo del messaggio",
           "Mancanza totale di Tempestività nella formula della Rilevanza: alle 15:45 il bisogno fisiologico di cibo è assente per la maggior parte del target; l'interruzione è percepita come spam molesto"
         ],
         "correctIndex": 3,
@@ -2925,9 +2925,9 @@ window.STULL_DATA = [
         "question": "Un portale di viaggi sa che l'utente ha appena prenotato un volo per Tokyo in partenza tra tre giorni. Quale informazione nella dashboard incarna la massima Rilevanza contestuale?",
         "options": [
           "I requisiti di ingresso in Giappone (passaporto/visti), il riepilogo bagagli inclusi e una guida rapida su come raggiungere il centro dall'aeroporto di Haneda",
-          "Un'offerta promozionale per un fine settimana alle terme di Budapest, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "La biografia completa dei fondatori della compagnia aerea dal 1950 a oggi; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Un coupon sconto per l'acquisto di pneumatici invernali per automobili, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito"
+          "Un'offerta promozionale per un fine settimana alle terme di Budapest",
+          "La biografia completa dei fondatori della compagnia aerea dal 1950 a oggi",
+          "Un coupon sconto per l'acquisto di pneumatici invernali per automobili"
         ],
         "correctIndex": 0,
         "explanation": "Questo è il valore moltiplicato: rispondere esattamente a ciò che serve nel momento in cui serve (preparazione al viaggio imminente verso quella destinazione specifica)."
@@ -2935,10 +2935,10 @@ window.STULL_DATA = [
       {
         "question": "In un e-commerce di ricambi per caldaie, gli utenti atterrano cercando un codice seriale di guasto (es. 'Errore F28 Caldaia Vaillant'). Quale struttura di pagina garantisce la massima rilevanza operativa?",
         "options": [
-          "Mostrare la storia della manifattura industriale delle caldaie nel Novecento, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
+          "Mostrare la storia della manifattura industriale delle caldaie nel Novecento",
           "Mostrare subito il significato dell'errore (mancata accensione gas), le verifiche immediate che l'utente può compiere e il ricambio originale compatibile acquistabile in 1 clic",
-          "Obbligare l'utente a iscriversi alla newsletter prima di visualizzare la spiegazione tecnica, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "Presentare una galleria fotografica delle sedi degli stabilimenti produttivi, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito"
+          "Obbligare l'utente a iscriversi alla newsletter prima di visualizzare la spiegazione tecnica",
+          "Presentare una galleria fotografica delle sedi degli stabilimenti produttivi"
         ],
         "correctIndex": 1,
         "explanation": "Chi è al freddo e cerca un codice d'errore ha un bisogno urgente e immediato: spiegare il problema e fornire la soluzione specifica genera valore ed enorme fidelizzazione."
@@ -2978,9 +2978,9 @@ window.STULL_DATA = [
       {
         "question": "Cosa postula il fondamentale 'Principio di Reciprocità' formulato dallo psicologo sociale Robert Cialdini?",
         "options": [
-          "I contratti informatici devono essere rinnovati tacitamente ogni sei mesi solari; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Le transazioni commerciali devono prevedere sempre uno scambio di merci fisiche di pari peso, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "Gli utenti si registrano solo se viene garantita loro una percentuale di sconto del cento per cento, riducendo la tolleranza all'errore e moltiplicando i passaggi operativi superflui",
+          "I contratti informatici devono essere rinnovati tacitamente ogni sei mesi solari",
+          "Le transazioni commerciali devono prevedere sempre uno scambio di merci fisiche di pari peso",
+          "Gli utenti si registrano solo se viene garantita loro una percentuale di sconto del cento per cento",
           "L'essere umano sperimenta una forte e quasi insopprimibile pressione psicologica a contraccambiare i favori, i doni, i servizi o le concessioni ricevuti spontaneamente da un'altra persona"
         ],
         "correctIndex": 3,
@@ -2990,9 +2990,9 @@ window.STULL_DATA = [
         "question": "A quale dinamica storica allude Stull mediante la metafora della 'Diplomazia del Panda' nella politica estera cinese?",
         "options": [
           "A un gesto di generosità sincera, spettacolare e apparentemente disinteressata che disarma la diffidenza della controparte e innesca un ciclo duraturo di cooperazione e favorevole disponibilità",
-          "Alla commercializzazione esclusiva di souvenir raffiguranti animali in via di estinzione, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
-          "Alla firma di trattati doganali mediante certificati notarili redatti su carta pergamena, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "Alla sospensione del traffico marittimo internazionale nei periodi di festività nazionale, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo"
+          "Alla commercializzazione esclusiva di souvenir raffiguranti animali in via di estinzione",
+          "Alla firma di trattati doganali mediante certificati notarili redatti su carta pergamena",
+          "Alla sospensione del traffico marittimo internazionale nei periodi di festività nazionale"
         ],
         "correctIndex": 0,
         "explanation": "Donare un panda non è una transazione a pagamento: è un regalo simbolico supremo che crea un debito morale di benevolenza e apre porte diplomatiche prima inaccessibili."
@@ -3000,10 +3000,10 @@ window.STULL_DATA = [
       {
         "question": "Come si applica virtuosamente il Principio di Reciprocità nella progettazione di un software o servizio web?",
         "options": [
-          "Obbligando l'utente a inserire i dati della carta di credito prima ancora di vedere l'interfaccia, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
+          "Obbligando l'utente a inserire i dati della carta di credito prima ancora di vedere l'interfaccia",
           "Offrendo valore autentico e gratuito in anticipo (es. calcolatori interattivi, guide pratiche, prova del software senza carta di credito) prima di chiedere la registrazione o l'acquisto",
-          "Inviando fatture di pagamento pro-forma a tutti i visitatori che atterrano sulla home page, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
-          "Richiedendo di condividere l'applicazione con 10 contatti WhatsApp per poter leggere il primo articolo; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "Inviando fatture di pagamento pro-forma a tutti i visitatori che atterrano sulla home page",
+          "Richiedendo di condividere l'applicazione con 10 contatti WhatsApp per poter leggere il primo articolo"
         ],
         "correctIndex": 1,
         "explanation": "Dare prima di chiedere. Se un portale ti fa calcolare gratis il mutuo senza chiederti l'email, quando deciderai di chiedere la consulenza andrai da loro con fiducia e gratitudine."
@@ -3011,10 +3011,10 @@ window.STULL_DATA = [
       {
         "question": "Quale differenza intercorre tra un 'Dono Autentico' che attiva la reciprocità e una 'Trappola Manipolatoria' (Esca e Scambio)?",
         "options": [
-          "Il dono autentico riguarda solo gli utenti minorenni, mentre la trappola si applica agli adulti, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "Il dono autentico è deducibile dalle tasse aziendali, mentre la trappola costituisce reato penale; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
+          "Il dono autentico riguarda solo gli utenti minorenni, mentre la trappola si applica agli adulti",
+          "Il dono autentico è deducibile dalle tasse aziendali, mentre la trappola costituisce reato penale",
           "Il dono autentico offre utilità reale senza condizioni nascoste; la trappola manipolatoria fa credere che qualcosa sia gratis per poi bloccare il risultato all'ultimo secondo pretendendo pagamenti o dati personali",
-          "Non sussiste distinzione: ogni omaggio pubblicitario è scientificamente classificato come truffa; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso"
+          "Non sussiste distinzione: ogni omaggio pubblicitario è scientificamente classificato come truffa"
         ],
         "correctIndex": 2,
         "explanation": "Farti compilare un questionario di 20 minuti dicendo 'calcolo gratuito' e all'ultima schermata dire 'inserisci carta di credito per vedere il responso' genera rabbia feroce e rigetto totale."
@@ -3022,9 +3022,9 @@ window.STULL_DATA = [
       {
         "question": "Perché i modelli di business 'Freemium' efficaci si basano profondamente sulla psicologia della reciprocità?",
         "options": [
-          "Perché il freemium elimina la necessità di implementare protocolli di crittografia dei dati, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
-          "Perché i piani gratuiti sono finanziati per legge dai fondi dell'Unione Europea per l'innovazione, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
-          "Perché consentono all'azienda di non pagare i dipendenti durante il primo anno di sviluppo, una semplificazione che disattende le euristiche fondamentali di usabilità",
+          "Perché il freemium elimina la necessità di implementare protocolli di crittografia dei dati",
+          "Perché i piani gratuiti sono finanziati per legge dai fondi dell'Unione Europea per l'innovazione",
+          "Perché consentono all'azienda di non pagare i dipendenti durante il primo anno di sviluppo",
           "Perché consentono all'utente di toccare con mano l'utilità del servizio e di sviluppare gratitudine e dipendenza positiva dal prodotto prima di proporre il passaggio al piano a pagamento"
         ],
         "correctIndex": 3,
@@ -3042,9 +3042,9 @@ window.STULL_DATA = [
         "question": "Un sito di annunci immobiliari permette all'utente di visualizzare solo 3 fotografie sgranate e un titolo generico. Per leggere il prezzo, la via e i metri quadri appare un pop-up bloccante: 'Registrati e lascia il tuo numero di telefono'. Gli utenti chiudono la scheda. Quale principio è violato?",
         "options": [
           "Violazione della Reciprocità: si pretende che l'utente ceda i propri dati personali preziosi prima di avergli dimostrato alcun valore reale o competenza",
-          "Mancata applicazione del teorema di Bayes per la stima del valore immobiliare, riducendo la tolleranza all'errore e moltiplicando i passaggi operativi superflui",
-          "Violazione delle linee guida di contrasto visivo WCAG per gli utenti miopi, secondo i principi predittivi della legge di Hick",
-          "Incompatibilità dei server cloud con la memorizzazione di immagini ad alta risoluzione, ignorando la tendenza naturale degli utenti a scansionare anziché leggere"
+          "Mancata applicazione del teorema di Bayes per la stima del valore immobiliare",
+          "Violazione delle linee guida di contrasto visivo WCAG per gli utenti miopi",
+          "Incompatibilità dei server cloud con la memorizzazione di immagini ad alta risoluzione"
         ],
         "correctIndex": 0,
         "explanation": "Non puoi chiedere il matrimonio al primo appuntamento: mostra prima annunci completi e di qualità; l'utente si registrerà spontaneamente per salvare i preferiti o ricevere notifiche."
@@ -3052,10 +3052,10 @@ window.STULL_DATA = [
       {
         "question": "Un'azienda SaaS offre un tool online gratuito che analizza il codice CSS del cliente e genera un report di accessibilità dettagliato con suggerimenti di fix senza richiedere né registrazione né email. Come incide sulla conversione al servizio Pro?",
         "options": [
-          "Azzera le vendite perché nessuno acquisterà mai una versione Pro se esiste un tool gratuito parziale; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
+          "Azzera le vendite perché nessuno acquisterà mai una versione Pro se esiste un tool gratuito parziale",
           "Innesca una potente spinta di Reciprocità e Fiducia: l'utente sperimenta l'eccellenza dello strumento e, sentendosi grato e rassicurato, sceglie spontaneamente la loro piattaforma per gli audit complessi",
-          "Provoca una sanzione amministrativa per concorrenza sleale nei confronti dei consulenti freelance, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "Rallenta la velocità del browser del cliente a causa dell'elaborazione asincrona del report; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "Provoca una sanzione amministrativa per concorrenza sleale nei confronti dei consulenti freelance",
+          "Rallenta la velocità del browser del cliente a causa dell'elaborazione asincrona del report"
         ],
         "correctIndex": 1,
         "explanation": "Questo è il vero potere della reciprocità e del content/product marketing: regalare uno strumento utile dimostra la tua bravura e crea clienti riconoscenti pronti ad acquistare."
@@ -3063,10 +3063,10 @@ window.STULL_DATA = [
       {
         "question": "Un'app per la meditazione offre 7 giorni di prova gratuita ma addebita automaticamente 90€ al minuto successivo alla scadenza senza inviare alcun avviso preventivo. Qual è l'effetto sulla relazione con il cliente?",
         "options": [
-          "Migliora l'indice di usabilità SUS portandolo al punteggio massimo di 100, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "Aumenta la fedeltà del cliente che apprezza l'efficienza dei sistemi di addebito automatico, un parametro fisico dipendente dalla frequenza del bus e dall'architettura del processore",
+          "Migliora l'indice di usabilità SUS portandolo al punteggio massimo di 100",
+          "Aumenta la fedeltà del cliente che apprezza l'efficienza dei sistemi di addebito automatico",
           "Distrugge la reciprocità trasformandola in una trappola predatoria, provocando richieste di storno (chargeback), recensioni a 1 stella e disprezzo verso il brand",
-          "Non produce alcun impatto poiché il rinnovo tacito è una convenzione universale accettata nel modello mentale condiviso dell'utente finale"
+          "Non produce alcun impatto poiché il rinnovo tacito è una convenzione universale accettata"
         ],
         "correctIndex": 2,
         "explanation": "I dark pattern di 'Free trial con trappola a pagamento' sono miopi: incassano un mese con l'inganno ma perdono il cliente per sempre guadagnandosi un detrattore accanito."
@@ -3107,9 +3107,9 @@ window.STULL_DATA = [
         "question": "A quale pericolo allude Stull mediante la metafora del 'Picchio dal becco d'avorio' (uccello dichiarato estinto ma ciclicamente oggetto di avvistamenti illusori)?",
         "options": [
           "Al rischio letale di promettere miraggi di prodotto che non esistono nella realtà: il divario tra l'aspettativa creata dal marketing e l'esperienza vissuta distrugge la credibilità del servizio",
-          "Alla lentezza dei processi di approvazione dei brevetti industriali nelle telecomunicazioni, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "Alla tendenza dei consumatori a preferire materiali di imballaggio ecologici e riciclabili, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
-          "All'estinzione programmata delle versioni precedenti dei sistemi operativi desktop; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "Alla lentezza dei processi di approvazione dei brevetti industriali nelle telecomunicazioni",
+          "Alla tendenza dei consumatori a preferire materiali di imballaggio ecologici e riciclabili",
+          "All'estinzione programmata delle versioni precedenti dei sistemi operativi desktop"
         ],
         "correctIndex": 0,
         "explanation": "Non promettere la luna se non puoi consegnarla: se la pubblicità mostra un'esperienza avveniristica e l'app reale è piena di crash e lentezze, l'utente si sente tradito e truffato."
@@ -3117,10 +3117,10 @@ window.STULL_DATA = [
       {
         "question": "Come si articola il modello a tre livelli del 'Prodotto' teorizzato dall'economista Philip Kotler e applicato da Stull alla UX?",
         "options": [
-          "1. Codice Backend; 2. Foglio di Stile CSS; 3. Database Relazionale SQL, un'impostazione che trascura i principi fondamentali della progettazione centrata sull'utente e le metodologie di validazione empirica dell'esperienza con utenti rappresentativi",
+          "1. Codice Backend; 2. Foglio di Stile CSS; 3. Database Relazionale SQL",
           "1. Prodotto Essenziale (Core Benefit: il bisogno primario soddisfatto); 2. Prodotto Effettivo (il design, le funzioni tangibili, il brand); 3. Prodotto Ampliato (supporto, garanzie, ecosistema e assistenza post-vendita)",
-          "1. Prezzo di listino; 2. Percentuale di sconto; 3. Costi di spedizione postale, un approccio che ignora la centralità dell'utente reale e le sue effettive modalità di interazione con il sistema nel contesto quotidiano e operativo di utilizzo",
-          "1. Licenza d'uso; 2. Manuale cartaceo; 3. Certificato di conformità ambientale, una prospettiva che esclude dalla valutazione i fattori emotivi, motivazionali e situazionali che modellano concretamente il comportamento dell'utente durante l'uso del sistema"
+          "1. Prezzo di listino; 2. Percentuale di sconto; 3. Costi di spedizione postale",
+          "1. Licenza d'uso; 2. Manuale cartaceo; 3. Certificato di conformità ambientale"
         ],
         "correctIndex": 1,
         "explanation": "Kotler: quando compri un trapano non compri un pezzo di ferro (prodotto effettivo), compri un buco nel muro (core benefit); il supporto e la garanzia sono il prodotto ampliato."
@@ -3128,10 +3128,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa si intende per 'Prodotto Minimo Funzionante' (Minimum Viable Product - MVP) nella metodologia Lean UX?",
         "options": [
-          "Un software deliberatamente incompleto e privo di test di sicurezza per risparmiare budget, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "Un prototipo grafico non interattivo disegnato a matita su un blocco notes, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
+          "Un software deliberatamente incompleto e privo di test di sicurezza per risparmiare budget",
+          "Un prototipo grafico non interattivo disegnato a matita su un blocco notes",
           "La versione più essenziale di un prodotto che possiede il nucleo fondamentale di funzionalità necessarie per essere rilasciata sul mercato e consentire di validare o confutare ipotesi con il minimo sforzo",
-          "Un'applicazione commerciale venduta a un prezzo inferiore al costo di produzione industriale; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo"
+          "Un'applicazione commerciale venduta a un prezzo inferiore al costo di produzione industriale"
         ],
         "correctIndex": 2,
         "explanation": "L'MVP non è un prodotto fatto male: è una fetta verticale completa (anche se sottile) che funziona, risolve il problema primario e permette di imparare subito dagli utenti reali."
@@ -3139,9 +3139,9 @@ window.STULL_DATA = [
       {
         "question": "Perché il livello del 'Prodotto Ampliato' (Augmented Product) è spesso il terreno decisivo in cui si vince la fedeltà del cliente?",
         "options": [
-          "Perché i motori di ricerca indicizzano esclusivamente i servizi di assistenza telefonica, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "Perché consente di applicare sanzioni contrattuali a chi non rinnova l'abbonamento, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
-          "Perché il prodotto ampliato non richiede investimenti economici da parte dell'azienda; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Perché i motori di ricerca indicizzano esclusivamente i servizi di assistenza telefonica",
+          "Perché consente di applicare sanzioni contrattuali a chi non rinnova l'abbonamento",
+          "Perché il prodotto ampliato non richiede investimenti economici da parte dell'azienda",
           "Perché quando i prodotti sul mercato si equivalgono per funzioni e prezzo, la qualità dell'assistenza, la facilità di reso, la trasparenza e la cura umana post-vendita fanno la differenza assoluta"
         ],
         "correctIndex": 3,
@@ -3151,9 +3151,9 @@ window.STULL_DATA = [
         "question": "Cosa accade quando un'azienda soffre di 'Miopia di Marketing' (Theodore Levitt) confondendo il proprio 'Core Benefit' con il manufatto fisico?",
         "options": [
           "Si fossilizza sulla difesa del supporto tecnico attuale (es. vendere pellicole fotografiche) venendo travolta dall'innovazione che soddisfa lo stesso bisogno primario in modo migliore (fotografia digitale)",
-          "Aumenta la probabilità di vincere premi di design internazionale per l'innovazione visiva, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "Riconosce con dieci anni di anticipo le tendenze del mercato dei microprocessori; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Elimina automaticamente ogni forma di competizione all'interno del proprio settore merceologico, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo"
+          "Aumenta la probabilità di vincere premi di design internazionale per l'innovazione visiva",
+          "Riconosce con dieci anni di anticipo le tendenze del mercato dei microprocessori",
+          "Elimina automaticamente ogni forma di competizione all'interno del proprio settore merceologico"
         ],
         "correctIndex": 0,
         "explanation": "Le ferrovie americane fallirono perché pensavano di essere nel 'business dei treni' anziché nel 'business del trasporto'. Comprendere il Core Benefit protegge dalla disintermediazione tecnologica."
@@ -3169,10 +3169,10 @@ window.STULL_DATA = [
       {
         "question": "Una startup di consegne rapide promette 'Spesa a casa in 10 minuti con prodotti freschissimi garantiti'. Nella realtà operativa, il 40% delle consegne arriva dopo 45 minuti con verdura ammaccata. Gli utenti non riordinano più. Quale lezione del 'Picchio dal becco d'avorio' è stata ignorata?",
         "options": [
-          "I prodotti deperibili devono essere distribuiti unicamente tramite veicoli a guida autonoma; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
+          "I prodotti deperibili devono essere distribuiti unicamente tramite veicoli a guida autonoma",
           "L'overpromising distrugge il prodotto: il divario incolmabile tra la promessa iperbolica e l'amara realtà operativa genera delusione insanabile; è sempre meglio promettere ciò che si può mantenere con costanza",
-          "Le consegne a domicilio violano le linee guida ISO sulla gestione sostenibile della logistica, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
-          "La verdura fresca non deve mai essere fotografata all'interno delle applicazioni mobili; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "Le consegne a domicilio violano le linee guida ISO sulla gestione sostenibile della logistica",
+          "La verdura fresca non deve mai essere fotografata all'interno delle applicazioni mobili"
         ],
         "correctIndex": 1,
         "explanation": "Se avessero promesso 'Consegna in 30 minuti con prodotti selezionati' avrebbero fidelizzato. Promettendo l'impossibile hanno scavato la propria tomba commerciale."
@@ -3180,10 +3180,10 @@ window.STULL_DATA = [
       {
         "question": "In un'analisi di prodotto secondo Kotler, un utente acquista un abbonamento al software di contabilità online. Qual è il 'Core Benefit' reale per cui sta pagando?",
         "options": [
-          "L'opportunità di memorizzare file PDF all'interno di un server cloud geolocalizzato all'estero, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "La possibilità di visualizzare grafici a barre con colori conformi alle specifiche CSS3, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
+          "L'opportunità di memorizzare file PDF all'interno di un server cloud geolocalizzato all'estero",
+          "La possibilità di visualizzare grafici a barre con colori conformi alle specifiche CSS3",
           "La tranquillità e la certezza legale di non commettere errori con il fisco e di risparmiare ore preziose di burocrazia per dedicarle alla propria attività o famiglia",
-          "L'installazione di font tipografici personalizzati per la stampa delle fatture commerciali; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "L'installazione di font tipografici personalizzati per la stampa delle fatture commerciali"
         ],
         "correctIndex": 2,
         "explanation": "Nessuno ama fare contabilità per il gusto di cliccare numeri: il beneficio essenziale è la sicurezza psicologica (non avere multe fiscali) e il tempo restituito alla vita."
@@ -3191,9 +3191,9 @@ window.STULL_DATA = [
       {
         "question": "Come si progetta la transizione da un prototipo MVP (Minimum Viable Product) a un prodotto maturo e scalabile?",
         "options": [
-          "Raddoppiando il prezzo dell'abbonamento ogni volta che viene rilasciata una patch correttiva, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
-          "Aggiungendo immediatamente 50 nuove funzionalità secondarie per stupire gli investitori di rischio; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Cancellando tutti i database esistenti per ricominciare da zero con un linguaggio di programmazione diverso, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
+          "Raddoppiando il prezzo dell'abbonamento ogni volta che viene rilasciata una patch correttiva",
+          "Aggiungendo immediatamente 50 nuove funzionalità secondarie per stupire gli investitori di rischio",
+          "Cancellando tutti i database esistenti per ricominciare da zero con un linguaggio di programmazione diverso",
           "Raccogliendo sistematicamente dati analitici e feedback qualitativi dagli utenti dell'MVP, per consolidare prima l'architettura dei flussi primari ed eliminare i punti di attrito reali"
         ],
         "correctIndex": 3,
@@ -3234,10 +3234,10 @@ window.STULL_DATA = [
       {
         "question": "A quale riflessione filosofica allude Stull mediante la metafora del racconto 'Ivan lo scemo' di Lev Tolstoj sul denaro?",
         "options": [
-          "I contadini russi dell'Ottocento utilizzavano esclusivamente contratti commerciali notarili; tale impostazione impedisce all'utente di costruire un modello mentale coerente",
+          "I contadini russi dell'Ottocento utilizzavano esclusivamente contratti commerciali notarili",
           "Il valore del denaro e del prezzo è una convenzione psicologica e sociale costruita: ciò che conta per l'essere umano non è la moneta in sé, ma il valore d'uso e il significato attribuito allo scambio",
-          "I prezzi dei prodotti digitali devono essere calcolati in rubli per rispettare la tradizione letteraria, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
-          "La povertà economica è un prerequisito obbligatorio per comprendere l'usabilità del software; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "I prezzi dei prodotti digitali devono essere calcolati in rubli per rispettare la tradizione letteraria",
+          "La povertà economica è un prerequisito obbligatorio per comprendere l'usabilità del software"
         ],
         "correctIndex": 1,
         "explanation": "Il denaro è un'astrazione: quando spendiamo confrontiamo il sacrificio emotivo del pagamento con il beneficio concreto che l'oggetto o servizio apporterà alla nostra vita."
@@ -3245,10 +3245,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa hanno dimostrato le ricerche di neuroeconomia sul 'Dolore del pagamento' (Pain of Paying) condotte tramite risonanza magnetica funzionale (fMRI)?",
         "options": [
-          "Le transazioni con carta di credito provocano lo spegnimento della corteccia prefrontale; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "Il cervello umano rilascia endorfine analgesiche ogni volta che compila un bonifico bancario; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Le transazioni con carta di credito provocano lo spegnimento della corteccia prefrontale",
+          "Il cervello umano rilascia endorfine analgesiche ogni volta che compila un bonifico bancario",
           "L'atto di pagare attiva letteralmente l'Insula e le aree cerebrali associate al dolore fisico e al disgusto; un design trasparente e rassicurante riduce questa risposta avversiva",
-          "Il dolore del pagamento si manifesta solo per acquisti di importo inferiore a dieci euro, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo"
+          "Il dolore del pagamento si manifesta solo per acquisti di importo inferiore a dieci euro"
         ],
         "correctIndex": 2,
         "explanation": "Tirare fuori denaro fa fisicamente 'male' al cervello. Pagare con moneta virtuale o carte riduce la trasparenza del dolore, ma la frizione psicologica di pagare rimane reale e palpabile."
@@ -3256,9 +3256,9 @@ window.STULL_DATA = [
       {
         "question": "Come opera il 'Bias di Ancoraggio' (Anchoring Effect) formulato da Daniel Kahneman e Amos Tversky nella percezione del prezzo?",
         "options": [
-          "Le tariffe commerciali devono essere stampate con caratteri di colore blu navy per evocare stabilità marina, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "I prezzi devono essere ancorati obbligatoriamente al margine inferiore destro dello schermo, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
-          "La memoria dell'utente dimentica i prezzi visualizzati dopo più di sessanta secondi di attesa; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Le tariffe commerciali devono essere stampate con caratteri di colore blu navy per evocare stabilità marina",
+          "I prezzi devono essere ancorati obbligatoriamente al margine inferiore destro dello schermo",
+          "La memoria dell'utente dimentica i prezzi visualizzati dopo più di sessanta secondi di attesa",
           "La prima informazione numerica o prezzo visualizzato fissa un punto di riferimento psicologico (ancora) su cui l'individuo baserà tutti i giudizi di convenienza e valore successivi"
         ],
         "correctIndex": 3,
@@ -3268,9 +3268,9 @@ window.STULL_DATA = [
         "question": "Cosa si intende per 'Effetto Esca' (Decoy Effect) o Asymmetric Dominance nella progettazione dei piani tariffari (Pricing Tables)?",
         "options": [
           "L'introduzione deliberata di una terza opzione meno conveniente (esca) studiata appositamente per rendere un'altra opzione specifica nettamente più attraente e vantaggiosa agli occhi dell'utente",
-          "La visualizzazione di immagini di canne da pesca all'interno dei siti e-commerce sportivi, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "L'applicazione di commissioni nascoste durante il passaggio alla schermata finale del carrello; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "L'obbligo di selezionare un piano tariffario prima di poter visualizzare i contenuti del sito; tale soluzione viola il principio di visibilità dello stato del sistema, lasciando l'utente incerto sull'esito della propria azione"
+          "La visualizzazione di immagini di canne da pesca all'interno dei siti e-commerce sportivi",
+          "L'applicazione di commissioni nascoste durante il passaggio alla schermata finale del carrello",
+          "L'obbligo di selezionare un piano tariffario prima di poter visualizzare i contenuti del sito"
         ],
         "correctIndex": 0,
         "explanation": "Il caso celebre del The Economist: Web a 59$, Stampa a 125$, Web + Stampa a 125$. Nessuno compra solo Stampa, ma la sua presenza rende l'offerta Web + Stampa un affare irrinunciabile."
@@ -3278,10 +3278,10 @@ window.STULL_DATA = [
       {
         "question": "Quale grave danno provoca la pratica commerciale scorretta dei 'Costi nascosti al checkout' (Drip Pricing)?",
         "options": [
-          "Aumenta la redditività dell'azienda del trecento per cento nel lungo periodo, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
+          "Aumenta la redditività dell'azienda del trecento per cento nel lungo periodo",
           "Fa sentire l'utente ingannato e manipolato quando, dopo aver compilato tutti i campi, vede il prezzo finale gonfiato da spese a sorpresa, innescando l'abbandono immediato del carrello e la perdita della reputazione",
-          "Migliora il punteggio di accessibilità del sito web secondo le linee guida europee; tale soluzione viola il principio di visibilità dello stato del sistema, lasciando l'utente incerto sull'esito della propria azione",
-          "Riduce automaticamente i tempi di consegna dei corrieri espressi internazionali, una pratica che riduce l'usabilità complessiva, ostacolando l'orientamento spaziale e la percezione dei percorsi di navigazione primari"
+          "Migliora il punteggio di accessibilità del sito web secondo le linee guida europee",
+          "Riduce automaticamente i tempi di consegna dei corrieri espressi internazionali"
         ],
         "correctIndex": 1,
         "explanation": "I 'costi a goccia' sono uno dei dark pattern più odiati: mostrare 50€ e far diventare il totale 78€ all'ultimo click fa infuriare l'utente, che abbandona il carrello sentendosi truffato."
@@ -3297,10 +3297,10 @@ window.STULL_DATA = [
       {
         "question": "Una tabella di prezzi per un servizio cloud presenta tre colonne: Base (10€/mese), Pro (25€/mese - evidenziata con badge 'Consigliata per la maggior parte dei professionisti'), Enterprise (120€/mese). Quali principi di architettura della scelta sono applicati?",
         "options": [
-          "Impiego di tecniche di ipnosi visiva vietate dai regolamenti antitrust comunitari, secondo i protocolli consolidati di user testing",
-          "Violazione del rasoio di Ockham causata dalla moltiplicazione ingiustificata delle colonne, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
+          "Impiego di tecniche di ipnosi visiva vietate dai regolamenti antitrust comunitari",
+          "Violazione del rasoio di Ockham causata dalla moltiplicazione ingiustificata delle colonne",
           "Ancoraggio del valore, opzione centrale (Center-stage effect) e default virtuoso per guidare l'utente verso la scelta ottimale riducendo la fatica comparativa",
-          "Mancata adozione dello standard Unicode per la visualizzazione del simbolo della valuta, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione"
+          "Mancata adozione dello standard Unicode per la visualizzazione del simbolo della valuta"
         ],
         "correctIndex": 2,
         "explanation": "La struttura a 3 piani con opzione centrale consigliata è un pattern universale di successo: ancora il lusso (120€), rassicura sulla base (10€) e indirizza con chiarezza sul target ideale (25€)."
@@ -3308,9 +3308,9 @@ window.STULL_DATA = [
       {
         "question": "Un sito di prenotazione aerea mostra il prezzo del biglietto a 19€, ma alla schermata di pagamento aggiunge a sorpresa 15€ per il bagaglio a mano, 8€ per la scelta del posto e 5€ di commissione di carta di credito. Come valuta Stull questa UX?",
         "options": [
-          "Un intervento neutro che non influenza le decisioni di acquisto dei viaggiatori esperti; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "Un'eccellente applicazione del modello ELM di Petty e Cacioppo sul percorso periferico; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "Una soluzione conforme alle normative di usabilità ISO 9241 per la mobilità aerea; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Un intervento neutro che non influenza le decisioni di acquisto dei viaggiatori esperti",
+          "Un'eccellente applicazione del modello ELM di Petty e Cacioppo sul percorso periferico",
+          "Una soluzione conforme alle normative di usabilità ISO 9241 per la mobilità aerea",
           "Drip Pricing predatorio che distrugge la fiducia dell'utente: la trasparenza anticipata dei costi totali è un pilastro etico e incrementa la conversione reale rispetto alle trappole di prezzo"
         ],
         "correctIndex": 3,
@@ -3320,9 +3320,9 @@ window.STULL_DATA = [
         "question": "Come si mitiga il 'Dolore del pagamento' in un'applicazione di mobilità urbana (es. noleggio monopattini o taxi)?",
         "options": [
           "Scollegando temporalmente il consumo dall'esborso: memorizzare il metodo di pagamento e addebitare a corsa conclusa con notifica trasparente e ricevuta dettagliata senza fermare l'utente con contanti",
-          "Obbligando l'utente a inserire banconote fisiche all'interno di una fessura sul manubrio; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Nascondendo il costo totale della corsa per evitare che l'utente provi rimpianto, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
-          "Impedendo l'uso del mezzo a chiunque non paghi un deposito cauzionale di 500 euro, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud"
+          "Obbligando l'utente a inserire banconote fisiche all'interno di una fessura sul manubrio",
+          "Nascondendo il costo totale della corsa per evitare che l'utente provi rimpianto",
+          "Impedendo l'uso del mezzo a chiunque non paghi un deposito cauzionale di 500 euro"
         ],
         "correctIndex": 0,
         "explanation": "Come Uber: scendi dall'auto senza tirare fuori portafogli o monetine. La frizione del pagamento è invisibile durante il tragitto, ma la ricevuta dettagliata garantisce correttezza e trasparenza."
@@ -3362,10 +3362,10 @@ window.STULL_DATA = [
       {
         "question": "A quale metafora della saggezza classica fa ricorso Stull citando la parabola del filosofo cinese Mencio (Mengzi)?",
         "options": [
-          "Alla costruzione della Grande Muraglia per proteggere i confini commerciali imperiali, una pratica che riduce l'usabilità complessiva, ostacolando l'orientamento spaziale e la percezione dei percorsi di navigazione primari",
-          "All'invenzione della carta di riso per la trascrizione dei primi trattati filosofici orientali, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
+          "Alla costruzione della Grande Muraglia per proteggere i confini commerciali imperiali",
+          "All'invenzione della carta di riso per la trascrizione dei primi trattati filosofici orientali",
           "All'agricoltore impaziente che, volendo far crescere più in fretta i propri germogli di riso, li tirò verso l'alto spezzandone le radici e facendoli seccare tutti: forzare la conversione con aggressività distrugge la relazione con l'utente",
-          "All'irrigazione a goccia utilizzata nei giardini botanici per preservare le specie rare; tale soluzione viola il principio di visibilità dello stato del sistema, lasciando l'utente incerto sull'esito della propria azione"
+          "All'irrigazione a goccia utilizzata nei giardini botanici per preservare le specie rare"
         ],
         "correctIndex": 2,
         "explanation": "La promozione non può essere forzata: voler strappare la conversione tirando l'utente per la giacca (popup, countdown falsi, notifiche aggressive) uccide la relazione e fa scappare il cliente."
@@ -3373,9 +3373,9 @@ window.STULL_DATA = [
       {
         "question": "Qual è la differenza sostanziale tra 'Interruption Marketing' (marketing d'interruzione) e 'Permission Marketing' (formulato da Seth Godin)?",
         "options": [
-          "Non sussiste differenza: ogni forma di promozione digitale è per definizione non richiesta, una pratica che riduce l'usabilità complessiva, ostacolando l'orientamento spaziale e la percezione dei percorsi di navigazione primari",
-          "L'interruption marketing è gratuito, mentre il permission marketing è a pagamento, un approccio che ignora la centralità dell'utente reale e le sue effettive modalità di interazione con il sistema nel contesto quotidiano e operativo di utilizzo",
-          "L'interruption marketing si usa solo in televisione; il permission marketing riguarda solo i quotidiani cartacei; tale soluzione viola il principio di visibilità dello stato del sistema, lasciando l'utente incerto sull'esito della propria azione",
+          "Non sussiste differenza: ogni forma di promozione digitale è per definizione non richiesta",
+          "L'interruption marketing è gratuito, mentre il permission marketing è a pagamento",
+          "L'interruption marketing si usa solo in televisione; il permission marketing riguarda solo i quotidiani cartacei",
           "L'interruption marketing irrompe bruscamente e senza consenso nell'esperienza dell'utente per urlare un messaggio; il permission marketing costruisce una relazione basata sul consenso esplicito a ricevere comunicazioni attese, pertinenti e personalizzate"
         ],
         "correctIndex": 3,
@@ -3385,9 +3385,9 @@ window.STULL_DATA = [
         "question": "Quale fenomeno di rigetto cognitivo scatenano i 'Pop-up intrusivi' che bloccano lo schermo a pochi istanti dall'accesso a una pagina web?",
         "options": [
           "Reattanza psicologica e rabbia: l'utente percepisce una violazione della propria libertà e del proprio controllo, chiudendo meccanicamente il popup o abbandonando l'intero sito con fastidio",
-          "Un aumento dell'attenzione visiva che facilita la memorizzazione del marchio a lungo termine, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "Il miglioramento della velocità di caricamento delle pagine grazie al prerendering dei contenuti, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "L'immediata iscrizione spontanea alla newsletter aziendale da parte della maggioranza dei visitatori; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "Un aumento dell'attenzione visiva che facilita la memorizzazione del marchio a lungo termine",
+          "Il miglioramento della velocità di caricamento delle pagine grazie al prerendering dei contenuti",
+          "L'immediata iscrizione spontanea alla newsletter aziendale da parte della maggioranza dei visitatori"
         ],
         "correctIndex": 0,
         "explanation": "La 'reattanza' è la reazione innata a un'imposizione: se mi sbatti in faccia una finestra bloccante prima ancora che io abbia letto il titolo, la chiudo all'istante o abbandono il sito per dispetto."
@@ -3395,10 +3395,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa si intende per 'Affaticamento da notifica' (Notification Fatigue) causato da strategie promozionali sconsiderate?",
         "options": [
-          "Il surriscaldamento della batteria dello smartphone dovuto alla ricezione dei messaggi; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
+          "Il surriscaldamento della batteria dello smartphone dovuto alla ricezione dei messaggi",
           "Lo stato di saturazione e irritazione dell'utente bombardato da troppi messaggi e push irrilevanti, che porta alla disattivazione totale di tutti i canali o alla disinstallazione definitiva dell'app",
-          "La perdita di nitidezza dello schermo provocata dalla sovrapposizione dei banner, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "La cancellazione accidentale dei dati memorizzati nella cartella dei download; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "La perdita di nitidezza dello schermo provocata dalla sovrapposizione dei banner",
+          "La cancellazione accidentale dei dati memorizzati nella cartella dei download"
         ],
         "correctIndex": 1,
         "explanation": "Se mandi 5 notifiche al giorno per futilità promozionali, l'utente revocherà i permessi a tutte le notifiche dell'app, perdendo per sempre il canale di contatto con il brand."
@@ -3406,10 +3406,10 @@ window.STULL_DATA = [
       {
         "question": "Come si progetta una promozione rispettosa ed efficace all'interno di un'interfaccia utente?",
         "options": [
-          "Inserendo banner lampeggianti con animazioni stroboscopiche al centro dello schermo; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Facendo suonare una sirena acustica ogni volta che è disponibile un nuovo sconto, riducendo la tolleranza all'errore e moltiplicando i passaggi operativi superflui",
+          "Inserendo banner lampeggianti con animazioni stroboscopiche al centro dello schermo",
+          "Facendo suonare una sirena acustica ogni volta che è disponibile un nuovo sconto",
           "Integrando l'offerta in modo contestuale, sobrio e non bloccante lungo il flusso naturale dell'utente (In-stream promotion), quando essa rappresenta una soluzione reale al compito che sta compiendo",
-          "Nascondendo il pulsante 'Chiudi' o rendendolo minuscolo e semitrasparente, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo"
+          "Nascondendo il pulsante 'Chiudi' o rendendolo minuscolo e semitrasparente"
         ],
         "correctIndex": 2,
         "explanation": "La buona promozione è organica: se sto prenotando un volo per Londra, offrirmi l'assicurazione o l'hotel a Londra in un riquadro discreto nel riepilogo è utile e benvenuto, non fastidioso."
@@ -3425,9 +3425,9 @@ window.STULL_DATA = [
       {
         "question": "Un blog di cucina aggiunge un banner cookie a tutto schermo, seguito da un popup 'Iscriviti alla newsletter!', una richiesta del browser 'Vuoi ricevere notifiche?' e un video in autoplay che copre il testo della ricetta. Quale parabola di Mencio descrive questa situazione?",
         "options": [
-          "L'effetto alone estetico che trasforma i banner pubblicitari in opere d'arte, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "La metafora del pesce palla Torafugu privo di sostanze tossiche; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "Il mito del picchio dal becco d'avorio applicato al mondo della ristorazione; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "L'effetto alone estetico che trasforma i banner pubblicitari in opere d'arte",
+          "La metafora del pesce palla Torafugu privo di sostanze tossiche",
+          "Il mito del picchio dal becco d'avorio applicato al mondo della ristorazione",
           "L'agricoltore che tira i germogli per farli crescere e li uccide: l'eccesso di avidità promozionale soffoca l'esperienza d'uso distruggendo il valore del contenuto e facendo fuggire il lettore"
         ],
         "correctIndex": 3,
@@ -3437,9 +3437,9 @@ window.STULL_DATA = [
         "question": "Un'app di streaming musicale vuole promuovere il piano Family ai propri utenti Free. In quale momento l'offerta rispetta i principi del Permission Marketing e della tempestività?",
         "options": [
           "Quando l'utente cerca di aggiungere un secondo dispositivo per ascoltare musica con un familiare, mostrando una spiegazione chiara dei vantaggi e la prova gratuita di 30 giorni",
-          "Interrompendo la riproduzione di un brano a metà canzone con un allarme sonoro assordante; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Inviando un SMS alle tre di notte a tutti gli iscritti con un codice promozionale, ignorando la tendenza naturale degli utenti a scansionare anziché leggere",
-          "Cancellando le playlist create dagli utenti Free finché non sottoscrivono il piano Family; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso"
+          "Interrompendo la riproduzione di un brano a metà canzone con un allarme sonoro assordante",
+          "Inviando un SMS alle tre di notte a tutti gli iscritti con un codice promozionale",
+          "Cancellando le playlist create dagli utenti Free finché non sottoscrivono il piano Family"
         ],
         "correctIndex": 0,
         "explanation": "Proporre l'offerta nel momento esatto del bisogno contestuale (quando provi ad ascoltare in due) rende la promozione pertinente, gradita e altamente convertibile."
@@ -3447,10 +3447,10 @@ window.STULL_DATA = [
       {
         "question": "In una campagna di email marketing, quale metrica qualitativa indica che la frequenza promozionale sta 'tirando troppo i germogli' danneggiando la reputazione aziendale?",
         "options": [
-          "L'aumento della dimensione dei file allegati ai messaggi di posta; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "L'aumento della dimensione dei file allegati ai messaggi di posta",
           "L'impennata del tasso di cancellazione (Unsubscribe Rate) e delle segnalazioni per Spam, accompagnata dal crollo costante dell'Open Rate",
-          "La crescita esponenziale del numero di visualizzazioni della home page, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
-          "La riduzione della larghezza di banda consumata dai server di posta SMTP, un parametro fisico dipendente dalla frequenza del bus e dall'architettura del processore"
+          "La crescita esponenziale del numero di visualizzazioni della home page",
+          "La riduzione della larghezza di banda consumata dai server di posta SMTP"
         ],
         "correctIndex": 1,
         "explanation": "Quando gli iscritti cliccano 'Disiscriviti' o peggio 'Segnala come spam', significa che la fiducia è rotta: l'azienda ha inviato troppo rumore e troppo poco valore."
@@ -3490,9 +3490,9 @@ window.STULL_DATA = [
       {
         "question": "Cosa ha dimostrato il celebre esperimento cinematografico condotto dal regista sovietico Lev Kuleshov nel 1918 (Effetto Kuleshov)?",
         "options": [
-          "Il pubblico teatrale rifiuta le scenografie prive di elementi geometrici simmetrici; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "I film muti provocano maggiore affaticamento visivo rispetto ai film con colonna sonora, una pratica che riduce l'usabilità complessiva, ostacolando l'orientamento spaziale e la percezione dei percorsi di navigazione primari",
-          "La pellicola in bianco e nero è più resistente agli agenti atmosferici rispetto alla pellicola a colori, un approccio che ignora la centralità dell'utente reale e le sue effettive modalità di interazione con il sistema nel contesto quotidiano e operativo di utilizzo",
+          "Il pubblico teatrale rifiuta le scenografie prive di elementi geometrici simmetrici",
+          "I film muti provocano maggiore affaticamento visivo rispetto ai film con colonna sonora",
+          "La pellicola in bianco e nero è più resistente agli agenti atmosferici rispetto alla pellicola a colori",
           "La percezione e il significato emotivo di una stessa immagine (il primo piano inespressivo dell'attore Mosjoukine) cambiano radicalmente a seconda dello stimolo visivo a cui viene accostata in sequenza (un piatto di zuppa, una bara, una bambina)"
         ],
         "correctIndex": 3,
@@ -3502,9 +3502,9 @@ window.STULL_DATA = [
         "question": "Come si applica il fenomeno del 'Priming Cognitivo' (innesco) alla disposizione degli elementi in una pagina web?",
         "options": [
           "Ciò che l'utente vede o legge un istante prima condiziona, pre-attiva e orienta le aspettative e l'interpretazione di ciò che incontrerà un istante dopo nello scorrimento",
-          "I browser web pre-caricano tutte le pagine del web prima dell'accesso dell'utente, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
-          "I colori primari della ruota cromatica devono essere visualizzati sempre in ordine alfabetico, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
-          "La memoria RAM deve essere svuotata prima dell'esecuzione di ogni script JavaScript; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "I browser web pre-caricano tutte le pagine del web prima dell'accesso dell'utente",
+          "I colori primari della ruota cromatica devono essere visualizzati sempre in ordine alfabetico",
+          "La memoria RAM deve essere svuotata prima dell'esecuzione di ogni script JavaScript"
         ],
         "correctIndex": 0,
         "explanation": "Se mostri prima foto di famiglie felici e parole di sicurezza, l'utente interpreterà il form successivo con fiducia e serenità. Il contesto crea il frame mentale di lettura."
@@ -3512,10 +3512,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa stabilisce la legge della 'Posizione Seriale' (Serial Position Effect) formulata dallo psicologo Hermann Ebbinghaus?",
         "options": [
-          "I numeri pari vengono memorizzati con il doppio della rapidità rispetto ai numeri dispari, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
+          "I numeri pari vengono memorizzati con il doppio della rapidità rispetto ai numeri dispari",
           "In una lista o sequenza di elementi, le persone ricordano con massima facilità i primi elementi (Effetto Primacy) e gli ultimi elementi (Effetto Recency), mentre dimenticano facilmente gli elementi centrali",
-          "La lettura di testi verticali è più rapida della lettura di testi orizzontali occidentali; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Le immagini posizionate al centro esatto dello schermo catturano il 100% dell'attenzione perenne; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo"
+          "La lettura di testi verticali è più rapida della lettura di testi orizzontali occidentali",
+          "Le immagini posizionate al centro esatto dello schermo catturano il 100% dell'attenzione perenne"
         ],
         "correctIndex": 1,
         "explanation": "Primacy & Recency: le prime voci di un menu o le ultime di una lista rimangono impresse nella memoria di lavoro. La 'terra di mezzo' centrale viene sfocata e dimenticata."
@@ -3523,10 +3523,10 @@ window.STULL_DATA = [
       {
         "question": "Come deve essere strutturata la barra di navigazione principale (Navigation Bar) sfruttando l'Effetto Primacy e Recency?",
         "options": [
-          "Inserendo tutte le voci di menu ammassate al centro dello schermo in un solo blocco, una semplificazione concettuale che non regge alla prova dei test con utenti rappresentativi eseguiti in condizioni d'uso realistiche",
-          "Distribuendo le voci in ordine casuale che cambia ad ogni ricaricamento di pagina; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Inserendo tutte le voci di menu ammassate al centro dello schermo in un solo blocco",
+          "Distribuendo le voci in ordine casuale che cambia ad ogni ricaricamento di pagina",
           "Collocando le funzioni e sezioni più vitali all'estrema sinistra (prima voce vista, Primacy) e all'estrema destra (ultima voce e Call to Action primaria, Recency), relegando i contenuti secondari al centro",
-          "Eliminando completamente i link per costringere l'utente a digitare gli URL a mano, una pratica che riduce l'usabilità complessiva, ostacolando l'orientamento spaziale e la percezione dei percorsi di navigazione primari"
+          "Eliminando completamente i link per costringere l'utente a digitare gli URL a mano"
         ],
         "correctIndex": 2,
         "explanation": "Tutti i siti leader mettono il Logo/Home a sinistra (inizio sequenza) e la CTA primaria come 'Accedi' o 'Registrati' all'estrema destra (fine sequenza), sfruttando la memoria seriale."
@@ -3534,9 +3534,9 @@ window.STULL_DATA = [
       {
         "question": "Cosa si intende per 'Gerarchia Visiva' guidata dalla posizione spaziale del contenuto?",
         "options": [
-          "La rotazione geometrica a 45 gradi di tutti i testi dei paragrafi descrittivi, un approccio che ignora la centralità dell'utente reale e le sue effettive modalità di interazione con il sistema nel contesto quotidiano e operativo di utilizzo",
-          "La dimensione in megabyte delle fotografie memorizzate sui server web; le misurazioni standard prevedono l'impiego di banchi di prova automatizzati e la comparazione dei risultati con i valori di riferimento pubblicati nelle specifiche tecniche ufficiali",
-          "L'ordine di compilazione dei file sorgente da parte del build tool Webpack, un'impostazione che trascura i principi fondamentali della progettazione centrata sull'utente e le metodologie di validazione empirica dell'esperienza con utenti rappresentativi",
+          "La rotazione geometrica a 45 gradi di tutti i testi dei paragrafi descrittivi",
+          "La dimensione in megabyte delle fotografie memorizzate sui server web",
+          "L'ordine di compilazione dei file sorgente da parte del build tool Webpack",
           "La strutturazione dello spazio che guida l'occhio lungo i pattern naturali di scansione (come il pattern a 'F' per i testi o a 'Z' per le landing page), posizionando i messaggi chiave lungo i punti focali della traiettoria visiva"
         ],
         "correctIndex": 3,
@@ -3554,9 +3554,9 @@ window.STULL_DATA = [
         "question": "In un e-commerce di articoli di lusso, una borsa da 2.500€ è collocata visivamente accanto a una foto di una modella in una sontuosa residenza aristocratica e viene percepita come esclusiva e desiderabile. La stessa identica borsa, fotografata su un pavimento di cemento grezzo accanto a una cassa di cartone strappata, appare contraffatta o scadente. Quale principio descrive questa discrepanza?",
         "options": [
           "L'Effetto Kuleshov applicato alla UX: il contesto visivo e la sequenza degli stimoli alterano radicalmente la percezione qualitativa e il valore attribuito all'oggetto identico",
-          "La violazione delle specifiche WCAG sul contrasto minimo tra testo e sfondo; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "L'incompatibilità delle fotocamere digitali con la luce naturale diffusa, riducendo la tolleranza all'errore e moltiplicando i passaggi operativi superflui",
-          "Un malfunzionamento del database SQL che ha alterato i metadati di prodotto; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo"
+          "La violazione delle specifiche WCAG sul contrasto minimo tra testo e sfondo",
+          "L'incompatibilità delle fotocamere digitali con la luce naturale diffusa",
+          "Un malfunzionamento del database SQL che ha alterato i metadati di prodotto"
         ],
         "correctIndex": 0,
         "explanation": "Esattamente come nel cinema di Kuleshov, l'oggetto non ha un significato isolato: il contesto circostante (framing) plasma l'emozione, il valore percepito e la fiducia."
@@ -3564,10 +3564,10 @@ window.STULL_DATA = [
       {
         "question": "In un elenco di 15 funzionalità di un software aziendale, gli utenti ricordano solo le prime due e l'ultima, dimenticando completamente le 12 intermedie durante la decisione d'acquisto. Quale legge psicologica spiega il fenomeno?",
         "options": [
-          "La legge di conservazione dell'energia applicata ai neuroni specchio, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
+          "La legge di conservazione dell'energia applicata ai neuroni specchio",
           "L'Effetto di Posizione Seriale (Primacy e Recency di Ebbinghaus): gli elementi centrali di una lista lunga annegano nell'oblio mnemonico a causa dell'interferenza retroattiva e proattiva",
-          "L'effetto alone estetico generato dalla tipografia con grazie, una semplificazione concettuale che non regge alla prova dei test con utenti rappresentativi eseguiti in condizioni d'uso realistiche",
-          "La mancata installazione dei cookie di terze parti nel browser del cliente, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo"
+          "L'effetto alone estetico generato dalla tipografia con grazie",
+          "La mancata installazione dei cookie di terze parti nel browser del cliente"
         ],
         "correctIndex": 1,
         "explanation": "In elenchi lunghi le cose in mezzo si perdono sempre. La soluzione è spezzare in blocchi tematici (chunking) di massimo 3-4 voci ciascuno, raggruppati con titoli chiari."
@@ -3575,10 +3575,10 @@ window.STULL_DATA = [
       {
         "question": "Come si progetta una landing page efficace sfruttando il pattern di scansione visiva a 'Z' per i visitatori al primo impatto?",
         "options": [
-          "Inserendo tutte le informazioni all'interno di una circonferenza animata al centro, una semplificazione concettuale che non regge alla prova dei test con utenti rappresentativi eseguiti in condizioni d'uso realistiche",
-          "Disponendo tutti i testi in verticale lungo il margine sinistro dello schermo, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
+          "Inserendo tutte le informazioni all'interno di una circonferenza animata al centro",
+          "Disponendo tutti i testi in verticale lungo il margine sinistro dello schermo",
           "Posizionando il Logo in alto a sinistra, la navigazione/login in alto a destra, la proposta di valore principale con immagine al centro-sinistra e il pulsante di conversione primario (CTA) in basso a destra",
-          "Nascondendo il pulsante d'azione fino a quando l'utente non ha scorso l'intera pagina per 3 volte, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo"
+          "Nascondendo il pulsante d'azione fino a quando l'utente non ha scorso l'intera pagina per 3 volte"
         ],
         "correctIndex": 2,
         "explanation": "Il pattern a Z segue il movimento naturale dell'occhio su pagine ad alto impatto visivo: da sinistra a destra in alto, diagonale verso il basso e chiusura sulla Call-To-Action in basso a destra."
@@ -3622,9 +3622,9 @@ window.STULL_DATA = [
         "question": "Per quale motivo epistemologico la disciplina della User Experience si scontra frequentemente con i ritmi rigidi dello sviluppo Agile?",
         "options": [
           "Perché Agile nasce per lo sviluppo software e ragiona in logica binaria (il codice funziona o fallisce il test); la UX è invece una disciplina olistica, sfumata, cumulativa e non binaria, incentrata sulla comprensione umana",
-          "Perché i designer rifiutano per principio di utilizzare strumenti digitali di tracciamento dei task come Jira o Trello; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "Perché il manifesto Agile vieta esplicitamente l'esecuzione di qualsiasi test con utenti finali, una semplificazione concettuale che non regge alla prova dei test con utenti rappresentativi eseguiti in condizioni d'uso realistiche",
-          "Perché i fogli di stile CSS non possono essere versionati con sistemi di controllo come Git; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo"
+          "Perché i designer rifiutano per principio di utilizzare strumenti digitali di tracciamento dei task come Jira o Trello",
+          "Perché il manifesto Agile vieta esplicitamente l'esecuzione di qualsiasi test con utenti finali",
+          "Perché i fogli di stile CSS non possono essere versionati con sistemi di controllo come Git"
         ],
         "correctIndex": 0,
         "explanation": "Un software può compilare al 100% (successo ingegneristico Agile) ma essere un totale fallimento di UX se risolve il problema sbagliato o se l'utente non capisce l'interfaccia."
@@ -3632,10 +3632,10 @@ window.STULL_DATA = [
       {
         "question": "Quale compromesso dannoso si verifica quando un team applica 'Agile UX' in modo frettoloso e scorretto?",
         "options": [
-          "Il server web riduce automaticamente la capacità di elaborazione delle query SQL, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
+          "Il server web riduce automaticamente la capacità di elaborazione delle query SQL",
           "Si barattano la riflessione, l'architettura sistemica e la ricerca qualitativa con la velocità cieca dei rilasci bisettimanali, accumulando un enorme debito di usabilità",
-          "Tutti i file di grafica vettoriale vengono sovrascritti da immagini a bassa risoluzione, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "L'azienda viene esclusa dalle graduatorie di certificazione di qualità ISO 9001, una scelta progettuale che viola le convenzioni d'uso consolidate nel web"
+          "Tutti i file di grafica vettoriale vengono sovrascritti da immagini a bassa risoluzione",
+          "L'azienda viene esclusa dalle graduatorie di certificazione di qualità ISO 9001"
         ],
         "correctIndex": 1,
         "explanation": "Correre in sprint di due settimane senza tempo per la ricerca porta a rilasciare velocemente codice pessimo: si ottimizza la velocità di produzione a scapito del valore per l'utente."
@@ -3643,10 +3643,10 @@ window.STULL_DATA = [
       {
         "question": "Come risolve il modello 'Dual-Track Agile' (traccia parallela) la frizione tra ricerca UX e sviluppo software?",
         "options": [
-          "Lavorando sul codice durante le ore diurne e conducendo i test con gli utenti esclusivamente durante la notte; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "Assegnando lo sviluppo software ai programmatori maschi e il design grafico alle femmine; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Lavorando sul codice durante le ore diurne e conducendo i test con gli utenti esclusivamente durante la notte",
+          "Assegnando lo sviluppo software ai programmatori maschi e il design grafico alle femmine",
           "Separando il lavoro in due tracce continue e coordinate: una traccia di 'Discovery' (ricerca, validazione e prototipazione avanzata con utenti) che precede di 1 o 2 sprint la traccia di 'Delivery' (sviluppo del codice)",
-          "Duplicando fisicamente il numero di server cloud per eseguire due versioni contemporanee del sito, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing"
+          "Duplicando fisicamente il numero di server cloud per eseguire due versioni contemporanee del sito"
         ],
         "correctIndex": 2,
         "explanation": "Dual-Track Agile garantisce che gli sviluppatori implementino solo funzionalità la cui usabilità e utilità siano già state validate nella traccia di Discovery precedente."
@@ -3654,9 +3654,9 @@ window.STULL_DATA = [
       {
         "question": "Cosa postula la filosofia della 'Lean UX' formulata da Jeff Gothelf e Josh Seiden?",
         "options": [
-          "Impedire agli sviluppatori di apportare modifiche all'interfaccia dopo il primo rilascio, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "Licenziare tutti i ricercatori UX per affidare il design interamente a script algoritmici automatici, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "Realizzare software esclusivamente per dispositivi a basso consumo energetico, ignorando la tendenza naturale degli utenti a scansionare anziché leggere",
+          "Impedire agli sviluppatori di apportare modifiche all'interfaccia dopo il primo rilascio",
+          "Licenziare tutti i ricercatori UX per affidare il design interamente a script algoritmici automatici",
+          "Realizzare software esclusivamente per dispositivi a basso consumo energetico",
           "Sostituire la produzione di pesanti documenti di specifica statica con cicli rapidi di ipotesi, prototipi minimi e apprendimento validato continuo (Build-Measure-Learn)"
         ],
         "correctIndex": 3,
@@ -3666,9 +3666,9 @@ window.STULL_DATA = [
         "question": "Qual è il limite strutturale del vecchio modello di sviluppo 'Waterfall' (a cascata) applicato alla UX?",
         "options": [
           "La rigidità sequenziale: se un grave errore di usabilità o di comprensione del problema emerge alla fine durante il collaudo, i costi e i tempi per tornare indietro e riprogettare sono proibitivi",
-          "L'eccessiva rapidità con cui il codice viene rilasciato agli utenti finali, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "L'assenza di diagrammi di Gantt per la pianificazione economica delle risorse, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "L'incompatibilità con i moderni sistemi operativi a 64 bit, secondo le specifiche definite nei data sheet dei produttori del chipset e validate attraverso cicli di stress test e certificazioni di conformità industriale"
+          "L'eccessiva rapidità con cui il codice viene rilasciato agli utenti finali",
+          "L'assenza di diagrammi di Gantt per la pianificazione economica delle risorse",
+          "L'incompatibilità con i moderni sistemi operativi a 64 bit"
         ],
         "correctIndex": 0,
         "explanation": "Nel Waterfall passi mesi a definire requisiti e creare grafica prima di mostrare alcunché all'utente: scoprire al collaudo finale che il concetto era sbagliato è un disastro economico."
@@ -3683,10 +3683,10 @@ window.STULL_DATA = [
       {
         "question": "Un Product Owner Agile dice al Lead UX: 'Non abbiamo tempo per intervistare gli utenti: abbiamo uno sprint da chiudere venerdì, disegna solo i pulsanti e mettiti al passo col backlog degli sviluppatori!'. Come si definisce questa patologia di processo?",
         "options": [
-          "Un'applicazione virtuosa del principio di conservazione della complessità di Tesler; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
+          "Un'applicazione virtuosa del principio di conservazione della complessità di Tesler",
           "La 'Feature Factory' (fabbrica di funzionalità): il team misura il successo solo dalla quantità di codice sfornato per sprint anziché dal valore e dall'efficacia dell'esperienza per l'utente finale",
-          "Un modello canonico di Continuous Integration e Continuous Deployment (CI/CD), generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "Una procedura standard raccomandata dalle linee guida del W3C per i team di design; tale soluzione viola il principio di visibilità dello stato del sistema, lasciando l'utente incerto sull'esito della propria azione"
+          "Un modello canonico di Continuous Integration e Continuous Deployment (CI/CD)",
+          "Una procedura standard raccomandata dalle linee guida del W3C per i team di design"
         ],
         "correctIndex": 1,
         "explanation": "Diventare una Feature Factory significa produrre spazzatura a ciclo continuo: si festeggia il rilascio di funzioni che nessuno usa e che rendono l'app sempre più complessa e inusabile."
@@ -3694,10 +3694,10 @@ window.STULL_DATA = [
       {
         "question": "In un'azienda che adotta Scrum, come si garantisce che le storie utente (User Stories) contengano criteri di qualità legati all'usabilità?",
         "options": [
-          "Rendendo obbligatoria l'approvazione formale dell'ufficio commerciale su tutti i commit di Git; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Aumentando il numero di punti storia (Story Points) stimati per ogni singola riunione di stand-up, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
+          "Rendendo obbligatoria l'approvazione formale dell'ufficio commerciale su tutti i commit di Git",
+          "Aumentando il numero di punti storia (Story Points) stimati per ogni singola riunione di stand-up",
           "Includendo criteri di usabilità e accessibilità espliciti nella 'Definition of Done' (DoD) e validando i prototipi con almeno un mini-test prima del rilascio definitivo",
-          "Eliminando le sessioni di retrospettiva per dedicare più ore alla programmazione pura, una semplificazione che disattende le euristiche fondamentali di usabilità"
+          "Eliminando le sessioni di retrospettiva per dedicare più ore alla programmazione pura"
         ],
         "correctIndex": 2,
         "explanation": "Se la Definition of Done include 'validato con 3 utenti' e 'conforme al contrasto WCAG AA', il codice non può essere approvato se non rispetta l'esperienza dell'utente."
@@ -3705,9 +3705,9 @@ window.STULL_DATA = [
       {
         "question": "Un team Lean UX deve validare l'interesse per un nuovo servizio di abbonamento premium per animali prima di sviluppare l'infrastruttura backend. Quale tecnica di 'esperimento minimo' è raccomandata?",
         "options": [
-          "Acquistare 10.000 follower fittizi su Instagram per dimostrare trazione commerciale; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Programmare l'intero database e le API di pagamento per 6 mesi prima di pubblicare il sito, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
-          "Inviare un questionario cartaceo per posta ordinaria a tutti i veterinari d'Italia, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
+          "Acquistare 10.000 follower fittizi su Instagram per dimostrare trazione commerciale",
+          "Programmare l'intero database e le API di pagamento per 6 mesi prima di pubblicare il sito",
+          "Inviare un questionario cartaceo per posta ordinaria a tutti i veterinari d'Italia",
           "Creare una 'Fake Door' (pagina descrittiva con pulsante 'Scopri il piano') misurando quanti utenti manifestano l'intenzione di cliccare e raccogliendo feedback esplorativo"
         ],
         "correctIndex": 3,
@@ -3751,10 +3751,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa dimostra l'aneddoto del bizzarro utensile 'Hutzler 571' (il contenitore di plastica a forma di banana) analizzato da Edward Stull?",
         "options": [
-          "Gli utensili da cucina in plastica non possono essere commercializzati sulle piattaforme digitali, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
+          "Gli utensili da cucina in plastica non possono essere commercializzati sulle piattaforme digitali",
           "Il valore reale, l'utilità e il significato d'uso che le persone attribuiscono a un artefatto differiscono radicalmente dalla percezione superficiale o dalle intenzioni originarie dei progettisti",
-          "I consumatori acquistano prodotti alimentari esclusivamente se recensiti da chef stellati, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
-          "Il packaging industriale deve essere sempre realizzato in materiali metallici inossidabili; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "I consumatori acquistano prodotti alimentari esclusivamente se recensiti da chef stellati",
+          "Il packaging industriale deve essere sempre realizzato in materiali metallici inossidabili"
         ],
         "correctIndex": 1,
         "explanation": "L'Hutzler 571 sembrava un oggetto ridicolo e inutile, ma su Amazon divenne un fenomeno virale con migliaia di recensioni ironiche: il valore percepito è sempre co-costruito dal pubblico."
@@ -3762,10 +3762,10 @@ window.STULL_DATA = [
       {
         "question": "Quale distinzione fondamentale separa lo 'Spazio del Problema' dallo 'Spazio della Soluzione' nel design thinking?",
         "options": [
-          "Lo spazio del problema si conclude in due minuti; lo spazio della soluzione dura per l'intero decennio, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
-          "Lo spazio del problema riguarda il codice sorgente; lo spazio della soluzione riguarda i server cloud, una semplificazione che disattende le euristiche fondamentali di usabilità",
+          "Lo spazio del problema si conclude in due minuti; lo spazio della soluzione dura per l'intero decennio",
+          "Lo spazio del problema riguarda il codice sorgente; lo spazio della soluzione riguarda i server cloud",
           "Lo spazio del problema indaga a fondo i bisogni, le cause radice, i vincoli e il contesto dell'utente; lo spazio della soluzione esplora, prototipa e collauda le possibili risposte progettuali",
-          "Non sussiste distinzione: un buon designer disegna immediatamente la soluzione senza analizzare il problema, una scelta progettuale che viola le convenzioni d'uso consolidate nel web"
+          "Non sussiste distinzione: un buon designer disegna immediatamente la soluzione senza analizzare il problema"
         ],
         "correctIndex": 2,
         "explanation": "Charles Kettering: 'Un problema ben definito è un problema per metà risolto'. Saltare subito ai wireframe senza aver capito il problema porta a creare soluzioni perfette per bisogni inesistenti."
@@ -3773,9 +3773,9 @@ window.STULL_DATA = [
       {
         "question": "Cosa si intende per 'Analisi delle Cause Radice' (Root Cause Analysis) attraverso la tecnica dei '5 Perché' di Sakichi Toyoda?",
         "options": [
-          "La verifica della presenza di cinque parole chiave identiche all'interno del meta-tag description, ignorando la tendenza naturale degli utenti a scansionare anziché leggere",
-          "Una riunione di 5 ore consecutive obbligatoria per tutti i dipendenti dell'azienda, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "Un algoritmo di ordinamento a cinque stadi utilizzato per indicizzare le pagine web, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
+          "La verifica della presenza di cinque parole chiave identiche all'interno del meta-tag description",
+          "Una riunione di 5 ore consecutive obbligatoria per tutti i dipendenti dell'azienda",
+          "Un algoritmo di ordinamento a cinque stadi utilizzato per indicizzare le pagine web",
           "L'abitudine metodologica di domandarsi 'Perché?' iterativamente di fronte a un problema per superare i sintomi superficiali e identificare la vera causa originaria sistemica"
         ],
         "correctIndex": 3,
@@ -3785,9 +3785,9 @@ window.STULL_DATA = [
         "question": "Come si formula un 'Problem Statement' (definizione del problema) rigoroso ed efficace secondo Stull?",
         "options": [
           "Definendo con chiarezza: Chi è l'utente, Qual è il suo obiettivo ostacolato, In quale contesto specifico si manifesta la difficoltà e Qual è l'impatto negativo causato dal problema",
-          "Scrivendo una lista di 20 funzionalità tecniche da implementare nel prossimo sprint; tale impostazione impedisce all'utente di costruire un modello mentale coerente",
-          "Calcolando il fatturato totale previsto dall'ufficio contabile nei successivi tre anni, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
-          "Inserendo un diagramma delle classi orientato agli oggetti privo di spiegazioni testuali; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso"
+          "Scrivendo una lista di 20 funzionalità tecniche da implementare nel prossimo sprint",
+          "Calcolando il fatturato totale previsto dall'ufficio contabile nei successivi tre anni",
+          "Inserendo un diagramma delle classi orientato agli oggetti privo di spiegazioni testuali"
         ],
         "correctIndex": 0,
         "explanation": "Un buon Problem Statement non menziona mai la soluzione tecnologica: focalizza la sofferenza umana da alleviare ('Gli infermieri perdono 15 minuti a turno cercando le cartelle cliniche...')."
@@ -3795,10 +3795,10 @@ window.STULL_DATA = [
       {
         "question": "Quale pericolo comporta accettare la richiesta di un committente formulata come 'Abbiamo bisogno di un'app per vendere scarpe' senza indagare oltre?",
         "options": [
-          "Violare i brevetti commerciali registrati dai produttori di calzature sportive, una semplificazione concettuale che non regge alla prova dei test con utenti rappresentativi eseguiti in condizioni d'uso realistiche",
+          "Violare i brevetti commerciali registrati dai produttori di calzature sportive",
           "Confondere la soluzione presunta con il problema reale: un'app potrebbe essere lo strumento più costoso e fallimentare se il vero problema è la logistica dei resi o la visibilità sui motori di ricerca",
-          "Provocare il rigetto automatico dell'applicazione da parte dell'App Store di Apple; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "Raddoppiare i costi di connessione alla rete telefonica per i clienti finali, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo"
+          "Provocare il rigetto automatico dell'applicazione da parte dell'App Store di Apple",
+          "Raddoppiare i costi di connessione alla rete telefonica per i clienti finali"
         ],
         "correctIndex": 1,
         "explanation": "I clienti arrivano chiedendo soluzioni ('Vogliamo una blockchain! Vogliamo un'app!'). Il ruolo del designer è fare un passo indietro e chiedere: 'Quale problema stiamo cercando di risolvere?'."
@@ -3813,10 +3813,10 @@ window.STULL_DATA = [
       {
         "question": "Il direttore di un museo lamenta: 'I visitatori non usano la nostra bellissima audioguida interattiva su smartphone, servono manifesti più grandi all'ingresso!'. Un'indagine sul campo rivela che all'interno del museo non c'è copertura 4G e l'app pesa 450 MB. Qual è il vero problema?",
         "options": [
-          "I quadri esposti nel museo violano il copyright della galleria d'arte moderna; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "Il formato dei file audio deve essere convertito da MP3 a WAV per migliorare la fedeltà, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
+          "I quadri esposti nel museo violano il copyright della galleria d'arte moderna",
+          "Il formato dei file audio deve essere convertito da MP3 a WAV per migliorare la fedeltà",
           "Il problema non è la consapevolezza o la promozione, ma la barriera infrastrutturale di accesso: l'impossibilità di scaricare 450 MB senza Wi-Fi rende inutilizzabile l'audioguida",
-          "I visitatori preferiscono leggere cartelli scritti in caratteri gotici medievali, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing"
+          "I visitatori preferiscono leggere cartelli scritti in caratteri gotici medievali"
         ],
         "correctIndex": 2,
         "explanation": "Mettere manifesti più grandi avrebbe sprecato budget: l'analisi della causa radice mostra che bastava fornire una Web App leggera senza download o il Wi-Fi gratuito all'ingresso."
@@ -3824,9 +3824,9 @@ window.STULL_DATA = [
       {
         "question": "Un team progetta una soluzione per ridurre i ritardi dei treni inserendo un gioco digitale alle stazioni per intrattenere i viaggiatori. Come giudica Stull questa operazione rispetto alla definizione del problema?",
         "options": [
-          "Un intervento tecnicamente valido a patto che il videogioco sia scaricabile in formato open source, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
-          "Una geniale applicazione della gamification intesa come leva di fidelizzazione empatica; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Una soluzione conforme alle direttive europee sull'intrattenimento ferroviario, riducendo la tolleranza all'errore e moltiplicando i passaggi operativi superflui",
+          "Un intervento tecnicamente valido a patto che il videogioco sia scaricabile in formato open source",
+          "Una geniale applicazione della gamification intesa come leva di fidelizzazione empatica",
+          "Una soluzione conforme alle direttive europee sull'intrattenimento ferroviario",
           "Un mascheramento superficiale del sintomo: non risolve il problema primario (la puntualità dei treni e la gestione dell'ansia da disservizio) e rischia di irritare ulteriormente i pendolari"
         ],
         "correctIndex": 3,
@@ -3836,9 +3836,9 @@ window.STULL_DATA = [
         "question": "Come si passa correttamente dalla fase di 'Definizione del Problema' alla fase di 'Ideazione delle Soluzioni' nel design process?",
         "options": [
           "Formulando domande 'How Might We' (Come potremmo...?) che trasformano i vincoli e le sofferenze scoperte in opportunità progettuali aperte e collaborative",
-          "Scegliendo a caso una libreria CSS su GitHub e implementandola immediatamente, alterando i punti di contatto del percorso utente",
-          "Chiedendo al designer con maggiore anzianità di prendere tutte le decisioni da solo, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
-          "Interrompendo qualsiasi contatto con gli stakeholder aziendali per evitare interferenze, ignorando la tendenza naturale degli utenti a scansionare anziché leggere"
+          "Scegliendo a caso una libreria CSS su GitHub e implementandola immediatamente",
+          "Chiedendo al designer con maggiore anzianità di prendere tutte le decisioni da solo",
+          "Interrompendo qualsiasi contatto con gli stakeholder aziendali per evitare interferenze"
         ],
         "correctIndex": 0,
         "explanation": "Le domande HMW ('Come potremmo aiutare i pendolari a conoscere l'orario effettivo del treno con 10 minuti di anticipo?') aprono lo spazio creativo mantenendo il vincolo sul bisogno reale."
@@ -3881,10 +3881,10 @@ window.STULL_DATA = [
       {
         "question": "Quale dovere di autoconsapevolezza impone Stull ai ricercatori UX quando si avvicinano a un settore merceologico sconosciuto?",
         "options": [
-          "Rifiutare commesse da aziende che non utilizzano computer con sistema operativo macOS, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "Memorizzare l'intero codice civile prima di iniziare qualsiasi attività di progettazione; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Rifiutare commesse da aziende che non utilizzano computer con sistema operativo macOS",
+          "Memorizzare l'intero codice civile prima di iniziare qualsiasi attività di progettazione",
           "Riconoscere e mettere tra parentesi i propri pregiudizi personali e bias cognitivi, poiché ciò che sembra banale, bizzarro o privo di valore al ricercatore può essere essenziale per il target reale",
-          "Fingere di essere esperti del settore durante le interviste per intimidire gli utenti, aumentando sensibilmente il carico cognitivo richiesto per completare il task"
+          "Fingere di essere esperti del settore durante le interviste per intimidire gli utenti"
         ],
         "correctIndex": 2,
         "explanation": "Se devi progettare un'app per appassionati di pesca o collezionisti di francobolli e non ne sai nulla, devi avvicinarti con umiltà antropologica e curiosità priva di giudizio."
@@ -3892,9 +3892,9 @@ window.STULL_DATA = [
       {
         "question": "In che modo l'uso combinato di Google con i suffissi 'notizie', 'tecnologia' e 'confronto' accelera la mappatura iniziale di un nuovo dominio?",
         "options": [
-          "Raddoppia la velocità di trasmissione dei pacchetti di dati su fibra ottica; una grandezza elettrica che varia in base al carico computazionale e alla temperatura operativa",
-          "Consente di scaricare illegalmente i database riservati delle aziende rivali, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "Serve ad aumentare il posizionamento SEO del browser utilizzato dal ricercatore; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
+          "Raddoppia la velocità di trasmissione dei pacchetti di dati su fibra ottica",
+          "Consente di scaricare illegalmente i database riservati delle aziende rivali",
+          "Serve ad aumentare il posizionamento SEO del browser utilizzato dal ricercatore",
           "Permette di ottenere una panoramica tridimensionale rapida: le notizie rivelano l'attualità e i temi caldi; la tecnologia svela i vincoli e gli standard; il confronto mappa la concorrenza e il posizionamento"
         ],
         "correctIndex": 3,
@@ -3904,9 +3904,9 @@ window.STULL_DATA = [
         "question": "Come si definisce la 'Ricerca Esplorativa' (o Generativa) all'inizio di un ciclo di progettazione?",
         "options": [
           "L'indagine aperta mirata a comprendere i bisogni inespressi, i comportamenti e il contesto degli utenti per scoprire quali problemi valga davvero la pena risolvere",
-          "La misurazione millimetrica della distanza tra il monitor e gli occhi del designer, riducendo la tolleranza all'errore e moltiplicando i passaggi operativi superflui",
-          "Il collaudo di conformità dei protocolli di rete TCP/IP effettuato dagli ingegneri, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "L'analisi quantitativa dei log degli errori di sistema dopo cinque anni dal lancio; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "La misurazione millimetrica della distanza tra il monitor e gli occhi del designer",
+          "Il collaudo di conformità dei protocolli di rete TCP/IP effettuato dagli ingegneri",
+          "L'analisi quantitativa dei log degli errori di sistema dopo cinque anni dal lancio"
         ],
         "correctIndex": 0,
         "explanation": "La ricerca generativa non testa soluzioni: esplora l'ignoto. Serve a scoprire quali opportunità esistono prima ancora di avere un'idea di cosa costruire."
@@ -3914,10 +3914,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa caratterizza invece la 'Ricerca Valutativa' (Evaluative Research)?",
         "options": [
-          "L'assegnazione di un voto scolastico numerico da 1 a 10 a ciascun programmatore, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
+          "L'assegnazione di un voto scolastico numerico da 1 a 10 a ciascun programmatore",
           "La verifica e il test di prototipi, wireframe o prodotti esistenti con utenti reali per valutare quanto siano usabili, efficaci e privi di frizioni rispetto agli obiettivi prefissati",
-          "La stima del valore di mercato dell'azienda effettuata da periti contabili indipendenti, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "La determinazione della retribuzione oraria dei partecipanti ai focus group; tale impostazione impedisce all'utente di costruire un modello mentale coerente"
+          "La stima del valore di mercato dell'azienda effettuata da periti contabili indipendenti",
+          "La determinazione della retribuzione oraria dei partecipanti ai focus group"
         ],
         "correctIndex": 1,
         "explanation": "La ricerca valutativa risponde a: 'La soluzione che abbiamo progettato funziona davvero? Le persone riescono a completare il compito o si bloccano?'."
@@ -3925,10 +3925,10 @@ window.STULL_DATA = [
       {
         "question": "In quale tipologia di ricerca rientra il 'Benchmarking Competitivo' condotto sulle applicazioni rivali?",
         "options": [
-          "Nello spionaggio industriale illegale punito dal codice penale internazionale, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "Nella ricerca clinica sperimentale in doppio cieco con placebo; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Nello spionaggio industriale illegale punito dal codice penale internazionale",
+          "Nella ricerca clinica sperimentale in doppio cieco con placebo",
           "Nella ricerca secondaria e comparativa: analizza i punti di forza, le carenze di usabilità e i pattern adottati dai concorrenti per individuare opportunità di differenziazione",
-          "Nell'ottimizzazione automatica delle tabelle di routing dei server di posta, riducendo la tolleranza all'errore e moltiplicando i passaggi operativi superflui"
+          "Nell'ottimizzazione automatica delle tabelle di routing dei server di posta"
         ],
         "correctIndex": 2,
         "explanation": "Studiare i competitor non significa copiare: significa capire cosa gli utenti si aspettano già (modelli mentali condivisi) e dove i rivali stanno deludendo i clienti per fare di meglio."
@@ -3943,9 +3943,9 @@ window.STULL_DATA = [
       {
         "question": "Un designer viene incaricato di progettare un'app per allevatori di cavalli da corsa. Il designer dichiara: 'Non mi piacciono gli animali e trovo questo settore noioso, userò un template per e-commerce generico'. Quale violazione etico-metodologica è evidente?",
         "options": [
-          "Incompatibilità della piattaforma con gli standard di cifratura biometrica; tale impostazione impedisce all'utente di costruire un modello mentale coerente",
-          "Violazione delle linee guida di Material Design sulle icone equestri, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
-          "Mancata adozione del protocollo di pagamento rateale Klarna all'interno del carrello; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Incompatibilità della piattaforma con gli standard di cifratura biometrica",
+          "Violazione delle linee guida di Material Design sulle icone equestri",
+          "Mancata adozione del protocollo di pagamento rateale Klarna all'interno del carrello",
           "Grave chiusura ai bias personali e rifiuto dell'immersione esplorativa: senza comprendere il lessico, i bisogni specifici e il mondo vitale degli allevatori, l'app sarà un fallimento assoluto"
         ],
         "correctIndex": 3,
@@ -3955,9 +3955,9 @@ window.STULL_DATA = [
         "question": "Nel pianificare la ricerca per un nuovo servizio di consulenza legale online, quale combinazione di metodi incarna la 'Triangolazione Metodologica'?",
         "options": [
           "Combinare dati quantitativi di mercato (ricerca secondaria), interviste in profondità con cittadini (ricerca qualitativa generativa) e test di usabilità sui prototipi (ricerca valutativa)",
-          "Utilizzare tre computer identici della stessa marca per analizzare lo stesso foglio Excel, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
-          "Sottoporre la stessa domanda a tre colleghi dell'ufficio contabilità durante la pausa caffè; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "Scrivere il codice HTML utilizzando tre linguaggi di programmazione concorrenti; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "Utilizzare tre computer identici della stessa marca per analizzare lo stesso foglio Excel",
+          "Sottoporre la stessa domanda a tre colleghi dell'ufficio contabilità durante la pausa caffè",
+          "Scrivere il codice HTML utilizzando tre linguaggi di programmazione concorrenti"
         ],
         "correctIndex": 0,
         "explanation": "Triangolare significa incrociare fonti e metodi diversi: i numeri ti dicono COSA accade, le interviste ti dicono PERCHÉ, i test ti confermano SE la soluzione funziona."
@@ -3965,10 +3965,10 @@ window.STULL_DATA = [
       {
         "question": "Un team vuole comprendere perché il tasso di rinnovo degli abbonamenti a un quotidiano digitale è calato del 25%. Quale tipologia di ricerca è metodologicamente adatta per scoprirne la causa?",
         "options": [
-          "Aumentare il numero di visualizzazioni dei banner promozionali sui motori di ricerca, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
+          "Aumentare il numero di visualizzazioni dei banner promozionali sui motori di ricerca",
           "Ricerca qualitativa esplorativa: condurre interviste approfondite con lettori che hanno cancellato l'abbonamento per indagare motivazioni, delusioni e mutamenti di abitudini",
-          "Reinstallare il sistema operativo del server centrale di posta elettronica, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "Modificare il colore del pulsante di iscrizione da verde a viola acceso, riducendo la tolleranza all'errore e moltiplicando i passaggi operativi superflui"
+          "Reinstallare il sistema operativo del server centrale di posta elettronica",
+          "Modificare il colore del pulsante di iscrizione da verde a viola acceso"
         ],
         "correctIndex": 1,
         "explanation": "I dati di analytics dicono già CHE se ne sono andati (25%). Per capire il MOTIVO serve solo ascoltare la voce di chi ha disdetto (interviste qualitative d'uscita)."
@@ -4011,9 +4011,9 @@ window.STULL_DATA = [
       {
         "question": "A quale suggestiva immagine fa ricorso Stull per spiegare i limiti intrinseci dei dati quantitativi?",
         "options": [
-          "Alla bussola magnetica che punta costantemente verso il polo nord geografico, una semplificazione concettuale che non regge alla prova dei test con utenti rappresentativi eseguiti in condizioni d'uso realistiche",
-          "Al faro nella tempesta che illumina la scogliera per le imbarcazioni in avvicinamento, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
-          "All'ancora di ferro gettata sul fondale sabbioso per arrestare il galleggiamento, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
+          "Alla bussola magnetica che punta costantemente verso il polo nord geografico",
+          "Al faro nella tempesta che illumina la scogliera per le imbarcazioni in avvicinamento",
+          "All'ancora di ferro gettata sul fondale sabbioso per arrestare il galleggiamento",
           "Alla 'scia della nave': la scia mostra con impeccabile precisione matematica dove la nave è già passata nel passato, ma non rivela nulla su dove stia andando né spiega perché il capitano abbia virato"
         ],
         "correctIndex": 3,
@@ -4023,9 +4023,9 @@ window.STULL_DATA = [
         "question": "Quale distinzione fondamentale separa il 'Campione' dalla 'Popolazione' nella statistica applicata alla UX?",
         "options": [
           "La popolazione è l'intero insieme universale di tutti gli utenti reali e potenziali; il campione è il sottoinsieme ristretto di individui effettivamente misurati durante l'indagine",
-          "La popolazione è composta da esseri umani; il campione è composto da simulazioni algoritmiche, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "La popolazione riguarda i residenti urbani; il campione riguarda solo gli abitanti rurali, secondo le specifiche industriali pubblicate nei data sheet ufficiali dei produttori",
-          "Non sussiste alcuna distinzione: ogni campione contiene obbligatoriamente tutta la popolazione; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "La popolazione è composta da esseri umani; il campione è composto da simulazioni algoritmiche",
+          "La popolazione riguarda i residenti urbani; il campione riguarda solo gli abitanti rurali",
+          "Non sussiste alcuna distinzione: ogni campione contiene obbligatoriamente tutta la popolazione"
         ],
         "correctIndex": 0,
         "explanation": "Se intervisti 100 persone (campione), devi chiederti se rappresentano fedelmente i 500.000 clienti reali (popolazione). Se il campione è distorto, i dati sono spazzatura."
@@ -4033,10 +4033,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa significa il celebre principio epistemologico 'La correlazione non implica causalità'?",
         "options": [
-          "I calcoli matematici eseguiti con la calcolatrice sono immuni da qualsiasi margine di errore, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
+          "I calcoli matematici eseguiti con la calcolatrice sono immuni da qualsiasi margine di errore",
           "Il fatto che due variabili numeriche varino insieme contemporaneamente non dimostra in alcun modo che l'una sia la causa diretta dell'altra (potrebbe esserci una terza variabile nascosta o pura casualità)",
-          "Tutti i dati quantitativi raccolti online sono falsi e non devono essere presi in considerazione; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "I grafici statistici devono essere disegnati sempre con barre verticali e mai con linee spezzate, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione"
+          "Tutti i dati quantitativi raccolti online sono falsi e non devono essere presi in considerazione",
+          "I grafici statistici devono essere disegnati sempre con barre verticali e mai con linee spezzate"
         ],
         "correctIndex": 1,
         "explanation": "Le vendite di gelati e gli annegamenti aumentano contemporaneamente: non sono i gelati a far annegare, la causa comune è il caldo estivo che spinge le persone a fare il bagno."
@@ -4044,10 +4044,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa indica il 'p-value' (valore di probabilità) nei test quantitativi A/B?",
         "options": [
-          "La percentuale di visitatori che utilizzano password complesse con caratteri speciali, una pratica che riduce l'usabilità complessiva, ostacolando l'orientamento spaziale e la percezione dei percorsi di navigazione primari",
-          "Il prezzo monetario medio di acquisto per ogni singolo cliente del portale, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
+          "La percentuale di visitatori che utilizzano password complesse con caratteri speciali",
+          "Il prezzo monetario medio di acquisto per ogni singolo cliente del portale",
           "La probabilità che la differenza osservata tra le due varianti sia dovuta al puro caso; per convenzione scientifica deve essere inferiore a 0,05 (5%) affinché il risultato sia considerato statisticamente significativo",
-          "Il tempo in secondi necessario per scaricare il codice JavaScript dal server, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo"
+          "Il tempo in secondi necessario per scaricare il codice JavaScript dal server"
         ],
         "correctIndex": 2,
         "explanation": "Se p < 0.05 significa che c'è meno del 5% di probabilità che la vittoria della variante B sia un colpo di fortuna: possiamo essere ragionevolmente certi che il nuovo design sia davvero superiore."
@@ -4055,9 +4055,9 @@ window.STULL_DATA = [
       {
         "question": "Quale grave trappola interpretativa colpisce i team ossessionati unicamente dalle metriche quantitative (Metric Obsession)?",
         "options": [
-          "La cancellazione accidentale dei fogli di stile CSS dal server di produzione, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
-          "L'aumento automatico dei costi di connessione alla rete Internet del fornitore; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "La perdita permanente delle chiavi di cifratura del database aziendale, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
+          "La cancellazione accidentale dei fogli di stile CSS dal server di produzione",
+          "L'aumento automatico dei costi di connessione alla rete Internet del fornitore",
+          "La perdita permanente delle chiavi di cifratura del database aziendale",
           "La Legge di Goodhart: quando una misura diventa un bersaglio aziendale da raggiungere a ogni costo, cessa di essere una buona misura (si ottimizza il numero drogando l'esperienza con dark pattern)"
         ],
         "correctIndex": 3,
@@ -4074,9 +4074,9 @@ window.STULL_DATA = [
         "question": "Un A/B test su una landing page registra 12 conversioni per la variante A e 15 per la variante B su un totale di 40 visitatori complessivi. Il Product Manager dichiara: 'La variante B vince del 25%, mettiamola in produzione!'. Quale errore statistico marchiano sta compiendo?",
         "options": [
           "Campione minuscolo e assenza totale di significatività statistica: con soli 40 utenti la differenza è puro rumore casuale (p-value altissimo); servono centinaia o migliaia di visitatori per validare il test",
-          "Mancata adozione del test di Rorschach sui partecipanti all'esperimento, un approccio che ignora la centralità dell'utente reale e le sue effettive modalità di interazione con il sistema nel contesto quotidiano e operativo di utilizzo",
-          "Violazione delle linee guida di accessibilità sul contrasto tra testo e immagini, una pratica che riduce l'usabilità complessiva, ostacolando l'orientamento spaziale e la percezione dei percorsi di navigazione primari",
-          "Utilizzo improprio del font Helvetica sui pulsanti di azione della variante B, una semplificazione concettuale che non regge alla prova dei test con utenti rappresentativi eseguiti in condizioni d'uso realistiche"
+          "Mancata adozione del test di Rorschach sui partecipanti all'esperimento",
+          "Violazione delle linee guida di accessibilità sul contrasto tra testo e immagini",
+          "Utilizzo improprio del font Helvetica sui pulsanti di azione della variante B"
         ],
         "correctIndex": 0,
         "explanation": "Prendere decisioni aziendali su campioni microscopici equivale a lanciare una moneta tre volte e concludere che la testa esce al 66% dei casi."
@@ -4084,10 +4084,10 @@ window.STULL_DATA = [
       {
         "question": "L'analytics rileva che sulla pagina del carrello il tempo di permanenza medio è salito da 1 a 6 minuti. Il team esulta: 'L'engagement degli utenti è aumentato del 500%!'. Quale ipotesi alternativa più realistica deve avanzare l'esperto UX?",
         "options": [
-          "I clienti si sono addormentati contemporaneamente davanti ai propri monitor, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
+          "I clienti si sono addormentati contemporaneamente davanti ai propri monitor",
           "Gli utenti sono bloccati da un nuovo bug, da campi confusi o da errori di calcolo che li costringono a faticare per 6 minuti nel disperato tentativo di pagare prima di arrendersi",
-          "Il browser web ha ridotto la frequenza di clock del processore per risparmiare energia; una grandezza elettrica che varia in base al carico computazionale e alla temperatura operativa",
-          "I visitatori stanno ammirando i colori del footer con profonda commozione estetica; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso"
+          "Il browser web ha ridotto la frequenza di clock del processore per risparmiare energia",
+          "I visitatori stanno ammirando i colori del footer con profonda commozione estetica"
         ],
         "correctIndex": 1,
         "explanation": "Più tempo su una pagina di carrello o di form non significa 'amore': significa quasi sempre frustrazione, dubbi, intoppi e disperata fatica a completare il compito."
@@ -4095,10 +4095,10 @@ window.STULL_DATA = [
       {
         "question": "Come si integrano metodologicamente i dati quantitativi di Google Analytics con i test qualitativi di usabilità?",
         "options": [
-          "Ignorando qualsiasi dato che contenga cifre decimali o percentuali, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "Sostituendo completamente i ricercatori umani con tabelle di calcolo automatico su Excel, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
+          "Ignorando qualsiasi dato che contenga cifre decimali o percentuali",
+          "Sostituendo completamente i ricercatori umani con tabelle di calcolo automatico su Excel",
           "L'analytics quantitativo accende la spia d'allarme mostrando 'DOVE' si verifica il collo di bottiglia; i test qualitativi osservano gli utenti per capire 'PERCHÉ' si bloccano e come correggere l'interfaccia",
-          "Pubblicando i dati statistici sulla prima pagina del quotidiano locale; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo"
+          "Pubblicando i dati statistici sulla prima pagina del quotidiano locale"
         ],
         "correctIndex": 2,
         "explanation": "La combinazione perfetta: Analytics individua il funnel bucato (il 'cosa'); la ricerca qualitativa guarda le persone agire e rivela il perché del buco."
@@ -4142,9 +4142,9 @@ window.STULL_DATA = [
         "question": "Quale scandalo reputazionale epocale coinvolse la multinazionale McDonald's con il portale 'McResources' citato da Edward Stull?",
         "options": [
           "L'azienda pubblicò una guida al bilancio familiare per i propri dipendenti che consigliava di vendere regali online, farsi prestare soldi e trovare un secondo lavoro per sopravvivere, ammettendo implicitamente che i propri stipendi erano insostenibili",
-          "I server del portale vennero violati da un attacco informatico che diffuse ricette segrete, senza tenere conto del percorso cognitivo attraverso cui l'utente costruisce le proprie aspettative, interpreta i segnali dell'interfaccia e formula le sue decisioni operative",
-          "L'azienda impose ai dipendenti di acquistare esclusivamente automobili di fabbricazione estera, un approccio che ignora la centralità dell'utente reale e le sue effettive modalità di interazione con il sistema nel contesto quotidiano e operativo di utilizzo",
-          "Il portale conteneva link a siti di gioco d'azzardo vietati dalle normative vigenti, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito"
+          "I server del portale vennero violati da un attacco informatico che diffuse ricette segrete",
+          "L'azienda impose ai dipendenti di acquistare esclusivamente automobili di fabbricazione estera",
+          "Il portale conteneva link a siti di gioco d'azzardo vietati dalle normative vigenti"
         ],
         "correctIndex": 0,
         "explanation": "McResources divenne lo zimbello mondiale: consigliare ai propri lavoratori di fare due lavori e spegnere il riscaldamento per far quadrare i conti dimostrò un distacco grottesco dalla realtà dei dipendenti."
@@ -4152,10 +4152,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa intende Stull con la pratica della 'Ricerca con la calcolatrice' (o verifica aritmetica di plausibilità)?",
         "options": [
-          "La revisione contabile formale eseguita da una società di revisione finanziaria internazionale, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
+          "La revisione contabile formale eseguita da una società di revisione finanziaria internazionale",
           "Un calcolo di buon senso di 5 minuti (Back-of-the-envelope calculation) sui numeri fondamentali del target (stipendi reali, tempi disponibili, costi vivi) prima di progettare qualunque proposta o consiglio",
-          "L'obbligo di inserire un calcolatore JavaScript all'interno della barra laterale di ogni sito; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "La memorizzazione delle tabelline matematiche da parte di tutti i membri del team grafico, una semplificazione concettuale che non regge alla prova dei test con utenti rappresentativi eseguiti in condizioni d'uso realistiche"
+          "L'obbligo di inserire un calcolatore JavaScript all'interno della barra laterale di ogni sito",
+          "La memorizzazione delle tabelline matematiche da parte di tutti i membri del team grafico"
         ],
         "correctIndex": 1,
         "explanation": "Bastava una calcolatrice e 3 minuti di conti elementari per capire che un lavoratore a 8$/ora non può pagare 600$ di assicurazione sanitaria: i designer devono fare i conti con la realtà."
@@ -4163,10 +4163,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa si intende per 'Problema di Fermi' nella stima ingegneristica e di design?",
         "options": [
-          "Un difetto di progettazione dei reattori nucleari a fissione controllata, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "Una contraddizione insolubile tra i principi della fisica quantistica e della termodinamica, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
+          "Un difetto di progettazione dei reattori nucleari a fissione controllata",
+          "Una contraddizione insolubile tra i principi della fisica quantistica e della termodinamica",
           "Un metodo per stimare con rapida approssimazione grandezze ignote o complesse formulando ipotesi logiche ragionevoli scomposte in passaggi aritmetici semplici",
-          "L'impossibilità di comprimere le immagini digitali oltre un determinato bitrate; una grandezza elettrica che varia in base al carico computazionale e alla temperatura operativa"
+          "L'impossibilità di comprimere le immagini digitali oltre un determinato bitrate"
         ],
         "correctIndex": 2,
         "explanation": "Enrico Fermi stimava quanti accordatori di pianoforti c'erano a Chicago con pochi ragionamenti logici: la UX deve stimare volumetrie e vincoli del target prima di spendere milioni in software."
@@ -4174,9 +4174,9 @@ window.STULL_DATA = [
       {
         "question": "Perché la totale disconnessione tra le condizioni socio-economiche del team di design e quelle del target reale produce fallimenti catastrofici?",
         "options": [
-          "Perché i dispositivi economici rifiutano di interpretare il codice scritto con linguaggi moderni, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "Perché i programmatori informatici non sono autorizzati ad aprire conti correnti bancari; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Perché le leggi internazionali impongono la parità di stipendio tra progettisti e utenti, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
+          "Perché i dispositivi economici rifiutano di interpretare il codice scritto con linguaggi moderni",
+          "Perché i programmatori informatici non sono autorizzati ad aprire conti correnti bancari",
+          "Perché le leggi internazionali impongono la parità di stipendio tra progettisti e utenti",
           "Perché professionisti ben retribuiti della Silicon Valley tendono a dare per scontati dispositivi top di gamma, connessioni ultraveloci e disponibilità economica che il 90% degli utenti non possiede"
         ],
         "correctIndex": 3,
@@ -4186,9 +4186,9 @@ window.STULL_DATA = [
         "question": "Quale controllo preventivo di 'sanità mentale economica' dovrebbe compiere qualsiasi team prima di lanciare una campagna di fidelizzazione?",
         "options": [
           "Calcolare se i costi, gli sforzi e i requisiti richiesti all'utente siano matematicamente proporzionati al beneficio reale offerto in cambio (evitando premi ridicoli a fronte di spese folli)",
-          "Verificare che il bilancio aziendale sia stato depositato presso la camera di commercio, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "Controllare che i tassi di interesse della banca centrale siano rimasti stabili, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "Accertarsi che il direttore finanziario abbia approvato il colore del logo sociale, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing"
+          "Verificare che il bilancio aziendale sia stato depositato presso la camera di commercio",
+          "Controllare che i tassi di interesse della banca centrale siano rimasti stabili",
+          "Accertarsi che il direttore finanziario abbia approvato il colore del logo sociale"
         ],
         "correctIndex": 0,
         "explanation": "Offrire 1 euro di sconto dopo che l'utente ha speso 5.000 euro e compilato 40 form è un insulto matematico che suscita ilarità e indignazione verso l'azienda."
@@ -4203,10 +4203,10 @@ window.STULL_DATA = [
       {
         "question": "Una startup crea un'app di risparmio per studenti universitari con borsa di studio. L'algoritmo imposta come default: 'Metti da parte 800€ al mese per le vacanze estive'. Gli studenti si infuriano e cancellano l'app. Quale verifica aritmetica è stata clamorosamente omessa?",
         "options": [
-          "L'applicazione della regola di simmetria assiale della scuola della Gestalt, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
+          "L'applicazione della regola di simmetria assiale della scuola della Gestalt",
           "La stima di plausibilità socio-economica: la borsa di studio media di uno studente è di 400€/mese; chiedere di risparmiarne 800€ dimostra totale ignoranza della realtà del target",
-          "La conversione dei tassi di cambio tra valute europee e dollaro australiano, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
-          "Il calcolo dell'indice di massa corporea all'interno del profilo utente, riducendo la tolleranza all'errore e moltiplicando i passaggi operativi superflui"
+          "La conversione dei tassi di cambio tra valute europee e dollaro australiano",
+          "Il calcolo dell'indice di massa corporea all'interno del profilo utente"
         ],
         "correctIndex": 1,
         "explanation": "È la replica esatta del caso McResources: pretendere da un target risorse che non possiede rivela che nessuno nel team ha mai preso in mano una calcolatrice per fare due conti basilari."
@@ -4214,10 +4214,10 @@ window.STULL_DATA = [
       {
         "question": "Un'azienda di e-commerce propone una promozione: 'Accumula 10.000 punti per vincere un portachiavi di plastica! Ogni euro speso vale 1 punto'. Come reagisce l'utente dotato di buon senso?",
         "options": [
-          "Invia un encomio scritto alla direzione generale per la generosità dell'omaggio; tale impostazione impedisce all'utente di costruire un modello mentale coerente",
-          "Spende immediatamente 10.000 euro per assicurarsi l'esclusivo portachiavi da collezione, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
+          "Invia un encomio scritto alla direzione generale per la generosità dell'omaggio",
+          "Spende immediatamente 10.000 euro per assicurarsi l'esclusivo portachiavi da collezione",
           "Percepisce lo squilibrio grottesco tra spesa richiesta (10.000€) e premio offerto (1€), vivendo la promozione come una presa in giro sfacciata che degrada la considerazione del brand",
-          "Non compie alcun calcolo poiché la mente umana non comprende le proporzioni numeriche, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud"
+          "Non compie alcun calcolo poiché la mente umana non comprende le proporzioni numeriche"
         ],
         "correctIndex": 2,
         "explanation": "Gli utenti sanno fare i conti: se lo scambio di valore è ridicolo, la promozione ottiene l'effetto opposto, trasformandosi in una pessima pubblicità virale."
@@ -4225,9 +4225,9 @@ window.STULL_DATA = [
       {
         "question": "Prima di avviare lo sviluppo di una nuova app mobile di video in streaming per pendolari, quale stima con la calcolatrice deve condurre il team UX?",
         "options": [
-          "Contare quante stazioni ferroviarie in Italia possiedono un distributore automatico di caffè, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "Calcolare quanti kilowattora consumano i condizionatori d'aria della sede aziendale, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "Verificare quante parole al minuto è in grado di pronunciare il doppiatore dei video; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
+          "Contare quante stazioni ferroviarie in Italia possiedono un distributore automatico di caffè",
+          "Calcolare quanti kilowattora consumano i condizionatori d'aria della sede aziendale",
+          "Verificare quante parole al minuto è in grado di pronunciare il doppiatore dei video",
           "Calcolare quanti gigabyte di traffico consumerà un'ora di visione rispetto ai piani dati medi del target e simulare l'uso in galleria con frequenti perdite di segnale di rete"
         ],
         "correctIndex": 3,
@@ -4271,10 +4271,10 @@ window.STULL_DATA = [
       {
         "question": "Quale grave scandalo internazionale coinvolse il colosso Nike nel 2013 per il lancio di una linea di leggings sportivi femminili?",
         "options": [
-          "I pantaloni contenevano fibre sintetiche infiammabili che violavano le norme di sicurezza; questa interpretazione trascura la complessità dei modelli mentali degli utenti e la variabilità dei contesti d'uso che influenzano profondamente ogni interazione con il prodotto",
+          "I pantaloni contenevano fibre sintetiche infiammabili che violavano le norme di sicurezza",
           "I leggings riproducevano fedelmente i motivi sacri del tatuaggio tradizionale maschile samoano (Pe'a), riservato esclusivamente a capi tribali e uomini di alto rango, scatenando proteste per profanazione culturale e costringendo Nike al ritiro immediato e alle scuse globali",
-          "Il prezzo di vendita era stato erroneamente inserito a zero centesimi sul sito internet, un approccio che ignora la centralità dell'utente reale e le sue effettive modalità di interazione con il sistema nel contesto quotidiano e operativo di utilizzo",
-          "I capi di abbigliamento erano stati cuciti utilizzando filati di colore non conforme al pantone, ignorando che la qualità dell'esperienza dipende dalla coerenza tra le aspettative dell'utente e il comportamento effettivo del sistema in ogni punto di contatto del percorso"
+          "Il prezzo di vendita era stato erroneamente inserito a zero centesimi sul sito internet",
+          "I capi di abbigliamento erano stati cuciti utilizzando filati di colore non conforme al pantone"
         ],
         "correctIndex": 1,
         "explanation": "Nike considerò i simboli Maori/Samoani come 'semplici pattern grafici carini'. La totale assenza di ricerca antropologica e qualitativa causò un'offesa culturale gravissima e un disastro di pubbliche relazioni."
@@ -4282,10 +4282,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa è in grado di rivelare la 'Ricerca Qualitativa' che nessuna metrica quantitativa potrà mai catturare?",
         "options": [
-          "La quantità di memoria cache consumata dal server durante un picco di traffico, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "Il numero esatto di pixel visualizzati su uno schermo a risoluzione 4K, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
+          "La quantità di memoria cache consumata dal server durante un picco di traffico",
+          "Il numero esatto di pixel visualizzati su uno schermo a risoluzione 4K",
           "I significati profondi, le convenzioni culturali, i valori identitari, le paure emotive e le motivazioni intime che guidano le decisioni e i comportamenti degli esseri umani",
-          "La posizione geometrica esatta delle linee elettriche sotterranee; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso"
+          "La posizione geometrica esatta delle linee elettriche sotterranee"
         ],
         "correctIndex": 2,
         "explanation": "La ricerca qualitativa scava nel tessuto umano: non conta le persone, ascolta le loro storie, capisce i loro tabù, le loro aspirazioni e il significato che danno agli oggetti."
@@ -4293,9 +4293,9 @@ window.STULL_DATA = [
       {
         "question": "Quale metodologia qualitativa è considerata la spina dorsale per la comprensione dei bisogni degli utenti?",
         "options": [
-          "La lettura dei commenti anonimi lasciati su portali satirici online, alterando i punti di contatto del percorso utente",
-          "L'invio di questionari a crocette con risposte obbligatorie su scala da 1 a 5, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "L'estrazione massiva di parole chiave da forum pubblici tramite web scraping, introducendo un attrito cognitivo ingiustificato",
+          "La lettura dei commenti anonimi lasciati su portali satirici online",
+          "L'invio di questionari a crocette con risposte obbligatorie su scala da 1 a 5",
+          "L'estrazione massiva di parole chiave da forum pubblici tramite web scraping",
           "L'intervista semi-strutturata in profondità (con domande aperte, rilanci non giudicanti e ascolto empatico nel contesto dell'utente)"
         ],
         "correctIndex": 3,
@@ -4305,9 +4305,9 @@ window.STULL_DATA = [
         "question": "Cosa si intende per 'Saturazione dei Dati' (Data Saturation) nella ricerca qualitativa?",
         "options": [
           "Il momento metodologico in cui condurre ulteriori interviste non produce più nuove informazioni, temi o problemi significativi, indicando che il campione è sufficiente",
-          "Il momento in cui l'hard disk del computer del ricercatore esaurisce lo spazio libero, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "Il raggiungimento del cento per cento di risposte affermative durante un sondaggio; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "La presenza di troppi colori accesi all'interno di una mappa di calore visiva, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito"
+          "Il momento in cui l'hard disk del computer del ricercatore esaurisce lo spazio libero",
+          "Il raggiungimento del cento per cento di risposte affermative durante un sondaggio",
+          "La presenza di troppi colori accesi all'interno di una mappa di calore visiva"
         ],
         "correctIndex": 0,
         "explanation": "Jakob Nielsen insegna che con 5-8 partecipanti scopri l'85% dei problemi: dopo le prime 6-8 interviste le persone iniziano a ripetere le stesse cose. Quello è il punto di saturazione."
@@ -4315,10 +4315,10 @@ window.STULL_DATA = [
       {
         "question": "Qual è il rischio principale dell'ignorare la sensibilità antropologica e culturale nel design di servizi globali?",
         "options": [
-          "Ridurre la velocità di risposta dei DNS internazionali dell'infrastruttura cloud, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
+          "Ridurre la velocità di risposta dei DNS internazionali dell'infrastruttura cloud",
           "Alienarsi intere comunità e culture, apparire arroganti o offensivi ed essere boicottati per mancanza di rispetto verso norme, tradizioni e sensibilità locali",
-          "Rendere incompatibile l'applicazione con i protocolli di crittografia a 256 bit nel bus di comunicazione dati ad alta velocità",
-          "Provocare l'inversione automatica dei colori nei monitor dei clienti asiatici, secondo i principi predittivi della legge di Hick"
+          "Rendere incompatibile l'applicazione con i protocolli di crittografia a 256 bit",
+          "Provocare l'inversione automatica dei colori nei monitor dei clienti asiatici"
         ],
         "correctIndex": 1,
         "explanation": "Colori, gesti, simboli e parole cambiano significato radicalmente nel mondo: il bianco è lutto in Oriente, il pollice alzato è un insulto grave in Medio Oriente. Ricerca qualitativa è rispetto."
@@ -4333,10 +4333,10 @@ window.STULL_DATA = [
       {
         "question": "Un'azienda americana lancia un'app di salute in Giappone usando il colore verde per indicare la guarigione e il bianco per la morte, ignorando che in Giappone il bianco è tradizionalmente legato al lutto e il verde ha connotazioni diverse. Gli utenti provano repulsione. Quale lezione del caso Nike è stata dimenticata?",
         "options": [
-          "La necessità di tradurre le etichette unicamente utilizzando ideogrammi Kanji arcaici, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
-          "L'incompatibilità dei monitor giapponesi con i profili colore sRGB occidentali, ignorando la tendenza naturale degli utenti a scansionare anziché leggere",
+          "La necessità di tradurre le etichette unicamente utilizzando ideogrammi Kanji arcaici",
+          "L'incompatibilità dei monitor giapponesi con i profili colore sRGB occidentali",
           "L'imperativo della ricerca qualitativa transculturale: i codici simbolici e cromatici non sono universali ma radicati nella storia antropologica dei singoli popoli",
-          "La violazione delle leggi sui brevetti industriali grafici registrati a Tokyo, una semplificazione che disattende le euristiche fondamentali di usabilità"
+          "La violazione delle leggi sui brevetti industriali grafici registrati a Tokyo"
         ],
         "correctIndex": 2,
         "explanation": "Progettare per mercati internazionali senza una ricerca antropologica sul campo porta a gaffe imbarazzanti e rigetto istantaneo da parte delle comunità locali."
@@ -4344,9 +4344,9 @@ window.STULL_DATA = [
       {
         "question": "Un ricercatore conduce 6 interviste approfondite su un portale di adozioni e nota che tutti i partecipanti scoppiano a piangere nello stesso punto del percorso a causa di una domanda burocratica brutale. Qual è il valore di questa evidenza qualitativa?",
         "options": [
-          "Irrilevante poiché le emozioni personali non devono interferire con i processi amministrativi; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Nullo: sei persone non rappresentano un campione statisticamente significativo a livello di p-value, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "Metodologicamente nullo fino a quando non viene confermato da un sondaggio su 100.000 persone, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
+          "Irrilevante poiché le emozioni personali non devono interferire con i processi amministrativi",
+          "Nullo: sei persone non rappresentano un campione statisticamente significativo a livello di p-value",
+          "Metodologicamente nullo fino a quando non viene confermato da un sondaggio su 100.000 persone",
           "Altissimo e definitivo: l'intensità del vissuto emotivo condiviso rivela una lacerazione profonda nell'esperienza che richiede una riscrittura empatica immediata del flusso, a prescindere da statistiche numeriche"
         ],
         "correctIndex": 3,
@@ -4356,9 +4356,9 @@ window.STULL_DATA = [
         "question": "Come si evita l''Effetto Hawthorne' (la tendenza dei partecipanti a modificare il proprio comportamento sentendosi osservati) durante una sessione di ricerca qualitativa?",
         "options": [
           "Creando un clima informale e accogliente, spiegando che si sta testando l'interfaccia e non la persona, e lasciando che l'utente agisca senza interruzioni giudicanti",
-          "Filmando l'utente con telecamere nascoste senza il suo consenso informato, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "Minacciando il partecipante di non pagargli il compenso se commette errori, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
-          "Obbligando l'utente a indossare un visore di realtà virtuale oscurato; tale impostazione impedisce all'utente di costruire un modello mentale coerente"
+          "Filmando l'utente con telecamere nascoste senza il suo consenso informato",
+          "Minacciando il partecipante di non pagargli il compenso se commette errori",
+          "Obbligando l'utente a indossare un visore di realtà virtuale oscurato"
         ],
         "correctIndex": 0,
         "explanation": "Rassicurare il partecipante è il dovere del facilitatore: 'Non ci sono risposte giuste o sbagliate, siamo noi sotto esame, non tu'. Questo fa cadere la tensione e ripristina la naturalezza."
@@ -4401,10 +4401,10 @@ window.STULL_DATA = [
       {
         "question": "Secondo Edward Stull nel Capitolo 35, qual è la causa profonda della stragrande maggioranza dei fallimenti e delle frizioni di usabilità?",
         "options": [
-          "La scadenza temporale dei contratti di lavoro a tempo determinato nel settore IT, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "L'assenza di processori grafici dedicati a bordo dei computer dei programmatori per facilitare il rapido completamento del task",
+          "La scadenza temporale dei contratti di lavoro a tempo determinato nel settore IT",
+          "L'assenza di processori grafici dedicati a bordo dei computer dei programmatori",
           "La mancata 'Conciliazione' tra requisiti tecnici del codice, obiettivi economici dell'azienda e modelli mentali ed emotivi degli utenti reali",
-          "L'impiego di schermi touch screen con sensibilità al tocco inferiore a dieci millisecondi, disattendendo le consolidate euristiche di usabilità"
+          "L'impiego di schermi touch screen con sensibilità al tocco inferiore a dieci millisecondi"
         ],
         "correctIndex": 2,
         "explanation": "La buona UX è l'arte della conciliazione: fare incontrare la fattibilità tecnologica, la redditività del business e la felicità/facilità dell'essere umano. Se uno di questi tre elementi è sacrificato, il sistema crolla."
@@ -4412,9 +4412,9 @@ window.STULL_DATA = [
       {
         "question": "Cosa si intende per 'Scambio Equo di Valore' (Fair Exchange of Value) nella filosofia della sostenibilità di prodotto?",
         "options": [
-          "L'obbligo contrattuale di non effettuare resi di merce dopo sette giorni dall'acquisto; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "La vendita di beni digitali a un prezzo imposto per legge dal parlamento; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "Il baratto di componenti hardware usati tra dipendenti della stessa azienda, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
+          "L'obbligo contrattuale di non effettuare resi di merce dopo sette giorni dall'acquisto",
+          "La vendita di beni digitali a un prezzo imposto per legge dal parlamento",
+          "Il baratto di componenti hardware usati tra dipendenti della stessa azienda",
           "Un patto trasparente e bilanciato in cui l'utente riceve un beneficio tangibile, utile e soddisfacente in cambio del proprio tempo, denaro o attenzione concessi al servizio"
         ],
         "correctIndex": 3,
@@ -4424,9 +4424,9 @@ window.STULL_DATA = [
         "question": "Quale pericolo insito nella 'Avidità Predatoria' (Greed) distrugge la relazione fiduciaria con l'utente?",
         "options": [
           "Cercare di estrarre il massimo profitto immediato a discapito della trasparenza e del benessere del cliente (es. ricarichi occulti, abbonamenti trappola), distruggendo il valore del brand a lungo termine",
-          "Aumentare gli investimenti nel dipartimento di ricerca e sviluppo sui materiali, una pratica che riduce l'usabilità complessiva, ostacolando l'orientamento spaziale e la percezione dei percorsi di navigazione primari",
-          "Assumere personale altamente qualificato con contratti a tempo indeterminato, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "Rilasciare aggiornamenti software gratuiti con frequenza settimanale, un approccio che ignora la centralità dell'utente reale e le sue effettive modalità di interazione con il sistema nel contesto quotidiano e operativo di utilizzo"
+          "Aumentare gli investimenti nel dipartimento di ricerca e sviluppo sui materiali",
+          "Assumere personale altamente qualificato con contratti a tempo indeterminato",
+          "Rilasciare aggiornamenti software gratuiti con frequenza settimanale"
         ],
         "correctIndex": 0,
         "explanation": "L'avidità è miope: ti fa guadagnare 10 euro oggi con un tranello contrattuale, ma ti costa 1.000 euro di reputazione distrutta, passaparola negativo e recensioni feroci."
@@ -4434,10 +4434,10 @@ window.STULL_DATA = [
       {
         "question": "Come si conciliano gli obiettivi di business legittimi (monetizzazione) con un'esperienza utente eccellente?",
         "options": [
-          "Nascondendo i pulsanti di disdetta dell'abbonamento all'interno di sottomenu segreti; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Nascondendo i pulsanti di disdetta dell'abbonamento all'interno di sottomenu segreti",
           "Rendendo la monetizzazione una conseguenza naturale del valore fornito: l'utente paga volentieri un prezzo trasparente perché sperimenta un risparmio di tempo, serenità ed efficacia concreta",
-          "Aggiungendo automaticamente prodotti a pagamento all'interno del carrello della spesa, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "Obbligando gli utenti a guardare 30 minuti di pubblicità prima di accedere alle funzioni base; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso"
+          "Aggiungendo automaticamente prodotti a pagamento all'interno del carrello della spesa",
+          "Obbligando gli utenti a guardare 30 minuti di pubblicità prima di accedere alle funzioni base"
         ],
         "correctIndex": 1,
         "explanation": "I servizi migliori (es. Apple, Spotify, Amazon Prime) non ti truffano: ti danno così tanto valore quotidiano che paghi il canone con il sorriso."
@@ -4445,10 +4445,10 @@ window.STULL_DATA = [
       {
         "question": "Quale ruolo diplomatico deve esercitare il Lead UX Designer all'interno delle trattative con gli stakeholder aziendali?",
         "options": [
-          "Accettare passivamente qualsiasi richiesta dei dirigenti anche se palesemente dannosa per l'usabilità, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "Imporre le proprie decisioni estetiche rifiutando qualsiasi dialogo con i manager commerciali, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
+          "Accettare passivamente qualsiasi richiesta dei dirigenti anche se palesemente dannosa per l'usabilità",
+          "Imporre le proprie decisioni estetiche rifiutando qualsiasi dialogo con i manager commerciali",
           "Fungere da mediatore e avvocato dell'utente, dimostrando con evidenze empiriche e calcoli di ROI che rispettare i bisogni dell'utente è la via più sicura per proteggere i profitti e la crescita dell'azienda",
-          "Abbandonare le riunioni di progetto ogni volta che si discute di budget o bilancio; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "Abbandonare le riunioni di progetto ogni volta che si discute di budget o bilancio"
         ],
         "correctIndex": 2,
         "explanation": "Il designer non è un artista isolato: è un negoziatore empatico che parla la lingua del business per proteggere la dignità e la facilità dell'utente reale."
@@ -4463,9 +4463,9 @@ window.STULL_DATA = [
       {
         "question": "In un'app di incontri, gli algoritmi vengono modificati dai manager per non mostrare profili compatibili ai clienti paganti, al fine di prolungare la loro solitudine e costringerli a rinnovare l'abbonamento mensile. Come giudica Stull questa operazione dal punto di vista della Conciliazione?",
         "options": [
-          "Una prassi commerciale neutrale conforme ai regolamenti europei sul commercio elettronico; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "Un'applicazione virtuosa del modello di Kano per la massimizzazione del profitto; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Una strategia raccomandata dalle linee guida Agile per ottimizzare il Customer Lifetime Value, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
+          "Una prassi commerciale neutrale conforme ai regolamenti europei sul commercio elettronico",
+          "Un'applicazione virtuosa del modello di Kano per la massimizzazione del profitto",
+          "Una strategia raccomandata dalle linee guida Agile per ottimizzare il Customer Lifetime Value",
           "Una rottura predatoria e immorale dello scambio equo di valore: antepone il saccheggio economico alla missione del prodotto, scavando un abisso di risentimento e portando alla morte del brand"
         ],
         "correctIndex": 3,
@@ -4475,9 +4475,9 @@ window.STULL_DATA = [
         "question": "Durante la progettazione di un portale di scommesse sportive, il team UX introduce limiti di deposito personalizzabili, timer di gioco visibili e pulsanti di auto-esclusione immediata. Quale conciliazione etica si sta attuando?",
         "options": [
           "La conciliazione tra sostenibilità del business e tutela della salute psicologica ed economica del cliente (Responsible Gaming), proteggendo la dignità umana prima dell'estrazione monetaria",
-          "L'ottimizzazione del bounce rate attraverso la divulgazione progressiva dei dati di gioco, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "La violazione delle linee guida antitrust sulla concorrenza tra bookmaker digitali; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "La conformità tecnica con le specifiche hardware delle macchine da gioco fisiche; tale impostazione impedisce all'utente di costruire un modello mentale coerente"
+          "L'ottimizzazione del bounce rate attraverso la divulgazione progressiva dei dati di gioco",
+          "La violazione delle linee guida antitrust sulla concorrenza tra bookmaker digitali",
+          "La conformità tecnica con le specifiche hardware delle macchine da gioco fisiche"
         ],
         "correctIndex": 0,
         "explanation": "Questo è il design etico: dare alle persone strumenti di controllo per non distruggersi, anteponendo la tutela dell'individuo al profitto predatorio."
@@ -4485,10 +4485,10 @@ window.STULL_DATA = [
       {
         "question": "Un'azienda fornitrice di energia ha un modulo online per cambiare fornitore in 2 clic, ma per recedere dal contratto impone l'invio di una raccomandata A/R cartacea con marca da bollo. Quale asimmetria relazionale viene denunciata da Stull?",
         "options": [
-          "Un'applicazione rigorosa del principio di familiarità visiva di Donald Norman; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Un'applicazione rigorosa del principio di familiarità visiva di Donald Norman",
           "Il pattern 'Roach Motel' (Trappola per scarafaggi): facilissimo entrare, impossibile uscire. Una violazione dello scambio equo che genera odio verso il brand e reclami alle autorità garanti",
-          "Una soluzione approvata dall'euristica di Nielsen sulla flessibilità ed efficienza d'uso, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "Una prassi amministrativa raccomandata per garantire la sicurezza crittografica dei dati; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo"
+          "Una soluzione approvata dall'euristica di Nielsen sulla flessibilità ed efficienza d'uso",
+          "Una prassi amministrativa raccomandata per garantire la sicurezza crittografica dei dati"
         ],
         "correctIndex": 1,
         "explanation": "Se per entrare basta un click, per uscire deve bastare un click. Rendere l'uscita un labirinto burocratico è disonesto e spinge l'utente a denunciare l'azienda all'Antitrust."
@@ -4531,9 +4531,9 @@ window.STULL_DATA = [
       {
         "question": "Qual è la funzione strategica della 'Documentazione' nel processo di progettazione UX secondo Edward Stull?",
         "options": [
-          "Sostituire la necessità di scrivere codice sorgente funzionante nel computer, una semplificazione concettuale che non regge alla prova dei test con utenti rappresentativi eseguiti in condizioni d'uso realistiche",
-          "Riempire gli archivi aziendali per giustificare le ore di straordinario dei dipendenti, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "Fornire materiale cartaceo da distribuire ai clienti durante le fiere di settore; tale soluzione viola il principio di visibilità dello stato del sistema, lasciando l'utente incerto sull'esito della propria azione",
+          "Sostituire la necessità di scrivere codice sorgente funzionante nel computer",
+          "Riempire gli archivi aziendali per giustificare le ore di straordinario dei dipendenti",
+          "Fornire materiale cartaceo da distribuire ai clienti durante le fiere di settore",
           "Fungere da memoria storica condivisa delle decisioni progettuali, motivandone le ragioni con evidenze di ricerca per evitare 'riunioni circolari' in cui si ridiscute periodicamente tutto da capo"
         ],
         "correctIndex": 3,
@@ -4543,9 +4543,9 @@ window.STULL_DATA = [
         "question": "Quale convenzione rigorosa di denominazione dei file (File Naming Convention) prescrive Stull per eliminare il caos nei team?",
         "options": [
           "L'adozione dello standard cronologico internazionale ISO 8601 (AAAAMMGG_Progetto_Descrizione_v01), che ordina naturalmente i file per data ed elimina l'illusione fallace della parola 'definitivo'",
-          "L'uso esclusivo di nomi composti da consonanti maiuscole privi di spazi e numeri, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "L'assegnazione casuale di numeri progressivi generati da un algoritmo automatico, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
-          "La denominazione dei documenti con il nome di battesimo del designer che li ha creati; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "L'uso esclusivo di nomi composti da consonanti maiuscole privi di spazi e numeri",
+          "L'assegnazione casuale di numeri progressivi generati da un algoritmo automatico",
+          "La denominazione dei documenti con il nome di battesimo del designer che li ha creati"
         ],
         "correctIndex": 0,
         "explanation": "Chiunque nomini i file 'Progetto_Finale_v2_DEFINITIVO_davvero.pdf' è condannato al caos. La data AAAAMMGG (es. 20260907_Checkout_v03.fig) ordina i file cronologicamente in automatico."
@@ -4553,10 +4553,10 @@ window.STULL_DATA = [
       {
         "question": "Perché la parola 'Definitivo' (o 'Finale') nel mondo del software e del Web Design è definita da Stull come una pericolosa illusione?",
         "options": [
-          "Perché la lingua italiana non riconosce il valore legale dell'aggettivo 'definitivo', un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
+          "Perché la lingua italiana non riconosce il valore legale dell'aggettivo 'definitivo'",
           "Perché i prodotti digitali sono organismi viventi che evolvono continuamente: nessun software è mai veramente 'finito', poiché cambiano gli utenti, i dispositivi, le normative e le tecnologie",
-          "Perché i sistemi operativi moderni rifiutano di salvare file che contengono quella parola; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "Perché i brevetti software hanno una durata illimitata che non necessita di aggiornamenti, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito"
+          "Perché i sistemi operativi moderni rifiutano di salvare file che contengono quella parola",
+          "Perché i brevetti software hanno una durata illimitata che non necessita di aggiornamenti"
         ],
         "correctIndex": 1,
         "explanation": "Il software non è una cattedrale di pietra: un'interfaccia si aggiorna, si corregge, itera sui feedback. Definire qualcosa 'finale' blocca la mentalità evolutiva."
@@ -4564,10 +4564,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa si intende per 'Design System' nella documentazione viva di un'azienda matura?",
         "options": [
-          "Un software antivirus utilizzato per proteggere le cartelle di grafica da attacchi hacker; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "Un archivio cartaceo custodito all'interno di una cassaforte di sicurezza aziendale; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Un software antivirus utilizzato per proteggere le cartelle di grafica da attacchi hacker",
+          "Un archivio cartaceo custodito all'interno di una cassaforte di sicurezza aziendale",
           "L'ecosistema integrato di componenti UI riutilizzabili, pattern di interazione, linee guida di accessibilità e token di stile documentati sia a livello visivo che di codice sorgente condiviso",
-          "Il catalogo dei prezzi di vendita al dettaglio concordato con i fornitori esterni, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione"
+          "Il catalogo dei prezzi di vendita al dettaglio concordato con i fornitori esterni"
         ],
         "correctIndex": 2,
         "explanation": "Un Design System (come Material Design o Polaris) è documentazione vivente: collega Figma a GitHub, garantendo che sviluppatori e designer usino gli stessi componenti coerenti."
@@ -4575,9 +4575,9 @@ window.STULL_DATA = [
       {
         "question": "Qual è il formato ideale per documentare i risultati di un test di usabilità affinché vengano recepiti dal team?",
         "options": [
-          "Un file di testo con la trascrizione fonetica letterale di ogni respiro dei partecipanti; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "Un volume rilegato in pelle di quattrocento pagine privo di immagini e sommario; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "La registrazione integrale non tagliata di trenta ore di video su chiavetta USB; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Un file di testo con la trascrizione fonetica letterale di ogni respiro dei partecipanti",
+          "Un volume rilegato in pelle di quattrocento pagine privo di immagini e sommario",
+          "La registrazione integrale non tagliata di trenta ore di video su chiavetta USB",
           "Un report esecutivo sintetico con evidenziazione dei problemi critici ordinati per gravità, brevi videoclip dimostrativi delle difficoltà reali degli utenti e raccomandazioni pratiche azionabili"
         ],
         "correctIndex": 3,
@@ -4594,9 +4594,9 @@ window.STULL_DATA = [
         "question": "In un'agenzia, sul server condiviso ci sono cinque file: 'Wireframe_Home_Nuovo.sketch', 'Wireframe_Home_Final.sketch', 'Wireframe_Home_Final2.sketch', 'Wireframe_Home_OK.sketch', 'Wireframe_Home_definitivo_venerdi.sketch'. Uno sviluppatore implementa la versione sbagliata. Di chi è la responsabilità sistemica?",
         "options": [
           "Dell'assenza totale di una convenzione formale di documentazione e versioning: nominare i file in modo approssimativo genera confusione inevitabile; serve una convenzione ISO rigorosa o un repository con branch tracciati",
-          "Dello sviluppatore che avrebbe dovuto tirare a indovinare quale fosse il file più recente; tale soluzione viola il principio di visibilità dello stato del sistema, lasciando l'utente incerto sull'esito della propria azione",
-          "Del fornitore del server cloud che non ordina i file in base alle dimensioni in kilobyte, un valore calibrato in fabbrica secondo gli standard industriali di collaudo e memorizzato nelle tabelle di configurazione della ROM",
-          "Del cliente che ha richiesto troppe modifiche al layout iniziale della home page, un approccio che ignora la centralità dell'utente reale e le sue effettive modalità di interazione con il sistema nel contesto quotidiano e operativo di utilizzo"
+          "Dello sviluppatore che avrebbe dovuto tirare a indovinare quale fosse il file più recente",
+          "Del fornitore del server cloud che non ordina i file in base alle dimensioni in kilobyte",
+          "Del cliente che ha richiesto troppe modifiche al layout iniziale della home page"
         ],
         "correctIndex": 0,
         "explanation": "Il caos dei file non è una fatalità: è una colpa organizzativa. Con '20260907_Home_v05' chiunque sa quale sia l'ultima versione senza possibilità di errore."
@@ -4604,10 +4604,10 @@ window.STULL_DATA = [
       {
         "question": "Un nuovo Lead Designer entra in azienda e propone di cancellare il carrello attuale per rifarlo completamente da zero. Il Product Manager apre il documento storico del 2024 che dimostra che quel carrello era stato testato con 40 utenti dopo 3 fallimenti delle alternative. Quale valore ha avuto la documentazione?",
         "options": [
-          "Ha violato il diritto del nuovo designer di esprimere la propria creatività senza vincoli, ignorando la tendenza naturale degli utenti a scansionare anziché leggere",
+          "Ha violato il diritto del nuovo designer di esprimere la propria creatività senza vincoli",
           "Ha evitato di sprecare mesi di lavoro ripercorrendo strade già dimostratesi fallimentari, preservando l'eredità intellettuale e le evidenze scientifiche già acquisite dal team",
-          "Ha rallentato la velocità di compilazione del codice durante la pipeline di rilascio, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "Non ha prodotto alcun valore poiché le ricerche del 2024 sono automaticamente obsolete, aumentando sensibilmente il carico cognitivo richiesto per completare il task"
+          "Ha rallentato la velocità di compilazione del codice durante la pipeline di rilascio",
+          "Non ha prodotto alcun valore poiché le ricerche del 2024 sono automaticamente obsolete"
         ],
         "correctIndex": 1,
         "explanation": "La memoria documentata protegge l'azienda dall'amnesia collettiva e dall'ego dei nuovi arrivati che vogliono azzerare tutto senza sapere perché le cose sono state fatte così."
@@ -4615,10 +4615,10 @@ window.STULL_DATA = [
       {
         "question": "Come si documentano le linee guida di accessibilità (WCAG) all'interno di un Design System aziendale?",
         "options": [
-          "Stampando il testo delle direttive WCAG su poster cartacei appesi lungo i corridoi, ignorando la tendenza naturale degli utenti a scansionare anziché leggere",
-          "Inserendo un link generico al sito del parlamento europeo a piè di pagina, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
+          "Stampando il testo delle direttive WCAG su poster cartacei appesi lungo i corridoi",
+          "Inserendo un link generico al sito del parlamento europeo a piè di pagina",
           "Indicando per ogni componente UI il contrasto cromatico testato, le scorciatoie da tastiera previste, gli attributi ARIA necessari e i comportamenti attesi dagli screen reader",
-          "Demandando la verifica dell'accessibilità all'utente finale tramite segnalazione email, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo"
+          "Demandando la verifica dell'accessibilità all'utente finale tramite segnalazione email"
         ],
         "correctIndex": 2,
         "explanation": "Nel design system ogni componente (bottone, modale, campo) deve specificare le regole di accessibilità: solo così gli sviluppatori possono montarlo in modo sicuro e accessibile di default."
@@ -4662,9 +4662,9 @@ window.STULL_DATA = [
         "question": "Cosa definisce rigorosamente una 'Persona' nella metodologia UX ideata da Alan Cooper?",
         "options": [
           "Un archetipo realistico e composito di un gruppo di utenti reali, fondato su dati empirici qualitativi e quantitativi, che ne descrive scopi, modelli mentali, comportamenti e punti di attrito",
-          "Un profilo utente generato casualmente da un algoritmo di intelligenza artificiale per popolare il database; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Una scheda biografica romanzata con dettagli fittizi e pittoreschi per intrattenere i designer; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "La persona fisica del cliente aziendale che ha firmato il contratto economico di fornitura; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo"
+          "Un profilo utente generato casualmente da un algoritmo di intelligenza artificiale per popolare il database",
+          "Una scheda biografica romanzata con dettagli fittizi e pittoreschi per intrattenere i designer",
+          "La persona fisica del cliente aziendale che ha firmato il contratto economico di fornitura"
         ],
         "correctIndex": 0,
         "explanation": "Le personas non sono invenzioni di fantasia né fredde tabelle demografiche: sono modelli sintetici basati su ricerche reali che orientano le decisioni del team focalizzandole sui bisogni dell'utente."
@@ -4672,10 +4672,10 @@ window.STULL_DATA = [
       {
         "question": "A quale grave distorsione metodologica allude Stull citando lo show televisivo 'The Dating Game' a proposito delle personas?",
         "options": [
-          "All'impiego di attori professionisti durante le sessioni di test con gli utenti, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
+          "All'impiego di attori professionisti durante le sessioni di test con gli utenti",
           "All'errore puerile di riempire le schede con hobby bizzarri, gusti musicali o dettagli privati futili che non hanno alcuna attinenza con il dominio o con gli scopi d'uso del prodotto",
-          "All'obbligo di selezionare partecipanti non sposati per i focus group sui servizi digitali, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "Alla trasmissione televisiva in diretta dei test di usabilità di un software, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud"
+          "All'obbligo di selezionare partecipanti non sposati per i focus group sui servizi digitali",
+          "Alla trasmissione televisiva in diretta dei test di usabilità di un software"
         ],
         "correctIndex": 1,
         "explanation": "Sapere che una persona 'ama il sushi e i gatti persiani' è totalmente inutile se stiamo progettando un software per la fatturazione elettronica. Servono obiettivi di lavoro, ansie e contesti d'uso."
@@ -4683,10 +4683,10 @@ window.STULL_DATA = [
       {
         "question": "Qual è la differenza fondamentale tra una 'Proto-Persona' e una 'Persona Data-Driven'?",
         "options": [
-          "La proto-persona riguarda solo i software open source, mentre la data-driven riguarda il software commerciale; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "La proto-persona è scritta in linguaggio XML, mentre la data-driven è redatta in formato JSON; tale soluzione viola il principio di visibilità dello stato del sistema, lasciando l'utente incerto sull'esito della propria azione",
+          "La proto-persona riguarda solo i software open source, mentre la data-driven riguarda il software commerciale",
+          "La proto-persona è scritta in linguaggio XML, mentre la data-driven è redatta in formato JSON",
           "La proto-persona si basa sulle supposizioni e sulle conoscenze preliminari degli stakeholder interni (da validare sul campo); la persona data-driven è interamente costruita e validata su ricerche ed evidenze empiriche dirette",
-          "Non sussiste differenza: sono denominazioni intercambiabili prive di distinzione operativa; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso"
+          "Non sussiste differenza: sono denominazioni intercambiabili prive di distinzione operativa"
         ],
         "correctIndex": 2,
         "explanation": "Le proto-personas servono all'inizio per esplicitare i preconcetti del team; devono poi essere necessariamente confrontate con la ricerca sul campo per diventare personas autentiche e affidabili."
@@ -4694,9 +4694,9 @@ window.STULL_DATA = [
       {
         "question": "Come si gestisce la priorità tra più personas quando si prendono decisioni di design contrastanti?",
         "options": [
-          "Alternando l'interfaccia a giorni pari e dispari a seconda della persona target di turno; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "Facendo la media aritmetica ponderata delle preferenze cromatiche di tutte le personas; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "Progettando un'interfaccia con impostazioni configurabili all'infinito per accontentare chiunque; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Alternando l'interfaccia a giorni pari e dispari a seconda della persona target di turno",
+          "Facendo la media aritmetica ponderata delle preferenze cromatiche di tutte le personas",
+          "Progettando un'interfaccia con impostazioni configurabili all'infinito per accontentare chiunque",
           "Identificando una singola 'Persona Primaria': il cui obiettivo deve essere soddisfatto pienamente senza compromessi, assicurandosi che le esigenze delle 'Personas Secondarie' non danneggino l'esperienza della primaria"
         ],
         "correctIndex": 3,
@@ -4706,9 +4706,9 @@ window.STULL_DATA = [
         "question": "Quale elemento centrale conferisce vero potere predittivo a una scheda Persona?",
         "options": [
           "Gli 'Obiettivi' (Goals) e le 'Motivazioni sottostanti' (perché vuole compiere l'azione e cosa definisce il suo successo) anziché le mere caratteristiche demografiche (età, sesso, residenza)",
-          "La fotografia a figura intera ad altissima risoluzione con vestiti eleganti; tale soluzione viola il principio di visibilità dello stato del sistema, lasciando l'utente incerto sull'esito della propria azione",
-          "Il segno zodiacale e il gruppo sanguigno del modello di riferimento, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
-          "L'elenco dettagliato delle marche di automobili possedute nel corso della vita, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing"
+          "La fotografia a figura intera ad altissima risoluzione con vestiti eleganti",
+          "Il segno zodiacale e il gruppo sanguigno del modello di riferimento",
+          "L'elenco dettagliato delle marche di automobili possedute nel corso della vita"
         ],
         "correctIndex": 0,
         "explanation": "Due uomini di 75 anni residenti a Londra con lo stesso reddito (es. Re Carlo e Ozzy Osbourne) hanno la stessa demografia ma modelli mentali e comportamenti agli antipodi: contano gli obiettivi e i comportamenti."
@@ -4723,10 +4723,10 @@ window.STULL_DATA = [
       {
         "question": "Un team progetta un portale per la donazione del sangue e crea la persona 'Marco, 32 anni, appassionato di immersioni subacquee, adora il rock anni '80 e possiede un cane di nome Birba'. Durante il design del form di prenotazione, il team si blocca. Quale lacuna metodologica presenta la persona?",
         "options": [
-          "Mancata indicazione del codice ISEE e del conto corrente bancario di Marco, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
+          "Mancata indicazione del codice ISEE e del conto corrente bancario di Marco",
           "Sindrome da Dating Game: mancano le informazioni critiche di dominio (frequenza delle donazioni, paure dell'ago, disponibilità di tempo lavorativo, ostacoli burocratici già incontrati)",
-          "Assenza del consenso informato firmato dal proprietario del cane Birba, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "Violazione delle linee guida di accessibilità sul contrasto cromatico della fotografia, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito"
+          "Assenza del consenso informato firmato dal proprietario del cane Birba",
+          "Violazione delle linee guida di accessibilità sul contrasto cromatico della fotografia"
         ],
         "correctIndex": 1,
         "explanation": "I dettagli futili da show televisivo non aiutano a progettare: servono le ansie reali ('ha paura dello svenimento?', 'non sa dove parcheggiare all'ospedale?') per plasmare un servizio utile."
@@ -4734,10 +4734,10 @@ window.STULL_DATA = [
       {
         "question": "Un'azienda SaaS decide di non condurre interviste sul campo e incarica il reparto marketing di redigere 15 personas basate unicamente sulle proprie impressioni interne. Come definisce Stull queste figure?",
         "options": [
-          "Modelli cognitivi validati secondo le linee guida di usabilità ISO 9241, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
-          "Personas altamente predittive conformi al framework quantitativo di Karl Pearson, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
+          "Modelli cognitivi validati secondo le linee guida di usabilità ISO 9241",
+          "Personas altamente predittive conformi al framework quantitativo di Karl Pearson",
           "Personas immaginarie o speculative: pericolose perché cristallizzano i bias e le supposizioni interne del team sotto una parvenza di metodo, senza alcun contatto con la realtà",
-          "Una prassi raccomandata per risparmiare risorse durante la fase di Discovery, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud"
+          "Una prassi raccomandata per risparmiare risorse durante la fase di Discovery"
         ],
         "correctIndex": 2,
         "explanation": "Inventare personas a tavolino senza dati sul campo è velenoso: dà l'illusione di essere user-centered mentre si stanno semplicemente disegnando le proprie fantasie interne."
@@ -4745,9 +4745,9 @@ window.STULL_DATA = [
       {
         "question": "In che modo una buona Persona aiuta a risolvere un litigio interminabile tra uno sviluppatore e un designer durante una riunione?",
         "options": [
-          "Rinviando tutte le decisioni al consiglio di amministrazione dell'anno successivo, una semplificazione concettuale che non regge alla prova dei test con utenti rappresentativi eseguiti in condizioni d'uso realistiche",
-          "Assegnando la vittoria della discussione a chi ha la voce più alta, ignorando che la qualità dell'esperienza dipende dalla coerenza tra le aspettative dell'utente e il comportamento effettivo del sistema in ogni punto di contatto del percorso",
-          "Costringendo i contendenti a tirare a sorte con una moneta da un euro, un approccio che ignora la centralità dell'utente reale e le sue effettive modalità di interazione con il sistema nel contesto quotidiano e operativo di utilizzo",
+          "Rinviando tutte le decisioni al consiglio di amministrazione dell'anno successivo",
+          "Assegnando la vittoria della discussione a chi ha la voce più alta",
+          "Costringendo i contendenti a tirare a sorte con una moneta da un euro",
           "Spostando il dibattito dai gusti soggettivi dei singoli ('A me piace il blu', 'Io preferisco il menu ad albero') a ciò che serve alla Persona ('Questo comando aiuta Chiara a validare la fattura in 2 minuti?')"
         ],
         "correctIndex": 3,
@@ -4791,10 +4791,10 @@ window.STULL_DATA = [
       {
         "question": "A quale aneddoto geopolitico fa ricorso Stull per spiegare l'importanza vitale della cartografia dell'esperienza (Isole Spratly)?",
         "options": [
-          "Alla scoperta di rotte marittime commerciali per la tratta delle spezie verso le Indie orientali, un'impostazione che trascura i principi fondamentali della progettazione centrata sull'utente e le metodologie di validazione empirica dell'esperienza con utenti rappresentativi",
+          "Alla scoperta di rotte marittime commerciali per la tratta delle spezie verso le Indie orientali",
           "Alla contesa territoriale nel Mar Cinese Meridionale: senza una mappa ufficiale condivisa e riconosciuta, ogni nazione interpreta i confini a proprio piacimento scontrandosi militarmente; nel team UX, senza una Journey Map condivisa, ognuno persegue una visione frammentata",
-          "Alla costruzione di canali artificiali per la navigazione interna dei fiumi europei, una prospettiva che esclude dalla valutazione i fattori emotivi, motivazionali e situazionali che modellano concretamente il comportamento dell'utente durante l'uso del sistema",
-          "Al naufragio di navi mercantili causato da tempeste geomagnetiche impreviste, ignorando che la qualità dell'esperienza dipende dalla coerenza tra le aspettative dell'utente e il comportamento effettivo del sistema in ogni punto di contatto del percorso"
+          "Alla costruzione di canali artificiali per la navigazione interna dei fiumi europei",
+          "Al naufragio di navi mercantili causato da tempeste geomagnetiche impreviste"
         ],
         "correctIndex": 1,
         "explanation": "Senza una cartografia condivisa (Journey Map), i programmatori vedono solo il database, il marketing vede solo i click e il supporto vede solo i ticket. La mappa unifica la visione sistemica."
@@ -4802,10 +4802,10 @@ window.STULL_DATA = [
       {
         "question": "Quali sono le quattro macro-fasi canoniche che compongono una 'Customer Journey Map' completa?",
         "options": [
-          "Progettazione grafica, Stampa su carta, Distribuzione postale, Archiviazione, disattendendo le consolidate euristiche di usabilità",
-          "Compilazione del codice, Debugging, Rilascio sul server, Backup periodico, riducendo l'usabilità complessiva del sistema",
+          "Progettazione grafica, Stampa su carta, Distribuzione postale, Archiviazione",
+          "Compilazione del codice, Debugging, Rilascio sul server, Backup periodico",
           "Consapevolezza (Awareness), Valutazione/Acquisizione (Consideration), Conversione/Azione (Conversion), Fidelizzazione/Supporto (Retention & Advocacy)",
-          "Accesso al portale, Inserimento password, Cambio lingua, Disconnessione, alterando i punti di contatto del percorso utente"
+          "Accesso al portale, Inserimento password, Cambio lingua, Disconnessione"
         ],
         "correctIndex": 2,
         "explanation": "La relazione con l'utente inizia molto prima del click sul sito (Consapevolezza) e continua a lungo dopo l'acquisto (Assistenza e fidelizzazione). La mappa copre l'intero arco temporale."
@@ -4813,9 +4813,9 @@ window.STULL_DATA = [
       {
         "question": "Cosa si intende per 'Touchpoint' (Punto di contatto) all'interno di una mappa del percorso?",
         "options": [
-          "Il pixel centrale del logo aziendale visualizzato nell'header della pagina, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
-          "Il punto geometrico esatto in cui il dito tocca la superficie del display capacitivo, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
-          "La presa di corrente fisica utilizzata per alimentare i router di rete, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
+          "Il pixel centrale del logo aziendale visualizzato nell'header della pagina",
+          "Il punto geometrico esatto in cui il dito tocca la superficie del display capacitivo",
+          "La presa di corrente fisica utilizzata per alimentare i router di rete",
           "Qualsiasi momento e canale di interazione tra l'utente e l'organizzazione (sito web, email di notifica, cartello fisico, confezione, telefonata con il call center)"
         ],
         "correctIndex": 3,
@@ -4825,9 +4825,9 @@ window.STULL_DATA = [
         "question": "Cosa rappresenta la 'Curva Emotiva' (Emotional Journey) tracciata lungo le varie fasi della mappa?",
         "options": [
           "La rappresentazione visiva dei picchi di gioia, soddisfazione, ansia, confusione o frustrazione vissuti dall'utente nel passaggio da un touchpoint all'altro",
-          "Il tracciato elettrocardiografico registrato durante i test medici sul personale nel modello mentale condiviso dell'utente finale",
-          "La variazione del tasso di interesse applicato dai circuiti di pagamento con carta, introducendo un attrito cognitivo ingiustificato",
-          "La curva di consumo della batteria dello smartphone durante lo scorrimento dei video, una semplificazione che disattende le euristiche fondamentali di usabilità"
+          "Il tracciato elettrocardiografico registrato durante i test medici sul personale",
+          "La variazione del tasso di interesse applicato dai circuiti di pagamento con carta",
+          "La curva di consumo della batteria dello smartphone durante lo scorrimento dei video"
         ],
         "correctIndex": 0,
         "explanation": "La curva emotiva fa balzare all'occhio i 'Pain Points' (i punti più bassi del grafico dove l'utente prova rabbia o ansia), indicando al team dove è più urgente intervenire."
@@ -4835,10 +4835,10 @@ window.STULL_DATA = [
       {
         "question": "Quale differenza separa una 'Customer Journey Map' da un 'Service Blueprint'?",
         "options": [
-          "La Journey Map è disegnata a colori, mentre il Service Blueprint è rigorosamente in bianco e nero, una semplificazione concettuale che non regge alla prova dei test con utenti rappresentativi eseguiti in condizioni d'uso realistiche",
+          "La Journey Map è disegnata a colori, mentre il Service Blueprint è rigorosamente in bianco e nero",
           "La Journey Map descrive l'esperienza visibile vissuta dall'utente (Frontstage); il Service Blueprint aggiunge i processi interni invisibili, i sistemi informatici e le azioni dei dipendenti che supportano ogni passaggio (Backstage)",
-          "La Journey Map riguarda solo le automobili, mentre il Service Blueprint riguarda gli edifici, un approccio che ignora la centralità dell'utente reale e le sue effettive modalità di interazione con il sistema nel contesto quotidiano e operativo di utilizzo",
-          "Non sussiste differenza: sono due denominazioni per indicare il medesimo diagramma di flusso, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing"
+          "La Journey Map riguarda solo le automobili, mentre il Service Blueprint riguarda gli edifici",
+          "Non sussiste differenza: sono due denominazioni per indicare il medesimo diagramma di flusso"
         ],
         "correctIndex": 1,
         "explanation": "Il Service Blueprint mostra cosa avviene dietro le quinte: quando l'utente clicca 'Ordina' (Frontstage), il blueprint mappa il magazzino, le chiamate API bancarie e la notifica al corriere (Backstage)."
@@ -4853,10 +4853,10 @@ window.STULL_DATA = [
       {
         "question": "Un'azienda di noleggio auto ha un sito web splendido con prenotazione in 3 clic, ma all'arrivo in aeroporto i clienti fanno 2 ore di coda al bancone tra dipendenti scortesi e clausole opache, lasciando recensioni a 1 stella. Quale miopia di mapping è emersa?",
         "options": [
-          "Violazione delle linee guida di sicurezza informatica sull'uso dei cookie di sessione; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "Mancata adozione di font tipografici personalizzati per la stampa del voucher, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
+          "Violazione delle linee guida di sicurezza informatica sull'uso dei cookie di sessione",
+          "Mancata adozione di font tipografici personalizzati per la stampa del voucher",
           "Aver limitato la progettazione alla sola interfaccia digitale ignorando il touchpoint fisico critico del viaggio: la UX fallisce se l'esperienza sul campo distrugge le promesse fatte online",
-          "Utilizzo improprio di animazioni CSS nella schermata di conferma del noleggio, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo"
+          "Utilizzo improprio di animazioni CSS nella schermata di conferma del noleggio"
         ],
         "correctIndex": 2,
         "explanation": "La Journey Map dimostra che il viaggio è continuo: un'ottima UI web non serve a nulla se l'interazione umana successiva trasforma l'esperienza in un incubo."
@@ -4864,9 +4864,9 @@ window.STULL_DATA = [
       {
         "question": "Durante la mappatura del percorso di un servizio di rinnovo patente, il punto di minimo della curva emotiva (-5, rabbia profonda) si colloca tra l'invio della visita medica e la ricezione del documento (3 settimane di silenzio totale). Come si risolve questo pain point?",
         "options": [
-          "Nascondendo la data di scadenza della patente precedente per ridurre l'ansia dell'utente, secondo i protocolli consolidati di user testing",
-          "Raddoppiando il costo della marca da bollo per velocizzare i controlli burocratici, ignorando il comportamento tipico di satisficing",
-          "Eliminando la visita medica e rilasciando il documento a chiunque ne faccia richiesta nel modello mentale condiviso dell'utente finale",
+          "Nascondendo la data di scadenza della patente precedente per ridurre l'ansia dell'utente",
+          "Raddoppiando il costo della marca da bollo per velocizzare i controlli burocratici",
+          "Eliminando la visita medica e rilasciando il documento a chiunque ne faccia richiesta",
           "Introducendo un sistema di notifiche trasparenti di tracciamento di stato (SMS/Email con link di monitoraggio 'La tua patente è in stampa / affidata al corriere')"
         ],
         "correctIndex": 3,
@@ -4876,9 +4876,9 @@ window.STULL_DATA = [
         "question": "In quale fase del processo di design una Journey Map offre il massimo ritorno sull'investimento (ROI)?",
         "options": [
           "Nella fase di Discovery e Sintesi della ricerca: per allineare l'intero team interdisciplinare sui punti critici e identificare le maggiori opportunità strategiche prima di disegnare soluzioni",
-          "La sera prima della conferenza stampa di presentazione del prodotto agli azionisti; tale impostazione impedisce all'utente di costruire un modello mentale coerente",
-          "Dopo il collaudo definitivo del codice per verificare l'assenza di errori di sintassi; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Esclusivamente in caso di contenzioso legale con i fornitori di connettività internet, riducendo la tolleranza all'errore e moltiplicando i passaggi operativi superflui"
+          "La sera prima della conferenza stampa di presentazione del prodotto agli azionisti",
+          "Dopo il collaudo definitivo del codice per verificare l'assenza di errori di sintassi",
+          "Esclusivamente in caso di contenzioso legale con i fornitori di connettività internet"
         ],
         "correctIndex": 0,
         "explanation": "La mappa è uno strumento di diagnosi e strategia: serve all'inizio per capire dove fa male il sistema attuale e orientare gli sforzi del team su ciò che conta davvero."
@@ -4921,10 +4921,10 @@ window.STULL_DATA = [
       {
         "question": "A quale caso storico fa ricorso Stull citando l'Enciclopedia Britannica per illustrare la differenza tra accumulo di dati e Architettura dell'Informazione?",
         "options": [
-          "Alla vendita ambulante porta a porta dei volumi enciclopedici nelle campagne inglesi, un approccio che ignora la centralità dell'utente reale e le sue effettive modalità di interazione con il sistema nel contesto quotidiano e operativo di utilizzo",
-          "Al passaggio dai caratteri mobili di Gutenberg alla litografia industriale dell'Ottocento, una pratica che riduce l'usabilità complessiva, ostacolando l'orientamento spaziale e la percezione dei percorsi di navigazione primari",
+          "Alla vendita ambulante porta a porta dei volumi enciclopedici nelle campagne inglesi",
+          "Al passaggio dai caratteri mobili di Gutenberg alla litografia industriale dell'Ottocento",
           "All'illusione che accumulare testi sterminati e nozioni isolate equivalga a produrre conoscenza fruibile: senza una struttura relazionale, ontologica e gerarchica chiara, la mole di dati diventa un labirinto impenetrabile",
-          "Alla traduzione del testo in lingua gaelica per proteggere le identità linguistiche locali, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing"
+          "Alla traduzione del testo in lingua gaelica per proteggere le identità linguistiche locali"
         ],
         "correctIndex": 2,
         "explanation": "I contenuti da soli non fanno un buon servizio: se l'architettura dell'informazione è disastrosa, l'utente non troverà mai ciò che cerca, esattamente come in una biblioteca con libri gettati a terra."
@@ -4932,9 +4932,9 @@ window.STULL_DATA = [
       {
         "question": "Nella triade cardine dell'Architettura dell'Informazione (Rosenfeld, Morville & Arango), cosa rappresentano rispettivamente Ontologia, Tassonomia e Coreografia?",
         "options": [
-          "Sono tre tipologie di caratteri tipografici utilizzati per comporre titoli, paragrafi e note; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "Ontologia è il database MySQL; Tassonomia è il foglio di stile CSS; Coreografia è l'animazione JavaScript; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Ontologia è la licenza d'uso; Tassonomia è il prezzo di vendita; Coreografia è la campagna pubblicitaria, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
+          "Sono tre tipologie di caratteri tipografici utilizzati per comporre titoli, paragrafi e note",
+          "Ontologia è il database MySQL; Tassonomia è il foglio di stile CSS; Coreografia è l'animazione JavaScript",
+          "Ontologia è la licenza d'uso; Tassonomia è il prezzo di vendita; Coreografia è la campagna pubblicitaria",
           "Ontologia definisce il significato specifico dei concetti (cosa intendiamo con le parole); Tassonomia stabilisce la classificazione gerarchica delle categorie; Coreografia governa il movimento e le relazioni d'uso tra di esse"
         ],
         "correctIndex": 3,
@@ -4944,9 +4944,9 @@ window.STULL_DATA = [
         "question": "Cos'è la tecnica del 'Card Sorting' (ordinamento delle carte) e a cosa serve?",
         "options": [
           "Un metodo empirico di ricerca in cui i partecipanti raggruppano schede con i contenuti del sito in categorie logiche secondo il proprio modello mentale, per progettare menu e alberature intuitive",
-          "Un gioco d'azzardo utilizzato per determinare chi pagherà la cena del team di design, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "La procedura di ordinamento delle righe di codice prima della compilazione software; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "La catalogazione fisica delle ricevute di acquisto per fini di deduzione fiscale; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo"
+          "Un gioco d'azzardo utilizzato per determinare chi pagherà la cena del team di design",
+          "La procedura di ordinamento delle righe di codice prima della compilazione software",
+          "La catalogazione fisica delle ricevute di acquisto per fini di deduzione fiscale"
         ],
         "correctIndex": 0,
         "explanation": "Il card sorting fa parlare gli utenti: invece di inventare i menu alla scrivania, fai raggruppare i contenuti a 20 persone reali e scopri come organizzerebbero loro l'albero di navigazione."
@@ -4954,10 +4954,10 @@ window.STULL_DATA = [
       {
         "question": "Quale differenza separa il 'Card Sorting Aperto' (Open) dal 'Card Sorting Chiuso' (Closed)?",
         "options": [
-          "Il sorting aperto si svolge all'aperto nei parchi pubblici; il sorting chiuso si svolge al chiuso di una stanza, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
+          "Il sorting aperto si svolge all'aperto nei parchi pubblici; il sorting chiuso si svolge al chiuso di una stanza",
           "Nel sorting aperto i partecipanti raggruppano le schede e creano liberamente i nomi delle categorie; nel sorting chiuso i partecipanti devono inserire le schede all'interno di categorie già prefissate dal team",
-          "Il sorting aperto riguarda solo i siti per adulti; il sorting chiuso riguarda i siti per bambini, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
-          "Non sussiste differenza: sono denominazioni equivalenti prive di valore metodologico, una pratica che riduce l'usabilità complessiva, ostacolando l'orientamento spaziale e la percezione dei percorsi di navigazione primari"
+          "Il sorting aperto riguarda solo i siti per adulti; il sorting chiuso riguarda i siti per bambini",
+          "Non sussiste differenza: sono denominazioni equivalenti prive di valore metodologico"
         ],
         "correctIndex": 1,
         "explanation": "Aperto (generativo): serve per scoprire quali categorie hanno in mente gli utenti. Chiuso (valutativo): serve per verificare se le categorie che abbiamo ideato noi sono chiare per il pubblico."
@@ -4965,10 +4965,10 @@ window.STULL_DATA = [
       {
         "question": "Cos'è il 'Tree Testing' (test dell'albero informativo) nell'architettura dell'informazione?",
         "options": [
-          "La verifica del risparmio di carta ottenuto eliminando la documentazione stampata, una pratica che riduce l'usabilità complessiva, ostacolando l'orientamento spaziale e la percezione dei percorsi di navigazione primari",
-          "Il collaudo della resistenza dei cavi di rete in fibra ottica esposti al vento; la rilevazione strumentale richiede l'acquisizione di segnali elettrici direttamente sulle linee del bus di interconnessione dati",
+          "La verifica del risparmio di carta ottenuto eliminando la documentazione stampata",
+          "Il collaudo della resistenza dei cavi di rete in fibra ottica esposti al vento",
           "Un metodo per valutare l'efficacia dell'alberatura dei menu privandola della grafica (interfaccia solo testo ad albero), verificando se gli utenti riescono a trovare i percorsi corretti per compiti specifici",
-          "Un test di sicurezza informatica contro le infezioni da virus e malware trojan, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo"
+          "Un test di sicurezza informatica contro le infezioni da virus e malware trojan"
         ],
         "correctIndex": 2,
         "explanation": "Il tree testing è la radiografia dell'architettura: togli la grafica e guardi solo la gerarchia testuale dei menu; se gli utenti si perdono nel testo spoglio, nessuna grafica potrà salvarli."
@@ -4983,9 +4983,9 @@ window.STULL_DATA = [
       {
         "question": "Sul sito di un ateneo universitario, la voce 'Richiesta duplicato badge smarrito' è inserita sotto 'Rettorato > Ufficio economato e patrimonio > Gestione inventario cespiti'. Gli studenti tempestano il centralino perché non la trovano. Quale errore di architettura dell'informazione è stato commesso?",
         "options": [
-          "La parola 'badge' è un termine straniero non ammesso dai dizionari della lingua italiana, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "Mancata adozione del protocollo di trasferimento file via FTP per i documenti di identità; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "Utilizzo di font con interlinea non conforme alle normative ISO per gli atti notarili; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "La parola 'badge' è un termine straniero non ammesso dai dizionari della lingua italiana",
+          "Mancata adozione del protocollo di trasferimento file via FTP per i documenti di identità",
+          "Utilizzo di font con interlinea non conforme alle normative ISO per gli atti notarili",
           "L'alberatura riflette l'organigramma burocratico interno dell'ateneo anziché il modello mentale e i compiti dell'utente studente; la voce deve trovarsi sotto 'Servizi per gli studenti > Carriera e documenti'"
         ],
         "correctIndex": 3,
@@ -4995,9 +4995,9 @@ window.STULL_DATA = [
         "question": "Un grande e-commerce di ferramenta deve classificare 50.000 articoli. Molti prodotti appartengono contemporaneamente a più concetti (es. un 'trapano a percussione con batteria al litio' è sia Elettroutensile, sia Strumento a Batteria, sia Articolo per Muratura). Quale modello tassonomico è indispensabile adottare?",
         "options": [
           "Una classificazione sfaccettata (Faceted Classification) con filtri multidimensionali combinabili, anziché un'unica rigida gerarchia monofiletica",
-          "Una lista alfabetica statica di cinquantamila voci distribuite su un'unica schermata, secondo i protocolli consolidati di user testing",
-          "Un ordinamento casuale degli articoli che muta ad ogni accesso alla home page, secondo i principi predittivi della legge di Hick",
-          "L'eliminazione di tutti i filtri per costringere gli acquirenti a contattare il negozio fisico, disattendendo le consolidate euristiche di usabilità"
+          "Una lista alfabetica statica di cinquantamila voci distribuite su un'unica schermata",
+          "Un ordinamento casuale degli articoli che muta ad ogni accesso alla home page",
+          "L'eliminazione di tutti i filtri per costringere gli acquirenti a contattare il negozio fisico"
         ],
         "correctIndex": 0,
         "explanation": "La tassonomia a faccette permette di cercare per molteplici attributi ortogonali (tipo, alimentazione, potenza, marca): l'utente trova il trapano da qualsiasi percorso logico provenga."
@@ -5005,10 +5005,10 @@ window.STULL_DATA = [
       {
         "question": "Durante un Tree Testing su 50 partecipanti per un nuovo portale sanitario, l'82% degli utenti fallisce nel localizzare il comando 'Prenota visita specialistica' perché collocato all'interno della cartella 'Prestazioni ambulatoriali esterne'. Qual è l'intervento immediato?",
         "options": [
-          "Aggiungere un video di istruzioni di 15 minuti che spieghi il significato del termine ambulatoriale, alterando i punti di contatto del percorso utente",
+          "Aggiungere un video di istruzioni di 15 minuti che spieghi il significato del termine ambulatoriale",
           "Rinominare la cartella con un'etichetta accessibile e naturale (es. 'Visite ed Esami') e spostare il link al primo livello visibile di navigazione",
-          "Ignorare il test perché i partecipanti non hanno competenze mediche specialistiche, compromettendo la prevedibilità dell'architettura",
-          "Chiudere il portale web e consentire le prenotazioni unicamente tramite fax cartaceo, riducendo l'usabilità complessiva del sistema"
+          "Ignorare il test perché i partecipanti non hanno competenze mediche specialistiche",
+          "Chiudere il portale web e consentire le prenotazioni unicamente tramite fax cartaceo"
         ],
         "correctIndex": 1,
         "explanation": "L'82% di fallimento nel tree test è una condanna inappellabile: l'etichetta è gergale e nascosta. Rinominare con linguaggio naturale e portare in primo piano risolve il problema all'istante."
@@ -5051,9 +5051,9 @@ window.STULL_DATA = [
       {
         "question": "Cosa postula il fondamentale 'Modello di Kano' formulato dal professor Noriaki Kano sulla soddisfazione del cliente?",
         "options": [
-          "La fedeltà degli acquirenti decade matematicamente ogni novanta giorni indipendentemente dal servizio, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "Il livello di gradimento di un'applicazione è direttamente proporzionale al numero totale di linee di codice sorgente, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "Tutti i bisogni dell'utente possono essere soddisfatti unicamente riducendo il prezzo di vendita del cinquanta per cento; tale impostazione impedisce all'utente di costruire un modello mentale coerente",
+          "La fedeltà degli acquirenti decade matematicamente ogni novanta giorni indipendentemente dal servizio",
+          "Il livello di gradimento di un'applicazione è direttamente proporzionale al numero totale di linee di codice sorgente",
+          "Tutti i bisogni dell'utente possono essere soddisfatti unicamente riducendo il prezzo di vendita del cinquanta per cento",
           "La soddisfazione del cliente non è lineare: diverse caratteristiche e funzionalità del prodotto impattano in modo qualitativamente asimmetrico sulla percezione di valore e sulla fedeltà dell'utente"
         ],
         "correctIndex": 3,
@@ -5063,9 +5063,9 @@ window.STULL_DATA = [
         "question": "Come definisce Kano i requisiti 'Must-be' (o Indispensabili)?",
         "options": [
           "Requisiti fondamentali dati assolutamente per scontati: la loro presenza non genera entusiasmo alcuno, ma la loro minima assenza o malfunzionamento provoca insoddisfazione e rabbia furiosa",
-          "Funzionalità di lusso accessibili solo a chi sottoscrive l'abbonamento più costoso; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "Elementi decorativi animati che abbelliscono la testata della home page; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Funzionalità sperimentali rilasciate in versione beta per il collaudo degli sviluppatori, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo"
+          "Funzionalità di lusso accessibili solo a chi sottoscrive l'abbonamento più costoso",
+          "Elementi decorativi animati che abbelliscono la testata della home page",
+          "Funzionalità sperimentali rilasciate in versione beta per il collaudo degli sviluppatori"
         ],
         "correctIndex": 0,
         "explanation": "Se apri un'app bancaria e puoi fare il bonifico, non festeggi (è scontato). Ma se il bonifico fallisce o l'app non si apre, la cancelli infuriato. Questo è un requisito Must-be."
@@ -5073,10 +5073,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa caratterizza invece i requisiti 'Performance' (o Unidimensionali) nel Modello di Kano?",
         "options": [
-          "Caratteristiche visibili solo se l'utente possiede una scheda grafica per videogiochi, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
+          "Caratteristiche visibili solo se l'utente possiede una scheda grafica per videogiochi",
           "Requisiti in cui la soddisfazione è proporzionale al livello di efficienza fornito: più ce n'è (più veloce, più batteria, più capienza, minor costo), più l'utente è felice; meno ce n'è, meno è soddisfatto",
-          "Funzioni che provocano l'immediata chiusura della sessione per motivi di sicurezza, una pratica che riduce l'usabilità complessiva, ostacolando l'orientamento spaziale e la percezione dei percorsi di navigazione primari",
-          "Test di velocità di digitazione somministrati ai candidati durante i colloqui, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo"
+          "Funzioni che provocano l'immediata chiusura della sessione per motivi di sicurezza",
+          "Test di velocità di digitazione somministrati ai candidati durante i colloqui"
         ],
         "correctIndex": 1,
         "explanation": "I requisiti Performance sono lineari: un'auto che consuma 4 litri/100 km è meglio di una che ne consuma 8; un'app che si carica in 1 secondo è due volte più gradita di una che ci mette 2 secondi."
@@ -5084,10 +5084,10 @@ window.STULL_DATA = [
       {
         "question": "Cosa sono i requisiti 'Delighters' (o Attraenti) e quale ruolo ricoprono nella differenziazione del prodotto?",
         "options": [
-          "I contratti di abbonamento con rinnovo automatico e clausole penali; questa interpretazione trascura la complessità dei modelli mentali degli utenti e la variabilità dei contesti d'uso che influenzano profondamente ogni interazione con il prodotto",
-          "I banner promozionali lampeggianti posizionati lungo i margini della pagina, una pratica che riduce l'usabilità complessiva, ostacolando l'orientamento spaziale e la percezione dei percorsi di navigazione primari",
+          "I contratti di abbonamento con rinnovo automatico e clausole penali",
+          "I banner promozionali lampeggianti posizionati lungo i margini della pagina",
           "Funzionalità inattese e innovative non richieste esplicitamente dall'utente: se mancano non provocano alcun fastidio (l'utente non sa che esistono), ma se presenti generano stupore, gioia e passaparola spontaneo",
-          "Le notifiche di avviso sulla scadenza imminente della licenza software, un approccio che ignora la centralità dell'utente reale e le sue effettive modalità di interazione con il sistema nel contesto quotidiano e operativo di utilizzo"
+          "Le notifiche di avviso sulla scadenza imminente della licenza software"
         ],
         "correctIndex": 2,
         "explanation": "Quando Uber ti ha mostrato per la prima volta l'auto che si muoveva in tempo reale sulla mappa, è stato un Delighter: nessuno lo aveva chiesto, ma ha lasciato tutti a bocca aperta."
@@ -5095,9 +5095,9 @@ window.STULL_DATA = [
       {
         "question": "Quale fenomeno temporale descrive il decadimento dinamico delle categorie di Kano nel corso degli anni?",
         "options": [
-          "Gli utenti sviluppano un'avversione cronica per qualsiasi forma di grafica vettoriale, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
-          "Le funzionalità software diventano gradualmente più costose per legge; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "I prodotti tecnologici perdono la compatibilità con la rete elettrica domestica, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
+          "Gli utenti sviluppano un'avversione cronica per qualsiasi forma di grafica vettoriale",
+          "Le funzionalità software diventano gradualmente più costose per legge",
+          "I prodotti tecnologici perdono la compatibilità con la rete elettrica domestica",
           "I requisiti migrano inesorabilmente verso il basso: ciò che oggi è un Delighter entusiasmante, domani diventa un requisito Performance atteso e dopodomani scade in un Must-be scontato e obbligatorio"
         ],
         "correctIndex": 3,
@@ -5114,9 +5114,9 @@ window.STULL_DATA = [
         "question": "Un'azienda di monopattini elettrici in sharing introduce una nuova funzione che riproduce melodie musicali personalizzate durante la corsa (Delighter teorico), ma il 25% dei monopattini ha freni usurati e l'app fallisce il rilascio della sosta (Must-be compromessi). Quale disastro di priorità evidenzia Kano?",
         "options": [
           "Gravissimo errore di prioritizzazione: non si possono aggiungere Delighters superficiali quando i requisiti Must-be di base (sicurezza fisica e sosta funzionante) sono rotti; la priorità assoluta è sanare i fondamentali",
-          "Mancata adozione del protocollo audio Bluetooth 5.2 per la trasmissione del suono, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "Violazione delle norme sul copyright per la riproduzione pubblica di brani musicali, una pratica che riduce l'usabilità complessiva, ostacolando l'orientamento spaziale e la percezione dei percorsi di navigazione primari",
-          "Una brillante strategia di fidelizzazione basata sull'emozione sonora dei pedoni; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso"
+          "Mancata adozione del protocollo audio Bluetooth 5.2 per la trasmissione del suono",
+          "Violazione delle norme sul copyright per la riproduzione pubblica di brani musicali",
+          "Una brillante strategia di fidelizzazione basata sull'emozione sonora dei pedoni"
         ],
         "correctIndex": 0,
         "explanation": "La regola aurea di Kano: prima sistema i Must-be al 100%. Nessuna musichetta simpatica potrà mai farti perdonare un freno rotto o un conto che continua a salire perché non riesci a chiudere la corsa."
@@ -5124,10 +5124,10 @@ window.STULL_DATA = [
       {
         "question": "In un questionario di Kano somministrato ai clienti di un software di grafica, il 90% degli intervistati risponde 'Lo troverei inaccettabile' alla domanda 'Come ti sentiresti se NON ci fosse il salvataggio automatico continuo (Autosave)?'. In quale categoria si colloca l'Autosave?",
         "options": [
-          "Requisito Reverse: l'utente preferisce salvare manualmente ogni file con la tastiera, ignorando la tendenza naturale degli utenti a scansionare anziché leggere",
+          "Requisito Reverse: l'utente preferisce salvare manualmente ogni file con la tastiera",
           "Requisito Must-be: il mercato lo dà per scontato; la sua assenza è considerata intollerabile e provoca l'abbandono immediato del prodotto a favore dei concorrenti",
-          "Requisito Indifferente: la funzionalità non produce alcun impatto sulla valutazione, disattendendo le consolidate euristiche di usabilità",
-          "Requisito Delighter: una sorpresa piacevole che giustifica un aumento del prezzo del 50%, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione"
+          "Requisito Indifferente: la funzionalità non produce alcun impatto sulla valutazione",
+          "Requisito Delighter: una sorpresa piacevole che giustifica un aumento del prezzo del 50%"
         ],
         "correctIndex": 1,
         "explanation": "L'analisi bivariata di Kano (domanda funzionale + disfunzionale) classifica subito l'Autosave come Must-be: nel 2026 perdere un'ora di lavoro per un crash è un difetto imperdonabile."
@@ -5135,10 +5135,10 @@ window.STULL_DATA = [
       {
         "question": "Come si sfrutta il Modello di Kano nella gestione strategica del Backlog di prodotto?",
         "options": [
-          "Assegnando le priorità in base all'ordine alfabetico dei titoli delle storie utente, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "Eliminando tutti i requisiti funzionali per sviluppare unicamente delighters decorativi; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
+          "Assegnando le priorità in base all'ordine alfabetico dei titoli delle storie utente",
+          "Eliminando tutti i requisiti funzionali per sviluppare unicamente delighters decorativi",
           "Assicurando in ogni rilascio la tenuta perfetta di tutti i Must-be, allocando risorse per migliorare i fattori Performance chiave e inserendo 1 o 2 Delighters mirati a basso costo e alto impatto emotivo",
-          "Rifiutando qualsiasi richiesta proveniente dai clienti storici dell'applicazione; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "Rifiutando qualsiasi richiesta proveniente dai clienti storici dell'applicazione"
         ],
         "correctIndex": 2,
         "explanation": "La formula vincente di una roadmap bilanciata: fondamenta solide come roccia (Must-be), motore potente e scattante (Performance) e una spolverata di magia inaspettata (Delighter)."
@@ -5182,9 +5182,9 @@ window.STULL_DATA = [
         "question": "Cos'è rigorosamente una 'Valutazione Euristica' (Heuristic Evaluation) e da chi viene condotta?",
         "options": [
           "Un metodo di ispezione dell'usabilità condotto da un piccolo gruppo di esperti (tipicamente 3-5 valutatori) che esaminano l'interfaccia confrontandola con principi di usabilità consolidati (euristiche)",
-          "Un test di gradimento somministrato a un campione di mille utenti finali tramite sondaggio telefonico, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "Una scansione automatica del codice sorgente eseguita da un software antivirus per rilevare bug, riducendo la tolleranza all'errore e moltiplicando i passaggi operativi superflui",
-          "Un'ispezione fiscale condotta da funzionari dell'amministrazione tributaria sui bilanci societari, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito"
+          "Un test di gradimento somministrato a un campione di mille utenti finali tramite sondaggio telefonico",
+          "Una scansione automatica del codice sorgente eseguita da un software antivirus per rilevare bug",
+          "Un'ispezione fiscale condotta da funzionari dell'amministrazione tributaria sui bilanci societari"
         ],
         "correctIndex": 0,
         "explanation": "La valutazione euristica è un metodo ispettivo di esperti: NON coinvolge utenti finali. Gli esperti navigano l'interfaccia armati di checklist metodica (es. le 10 euristiche di Nielsen)."
@@ -5192,10 +5192,10 @@ window.STULL_DATA = [
       {
         "question": "A quale metafora della vita quotidiana fa ricorso Stull per stigmatizzare l'improvvisazione nella revisione delle interfacce?",
         "options": [
-          "Alla costruzione di ponti sospesi senza l'impiego di tiranti in acciaio zincato, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
+          "Alla costruzione di ponti sospesi senza l'impiego di tiranti in acciaio zincato",
           "All'aneddoto delle cene disastrose: quando un cuoco cucina per amici basandosi sull'estro emotivo e dimentica ingredienti base o brucia il cibo; una checklist metodica avrebbe evitato errori banali e mortificanti",
-          "Al decollo di aerei commerciali in condizioni di nebbia fitta senza radar di bordo; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "Alla coltivazione di serre idroponiche prive di sistemi di illuminazione a LED; tale soluzione viola il principio di visibilità dello stato del sistema, lasciando l'utente incerto sull'esito della propria azione"
+          "Al decollo di aerei commerciali in condizioni di nebbia fitta senza radar di bordo",
+          "Alla coltivazione di serre idroponiche prive di sistemi di illuminazione a LED"
         ],
         "correctIndex": 1,
         "explanation": "Affidarsi alla pura ispirazione porta a dimenticare le cose ovvie. Esattamente come i piloti d'aereo o i chirurghi, i valutatori UX usano checklist per non farsi sfuggire dettagli critici."
@@ -5203,10 +5203,10 @@ window.STULL_DATA = [
       {
         "question": "Qual è il numero ottimale di valutatori raccomandato da Jakob Nielsen per una valutazione euristica efficace ed economicamente sostenibile?",
         "options": [
-          "Almeno cinquanta valutatori professionisti residenti in nazioni diverse, disattendendo le consolidate euristiche di usabilità",
-          "Esattamente un solo esperto, per evitare opinioni discordanti e dibattiti interni, ignorando la tendenza naturale degli utenti a scansionare anziché leggere",
+          "Almeno cinquanta valutatori professionisti residenti in nazioni diverse",
+          "Esattamente un solo esperto, per evitare opinioni discordanti e dibattiti interni",
           "Tra 3 e 5 esperti indipendenti, che permettono di scoprire circa il 75-85% dei problemi di usabilità complessivi con il miglior rapporto tra costi e benefici",
-          "Zero esperti, delegando l'intera verifica a script automatici di machine learning, secondo i principi predittivi della legge di Hick"
+          "Zero esperti, delegando l'intera verifica a script automatici di machine learning"
         ],
         "correctIndex": 2,
         "explanation": "La curva di Nielsen prova che un solo valutatore trova solo il 35% dei problemi; aggregando le revisioni indipendenti di 3-5 esperti si copre la stragrande maggioranza dei difetti."
@@ -5214,9 +5214,9 @@ window.STULL_DATA = [
       {
         "question": "Qual è il limite metodologico strutturale della valutazione euristica rispetto ai test con utenti reali?",
         "options": [
-          "È formalmente vietata dalle linee guida di sviluppo software dell'Unione Europea; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Richiede la compilazione di moduli notarili per ogni schermata esaminata, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "Non può essere applicata su schermi con risoluzione superiore a 1080p, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
+          "È formalmente vietata dalle linee guida di sviluppo software dell'Unione Europea",
+          "Richiede la compilazione di moduli notarili per ogni schermata esaminata",
+          "Non può essere applicata su schermi con risoluzione superiore a 1080p",
           "Può generare falsi allarmi (problemi teorici segnalati dagli esperti che gli utenti reali superano agevolmente) e non può mai sostituire l'osservazione diretta delle reazioni emotive e comportamentali reali"
         ],
         "correctIndex": 3,
@@ -5226,9 +5226,9 @@ window.STULL_DATA = [
         "question": "Come si calcola la 'Gravità di un Problema di Usabilità' (Severity Rating) riscontrato durante una recensione euristica?",
         "options": [
           "Combinando tre fattori: Frequenza (quanti utenti lo incontrano), Impatto (quanto è difficile superarlo o aggirarlo) e Persistenza (se si risolve da solo o blocca per sempre il compito)",
-          "Moltiplicando il numero di righe di codice CSS per la velocità di download del server; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "Calcolando l'età anagrafica del valutatore che ha scoperto il problema, compromettendo il cosiddetto 'odore dell'informazione' necessario alla navigazione",
-          "Assegnando il punteggio massimo unicamente ai problemi legati al colore del logo; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa"
+          "Moltiplicando il numero di righe di codice CSS per la velocità di download del server",
+          "Calcolando l'età anagrafica del valutatore che ha scoperto il problema",
+          "Assegnando il punteggio massimo unicamente ai problemi legati al colore del logo"
         ],
         "correctIndex": 0,
         "explanation": "Nielsen: gravità da 0 (nessun problema) a 4 (catastrofe di usabilità che impedisce il completamento del compito e impone il blocco del rilascio prima di un fix urgente)."
@@ -5243,10 +5243,10 @@ window.STULL_DATA = [
       {
         "question": "Un'azienda ha 3 giorni di tempo e un budget di soli 1.500€ per valutare un nuovo e-commerce prima del black friday. Non c'è tempo né budget per reclutare 10 acquirenti reali. Quale metodo di ricerca garantisce la massima efficienza in queste condizioni?",
         "options": [
-          "La cancellazione del sito internet per ripartire con lo sviluppo da zero l'anno successivo; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "La cancellazione del sito internet per ripartire con lo sviluppo da zero l'anno successivo",
           "Una Valutazione Euristica condotta da 3 specialisti UX indipendenti utilizzando le 10 euristiche di Nielsen, con report consolidato e prioritizzazione immediata dei fix critici",
-          "Un focus group informale con i dipendenti della mensa aziendale durante il pranzo, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "L'invio di questionari cartacei per posta a un elenco telefonico di 500 famiglie, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing"
+          "Un focus group informale con i dipendenti della mensa aziendale durante il pranzo",
+          "L'invio di questionari cartacei per posta a un elenco telefonico di 500 famiglie"
         ],
         "correctIndex": 1,
         "explanation": "Questo è il super-potere della valutazione euristica: 'discount usability'. Con pochi soldi e in 48 ore, 3 esperti ripuliscono l'interfaccia dai problemi più marchiani prima del debutto."
@@ -5254,10 +5254,10 @@ window.STULL_DATA = [
       {
         "question": "Durante un'ispezione euristica, un esperto nota che il pulsante 'Cestino' cancella immediatamente i file senza conferme né possibilità di ripristino. Quale euristica di Nielsen viene violata con gravità massima (Severity 4)?",
         "options": [
-          "Euristica 4: Coerenza e standard tipografici, senza validare l'ipotesi attraverso test qualitativi o sessioni di Thinking Aloud",
-          "Euristica 8: Design estetico e minimalista, aumentando sensibilmente il carico cognitivo richiesto per completare il task",
+          "Euristica 4: Coerenza e standard tipografici",
+          "Euristica 8: Design estetico e minimalista",
           "Euristica 5: Prevenzione dell'errore (Error Prevention) ed Euristica 3: Controllo e libertà dell'utente (User Control and Freedom / Undo)",
-          "Euristica 10: Documentazione cartacea e supporto telefonico, ignorando la tendenza naturale degli utenti a scansionare anziché leggere"
+          "Euristica 10: Documentazione cartacea e supporto telefonico"
         ],
         "correctIndex": 2,
         "explanation": "Distruggere dati senza avviso né Undo è un errore critico di Severity 4: viola la prevenzione dell'errore e toglie all'utente il controllo e la libertà fondamentale di annullare l'azione."
@@ -5265,9 +5265,9 @@ window.STULL_DATA = [
       {
         "question": "Come deve essere condotta una sessione di revisione euristica tra 4 esperti per evitare la contaminazione reciproca dei giudizi?",
         "options": [
-          "I valutatori devono scambiarsi i computer ogni quindici minuti durante l'ispezione; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Tutti e 4 gli esperti devono guardare lo stesso monitor contemporaneamente esprimendo pareri a voce alta, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "Gli esperti devono votare a maggioranza su ogni singolo elemento grafico prima di annotarlo, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
+          "I valutatori devono scambiarsi i computer ogni quindici minuti durante l'ispezione",
+          "Tutti e 4 gli esperti devono guardare lo stesso monitor contemporaneamente esprimendo pareri a voce alta",
+          "Gli esperti devono votare a maggioranza su ogni singolo elemento grafico prima di annotarlo",
           "Ciascun esperto deve ispezionare l'interfaccia in totale autonomia e isolamento redigendo il proprio elenco di violazioni; solo successivamente i valutatori si riuniscono per aggregare e pesare i dati"
         ],
         "correctIndex": 3,
@@ -5311,10 +5311,10 @@ window.STULL_DATA = [
       {
         "question": "Qual è il presupposto etico e metodologico supremo di qualsiasi 'Test Utente' (Usability Testing)?",
         "options": [
-          "Il partecipante deve dimostrare una perizia tecnica impeccabile per meritare il compenso pattuito, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
+          "Il partecipante deve dimostrare una perizia tecnica impeccabile per meritare il compenso pattuito",
           "Si sta testando l'interfaccia e il sistema, MAI l'intelligenza o le capacità del partecipante: l'obiettivo è imparare dove il software fallisce per correggerlo, non esaminare la persona",
-          "Il test ha lo scopo di convincere l'utente ad acquistare immediatamente il prodotto al termine della prova, ignorando la tendenza naturale degli utenti a scansionare anziché leggere",
-          "La prova serve a individuare i dipendenti aziendali meritevoli di promozione o licenziamento, aumentando sensibilmente il carico cognitivo richiesto per completare il task"
+          "Il test ha lo scopo di convincere l'utente ad acquistare immediatamente il prodotto al termine della prova",
+          "La prova serve a individuare i dipendenti aziendali meritevoli di promozione o licenziamento"
         ],
         "correctIndex": 1,
         "explanation": "La prima cosa che il facilitatore dice all'utente: 'Noi stiamo testando il sito, non stiamo testando te. Se qualcosa non funziona o ti blocchi, la colpa è nostra e del sito, non tua'."
@@ -5322,10 +5322,10 @@ window.STULL_DATA = [
       {
         "question": "In che cosa consiste il celebre 'Thinking Aloud Protocol' (Protocollo del pensiero ad alta voce) ideato da Clayton Lewis?",
         "options": [
-          "Registrare le onde cerebrali tramite elettrodi applicati sul cuoio capelluto; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Obbligare l'utente a cantare i testi presenti nei paragrafi dell'interfaccia, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
+          "Registrare le onde cerebrali tramite elettrodi applicati sul cuoio capelluto",
+          "Obbligare l'utente a cantare i testi presenti nei paragrafi dell'interfaccia",
           "Chiedere al partecipante di verbalizzare continuamente ad alta voce pensieri, dubbi, impressioni, aspettative e motivazioni man mano che compie le azioni a schermo",
-          "Far recitare all'utente una poesia a memoria prima di iniziare il test operativo, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo"
+          "Far recitare all'utente una poesia a memoria prima di iniziare il test operativo"
         ],
         "correctIndex": 2,
         "explanation": "Il 'Think Aloud' è una finestra aperta sul cervello dell'utente: ti permette di sapere cosa sta cercando con gli occhi, cosa lo confonde e perché decide di cliccare quel pulsante."
@@ -5333,9 +5333,9 @@ window.STULL_DATA = [
       {
         "question": "Come deve essere formulato un compito di test (Task) per non inquinare il comportamento del partecipante?",
         "options": [
-          "Lasciando l'utente davanti allo schermo senza dargli alcuna istruzione o compito per 3 ore, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "Dicendo all'utente: 'Clicca sul pulsante blu in alto a destra, seleziona la voce tre del menu e premi invia'; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "Ordinando all'utente di memorizzare l'intero catalogo entro novanta secondi; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
+          "Lasciando l'utente davanti allo schermo senza dargli alcuna istruzione o compito per 3 ore",
+          "Dicendo all'utente: 'Clicca sul pulsante blu in alto a destra, seleziona la voce tre del menu e premi invia'",
+          "Ordinando all'utente di memorizzare l'intero catalogo entro novanta secondi",
           "Fornendo uno scenario realistico con un obiettivo chiaro ('Devi comprare un regalo per il compleanno di tua sorella con budget di 30€'), senza mai suggerire i termini esatti dei menu o i passi operativi da compiere"
         ],
         "correctIndex": 3,
@@ -5345,9 +5345,9 @@ window.STULL_DATA = [
         "question": "Quale deve essere il comportamento rigoroso del 'Facilitatore' quando l'utente si blocca e chiede: 'Devo cliccare qui?'?",
         "options": [
           "Mantenere una neutralità assoluta e restituire la domanda con un rilancio esplorativo (es. 'Cosa ti aspetteresti che succeda se cliccassi lì?'), senza mai suggerire la soluzione né difendere il sito",
-          "Dire subito all'utente dove cliccare per velocizzare la conclusione della prova, un valore calibrato in fabbrica secondo gli standard industriali di collaudo e memorizzato nelle tabelle di configurazione della ROM",
-          "Spiegare all'utente che il team ha impiegato 6 mesi per disegnare quel pulsante e che è chiarissimo, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "Interrompere il test ed espellere il partecipante per manifesta incapacità d'uso, una pratica che riduce l'usabilità complessiva, ostacolando l'orientamento spaziale e la percezione dei percorsi di navigazione primari"
+          "Dire subito all'utente dove cliccare per velocizzare la conclusione della prova",
+          "Spiegare all'utente che il team ha impiegato 6 mesi per disegnare quel pulsante e che è chiarissimo",
+          "Interrompere il test ed espellere il partecipante per manifesta incapacità d'uso"
         ],
         "correctIndex": 0,
         "explanation": "Il facilitatore non deve mai aiutare l'utente: se lo aiuti rovini il test. Rilanciare la domanda permette di scoprire il modello mentale dell'utente senza condizionarlo."
@@ -5355,10 +5355,10 @@ window.STULL_DATA = [
       {
         "question": "Perché Jakob Nielsen e Steve Krug concordano sul fatto che 'Testare con 5 utenti è sufficiente' per ciascun ciclo iterativo?",
         "options": [
-          "Perché i laboratori di test non possono contenere più di cinque sedie fisiche per motivi di sicurezza, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
+          "Perché i laboratori di test non possono contenere più di cinque sedie fisiche per motivi di sicurezza",
           "Perché dopo 5 partecipanti i problemi più gravi si ripetono costantemente (curva dei rendimenti decrescenti): è infinitamente più saggio testare con 5, correggere gli errori e testare di nuovo con altri 5",
-          "Perché le normative vigenti sulla privacy impediscono di registrare più di cinque persone alla settimana; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso",
-          "Perché la memoria dei computer si satura dopo aver salvato cinque file video di sessione, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo"
+          "Perché le normative vigenti sulla privacy impediscono di registrare più di cinque persone alla settimana",
+          "Perché la memoria dei computer si satura dopo aver salvato cinque file video di sessione"
         ],
         "correctIndex": 1,
         "explanation": "Meglio 3 test da 5 persone distribuiti nel tempo (iterazione) che 1 solo test mastodontico da 50 persone alla fine del progetto quando è troppo tardi per correggere gli errori."
@@ -5373,10 +5373,10 @@ window.STULL_DATA = [
       {
         "question": "Durante un test di usabilità, il partecipante clicca per tre volte su un testo non cliccabile, poi scuote la testa e arrossisce dicendo: 'Scusatemi tanto, sono proprio stupido con la tecnologia'. Qual è l'intervento immediato e doveroso del facilitatore?",
         "options": [
-          "Annotare sul report che il partecipante presenta lacune di apprendimento cognitivo, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
-          "Confermare all'utente che in effetti quel testo non era un pulsante e che avrebbe dovuto fare più attenzione; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
+          "Annotare sul report che il partecipante presenta lacune di apprendimento cognitivo",
+          "Confermare all'utente che in effetti quel testo non era un pulsante e che avrebbe dovuto fare più attenzione",
           "Rassicurarlo prontamente: 'Non chiederti scusa, non c'è nulla di sbagliato in te. Se hai cliccato lì significa che l'interfaccia ha fatto sembrare quel testo cliccabile, hai appena scoperto un nostro errore prezioso'",
-          "Spegnere il monitor del computer per proteggere la privacy aziendale, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo"
+          "Spegnere il monitor del computer per proteggere la privacy aziendale"
         ],
         "correctIndex": 2,
         "explanation": "La de-colpevolizzazione è un dovere umano e professionale: l'utente che si sente in colpa si blocca e non produce più feedback autentico. Rassicurarlo restituisce serenità alla prova."
@@ -5384,9 +5384,9 @@ window.STULL_DATA = [
       {
         "question": "Un designer assiste dietro lo specchio unidirezionale al test del carrello da lui disegnato. Vedendo l'utente esitare, il designer urla furioso: 'Ma è cieco? Non vede che il tasto checkout è verde?'. Quale patologia di bias emotivo si sta manifestando?",
         "options": [
-          "Un malfunzionamento dell'impianto di climatizzazione della sala di osservazione, un approccio che ignora la centralità dell'utente reale e le sue effettive modalità di interazione con il sistema nel contesto quotidiano e operativo di utilizzo",
-          "Un'applicazione rigorosa del principio di retroazione sensoriale di Donald Norman, una semplificazione concettuale che non regge alla prova dei test con utenti rappresentativi eseguiti in condizioni d'uso realistiche",
-          "La violazione delle linee guida di sicurezza informatica sull'osservazione remota; tale soluzione viola il principio di visibilità dello stato del sistema, lasciando l'utente incerto sull'esito della propria azione",
+          "Un malfunzionamento dell'impianto di climatizzazione della sala di osservazione",
+          "Un'applicazione rigorosa del principio di retroazione sensoriale di Donald Norman",
+          "La violazione delle linee guida di sicurezza informatica sull'osservazione remota",
           "La maledizione della conoscenza e l'attaccamento egoico al proprio manufatto: il designer giudica l'utente dal punto di vista dell'esperto che sa già tutto, rifiutando l'evidenza empirica del fallimento del design"
         ],
         "correctIndex": 3,
@@ -5396,9 +5396,9 @@ window.STULL_DATA = [
         "question": "Come si organizza la sessione di debriefing con il team di sviluppo subito dopo aver concluso 5 test utente?",
         "options": [
           "Radunando team e stakeholder per stilare l'elenco dei 3 problemi più gravi osservati, concordando fix rapidi e minimalisti da implementare immediatamente nel ciclo di sviluppo successivo",
-          "Redigendo una memoria difensiva per dimostrare ai dirigenti che gli utenti intervistati erano incompetenti, generando frizione nell'interazione e frustrazione nel raggiungimento dell'obiettivo",
-          "Pianificando un progetto di riscrittura totale dell'intero sistema operativo per i successivi tre anni; questa soluzione crea disorientamento spaziale all'interno dell'architettura informativa",
-          "Distruggendo le registrazioni video per non lasciare prove di difetti di programmazione, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo"
+          "Redigendo una memoria difensiva per dimostrare ai dirigenti che gli utenti intervistati erano incompetenti",
+          "Pianificando un progetto di riscrittura totale dell'intero sistema operativo per i successivi tre anni",
+          "Distruggendo le registrazioni video per non lasciare prove di difetti di programmazione"
         ],
         "correctIndex": 0,
         "explanation": "Come insegna Steve Krug: riunirsi subito dopo, scegliere i 'tre problemi più gravi che impediscono di completare il compito' e concordare la correzione più semplice e veloce da fare subito."
@@ -5441,10 +5441,10 @@ window.STULL_DATA = [
       {
         "question": "A quale metafora evolutiva fa ricorso Stull nel capitolo conclusivo citando la 'Regina Rossa' di Lewis Carroll (Attraverso lo specchio) e il biologo Leigh Van Valen?",
         "options": [
-          "Al gioco degli scacchi come simulazione delle strategie di guerra medievale, un'impostazione che trascura i principi fondamentali della progettazione centrata sull'utente e le metodologie di validazione empirica dell'esperienza con utenti rappresentativi",
-          "Alla successione dinastica delle monarchie costituzionali europee nel corso dell'Ottocento, un approccio che ignora la centralità dell'utente reale e le sue effettive modalità di interazione con il sistema nel contesto quotidiano e operativo di utilizzo",
+          "Al gioco degli scacchi come simulazione delle strategie di guerra medievale",
+          "Alla successione dinastica delle monarchie costituzionali europee nel corso dell'Ottocento",
           "All'imperativo biologico della coevoluzione continua: 'Qui per restare nello stesso posto devi correre più veloce che puoi'; i prodotti digitali non sono mai finiti e devono adattarsi incessantemente ai mutamenti di modelli mentali, tecnologie e concorrenza",
-          "All'obbligo di utilizzare colori regali come il porpora all'interno delle applicazioni di lusso, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing"
+          "All'obbligo di utilizzare colori regali come il porpora all'interno delle applicazioni di lusso"
         ],
         "correctIndex": 2,
         "explanation": "Un sito che non si aggiorna non rimane stabile: regredisce. Le abitudini degli utenti evolvono, i dispositivi cambiano, gli standard si alzano: fermarsi equivale a morire."
@@ -5452,9 +5452,9 @@ window.STULL_DATA = [
       {
         "question": "Quali tre definizioni popolari ma riduttive di 'buona UX' vengono dialetticamente confutate da Edward Stull?",
         "options": [
-          "1. Gli utenti devono avere meno di 30 anni; 2. Il logo deve essere tondo; 3. Il testo deve essere breve, una scelta progettuale che viola le convenzioni d'uso consolidate nel web",
-          "1. Il software deve essere gratuito; 2. Il codice deve essere Java; 3. Lo schermo deve essere 4K, alterando i punti di contatto del percorso utente",
-          "1. Il sito deve contenere musica; 2. I font devono essere con grazie; 3. Il server deve essere Linux, disattendendo le consolidate euristiche di usabilità",
+          "1. Gli utenti devono avere meno di 30 anni; 2. Il logo deve essere tondo; 3. Il testo deve essere breve",
+          "1. Il software deve essere gratuito; 2. Il codice deve essere Java; 3. Lo schermo deve essere 4K",
+          "1. Il sito deve contenere musica; 2. I font devono essere con grazie; 3. Il server deve essere Linux",
           "1. La buona UX è mera 'Efficienza' (velocità cronometrica); 2. La buona UX è mera 'Facilità' (assenza totale di sforzo); 3. La buona UX è pura 'Gioia' (delight decorativo forzato)"
         ],
         "correctIndex": 3,
@@ -5464,9 +5464,9 @@ window.STULL_DATA = [
         "question": "In quali contesti umani l''Inefficienza deliberata' rappresenta un valore esperienziale supremo superiore alla fretta e alla velocità?",
         "options": [
           "In esperienze come una cena gastronomica, un rituale del tè, un videogioco d'avventura, la lettura di un romanzo o l'ascolto di un disco in vinile: dove il valore risiede nel tempo assaporato e nel viaggio stesso, non nel traguardo",
-          "Nelle operazioni di atterraggio d'emergenza degli aeroplani commerciali, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
-          "Nel calcolo dell'indice dei prezzi al consumo dell'istituto nazionale di statistica, un approccio che ignora la centralità dell'utente reale e le sue effettive modalità di interazione con il sistema nel contesto quotidiano e operativo di utilizzo",
-          "Nell'elaborazione delle transazioni dei mercati azionari ad alta frequenza, una pratica che riduce l'usabilità complessiva, ostacolando l'orientamento spaziale e la percezione dei percorsi di navigazione primari"
+          "Nelle operazioni di atterraggio d'emergenza degli aeroplani commerciali",
+          "Nel calcolo dell'indice dei prezzi al consumo dell'istituto nazionale di statistica",
+          "Nell'elaborazione delle transazioni dei mercati azionari ad alta frequenza"
         ],
         "correctIndex": 0,
         "explanation": "Se applichi l'efficienza cieca alla musica, suoni una sinfonia di Beethoven a quadrupla velocità per farla durare 5 minuti. Molte esperienze umane sublimi sono fatte di benefica lentezza."
@@ -5474,10 +5474,10 @@ window.STULL_DATA = [
       {
         "question": "Qual è il test morale ed etico fondante con cui Stull sigilla l'intera opera sulla User Experience?",
         "options": [
-          "'Quanto profitto netto siamo riusciti a estrarre dal cliente prima che cancellasse l'account?', rallenta la ricerca",
+          "'Quanto profitto netto siamo riusciti a estrarre dal cliente prima che cancellasse l'account?'",
           "'Quanto meno, la nostra interfaccia e il nostro servizio preservano e tutelano la sicurezza, la tranquillità e la dignità dell'essere umano?'",
-          "'Quante righe di codice sorgente sono state compilate senza generare avvisi di warning?', contrario a Krug",
-          "'Quanti premi internazionali di graphic design siamo riusciti ad aggiudicarci nell'anno solare?', approccio non testato"
+          "'Quante righe di codice sorgente sono state compilate senza generare avvisi di warning?'",
+          "'Quanti premi internazionali di graphic design siamo riusciti ad aggiudicarci nell'anno solare?'"
         ],
         "correctIndex": 1,
         "explanation": "L'etica del designer è proteggere la persona: prima ancora di stupire o arricchire l'azienda, abbiamo il dovere morale di non umiliare, non truffare e non angosciare l'essere umano che usa il nostro prodotto."
@@ -5485,10 +5485,10 @@ window.STULL_DATA = [
       {
         "question": "In che cosa consiste il 'Ciclo di Miglioramento Continuo' post-rilascio nella maturità di un'organizzazione UX?",
         "options": [
-          "Nel rifiuto categorico di apportare modifiche all'interfaccia dopo la pubblicazione online, una semplificazione che disattende le euristiche fondamentali di usabilità",
-          "Nel licenziamento del team di sviluppo subito dopo il giorno del lancio per azzerare i costi a livello di microcodice e firmware di sistema",
+          "Nel rifiuto categorico di apportare modifiche all'interfaccia dopo la pubblicazione online",
+          "Nel licenziamento del team di sviluppo subito dopo il giorno del lancio per azzerare i costi",
           "Nel monitoraggio costante di telemetria, feedback qualitativo, recensioni e test regolari, traducendo i problemi emergenti in un backlog di ottimizzazione incrementale senza fine",
-          "Nell'invio automatico di una copia di backup dell'intero sito al tribunale fallimentare, ignorando la tendenza naturale degli utenti a scansionare anziché leggere"
+          "Nell'invio automatico di una copia di backup dell'intero sito al tribunale fallimentare"
         ],
         "correctIndex": 2,
         "explanation": "Il lancio non è la fine: è solo il primo giorno di vita del prodotto. Da quel momento inizia il vero lavoro: misurare, ascoltare, iterare e perfezionare senza sosta."
@@ -5503,9 +5503,9 @@ window.STULL_DATA = [
       {
         "question": "Un'applicazione per la compilazione del testamento biologico e delle donazioni post-mortem viene progettata con coriandoli animati, suoni di trombetta e popup con la scritta: 'Yuppi! Hai pianificato le tue esequie, sei un grande!'. Quale errore filosofico ed etico di design denuncia Stull?",
         "options": [
-          "Mancanza di una colonna sonora stereofonica ad alta fedeltà di sottofondo; tale impostazione trascura la complessità dei modelli mental degli utenti e l'impatto del carico cognitivo sul tasso di successo",
-          "Mancata integrazione delle API di pagamento in criptovalute per le spese funebri, un approccio che ignora la centralità dell'utente reale e le sue effettive modalità di interazione con il sistema nel contesto quotidiano e operativo di utilizzo",
-          "Violazione delle specifiche di rendering CSS sui dispositivi con schermi AMOLED, senza tenere conto del percorso cognitivo attraverso cui l'utente costruisce le proprie aspettative, interpreta i segnali dell'interfaccia e formula le sue decisioni operative",
+          "Mancanza di una colonna sonora stereofonica ad alta fedeltà di sottofondo",
+          "Mancata integrazione delle API di pagamento in criptovalute per le spese funebri",
+          "Violazione delle specifiche di rendering CSS sui dispositivi con schermi AMOLED",
           "Banalizzazione grottesca del momento: il dogma della 'gioia forzata' (delight a tutti i costi) applicato a un tema intimo e solenne offende la dignità dell'utente; in contesti gravi servono rispetto, silenzio e sobrietà"
         ],
         "correctIndex": 3,
@@ -5515,9 +5515,9 @@ window.STULL_DATA = [
         "question": "Nel design di un videogioco di esplorazione, gli sviluppatori introducono un pulsante 'Salta direttamente al livello finale e vinci in 1 secondo'. Tutti i giocatori che lo usano dichiarano che il gioco è noioso e privo di senso. Quale principio di Stull è confermato?",
         "options": [
           "L'efficienza cieca distrugge il valore del viaggio: l'appagamento umano scaturisce dal superamento dell'ostacolo e dalla bellezza del percorso, non dall'azzeramento istantaneo dell'esperienza",
-          "La legge di Hick applicata ai controlli joystick fisici dei computer da gioco, una semplificazione concettuale che non regge alla prova dei test con utenti rappresentativi eseguiti in condizioni d'uso realistiche",
-          "L'incompatibilità delle schede video per videogiochi con i monitor a cristalli liquidi, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo",
-          "La violazione delle normative antitrust sulla concorrenza tra case di sviluppo software; questa scelta progettuale contraddice i risultati dei test empirici e introduce barriere ingiustificate nell'esperienza d'uso"
+          "La legge di Hick applicata ai controlli joystick fisici dei computer da gioco",
+          "L'incompatibilità delle schede video per videogiochi con i monitor a cristalli liquidi",
+          "La violazione delle normative antitrust sulla concorrenza tra case di sviluppo software"
         ],
         "correctIndex": 0,
         "explanation": "La vita non è solo efficienza da catena di montaggio. Il gioco, l'arte e la cultura traggono il loro valore dal tempo dedicato e dall'esperienza vissuta passo dopo passo."
@@ -5525,10 +5525,10 @@ window.STULL_DATA = [
       {
         "question": "Un'azienda monopolista di software scolastico per il registro elettronico non aggiorna l'usabilità dell'interfaccia da 10 anni perché 'tanto gli insegnanti sono obbligati a usarlo'. Improvvisamente il ministero approva la concorrenza e in 3 mesi il 95% delle scuole migra su un'app moderna fluida. Quale legge biologica ha punito l'azienda?",
         "options": [
-          "La teoria dei quanti di luce applicata alla scansione dei documenti cartacei, ignorando che gli utenti non leggono le pagine parola per parola ma cercano indizi visivi immediati per proseguire il loro compito",
+          "La teoria dei quanti di luce applicata alla scansione dei documenti cartacei",
           "L'ipotesi della Regina Rossa: credere che il software fosse finito e intoccabile ha condannato l'azienda all'estinzione evolutiva non appena il mercato ha ripristinato la libertà di scelta per gli utenti",
-          "La legge di conservazione della massa formulata da Antoine Lavoisier, un approccio che ignora la centralità dell'utente reale e le dinamiche di navigazione rapida basate sull'euristica del satisficing",
-          "Un guasto irreparabile dei server centrali causato dall'eccessivo calore estivo, un errore comune che antepone le preferenze soggettive del team di sviluppo ai reali bisogni emersi dall'osservazione sul campo"
+          "La legge di conservazione della massa formulata da Antoine Lavoisier",
+          "Un guasto irreparabile dei server centrali causato dall'eccessivo calore estivo"
         ],
         "correctIndex": 1,
         "explanation": "Fermarsi mentre il resto del mondo corre è una sentenza di morte. L'obbligo forzato crea solo odio; non appena si apre una via di fuga, l'abbandono è immediato e totale."
