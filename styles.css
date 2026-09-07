@@ -593,6 +593,17 @@ body {
   margin: 24px 0;
 }
 
+blockquote.summary-quote {
+  margin: 18px 0;
+  padding: 14px 20px;
+  background: var(--bg-sidebar);
+  border-left: 4px solid var(--accent-primary);
+  border-radius: var(--radius-sm);
+  color: var(--text-main);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
 .table-responsive {
   width: 100%;
   overflow-x: auto;

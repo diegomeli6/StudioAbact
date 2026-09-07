@@ -1388,6 +1388,13 @@
     html = html.replace(/```(html|css|js|)([\s\S]*?)```/g, '<pre><code>$2</code></pre>');
     // Inline code
     html = html.replace(/`(.*?)`/g, '<code>$1</code>');
+
+    // Blockquotes (markdown > or &gt;)
+    html = html.replace(/((?:^(?:&gt;|>)[ \t]?[^\n]*(?:\r?\n|$))+)/gm, function (block) {
+      const lines = block.trim().split(/\r?\n/).map(l => l.replace(/^(?:&gt;|>)[ \t]?/, '').trim()).filter(Boolean);
+      return '\n\n<blockquote class="summary-quote">' + lines.join('<br>') + '</blockquote>\n\n';
+    });
+
     // Bullets
     html = html.replace(/^[•\-\*] (.*?)$/gm, '<li>$1</li>');
     // Wrap consecutive lis in ul
@@ -1395,11 +1402,12 @@
     // Paragraphs
     html = html.split('\n\n').map(p => {
       p = p.trim();
-      if (!p.startsWith('<h') && !p.startsWith('<ul') && !p.startsWith('<pre') && !p.startsWith('<div') && !p.startsWith('<hr')) {
+      if (!p) return '';
+      if (!p.startsWith('<h') && !p.startsWith('<ul') && !p.startsWith('<pre') && !p.startsWith('<div') && !p.startsWith('<hr') && !p.startsWith('<blockquote')) {
         return `<p>${p.replace(/\n/g, '<br>')}</p>`;
       }
       return p;
-    }).join('\n');
+    }).filter(Boolean).join('\n');
 
     return html;
   }
