@@ -1,0 +1,843 @@
+=== PAGE 1 ===
+Le	leggi	della	semplicità	—	Dispensa	di	studio
+John	Maeda
+	·	
+Storia,	principi,	applicazioni	della	semplicità
+	(Bruno	Mondadori,	2006	·	tit.	orig.
+The	Laws	of	Simplicity
+,	MIT	Press)
+Versione	semplificata	e	deduplicata	per	lo	studio.	Mantiene	tutte	le	leggi,	le	chiavi,	i	metodi
+(acronimi)	e	gli	esempi	necessari	alla	comprensione;	condensa	gli	aneddoti	personali
+conservandone	quelli	illustrativi.	La	struttura	segue	l’indice	del	libro:	Introduzione,	10
+Leggi,	3	Chiavi,	Vita.
+Le	dieci	leggi	e	le	tre	chiavi	(quadro	d’insieme)
+LE	DIECI	LEGGI
+	1.	
+RIDUCI
+	—	Il	modo	più	semplice	per	conseguire	la	semplicità	è	attraverso
+una	riduzione	ragionata.	2.	
+ORGANIZZA
+	—	L’organizzazione	fa	sì	che	un	sistema	composto	da
+molti	elementi	appaia	costituito	da	pochi.	3.	
+TEMPO
+	—	I	risparmi	di	tempo	somigliano	alla
+semplicità.	4.	
+IMPARA
+	—	La	conoscenza	rende	tutto	più	semplice.	5.	
+DIFFERENZE
+	—	La
+semplicità	e	la	complessità	sono	necessarie	l’una	all’altra.	6.	
+CONTESTO
+	—	Ciò	che	sta	alla
+periferia	della	semplicità	non	è	assolutamente	periferico.	7.	
+EMOZIONE
+	—	Meglio	emozioni	in
+più	piuttosto	che	in	meno.	8.	
+FIDUCIA
+	—	Noi	crediamo	nella	semplicità.	9.	
+FALLIMENTO
+	—	Ci
+sono	cose	che	non	è	possibile	semplificare.	10.	
+L’UNICA
+	—	Semplicità	significa	sottrarre	l’ovvio
+e	aggiungere	il	significativo.
+LE	TRE	CHIAVI
+	-	
+LONTANO
+	—	Più	sembra	meno:	basta	semplicemente	spostarlo	lontano,
+molto	lontano.	-	
+APERTO
+	—	L’apertura	semplifica	la	complessità.	-	
+ENERGIA
+	—	Usa	di	meno,
+ottieni	di	più.
+I	tre	insiemi	di	leggi	corrispondono	a	livelli	di	semplicità	crescente:	
+di	base	(1-3)
+,
+immediatamente	applicabili	(design	di	un	prodotto,	arredamento);	
+intermedia	(4-6)
+,	più
+difficili	da	cogliere;	
+profonda	(7-9)
+,	riflessioni	ancora	da	maturare.	La	legge	
+10
+	riassume	tutte
+le	altre.	Le	chiavi	sono	aree	tecnologiche	dove	investire	ricerca.
+Introduzione	—	Semplicità	=	Serenità
+La	tecnologia	ha	reso	le	nostre	vite	più	piene,	ma	anche	spiacevolmente	“piene”:	siamo
+sommersi	da	informazioni	(l’esempio	delle	e-mail	delle	figlie	di	Maeda,	da	poche	gocce	a
+cascata).	Maeda,	esperto	di	tecnologia	e	tra	i	responsabili	della	grafica	dinamica	dei	siti	web,
+sente	la	responsabilità	di	porre	un	freno	alla	complessità.	
+Perseguire	la	semplicità	nell’era
+digitale
+	è	la	missione	delle	sue	ricerche	al	MIT	(dove	ha	fondato	nel	2004	il	
+Simplicity
+Consortium
+	con	partner	come	AARP,	Lego,	Toshiba,	Time).
+La	semplicità	e	il	mercato.
+	Il	mercato	è	pieno	di	promesse	di	semplicità	(carta	“Semplicità”	di
+Citibank,	prezzo	“semplice”	Ford,	ecc.).	A	dispetto	della	logica	per	cui	“avere	di	meno	e	pagare
+di	più”	contraddice	l’economia,	
+«la	semplicità	vende»
+	(David	Pogue):	l’iPod	(fa	meno	cose	ma
+costa	più	di	altri	lettori),	Google	(interfaccia	snella,	“googling”	=	cercare	sul	web),	Philips
+(“senso	e	semplicità”	come	strategia	che	riorganizza	tutta	l’azienda).	La	semplicità	non	è	solo
+una	qualità	che	genera	lealtà	al	prodotto,	ma	uno	
+strumento	strategico
+	per	gestire	la
+complessità	d’impresa.
+Idee	guida	del	libro.
+	La	semplicità	e	la	complessità	sono	concepite	come	
+rivali	necessarie
+l’una	all’altra
+:	liberarsi	del	tutto	della	complessità,	anche	se	sembra	il	percorso	più	breve,
+
+=== PAGE 2 ===
+potrebbe	non	essere	ciò	che	vogliamo	davvero.	Ogni	legge	è	una	raccolta	di	“microsaggi”	che
+pone	domande	più	che	dare	risposte,	ed	è	accompagnata	da	
+un’icona	grafica
+	disegnata
+dall’autore.	Le	dieci	leggi	sono	indipendenti,	usabili	insieme	o	da	sole.	Maeda	invita
+esplicitamente	a	
+rilassarsi
+	durante	la	lettura	(«Il	mondo	cade	a	pezzi	da	sempre,	quindi
+rilassati»).
+Legge	1	—	RIDUCI
+Il	modo	più	semplice	per	conseguire	la	semplicità	è	attraverso	una	riduzione	ragionata.
+Il	modo	più	elementare	di	semplificare	un	sistema	è	
+rimuovere	funzionalità
+.	Ma	fino	a	che
+punto?	(Un	DVD	con	un	solo	tasto	“play”	è	semplice,	ma	non	permette	di	rivedere	una	scena.)
+La	domanda	fondamentale	è	l’equilibrio	tra	le	due	forze	opposte:
+QUANTO	PUOI	RENDERLO	SEMPLICE?	↔	QUANTO	DEVE	ESSERE	COMPLESSO?
+Vogliamo	un	prodotto	facile	da	usare	
+e
+	capace	di	fare	tutto.	
+Quando	avete	dubbi,	rimuovete
+—	ma	con	attenzione	a	
+cosa
+	eliminate.	La	vera	semplificazione	si	ha	quando	si	riducono
+funzionalità	
+senza	costi	significativi
+.	Quando	tutto	il	rimovibile	è	stato	rimosso,	si	passa	a	una
+seconda	batteria	di	metodi,	l’acronimo	
+SHE
+:
+SHE	=	SHRINK	(rimpicciolisci)	·	HIDE	(nascondi)	·	EMBODY	(incorpora)
+(In	inglese	“SHE”	significa	anche	“lei”,	da	cui	il	gioco	di	parole	“SHE’s	always	right”;	in	italiano
+reso	come	«SHE	è	sempre	la	giusta	soluzione».)
+SHRINK	—	Rimpicciolisci.
+	Quando	un	oggetto	piccolo	e	modesto	supera	le	aspettative,	siamo
+sorpresi	e	contenti:	più	è	piccolo,	più	siamo	benevoli	verso	i	suoi	comportamenti	inattesi	(«temi
+il	grande,	compatisci	il	piccolo»).	La	
+fragilità
+	è	una	forza	che	contrasta	la	complessità	perché
+instilla	compassione	(curiosamente,	“pity”	è	dentro	“simplicity”).	La	tecnologia	è
+rimpicciolimento
+:	un	computer	che	pesava	27	tonnellate	oggi	sta	in	un	chip.	I	chip	permettono
+maggiore	complessità	in	scala	minore
+	(un	cellulare	è	più	complesso	di	un	bulldozer).
+Strumenti	dell’artista	per	la	riduzione:	
+leggerezza	e	sottigliezza
+	(il	retro	a	specchio	dell’iPad,
+gli	schermi	piatti	su	supporti	minimi,	lo	Thinkpad	Lenovo).	Rimpicciolire	è	una	forma
+“innocente”	di	inganno	accettabile.
+HIDE	—	Nascondi.
+	Quando	un	prodotto	è	già	snello,	si	
+nasconde	la	complessità
+.	Esempio
+classico:	il	coltello	dell’esercito	svizzero	(vedi	solo	lo	strumento	che	usi).	Il	design	a	
+conchiglia
+dei	telefoni	nasconde	i	tasti	finché	non	servono;	menù	e	barre	software	nascondono	strumenti
+infiniti	dietro	un	clic.	Se	l’inganno	è	percepito	come	
+magia
+	(il	“clic”	del	Motorola	Razr,	le
+animazioni	del	Mac	OS	X)	diventa	un	piacere:	la	complessità	diventa	un	interruttore	che	l’utente
+aziona	a	propria	discrezione.
+EMBODY	—	Incorpora.
+	Rimpicciolendo	e	nascondendo	si	rischia	di	perdere	il	
+senso	di
+valore
+:	bisogna	incorporarlo.	Il	consumatore	sceglie	l’oggetto	più	piccolo	e	meno	funzionale
+solo	se	lo	percepisce	come	
+di	maggior	valore
+.	La	qualità	può	essere	
+reale
+	(materiali	pregiati,
+maestria	—	la	Ferrari	ha	
+meno
+	parti	ma	le	migliori;	«le	parti	buone	fanno	grande	un	prodotto,	le
+parti	ottime	lo	rendono	leggendario»)	o	
+percepita
+	(marketing	—	Nike/Michael	Jordan).	Quando
+
+=== PAGE 3 ===
+una	qualità	reale	è	invisibile	(es.	i	tre	sensori	CCD	di	una	videocamera)	va	resa	
+percepibile
+	(un
+adesivo,	un	messaggio),	anche	se	ciò	contraddice	il	principio	“nascondi”.
+In	sintesi:
+	riduci	quello	che	puoi,	nascondi	il	resto	senza	perdere	il	senso	del	valore,	e
+incorpora	qualità	con	materiali	e	messaggi	espliciti.	
+Piccolo	è	meglio	se	si	applica	SHE.
+Legge	2	—	ORGANIZZA
+L’organizzazione	fa	sì	che	un	sistema	composto	da	molti	elementi	appaia	costituito	da
+pochi.
+Davanti	al	disordine	(la	casa)	ci	sono	tre	strategie:	comprare	più	spazio,	immagazzinare,
+organizzare	sistematicamente
+.	Le	prime	due	sono	illusorie	(lo	spazio	liberato	si	riempie	di
+nuovo).	La	domanda	chiave	dell’organizzazione	è:	
+che	cosa	va	con	cosa?
+	Raggruppando	molti
+oggetti	in	poche	categorie	(un	guardaroba	enorme	in	sei	gruppi),	un	sistema	di	molti	
+appare
+costituito	da	pochi
+	—	ma	solo	se	i	gruppi	sono	molti	meno	degli	oggetti.
+SLIP	—	il	metodo	“che	cosa	va	con	cosa?”
+SLIP	=	SORT	(ordina)	·	LABEL	(etichetta)	·	INTEGRATE	(integra)	·	PRIORITIZE
+(stabilisci	le	priorità)
+(In	inglese	“slip”	=	“talloncino”,	ma	anche	“errore”,	“lapsus”.)
+SORT	(ordina):
+	scrivi	ogni	elemento	su	un	post-it	e	disponilo	su	una	superficie	piana	per
+individuare	i	
+raggruppamenti	naturali
+.
+LABEL	(etichetta):
+	dai	a	ogni	gruppo	un	nome	rilevante	(o	un	codice:	lettera,	numero,
+colore).
+INTEGRATE	(integra):
+	fondi	i	gruppi	molto	simili.	
+Meno	gruppi,	meglio	è.
+PRIORITIZE	(stabilisci	le	priorità):
+	usa	il	
+principio	di	Pareto	(80/20)
+	—	l‘80%	degli
+elementi	è	a	priorità	bassa,	il	20%	richiede	il	massimo.	Sapere	
+da	dove	partire
+	è	il	primo
+passo	critico.
+Lo	SLIP	non	è	una	scienza:	non	c’è	un	metodo	giusto	o	sbagliato,	va	adattato	alle	proprie
+esigenze.
+TAB.
+	Esistono	molti	altri	metodi	(le	“mappe	mentali”,	algoritmi	3D/4D).	Ma	lo	strumento	più
+affidabile	resta	la	
+tabulazione
+:	griglie	orizzontali/verticali	per	organizzare	l’informazione.	Il
+tasto	“tab”	(con	spazio	e	invio)	dona	al	caos	«il	tocco	più	leggero	del	design	grafico».	La
+domanda	giusta	non	è	«quale	programma	usi?»	ma	«quale	
+principio
+	usi?».
+La	Gestalt.
+	La	nostra	mente	forma	
+modelli
+	automaticamente:	completa	una	scatola	disegnata
+non	chiusa,	prosegue	una	serie	“cerchio,	cerchio,	cerchio”.	Trenta	punti	sparsi	a	caso	non	hanno
+ordine;	gli	stessi	punti	
+raggruppati
+	sono	percepiti	come	un	“tutto”.	Siamo	«animali	da
+organizzazione».	La	scuola	della	
+Gestalt
+	(Germania,	Bauhaus	1919;	“gestaltung”	=
+design/organizzazione)	ispira	aziende	come	BMW,	Audi,	Braun,	che	cercano	la	
+gestalt
+appropriata
+	per	ogni	bisogno.
+La	gestalt	mutevole	dell’iPod.
+	L’evoluzione	dei	controlli	mostra	come	piccoli	cambi
+nell’organizzazione	producano	grandi	differenze:	
+partire	semplice	→	diventare	complesso	→
+
+=== PAGE 4 ===
+finire	il	più	semplice	possibile
+.	Nel	primo	modello	i	tasti	circondano	la	ghiera;	nel	secondo
+sono	separati	in	riga	(più	complicato);	nel	terzo	sono	
+integrati
+	nella	ghiera,	come	“sfocati”	in
+un’unica	cosa.
+L’evoluzione	dei	controlli	dell’iPod:	da	semplice	a	complesso	al	più	semplice	possibile	(i	tasti	si	“fondono”	nella	ghiera).
+L’
+estetica	della	sfocatura
+	(gli	impressionisti,	O’Keeffe)	ha	un	fascino	mistico;	ma	ha	un	costo:
+maggiore	astrazione	e	minore	concretezza	(il	cognato	di	Maeda	non	capiva	come	usare	l’iPod
+integrato).	
+Ognuno	ha	la	sua	gestalt.
+Strizza	gli	occhi	per	aprirli.
+	I	raggruppamenti	sono	positivi;	il	loro	
+eccesso
+	è	negativo.	Tutti	i
+migliori	designer	
+strizzano	gli	occhi
+	per	vedere	oltre	i	dettagli	e	trovare	l’equilibrio	tra	il	tutto
+e	i	particolari.	
+«Vedrai	di	più	vedendo	di	meno.»
+Legge	3	—	TEMPO
+I	risparmi	di	tempo	somigliano	alla	semplicità.
+In	media	trascorriamo	almeno	un’ora	al	giorno	in	coda,	più	innumerevoli	attese	(consapevoli	e
+non).	
+Nessuno	vuole	la	frustrazione	dell’attesa
+:	quando	le	interazioni	sono	veloci,
+l’esperienza	è	percepita	come	semplice	(FedEx,	McDonald’s).	Il	tempo	risparmiato	si	trasforma
+in	momenti	per	altro	(dieci	minuti	in	meno	di	tragitto	=	dieci	minuti	coi	propri	cari).
+Risparmiare	tempo	significa	
+ridurlo
+,	quindi	si	applica	di	nuovo	lo	
+SHE
+.
+SHRINK	—	Restringere	il	tempo.
+	È	la	ragion	d’essere	della	
+gestione	della	produzione
+(Toyota,	RFID	per	inventari	istantanei).	Una	soluzione	radicale	è	
+rimuovere	i	vincoli
+:	l’iPod
+Shuffle	elimina	il	display	e	sceglie	i	brani	in	modo	casuale	(lasciare	che	sia	la	macchina	a
+scegliere);	i	suggerimenti	di	Amazon	e	l’opzione	“mi	sento	fortunato”	di	Google	fanno	scegliere
+ad	altri	le	decisioni	meno	importanti.
+HIDE	/	EMBODY	—	Nascondere	e	incorporare	il	tempo.
+	Quando	non	si	può	accelerare	un
+processo,	si	può	
+nascondere
+	il	trascorrere	del	tempo	(togliere	orologi;	i	casinò	senza	orologi	né
+finestre)	—	ma	nascondere	il	tempo	non	lo	risparmia,	crea	solo	l’illusione	che	non	sia
+importante.	Oppure	si	
+incorpora
+	rendendo	l’attesa	visibile	e	tollerabile:
+
+=== PAGE 5 ===
+Barre	di	progressione:
+	un	esperimento	Apple	mostrò	che,	vedendo	il	progresso,	l’utente
+percepisce	
+meno
+	tempo.	Una	barra	che	avanza	
+a	piccoli	incrementi
+	(a	destra)	è	percepita
+come	più	breve	di	una	che	si	riempie	
+di	colpo
+	alla	fine	(a	sinistra):	il	tempo	“distribuito	come
+margarina”	vs	“il	ketchup	che	casca	all’improvviso”.
+Due	barre	di	progressione:	a	sinistra	si	riempie	solo	alla	fine	(di	colpo),	a	destra	avanza	per	incrementi	(passo	dopo
+passo,	percepita	come	più	breve).
+-	
+Comunicare	l’attesa:
+	semafori	col	conto	alla	rovescia,	voce	automatica	che	annuncia	i	minuti
+di	attesa,	un	LED	che	lampeggia	come	un	battito	cardiaco.	
+«La	conoscenza	è	comfort,	e	il
+comfort	è	l’essenza	della	semplicità.»
+	-	
+Styling	/	streamlining:
+	Raymond	Loewy	trasferì	agli
+oggetti	lo	“stile”	(non	la	funzione)	del	volo	per	
+suggerire	velocità
+	(alettoni,	tubi	“aggressivi”
+nei	PC	Alienware).	È	un	inganno,	ma	un	attributo	desiderabile.
+Il	costo	della	velocità.
+	Accelerare	costa	(una	spedizione	notturna	è	~40	volte	più	cara	di	una
+ordinaria;	un	volo	diretto	costa	di	più).	Quando	non	si	può	accelerare,	si	rende	l’attesa	più
+tollerabile	con	attenzioni	extra	(i	biscottini	gratis	da	Whole	Foods	nelle	code).	Da	qui	la
+domanda	gemella:
+IN	CHE	MODO	PUOI	RENDERE	L’ATTESA	PIÙ	BREVE?	↔	PIÙ	TOLLERABILE?
+Da	una	parte	si	riducono	i	vincoli	di	tempo;	dall’altra	si	nasconde	e	incorpora	la	sua	dimensione.
+Di	solito	vince	l’opzione	che	
+costa	meno
+	implementare.
+
+=== PAGE 6 ===
+Legge	4	—	IMPARA
+La	conoscenza	rende	tutto	più	semplice.
+Anche	un	oggetto	banale	(una	vite)	è	semplice	solo	se	
+sai
+	come	usarlo:	in	che	direzione	girarla
+(«destra	stringe,	sinistra	allenta»).	La	conoscenza	rende	semplice	qualsiasi	cosa,	per	quanto
+complessa.
+Usa	il	cervello	—	il	metodo	BRAIN.
+	L’apprendimento	funziona	quando	c’è	desiderio	di
+conoscere,	sostenuto	da	motivazione	intrinseca	(orgoglio)	o	estrinseca	(premio).	Non	“bastone	e
+carota”,	ma	un	approccio	olistico:
+BRAIN
+	
+(in	inglese	“cervello”)
+	-	
+B
+asics	—	i	
+principi	di	base
+	vanno	esposti	subito	-	
+R
+epeat
+—	
+ripeti
+	spesso	quello	che	hai	detto	-	
+A
+void	—	
+evita
+	di	creare	disperazione	-	
+I
+nspire	—
+ispira
+	citando	degli	esempi	-	
+N
+ever	forget	to	repeat	—	
+mai	dimenticare
+	di	ripetere
+Dettagli:	per	trasmettere	i	
+principi	di	base
+	bisogna	mettersi	nei	panni	di	chi	impara	per	la
+prima	volta	(focus	group,	esperti	di	comportamento	come	IDEO;	o,	più	economico,	insegnarli	tu
+stesso	—	l’esempio	del	maestro	Weingart,	che	ripeteva	la	stessa	lezione	ma	ogni	anno	più
+semplice).	
+Ripetere
+	funziona	(la	rielezione	di	Bush	2004:	«semplicità,	semplicità,	semplicità»;	il
+video	di	Mike	Nourse	che,	tolte	le	parole	più	ricorrenti,	riduce	il	discorso	al	10%).	
+Evitare	la
+disperazione
+:	un	inizio	delicato	è	meglio	dello	“scioccare	e	impaurire”.	
+L’ispirazione
+	è	il
+catalizzatore	(Maeda	ispirato	dal	designer	Paul	Rand):	la	motivazione	interna	batte	il	compenso
+esterno.
+Metti	in	relazione,	traduci,	sorprendi.
+	Alternativa	elegante	al	rude	“approccio
+dell’ingegnere”	(
+LIFM
+	=	“Leggi	Il	F
+uto	Manuale”)	è	l’
+*approccio	del	designer
+,	che	instilla
+immediata	familiarità	(«Hey,	questo	l’ho	già	visto!»):
+METTI	IN	RELAZIONE	·	TRADUCI	·	SORPRENDI
+	(Relate	·	Translate	·	Surprise)
+Il	design	sfrutta	l’istinto	a	cercare	relazioni,	lo	
+traduce
+	in	oggetti	tangibili	e	aggiunge	un	po’	di
+sorpresa
+.	Esempio:	la	
+metafora	della	scrivania
+	(Xerox)	tradusse	cartelle	e	cestino	fisici	in
+icone	digitali,	con	la	sorpresa	“aha”	di	poter	gestire	molti	più	documenti.	Le	metafore	limitano
+però	a	culture	specifiche	(l’icona	del	cestino	metallico	Apple	era	incomprensibile	in	Giappone).
+La	cultura	del	design	varia	l’accento:	il	design	
+tedesco
+	(Braun)	è	funzione	pura;	quello
+britannico/Apple
+	(Jonathan	Ive)	punta	sulla	sorpresa;	quello	
+italiano
+	inverte	la	sequenza	(la
+sorpresa	prima	—	il	divano	
+Studio65
+	a	forma	di	labbra).	Una	metafora	è	efficace	solo	se
+pertinente	e	piacevolmente	inattesa
+.
+Il	vero	premio.
+	La	motivazione	interna	(l’ispirazione,	il	riconoscimento	dei	progressi)	è	il	vero
+compenso,	più	di	premi	esterni.	«La	pratica	dell’educazione	è	la	forma	più	elevata	di
+filantropia.»
+Legge	5	—	DIFFERENZE
+
+=== PAGE 7 ===
+La	semplicità	e	la	complessità	sono	necessarie	l’una	all’altra.
+Non	c’è	modo	di	cogliere	la	semplicità	se	si	è	dimenticato	che	cosa	sia	il	suo	contrario.	
+La
+chiave	è	il	ritmo
+	con	cui	semplicità	e	complessità	si	presentano	nel	tempo	e	nello	spazio:	un
+grafico	che	sale	verso	la	complessità	e	scende	verso	la	semplicità	all’infinito	—	come	una
+canzone	che	cambia	(tempo)	o	un	dipinto	che	gli	occhi	scrutano	(spazio).
+Nessun	ritmo	(il	biglietto	da	visita).
+	Senza	differenze	tutto	è	monotono.	Maeda	ordina	i
+biglietti	da	visita	con	lo	SLIP	e	li	ricicla	—	ma	ne	conserva	uno	per	
+sette	anni
+	solo	perché	è
+diverso
+	dagli	altri	(forma	allungata,	color	crema,	illustrazione	di	una	pecora).	
+Ciò	che	è	diverso
+risalta	e	acquista	valore
+	—	valore	che	perderebbe	se	quella	diversità	diventasse	moda.
+Un	tè	con	Tanaka	(il	contrasto).
+	Alla	cerimonia	del	tè	del	maestro	Ikko	Tanaka,	una	
+tazza
+palesemente	imperfetta
+	del	Settecento	(geometria	non	platonica,	“sbagliata”)	fece	apparire
+tutto	il	resto	—	già	semplice	—	
+ancora	più	semplice
+.	La	sua	inattesa	complessità	esaltò	per
+contrasto	la	perfezione	degli	altri	oggetti.
+Senti	il	ritmo.
+	
+Taa	taa	ti	ti	taa
+:	il	contrappunto	tra	suono	lungo,	corto	e	silenzio	(un	assolo	jazz)
+fa	danzare;	un	ritmo	monotono	(
+taa	taa	taa…
+)	stanca.	Una	sequenza	«complessità,
+complessità…	semplicità»	accoglie	l’ultima	come	
+sollievo
+;	«semplicità,	semplicità…
+complessità,	semplicità»	rende	importante	l’
+alternanza
+.	La	varietà	mantiene	viva	l’attenzione.
+Alcuni	ritmi	monotoni	li	apprezziamo	(il	passare	delle	stagioni).	
+«Sento	chiaramente	il	respiro
+della	semplicità	e	della	complessità	in	tutto	ciò	che	incontro.»
+Legge	6	—	CONTESTO
+Ciò	che	sta	alla	periferia	della	semplicità	non	è	assolutamente	periferico.
+Quando	ci	si	
+focalizza
+	troppo	(come	al	tornio	da	vasaio,	tutto	compreso	nel	ristretto	campo
+visivo),	si	perde	il	controllo	dello	
+sfondo
+	che	può	travolgere	la	ribalta.	«Limitare»	e
+«focalizzare»	significano	la	stessa	cosa,	ma	il	secondo	ha	connotazione	positiva;	focalizzarsi
+però	non	è	sempre	un	bene.	Il	consiglio	di	Negroponte	a	Maeda:	
+diventare	una	lampadina
+anziché	un	laser
+	—	la	stessa	luce,	invece	di	un	solo	punto,	illumina	tutto	l’intorno.	La	sesta
+legge	invita	a	cercare	il	senso	
+in	tutto	ciò	che	ci	sta	attorno
+,	non	solo	davanti:	una
+«superficialità	illuminata».
+Il	nulla	è	qualcosa.
+	Per	Maeda	la	priorità	di	ogni	progetto	è	massimizzare	lo	
+spazio	bianco
+(le	aree	vuote	che	circondano	il	testo).	Dove	un	tecnologo	o	un	uomo	d’affari	riempirebbero	ogni
+spazio	o	opportunità,	il	
+designer	preserva	il	vuoto
+,	perché	«il	nulla	è	qualcosa	di	importante»:
+più	spazio	bianco	=	meno	informazione	presentata	e	
+maggiore	attenzione
+	a	ciò	che	resta.
+«Quando	le	cose	di	cui	disponiamo	sono	poche,	le	apprezziamo	molto	di	più.»
+	(Il	rettangolo
+vuoto	recintato	nel	santuario	giapponese:	spazio	sacro,	poi	usato	per	benedire	un’auto.)
+L’ambiente	è	ovunque.
+	Dove	c’è	poco	di	significativo	da	percepire,	anche	la	minima
+sensazione	si	
+amplifica
+	(il	fastidio	dei	tappi	per	le	orecchie,	della	mascherina	in	aereo).	Quando
+non	c’è	nulla	su	cui	concentrarsi,	l’
+“ambiente	circostante”
+	prende	il	sopravvento.	Le
+esperienze	ben	progettate	(l’industria	alberghiera,	un	locale	tutto	bianco)	curano
+scrupolosamente	i	
+molti	piccoli	dettagli
+	che,	presi	singolarmente	trascurabili,	
+combinati
+assumono	rilevanza.	
+Ciò	che	è	alla	periferia	non	è	periferico.
+
+=== PAGE 8 ===
+Legge	7	—	EMOZIONE
+Meglio	emozioni	in	più	piuttosto	che	in	meno.
+A	differenza	delle	altre	leggi	(che	spesso	sottraggono),	questa	
+aggiunge
+.	Gli	
+accessori
+	e	la
+personalizzazione	(rivestimenti,	cover)	hanno	due	funzioni:	dare	valore	all’oggetto	e,
+soprattutto,	
+bilanciare	con	calore	umano
+	la	freddezza	del	gadget.	L’oggetto	resta	semplice	e
+“nudo”,	ma	il	suo	rivestimento	permette	ai	consumatori	di	
+esprimere	sentimenti
+.
+Senti	e	prova:	aichaku.
+	Nella	tradizione	animista	giapponese	(scintoismo)	
+tutto
+	—	anche	una
+tazza,	una	scrivania,	un	foglio	di	carta	—	è	dotato	di	uno	
+spirito	vitale
+	e	merita	rispetto.	La
+tecnologia	estende	questa	illusione	di	vita:	il	cane	robot	
+AIBO
+,	il	
+Tamagotchi
+,	i	
+Neopets
+suscitano	amore	e	cura	(un	“animismo	elettronico”).	Il	termine	giapponese	
+AICHAKU
+	(
+愛着
+,	da
+“amore”	+	“forte”	=	
+amore	forte
+)	indica	l’attaccamento	emotivo	a	un	manufatto,	che	merita
+affetto	
+non	per	quello	che	fa,	ma	per	quello	che	è
+.	Riconoscerne	l’esistenza	ci	aiuta	a
+progettare	oggetti	in	cui	identificarsi,	a	cui	affezionarsi	e	da	
+conservare	per	tutta	la	vita
+	(le
+superfici	laccate	del	
+bento	box
+,	vive	e	in	armonia	con	il	loro	contenuto).
+AICHAKU	(
+愛着
+):	“amore”	+	“forte”	=	l’attaccamento	emotivo	profondo	a	un	oggetto.
+L’arte	del	“più”.
+	Le	sculture	iperrealistiche	di	Ron	Mueck	fanno	chiedere	«ma	è	vera?»:	
+la
+migliore	arte	fa	sorgere	domande
+.	Forse	è	questa	la	distinzione	fondamentale:	
+l’arte
+meraviglia,	il	design	chiarisce
+.	Ma	la	sola	chiarezza	non	basta	(l’amica	di	Milano	a	cui	il	medico
+comunica	una	diagnosi	di	cancro	in	modo	efficiente	ma	senza	alcuna	attenzione	ai	sentimenti;
+lei	poi	crea	centri	d’accoglienza	accanto	all’oncologia:	
+l’arte	—	una	ragione	per	vivere	—
+moderata	dal	design	—	la	chiarezza	del	messaggio
+).	Ottenere	chiarezza	è	facile;	la	vera
+sfida	è	ottenere	il	
+benessere
+.	L’intelligenza	emotiva	è	un	tratto	desiderabile:	la	soddisfazione	di
+una	vita	di	senso	è	il	suo	
+ROE
+	(
+Return	on	Emotions
+,	tasso	di	redditività	delle	emozioni).	
+Un
+certo	tipo	di	“più”	(più	cura,	più	espressione)	è	sempre	preferibile	al	“meno”.
+
+=== PAGE 9 ===
+Legge	8	—	FIDUCIA
+Noi	crediamo	nella	semplicità.
+Immaginate	un	dispositivo	con	
+un	solo	pulsante	senza	etichetta
+:	lo	premete	e	il	compito	è
+fatto	(la	lettera	a	zia	Mabel	è	spedita,	“giusta”	perché	il	computer	vi	conosce).	Questa	è	la
+semplicità,	e	non	ne	siamo	lontani.	Ma	comporta	un	
+dilemma
+:	quanto	vi	fidate	che	il	sistema
+indovini	i	vostri	desideri,	e	quanto	tollerate	i	suoi	errori?	La	privacy	è	sacrificata	in	nome	della
+convenienza:
+QUANTO	DOVETE	SAPERE	DEL	SISTEMA?	↔	QUANTO	IL	SISTEMA	DEVE	SAPERE
+DI	VOI?
+A	sinistra	si	fa	uno	sforzo	per	
+dominare
+	il	sistema;	a	destra	si	
+ripone	fiducia
+	in	esso	(che
+dovrà	ripagarla).
+Rilassatevi,	distendetevi.
+	Imparare	a	nuotare	da	adulto:	l’istruttore	non	insegnò	a	nuotare,
+ma	a	
+fidarsi	dell’acqua
+	e	distendersi	—	e	Maeda	nuotò.	Allo	stesso	modo	il	design	squisito	di
+Bang	&	Olufsen
+	non	punta	sulla	qualità	del	suono	ma	sulla	qualità	del	
+distendersi
+:
+l’attenzione	al	dettaglio	trasforma	la	paura	in	sicurezza	e	induce	ad	abbassare	la	guardia.
+Possiamo	rilassarci	solo	quando	confidiamo	di	essere	in	buone	mani.
+	(E	la	stessa	serenità	è
+disponibile	gratis	su	un	prato,	in	una	bella	giornata.)
+Abbiate	fiducia	nel	maestro	(omakase).
+	Di	fronte	a	un	menù	pieno	di	allarmi	mediatici,
+un’alternativa	è	l’
+omakase
+	del	sushi	(“lascio	fare	a	te”):	il	cuoco	valuta	voi,	la	stagione,	il	pesce,
+e	serve	in	modo	incrementale	osservando	le	reazioni.	Funziona	grazie	alla	
+sicurezza	e
+all’orgoglio
+	del	maestro	(che	non	riconosce	il	rischio),	non	al	costo.	Diverso	dal	“menù	dello
+chef”	occidentale,	dove	la	responsabilità	resta	al	cliente.
+Annullalo	(l’undo).
+	L’alternativa	alla	fiducia	nel	maestro	è	l’
+annullamento
+.	Sapere	che	ogni
+scelta	è	correggibile	rende	tutto	più	semplice	(la	ricevuta	di	reso;	il	tasto	“annulla”	infinito	del
+computer,	“dispositivo	che	dimentica”).	Le	aziende	si	assumono	il	rischio	dei	resi	per
+guadagnare	fiducia
+.	Ma	l’undo	ha	un	rovescio:	a	differenza	della	fiducia	nel	maestro	(basata
+sull’amore/impegno),	l’annullamento	si	basa	su	una	
+relazione	di	interesse	e	disinteresse
+	—
+ogni	impegno	perde	senso	se	ogni	atto	è	annullabile.	
+Affidatevi	all’undo	come	a	un	partner
+razionale	con	gli	oggetti,	ma	liberatevene	quando	avete	a	che	fare	con	le	persone.
+	(La
+conoscenza	—	quarta	legge	—	permette	al	maestro	di	operare	
+senza
+	l’undo.)
+Abbi	fiducia	in	me.
+	In	futuro	Google	e	Amazon	indovineranno	i	nostri	desideri	dalle	nostre
+abitudini.	
+Maggiore	è	la	conoscenza	che	il	sistema	ha	di	voi,	minore	lo	sforzo	di	pensare;
+maggiore	la	vostra	conoscenza	del	sistema,	maggiore	il	controllo.
+	Si	può	scegliere	di	farsi
+guidare	dal	“maestro”	(sacrificando	privacy)	o	di	diventare	maestri	di	sé	tramite	l’undo.
+(Aneddoto:	«quando	qualcuno	ti	dice	“abbi	fiducia	in	me”,	sostituisci	ogni	lettera	con	“F*ttiti”»
+—	Maeda	preferisce	fidarsi	in	modo	incondizionato,	pronto	però	ad	annullare	la	fiducia	quando
+serve.)
+Legge	9	—	FALLIMENTO
+
+=== PAGE 10 ===
+Ci	sono	cose	che	non	è	possibile	semplificare.
+Questa	legge	è	una	
+riflessione	critica
+	sui	limiti	e	i	“difetti”	delle	leggi	precedenti	—
+riconoscere	che	non	tutto	si	può	semplificare.
+Troppi	acronimi	(difetto	1).
+	SHE,	SLIP,	BRAIN…	gli	acronimi	semplificano	idee	complesse,
+ma	la	monotonia	di	
+YAA
+	(
+Yet	Another	Acronym
+	—	“ancora	un	altro	acronimo”)	è	troppa.	(Il
+gioco	SHE/HER	per	decidere	quale	acronimo	tenere	nella	prima	legge.)
+Cattive	gestalt	(difetto	2).
+	I	temi	diventano	via	via	più	
+ambigui
+.	La	
+gestalt
+	(2ª	legge)
+giustifica	l’interpretazione	creativa	ma	può	confondere	se	presa	alla	lettera.	Le	
+differenze
+(5ª)	dipendono	dall’istinto,	diverso	per	ognuno:	non	c’è	una	risposta	univoca.	Il	
+contesto
+	(6ª)
+può	sembrare	un	invito	a	ignorare	il	compito.	L’
+emozione
+	(7ª)	può	far	credere	che	il
+semplice	sia	sterile	(la	legge	preserva	il	diritto	di	
+cambiare	idea
+).	La	
+fiducia
+	(8ª)	e
+l’
+annullamento
+	convivono	come	alternative.
+Troppe	leggi	(difetto	3).
+	Maeda	partì	da	sedici	leggi,	le	ridusse	a	nove	con	lo	SLIP,	poi
+aggiunse	la	decima	per	i	puristi.	
+Ci	sono	cose	che	non	è	possibile	semplificare
+	—	e	va	bene
+così.
+Legge	10	—	L’UNICA
+Semplicità	significa	sottrarre	l’ovvio	e	aggiungere	il	significativo.
+La	squadra	di	rugby	giapponese,	troppo	
+prevedibile
+,	fu	invitata	dall’allenatore	Elissalde	a
+«diventare	come	le	
+bolle	in	un	bicchiere	di	champagne
+»,	che	salgono	in	modo	fluido	e
+imprevedibile:	giocare	sull’
+intuizione
+	più	che	sull’intelletto.	La	semplicità	è	difficile	da
+afferrare	perché	molte	sue	qualità	sono	
+implicite
+	(in	inglese	“implicit”	è	dentro	“simplicity”).
+Da	qui	l’unica	espressione	che	riassume	tutto:
+Semplicità	significa	sottrarre	l’ovvio	e	aggiungere	il	significativo.
+Gioco	numerico:	
+10
+	leggi	→	rimuovi	
+0
+	(niente)	→	resta	
+1
+	(l’unica).	Quando	avete	dubbi,	passate
+alla	decima	legge:	è	la	strada	più	semplice.	(Maeda	mantenne	anche	le	tre	chiavi	perché,	pur
+potendole	rimuovere,	non	erano	“ovvie”	—	coerentemente	con	la	decima	legge:	
+aggiungere	il
+significativo
+.)
+Le	tre	chiavi
+Aree	tecnologiche	su	cui	investire	per	“schiudere”	la	semplicità.
+Chiave	1	—	LONTANO
+
+=== PAGE 11 ===
+Più	sembra	meno:	basta	semplicemente	spostarlo	lontano,	molto	lontano.
+Le	applicazioni	si	“gonfiano”	man	mano	che	cresce	la	potenza	dei	computer	(da	un	floppy	a	più
+DVD),	rendendo	le	macchine	lente.	La	soluzione	è	
+spostare	il	lavoro	altrove
+:	come	i	vecchi
+data	terminal
+	connessi	a	macchine	potenti,	oggi	torna	il	modello	in	cui	il	calcolo	avviene	in
+remoto
+.	
+Google
+	parte	da	una	leggera	casella	di	input	ma	accede	a	una	vasta	rete	di	computer:
+più	sembra	meno,	basta	spostarlo	lontano
+.	È	il	modello	
+“software	come	servizio”
+	(es.
+salesforce.com),	adatto	a	un	mondo	in	movimento.	Perché	funzioni	servono	
+comunicazioni
+sicure
+	affidate	a	terzi	(protezione	da	virus	e	hacker).
+Chiave	2	—	APERTO
+L’apertura	semplifica	la	complessità.
+Essere	
+aperti
+	è	rischioso	(come	dire	“ti	amo”:	grande	opportunità	ma	anche	grande	rischio).
+Per	le	aziende,	
+aprire
+	un	sistema	proprietario	espone	il	
+know-how
+.	Eppure	il	modello	
+open
+source
+	(codice	sorgente	pubblico	—	es.	
+Linux
+	vs	Windows)	genera	software	spesso	più
+affidabili:	
+con	un	sistema	aperto,	il	potere	dei	molti	compensa	il	potere	dei	pochi
+	(migliaia	di
+esperti	risolvono	i	problemi	prima	dell’assistenza	ufficiale).	Un	secondo	modello,	più
+commerciale,	sono	le	
+API
+	(
+Application	Programming	Interface
+):	si	offre	l’accesso	a	funzionalità
+specifiche,	non	al	codice	(Amazon,	Google	Maps),	permettendo	a	chiunque	di	costruire	nuove
+applicazioni.
+Chiave	3	—	ENERGIA
+Usa	di	meno,	ottieni	di	più.
+I	congegni	elettronici	non	saranno	mai	veramente	semplici	finché	dipendono	dall’
+energia
+elettrica
+.	Vie	d’uscita:	
+circuiti	a	bassissima	energia
+	(una	batteria	che	dura	decenni),	un
+semplice	interruttore	per	allungare	la	vita	delle	batterie.	Ma	
+tutta	l’energia	viene	da	qualche
+parte
+	(anche	batterie	e	pannelli	solari	vanno	prodotti):	l’unica	soluzione	è	un	impiego	
+minore	e
+più	saggio
+	da	parte	di	tutti.	
+Usa	di	meno,	ottieni	di	più.
+	Nel	design	«le	migliori	soluzioni
+nascono	quando	ci	sono	più	
+vincoli
+»:	con	poca	batteria	si	fa	di	più,	perché	urgenza	e	creatività
+vanno	di	pari	passo.	Un	sacrificio	personale	diventa	subito	un	
+atto	filantropico
+	sensato.
+Vita
+La	tecnologia	e	la	vita	diventano	complicate	solo	se	lasciate	che	lo	diventino.
+Maeda	racconta	di	aver	sentito,	alla	scuola	d’arte,	che	
+la	tecnologia	lo	plasmava	più	di
+quanto	lui	plasmasse	lei
+.	Cita	
+Ivan	Illich
+:	la	nascita	delle	professioni	ha	“mutilato”	la
+persona	comune	(gli	avvocati	risolvono	ciò	che	un	tempo	si	risolveva	da	sé;	i	medici	curano	ciò
+che	un	tempo	si	curava	con	le	piante).	La	tecnologia	è	insieme	un	mezzo	per	
+conferire	abilità
+	e
+per	
+mutilare
+	(l’attesa	per	la	ricarica	della	stampante,	la	presentazione	bloccata	dal	PowerPoint
+
+=== PAGE 12 ===
+che	non	dialoga	col	proiettore:	«avrei	fatto	meglio	senza»).
+La	lezione	di	Marc.
+	Uno	studente	volontario	in	un	ricovero	per	anziani	notò	che	sopra	ogni
+letto	c’era	
+una	sola	mensola
+	con	tutti	gli	averi	del	paziente.	Si	chiese:	«Quando	hai	così	poco,
+quali	poche	cose	preziose	tieni	fino	alla	fine?».	Quasi	sempre:	un	anello,	una	fotografia,	un
+piccolo	ricordo.	
+Alla	fine	i	ricordi	sono	la	sola	cosa	che	conta.
+	La	vita	può	essere
+complicata,	ma	anche	semplice.
+Le	dieci	leggi	e	le	tre	chiavi	non	sono	la	fine	dei	pensieri	sulla	semplicità:	la	discussione
+continua	(l’autore	promette	che	«rimarrà	semplice»).
+Fine	della	dispensa.	Fonte:	John	Maeda,	“Le	leggi	della	semplicità”,	Bruno	Mondadori,	2006	(tit.
+orig.	“The	Laws	of	Simplicity”,	MIT	Press,	2006;	trad.	Marco	Faillo).
+

@@ -224,5 +224,61 @@ window.GLOSSARY_DATA = [
     "term": "CSS Grid repeat(3, 1fr)",
     "source": "Codice Progetto",
     "def": "Istruzione di CSS Grid che genera 3 colonne identiche, ciascuna occupante una frazione (1fr) dello spazio orizzontale disponibile nel contenitore."
+  },
+  {
+    "term": "Metodo SHE (Shrink, Hide, Embody)",
+    "source": "Maeda",
+    "def": "Protocollo della Legge 1 (Riduci): Shrink (rimpicciolisci le dimensioni fisiche sfruttando la psicologia della fragilità), Hide (nascondi la complessità non necessaria finché serve, come nel coltellino svizzero) ed Embody (incorpora qualità reale e percepita con materiali eccellenti affinché l'oggetto non sembri privo di valore)."
+  },
+  {
+    "term": "Metodo SLIP (Sort, Label, Integrate, Prioritize)",
+    "source": "Maeda",
+    "def": "Protocollo della Legge 2 (Organizza): Sort (disponi e raggruppa gli elementi su post-it), Label (assegna etichette o codici pertinenti a ciascun gruppo), Integrate (fondi i gruppi simili, poiché meno gruppi ci sono meglio è) e Prioritize (applica il principio di Pareto 80/20 identificando il 20% degli elementi cruciali da cui partire)."
+  },
+  {
+    "term": "Metodo BRAIN (Pedagogia della conoscenza)",
+    "source": "Maeda",
+    "def": "Metodo della Legge 4 (Impara): Basics (esponi subito i principi base dal punto di vista del neofita), Repeat (ripeti spesso per fissare i percorsi mnemonici), Avoid (evita la disperazione con un approccio iniziale accogliente), Inspire (ispira con esempi e maestri accendendo la motivazione intrinseca) e Never forget to repeat (ribadisci i cardini)."
+  },
+  {
+    "term": "Approccio del Designer (Relate, Translate, Surprise)",
+    "source": "Maeda",
+    "def": "Strategia contraria al rude approccio ingegneristico LIFM (Leggi Il Manuale): connetti l'interfaccia a concetti noti del mondo reale (Relate), traducili in metafore visuali tangibili come la scrivania Xerox (Translate) e delizia l'utente con nuove possibilità e intuizioni immediate (Surprise)."
+  },
+  {
+    "term": "Aichaku (愛着 - Attaccamento emotivo al manufatto)",
+    "source": "Maeda",
+    "def": "Concetto della Legge 7 (Emozione) derivato dall'animismo scintoista: l'amore e l'affetto profondo verso un oggetto non per quello che 'fa' (la sua mera funzione meccanica), ma per quello che 'è' (la sua presenza viva, storia materiale e bellezza). Promuove la creazione di manufatti da conservare per tutta la vita."
+  },
+  {
+    "term": "Omakase (お任せ - «Mi affido a te»)",
+    "source": "Maeda",
+    "def": "Principio della Legge 8 (Fiducia) tratto dalla gastronomia nipponica del sushi: delegare totalmente le scelte a un maestro responsabile e sapiente, azzerando l'ansia decisionale del cliente. Si contrappone all'Undo informatico, basandosi su dedizione e legame non revocabile."
+  },
+  {
+    "term": "ROE (Return on Emotions - Rendimento delle Emozioni)",
+    "source": "Maeda",
+    "def": "Metrica qualitativa introdotta nella Legge 7 in contrapposizione al ROI puramente finanziario: misura la capacità di un manufatto o di un'interfaccia di generare calore umano, benessere psicologico, empatia e significato esistenziale nell'individuo."
+  },
+  {
+    "term": "Legge Unica della Semplicità (Legge 10)",
+    "source": "Maeda",
+    "def": "«Semplicità significa sottrarre l'ovvio e aggiungere il significativo». Sintesi suprema dell'intero sistema di John Maeda: eliminare il rumore di fondo, l'ingombro e la banalità per fare spazio e dare risalto all'essenza, alla bellezza e al senso profondo."
+  },
+  {
+    "term": "Le Tre Chiavi Tecnologiche (Lontano, Aperto, Energia)",
+    "source": "Maeda",
+    "def": "Aree infrastrutturali su cui investire: Lontano (spostare il calcolo pesante su server remoti/cloud, mantenendo il client leggero), Aperto (l'Open Source e le API decentralizzano la complessità sfruttando il potere dei molti) ed Energia (circuiti a bassissimo consumo e valorizzazione dei vincoli come motore di creatività)."
+  },
+  {
+    "term": "Spazio Bianco («Il nulla è qualcosa»)",
+    "source": "Maeda",
+    "def": "Principio della Legge 6 (Contesto): le aree vuote attorno ai contenuti non sono spazio sprecato da saturare, ma una risorsa attiva che riduce il rumore percettivo, guida lo sguardo e nobilita ciò che resta ('quando le cose sono poche, le apprezziamo molto di più')."
+  },
+  {
+    "term": "Estetica della Sfocatura (Blur aesthetics)",
+    "source": "Maeda",
+    "def": "Fusione visiva e funzionale di elementi distinti in un'unica entità continua e armoniosa (come la Click Wheel integrata dell'iPod di terza generazione). Conferisce purezza formale ma richiede cautela per non nascondere l'affordance dei comandi."
   }
 ];
+

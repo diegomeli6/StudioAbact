@@ -41,6 +41,11 @@
             <span class="tab-title">4. Codice Progetto (HTML & CSS)</span>
             <span class="tab-progress-mini" id="prog-mini-cards">0/6</span>
           </button>
+          <button class="pdf-tab" data-pdf="maeda" id="tab-maeda">
+            <span class="tab-indicator"></span>
+            <span class="tab-title">5. Maeda — Leggi della Semplicità</span>
+            <span class="tab-progress-mini" id="prog-mini-maeda">0/13</span>
+          </button>
         </div>
 
         <!-- Gruppo 2: Storia dell'Arte Contemporanea -->
@@ -144,20 +149,20 @@
               </div>
               
               <p class="subject-desc">
-                Corso completo strutturato su 4 fonti ufficiali: sintesi accademiche arricchite, 385 quiz bilanciati, flashcard di autoverifica e analisi tecnica del codice di progetto.
+                Corso completo strutturato su 5 fonti ufficiali: sintesi accademiche arricchite, 450 quiz bilanciati, flashcard di autoverifica e analisi tecnica del codice di progetto.
               </p>
 
               <div class="subject-stats-bar">
                 <div class="sub-stat-item">
-                  <span class="sub-stat-val">77</span>
+                  <span class="sub-stat-val">90</span>
                   <span class="sub-stat-label">Capitoli</span>
                 </div>
                 <div class="sub-stat-item">
-                  <span class="sub-stat-val">385</span>
+                  <span class="sub-stat-val">450</span>
                   <span class="sub-stat-label">Quiz con feedback</span>
                 </div>
                 <div class="sub-stat-item">
-                  <span class="sub-stat-val">4</span>
+                  <span class="sub-stat-val">5</span>
                   <span class="sub-stat-label">Fonti di Studio</span>
                 </div>
               </div>
@@ -167,6 +172,7 @@
                 <span class="source-tag">📗 Steve Krug (14 cap)</span>
                 <span class="source-tag">📙 Edward Stull (43 cap)</span>
                 <span class="source-tag">💻 Codice Progetto Cards (6 cap)</span>
+                <span class="source-tag">📕 John Maeda — Leggi della Semplicità (13 cap)</span>
               </div>
 
               <button class="btn-enter-subject" id="btn-enter-webdesign">
@@ -333,11 +339,12 @@
           <div class="cram-filter-bar">
             <label>Filtra per PDF:</label>
             <select id="cram-filter-select" class="form-select">
-              <option value="all">Tutti (3 PDF + Codice Progetto)</option>
+              <option value="all">Tutte le fonti di Web Design</option>
               <option value="dispense">Dispense Professore</option>
               <option value="krug">Krug — Don't Make Me Think</option>
               <option value="stull">Stull — UX Design</option>
               <option value="cards">Codice Progetto Esame (HTML & CSS)</option>
+              <option value="maeda">Maeda — Leggi della Semplicità</option>
             </select>
             <span class="cram-total" id="cram-total-label">Elementi da ripassare: 0</span>
           </div>
@@ -417,6 +424,7 @@
               <button class="filter-chip" data-source="Dispense">Dispense</button>
               <button class="filter-chip" data-source="Stull">Stull</button>
               <button class="filter-chip" data-source="Codice">Codice Progetto</button>
+              <button class="filter-chip" data-source="Maeda">Maeda</button>
             </div>
           </div>
 
@@ -470,6 +478,7 @@
   <script src="data/krug-data.js"></script>
   <script src="data/stull-data.js"></script>
   <script src="data/progetto-cards-data.js"></script>
+  <script src="data/maeda-data.js"></script>
   <script src="data/glossary-data.js"></script>
   <script src="data/arte-data.js"></script>
   <script src="app.js"></script>

@@ -89,6 +89,7 @@
     if (state.activePdf === 'krug') return window.KRUG_DATA || [];
     if (state.activePdf === 'stull') return window.STULL_DATA || [];
     if (state.activePdf === 'cards') return window.CARDS_DATA || [];
+    if (state.activePdf === 'maeda') return window.MAEDA_DATA || [];
     return [];
   }
 
@@ -97,6 +98,7 @@
     if (key === 'krug') return "2. Steve Krug — Don't Make Me Think";
     if (key === 'stull') return '3. Edward Stull — UX Design';
     if (key === 'cards') return '4. Codice Progetto Esame (HTML & CSS)';
+    if (key === 'maeda') return '5. John Maeda — Le leggi della semplicità';
     if (key === 'arte-anni80') return "1. Arte Contemporanea Anni '80";
     if (key === 'arte-hirst') return '2. Damien Hirst & Young British Artists';
     if (key === 'arte-eliasson') return '3. Olafur Eliasson — Luce e Percezione';
@@ -851,13 +853,14 @@
 
   // AGGIORNA PERCENTUALI E MINI COUNTERS
   function updateProgressIndicators() {
-    const webPdfs = ['dispense', 'krug', 'stull', 'cards'];
+    const webPdfs = ['dispense', 'krug', 'stull', 'cards', 'maeda'];
     webPdfs.forEach(pdfKey => {
       let chaps = [];
       if (pdfKey === 'dispense') chaps = window.DISPENSE_DATA || [];
       if (pdfKey === 'krug') chaps = window.KRUG_DATA || [];
       if (pdfKey === 'stull') chaps = window.STULL_DATA || [];
       if (pdfKey === 'cards') chaps = window.CARDS_DATA || [];
+      if (pdfKey === 'maeda') chaps = window.MAEDA_DATA || [];
 
       let done = 0;
       chaps.forEach(c => {
@@ -932,7 +935,8 @@
         { key: 'dispense', name: 'Dispense Professore', data: window.DISPENSE_DATA || [] },
         { key: 'krug', name: "Krug — Don't Make Me Think", data: window.KRUG_DATA || [] },
         { key: 'stull', name: 'Stull — UX Design', data: window.STULL_DATA || [] },
-        { key: 'cards', name: 'Codice Progetto Esame', data: window.CARDS_DATA || [] }
+        { key: 'cards', name: 'Codice Progetto Esame', data: window.CARDS_DATA || [] },
+        { key: 'maeda', name: 'Maeda — Leggi della Semplicità', data: window.MAEDA_DATA || [] }
       ];
     }
 
@@ -1108,6 +1112,7 @@
         getQuizzesFromChapters(window.KRUG_DATA || [], "Krug — Don't Make Me Think");
         getQuizzesFromChapters(window.STULL_DATA || [], 'Stull — UX Design');
         getQuizzesFromChapters(window.CARDS_DATA || [], 'Codice Progetto Esame (HTML & CSS)');
+        getQuizzesFromChapters(window.MAEDA_DATA || [], 'Maeda — Le leggi della semplicità');
       }
     }
 

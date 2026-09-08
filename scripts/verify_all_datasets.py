@@ -40,7 +40,8 @@ datasets = [
     ("Dispense", "data/dispense-data.js", "DISPENSE_DATA"),
     ("Krug (Don't Make Me Think)", "data/krug-data.js", "KRUG_DATA"),
     ("Storia dell'Arte", "data/arte-data.js", "ARTE_DATA"),
-    ("Stull (UX Design)", "data/stull-data.js", "STULL_DATA")
+    ("Stull (UX Design)", "data/stull-data.js", "STULL_DATA"),
+    ("Maeda (Leggi della Semplicità)", "data/maeda-data.js", "MAEDA_DATA")
 ]
 
 all_passed = True
