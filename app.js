@@ -80,9 +80,13 @@
     if (state.currentSubject === 'arte' || (state.activePdf && state.activePdf.startsWith('arte-'))) {
       const allArte = window.ARTE_DATA || [];
       if (state.activePdf === 'arte-anni80') return allArte.filter(c => c.module === 'anni80');
-      if (state.activePdf === 'arte-hirst') return allArte.filter(c => c.module === 'hirst');
-      if (state.activePdf === 'arte-eliasson') return allArte.filter(c => c.module === 'eliasson');
-      if (state.activePdf === 'arte-chevalier') return allArte.filter(c => c.module === 'chevalier');
+      if (state.activePdf === 'arte-anni90') return allArte.filter(c => c.module === 'anni90');
+      if (state.activePdf === 'arte-duemila') return allArte.filter(c => c.module === 'duemila');
+      if (state.activePdf === 'arte-monografie') return allArte.filter(c => c.module === 'monografie');
+      // Compatibilità e fallback
+      if (state.activePdf === 'arte-hirst') return allArte.filter(c => c.module === 'monografie' && c.id.includes('hirst'));
+      if (state.activePdf === 'arte-eliasson') return allArte.filter(c => c.module === 'monografie' && c.id.includes('eliasson'));
+      if (state.activePdf === 'arte-chevalier') return allArte.filter(c => c.module === 'monografie' && c.id.includes('chevalier'));
       return allArte.filter(c => c.module === 'anni80');
     }
     if (state.activePdf === 'dispense') return window.DISPENSE_DATA || [];
@@ -100,9 +104,12 @@
     if (key === 'cards') return '4. Codice Progetto Esame (HTML & CSS)';
     if (key === 'maeda') return '5. John Maeda — Le leggi della semplicità';
     if (key === 'arte-anni80') return "1. Arte Contemporanea Anni '80";
-    if (key === 'arte-hirst') return '2. Damien Hirst & Young British Artists';
-    if (key === 'arte-eliasson') return '3. Olafur Eliasson — Luce e Percezione';
-    if (key === 'arte-chevalier') return '4. Miguel Chevalier — Pixel, IA & Virtuale';
+    if (key === 'arte-anni90') return "2. Arte Contemporanea Anni '90";
+    if (key === 'arte-duemila') return '3. Anni Duemila — Il Secolo a Uncinetto';
+    if (key === 'arte-monografie') return '4. Monografie & Artisti Guida';
+    if (key === 'arte-hirst') return 'Damien Hirst & Young British Artists';
+    if (key === 'arte-eliasson') return 'Olafur Eliasson — Luce e Spazio';
+    if (key === 'arte-chevalier') return 'Miguel Chevalier — Pixel e IA';
     return key;
   }
 
@@ -877,14 +884,14 @@
       }
     });
 
-    const artePdfs = ['arte-anni80', 'arte-hirst', 'arte-eliasson', 'arte-chevalier'];
+    const artePdfs = ['arte-anni80', 'arte-anni90', 'arte-duemila', 'arte-monografie'];
     const allArte = window.ARTE_DATA || [];
     artePdfs.forEach(pdfKey => {
       let chaps = [];
       if (pdfKey === 'arte-anni80') chaps = allArte.filter(c => c.module === 'anni80');
-      if (pdfKey === 'arte-hirst') chaps = allArte.filter(c => c.module === 'hirst');
-      if (pdfKey === 'arte-eliasson') chaps = allArte.filter(c => c.module === 'eliasson');
-      if (pdfKey === 'arte-chevalier') chaps = allArte.filter(c => c.module === 'chevalier');
+      if (pdfKey === 'arte-anni90') chaps = allArte.filter(c => c.module === 'anni90');
+      if (pdfKey === 'arte-duemila') chaps = allArte.filter(c => c.module === 'duemila');
+      if (pdfKey === 'arte-monografie') chaps = allArte.filter(c => c.module === 'monografie');
 
       let done = 0;
       chaps.forEach(c => {
@@ -926,9 +933,9 @@
       const allArte = window.ARTE_DATA || [];
       allPdfs = [
         { key: 'arte-anni80', name: "Arte Anni '80", data: allArte.filter(c => c.module === 'anni80') },
-        { key: 'arte-hirst', name: 'Damien Hirst & YBA', data: allArte.filter(c => c.module === 'hirst') },
-        { key: 'arte-eliasson', name: 'Olafur Eliasson', data: allArte.filter(c => c.module === 'eliasson') },
-        { key: 'arte-chevalier', name: 'Miguel Chevalier & IA', data: allArte.filter(c => c.module === 'chevalier') }
+        { key: 'arte-anni90', name: "Arte Anni '90", data: allArte.filter(c => c.module === 'anni90') },
+        { key: 'arte-duemila', name: "Anni Duemila (Bonami)", data: allArte.filter(c => c.module === 'duemila') },
+        { key: 'arte-monografie', name: "Monografie d'Autore", data: allArte.filter(c => c.module === 'monografie') }
       ];
     } else {
       allPdfs = [
@@ -1404,11 +1411,14 @@
     html = html.replace(/^[•\-\*] (.*?)$/gm, '<li>$1</li>');
     // Wrap consecutive lis in ul
     html = html.replace(/(<li>.*<\/li>(\n|))+/g, '<ul>$&</ul>');
+    // Images: ![alt](url)
+    html = html.replace(/!\[(.*?)\]\((.*?)\)/g, '<figure class="artwork-figure"><img src="$2" alt="$1" class="artwork-img" loading="lazy"><figcaption class="artwork-caption">$1</figcaption></figure>');
+
     // Paragraphs
     html = html.split('\n\n').map(p => {
       p = p.trim();
       if (!p) return '';
-      if (!p.startsWith('<h') && !p.startsWith('<ul') && !p.startsWith('<pre') && !p.startsWith('<div') && !p.startsWith('<hr') && !p.startsWith('<blockquote')) {
+      if (!p.startsWith('<h') && !p.startsWith('<ul') && !p.startsWith('<pre') && !p.startsWith('<div') && !p.startsWith('<hr') && !p.startsWith('<blockquote') && !p.startsWith('<figure')) {
         return `<p>${p.replace(/\n/g, '<br>')}</p>`;
       }
       return p;

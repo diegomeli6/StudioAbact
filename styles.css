@@ -1667,3 +1667,73 @@ blockquote.summary-quote {
     grid-template-columns: 1fr;
   }
 }
+
+/* ==========================================================================
+   SCHEDE OPERE D'ARTE, DIDASCALIE MUSEALI E GALLERIA
+   ========================================================================== */
+.artwork-figure {
+  margin: 24px auto;
+  padding: 14px;
+  background: var(--bg-surface, #ffffff);
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-radius: var(--radius-lg, 12px);
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  max-width: 820px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.artwork-figure:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.artwork-img {
+  max-width: 100%;
+  max-height: 520px;
+  height: auto;
+  border-radius: var(--radius-md, 8px);
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  background-color: var(--bg-canvas, #f8fafc);
+}
+
+.artwork-caption {
+  margin-top: 12px;
+  font-size: 13.5px;
+  color: var(--text-muted, #64748b);
+  font-style: italic;
+  line-height: 1.5;
+  border-top: 1px solid var(--border-color, #e2e8f0);
+  padding-top: 8px;
+}
+
+.artwork-caption strong {
+  color: var(--text-main, #0f172a);
+  font-style: normal;
+}
+
+.artwork-card {
+  background: var(--bg-surface, #ffffff);
+  border-left: 4px solid var(--accent-primary, #6366f1);
+  border-radius: var(--radius-md, 8px);
+  padding: 16px 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.artwork-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-main, #0f172a);
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.artwork-meta {
+  font-size: 13px;
+  color: var(--text-muted, #64748b);
+  margin-bottom: 10px;
+}
