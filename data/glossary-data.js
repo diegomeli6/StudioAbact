@@ -1,4 +1,4 @@
-// Glossario ragionato unificato dei 3 testi di studio e del codice di Progetto_Esame_Cards
+// Glossario ragionato unificato dei testi di studio (Dispense, Krug, Stull, Maeda)
 window.GLOSSARY_DATA = [
   {
     "term": "Satisficing",
@@ -189,41 +189,6 @@ window.GLOSSARY_DATA = [
     "term": "MVP (Minimum Viable Product)",
     "source": "Stull",
     "def": "La versione minima di un prodotto sufficiente a raccogliere il massimo apprendimento validato dagli utenti reali con il minimo sforzo. Il suo limite è che se è troppo rozzo non offre una reale utilità né soddisfazione."
-  },
-  {
-    "term": "box-sizing: border-box",
-    "source": "Codice Progetto",
-    "def": "Regola CSS che include padding e bordi all'interno della larghezza e altezza dichiarate dell'elemento, evitando che si espanda e scompigli la griglia di layout."
-  },
-  {
-    "term": ":root e Custom Properties (Variabili CSS)",
-    "source": "Codice Progetto",
-    "def": "La pseudo-classe :root fa riferimento all'elemento radice <html>; definire variabili al suo interno (es. --rosso: #ce3021;) permette di riutilizzare e modificare centralmente i colori e valori in tutto il CSS."
-  },
-  {
-    "term": "Checkbox Hack (Menu hamburger CSS-only)",
-    "source": "Codice Progetto",
-    "def": "Tecnica per creare menu responsive senza JavaScript: un tag <input type='checkbox'> nascosto viene attivato tramite un <label for='...'> e controlla l'apertura del <nav> con lo pseudo-selettore :checked e il combinatore fratello ~."
-  },
-  {
-    "term": "Combinatore Fratello Generale (~)",
-    "source": "Codice Progetto",
-    "def": "Selettore CSS che punta a tutti gli elementi fratelli che seguono un determinato elemento nello stesso genitore (es. .menu-toggle:checked ~ nav seleziona il menu quando il checkbox è spuntato)."
-  },
-  {
-    "term": "object-fit: cover",
-    "source": "Codice Progetto",
-    "def": "Proprietà CSS che scala un'immagine o video per riempire l'intero contenitore mantenendo le proporzioni native, ritagliando le parti eccedenti per evitare qualsiasi deformazione o stiramento."
-  },
-  {
-    "term": "position: sticky",
-    "source": "Codice Progetto",
-    "def": "Posizionamento CSS ibrido: l'elemento si comporta come 'relative' durante il normale flusso della pagina, ma diventa fisso ('fixed') ancorandosi alla coordinata definita (es. top: 0) non appena viene raggiunto dallo scorrimento."
-  },
-  {
-    "term": "CSS Grid repeat(3, 1fr)",
-    "source": "Codice Progetto",
-    "def": "Istruzione di CSS Grid che genera 3 colonne identiche, ciascuna occupante una frazione (1fr) dello spazio orizzontale disponibile nel contenitore."
   },
   {
     "term": "Metodo SHE (Shrink, Hide, Embody)",

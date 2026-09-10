@@ -3,484 +3,887 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Piattaforma di Studio UX & Web Design</title>
-  <meta name="description" content="Web app locale e minimale per lo studio approfondito dei 3 testi d'esame: Dispense professore, Don't Make Me Think di Krug, UX Design di Stull.">
+  <title>Piattaforma di Studio — ABA Catania</title>
+  <meta name="description" content="Piattaforma di studio interattiva per l'Accademia di Belle Arti di Catania. Quiz, flashcard, sintesi per ogni materia e anno accademico.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo-icon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ── Home-specific styles ── */
+    .home-container {
+      min-height: 100vh;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .home-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 32px;
+      border-bottom: 1px solid var(--border-color);
+      background: var(--bg-secondary);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .home-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .home-brand-logo {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-primary);
+      flex-shrink: 0;
+      background: none;
+      border: none;
+      box-shadow: none;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .home-brand-logo:hover {
+      transform: scale(1.06);
+    }
+
+    .home-brand-logo svg {
+      width: 34px;
+      height: 34px;
+      display: block;
+    }
+
+    .home-footer {
+      border-top: 1px solid var(--border-color);
+      padding: 36px 32px 48px;
+      text-align: center;
+      margin-top: 48px;
+      background: var(--bg-secondary);
+    }
+
+    .home-footer-content {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .home-footer-logo-wrap {
+      width: 160px;
+      color: var(--text-primary);
+      opacity: 0.85;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+
+    .home-footer-logo-wrap:hover {
+      opacity: 1;
+      transform: translateY(-2px);
+    }
+
+    .home-footer-logo-wrap svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .home-footer-text {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin: 0;
+      letter-spacing: 0.2px;
+    }
+
+    .home-brand h1 {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0;
+      letter-spacing: -0.3px;
+    }
+
+    .home-brand-sub {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    .home-hero {
+      text-align: center;
+      padding: 56px 24px 32px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .home-hero h2 {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.8px;
+      margin: 0 0 12px;
+      background: linear-gradient(135deg, var(--accent-primary) 0%, var(--text-primary) 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .home-hero p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* Livelli di navigazione */
+    .nav-level-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px 48px;
+    }
+
+    .level-heading {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--text-muted);
+      margin: 0 0 20px 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .level-heading svg {
+      opacity: 0.6;
+    }
+
+    /* Corsi grid */
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .course-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 22px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .course-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--card-accent, var(--accent-primary));
+      opacity: 0;
+      transition: opacity 0.25s;
+    }
+
+    .course-card:hover {
+      border-color: var(--card-accent, var(--accent-primary));
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+
+    .course-card:hover::before {
+      opacity: 1;
+    }
+
+    .course-card.has-content {
+      border-color: rgba(254, 185, 64, 0.55);
+    }
+
+    .course-card.has-content::before {
+      opacity: 1;
+      background: #feb940;
+    }
+
+    .course-card.has-content .course-card-code {
+      color: #d97706;
+      font-weight: 700;
+    }
+
+    body.theme-dark .course-card.has-content {
+      border-color: rgba(254, 185, 64, 0.45);
+      background: #1c1c1c;
+      box-shadow: 0 0 20px rgba(254, 185, 64, 0.08);
+    }
+
+    body.theme-dark .course-card.has-content::before {
+      opacity: 1;
+      background: #feb940 !important;
+    }
+
+    body.theme-dark .course-card.has-content:hover {
+      border-color: #feb940;
+      box-shadow: 0 8px 24px rgba(254, 185, 64, 0.25);
+    }
+
+    body.theme-dark .course-card.has-content .course-card-code {
+      color: #feb940 !important;
+      font-weight: 800;
+    }
+
+    body.theme-dark .course-card.has-content .status-dot:not(.empty) {
+      background: #feb940 !important;
+      box-shadow: 0 0 8px rgba(254, 185, 64, 0.8);
+    }
+
+    .course-card-code {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--card-accent, var(--accent-primary));
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+
+    .course-card-name {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 0 0 8px;
+      letter-spacing: -0.2px;
+    }
+
+    .course-card-status {
+      font-size: 12px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .course-card-status .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--card-accent, var(--accent-primary));
+      flex-shrink: 0;
+    }
+
+    .course-card-status .status-dot.empty {
+      background: var(--border-dark);
+    }
+
+    body.theme-dark .course-card-status .status-dot.empty {
+      background: #4a4a4a;
+    }
+
+    /* Anno view */
+    .anni-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .anno-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 24px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .anno-card:hover {
+      border-color: var(--card-accent, var(--accent-primary));
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+
+    body.theme-dark .anno-card:hover {
+      border-color: var(--card-accent, var(--accent-primary));
+      box-shadow: 0 8px 24px rgba(254, 185, 64, 0.18);
+    }
+
+    .anno-card h3 {
+      font-size: 22px;
+      font-weight: 800;
+      margin: 0 0 8px;
+    }
+
+    .anno-card-meta {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* Materie view */
+    .materie-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 20px;
+    }
+
+    .materia-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 28px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .materia-card:hover {
+      border-color: var(--card-accent, var(--accent-primary));
+      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+    }
+
+    body.theme-dark .materia-card:hover {
+      border-color: var(--card-accent, var(--accent-primary));
+      box-shadow: 0 12px 32px rgba(254, 185, 64, 0.18);
+    }
+
+    .materia-card-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      background: color-mix(in srgb, var(--card-accent, var(--accent-primary)) 15%, transparent);
+      color: var(--card-accent, var(--accent-primary));
+    }
+
+    .materia-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0 0 8px;
+      letter-spacing: -0.2px;
+    }
+
+    .materia-card-desc {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .materia-card-stats {
+      display: flex;
+      gap: 16px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .materia-card-stats span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .materia-card-progress {
+      margin-top: 12px;
+      height: 4px;
+      background: var(--border-color);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .materia-card-progress-fill {
+      height: 100%;
+      background: var(--card-accent, var(--accent-primary));
+      border-radius: 4px;
+      transition: width 0.5s ease;
+    }
+
+    /* Breadcrumb */
+    .home-breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 24px;
+      font-size: 13px;
+    }
+
+    .breadcrumb-item {
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: color 0.2s;
+      background: none;
+      border: none;
+      font: inherit;
+      padding: 0;
+    }
+
+    .breadcrumb-item:hover {
+      color: var(--accent-primary);
+    }
+
+    .breadcrumb-sep {
+      color: var(--border-color);
+      font-size: 11px;
+    }
+
+    .breadcrumb-current {
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    /* Sezione triennio/biennio */
+    .level-divider {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin: 32px 0 16px 4px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--border-color);
+    }
+
+    /* Empty state */
+    .empty-state {
+      text-align: center;
+      padding: 48px 24px;
+      color: var(--text-muted);
+    }
+
+    .empty-state svg {
+      opacity: 0.3;
+      margin-bottom: 16px;
+    }
+
+    .empty-state p {
+      font-size: 14px;
+      max-width: 360px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+      .home-header { padding: 16px; }
+      .home-hero { padding: 36px 16px 24px; }
+      .home-hero h2 { font-size: 24px; }
+      .courses-grid { grid-template-columns: 1fr; }
+      .nav-level-section { padding: 0 16px 32px; }
+    }
+  </style>
 </head>
 <body class="theme-light">
-  <div id="app" class="app-container">
+  <div class="home-container" id="home-app">
     
-    <!-- HEADER MINIMALE SUPERIORE -->
-    <header class="top-header">
-      <div class="header-brand">
-        <button id="btn-hub-nav" class="brand-hub-badge" title="Torna alla selezione materie">📚 MATERIE</button>
-        <h1 class="brand-title" id="brand-main-title">UX & Web Design</h1>
+    <!-- HEADER -->
+    <header class="home-header">
+      <div class="home-brand">
+        <div class="home-brand-logo" aria-label="Logo Accademia di Belle Arti Catania">
+          <svg viewBox="0 0 112.6 112.6" fill="currentColor" aria-hidden="true"><path d="M112.6,56.3L91.8,41.6l4.3-25.1L71,20.8L56.3,0L41.6,20.8l-25.1-4.3l4.3,25.1 L0,56.3L20.8,71l-4.3,25.1l25.1-4.3l14.7,20.8L71,91.8l25.1,4.3L91.8,71L112.6,56.3L112.6,56.3z M29.9,86L50,79.6l-7.8,8.6 L29.9,86z M27.6,27.6L53,37.4L37.4,53L27.6,27.6L27.6,27.6z M33,50l-8.6-7.8l2.2-12.3L33,50z M33,62.6l-6.4,20.1l-2.2-12.3 L33,62.6L33,62.6z M54.5,40.4v14.1H40.3L54.5,40.4z M54.5,58.1v14.1L40.3,58.1H54.5z M53,75.1l-25.6,10l10.1-25.5L53,75.1L53,75.1 z M21,91.6l1.8-14L24.6,88L35,89.8L21,91.6z M8,57.4l24.7,0.8l-9.9,10.2L8,57.4z M22.8,44.3l9.9,10.2L8,55.2L22.8,44.3L22.8,44.3z M35,22.8l-10.4,1.8L22.8,35L21,21L35,22.8z M42.2,24.4L50,33l-20.1-6.4L42.2,24.4z M55.2,8l-0.8,24.7l-10.2-9.9L55.2,8z M55.2,104.6l-11-14.8l10.2-9.9L55.2,104.6L55.2,104.6z M89.8,68.4l-9.9-10.2l24.7-0.8L89.8,68.4L89.8,68.4z M58.1,72.3V58.1h14.1 L58.1,72.3z M75.1,59.7l10,25.6l-25.6-10L75.1,59.7L75.1,59.7z M58.1,54.5V40.4l14.1,14.1L58.1,54.5z M59.6,37.5L85,27.6L75.2,53 L59.6,37.5L59.6,37.5z M86,29.9l2.2,12.3L79.6,50L86,29.9z M79.6,62.6l8.6,7.8L86,82.7L79.6,62.6L79.6,62.6z M77.6,89.8L88,88 l1.8-10.4l1.8,14L77.6,89.8L77.6,89.8z M70.4,88.2l-7.8-8.6L82.7,86L70.4,88.2L70.4,88.2z M57.4,104.6l0.8-24.6l10.2,9.9 L57.4,104.6L57.4,104.6z M68.4,22.8l-10.2,9.9L57.4,8L68.4,22.8L68.4,22.8z M82.7,26.6L62.6,33l7.8-8.6L82.7,26.6L82.7,26.6z M91.6,21l-1.8,14L88,24.6l-10.4-1.8L91.6,21L91.6,21z M104.6,55.3L80,54.5l9.9-10.2L104.6,55.3L104.6,55.3z"/></svg>
+        </div>
+        <div>
+          <h1>Studio ABA Catania</h1>
+          <div class="home-brand-sub">Piattaforma di studio interattiva</div>
+        </div>
       </div>
-
-      <!-- SELETTORE DEI TESTI / MODULI DIDATTICI -->
-      <nav class="pdf-selector" id="pdf-selector-nav" aria-label="Selezione documento di studio">
-        <!-- Gruppo 1: UX & Web Design -->
-        <div class="subject-tabs-group" id="tabs-group-webdesign">
-          <button class="pdf-tab active" data-pdf="dispense" id="tab-dispense">
-            <span class="tab-indicator"></span>
-            <span class="tab-title">1. Dispense Professore</span>
-            <span class="tab-progress-mini" id="prog-mini-dispense">0/14</span>
-          </button>
-          <button class="pdf-tab" data-pdf="krug" id="tab-krug">
-            <span class="tab-indicator"></span>
-            <span class="tab-title">2. Krug — Don't Make Me Think</span>
-            <span class="tab-progress-mini" id="prog-mini-krug">0/14</span>
-          </button>
-          <button class="pdf-tab" data-pdf="stull" id="tab-stull">
-            <span class="tab-indicator"></span>
-            <span class="tab-title">3. Stull — UX Design (43 cap)</span>
-            <span class="tab-progress-mini" id="prog-mini-stull">0/43</span>
-          </button>
-          <button class="pdf-tab" data-pdf="cards" id="tab-cards">
-            <span class="tab-indicator"></span>
-            <span class="tab-title">4. Codice Progetto (HTML & CSS)</span>
-            <span class="tab-progress-mini" id="prog-mini-cards">0/6</span>
-          </button>
-          <button class="pdf-tab" data-pdf="maeda" id="tab-maeda">
-            <span class="tab-indicator"></span>
-            <span class="tab-title">5. Maeda — Leggi della Semplicità</span>
-            <span class="tab-progress-mini" id="prog-mini-maeda">0/13</span>
-          </button>
-        </div>
-
-        <!-- Gruppo 2: Storia dell'Arte Contemporanea -->
-        <div class="subject-tabs-group" id="tabs-group-arte" style="display: none;">
-          <button class="pdf-tab active" data-pdf="arte-anni80" id="tab-arte-anni80">
-            <span class="tab-indicator"></span>
-            <span class="tab-title">1. Anni '80</span>
-            <span class="tab-progress-mini" id="prog-mini-arte-anni80">0/0</span>
-          </button>
-          <button class="pdf-tab" data-pdf="arte-anni90" id="tab-arte-anni90">
-            <span class="tab-indicator"></span>
-            <span class="tab-title">2. Anni '90</span>
-            <span class="tab-progress-mini" id="prog-mini-arte-anni90">0/0</span>
-          </button>
-          <button class="pdf-tab" data-pdf="arte-duemila" id="tab-arte-duemila">
-            <span class="tab-indicator"></span>
-            <span class="tab-title">3. Duemila (Bonami)</span>
-            <span class="tab-progress-mini" id="prog-mini-arte-duemila">0/0</span>
-          </button>
-          <button class="pdf-tab" data-pdf="arte-monografie" id="tab-arte-monografie">
-            <span class="tab-indicator"></span>
-            <span class="tab-title">4. Monografie & Artisti</span>
-            <span class="tab-progress-mini" id="prog-mini-arte-monografie">0/0</span>
-          </button>
-        </div>
-      </nav>
-
-      <!-- COMANDI E MODALITÀ -->
-      <div class="header-actions">
-        <div class="view-mode-pills" id="header-view-pills" role="tablist">
-          <button class="pill-btn active" data-view="study" id="pill-study" title="Studio guidato capitoli">📖 Studio</button>
-          <button class="pill-btn" data-view="cram" id="pill-cram" title="Ripasso mirato errori e flashcard">
-            ⚡ Ripasso <span class="cram-counter" id="cram-badge">0</span>
-          </button>
-          <button class="pill-btn" data-view="exam" id="pill-exam" title="Simulatore quiz d'esame">🎯 Test</button>
-          <button class="pill-btn" data-view="glossary" id="pill-glossary" title="Glossario e definizioni">📚 Glossario</button>
-        </div>
-
-        <div class="utility-btns">
-          <button id="btn-theme-toggle" class="icon-btn" title="Cambia tema chiaro/scuro" aria-label="Cambia tema">🌓</button>
-          <button id="btn-data-modal" class="icon-btn" title="Gestione sessione e backup locale" aria-label="Gestione dati">💾</button>
-          <button id="btn-sidebar-toggle" class="icon-btn" title="Nascondi o mostra indice capitoli" aria-label="Indice">☰</button>
-        </div>
+      <div class="utility-btns">
+        <button id="btn-theme-toggle" class="icon-btn" title="Cambia tema chiaro/scuro" aria-label="Cambia tema">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
       </div>
     </header>
 
-    <!-- STATUS BAR LOCALE SOTTO L'HEADER -->
-    <div class="session-bar" id="session-bar">
-      <div class="session-info">
-        <span class="session-dot"></span>
-        <span id="active-pdf-name">Dispense Professore</span>
-        <span class="divider">/</span>
-        <span id="active-pdf-progress-text">Progresso: 0% (0 di 14 capitoli)</span>
-      </div>
-      <div class="session-storage-badge" title="Tutti i dati risiedono esclusivamente nel browser del tuo PC">
-        🔒 Dati salvati in locale nel PC
-      </div>
+    <!-- HERO -->
+    <div class="home-hero" id="home-hero">
+      <h2>Seleziona il tuo Corso di Laurea</h2>
+      <p>Scegli il corso di studi per accedere alle materie, ai quiz interattivi e alle flashcard di autoverifica.</p>
     </div>
 
-    <!-- CORPO PRINCIPALE DELL'APP -->
-    <div class="main-layout" id="main-layout">
-      
-      <!-- SIDEBAR CON INDICE CAPITOLI -->
-      <aside class="sidebar" id="sidebar">
-        <div class="sidebar-header">
-          <h2 class="sidebar-title">Indice dei Capitoli</h2>
-          <span class="sidebar-stats" id="sidebar-stats-count">0/14</span>
-        </div>
-        
-        <!-- BARRA DI AVANZAMENTO VISUALE -->
-        <div class="progress-track" title="Progresso complessivo di questo PDF">
-          <div class="progress-fill" id="sidebar-progress-fill" style="width: 0%;"></div>
-        </div>
-
-        <!-- LISTA CAPITOLI -->
-        <div class="chapter-list-container" id="chapter-list">
-          <!-- Popolato dinamicamente da JS -->
-        </div>
-      </aside>
-
-      <!-- CONTENUTO PRINCIPALE A SCHERMO -->
-      <main class="content-area" id="content-area">
-        
-        <!-- VISTA 0: SUBJECT HUB / SELEZIONE MATERIE -->
-        <section id="view-hub" class="view-panel">
-          <div class="hub-hero">
-            <span class="hub-badge">PIATTAFORMA DI STUDIO UNIVERSITARIO</span>
-            <h2 class="hub-title">Scegli la Materia di Studio</h2>
-            <p class="hub-subtitle">Seleziona una materia per accedere ai capitoli approfonditi, alle storie-ancora, alle flashcard e ai simulatori d'esame interattivi.</p>
-          </div>
-
-          <div class="hub-grid">
-            <!-- SCHEDA 1: WEB DESIGN & UX -->
-            <div class="subject-card active-subject-card" id="card-subject-webdesign">
-              <div class="subject-card-header">
-                <div class="subject-icon-box webdesign-icon">🎨</div>
-                <div class="subject-header-meta">
-                  <span class="subject-status-pill status-ready">Pronto per lo Studio ✓</span>
-                  <h3 class="subject-name">Web Design & UX Design</h3>
-                </div>
-              </div>
-              
-              <p class="subject-desc">
-                Corso completo strutturato su 5 fonti ufficiali: sintesi accademiche arricchite, 450 quiz bilanciati, flashcard di autoverifica e analisi tecnica del codice di progetto.
-              </p>
-
-              <div class="subject-stats-bar">
-                <div class="sub-stat-item">
-                  <span class="sub-stat-val">90</span>
-                  <span class="sub-stat-label">Capitoli</span>
-                </div>
-                <div class="sub-stat-item">
-                  <span class="sub-stat-val">450</span>
-                  <span class="sub-stat-label">Quiz con feedback</span>
-                </div>
-                <div class="sub-stat-item">
-                  <span class="sub-stat-val">5</span>
-                  <span class="sub-stat-label">Fonti di Studio</span>
-                </div>
-              </div>
-
-              <div class="subject-sources-list">
-                <span class="source-tag">📘 Dispense Professore (14 cap)</span>
-                <span class="source-tag">📗 Steve Krug (14 cap)</span>
-                <span class="source-tag">📙 Edward Stull (43 cap)</span>
-                <span class="source-tag">💻 Codice Progetto Cards (6 cap)</span>
-                <span class="source-tag">📕 John Maeda — Leggi della Semplicità (13 cap)</span>
-              </div>
-
-              <button class="btn-enter-subject" id="btn-enter-webdesign">
-                Accedi a Web Design & UX →
-              </button>
-            </div>
-
-            <!-- SCHEDA 2: STORIA DELL'ARTE -->
-            <div class="subject-card art-subject-card" id="card-subject-art">
-              <div class="subject-card-header">
-                <div class="subject-icon-box art-icon">🏛️</div>
-                <div class="subject-header-meta">
-                  <span class="subject-status-pill status-ready">Pronto per lo Studio ✓</span>
-                  <h3 class="subject-name">Storia dell'Arte Contemporanea</h3>
-                </div>
-              </div>
-              
-              <p class="subject-desc">
-                Corso universitario strutturato su 4 moduli: Arte Anni '80 (Postmodernismo, Transavanguardia, Neoespressionismo, Graffitismo, Düsseldorf), Damien Hirst & YBA, Olafur Eliasson, Miguel Chevalier & Pixel IA. 16 capitoli approfonditi, flashcard e 80 quiz bilanciati.
-              </p>
-
-              <div class="subject-stats-bar">
-                <div class="sub-stat-item">
-                  <span class="sub-stat-val">16</span>
-                  <span class="sub-stat-label">Capitoli</span>
-                </div>
-                <div class="sub-stat-item">
-                  <span class="sub-stat-val">80</span>
-                  <span class="sub-stat-label">Quiz con feedback</span>
-                </div>
-                <div class="sub-stat-item">
-                  <span class="sub-stat-val">4</span>
-                  <span class="sub-stat-label">Moduli Didattici</span>
-                </div>
-              </div>
-
-              <div class="subject-sources-list">
-                <span class="source-tag">🏛️ Modulo 1: Arte Anni '80 (7 cap)</span>
-                <span class="source-tag">💀 Modulo 2: Damien Hirst & YBA (3 cap)</span>
-                <span class="source-tag">💡 Modulo 3: Olafur Eliasson (3 cap)</span>
-                <span class="source-tag">💻 Modulo 4: Miguel Chevalier & IA (3 cap)</span>
-              </div>
-
-              <button class="btn-enter-subject btn-enter-art" id="btn-enter-arte">
-                Accedi a Storia dell'Arte →
-              </button>
-            </div>
-          </div>
-        </section>
-
-        <!-- VISTA 1: STUDIO GUIDATO CAPITOLO -->
-        <section id="view-study" class="view-panel active">
-          
-          <div class="chapter-hero">
-            <div class="hero-meta">
-              <span class="hero-part-badge" id="chap-part-badge" style="display: none;">Parte I</span>
-              <span class="hero-number" id="chap-number">Capitolo 1</span>
-              <span class="hero-time" id="chap-read-time">Tempo stimato: 8 min</span>
-            </div>
-            <h2 class="hero-title" id="chap-title">Caricamento titolo...</h2>
-            <p class="hero-subtitle" id="chap-subtitle">Caricamento sottotitolo o storia-ancora...</p>
-          </div>
-
-          <!-- TAB INTERNI DEL CAPITOLO -->
-          <div class="chapter-subtabs">
-            <button class="subtab-btn active" data-subtab="summary">📖 Sintesi & Concetti</button>
-            <button class="subtab-btn" data-subtab="flashcards">🃏 Flashcard (<span id="count-fc">0</span>)</button>
-            <button class="subtab-btn" data-subtab="quiz">❓ Quiz con Spiegazione</button>
-            <button class="subtab-btn" data-subtab="open">📝 Domande d'Esame</button>
-            <button class="subtab-btn" data-subtab="notes">✏️ Mie Note</button>
-          </div>
-
-          <!-- CONTENUTO TAB 1: SINTESI E CONCETTI -->
-          <div id="subtab-panel-summary" class="subtab-panel active">
-            
-            <!-- BOX STORIA ANCORA (PER STULL) -->
-            <div id="anchor-story-box" class="story-anchor-box" style="display: none;">
-              <div class="story-anchor-header">
-                <span class="story-icon">⚓</span>
-                <strong>STORIA-ANCORA MNEMONICA</strong>: <span id="story-anchor-title"></span>
-              </div>
-              <p id="story-anchor-text" class="story-anchor-text"></p>
-            </div>
-
-            <!-- CORPO SINTESI APPROFONDITA -->
-            <div class="study-text-body" id="chap-summary-body">
-              <!-- Inserito dinamicamente -->
-            </div>
-
-            <!-- PUNTI CHIAVE D'ESAME -->
-            <div class="key-points-section">
-              <h3 class="key-points-heading">📌 Punti Chiave da Sapere all'Esame</h3>
-              <ul class="key-points-list" id="chap-key-points">
-                <!-- Inserito dinamicamente -->
-              </ul>
-            </div>
-          </div>
-
-          <!-- CONTENUTO TAB 2: FLASHCARD -->
-          <div id="subtab-panel-flashcards" class="subtab-panel">
-            <div class="flashcards-container">
-              <div class="flashcards-intro">
-                <p>Clicca sulla scheda per girarla e visualizzare la risposta. Valuta se la ricordavi bene o se preferisci aggiungerla al ripasso.</p>
-              </div>
-              <div class="flashcards-list" id="chap-flashcards-list">
-                <!-- Popolato da JS -->
-              </div>
-            </div>
-          </div>
-
-          <!-- CONTENUTO TAB 3: QUIZ -->
-          <div id="subtab-panel-quiz" class="subtab-panel">
-            <div class="quiz-container">
-              <div class="quiz-intro">
-                <p>Rispondi alle domande di verifica per consolidare i concetti. Riceverai subito la spiegazione didattica con i riferimenti precisi del testo.</p>
-              </div>
-              <div class="quiz-list" id="chap-quiz-list">
-                <!-- Popolato da JS -->
-              </div>
-            </div>
-          </div>
-
-          <!-- CONTENUTO TAB 4: DOMANDE D'ESAME APERTE -->
-          <div id="subtab-panel-open" class="subtab-panel">
-            <div class="open-questions-container">
-              <div class="open-intro">
-                <p>Domande d'esame frequenti e tracce di autoverifica. Prova a rispondere a voce o mentalmente, poi apri la risposta modello per confrontare la tua preparazione.</p>
-              </div>
-              <div class="open-list" id="chap-open-list">
-                <!-- Popolato da JS -->
-              </div>
-            </div>
-          </div>
-
-          <!-- CONTENUTO TAB 5: NOTE PERSONALI -->
-          <div id="subtab-panel-notes" class="subtab-panel">
-            <div class="notes-container">
-              <label for="chap-notes-input" class="notes-label">Note personali per questo capitolo (salvate automaticamente in locale):</label>
-              <textarea id="chap-notes-input" class="notes-textarea" placeholder="Inserisci qui i tuoi appunti, collegamenti, o note date a lezione dal professore..."></textarea>
-              <div class="notes-status" id="notes-save-status">Salvato in locale</div>
-            </div>
-          </div>
-
-          <!-- NAVIGAZIONE A PIÈ DI PAGINA -->
-          <footer class="chapter-footer">
-            <button id="btn-prev-chap" class="nav-btn">⬅️ Precedente</button>
-            <div class="complete-action">
-              <button id="btn-toggle-complete" class="btn-complete">
-                <span id="complete-icon">⚪</span> <span id="complete-text">Segna come completato</span>
-              </button>
-            </div>
-            <button id="btn-next-chap" class="nav-btn">Successivo ➡️</button>
-          </footer>
-
-        </section>
-
-        <!-- VISTA 2: RIPASSO MIRATO (FLASHCARD & ERRORI) -->
-        <section id="view-cram" class="view-panel">
-          <div class="panel-header">
-            <h2 class="panel-title">⚡ Coda di Ripasso Mirato (Smart Cramming)</h2>
-            <p class="panel-description">Tutti gli elementi (flashcard, quiz errati, domande d'esame) che hai contrassegnato con «Da rivedere». Ripassali finché non li hai padroneggiati.</p>
-          </div>
-
-          <div class="cram-filter-bar">
-            <label>Filtra per PDF:</label>
-            <select id="cram-filter-select" class="form-select">
-              <option value="all">Tutte le fonti di Web Design</option>
-              <option value="dispense">Dispense Professore</option>
-              <option value="krug">Krug — Don't Make Me Think</option>
-              <option value="stull">Stull — UX Design</option>
-              <option value="cards">Codice Progetto Esame (HTML & CSS)</option>
-              <option value="maeda">Maeda — Leggi della Semplicità</option>
-            </select>
-            <span class="cram-total" id="cram-total-label">Elementi da ripassare: 0</span>
-          </div>
-
-          <div class="cram-list" id="cram-items-list">
-            <!-- Popolato dinamicamente da JS -->
-          </div>
-        </section>
-
-        <!-- VISTA 3: SIMULAZIONE ESAME (QUIZ RANDOM) -->
-        <section id="view-exam" class="view-panel">
-          <div class="panel-header">
-            <h2 class="panel-title">🎯 Simulatore d'Esame</h2>
-            <p class="panel-description">Mettiti alla prova con un test a domande casuali estratte dal database di studio.</p>
-          </div>
-
-          <!-- CONFIGURATORE DEL TEST -->
-          <div class="exam-setup-card" id="exam-setup-box">
-            <div class="setup-group">
-              <label>Scegli l'ambito delle domande:</label>
-              <select id="exam-scope-select" class="form-select">
-                <option value="current">Solo il documento/modulo attivo attualmente</option>
-                <option value="cards" id="exam-scope-cards-opt">Solo Codice Progetto Esame (HTML & CSS)</option>
-                <option value="all">Misto completo (Tutti i capitoli della materia)</option>
-              </select>
-            </div>
-
-            <div class="setup-group">
-              <label>Numero di domande:</label>
-              <div class="num-pills">
-                <button class="num-btn active" data-count="10">10 domande</button>
-                <button class="num-btn" data-count="20">20 domande</button>
-                <button class="num-btn" data-count="30">30 domande</button>
-              </div>
-            </div>
-
-            <button id="btn-start-exam" class="btn-primary-action">Inizia il Test d'Esame</button>
-          </div>
-
-          <!-- CONTENITORE DEL TEST IN CORSO -->
-          <div id="exam-active-box" style="display: none;">
-            <div class="exam-header-bar">
-              <span id="exam-question-counter">Domanda 1 di 10</span>
-              <button id="btn-abort-exam" class="btn-secondary-link">Annulla test</button>
-            </div>
-            
-            <div id="exam-card-container">
-              <!-- Domanda corrente renderizzata da JS -->
-            </div>
-          </div>
-
-          <!-- RISULTATI FINALI DEL TEST -->
-          <div id="exam-result-box" style="display: none;" class="exam-result-card">
-            <h3 class="result-title" id="exam-score-title">Punteggio: 8 / 10 (80%)</h3>
-            <p class="result-feedback" id="exam-score-feedback"></p>
-            <div class="result-actions">
-              <button id="btn-retry-exam" class="btn-primary-action">Ripeti Nuovo Test</button>
-            </div>
-            <div class="result-review-list" id="exam-review-list">
-              <!-- Elenco risposte ed errori -->
-            </div>
-          </div>
-        </section>
-
-        <!-- VISTA 4: GLOSSARIO COMPLETO -->
-        <section id="view-glossary" class="view-panel">
-          <div class="panel-header">
-            <h2 class="panel-title">📚 Glossario Tecnico e Leggi</h2>
-            <p class="panel-description">Definizioni formali, formule ed esperimenti citati nei tre testi. Cerca rapidamente qualsiasi concetto.</p>
-          </div>
-
-          <div class="glossary-search-bar">
-            <input type="text" id="glossary-search-input" class="search-input" placeholder="🔍 Cerca termine, autore, legge (es. Satisficing, Hick, Gestalt, Box model)...">
-            <div class="glossary-filters" id="glossary-source-filters">
-              <button class="filter-chip active" data-source="all">Tutti</button>
-              <button class="filter-chip" data-source="Krug">Krug</button>
-              <button class="filter-chip" data-source="Dispense">Dispense</button>
-              <button class="filter-chip" data-source="Stull">Stull</button>
-              <button class="filter-chip" data-source="Codice">Codice Progetto</button>
-              <button class="filter-chip" data-source="Maeda">Maeda</button>
-            </div>
-          </div>
-
-          <div class="glossary-grid" id="glossary-items-container">
-            <!-- Termini renderizzati da JS -->
-          </div>
-        </section>
-
-      </main>
+    <!-- MAIN CONTENT — Dynamic -->
+    <div class="nav-level-section" id="nav-content">
+      <!-- Populated by JS -->
     </div>
 
-    <!-- MODAL GESTIONE DATI E BACKUP LOCALE -->
-    <div class="modal-overlay" id="data-modal" style="display: none;">
-      <div class="modal-card">
-        <div class="modal-header">
-          <h3>💾 Gestione Sessione e Privacy Locale</h3>
-          <button class="modal-close" id="btn-close-modal">✕</button>
+    <!-- FOOTER -->
+    <footer class="home-footer">
+      <div class="home-footer-content">
+        <div class="home-footer-logo-wrap" title="Accademia di Belle Arti di Catania">
+          <svg viewBox="0 0 240.6 112.6" fill="currentColor" aria-label="Accademia di Belle Arti Catania" role="img"><path d="M240.6,31.8c-0.3-0.4-0.5-0.9-0.4-1.3v-5.9c0-1.3,0-4-5.3-4c-1.4-0.1-2.7,0.2-4,0.7c-1.1,0.5-1.9,1.6-2,2.9 l4.2-0.1c0.2-0.7,0.4-1,1.4-1c1.3,0,1.5,0.5,1.5,1.2c-0.8,0.2-1.6,0.4-2.4,0.5c-2,0.3-3.2,0.4-4.2,1.4c-0.6,0.6-1,1.5-0.9,2.3 c0,1.8,1.2,3.5,4,3.5c1.3,0.1,2.6-0.3,3.7-1v0.8L240.6,31.8z M236,26.8c0,0.4,0,0.9-0.2,1.3c-0.4,0.7-1.2,1.2-2,1.2 c-0.8,0-1.1-0.5-1.1-0.8c0-0.1,0-0.6,0.9-1c0.4-0.1,0.8-0.2,1.1-0.3C235.1,27.1,235.6,26.9,236,26.8L236,26.8z M222.7,31.8h4.5V21 h-4.5V31.8z M222.7,19.9h4.5V17h-4.5V19.9z M216.4,31.8h4.4V25c0.1-1.2-0.3-2.3-1.1-3.2c-0.9-0.7-2-1.1-3.1-1.1 c-2.6,0-3.6,1.3-3.9,2c-0.4-0.9-1.2-1.5-2.2-1.7c-0.6-0.2-1.1-0.3-1.7-0.3c-1.4-0.1-2.8,0.6-3.5,1.8V21h-4.3v10.8h4.5v-5.9 c0-0.4,0.1-0.9,0.4-1.2c0.3-0.3,0.8-0.5,1.2-0.4c0.7-0.1,1.3,0.4,1.5,1.1c0,0.2,0.1,0.4,0.1,0.6v5.9h4.5V26 c-0.1-0.8,0.4-1.6,1.3-1.7c0.1,0,0.3,0,0.4,0c1.5,0,1.6,1.2,1.6,1.9L216.4,31.8L216.4,31.8z M192.1,27.2h7.8 c-0.1-1.6-0.1-3.5-1.7-5c-1.2-1.1-2.9-1.7-4.5-1.6c-3.6,0-6.2,2.3-6.2,5.8c0,3,2,5.9,6.2,5.9c2.4,0.1,4.6-1,5.9-3l-3.7-1.5 c-0.3,0.8-1.1,1.4-2,1.4c-0.5,0-1-0.2-1.3-0.5C192.3,28.3,192.1,27.7,192.1,27.2L192.1,27.2z M192.1,24.9c0-0.9,0.8-1.6,1.7-1.6 c0.7,0,1.3,0.4,1.5,1.1c0,0.2,0,0.3,0.1,0.5H192.1z M187.5,48.2c0,3,2,5.9,6.2,5.9c2.4,0.1,4.7-1,6-3l-3.7-1.5 c-0.3,0.8-1.1,1.4-2,1.4c-0.5,0-1-0.2-1.3-0.5c-0.4-0.4-0.6-1-0.5-1.5h7.8c0-1.7-0.1-3.5-1.7-5c-1.2-1.1-2.9-1.7-4.5-1.6 c-3.6,0-6.2,2.3-6.2,5.8L187.5,48.2z M192.1,46.8c0.1-0.9,0.8-1.6,1.7-1.6c0.7,0,1.3,0.4,1.5,1.1c0,0.2,0,0.3,0.1,0.5H192.1z M181.8,53.7h4.5V38.9h-4.5V53.7z M182,31.8h4.3V17h-4.5v4.7c-0.8-0.7-1.8-1.1-2.9-1c-2.4,0-4.9,1.7-4.9,5.5c0,3.4,1.8,6,5,6 c0.6,0,1.1-0.1,1.7-0.3c0.5-0.2,0.9-0.5,1.2-0.9V31.8L182,31.8z M182,26.4c0.1,0.8-0.1,1.5-0.6,2.1c-0.3,0.3-0.7,0.5-1.1,0.5 c-0.4,0-0.8-0.2-1.1-0.5c-0.5-0.6-0.7-1.4-0.6-2.1c0-0.4,0-0.9,0.1-1.3c0.1-0.8,0.8-1.4,1.6-1.4c0.7,0,1.3,0.6,1.5,1.3 C181.9,25.4,182,25.9,182,26.4L182,26.4z M168.9,31.8h4.4c-0.3-0.4-0.5-0.9-0.4-1.3v-5.9c0-1.3,0-4-5.3-4c-1.4-0.1-2.7,0.2-4,0.7 c-1.1,0.5-1.9,1.6-2,2.9l4.2-0.1c0.2-0.7,0.4-1,1.4-1c1.3,0,1.5,0.5,1.5,1.2c-0.8,0.2-1.6,0.4-2.4,0.5c-2,0.3-3.2,0.4-4.2,1.4 c-0.6,0.6-1,1.5-0.9,2.3c0,1.8,1.2,3.5,4,3.5c1.3,0.1,2.6-0.3,3.7-1L168.9,31.8L168.9,31.8z M168.6,26.8c0,0.4,0,0.9-0.2,1.3 c-0.4,0.7-1.2,1.2-2,1.2c-0.8,0-1.1-0.5-1.1-0.8c0-0.1,0-0.6,0.9-1c0.4-0.1,0.8-0.2,1.1-0.3C167.7,27.1,168.2,26.9,168.6,26.8 L168.6,26.8z M160.9,48c0-3.8-2.4-5.5-4.9-5.5c-1.1-0.1-2.1,0.3-2.9,1.1v-4.7h-4.5v14.8h4.3v-0.8c0.3,0.4,0.7,0.6,1.1,0.8 c0.5,0.2,1.1,0.3,1.7,0.3C159,54,160.9,51.4,160.9,48L160.9,48z M156.5,48.2c0.1,0.8-0.1,1.5-0.6,2.1c-0.3,0.3-0.7,0.5-1.1,0.5 c-0.8,0-1.4-0.5-1.5-1.3c-0.1-0.4-0.2-0.9-0.2-1.3c-0.1-0.8,0.2-1.5,0.6-2.1c0.3-0.3,0.7-0.5,1.1-0.5c0.8,0,1.5,0.6,1.6,1.4 C156.5,47.4,156.5,47.8,156.5,48.2z M153.3,26.4c0-1.6,0.7-2.9,2-2.9c1,0,1.8,0.7,1.9,1.7l3.4-1.9c-0.2-0.4-0.5-0.8-0.9-1.1 c-1.2-1.2-2.9-1.8-4.6-1.7c-1.7-0.1-3.4,0.5-4.6,1.7c-1.1,1.1-1.7,2.6-1.6,4.2c-0.2,3.1,2.2,5.7,5.2,5.9c0.3,0,0.5,0,0.8,0 c1.7,0.1,3.4-0.5,4.7-1.7c0.5-0.5,0.8-1,1.1-1.6l-3.4-1.8c-0.2,0.6-0.6,1.8-2,1.8C153.5,28.9,153.3,27.3,153.3,26.4L153.3,26.4z M153.1,60.8h-4.4v3.4h-1.5v2.3h1.5l-0.1,5.2c-0.1,0.8,0.2,1.6,0.7,2.2c0.8,0.6,1.9,1,2.9,0.9c0.9,0,1.9-0.1,2.8-0.2v-3 c-0.3,0.1-0.5,0.1-0.8,0.1c-1.2,0-1.2-0.7-1.2-1.1v-4.1h2v-2.3h-1.9L153.1,60.8L153.1,60.8z M141.2,26.4c0-1.6,0.7-2.9,2-2.9 c1,0,1.8,0.7,1.9,1.7l3.4-1.9c-0.2-0.4-0.5-0.8-0.9-1.1c-1.2-1.2-2.9-1.8-4.6-1.7c-1.7-0.1-3.4,0.5-4.6,1.7 c-1.1,1.1-1.7,2.6-1.6,4.2c-0.2,3.1,2.2,5.7,5.2,5.9c0.3,0,0.5,0,0.8,0c1.7,0.1,3.4-0.5,4.7-1.7c0.5-0.5,0.8-1,1.1-1.6l-3.4-1.8 c-0.2,0.6-0.6,1.8-2,1.8C141.4,28.9,141.2,27.3,141.2,26.4L141.2,26.4z M145.5,63.7c-1.4-0.2-2.7,0.3-3.7,1.2v-1h-4.3v10.8h4.4 v-5.1c0-0.7,0.1-2.3,2.7-2.3c0.3,0,0.6,0,0.9,0V63.7L145.5,63.7z M142.3,42.8h-4.5v10.9h4.5V42.8L142.3,42.8z M142.3,38.9h-4.5 v2.9h4.5V38.9L142.3,38.9z M143.5,87.7c-0.8,0.2-1.6,0.4-2.4,0.5c-2,0.2-3.2,0.4-4.2,1.4c-0.6,0.6-1,1.4-1,2.3 c0,1.8,1.2,3.5,4,3.5c1.3,0.1,2.6-0.3,3.7-1.1v0.8h4.4c-0.3-0.4-0.5-0.9-0.4-1.3v-5.9c0-1.3,0-4-5.3-4c-1.4,0-2.7,0.2-4,0.7 c-1.1,0.5-1.9,1.6-2,2.9l4.2-0.1c0.2-0.8,0.4-1,1.4-1C143.3,86.5,143.5,87,143.5,87.7L143.5,87.7z M143.5,90.1 c0,0.4,0,0.9-0.2,1.3c-0.4,0.7-1.2,1.2-2.1,1.2c-0.8,0-1.1-0.5-1.1-0.8c0-0.1,0-0.6,0.9-1c0.4-0.1,0.8-0.2,1.1-0.3 C142.6,90.4,143.1,90.2,143.5,90.1L143.5,90.1z M131.7,53.7h4.3V38.9h-4.5v4.7c-0.8-0.7-1.8-1.1-2.9-1.1c-2.4,0-4.9,1.7-4.9,5.5 c0,3.4,1.8,6,5,6c0.6,0,1.1-0.1,1.7-0.3c0.5-0.1,0.9-0.4,1.1-0.8L131.7,53.7L131.7,53.7z M131.7,48.2c0.1,0.8-0.1,1.5-0.6,2.1 c-0.3,0.3-0.7,0.5-1.1,0.5c-0.4,0-0.8-0.2-1.1-0.5c-0.5-0.6-0.7-1.4-0.6-2.1c0-0.4,0-0.9,0.1-1.3c0.1-0.9,1-1.5,1.8-1.3 c0.6,0.1,1.2,0.6,1.3,1.2C131.6,47.3,131.7,47.8,131.7,48.2z M131.6,31.8h4.4c-0.3-0.4-0.5-0.9-0.4-1.3v-5.9c0-1.3,0-4-5.3-4 c-1.4-0.1-2.7,0.2-4,0.7c-1.1,0.5-1.9,1.6-2,2.9l4.2-0.1c0.1-0.7,0.4-1,1.4-1c1.3,0,1.5,0.5,1.5,1.2c-0.8,0.2-1.6,0.4-2.4,0.5 c-2,0.3-3.2,0.4-4.2,1.4c-0.6,0.6-1,1.4-1,2.3c0,1.8,1.2,3.5,4,3.5c1.3,0.1,2.6-0.3,3.7-1L131.6,31.8L131.6,31.8z M131.3,26.8 c0,0.4,0,0.9-0.2,1.3c-0.4,0.8-1.2,1.2-2.1,1.2c-0.8,0-1.1-0.5-1.1-0.8c0-0.1,0-0.6,0.9-1c0.4-0.1,0.8-0.2,1.1-0.3 C130.3,27.1,130.8,26.9,131.3,26.8L131.3,26.8z M112.6,56.3L91.8,41.6l4.3-25.1L71,20.8L56.3,0L41.6,20.8l-25.1-4.3l4.3,25.1 L0,56.3L20.8,71l-4.3,25.1l25.1-4.3l14.7,20.8L71,91.8l25.1,4.3L91.8,71L112.6,56.3L112.6,56.3z M29.9,86L50,79.6l-7.8,8.6 L29.9,86z M27.6,27.6L53,37.4L37.4,53L27.6,27.6L27.6,27.6z M33,50l-8.6-7.8l2.2-12.3L33,50z M33,62.6l-6.4,20.1l-2.2-12.3 L33,62.6L33,62.6z M54.5,40.4v14.1H40.3L54.5,40.4z M54.5,58.1v14.1L40.3,58.1H54.5z M53,75.1l-25.6,10l10.1-25.5L53,75.1L53,75.1 z M21,91.6l1.8-14L24.6,88L35,89.8L21,91.6z M8,57.4l24.7,0.8l-9.9,10.2L8,57.4z M22.8,44.3l9.9,10.2L8,55.2L22.8,44.3L22.8,44.3z M35,22.8l-10.4,1.8L22.8,35L21,21L35,22.8z M42.2,24.4L50,33l-20.1-6.4L42.2,24.4z M55.2,8l-0.8,24.7l-10.2-9.9L55.2,8z M55.2,104.6l-11-14.8l10.2-9.9L55.2,104.6L55.2,104.6z M89.8,68.4l-9.9-10.2l24.7-0.8L89.8,68.4L89.8,68.4z M58.1,72.3V58.1h14.1 L58.1,72.3z M75.1,59.7l10,25.6l-25.6-10L75.1,59.7L75.1,59.7z M58.1,54.5V40.4l14.1,14.1L58.1,54.5z M59.6,37.5L85,27.6L75.2,53 L59.6,37.5L59.6,37.5z M86,29.9l2.2,12.3L79.6,50L86,29.9z M79.6,62.6l8.6,7.8L86,82.7L79.6,62.6L79.6,62.6z M77.6,89.8L88,88 l1.8-10.4l1.8,14L77.6,89.8L77.6,89.8z M70.4,88.2l-7.8-8.6L82.7,86L70.4,88.2L70.4,88.2z M57.4,104.6l0.8-24.6l10.2,9.9 L57.4,104.6L57.4,104.6z M68.4,22.8l-10.2,9.9L57.4,8L68.4,22.8L68.4,22.8z M82.7,26.6L62.6,33l7.8-8.6L82.7,26.6L82.7,26.6z M91.6,21l-1.8,14L88,24.6l-10.4-1.8L91.6,21L91.6,21z M104.6,55.3L80,54.5l9.9-10.2L104.6,55.3L104.6,55.3z M125.4,85.5 c-1.1,1.1-1.6,2.6-1.6,4.2c-0.2,3.1,2.1,5.7,5.2,5.9c0.3,0,0.5,0,0.8,0c1.7,0.1,3.4-0.5,4.7-1.7c0.5-0.5,0.8-1,1.1-1.6l-3.4-1.8 c-0.2,0.6-0.6,1.8-2,1.8c-1.7,0-1.9-1.6-1.9-2.5c0-1.6,0.7-2.9,2-2.9c0.9,0,1.7,0.7,1.9,1.6l3.4-1.9c-0.2-0.4-0.5-0.8-0.9-1.1 c-1.2-1.2-2.9-1.8-4.6-1.7C128.3,83.8,126.7,84.4,125.4,85.5L125.4,85.5z M131.4,67.3c-0.8,0.2-1.6,0.4-2.4,0.5 c-2,0.2-3.2,0.4-4.2,1.4c-0.6,0.6-1,1.4-1,2.3c0,1.8,1.2,3.5,4,3.5c1.3,0.1,2.6-0.3,3.7-1.1v0.8h4.4c-0.3-0.4-0.5-0.9-0.4-1.3 v-5.9c0-1.3,0-4-5.3-4c-1.4-0.1-2.7,0.2-4,0.7c-1.1,0.5-1.9,1.6-2,2.9l4.2-0.1c0.1-0.8,0.4-1,1.4-1 C131.2,66,131.4,66.5,131.4,67.3L131.4,67.3z M131.4,69.7c0,0.5-0.1,0.9-0.3,1.3c-0.4,0.7-1.2,1.2-2.1,1.2c-0.8,0-1.1-0.5-1.1-0.8 c0-0.1,0-0.6,0.9-1c0.4-0.1,0.8-0.2,1.2-0.3c0.4-0.1,0.9-0.3,1.3-0.4L131.4,69.7z M150.2,84.6h-1.6v2.3h1.5l-0.1,5.3 c-0.1,0.8,0.2,1.6,0.8,2.2c0.8,0.6,1.9,1,2.9,0.9c0.9,0,1.9-0.1,2.8-0.2v-3c-0.3,0-0.5,0.1-0.8,0.1c-1.2,0-1.2-0.7-1.2-1.1v-4.2h2 v-2.3h-1.9v-3.4h-4.5L150.2,84.6L150.2,84.6z M161.5,60H157v2.9h4.4L161.5,60L161.5,60z M161.5,63.9H157v10.8h4.4L161.5,63.9 L161.5,63.9z M158.1,89.6c-0.6,0.6-1,1.4-1,2.3c0,1.8,1.2,3.5,4,3.5c1.3,0.1,2.6-0.3,3.7-1.1v0.8h4.4c-0.3-0.4-0.5-0.9-0.4-1.3 v-5.9c0-1.3,0-4-5.3-4c-1.4-0.1-2.7,0.2-4,0.7c-1.1,0.5-1.9,1.6-2,2.9l4.2-0.1c0.1-0.8,0.4-1,1.4-1c1.3,0,1.5,0.5,1.5,1.2 c-0.8,0.2-1.6,0.4-2.4,0.5C160.3,88.4,159.1,88.6,158.1,89.6L158.1,89.6z M161.3,91.8c0-0.1,0-0.6,0.9-1c0.4-0.1,0.8-0.2,1.1-0.3 c0.5-0.1,0.9-0.3,1.3-0.4c0,0.4,0,0.9-0.2,1.3c-0.4,0.7-1.2,1.2-2.1,1.2C161.6,92.6,161.3,92,161.3,91.8L161.3,91.8z M167,50.6 c-0.4-0.4-0.6-1-0.5-1.5h7.8c-0.1-1.7-0.1-3.5-1.7-5c-1.2-1.1-2.9-1.7-4.5-1.6c-3.6,0-6.2,2.3-6.2,5.8c0,3,2,5.9,6.2,5.9 c2.4,0.1,4.7-1,6-3l-3.7-1.5c-0.3,0.8-1.1,1.4-2,1.4C167.9,51.1,167.4,50.9,167,50.6L167,50.6z M166.5,46.8 c0.1-0.9,0.8-1.6,1.7-1.6c0.7,0,1.3,0.4,1.5,1.1c0,0.2,0.1,0.3,0.1,0.5H166.5z M175.5,53.7h4.5V38.9h-4.5L175.5,53.7L175.5,53.7z M175,84.3h-4.2v10.9h4.5v-5.8c0-0.6,0-1.8,1.6-1.8s1.5,1.1,1.5,1.6v5.9h4.4v-6.9c0.1-1.2-0.3-2.4-1.1-3.3c-0.8-0.7-1.9-1.1-3-1 c-1.5-0.2-2.9,0.5-3.7,1.7V84.3z M189.2,80.4h-4.5v2.9h4.5C189.2,83.2,189.2,80.4,189.2,80.4z M189.2,84.3h-4.5v10.9h4.5V84.3z M191.6,89.6c-0.6,0.6-1,1.5-0.9,2.3c0,1.8,1.2,3.5,4,3.5c1.3,0.1,2.6-0.3,3.7-1.1v0.8h4.4c-0.3-0.4-0.5-0.9-0.4-1.3v-5.9 c0-1.3,0-4-5.3-4c-1.4,0-2.7,0.2-4,0.7c-1.1,0.5-1.9,1.6-2,2.9l4.2-0.1c0.2-0.8,0.4-1,1.4-1c1.3,0,1.5,0.5,1.5,1.2 c-0.8,0.2-1.6,0.4-2.4,0.5C193.8,88.4,192.6,88.6,191.6,89.6L191.6,89.6z M194.7,91.8c0-0.1,0-0.6,0.9-1c0.4-0.1,0.8-0.2,1.1-0.3 c0.4-0.1,0.9-0.3,1.3-0.4c0,0.4,0,0.9-0.2,1.3c-0.4,0.7-1.2,1.2-2,1.2C195,92.6,194.8,92.1,194.7,91.8L194.7,91.8z"/></svg>
         </div>
-        <div class="modal-body">
-          <p>Tutti i tuoi progressi, note, risposte ai quiz e flashcard da rivedere sono memorizzati <strong>esclusivamente nella memoria locale del tuo browser (localStorage)</strong>.</p>
-          <p>Nessun dato viene inviato a server esterni.</p>
-
-          <div class="backup-actions">
-            <div class="backup-box">
-              <h4>Esporta Backup</h4>
-              <p>Scarica un file JSON con tutti i tuoi progressi da conservare o trasferire su un altro computer.</p>
-              <button id="btn-export-backup" class="btn-backup">📥 Scarica Backup (JSON)</button>
-            </div>
-
-            <div class="backup-box">
-              <h4>Importa Backup</h4>
-              <p>Ripristina una sessione salvata in precedenza da un file JSON.</p>
-              <input type="file" id="input-import-file" accept=".json" style="display: none;">
-              <button id="btn-trigger-import" class="btn-backup">📤 Carica File Backup</button>
-            </div>
-          </div>
-
-          <div class="danger-zone">
-            <h4>Azzera Dati</h4>
-            <p>Cancella tutti i progressi e le note salvate per ricominciare da zero lo studio.</p>
-            <button id="btn-reset-data" class="btn-danger">🗑️ Azzera Tutti i Progressi</button>
-          </div>
-        </div>
+        <p class="home-footer-text">Accademia di Belle Arti di Catania — Piattaforma Didattica di Studio</p>
       </div>
-    </div>
+    </footer>
 
   </div>
 
-  <!-- SCRIPT DATI E LOGICA -->
-  <script src="data/dispense-data.js"></script>
-  <script src="data/krug-data.js"></script>
-  <script src="data/stull-data.js"></script>
-  <script src="data/progetto-cards-data.js"></script>
-  <script src="data/maeda-data.js"></script>
-  <script src="data/glossary-data.js"></script>
-  <script src="data/arte-data.js"></script>
-  <script src="app.js"></script>
+  <script>
+  (function() {
+    'use strict';
+
+    // ── Data: corsi ABA Catania ──
+    const CORSI = {
+      triennio: [
+        { code: 'DAPL01', name: 'Pittura', hasContent: false },
+        { code: 'DAPL02', name: 'Scultura', hasContent: false },
+        { code: 'DAPL03', name: 'Decorazione arte ambiente', hasContent: false },
+        { code: 'DAPL04', name: 'Grafica, illustrazione', hasContent: false },
+        { code: 'DAPL05', name: 'Scenografia', hasContent: false },
+        { code: 'DAPL06-DCV', name: 'Design della comunicazione visiva', hasContent: false },
+        { code: 'DAPL06-FD', name: 'Fashion design', hasContent: false },
+        { code: 'DAPL08', name: 'Nuove Tecnologie dell\'Arte', hasContent: true, accent: '#feb940' },
+        { code: 'DAPL09', name: 'Comunicazione e valorizzazione del patrimonio artistico', hasContent: false },
+        { code: 'DAPL11-F', name: 'Fotografia', hasContent: false },
+        { code: 'DAPL11-C', name: 'Cinema con indirizzo regia/filmmaking', hasContent: false }
+      ],
+      biennio: [
+        { code: 'DASL01', name: 'Pittura', hasContent: false },
+        { code: 'DASL01-PLC', name: 'Pittura e linguaggi del contemporaneo', hasContent: false },
+        { code: 'DASL02', name: 'Scultura', hasContent: false },
+        { code: 'DASL03', name: 'Decorazione urbana', hasContent: false },
+        { code: 'DASL04', name: 'Grafica, illustrazione e fumetto', hasContent: false },
+        { code: 'DASL05', name: 'Scenografia per il dramma antico', hasContent: false },
+        { code: 'DASL06-DE', name: 'Design per l\'editoria', hasContent: false },
+        { code: 'DASL06-FD', name: 'Fashion design', hasContent: false },
+        { code: 'DASL06-PID', name: 'Product e interior design', hasContent: false },
+        { code: 'DASL08', name: 'Arti e Tecnologie Digitali', hasContent: false },
+        { code: 'DASL09', name: 'Didattica dell\'arte e mediazione culturale', hasContent: false },
+        { code: 'DASL11-F', name: 'Fotografia', hasContent: false },
+        { code: 'DASL11-C', name: 'Cinema', hasContent: false }
+      ]
+    };
+
+    // ── Data: anni per NTA (l'unico corso con contenuti) ──
+    const ANNI_NTA = [
+      { num: 1, label: '1\u00B0 Anno', materie: [] },
+      { 
+        num: 2, 
+        label: '2\u00B0 Anno', 
+        materie: [
+          { 
+            id: 'ux-webdesign',
+            name: 'Web Design',
+            desc: 'Insegnamento ufficiale ABPR 19 (8 CFA). 4 testi d\'esame: Dispense, Krug, Stull, Maeda. Sintesi, quiz e flashcard.',
+            icon: 'code',
+            stats: { capitoli: 84, quiz: 420, fonti: 4 },
+            page: 'pages/ux-webdesign.html'
+          },
+          { 
+            id: 'storia-arte',
+            name: 'Storia dell\'Arte Contemporanea 2',
+            desc: 'Insegnamento ufficiale ABST 47 (6 CFA). 4 moduli: Anni \'80, Anni \'90, Duemila, Monografie. Artisti, opere, correnti.',
+            icon: 'palette',
+            stats: { capitoli: 25, quiz: 80, fonti: 4 },
+            page: 'pages/storia-arte.html'
+          }
+        ]
+      },
+      { num: 3, label: '3\u00B0 Anno', materie: [] }
+    ];
+
+    // SVG Icons
+    const ICONS = {
+      code: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>',
+      palette: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>',
+      folder: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>',
+      chevRight: '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>',
+      book: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>',
+      quiz: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>',
+      layers: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>',
+      inbox: '<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg>'
+    };
+
+    // ── State ──
+    let currentView = 'courses'; // 'courses' | 'anni' | 'materie'
+    let selectedCourse = null;
+    let selectedAnno = null;
+    let accent = 'var(--accent-primary)';
+
+    const GLOBAL_THEME_KEY = 'aba_studio_theme';
+
+    // ── Theme ──
+    function applyTheme(theme) {
+      if (theme === 'dark') {
+        document.body.classList.remove('theme-light');
+        document.body.classList.add('theme-dark');
+      } else {
+        document.body.classList.remove('theme-dark');
+        document.body.classList.add('theme-light');
+      }
+      try {
+        localStorage.setItem(GLOBAL_THEME_KEY, theme);
+        localStorage.setItem('studio_home_theme', theme);
+      } catch (e) {}
+    }
+
+    function getCurrentTheme() {
+      return localStorage.getItem(GLOBAL_THEME_KEY) || 
+             localStorage.getItem('studio_home_theme') || 
+             (localStorage.getItem('ux_web_study_state_v1') ? 
+              (JSON.parse(localStorage.getItem('ux_web_study_state_v1')).theme || 'light') : 'light');
+    }
+
+    // ── Progress helpers ──
+    function getSubjectProgress(subjectId) {
+      try {
+        const saved = localStorage.getItem('ux_web_study_state_v1');
+        if (!saved) return { done: 0, total: 0 };
+        const data = JSON.parse(saved);
+        const completed = data.completed || {};
+        
+        if (subjectId === 'ux-webdesign') {
+          const total = 84;
+          let done = 0;
+          Object.keys(completed).forEach(k => {
+            if (completed[k] && !k.startsWith('arte-')) done++;
+          });
+          return { done, total };
+        }
+        if (subjectId === 'storia-arte') {
+          const total = 25;
+          let done = 0;
+          Object.keys(completed).forEach(k => {
+            if (completed[k] && k.startsWith('arte-')) done++;
+          });
+          return { done, total };
+        }
+      } catch(e) {}
+      return { done: 0, total: 0 };
+    }
+
+    // ── Rendering ──
+
+    function renderCoursesView() {
+      currentView = 'courses';
+      selectedCourse = null;
+      selectedAnno = null;
+
+      const hero = document.getElementById('home-hero');
+      hero.querySelector('h2').textContent = 'Seleziona il tuo Corso di Laurea';
+      hero.querySelector('p').textContent = 'Scegli il corso di studi per accedere alle materie, ai quiz interattivi e alle flashcard di autoverifica.';
+
+      const container = document.getElementById('nav-content');
+      container.innerHTML = '';
+
+      // Triennio
+      const triennioLabel = document.createElement('div');
+      triennioLabel.className = 'level-divider';
+      triennioLabel.textContent = 'Triennio — Diploma Accademico di Primo Livello';
+      container.appendChild(triennioLabel);
+
+      const triennioGrid = document.createElement('div');
+      triennioGrid.className = 'courses-grid';
+      CORSI.triennio.forEach(c => {
+        triennioGrid.appendChild(createCourseCard(c));
+      });
+      container.appendChild(triennioGrid);
+
+      // Biennio
+      const biennioLabel = document.createElement('div');
+      biennioLabel.className = 'level-divider';
+      biennioLabel.textContent = 'Biennio — Diploma Accademico di Secondo Livello';
+      container.appendChild(biennioLabel);
+
+      const biennioGrid = document.createElement('div');
+      biennioGrid.className = 'courses-grid';
+      CORSI.biennio.forEach(c => {
+        biennioGrid.appendChild(createCourseCard(c));
+      });
+      container.appendChild(biennioGrid);
+    }
+
+    function createCourseCard(course) {
+      const card = document.createElement('div');
+      card.className = 'course-card' + (course.hasContent ? ' has-content' : '');
+      if (course.accent) card.style.setProperty('--card-accent', course.accent);
+
+      card.innerHTML = `
+        <div class="course-card-code">${course.code.split('-')[0]}</div>
+        <h3 class="course-card-name">${course.name}</h3>
+        <div class="course-card-status">
+          <span class="status-dot ${course.hasContent ? '' : 'empty'}"></span>
+          ${course.hasContent ? 'Contenuti disponibili' : 'Prossimamente'}
+        </div>
+      `;
+
+      if (course.hasContent) {
+        card.addEventListener('click', () => {
+          selectedCourse = course;
+          accent = course.accent || 'var(--accent-primary)';
+          renderAnniView();
+        });
+      }
+
+      return card;
+    }
+
+    function renderAnniView() {
+      currentView = 'anni';
+
+      const hero = document.getElementById('home-hero');
+      hero.querySelector('h2').textContent = selectedCourse.name;
+      hero.querySelector('p').textContent = `${selectedCourse.code.split('-')[0]} — Seleziona l\'anno accademico`;
+
+      const container = document.getElementById('nav-content');
+      container.innerHTML = '';
+
+      // Breadcrumb
+      const breadcrumb = createBreadcrumb([
+        { label: 'Corsi', action: renderCoursesView },
+        { label: selectedCourse.name, current: true }
+      ]);
+      container.appendChild(breadcrumb);
+
+      const grid = document.createElement('div');
+      grid.className = 'anni-grid';
+
+      ANNI_NTA.forEach(anno => {
+        const card = document.createElement('div');
+        card.className = 'anno-card';
+        card.style.setProperty('--card-accent', accent);
+
+        const materieCount = anno.materie.length;
+        card.innerHTML = `
+          <h3>${anno.label}</h3>
+          <div class="anno-card-meta">
+            ${materieCount > 0 ? `${materieCount} ${materieCount === 1 ? 'materia' : 'materie'} disponibili` : 'Nessuna materia ancora inserita'}
+          </div>
+        `;
+
+        card.addEventListener('click', () => {
+          selectedAnno = anno;
+          renderMaterieView();
+        });
+
+        grid.appendChild(card);
+      });
+
+      container.appendChild(grid);
+    }
+
+    function renderMaterieView() {
+      currentView = 'materie';
+
+      const hero = document.getElementById('home-hero');
+      hero.querySelector('h2').textContent = `${selectedCourse.name} — ${selectedAnno.label}`;
+      hero.querySelector('p').textContent = 'Scegli la materia per iniziare a studiare.';
+
+      const container = document.getElementById('nav-content');
+      container.innerHTML = '';
+
+      // Breadcrumb
+      const breadcrumb = createBreadcrumb([
+        { label: 'Corsi', action: renderCoursesView },
+        { label: selectedCourse.name, action: renderAnniView },
+        { label: selectedAnno.label, current: true }
+      ]);
+      container.appendChild(breadcrumb);
+
+      if (selectedAnno.materie.length === 0) {
+        container.innerHTML += `
+          <div class="empty-state">
+            ${ICONS.inbox}
+            <p>Non ci sono ancora materie inserite per questo anno. Verranno aggiunte man mano che saranno disponibili.</p>
+          </div>
+        `;
+        return;
+      }
+
+      const grid = document.createElement('div');
+      grid.className = 'materie-grid';
+
+      selectedAnno.materie.forEach(materia => {
+        const progress = getSubjectProgress(materia.id);
+        const pct = progress.total > 0 ? Math.round((progress.done / progress.total) * 100) : 0;
+
+        const card = document.createElement('a');
+        card.className = 'materia-card';
+        card.href = materia.page;
+        card.style.setProperty('--card-accent', accent);
+
+        card.innerHTML = `
+          <div class="materia-card-icon">${ICONS[materia.icon] || ICONS.book}</div>
+          <h3>${materia.name}</h3>
+          <div class="materia-card-desc">${materia.desc}</div>
+          <div class="materia-card-stats">
+            <span>${ICONS.book} ${materia.stats.capitoli} capitoli</span>
+            <span>${ICONS.quiz} ${materia.stats.quiz} quiz</span>
+            <span>${ICONS.layers} ${materia.stats.fonti} fonti</span>
+          </div>
+          <div class="materia-card-progress">
+            <div class="materia-card-progress-fill" style="width: ${pct}%"></div>
+          </div>
+        `;
+
+        grid.appendChild(card);
+      });
+
+      container.appendChild(grid);
+    }
+
+    function createBreadcrumb(items) {
+      const nav = document.createElement('nav');
+      nav.className = 'home-breadcrumb';
+
+      items.forEach((item, i) => {
+        if (i > 0) {
+          const sep = document.createElement('span');
+          sep.className = 'breadcrumb-sep';
+          sep.innerHTML = ICONS.chevRight;
+          nav.appendChild(sep);
+        }
+
+        if (item.current) {
+          const span = document.createElement('span');
+          span.className = 'breadcrumb-current';
+          span.textContent = item.label;
+          nav.appendChild(span);
+        } else {
+          const btn = document.createElement('button');
+          btn.className = 'breadcrumb-item';
+          btn.textContent = item.label;
+          btn.addEventListener('click', item.action);
+          nav.appendChild(btn);
+        }
+      });
+
+      return nav;
+    }
+
+    // ── Init ──
+    function init() {
+      const theme = getCurrentTheme();
+      applyTheme(theme);
+
+      document.getElementById('btn-theme-toggle').addEventListener('click', () => {
+        const current = document.body.classList.contains('theme-dark') ? 'dark' : 'light';
+        applyTheme(current === 'light' ? 'dark' : 'light');
+      });
+
+      window.addEventListener('storage', (e) => {
+        if (e.key === GLOBAL_THEME_KEY && e.newValue) {
+          applyTheme(e.newValue);
+        }
+      });
+
+      renderCoursesView();
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
+  })();
+  </script>
 </body>
 </html>
