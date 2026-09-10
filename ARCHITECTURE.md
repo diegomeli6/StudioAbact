@@ -301,8 +301,13 @@ Il sistema di sintesi vocale è implementato nativamente in `js/core.js` (`Study
 ### Persistenza in localStorage
 - Stato di studio: `ux_web_study_state_v1`.
 - Tema preferito: `aba_studio_theme` (`light` | `dark`).
-- Velocità voce: `aba_tts_speed` (`1`, `1.25`, `1.5`, `1.75`, `2`).
+- Velocità voce: `aba_tts_speed` (`1` | `1.25`).
 - Sistema di backup ed esportazione/importazione JSON integrato.
+
+### Hosting e Deployment
+- Il sito è distribuito online tramite GitHub Pages all'indirizzo:
+  `https://diegomeli6.github.io/StudioAbact/`
+- Tutti i percorsi tra pagine e asset sono rigorosamente relativi (`./` e `../`), per garantire perfetto funzionamento sia in locale (`file:///`) sia su GitHub Pages all'interno di una sottocartella di repository.
 
 ### Markdown parser
 - Il parser in `core.js` (`formatMarkdown()`) gestisce:

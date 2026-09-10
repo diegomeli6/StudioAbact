@@ -755,8 +755,21 @@ const StudyCore = (function () {
     });
 
     html = html.replace(/^[•\-\*] (.*?)$/gm, '<li>$1</li>');
-    html = html.replace(/(<li>.*<\/li>(\n|))+/g, '<ul>$&</ul>');
-    html = html.replace(/!\[(.*?)\]\((.*?)\)/g, '<figure class="artwork-figure"><img src="$2" alt="$1" class="artwork-img" loading="lazy"><figcaption class="artwork-caption">$1</figcaption></figure>');
+    html = html.replace(/!\[(.*?)\]\((.*?)\)/g, function (match, alt, src) {
+      let resolvedSrc = (src || '').trim();
+      const inPagesSubdir = window.location.pathname.includes('/pages/') || 
+                            document.querySelector('link[href*="../styles.css"]') !== null;
+      if (inPagesSubdir) {
+        if (!resolvedSrc.startsWith('http') && !resolvedSrc.startsWith('/') && !resolvedSrc.startsWith('../') && !resolvedSrc.startsWith('data:')) {
+          resolvedSrc = '../' + resolvedSrc;
+        }
+      } else {
+        if (resolvedSrc.startsWith('../assets/')) {
+          resolvedSrc = resolvedSrc.replace(/^\.\.\//, '');
+        }
+      }
+      return `<figure class="artwork-figure"><img src="${resolvedSrc}" alt="${escapeHtml(alt)}" class="artwork-img" loading="lazy" onerror="this.classList.add('img-load-error')"><figcaption class="artwork-caption">${alt}</figcaption></figure>`;
+    });
 
     html = html.split('\n\n').map(p => {
       p = p.trim();
@@ -1246,6 +1259,44 @@ const StudyCore = (function () {
         window.location.href = homeBtn.dataset.href || '../index.html';
       });
     }
+
+    // Lightbox modal per le opere d'arte
+    document.addEventListener('click', (e) => {
+      const img = e.target.closest('.artwork-img');
+      if (!img) return;
+      let lightbox = document.getElementById('artwork-lightbox-modal');
+      if (!lightbox) {
+        lightbox = document.createElement('div');
+        lightbox.id = 'artwork-lightbox-modal';
+        lightbox.className = 'artwork-lightbox-overlay';
+        lightbox.innerHTML = `
+          <div class="artwork-lightbox-content">
+            <button class="artwork-lightbox-close" aria-label="Chiudi ingrandimento">&times;</button>
+            <img class="artwork-lightbox-img" src="" alt="">
+            <div class="artwork-lightbox-caption"></div>
+          </div>
+        `;
+        document.body.appendChild(lightbox);
+        lightbox.addEventListener('click', (evt) => {
+          if (evt.target === lightbox || evt.target.closest('.artwork-lightbox-close')) {
+            lightbox.classList.remove('active');
+          }
+        });
+        document.addEventListener('keydown', (evt) => {
+          if (evt.key === 'Escape' && lightbox.classList.contains('active')) {
+            lightbox.classList.remove('active');
+          }
+        });
+      }
+      const fig = img.closest('.artwork-figure');
+      const caption = fig ? fig.querySelector('.artwork-caption') : null;
+      const lbImg = lightbox.querySelector('.artwork-lightbox-img');
+      const lbCap = lightbox.querySelector('.artwork-lightbox-caption');
+      lbImg.src = img.src;
+      lbImg.alt = img.alt || '';
+      lbCap.innerHTML = caption ? caption.innerHTML : (img.alt || '');
+      lightbox.classList.add('active');
+    });
   }
 
   // ── Public API ──

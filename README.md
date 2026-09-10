@@ -1,111 +1,47 @@
-# Studio ABA Catania — Piattaforma di Studio Interattiva
+# Studio ABA Catania — Piattaforma di Studio
 
-Piattaforma web client-side per lo studio accademico all'**Accademia di Belle Arti di Catania**.  
-Nessun server, nessun account: tutto funziona direttamente nel browser con salvataggio automatico e persistente in `localStorage`.
+Piattaforma interattiva pensata per gli studenti dell'**Accademia di Belle Arti di Catania** per preparare gli esami universitari in modo semplice, veloce ed efficace.
 
----
-
-## Funzionalità principali
-
-### Studio guidato e contenuti didattici
-- **Sintesi accademiche approfondite** per ogni capitolo, strutturate fedelmente sui testi d'esame.
-- **Storie-àncora mnemoniche**: narrativa visiva che facilita la memorizzazione dei concetti complessi.
-- **Punti chiave d'esame**: liste mirate di concetti imprescindibili per il colloquio d'esame.
-- **Formattazione ricca**: tabelle di confronto, blocchi di codice con syntax highlighting, blockquote, gallerie opere d'arte.
-
-### Lettore Vocale Intelligente (TTS)
-- **Voce naturale Google Italiano**: sintesi vocale ad alta fedeltà integrata direttamente nella pagina.
-- **Moltiplicatori di velocità**: selettore rapido a pillola (`1x`, `1.25x`) con aggiornamento dinamico immediato durante l'ascolto.
-- **Player audio completo**: controlli di ascolto, pausa, stop, visualizzatore a onde sonore e indicazione del capitolo in riproduzione.
-- **Chunking sequenziale**: suddivisione automatica del testo per garantire fluidità di lettura senza blocchi del browser.
-
-### Flashcard interattive
-- Domanda → Risposta (clic per girare con animazione 3D).
-- Classificazione rapida dello stato: "Lo so bene" / "Da rivedere".
-- Conteggio e percentuali di padronanza aggiornate in tempo reale.
-
-### Quiz con feedback immediato
-- Domande a scelta multipla con 4 alternative plausibili.
-- Feedback visivo istantaneo con spiegazione didattica dettagliata e citazione del testo originale.
-- Tracciamento delle risposte corrette ed errate per capitolo.
-
-### Simulatore d'esame
-- Generazione dinamica di prove d'esame con estrazione casuale dal pool delle domande.
-- Rimescolamento delle opzioni per evitare risposte a memoria posizionale.
-- Scelta dell'ambito: singolo testo/modulo oppure esame misto completo.
-- Riepilogo finale con punteggio in trentesimi e revisione puntuale degli errori.
-
-### Tema Scuro / Chiaro e Sincronizzazione Cross-Page
-- Tema scuro su tonalità di nero profondo (`#0d0f12`) ad alto contrasto, per studiare a lungo senza affaticamento visivo.
-- Preservazione dei colori istituzionali del corso (es. giallo `#feb940` per Nuove Tecnologie dell'Arte).
-- **Sincronizzazione istantanea**: il cambio tema si propaga in tempo reale su tutte le schede e pagine aperte.
-
-### Navigazione Intelligente e Privacy
-- Passaggio fluido tra dispense con posizionamento automatico sul primo capitolo non completato.
-- **100% Privacy**: nessun dato viene inviato a server esterni; tutti i progressi risiedono nel browser.
-- Esportazione e importazione rapida di backup completi in formato JSON.
+Il sito **non va scaricato**, è accessibile e utilizzabile direttamente online dal link:  
+👉 **[https://diegomeli6.github.io/StudioAbact/](https://diegomeli6.github.io/StudioAbact/)**
 
 ---
 
-## Stack tecnologico
+## Come si usa
 
-- **HTML5** semantico
-- **CSS3 Vanilla** (design system responsive con custom properties, senza librerie esterne)
-- **JavaScript ES6+** modulare (`StudyCore` condiviso tra le pagine di studio)
-- **Web Speech API** per la sintesi vocale
-- **Web Storage API** (`localStorage`) per la persistenza
-- **Google Fonts** (famiglia tipografica Inter)
-
----
-
-## Come avviare
-
-Non richiede installazione di pacchetti o dipendenze:
-
-1. Apri direttamente `index.html` con qualsiasi browser moderno (Chrome, Edge, Safari, Firefox).
-2. Seleziona il tuo corso di laurea (es. *Nuove Tecnologie dell'Arte*).
-3. Seleziona l'anno e accedi alla materia desiderata (*Web Design*, *Storia dell'Arte Contemporanea 2*, ecc.).
-
-### Con server locale (opzionale)
-
-```bash
-# Con Python
-python3 -m http.server 8080
-
-# Con Node.js
-npx serve .
-```
+1. **Accedi al link**: apri [https://diegomeli6.github.io/StudioAbact/](https://diegomeli6.github.io/StudioAbact/) con qualsiasi dispositivo (computer, tablet o smartphone).
+2. **Seleziona il Corso e l'Anno**: scegli il tuo corso di laurea (es. *Nuove Tecnologie dell'Arte*) e l'anno accademico.
+3. **Entra nella Materia**: apri la materia che devi studiare (es. *Web Design*, *Storia dell'Arte Contemporanea 2*).
+4. **Scegli la modalità di studio**:
+   - **Sintesi e Lettura**: leggi i riassunti dei capitoli oppure clicca sul tasto **Ascolta Sintesi** per ascoltare la spiegazione letta a voce alta (con velocità normale o 1.25x).
+   - **Flashcard**: gira le schede interattive per verificare rapidamente se ricordi i concetti principali.
+   - **Quiz**: rispondi alle domande a scelta multipla e leggi la spiegazione immediata per capire gli eventuali errori.
+   - **Simulatore d'Esame**: avvia una prova d'esame completa con domande casuali dal programma per testare la tua preparazione e calcolare il voto finale in trentesimi.
+5. **Salvataggio automatico**: tutti i tuoi progressi, i quiz completati e le flashcard restano salvati in automatico nel browser, senza dover creare nessun account.
 
 ---
 
-## Struttura del repository
+## Cosa contiene la piattaforma
 
-```
-Studio/
-├── index.html              ← Home e hub di navigazione Corsi → Anni → Materie
-├── styles.css              ← Design system, componenti UI e variabili chiaro/scuro
-├── README.md               ← Questo file (presentazione del progetto)
-├── ARCHITECTURE.md         ← Architettura tecnica, standard e convenzioni di sviluppo
-│
-├── js/
-│   ├── core.js             ← Modulo StudyCore: motore TTS, stato, rendering, quiz ed esame
-│   ├── app-ux.js           ← Logica specifica per Web Design
-│   └── app-arte.js         ← Logica specifica per Storia dell'Arte Contemporanea 2
-│
-├── pages/
-│   ├── ux-webdesign.html   ← Materia: Web Design (ABPR 19)
-│   └── storia-arte.html    ← Materia: Storia dell'Arte Contemporanea 2 (ABST 47)
-│
-├── data/                   ← Dataset capitoli, sintesi, flashcard e quiz
-│   ├── dispense-data.js
-│   ├── krug-data.js
-│   ├── stull-data.js
-│   ├── maeda-data.js
-│   ├── glossary-data.js
-│   └── arte-data.js
-│
-└── assets/                 ← Loghi SVG, icone e immagini opere d'arte
-    ├── logo.svg
-    ├── logo-icon.svg
-    └── arte/
-```
+### I Corsi e le Materie
+- **Web Design** (*Codice ABPR 19*):
+  - Dispense del docente
+  - Steve Krug — *Don't Make Me Think*
+  - Edward Stull — *UX Design* (con storie-àncora per ricordare i concetti)
+  - John Maeda — *Le leggi della semplicità*
+  - Glossario completo dei termini UX e Web Design
+- **Storia dell'Arte Contemporanea 2** (*Codice ABST 47*):
+  - Arte contemporanea degli anni '80
+  - Arte contemporanea degli anni '90
+  - Arte contemporanea degli anni Duemila
+  - Monografie e schede approfondite degli artisti con immagini delle opere
+- *Altri corsi e materie in continuo inserimento nel catalogo accademico.*
+
+### Le Funzionalità per lo Studio
+- 📖 **Sintesi fedeli ai libri**: riassunti ordinati per capitolo con i punti chiave più importanti richiesti all'esame.
+- 🎧 **Lettore Vocale integrato**: audio-lettura fluida in italiano con regolazione della velocità.
+- 🗂️ **Flashcard interattive**: carte domanda/risposta con classificazione ("Lo so bene" o "Da rivedere").
+- ✍️ **Quiz con spiegazione didattica**: domande a risposta multipla con correzione commentata per ogni risposta.
+- 🎓 **Simulazione d'esame**: test con tempo e voto in trentesimi per simulare la prova d'appello.
+- 🌓 **Tema Chiaro e Scuro**: modalità notturna riposante per studiare senza affaticare gli occhi.
+- 💾 **Gestione Dati e Privacy**: i tuoi dati restano sempre e solo sul tuo dispositivo, con la possibilità di esportare e importare backup dei tuoi progressi.
