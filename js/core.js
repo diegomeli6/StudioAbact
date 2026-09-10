@@ -206,6 +206,87 @@ const StudyCore = (function () {
     }, 60);
   }
 
+  function isUserAuthenticated() {
+    return !!(window.AppAuth && typeof window.AppAuth.getUser === 'function' && window.AppAuth.getUser());
+  }
+
+  function isChapterLocked(chapIndex) {
+    if (isUserAuthenticated()) return false;
+    // Senza login: capitolo 0 (primo capitolo di ogni dispensa/materia) e' accessibile, tutti i successivi sono bloccati
+    return chapIndex > 0;
+  }
+
+  function updateChapterLockOverlay(isLocked) {
+    const studyView = document.getElementById('view-study');
+    if (!studyView) return;
+
+    let overlay = document.getElementById('chapter-lock-overlay');
+
+    if (isLocked) {
+      studyView.classList.add('chapter-locked-view');
+      stopSpeech();
+
+      // Disabilita audio vocale per capitoli bloccati
+      const listenBtn = document.getElementById('btn-audio-listen');
+      if (listenBtn) {
+        listenBtn.disabled = true;
+        listenBtn.title = 'Accesso richiesto per ascoltare la sintesi';
+      }
+
+      // Disabilita pulsante completa
+      const completeBtn = document.getElementById('btn-toggle-complete');
+      if (completeBtn) {
+        completeBtn.disabled = true;
+        completeBtn.style.opacity = '0.4';
+        completeBtn.style.cursor = 'not-allowed';
+      }
+
+      if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.id = 'chapter-lock-overlay';
+        overlay.className = 'chapter-lock-overlay';
+        overlay.innerHTML = `
+          <div class="chapter-lock-card">
+            <div class="chapter-lock-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <h3>Capitolo riservato</h3>
+            <p>Questo capitolo, con le relative flashcard e i quiz di preparazione, è riservato agli utenti registrati.</p>
+            <button id="btn-lock-overlay-login" class="btn-primary-action auth-submit-btn">Accedi o Registrati</button>
+          </div>
+        `;
+        studyView.appendChild(overlay);
+
+        overlay.querySelector('#btn-lock-overlay-login').addEventListener('click', () => {
+          if (window.AppAuth && typeof window.AppAuth.openModal === 'function') {
+            window.AppAuth.openModal();
+          }
+        });
+      } else {
+        overlay.style.display = 'flex';
+      }
+    } else {
+      studyView.classList.remove('chapter-locked-view');
+      if (overlay) overlay.remove();
+
+      const listenBtn = document.getElementById('btn-audio-listen');
+      if (listenBtn) {
+        listenBtn.disabled = false;
+        listenBtn.title = 'Ascolta sintesi vocale';
+      }
+
+      const completeBtn = document.getElementById('btn-toggle-complete');
+      if (completeBtn) {
+        completeBtn.disabled = false;
+        completeBtn.style.opacity = '1';
+        completeBtn.style.cursor = 'pointer';
+      }
+    }
+  }
+
   // ── Rendering sidebar ──
 
   function renderSidebar(getCurrentPdfChapters, onNavigate) {
@@ -236,11 +317,21 @@ const StudyCore = (function () {
       item.className = 'chapter-nav-item';
       if (idx === state.activeChapIndex) item.classList.add('active');
 
-      const statusIcon = isDone
-        ? `<span class="nav-icon done">${ICONS.checkCircle}</span>`
-        : (idx === state.activeChapIndex
-          ? `<span class="nav-icon active-dot">${ICONS.circleFilled}</span>`
-          : `<span class="nav-icon">${ICONS.circle}</span>`);
+      const locked = isChapterLocked(idx);
+      if (locked) {
+        item.classList.add('is-locked');
+      }
+
+      let statusIcon;
+      if (locked) {
+        statusIcon = `<span class="nav-icon locked" title="Capitolo riservato">${ICONS.lock}</span>`;
+      } else if (isDone) {
+        statusIcon = `<span class="nav-icon done">${ICONS.checkCircle}</span>`;
+      } else if (idx === state.activeChapIndex) {
+        statusIcon = `<span class="nav-icon active-dot">${ICONS.circleFilled}</span>`;
+      } else {
+        statusIcon = `<span class="nav-icon">${ICONS.circle}</span>`;
+      }
 
       item.innerHTML = `
         <span class="chapter-nav-status">${statusIcon}</span>
@@ -253,6 +344,12 @@ const StudyCore = (function () {
       item.addEventListener('click', () => {
         onNavigate(idx);
         switchView('study');
+        if (window.innerWidth <= 860) {
+          const sidebar = document.getElementById('sidebar');
+          const backdrop = document.getElementById('sidebar-backdrop');
+          if (sidebar) sidebar.classList.remove('mobile-open');
+          if (backdrop) backdrop.classList.remove('active');
+        }
       });
 
       listEl.appendChild(item);
@@ -343,6 +440,9 @@ const StudyCore = (function () {
 
     const pdfNameEl = document.getElementById('active-pdf-name');
     if (pdfNameEl) pdfNameEl.textContent = getPdfDisplayName(state.activePdf);
+
+    const isLocked = isChapterLocked(state.activeChapIndex);
+    updateChapterLockOverlay(isLocked);
   }
 
   // ── Flashcards ──
@@ -361,12 +461,35 @@ const StudyCore = (function () {
       return;
     }
 
+    const isAuth = isUserAuthenticated();
+
     cards.forEach((card, idx) => {
+      // Se non autenticato, solo la prima flashcard (idx === 0) è accessibile
+      if (!isAuth && idx === 1) {
+        const banner = document.createElement('div');
+        banner.className = 'freemium-lock-banner';
+        banner.innerHTML = `
+          <div class="freemium-lock-icon">${ICONS.lock}</div>
+          <div class="freemium-lock-info">
+            <h4>Flashcard successive riservate</h4>
+            <p>Accedi o registrati per sbloccare tutte le ${cards.length} flashcard di questo capitolo e memorizzare i concetti chiave.</p>
+          </div>
+          <button class="btn-primary-action btn-freemium-auth" type="button">Accedi o Registrati</button>
+        `;
+        banner.querySelector('.btn-freemium-auth').addEventListener('click', () => {
+          if (window.AppAuth && typeof window.AppAuth.openAuthModal === 'function') {
+            window.AppAuth.openAuthModal('register');
+          }
+        });
+        listEl.appendChild(banner);
+      }
+
       const cardId = `${chap.id}-fc-${idx}`;
       const status = state.flashcardStatus[cardId];
+      const isLockedItem = !isAuth && idx > 0;
 
       const cardEl = document.createElement('div');
-      cardEl.className = 'flashcard-card';
+      cardEl.className = `flashcard-card ${isLockedItem ? 'item-locked' : ''}`;
 
       cardEl.innerHTML = `
         <div class="flashcard-body" id="fc-body-${cardId}">
@@ -387,25 +510,27 @@ const StudyCore = (function () {
         </div>
       `;
 
-      const body = cardEl.querySelector(`#fc-body-${cardId}`);
-      const ans = cardEl.querySelector(`#fc-ans-${cardId}`);
-      body.addEventListener('click', (e) => {
-        if (e.target.closest('.flashcard-footer')) return;
-        const isHidden = ans.style.display === 'none';
-        ans.style.display = isHidden ? 'block' : 'none';
-      });
-
-      cardEl.querySelectorAll('.btn-card-action').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-          e.stopPropagation();
-          const act = btn.dataset.act;
-          const id = btn.dataset.id;
-          state.flashcardStatus[id] = act;
-          saveLocalState();
-          cardEl.querySelectorAll('.btn-card-action').forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
+      if (!isLockedItem) {
+        const body = cardEl.querySelector(`#fc-body-${cardId}`);
+        const ans = cardEl.querySelector(`#fc-ans-${cardId}`);
+        body.addEventListener('click', (e) => {
+          if (e.target.closest('.flashcard-footer')) return;
+          const isHidden = ans.style.display === 'none';
+          ans.style.display = isHidden ? 'block' : 'none';
         });
-      });
+
+        cardEl.querySelectorAll('.btn-card-action').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const act = btn.dataset.act;
+            const id = btn.dataset.id;
+            state.flashcardStatus[id] = act;
+            saveLocalState();
+            cardEl.querySelectorAll('.btn-card-action').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+          });
+        });
+      }
 
       listEl.appendChild(cardEl);
     });
@@ -424,12 +549,35 @@ const StudyCore = (function () {
       return;
     }
 
+    const isAuth = isUserAuthenticated();
+
     quizzes.forEach((q, qIdx) => {
+      // Se non autenticato, solo il primo quiz (qIdx === 0) è accessibile
+      if (!isAuth && qIdx === 1) {
+        const banner = document.createElement('div');
+        banner.className = 'freemium-lock-banner';
+        banner.innerHTML = `
+          <div class="freemium-lock-icon">${ICONS.lock}</div>
+          <div class="freemium-lock-info">
+            <h4>Quiz successivi riservati</h4>
+            <p>Accedi o registrati per sbloccare tutti i ${quizzes.length} quiz e verificare la tua preparazione.</p>
+          </div>
+          <button class="btn-primary-action btn-freemium-auth" type="button">Accedi o Registrati</button>
+        `;
+        banner.querySelector('.btn-freemium-auth').addEventListener('click', () => {
+          if (window.AppAuth && typeof window.AppAuth.openAuthModal === 'function') {
+            window.AppAuth.openAuthModal('register');
+          }
+        });
+        listEl.appendChild(banner);
+      }
+
       const quizId = `${chap.id}-quiz-${qIdx}`;
       const savedAns = state.quizAnswers[quizId];
+      const isLockedItem = !isAuth && qIdx > 0;
 
       const qCard = document.createElement('div');
-      qCard.className = 'quiz-card';
+      qCard.className = `quiz-card ${isLockedItem ? 'item-locked' : ''}`;
 
       const optionsHtml = q.options.map((opt, oIdx) => {
         let extraClass = '';
@@ -438,7 +586,7 @@ const StudyCore = (function () {
           else if (oIdx === savedAns.selectedIndex) extraClass = 'selected-wrong';
         }
         return `
-          <button class="quiz-option-btn ${extraClass}" data-quizid="${quizId}" data-oidx="${oIdx}" ${savedAns ? 'disabled' : ''}>
+          <button class="quiz-option-btn ${extraClass}" data-quizid="${quizId}" data-oidx="${oIdx}" ${savedAns || isLockedItem ? 'disabled' : ''}>
             ${escapeHtml(opt)}
           </button>
         `;
@@ -456,18 +604,20 @@ const StudyCore = (function () {
         <div class="quiz-exp-container" id="exp-${quizId}">${explanationHtml}</div>
       `;
 
-      qCard.querySelectorAll('.quiz-option-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-          const oIdx = parseInt(btn.dataset.oidx, 10);
-          const isCorrect = oIdx === q.correctIndex;
-          state.quizAnswers[quizId] = { selectedIndex: oIdx, isCorrect: isCorrect };
-          if (!isCorrect) {
-            state.flashcardStatus[`quiz-error-${quizId}`] = 'cram';
-          }
-          saveLocalState();
-          renderQuiz(chap);
+      if (!isLockedItem) {
+        qCard.querySelectorAll('.quiz-option-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const oIdx = parseInt(btn.dataset.oidx, 10);
+            const isCorrect = oIdx === q.correctIndex;
+            state.quizAnswers[quizId] = { selectedIndex: oIdx, isCorrect: isCorrect };
+            if (!isCorrect) {
+              state.flashcardStatus[`quiz-error-${quizId}`] = 'cram';
+            }
+            saveLocalState();
+            renderQuiz(chap);
+          });
         });
-      });
+      }
 
       listEl.appendChild(qCard);
     });
@@ -533,6 +683,13 @@ const StudyCore = (function () {
   }
 
   function startExamSession(scope, count, getCurrentPdfChapters, getPdfDisplayName, getExamPool) {
+    if (!isUserAuthenticated()) {
+      if (window.AppAuth && typeof window.AppAuth.openModal === 'function') {
+        window.AppAuth.openModal();
+      }
+      return;
+    }
+
     let pool = getExamPool(scope, getCurrentPdfChapters, getPdfDisplayName);
 
     if (pool.length === 0) {
@@ -875,6 +1032,7 @@ const StudyCore = (function () {
         }
       }
       bar.classList.add('is-playing');
+      bar.classList.add('is-sticky');
     } else if (status === 'paused') {
       if (playIcon) playIcon.style.display = 'inline-flex';
       if (pauseIcon) pauseIcon.style.display = 'none';
@@ -883,6 +1041,7 @@ const StudyCore = (function () {
       if (visualizer) visualizer.style.display = 'none';
       if (statusLabel) statusLabel.textContent = 'In pausa';
       bar.classList.add('is-playing');
+      bar.classList.add('is-sticky');
     } else {
       // idle
       if (playIcon) playIcon.style.display = 'inline-flex';
@@ -895,6 +1054,7 @@ const StudyCore = (function () {
         statusLabel.title = '';
       }
       bar.classList.remove('is-playing');
+      bar.classList.remove('is-sticky');
     }
   }
 
@@ -1087,12 +1247,125 @@ const StudyCore = (function () {
       }
     });
 
-    // Sidebar toggle
+    // Sidebar toggle (Desktop & Mobile)
     const sidebarToggleBtn = document.getElementById('btn-sidebar-toggle');
     const sidebar = document.getElementById('sidebar');
+    const mobileChaptersBtn = document.getElementById('btn-mobile-chapters');
+    const mobileDispenseBtn = document.getElementById('btn-mobile-dispense');
+    const sidebarCloseBtn = document.getElementById('btn-sidebar-close');
+    const sidebarBackdrop = document.getElementById('sidebar-backdrop');
+    const mobileDispenseModal = document.getElementById('mobile-dispense-overlay');
+    const closeDispenseSheetBtn = document.getElementById('btn-close-dispense-sheet');
+
+    function closeMobileSidebar() {
+      if (sidebar) sidebar.classList.remove('mobile-open');
+      if (sidebarBackdrop) sidebarBackdrop.classList.remove('active');
+    }
+
+    function openMobileSidebar() {
+      if (sidebar) sidebar.classList.add('mobile-open');
+      if (sidebarBackdrop) sidebarBackdrop.classList.add('active');
+      if (mobileDispenseModal) mobileDispenseModal.classList.remove('active');
+    }
+
+    function openMobileDispense() {
+      if (mobileDispenseModal) {
+        populateMobileDispenseList();
+        mobileDispenseModal.classList.add('active');
+      }
+      closeMobileSidebar();
+    }
+
+    function closeMobileDispense() {
+      if (mobileDispenseModal) mobileDispenseModal.classList.remove('active');
+    }
+
+    function populateMobileDispenseList() {
+      const listEl = document.getElementById('mobile-dispense-list');
+      if (!listEl) return;
+      listEl.innerHTML = '';
+      const tabs = document.querySelectorAll('.pdf-tab');
+      tabs.forEach(tab => {
+        const key = tab.dataset.pdf;
+        const title = tab.querySelector('.tab-title')?.textContent || key;
+        const prog = tab.querySelector('.tab-progress-mini')?.textContent || '';
+        const isActive = tab.classList.contains('active');
+
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = `mobile-dispense-item ${isActive ? 'active' : ''}`;
+        btn.innerHTML = `
+          <div class="mobile-dispense-item-left">
+            <span class="mobile-dispense-dot"></span>
+            <span class="mobile-dispense-item-title">${escapeHtml(title)}</span>
+          </div>
+          <span class="mobile-dispense-item-prog">${escapeHtml(prog)}</span>
+        `;
+        btn.addEventListener('click', () => {
+          tab.click();
+          closeMobileDispense();
+        });
+        listEl.appendChild(btn);
+      });
+    }
+
     if (sidebarToggleBtn && sidebar) {
       sidebarToggleBtn.addEventListener('click', () => {
-        sidebar.classList.toggle('collapsed');
+        if (window.innerWidth <= 860) {
+          if (sidebar.classList.contains('mobile-open')) {
+            closeMobileSidebar();
+          } else {
+            openMobileSidebar();
+          }
+        } else {
+          sidebar.classList.toggle('collapsed');
+        }
+      });
+    }
+
+    if (mobileChaptersBtn) mobileChaptersBtn.addEventListener('click', openMobileSidebar);
+    if (sidebarCloseBtn) sidebarCloseBtn.addEventListener('click', closeMobileSidebar);
+    if (sidebarBackdrop) sidebarBackdrop.addEventListener('click', () => {
+      closeMobileSidebar();
+      closeMobileDispense();
+    });
+
+    if (mobileDispenseBtn) mobileDispenseBtn.addEventListener('click', openMobileDispense);
+    if (closeDispenseSheetBtn) closeDispenseSheetBtn.addEventListener('click', closeMobileDispense);
+    if (mobileDispenseModal) {
+      mobileDispenseModal.addEventListener('click', (e) => {
+        if (e.target === mobileDispenseModal) closeMobileDispense();
+      });
+    }
+
+    // Controlli menu mobile fisso in basso (Bottom Navigation Bar)
+    const bottomChaptersBtn = document.getElementById('btn-bottom-chapters');
+    const bottomDispenseBtn = document.getElementById('btn-bottom-dispense');
+    const bottomMaterieBtn = document.getElementById('btn-bottom-materie');
+
+    if (bottomChaptersBtn) {
+      bottomChaptersBtn.addEventListener('click', () => {
+        if (sidebar && sidebar.classList.contains('mobile-open')) {
+          closeMobileSidebar();
+        } else {
+          openMobileSidebar();
+        }
+      });
+    }
+
+    if (bottomDispenseBtn) {
+      bottomDispenseBtn.addEventListener('click', () => {
+        if (mobileDispenseModal && mobileDispenseModal.classList.contains('active')) {
+          closeMobileDispense();
+        } else {
+          openMobileDispense();
+        }
+      });
+    }
+
+    if (bottomMaterieBtn) {
+      bottomMaterieBtn.addEventListener('click', () => {
+        window.location.href = '../index.html?view=materie&course=DAPL08&anno=2';
       });
     }
 
@@ -1196,7 +1469,7 @@ const StudyCore = (function () {
     const homeBtn = document.getElementById('btn-hub-nav');
     if (homeBtn) {
       homeBtn.addEventListener('click', () => {
-        window.location.href = homeBtn.dataset.href || '../index.html';
+        window.location.href = homeBtn.dataset.href || '../index.html?view=materie&course=DAPL08&anno=2';
       });
     }
 

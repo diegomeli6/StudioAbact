@@ -78,8 +78,10 @@
     });
   }
 
-  // Esponi globalmente per core.js
+  // Esponi globalmente per core.js e auth.js
   window.updateProgressIndicators = updateProgressIndicators;
+  window.doRenderSidebar = doRenderSidebar;
+  window.doRenderChapter = doRenderChapter;
 
   function doRenderSidebar() {
     core.renderSidebar(getCurrentPdfChapters, doNavigate);

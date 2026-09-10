@@ -31,16 +31,16 @@ Configurando Supabase:
 ## 3. Passo 2: Copia delle credenziali pubbliche
 
 Nel menu del progetto Supabase:
-- Vai su **Project Settings** (icona ingranaggio in basso a sinistra) ➔ **API**.
+- Vai su **Project Settings** (icona ingranaggio in basso a sinistra) -> **API**.
 - Troverai due parametri da copiare:
   1. `Project URL` (es. `https://xxxxxx.supabase.co`)
-  2. `Project API Keys` ➔ `anon` `public` (la chiave che inizia con `eyJhbGciOi...`)
+  2. `Project API Keys` -> `anon` `public` (la chiave che inizia con `eyJhbGciOi...`)
 
 ---
 
 ## 4. Passo 3: Script SQL per il Database (Copia e Incolla)
 
-Nel menu a sinistra di Supabase, clicca su **SQL Editor** ➔ **New Query**, incolla questo codice e premi **Run**:
+Nel menu a sinistra di Supabase, clicca su **SQL Editor** -> **New Query**, incolla questo codice e premi **Run**:
 
 ```sql
 -- 1. Tabella dei profili utente

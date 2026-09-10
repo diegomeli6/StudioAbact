@@ -3,7 +3,7 @@
 Piattaforma interattiva pensata per gli studenti dell'**Accademia di Belle Arti di Catania** per preparare gli esami universitari in modo semplice, veloce ed efficace.
 
 Il sito **non va scaricato**, è accessibile e utilizzabile direttamente online dal link:  
-👉 **[https://diegomeli6.github.io/StudioAbact/](https://diegomeli6.github.io/StudioAbact/)**
+**[https://diegomeli6.github.io/StudioAbact/](https://diegomeli6.github.io/StudioAbact/)**
 
 ---
 
@@ -17,20 +17,20 @@ Il sito **non va scaricato**, è accessibile e utilizzabile direttamente online 
    - **Flashcard**: gira le schede interattive per verificare rapidamente se ricordi i concetti principali.
    - **Quiz**: rispondi alle domande a scelta multipla e leggi la spiegazione immediata per capire gli eventuali errori.
    - **Simulatore d'Esame**: avvia una prova d'esame completa con domande casuali dal programma per testare la tua preparazione e calcolare il voto finale in trentesimi.
-5. **Salvataggio automatico**: tutti i tuoi progressi, i quiz completati e le flashcard restano salvati in automatico nel browser, senza dover creare nessun account.
+5. **Account e sincronizzazione**: tutti i tuoi progressi, i quiz completati e le flashcard restano sincronizzati con il tuo account sicuro nel cloud.
 
 ---
 
 ## Cosa contiene la piattaforma
 
 ### I Corsi e le Materie
-- **Web Design** (*Codice ABPR 19*):
+- **Web Design** (*Codice ABPR 19* — Docente: Prof. Ciro Esposito):
   - Dispense del docente
   - Steve Krug — *Don't Make Me Think*
   - Edward Stull — *UX Design* (con storie-àncora per ricordare i concetti)
   - John Maeda — *Le leggi della semplicità*
   - Glossario completo dei termini UX e Web Design
-- **Storia dell'Arte Contemporanea 2** (*Codice ABST 47*):
+- **Storia dell'Arte Contemporanea 2** (*Codice ABST 47* — Docente: Prof.ssa Ambra Stazzone):
   - Arte contemporanea degli anni '80
   - Arte contemporanea degli anni '90
   - Arte contemporanea degli anni Duemila
@@ -38,10 +38,11 @@ Il sito **non va scaricato**, è accessibile e utilizzabile direttamente online 
 - *Altri corsi e materie in continuo inserimento nel catalogo accademico.*
 
 ### Le Funzionalità per lo Studio
-- 📖 **Sintesi fedeli ai libri**: riassunti ordinati per capitolo con i punti chiave più importanti richiesti all'esame.
-- 🎧 **Lettore Vocale integrato**: audio-lettura fluida in italiano con regolazione della velocità.
-- 🗂️ **Flashcard interattive**: carte domanda/risposta con classificazione ("Lo so bene" o "Da rivedere").
-- ✍️ **Quiz con spiegazione didattica**: domande a risposta multipla con correzione commentata per ogni risposta.
-- 🎓 **Simulazione d'esame**: test con tempo e voto in trentesimi per simulare la prova d'appello.
-- 🌓 **Tema Chiaro e Scuro**: modalità notturna riposante per studiare senza affaticare gli occhi.
-- 💾 **Gestione Dati e Privacy**: i tuoi dati restano sempre e solo sul tuo dispositivo, con la possibilità di esportare e importare backup dei tuoi progressi.
+- **Sintesi fedeli ai libri**: riassunti ordinati per capitolo con i punti chiave più importanti richiesti all'esame.
+- **Lettore Vocale integrato**: audio-lettura fluida in italiano con regolazione della velocità.
+- **Flashcard interattive**: carte domanda/risposta con classificazione ("Lo so bene" o "Da rivedere").
+- **Quiz con spiegazione didattica**: domande a risposta multipla con correzione commentata per ogni risposta.
+- **Simulazione d'esame**: test con tempo e voto in trentesimi per simulare la prova d'appello.
+- **Tema Chiaro e Scuro**: modalità notturna riposante per studiare senza affaticare gli occhi.
+- **Sincronizzazione Cloud Protetta**: i tuoi progressi sono protetti dal tuo account personale Supabase.
+
