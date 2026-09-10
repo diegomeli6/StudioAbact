@@ -15,7 +15,7 @@ Nessun server, nessun account: tutto funziona direttamente nel browser con salva
 
 ### Lettore Vocale Intelligente (TTS)
 - **Voce naturale Google Italiano**: sintesi vocale ad alta fedeltà integrata direttamente nella pagina.
-- **Moltiplicatori di velocità**: selettore rapido a pillola (`1x`, `1.25x`, `1.5x`, `1.75x`, `2x`) con aggiornamento dinamico immediato durante l'ascolto.
+- **Moltiplicatori di velocità**: selettore rapido a pillola (`1x`, `1.25x`) con aggiornamento dinamico immediato durante l'ascolto.
 - **Player audio completo**: controlli di ascolto, pausa, stop, visualizzatore a onde sonore e indicazione del capitolo in riproduzione.
 - **Chunking sequenziale**: suddivisione automatica del testo per garantire fluidità di lettura senza blocchi del browser.
 
