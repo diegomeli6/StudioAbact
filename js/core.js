@@ -107,6 +107,9 @@ const StudyCore = (function () {
       };
       localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
       if (typeof updateProgressIndicators === 'function') updateProgressIndicators();
+      if (window.AppAuth && typeof window.AppAuth.onStateSaved === 'function') {
+        window.AppAuth.onStateSaved(payload);
+      }
     } catch (e) {
       console.warn("Impossibile salvare in localStorage:", e);
     }
@@ -669,48 +672,7 @@ const StudyCore = (function () {
     state.examSession = null;
   }
 
-  // ── Backup / Reset ──
 
-  function exportBackupJson() {
-    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(localStorage.getItem(STORAGE_KEY) || "{}");
-    const downloadAnchor = document.createElement('a');
-    const dateStr = new Date().toISOString().split('T')[0];
-    downloadAnchor.setAttribute("href", dataStr);
-    downloadAnchor.setAttribute("download", `backup_studio_aba_${dateStr}.json`);
-    document.body.appendChild(downloadAnchor);
-    downloadAnchor.click();
-    downloadAnchor.remove();
-  }
-
-  function importBackupJson(event) {
-    const file = event.target.files[0];
-    if (!file) return;
-
-    const reader = new FileReader();
-    reader.onload = function (e) {
-      try {
-        const content = e.target.result;
-        const parsed = JSON.parse(content);
-        if (parsed && typeof parsed === 'object') {
-          localStorage.setItem(STORAGE_KEY, JSON.stringify(parsed));
-          alert("Backup importato con successo! La pagina verra' ricaricata.");
-          window.location.reload();
-        } else {
-          alert("File backup non valido.");
-        }
-      } catch (err) {
-        alert("Errore nella lettura del file backup: " + err.message);
-      }
-    };
-    reader.readAsText(file);
-  }
-
-  function resetAllData() {
-    if (confirm("Sei sicuro di voler azzerare tutti i progressi e le note? L'operazione e' irreversibile a meno che tu non abbia esportato un backup.")) {
-      localStorage.removeItem(STORAGE_KEY);
-      window.location.reload();
-    }
-  }
 
   // ── Utility: Markdown parser ──
 
@@ -1134,29 +1096,7 @@ const StudyCore = (function () {
       });
     }
 
-    // Modal backup
-    const modalBtn = document.getElementById('btn-data-modal');
-    const modalClose = document.getElementById('btn-close-modal');
-    const dataModal = document.getElementById('data-modal');
-    if (modalBtn && dataModal) {
-      modalBtn.addEventListener('click', () => dataModal.style.display = 'flex');
-    }
-    if (modalClose && dataModal) {
-      modalClose.addEventListener('click', () => dataModal.style.display = 'none');
-    }
 
-    const exportBtn = document.getElementById('btn-export-backup');
-    if (exportBtn) exportBtn.addEventListener('click', exportBackupJson);
-
-    const importBtn = document.getElementById('btn-trigger-import');
-    const importInput = document.getElementById('input-import-file');
-    if (importBtn && importInput) {
-      importBtn.addEventListener('click', () => importInput.click());
-      importInput.addEventListener('change', importBackupJson);
-    }
-
-    const resetBtn = document.getElementById('btn-reset-data');
-    if (resetBtn) resetBtn.addEventListener('click', resetAllData);
 
     // View pills
     document.querySelectorAll('.pill-btn').forEach(btn => {
@@ -1318,9 +1258,6 @@ const StudyCore = (function () {
     updateCompleteButtonState,
     setupExamEvents,
     setupCoreEvents,
-    exportBackupJson,
-    importBackupJson,
-    resetAllData,
     formatMarkdown,
     escapeHtml,
     stopSpeech,
