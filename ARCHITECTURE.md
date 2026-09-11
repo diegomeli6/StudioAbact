@@ -1,322 +1,209 @@
-# ARCHITECTURE.md — Guida per Chat AI e Contributori
+# ARCHITECTURE.md — Guida Tecnica e Operativa per Chat AI
 
 > [!IMPORTANT]
-> ### REGOLA OBBLIGATORIA PER CHAT AI E SVILUPPATORI
-> **Dopo ogni cambiamento importante, refactoring o aggiunta di nuove funzionalità al progetto, è OBBLIGATORIO aggiornare questo file (`ARCHITECTURE.md`) prima di concludere il compito.**
+> ### REGOLA FONDAMENTALE DEL PROGETTO
+> **Dopo qualsiasi modifica importante, aggiunta di dispense, nuove materie o refactoring, questo file deve essere tassativamente mantenuto aggiornato.**
+> Tutte le istruzioni e le convenzioni operative risiedono in questo documento. Il file `README.md` e riservato alla sola descrizione pubblica per gli studenti e GitHub.
 > 
-> Tutte le istruzioni operative per le chat AI risiedono **esclusivamente in questo file**. Il file `README.md` è riservato alla sola descrizione pubblica per GitHub e non deve contenere istruzioni o prompt per l'agente.
+> ### DIVIETO ASSOLUTO DI EMOJI
+> **NON INSERIRE MAI EMOJI IN NESSUN POSTO, NE NEL CODICE, NE NELL'INTERFACCIA, NE NEI TESTI O NEI FILE MARKDOWN.**
+> E severamente vietato qualsiasi carattere emoji unicode (es. faccine, simboli grafici, razzi, nuvole, lampadine, libri grafici unicode). Usare unicamente icone vettoriali SVG inline (`<svg>`) con `fill="currentColor"` o `stroke="currentColor"` oppure stili CSS.
 
 ---
 
-Questo file spiega **come funziona l'architettura del progetto**, le convenzioni adottate, come operare e come estendere la piattaforma.
-È pensato per essere letto da qualsiasi chat AI (Gemini, Claude, GPT) o sviluppatore prima di apportare modifiche.
-
----
-
-## 1. Struttura del progetto
+## 1. Mappa e Struttura del Progetto
 
 ```
 Studio/
-├── index.html              ← Home: selezione Corso → Anno → Materia (con filtri per anno)
-├── styles.css              ← Design system unificato, variabili tema, componenti UI
-├── README.md               ← Presentazione pubblica repository per GitHub
-├── ARCHITECTURE.md         ← QUESTO FILE: Regole operative e architettura tecnica
-│
-├── js/
-│   ├── core.js             ← Modulo condiviso StudyCore: stato globale, persistenza,
-│   │                          TTS audio reader (Google Italiano), sync tema cross-tab,
-│   │                          markdown parser, flashcard, quiz, esame, backup/import
-│   ├── app-ux.js           ← Logica specifica per Web Design (gestione dispense, stats)
-│   └── app-arte.js         ← Logica specifica per Storia dell'Arte Contemporanea 2
-│
-├── pages/
-│   ├── ux-webdesign.html   ← Pagina Web Design (carica core.js + app-ux.js)
-│   └── storia-arte.html    ← Pagina Storia dell'Arte Contemporanea 2 (carica core.js + app-arte.js)
-│
-├── data/
-│   ├── dispense-data.js    ← Dispense Professore (14 capitoli)
-│   ├── krug-data.js        ← Steve Krug — Don't Make Me Think (14 capitoli)
-│   ├── stull-data.js       ← Edward Stull — UX Design con storie àncora (43 capitoli)
-│   ├── maeda-data.js       ← John Maeda — Le leggi della semplicità (13 capitoli)
-│   ├── glossary-data.js    ← Glossario termini tecnici UX
-│   └── arte-data.js        ← Storia dell'Arte Contemporanea 2 (tutti i moduli)
-│
-├── assets/
-│   ├── logo.svg            ← Logo esteso ABA Catania (pittogramma stella + testo)
-│   ├── logo-icon.svg       ← Pittogramma icona stella ABA Catania (versione isolata SVG)
-│   ├── icons/              ← Icone SVG vettoriali
-│   └── arte/               ← Immagini opere d'arte per modulo Storia dell'Arte
-│
-├── Web Design/             ← Materiale sorgente PDF (non servito dal sito web)
-└── Storia dell'Arte/       ← Materiale sorgente PDF (non servito dal sito web)
+|-- index.html              <-- Home: selezione Corso -> Anno -> Materia con card geometricamente identiche
+|-- styles.css              <-- Design system unificato: token CSS, temi chiaro/scuro, layout desktop e mobile
+|-- README.md               <-- Presentazione per gli studenti e documentazione pubblica GitHub
+|-- ARCHITECTURE.md         <-- QUESTO FILE: Specifiche tecniche e procedura aggiunta materie
+|-- AGENTS.md               <-- Regola assoluta del divieto emoji per agenti AI
+|-- GEMINI.md               <-- Regola assoluta del divieto emoji per modelli Gemini
+|-- GUIDA_AUTENTICAZIONE.md <-- Documentazione integrazione Supabase Auth e Freemium
+|
+|-- js/
+|   |-- core.js             <-- Modulo condiviso StudyCore: stato globale, persistenza, navigazione capitoli,
+|   |                           TTS audio reader sincrono per iOS/Android, markdown parser, quiz, flashcard
+|   |-- auth.js             <-- Client Supabase: gestione sessione, modale login/registrazione, sync cloud
+|   |-- app-ux.js           <-- Logica specifica Web Design (dispense, calcolo pool esame, stats)
+|   `-- app-arte.js         <-- Logica specifica Storia dell'Arte Contemporanea 2
+|
+|-- pages/
+|   |-- ux-webdesign.html   <-- Pagina studio Web Design (template standard di riferimento)
+|   `-- storia-arte.html    <-- Pagina studio Storia dell'Arte Contemporanea 2
+|
+|-- data/
+|   |-- dispense-data.js    <-- Dispense Professore Web Design (14 capitoli)
+|   |-- krug-data.js        <-- Steve Krug - Don't Make Me Think (14 capitoli)
+|   |-- stull-data.js       <-- Edward Stull - UX Design con storie-ancora (43 capitoli)
+|   |-- maeda-data.js       <-- John Maeda - Le leggi della semplicita (13 capitoli)
+|   |-- glossary-data.js    <-- Glossario termini tecnici UX
+|   `-- arte-data.js        <-- Storia dell'Arte: Anni '80, Anni '90, Duemila, Monografie
+|
+`-- assets/
+    |-- favicon.svg         <-- Favicon SVG adattiva al tema del browser (nero su chiaro, bianco su scuro)
+    |-- logo.svg            <-- Logo orizzontale ABA Catania
+    |-- logo-white.svg      <-- Logo orizzontale ABA Catania in bianco per footer
+    |-- logo-icon.svg       <-- Pittogramma stella vettoriale isolato
+    `-- arte/               <-- Immagini delle opere d'arte citate nei moduli di studio
 ```
 
 ---
 
-## 2. Come aggiungere un NUOVO CORSO
+## 2. Standard Grafici e Componenti UI Consolidati
 
-I corsi di laurea sono definiti in `index.html` nella variabile `CORSI` dentro il tag `<script>`.
+Tutte le pagine di studio e la home devono rispettare rigorosamente gli standard definiti:
 
-Per aggiungere un nuovo corso con contenuti:
+### 2.1. Favicon SVG Dinamica (`assets/favicon.svg`)
+- Mostra esclusivamente il **pittogramma stella geometrico** dell'Accademia (senza loghi estesi o scritte).
+- Include la regola nativa `@media (prefers-color-scheme: dark)`:
+  - Browser con tema chiaro: riempimento nero (`fill: #000000;`).
+  - Browser con tema scuro: riempimento bianco (`fill: #ffffff;`).
 
-1. Nel file `index.html`, trova l'array `CORSI.triennio` o `CORSI.biennio`
-2. Imposta `hasContent: true` e aggiungi un `accent` (colore hex per quel corso)
-3. Crea la variabile `ANNI_NOMECORSO` con gli anni e le materie (segui il modello `ANNI_NTA`)
+### 2.2. Barra Superiore di Navigazione (Navbar Stile Twitch)
+- **Rimosso il burger menu**: la navigazione laterale e gestita direttamente dalla sidebar.
+- **Pulsante Indietro (`#btn-hub-nav`)**: posizionato a sinistra su desktop/tablet, rimanda a `index.html?view=materie&course={ID}&anno={NUM}`. Su smartphone e nascosto (`display: none !important;`) poiche sostituito dal tasto "Materie" nella barra inferiore.
+- **Titolo Materia e Docente (`.header-brand`)**: visualizza il titolo ufficiale del corso e il badge con il nome del docente colorato con l'accento della materia.
+- **Selettore Documenti (`.pdf-selector`)**: tab a scorrimento orizzontale senza alcuna maschera sfumata trasparente (`mask-image: none !important;`).
+- **Pannello Azioni a Destra (`.header-actions`)**:
+  - Pulsanti segmentati **Studio** e **Test** (`.view-mode-pills`).
+  - Tasto cambio tema chiaro/scuro (`#btn-theme-toggle`).
+  - Pulsante **Accedi** (`#btn-auth-user`) posizionato all'estrema destra con spaziatura dedicata (`gap: 14px`). In tema scuro, il testo del pulsante e sempre bianco (`#ffffff !important`).
 
-Esempio:
-```javascript
-{ code: 'DAPL04', name: 'Grafica, illustrazione', hasContent: true, accent: '#4CAF50' }
-```
+### 2.3. Sidebar Collassabile Stile Twitch
+- **Pulsante di Chiusura (`#btn-sidebar-collapse`)**: posizionato nell'intestazione della sidebar (`.sidebar-header`) a fianco del contatore capitoli, con icona SVG a freccia verso sinistra con barra di battuta (`<-|`).
+- **Aletta di Espansione (`#btn-sidebar-expand`)**: quando la sidebar ha la classe `.collapsed`, un'aletta dedicata con icona (`|->`) appare agganciata al bordo sinistro dello schermo (`position: fixed; left: 0; top: 96px; z-index: 35;`) per riaprire l'indice al click.
 
----
+### 2.4. Layout Responsive per Smartphone (< 860px)
+- **Testata su 3 Righe Distinte**:
+  1. **Riga 1 (`.header-brand`)**: occupa il 100% della larghezza. Il titolo della materia e visualizzato a dimensione confortevole (`18px`, `white-space: normal;`) con sotto il badge del docente, senza troncamenti ne sovrapposizioni.
+  2. **Riga 2 (`.header-actions`)**: occupa il 100% della larghezza (`justify-content: space-between;`). I pulsanti Studio e Test si espandono a coprire la porzione sinistra (`flex: 1;`), mentre Tema e Accedi rimangono allineati a destra.
+  3. **Riga 3 (`.pdf-selector`)**: barra delle dispense a scorrimento orizzontale a tutta larghezza, priva di gradienti.
+- **Subtabs di Capitolo (Sintesi, Flashcard, Quiz)**:
+  - Controllo segmentato a tutta larghezza con griglia a 3 colonne uguali (`grid-template-columns: repeat(3, 1fr);`).
+  - Testi ottimizzati ("Sintesi", "Flashcard (N)", "Quiz") a 14px senza wrapping, icone nascoste su smartphone per massima leggibilita.
+- **Barra Fissa Inferiore (`.mobile-bottom-nav`)**:
+  - Pulsanti: Materie (torna alla home), Capitoli (apre il drawer laterale dell'indice), Indice PDF (apre il foglio modale dispense), Tema.
 
-## 3. Come aggiungere un NUOVO ANNO
+### 2.5. Lettore Vocale / Text-To-Speech (`#summary-audio-bar`)
+- **Avvio Audio Sincrono su Mobile**: `speakNextChunk()` viene invocato in modo rigorosamente sincrono nel gestore dell'evento click per rispettare le policy di autoplay audio di iOS Safari e Android (evitando ritardi in `setTimeout` o attese asincrone).
+- **Compatibilita Voci**: fallback progressivo da Google Italiano alle voci neurali di sistema e a qualsiasi voce italiana (es. Alice, Federica, Luca, Paola su iOS).
+- **Ottimizzazione Mobile**: su smartphone, il blocco con la frase letta (`.audio-status-wrap`) e nascosto (`display: none !important;`). La barra audio mantiene altezza e larghezza costanti (nessun ballooning ne sfasamento di margini) e rimane sempre ancorata a inizio lettura con `position: sticky; top: 0; z-index: 85;`.
+- **Desktop**: include pulsante Play/Pausa, Stop, selettori di velocita (1x e 1.25x) ed equalizzatore grafico con etichetta del testo in corso di lettura.
 
-Nell'array degli anni del corso (es. `ANNI_NTA` in `index.html`), aggiungi un oggetto:
+### 2.6. Spaziatura Footer nelle Pagine di Studio
+- Per garantire respiro visivo nei capitoli lunghi, il container dei pulsanti di completamento (`.chapter-footer`) ha `margin-bottom: 64px;` e `padding-top: 24px;`.
+- Il footer del sito (`.study-site-footer`) ha `margin-top: 64px;` su desktop e `margin-top: 48px;` su mobile.
 
-```javascript
-{ num: 4, label: '4° Anno', materie: [] }
-```
+### 2.7. Card Materie nella Home (`index.html`)
+Tutte le schede delle materie devono essere rigorosamente identiche e speculari:
+- **Titolo su Riga Singola**: `white-space: nowrap; overflow: hidden; text-overflow: ellipsis; height: 24px; font-size: clamp(15.5px, 1.35vw, 17.5px);`.
+- **Badge Docente Allineati**: posizionati alla stessa identica quota verticale su tutte le card.
+- **Descrizioni Bilanciate**: lunghezza contenuta e uniforme (~140-150 caratteri, esattamente 3 righe).
+- **Footer e Statistiche Ancorate in Basso**: `.materia-card-footer` con `margin-top: auto; border-top: 1px solid var(--border-color); padding-top: 18px;`.
+- **Statistiche Allineate**: elementi capitoli, quiz e fonti distribuiti con `justify-content: space-between;` senza andare a capo.
+- **Altezza Totale Identica**: tutte le card condividono la medesima altezza complessiva.
+- **Accento Cromatico del Corso**: tutte le materie appartenenti allo stesso corso condividono il medesimo colore d'accento (es. `#feb940` per Nuove Tecnologie dell'Arte).
 
-Quando avra' materie, popola l'array `materie` (vedi sezione 4).
-
----
-
-## 4. Come aggiungere una NUOVA MATERIA
-
-### 4.1. Creare il file dati
-
-Crea un file `data/nome-materia-data.js` con questa struttura:
-
-```javascript
-window.NOME_MATERIA_DATA = [
-  {
-    id: "nome-c1",              // ID univoco (usato in localStorage)
-    number: 1,                  // Numero capitolo
-    title: "Titolo Capitolo",   // Titolo del capitolo
-    subtitle: "",               // Sottotitolo opzionale
-    readTime: "10 min",         // Tempo stimato di lettura
-    partNum: null,              // Numero parte (opzionale, per libri divisi)
-    partTitle: null,            // Titolo parte (opzionale)
-    module: "modulo1",          // ID modulo per raggruppamento
-    
-    // Sintesi: MARKDOWN formattato. Deve essere FEDELE al testo originale.
-    summary: "## Sezione\n\nTesto della sintesi...\n\n**Concetto chiave**: ...",
-    
-    // Punti chiave per l'esame
-    keyPoints: [
-      "Punto chiave 1 da sapere all'esame",
-      "Punto chiave 2"
-    ],
-    
-    // Flashcard (5-8 per capitolo)
-    flashcards: [
-      {
-        question: "Domanda precisa sul contenuto del capitolo",
-        answer: "Risposta completa e accurata basata sul testo"
-      }
-    ],
-    
-    // Quiz (5-8 per capitolo)
-    quiz: [
-      {
-        question: "Domanda a scelta multipla",
-        options: [
-          "Opzione A (corretta)",
-          "Opzione B",
-          "Opzione C",
-          "Opzione D"
-        ],
-        correctIndex: 0,
-        explanation: "Spiegazione didattica con riferimento al testo originale"
-      }
-    ],
-    
-    // Quiz extra per il simulatore d'esame (opzionale)
-    examQuiz: []
-  }
-  // ... altri capitoli
-];
-```
-
-### 4.2. Creare il file JS della logica
-
-Copia `js/app-ux.js` come template. Modifica:
-- `getCurrentPdfChapters()` per mappare i moduli della nuova materia
-- `getPdfDisplayName()` per i nomi visualizzati
-- `getExamPool()` per il pool di domande del simulatore
-- `updateProgressIndicators()` per i badge di progresso
-
-### 4.3. Creare la pagina HTML
-
-Copia `pages/ux-webdesign.html` come template. Modifica:
-- Il `<title>` e `<meta description>`
-- Le tab nella `<nav class="pdf-selector">` per i moduli della nuova materia
-- I tag `<script>` in fondo per caricare i file dati corretti e il file JS specifico
-
-### 4.4. Registrare la materia nella home
-
-In `index.html`, aggiungi la materia nell'array `materie` dell'anno corrispondente:
-
-```javascript
-{
-  id: 'nome-materia',
-  name: 'Nome Materia Completo',
-  desc: 'Descrizione breve...',
-  icon: 'code',  // chiave dell'oggetto ICONS
-  stats: { capitoli: 10, quiz: 50, fonti: 2 },
-  page: 'pages/nome-materia.html'
-}
-```
+### 2.8. Protezione Accesso Freemium
+- Il Capitolo 1 di ogni dispensa/modulo e liberamente consultabile per tutti (inclusi i relativi quiz e flashcard).
+- Dal Capitolo 2 in avanti, e per tutte le simulazioni d'esame (`#view-exam`), l'accesso e riservato agli utenti registrati: compare il banner freemium con pulsante che apre la modale di autenticazione Supabase.
+- Al login/logout, la pagina si sblocca/aggiorna in tempo reale via evento custom `auth:change`.
 
 ---
 
-## 5. Come estrarre dati da un PDF
+## 3. PROCEDURA STANDARD: Come Aggiungere una Nuova Materia da PDF
 
-### IMPORTANTE: Questo materiale serve per studiare per gli esami universitari. La qualita' e la fedelta' al testo originale sono CRITICHE.
+Quando l'utente carica dei nuovi PDF e richiede di aggiungere una materia, l'assistente AI deve eseguire i seguenti 5 passaggi senza alterare gli stili globali esistenti:
 
-### Processo step-by-step
+### Passo 1: Estrazione e Creazione del File Dati (`data/{id-materia}-data.js`)
+1. Analizzare il PDF ed estrarre il testo completo dei capitoli/moduli.
+2. Creare il file `data/{id-materia}-data.js` esponendo una variabile globale `window.{NOME_VARIABILE}_DATA`.
+3. Ogni oggetto capitolo deve contenere:
+   - `id`: identificativo univoco (es. `fotografia-c1`, `storia-design-c2`).
+   - `number`: numero progressivo del capitolo (intero).
+   - `title`: titolo del capitolo o argomento (breve e conciso).
+   - `subtitle`: eventuale sottotitolo esplicativo.
+   - `readTime`: tempo stimato (es. `"8 min"`).
+   - `module`: ID stringa del modulo di appartenenza (se il programma ha piu libri/dispense).
+   - `summary`: testo della sintesi in **Markdown pulito** (sezioni con `###`, elenchi puntati, grassetti, tabelle, citazioni). **NESSUNA EMOJI**.
+   - `keyPoints`: array di stringhe con i punti chiave per l'esame.
+   - `flashcards`: array di 3-8 oggetti `{ question: "...", answer: "..." }`.
+   - `quiz`: array di 3-8 quiz a scelta multipla con spiegazione:
+     ```javascript
+     {
+       question: "Domanda concettuale chiara",
+       options: ["Opzione corretta", "Distrattore 1", "Distrattore 2", "Distrattore 3"],
+       correctIndex: 0,
+       explanation: "Spiegazione didattica puntuale dell'argomento."
+     }
+     ```
 
-1. **Estrai il testo raw dal PDF**
-   - Usa un tool come `pdftotext`, `PyPDF2`, o manualmente
-   - Salva in un file `.txt` temporaneo
+### Passo 2: Creazione del File Logica Materia (`js/app-{id-materia}.js`)
+Duplicare la struttura consolidata di `js/app-ux.js` o `js/app-arte.js`:
+1. Definire `getCurrentPdfChapters()` per restituire i capitoli in base al modulo selezionato in `state.activePdf`.
+2. Definire `getPdfDisplayName(key)` con le etichette formattate dei documenti (es. `"1. Dispense"`, `"2. Manuale Tecnico"`).
+3. Definire `getExamPool(scope)` per aggregare i quiz nel simulatore d'esame generale o per modulo.
+4. Definire `updateProgressIndicators()` per aggiornare i badge numerici delle tab.
+5. Inizializzare `StudyCore.init({...})`.
 
-2. **Analizza la struttura del testo**
-   - Identifica capitoli, sezioni, sottosezioni
-   - Nota la gerarchia: libro → parti → capitoli → sezioni
-   - Identifica concetti chiave, definizioni, tabelle, citazioni
+### Passo 3: Creazione della Pagina HTML (`pages/{id-materia}.html`)
+Duplicare `pages/ux-webdesign.html` (che costituisce il template standard perfetto):
+1. Aggiornare `<title>` e `<meta name="description">`.
+2. Nel blocco `.header-brand`, impostare:
+   - `#btn-hub-nav` con link corretto al corso e anno (`index.html?view=materie&course={CODE}&anno={ANNO}`).
+   - `#brand-main-title`: nome ufficiale esatto della materia.
+   - `.brand-docente-badge`: nome del docente ufficiale.
+3. Nella barra `<nav class="pdf-selector">`, configurare i pulsanti `.pdf-tab` per i moduli/libri d'esame.
+4. Mantenere intatta tutta l'infrastruttura standard:
+   - Navbar con pulsanti Twitch (`#btn-sidebar-collapse` e `#btn-sidebar-expand`).
+   - Sezione comandi con `#header-view-pills` (Studio/Test), `#btn-theme-toggle` e container login Supabase.
+   - Barra di sessione `#session-bar`.
+   - Barra audio TTS `#summary-audio-bar`.
+   - Subtabs a 3 colonne con testi compatti.
+   - Drawer e barra inferiore mobile (`.mobile-bottom-nav`).
+   - Modale di autenticazione e script di chiusura.
+5. Nei tag `<script>` in fondo alla pagina, includere:
+   ```html
+   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+   <script src="../js/auth.js"></script>
+   <script src="../data/{id-materia}-data.js"></script>
+   <script src="../js/core.js"></script>
+   <script src="../js/app-{id-materia}.js"></script>
+   ```
 
-3. **Genera il dataset JS**
-   - Per OGNI capitolo, crea un oggetto con lo schema descritto in sezione 4.1
-   - La `summary` deve essere:
-     - **Fedele al testo originale** (non inventare contenuti)
-     - **Completa**: includi TUTTE le informazioni rilevanti
-     - **Formattata in markdown**: usa ##, **, *, \`code\`, tabelle |...|
-     - **Con immagini se disponibili**: `![descrizione](path/to/img.jpg)`
-   - Le `flashcards` devono:
-     - Coprire i concetti principali del capitolo
-     - Avere domande specifiche (non generiche)
-     - Avere risposte complete ma concise
-   - I `quiz` devono:
-     - Avere 4 opzioni di cui 1 sola corretta
-     - Le opzioni errate devono essere plausibili
-     - La `explanation` deve citare il testo originale
-     - `correctIndex` deve essere l'indice (0-based) dell'opzione corretta
+### Passo 4: Registrazione della Materia in `index.html`
+Nell'array del corso corrispondente in `index.html` (es. `ANNI_NTA` o array del nuovo corso):
+1. Inserire l'oggetto della materia:
+   ```javascript
+   { 
+     id: '{id-materia}',
+     name: '{Nome Ufficiale Materia}',
+     code: '{Codice Ministeriale, es. ABPR 19}',
+     credits: '{N} CFA',
+     docente: '{Titolo e Nome Docente}',
+     desc: 'Insegnamento ufficiale {Codice} ({N} CFA). {Descrizione bilanciata su ~140 caratteri con indicazione dei testi e modalita di studio}.',
+     icon: '{chiave_icona_ICONS}',
+     stats: { capitoli: {TOT_CAPITOLI}, quiz: {TOT_QUIZ}, fonti: {TOT_FONTI} },
+     page: 'pages/{id-materia}.html'
+   }
+   ```
+2. Assicurarsi che `desc` abbia lunghezza coerente (~140-150 caratteri) affinche la card risulti perfettamente speculare e allineata con le altre.
 
-4. **Verifica**
-   - Controlla che ogni capitolo abbia: summary, keyPoints, flashcards (5+), quiz (5+)
-   - Testa nel browser che tutto si carichi correttamente
-   - Verifica che il parser markdown renda correttamente tabelle, codice, immagini
-
-### Formato immagini per Arte
-
-Le immagini vanno salvate in `assets/arte/` con naming:
-```
-cognome_opera.jpg
-cognome_p{pagina}_{indice}.jpg
-```
-Esempio: `cattelan_la_nona_ora.jpg`, `eliasson_p1_0.jpg`
-
-Referenziate nel markdown della summary con path relativo:
-```markdown
-![Cattelan - La Nona Ora](assets/arte/cattelan_la_nona_ora.jpg)
-```
-
----
-
-## 6. Convenzioni
-
-### ID capitoli
-- Formato: `{fonte}-c{numero}` o `{fonte}-{modulo}-c{numero}`
-- Esempi: `dispense-c1`, `stull-c14`, `arte-anni80-c3`, `arte-monografie-hirst-c1`
-
-### ID per localStorage
-- Chiave principale: `ux_web_study_state_v1`
-- I progressi sono salvati con `completed[chapId] = true`
-- Le flashcard con `flashcardStatus[cardId] = 'known' | 'cram'`
-- I quiz con `quizAnswers[quizId] = { selectedIndex, isCorrect }`
-
-### Icone
-- **MAI usare emoji**. Usare sempre icone SVG inline
-- Per icone comuni, usare l'oggetto `StudyCore.ICONS` in `js/core.js`
-- Per icone nuove, usare SVG da [Lucide Icons](https://lucide.dev/) con `stroke="currentColor"`
-- Le icone devono essere colorabili via CSS con il colore accento del corso
-
-### Colori accento per corso
-- NTA (DAPL08): `#feb940`
-- Altri corsi: da definire quando vengono creati
-- Il colore accento si applica con la variabile CSS `--course-accent` in cima alla pagina della materia
-
-### Naming ufficiale materie e corsi
-- **Fedeltà al piano di studi ABA Catania**: i nomi delle materie devono corrispondere ESATTAMENTE ai corsi ufficiali dell'Accademia (es. da `https://www.abacatania.it/offerta-formativa/dapl08-nuove-tecnologie-dellarte/`):
-  - `Web Design` (Codice ABPR 19, 8 CFA — NON "UX & Web Design")
-  - `Storia dell'Arte Contemporanea 2` (Codice ABST 47, 6 CFA — NON "Storia dell'Arte")
-- Sia il `<title>` della pagina che l'`<h1>` del brand (`#brand-main-title`) devono riportare il nome ufficiale esatto.
-
-### Brand Header e Pulsante Indietro
-- Il pulsante Indietro (`#btn-hub-nav`) nelle pagine interne usa la classe `.btn-back-nav`.
-- È un pulsante compatto con freccia indietro vettoriale SVG da **18x18px** (`<path d="m12 19-7-7 7-7"/><path d="M19 12H5"/>`), con micro-animazione fluida di traslazione verso sinistra al passaggio del mouse (`transform: translateX(-2px)`).
-- Rimanda alla home (`../index.html`) senza appesantire l'header con loghi o scritte ingombranti.
-
-### Tema Chiaro / Scuro e Sincronizzazione Cross-Page
-- **Tonalità scure**: il tema scuro deve tendere al nero profondo/neutro (`#0d0f12`, `--bg-primary`), **evitando dominanti bluastre**.
-- **Contrasto elevato**: testi secondari e bordi devono sempre essere ben visibili (`--text-secondary: #9aa0a6`).
-- **Invarianza degli accenti**: i colori accento dei corsi (come il giallo NTA `#feb940`) devono rimanere brillanti e leggibili sia in tema chiaro che scuro.
-- **Sincronizzazione globale**: il tema è salvato nella chiave `localStorage('aba_studio_theme')`. In `core.js` un listener sull'evento `'storage'` sincronizza istantaneamente il tema su tutte le finestre/schede aperte del browser.
-
-### Comportamento Navigazione Dispense
-- Quando lo studente passa da una dispensa all'altra nella barra di selezione in alto (`.pdf-selector`):
-  1. La vista attiva viene sempre reimpostata su `summary` (Sintesi e Concetti).
-  2. Viene cercato e attivato automaticamente il **primo capitolo non completato** di quella specifica dispensa (oppure il capitolo 0 se tutti sono completati).
+### Passo 5: Verifica di Conformita
+1. Verificare l'assenza totale di emoji in ogni riga aggiunta.
+2. Aprire la home e verificare che tutte le card siano alte uguali, con titoli su riga singola, badge docenti allineati e statistiche in basso.
+3. Aprire la nuova pagina sia in visualizzazione desktop sia mobile (390px):
+   - Verificare che la testata mobile sia su 3 righe ordinate.
+   - Verificare che il tasto "Ascolta Sintesi" avvii la voce e che la barra rimanga sticky.
+   - Verificare che i test e i capitoli dal 2 in poi mostrino il blocco freemium se non loggati.
 
 ---
 
-## 7. Sistema Lettore Vocale (TTS)
+## 4. Note sulle Tecnologie e Dipendenze
 
-Il sistema di sintesi vocale è implementato nativamente in `js/core.js` (`StudyCore.speech`):
-
-### Voce Esclusiva
-- La voce è configurata tassativamente su **`Google italiano`** tramite `getItalianVoice()`. Non è presente un dropdown di selezione nella UI. Se il browser non ha la voce Google (es. Safari/Firefox), viene effettuato un fallback trasparente alle migliori voci neurali/naturali italiane di sistema.
-
-### Moltiplicatori di Velocità (1x e 1.25x)
-- Nella barra audio (`#summary-audio-bar`) sono presenti bottoni dedicati (`.speed-pill`): **`1x`** (velocità normale) e **`1.25x`** (velocità ottimizzata per l'ascolto comprensibile).
-- I tasti di velocità hanno la **stessa altezza (32px), tipografia (13px, font-weight 600) e presenza visiva del pulsante "Ascolta Sintesi"**, garantendo perfetto allineamento e coerenza estetica.
-- La velocità selezionata viene salvata in `localStorage('aba_tts_speed')`.
-- Cliccando su una velocità durante la riproduzione, la lettura si adatta immediatamente riavviando il chunk corrente alla nuova velocità senza perdere il filo.
-
-### Gestione del Testo e Chunking
-- `stripMarkdownForSpeech(text)`: rimuove sintassi markdown, blocchi di codice e tabelle per ottenere un discorso fluido.
-- `splitIntoSpeechChunks(text)`: suddivide il testo in blocchi leggeri basati sulla punteggiatura. Questo previene i blocchi noti della Web Speech API sui testi lunghi e permette una gestione precisa di pausa/ripresa e indicatore di avanzamento.
-
----
-
-## 8. Note tecniche
-
-### Perché non un framework?
-- Il sito è 100% client-side, zero build step.
-- Si apre direttamente con doppio clic su `index.html` o con un server statico locale.
-- Zero dipendenze npm a runtime = zero problemi di manutenzione nel tempo.
-- Performance e reattività istantanee.
-
-### Persistenza in localStorage
-- Stato di studio: `ux_web_study_state_v1`.
-- Tema preferito: `aba_studio_theme` (`light` | `dark`).
-- Velocità voce: `aba_tts_speed` (`1` | `1.25`).
-- Sistema di backup ed esportazione/importazione JSON integrato.
-
-### Hosting e Deployment
-- Il sito è distribuito online tramite GitHub Pages all'indirizzo:
-  `https://diegomeli6.github.io/StudioAbact/`
-- Tutti i percorsi tra pagine e asset sono rigorosamente relativi (`./` e `../`), per garantire perfetto funzionamento sia in locale (`file:///`) sia su GitHub Pages all'interno di una sottocartella di repository.
-
-### Markdown parser
-- Il parser in `core.js` (`formatMarkdown()`) gestisce:
-  - Heading (##, ###, ####)
-  - Bold, italic, inline code
-  - Code blocks con syntax highlighting per css, html, js
-  - Tabelle markdown complete
-  - Blockquote
-  - Liste puntate
-  - Immagini responsive con figure e caption
-  - Divisori orizzontali (---)
-
+- **Vanilla JavaScript & CSS Moderno**: Nessun framework pesante (React, Vue, Vite, Next.js). Nessun build step a runtime. Il sito e immediatamente eseguibile aprendo i file HTML nel browser o tramite GitHub Pages.
+- **Supabase JS**: Unica libreria esterna, caricata via CDN (`@supabase/supabase-js@2`), impiegata per l'autenticazione cloud degli studenti e il salvataggio remoto dei progressi.
+- **Compatibilita Percorsi Relativi**: Tutti gli asset (`assets/`), fogli di stile (`styles.css`), script (`js/`) e dati (`data/`) utilizzano rigorosamente percorsi relativi (`./` o `../`) per funzionare sia su `file:///` locale sia su hosting remoto con sottocartella GitHub Pages.
