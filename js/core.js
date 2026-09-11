@@ -1112,19 +1112,22 @@ const StudyCore = (function () {
   function getItalianVoice() {
     if (!('speechSynthesis' in window)) return null;
     const voices = window.speechSynthesis.getVoices() || [];
+    if (!voices.length) return null;
     
-    // Esclusivamente Google italiano (voce neurale di alta qualità e intonazione naturale)
+    // 1. Voce Google italiano (Chromium desktop/Android)
     let voice = voices.find(v => v.lang && (v.lang === 'it-IT' || v.lang === 'it_IT') && v.name.toLowerCase().includes('google'));
     
-    // Fallback trasparente per browser non-Chromium (Safari/Firefox)
+    // 2. Voci neurali / naturali / Siri / migliorate
     if (!voice) {
       voice = voices.find(v => v.lang && (v.lang.startsWith('it') || v.lang.includes('IT')) && (v.name.includes('Natural') || v.name.includes('Neural') || v.name.includes('Siri') || v.name.includes('Enhanced') || v.name.includes('Migliorata')));
     }
+    // 3. Voci standard italiane di sistema (iOS Alice/Federica/Luca/Paola e Android)
     if (!voice) {
-      voice = voices.find(v => v.lang && (v.lang === 'it-IT' || v.lang === 'it_IT') && !v.name.includes('Compact'));
+      voice = voices.find(v => v.lang && (v.lang.toLowerCase() === 'it-it' || v.lang.toLowerCase() === 'it_it'));
     }
+    // 4. Qualsiasi voce con prefisso it
     if (!voice) {
-      voice = voices.find(v => v.lang && (v.lang.startsWith('it') || v.lang.includes('IT')));
+      voice = voices.find(v => v.lang && v.lang.toLowerCase().startsWith('it'));
     }
     return voice || null;
   }
@@ -1158,14 +1161,14 @@ const StudyCore = (function () {
       utterance.onend = () => {
         if (!ttsState.isSpeaking || ttsState.isPaused) return;
         ttsState.chunkIndex++;
-        setTimeout(speakNextChunk, 70);
+        speakNextChunk();
       };
 
       utterance.onerror = (e) => {
         console.warn('TTS chunk avanza per errore/skip:', e);
         if (!ttsState.isSpeaking || ttsState.isPaused) return;
         ttsState.chunkIndex++;
-        setTimeout(speakNextChunk, 70);
+        speakNextChunk();
       };
 
       window._activeTtsUtterance = utterance;
@@ -1228,18 +1231,8 @@ const StudyCore = (function () {
     ttsState.chunkIndex = 0;
     ttsState.currentChapter = currentChapter;
 
-    if (window.speechSynthesis.getVoices().length === 0) {
-      window.speechSynthesis.onvoiceschanged = () => {
-        speakNextChunk();
-      };
-      setTimeout(() => {
-        if (ttsState.isSpeaking && !window.speechSynthesis.speaking) {
-          speakNextChunk();
-        }
-      }, 250);
-    } else {
-      speakNextChunk();
-    }
+    // Esegui la chiamata sincrona per non perdere il token di gesture utente nei browser mobile (iOS Safari / Android)
+    speakNextChunk();
   }
 
   // ── Setup base per event listener condivisi ──

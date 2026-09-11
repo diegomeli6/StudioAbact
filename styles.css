@@ -2044,7 +2044,7 @@ body.theme-dark .artwork-card {
 
 .summary-audio-bar.is-sticky {
   position: sticky;
-  top: 86px;
+  top: 12px;
   z-index: 85;
   background: var(--bg-surface);
   backdrop-filter: blur(12px);
@@ -3099,9 +3099,11 @@ body.theme-dark .cram-answer {
 }
 
   .top-header {
-    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px 14px 10px;
     gap: 10px;
-    flex-wrap: wrap;
   }
 
   /* Rimuovi pulsanti desktop su smartphone (navigazione gestita dalla bottom bar) */
@@ -3111,30 +3113,82 @@ body.theme-dark .cram-answer {
     display: none !important;
   }
 
+  /* RIGA 1: Brand / Titolo Materia e Docente a tutta larghezza */
+  .header-brand {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .brand-titles-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
   .brand-title {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
-    max-width: none;
-    white-space: nowrap;
+    max-width: 100%;
+    white-space: normal;
+    word-break: break-word;
     overflow: visible;
+    line-height: 1.25;
+    color: var(--text-main);
   }
 
   .brand-docente-badge {
-    font-size: 11px;
-    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: normal;
+    color: var(--accent-primary);
   }
 
+  /* RIGA 2: Sezione Studio / Test, Tema e Accedi a tutta larghezza */
   .header-actions {
-    margin-left: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 0;
   }
 
-  /* Selettore Dispense orizzontale con indicatore sfumato di scorrimento */
+  .header-actions .view-mode-pills {
+    display: flex;
+    flex: 1;
+    gap: 4px;
+    padding: 3px;
+  }
+
+  .header-actions .view-mode-pills .pill-btn {
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .header-actions .utility-btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+
+  /* RIGA 3: Selettore Dispense / Moduli a tutta larghezza SENZA sfumatura */
   .pdf-selector {
     order: 3;
     width: 100%;
-    padding: 6px 0;
-    mask-image: linear-gradient(to right, black 85%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+    padding: 4px 0 2px;
+    margin: 0;
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   /* Selettore Sintesi, Flashcard, Quiz: 3 colonne a tutta larghezza con testi generosi */
@@ -3230,19 +3284,93 @@ body.theme-dark .cram-answer {
     text-align: center;
   }
 
-  .summary-audio-bar.is-sticky {
-    top: 52px;
+  /* Audio bar dettatura vocale su mobile: compatta, sempre sticky e senza etichette dinamiche */
+  .summary-audio-bar {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 85;
+    width: 100% !important;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  body.theme-dark .summary-audio-bar {
+    background: rgba(28, 28, 30, 0.96);
+    border-color: var(--border-color);
+  }
+
+  .summary-audio-bar.is-playing {
+    border-color: var(--accent-primary);
+  }
+
+  /* Nascondi il testo che dice cosa sta leggendo su smartphone */
+  .audio-status-wrap {
+    display: none !important;
+  }
+
+  .summary-audio-bar .audio-controls-left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    flex-wrap: nowrap;
+  }
+
+  .summary-audio-bar .btn-audio-player {
+    height: 34px;
+    padding: 0 12px;
+    font-size: 13px;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+
+  .summary-audio-bar .btn-audio-stop {
+    height: 34px;
+    padding: 0 10px;
+    font-size: 12px;
+    gap: 4px;
+    flex-shrink: 0;
+  }
+
+  .summary-audio-bar .audio-speed-pills {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+
+  .summary-audio-bar .speed-pill {
+    height: 34px;
+    min-width: 40px;
+    padding: 0 8px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 520px) {
   .top-header {
-    flex-wrap: wrap;
-    padding: 8px 12px;
+    padding: 10px 12px 8px;
+    gap: 8px;
   }
   .brand-title {
-    font-size: 15px;
-    max-width: none;
+    font-size: 17px;
+  }
+  .header-actions .view-mode-pills .pill-btn {
+    padding: 7px 8px;
+    font-size: 12.5px;
   }
 }
 
