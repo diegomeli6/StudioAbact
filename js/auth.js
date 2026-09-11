@@ -238,10 +238,10 @@
   }
 
   function handleUrlRedirectEvents() {
-    // 1. Controllo errori nel link ricevuto via mail (es. link scaduto o gia usato)
+    // 1. Controllo errori nel link ricevuto via mail (es. link scaduto o già usato)
     if (initialHash.includes('error=') || initialSearch.includes('error=')) {
       const fullParams = new URLSearchParams(initialHash.startsWith('#') ? initialHash.slice(1) : initialSearch);
-      const desc = fullParams.get('error_description') || 'Il link email non e valido o e scaduto.';
+      const desc = fullParams.get('error_description') || 'Il link email non è valido o è scaduto.';
       cleanAuthUrl();
       setTimeout(() => {
         showToast(desc.replace(/\+/g, ' '), 'error', 6500);
@@ -252,7 +252,7 @@
     // 2. Controllo conferma iscrizione (type=signup)
     if (initialHash.includes('type=signup') || initialSearch.includes('type=signup') || initialSearch.includes('auth_confirmed=true')) {
       setTimeout(() => {
-        showToast('Email confermata con successo. Il tuo account e attivo.', 'success', 6000);
+        showToast('Email confermata con successo. Il tuo account è attivo.', 'success', 6000);
         cleanAuthUrl();
       }, 600);
       return;
@@ -551,14 +551,14 @@
         const { data, error } = await signUp(email, pass, name);
         if (error) throw error;
         if (data && data.user && data.user.identities && data.user.identities.length === 0) {
-          throw new Error('Questa email risulta gia registrata. Prova ad accedere.');
+          throw new Error('Questa email risulta già registrata. Prova ad accedere.');
         }
         msgBox.className = 'auth-feedback-box success';
-        msgBox.textContent = 'Account creato. Controlla la tua email per confermare la registrazione.';
+        msgBox.innerHTML = '<strong>Account creato con successo.</strong><br>Abbiamo inviato l\'email di conferma: controlla la tua casella di posta e <strong>verifica anche nella cartella SPAM o Posta indesiderata</strong>.';
         msgBox.style.display = 'block';
         setTimeout(() => {
           closeAuthModal();
-        }, 3000);
+        }, 6000);
       } else {
         const { data, error } = await signIn(email, pass);
         if (error) throw error;
@@ -593,7 +593,7 @@
       const { error } = await resetPassword(email);
       if (error) throw error;
       msgBox.className = 'auth-feedback-box success';
-      msgBox.textContent = 'Email inviata. Controlla la tua casella di posta per reimpostare la password.';
+      msgBox.innerHTML = '<strong>Email inviata.</strong><br>Controlla la tua casella di posta e <strong>verifica anche nella cartella SPAM o Posta indesiderata</strong> per reimpostare la password.';
       msgBox.style.display = 'block';
     } catch (err) {
       msgBox.className = 'auth-feedback-box error';
