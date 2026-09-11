@@ -122,20 +122,6 @@
 
   // -- Sincronizzazione Database & Realtime Multi-Device --
 
-  function setSyncIndicatorState(status) {
-    const dots = document.querySelectorAll('.auth-sync-dot');
-    dots.forEach(dot => {
-      dot.className = 'auth-sync-dot ' + status;
-      if (status === 'syncing') {
-        dot.title = 'Sincronizzazione cloud in corso...';
-      } else if (status === 'synced') {
-        dot.title = 'Progressi sincronizzati in tempo reale con il cloud';
-      } else if (status === 'error') {
-        dot.title = 'Errore temporaneo di sincronizzazione cloud';
-      }
-    });
-  }
-
   async function fetchCloudProgress(userId) {
     if (!supabase || !userId) return [];
     try {
@@ -159,7 +145,6 @@
   async function syncCloudProgress(user, silent = false) {
     if (!user || !supabase || isSyncing) return;
     isSyncing = true;
-    setSyncIndicatorState('syncing');
 
     try {
       // 1. Recupera stato locale attuale
@@ -228,11 +213,8 @@
 
       // 9. Attiva canale Realtime per ascoltare modifiche da altri dispositivi
       setupRealtimeSubscription(user.id);
-
-      setSyncIndicatorState('synced');
     } catch (err) {
       console.warn('[Cloud Sync] Errore durante la sincronizzazione:', err);
-      setSyncIndicatorState('error');
     } finally {
       isSyncing = false;
     }
@@ -327,14 +309,11 @@
     }
 
     triggerUIProgressRefresh(merged);
-    setSyncIndicatorState('synced');
   }
 
   // Hook chiamato da core.js quando l'utente modifica lo stato di un capitolo
   function onStateSaved(payload) {
     if (!currentUser || !supabase || isSyncing) return;
-
-    setSyncIndicatorState('syncing');
 
     if (syncDebounceTimer) clearTimeout(syncDebounceTimer);
     syncDebounceTimer = setTimeout(async () => {
@@ -360,10 +339,7 @@
         updated_at: new Date().toISOString()
       }));
 
-      if (rows.length === 0) {
-        setSyncIndicatorState('synced');
-        return;
-      }
+      if (rows.length === 0) return;
 
       try {
         const { error } = await supabase
@@ -372,13 +348,9 @@
 
         if (error) {
           console.warn('[Cloud Sync] Errore salvataggio progresso:', error);
-          setSyncIndicatorState('error');
-        } else {
-          setSyncIndicatorState('synced');
         }
       } catch (e) {
         console.warn('[Cloud Sync] Errore di rete:', e);
-        setSyncIndicatorState('error');
       }
     }, 250);
   }
@@ -861,9 +833,8 @@
         btn.innerHTML = `
           <span class="auth-avatar-circle">${char}</span>
           <span class="auth-btn-label">${shortName}</span>
-          <span class="auth-sync-dot synced" title="Progressi sincronizzati in tempo reale con il cloud"></span>
         `;
-        btn.title = 'Gestisci il tuo account — Sincronizzazione cloud attiva';
+        btn.title = 'Gestisci il tuo account';
       } else {
         btn.classList.remove('logged-in');
         btn.innerHTML = `
