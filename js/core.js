@@ -237,13 +237,13 @@ const StudyCore = (function () {
         listenBtn.title = 'Accesso richiesto per ascoltare la sintesi';
       }
 
-      // Disabilita pulsante completa
-      const completeBtn = document.getElementById('btn-toggle-complete');
-      if (completeBtn) {
-        completeBtn.disabled = true;
-        completeBtn.style.opacity = '0.4';
-        completeBtn.style.cursor = 'not-allowed';
-      }
+      // Disabilita pulsanti completa (sia sopra che sotto)
+      const completeBtns = document.querySelectorAll('#btn-toggle-complete, .btn-toggle-complete');
+      completeBtns.forEach(btn => {
+        btn.disabled = true;
+        btn.style.opacity = '0.4';
+        btn.style.cursor = 'not-allowed';
+      });
 
       if (!overlay) {
         overlay = document.createElement('div');
@@ -282,12 +282,12 @@ const StudyCore = (function () {
         listenBtn.title = 'Ascolta sintesi vocale';
       }
 
-      const completeBtn = document.getElementById('btn-toggle-complete');
-      if (completeBtn) {
-        completeBtn.disabled = false;
-        completeBtn.style.opacity = '1';
-        completeBtn.style.cursor = 'pointer';
-      }
+      const completeBtns = document.querySelectorAll('#btn-toggle-complete, .btn-toggle-complete');
+      completeBtns.forEach(btn => {
+        btn.disabled = false;
+        btn.style.opacity = '1';
+        btn.style.cursor = 'pointer';
+      });
     }
   }
 
@@ -427,20 +427,22 @@ const StudyCore = (function () {
     const isDone = !!state.completed[chap.id];
     updateCompleteButtonState(isDone);
 
-    const prevBtn = document.getElementById('btn-prev-chap');
-    const nextBtn = document.getElementById('btn-next-chap');
-    if (prevBtn) {
-      const isFirst = state.activeChapIndex === 0;
-      prevBtn.disabled = isFirst;
-      prevBtn.style.opacity = isFirst ? '0.45' : '1';
-      prevBtn.style.cursor = isFirst ? 'not-allowed' : 'pointer';
-    }
-    if (nextBtn) {
-      const isLast = state.activeChapIndex >= chapters.length - 1;
-      nextBtn.disabled = isLast;
-      nextBtn.style.opacity = isLast ? '0.45' : '1';
-      nextBtn.style.cursor = isLast ? 'not-allowed' : 'pointer';
-    }
+    const prevBtns = document.querySelectorAll('#btn-prev-chap, .btn-prev-chap');
+    const nextBtns = document.querySelectorAll('#btn-next-chap, .btn-next-chap');
+    const isFirst = state.activeChapIndex === 0;
+    const isLast = state.activeChapIndex >= chapters.length - 1;
+
+    prevBtns.forEach(btn => {
+      btn.disabled = isFirst;
+      btn.style.opacity = isFirst ? '0.45' : '1';
+      btn.style.cursor = isFirst ? 'not-allowed' : 'pointer';
+    });
+
+    nextBtns.forEach(btn => {
+      btn.disabled = isLast;
+      btn.style.opacity = isLast ? '0.45' : '1';
+      btn.style.cursor = isLast ? 'not-allowed' : 'pointer';
+    });
 
     const pdfNameEl = document.getElementById('active-pdf-name');
     if (pdfNameEl) pdfNameEl.textContent = getPdfDisplayName(state.activePdf);
@@ -630,20 +632,21 @@ const StudyCore = (function () {
   // ── Completamento ──
 
   function updateCompleteButtonState(isCompleted) {
-    const btn = document.getElementById('btn-toggle-complete');
-    const icon = document.getElementById('complete-icon');
-    const text = document.getElementById('complete-text');
-    if (!btn) return;
+    const btns = document.querySelectorAll('#btn-toggle-complete, .btn-toggle-complete');
+    btns.forEach(btn => {
+      const icon = btn.querySelector('.complete-icon') || btn.querySelector('#complete-icon') || document.getElementById('complete-icon');
+      const text = btn.querySelector('.complete-text') || btn.querySelector('#complete-text') || document.getElementById('complete-text');
 
-    if (isCompleted) {
-      btn.classList.add('is-completed');
-      if (icon) icon.innerHTML = ICONS.checkCircle;
-      if (text) text.textContent = 'Capitolo Completato';
-    } else {
-      btn.classList.remove('is-completed');
-      if (icon) icon.innerHTML = ICONS.circle;
-      if (text) text.textContent = 'Segna come completato';
-    }
+      if (isCompleted) {
+        btn.classList.add('is-completed');
+        if (icon) icon.innerHTML = ICONS.checkCircle;
+        if (text) text.textContent = 'Capitolo Completato';
+      } else {
+        btn.classList.remove('is-completed');
+        if (icon) icon.innerHTML = ICONS.circle;
+        if (text) text.textContent = 'Segna come completato';
+      }
+    });
   }
 
   // ── Simulatore esame ──
@@ -1482,19 +1485,15 @@ const StudyCore = (function () {
       });
     });
 
-    // Chapter navigation
-    const prevBtn = document.getElementById('btn-prev-chap');
-    const nextBtn = document.getElementById('btn-next-chap');
-    const completeBtn = document.getElementById('btn-toggle-complete');
-
-    if (prevBtn) {
-      prevBtn.addEventListener('click', () => {
+    // Chapter navigation (collega sia i tasti superiori che inferiori)
+    document.querySelectorAll('#btn-prev-chap, .btn-prev-chap').forEach(btn => {
+      btn.addEventListener('click', () => {
         if (state.activeChapIndex > 0) navigateFn(state.activeChapIndex - 1);
       });
-    }
+    });
 
-    if (nextBtn) {
-      nextBtn.addEventListener('click', () => {
+    document.querySelectorAll('#btn-next-chap, .btn-next-chap').forEach(btn => {
+      btn.addEventListener('click', () => {
         const chaps = getCurrentPdfChapters();
         const currentChap = chaps[state.activeChapIndex];
         if (currentChap) {
@@ -1508,10 +1507,10 @@ const StudyCore = (function () {
           renderSidebarFn();
         }
       });
-    }
+    });
 
-    if (completeBtn) {
-      completeBtn.addEventListener('click', () => {
+    document.querySelectorAll('#btn-toggle-complete, .btn-toggle-complete').forEach(btn => {
+      btn.addEventListener('click', () => {
         const chaps = getCurrentPdfChapters();
         const currentChap = chaps[state.activeChapIndex];
         if (currentChap) {
@@ -1522,7 +1521,7 @@ const StudyCore = (function () {
           renderSidebarFn();
         }
       });
-    }
+    });
 
     // Pulsante Indietro (Torna alla selezione materie)
     const homeBtn = document.getElementById('btn-hub-nav');
