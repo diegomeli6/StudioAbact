@@ -206,7 +206,7 @@
         <span class="auth-btn-label">Accedi</span>
       `;
       authBtn.addEventListener('click', openAuthModal);
-      container.insertBefore(authBtn, container.firstChild);
+      container.appendChild(authBtn);
     });
 
     // Creazione modale di autenticazione
@@ -485,6 +485,7 @@
         currentUser = session.user;
         updateAuthUI();
         await syncOnLogin(currentUser);
+        window.dispatchEvent(new CustomEvent('auth:change', { detail: { user: currentUser } }));
       } else if (event === 'SIGNED_OUT') {
         currentUser = null;
         try {
@@ -504,6 +505,7 @@
         if (typeof window.doRenderChapter === 'function') {
           window.doRenderChapter();
         }
+        window.dispatchEvent(new CustomEvent('auth:change', { detail: { user: null } }));
       }
     });
   }
@@ -517,6 +519,7 @@
     onStateSaved,
     getUser: () => currentUser,
     openModal: openAuthModal,
+    openAuthModal,
     closeModal: closeAuthModal
   };
 

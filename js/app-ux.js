@@ -42,7 +42,10 @@
       });
     };
 
-    if (scope === 'current') {
+    if (scope === 'cards') {
+      const codingChaps = (window.DISPENSE_DATA || []).filter(c => c.number >= 11 && c.number <= 14);
+      getQuizzesFromChapters(codingChaps, 'Codice Progetto Esame (HTML & CSS)');
+    } else if (scope === 'current') {
       getQuizzesFromChapters(getCurrentPdfChapters(), getPdfDisplayName(state.activePdf));
     } else {
       getQuizzesFromChapters(window.DISPENSE_DATA || [], 'Dispense Professore');

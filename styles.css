@@ -96,6 +96,15 @@ body {
   min-height: 100vh;
 }
 
+/* WRAPPER STICKY HEADER PER TESTATA + SESSION BAR */
+.study-sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: var(--bg-surface);
+}
+
 /* HEADER SUPERIORE */
 .top-header {
   background-color: var(--bg-surface);
@@ -105,9 +114,8 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  position: relative;
+  z-index: 2;
 }
 
 .header-brand {
@@ -259,7 +267,8 @@ body {
 
 .utility-btns {
   display: flex;
-  gap: 4px;
+  align-items: center;
+  gap: 14px;
 }
 
 .icon-btn {
@@ -290,9 +299,8 @@ body {
   align-items: center;
   font-size: 12px;
   color: var(--text-muted);
-  position: sticky;
-  top: 51px;
-  z-index: 95;
+  position: relative;
+  z-index: 1;
 }
 
 .session-info {
@@ -350,6 +358,18 @@ body {
   align-items: center;
 }
 
+.sidebar-header-left {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.sidebar-header-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .sidebar-title {
   font-size: 13px;
   font-weight: 700;
@@ -362,6 +382,61 @@ body {
   font-size: 12px;
   font-weight: 600;
   color: var(--text-muted);
+}
+
+/* Pulsante Twitch Collasso Sidebar (Desktop/Tablet) */
+.sidebar-toggle-twitch {
+  background: transparent;
+  border: 1px solid transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-md, 8px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.sidebar-toggle-twitch:hover {
+  background: var(--bg-hover);
+  color: var(--text-main);
+  border-color: var(--border-color);
+}
+
+/* Pulsante Twitch Espansione Sidebar (quando compressa) */
+.sidebar-expand-twitch {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 96px;
+  z-index: 35;
+  width: 32px;
+  height: 38px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-left: none;
+  border-radius: 0 var(--radius-md, 8px) var(--radius-md, 8px) 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 0;
+}
+
+.sidebar-expand-twitch:hover {
+  background: var(--bg-hover);
+  color: var(--accent-primary);
+  width: 38px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+}
+
+.sidebar.collapsed ~ .sidebar-expand-twitch {
+  display: flex;
 }
 
 .progress-track {
@@ -427,6 +502,23 @@ body {
   font-size: 13px;
   line-height: 1.4;
   flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.chapter-nav-status .nav-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+}
+
+.chapter-nav-status .nav-icon.active-dot {
+  color: var(--card-accent, var(--accent-primary, #feb940)) !important;
+}
+
+.chapter-nav-status .nav-icon.done {
+  color: var(--accent-success, #10b981) !important;
 }
 
 .chapter-nav-info {
@@ -557,6 +649,10 @@ body {
   color: var(--accent-primary);
   border-bottom-color: var(--accent-primary);
   background: transparent;
+}
+
+.subtab-label-short {
+  display: none;
 }
 
 .subtab-panel {
@@ -911,8 +1007,9 @@ blockquote.summary-quote {
 
 /* FOOTER NAVIGAZIONE CAPITOLO */
 .chapter-footer {
-  margin-top: 36px;
-  padding-top: 16px;
+  margin-top: 48px;
+  margin-bottom: 64px;
+  padding-top: 24px;
   border-top: 1px solid var(--border-color);
   display: flex;
   justify-content: space-between;
@@ -2141,7 +2238,7 @@ body.theme-dark .speed-pill.active {
 
 body.theme-dark .btn-auth-user:not(.logged-in) {
   background: var(--accent-primary, #feb940);
-  color: #0f172a;
+  color: #ffffff !important;
 }
 
 .btn-auth-user.logged-in {
@@ -2799,7 +2896,7 @@ body.theme-dark .brand-docente-badge {
    FOOTER DI STUDIO (STICKY IN FONDO ALLA PAGINA)
    ========================================================================== */
 .study-site-footer {
-  margin-top: auto;
+  margin-top: 64px;
   padding: 36px 20px 28px;
   border-top: 1px solid var(--border-color);
   background: var(--bg-surface);
@@ -2936,6 +3033,7 @@ body.theme-dark .study-site-footer {
   }
 
   .study-site-footer {
+    margin-top: 48px;
     padding-bottom: 24px;
   }
 
@@ -2973,45 +3071,113 @@ body.theme-dark .study-site-footer {
     margin-left: 0 !important;
   }
 
+/* REVISIONE SIMULAZIONE ESAME (RISULTATI TEST) */
+.cram-item-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--accent-primary);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+  margin-top: 14px;
+}
+
+.cram-answer {
+  background: var(--bg-canvas, #f8fafc);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-top: 8px;
+}
+
+body.theme-dark .cram-answer {
+  background: rgba(255, 255, 255, 0.04);
+}
+
   .top-header {
-    padding: 8px 12px;
-    gap: 8px;
+    padding: 10px 14px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  /* Rimuovi pulsanti desktop su smartphone (navigazione gestita dalla bottom bar) */
+  #btn-hub-nav,
+  .sidebar-toggle-twitch,
+  .sidebar-expand-twitch {
+    display: none !important;
   }
 
   .brand-title {
-    font-size: 14px;
-    max-width: 170px;
+    font-size: 16px;
+    font-weight: 700;
+    max-width: none;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    overflow: visible;
   }
 
   .brand-docente-badge {
-    font-size: 10px;
+    font-size: 11px;
+    white-space: nowrap;
   }
 
+  .header-actions {
+    margin-left: auto;
+  }
+
+  /* Selettore Dispense orizzontale con indicatore sfumato di scorrimento */
   .pdf-selector {
     order: 3;
     width: 100%;
-    padding: 4px 0;
+    padding: 6px 0;
+    mask-image: linear-gradient(to right, black 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
   }
 
-  /* Subtabs su mobile scorrono orizzontalmente in modo fluido */
+  /* Selettore Sintesi, Flashcard, Quiz: 3 colonne a tutta larghezza con testi generosi */
   .chapter-subtabs {
-    overflow-x: auto;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
-    flex-wrap: nowrap;
-    gap: 4px;
-    margin-bottom: 18px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 6px;
+    padding: 4px;
+    background: var(--bg-sidebar);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg, 12px);
+    margin-bottom: 24px;
+    overflow: visible;
   }
+
   .chapter-subtabs::-webkit-scrollbar {
     display: none;
   }
+
   .subtab-btn {
-    padding: 8px 12px;
-    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 4px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: var(--radius-md, 8px);
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
     flex-shrink: 0;
+  }
+
+  .subtab-btn svg {
+    display: none; /* Rimuovi icone per massimizzare la leggibilità del testo su smartphone */
+  }
+
+  .subtab-label-full {
+    display: none;
+  }
+  .subtab-label-short {
+    display: inline;
   }
 
   /* Chapter footer navigazione su mobile */
@@ -3039,7 +3205,7 @@ body.theme-dark .study-site-footer {
 
   /* Session bar elegante su mobile */
   .session-bar {
-    padding: 6px 12px;
+    padding: 6px 14px;
     font-size: 12px;
   }
   .session-info {
@@ -3072,9 +3238,27 @@ body.theme-dark .study-site-footer {
 @media (max-width: 520px) {
   .top-header {
     flex-wrap: wrap;
+    padding: 8px 12px;
   }
   .brand-title {
-    max-width: 140px;
+    font-size: 15px;
+    max-width: none;
+  }
+}
+
+/* RESPONSIVE PER SCHERMI GRANDI (TABLET, DESKTOP, ULTRA-WIDE) */
+@media (min-width: 861px) and (max-width: 1100px) {
+  .sidebar {
+    width: 270px;
+  }
+  .content-area {
+    padding: 24px 32px 80px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .content-area {
+    max-width: 1040px;
   }
 }
 

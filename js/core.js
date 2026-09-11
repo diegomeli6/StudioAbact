@@ -169,6 +169,10 @@ const StudyCore = (function () {
       if (viewPills) viewPills.style.opacity = '1';
       if (contentArea) contentArea.style.maxWidth = '940px';
     }
+
+    if (viewName === 'exam') {
+      updateExamFreemiumState();
+    }
   }
 
   function switchSubtab(subtabName) {
@@ -678,13 +682,60 @@ const StudyCore = (function () {
       retryBtn.addEventListener('click', () => {
         document.getElementById('exam-result-box').style.display = 'none';
         document.getElementById('exam-setup-box').style.display = 'flex';
+        updateExamFreemiumState();
       });
+    }
+
+    updateExamFreemiumState();
+  }
+
+  function updateExamFreemiumState() {
+    const isAuth = isUserAuthenticated();
+    const examView = document.getElementById('view-exam');
+    const setupBox = document.getElementById('exam-setup-box');
+    const startBtn = document.getElementById('btn-start-exam');
+    if (!examView || !setupBox) return;
+
+    let banner = document.getElementById('exam-freemium-lock-banner');
+    if (!isAuth) {
+      if (!banner) {
+        banner = document.createElement('div');
+        banner.id = 'exam-freemium-lock-banner';
+        banner.className = 'freemium-lock-banner';
+        banner.style.marginBottom = '20px';
+        banner.innerHTML = `
+          <div class="freemium-lock-icon">${ICONS.lock}</div>
+          <div class="freemium-lock-info">
+            <h4>Simulatore d'esame riservato</h4>
+            <p>Accedi o registrati per sbloccare le simulazioni d'esame complete a domande casuali e verificare la tua preparazione.</p>
+          </div>
+          <button class="btn-primary-action btn-freemium-auth" type="button">Accedi o Registrati</button>
+        `;
+        banner.querySelector('.btn-freemium-auth').addEventListener('click', () => {
+          if (window.AppAuth && typeof window.AppAuth.openAuthModal === 'function') {
+            window.AppAuth.openAuthModal('register');
+          } else if (window.AppAuth && typeof window.AppAuth.openModal === 'function') {
+            window.AppAuth.openModal();
+          }
+        });
+        setupBox.parentElement.insertBefore(banner, setupBox);
+      }
+      if (startBtn) {
+        startBtn.textContent = 'Accedi per avviare il Test';
+      }
+    } else {
+      if (banner) banner.remove();
+      if (startBtn) {
+        startBtn.textContent = 'Inizia il Test d\'Esame';
+      }
     }
   }
 
   function startExamSession(scope, count, getCurrentPdfChapters, getPdfDisplayName, getExamPool) {
     if (!isUserAuthenticated()) {
-      if (window.AppAuth && typeof window.AppAuth.openModal === 'function') {
+      if (window.AppAuth && typeof window.AppAuth.openAuthModal === 'function') {
+        window.AppAuth.openAuthModal('register');
+      } else if (window.AppAuth && typeof window.AppAuth.openModal === 'function') {
         window.AppAuth.openModal();
       }
       return;
@@ -692,7 +743,7 @@ const StudyCore = (function () {
 
     let pool = getExamPool(scope, getCurrentPdfChapters, getPdfDisplayName);
 
-    if (pool.length === 0) {
+    if (!pool || pool.length === 0) {
       alert("Nessun quiz disponibile per questo ambito.");
       return;
     }
@@ -1309,6 +1360,21 @@ const StudyCore = (function () {
       });
     }
 
+    const sidebarCollapseBtn = document.getElementById('btn-sidebar-collapse');
+    const sidebarExpandBtn = document.getElementById('btn-sidebar-expand');
+
+    if (sidebarCollapseBtn && sidebar) {
+      sidebarCollapseBtn.addEventListener('click', () => {
+        sidebar.classList.add('collapsed');
+      });
+    }
+
+    if (sidebarExpandBtn && sidebar) {
+      sidebarExpandBtn.addEventListener('click', () => {
+        sidebar.classList.remove('collapsed');
+      });
+    }
+
     if (sidebarToggleBtn && sidebar) {
       sidebarToggleBtn.addEventListener('click', () => {
         if (window.innerWidth <= 860) {
@@ -1465,13 +1531,18 @@ const StudyCore = (function () {
       });
     }
 
-    // Home button
+    // Pulsante Indietro (Torna alla selezione materie)
     const homeBtn = document.getElementById('btn-hub-nav');
     if (homeBtn) {
       homeBtn.addEventListener('click', () => {
         window.location.href = homeBtn.dataset.href || '../index.html?view=materie&course=DAPL08&anno=2';
       });
     }
+
+    // Re-check exam freemium lock state on auth change
+    window.addEventListener('auth:change', () => {
+      updateExamFreemiumState();
+    });
 
     // Lightbox modal per le opere d'arte
     document.addEventListener('click', (e) => {

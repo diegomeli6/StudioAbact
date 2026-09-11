@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Storia dell'Arte Contemporanea 2 — Studio ABA Catania</title>
   <meta name="description" content="Studio approfondito di Storia dell'Arte Contemporanea 2 (Accademia di Belle Arti di Catania): Anni '80, '90, Duemila, Monografie. Quiz, flashcard e sintesi per ogni capitolo.">
-  <link rel="icon" type="image/svg+xml" href="../assets/logo-white.svg">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css?v=2">
   <style>
@@ -37,80 +37,79 @@
 <body class="theme-light">
   <div id="app" class="app-container">
     
-    <!-- HEADER -->
-    <header class="top-header">
-      <div class="header-brand">
-        <button id="btn-hub-nav" class="btn-back-nav" title="Torna alle materie" aria-label="Torna alle materie" data-href="../index.html?view=materie&course=DAPL08&anno=2">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="19" y1="12" x2="5" y2="12"/>
-            <polyline points="12 19 5 12 12 5"/>
-          </svg>
-        </button>
-        <div class="brand-titles-group">
-          <h1 class="brand-title" id="brand-main-title">Storia dell'Arte Contemporanea 2</h1>
-          <span class="brand-docente-badge">Docente: Prof.ssa Ambra Stazzone</span>
+    <!-- STICKY HEADER UNIFICATO -->
+    <div class="study-sticky-header">
+      <!-- HEADER -->
+      <header class="top-header">
+        <div class="header-brand">
+          <button id="btn-hub-nav" class="btn-back-nav" title="Torna alle materie" aria-label="Torna alle materie" data-href="../index.html?view=materie&course=DAPL08&anno=2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"/>
+              <polyline points="12 19 5 12 12 5"/>
+            </svg>
+          </button>
+          <div class="brand-titles-group">
+            <h1 class="brand-title" id="brand-main-title">Storia dell'Arte Contemporanea 2</h1>
+            <span class="brand-docente-badge">Docente: Prof.ssa Ambra Stazzone</span>
+          </div>
         </div>
-      </div>
 
-      <!-- SELETTORE MODULI -->
-      <nav class="pdf-selector" id="pdf-selector-nav" aria-label="Selezione modulo di studio">
-        <div class="subject-tabs-group" id="tabs-group-arte">
-          <button class="pdf-tab active" data-pdf="arte-anni80" id="tab-arte-anni80">
-            <span class="tab-indicator"></span>
-            <span class="tab-title">1. Anni '80</span>
-            <span class="tab-progress-mini" id="prog-mini-arte-anni80">0/0</span>
-          </button>
-          <button class="pdf-tab" data-pdf="arte-anni90" id="tab-arte-anni90">
-            <span class="tab-indicator"></span>
-            <span class="tab-title">2. Anni '90</span>
-            <span class="tab-progress-mini" id="prog-mini-arte-anni90">0/0</span>
-          </button>
-          <button class="pdf-tab" data-pdf="arte-duemila" id="tab-arte-duemila">
-            <span class="tab-indicator"></span>
-            <span class="tab-title">3. Duemila</span>
-            <span class="tab-progress-mini" id="prog-mini-arte-duemila">0/0</span>
-          </button>
-          <button class="pdf-tab" data-pdf="arte-monografie" id="tab-arte-monografie">
-            <span class="tab-indicator"></span>
-            <span class="tab-title">4. Monografie</span>
-            <span class="tab-progress-mini" id="prog-mini-arte-monografie">0/0</span>
-          </button>
+        <!-- SELETTORE MODULI -->
+        <nav class="pdf-selector" id="pdf-selector-nav" aria-label="Selezione modulo di studio">
+          <div class="subject-tabs-group" id="tabs-group-arte">
+            <button class="pdf-tab active" data-pdf="arte-anni80" id="tab-arte-anni80">
+              <span class="tab-indicator"></span>
+              <span class="tab-title">1. Anni '80</span>
+              <span class="tab-progress-mini" id="prog-mini-arte-anni80">0/0</span>
+            </button>
+            <button class="pdf-tab" data-pdf="arte-anni90" id="tab-arte-anni90">
+              <span class="tab-indicator"></span>
+              <span class="tab-title">2. Anni '90</span>
+              <span class="tab-progress-mini" id="prog-mini-arte-anni90">0/0</span>
+            </button>
+            <button class="pdf-tab" data-pdf="arte-duemila" id="tab-arte-duemila">
+              <span class="tab-indicator"></span>
+              <span class="tab-title">3. Duemila</span>
+              <span class="tab-progress-mini" id="prog-mini-arte-duemila">0/0</span>
+            </button>
+            <button class="pdf-tab" data-pdf="arte-monografie" id="tab-arte-monografie">
+              <span class="tab-indicator"></span>
+              <span class="tab-title">4. Monografie</span>
+              <span class="tab-progress-mini" id="prog-mini-arte-monografie">0/0</span>
+            </button>
+          </div>
+        </nav>
+
+        <!-- COMANDI -->
+        <div class="header-actions">
+          <div class="view-mode-pills" id="header-view-pills" role="tablist">
+            <button class="pill-btn active" data-view="study" id="pill-study" title="Studio guidato">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              Studio
+            </button>
+            <button class="pill-btn" data-view="exam" id="pill-exam" title="Simulatore quiz d'esame">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+              Test
+            </button>
+          </div>
+          <div class="utility-btns">
+            <button id="btn-theme-toggle" class="icon-btn" title="Cambia tema chiaro/scuro" aria-label="Cambia tema">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            </button>
+          </div>
         </div>
-      </nav>
+      </header>
 
-      <!-- COMANDI -->
-      <div class="header-actions">
-        <div class="view-mode-pills" id="header-view-pills" role="tablist">
-          <button class="pill-btn active" data-view="study" id="pill-study" title="Studio guidato">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-            Studio
-          </button>
-          <button class="pill-btn" data-view="exam" id="pill-exam" title="Simulatore quiz d'esame">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-            Test
-          </button>
+      <!-- STATUS BAR -->
+      <div class="session-bar" id="session-bar">
+        <div class="session-info">
+          <span class="session-dot"></span>
+          <span id="active-pdf-name">Arte Contemporanea Anni '80</span>
+          <span class="divider">/</span>
+          <span class="session-docente">Docente: Prof.ssa Ambra Stazzone</span>
+          <span class="divider">/</span>
+          <span id="active-pdf-progress-text">Progresso: 0%</span>
         </div>
-        <div class="utility-btns">
-          <button id="btn-theme-toggle" class="icon-btn" title="Cambia tema chiaro/scuro" aria-label="Cambia tema">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
-          </button>
-
-          <button id="btn-sidebar-toggle" class="icon-btn" title="Mostra/nascondi indice" aria-label="Indice">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <!-- STATUS BAR -->
-    <div class="session-bar" id="session-bar">
-      <div class="session-info">
-        <span class="session-dot"></span>
-        <span id="active-pdf-name">Arte Contemporanea Anni '80</span>
-        <span class="divider">/</span>
-        <span class="session-docente">Docente: Prof.ssa Ambra Stazzone</span>
-        <span class="divider">/</span>
-        <span id="active-pdf-progress-text">Progresso: 0%</span>
       </div>
     </div>
 
@@ -119,9 +118,18 @@
       
       <aside class="sidebar" id="sidebar">
         <div class="sidebar-header">
-          <h2 class="sidebar-title">Indice dei Capitoli</h2>
-          <div class="sidebar-header-right">
+          <div class="sidebar-header-left">
+            <h2 class="sidebar-title">Indice dei Capitoli</h2>
             <span class="sidebar-stats" id="sidebar-stats-count">0/0</span>
+          </div>
+          <div class="sidebar-header-right">
+            <button class="sidebar-toggle-twitch" id="btn-sidebar-collapse" type="button" title="Comprimi barra laterale" aria-label="Comprimi barra laterale">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="5" x2="19" y2="19" />
+                <polyline points="9 7 4 12 9 17" />
+                <line x1="4" y1="12" x2="19" y2="12" />
+              </svg>
+            </button>
             <button class="sidebar-mobile-close" id="btn-sidebar-close" type="button" aria-label="Chiudi indice">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
             </button>
@@ -132,6 +140,15 @@
         </div>
         <div class="chapter-list-container" id="chapter-list"></div>
       </aside>
+
+      <!-- TASTO TWITCH EXPAND SIDEBAR -->
+      <button class="sidebar-expand-twitch" id="btn-sidebar-expand" type="button" title="Espandi barra laterale" aria-label="Espandi barra laterale">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="5" x2="5" y2="19" />
+          <polyline points="15 7 20 12 15 17" />
+          <line x1="5" y1="12" x2="20" y2="12" />
+        </svg>
+      </button>
 
       <main class="content-area" id="content-area">
         
@@ -150,7 +167,8 @@
           <div class="chapter-subtabs">
             <button class="subtab-btn active" data-subtab="summary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-              Sintesi & Concetti
+              <span class="subtab-label-full">Sintesi &amp; Concetti</span>
+              <span class="subtab-label-short">Sintesi</span>
             </button>
             <button class="subtab-btn" data-subtab="flashcards">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M12 4v16"/></svg>
@@ -158,7 +176,8 @@
             </button>
             <button class="subtab-btn" data-subtab="quiz">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-              Quiz con Spiegazione
+              <span class="subtab-label-full">Quiz con Spiegazione</span>
+              <span class="subtab-label-short">Quiz</span>
             </button>
           </div>
 
@@ -301,6 +320,8 @@
             </div>
             <div class="result-review-list" id="exam-review-list"></div>
           </div>
+        </section>
+
         <!-- FOOTER DIDATTICO DI STUDIO -->
         <footer class="study-site-footer">
           <div class="study-site-footer-inner">
