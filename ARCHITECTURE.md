@@ -191,6 +191,11 @@ Nell'array del corso corrispondente in `index.html` (es. `ANNI_NTA` o array del 
    }
    ```
 2. Assicurarsi che `desc` abbia lunghezza coerente (~140-150 caratteri) affinche la card risulti perfettamente speculare e allineata con le altre.
+3. Per materie laboratoriali/progettuali che non prevedono dispense orali (es. *Estetica delle Interfacce*, *Tecnologie e applicazioni digitali — arte generativa*):
+   - Impostare `isClickable: false` e `hasContent: false`.
+   - Dicitura esplicita in `desc`: `<span class="materia-notice-highlight">Questa materia non prevede lo studio di dispense orali.</span> ...`
+   - Non definire `accent` personalizzato (ereditera automaticamente il colore giallo uniforme `#feb940` del corso NTA).
+   - In `index.html`, la card verra renderizzata come elemento `div` non cliccabile (`cursor: default`) con footer coordinato.
 
 ### Passo 5: Verifica di Conformita
 1. Verificare l'assenza totale di emoji in ogni riga aggiunta.

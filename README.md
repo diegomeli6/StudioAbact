@@ -35,6 +35,10 @@ Il sito **non va scaricato**, è accessibile e utilizzabile direttamente online 
   - Arte contemporanea degli anni '90
   - Arte contemporanea degli anni Duemila
   - Monografie e schede approfondite degli artisti con immagini delle opere
+- **Estetica delle Interfacce** (*Codice ABTEC 42* — Docente: Prof. Pierluca Libra):
+  - Materia laboratoriale/progettuale (non prevede dispense orali).
+- **Tecnologie e applicazioni digitali — arte generativa** (*Codice ABTEC 38* — Docente: Prof. Lorenzo Di Silvestro):
+  - Materia laboratoriale/progettuale (non prevede dispense orali).
 - *Altri corsi e materie in continuo inserimento nel catalogo accademico.*
 
 ### Le Funzionalità per lo Studio

@@ -2456,6 +2456,11 @@ body.theme-dark .auth-user-avatar {
   border: 1px solid #334155;
 }
 
+.cloud-toast-notification.error {
+  background: #7f1d1d;
+  border: 1px solid #ef4444;
+}
+
 /* Blocco e sfocatura capitoli per utenti non autenticati */
 #view-study.chapter-locked-view {
   position: relative;

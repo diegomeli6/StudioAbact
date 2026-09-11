@@ -36,6 +36,12 @@
       box-sizing: border-box;
     }
 
+    .materia-card-prof span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
     body.theme-dark .materia-card-prof {
       color: var(--card-accent, #feb940);
       background: color-mix(in srgb, var(--card-accent, #feb940) 15%, transparent);
@@ -65,10 +71,11 @@
       padding: 20px 32px;
       border-bottom: 1px solid var(--border-color);
       background: var(--bg-secondary);
-      backdrop-filter: blur(12px);
       position: sticky;
       top: 0;
       z-index: 100;
+      transform: translateZ(0);
+      will-change: transform;
     }
 
     .home-brand {
@@ -170,7 +177,7 @@
       font-weight: 800;
       letter-spacing: -0.8px;
       margin: 0 0 12px;
-      background: linear-gradient(135deg, var(--accent-primary) 0%, var(--text-primary) 80%);
+      background: linear-gradient(135deg, var(--hero-accent, var(--accent-primary)) 0%, var(--text-primary) 80%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -221,12 +228,13 @@
       border-radius: 14px;
       padding: 22px;
       cursor: pointer;
-      transition: all 0.25s ease;
+      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease, box-shadow 0.2s ease;
       position: relative;
       overflow: hidden;
       text-decoration: none;
       color: inherit;
       display: block;
+      contain: content;
     }
 
     .course-card::before {
@@ -237,17 +245,18 @@
       right: 0;
       height: 3px;
       background: var(--card-accent, var(--accent-primary));
-      opacity: 0;
-      transition: opacity 0.25s;
+      opacity: 0.9;
+      transition: height 0.2s ease;
     }
 
     .course-card:hover {
       border-color: var(--card-accent, var(--accent-primary));
       transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      box-shadow: 0 8px 24px color-mix(in srgb, var(--card-accent, var(--accent-primary)) 18%, transparent);
     }
 
     .course-card:hover::before {
+      height: 5px;
       opacity: 1;
     }
 
@@ -257,12 +266,16 @@
 
     .course-card.has-content::before {
       opacity: 1;
-      background: #feb940;
+      background: var(--card-accent, #feb940);
     }
 
     .course-card.has-content .course-card-code {
-      color: #d97706;
       font-weight: 700;
+    }
+
+    body.theme-dark .course-card:hover {
+      border-color: var(--card-accent, var(--accent-primary));
+      box-shadow: 0 8px 24px color-mix(in srgb, var(--card-accent, var(--accent-primary)) 25%, transparent);
     }
 
     body.theme-dark .course-card.has-content {
@@ -273,17 +286,12 @@
 
     body.theme-dark .course-card.has-content::before {
       opacity: 1;
-      background: #feb940 !important;
+      background: var(--card-accent, #feb940) !important;
     }
 
     body.theme-dark .course-card.has-content:hover {
-      border-color: #feb940;
-      box-shadow: 0 8px 24px rgba(254, 185, 64, 0.25);
-    }
-
-    body.theme-dark .course-card.has-content .course-card-code {
-      color: #feb940 !important;
-      font-weight: 800;
+      border-color: var(--card-accent, #feb940);
+      box-shadow: 0 8px 24px color-mix(in srgb, var(--card-accent, var(--accent-primary)) 30%, transparent);
     }
 
     body.theme-dark .course-card.has-content .status-dot:not(.empty) {
@@ -292,12 +300,19 @@
     }
 
     .course-card-code {
+      display: inline-flex;
+      align-items: center;
       font-size: 11px;
       font-weight: 700;
       color: var(--card-accent, var(--accent-primary));
+      background: color-mix(in srgb, var(--card-accent, var(--accent-primary)) 12%, transparent);
+      border: 1px solid color-mix(in srgb, var(--card-accent, var(--accent-primary)) 28%, transparent);
+      border-radius: 6px;
+      padding: 2px 8px;
       text-transform: uppercase;
       letter-spacing: 0.5px;
-      margin-bottom: 6px;
+      margin-bottom: 10px;
+      width: fit-content;
     }
 
     .course-card-name {
@@ -345,21 +360,41 @@
       border-radius: 14px;
       padding: 24px;
       cursor: pointer;
-      transition: all 0.25s ease;
+      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease, box-shadow 0.2s ease;
       text-decoration: none;
       color: inherit;
       display: block;
+      contain: content;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .anno-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--card-accent, var(--accent-primary));
+      opacity: 0.9;
+      transition: height 0.2s ease;
     }
 
     .anno-card:hover {
       border-color: var(--card-accent, var(--accent-primary));
       transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      box-shadow: 0 8px 24px color-mix(in srgb, var(--card-accent, var(--accent-primary)) 18%, transparent);
+    }
+
+    .anno-card:hover::before {
+      height: 5px;
+      opacity: 1;
     }
 
     body.theme-dark .anno-card:hover {
       border-color: var(--card-accent, var(--accent-primary));
-      box-shadow: 0 8px 24px rgba(254, 185, 64, 0.18);
+      box-shadow: 0 8px 24px color-mix(in srgb, var(--card-accent, var(--accent-primary)) 28%, transparent);
     }
 
     .anno-card h3 {
@@ -387,13 +422,14 @@
       border-radius: 16px;
       padding: 26px;
       cursor: pointer;
-      transition: all 0.25s ease;
+      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease, box-shadow 0.2s ease;
       text-decoration: none;
       color: inherit;
       display: flex;
       flex-direction: column;
       height: 100%;
       box-sizing: border-box;
+      contain: content;
     }
 
     .materia-card:hover {
@@ -405,6 +441,54 @@
     body.theme-dark .materia-card:hover {
       border-color: var(--card-accent, var(--accent-primary));
       box-shadow: 0 12px 32px rgba(254, 185, 64, 0.18);
+    }
+
+    .materia-card.materia-card-disabled {
+      cursor: default;
+      opacity: 0.58;
+      background: var(--bg-secondary);
+      border-color: var(--border-color);
+      user-select: none;
+      transition: none;
+    }
+
+    .materia-card.materia-card-disabled:hover,
+    body.theme-dark .materia-card.materia-card-disabled:hover {
+      transform: none !important;
+      box-shadow: none !important;
+      border-color: color-mix(in srgb, var(--border-color) 70%, transparent) !important;
+      opacity: 0.58 !important;
+    }
+
+    .materia-card.materia-card-disabled .materia-card-icon {
+      filter: grayscale(25%);
+      opacity: 0.85;
+    }
+
+    .materia-card.materia-card-disabled .materia-card-prof {
+      opacity: 0.85;
+    }
+
+    .materia-card-stats.materia-card-stats-disabled {
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .materia-badge-pill {
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 3px 8px;
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      white-space: nowrap;
+    }
+
+    .materia-notice-highlight {
+      color: var(--text-primary);
+      font-weight: 600;
     }
 
     .materia-card-icon {
@@ -421,18 +505,30 @@
     }
 
     .materia-card h3 {
-      font-size: clamp(15.5px, 1.35vw, 17.5px);
+      font-size: clamp(15px, 1.25vw, 17px);
       font-weight: 700;
-      margin: 0 0 12px;
+      margin: 0 0 10px;
       letter-spacing: -0.3px;
-      white-space: nowrap;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
       overflow: hidden;
-      text-overflow: ellipsis;
-      height: 24px;
-      line-height: 24px;
-      display: flex;
-      align-items: center;
+      min-height: 44px;
+      line-height: 1.35;
       flex-shrink: 0;
+    }
+
+    .materia-card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 0 0 12px;
+    }
+
+    .materia-badge-tipo {
+      background: color-mix(in srgb, var(--card-accent, var(--accent-primary)) 10%, transparent);
+      border-color: color-mix(in srgb, var(--card-accent, var(--accent-primary)) 25%, transparent);
+      color: var(--card-accent, var(--accent-primary));
     }
 
     .materia-card-desc {
@@ -686,81 +782,27 @@
 
   </div>
 
+  <!-- Dati Corsi e Piani di Studio Ufficiali ABA Catania -->
+  <script src="data/corsi-data.js"></script>
+
   <script>
   (function() {
     'use strict';
 
-    // ── Data: corsi ABA Catania ──
-    const CORSI = {
-      triennio: [
-        { code: 'DAPL01', name: 'Pittura', hasContent: false },
-        { code: 'DAPL02', name: 'Scultura', hasContent: false },
-        { code: 'DAPL03', name: 'Decorazione arte ambiente', hasContent: false },
-        { code: 'DAPL04', name: 'Grafica, illustrazione', hasContent: false },
-        { code: 'DAPL05', name: 'Scenografia', hasContent: false },
-        { code: 'DAPL06-DCV', name: 'Design della comunicazione visiva', hasContent: false },
-        { code: 'DAPL06-FD', name: 'Fashion design', hasContent: false },
-        { code: 'DAPL08', name: 'Nuove Tecnologie dell\'Arte', hasContent: true, accent: '#feb940' },
-        { code: 'DAPL09', name: 'Comunicazione e valorizzazione del patrimonio artistico', hasContent: false },
-        { code: 'DAPL11-F', name: 'Fotografia', hasContent: false },
-        { code: 'DAPL11-C', name: 'Cinema con indirizzo regia/filmmaking', hasContent: false }
-      ],
-      biennio: [
-        { code: 'DASL01', name: 'Pittura', hasContent: false },
-        { code: 'DASL01-PLC', name: 'Pittura e linguaggi del contemporaneo', hasContent: false },
-        { code: 'DASL02', name: 'Scultura', hasContent: false },
-        { code: 'DASL03', name: 'Decorazione urbana', hasContent: false },
-        { code: 'DASL04', name: 'Grafica, illustrazione e fumetto', hasContent: false },
-        { code: 'DASL05', name: 'Scenografia per il dramma antico', hasContent: false },
-        { code: 'DASL06-DE', name: 'Design per l\'editoria', hasContent: false },
-        { code: 'DASL06-FD', name: 'Fashion design', hasContent: false },
-        { code: 'DASL06-PID', name: 'Product e interior design', hasContent: false },
-        { code: 'DASL08', name: 'Arti e Tecnologie Digitali', hasContent: false },
-        { code: 'DASL09', name: 'Didattica dell\'arte e mediazione culturale', hasContent: false },
-        { code: 'DASL11-F', name: 'Fotografia', hasContent: false },
-        { code: 'DASL11-C', name: 'Cinema', hasContent: false }
-      ]
-    };
+    // ── Dati centralizzati da data/corsi-data.js ──
+    const ABA = window.ABA_DATA || {};
+    const CORSI = ABA.CORSI || { triennio: [], biennio: [] };
+    const PIANI_STUDIO = ABA.PIANI_STUDIO || {};
+    const COURSE_COLORS = ABA.COURSE_COLORS || {};
 
-    // ── Data: anni per NTA (l'unico corso con contenuti) ──
-    const ANNI_NTA = [
-      { num: 1, label: '1\u00B0 Anno', materie: [] },
-      { 
-        num: 2, 
-        label: '2\u00B0 Anno', 
-        materie: [
-          { 
-            id: 'ux-webdesign',
-            name: 'Web Design',
-            code: 'ABPR 19',
-            credits: '8 CFA',
-            docente: 'Prof. Ciro Esposito',
-            desc: 'Insegnamento ufficiale ABPR 19 (8 CFA). 4 testi d\'esame: Dispense, Krug, Stull, Maeda. Sintesi approfondite, quiz e flashcard.',
-            icon: 'code',
-            stats: { capitoli: 84, quiz: 420, fonti: 4 },
-            page: 'pages/ux-webdesign.html'
-          },
-          { 
-            id: 'storia-arte',
-            name: 'Storia dell\'Arte Contemporanea 2',
-            code: 'ABST 47',
-            credits: '6 CFA',
-            docente: 'Prof.ssa Ambra Stazzone',
-            cultori: 'Eugenio Liotta, Anna Tusa',
-            desc: 'Insegnamento ufficiale ABST 47 (6 CFA). 4 moduli tematici: Anni \'80, Anni \'90, Duemila, Monografie. Artisti, opere e correnti storiche.',
-            icon: 'palette',
-            stats: { capitoli: 25, quiz: 80, fonti: 4 },
-            page: 'pages/storia-arte.html'
-          }
-        ]
-      },
-      { num: 3, label: '3\u00B0 Anno', materie: [] }
-    ];
-
-    // SVG Icons
+    // SVG Icons (Nessuna emoji unicode)
     const ICONS = {
       code: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>',
       palette: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>',
+      layout: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>',
+      cpu: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>',
+      camera: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>',
+      video: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>',
       folder: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>',
       chevRight: '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>',
       book: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>',
@@ -852,6 +894,7 @@
       selectedAnno = null;
 
       const hero = document.getElementById('home-hero');
+      hero.style.removeProperty('--hero-accent');
       hero.querySelector('h2').textContent = 'Seleziona il tuo Corso di Laurea';
       hero.querySelector('p').textContent = 'Scegli il corso di studi per accedere alle materie, ai quiz interattivi e alle flashcard di autoverifica.';
 
@@ -888,34 +931,114 @@
     function createCourseCard(course) {
       const card = document.createElement('div');
       card.className = 'course-card' + (course.hasContent ? ' has-content' : '');
-      if (course.accent) card.style.setProperty('--card-accent', course.accent);
+      const cardAccent = course.accent || COURSE_COLORS[course.code] || 'var(--accent-primary)';
+      card.style.setProperty('--card-accent', cardAccent);
 
       card.innerHTML = `
         <div class="course-card-code">${course.code.split('-')[0]}</div>
         <h3 class="course-card-name">${course.name}</h3>
         <div class="course-card-status">
           <span class="status-dot ${course.hasContent ? '' : 'empty'}"></span>
-          ${course.hasContent ? 'Contenuti disponibili' : 'Prossimamente'}
+          ${course.hasContent ? 'Contenuti disponibili' : 'Piano di studi completo'}
         </div>
       `;
 
-      card.addEventListener('click', () => {
-        if (course.hasContent) {
-          selectedCourse = course;
-          accent = course.accent || 'var(--accent-primary)';
-          renderAnniView();
-        } else {
-          showToast('I contenuti per il corso di ' + course.name + ' saranno disponibili prossimamente.');
-        }
+      card.addEventListener('click', (e) => {
+        e.preventDefault();
+        navigateToAnni(course, true);
       });
 
       return card;
+    }
+
+    // ── Navigation & History API ──
+    function navigateToCourses(pushState = true) {
+      currentView = 'courses';
+      selectedCourse = null;
+      selectedAnno = null;
+      accent = 'var(--accent-primary)';
+      if (pushState) {
+        history.pushState({ view: 'courses' }, '', window.location.pathname);
+      }
+      renderCoursesView();
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+
+    function navigateToAnni(course, pushState = true) {
+      currentView = 'anni';
+      selectedCourse = course;
+      selectedAnno = null;
+      accent = course.accent || COURSE_COLORS[course.code] || 'var(--accent-primary)';
+      if (pushState) {
+        history.pushState({ view: 'anni', course: course.code }, '', `?view=anni&course=${encodeURIComponent(course.code)}`);
+      }
+      renderAnniView();
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+
+    function navigateToMaterie(course, anno, pushState = true) {
+      currentView = 'materie';
+      selectedCourse = course;
+      selectedAnno = anno;
+      accent = course.accent || COURSE_COLORS[course.code] || 'var(--accent-primary)';
+      if (pushState) {
+        history.pushState({ view: 'materie', course: course.code, anno: anno.num }, '', `?view=materie&course=${encodeURIComponent(course.code)}&anno=${encodeURIComponent(anno.num)}`);
+      }
+      renderMaterieView();
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+
+    function handleRoute(pushState = false) {
+      const urlParams = new URLSearchParams(window.location.search);
+      const view = urlParams.get('view');
+      const allCourses = CORSI.triennio.concat(CORSI.biennio);
+
+      if (view === 'materie' || window.location.hash === '#materie') {
+        const courseCode = urlParams.get('course') || 'DAPL08';
+        const annoNum = parseInt(urlParams.get('anno') || '2', 10);
+        const course = allCourses.find(c => c.code === courseCode || c.code.split('-')[0] === courseCode.split('-')[0]) || allCourses[0];
+        const anni = PIANI_STUDIO[course.code] || [];
+        const anno = anni.find(a => a.num === annoNum) || anni[0];
+        if (course && anno) {
+          selectedCourse = course;
+          selectedAnno = anno;
+          accent = course.accent || COURSE_COLORS[course.code] || 'var(--accent-primary)';
+          if (pushState) {
+            history.pushState({ view: 'materie', course: course.code, anno: anno.num }, '', `?view=materie&course=${encodeURIComponent(course.code)}&anno=${encodeURIComponent(anno.num)}`);
+          }
+          renderMaterieView();
+          return;
+        }
+      } else if (view === 'anni') {
+        const courseCode = urlParams.get('course') || 'DAPL08';
+        const course = allCourses.find(c => c.code === courseCode || c.code.split('-')[0] === courseCode.split('-')[0]) || allCourses[0];
+        if (course) {
+          selectedCourse = course;
+          selectedAnno = null;
+          accent = course.accent || COURSE_COLORS[course.code] || 'var(--accent-primary)';
+          if (pushState) {
+            history.pushState({ view: 'anni', course: course.code }, '', `?view=anni&course=${encodeURIComponent(course.code)}`);
+          }
+          renderAnniView();
+          return;
+        }
+      }
+
+      currentView = 'courses';
+      selectedCourse = null;
+      selectedAnno = null;
+      accent = 'var(--accent-primary)';
+      if (pushState) {
+        history.pushState({ view: 'courses' }, '', window.location.pathname);
+      }
+      renderCoursesView();
     }
 
     function renderAnniView() {
       currentView = 'anni';
 
       const hero = document.getElementById('home-hero');
+      hero.style.setProperty('--hero-accent', accent);
       hero.querySelector('h2').textContent = selectedCourse.name;
       hero.querySelector('p').textContent = `${selectedCourse.code.split('-')[0]} — Seleziona l\'anno accademico`;
 
@@ -927,7 +1050,7 @@
       navHeader.className = 'view-nav-header';
 
       const breadcrumb = createBreadcrumb([
-        { label: 'Corsi', action: renderCoursesView },
+        { label: 'Corsi', action: () => navigateToCourses(true) },
         { label: selectedCourse.name, current: true }
       ]);
       navHeader.appendChild(breadcrumb);
@@ -936,7 +1059,7 @@
       backBtn.className = 'btn-back-level';
       backBtn.type = 'button';
       backBtn.innerHTML = `${ICONS.arrowLeft} <span>Torna ai Corsi di Laurea</span>`;
-      backBtn.addEventListener('click', renderCoursesView);
+      backBtn.addEventListener('click', () => navigateToCourses(true));
       navHeader.appendChild(backBtn);
 
       container.appendChild(navHeader);
@@ -944,22 +1067,23 @@
       const grid = document.createElement('div');
       grid.className = 'anni-grid';
 
-      ANNI_NTA.forEach(anno => {
+      const courseAnni = PIANI_STUDIO[selectedCourse.code] || [];
+      courseAnni.forEach(anno => {
         const card = document.createElement('div');
         card.className = 'anno-card';
         card.style.setProperty('--card-accent', accent);
 
-        const materieCount = anno.materie.length;
+        const materieCount = (anno.materie || []).length;
         card.innerHTML = `
           <h3>${anno.label}</h3>
           <div class="anno-card-meta">
-            ${materieCount > 0 ? `${materieCount} ${materieCount === 1 ? 'materia' : 'materie'} disponibili` : 'Nessuna materia ancora inserita'}
+            ${materieCount > 0 ? `${materieCount} ${materieCount === 1 ? 'materia' : 'materie'} ufficiali` : 'Nessuna materia registrata'}
           </div>
         `;
 
-        card.addEventListener('click', () => {
-          selectedAnno = anno;
-          renderMaterieView();
+        card.addEventListener('click', (e) => {
+          e.preventDefault();
+          navigateToMaterie(selectedCourse, anno, true);
         });
 
         grid.appendChild(card);
@@ -972,6 +1096,7 @@
       currentView = 'materie';
 
       const hero = document.getElementById('home-hero');
+      hero.style.setProperty('--hero-accent', accent);
       hero.querySelector('h2').textContent = `${selectedCourse.name} — ${selectedAnno.label}`;
       hero.querySelector('p').textContent = 'Scegli la materia per iniziare a studiare.';
 
@@ -983,8 +1108,8 @@
       navHeader.className = 'view-nav-header';
 
       const breadcrumb = createBreadcrumb([
-        { label: 'Corsi', action: renderCoursesView },
-        { label: selectedCourse.name, action: renderAnniView },
+        { label: 'Corsi', action: () => navigateToCourses(true) },
+        { label: selectedCourse.name, action: () => navigateToAnni(selectedCourse, true) },
         { label: selectedAnno.label, current: true }
       ]);
       navHeader.appendChild(breadcrumb);
@@ -993,12 +1118,12 @@
       backBtn.className = 'btn-back-level';
       backBtn.type = 'button';
       backBtn.innerHTML = `${ICONS.arrowLeft} <span>Torna agli Anni</span>`;
-      backBtn.addEventListener('click', renderAnniView);
+      backBtn.addEventListener('click', () => navigateToAnni(selectedCourse, true));
       navHeader.appendChild(backBtn);
 
       container.appendChild(navHeader);
 
-      if (selectedAnno.materie.length === 0) {
+      if (!selectedAnno.materie || selectedAnno.materie.length === 0) {
         const emptyDiv = document.createElement('div');
         emptyDiv.className = 'empty-state';
         emptyDiv.innerHTML = `
@@ -1011,7 +1136,7 @@
             </button>
           </div>
         `;
-        emptyDiv.querySelector('#btn-empty-back').addEventListener('click', renderAnniView);
+        emptyDiv.querySelector('#btn-empty-back').addEventListener('click', () => navigateToAnni(selectedCourse, true));
         container.appendChild(emptyDiv);
         return;
       }
@@ -1021,32 +1146,86 @@
 
       selectedAnno.materie.forEach(materia => {
         const matAccent = materia.accent || accent;
-        const progress = getSubjectProgress(materia.id);
-        const pct = progress.total > 0 ? Math.round((progress.done / progress.total) * 100) : 0;
+        const isClickable = materia.isClickable !== false && !!materia.page;
 
-        const card = document.createElement('a');
-        card.className = 'materia-card';
-        card.href = materia.page;
+        const card = document.createElement(isClickable ? 'a' : 'div');
+        card.className = 'materia-card' + (isClickable ? '' : ' materia-card-disabled');
+        if (isClickable) {
+          card.href = materia.page;
+        } else {
+          card.setAttribute('aria-disabled', 'true');
+        }
         card.style.setProperty('--card-accent', matAccent);
+
+        let footerHTML = '';
+        if (isClickable && materia.stats) {
+          const progress = getSubjectProgress(materia.id);
+          const pct = progress.total > 0 ? Math.round((progress.done / progress.total) * 100) : 0;
+          footerHTML = `
+            <div class="materia-card-footer">
+              <div class="materia-card-stats">
+                <span>${ICONS.book} ${materia.stats.capitoli} capitoli</span>
+                <span>${ICONS.quiz} ${materia.stats.quiz} quiz</span>
+                <span>${ICONS.layers} ${materia.stats.fonti} fonti</span>
+              </div>
+              <div class="materia-card-progress">
+                <div class="materia-card-progress-fill" style="width: ${pct}%"></div>
+              </div>
+            </div>
+          `;
+        } else {
+          const isLab = (materia.desc && materia.desc.includes('non prevede lo studio di dispense')) || (materia.tipo && materia.tipo.toLowerCase().includes('laboratorio'));
+          const noticeText = isLab ? 'Nessuna dispensa orale' : 'In attesa di contenuti';
+          const pillText = isLab ? 'Laboratorio pratico' : (materia.tipo || 'Insegnamento ufficiale');
+          footerHTML = `
+            <div class="materia-card-footer">
+              <div class="materia-card-stats materia-card-stats-disabled">
+                <span>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                  ${noticeText}
+                </span>
+                <span class="materia-badge-pill">${pillText}</span>
+              </div>
+              <div class="materia-card-progress">
+                <div class="materia-card-progress-fill" style="width: 0%;"></div>
+              </div>
+            </div>
+          `;
+        }
+
+        // Tags pill row: Codice, CFA, Ore, Tipologia
+        const tags = [];
+        if (materia.code) tags.push(materia.code);
+        if (materia.credits) tags.push(materia.credits);
+        if (materia.ore) tags.push(materia.ore);
+        if (materia.tipo && !materia.tipo.includes('Caratterizzanti')) tags.push(materia.tipo);
+        const tagsHTML = tags.length > 0 ? `
+          <div class="materia-card-tags">
+            ${tags.map(t => `<span class="materia-badge-pill">${t}</span>`).join('')}
+          </div>
+        ` : '';
+
+        // Cultori della materia se presenti (come per Storia dell'Arte)
+        let cultoriHTML = '';
+        if (materia.cultori) {
+          cultoriHTML = `
+            <div style="font-size: 11.5px; color: var(--text-muted); margin: -4px 0 8px;">
+              Cultori: <strong>${materia.cultori}</strong>
+            </div>
+          `;
+        }
 
         card.innerHTML = `
           <div class="materia-card-icon">${ICONS[materia.icon] || ICONS.book}</div>
-          <h3>${materia.name}</h3>
+          <h3 title="${materia.name}">${materia.name}</h3>
           <div class="materia-card-prof">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            <span>Docente: <strong class="materia-prof-name" style="color: ${matAccent};">${materia.docente}</strong></span>
+            <span>Docente: <strong class="materia-prof-name" style="color: ${matAccent};">${materia.docente || 'Docente da assegnare'}</strong></span>
           </div>
-          <div class="materia-card-desc">${materia.desc}</div>
-          <div class="materia-card-footer">
-            <div class="materia-card-stats">
-              <span>${ICONS.book} ${materia.stats.capitoli} capitoli</span>
-              <span>${ICONS.quiz} ${materia.stats.quiz} quiz</span>
-              <span>${ICONS.layers} ${materia.stats.fonti} fonti</span>
-            </div>
-            <div class="materia-card-progress">
-              <div class="materia-card-progress-fill" style="width: ${pct}%"></div>
-            </div>
-          </div>
+          ${cultoriHTML}
+          ${tagsHTML}
+          <div class="materia-card-desc">${materia.desc || ''}</div>
+          ${footerHTML}
         `;
 
         grid.appendChild(card);
@@ -1076,7 +1255,10 @@
           const btn = document.createElement('button');
           btn.className = 'breadcrumb-item';
           btn.textContent = item.label;
-          btn.addEventListener('click', item.action);
+          btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            item.action();
+          });
           nav.appendChild(btn);
         }
       });
@@ -1100,24 +1282,35 @@
         }
       });
 
-      // Controllo parametri URL per ripristinare direttamente la scelta delle materie
-      const urlParams = new URLSearchParams(window.location.search);
-      if (urlParams.get('view') === 'materie' || window.location.hash === '#materie') {
-        const courseCode = urlParams.get('course') || 'DAPL08';
-        const annoNum = parseInt(urlParams.get('anno') || '2', 10);
-        const allCourses = CORSI.triennio.concat(CORSI.biennio);
-        const course = allCourses.find(c => c.code.split('-')[0] === courseCode.split('-')[0]) || CORSI.triennio.find(c => c.code === 'DAPL08');
-        const anno = ANNI_NTA.find(a => a.num === annoNum) || ANNI_NTA[1];
-        if (course && anno) {
-          selectedCourse = course;
-          selectedAnno = anno;
-          accent = course.accent || 'var(--accent-primary)';
-          renderMaterieView();
-          return;
-        }
+      // Browser history back / forward listener
+      window.addEventListener('popstate', () => {
+        handleRoute(false);
+      });
+
+      // Logo brand clicks
+      const brandLink = document.getElementById('home-brand-link');
+      if (brandLink) {
+        brandLink.addEventListener('click', (e) => {
+          e.preventDefault();
+          navigateToCourses(true);
+        });
+      }
+      const footerLogoLink = document.getElementById('home-footer-logo-link');
+      if (footerLogoLink) {
+        footerLogoLink.addEventListener('click', (e) => {
+          e.preventDefault();
+          navigateToCourses(true);
+        });
       }
 
-      renderCoursesView();
+      // Initial route setup with replaceState
+      const urlParams = new URLSearchParams(window.location.search);
+      const initialView = urlParams.get('view') || 'courses';
+      if (!history.state) {
+        history.replaceState({ view: initialView, course: urlParams.get('course'), anno: urlParams.get('anno') }, '', window.location.href);
+      }
+
+      handleRoute(false);
     }
 
     document.addEventListener('DOMContentLoaded', init);
@@ -1126,6 +1319,6 @@
 
   <!-- Supabase & Auth Cloud Sync -->
   <script src="js/supabase.min.js"></script>
-  <script src="js/auth.js"></script>
+  <script src="js/auth.js?v=3"></script>
 </body>
 </html>
