@@ -341,7 +341,7 @@
               <form id="form-auth-action">
                 <div class="form-group" id="group-display-name" style="display: none;">
                   <label for="input-auth-name">Nome o Nickname</label>
-                  <input type="text" id="input-auth-name" class="auth-input" placeholder="Es. Diego">
+                  <input type="text" id="input-auth-name" class="auth-input" placeholder="Es. Mario Rossi">
                 </div>
                 <div class="form-group">
                   <label for="input-auth-email">Indirizzo Email</label>
