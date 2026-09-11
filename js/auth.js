@@ -17,6 +17,8 @@
 
   let supabase = null;
   let currentUser = null;
+  let realtimeChannel = null;
+  let isSyncing = false;
   let syncDebounceTimer = null;
   let toastTimer = null;
 
@@ -118,7 +120,21 @@
     return { data, error };
   }
 
-  // -- Sincronizzazione Database --
+  // -- Sincronizzazione Database & Realtime Multi-Device --
+
+  function setSyncIndicatorState(status) {
+    const dots = document.querySelectorAll('.auth-sync-dot');
+    dots.forEach(dot => {
+      dot.className = 'auth-sync-dot ' + status;
+      if (status === 'syncing') {
+        dot.title = 'Sincronizzazione cloud in corso...';
+      } else if (status === 'synced') {
+        dot.title = 'Progressi sincronizzati in tempo reale con il cloud';
+      } else if (status === 'error') {
+        dot.title = 'Errore temporaneo di sincronizzazione cloud';
+      }
+    });
+  }
 
   async function fetchCloudProgress(userId) {
     if (!supabase || !userId) return [];
@@ -129,86 +145,242 @@
         .eq('user_id', userId);
 
       if (error) {
-        console.warn('Errore lettura progressi:', error);
+        console.warn('Errore lettura progressi da Supabase:', error);
         return [];
       }
       return data || [];
     } catch (e) {
-      console.warn('Errore di rete:', e);
+      console.warn('Errore di rete durante lettura progressi:', e);
       return [];
     }
   }
 
-  async function pushChapterProgressToCloud(userId, subject, chapterId, completed, quizScore = 0) {
-    if (!supabase || !userId) return;
-    try {
-      const { error } = await supabase
-        .from('user_progress')
-        .upsert({
-          user_id: userId,
-          subject: subject,
-          chapter_id: chapterId,
-          completed: !!completed,
-          quiz_score: quizScore,
-          updated_at: new Date().toISOString()
-        }, { onConflict: 'user_id,subject,chapter_id' });
+  // Sincronizzazione intelligente bidirezionale (Merge Locale <-> Cloud)
+  async function syncCloudProgress(user, silent = false) {
+    if (!user || !supabase || isSyncing) return;
+    isSyncing = true;
+    setSyncIndicatorState('syncing');
 
-      if (error) {
-        console.warn('Errore salvataggio progresso:', error);
+    try {
+      // 1. Recupera stato locale attuale
+      let localCompleted = {};
+      if (window.StudyCore && window.StudyCore.state && window.StudyCore.state.completed) {
+        localCompleted = { ...window.StudyCore.state.completed };
       }
-    } catch (e) {
-      console.warn('Errore salvataggio:', e);
+      try {
+        const saved = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY) || '{}');
+        if (saved && saved.completed) {
+          localCompleted = { ...saved.completed, ...localCompleted };
+        }
+      } catch (e) {}
+
+      // 2. Scarica progressi completi salvati nel cloud
+      const cloudRows = await fetchCloudProgress(user.id);
+      const cloudMap = {};
+      cloudRows.forEach(row => {
+        cloudMap[row.chapter_id] = row.completed;
+      });
+
+      // 3. MERGE: qualsiasi capitolo completato in locale o su cloud viene preservato
+      const mergedCompleted = { ...cloudMap, ...localCompleted };
+
+      // 4. Identifica i capitoli presenti in locale ma mancanti o diversi sul cloud
+      const rowsToUpload = [];
+      Object.entries(mergedCompleted).forEach(([chapId, isDone]) => {
+        if (isDone && cloudMap[chapId] !== true) {
+          rowsToUpload.push({
+            user_id: user.id,
+            subject: chapId.startsWith('arte-') ? 'arte' : 'ux',
+            chapter_id: chapId,
+            completed: true,
+            updated_at: new Date().toISOString()
+          });
+        }
+      });
+
+      // 5. Se ci sono progressi locali non ancora su Supabase, caricali in BATCH istantaneo
+      if (rowsToUpload.length > 0) {
+        const { error } = await supabase
+          .from('user_progress')
+          .upsert(rowsToUpload, { onConflict: 'user_id,subject,chapter_id' });
+
+        if (error) {
+          console.warn('[Cloud Sync] Errore upload batch:', error);
+        } else {
+          console.log(`[Cloud Sync] ${rowsToUpload.length} capitoli caricati con successo nel cloud`);
+        }
+      }
+
+      // 6. Aggiorna SEMPRE localStorage (fondamentale per index.html e funzionamento offline)
+      try {
+        let saved = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY) || '{}');
+        saved.completed = mergedCompleted;
+        localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(saved));
+      } catch (e) {}
+
+      // 7. Aggiorna StudyCore in memoria se ci troviamo in una pagina di studio
+      if (window.StudyCore && window.StudyCore.state) {
+        window.StudyCore.state.completed = mergedCompleted;
+      }
+
+      // 8. Aggiorna l'interfaccia utente grafica su tutta la pagina
+      triggerUIProgressRefresh(mergedCompleted);
+
+      // 9. Attiva canale Realtime per ascoltare modifiche da altri dispositivi
+      setupRealtimeSubscription(user.id);
+
+      setSyncIndicatorState('synced');
+    } catch (err) {
+      console.warn('[Cloud Sync] Errore durante la sincronizzazione:', err);
+      setSyncIndicatorState('error');
+    } finally {
+      isSyncing = false;
     }
   }
 
-  // Sincronizzazione al login
-  async function syncOnLogin(user) {
-    if (!user) return;
-
-    const cloudRows = await fetchCloudProgress(user.id);
-
-    if (window.StudyCore && window.StudyCore.state) {
-      // Pulisci prima il vecchio stato in memoria per evitare contaminazioni da sessioni precedenti
-      window.StudyCore.state.completed = {};
-
-      if (cloudRows.length > 0) {
-        cloudRows.forEach(row => {
-          window.StudyCore.state.completed[row.chapter_id] = row.completed;
-        });
-      }
-
-      window.StudyCore.saveLocalState();
-      if (typeof window.updateProgressIndicators === 'function') {
-        window.updateProgressIndicators();
-      }
+  // Notifica UI e componenti grafici di studio o home
+  function triggerUIProgressRefresh(completedMap) {
+    if (typeof window.updateProgressIndicators === 'function') {
+      window.updateProgressIndicators();
     }
-
-    updateAuthUI();
-    removeLoginWall();
-
     if (typeof window.doRenderSidebar === 'function') {
       window.doRenderSidebar();
     }
     if (typeof window.doRenderChapter === 'function') {
       window.doRenderChapter();
     }
+    if (window.StudyCore && typeof window.StudyCore.updateCompleteButtonState === 'function') {
+      const chaps = (typeof window.getCurrentPdfChapters === 'function') ? window.getCurrentPdfChapters() : [];
+      const currentChap = chaps[window.StudyCore.state.activeChapIndex];
+      if (currentChap) {
+        window.StudyCore.updateCompleteButtonState(!!completedMap[currentChap.id]);
+      }
+    }
+    // Evento globale personalizzato per la Home (index.html) e altri listener
+    window.dispatchEvent(new CustomEvent('study:progress-synced', { detail: { completed: completedMap } }));
   }
 
-  // Hook chiamato da core.js quando l'utente completa o modifica un capitolo
+  // Canale Realtime Supabase (Postgres Changes + Broadcast per sincronizzazione immediata PC <-> Telefono)
+  function setupRealtimeSubscription(userId) {
+    if (!supabase || !userId) return;
+    if (realtimeChannel) {
+      try { supabase.removeChannel(realtimeChannel); } catch (e) {}
+    }
+
+    realtimeChannel = supabase.channel('user_sync_' + userId, {
+      config: { broadcast: { self: false } }
+    });
+
+    // 1. Messaggi Broadcast peer-to-peer istantanei (latenza 30-80ms via WebSocket)
+    realtimeChannel.on('broadcast', { event: 'progress_sync' }, (data) => {
+      console.log('[Realtime Broadcast] Ricevuto progresso da altro dispositivo:', data);
+      if (data && data.payload && data.payload.completed) {
+        applyRemoteProgressUpdate(data.payload.completed);
+      }
+    });
+
+    // 2. Modifiche Postgres Database (quando il database scrive le righe)
+    realtimeChannel.on(
+      'postgres_changes',
+      {
+        event: '*',
+        schema: 'public',
+        table: 'user_progress',
+        filter: `user_id=eq.${userId}`
+      },
+      (payload) => {
+        console.log('[Realtime Postgres] Modifica riga ricevuta:', payload);
+        const row = payload.new;
+        if (row && row.chapter_id) {
+          applyRemoteProgressUpdate({ [row.chapter_id]: row.completed });
+        }
+      }
+    );
+
+    realtimeChannel.subscribe((status) => {
+      console.log('[Realtime] Stato canale WebSocket:', status);
+    });
+  }
+
+  // Applica progressi ricevuti in tempo reale da un altro dispositivo
+  function applyRemoteProgressUpdate(incomingMap) {
+    let currentMap = {};
+    if (window.StudyCore && window.StudyCore.state && window.StudyCore.state.completed) {
+      currentMap = window.StudyCore.state.completed;
+    } else {
+      try {
+        const saved = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY) || '{}');
+        currentMap = saved.completed || {};
+      } catch (e) {}
+    }
+
+    const merged = { ...currentMap, ...incomingMap };
+
+    try {
+      let saved = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY) || '{}');
+      saved.completed = merged;
+      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(saved));
+    } catch (e) {}
+
+    if (window.StudyCore && window.StudyCore.state) {
+      window.StudyCore.state.completed = merged;
+    }
+
+    triggerUIProgressRefresh(merged);
+    setSyncIndicatorState('synced');
+  }
+
+  // Hook chiamato da core.js quando l'utente modifica lo stato di un capitolo
   function onStateSaved(payload) {
-    if (!currentUser || !supabase) return;
+    if (!currentUser || !supabase || isSyncing) return;
+
+    setSyncIndicatorState('syncing');
 
     if (syncDebounceTimer) clearTimeout(syncDebounceTimer);
     syncDebounceTimer = setTimeout(async () => {
       const completedMap = payload.completed || {};
 
-      for (const [chapId, isDone] of Object.entries(completedMap)) {
-        if (isDone) {
-          const itemSubj = chapId.startsWith('arte-') ? 'arte' : 'ux';
-          await pushChapterProgressToCloud(currentUser.id, itemSubj, chapId, true);
-        }
+      // 1. Invio Broadcast immediato a tutti gli altri dispositivi collegati (es. telefono)
+      if (realtimeChannel) {
+        try {
+          realtimeChannel.send({
+            type: 'broadcast',
+            event: 'progress_sync',
+            payload: { completed: completedMap }
+          });
+        } catch (e) {}
       }
-    }, 600);
+
+      // 2. Salvataggio batch nel database Supabase
+      const rows = Object.entries(completedMap).map(([chapId, isDone]) => ({
+        user_id: currentUser.id,
+        subject: chapId.startsWith('arte-') ? 'arte' : 'ux',
+        chapter_id: chapId,
+        completed: !!isDone,
+        updated_at: new Date().toISOString()
+      }));
+
+      if (rows.length === 0) {
+        setSyncIndicatorState('synced');
+        return;
+      }
+
+      try {
+        const { error } = await supabase
+          .from('user_progress')
+          .upsert(rows, { onConflict: 'user_id,subject,chapter_id' });
+
+        if (error) {
+          console.warn('[Cloud Sync] Errore salvataggio progresso:', error);
+          setSyncIndicatorState('error');
+        } else {
+          setSyncIndicatorState('synced');
+        }
+      } catch (e) {
+        console.warn('[Cloud Sync] Errore di rete:', e);
+        setSyncIndicatorState('error');
+      }
+    }, 250);
   }
 
   function removeLoginWall() {
@@ -689,8 +861,9 @@
         btn.innerHTML = `
           <span class="auth-avatar-circle">${char}</span>
           <span class="auth-btn-label">${shortName}</span>
+          <span class="auth-sync-dot synced" title="Progressi sincronizzati in tempo reale con il cloud"></span>
         `;
-        btn.title = 'Gestisci il tuo account';
+        btn.title = 'Gestisci il tuo account — Sincronizzazione cloud attiva';
       } else {
         btn.classList.remove('logged-in');
         btn.innerHTML = `
@@ -700,7 +873,7 @@
           </svg>
           <span class="auth-btn-label">Accedi</span>
         `;
-        btn.title = 'Accedi o registrati';
+        btn.title = 'Accedi o registrati per sincronizzare i tuoi progressi';
       }
     });
   }
@@ -739,31 +912,36 @@
     // Gestione atterraggio da link di redirect (conferma o recovery)
     handleUrlRedirectEvents();
 
+    // Listener per risveglio da standby / sblocco schermo su smartphone
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden && currentUser) {
+        syncCloudProgress(currentUser, true);
+      }
+    });
+    window.addEventListener('focus', () => {
+      if (currentUser) {
+        syncCloudProgress(currentUser, true);
+      }
+    });
+
     // Recupera la sessione attiva
     try {
       const { data: { session } } = await supabase.auth.getSession();
       if (session && session.user) {
         currentUser = session.user;
         updateAuthUI();
-        await syncOnLogin(currentUser);
+        await syncCloudProgress(currentUser);
       } else {
         currentUser = null;
-        try {
-          localStorage.removeItem(LOCAL_STORAGE_KEY);
-          localStorage.removeItem('aba_studio_state_v2');
-        } catch (e) {}
-        if (window.StudyCore && window.StudyCore.state) {
-          window.StudyCore.state.completed = {};
-          if (typeof window.updateProgressIndicators === 'function') {
-            window.updateProgressIndicators();
-          }
-        }
         updateAuthUI();
-        if (typeof window.doRenderSidebar === 'function') {
-          window.doRenderSidebar();
-        }
-        if (typeof window.doRenderChapter === 'function') {
-          window.doRenderChapter();
+        // Se siamo su smartphone e non loggati, mostra un promemoria discreto una volta
+        if (window.innerWidth <= 768 && !sessionStorage.getItem('aba_login_prompt_shown')) {
+          sessionStorage.setItem('aba_login_prompt_shown', 'true');
+          setTimeout(() => {
+            if (!currentUser) {
+              showToast('Accedi al tuo account per sincronizzare i progressi completati su PC.', 'info', 6000);
+            }
+          }, 1500);
         }
       }
     } catch (e) {
@@ -780,27 +958,23 @@
       } else if (event === 'SIGNED_IN' && session) {
         currentUser = session.user;
         updateAuthUI();
-        await syncOnLogin(currentUser);
+        await syncCloudProgress(currentUser);
         window.dispatchEvent(new CustomEvent('auth:change', { detail: { user: currentUser } }));
       } else if (event === 'SIGNED_OUT') {
         currentUser = null;
+        if (realtimeChannel) {
+          try { supabase.removeChannel(realtimeChannel); } catch (e) {}
+          realtimeChannel = null;
+        }
         try {
           localStorage.removeItem(LOCAL_STORAGE_KEY);
           localStorage.removeItem('aba_studio_state_v2');
         } catch (e) {}
         if (window.StudyCore && window.StudyCore.state) {
           window.StudyCore.state.completed = {};
-          if (typeof window.updateProgressIndicators === 'function') {
-            window.updateProgressIndicators();
-          }
         }
         updateAuthUI();
-        if (typeof window.doRenderSidebar === 'function') {
-          window.doRenderSidebar();
-        }
-        if (typeof window.doRenderChapter === 'function') {
-          window.doRenderChapter();
-        }
+        triggerUIProgressRefresh({});
         window.dispatchEvent(new CustomEvent('auth:change', { detail: { user: null } }));
       }
     });
@@ -814,6 +988,7 @@
     resetPassword,
     updateUserPassword,
     onStateSaved,
+    syncCloudProgress,
     showToast,
     getUser: () => currentUser,
     openModal: openAuthModal,

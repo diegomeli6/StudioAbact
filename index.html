@@ -1310,6 +1310,18 @@
         history.replaceState({ view: initialView, course: urlParams.get('course'), anno: urlParams.get('anno') }, '', window.location.href);
       }
 
+      // Sincronizzazione progressi da Supabase Cloud
+      window.addEventListener('study:progress-synced', () => {
+        if (currentView === 'materie' && selectedCourse && selectedAnno) {
+          renderMaterieView(selectedCourse, selectedAnno);
+        }
+      });
+      window.addEventListener('auth:change', () => {
+        if (currentView === 'materie' && selectedCourse && selectedAnno) {
+          renderMaterieView(selectedCourse, selectedAnno);
+        }
+      });
+
       handleRoute(false);
     }
 
@@ -1319,6 +1331,6 @@
 
   <!-- Supabase & Auth Cloud Sync -->
   <script src="js/supabase.min.js"></script>
-  <script src="js/auth.js?v=5"></script>
+  <script src="js/auth.js?v=6"></script>
 </body>
 </html>
