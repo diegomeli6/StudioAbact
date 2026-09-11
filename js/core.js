@@ -913,10 +913,10 @@ const StudyCore = (function () {
       return tableHtml;
     });
 
-    html = html.replace(/^#### (.*?)$/gm, '<h4>$1</h4>');
-    html = html.replace(/^### (.*?)$/gm, '<h3>$1</h3>');
-    html = html.replace(/^## (.*?)$/gm, '<h2>$1</h2>');
-    html = html.replace(/^---$/gm, '<hr class="summary-divider">');
+    html = html.replace(/^#### (.*?)$/gm, '\n\n<h4>$1</h4>\n\n');
+    html = html.replace(/^### (.*?)$/gm, '\n\n<h3>$1</h3>\n\n');
+    html = html.replace(/^## (.*?)$/gm, '\n\n<h2>$1</h2>\n\n');
+    html = html.replace(/^---$/gm, '\n\n<hr class="summary-divider">\n\n');
     html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
     html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
     html = html.replace(/```(html|css|js|)([\s\S]*?)```/g, '<pre><code>$2</code></pre>');
@@ -927,7 +927,24 @@ const StudyCore = (function () {
       return '\n\n<blockquote class="summary-quote">' + lines.join('<br>') + '</blockquote>\n\n';
     });
 
-    html = html.replace(/^[•\-\*] (.*?)$/gm, '<li>$1</li>');
+    // Liste non ordinate (- item, * item, • item)
+    html = html.replace(/((?:^[•\-\*][ \t]+[^\n]+(?:\r?\n|$))+)/gm, function (match) {
+      const items = match.trim().split(/\r?\n/).map(line => {
+        const text = line.replace(/^[•\-\*][ \t]+/, '').trim();
+        return `  <li>${text}</li>`;
+      }).join('\n');
+      return `\n\n<ul class="study-list">\n${items}\n</ul>\n\n`;
+    });
+
+    // Liste ordinate numerate (1. item, 2. item)
+    html = html.replace(/((?:^\d+\.[ \t]+[^\n]+(?:\r?\n|$))+)/gm, function (match) {
+      const items = match.trim().split(/\r?\n/).map(line => {
+        const text = line.replace(/^\d+\.[ \t]+/, '').trim();
+        return `  <li>${text}</li>`;
+      }).join('\n');
+      return `\n\n<ol class="study-list">\n${items}\n</ol>\n\n`;
+    });
+
     html = html.replace(/!\[(.*?)\]\((.*?)\)/g, function (match, alt, src) {
       let resolvedSrc = (src || '').trim();
       const inPagesSubdir = window.location.pathname.includes('/pages/') || 
@@ -947,7 +964,7 @@ const StudyCore = (function () {
     html = html.split('\n\n').map(p => {
       p = p.trim();
       if (!p) return '';
-      if (!p.startsWith('<h') && !p.startsWith('<ul') && !p.startsWith('<pre') && !p.startsWith('<div') && !p.startsWith('<hr') && !p.startsWith('<blockquote') && !p.startsWith('<figure')) {
+      if (!p.startsWith('<h') && !p.startsWith('<ul') && !p.startsWith('<ol') && !p.startsWith('<pre') && !p.startsWith('<div') && !p.startsWith('<hr') && !p.startsWith('<blockquote') && !p.startsWith('<figure')) {
         return `<p>${p.replace(/\n/g, '<br>')}</p>`;
       }
       return p;
