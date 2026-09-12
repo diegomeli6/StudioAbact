@@ -907,7 +907,7 @@
             const total = 84;
             let done = 0;
             Object.keys(completed).forEach(k => {
-              if (completed[k] && !k.startsWith('arte-')) done++;
+              if (completed[k] && !k.startsWith('arte-') && !k.startsWith('arte1-')) done++;
             });
             return { done, total };
           }
@@ -915,7 +915,15 @@
             const total = 25;
             let done = 0;
             Object.keys(completed).forEach(k => {
-              if (completed[k] && k.startsWith('arte-')) done++;
+              if (completed[k] && k.startsWith('arte-') && !k.startsWith('arte1-')) done++;
+            });
+            return { done, total };
+          }
+          if (subjectId === 'storia-arte-1' || subjectId === 'dapl08-1-storia-dell-arte-contemporanea-1') {
+            const total = 21;
+            let done = 0;
+            Object.keys(completed).forEach(k => {
+              if (completed[k] && k.startsWith('arte1-')) done++;
             });
             return { done, total };
           }

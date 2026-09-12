@@ -2485,17 +2485,24 @@
             "label": "1° Anno",
             "materie": [
                 {
-                    "id": "dapl08-1-storia-dell-arte-contemporanea-1",
-                    "name": "Storia dell’arte contemporanea 1",
+                    "id": "storia-arte-1",
+                    "name": "Storia dell'Arte Contemporanea 1",
                     "code": "ABST 47",
                     "credits": "6 CFA",
                     "ore": "45 ore",
                     "tipo": "Base",
-                    "docente": "Prof. Ambra Stazzone",
-                    "desc": "Insegnamento ufficiale ABST 47 (6 CFA). 45 ore di attività didattica. Tipologia: Base.",
-                    "icon": "book",
-                    "isClickable": false,
-                    "hasContent": false
+                    "docente": "Prof.ssa Ambra Stazzone",
+                    "cultori": "Eugenio Liotta, Anna Tusa",
+                    "desc": "Insegnamento ufficiale ABST 47 (6 CFA). 4 moduli tematici: Anni '50, Anni '60, Anni '70, Monografie (Magritte, Man Ray, Warhol). Artisti, opere e correnti storiche.",
+                    "icon": "palette",
+                    "isClickable": true,
+                    "hasContent": true,
+                    "page": "pages/storia-arte-1.html",
+                    "stats": {
+                        "capitoli": 56,
+                        "quiz": 280,
+                        "fonti": 6
+                    }
                 },
                 {
                     "id": "dapl08-1-fotografia-digitale",
