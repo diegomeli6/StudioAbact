@@ -1250,6 +1250,7 @@ const StudyCore = (function () {
     ttsState.chunks = chunks;
     ttsState.chunkIndex = 0;
     ttsState.currentChapter = currentChapter;
+    updateAudioBarUI('playing', chunks[0] || '');
 
     // Esegui la chiamata sincrona per non perdere il token di gesture utente nei browser mobile (iOS Safari / Android)
     speakNextChunk();
@@ -1258,6 +1259,27 @@ const StudyCore = (function () {
   // ── Setup base per event listener condivisi ──
 
   function setupCoreEvents(getCurrentPdfChapters, renderSidebarFn, renderCurrentChapterFn, navigateFn) {
+    // Sincronizzazione dinamica altezza sticky header per posizionamento preciso di sidebar e lettore vocale
+    function syncStickyHeaderHeight() {
+      const stickyHeader = document.querySelector('.study-sticky-header');
+      if (stickyHeader) {
+        const height = Math.round(stickyHeader.getBoundingClientRect().height);
+        if (height > 0) {
+          document.documentElement.style.setProperty('--sticky-header-height', `${height}px`);
+        }
+      }
+    }
+
+    syncStickyHeaderHeight();
+    window.addEventListener('resize', syncStickyHeaderHeight, { passive: true });
+    if (typeof ResizeObserver !== 'undefined') {
+      const stickyHeader = document.querySelector('.study-sticky-header');
+      if (stickyHeader) {
+        const ro = new ResizeObserver(() => syncStickyHeaderHeight());
+        ro.observe(stickyHeader);
+      }
+    }
+
     // Audio Player TTS
     const audioPlayBtn = document.getElementById('btn-audio-listen');
     const audioStopBtn = document.getElementById('btn-audio-stop');
