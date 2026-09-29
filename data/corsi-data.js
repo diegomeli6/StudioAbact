@@ -2499,23 +2499,29 @@
                     "hasContent": true,
                     "page": "pages/storia-arte-1.html",
                     "stats": {
-                        "capitoli": 56,
-                        "quiz": 280,
+                        "capitoli": 20,
+                        "quiz": 100,
                         "fonti": 6
                     }
                 },
                 {
-                    "id": "dapl08-1-fotografia-digitale",
+                    "id": "fotografia-digitale",
                     "name": "Fotografia digitale",
                     "code": "ABPR 31",
                     "credits": "8 CFA",
                     "ore": "100 ore",
                     "tipo": "Base",
                     "docente": "Prof. Carmelo Bongiorno",
-                    "desc": "Insegnamento ufficiale ABPR 31 (8 CFA). 100 ore di attività didattica. Tipologia: Base.",
-                    "icon": "cpu",
-                    "isClickable": false,
-                    "hasContent": false
+                    "desc": "Insegnamento ufficiale ABPR 31 (8 CFA). 4 moduli tematici: Tecnica & Grammatica, Teoria & Inconscio, I 15 Autori, I Grandi Maestri Storici.",
+                    "icon": "camera",
+                    "isClickable": true,
+                    "hasContent": true,
+                    "page": "pages/fotografia.html",
+                    "stats": {
+                        "capitoli": 41,
+                        "quiz": 205,
+                        "fonti": 4
+                    }
                 },
                 {
                     "id": "dapl08-1-applicazione-digitali-per-l-arte-disegno-digitale",
@@ -2551,10 +2557,16 @@
                     "ore": "100 ore",
                     "tipo": "Caratterizzanti",
                     "docente": "Prof. Lorenzo Di Silvestro",
-                    "desc": "Insegnamento ufficiale ABTEC 42 (8 CFA). 100 ore di attività didattica. Tipologia: Caratterizzanti.",
-                    "icon": "code",
-                    "isClickable": false,
-                    "hasContent": false
+                    "desc": "Insegnamento ufficiale ABTEC 42 (8 CFA). Ripresa, linguaggio visivo, montaggio, sceneggiatura e formati video per il web con il Prof. Lorenzo Di Silvestro.",
+                    "icon": "video",
+                    "stats": {
+                        "capitoli": 27,
+                        "quiz": 135,
+                        "fonti": 4
+                    },
+                    "isClickable": true,
+                    "hasContent": true,
+                    "page": "pages/taw.html"
                 },
                 {
                     "id": "dapl08-1-interaction-design",
@@ -2564,10 +2576,16 @@
                     "ore": "100 ore",
                     "tipo": "Caratterizzanti",
                     "docente": "Prof. Giulio Interlandi",
-                    "desc": "Insegnamento ufficiale ABTEC 42 (8 CFA). 100 ore di attività didattica. Tipologia: Caratterizzanti.",
+                    "desc": "Design Thinking, Double Diamond, User Research, Etnografia, Teorie dell'esperienza e Sociologia dei consumi (Margolin, Buchanan, Bourdieu, Toffler, VALS, Fabris), Personas di Cooper, Bodystorming e Prototipazione. 28 capitoli completi, 140 quiz e schemi vettoriali.",
                     "icon": "layout",
-                    "isClickable": false,
-                    "hasContent": false
+                    "stats": {
+                        "capitoli": 28,
+                        "quiz": 140,
+                        "fonti": 4
+                    },
+                    "isClickable": true,
+                    "hasContent": true,
+                    "page": "pages/interaction.html"
                 },
                 {
                     "id": "dapl08-1-tecniche-di-animazione-digitale-2d",
@@ -2616,9 +2634,9 @@
                     "hasContent": true,
                     "page": "pages/storia-arte.html",
                     "stats": {
-                        "capitoli": 25,
-                        "quiz": 80,
-                        "fonti": 4
+                        "capitoli": 21,
+                        "quiz": 105,
+                        "fonti": 2
                     }
                 },
                 {
@@ -2661,17 +2679,23 @@
                     "hasContent": false
                 },
                 {
-                    "id": "dapl08-2-archetipi-dell-immaginario",
+                    "id": "archetipi",
                     "name": "Archetipi dell’immaginario",
                     "code": "ABST 55",
                     "credits": "8 CFA",
                     "ore": "60 ore",
                     "tipo": "Caratterizzanti",
                     "docente": "Prof. Stefano Puglisi",
-                    "desc": "Insegnamento ufficiale ABST 55 (8 CFA). 60 ore di attività didattica. Tipologia: Caratterizzanti.",
+                    "desc": "Insegnamento ufficiale ABST 55 (8 CFA). 3 moduli tematici: Dimensione Ecologica, Inconscio Collettivo (Jung), Simbologia ed Epigenetica.",
                     "icon": "book",
-                    "isClickable": false,
-                    "hasContent": false
+                    "isClickable": true,
+                    "hasContent": true,
+                    "page": "pages/archetipi.html",
+                    "stats": {
+                        "capitoli": 21,
+                        "quiz": 105,
+                        "fonti": 3
+                    }
                 },
                 {
                     "id": "dapl08-2-video-editing-e-compositing",

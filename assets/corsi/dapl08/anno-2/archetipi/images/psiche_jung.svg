@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 320" width="100%" height="300" style="background:#12151c;border-radius:12px;">
+  <rect width="650" height="320" rx="12" fill="#12151c"/>
+  <text x="325" y="26" text-anchor="middle" fill="#feb940" font-family="system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="1">STRUTTURA STRATIFICATA DELLA PSICHE SECONDO C.G. JUNG</text>
+
+  <!-- Level 1: Conscio / Io / Persona -->
+  <g transform="translate(50, 45)">
+    <rect width="550" height="60" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="20" y="25" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" font-weight="700">1. LIVELLO COSCIENTE — IO &amp; PERSONA</text>
+    <text x="20" y="45" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Il centro della consapevolezza diurna (Io) e la maschera sociale adattiva (Persona) a contatto con l'ambiente esterno.</text>
+  </g>
+
+  <!-- Level 2: Inconscio Personale / Complessi -->
+  <g transform="translate(50, 115)">
+    <rect width="550" height="75" rx="8" fill="#1e293b" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="20" y="25" fill="#a855f7" font-family="system-ui, sans-serif" font-size="13" font-weight="700">2. INCONSCIO PERSONALE — COMPLESSI A TONALITA' AFFETTIVA &amp; OMBRA</text>
+    <text x="20" y="45" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Esperienze biografiche individuali rimosse, dimenticate o sublimate. Include l'Ombra personale (ciò che l'Io rifiuta).</text>
+    <text x="20" y="62" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">I complessi possiedono autonomia energetica e possono frammentare temporaneamente il controllo cosciente dell'Io.</text>
+  </g>
+
+  <!-- Level 3: Inconscio Collettivo / Archetipi -->
+  <g transform="translate(50, 200)">
+    <rect width="550" height="95" rx="8" fill="#1e293b" stroke="#feb940" stroke-width="2"/>
+    <text x="20" y="25" fill="#feb940" font-family="system-ui, sans-serif" font-size="13" font-weight="700">3. INCONSCIO COLLETTIVO — GLI ARCHETIPI SOVRAPERSONALI &amp; IL SÉ</text>
+    <text x="20" y="45" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">Strato filogenetico ereditario comune all'intera umanità: non deriva da esperienze personali, ma da matrici universali.</text>
+    <text x="20" y="62" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Archetipi guida: Ombra Primordiale, Anima (l'inconscio maschile), Animus (l'inconscio femminile), il Sé (la totalita psichica).</text>
+    <text x="20" y="80" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Si manifestano attraverso i miti mondiali, i simboli sacri, le fiabe, l'alchimia e i sogni numinosi.</text>
+  </g>
+</svg>

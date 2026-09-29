@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 360" width="100%" height="320" style="background:#12151c;border-radius:12px;">
+  <rect width="700" height="360" rx="12" fill="#12151c"/>
+  <!-- Central Mandala Graphic -->
+  <g transform="translate(190, 165)">
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#334155" stroke-width="2"/>
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#feb940" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <!-- 4 Cardinal Quadrants: White, Red, Yellow, Blue, Center Black/White -->
+    <!-- Top (Blue) -->
+    <path d="M 0 0 L -70 -70 A 100 100 0 0 1 70 -70 Z" fill="#1e3a8a" opacity="0.55" stroke="#3b82f6" stroke-width="1"/>
+    <!-- Right (Yellow) -->
+    <path d="M 0 0 L 70 -70 A 100 100 0 0 1 70 70 Z" fill="#854d0e" opacity="0.55" stroke="#eab308" stroke-width="1"/>
+    <!-- Bottom (Red) -->
+    <path d="M 0 0 L 70 70 A 100 100 0 0 1 -70 70 Z" fill="#7f1d1d" opacity="0.55" stroke="#ef4444" stroke-width="1"/>
+    <!-- Left (White/Silver) -->
+    <path d="M 0 0 L -70 70 A 100 100 0 0 1 -70 -70 Z" fill="#334155" opacity="0.55" stroke="#f8fafc" stroke-width="1"/>
+    <!-- Center (Black / Bindu) -->
+    <circle cx="0" cy="0" r="32" fill="#020617" stroke="#feb940" stroke-width="2"/>
+    <circle cx="0" cy="0" r="10" fill="#feb940"/>
+    <text x="0" y="4" text-anchor="middle" fill="#020617" font-family="system-ui, sans-serif" font-size="9" font-weight="800">SÉ</text>
+  </g>
+
+  <!-- Legend & Meaning of the 5 Pancha-Varna Colors -->
+  <g transform="translate(380, 45)">
+    <text x="0" y="0" fill="#feb940" font-family="system-ui, sans-serif" font-size="14" font-weight="700" letter-spacing="0.5">I 5 COLORI DEL MANDALA (PANCHA-VARNA)</text>
+    
+    <g transform="translate(0, 24)">
+      <circle cx="10" cy="8" r="7" fill="#f8fafc" stroke="#94a3b8" stroke-width="1"/>
+      <text x="26" y="12" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Bianco (Vairocana):</text>
+      <text x="26" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Luce pura, saggezza dello specchio, liberazione dall'illusione</text>
+    </g>
+
+    <g transform="translate(0, 70)">
+      <circle cx="10" cy="8" r="7" fill="#ef4444"/>
+      <text x="26" y="12" fill="#ef4444" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Rosso (Amitabha):</text>
+      <text x="26" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Energia vitale, discernimento, passione trasmutata in compassione</text>
+    </g>
+
+    <g transform="translate(0, 116)">
+      <circle cx="10" cy="8" r="7" fill="#eab308"/>
+      <text x="26" y="12" fill="#eab308" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Giallo (Ratnasambhava):</text>
+      <text x="26" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Prosperita, equanimita, ricerca della verita e crescita interiore</text>
+    </g>
+
+    <g transform="translate(0, 162)">
+      <circle cx="10" cy="8" r="7" fill="#3b82f6"/>
+      <text x="26" y="12" fill="#3b82f6" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Blu (Akshobhya):</text>
+      <text x="26" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Calma immutabile, serenita meditativa, infinito cosmico</text>
+    </g>
+
+    <g transform="translate(0, 208)">
+      <circle cx="10" cy="8" r="7" fill="#020617" stroke="#64748b" stroke-width="1.5"/>
+      <text x="26" y="12" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Nero / Buio (Amoghasiddhi):</text>
+      <text x="26" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Mistero, transitorieta, confronto fecondo con l'Ombra e l'ignoto</text>
+    </g>
+  </g>
+
+  <text x="350" y="335" text-anchor="middle" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Semeiotica junghiana: il Mandala come centro ordinatore (Sé) tra conscio e inconscio</text>
+</svg>

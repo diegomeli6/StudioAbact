@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200" width="100%" height="200" style="background:#12151c;border-radius:12px;">
+  <rect width="720" height="200" rx="12" fill="#12151c"/>
+  <text x="360" y="28" text-anchor="middle" fill="#feb940" font-family="system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="1">LE TRE DIMENSIONI DEL TEMPO NEL PENSIERO GRECO: KRONOS, KAIROS, AION</text>
+
+  <!-- Kronos -->
+  <g transform="translate(40, 50)">
+    <rect width="195" height="120" rx="8" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+    <text x="15" y="25" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="700">KRONOS (Cronos)</text>
+    <text x="15" y="46" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Tempo Quantitativo</text>
+    <text x="15" y="68" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Scorrere lineare continuo,</text>
+    <text x="15" y="84" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">divoratore dei suoi figli.</text>
+    <text x="15" y="102" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">L'orologio, il limite, la morte.</text>
+  </g>
+
+  <!-- Kairos -->
+  <g transform="translate(262, 50)">
+    <rect width="195" height="120" rx="8" fill="#1e293b" stroke="#feb940" stroke-width="2"/>
+    <text x="15" y="25" fill="#feb940" font-family="system-ui, sans-serif" font-size="13" font-weight="700">KAIROS (Il Momento)</text>
+    <text x="15" y="46" fill="#fde047" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Tempo Qualitativo</text>
+    <text x="15" y="68" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="10">Il momento opportuno,</text>
+    <text x="15" y="84" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="10">la frattura propizia dell'azione.</text>
+    <text x="15" y="102" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">La porta dell'intuizione e dell'arte.</text>
+  </g>
+
+  <!-- Aion -->
+  <g transform="translate(485, 50)">
+    <rect width="195" height="120" rx="8" fill="#1e293b" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="15" y="25" fill="#c084fc" font-family="system-ui, sans-serif" font-size="13" font-weight="700">AION (L'Eternita)</text>
+    <text x="15" y="46" fill="#e9d5ff" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Tempo Cosmico Sacro</text>
+    <text x="15" y="68" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="10">L'Uroboro, il ciclo eterno,</text>
+    <text x="15" y="84" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="10">il tempo del mito e degli dei.</text>
+    <text x="15" y="102" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">L'eterno presente senza fine.</text>
+  </g>
+</svg>

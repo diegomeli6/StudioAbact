@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="100%" height="auto" style="background:#0f172a; border-radius:12px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="climaxGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="520" fill="#0f172a" rx="12"/>
+  <rect x="2" y="2" width="896" height="516" fill="none" stroke="#334155" stroke-width="1.5" rx="10"/>
+
+  <!-- Titolo -->
+  <text x="450" y="44" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="700" letter-spacing="1">SCENEGGIATURA: STRUTTURA RESTAURATIVA IN TRE ATTI</text>
+  <text x="450" y="68" text-anchor="middle" fill="#94a3b8" font-size="13">Il paradigma narrativo classico di Syd Field, Robert McKee e il dramma ben fatto di Eugène Scribe</text>
+
+  <!-- Griglia proporzioni 3 Atti (30 pag / 60 pag / 30 pag) -->
+  <!-- Atto 1: 0 - 240 px (25%) -->
+  <rect x="50" y="95" width="200" height="30" fill="#1e293b" stroke="#38bdf8" stroke-width="1" rx="4"/>
+  <text x="150" y="115" text-anchor="middle" fill="#38bdf8" font-size="13" font-weight="700">ATTO I: SETUP (~25%)</text>
+
+  <!-- Atto 2: 240 - 640 px (50%) -->
+  <rect x="260" y="95" width="380" height="30" fill="#1e293b" stroke="#fbbf24" stroke-width="1" rx="4"/>
+  <text x="450" y="115" text-anchor="middle" fill="#fbbf24" font-size="13" font-weight="700">ATTO II: CONFRONTO E LOTTA (~50%)</text>
+
+  <!-- Atto 3: 640 - 850 px (25%) -->
+  <rect x="650" y="95" width="200" height="30" fill="#1e293b" stroke="#f43f5e" stroke-width="1" rx="4"/>
+  <text x="750" y="115" text-anchor="middle" fill="#f43f5e" font-size="13" font-weight="700">ATTO III: RISOLUZIONE (~25%)</text>
+
+  <!-- Curva della Tensione Drammatica -->
+  <path d="M 60 400 Q 150 380 200 340 T 260 330 T 450 250 T 640 220 T 730 160 Q 770 150 840 370" 
+        fill="none" stroke="url(#climaxGrad)" stroke-width="4.5" stroke-linecap="round"/>
+
+  <!-- Punti notevoli sulla curva -->
+  <!-- 1. Inciting Incident -->
+  <circle cx="140" cy="380" r="7" fill="#38bdf8"/>
+  <text x="140" y="420" text-anchor="middle" fill="#38bdf8" font-size="11" font-weight="700">INCITING INCIDENT</text>
+  <text x="140" y="435" text-anchor="middle" fill="#94a3b8" font-size="10">Rottura dell'equilibrio</text>
+
+  <!-- 2. Plot Point 1 -->
+  <circle cx="260" cy="330" r="8" fill="#fbbf24" stroke="#f8fafc" stroke-width="2"/>
+  <text x="260" y="300" text-anchor="middle" fill="#fbbf24" font-size="12" font-weight="800">PLOT POINT 1</text>
+  <text x="260" y="315" text-anchor="middle" fill="#f8fafc" font-size="10">Punto di non ritorno (Falsa soluzione)</text>
+
+  <!-- 3. Midpoint -->
+  <circle cx="450" cy="250" r="8" fill="#fbbf24"/>
+  <text x="450" y="215" text-anchor="middle" fill="#fbbf24" font-size="12" font-weight="800">MIDPOINT</text>
+  <text x="450" y="230" text-anchor="middle" fill="#94a3b8" font-size="10">Alzamento della posta in gioco</text>
+
+  <!-- 4. All is Lost / Plot Point 2 -->
+  <circle cx="640" cy="220" r="8" fill="#f43f5e" stroke="#f8fafc" stroke-width="2"/>
+  <text x="640" y="185" text-anchor="middle" fill="#f43f5e" font-size="12" font-weight="800">PLOT POINT 2</text>
+  <text x="640" y="200" text-anchor="middle" fill="#f8fafc" font-size="10">Crisi totale / "Tutto e perduto"</text>
+
+  <!-- 5. Climax -->
+  <circle cx="730" cy="160" r="9" fill="#f43f5e" stroke="#ffffff" stroke-width="3"/>
+  <text x="730" y="135" text-anchor="middle" fill="#f87171" font-size="13" font-weight="900">CLIMAX</text>
+  <text x="730" y="150" text-anchor="middle" fill="#f8fafc" font-size="10">Scontro finale risolutivo</text>
+
+  <!-- 6. Status Quo Restaurato -->
+  <circle cx="840" cy="370" r="7" fill="#10b981"/>
+  <text x="830" y="415" text-anchor="middle" fill="#34d399" font-size="11" font-weight="700">NUOVO STATUS QUO</text>
+  <text x="830" y="430" text-anchor="middle" fill="#94a3b8" font-size="10">Redenzione &amp; Ordine</text>
+
+  <!-- Footer box chiarimenti -->
+  <rect x="50" y="460" width="800" height="40" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="450" y="484" text-anchor="middle" fill="#cbd5e1" font-size="12">
+    In 120 pagine di sceneggiatura: Atto I = 30 pag, Atto II = 60 pag, Atto III = 30 pag (1 pagina di sceneggiatura = 1 minuto di film)
+  </text>
+</svg>

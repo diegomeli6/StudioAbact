@@ -1610,6 +1610,11 @@ const StudyCore = (function () {
       lbImg.src = img.src;
       lbImg.alt = img.alt || '';
       lbCap.innerHTML = caption ? caption.innerHTML : (img.alt || '');
+      if ((img.src && img.src.includes('.svg')) || img.classList.contains('is-vector-diagram')) {
+        lightbox.classList.add('is-svg');
+      } else {
+        lightbox.classList.remove('is-svg');
+      }
       lightbox.classList.add('active');
     });
   }

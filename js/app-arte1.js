@@ -17,9 +17,9 @@
     if (state.activePdf === 'arte1-anni70') return allArte1.filter(c => c.module === 'anni70');
     if (state.activePdf === 'arte1-monografie') return allArte1.filter(c => c.module === 'monografie');
     // Fallback per sotto-moduli monografie
-    if (state.activePdf === 'arte1-magritte') return allArte1.filter(c => c.id === 'arte1-c54');
-    if (state.activePdf === 'arte1-manray') return allArte1.filter(c => c.id === 'arte1-c55');
-    if (state.activePdf === 'arte1-warhol') return allArte1.filter(c => c.id === 'arte1-c56');
+    if (state.activePdf === 'arte1-magritte') return allArte1.filter(c => c.id === 'arte1-c18');
+    if (state.activePdf === 'arte1-manray') return allArte1.filter(c => c.id === 'arte1-c19');
+    if (state.activePdf === 'arte1-warhol') return allArte1.filter(c => c.id === 'arte1-c20');
     return allArte1.filter(c => c.module === 'anni50');
   }
 

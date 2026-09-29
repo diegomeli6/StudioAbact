@@ -912,7 +912,7 @@
             return { done, total };
           }
           if (subjectId === 'storia-arte') {
-            const total = 25;
+            const total = 21;
             let done = 0;
             Object.keys(completed).forEach(k => {
               if (completed[k] && k.startsWith('arte-') && !k.startsWith('arte1-')) done++;
@@ -920,10 +920,42 @@
             return { done, total };
           }
           if (subjectId === 'storia-arte-1' || subjectId === 'dapl08-1-storia-dell-arte-contemporanea-1') {
-            const total = 21;
+            const total = 20;
             let done = 0;
             Object.keys(completed).forEach(k => {
               if (completed[k] && k.startsWith('arte1-')) done++;
+            });
+            return { done, total };
+          }
+          if (subjectId === 'archetipi' || subjectId === 'dapl08-2-archetipi-dell-immaginario') {
+            const total = 21;
+            let done = 0;
+            Object.keys(completed).forEach(k => {
+              if (completed[k] && k.startsWith('archetipi-')) done++;
+            });
+            return { done, total };
+          }
+          if (subjectId === 'fotografia-digitale' || subjectId === 'fotografia' || subjectId === 'dapl08-1-fotografia-digitale') {
+            const total = 41;
+            let done = 0;
+            Object.keys(completed).forEach(k => {
+              if (completed[k] && k.startsWith('foto-')) done++;
+            });
+            return { done, total };
+          }
+          if (subjectId === 'tecniche-audiovisive' || subjectId === 'taw' || subjectId === 'dapl08-1-tecniche-audiovisive-per-il-web') {
+            const total = 27;
+            let done = 0;
+            Object.keys(completed).forEach(k => {
+              if (completed[k] && k.startsWith('taw-')) done++;
+            });
+            return { done, total };
+          }
+          if (subjectId === 'interaction' || subjectId === 'interaction-design' || subjectId === 'ixd' || subjectId === 'dapl08-1-interaction-design') {
+            const total = 28;
+            let done = 0;
+            Object.keys(completed).forEach(k => {
+              if (completed[k] && k.startsWith('ixd-')) done++;
             });
             return { done, total };
           }

@@ -1791,17 +1791,18 @@ body.theme-dark .btn-primary-action {
 .artwork-lightbox-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(10, 15, 29, 0.92);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(8, 12, 22, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   z-index: 10000;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 64px 24px 24px 24px;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.22s ease;
+  box-sizing: border-box;
 }
 
 .artwork-lightbox-overlay.active {
@@ -1811,8 +1812,9 @@ body.theme-dark .btn-primary-action {
 
 .artwork-lightbox-content {
   position: relative;
-  max-width: 94vw;
-  max-height: 94vh;
+  max-width: 96vw;
+  max-height: 90vh;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1826,13 +1828,24 @@ body.theme-dark .btn-primary-action {
 }
 
 .artwork-lightbox-img {
-  max-width: 90vw;
-  max-height: 82vh;
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: min(1200px, 94vw);
+  max-height: 78vh;
   object-fit: contain;
-  border-radius: 10px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  background: #000;
+  border-radius: 12px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: #090d16;
+}
+
+/* Quando l'immagine nella lightbox è uno schema SVG o grafica vettoriale */
+.artwork-lightbox-overlay.is-svg .artwork-lightbox-img,
+.artwork-lightbox-img[src$=".svg"] {
+  width: min(1020px, 94vw);
+  max-height: 80vh;
+  height: auto;
 }
 
 .artwork-lightbox-caption {
@@ -1850,27 +1863,32 @@ body.theme-dark .btn-primary-action {
 }
 
 .artwork-lightbox-close {
-  position: absolute;
-  top: -46px;
-  right: -4px;
-  background: rgba(255, 255, 255, 0.16);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: fixed;
+  top: 20px;
+  right: 24px;
+  z-index: 10002;
+  background: rgba(30, 41, 59, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   color: #ffffff;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
 }
 
 .artwork-lightbox-close:hover {
-  background: rgba(255, 255, 255, 0.32);
-  transform: scale(1.1);
+  background: rgba(239, 68, 68, 0.9);
+  border-color: #ef4444;
+  transform: scale(1.08);
 }
 
 .artwork-caption {

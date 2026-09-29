@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="100%" height="auto" style="background:#0f172a; border-radius:12px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <marker id="arrowProd" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+      <path d="M 1 1 L 6 3.5 L 1 6 Z" fill="#94a3b8" />
+    </marker>
+  </defs>
+
+  <rect width="900" height="520" fill="#0f172a" rx="12"/>
+  <rect x="2" y="2" width="896" height="516" fill="none" stroke="#334155" stroke-width="1.5" rx="10"/>
+
+  <!-- Titolo -->
+  <text x="450" y="44" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="700" letter-spacing="1">ITER PROGETTUALE: DALL'IDEA AL MASTER WEB</text>
+  <text x="450" y="68" text-anchor="middle" fill="#94a3b8" font-size="13">Le 4 macro-fasi della produzione audiovisiva secondo il metodo rigoroso di Bruno Munari</text>
+
+  <!-- FASE 1: SCRITTURA E SVILUPPO -->
+  <g transform="translate(40, 95)">
+    <rect width="185" height="380" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <rect width="185" height="36" rx="8" fill="#0284c7"/>
+    <text x="92" y="24" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">1. SVILUPPO &amp; TESTO</text>
+
+    <g transform="translate(15, 55)">
+      <text x="0" y="16" fill="#38bdf8" font-size="12" font-weight="700">A. Idea &amp; 5W</text>
+      <text x="0" y="32" fill="#94a3b8" font-size="10">Who, What, When, Where, Why</text>
+
+      <text x="0" y="62" fill="#38bdf8" font-size="12" font-weight="700">B. Soggetto</text>
+      <text x="0" y="78" fill="#94a3b8" font-size="10">Racconto narrativo continuo</text>
+
+      <text x="0" y="108" fill="#38bdf8" font-size="12" font-weight="700">C. Scaletta</text>
+      <text x="0" y="124" fill="#94a3b8" font-size="10">Elenco numerato delle scene</text>
+
+      <text x="0" y="154" fill="#38bdf8" font-size="12" font-weight="700">D. Trattamento</text>
+      <text x="0" y="170" fill="#94a3b8" font-size="10">Prosa dettagliata, stile e toni</text>
+
+      <text x="0" y="200" fill="#38bdf8" font-size="12" font-weight="700">E. Sceneggiatura</text>
+      <text x="0" y="216" fill="#94a3b8" font-size="10">Formato americano/italiano</text>
+
+      <text x="0" y="246" fill="#38bdf8" font-size="12" font-weight="700">F. Storyboard</text>
+      <text x="0" y="262" fill="#94a3b8" font-size="10">Visualizzazione a fumetto</text>
+    </g>
+  </g>
+
+  <!-- FASE 2: PRE-PRODUZIONE -->
+  <g transform="translate(250, 95)">
+    <rect width="185" height="380" rx="8" fill="#1e293b" stroke="#fbbf24" stroke-width="1.5"/>
+    <rect width="185" height="36" rx="8" fill="#d97706"/>
+    <text x="92" y="24" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">2. PRE-PRODUZIONE</text>
+
+    <g transform="translate(15, 55)">
+      <text x="0" y="16" fill="#fbbf24" font-size="12" font-weight="700">A. Spoglio Sceneggiatura</text>
+      <text x="0" y="32" fill="#94a3b8" font-size="10">Catalogazione fabbisogni</text>
+
+      <text x="0" y="62" fill="#fbbf24" font-size="12" font-weight="700">B. Piano di Lavorazione</text>
+      <text x="0" y="78" fill="#94a3b8" font-size="10">Shooting schedule per set</text>
+
+      <text x="0" y="108" fill="#fbbf24" font-size="12" font-weight="700">C. Casting &amp; Location</text>
+      <text x="0" y="124" fill="#94a3b8" font-size="10">Attori e sopralluoghi tecnici</text>
+
+      <text x="0" y="154" fill="#fbbf24" font-size="12" font-weight="700">D. Costumi &amp; Scenografia</text>
+      <text x="0" y="170" fill="#94a3b8" font-size="10">Allestimento e attrezzeria</text>
+
+      <text x="0" y="200" fill="#fbbf24" font-size="12" font-weight="700">E. Ordine del Giorno</text>
+      <text x="0" y="216" fill="#94a3b8" font-size="10">Call Sheet quotidiano troupe</text>
+    </g>
+  </g>
+
+  <!-- FASE 3: PRODUZIONE (IL SET) -->
+  <g transform="translate(460, 95)">
+    <rect width="185" height="380" rx="8" fill="#1e293b" stroke="#f43f5e" stroke-width="1.5"/>
+    <rect width="185" height="36" rx="8" fill="#e11d48"/>
+    <text x="92" y="24" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">3. IL SET (RIPRESE)</text>
+
+    <g transform="translate(15, 55)">
+      <text x="0" y="16" fill="#f43f5e" font-size="12" font-weight="700">A. Regia &amp; Aiuto Regista</text>
+      <text x="0" y="32" fill="#94a3b8" font-size="10">Guida artistica e timing</text>
+
+      <text x="0" y="62" fill="#f43f5e" font-size="12" font-weight="700">B. DoP &amp; Camera Crew</text>
+      <text x="0" y="78" fill="#94a3b8" font-size="10">Direttore foto, operatore, 1st AC</text>
+
+      <text x="0" y="108" fill="#f43f5e" font-size="12" font-weight="700">C. Gaffer &amp; Grip</text>
+      <text x="0" y="124" fill="#94a3b8" font-size="10">Luci, stativi, dolly, crane</text>
+
+      <text x="0" y="154" fill="#f43f5e" font-size="12" font-weight="700">D. Presa Diretta Suono</text>
+      <text x="0" y="170" fill="#94a3b8" font-size="10">Fonico e microfonista (boom)</text>
+
+      <text x="0" y="200" fill="#f43f5e" font-size="12" font-weight="700">E. Ciak &amp; Sincronia</text>
+      <text x="0" y="216" fill="#94a3b8" font-size="10">Script supervisor (segretaria ed.)</text>
+    </g>
+  </g>
+
+  <!-- FASE 4: POST-PRODUZIONE & WEB -->
+  <g transform="translate(670, 95)">
+    <rect width="185" height="380" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+    <rect width="185" height="36" rx="8" fill="#059669"/>
+    <text x="92" y="24" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">4. POST &amp; WEB</text>
+
+    <g transform="translate(15, 55)">
+      <text x="0" y="16" fill="#10b981" font-size="12" font-weight="700">A. Montaggio Video</text>
+      <text x="0" y="32" fill="#94a3b8" font-size="10">Offline cut e picture lock</text>
+
+      <text x="0" y="62" fill="#10b981" font-size="12" font-weight="700">B. Sound Design &amp; Mix</text>
+      <text x="0" y="78" fill="#94a3b8" font-size="10">Foley, dialoghi, colonna sonora</text>
+
+      <text x="0" y="108" fill="#10b981" font-size="12" font-weight="700">C. Color Grading</text>
+      <text x="0" y="124" fill="#94a3b8" font-size="10">LUT, correzione primaria/secondaria</text>
+
+      <text x="0" y="154" fill="#10b981" font-size="12" font-weight="700">D. Compressione Codec</text>
+      <text x="0" y="170" fill="#94a3b8" font-size="10">H.264, HEVC, AV1, ProRes</text>
+
+      <text x="0" y="200" fill="#10b981" font-size="12" font-weight="700">E. Web Delivery HLS/DASH</text>
+      <text x="0" y="216" fill="#94a3b8" font-size="10">Streaming adattivo e HTML5 video</text>
+    </g>
+  </g>
+</svg>

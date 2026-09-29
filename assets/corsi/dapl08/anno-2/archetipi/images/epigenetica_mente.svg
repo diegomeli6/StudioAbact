@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220" width="100%" height="220" style="background:#12151c;border-radius:12px;">
+  <rect width="720" height="220" rx="12" fill="#12151c"/>
+  <text x="360" y="25" text-anchor="middle" fill="#feb940" font-family="system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="1">IL PRIMATO DELLA MENTE: DETERMINISMO GENETICO VS EPIGENETICA</text>
+
+  <!-- Determinismo Classico -->
+  <g transform="translate(40, 45)">
+    <rect width="290" height="145" rx="8" fill="#1e293b" stroke="#ef4444" stroke-width="1.5" opacity="0.85"/>
+    <text x="15" y="25" fill="#ef4444" font-family="system-ui, sans-serif" font-size="12" font-weight="700">DETERMINISMO GENETICO (1953)</text>
+    <text x="15" y="45" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Watson, Crick &amp; Neodarwinismo classico:</text>
+    <text x="15" y="68" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">DNA -&gt; RNA -&gt; Proteine -&gt; Destino biologico</text>
+    <text x="15" y="92" fill="#fca5a5" font-family="system-ui, sans-serif" font-size="10">I geni si auto-attivano e comandano.</text>
+    <text x="15" y="108" fill="#fca5a5" font-family="system-ui, sans-serif" font-size="10">L'uomo è vittima del proprio codice.</text>
+    <text x="15" y="128" fill="#ef4444" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Visione meccanicista e fatalista</text>
+  </g>
+
+  <!-- Nuova Visione Epigenetica -->
+  <g transform="translate(390, 45)">
+    <rect width="290" height="145" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="15" y="25" fill="#10b981" font-family="system-ui, sans-serif" font-size="12" font-weight="700">CONTROLLO EPIGENETICO (B. Lipton)</text>
+    <text x="15" y="45" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Percezione Mente -&gt; Sangue -&gt; Geni:</text>
+    <text x="15" y="68" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">Mente conscia valuta l'ambiente.</text>
+    <text x="15" y="92" fill="#86efac" font-family="system-ui, sans-serif" font-size="10">Il cervello rilascia ormoni nel sangue.</text>
+    <text x="15" y="108" fill="#86efac" font-family="system-ui, sans-serif" font-size="10">L'ambiente cellulare attiva o silenzia i geni.</text>
+    <text x="15" y="128" fill="#10b981" font-family="system-ui, sans-serif" font-size="10" font-weight="600">La mente e le credenze plasmano la biologia</text>
+  </g>
+
+  <path d="M 342 115 L 378 115" stroke="#feb940" stroke-width="2"/>
+</svg>

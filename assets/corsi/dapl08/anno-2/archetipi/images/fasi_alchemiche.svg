@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 210" width="100%" height="210" style="background:#12151c;border-radius:12px;">
+  <rect width="760" height="210" rx="12" fill="#12151c"/>
+  <text x="380" y="30" text-anchor="middle" fill="#feb940" font-family="system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="1">LE 4 FASI DELL'ALCHIMIA E IL PROCESSO D'INDIVIDUAZIONE DI JUNG</text>
+
+  <!-- 1. Nigredo -->
+  <g transform="translate(50, 55)">
+    <rect width="145" height="115" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="24" cy="24" r="10" fill="#020617" stroke="#64748b" stroke-width="1"/>
+    <text x="42" y="28" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="700">1. NIGREDO</text>
+    <text x="14" y="52" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Opera al Nero</text>
+    <text x="14" y="72" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Putrefazione e caos.</text>
+    <text x="14" y="88" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Confronto doloroso</text>
+    <text x="14" y="102" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">con l'Ombra e il rimosso.</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <path d="M 205 112 L 225 112" stroke="#feb940" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 2. Albedo -->
+  <g transform="translate(235, 55)">
+    <rect width="145" height="115" rx="8" fill="#0f172a" stroke="#f8fafc" stroke-width="1.5"/>
+    <circle cx="24" cy="24" r="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="42" y="28" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="700">2. ALBEDO</text>
+    <text x="14" y="52" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Opera al Bianco</text>
+    <text x="14" y="72" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Purificazione lunare.</text>
+    <text x="14" y="88" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Risveglio della coscienza,</text>
+    <text x="14" y="102" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">integrazione Anima/Animus.</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <path d="M 390 112 L 410 112" stroke="#feb940" stroke-width="2"/>
+
+  <!-- 3. Citrinitas -->
+  <g transform="translate(420, 55)">
+    <rect width="145" height="115" rx="8" fill="#0f172a" stroke="#eab308" stroke-width="1.5"/>
+    <circle cx="24" cy="24" r="10" fill="#eab308"/>
+    <text x="42" y="28" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="700">3. CITRINITAS</text>
+    <text x="14" y="52" fill="#eab308" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Opera al Giallo</text>
+    <text x="14" y="72" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Luce solare, saggezza.</text>
+    <text x="14" y="88" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Superamento dualismi,</text>
+    <text x="14" y="102" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">fioritura interiore.</text>
+  </g>
+
+  <!-- Arrow 3 -->
+  <path d="M 575 112 L 595 112" stroke="#feb940" stroke-width="2"/>
+
+  <!-- 4. Rubedo -->
+  <g transform="translate(605, 55)">
+    <rect width="145" height="115" rx="8" fill="#0f172a" stroke="#ef4444" stroke-width="1.5"/>
+    <circle cx="24" cy="24" r="10" fill="#ef4444"/>
+    <text x="42" y="28" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="700">4. RUBEDO</text>
+    <text x="14" y="52" fill="#ef4444" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Opera al Rosso</text>
+    <text x="14" y="72" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Pietra Filosofale.</text>
+    <text x="14" y="88" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Nozze Alchemiche (Sé),</text>
+    <text x="14" y="102" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">totalita armoniosa.</text>
+  </g>
+
+  <text x="380" y="192" text-anchor="middle" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">La trasmutazione alchemica come metafora psicologica dell'integrazione del Sé (C.G. Jung, 1944)</text>
+</svg>

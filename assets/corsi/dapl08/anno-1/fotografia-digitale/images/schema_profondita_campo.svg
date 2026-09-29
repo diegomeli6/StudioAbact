@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="500" rx="16" fill="url(#bgGrad3)" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <g transform="translate(50, 40)">
+    <rect x="0" y="-6" width="6" height="40" rx="3" fill="#feb940"/>
+    <text x="18" y="16" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800">PROFONDITÀ DI CAMPO (DoF) E APERTURA DIAFRAMMA</text>
+    <text x="18" y="36" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="13">Controllo del piano di nitidezza, separazione del soggetto e sfocatura progressiva (Bokeh)</text>
+  </g>
+
+  <!-- Riga 1: f/1.8 (Apertura grande, DoF ridotta) -->
+  <g transform="translate(50, 110)">
+    <rect width="800" height="104" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <rect x="0" y="0" width="6" height="104" rx="3" fill="#ef4444"/>
+    <circle cx="65" cy="52" r="34" fill="#d97706" stroke="#fbbf24" stroke-width="2"/>
+    <text x="65" y="58" text-anchor="middle" fill="#ffffff" font-family="system-ui, sans-serif" font-size="15" font-weight="800">f/1.8</text>
+    <text x="125" y="34" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="14.5" font-weight="700">Grande Apertura (Massima Quantità di Luce)</text>
+    <text x="125" y="58" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12.5">Profondità di campo RIDOTTA: piano focale millimetrico, sfondo completamente sfocato (Bokeh cremoso).</text>
+    <text x="125" y="80" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12">Utilizzo didattico: Ritrattistica d'autore, isolamento plastico del soggetto dal contesto, luce scarsa.</text>
+    <rect x="635" y="42" width="145" height="22" rx="4" fill="#ef4444" opacity="0.85"/>
+    <text x="707" y="57" text-anchor="middle" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="700">ZONA NITIDA: STRETTA</text>
+  </g>
+
+  <!-- Riga 2: f/5.6 - f/8 (Apertura media, Sweet Spot) -->
+  <g transform="translate(50, 230)">
+    <rect width="800" height="104" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <rect x="0" y="0" width="6" height="104" rx="3" fill="#f59e0b"/>
+    <circle cx="65" cy="52" r="23" fill="#0284c7" stroke="#38bdf8" stroke-width="2"/>
+    <text x="65" y="57" text-anchor="middle" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="800">f/8</text>
+    <text x="125" y="34" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="14.5" font-weight="700">Media Apertura (Sweet Spot Ottico)</text>
+    <text x="125" y="58" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12.5">Profondità di campo MEDIA: punto di massima risoluzione e contrasto dell'obiettivo (aberrazioni minime).</text>
+    <text x="125" y="80" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12">Utilizzo didattico: Street photography, reportage documentario, ritratti ambientati (es. Bresson, Giacomelli).</text>
+    <rect x="635" y="42" width="145" height="22" rx="4" fill="#f59e0b" opacity="0.85"/>
+    <text x="707" y="57" text-anchor="middle" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="700">ZONA NITIDA: MEDIA</text>
+  </g>
+
+  <!-- Riga 3: f/16 - f/22 (Piccola apertura, DoF estesa) -->
+  <g transform="translate(50, 350)">
+    <rect width="800" height="104" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <rect x="0" y="0" width="6" height="104" rx="3" fill="#10b981"/>
+    <circle cx="65" cy="52" r="12" fill="#059669" stroke="#34d399" stroke-width="2"/>
+    <text x="65" y="56" text-anchor="middle" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="800">f/16</text>
+    <text x="125" y="34" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="14.5" font-weight="700">Piccola Apertura (Poca Luce - Massima Estensione)</text>
+    <text x="125" y="58" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12.5">Profondità di campo ESTESA: primo piano e orizzonte a fuoco. Attenzione alla diffrazione ottica oltre f/16.</text>
+    <text x="125" y="80" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12">Utilizzo didattico: Paesaggio, fotografia di architettura (es. Basilico, Ghirri, Becher).</text>
+    <rect x="635" y="42" width="145" height="22" rx="4" fill="#10b981" opacity="0.85"/>
+    <text x="707" y="57" text-anchor="middle" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10.5" font-weight="700">ZONA NITIDA: ESTESA</text>
+  </g>
+</svg>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="100%" height="auto" style="background:#0f172a; border-radius:12px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <marker id="arrMatrixDown" markerWidth="7" markerHeight="7" refX="3.5" refY="5" orient="auto">
+      <path d="M 1 1 L 6 1 L 3.5 6 Z" fill="#38bdf8" />
+    </marker>
+    <marker id="arrMatrixUp" markerWidth="7" markerHeight="7" refX="3.5" refY="1" orient="auto">
+      <path d="M 1 6 L 6 6 L 3.5 1 Z" fill="#10b981" />
+    </marker>
+  </defs>
+
+  <rect width="900" height="520" fill="#0f172a" rx="12"/>
+  <rect x="2" y="2" width="896" height="516" fill="none" stroke="#334155" stroke-width="1.5" rx="10"/>
+
+  <!-- Titolo -->
+  <text x="450" y="44" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="700" letter-spacing="1">INTERACTION MATRIX: IL CIRCUITO UOMO-MACCHINA</text>
+  <text x="450" y="68" text-anchor="middle" fill="#94a3b8" font-size="13">I flussi bidirezionali tra apparato percettivo/motorio umano e controlli/display dell'artefatto</text>
+
+  <!-- POLO SUPERIORE: ESSERE UMANO -->
+  <g transform="translate(60, 95)">
+    <rect width="780" height="150" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <rect width="780" height="32" rx="8" fill="#0284c7"/>
+    <text x="390" y="22" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">POLO UMANO (SOGGETTO ATTIVO)</text>
+
+    <!-- Recettori Sensoriali Umani (Sinistra) -->
+    <rect x="25" y="45" width="350" height="85" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+    <text x="40" y="70" fill="#38bdf8" font-size="13" font-weight="700">RECETTORI SENSORIALI (INPUT UOMO)</text>
+    <text x="40" y="92" fill="#cbd5e1" font-size="11">&bull; Vista: percezione visiva (display, icone, colori, layout)</text>
+    <text x="40" y="108" fill="#cbd5e1" font-size="11">&bull; Udito: feedback acustico (notifiche, voce, click sonori)</text>
+    <text x="40" y="124" fill="#cbd5e1" font-size="11">&bull; Tatto: sensazione aptica (vibrazioni, texture, resistenza tasti)</text>
+
+    <!-- Mezzi Motori Fisici Umani (Destra) -->
+    <rect x="405" y="45" width="350" height="85" rx="6" fill="#0f172a" stroke="#fbbf24" stroke-width="1"/>
+    <text x="420" y="70" fill="#fbbf24" font-size="13" font-weight="700">ATTUATORI FISICI (OUTPUT UOMO)</text>
+    <text x="420" y="92" fill="#cbd5e1" font-size="11">&bull; Dita e Mani: tocco, swipe, pressione, rotazione manopole</text>
+    <text x="420" y="108" fill="#cbd5e1" font-size="11">&bull; Voce: comandi vocali, riconoscimento del parlato</text>
+    <text x="420" y="124" fill="#cbd5e1" font-size="11">&bull; Occhi e Corpo: tracciamento sguardo (eye-tracking), postura</text>
+  </g>
+
+  <!-- FLUSSI INTERATTIVI CENTRALI -->
+  <!-- Freccia Azione Uomo -> Macchina (Destra, scende) -->
+  <line x1="580" y1="250" x2="580" y2="295" stroke="#fbbf24" stroke-width="3" marker-end="url(#arrMatrixDown)"/>
+  <rect x="600" y="258" width="220" height="30" rx="4" fill="#0f172a" stroke="#fbbf24" stroke-width="1"/>
+  <text x="710" y="278" text-anchor="middle" fill="#fbbf24" font-size="11" font-weight="700">AZIONE / INPUT UTENTE</text>
+
+  <!-- Freccia Risposta Macchina -> Uomo (Sinistra, sale) -->
+  <line x1="200" y1="295" x2="200" y2="250" stroke="#10b981" stroke-width="3" marker-end="url(#arrMatrixUp)"/>
+  <rect x="220" y="258" width="220" height="30" rx="4" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+  <text x="330" y="278" text-anchor="middle" fill="#34d399" font-size="11" font-weight="700">FEEDBACK / RISPOSTA MACCHINA</text>
+
+  <!-- POLO INFERIORE: DISPOSITIVO COMPUTERIZZATO -->
+  <g transform="translate(60, 310)">
+    <rect width="780" height="150" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+    <rect width="780" height="32" rx="8" fill="#059669"/>
+    <text x="390" y="22" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">POLO MACCHINA (ARTEFATTO DIGITALE / SISTEMA)</text>
+
+    <!-- Risposte e Display della Macchina (Sinistra) -->
+    <rect x="25" y="45" width="350" height="85" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+    <text x="40" y="70" fill="#34d399" font-size="13" font-weight="700">MEZZI DI RISPOSTA (OUTPUT MACCHINA)</text>
+    <text x="40" y="92" fill="#cbd5e1" font-size="11">&bull; Schermi &amp; Display: rendering grafico, animazioni, interfacce GUI</text>
+    <text x="40" y="108" fill="#cbd5e1" font-size="11">&bull; Altoparlanti: segnali acustici, suoni di stato, sintesi vocale</text>
+    <text x="40" y="124" fill="#cbd5e1" font-size="11">&bull; Motori Aptici: vibrazioni ERM/LRA per feedback di pressione</text>
+
+    <!-- Controlli e Sensori della Macchina (Destra) -->
+    <rect x="405" y="45" width="350" height="85" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+    <text x="420" y="70" fill="#38bdf8" font-size="13" font-weight="700">CONTROLLI E SENSORI (INPUT MACCHINA)</text>
+    <text x="420" y="92" fill="#cbd5e1" font-size="11">&bull; Sensori Touch: digitalizzatori capacitivi multitouch</text>
+    <text x="420" y="108" fill="#cbd5e1" font-size="11">&bull; Controlli Fisici: pulsanti, encoder rotativi, pedali, leve</text>
+    <text x="420" y="124" fill="#cbd5e1" font-size="11">&bull; Sensori Ambientali: microfoni, telecamere, accelerometri, LiDAR</text>
+  </g>
+
+  <!-- Note Footer -->
+  <text x="450" y="495" text-anchor="middle" fill="#94a3b8" font-size="11">
+    Il loop interattivo continuo si completa quando il feedback della macchina modifica il modello mentale dell'utente.
+  </text>
+</svg>

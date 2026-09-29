@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" width="900" height="540">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="540" rx="16" fill="url(#bgGrad5)" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <g transform="translate(50, 40)">
+    <rect x="0" y="-6" width="6" height="40" rx="3" fill="#feb940"/>
+    <text x="18" y="16" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800">SCHEMI DI ILLUMINAZIONE IN STUDIO (PORTRAIT LIGHTING)</text>
+    <text x="18" y="36" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="13">Configurazione classica a 3 o 4 punti luce: Key Light, Fill Light, Rim/Hair Light e Sfondo</text>
+  </g>
+
+  <!-- Area Studio Grafica (Centrata a sinistra) -->
+  <g transform="translate(80, 110)">
+    <!-- Fondale Studio -->
+    <rect x="100" y="10" width="300" height="14" rx="4" fill="#64748b"/>
+    <text x="250" y="0" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">FONDALE STUDIO (BACKDROP)</text>
+
+    <!-- Luce Sfondo (Background Light) -->
+    <circle cx="250" cy="55" r="16" fill="#f59e0b" stroke="#fef08a" stroke-width="1.5"/>
+    <text x="250" y="85" text-anchor="middle" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="11" font-weight="700">LUCE SFONDO</text>
+
+    <!-- Soggetto -->
+    <circle cx="250" cy="150" r="28" fill="#0284c7" stroke="#f8fafc" stroke-width="2.5"/>
+    <text x="250" y="155" text-anchor="middle" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12.5" font-weight="800">SOGGETTO</text>
+
+    <!-- Controluce (Rim / Hair Light) -->
+    <circle cx="390" cy="90" r="18" fill="#eab308" stroke="#fef08a" stroke-width="1.5"/>
+    <line x1="375" y1="105" x2="280" y2="140" stroke="#eab308" stroke-width="2" stroke-dasharray="3"/>
+
+    <!-- Key Light (Luce Principale 45 gradi) -->
+    <circle cx="70" cy="260" r="22" fill="#ef4444" stroke="#fca5a5" stroke-width="2"/>
+    <line x1="90" y1="245" x2="225" y2="165" stroke="#ef4444" stroke-width="2.5" stroke-dasharray="4"/>
+
+    <!-- Fill Light (Luce di Riempimento) -->
+    <circle cx="430" cy="260" r="20" fill="#3b82f6" stroke="#93c5fd" stroke-width="2"/>
+    <line x1="410" y1="245" x2="275" y2="165" stroke="#3b82f6" stroke-width="2" stroke-dasharray="3"/>
+
+    <!-- Fotocamera -->
+    <rect x="225" y="325" width="50" height="35" rx="4" fill="#334155" stroke="#f8fafc" stroke-width="1.5"/>
+    <circle cx="250" cy="342" r="10" fill="#0284c7" stroke="#38bdf8" stroke-width="2"/>
+    <text x="250" y="380" text-anchor="middle" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12.5" font-weight="700">FOTOCAMERA</text>
+  </g>
+
+  <!-- Legenda Schede a Destra (Colonna pulita x=560) -->
+  <g transform="translate(560, 110)">
+    <!-- Scheda 1: Key Light -->
+    <g transform="translate(0, 0)">
+      <rect width="290" height="74" rx="8" fill="#0f172a" stroke="#ef4444" stroke-width="1.2"/>
+      <rect x="0" y="0" width="5" height="74" rx="2" fill="#ef4444"/>
+      <text x="14" y="22" fill="#f87171" font-family="system-ui, sans-serif" font-size="12.5" font-weight="800">1. KEY LIGHT (Principale)</text>
+      <text x="14" y="42" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">A 45° dal soggetto. Determina il chiaroscuro,</text>
+      <text x="14" y="58" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">la direzione e lo stile (Rembrandt o Loop).</text>
+    </g>
+
+    <!-- Scheda 2: Fill Light -->
+    <g transform="translate(0, 84)">
+      <rect width="290" height="74" rx="8" fill="#0f172a" stroke="#3b82f6" stroke-width="1.2"/>
+      <rect x="0" y="0" width="5" height="74" rx="2" fill="#3b82f6"/>
+      <text x="14" y="22" fill="#60a5fa" font-family="system-ui, sans-serif" font-size="12.5" font-weight="800">2. FILL LIGHT (Riempimento)</text>
+      <text x="14" y="42" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">Sul lato opposto (rapporto 1:2 o 1:4).</text>
+      <text x="14" y="58" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Schiarisce le ombre (softbox o pannello riflettente).</text>
+    </g>
+
+    <!-- Scheda 3: Rim / Hair Light -->
+    <g transform="translate(0, 168)">
+      <rect width="290" height="74" rx="8" fill="#0f172a" stroke="#eab308" stroke-width="1.2"/>
+      <rect x="0" y="0" width="5" height="74" rx="2" fill="#eab308"/>
+      <text x="14" y="22" fill="#facc15" font-family="system-ui, sans-serif" font-size="12.5" font-weight="800">3. RIM / HAIR LIGHT (Controluce)</text>
+      <text x="14" y="42" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">Piazzata dietro o a 3/4 posteriore.</text>
+      <text x="14" y="58" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Disegna i contorni e stacca la sagoma dallo sfondo.</text>
+    </g>
+
+    <!-- Scheda 4: Background Light -->
+    <g transform="translate(0, 252)">
+      <rect width="290" height="74" rx="8" fill="#0f172a" stroke="#f59e0b" stroke-width="1.2"/>
+      <rect x="0" y="0" width="5" height="74" rx="2" fill="#f59e0b"/>
+      <text x="14" y="22" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="12.5" font-weight="800">4. BACKGROUND LIGHT (Sfondo)</text>
+      <text x="14" y="42" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">Illumina il fondale per eliminare ombre spurie</text>
+      <text x="14" y="58" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">o creare gradienti tonali ed effetti halo.</text>
+    </g>
+  </g>
+</svg>

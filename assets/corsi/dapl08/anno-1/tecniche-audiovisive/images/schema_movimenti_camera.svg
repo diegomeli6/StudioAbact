@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="100%" height="auto" style="background:#0f172a; border-radius:12px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="panGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="tiltGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#fb923c"/>
+    </linearGradient>
+    <linearGradient id="dollyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <marker id="arrowHead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 1 1 L 7 4 L 1 7 Z" fill="#38bdf8" />
+    </marker>
+    <marker id="arrowHeadRose" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 1 1 L 7 4 L 1 7 Z" fill="#f43f5e" />
+    </marker>
+    <marker id="arrowHeadGreen" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 1 1 L 7 4 L 1 7 Z" fill="#10b981" />
+    </marker>
+  </defs>
+
+  <rect width="900" height="520" fill="#0f172a" rx="12"/>
+  <rect x="2" y="2" width="896" height="516" fill="none" stroke="#334155" stroke-width="1.5" rx="10"/>
+
+  <!-- Titolo -->
+  <text x="450" y="44" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="700" letter-spacing="1">CINEMATOGRAFIA: MAPPA DEI MOVIMENTI DI CAMERA</text>
+  <text x="450" y="68" text-anchor="middle" fill="#94a3b8" font-size="13">Assi di rotazione (ottica fissa) vs Traslazioni fisiche nello spazio filmico</text>
+
+  <!-- Box 1: ROTAZIONI SU ASSE (Testa/Treppiede) -->
+  <g transform="translate(40, 95)">
+    <rect width="395" height="185" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <rect x="0" y="0" width="395" height="34" rx="8" fill="#334155" opacity="0.6"/>
+    <text x="20" y="23" fill="#38bdf8" font-size="14" font-weight="700" letter-spacing="0.5">ROTAZIONI SU ASSE (Camera Stazionaria)</text>
+
+    <!-- Panoramica PAN -->
+    <circle cx="55" cy="80" r="24" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M 38 74 Q 55 60 72 74" fill="none" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrowHead)"/>
+    <text x="95" y="76" fill="#f8fafc" font-size="14" font-weight="600">PAN (Panoramica Orizzontale)</text>
+    <text x="95" y="94" fill="#94a3b8" font-size="12">Rotazione sull'asse pan (Dx/Sx). Variante: Whip Pan (a schiaffo)</text>
+
+    <!-- Tilt -->
+    <circle cx="55" cy="140" r="24" fill="#0f172a" stroke="#f43f5e" stroke-width="2"/>
+    <path d="M 50 155 Q 40 140 50 125" fill="none" stroke="#f43f5e" stroke-width="2" marker-end="url(#arrowHeadRose)"/>
+    <text x="95" y="136" fill="#f8fafc" font-size="14" font-weight="600">TILT (Panoramica Verticale)</text>
+    <text x="95" y="154" fill="#94a3b8" font-size="12">Rotazione su asse di beccheggio: Tilt Up (in alto) / Tilt Down (in basso)</text>
+  </g>
+
+  <!-- Box 2: TRASLAZIONI FISICHE (Carrello, Dolly, Gru) -->
+  <g transform="translate(465, 95)">
+    <rect width="395" height="185" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <rect x="0" y="0" width="395" height="34" rx="8" fill="#334155" opacity="0.6"/>
+    <text x="20" y="23" fill="#10b981" font-size="14" font-weight="700" letter-spacing="0.5">TRASLAZIONI NELLO SPAZIO (Dolly, Track, Crane)</text>
+
+    <!-- Dolly In / Out -->
+    <circle cx="55" cy="80" r="24" fill="#0f172a" stroke="#10b981" stroke-width="2"/>
+    <line x1="42" y1="80" x2="68" y2="80" stroke="#10b981" stroke-width="2.5" marker-end="url(#arrowHeadGreen)"/>
+    <text x="95" y="76" fill="#f8fafc" font-size="14" font-weight="600">DOLLY (In / Out)</text>
+    <text x="95" y="94" fill="#94a3b8" font-size="12">Spostamento su ruote/binario: Push-In (avanti) / Pull-Out (indietro)</text>
+
+    <!-- Truck / Boom -->
+    <circle cx="55" cy="140" r="24" fill="#0f172a" stroke="#fbbf24" stroke-width="2"/>
+    <line x1="45" y1="140" x2="65" y2="140" stroke="#fbbf24" stroke-width="2"/>
+    <line x1="55" y1="150" x2="55" y2="130" stroke="#fbbf24" stroke-width="2"/>
+    <text x="95" y="136" fill="#f8fafc" font-size="14" font-weight="600">TRUCK (Crab) &amp; BOOM (Pedestal)</text>
+    <text x="95" y="154" fill="#94a3b8" font-size="12">Truck: traslazione laterale parallela. Boom/Jib: elevazione verticale</text>
+  </g>
+
+  <!-- Box 3: MOVIMENTI COMPLESSI & EFFETTI SPECIALI (Riga inferiore) -->
+  <g transform="translate(40, 295)">
+    <rect width="820" height="195" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <rect x="0" y="0" width="820" height="34" rx="8" fill="#334155" opacity="0.6"/>
+    <text x="20" y="23" fill="#a78bfa" font-size="14" font-weight="700" letter-spacing="0.5">DINAMICHE COMPLESSE: DOLLY ZOOM, PARALLAX, SNORRICAM</text>
+
+    <!-- Item 1: Dolly Zoom / Vertigo -->
+    <g transform="translate(25, 50)">
+      <rect width="245" height="125" rx="6" fill="#0f172a" stroke="#a78bfa" stroke-width="1"/>
+      <text x="15" y="26" fill="#c084fc" font-size="13" font-weight="700">DOLLY ZOOM (Vertigo)</text>
+      <text x="15" y="48" fill="#e2e8f0" font-size="12" font-weight="600">Dolly In + Zoom Out</text>
+      <text x="15" y="66" fill="#94a3b8" font-size="11">o viceversa (Dolly Out + Zoom In).</text>
+      <text x="15" y="86" fill="#94a3b8" font-size="11">Il soggetto resta immutato,</text>
+      <text x="15" y="104" fill="#38bdf8" font-size="11">lo sfondo si dilata o comprime.</text>
+    </g>
+
+    <!-- Item 2: Parallax Shot -->
+    <g transform="translate(288, 50)">
+      <rect width="245" height="125" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+      <text x="15" y="26" fill="#38bdf8" font-size="13" font-weight="700">PARALLAX SHOT</text>
+      <text x="15" y="48" fill="#e2e8f0" font-size="12" font-weight="600">PAN + Dolly Opposto</text>
+      <text x="15" y="66" fill="#94a3b8" font-size="11">La camera scorre lateralmente</text>
+      <text x="15" y="86" fill="#94a3b8" font-size="11">mentre ruota in senso contrario.</text>
+      <text x="15" y="104" fill="#fb923c" font-size="11">Profondita prospettica dinamica.</text>
+    </g>
+
+    <!-- Item 3: Snorricam -->
+    <g transform="translate(550, 50)">
+      <rect width="245" height="125" rx="6" fill="#0f172a" stroke="#f43f5e" stroke-width="1"/>
+      <text x="15" y="26" fill="#f43f5e" font-size="13" font-weight="700">SNORRICAM (Bodycam)</text>
+      <text x="15" y="48" fill="#e2e8f0" font-size="12" font-weight="600">Rig ancorato al torso</text>
+      <text x="15" y="66" fill="#94a3b8" font-size="11">Obiettivo puntato sull'attore.</text>
+      <text x="15" y="86" fill="#94a3b8" font-size="11">Il volto resta immobile nel frame</text>
+      <text x="15" y="104" fill="#f43f5e" font-size="11">mentre il mondo oscilla frenetico.</text>
+    </g>
+  </g>
+</svg>

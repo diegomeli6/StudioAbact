@@ -23,13 +23,10 @@
   }
 
   function getPdfDisplayName(key) {
-    if (key === 'arte-anni80') return "1. Arte Contemporanea Anni '80";
-    if (key === 'arte-anni90') return "2. Arte Contemporanea Anni '90";
+    if (key === 'arte-anni80') return "1. Movimenti Anni '80";
+    if (key === 'arte-anni90') return "2. Movimenti Anni '90";
     if (key === 'arte-duemila') return '3. Anni Duemila — Il Secolo a Uncinetto';
-    if (key === 'arte-monografie') return '4. Monografie & Artisti Guida';
-    if (key === 'arte-hirst') return 'Damien Hirst & Young British Artists';
-    if (key === 'arte-eliasson') return 'Olafur Eliasson — Luce e Spazio';
-    if (key === 'arte-chevalier') return 'Miguel Chevalier — Pixel e IA';
+    if (key === 'arte-monografie') return '4. Monografie & Linguaggi Contemporanei';
     return key;
   }
 

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="100%" height="auto" style="background:#0f172a; border-radius:12px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="pyrGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="25%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#6d28d9"/>
+      <stop offset="75%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#e11d48"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="520" fill="#0f172a" rx="12"/>
+  <rect x="2" y="2" width="896" height="516" fill="none" stroke="#334155" stroke-width="1.5" rx="10"/>
+
+  <!-- Titolo -->
+  <text x="450" y="44" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="700" letter-spacing="1">L'ECONOMIA DELL'ESPERIENZA: DALLA MATERIA ALLA TRASFORMAZIONE</text>
+  <text x="450" y="68" text-anchor="middle" fill="#94a3b8" font-size="13">La progressione del valore economico secondo B. Joseph Pine II e James H. Gilmore</text>
+
+  <!-- Piramide del Valore Economico -->
+  <!-- Livello 1: Commodities / Materie Prime -->
+  <polygon points="120,440 780,440 730,370 170,370" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+  <text x="450" y="400" text-anchor="middle" fill="#cbd5e1" font-size="13" font-weight="700">1. COMMODITIES (Materie Prime Non Lavorate)</text>
+  <text x="450" y="422" text-anchor="middle" fill="#94a3b8" font-size="11">Caffe grezzo in chicchi al chilo &bull; Valore fungibile: pochi centesimi a tazza</text>
+
+  <!-- Livello 2: Goods / Beni Tangibili di Fabbrica -->
+  <polygon points="170,370 730,370 670,300 230,300" fill="#0369a1" opacity="0.3" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="450" y="330" text-anchor="middle" fill="#38bdf8" font-size="13" font-weight="700">2. GOODS (Beni di Consumo / Prodotti Confezionati)</text>
+  <text x="450" y="352" text-anchor="middle" fill="#cbd5e1" font-size="11">Caffe macinato in barattolo al supermercato &bull; Standardizzato e tangibile</text>
+
+  <!-- Livello 3: Services / Servizi -->
+  <polygon points="230,300 670,300 600,230 300,230" fill="#6d28d9" opacity="0.3" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="450" y="260" text-anchor="middle" fill="#c084fc" font-size="13" font-weight="700">3. SERVICES (Servizi Intangibili su Richiesta)</text>
+  <text x="450" y="282" text-anchor="middle" fill="#cbd5e1" font-size="11">Caffe espresso servito al bancone del bar &bull; Si paga la comodita e il tempo</text>
+
+  <!-- Livello 4: Experiences / Esperienze Memorabili -->
+  <polygon points="300,230 600,230 530,160 370,160" fill="#d97706" opacity="0.35" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="450" y="190" text-anchor="middle" fill="#fbbf24" font-size="13" font-weight="700">4. EXPERIENCES (Esperienze Immersive e Memorabili)</text>
+  <text x="450" y="212" text-anchor="middle" fill="#cbd5e1" font-size="11">Starbucks / Cafe Florian a Venezia a 12 euro &bull; Si paga l'atmosfera, il rito e il ricordo</text>
+
+  <!-- Livello 5: Transformations / Trasformazioni dell'Individuo -->
+  <polygon points="370,160 530,160 450,90" fill="#e11d48" opacity="0.45" stroke="#f43f5e" stroke-width="2"/>
+  <text x="450" y="128" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="800">5. TRASFORMAZIONE</text>
+  <text x="450" y="145" text-anchor="middle" fill="#fca5a5" font-size="10">Cambiamento duraturo di se</text>
+
+  <!-- Frecce laterali di salita del valore -->
+  <!-- Sinistra: Prezzo / Valore aggiunto -->
+  <line x1="70" y1="440" x2="70" y2="100" stroke="#38bdf8" stroke-width="2" marker-end="url(#pyrGrad)"/>
+  <text x="60" y="270" text-anchor="middle" transform="rotate(-90 60,270)" fill="#38bdf8" font-size="12" font-weight="700">VALORE ECONOMICO AGGIUNTO &amp; PREZZO</text>
+
+  <!-- Destra: Rilevanza per l'Utente / Personalizzazione -->
+  <line x1="830" y1="440" x2="830" y2="100" stroke="#f43f5e" stroke-width="2"/>
+  <text x="840" y="270" text-anchor="middle" transform="rotate(90 840,270)" fill="#f43f5e" font-size="12" font-weight="700">PERSONALIZZAZIONE &amp; IMPATTO SULLA VITA</text>
+
+  <!-- Footer sintetico -->
+  <rect x="120" y="465" width="660" height="35" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="450" y="487" text-anchor="middle" fill="#cbd5e1" font-size="11">
+    Oggi il consumatore non cerca piu solo l'intrattenimento temporaneo, ma prodotti e servizi che trasformino la propria identita.
+  </text>
+</svg>

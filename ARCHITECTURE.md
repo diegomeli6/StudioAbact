@@ -28,11 +28,17 @@ Studio/
 |   |                           TTS audio reader sincrono per iOS/Android, markdown parser, quiz, flashcard
 |   |-- auth.js             <-- Client Supabase: gestione sessione, modale login/registrazione, sync cloud
 |   |-- app-ux.js           <-- Logica specifica Web Design (dispense, calcolo pool esame, stats)
-|   `-- app-arte.js         <-- Logica specifica Storia dell'Arte Contemporanea 2
+|   |-- app-arte.js         <-- Logica specifica Storia dell'Arte Contemporanea 2
+|   |-- app-archetipi.js    <-- Logica specifica Archetipi dell'immaginario
+|   |-- app-fotografia.js   <-- Logica specifica Fotografia Digitale
+|   `-- app-taw.js          <-- Logica specifica Tecniche Audiovisive per il Web
 |
 |-- pages/
 |   |-- ux-webdesign.html   <-- Pagina studio Web Design (template standard di riferimento)
-|   `-- storia-arte.html    <-- Pagina studio Storia dell'Arte Contemporanea 2
+|   |-- storia-arte.html    <-- Pagina studio Storia dell'Arte Contemporanea 2
+|   |-- archetipi.html      <-- Pagina studio Archetipi dell'immaginario
+|   |-- fotografia.html     <-- Pagina studio Fotografia Digitale
+|   `-- taw.html            <-- Pagina studio Tecniche Audiovisive per il Web
 |
 |-- data/
 |   |-- dispense-data.js    <-- Dispense Professore Web Design (14 capitoli)
@@ -40,14 +46,34 @@ Studio/
 |   |-- stull-data.js       <-- Edward Stull - UX Design con storie-ancora (43 capitoli)
 |   |-- maeda-data.js       <-- John Maeda - Le leggi della semplicita (13 capitoli)
 |   |-- glossary-data.js    <-- Glossario termini tecnici UX
-|   `-- arte-data.js        <-- Storia dell'Arte: Anni '80, Anni '90, Duemila, Monografie
+|   |-- arte-data.js        <-- Storia dell'Arte: Anni '80 (6 cap), Anni '90 (5 cap), Duemila (3 cap), Monografie (7 cap)
+|   |-- archetipi-data.js   <-- Archetipi dell'immaginario: Dimensione Ecologica (8 cap), Jung (5 cap), Simbologia/Epigenetica (8 cap)
+|   |-- fotografia-data.js  <-- Fotografia Digitale: Tecnica (10 cap), Teoria (5 cap), Autori (15 cap), Maestri (11 cap)
+|   |-- taw-data.js         <-- Tecniche Audiovisive per il Web: Camera (6 cap), Montaggio (8 cap), Produzione (8 cap), Post/Web (5 cap)
+|   `-- interaction-data.js <-- Interaction Design: Design Thinking (7 cap), User Research (7 cap), Teoria/Sociologia (9 cap), Prototipazione (5 cap)
 |
 `-- assets/
     |-- favicon.svg         <-- Favicon SVG adattiva al tema del browser (nero su chiaro, bianco su scuro)
     |-- logo.svg            <-- Logo orizzontale ABA Catania
     |-- logo-white.svg      <-- Logo orizzontale ABA Catania in bianco per footer
     |-- logo-icon.svg       <-- Pittogramma stella vettoriale isolato
-    `-- arte/               <-- Immagini delle opere d'arte citate nei moduli di studio
+    `-- corsi/dapl08/
+        |-- anno-1/
+        |   |-- fotografia-digitale/
+        |   |   `-- images/ <-- 26 foto autori/maestri + 5 schemi tecnici SVG (triangolo esposizione, DoF, ecc.)
+        |   |-- tecniche-audiovisive/
+        |   |   |-- dispense/ <-- Manuale PDF ufficiale del corso (Prof. Di Silvestro)
+        |   |   `-- images/   <-- 13 illustrazioni PNG da dispensa (piani/campi) + 5 schemi tecnici SVG
+        |   `-- interaction-design/
+        |       |-- dispense/ <-- Dispense d'esame IxD Raw (Prof. Interlandi)
+        |       `-- images/   <-- 8 diagrammi PNG da dispense + 7 schemi tecnici SVG (Double diamond, Matrix, Journey, Bourdieu, Piramide, Affordance, Personas)
+        `-- anno-2/
+            |-- storia-arte-2/
+            |   |-- dispense/   <-- Manuali PDF (Solo Movimenti + Monografie Anni 2000)
+            |   `-- images/     <-- 25 immagini HD delle opere analizzate nelle monografie
+            `-- archetipi/
+                |-- dispense/   <-- Testi PDF d'esame (Puglisi, Jung, Simbologia, Geometria sacra, Epigenetica)
+                `-- images/     <-- Schemi concettuali e diagrammi vettoriali SVG (Fiore della vita, Solidi platonici, Mandala, Fasi alchemiche, Psiche)
 ```
 
 ---
