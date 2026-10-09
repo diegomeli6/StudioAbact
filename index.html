@@ -4,769 +4,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Piattaforma di Studio — ABA Catania</title>
+  <title>Studio ABA Catania — Prepara gli esami dell'Accademia</title>
   <meta name="description"
-    content="Piattaforma di studio interattiva per l'Accademia di Belle Arti di Catania. Quiz, flashcard, sintesi per ogni materia e anno accademico.">
+    content="Sintesi delle dispense, flashcard con ripasso a intervalli, quiz con spiegazione e simulazioni d'esame scritto e orale per gli studenti dell'Accademia di Belle Arti di Catania.">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/app-icon-180.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Studio ABA Catania">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Studio ABA Catania — Prepara gli esami dell'Accademia">
+  <meta property="og:description" content="Sintesi delle dispense, flashcard con ripasso a intervalli, quiz con spiegazione e simulazioni d'esame scritto e orale per gli studenti dell'Accademia di Belle Arti di Catania.">
+  <meta property="og:url" content="https://diegomeli6.github.io/StudioAbact/">
+  <meta property="og:image" content="https://diegomeli6.github.io/StudioAbact/assets/media/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Studio ABA Catania: studia meglio, ripassa ovunque. Gratis, senza registrazione.">
+  <meta name="twitter:card" content="summary_large_image">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    .home-container {
-      min-height: 100vh;
-      background: var(--bg-primary);
-      color: var(--text-primary);
-      transition: background 0.3s, color 0.3s;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .materia-card-prof {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 12.5px;
-      color: var(--card-accent, var(--accent-primary));
-      font-weight: 600;
-      margin-bottom: 16px;
-      padding: 5px 12px;
-      background: color-mix(in srgb, var(--card-accent, var(--accent-primary)) 12%, transparent);
-      border-radius: 20px;
-      border: 1px solid color-mix(in srgb, var(--card-accent, var(--accent-primary)) 28%, transparent);
-      width: fit-content;
-      white-space: nowrap;
-      height: 30px;
-      box-sizing: border-box;
-    }
-
-    .materia-card-prof span {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    body.theme-dark .materia-card-prof {
-      color: var(--card-accent, #feb940);
-      background: color-mix(in srgb, var(--card-accent, #feb940) 15%, transparent);
-      border-color: color-mix(in srgb, var(--card-accent, #feb940) 35%, transparent);
-    }
-
-    .materia-prof-name {
-      color: var(--card-accent, var(--accent-primary));
-    }
-
-    body.theme-dark .materia-prof-name {
-      color: var(--card-accent, #feb940);
-    }
-
-    .home-brand-link {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      text-decoration: none;
-      color: inherit;
-      cursor: pointer;
-    }
-
-    .home-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 32px;
-      border-bottom: 1px solid var(--border-color);
-      background: var(--bg-secondary);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      transform: translateZ(0);
-      will-change: transform;
-    }
-
-    .home-brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .home-brand-logo {
-      width: 36px;
-      height: 36px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--text-primary);
-      flex-shrink: 0;
-      background: none;
-      border: none;
-      box-shadow: none;
-      transition: transform 0.2s ease, opacity 0.2s ease;
-    }
-
-    .home-brand-logo:hover {
-      transform: scale(1.06);
-    }
-
-    .home-brand-logo svg {
-      width: 34px;
-      height: 34px;
-      display: block;
-    }
-
-    .home-footer {
-      border-top: 1px solid var(--border-color);
-      padding: 36px 32px 48px;
-      text-align: center;
-      margin-top: auto;
-      background: var(--bg-secondary);
-    }
-
-    .home-footer-content {
-      max-width: 600px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 14px;
-    }
-
-    .home-footer-logo-wrap {
-      width: 160px;
-      color: var(--text-primary);
-      opacity: 0.85;
-      transition: opacity 0.2s, transform 0.2s;
-    }
-
-    .home-footer-logo-wrap:hover {
-      opacity: 1;
-      transform: translateY(-2px);
-    }
-
-    .home-footer-logo-wrap svg {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .home-footer-text {
-      font-size: 12px;
-      color: var(--text-muted);
-      margin: 0;
-      letter-spacing: 0.2px;
-    }
-
-    .home-brand h1 {
-      font-size: 18px;
-      font-weight: 700;
-      margin: 0;
-      letter-spacing: -0.3px;
-    }
-
-    .home-brand-sub {
-      font-size: 11px;
-      color: var(--text-muted);
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-    }
-
-    .home-hero {
-      text-align: center;
-      padding: 56px 24px 32px;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    .home-hero h2 {
-      font-size: 32px;
-      font-weight: 800;
-      letter-spacing: -0.8px;
-      margin: 0 0 12px;
-      background: linear-gradient(135deg, var(--hero-accent, var(--accent-primary)) 0%, var(--text-primary) 80%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .home-hero p {
-      font-size: 15px;
-      color: var(--text-secondary);
-      line-height: 1.6;
-      margin: 0;
-    }
-
-    /* Livelli di navigazione */
-    .nav-level-section {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 24px 48px;
-      flex: 1 0 auto;
-      width: 100%;
-    }
-
-    .level-heading {
-      font-size: 13px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-      color: var(--text-muted);
-      margin: 0 0 20px 4px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .level-heading svg {
-      opacity: 0.6;
-    }
-
-    /* Corsi grid */
-    .courses-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 16px;
-    }
-
-    .course-card {
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-color);
-      border-radius: 14px;
-      padding: 22px;
-      cursor: pointer;
-      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease, box-shadow 0.2s ease;
-      position: relative;
-      overflow: hidden;
-      text-decoration: none;
-      color: inherit;
-      display: block;
-      contain: content;
-    }
-
-    .course-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: var(--card-accent, var(--accent-primary));
-      opacity: 0.9;
-      transition: height 0.2s ease;
-    }
-
-    .course-card:hover {
-      border-color: var(--card-accent, var(--accent-primary));
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px color-mix(in srgb, var(--card-accent, var(--accent-primary)) 18%, transparent);
-    }
-
-    .course-card:hover::before {
-      height: 5px;
-      opacity: 1;
-    }
-
-    .course-card.has-content {
-      border-color: rgba(254, 185, 64, 0.55);
-    }
-
-    .course-card.has-content::before {
-      opacity: 1;
-      background: var(--card-accent, #feb940);
-    }
-
-    .course-card.has-content .course-card-code {
-      font-weight: 700;
-    }
-
-    body.theme-dark .course-card:hover {
-      border-color: var(--card-accent, var(--accent-primary));
-      box-shadow: 0 8px 24px color-mix(in srgb, var(--card-accent, var(--accent-primary)) 25%, transparent);
-    }
-
-    body.theme-dark .course-card.has-content {
-      border-color: rgba(254, 185, 64, 0.45);
-      background: #1c1c1c;
-      box-shadow: 0 0 20px rgba(254, 185, 64, 0.08);
-    }
-
-    body.theme-dark .course-card.has-content::before {
-      opacity: 1;
-      background: var(--card-accent, #feb940) !important;
-    }
-
-    body.theme-dark .course-card.has-content:hover {
-      border-color: var(--card-accent, #feb940);
-      box-shadow: 0 8px 24px color-mix(in srgb, var(--card-accent, var(--accent-primary)) 30%, transparent);
-    }
-
-    body.theme-dark .course-card.has-content .status-dot:not(.empty) {
-      background: #feb940 !important;
-      box-shadow: 0 0 8px rgba(254, 185, 64, 0.8);
-    }
-
-    .course-card-code {
-      display: inline-flex;
-      align-items: center;
-      font-size: 11px;
-      font-weight: 700;
-      color: var(--card-accent, var(--accent-primary));
-      background: color-mix(in srgb, var(--card-accent, var(--accent-primary)) 12%, transparent);
-      border: 1px solid color-mix(in srgb, var(--card-accent, var(--accent-primary)) 28%, transparent);
-      border-radius: 6px;
-      padding: 2px 8px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 10px;
-      width: fit-content;
-    }
-
-    .course-card-name {
-      font-size: 16px;
-      font-weight: 700;
-      margin: 0 0 8px;
-      letter-spacing: -0.2px;
-    }
-
-    .course-card-status {
-      font-size: 12px;
-      color: var(--text-muted);
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .course-card-status .status-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--card-accent, var(--accent-primary));
-      flex-shrink: 0;
-    }
-
-    .course-card-status .status-dot.empty {
-      background: var(--border-dark);
-    }
-
-    body.theme-dark .course-card-status .status-dot.empty {
-      background: #4a4a4a;
-    }
-
-    /* Anno view */
-    .anni-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 16px;
-      margin-bottom: 32px;
-    }
-
-    .anno-card {
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-color);
-      border-radius: 14px;
-      padding: 24px;
-      cursor: pointer;
-      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease, box-shadow 0.2s ease;
-      text-decoration: none;
-      color: inherit;
-      display: block;
-      contain: content;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .anno-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: var(--card-accent, var(--accent-primary));
-      opacity: 0.9;
-      transition: height 0.2s ease;
-    }
-
-    .anno-card:hover {
-      border-color: var(--card-accent, var(--accent-primary));
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px color-mix(in srgb, var(--card-accent, var(--accent-primary)) 18%, transparent);
-    }
-
-    .anno-card:hover::before {
-      height: 5px;
-      opacity: 1;
-    }
-
-    body.theme-dark .anno-card:hover {
-      border-color: var(--card-accent, var(--accent-primary));
-      box-shadow: 0 8px 24px color-mix(in srgb, var(--card-accent, var(--accent-primary)) 28%, transparent);
-    }
-
-    .anno-card h3 {
-      font-size: 22px;
-      font-weight: 800;
-      margin: 0 0 8px;
-    }
-
-    .anno-card-meta {
-      font-size: 13px;
-      color: var(--text-muted);
-    }
-
-    /* Materie view */
-    .materie-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-      gap: 24px;
-      align-items: stretch;
-    }
-
-    .materia-card {
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-color);
-      border-radius: 16px;
-      padding: 26px;
-      cursor: pointer;
-      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease, box-shadow 0.2s ease;
-      text-decoration: none;
-      color: inherit;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      box-sizing: border-box;
-      contain: content;
-    }
-
-    .materia-card:hover {
-      border-color: var(--card-accent, var(--accent-primary));
-      transform: translateY(-3px);
-      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
-    }
-
-    body.theme-dark .materia-card:hover {
-      border-color: var(--card-accent, var(--accent-primary));
-      box-shadow: 0 12px 32px rgba(254, 185, 64, 0.18);
-    }
-
-    .materia-card.materia-card-disabled {
-      cursor: default;
-      opacity: 0.58;
-      background: var(--bg-secondary);
-      border-color: var(--border-color);
-      user-select: none;
-      transition: none;
-    }
-
-    .materia-card.materia-card-disabled:hover,
-    body.theme-dark .materia-card.materia-card-disabled:hover {
-      transform: none !important;
-      box-shadow: none !important;
-      border-color: color-mix(in srgb, var(--border-color) 70%, transparent) !important;
-      opacity: 0.58 !important;
-    }
-
-    .materia-card.materia-card-disabled .materia-card-icon {
-      filter: grayscale(25%);
-      opacity: 0.85;
-    }
-
-    .materia-card.materia-card-disabled .materia-card-prof {
-      opacity: 0.85;
-    }
-
-    .materia-card-stats.materia-card-stats-disabled {
-      color: var(--text-muted);
-      font-size: 12px;
-      font-weight: 500;
-    }
-
-    .materia-badge-pill {
-      background: var(--bg-tertiary);
-      border: 1px solid var(--border-color);
-      border-radius: 6px;
-      padding: 3px 8px;
-      font-size: 11.5px;
-      font-weight: 600;
-      color: var(--text-secondary);
-      white-space: nowrap;
-    }
-
-    .materia-notice-highlight {
-      color: var(--text-primary);
-      font-weight: 600;
-    }
-
-    .materia-card-icon {
-      width: 46px;
-      height: 46px;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 16px;
-      background: color-mix(in srgb, var(--card-accent, var(--accent-primary)) 15%, transparent);
-      color: var(--card-accent, var(--accent-primary));
-      flex-shrink: 0;
-    }
-
-    .materia-card h3 {
-      font-size: clamp(15px, 1.25vw, 17px);
-      font-weight: 700;
-      margin: 0 0 10px;
-      letter-spacing: -0.3px;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      min-height: 44px;
-      line-height: 1.35;
-      flex-shrink: 0;
-    }
-
-    .materia-card-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin: 0 0 12px;
-    }
-
-    .materia-badge-tipo {
-      background: color-mix(in srgb, var(--card-accent, var(--accent-primary)) 10%, transparent);
-      border-color: color-mix(in srgb, var(--card-accent, var(--accent-primary)) 25%, transparent);
-      color: var(--card-accent, var(--accent-primary));
-    }
-
-    .materia-card-desc {
-      font-size: 13px;
-      color: var(--text-secondary);
-      line-height: 1.55;
-      margin-bottom: 24px;
-      flex: 1 1 auto;
-    }
-
-    .materia-card-footer {
-      margin-top: auto;
-      display: flex;
-      flex-direction: column;
-      padding-top: 18px;
-      border-top: 1px solid var(--border-color);
-      flex-shrink: 0;
-    }
-
-    .materia-card-stats {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      font-size: 12.5px;
-      font-weight: 600;
-      color: var(--text-muted);
-      flex-wrap: nowrap;
-    }
-
-    .materia-card-stats span {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      white-space: nowrap;
-    }
-
-    .materia-card-progress {
-      margin-top: 12px;
-      height: 6px;
-      background: var(--border-color);
-      border-radius: 4px;
-      overflow: hidden;
-    }
-
-    .materia-card-progress-fill {
-      height: 100%;
-      background: var(--card-accent, var(--accent-primary));
-      border-radius: 4px;
-      transition: width 0.5s ease;
-    }
-
-    /* Controlli di navigazione tra livelli */
-    .view-nav-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 24px;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .btn-back-level {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-color);
-      color: var(--text-primary);
-      padding: 8px 16px;
-      border-radius: 20px;
-      font-size: 13px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-    }
-
-    .btn-back-level:hover {
-      border-color: var(--accent-primary);
-      color: var(--accent-primary);
-      transform: translateX(-2px);
-    }
-
-    .btn-secondary-action {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-color);
-      color: var(--text-primary);
-      padding: 9px 18px;
-      border-radius: 20px;
-      font-size: 13px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-
-    .btn-secondary-action:hover {
-      border-color: var(--accent-primary);
-      color: var(--accent-primary);
-    }
-
-    .home-toast {
-      position: fixed;
-      bottom: 28px;
-      left: 50%;
-      transform: translateX(-50%) translateY(20px);
-      background: #18181b;
-      color: #ffffff;
-      padding: 12px 22px;
-      border-radius: 24px;
-      font-size: 13px;
-      font-weight: 600;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.25s ease, transform 0.25s ease;
-      z-index: 10000;
-      max-width: 90vw;
-      text-align: center;
-    }
-
-    body.theme-light .home-toast {
-      background: #1e293b;
-      color: #ffffff;
-    }
-
-    .home-toast.show {
-      opacity: 1;
-      transform: translateX(-50%) translateY(0);
-      pointer-events: auto;
-    }
-
-    /* Breadcrumb */
-    .home-breadcrumb {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 24px;
-      font-size: 13px;
-    }
-
-    .breadcrumb-item {
-      color: var(--text-muted);
-      cursor: pointer;
-      transition: color 0.2s;
-      background: none;
-      border: none;
-      font: inherit;
-      padding: 0;
-    }
-
-    .breadcrumb-item:hover {
-      color: var(--accent-primary);
-    }
-
-    .breadcrumb-sep {
-      color: var(--border-color);
-      font-size: 11px;
-    }
-
-    .breadcrumb-current {
-      font-weight: 700;
-      color: var(--text-primary);
-    }
-
-    /* Sezione triennio/biennio */
-    .level-divider {
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin: 32px 0 16px 4px;
-      padding-bottom: 8px;
-      border-bottom: 2px solid var(--border-color);
-    }
-
-    /* Empty state */
-    .empty-state {
-      text-align: center;
-      padding: 48px 24px;
-      color: var(--text-muted);
-    }
-
-    .empty-state svg {
-      opacity: 0.3;
-      margin-bottom: 16px;
-    }
-
-    .empty-state p {
-      font-size: 14px;
-      max-width: 360px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-
-    @media (max-width: 600px) {
-      .home-header {
-        padding: 16px;
-      }
-
-      .home-hero {
-        padding: 36px 16px 24px;
-      }
-
-      .home-hero h2 {
-        font-size: 24px;
-      }
-
-      .courses-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .nav-level-section {
-        padding: 0 16px 32px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css?v=20261008">
+  <link rel="stylesheet" href="home.css?v=20261008">
 </head>
 
 <body class="theme-light">
+  <script src="js/theme-boot.js?v=20261008"></script>
   <div class="home-container" id="home-app">
 
-    <!-- HEADER -->
     <header class="home-header">
       <div class="home-brand">
-        <a href="index.html" class="home-brand-link" id="home-brand-link" title="Torna alla Home"
-          aria-label="Torna alla Home">
+        <a href="index.html" class="home-brand-link" title="Studio ABA Catania" aria-label="Studio ABA Catania, home">
           <div class="home-brand-logo" aria-hidden="true">
-            <svg viewBox="0 0 112.6 112.6" fill="currentColor" aria-hidden="true">
-              <path
-                d="M112.6,56.3L91.8,41.6l4.3-25.1L71,20.8L56.3,0L41.6,20.8l-25.1-4.3l4.3,25.1 L0,56.3L20.8,71l-4.3,25.1l25.1-4.3l14.7,20.8L71,91.8l25.1,4.3L91.8,71L112.6,56.3L112.6,56.3z M29.9,86L50,79.6l-7.8,8.6 L29.9,86z M27.6,27.6L53,37.4L37.4,53L27.6,27.6L27.6,27.6z M33,50l-8.6-7.8l2.2-12.3L33,50z M33,62.6l-6.4,20.1l-2.2-12.3 L33,62.6L33,62.6z M54.5,40.4v14.1H40.3L54.5,40.4z M54.5,58.1v14.1L40.3,58.1H54.5z M53,75.1l-25.6,10l10.1-25.5L53,75.1L53,75.1 z M21,91.6l1.8-14L24.6,88L35,89.8L21,91.6z M8,57.4l24.7,0.8l-9.9,10.2L8,57.4z M22.8,44.3l9.9,10.2L8,55.2L22.8,44.3L22.8,44.3z M35,22.8l-10.4,1.8L22.8,35L21,21L35,22.8z M42.2,24.4L50,33l-20.1-6.4L42.2,24.4z M55.2,8l-0.8,24.7l-10.2-9.9L55.2,8z M55.2,104.6l-11-14.8l10.2-9.9L55.2,104.6L55.2,104.6z M89.8,68.4l-9.9-10.2l24.7-0.8L89.8,68.4L89.8,68.4z M58.1,72.3V58.1h14.1 L58.1,72.3z M75.1,59.7l10,25.6l-25.6-10L75.1,59.7L75.1,59.7z M58.1,54.5V40.4l14.1,14.1L58.1,54.5z M59.6,37.5L85,27.6L75.2,53 L59.6,37.5L59.6,37.5z M86,29.9l2.2,12.3L79.6,50L86,29.9z M79.6,62.6l8.6,7.8L86,82.7L79.6,62.6L79.6,62.6z M77.6,89.8L88,88 l1.8-10.4l1.8,14L77.6,89.8L77.6,89.8z M70.4,88.2l-7.8-8.6L82.7,86L70.4,88.2L70.4,88.2z M57.4,104.6l0.8-24.6l10.2,9.9 L57.4,104.6L57.4,104.6z M68.4,22.8l-10.2,9.9L57.4,8L68.4,22.8L68.4,22.8z M82.7,26.6L62.6,33l7.8-8.6L82.7,26.6L82.7,26.6z M91.6,21l-1.8,14L88,24.6l-10.4-1.8L91.6,21L91.6,21z M104.6,55.3L80,54.5l9.9-10.2L104.6,55.3L104.6,55.3z" />
-            </svg>
+            <svg class="site-logo" viewBox="36 22 340 348" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><g transform="translate(0 12)"><path d="M70,250 Q140,232 210,246 T340,238" stroke="#FEB940" stroke-width="58" fill="none" stroke-linecap="round" opacity="0.9"/><path d="M199.1,49.4Q202.2,66.7 200.9,74.9Q199.6,83.1 199.0,92.2Q198.3,101.3 199.7,109.7Q201.0,118.1 201.2,119.1L201.3,120.2" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M236.9,111.2Q218.2,113.0 209.4,115.8Q200.6,118.6 199.6,118.9L198.6,119.2" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M162.6,112.8Q181.6,113.8 191.1,114.9Q200.6,116.0 201.7,116.2L202.7,116.3" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M304.5,92.7Q293.3,104.3 287.2,110.6Q281.2,116.9 276.8,124.4Q272.4,131.9 265.1,135.9Q257.7,140.0 256.8,140.5L255.9,141.0" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M287.8,163.8Q272.3,153.6 265.3,147.6Q258.2,141.5 257.4,140.8L256.7,140.2" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M236.9,111.0Q247.8,127.3 253.2,134.2Q258.6,141.1 259.2,141.9L259.9,142.7" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M350.3,199.1Q333.5,198.2 324.7,197.7Q315.8,197.3 307.9,197.4Q300.0,197.6 291.2,199.0Q282.5,200.5 281.4,200.7L280.4,200.9" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M290.1,236.2Q286.5,218.3 283.9,209.6Q281.4,200.8 281.1,199.8L280.8,198.8" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M288.2,162.7Q284.9,182.0 283.8,191.1Q282.6,200.1 282.4,201.2L282.3,202.2" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M305.8,305.9Q293.7,295.5 288.5,288.1Q283.3,280.8 276.1,275.9Q268.9,271.1 263.5,265.1Q258.1,259.1 257.4,258.4L256.7,257.6" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M238.1,289.0Q246.6,272.6 252.3,265.1Q258.0,257.7 258.7,256.9L259.3,256.0" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M288.6,235.5Q273.0,248.6 266.3,253.8Q259.6,258.9 258.8,259.6L258.0,260.2" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M198.1,349.9Q202.8,333.6 201.6,325.2Q200.4,316.8 199.4,308.3Q198.4,299.9 198.9,290.9Q199.3,281.9 199.4,280.9L199.4,279.8" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M162.9,287.3Q182.0,283.2 191.0,283.1Q199.9,283.0 201.0,283.0L202.0,283.0" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M236.2,287.5Q218.3,282.6 209.2,282.8Q200.2,283.0 199.2,283.0L198.1,283.1" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M93.5,305.9Q106.0,293.4 111.7,287.8Q117.5,282.2 123.5,276.7Q129.5,271.2 135.5,265.2Q141.4,259.2 142.2,258.5L142.9,257.7" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M110.8,236.3Q127.3,247.1 134.7,252.8Q142.0,258.5 142.8,259.2L143.7,259.8" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M164.3,287.9Q150.9,274.1 146.3,266.2Q141.7,258.3 141.1,257.4L140.6,256.5" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M50.4,198.5Q66.5,198.9 74.9,200.6Q83.3,202.3 92.2,201.6Q101.0,201.0 109.5,200.6Q117.9,200.2 119.0,200.2L120.0,200.1" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M110.7,162.8Q114.2,181.4 115.9,190.7Q117.5,199.9 117.7,200.9L117.9,202.0" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M111.9,236.7Q113.2,218.4 114.6,208.8Q116.1,199.2 116.2,198.2L116.4,197.1" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M92.9,94.5Q105.0,106.6 111.4,111.8Q117.7,116.9 123.5,122.9Q129.3,129.0 134.7,135.8Q140.2,142.6 140.9,143.5L141.5,144.3" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M164.5,111.1Q155.1,127.4 147.6,134.3Q140.0,141.2 139.3,141.9L138.5,142.6" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M111.0,162.3Q126.3,153.9 134.1,148.3Q141.8,142.7 142.7,142.1L143.5,141.5" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M198.6,200.5Q199.9,183.1 200.0,175.1Q200.1,167.1 199.3,158.9Q198.4,150.7 200.3,142.1Q202.2,133.5 200.9,125.3Q199.6,117.1 199.4,116.1L199.3,115.1" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M201.8,201.0Q212.5,189.0 218.4,183.3Q224.4,177.7 230.1,171.9Q235.8,166.1 242.0,160.3Q248.3,154.5 253.9,148.5Q259.5,142.6 260.2,141.8L260.9,141.1" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M199.3,198.8Q216.9,201.1 225.2,201.2Q233.4,201.2 241.3,199.0Q249.2,196.8 257.7,197.7Q266.2,198.6 274.0,199.5Q281.8,200.5 282.8,200.6L283.9,200.7" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M199.6,200.0Q209.6,212.7 216.8,218.2Q224.0,223.7 229.1,229.4Q234.2,235.1 240.8,240.6Q247.5,246.1 253.2,252.3Q258.8,258.5 259.5,259.3L260.2,260.1" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M199.2,199.4Q198.7,216.5 198.6,224.7Q198.6,232.9 199.8,241.1Q201.1,249.2 201.6,258.0Q202.2,266.8 201.6,274.7Q201.0,282.7 201.0,283.7L200.9,284.7" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M200.5,200.7Q188.3,211.8 183.1,218.1Q177.8,224.4 171.5,230.3Q165.2,236.2 159.2,241.6Q153.3,247.0 147.6,252.9Q142.0,258.8 141.3,259.5L140.6,260.3" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M200.0,201.4Q184.0,199.2 175.1,199.8Q166.2,200.5 158.2,201.2Q150.2,202.0 142.3,199.9Q134.4,197.9 126.2,199.5Q118.0,201.2 117.0,201.4L116.0,201.6" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M199.2,200.9Q189.6,186.4 183.1,181.9Q176.6,177.3 170.6,171.3Q164.5,165.3 159.6,158.5Q154.8,151.8 148.1,146.1Q141.3,140.5 140.5,139.8L139.7,139.2" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M201.1,199.9Q208.0,184.2 210.2,176.1Q212.5,167.9 216.5,159.6Q220.6,151.2 221.0,150.3L221.5,149.3" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M200.1,198.6Q217.7,195.8 225.8,192.3Q233.9,188.7 241.1,183.7Q248.3,178.6 249.2,178.0L250.0,177.4" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M200.1,200.6Q215.9,207.3 224.9,209.4Q233.9,211.5 241.2,215.9Q248.6,220.4 249.5,220.9L250.4,221.5" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M200.3,200.4Q208.2,216.0 211.1,224.0Q214.0,232.1 217.1,240.5Q220.2,248.9 220.6,249.9L221.0,250.9" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M199.2,199.6Q194.2,216.6 191.1,224.7Q188.0,232.7 184.5,240.9Q180.9,249.1 180.5,250.1L180.0,251.0" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M199.3,199.4Q183.2,206.4 175.3,209.7Q167.3,213.1 158.8,216.7Q150.3,220.4 149.3,220.8L148.4,221.2" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M200.3,198.3Q182.2,195.5 174.6,191.7Q166.9,187.8 158.8,184.6Q150.6,181.3 149.7,180.9L148.7,180.5" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M200.4,200.8Q191.4,185.2 189.3,176.1Q187.1,167.1 183.6,159.1Q180.0,151.2 179.6,150.2L179.2,149.3" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M200.7,116.5Q208.5,136.4 214.0,143.1Q219.6,149.8 228.8,147.5Q238.1,145.2 248.7,143.7Q259.2,142.2 256.5,151.4Q253.8,160.7 251.8,169.4Q249.8,178.1 258.5,183.1Q267.2,188.2 274.9,193.6Q282.5,199.1 274.1,204.9Q265.8,210.8 256.9,215.4Q248.1,220.1 251.9,229.3Q255.8,238.5 256.7,248.9Q257.6,259.3 248.4,256.7Q239.2,254.1 229.1,250.8Q219.0,247.6 214.7,256.9Q210.5,266.3 205.1,274.1Q199.7,281.9 195.4,273.5Q191.2,265.2 185.7,256.3Q180.2,247.4 170.6,251.4Q161.1,255.4 151.4,256.7Q141.7,258.0 143.7,248.9Q145.7,239.7 148.5,229.7Q151.2,219.6 142.7,214.7Q134.2,209.8 125.6,204.9Q117.1,200.0 125.5,194.4Q133.9,188.8 142.8,184.3Q151.7,179.8 150.2,169.9Q148.6,160.1 145.1,151.2Q141.6,142.4 150.9,143.8Q160.2,145.3 169.2,148.0Q178.2,150.7 184.8,142.9Q191.4,135.1 195.6,126.3L199.9,117.6Z" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linejoin="round"/><path d="M199.9,50.1Q208.6,61.3 212.0,67.9Q215.5,74.6 217.5,81.2Q219.5,87.8 224.6,92.7Q229.7,97.6 233.1,104.6Q236.4,111.5 244.3,111.3Q252.2,111.1 258.1,107.6Q264.0,104.1 271.3,101.4Q278.5,98.8 285.4,98.4Q292.2,98.0 299.0,95.7Q305.9,93.4 305.0,100.8Q304.2,108.2 300.6,114.4Q297.0,120.5 296.4,127.9Q295.7,135.2 293.4,141.8Q291.0,148.4 290.0,154.9Q288.9,161.4 294.4,167.0Q300.0,172.7 307.4,173.7Q314.8,174.7 319.5,180.7Q324.1,186.7 331.2,189.4Q338.2,192.2 344.7,196.5Q351.3,200.7 345.6,205.5Q339.8,210.3 332.5,212.3Q325.1,214.2 319.0,217.7Q312.9,221.2 306.5,224.6Q300.1,228.0 294.5,232.4Q289.0,236.8 290.4,244.0Q291.9,251.2 292.2,258.6Q292.5,266.0 294.7,272.2Q297.0,278.3 299.3,285.5Q301.6,292.7 304.5,298.7Q307.4,304.7 299.5,303.2Q291.6,301.7 285.0,299.6Q278.4,297.5 271.0,297.3Q263.6,297.2 256.5,296.1Q249.3,295.1 243.1,292.3Q236.8,289.4 234.1,295.4Q231.5,301.4 226.4,306.6Q221.3,311.8 218.6,318.8Q216.0,325.8 211.4,331.6Q206.9,337.3 204.6,343.2Q202.3,349.2 197.6,343.6Q192.8,338.0 189.6,331.9Q186.4,325.7 181.7,319.9Q176.9,314.0 172.9,308.0Q168.9,302.0 165.9,295.8Q162.9,289.6 156.2,290.8Q149.4,292.1 141.7,292.7Q134.1,293.3 127.6,295.3Q121.2,297.2 114.5,298.6Q107.7,300.0 101.7,302.9Q95.6,305.8 97.7,299.0Q99.9,292.2 102.0,285.6Q104.1,279.0 104.4,271.8Q104.7,264.6 105.1,257.1Q105.6,249.7 108.0,243.7Q110.4,237.6 103.8,234.5Q97.2,231.4 91.4,227.3Q85.5,223.1 79.9,218.7Q74.2,214.4 68.6,210.1Q63.0,205.8 56.3,202.2Q49.6,198.5 55.2,194.5Q60.8,190.4 66.8,187.0Q72.8,183.6 79.9,181.3Q87.0,179.1 92.5,173.7Q98.0,168.4 105.3,165.9Q112.5,163.4 110.5,156.8Q108.4,150.3 105.2,143.6Q101.9,136.8 101.8,129.3Q101.6,121.8 99.2,114.6Q96.7,107.4 95.8,99.9Q94.8,92.4 101.5,96.0Q108.1,99.6 114.6,100.7Q121.0,101.8 128.8,102.7Q136.5,103.7 143.4,104.7Q150.2,105.6 157.4,108.9Q164.6,112.1 166.6,105.0Q168.7,97.9 174.9,93.5Q181.0,89.2 183.0,82.0Q185.0,74.7 189.9,69.4Q194.8,64.1 196.5,56.5L198.1,48.9Z" fill="none" stroke="currentColor" stroke-width="11.9" stroke-linejoin="round" stroke-linecap="round"/><g transform="translate(0 0) rotate(-16 200 52)"><path d="M167.7,51.9Q169.0,62.4 168.5,67.0Q168.0,71.5 171.7,73.8Q175.5,76.0 179.9,77.2Q184.3,78.4 188.1,79.7Q191.9,81.0 196.1,81.3Q200.4,81.6 204.2,81.3Q207.9,81.0 212.2,80.3Q216.4,79.7 220.5,78.0Q224.6,76.4 228.3,74.1Q231.9,71.8 232.4,66.7Q233.0,61.6 232.6,57.0Q232.2,52.3 224.2,52.1Q216.3,52.0 208.2,52.0Q200.1,52.1 192.2,52.4Q184.3,52.8 176.0,52.3L167.7,51.8Z" style="fill:var(--logo-paper,#fff)"/><path d="M200.0,16.1Q214.6,21.3 221.7,24.6Q228.8,28.0 235.8,30.7Q242.9,33.3 250.4,35.4Q257.9,37.5 265.0,41.0Q272.2,44.5 264.9,47.3Q257.6,50.2 250.4,52.5Q243.2,54.9 236.1,57.7Q229.0,60.6 221.8,63.8Q214.6,67.0 207.4,69.2Q200.1,71.4 192.8,69.0Q185.4,66.6 178.3,64.2Q171.2,61.7 163.7,59.1Q156.3,56.4 149.4,52.5Q142.5,48.6 135.3,45.9Q128.0,43.1 135.1,40.3Q142.1,37.5 149.4,35.2Q156.8,32.9 164.1,30.6Q171.5,28.3 178.6,25.2Q185.7,22.1 192.6,18.8L199.6,15.5Z" style="fill:var(--logo-paper,#fff)"/><path d="M166.7,51.5Q166.3,62.2 167.5,67.2Q168.8,72.2 172.6,74.2Q176.4,76.3 180.4,78.4Q184.4,80.6 188.2,80.5Q192.0,80.4 196.3,80.9Q200.6,81.5 204.6,81.5Q208.6,81.5 212.3,80.4Q216.0,79.4 220.3,77.7Q224.7,76.1 228.8,74.2Q233.0,72.4 232.6,67.3Q232.2,62.3 231.7,57.3Q231.3,52.3 223.3,53.4Q215.4,54.4 208.1,53.4Q200.8,52.3 192.5,52.6Q184.3,53.0 175.8,53.3L167.3,53.7Z" fill="none" stroke="currentColor" stroke-width="8.92" stroke-linejoin="round" stroke-linecap="round"/><path d="M200.0,15.7Q215.8,19.1 222.9,22.1Q229.9,25.0 235.9,29.6Q241.9,34.3 249.3,37.5Q256.7,40.8 264.3,42.1Q271.9,43.4 264.4,45.8Q257.0,48.2 249.5,51.3Q242.0,54.4 234.9,57.0Q227.7,59.6 220.8,62.4Q213.9,65.2 206.8,69.6Q199.8,74.1 193.0,69.8Q186.3,65.5 179.1,62.4Q172.0,59.3 164.6,56.5Q157.1,53.7 149.3,52.3Q141.5,50.9 135.3,47.7Q129.0,44.5 136.4,42.7Q143.9,40.9 150.4,37.5Q156.9,34.0 163.8,29.8Q170.7,25.6 178.4,24.3Q186.0,22.9 193.0,19.2L200.1,15.4Z" fill="none" stroke="currentColor" stroke-width="8.92" stroke-linejoin="round" stroke-linecap="round"/><path d="M200.0,44.5Q216.0,44.1 223.4,45.0Q230.7,45.8 238.8,46.1Q246.8,46.3 254.2,47.4Q261.6,48.5 261.8,57.4Q262.0,66.4 262.8,75.0L263.6,83.6" fill="none" stroke="currentColor" stroke-width="8.46" stroke-linecap="round" stroke-linejoin="round"/><path d="M255.7,82.3Q263.7,83.6 267.8,82.7Q271.8,81.8 271.9,87.8Q272.0,93.8 272.9,100.1Q273.8,106.4 268.8,106.1Q263.7,105.7 258.6,106.0Q253.4,106.3 254.0,100.2Q254.6,94.1 255.7,88.1L256.8,82.0Z" fill="currentColor" stroke="currentColor" stroke-width="5.58" stroke-linejoin="round"/><circle cx="200" cy="44" r="5" fill="currentColor" stroke="currentColor" stroke-width="4.68"/></g></g></svg>
           </div>
           <div>
             <h1>Studio ABA Catania</h1>
@@ -774,641 +44,315 @@
           </div>
         </a>
       </div>
+      <nav class="home-nav" aria-label="Navigazione principale">
+        <a href="index.html" class="home-nav-link active" aria-current="page">Home</a>
+        <a href="corsi.html" class="home-nav-link">Corsi</a>
+      </nav>
       <div class="utility-btns">
         <button id="btn-theme-toggle" class="icon-btn" title="Cambia tema chiaro/scuro" aria-label="Cambia tema">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="4" />
-            <path d="M12 2v2" />
-            <path d="M12 20v2" />
-            <path d="m4.93 4.93 1.41 1.41" />
-            <path d="m17.66 17.66 1.41 1.41" />
-            <path d="M2 12h2" />
-            <path d="M20 12h2" />
-            <path d="m6.34 17.66-1.41 1.41" />
-            <path d="m19.07 4.93-1.41 1.41" />
-          </svg>
+          <span class="theme-icon-moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span><span class="theme-icon-sun"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></svg></span>
         </button>
       </div>
     </header>
 
-    <!-- HERO -->
-    <div class="home-hero" id="home-hero">
-      <h2>Seleziona il tuo Corso di Laurea</h2>
-      <p>Scegli il corso di studi per accedere alle materie, ai quiz interattivi e alle flashcard di autoverifica.</p>
-    </div>
+    <main class="landing">
+      <section class="landing-hero">
+        <div class="landing-hero-text">
+          <span class="landing-eyebrow">Accademia di Belle Arti di Catania</span>
+          <h2>Prepara gli esami, un capitolo alla volta.</h2>
+          <p>Sintesi complete delle dispense, flashcard che tornano quando stai per dimenticarle, quiz con spiegazione e simulazioni dell'esame scritto e orale. Gratis e senza registrazione.</p>
+          <div class="landing-cta">
+            <a href="corsi.html" class="landing-btn landing-btn-primary">Scegli il tuo corso</a>
+            <a href="#materie" class="landing-btn landing-btn-ghost" id="landing-resume">Vedi le materie</a>
+          </div>
+        </div>
+        <div class="landing-hero-visual">
+          <div class="hero-video-frame">
+            <video class="hero-video" id="hero-video" autoplay muted loop playsinline preload="metadata"
+              poster="assets/media/hero-poster.jpg" aria-label="Anteprima della piattaforma: sintesi, flashcard e quiz">
+              <source src="assets/media/hero-loop.webm" type="video/webm">
+              <source src="assets/media/hero-loop.mp4" type="video/mp4">
+            </video>
+            <button type="button" class="hero-play-spot" id="btn-open-spot" aria-haspopup="dialog">
+              <span class="hero-play-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="7 4 20 12 7 20 7 4"/></svg></span>
+              Guarda lo spot <span class="hero-play-time">1 min</span>
+            </button>
+          </div>
+        </div>
+      </section>
 
-    <!-- MAIN CONTENT — Dynamic -->
-    <div class="nav-level-section" id="nav-content">
-      <!-- Populated by JS -->
-    </div>
+      <section class="landing-section" id="resume-section" hidden>
+        <div class="landing-section-head">
+          <h3>Riprendi lo studio</h3>
+          <p>I tuoi progressi sono salvati in questo browser. Con l'accesso si sincronizzano su tutti i tuoi dispositivi: capitoli completati, ripasso delle flashcard, quiz, simulazioni e orale.</p>
+        </div>
+        <div class="resume-grid" id="resume-grid"></div>
+      </section>
 
-    <!-- FOOTER -->
+      <section class="landing-section" id="materie">
+        <div class="landing-section-head">
+          <h3>Materie disponibili</h3>
+          <p>Le materie con sintesi, flashcard e quiz già pronti. Le altre si trovano nei piani di studio dei <a href="corsi.html">corsi</a>.</p>
+        </div>
+        <div id="subjects-groups"></div>
+      </section>
+
+      <section class="landing-section">
+        <div class="landing-section-head">
+          <h3>Come si studia qui</h3>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <span class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>
+            <h4>Sintesi complete</h4>
+            <p>Ogni capitolo riassume la dispensa con date, autori e opere, i punti chiave d'esame e un lettore vocale per ripassare ascoltando.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg></span>
+            <h4>Flashcard a intervalli</h4>
+            <p>Le schede che sbagli tornano subito, quelle che sai si allontanano: dopo 1, 3, 7, 14 e 30 giorni. Ogni giorno sai cosa ripassare.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+            <h4>Quiz che fanno ragionare</h4>
+            <p>Quattro opzioni plausibili e una spiegazione che dice perché la risposta è giusta e perché l'errore più probabile è sbagliato.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></span>
+            <h4>Simulatore d'esame</h4>
+            <p>Test a domande casuali su un modulo o su tutta la materia, con voto stimato in trentesimi e correzione finale.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg></span>
+            <h4>Allenamento all'orale</h4>
+            <p>Una domanda alla volta con il cronometro: rispondi ad alta voce, confronta con la traccia e scopri quali concetti chiave hai citato.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
+            <h4>Progressi</h4>
+            <p>Capitoli completati, percentuale di quiz corretti, giorni di studio di fila e i capitoli da rinforzare prima dell'esame.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="landing-band">
+        <div>
+          <h3>Non trovi la tua materia?</h3>
+          <p>Tutti i corsi di laurea dell'Accademia con i piani di studio ufficiali, anno per anno.</p>
+        </div>
+        <a href="corsi.html" class="landing-btn landing-btn-primary">Esplora i corsi</a>
+      </section>
+    </main>
+
     <footer class="home-footer">
       <div class="home-footer-content">
-        <a href="index.html" class="home-footer-logo-wrap" id="home-footer-logo-link" title="Torna alla Home"
-          aria-label="Torna alla Home">
-          <svg viewBox="0 0 240.6 112.6" fill="currentColor" aria-label="Accademia di Belle Arti Catania" role="img">
-            <path
-              d="M240.6,31.8c-0.3-0.4-0.5-0.9-0.4-1.3v-5.9c0-1.3,0-4-5.3-4c-1.4-0.1-2.7,0.2-4,0.7c-1.1,0.5-1.9,1.6-2,2.9 l4.2-0.1c0.2-0.7,0.4-1,1.4-1c1.3,0,1.5,0.5,1.5,1.2c-0.8,0.2-1.6,0.4-2.4,0.5c-2,0.3-3.2,0.4-4.2,1.4c-0.6,0.6-1,1.5-0.9,2.3 c0,1.8,1.2,3.5,4,3.5c1.3,0.1,2.6-0.3,3.7-1v0.8L240.6,31.8z M236,26.8c0,0.4,0,0.9-0.2,1.3c-0.4,0.7-1.2,1.2-2,1.2 c-0.8,0-1.1-0.5-1.1-0.8c0-0.1,0-0.6,0.9-1c0.4-0.1,0.8-0.2,1.1-0.3C235.1,27.1,235.6,26.9,236,26.8L236,26.8z M222.7,31.8h4.5V21 h-4.5V31.8z M222.7,19.9h4.5V17h-4.5V19.9z M216.4,31.8h4.4V25c0.1-1.2-0.3-2.3-1.1-3.2c-0.9-0.7-2-1.1-3.1-1.1 c-2.6,0-3.6,1.3-3.9,2c-0.4-0.9-1.2-1.5-2.2-1.7c-0.6-0.2-1.1-0.3-1.7-0.3c-1.4-0.1-2.8,0.6-3.5,1.8V21h-4.3v10.8h4.5v-5.9 c0-0.4,0.1-0.9,0.4-1.2c0.3-0.3,0.8-0.5,1.2-0.4c0.7-0.1,1.3,0.4,1.5,1.1c0,0.2,0.1,0.4,0.1,0.6v5.9h4.5V26 c-0.1-0.8,0.4-1.6,1.3-1.7c0.1,0,0.3,0,0.4,0c1.5,0,1.6,1.2,1.6,1.9L216.4,31.8L216.4,31.8z M192.1,27.2h7.8 c-0.1-1.6-0.1-3.5-1.7-5c-1.2-1.1-2.9-1.7-4.5-1.6c-3.6,0-6.2,2.3-6.2,5.8c0,3,2,5.9,6.2,5.9c2.4,0.1,4.6-1,5.9-3l-3.7-1.5 c-0.3,0.8-1.1,1.4-2,1.4c-0.5,0-1-0.2-1.3-0.5C192.3,28.3,192.1,27.7,192.1,27.2L192.1,27.2z M192.1,24.9c0-0.9,0.8-1.6,1.7-1.6 c0.7,0,1.3,0.4,1.5,1.1c0,0.2,0,0.3,0.1,0.5H192.1z M187.5,48.2c0,3,2,5.9,6.2,5.9c2.4,0.1,4.7-1,6-3l-3.7-1.5 c-0.3,0.8-1.1,1.4-2,1.4c-0.5,0-1-0.2-1.3-0.5c-0.4-0.4-0.6-1-0.5-1.5h7.8c0-1.7-0.1-3.5-1.7-5c-1.2-1.1-2.9-1.7-4.5-1.6 c-3.6,0-6.2,2.3-6.2,5.8L187.5,48.2z M192.1,46.8c0.1-0.9,0.8-1.6,1.7-1.6c0.7,0,1.3,0.4,1.5,1.1c0,0.2,0,0.3,0.1,0.5H192.1z M181.8,53.7h4.5V38.9h-4.5V53.7z M182,31.8h4.3V17h-4.5v4.7c-0.8-0.7-1.8-1.1-2.9-1c-2.4,0-4.9,1.7-4.9,5.5c0,3.4,1.8,6,5,6 c0.6,0,1.1-0.1,1.7-0.3c0.5-0.2,0.9-0.5,1.2-0.9V31.8L182,31.8z M182,26.4c0.1,0.8-0.1,1.5-0.6,2.1c-0.3,0.3-0.7,0.5-1.1,0.5 c-0.4,0-0.8-0.2-1.1-0.5c-0.5-0.6-0.7-1.4-0.6-2.1c0-0.4,0-0.9,0.1-1.3c0.1-0.8,0.8-1.4,1.6-1.4c0.7,0,1.3,0.6,1.5,1.3 C181.9,25.4,182,25.9,182,26.4L182,26.4z M168.9,31.8h4.4c-0.3-0.4-0.5-0.9-0.4-1.3v-5.9c0-1.3,0-4-5.3-4c-1.4-0.1-2.7,0.2-4,0.7 c-1.1,0.5-1.9,1.6-2,2.9l4.2-0.1c0.2-0.7,0.4-1,1.4-1c1.3,0,1.5,0.5,1.5,1.2c-0.8,0.2-1.6,0.4-2.4,0.5c-2,0.3-3.2,0.4-4.2,1.4 c-0.6,0.6-1,1.5-0.9,2.3c0,1.8,1.2,3.5,4,3.5c1.3,0.1,2.6-0.3,3.7-1L168.9,31.8L168.9,31.8z M168.6,26.8c0,0.4,0,0.9-0.2,1.3 c-0.4,0.7-1.2,1.2-2,1.2c-0.8,0-1.1-0.5-1.1-0.8c0-0.1,0-0.6,0.9-1c0.4-0.1,0.8-0.2,1.1-0.3C167.7,27.1,168.2,26.9,168.6,26.8 L168.6,26.8z M160.9,48c0-3.8-2.4-5.5-4.9-5.5c-1.1-0.1-2.1,0.3-2.9,1.1v-4.7h-4.5v14.8h4.3v-0.8c0.3,0.4,0.7,0.6,1.1,0.8 c0.5,0.2,1.1,0.3,1.7,0.3C159,54,160.9,51.4,160.9,48L160.9,48z M156.5,48.2c0.1,0.8-0.1,1.5-0.6,2.1c-0.3,0.3-0.7,0.5-1.1,0.5 c-0.8,0-1.4-0.5-1.5-1.3c-0.1-0.4-0.2-0.9-0.2-1.3c-0.1-0.8,0.2-1.5,0.6-2.1c0.3-0.3,0.7-0.5,1.1-0.5c0.8,0,1.5,0.6,1.6,1.4 C156.5,47.4,156.5,47.8,156.5,48.2z M153.3,26.4c0-1.6,0.7-2.9,2-2.9c1,0,1.8,0.7,1.9,1.7l3.4-1.9c-0.2-0.4-0.5-0.8-0.9-1.1 c-1.2-1.2-2.9-1.8-4.6-1.7c-1.7-0.1-3.4,0.5-4.6,1.7c-1.1,1.1-1.7,2.6-1.6,4.2c-0.2,3.1,2.2,5.7,5.2,5.9c0.3,0,0.5,0,0.8,0 c1.7,0.1,3.4-0.5,4.7-1.7c0.5-0.5,0.8-1,1.1-1.6l-3.4-1.8c-0.2,0.6-0.6,1.8-2,1.8C153.5,28.9,153.3,27.3,153.3,26.4L153.3,26.4z M153.1,60.8h-4.4v3.4h-1.5v2.3h1.5l-0.1,5.2c-0.1,0.8,0.2,1.6,0.7,2.2c0.8,0.6,1.9,1,2.9,0.9c0.9,0,1.9-0.1,2.8-0.2v-3 c-0.3,0.1-0.5,0.1-0.8,0.1c-1.2,0-1.2-0.7-1.2-1.1v-4.1h2v-2.3h-1.9L153.1,60.8L153.1,60.8z M141.2,26.4c0-1.6,0.7-2.9,2-2.9 c1,0,1.8,0.7,1.9,1.7l3.4-1.9c-0.2-0.4-0.5-0.8-0.9-1.1c-1.2-1.2-2.9-1.8-4.6-1.7c-1.7-0.1-3.4,0.5-4.6,1.7 c-1.1,1.1-1.7,2.6-1.6,4.2c-0.2,3.1,2.2,5.7,5.2,5.9c0.3,0,0.5,0,0.8,0c1.7,0.1,3.4-0.5,4.7-1.7c0.5-0.5,0.8-1,1.1-1.6l-3.4-1.8 c-0.2,0.6-0.6,1.8-2,1.8C141.4,28.9,141.2,27.3,141.2,26.4L141.2,26.4z M145.5,63.7c-1.4-0.2-2.7,0.3-3.7,1.2v-1h-4.3v10.8h4.4 v-5.1c0-0.7,0.1-2.3,2.7-2.3c0.3,0,0.6,0,0.9,0V63.7L145.5,63.7z M142.3,42.8h-4.5v10.9h4.5V42.8L142.3,42.8z M142.3,38.9h-4.5 v2.9h4.5V38.9L142.3,38.9z M143.5,87.7c-0.8,0.2-1.6,0.4-2.4,0.5c-2,0.2-3.2,0.4-4.2,1.4c-0.6,0.6-1,1.4-1,2.3 c0,1.8,1.2,3.5,4,3.5c1.3,0.1,2.6-0.3,3.7-1.1v0.8h4.4c-0.3-0.4-0.5-0.9-0.4-1.3v-5.9c0-1.3,0-4-5.3-4c-1.4,0-2.7,0.2-4,0.7 c-1.1,0.5-1.9,1.6-2,2.9l4.2-0.1c0.2-0.8,0.4-1,1.4-1C143.3,86.5,143.5,87,143.5,87.7L143.5,87.7z M143.5,90.1 c0,0.4,0,0.9-0.2,1.3c-0.4,0.7-1.2,1.2-2.1,1.2c-0.8,0-1.1-0.5-1.1-0.8c0-0.1,0-0.6,0.9-1c0.4-0.1,0.8-0.2,1.1-0.3 C142.6,90.4,143.1,90.2,143.5,90.1L143.5,90.1z M131.7,53.7h4.3V38.9h-4.5v4.7c-0.8-0.7-1.8-1.1-2.9-1.1c-2.4,0-4.9,1.7-4.9,5.5 c0,3.4,1.8,6,5,6c0.6,0,1.1-0.1,1.7-0.3c0.5-0.1,0.9-0.4,1.1-0.8L131.7,53.7L131.7,53.7z M131.7,48.2c0.1,0.8-0.1,1.5-0.6,2.1 c-0.3,0.3-0.7,0.5-1.1,0.5c-0.4,0-0.8-0.2-1.1-0.5c-0.5-0.6-0.7-1.4-0.6-2.1c0-0.4,0-0.9,0.1-1.3c0.1-0.9,1-1.5,1.8-1.3 c0.6,0.1,1.2,0.6,1.3,1.2C131.6,47.3,131.7,47.8,131.7,48.2z M131.6,31.8h4.4c-0.3-0.4-0.5-0.9-0.4-1.3v-5.9c0-1.3,0-4-5.3-4 c-1.4-0.1-2.7,0.2-4,0.7c-1.1,0.5-1.9,1.6-2,2.9l4.2-0.1c0.1-0.7,0.4-1,1.4-1c1.3,0,1.5,0.5,1.5,1.2c-0.8,0.2-1.6,0.4-2.4,0.5 c-2,0.3-3.2,0.4-4.2,1.4c-0.6,0.6-1,1.4-1,2.3c0,1.8,1.2,3.5,4,3.5c1.3,0.1,2.6-0.3,3.7-1L131.6,31.8L131.6,31.8z M131.3,26.8 c0,0.4,0,0.9-0.2,1.3c-0.4,0.8-1.2,1.2-2.1,1.2c-0.8,0-1.1-0.5-1.1-0.8c0-0.1,0-0.6,0.9-1c0.4-0.1,0.8-0.2,1.1-0.3 C130.3,27.1,130.8,26.9,131.3,26.8L131.3,26.8z M112.6,56.3L91.8,41.6l4.3-25.1L71,20.8L56.3,0L41.6,20.8l-25.1-4.3l4.3,25.1 L0,56.3L20.8,71l-4.3,25.1l25.1-4.3l14.7,20.8L71,91.8l25.1,4.3L91.8,71L112.6,56.3L112.6,56.3z M29.9,86L50,79.6l-7.8,8.6 L29.9,86z M27.6,27.6L53,37.4L37.4,53L27.6,27.6L27.6,27.6z M33,50l-8.6-7.8l2.2-12.3L33,50z M33,62.6l-6.4,20.1l-2.2-12.3 L33,62.6L33,62.6z M54.5,40.4v14.1H40.3L54.5,40.4z M54.5,58.1v14.1L40.3,58.1H54.5z M53,75.1l-25.6,10l10.1-25.5L53,75.1L53,75.1 z M21,91.6l1.8-14L24.6,88L35,89.8L21,91.6z M8,57.4l24.7,0.8l-9.9,10.2L8,57.4z M22.8,44.3l9.9,10.2L8,55.2L22.8,44.3L22.8,44.3z M35,22.8l-10.4,1.8L22.8,35L21,21L35,22.8z M42.2,24.4L50,33l-20.1-6.4L42.2,24.4z M55.2,8l-0.8,24.7l-10.2-9.9L55.2,8z M55.2,104.6l-11-14.8l10.2-9.9L55.2,104.6L55.2,104.6z M89.8,68.4l-9.9-10.2l24.7-0.8L89.8,68.4L89.8,68.4z M58.1,72.3V58.1h14.1 L58.1,72.3z M75.1,59.7l10,25.6l-25.6-10L75.1,59.7L75.1,59.7z M58.1,54.5V40.4l14.1,14.1L58.1,54.5z M59.6,37.5L85,27.6L75.2,53 L59.6,37.5L59.6,37.5z M86,29.9l2.2,12.3L79.6,50L86,29.9z M79.6,62.6l8.6,7.8L86,82.7L79.6,62.6L79.6,62.6z M77.6,89.8L88,88 l1.8-10.4l1.8,14L77.6,89.8L77.6,89.8z M70.4,88.2l-7.8-8.6L82.7,86L70.4,88.2L70.4,88.2z M57.4,104.6l0.8-24.6l10.2,9.9 L57.4,104.6L57.4,104.6z M68.4,22.8l-10.2,9.9L57.4,8L68.4,22.8L68.4,22.8z M82.7,26.6L62.6,33l7.8-8.6L82.7,26.6L82.7,26.6z M91.6,21l-1.8,14L88,24.6l-10.4-1.8L91.6,21L91.6,21z M104.6,55.3L80,54.5l9.9-10.2L104.6,55.3L104.6,55.3z M125.4,85.5 c-1.1,1.1-1.6,2.6-1.6,4.2c-0.2,3.1,2.1,5.7,5.2,5.9c0.3,0,0.5,0,0.8,0c1.7,0.1,3.4-0.5,4.7-1.7c0.5-0.5,0.8-1,1.1-1.6l-3.4-1.8 c-0.2,0.6-0.6,1.8-2,1.8c-1.7,0-1.9-1.6-1.9-2.5c0-1.6,0.7-2.9,2-2.9c0.9,0,1.7,0.7,1.9,1.6l3.4-1.9c-0.2-0.4-0.5-0.8-0.9-1.1 c-1.2-1.2-2.9-1.8-4.6-1.7C128.3,83.8,126.7,84.4,125.4,85.5L125.4,85.5z M131.4,67.3c-0.8,0.2-1.6,0.4-2.4,0.5 c-2,0.2-3.2,0.4-4.2,1.4c-0.6,0.6-1,1.4-1,2.3c0,1.8,1.2,3.5,4,3.5c1.3,0.1,2.6-0.3,3.7-1.1v0.8h4.4c-0.3-0.4-0.5-0.9-0.4-1.3 v-5.9c0-1.3,0-4-5.3-4c-1.4-0.1-2.7,0.2-4,0.7c-1.1,0.5-1.9,1.6-2,2.9l4.2-0.1c0.1-0.8,0.4-1,1.4-1 C131.2,66,131.4,66.5,131.4,67.3L131.4,67.3z M131.4,69.7c0,0.5-0.1,0.9-0.3,1.3c-0.4,0.7-1.2,1.2-2.1,1.2c-0.8,0-1.1-0.5-1.1-0.8 c0-0.1,0-0.6,0.9-1c0.4-0.1,0.8-0.2,1.2-0.3c0.4-0.1,0.9-0.3,1.3-0.4L131.4,69.7z M150.2,84.6h-1.6v2.3h1.5l-0.1,5.3 c-0.1,0.8,0.2,1.6,0.8,2.2c0.8,0.6,1.9,1,2.9,0.9c0.9,0,1.9-0.1,2.8-0.2v-3c-0.3,0-0.5,0.1-0.8,0.1c-1.2,0-1.2-0.7-1.2-1.1v-4.2h2 v-2.3h-1.9v-3.4h-4.5L150.2,84.6L150.2,84.6z M161.5,60H157v2.9h4.4L161.5,60L161.5,60z M161.5,63.9H157v10.8h4.4L161.5,63.9 L161.5,63.9z M158.1,89.6c-0.6,0.6-1,1.4-1,2.3c0,1.8,1.2,3.5,4,3.5c1.3,0.1,2.6-0.3,3.7-1.1v0.8h4.4c-0.3-0.4-0.5-0.9-0.4-1.3 v-5.9c0-1.3,0-4-5.3-4c-1.4-0.1-2.7,0.2-4,0.7c-1.1,0.5-1.9,1.6-2,2.9l4.2-0.1c0.1-0.8,0.4-1,1.4-1c1.3,0,1.5,0.5,1.5,1.2 c-0.8,0.2-1.6,0.4-2.4,0.5C160.3,88.4,159.1,88.6,158.1,89.6L158.1,89.6z M161.3,91.8c0-0.1,0-0.6,0.9-1c0.4-0.1,0.8-0.2,1.1-0.3 c0.5-0.1,0.9-0.3,1.3-0.4c0,0.4,0,0.9-0.2,1.3c-0.4,0.7-1.2,1.2-2.1,1.2C161.6,92.6,161.3,92,161.3,91.8L161.3,91.8z M167,50.6 c-0.4-0.4-0.6-1-0.5-1.5h7.8c-0.1-1.7-0.1-3.5-1.7-5c-1.2-1.1-2.9-1.7-4.5-1.6c-3.6,0-6.2,2.3-6.2,5.8c0,3,2,5.9,6.2,5.9 c2.4,0.1,4.7-1,6-3l-3.7-1.5c-0.3,0.8-1.1,1.4-2,1.4C167.9,51.1,167.4,50.9,167,50.6L167,50.6z M166.5,46.8 c0.1-0.9,0.8-1.6,1.7-1.6c0.7,0,1.3,0.4,1.5,1.1c0,0.2,0.1,0.3,0.1,0.5H166.5z M175.5,53.7h4.5V38.9h-4.5L175.5,53.7L175.5,53.7z M175,84.3h-4.2v10.9h4.5v-5.8c0-0.6,0-1.8,1.6-1.8s1.5,1.1,1.5,1.6v5.9h4.4v-6.9c0.1-1.2-0.3-2.4-1.1-3.3c-0.8-0.7-1.9-1.1-3-1 c-1.5-0.2-2.9,0.5-3.7,1.7V84.3z M189.2,80.4h-4.5v2.9h4.5C189.2,83.2,189.2,80.4,189.2,80.4z M189.2,84.3h-4.5v10.9h4.5V84.3z M191.6,89.6c-0.6,0.6-1,1.5-0.9,2.3c0,1.8,1.2,3.5,4,3.5c1.3,0.1,2.6-0.3,3.7-1.1v0.8h4.4c-0.3-0.4-0.5-0.9-0.4-1.3v-5.9 c0-1.3,0-4-5.3-4c-1.4,0-2.7,0.2-4,0.7c-1.1,0.5-1.9,1.6-2,2.9l4.2-0.1c0.2-0.8,0.4-1,1.4-1c1.3,0,1.5,0.5,1.5,1.2 c-0.8,0.2-1.6,0.4-2.4,0.5C193.8,88.4,192.6,88.6,191.6,89.6L191.6,89.6z M194.7,91.8c0-0.1,0-0.6,0.9-1c0.4-0.1,0.8-0.2,1.1-0.3 c0.4-0.1,0.9-0.3,1.3-0.4c0,0.4,0,0.9-0.2,1.3c-0.4,0.7-1.2,1.2-2,1.2C195,92.6,194.8,92.1,194.7,91.8L194.7,91.8z" />
-          </svg>
+        <a href="index.html" class="home-footer-logo-wrap" title="Studio ABA Catania" aria-label="Studio ABA Catania, home">
+          <svg class="site-logo" viewBox="36 22 340 348" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><g transform="translate(0 12)"><path d="M70,250 Q140,232 210,246 T340,238" stroke="#FEB940" stroke-width="58" fill="none" stroke-linecap="round" opacity="0.9"/><path d="M199.1,49.4Q202.2,66.7 200.9,74.9Q199.6,83.1 199.0,92.2Q198.3,101.3 199.7,109.7Q201.0,118.1 201.2,119.1L201.3,120.2" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M236.9,111.2Q218.2,113.0 209.4,115.8Q200.6,118.6 199.6,118.9L198.6,119.2" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M162.6,112.8Q181.6,113.8 191.1,114.9Q200.6,116.0 201.7,116.2L202.7,116.3" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M304.5,92.7Q293.3,104.3 287.2,110.6Q281.2,116.9 276.8,124.4Q272.4,131.9 265.1,135.9Q257.7,140.0 256.8,140.5L255.9,141.0" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M287.8,163.8Q272.3,153.6 265.3,147.6Q258.2,141.5 257.4,140.8L256.7,140.2" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M236.9,111.0Q247.8,127.3 253.2,134.2Q258.6,141.1 259.2,141.9L259.9,142.7" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M350.3,199.1Q333.5,198.2 324.7,197.7Q315.8,197.3 307.9,197.4Q300.0,197.6 291.2,199.0Q282.5,200.5 281.4,200.7L280.4,200.9" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M290.1,236.2Q286.5,218.3 283.9,209.6Q281.4,200.8 281.1,199.8L280.8,198.8" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M288.2,162.7Q284.9,182.0 283.8,191.1Q282.6,200.1 282.4,201.2L282.3,202.2" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M305.8,305.9Q293.7,295.5 288.5,288.1Q283.3,280.8 276.1,275.9Q268.9,271.1 263.5,265.1Q258.1,259.1 257.4,258.4L256.7,257.6" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M238.1,289.0Q246.6,272.6 252.3,265.1Q258.0,257.7 258.7,256.9L259.3,256.0" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M288.6,235.5Q273.0,248.6 266.3,253.8Q259.6,258.9 258.8,259.6L258.0,260.2" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M198.1,349.9Q202.8,333.6 201.6,325.2Q200.4,316.8 199.4,308.3Q198.4,299.9 198.9,290.9Q199.3,281.9 199.4,280.9L199.4,279.8" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M162.9,287.3Q182.0,283.2 191.0,283.1Q199.9,283.0 201.0,283.0L202.0,283.0" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M236.2,287.5Q218.3,282.6 209.2,282.8Q200.2,283.0 199.2,283.0L198.1,283.1" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M93.5,305.9Q106.0,293.4 111.7,287.8Q117.5,282.2 123.5,276.7Q129.5,271.2 135.5,265.2Q141.4,259.2 142.2,258.5L142.9,257.7" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M110.8,236.3Q127.3,247.1 134.7,252.8Q142.0,258.5 142.8,259.2L143.7,259.8" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M164.3,287.9Q150.9,274.1 146.3,266.2Q141.7,258.3 141.1,257.4L140.6,256.5" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M50.4,198.5Q66.5,198.9 74.9,200.6Q83.3,202.3 92.2,201.6Q101.0,201.0 109.5,200.6Q117.9,200.2 119.0,200.2L120.0,200.1" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M110.7,162.8Q114.2,181.4 115.9,190.7Q117.5,199.9 117.7,200.9L117.9,202.0" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M111.9,236.7Q113.2,218.4 114.6,208.8Q116.1,199.2 116.2,198.2L116.4,197.1" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M92.9,94.5Q105.0,106.6 111.4,111.8Q117.7,116.9 123.5,122.9Q129.3,129.0 134.7,135.8Q140.2,142.6 140.9,143.5L141.5,144.3" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M164.5,111.1Q155.1,127.4 147.6,134.3Q140.0,141.2 139.3,141.9L138.5,142.6" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M111.0,162.3Q126.3,153.9 134.1,148.3Q141.8,142.7 142.7,142.1L143.5,141.5" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M198.6,200.5Q199.9,183.1 200.0,175.1Q200.1,167.1 199.3,158.9Q198.4,150.7 200.3,142.1Q202.2,133.5 200.9,125.3Q199.6,117.1 199.4,116.1L199.3,115.1" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M201.8,201.0Q212.5,189.0 218.4,183.3Q224.4,177.7 230.1,171.9Q235.8,166.1 242.0,160.3Q248.3,154.5 253.9,148.5Q259.5,142.6 260.2,141.8L260.9,141.1" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M199.3,198.8Q216.9,201.1 225.2,201.2Q233.4,201.2 241.3,199.0Q249.2,196.8 257.7,197.7Q266.2,198.6 274.0,199.5Q281.8,200.5 282.8,200.6L283.9,200.7" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M199.6,200.0Q209.6,212.7 216.8,218.2Q224.0,223.7 229.1,229.4Q234.2,235.1 240.8,240.6Q247.5,246.1 253.2,252.3Q258.8,258.5 259.5,259.3L260.2,260.1" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M199.2,199.4Q198.7,216.5 198.6,224.7Q198.6,232.9 199.8,241.1Q201.1,249.2 201.6,258.0Q202.2,266.8 201.6,274.7Q201.0,282.7 201.0,283.7L200.9,284.7" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M200.5,200.7Q188.3,211.8 183.1,218.1Q177.8,224.4 171.5,230.3Q165.2,236.2 159.2,241.6Q153.3,247.0 147.6,252.9Q142.0,258.8 141.3,259.5L140.6,260.3" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M200.0,201.4Q184.0,199.2 175.1,199.8Q166.2,200.5 158.2,201.2Q150.2,202.0 142.3,199.9Q134.4,197.9 126.2,199.5Q118.0,201.2 117.0,201.4L116.0,201.6" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M199.2,200.9Q189.6,186.4 183.1,181.9Q176.6,177.3 170.6,171.3Q164.5,165.3 159.6,158.5Q154.8,151.8 148.1,146.1Q141.3,140.5 140.5,139.8L139.7,139.2" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M201.1,199.9Q208.0,184.2 210.2,176.1Q212.5,167.9 216.5,159.6Q220.6,151.2 221.0,150.3L221.5,149.3" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M200.1,198.6Q217.7,195.8 225.8,192.3Q233.9,188.7 241.1,183.7Q248.3,178.6 249.2,178.0L250.0,177.4" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M200.1,200.6Q215.9,207.3 224.9,209.4Q233.9,211.5 241.2,215.9Q248.6,220.4 249.5,220.9L250.4,221.5" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M200.3,200.4Q208.2,216.0 211.1,224.0Q214.0,232.1 217.1,240.5Q220.2,248.9 220.6,249.9L221.0,250.9" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M199.2,199.6Q194.2,216.6 191.1,224.7Q188.0,232.7 184.5,240.9Q180.9,249.1 180.5,250.1L180.0,251.0" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M199.3,199.4Q183.2,206.4 175.3,209.7Q167.3,213.1 158.8,216.7Q150.3,220.4 149.3,220.8L148.4,221.2" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M200.3,198.3Q182.2,195.5 174.6,191.7Q166.9,187.8 158.8,184.6Q150.6,181.3 149.7,180.9L148.7,180.5" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M200.4,200.8Q191.4,185.2 189.3,176.1Q187.1,167.1 183.6,159.1Q180.0,151.2 179.6,150.2L179.2,149.3" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linecap="round"/><path d="M200.7,116.5Q208.5,136.4 214.0,143.1Q219.6,149.8 228.8,147.5Q238.1,145.2 248.7,143.7Q259.2,142.2 256.5,151.4Q253.8,160.7 251.8,169.4Q249.8,178.1 258.5,183.1Q267.2,188.2 274.9,193.6Q282.5,199.1 274.1,204.9Q265.8,210.8 256.9,215.4Q248.1,220.1 251.9,229.3Q255.8,238.5 256.7,248.9Q257.6,259.3 248.4,256.7Q239.2,254.1 229.1,250.8Q219.0,247.6 214.7,256.9Q210.5,266.3 205.1,274.1Q199.7,281.9 195.4,273.5Q191.2,265.2 185.7,256.3Q180.2,247.4 170.6,251.4Q161.1,255.4 151.4,256.7Q141.7,258.0 143.7,248.9Q145.7,239.7 148.5,229.7Q151.2,219.6 142.7,214.7Q134.2,209.8 125.6,204.9Q117.1,200.0 125.5,194.4Q133.9,188.8 142.8,184.3Q151.7,179.8 150.2,169.9Q148.6,160.1 145.1,151.2Q141.6,142.4 150.9,143.8Q160.2,145.3 169.2,148.0Q178.2,150.7 184.8,142.9Q191.4,135.1 195.6,126.3L199.9,117.6Z" fill="none" stroke="currentColor" stroke-width="7.2" stroke-linejoin="round"/><path d="M199.9,50.1Q208.6,61.3 212.0,67.9Q215.5,74.6 217.5,81.2Q219.5,87.8 224.6,92.7Q229.7,97.6 233.1,104.6Q236.4,111.5 244.3,111.3Q252.2,111.1 258.1,107.6Q264.0,104.1 271.3,101.4Q278.5,98.8 285.4,98.4Q292.2,98.0 299.0,95.7Q305.9,93.4 305.0,100.8Q304.2,108.2 300.6,114.4Q297.0,120.5 296.4,127.9Q295.7,135.2 293.4,141.8Q291.0,148.4 290.0,154.9Q288.9,161.4 294.4,167.0Q300.0,172.7 307.4,173.7Q314.8,174.7 319.5,180.7Q324.1,186.7 331.2,189.4Q338.2,192.2 344.7,196.5Q351.3,200.7 345.6,205.5Q339.8,210.3 332.5,212.3Q325.1,214.2 319.0,217.7Q312.9,221.2 306.5,224.6Q300.1,228.0 294.5,232.4Q289.0,236.8 290.4,244.0Q291.9,251.2 292.2,258.6Q292.5,266.0 294.7,272.2Q297.0,278.3 299.3,285.5Q301.6,292.7 304.5,298.7Q307.4,304.7 299.5,303.2Q291.6,301.7 285.0,299.6Q278.4,297.5 271.0,297.3Q263.6,297.2 256.5,296.1Q249.3,295.1 243.1,292.3Q236.8,289.4 234.1,295.4Q231.5,301.4 226.4,306.6Q221.3,311.8 218.6,318.8Q216.0,325.8 211.4,331.6Q206.9,337.3 204.6,343.2Q202.3,349.2 197.6,343.6Q192.8,338.0 189.6,331.9Q186.4,325.7 181.7,319.9Q176.9,314.0 172.9,308.0Q168.9,302.0 165.9,295.8Q162.9,289.6 156.2,290.8Q149.4,292.1 141.7,292.7Q134.1,293.3 127.6,295.3Q121.2,297.2 114.5,298.6Q107.7,300.0 101.7,302.9Q95.6,305.8 97.7,299.0Q99.9,292.2 102.0,285.6Q104.1,279.0 104.4,271.8Q104.7,264.6 105.1,257.1Q105.6,249.7 108.0,243.7Q110.4,237.6 103.8,234.5Q97.2,231.4 91.4,227.3Q85.5,223.1 79.9,218.7Q74.2,214.4 68.6,210.1Q63.0,205.8 56.3,202.2Q49.6,198.5 55.2,194.5Q60.8,190.4 66.8,187.0Q72.8,183.6 79.9,181.3Q87.0,179.1 92.5,173.7Q98.0,168.4 105.3,165.9Q112.5,163.4 110.5,156.8Q108.4,150.3 105.2,143.6Q101.9,136.8 101.8,129.3Q101.6,121.8 99.2,114.6Q96.7,107.4 95.8,99.9Q94.8,92.4 101.5,96.0Q108.1,99.6 114.6,100.7Q121.0,101.8 128.8,102.7Q136.5,103.7 143.4,104.7Q150.2,105.6 157.4,108.9Q164.6,112.1 166.6,105.0Q168.7,97.9 174.9,93.5Q181.0,89.2 183.0,82.0Q185.0,74.7 189.9,69.4Q194.8,64.1 196.5,56.5L198.1,48.9Z" fill="none" stroke="currentColor" stroke-width="11.9" stroke-linejoin="round" stroke-linecap="round"/><g transform="translate(0 0) rotate(-16 200 52)"><path d="M167.7,51.9Q169.0,62.4 168.5,67.0Q168.0,71.5 171.7,73.8Q175.5,76.0 179.9,77.2Q184.3,78.4 188.1,79.7Q191.9,81.0 196.1,81.3Q200.4,81.6 204.2,81.3Q207.9,81.0 212.2,80.3Q216.4,79.7 220.5,78.0Q224.6,76.4 228.3,74.1Q231.9,71.8 232.4,66.7Q233.0,61.6 232.6,57.0Q232.2,52.3 224.2,52.1Q216.3,52.0 208.2,52.0Q200.1,52.1 192.2,52.4Q184.3,52.8 176.0,52.3L167.7,51.8Z" style="fill:var(--logo-paper,#fff)"/><path d="M200.0,16.1Q214.6,21.3 221.7,24.6Q228.8,28.0 235.8,30.7Q242.9,33.3 250.4,35.4Q257.9,37.5 265.0,41.0Q272.2,44.5 264.9,47.3Q257.6,50.2 250.4,52.5Q243.2,54.9 236.1,57.7Q229.0,60.6 221.8,63.8Q214.6,67.0 207.4,69.2Q200.1,71.4 192.8,69.0Q185.4,66.6 178.3,64.2Q171.2,61.7 163.7,59.1Q156.3,56.4 149.4,52.5Q142.5,48.6 135.3,45.9Q128.0,43.1 135.1,40.3Q142.1,37.5 149.4,35.2Q156.8,32.9 164.1,30.6Q171.5,28.3 178.6,25.2Q185.7,22.1 192.6,18.8L199.6,15.5Z" style="fill:var(--logo-paper,#fff)"/><path d="M166.7,51.5Q166.3,62.2 167.5,67.2Q168.8,72.2 172.6,74.2Q176.4,76.3 180.4,78.4Q184.4,80.6 188.2,80.5Q192.0,80.4 196.3,80.9Q200.6,81.5 204.6,81.5Q208.6,81.5 212.3,80.4Q216.0,79.4 220.3,77.7Q224.7,76.1 228.8,74.2Q233.0,72.4 232.6,67.3Q232.2,62.3 231.7,57.3Q231.3,52.3 223.3,53.4Q215.4,54.4 208.1,53.4Q200.8,52.3 192.5,52.6Q184.3,53.0 175.8,53.3L167.3,53.7Z" fill="none" stroke="currentColor" stroke-width="8.92" stroke-linejoin="round" stroke-linecap="round"/><path d="M200.0,15.7Q215.8,19.1 222.9,22.1Q229.9,25.0 235.9,29.6Q241.9,34.3 249.3,37.5Q256.7,40.8 264.3,42.1Q271.9,43.4 264.4,45.8Q257.0,48.2 249.5,51.3Q242.0,54.4 234.9,57.0Q227.7,59.6 220.8,62.4Q213.9,65.2 206.8,69.6Q199.8,74.1 193.0,69.8Q186.3,65.5 179.1,62.4Q172.0,59.3 164.6,56.5Q157.1,53.7 149.3,52.3Q141.5,50.9 135.3,47.7Q129.0,44.5 136.4,42.7Q143.9,40.9 150.4,37.5Q156.9,34.0 163.8,29.8Q170.7,25.6 178.4,24.3Q186.0,22.9 193.0,19.2L200.1,15.4Z" fill="none" stroke="currentColor" stroke-width="8.92" stroke-linejoin="round" stroke-linecap="round"/><path d="M200.0,44.5Q216.0,44.1 223.4,45.0Q230.7,45.8 238.8,46.1Q246.8,46.3 254.2,47.4Q261.6,48.5 261.8,57.4Q262.0,66.4 262.8,75.0L263.6,83.6" fill="none" stroke="currentColor" stroke-width="8.46" stroke-linecap="round" stroke-linejoin="round"/><path d="M255.7,82.3Q263.7,83.6 267.8,82.7Q271.8,81.8 271.9,87.8Q272.0,93.8 272.9,100.1Q273.8,106.4 268.8,106.1Q263.7,105.7 258.6,106.0Q253.4,106.3 254.0,100.2Q254.6,94.1 255.7,88.1L256.8,82.0Z" fill="currentColor" stroke="currentColor" stroke-width="5.58" stroke-linejoin="round"/><circle cx="200" cy="44" r="5" fill="currentColor" stroke="currentColor" stroke-width="4.68"/></g></g></svg>
+          <span class="home-footer-name">Studio ABA Catania</span>
         </a>
-        <p class="home-footer-text">Accademia di Belle Arti di Catania — Piattaforma Didattica di Studio</p>
+        <p class="home-footer-text">Piattaforma di studio per gli studenti dell'Accademia di Belle Arti di Catania</p>
       </div>
     </footer>
-
   </div>
 
-  <!-- Dati Corsi e Piani di Studio Ufficiali ABA Catania -->
-  <script src="data/corsi-data.js"></script>
-
+  <script src="data/corsi-data.js?v=20261008"></script>
+  <script src="js/subjects.js?v=20261008"></script>
   <script>
     (function () {
       'use strict';
 
-      // ── Dati centralizzati da data/corsi-data.js ──
       const ABA = window.ABA_DATA || {};
-      const CORSI = ABA.CORSI || { triennio: [], biennio: [] };
-      const PIANI_STUDIO = ABA.PIANI_STUDIO || {};
-      const COURSE_COLORS = ABA.COURSE_COLORS || {};
+      const PIANI = ABA.PIANI_STUDIO || {};
+      const COLORS = ABA.COURSE_COLORS || {};
+      const CORSI = (ABA.CORSI && ABA.CORSI.triennio || []).concat(ABA.CORSI && ABA.CORSI.biennio || []);
+      const SUBJECTS = window.SUBJECTS || {};
+      const STATE_KEY = 'ux_web_study_state_v1';
+      const THEME_KEY = 'aba_studio_theme';
 
-      // SVG Icons (Nessuna emoji unicode)
-      const ICONS = {
-        code: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>',
-        palette: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>',
-        layout: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>',
-        cpu: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>',
-        camera: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>',
-        video: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>',
-        folder: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>',
-        chevRight: '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>',
-        book: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>',
-        quiz: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>',
-        layers: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>',
-        inbox: '<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg>',
-        arrowLeft: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>'
-      };
+      const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      const arrow = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>';
 
-      function showToast(msg) {
-        let toast = document.getElementById('home-toast');
-        if (!toast) {
-          toast = document.createElement('div');
-          toast.id = 'home-toast';
-          toast.className = 'home-toast';
-          document.body.appendChild(toast);
-        }
-        toast.textContent = msg;
-        toast.classList.add('show');
-        clearTimeout(window.__homeToastTimer);
-        window.__homeToastTimer = setTimeout(() => {
-          toast.classList.remove('show');
-        }, 2600);
+      function readState() {
+        try { return JSON.parse(localStorage.getItem(STATE_KEY) || '{}'); } catch (e) { return {}; }
       }
 
-      // ── State ──
-      let currentView = 'courses'; // 'courses' | 'anni' | 'materie'
-      let selectedCourse = null;
-      let selectedAnno = null;
-      let accent = 'var(--accent-primary)';
+      function todayKey() {
+        const d = new Date();
+        const z = n => String(n).padStart(2, '0');
+        return `${d.getFullYear()}-${z(d.getMonth() + 1)}-${z(d.getDate())}`;
+      }
 
-      const GLOBAL_THEME_KEY = 'aba_studio_theme';
+      // Dati della materia nel piano di studi (stats, descrizione) a partire dal file della pagina
+      function findMateria(subjectId) {
+        for (const course of Object.keys(PIANI)) {
+          for (const anno of PIANI[course]) {
+            const m = (anno.materie || []).find(x => x.page === `pages/${subjectId}.html`);
+            if (m) return m;
+          }
+        }
+        return null;
+      }
 
-      // ── Theme ──
+      function subjectProgress(id, subject, st) {
+        const materia = findMateria(id);
+        const total = (materia && materia.stats && materia.stats.capitoli) || 0;
+        const has = key => subject.idPrefixes.some(p => key.startsWith(p));
+        const done = Object.keys(st.completed || {}).filter(k => st.completed[k] && has(k)).length;
+        const today = todayKey();
+        const due = Object.entries(st.srs || {}).filter(([k, v]) => has(k) && v.due <= today).length;
+        const touched = done > 0 || (st.positions && st.positions[id]) ||
+          Object.keys(st.quizAnswers || {}).some(has) || Object.keys(st.srs || {}).some(has);
+        return { materia, total, done: Math.min(done, total), due, touched: !!touched };
+      }
+
+      function courseName(code) {
+        const c = CORSI.find(x => x.code === code);
+        return c ? c.name : code;
+      }
+
+      function renderResume(st) {
+        const items = Object.entries(SUBJECTS)
+          .map(([id, s]) => ({ id, s, p: subjectProgress(id, s, st) }))
+          .filter(x => x.p.touched);
+        if (!items.length) return;
+        // La materia aperta per ultima va in testa
+        items.sort((a, b) => (b.id === st.lastSubject) - (a.id === st.lastSubject));
+        const last = items[0];
+        const resumeBtn = document.getElementById('landing-resume');
+        resumeBtn.href = `pages/${last.id}.html`;
+        resumeBtn.innerHTML = `Riprendi ${esc(last.s.title)} ${arrow}`;
+
+        document.getElementById('resume-section').hidden = false;
+        document.getElementById('resume-grid').innerHTML = items.map(({ id, s, p }) => {
+          const pct = p.total ? Math.round((p.done / p.total) * 100) : 0;
+          return `
+            <a class="resume-card" href="pages/${id}.html" style="--card-accent:${COLORS[s.course] || 'var(--accent-primary)'}">
+              <span class="resume-title">${esc(s.title)}</span>
+              <span class="resume-meta">${p.done} di ${p.total} capitoli${p.due ? ` <span class="resume-due">${p.due} ${p.due === 1 ? 'scheda' : 'schede'} da ripassare oggi</span>` : ''}</span>
+              <span class="materia-card-progress"><span class="materia-card-progress-fill" style="width:${pct}%"></span></span>
+              <span class="resume-go">Continua ${arrow}</span>
+            </a>`;
+        }).join('');
+      }
+
+      function renderSubjects(st) {
+        const groups = {};
+        Object.entries(SUBJECTS).forEach(([id, s]) => {
+          const key = `${s.course}|${s.anno}`;
+          (groups[key] = groups[key] || []).push({ id, s });
+        });
+        const html = Object.keys(groups).sort().map(key => {
+          const [course, anno] = key.split('|');
+          const cards = groups[key].map(({ id, s }) => {
+            const p = subjectProgress(id, s, st);
+            const stats = (p.materia && p.materia.stats) || {};
+            const pct = p.total ? Math.round((p.done / p.total) * 100) : 0;
+            return `
+              <a class="subject-card" href="pages/${id}.html" style="--card-accent:${COLORS[s.course] || 'var(--accent-primary)'}">
+                <span class="subject-card-title">${esc(s.title)}</span>
+                <span class="subject-card-prof">${esc(s.docente)}</span>
+                <span class="subject-card-stats">${stats.capitoli || 0} capitoli, ${stats.quiz || 0} quiz</span>
+                <span class="materia-card-progress"><span class="materia-card-progress-fill" style="width:${pct}%"></span></span>
+              </a>`;
+          }).join('');
+          return `
+            <div class="subjects-group">
+              <h4 class="subjects-group-title"><span class="subjects-dot" style="background:${COLORS[course] || 'var(--accent-primary)'}"></span>${esc(courseName(course))}, ${anno}° anno</h4>
+              <div class="subjects-grid">${cards}</div>
+            </div>`;
+        }).join('');
+        document.getElementById('subjects-groups').innerHTML = html;
+      }
+
+      function render() {
+        const st = readState();
+        renderResume(st);
+        renderSubjects(st);
+      }
+
       function applyTheme(theme) {
-        if (theme === 'dark') {
-          document.body.classList.remove('theme-light');
-          document.body.classList.add('theme-dark');
-        } else {
-          document.body.classList.remove('theme-dark');
-          document.body.classList.add('theme-light');
-        }
-        try {
-          localStorage.setItem(GLOBAL_THEME_KEY, theme);
-          localStorage.setItem('studio_home_theme', theme);
-        } catch (e) { }
+        document.body.classList.toggle('theme-dark', theme === 'dark');
+        document.body.classList.toggle('theme-light', theme !== 'dark');
+        try { localStorage.setItem(THEME_KEY, theme); } catch (e) { }
       }
 
-      function getCurrentTheme() {
-        return localStorage.getItem(GLOBAL_THEME_KEY) ||
-          localStorage.getItem('studio_home_theme') ||
-          (localStorage.getItem('ux_web_study_state_v1') ?
-            (JSON.parse(localStorage.getItem('ux_web_study_state_v1')).theme || 'light') : 'light');
-      }
-
-      // ── Progress helpers ──
-      function getSubjectProgress(subjectId) {
-        try {
-          const saved = localStorage.getItem('ux_web_study_state_v1');
-          if (!saved) return { done: 0, total: 0 };
-          const data = JSON.parse(saved);
-          const completed = data.completed || {};
-
-          if (subjectId === 'ux-webdesign') {
-            const total = 84;
-            let done = 0;
-            Object.keys(completed).forEach(k => {
-              if (completed[k] && !k.startsWith('arte-') && !k.startsWith('arte1-')) done++;
-            });
-            return { done, total };
-          }
-          if (subjectId === 'storia-arte') {
-            const total = 21;
-            let done = 0;
-            Object.keys(completed).forEach(k => {
-              if (completed[k] && k.startsWith('arte-') && !k.startsWith('arte1-')) done++;
-            });
-            return { done, total };
-          }
-          if (subjectId === 'storia-arte-1' || subjectId === 'dapl08-1-storia-dell-arte-contemporanea-1') {
-            const total = 20;
-            let done = 0;
-            Object.keys(completed).forEach(k => {
-              if (completed[k] && k.startsWith('arte1-')) done++;
-            });
-            return { done, total };
-          }
-          if (subjectId === 'archetipi' || subjectId === 'dapl08-2-archetipi-dell-immaginario') {
-            const total = 21;
-            let done = 0;
-            Object.keys(completed).forEach(k => {
-              if (completed[k] && k.startsWith('archetipi-')) done++;
-            });
-            return { done, total };
-          }
-          if (subjectId === 'fotografia-digitale' || subjectId === 'fotografia' || subjectId === 'dapl08-1-fotografia-digitale') {
-            const total = 41;
-            let done = 0;
-            Object.keys(completed).forEach(k => {
-              if (completed[k] && k.startsWith('foto-')) done++;
-            });
-            return { done, total };
-          }
-          if (subjectId === 'tecniche-audiovisive' || subjectId === 'taw' || subjectId === 'dapl08-1-tecniche-audiovisive-per-il-web') {
-            const total = 27;
-            let done = 0;
-            Object.keys(completed).forEach(k => {
-              if (completed[k] && k.startsWith('taw-')) done++;
-            });
-            return { done, total };
-          }
-          if (subjectId === 'interaction' || subjectId === 'interaction-design' || subjectId === 'ixd' || subjectId === 'dapl08-1-interaction-design') {
-            const total = 28;
-            let done = 0;
-            Object.keys(completed).forEach(k => {
-              if (completed[k] && k.startsWith('ixd-')) done++;
-            });
-            return { done, total };
-          }
-        } catch (e) { }
-        return { done: 0, total: 0 };
-      }
-
-      // ── Rendering ──
-
-      function renderCoursesView() {
-        currentView = 'courses';
-        selectedCourse = null;
-        selectedAnno = null;
-
-        const hero = document.getElementById('home-hero');
-        hero.style.removeProperty('--hero-accent');
-        hero.querySelector('h2').textContent = 'Seleziona il tuo Corso di Laurea';
-        hero.querySelector('p').textContent = 'Scegli il corso di studi per accedere alle materie, ai quiz interattivi e alle flashcard di autoverifica.';
-
-        const container = document.getElementById('nav-content');
-        container.innerHTML = '';
-
-        // Triennio
-        const triennioLabel = document.createElement('div');
-        triennioLabel.className = 'level-divider';
-        triennioLabel.textContent = 'Triennio — Diploma Accademico di Primo Livello';
-        container.appendChild(triennioLabel);
-
-        const triennioGrid = document.createElement('div');
-        triennioGrid.className = 'courses-grid';
-        CORSI.triennio.forEach(c => {
-          triennioGrid.appendChild(createCourseCard(c));
-        });
-        container.appendChild(triennioGrid);
-
-        // Biennio
-        const biennioLabel = document.createElement('div');
-        biennioLabel.className = 'level-divider';
-        biennioLabel.textContent = 'Biennio — Diploma Accademico di Secondo Livello';
-        container.appendChild(biennioLabel);
-
-        const biennioGrid = document.createElement('div');
-        biennioGrid.className = 'courses-grid';
-        CORSI.biennio.forEach(c => {
-          biennioGrid.appendChild(createCourseCard(c));
-        });
-        container.appendChild(biennioGrid);
-      }
-
-      function createCourseCard(course) {
-        const card = document.createElement('div');
-        card.className = 'course-card' + (course.hasContent ? ' has-content' : '');
-        const cardAccent = course.accent || COURSE_COLORS[course.code] || 'var(--accent-primary)';
-        card.style.setProperty('--card-accent', cardAccent);
-
-        card.innerHTML = `
-        <div class="course-card-code">${course.code.split('-')[0]}</div>
-        <h3 class="course-card-name">${course.name}</h3>
-        <div class="course-card-status">
-          <span class="status-dot ${course.hasContent ? '' : 'empty'}"></span>
-          ${course.hasContent ? 'Contenuti disponibili' : 'Piano di studi completo'}
-        </div>
-      `;
-
-        card.addEventListener('click', (e) => {
-          e.preventDefault();
-          navigateToAnni(course, true);
-        });
-
-        return card;
-      }
-
-      // ── Navigation & History API ──
-      function navigateToCourses(pushState = true) {
-        currentView = 'courses';
-        selectedCourse = null;
-        selectedAnno = null;
-        accent = 'var(--accent-primary)';
-        if (pushState) {
-          history.pushState({ view: 'courses' }, '', window.location.pathname);
-        }
-        renderCoursesView();
-        window.scrollTo({ top: 0, behavior: 'instant' });
-      }
-
-      function navigateToAnni(course, pushState = true) {
-        currentView = 'anni';
-        selectedCourse = course;
-        selectedAnno = null;
-        accent = course.accent || COURSE_COLORS[course.code] || 'var(--accent-primary)';
-        if (pushState) {
-          history.pushState({ view: 'anni', course: course.code }, '', `?view=anni&course=${encodeURIComponent(course.code)}`);
-        }
-        renderAnniView();
-        window.scrollTo({ top: 0, behavior: 'instant' });
-      }
-
-      function navigateToMaterie(course, anno, pushState = true) {
-        currentView = 'materie';
-        selectedCourse = course;
-        selectedAnno = anno;
-        accent = course.accent || COURSE_COLORS[course.code] || 'var(--accent-primary)';
-        if (pushState) {
-          history.pushState({ view: 'materie', course: course.code, anno: anno.num }, '', `?view=materie&course=${encodeURIComponent(course.code)}&anno=${encodeURIComponent(anno.num)}`);
-        }
-        renderMaterieView();
-        window.scrollTo({ top: 0, behavior: 'instant' });
-      }
-
-      function handleRoute(pushState = false) {
-        const urlParams = new URLSearchParams(window.location.search);
-        const view = urlParams.get('view');
-        const allCourses = CORSI.triennio.concat(CORSI.biennio);
-
-        if (view === 'materie' || window.location.hash === '#materie') {
-          const courseCode = urlParams.get('course') || 'DAPL08';
-          const annoNum = parseInt(urlParams.get('anno') || '2', 10);
-          const course = allCourses.find(c => c.code === courseCode || c.code.split('-')[0] === courseCode.split('-')[0]) || allCourses[0];
-          const anni = PIANI_STUDIO[course.code] || [];
-          const anno = anni.find(a => a.num === annoNum) || anni[0];
-          if (course && anno) {
-            selectedCourse = course;
-            selectedAnno = anno;
-            accent = course.accent || COURSE_COLORS[course.code] || 'var(--accent-primary)';
-            if (pushState) {
-              history.pushState({ view: 'materie', course: course.code, anno: anno.num }, '', `?view=materie&course=${encodeURIComponent(course.code)}&anno=${encodeURIComponent(anno.num)}`);
-            }
-            renderMaterieView();
-            return;
-          }
-        } else if (view === 'anni') {
-          const courseCode = urlParams.get('course') || 'DAPL08';
-          const course = allCourses.find(c => c.code === courseCode || c.code.split('-')[0] === courseCode.split('-')[0]) || allCourses[0];
-          if (course) {
-            selectedCourse = course;
-            selectedAnno = null;
-            accent = course.accent || COURSE_COLORS[course.code] || 'var(--accent-primary)';
-            if (pushState) {
-              history.pushState({ view: 'anni', course: course.code }, '', `?view=anni&course=${encodeURIComponent(course.code)}`);
-            }
-            renderAnniView();
-            return;
-          }
-        }
-
-        currentView = 'courses';
-        selectedCourse = null;
-        selectedAnno = null;
-        accent = 'var(--accent-primary)';
-        if (pushState) {
-          history.pushState({ view: 'courses' }, '', window.location.pathname);
-        }
-        renderCoursesView();
-      }
-
-      function renderAnniView() {
-        currentView = 'anni';
-
-        const hero = document.getElementById('home-hero');
-        hero.style.setProperty('--hero-accent', accent);
-        hero.querySelector('h2').textContent = selectedCourse.name;
-        hero.querySelector('p').textContent = `${selectedCourse.code.split('-')[0]} — Seleziona l\'anno accademico`;
-
-        const container = document.getElementById('nav-content');
-        container.innerHTML = '';
-
-        // View nav header: breadcrumbs + back button
-        const navHeader = document.createElement('div');
-        navHeader.className = 'view-nav-header';
-
-        const breadcrumb = createBreadcrumb([
-          { label: 'Corsi', action: () => navigateToCourses(true) },
-          { label: selectedCourse.name, current: true }
-        ]);
-        navHeader.appendChild(breadcrumb);
-
-        const backBtn = document.createElement('button');
-        backBtn.className = 'btn-back-level';
-        backBtn.type = 'button';
-        backBtn.innerHTML = `${ICONS.arrowLeft} <span>Torna ai Corsi di Laurea</span>`;
-        backBtn.addEventListener('click', () => navigateToCourses(true));
-        navHeader.appendChild(backBtn);
-
-        container.appendChild(navHeader);
-
-        const grid = document.createElement('div');
-        grid.className = 'anni-grid';
-
-        const courseAnni = PIANI_STUDIO[selectedCourse.code] || [];
-        courseAnni.forEach(anno => {
-          const card = document.createElement('div');
-          card.className = 'anno-card';
-          card.style.setProperty('--card-accent', accent);
-
-          const materieCount = (anno.materie || []).length;
-          card.innerHTML = `
-          <h3>${anno.label}</h3>
-          <div class="anno-card-meta">
-            ${materieCount > 0 ? `${materieCount} ${materieCount === 1 ? 'materia' : 'materie'} ufficiali` : 'Nessuna materia registrata'}
-          </div>
-        `;
-
-          card.addEventListener('click', (e) => {
-            e.preventDefault();
-            navigateToMaterie(selectedCourse, anno, true);
-          });
-
-          grid.appendChild(card);
-        });
-
-        container.appendChild(grid);
-      }
-
-      function renderMaterieView() {
-        currentView = 'materie';
-
-        const hero = document.getElementById('home-hero');
-        hero.style.setProperty('--hero-accent', accent);
-        hero.querySelector('h2').textContent = `${selectedCourse.name} — ${selectedAnno.label}`;
-        hero.querySelector('p').textContent = 'Scegli la materia per iniziare a studiare.';
-
-        const container = document.getElementById('nav-content');
-        container.innerHTML = '';
-
-        // View nav header: breadcrumbs + back button
-        const navHeader = document.createElement('div');
-        navHeader.className = 'view-nav-header';
-
-        const breadcrumb = createBreadcrumb([
-          { label: 'Corsi', action: () => navigateToCourses(true) },
-          { label: selectedCourse.name, action: () => navigateToAnni(selectedCourse, true) },
-          { label: selectedAnno.label, current: true }
-        ]);
-        navHeader.appendChild(breadcrumb);
-
-        const backBtn = document.createElement('button');
-        backBtn.className = 'btn-back-level';
-        backBtn.type = 'button';
-        backBtn.innerHTML = `${ICONS.arrowLeft} <span>Torna agli Anni</span>`;
-        backBtn.addEventListener('click', () => navigateToAnni(selectedCourse, true));
-        navHeader.appendChild(backBtn);
-
-        container.appendChild(navHeader);
-
-        if (!selectedAnno.materie || selectedAnno.materie.length === 0) {
-          const emptyDiv = document.createElement('div');
-          emptyDiv.className = 'empty-state';
-          emptyDiv.innerHTML = `
-          ${ICONS.inbox}
-          <p>Non ci sono ancora materie inserite per questo anno. Verranno aggiunte man mano che saranno disponibili.</p>
-          <div style="margin-top: 20px;">
-            <button class="btn-secondary-action" type="button" id="btn-empty-back">
-              ${ICONS.arrowLeft}
-              <span>Torna alla selezione dell'anno</span>
-            </button>
-          </div>
-        `;
-          emptyDiv.querySelector('#btn-empty-back').addEventListener('click', () => navigateToAnni(selectedCourse, true));
-          container.appendChild(emptyDiv);
-          return;
-        }
-
-        const grid = document.createElement('div');
-        grid.className = 'materie-grid';
-
-        selectedAnno.materie.forEach(materia => {
-          const matAccent = materia.accent || accent;
-          const isClickable = materia.isClickable !== false && !!materia.page;
-
-          const card = document.createElement(isClickable ? 'a' : 'div');
-          card.className = 'materia-card' + (isClickable ? '' : ' materia-card-disabled');
-          if (isClickable) {
-            card.href = materia.page;
-          } else {
-            card.setAttribute('aria-disabled', 'true');
-          }
-          card.style.setProperty('--card-accent', matAccent);
-
-          let footerHTML = '';
-          if (isClickable && materia.stats) {
-            const progress = getSubjectProgress(materia.id);
-            const pct = progress.total > 0 ? Math.round((progress.done / progress.total) * 100) : 0;
-            footerHTML = `
-            <div class="materia-card-footer">
-              <div class="materia-card-stats">
-                <span>${ICONS.book} ${materia.stats.capitoli} capitoli</span>
-                <span>${ICONS.quiz} ${materia.stats.quiz} quiz</span>
-                <span>${ICONS.layers} ${materia.stats.fonti} fonti</span>
-              </div>
-              <div class="materia-card-progress">
-                <div class="materia-card-progress-fill" style="width: ${pct}%"></div>
-              </div>
-            </div>
-          `;
-          } else {
-            const isLab = (materia.desc && materia.desc.includes('non prevede lo studio di dispense')) || (materia.tipo && materia.tipo.toLowerCase().includes('laboratorio'));
-            const noticeText = isLab ? 'Nessuna dispensa orale' : 'In attesa di contenuti';
-            const pillText = isLab ? 'Laboratorio pratico' : (materia.tipo || 'Insegnamento ufficiale');
-            footerHTML = `
-            <div class="materia-card-footer">
-              <div class="materia-card-stats materia-card-stats-disabled">
-                <span>
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-                  ${noticeText}
-                </span>
-                <span class="materia-badge-pill">${pillText}</span>
-              </div>
-              <div class="materia-card-progress">
-                <div class="materia-card-progress-fill" style="width: 0%;"></div>
-              </div>
-            </div>
-          `;
-          }
-
-          // Tags pill row: Codice, CFA, Ore, Tipologia
-          const tags = [];
-          if (materia.code) tags.push(materia.code);
-          if (materia.credits) tags.push(materia.credits);
-          if (materia.ore) tags.push(materia.ore);
-          if (materia.tipo && !materia.tipo.includes('Caratterizzanti')) tags.push(materia.tipo);
-          const tagsHTML = tags.length > 0 ? `
-          <div class="materia-card-tags">
-            ${tags.map(t => `<span class="materia-badge-pill">${t}</span>`).join('')}
-          </div>
-        ` : '';
-
-          // Cultori della materia se presenti (come per Storia dell'Arte)
-          let cultoriHTML = '';
-          if (materia.cultori) {
-            cultoriHTML = `
-            <div style="font-size: 11.5px; color: var(--text-muted); margin: -4px 0 8px;">
-              Cultori: <strong>${materia.cultori}</strong>
-            </div>
-          `;
-          }
-
-          card.innerHTML = `
-          <div class="materia-card-icon">${ICONS[materia.icon] || ICONS.book}</div>
-          <h3 title="${materia.name}">${materia.name}</h3>
-          <div class="materia-card-prof">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            <span>Docente: <strong class="materia-prof-name" style="color: ${matAccent};">${materia.docente || 'Docente da assegnare'}</strong></span>
-          </div>
-          ${cultoriHTML}
-          ${tagsHTML}
-          <div class="materia-card-desc">${materia.desc || ''}</div>
-          ${footerHTML}
-        `;
-
-          grid.appendChild(card);
-        });
-
-        container.appendChild(grid);
-      }
-
-      function createBreadcrumb(items) {
-        const nav = document.createElement('nav');
-        nav.className = 'home-breadcrumb';
-
-        items.forEach((item, i) => {
-          if (i > 0) {
-            const sep = document.createElement('span');
-            sep.className = 'breadcrumb-sep';
-            sep.innerHTML = ICONS.chevRight;
-            nav.appendChild(sep);
-          }
-
-          if (item.current) {
-            const span = document.createElement('span');
-            span.className = 'breadcrumb-current';
-            span.textContent = item.label;
-            nav.appendChild(span);
-          } else {
-            const btn = document.createElement('button');
-            btn.className = 'breadcrumb-item';
-            btn.textContent = item.label;
-            btn.addEventListener('click', (e) => {
-              e.preventDefault();
-              item.action();
-            });
-            nav.appendChild(btn);
-          }
-        });
-
-        return nav;
-      }
-
-      // ── Init ──
-      function init() {
-        const theme = getCurrentTheme();
+      document.addEventListener('DOMContentLoaded', () => {
+        let theme = 'light';
+        try { theme = localStorage.getItem(THEME_KEY) || 'light'; } catch (e) { }
         applyTheme(theme);
-
         document.getElementById('btn-theme-toggle').addEventListener('click', () => {
-          const current = document.body.classList.contains('theme-dark') ? 'dark' : 'light';
-          applyTheme(current === 'light' ? 'dark' : 'light');
+          applyTheme(document.body.classList.contains('theme-dark') ? 'light' : 'dark');
         });
-
-        window.addEventListener('storage', (e) => {
-          if (e.key === GLOBAL_THEME_KEY && e.newValue) {
-            applyTheme(e.newValue);
-          }
-        });
-
-        // Browser history back / forward listener
-        window.addEventListener('popstate', () => {
-          handleRoute(false);
-        });
-
-        // Logo brand clicks
-        const brandLink = document.getElementById('home-brand-link');
-        if (brandLink) {
-          brandLink.addEventListener('click', (e) => {
-            e.preventDefault();
-            navigateToCourses(true);
-          });
-        }
-        const footerLogoLink = document.getElementById('home-footer-logo-link');
-        if (footerLogoLink) {
-          footerLogoLink.addEventListener('click', (e) => {
-            e.preventDefault();
-            navigateToCourses(true);
-          });
-        }
-
-        // Initial route setup with replaceState
-        const urlParams = new URLSearchParams(window.location.search);
-        const initialView = urlParams.get('view') || 'courses';
-        if (!history.state) {
-          history.replaceState({ view: initialView, course: urlParams.get('course'), anno: urlParams.get('anno') }, '', window.location.href);
-        }
-
-        // Sincronizzazione progressi da Supabase Cloud
-        window.addEventListener('study:progress-synced', () => {
-          if (currentView === 'materie' && selectedCourse && selectedAnno) {
-            renderMaterieView(selectedCourse, selectedAnno);
-          }
-        });
-        window.addEventListener('auth:change', () => {
-          if (currentView === 'materie' && selectedCourse && selectedAnno) {
-            renderMaterieView(selectedCourse, selectedAnno);
-          }
-        });
-
-        handleRoute(false);
-      }
-
-      document.addEventListener('DOMContentLoaded', init);
+        window.addEventListener('storage', e => { if (e.key === THEME_KEY && e.newValue) applyTheme(e.newValue); });
+        window.addEventListener('study:progress-synced', render);
+        window.addEventListener('auth:change', render);
+        render();
+      });
     })();
   </script>
 
-  <!-- Supabase & Auth Cloud Sync -->
+  <div class="spot-modal" id="spot-modal" role="dialog" aria-modal="true" aria-label="Spot di Studio ABA Catania" hidden>
+    <button type="button" class="spot-modal-close" id="btn-close-spot" aria-label="Chiudi lo spot">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="spot-modal-body">
+      <video class="spot-video" id="spot-video" controls playsinline preload="none"></video>
+    </div>
+  </div>
+
+  <script>
+    // Video della home: clip in loop nell'introduzione e spot completo in una finestra.
+    // Lo spot si scarica solo al clic; su schermi verticali si usa la versione 9:16 (più leggera).
+    (function () {
+      'use strict';
+      const hero = document.getElementById('hero-video');
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+      if (hero && reduce.matches) {
+        hero.removeAttribute('autoplay');
+        hero.pause();
+      }
+
+      const modal = document.getElementById('spot-modal');
+      const video = document.getElementById('spot-video');
+      const openBtn = document.getElementById('btn-open-spot');
+      const closeBtn = document.getElementById('btn-close-spot');
+      let lastFocus = null;
+
+      function open() {
+        const vertical = window.matchMedia('(max-aspect-ratio: 4/5)').matches;
+        const src = vertical ? 'assets/media/studioabact-vertical.mp4' : 'assets/media/studioabact-promo.mp4';
+        if (video.dataset.src !== src) {
+          video.src = src;
+          video.dataset.src = src;
+          video.poster = vertical ? '' : 'assets/media/studioabact-promo-poster.jpg';
+        }
+        modal.classList.toggle('is-vertical', vertical);
+        lastFocus = document.activeElement;
+        modal.hidden = false;
+        document.body.style.overflow = 'hidden';
+        if (hero) hero.pause();
+        const playing = video.play();
+        if (playing && playing.catch) playing.catch(() => {});
+        closeBtn.focus();
+      }
+
+      function close() {
+        video.pause();
+        modal.hidden = true;
+        document.body.style.overflow = '';
+        if (hero && !reduce.matches) hero.play().catch(() => {});
+        if (lastFocus) lastFocus.focus();
+      }
+
+      openBtn.addEventListener('click', open);
+      closeBtn.addEventListener('click', close);
+      modal.addEventListener('click', e => { if (e.target === modal) close(); });
+      document.addEventListener('keydown', e => { if (e.key === 'Escape' && !modal.hidden) close(); });
+    })();
+  </script>
+
   <script src="js/supabase.min.js"></script>
-  <script src="js/auth.js?v=6"></script>
+  <script src="js/auth.js?v=20261008"></script>
 </body>
 
 </html>

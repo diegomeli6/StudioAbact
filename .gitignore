@@ -20,3 +20,6 @@ venv/
 # File di dump intermedi / temporanei
 *.tmp
 *.temp
+
+# Impostazioni locali degli assistenti AI
+.claude/settings.local.json

@@ -132,7 +132,7 @@ window.MAEDA_DATA = [
     "title": "Legge 1 — RIDUCI",
     "subtitle": "La riduzione ragionata, il trade-off funzionalità-semplicità e il metodo SHE",
     "readTime": "8 min",
-    "summary": "### L'enunciato della Legge 1: la riduzione ragionata\n> **Legge 1: Il modo più semplice per conseguire la semplicità è attraverso una riduzione ragionata.**\n\nLa strategia più intuitiva ed elementare per semplificare un sistema consiste nel **rimuovere funzionalità**. Tuttavia, una rimozione cieca e indiscriminata distrugge l'utilità del prodotto: un lettore DVD dotato del solo pulsante «Play» sarebbe indubbiamente minimale, ma impedirebbe all'utente di riavvolgere una scena, navigare i capitoli o accedere ai contenuti speciali. Il cuore progettuale della Legge 1 risiede nella risoluzione della tensione dialettica tra due forze opposte:\n$$\\text{QUANTO PUOI RENDERLO SEMPLICE?} \\longleftrightarrow \\text{QUANTO DEVE ESSERE COMPLESSO?}$$\nGli utenti pretendono un dispositivo estremamente facile da usare, ma al contempo capace di svolgere qualsiasi operazione. La regola d'oro di Maeda stabilisce: **quando hai dei dubbi, rimuovi; ma fai estrema attenzione a cosa elimini**. La vera semplificazione si compie eliminando funzioni *senza generare costi significativi in termini di valore d'uso*.\n\n### Il metodo SHE: Shrink, Hide, Embody\nQuando tutte le funzionalità superflue sono state rimosse e non è più possibile sottrarre nulla senza compromettere lo scopo dell'oggetto, si passa al metodo avanzato riassunto dall'acronimo **SHE** (*«SHE is always right»* / *«SHE è sempre la giusta soluzione»*):\n\n#### 1. SHRINK (Rimpicciolisci)\nQuando un oggetto piccolo e modesto supera le nostre aspettative iniziali, proviamo sorpresa e simpatia. Maeda enuncia la massima psicologica: **«temi il grande, compatisci il piccolo»**. La fragilità e la piccolezza generano benevolenza e compassione (non a caso, la parola inglese *pity* è racchiusa dentro *simplicity*).\n- **Miniaturizzazione tecnologica**: un tempo un calcolatore elettronico pesava 27 tonnellate e occupava un'intera stanza, mentre oggi un chip infinitesimale racchiude una potenza incomparabilmente superiore. I semiconduttori consentono di condensare enorme complessità in scala minuscola (un moderno smartphone è tecnicamente molto più complesso di un bulldozer, ma appare innocuo e tascabile).\n- **Leggerezza visiva e sottigliezza**: i designer usano materiali riflettenti, bordi rastremati e spessori minimi (il retro a specchio dell'iPad, gli schermi ultra-piatti, i portatili Lenovo ThinkPad) per far apparire i dispositivi immateriali. Rimpicciolire è una forma innocua e gradevole di «inganno percettivo».\n\n#### 2. HIDE (Nascondi)\nQuando un oggetto è già stato ridotto nelle dimensioni fisiche, la complessità residua va **occultata alla vista finché non diventa necessaria**:\n- **Coltello dell'esercito svizzero**: racchiude decine di lame, cacciaviti e forbici all'interno del guscio, ma mostra unicamente lo strumento che l'utente decide di estrarre in quel momento.\n- **Telefoni a conchiglia (clamshell)**: nascondono tastierino e display secondari fino all'apertura dello sportellino (es. l'iconico scatto del *Motorola Razr*).\n- **Interfacce software**: barre degli strumenti e menu a discesa celano centinaia di comandi complessi dietro un singolo clic o una transizione fluida (la «magia» delle animazioni di Mac OS X). La complessità diventa un interruttore che l'utente attiva solo a propria discrezione.\n\n#### 3. EMBODY (Incorpora)\nRimpicciolire e nascondere comporta un rischio gravissimo: **la perdita della percezione di valore**. Se un oggetto è minuscolo e privo di pulsanti evidenti, il consumatore potrebbe considerarlo un giocattolo fragile o privo di sostanza economica. Perché il pubblico accetti di pagare un prezzo elevato per un manufatto piccolo e apparentemente minimale, il designer deve **incorporare un senso tangibile di valore**:\n- **Qualità reale**: scelta di materiali nobili, finiture impeccabili e artigianato d'eccellenza. Una Ferrari non possiede diecimila pezzi inutili, ma ogni suo singolo componente è forgiato al massimo livello qualitativo (*«le parti buone fanno grande un prodotto, le parti ottime lo rendono leggendario»*).\n- **Qualità percepita**: narrazione del brand, packaging raffinato e design industriale d'autore.\n- **Rendere visibile la qualità invisibile**: se una tecnologia avanzatissima è completamente nascosta all'interno della scocca (come i tre sensori CCD di una videocamera professionale), il progettista deve renderla percepibile attraverso un'etichetta metallica elegante, un feedback sonoro o un messaggio esplicito, integrando armoniosamente il valore nel prodotto.",
+    "summary": "### L'enunciato della Legge 1: la riduzione ragionata\n> **Legge 1: Il modo più semplice per conseguire la semplicità è attraverso una riduzione ragionata.**\n\nLa strategia più intuitiva ed elementare per semplificare un sistema consiste nel **rimuovere funzionalità**. Tuttavia, una rimozione cieca e indiscriminata distrugge l'utilità del prodotto: un lettore DVD dotato del solo pulsante «Play» sarebbe indubbiamente minimale, ma impedirebbe all'utente di riavvolgere una scena, navigare i capitoli o accedere ai contenuti speciali. Il cuore progettuale della Legge 1 risiede nella risoluzione della tensione dialettica tra due forze opposte:\n\n> **QUANTO PUOI RENDERLO SEMPLICE? <-> QUANTO DEVE ESSERE COMPLESSO?**\n\nGli utenti pretendono un dispositivo estremamente facile da usare, ma al contempo capace di svolgere qualsiasi operazione. La regola d'oro di Maeda stabilisce: **quando hai dei dubbi, rimuovi; ma fai estrema attenzione a cosa elimini**. La vera semplificazione si compie eliminando funzioni *senza generare costi significativi in termini di valore d'uso*.\n\n### Il metodo SHE: Shrink, Hide, Embody\nQuando tutte le funzionalità superflue sono state rimosse e non è più possibile sottrarre nulla senza compromettere lo scopo dell'oggetto, si passa al metodo avanzato riassunto dall'acronimo **SHE** (*«SHE is always right»* / *«SHE è sempre la giusta soluzione»*):\n\n#### 1. SHRINK (Rimpicciolisci)\nQuando un oggetto piccolo e modesto supera le nostre aspettative iniziali, proviamo sorpresa e simpatia. Maeda enuncia la massima psicologica: **«temi il grande, compatisci il piccolo»**. La fragilità e la piccolezza generano benevolenza e compassione (non a caso, la parola inglese *pity* è racchiusa dentro *simplicity*).\n- **Miniaturizzazione tecnologica**: un tempo un calcolatore elettronico pesava 27 tonnellate e occupava un'intera stanza, mentre oggi un chip infinitesimale racchiude una potenza incomparabilmente superiore. I semiconduttori consentono di condensare enorme complessità in scala minuscola (un moderno smartphone è tecnicamente molto più complesso di un bulldozer, ma appare innocuo e tascabile).\n- **Leggerezza visiva e sottigliezza**: i designer usano materiali riflettenti, bordi rastremati e spessori minimi (il retro a specchio dell'iPad, gli schermi ultra-piatti, i portatili Lenovo ThinkPad) per far apparire i dispositivi immateriali. Rimpicciolire è una forma innocua e gradevole di «inganno percettivo».\n\n#### 2. HIDE (Nascondi)\nQuando un oggetto è già stato ridotto nelle dimensioni fisiche, la complessità residua va **occultata alla vista finché non diventa necessaria**:\n- **Coltello dell'esercito svizzero**: racchiude decine di lame, cacciaviti e forbici all'interno del guscio, ma mostra unicamente lo strumento che l'utente decide di estrarre in quel momento.\n- **Telefoni a conchiglia (clamshell)**: nascondono tastierino e display secondari fino all'apertura dello sportellino (es. l'iconico scatto del *Motorola Razr*).\n- **Interfacce software**: barre degli strumenti e menu a discesa celano centinaia di comandi complessi dietro un singolo clic o una transizione fluida (la «magia» delle animazioni di Mac OS X). La complessità diventa un interruttore che l'utente attiva solo a propria discrezione.\n\n#### 3. EMBODY (Incorpora)\nRimpicciolire e nascondere comporta un rischio gravissimo: **la perdita della percezione di valore**. Se un oggetto è minuscolo e privo di pulsanti evidenti, il consumatore potrebbe considerarlo un giocattolo fragile o privo di sostanza economica. Perché il pubblico accetti di pagare un prezzo elevato per un manufatto piccolo e apparentemente minimale, il designer deve **incorporare un senso tangibile di valore**:\n- **Qualità reale**: scelta di materiali nobili, finiture impeccabili e artigianato d'eccellenza. Una Ferrari non possiede diecimila pezzi inutili, ma ogni suo singolo componente è forgiato al massimo livello qualitativo (*«le parti buone fanno grande un prodotto, le parti ottime lo rendono leggendario»*).\n- **Qualità percepita**: narrazione del brand, packaging raffinato e design industriale d'autore.\n- **Rendere visibile la qualità invisibile**: se una tecnologia avanzatissima è completamente nascosta all'interno della scocca (come i tre sensori CCD di una videocamera professionale), il progettista deve renderla percepibile attraverso un'etichetta metallica elegante, un feedback sonoro o un messaggio esplicito, integrando armoniosamente il valore nel prodotto.",
     "keyPoints": [
       "La Legge 1 impone una riduzione ragionata: togliere funzioni senza degradare il valore e lo scopo del sistema.",
       "Il metodo SHE interviene quando non si può più sottrarre: Shrink (rimpicciolisci), Hide (nascondi), Embody (incorpora).",
@@ -157,57 +157,57 @@ window.MAEDA_DATA = [
       {
         "question": "Cosa intende John Maeda quando parla di «riduzione ragionata» nella prima legge?",
         "options": [
-          "Eliminare il 90% dei pulsanti hardware da qualsiasi apparecchio, indipendentemente dalla destinazione d'uso",
-          "Rimuovere funzionalità in modo attento e ponderato, senza compromettere il valore d'uso e la missione essenziale del prodotto",
-          "Sostituire tutti i testi scritti con diagrammi tridimensionali astratti per velocizzare la decodifica",
-          "Obbligare l'utente ad acquistare componenti separati per eseguire ciascuna azione fondamentale"
+          "Togliere il maggior numero possibile di funzioni, qualunque sia l'uso dell'oggetto",
+          "Nascondere le funzioni secondarie in menu e cassetti senza eliminarne alcuna",
+          "Raggruppare le funzioni simili in poche categorie facili da ricordare",
+          "Togliere funzioni con attenzione, senza intaccare il valore d'uso essenziale"
         ],
-        "correctIndex": 1,
-        "explanation": "La riduzione ragionata non è una sottrazione indiscriminata, ma una calibrazione tra semplicità d'uso e capacità funzionale."
+        "correctIndex": 3,
+        "explanation": "La riduzione ragionata elimina solo ciò che si può togliere senza perdere la funzione essenziale. Nascondere (HIDE) e raggruppare (SLIP) sono strategie diverse, rispettivamente della stessa Legge 1 e della Legge 2."
       },
       {
         "question": "Quale oggetto d'uso comune viene citato da Maeda come modello perfetto del principio HIDE (Nascondi)?",
         "options": [
-          "La lavagna luminosa per conferenze universitarie",
-          "Il monitor a tubo catodico con manopole analogiche esposte sul pannello frontale",
-          "Il coltellino dell'esercito svizzero, che mostra solo lo strumento selezionato mentre cela gli altri nel manico",
-          "Il banco da lavoro da falegname con tutti gli arnesi appesi a vista su una rastrelliera"
+          "Il telecomando universale, che raccoglie tutti i comandi su un'unica superficie",
+          "Il cassetto degli attrezzi, che separa gli strumenti in scomparti ordinati",
+          "La calcolatrice tascabile, che riduce i tasti alle sole operazioni di base",
+          "Il coltellino svizzero, che mostra solo lo strumento in uso e cela gli altri"
         ],
-        "correctIndex": 2,
-        "explanation": "Il coltellino svizzero incarna il principio HIDE: racchiude enorme complessità ma espone visivamente soltanto lo strumento in uso."
+        "correctIndex": 3,
+        "explanation": "Il coltellino svizzero è il modello di HIDE: tutti gli strumenti ci sono, ma si vede solo quello che serve. Gli scomparti ordinati richiamano l'organizzazione (Legge 2), la riduzione dei tasti richiama SHRINK."
       },
       {
         "question": "Nel metodo SHE, in cosa consiste la componente EMBODY (Incorpora)?",
         "options": [
-          "Nell'installare batterie più pesanti per far credere che il dispositivo sia più potente",
-          "Nel dotare l'oggetto di altoparlanti rumorosi che annuncino ogni singola pressione dei tasti",
-          "Nel dipingere la scocca con colori sgargianti per mascherare i difetti di fabbricazione della plastica",
-          "Nel conferire valore percepito e tangibile al prodotto attraverso materiali eccellenti, cura artigianale e comunicazione esplicita"
+          "Rendere l'oggetto più piccolo e leggero perché sembri meno complesso",
+          "Nascondere i comandi meno usati per lasciare in vista solo quelli essenziali",
+          "Raggruppare le funzioni simili in un unico controllo multifunzione",
+          "Dare valore percepito al prodotto con materiali di qualità, cura e comunicazione"
         ],
         "correctIndex": 3,
-        "explanation": "EMBODY serve a evitare che la miniaturizzazione impoverisca la percezione del prodotto, infondendo maestria e qualità visibile."
+        "explanation": "EMBODY compensa ciò che si toglie o si nasconde: l'oggetto deve incorporare qualità percepibile (materiali, finiture, comunicazione). SHRINK è il rimpicciolire, HIDE il nascondere: sono le altre due lettere di SHE."
       },
       {
         "question": "Perché Maeda cita il caso dei tre sensori CCD di una videocamera digitale?",
         "options": [
-          "Per mostrare come una qualità reale nascosta all'interno debba essere resa percepibile con un'etichetta o un indizio esteriore",
-          "Per dimostrare che l'elettronica analogica era superiore ai sensori ottici moderni",
-          "Per spiegare che le videocamere non possono essere semplificate in nessun modo a causa delle leggi dell'ottica",
-          "Per criticare i produttori che stampano troppi manuali cartacei all'interno della confezione"
+          "Per mostrare che i componenti interni vanno ridotti al minimo indispensabile",
+          "Per mostrare che la qualità tecnica conta più dell'aspetto esterno del prodotto",
+          "Per mostrare che le funzioni avanzate vanno nascoste all'utente principiante",
+          "Per mostrare che una qualità nascosta va resa percepibile, ad esempio con un'etichetta"
         ],
-        "correctIndex": 0,
-        "explanation": "Se una virtù tecnologica è invisibile all'occhio, il principio EMBODY richiede di renderla esplicita (es. un badge '3 CCD') per giustificarne il pregio."
+        "correctIndex": 3,
+        "explanation": "I tre sensori CCD sono una qualità reale ma invisibile: per farla percepire bisogna dichiararla (EMBODY). Il distrattore sulla qualità tecnica che conta più dell'aspetto ignora proprio il problema della percezione."
       },
       {
         "question": "Quale paradosso cognitivo lega la fragilità e le piccole dimensioni secondo la Legge 1?",
         "options": [
-          "I congegni minuscoli inducono maggiore rabbia e frustrazione perché scivolano facilmente dalle dita",
-          "Gli oggetti piccoli generano compassione e benevolenza («temi il grande, compatisci il piccolo»), rendendo l'utente più tollerante",
-          "La miniaturizzazione aumenta il timore reverenziale verso il dispositivo, paralizzando l'azione",
-          "Gli schermi piccoli convincono gli utenti a non utilizzarli mai in ambienti all'aperto"
+          "Gli oggetti piccoli sembrano potenti e intimidiscono chi li usa per la prima volta",
+          "Gli oggetti piccoli suscitano benevolenza e rendono l'utente più tollerante",
+          "Gli oggetti piccoli appaiono costosi e quindi vengono maneggiati con meno cura",
+          "Gli oggetti piccoli nascondono le funzioni e rendono l'utente più diffidente"
         ],
         "correctIndex": 1,
-        "explanation": "La piccolezza e la fragilità instradano empatia e simpatia: l'utente si sente protettivo e benevolo verso congegni compatti e modesti."
+        "explanation": "Maeda cita il detto «temi il grande, compatisci il piccolo»: ciò che è piccolo e fragile suscita benevolenza, e l'utente tollera di più i suoi limiti. Il distrattore sulle funzioni nascoste confonde la Legge 1 con il tema del nascondere (SHE), che non riguarda la reazione emotiva."
       }
     ],
     "openQuestions": [
@@ -283,57 +283,57 @@ window.MAEDA_DATA = [
       {
         "question": "Quale interrogativo costituisce il fulcro metodologico della seconda legge di John Maeda?",
         "options": [
-          "Quale linguaggio di programmazione garantisce la massima velocità di rendering sul client?",
-          "Quanti colori primari è opportuno impiegare per differenziare ciascun componente dell'interfaccia?",
-          "Che cosa va con cosa? Ovvero quali affinità consentono di raggruppare molti oggetti in poche categorie",
-          "Qual è il prezzo massimo che il mercato accetta di pagare per un aggiornamento software?"
+          "Che cosa va con cosa? Quali affinità permettono di raggruppare molti elementi",
+          "Che cosa si può togliere senza perdere il valore d'uso dell'oggetto?",
+          "Quanto tempo può attendere l'utente prima di sentirsi frustrato?",
+          "Che cosa deve imparare l'utente per usare l'oggetto senza manuale?"
         ],
-        "correctIndex": 2,
-        "explanation": "La domanda guida dell'organizzazione è 'che cosa va con cosa?', identificando relazioni naturali tra gli elementi."
+        "correctIndex": 0,
+        "explanation": "La Legge 2 («Organizza») si fonda sulla domanda «che cosa va con cosa?». Togliere è la Legge 1, il tempo è la Legge 3, l'apprendimento è la Legge 4."
       },
       {
         "question": "Nel metodo SLIP, a cosa serve la fase di PRIORITIZE (Stabilisci le priorità)?",
         "options": [
-          "A eliminare tutti i dati storici degli utenti registrati da più di ventiquattro mesi",
-          "A crittografare i file sensibili prima di inviarli al server di backup aziendale",
-          "A forzare l'utente a sottoscrivere un abbonamento premium prima di poter consultare il catalogo",
-          "A identificare il 20% degli elementi cruciali applicando il principio di Pareto, sapendo da dove iniziare l'interazione"
+          "Ordinare tutti gli elementi in sequenza alfabetica per ritrovarli facilmente",
+          "Assegnare un'etichetta a ciascun gruppo dopo averli formati",
+          "Dividere gli elementi in gruppi in base alle loro affinità",
+          "Individuare il 20% di elementi più importanti secondo il principio di Pareto"
         ],
         "correctIndex": 3,
-        "explanation": "Prioritize sfrutta l'80/20 di Pareto per evidenziare il 20% degli elementi vitali, guidando l'attenzione dell'utente."
+        "explanation": "PRIORITIZE applica il principio di Pareto: il 20% degli elementi conta per l'80% del valore, quindi si sa da dove partire. Dividere in gruppi è SORT e assegnare un nome è LABEL, le altre fasi di SLIP."
       },
       {
         "question": "Quale celebre corrente teorico-metodologica viene richiamata da Maeda per spiegare come la mente umana percepisce totalità organizzate?",
         "options": [
-          "La psicologia della Gestalt, nata in Germania e legata al design del Bauhaus",
-          "Il Comportamentismo radicale di Watson e Skinner",
-          "L'Idealismo dialettico hegeliano applicato alla grafica industriale",
-          "La Fenomenologia ermeneutica francese del secondo dopoguerra"
+          "Il comportamentismo di Watson e Skinner, basato su stimolo e risposta",
+          "La semiotica di Peirce, fondata sulla classificazione dei segni",
+          "L'ergonomia cognitiva, nata dagli studi sui comandi degli aerei",
+          "La psicologia della Gestalt, nata in Germania e legata al design del Bauhaus"
         ],
-        "correctIndex": 0,
-        "explanation": "La scuola della Gestalt ha formalizzato le leggi di raggruppamento (vicinanza, somiglianza, chiusura) che rendono ordinato il percepito."
+        "correctIndex": 3,
+        "explanation": "Maeda richiama la Gestalt, che spiega come la mente raggruppa elementi vicini o simili in unità percettive. Il comportamentismo studia stimolo e risposta, non l'organizzazione percettiva della forma."
       },
       {
         "question": "Come si sono evoluti i controlli dell'iPod attraverso le sue prime tre generazioni secondo l'analisi del testo?",
         "options": [
-          "Da un'interfaccia vocale a un sistema interamente pilotato da levette meccaniche esterne",
-          "Da semplici a complessi fino al più semplice possibile, fondendo infine i pulsanti direttamente nella ghiera girevole",
-          "Da una ghiera multifunzione a quattro tastiere alfanumeriche disposte su entrambi i lati del dispositivo",
-          "Da comandi fisici a un visore a realtà aumentata privo di qualsiasi elemento tattile"
+          "Da complessi a semplici, con una progressiva eliminazione di ogni pulsante",
+          "Da una ghiera unica a una fila di tasti separati sopra lo schermo",
+          "Sempre uguali, perché la ghiera originale era già la soluzione ideale",
+          "Da semplici a complessi e poi al più semplice, con i tasti integrati nella ghiera"
         ],
-        "correctIndex": 1,
-        "explanation": "L'iPod partì da tasti attorno alla ghiera, passò a tasti in riga (più complessi) e culminò nella Click Wheel integrata."
+        "correctIndex": 3,
+        "explanation": "Nelle prime tre generazioni i comandi dell'iPod passano da semplici a più complessi e poi al più semplice possibile, fondendo i pulsanti nella ghiera. Il distrattore della semplificazione lineare ignora il passaggio intermedio di complicazione."
       },
       {
         "question": "Cosa intende Maeda affermando che il tasto «Tab» dona al caos «il tocco più leggero del design grafico»?",
         "options": [
-          "Che premendo il tasto Tab il computer esegue la cancellazione automatica dei file ridondanti",
-          "Che i programmatori dovrebbero vietare l'uso della barra spaziatrice per risparmiare memoria RAM",
-          "Che la spaziatura tabulare allinea e struttura le informazioni complesse con il minimo sforzo visivo e costruttivo",
-          "Che la tabulazione sostituisce integralmente qualsiasi forma di gerarchia cromatica o tipografica"
+          "Che la tabulazione allinea e struttura informazioni complesse con il minimo sforzo",
+          "Che la tabulazione elimina le informazioni superflue lasciando solo l'essenziale",
+          "Che la tabulazione nasconde le informazioni secondarie dietro un solo tasto",
+          "Che la tabulazione sostituisce ogni altra gerarchia tipografica della pagina"
         ],
-        "correctIndex": 2,
-        "explanation": "La griglia tabulare porta ordine immediato, disciplina visiva e chiarezza con una grazia geometrica minimale."
+        "correctIndex": 0,
+        "explanation": "Il tasto Tab non toglie né nasconde: allinea. Con un gesto minimo introduce ordine e struttura nel caos, ed è per questo un esempio di organizzazione (Legge 2)."
       }
     ],
     "openQuestions": [
@@ -384,7 +384,7 @@ window.MAEDA_DATA = [
     "title": "Legge 3 — TEMPO",
     "subtitle": "La percezione dell'attesa, le barre di progressione e lo styling aerodinamico",
     "readTime": "7 min",
-    "summary": "### L'enunciato della Legge 3: il tempo e l'illusione della semplicità\n> **Legge 3: I risparmi di tempo somigliano alla semplicità.**\n\nIn media, un essere umano trascorre almeno un'ora al giorno in coda o in attesa passiva (al semaforo, negli uffici pubblici, durante il caricamento di un file o l'avvio del computer). **Nessuno desidera la frustrazione dell'attesa**: quando un processo o un'interfaccia risponde in modo rapido e fulmineo, l'esperienza viene istantaneamente percepita come semplice, gradevole e trasparente (come avviene con i servizi di *FedEx* o *McDonald's*). Il tempo risparmiato si converte immediatamente in valore vitale tangibile: dieci minuti sottratti a un tragitto o a una procedura burocratica equivalgono a dieci minuti restituiti alla vita personale e agli affetti.\n\nPoiché risparmiare tempo significa in ultima analisi *ridurlo*, la Legge 3 applica nuovamente la triade del metodo **SHE** (*Shrink, Hide, Embody*) alla dimensione temporale.\n\n### Applicare lo SHE al Tempo\n#### 1. SHRINK (Restringere il tempo)\nÈ l'obiettivo primario della gestione scientifica della produzione (*Lean Manufacturing*, modello Toyota, tracciamento RFID per inventari istantanei). Tuttavia, quando non è possibile accelerare i processi fisici o computazionali, il designer può **rimuovere i vincoli decisionali**:\n- **iPod Shuffle**: Apple ha rimosso lo schermo e i menu di selezione, delegando alla macchina la scelta casuale dei brani. L'utente viene sollevato dal compito e dal tempo necessario a scegliere ogni singola canzone.\n- **Google «Mi sento fortunato»** e raccomandazioni di **Amazon**: scorciatoie che riducono il tempo speso a vagliare elenchi sterminati, lasciando che un algoritmo proponga direttamente il risultato più probabile.\n\n#### 2. HIDE & EMBODY (Nascondere e incorporare il tempo)\nQuando un processo richiede tempi tecnici ineliminabili, accelerare non è più un'opzione. Il designer ha due strade:\n- **Nascondere il tempo (HIDE)**: togliere gli orologi e le finestre dalle pareti, come fanno sistematicamente i **casinò di Las Vegas**. Tuttavia, nascondere il tempo non lo risparmia davvero: crea solo un'illusione seduttiva che può sfociare in manipolazione o disorientamento.\n- **Incorporare il tempo (EMBODY)**: rendere l'attesa visibile, consapevole e confortevole. Maeda evidenzia l'esperimento pionieristico condotto da Apple sulle **barre di progressione**:\n  - Una barra che si riempie **a piccoli incrementi regolari e continui** (passo dopo passo, «come margarina spalmata uniformemente sul pane») viene psicologicamente percepita come **molto più breve e rassicurante** rispetto a una barra che rimane immobile e si riempie di colpo solo alla fine («come il ketchup che casca all'improvviso dalla bottiglia»).\n  - **Comunicare lo stato dell'attesa**: semafori pedonali con conto alla rovescia numerico, voci automatiche nei call center che annunciano i minuti stimati, LED a pulsazione biologica (come il respiro dei portatili Apple in stand-by). Maeda sintetizza la legge psicologica: **«La conoscenza è comfort, e il comfort è l'essenza della semplicità»**.\n\n### Styling, Streamlining e il costo della velocità\nNegli anni Trenta, il leggendario designer industriale **Raymond Loewy** teorizzò lo *streamlining* (aerodinamica applicata agli oggetti): conferire a locomotive, temperamatite e frigoriferi le linee filanti del volo d'uccello o dei missili per **suggerire visivamente velocità e progresso**, anche laddove la funzione non richiedeva aerodinamica. È un inganno estetico, ma un attributo desiderabile che rassicura l'immaginario dell'utente (come le feritoie aggressive e le luci dei PC da gaming *Alienware*).\n\nTuttavia, accelerare davvero ha un costo economico e infrastrutturale vertiginoso (una spedizione aerea notturna costa quaranta volte più di una via terra; un treno ad alta velocità richiede miliardi di investimenti). Quando non si possono sostenere tali costi, l'unica via è **rendere l'attesa più tollerabile con attenzioni e delizie collaterali** (come i biscottini gratuiti offerti nelle code del supermercato *Whole Foods*). Il designer si confronta dunque con la domanda speculare:\n$$\\text{IN CHE MODO PUOI RENDERE L'ATTESA PIÙ BREVE?} \\longleftrightarrow \\text{PIÙ TOLLERABILE?}$$\nNella maggior parte dei progetti industriali vince l'opzione che costa meno implementare, bilanciando riduzione oggettiva ed empatia percettiva.",
+    "summary": "### L'enunciato della Legge 3: il tempo e l'illusione della semplicità\n> **Legge 3: I risparmi di tempo somigliano alla semplicità.**\n\nIn media, un essere umano trascorre almeno un'ora al giorno in coda o in attesa passiva (al semaforo, negli uffici pubblici, durante il caricamento di un file o l'avvio del computer). **Nessuno desidera la frustrazione dell'attesa**: quando un processo o un'interfaccia risponde in modo rapido e fulmineo, l'esperienza viene istantaneamente percepita come semplice, gradevole e trasparente (come avviene con i servizi di *FedEx* o *McDonald's*). Il tempo risparmiato si converte immediatamente in valore vitale tangibile: dieci minuti sottratti a un tragitto o a una procedura burocratica equivalgono a dieci minuti restituiti alla vita personale e agli affetti.\n\nPoiché risparmiare tempo significa in ultima analisi *ridurlo*, la Legge 3 applica nuovamente la triade del metodo **SHE** (*Shrink, Hide, Embody*) alla dimensione temporale.\n\n### Applicare lo SHE al Tempo\n#### 1. SHRINK (Restringere il tempo)\nÈ l'obiettivo primario della gestione scientifica della produzione (*Lean Manufacturing*, modello Toyota, tracciamento RFID per inventari istantanei). Tuttavia, quando non è possibile accelerare i processi fisici o computazionali, il designer può **rimuovere i vincoli decisionali**:\n- **iPod Shuffle**: Apple ha rimosso lo schermo e i menu di selezione, delegando alla macchina la scelta casuale dei brani. L'utente viene sollevato dal compito e dal tempo necessario a scegliere ogni singola canzone.\n- **Google «Mi sento fortunato»** e raccomandazioni di **Amazon**: scorciatoie che riducono il tempo speso a vagliare elenchi sterminati, lasciando che un algoritmo proponga direttamente il risultato più probabile.\n\n#### 2. HIDE & EMBODY (Nascondere e incorporare il tempo)\nQuando un processo richiede tempi tecnici ineliminabili, accelerare non è più un'opzione. Il designer ha due strade:\n- **Nascondere il tempo (HIDE)**: togliere gli orologi e le finestre dalle pareti, come fanno sistematicamente i **casinò di Las Vegas**. Tuttavia, nascondere il tempo non lo risparmia davvero: crea solo un'illusione seduttiva che può sfociare in manipolazione o disorientamento.\n- **Incorporare il tempo (EMBODY)**: rendere l'attesa visibile, consapevole e confortevole. Maeda evidenzia l'esperimento pionieristico condotto da Apple sulle **barre di progressione**:\n  - Una barra che si riempie **a piccoli incrementi regolari e continui** (passo dopo passo, «come margarina spalmata uniformemente sul pane») viene psicologicamente percepita come **molto più breve e rassicurante** rispetto a una barra che rimane immobile e si riempie di colpo solo alla fine («come il ketchup che casca all'improvviso dalla bottiglia»).\n  - **Comunicare lo stato dell'attesa**: semafori pedonali con conto alla rovescia numerico, voci automatiche nei call center che annunciano i minuti stimati, LED a pulsazione biologica (come il respiro dei portatili Apple in stand-by). Maeda sintetizza la legge psicologica: **«La conoscenza è comfort, e il comfort è l'essenza della semplicità»**.\n\n### Styling, Streamlining e il costo della velocità\nNegli anni Trenta, il leggendario designer industriale **Raymond Loewy** teorizzò lo *streamlining* (aerodinamica applicata agli oggetti): conferire a locomotive, temperamatite e frigoriferi le linee filanti del volo d'uccello o dei missili per **suggerire visivamente velocità e progresso**, anche laddove la funzione non richiedeva aerodinamica. È un inganno estetico, ma un attributo desiderabile che rassicura l'immaginario dell'utente (come le feritoie aggressive e le luci dei PC da gaming *Alienware*).\n\nTuttavia, accelerare davvero ha un costo economico e infrastrutturale vertiginoso (una spedizione aerea notturna costa quaranta volte più di una via terra; un treno ad alta velocità richiede miliardi di investimenti). Quando non si possono sostenere tali costi, l'unica via è **rendere l'attesa più tollerabile con attenzioni e delizie collaterali** (come i biscottini gratuiti offerti nelle code del supermercato *Whole Foods*). Il designer si confronta dunque con la domanda speculare:\n\n> **IN CHE MODO PUOI RENDERE L'ATTESA PIÙ BREVE? <-> PIÙ TOLLERABILE?**\n\nNella maggior parte dei progetti industriali vince l'opzione che costa meno implementare, bilanciando riduzione oggettiva ed empatia percettiva.",
     "keyPoints": [
       "La Legge 3 evidenzia che i risparmi di tempo vengono percepiti cognitivamente come sinonimo di semplicità.",
       "Restringere il tempo (Shrink) include la rimozione dei vincoli decisionali (es. iPod Shuffle, Google 'Mi sento fortunato').",
@@ -409,24 +409,24 @@ window.MAEDA_DATA = [
       {
         "question": "Qual è il principio alla base della Legge 3 («I risparmi di tempo somigliano alla semplicità»)?",
         "options": [
-          "Qualsiasi animazione grafica rallenta il caricamento e va rimossa dai siti web a favore di puro testo ASCII",
-          "Gli utenti preferiscono spendere almeno dieci minuti su ogni schermata per comprendere a fondo le policy aziendali",
-          "Il tempo di calcolo di un server deve sempre coincidere con la frequenza di campionamento audio",
-          "Le interazioni veloci e prive di code eliminano la frustrazione e vengono percepite direttamente come semplici e piacevoli"
+          "Le interazioni con meno funzioni vengono percepite come più rapide",
+          "Le interazioni ben organizzate fanno dimenticare il tempo di attesa",
+          "Le interazioni rapide e senza attese vengono percepite come semplici",
+          "Le interazioni che si imparano in fretta non richiedono un manuale"
         ],
-        "correctIndex": 3,
-        "explanation": "La rapidità rimuove l'ansia dell'attesa; l'immediatezza è la manifestazione più evidente della semplicità."
+        "correctIndex": 2,
+        "explanation": "La Legge 3 afferma che il tempo risparmiato somiglia alla semplicità: ciò che è rapido sembra semplice. Il secondo distrattore inverte il rapporto tra riduzione e velocità, che il testo non pone."
       },
       {
         "question": "Nel confronto metaforico utilizzato da Maeda, quale comportamento della barra di progressione è preferibile?",
         "options": [
-          "Il modello 'margarina', che avanza a piccoli incrementi continui e regolari rassicurando la mente",
-          "Il modello 'ketchup', che resta bloccato a zero e si riempie violentemente all'ultimo secondo",
-          "Il modello a intermittenza stroboscopica che disorienta la visione periferica dell'utente",
-          "L'assenza totale di indicatori grafici, costringendo l'utente a calcolare a mente il tempo trascorso"
+          "Il modello 'ketchup', che resta fermo e si riempie tutto alla fine",
+          "Il modello a fasi, che indica soltanto l'inizio e la fine del processo",
+          "Il modello 'margarina', che avanza in piccoli incrementi regolari",
+          "Il modello stimato, che mostra solo i minuti residui senza alcuna barra"
         ],
-        "correctIndex": 0,
-        "explanation": "L'avanzamento graduale ('margarina') trasmette la sensazione di un progresso costante, facendo sembrare l'attesa più breve."
+        "correctIndex": 2,
+        "explanation": "Maeda preferisce la barra che si spalma come la margarina, con avanzamento continuo e rassicurante, alla barra 'ketchup' che resta ferma e poi si riempie di colpo."
       },
       {
         "question": "Quale celebre designer industriale del Novecento introdusse il concetto di 'streamlining' per suggerire dinamismo e velocità?",
@@ -442,24 +442,24 @@ window.MAEDA_DATA = [
       {
         "question": "Quale tecnica impiegano i casinò per occultare il trascorrere del tempo (principio HIDE)?",
         "options": [
-          "Installare orologi digitali a caratteri cubitali su ciascun tavolo da gioco",
-          "Interrompere il gioco ogni trenta minuti per far riposare la vista dei clienti",
-          "Eliminare orologi e finestre per impedire la percezione dell'alternanza tra giorno e notte",
-          "Proiettare calendari astronomici sui soffitti delle sale principali"
+          "Offrono bevande gratuite, così che il cliente non si accorga dell'attesa",
+          "Eliminano orologi e finestre, così che non si percepisca il passare delle ore",
+          "Accelerano il gioco, così che ogni partita duri pochi minuti",
+          "Mostrano le vincite degli altri, così che l'attesa sembri promettente"
         ],
-        "correctIndex": 2,
-        "explanation": "I casinò nascondono il tempo togliendo orologi e finestre per trattenere i giocatori in una bolla temporale atemporale."
+        "correctIndex": 1,
+        "explanation": "Nei casinò il tempo viene nascosto (HIDE): senza orologi né finestre non si percepisce l'alternanza di giorno e notte. Le bevande gratuite rendono l'attesa più gradevole, ma non nascondono il tempo."
       },
       {
         "question": "Di fronte all'impossibilità economica o tecnica di accelerare un processo, quale soluzione raccomanda Maeda?",
         "options": [
-          "Interrompere bruscamente il servizio senza fornire spiegazioni agli utenti",
-          "Aumentare il prezzo del servizio per scoraggiare l'afflusso di clientela",
-          "Fingere che il sistema sia andato in crash per guadagnare tempo prezioso",
-          "Rendere l'attesa più tollerabile e confortevole attraverso feedback informativi, cortesia o attenzioni extra"
+          "Ridurre le funzioni del servizio finché il processo non diventa più rapido",
+          "Rendere l'attesa più tollerabile con feedback, cortesia o attenzioni extra",
+          "Raggruppare le richieste in lotti per smaltirle tutte in un solo momento",
+          "Nascondere l'attesa dietro schermate neutre, senza segnalare il ritardo"
         ],
-        "correctIndex": 3,
-        "explanation": "Se non si può accorciare il tempo oggettivo, si interviene sulla percezione: trasparenza, comfort ed empatia attenuano l'attesa."
+        "correctIndex": 1,
+        "explanation": "Quando il tempo non si può accorciare, la Legge 3 suggerisce di rendere l'attesa più sopportabile (barre di avanzamento, informazioni, piccoli gesti di cortesia). Nascondere il ritardo senza segnali è l'opposto: l'incertezza fa sembrare l'attesa ancora più lunga."
       }
     ],
     "openQuestions": [
@@ -510,7 +510,7 @@ window.MAEDA_DATA = [
     "title": "Legge 4 — IMPARA",
     "subtitle": "La conoscenza rende tutto semplice, il metodo BRAIN e l'approccio del designer",
     "readTime": "8 min",
-    "summary": "### L'enunciato della Legge 4: la conoscenza come moltiplicatore di semplicità\n> **Legge 4: La conoscenza rende tutto più semplice.**\n\nAnche il più banale e minuscolo manufatto meccanico — ad esempio una comune **vite** — risulta semplice e intuitivo unicamente se *sai già* come funziona: in quale verso impugnare il cacciavite e da che parte ruotare per serrare («destra stringe, sinistra allenta»). Per chi ignora tale convenzione elementare, la vite è un enigma ostile e indecifrabile. **La conoscenza possiede il potere straordinario di rendere semplice qualsiasi congegno**, per quanto intrinsecamente complicato esso sia.\n\n### Il metodo BRAIN per l'apprendimento efficace\nL'apprendimento umano si attiva autenticamente solo quando è alimentato dal desiderio spontaneo di conoscere, sostenuto da una motivazione interiore. Superando la logica punitiva del «bastone e della carota», Maeda formula l'acronimo pedagogico **BRAIN** (*Brain* = cervello):\n- **B — Basics (I principi di base)**: esponi subito i concetti fondanti. Per trasmetterli con efficacia, il formatore o designer deve calarsi empaticamente nei panni di chi affronta la materia per la prima volta (tramite focus group o insegnando in prima persona, come faceva il tipografo maestro *Weingart*, che ripeteva annualmente la medesima lezione rendendola progressivamente più limpida ed essenziale).\n- **R — Repeat (Ripeti spesso)**: la reiterazione fissa i percorsi mnemonici e cognitivi. Maeda cita la campagna elettorale di Bush del 2004 («semplicità, semplicità, semplicità») e l'esperimento visivo del filmmaker Mike Nourse che, espungendo le parole ripetute da un discorso presidenziale, ridusse il testo al solo 10% del suo minutaggio.\n- **A — Avoid (Evita la disperazione)**: non aggredire l'utente con dottrine punitive del tipo «shock and awe». L'ingresso in un nuovo ambiente operativo deve avvenire con un'accoglienza delicata, graduale e priva di intimidazioni tecniche.\n- **I — Inspire (Ispira citando esempi)**: l'ispirazione accende la motivazione intrinseca, che batte qualsiasi ricompensa estrinseca o premio monetario (Maeda ricorda l'epifania giovanile generata dallo studio delle opere del maestro grafico **Paul Rand**).\n- **N — Never forget to repeat (Mai dimenticare di ripetere)**: ribadire costantemente i pilastri primari per consolidare l'apprendimento a lungo termine.\n\n### L'approccio del designer contro l'approccio dell'ingegnere (LIFM)\nDi fronte a una macchina complessa, l'ingegnere tradizionale adotta spesso il rude approccio **LIFM** (*«Leggi Il Fottuto Manuale»* / *RTFM*), pretendendo che l'utente memorizzi centinaia di pagine di istruzioni prima di toccare il prodotto. Il designer contemporaneo rovescia radicalmente questa impostazione adottando una triade che instilla un senso immediato di rassicurante familiarità (*«Ehi, questo l'ho già visto!»*):\n$$\\text{METTI IN RELAZIONE} \\longrightarrow \\text{TRADUCI} \\longrightarrow \\text{SORPRENDI}$$\n1. **Metti in relazione (Relate)**: sfrutta l'istinto umano a riconoscere schemi noti e analogie col mondo reale.\n2. **Traduci (Translate)**: trasforma l'analogia in un oggetto visivo o tangibile. L'esempio cardine della storia dell'informatica è la **metafora della scrivania (Desktop Metaphor)** sviluppata allo *Xerox PARC* e resa popolare da Apple: documenti, cartelline manila e un cestino dei rifiuti fisici vennero tradotti in icone su schermo.\n3. **Sorprendi (Surprise)**: aggiunge l'effetto «aha!» che suscita meraviglia (nel caso del computer, scoprire di poter duplicare, spostare o distruggere all'istante migliaia di documenti con un semplice trascinamento del mouse).\n\nLe metafore sono tuttavia legate alla cultura geografica: ad esempio, l'icona del bidone metallico della spazzatura stile americano risultò inizialmente enigmatica per gli utenti giapponesi. Le varie tradizioni nazionali del design declinano diversamente questa sequenza:\n- **Design tedesco** (*Braun, Dieter Rams*): focalizzato sulla funzione pura e razionale.\n- **Design britannico / Apple** (*Jonathan Ive*): calibra con perizia la sorpresa all'interno della purezza formale.\n- **Design italiano** (*Studio65, Memphis*): inverte l'ordine ponendo la sorpresa al primissimo posto (es. l'iconico divano *Bocca* di Studio65 a forma di labbra scarlatte).\n\nMaeda conclude che il vero compenso non risiede nei premi materiali, ma nella gioia della padronanza intellettuale: **«La pratica dell'educazione è la forma più elevata di filantropia»**.",
+    "summary": "### L'enunciato della Legge 4: la conoscenza come moltiplicatore di semplicità\n> **Legge 4: La conoscenza rende tutto più semplice.**\n\nAnche il più banale e minuscolo manufatto meccanico — ad esempio una comune **vite** — risulta semplice e intuitivo unicamente se *sai già* come funziona: in quale verso impugnare il cacciavite e da che parte ruotare per serrare («destra stringe, sinistra allenta»). Per chi ignora tale convenzione elementare, la vite è un enigma ostile e indecifrabile. **La conoscenza possiede il potere straordinario di rendere semplice qualsiasi congegno**, per quanto intrinsecamente complicato esso sia.\n\n### Il metodo BRAIN per l'apprendimento efficace\nL'apprendimento umano si attiva autenticamente solo quando è alimentato dal desiderio spontaneo di conoscere, sostenuto da una motivazione interiore. Superando la logica punitiva del «bastone e della carota», Maeda formula l'acronimo pedagogico **BRAIN** (*Brain* = cervello):\n- **B — Basics (I principi di base)**: esponi subito i concetti fondanti. Per trasmetterli con efficacia, il formatore o designer deve calarsi empaticamente nei panni di chi affronta la materia per la prima volta (tramite focus group o insegnando in prima persona, come faceva il tipografo maestro *Weingart*, che ripeteva annualmente la medesima lezione rendendola progressivamente più limpida ed essenziale).\n- **R — Repeat (Ripeti spesso)**: la reiterazione fissa i percorsi mnemonici e cognitivi. Maeda cita la campagna elettorale di Bush del 2004 («semplicità, semplicità, semplicità») e l'esperimento visivo del filmmaker Mike Nourse che, espungendo le parole ripetute da un discorso presidenziale, ridusse il testo al solo 10% del suo minutaggio.\n- **A — Avoid (Evita la disperazione)**: non aggredire l'utente con dottrine punitive del tipo «shock and awe». L'ingresso in un nuovo ambiente operativo deve avvenire con un'accoglienza delicata, graduale e priva di intimidazioni tecniche.\n- **I — Inspire (Ispira citando esempi)**: l'ispirazione accende la motivazione intrinseca, che batte qualsiasi ricompensa estrinseca o premio monetario (Maeda ricorda l'epifania giovanile generata dallo studio delle opere del maestro grafico **Paul Rand**).\n- **N — Never forget to repeat (Mai dimenticare di ripetere)**: ribadire costantemente i pilastri primari per consolidare l'apprendimento a lungo termine.\n\n### L'approccio del designer contro l'approccio dell'ingegnere (LIFM)\nDi fronte a una macchina complessa, l'ingegnere tradizionale adotta spesso il rude approccio **LIFM** (*«Leggi Il Fottuto Manuale»* / *RTFM*), pretendendo che l'utente memorizzi centinaia di pagine di istruzioni prima di toccare il prodotto. Il designer contemporaneo rovescia radicalmente questa impostazione adottando una triade che instilla un senso immediato di rassicurante familiarità (*«Ehi, questo l'ho già visto!»*):\n\n> **METTI IN RELAZIONE -> TRADUCI -> SORPRENDI**\n\n1. **Metti in relazione (Relate)**: sfrutta l'istinto umano a riconoscere schemi noti e analogie col mondo reale.\n2. **Traduci (Translate)**: trasforma l'analogia in un oggetto visivo o tangibile. L'esempio cardine della storia dell'informatica è la **metafora della scrivania (Desktop Metaphor)** sviluppata allo *Xerox PARC* e resa popolare da Apple: documenti, cartelline manila e un cestino dei rifiuti fisici vennero tradotti in icone su schermo.\n3. **Sorprendi (Surprise)**: aggiunge l'effetto «aha!» che suscita meraviglia (nel caso del computer, scoprire di poter duplicare, spostare o distruggere all'istante migliaia di documenti con un semplice trascinamento del mouse).\n\nLe metafore sono tuttavia legate alla cultura geografica: ad esempio, l'icona del bidone metallico della spazzatura stile americano risultò inizialmente enigmatica per gli utenti giapponesi. Le varie tradizioni nazionali del design declinano diversamente questa sequenza:\n- **Design tedesco** (*Braun, Dieter Rams*): focalizzato sulla funzione pura e razionale.\n- **Design britannico / Apple** (*Jonathan Ive*): calibra con perizia la sorpresa all'interno della purezza formale.\n- **Design italiano** (*Studio65, Memphis*): inverte l'ordine ponendo la sorpresa al primissimo posto (es. l'iconico divano *Bocca* di Studio65 a forma di labbra scarlatte).\n\nMaeda conclude che il vero compenso non risiede nei premi materiali, ma nella gioia della padronanza intellettuale: **«La pratica dell'educazione è la forma più elevata di filantropia»**.",
     "keyPoints": [
       "La Legge 4 stabilisce che la conoscenza pregressa trasforma un sistema complesso in uno strumento semplice.",
       "Il metodo BRAIN scandisce l'apprendimento: Basics (basi), Repeat (ripeti), Avoid (evita disperazione), Inspire (ispira), Never forget to repeat.",
@@ -535,57 +535,57 @@ window.MAEDA_DATA = [
       {
         "question": "Per quale motivo un oggetto elementare come una vite è semplice solo in apparenza secondo la Legge 4?",
         "options": [
-          "Perché è semplice unicamente per chi possiede la conoscenza preliminare della convenzione di rotazione (destra stringe, sinistra allenta)",
-          "Perché la sua filettatura metallica risponde a equazioni differenziali non lineari",
-          "Perché i cacciaviti magnetici sono stati inventati prima della rivoluzione industriale",
-          "Perché la produzione di una vite richiede la fusione dell'acciaio ad altissime temperature"
+          "Perché la sua forma elementare non richiede alcuna conoscenza preliminare",
+          "Perché la sua semplicità dipende solo dalla qualità del materiale impiegato",
+          "Perché la filettatura nasconde la complessità, come prevede la Legge 2",
+          "Perché presuppone la convenzione appresa: a destra stringe, a sinistra allenta"
         ],
-        "correctIndex": 0,
-        "explanation": "Senza la conoscenza della convenzione d'uso, persino girare una vite diventa un rompicapo: la conoscenza rende semplice il mondo."
+        "correctIndex": 3,
+        "explanation": "La vite è semplice solo per chi conosce la convenzione di rotazione: la Legge 4 («Impara») afferma che la conoscenza rende semplice ogni cosa. La Legge 2 riguarda invece l'organizzazione (SLIP), non l'apprendimento di una convenzione."
       },
       {
         "question": "Cosa intende Maeda con la sigla ironica 'LIFM' attribuita all'approccio ingegneristico tradizionale?",
         "options": [
-          "L'algoritmo di compressione dati 'Linear Integer Fast Matrix'",
-          "La formula sgarbata «Leggi Il Fottuto Manuale», che scarica sull'utente l'onere di decifrare la complessità del sistema",
-          "Il protocollo per l'insegnamento delle lingue straniere nei laboratori multimediali",
-          "La normativa europea sull'impatto ambientale dei monitor CRT"
+          "L'invito a leggere il manuale prima dell'acquisto per scegliere il modello giusto",
+          "Il metodo con cui Maeda insegna a riassumere i manuali tecnici in poche regole",
+          "L'invito sgarbato a leggere il manuale, scaricando la complessità sull'utente",
+          "La regola per cui un buon manuale deve stare in una sola pagina illustrata"
         ],
-        "correctIndex": 1,
-        "explanation": "LIFM (Read The F***ing Manual) è l'approccio pigro che impone manuali mastodontici invece di progettare interfacce intuitive."
+        "correctIndex": 2,
+        "explanation": "LIFM è la versione italiana della formula ingegneristica «leggi il fottuto manuale»: invece di progettare per l'apprendimento, si pretende che sia l'utente a decifrare il sistema. È l'atteggiamento che la Legge 4 critica."
       },
       {
         "question": "Quale innovazione fondamentale sviluppata allo Xerox PARC incarna la sequenza «Metti in relazione, Traduci, Sorprendi»?",
         "options": [
-          "Il cavo coassiale in fibra di carbonio per il collegamento dei mainframe",
-          "La scheda perforata ottica per l'elaborazione dei censimenti elettorali",
-          "La metafora della scrivania (desktop), che tradusse documenti e cestini fisici in icone digitali interattive",
-          "Il comando di spegnimento remoto ad azionamento vocale"
+          "Il mouse, che sostituisce i comandi testuali con il gesto della mano",
+          "La metafora della scrivania, che traduce documenti e cestini in icone",
+          "La stampante laser, che porta la qualità tipografica sulla scrivania",
+          "La rete Ethernet, che mette in relazione computer distanti tra loro"
         ],
-        "correctIndex": 2,
-        "explanation": "La scrivania Xerox collegò concetti dell'ufficio noto (relate) a simboli a video (translate), stupendo con la manipolazione diretta (surprise)."
+        "correctIndex": 1,
+        "explanation": "La metafora del desktop mette in relazione l'ufficio fisico con lo schermo, traduce oggetti noti in icone e sorprende per la sua immediatezza. Anche mouse ed Ethernet nascono allo Xerox PARC, ma non incarnano la sequenza di apprendimento per metafora descritta da Maeda."
       },
       {
         "question": "Come si differenzia la tradizione del design italiano (es. il divano a labbra Studio65) rispetto a quella tedesca e britannica?",
         "options": [
-          "Il design italiano abolisce l'uso dei colori vivaci a favore di scale di grigio monocromatiche",
-          "Il design italiano applica rigorosamente solo formule matematiche prive di qualunque valenza artistica",
-          "Il design italiano rifiuta la produzione industriale realizzando unicamente prototipi in argilla cruda",
-          "Il design italiano antepone la sorpresa emotiva e ironica alla rigida funzione, capovolgendo l'ordine tradizionale"
+          "Antepone la sorpresa emotiva e ironica alla funzione, invertendo l'ordine abituale",
+          "Antepone la funzione alla forma, secondo il principio razionalista del Bauhaus",
+          "Antepone la produzione artigianale alla serie, rifiutando l'industria",
+          "Antepone la riduzione delle forme alla comunicazione di significati"
         ],
-        "correctIndex": 3,
-        "explanation": "Mentre il design tedesco privilegia la funzione pura, quello italiano gioca sull'ironia e sulla sorpresa visiva d'impatto fin dal primo sguardo."
+        "correctIndex": 0,
+        "explanation": "Per Maeda il design italiano (come il divano a labbra di Studio65) mette la sorpresa prima della funzione. «La forma segue la funzione» è il principio razionalista che questa tradizione capovolge."
       },
       {
         "question": "Quale celebre designer grafico ha costituito la principale fonte di ispirazione formativa per il giovane John Maeda?",
         "options": [
-          "Paul Rand, le cui opere conciliavano rigore geometrico, sintesi formale ed empatia comunicativa",
-          "Andy Warhol, attraverso le sue serigrafie sulle lattine di zuppa industriale",
-          "El Lissitzky, tramite i manifesti del costruttivismo sovietico",
-          "Milton Glaser, esclusivamente per l'invenzione del logo 'I Love New York'"
+          "Massimo Vignelli, che riduceva la grafica a pochi caratteri e a una griglia",
+          "El Lissitzky, che costruiva i manifesti con forme geometriche costruttiviste",
+          "Milton Glaser, che univa illustrazione e lettering in immagini popolari",
+          "Paul Rand, che univa rigore geometrico, sintesi formale ed empatia"
         ],
-        "correctIndex": 0,
-        "explanation": "Paul Rand fu l'ispiratore decisivo per Maeda, mostrando come il graphic design sapesse trasformare concetti complessi in purezza espressiva."
+        "correctIndex": 3,
+        "explanation": "La formazione di Maeda guarda a Paul Rand, maestro di sintesi formale e di comunicazione calda. Gli altri sono grandi grafici, ma non sono il riferimento citato nel testo."
       }
     ],
     "openQuestions": [
@@ -661,57 +661,57 @@ window.MAEDA_DATA = [
       {
         "question": "Qual è il presupposto teorico fondamentale della Legge 5 («Differenze»)?",
         "options": [
-          "I progettisti devono impiegare esclusivamente software open source sviluppati da università pubbliche",
-          "La semplicità non può essere apprezzata se non esiste il confronto dialettico con il suo contrario, la complessità",
-          "Qualsiasi forma di asimmetria visiva costituisce un errore grave di fabbricazione industriale",
-          "Tutti i prodotti di consumo devono seguire cicli di rinnovo trimestrali obbligatori per legge"
+          "La semplicità va perseguita eliminando ogni elemento di complessità",
+          "La semplicità dipende soprattutto da quanto l'utente conosce l'oggetto",
+          "La semplicità si ottiene raggruppando gli elementi in poche categorie",
+          "La semplicità si apprezza solo per contrasto con il suo opposto, la complessità"
         ],
-        "correctIndex": 1,
-        "explanation": "La semplicità acquista senso solo in relazione al contrasto con la complessità: le due forze sono complementari e interdipendenti."
+        "correctIndex": 3,
+        "explanation": "La Legge 5 afferma che semplicità e complessità hanno bisogno l'una dell'altra: senza contrasto la semplicità non si riconosce. Eliminare ogni complessità è il fraintendimento che questa legge corregge."
       },
       {
         "question": "Quale onomatopea ritmica usa Maeda per descrivere l'alternanza vivace tra complessità e semplicità?",
         "options": [
-          "«Tic tac tic tac...», come il metronomo costante di un laboratorio scientifico",
-          "«Bum bum bum...», come il battito continuo della musica industriale",
-          "«Taa taa ti ti taa», come il contrappunto variato e dinamico di un assolo jazz",
-          "«Zzz zzz zzz...», come il ronzio indistinto di un trasformatore elettrico"
+          "«Taa taa ti ti taa», come il ritmo variato di un assolo jazz",
+          "«Tic tac tic tac», come il ritmo regolare di un metronomo",
+          "«Ti ti ti ti ti», come una sequenza di impulsi tutti uguali",
+          "«Taa... taa... taa», come una nota lunga ripetuta a intervalli fissi"
         ],
-        "correctIndex": 2,
-        "explanation": "Maeda usa 'Taa taa ti ti taa' per evocare il ritmo jazzistico fatto di pause, accenti e lunghezze diverse che tengono sveglia la mente."
+        "correctIndex": 0,
+        "explanation": "Maeda descrive il ritmo vivace dell'alternanza tra semplice e complesso con un fraseggio jazz variato. Le sequenze regolari dei distrattori sono proprio la monotonia che la Legge 5 vuole evitare."
       },
       {
         "question": "Nell'episodio della cerimonia del tè con Ikko Tanaka, quale oggetto generò una potente tensione estetica?",
         "options": [
-          "Un bollitore elettrico in titanio lucido connesso alla rete internet",
-          "Un orologio da parete a pendolo dorato in stile rococò francese",
-          "Una serie di bicchieri di plastica usa e getta di colore rosso sgargiante",
-          "Una tazza del Settecento vistosamente imperfetta, asimmetrica e ruvida"
+          "Una tazza nuova di porcellana bianca, perfettamente regolare",
+          "Un vassoio laccato nero, lucido e privo di qualsiasi decorazione",
+          "Una tazza antica vistosamente imperfetta, asimmetrica e ruvida",
+          "Una teiera in ghisa decorata con motivi geometrici ripetuti"
         ],
-        "correctIndex": 3,
-        "explanation": "La ciotola del '700 non-platonica e irregolare ruppe la perfezione asettica, rendendo sublime la semplicità dello spazio circostante."
+        "correctIndex": 2,
+        "explanation": "Nella cerimonia del tè con Ikko Tanaka è la tazza imperfetta e asimmetrica a creare tensione e attenzione dentro un contesto ordinato: un esempio di differenza che dà valore."
       },
       {
         "question": "Cosa accadrebbe al valore di un oggetto singolare (come il biglietto da visita conservato per 7 anni) se tutti lo imitassero?",
         "options": [
-          "Perderebbe immediatamente la propria carica differenziante, diventando a sua volta una convenzione monotona",
-          "Il suo valore economico aumenterebbe del 500% grazie all'effetto rete",
-          "I tribunali commerciali ne vieterebbero la circolazione per violazione del copyright",
-          "L'oggetto acquisirebbe proprietà magnetiche in grado di attrarre altri biglietti da visita"
+          "Acquisterebbe più valore, perché tutti lo riconoscerebbero subito",
+          "Resterebbe ugualmente originale, perché il valore sta nel singolo oggetto",
+          "Perderebbe il suo carattere distintivo e diventerebbe a sua volta una convenzione",
+          "Diventerebbe più semplice, perché sarebbe ormai noto a tutti"
         ],
-        "correctIndex": 0,
-        "explanation": "La differenza trae valore dalla deviazione dallo standard: se la deviazione diventa la nuova moda universale, cessa di essere speciale."
+        "correctIndex": 2,
+        "explanation": "Il valore di ciò che è diverso dipende dal contrasto: se tutti lo imitassero diventerebbe la nuova norma. È il ritmo tra regola ed eccezione descritto dalla Legge 5."
       },
       {
         "question": "In quale modo un interaction designer può tradurre la Legge 5 nella grafica di una pagina web?",
         "options": [
-          "Rendendo ogni pulsante di una forma geometrica differente e in costante rotazione casuale",
-          "Alternando ampie sezioni di respiro minimale con momenti focali densi di dettagli visivi o dati approfonditi",
-          "Riempiendo l'intero sfondo con pattern geometrici ad alto contrasto ottico privi di margini",
-          "Vietando l'inserimento di qualsiasi immagine fotografica all'interno del layout"
+          "Alternando ampie zone di respiro con momenti densi di dettagli e dati",
+          "Riducendo tutta la pagina a pochi elementi distribuiti in modo uniforme",
+          "Riempiendo tutta la pagina di contenuti con la stessa densità visiva",
+          "Nascondendo i contenuti di dettaglio dietro pulsanti e menu a tendina"
         ],
-        "correctIndex": 1,
-        "explanation": "Il ritmo nel web design si crea alternando quiete visiva (spazio bianco) e cluster informativi ricchi, valorizzando entrambi per contrasto."
+        "correctIndex": 0,
+        "explanation": "Tradurre la Legge 5 in un layout significa alternare: spazi ariosi e punti densi si valorizzano a vicenda. Ridurre tutto in modo uniforme produce la monotonia opposta a quella del riempire tutto."
       }
     ],
     "openQuestions": [
@@ -787,57 +787,57 @@ window.MAEDA_DATA = [
       {
         "question": "Quale insidia nasconde l'eccesso di focalizzazione secondo la riflessione della Legge 6?",
         "options": [
-          "L'aumento improvviso del consumo di elettricità dell'intero edificio",
-          "L'impossibilità di registrare marchi commerciali presso gli uffici competenti",
-          "La perdita di controllo dello sfondo e del contesto generale, che finisce per travolgere il compito primario",
-          "Il deterioramento delle fibre ottiche collegate al computer"
+          "Si moltiplicano le funzioni, perché ogni dettaglio richiede un nuovo comando",
+          "Si riduce troppo l'oggetto, che perde le funzioni necessarie all'utente",
+          "Si perde di vista lo sfondo, che finisce per travolgere il compito principale",
+          "Si allungano i tempi, perché ogni scelta va confrontata con le altre"
         ],
         "correctIndex": 2,
-        "explanation": "Chi si focalizza su un punto microscopico perde di vista il contesto: se lo sfondo collassa, anche il centro fallisce."
+        "explanation": "La Legge 6 («Contesto») ricorda che ciò che sta alla periferia non è secondario: chi si concentra solo sul compito principale perde il controllo dello sfondo. Il distrattore sulla riduzione eccessiva confonde la Legge 6 con i rischi della Legge 1."
       },
       {
         "question": "Cosa significa per un progettista adottare una «superficialità illuminata» secondo la terminologia di Maeda?",
         "options": [
-          "Lavorare con disinteresse senza verificare la veridicità delle fonti scientifiche",
-          "Progettare solo per clienti facoltosi rifiutando progetti destinati al settore pubblico",
-          "Limitare i test di usabilità a un singolo partecipante per risparmiare tempo",
-          "Coltivare una consapevolezza ad ampio raggio del contesto e delle relazioni circostanti, come una lampadina diffusa"
+          "Concentrare l'attenzione su un solo dettaglio, come un raggio laser",
+          "Ridurre il progetto alle funzioni essenziali, eliminando il superfluo",
+          "Avere una consapevolezza ampia del contesto, come una lampadina diffusa",
+          "Organizzare gli elementi in gruppi per renderli più facili da gestire"
         ],
-        "correctIndex": 3,
-        "explanation": "La 'superficialità illuminata' è la visione periferica a 360 gradi: capire come il prodotto interagisce col mondo che lo circonda."
+        "correctIndex": 2,
+        "explanation": "La «superficialità illuminata» non è disinteresse, ma attenzione diffusa a ciò che sta intorno, come la luce di una lampadina contrapposta al fascio concentrato del laser. Ridurre e organizzare sono invece le strategie delle Leggi 1 e 2."
       },
       {
         "question": "Quale atteggiamento assume il vero designer di fronte allo 'spazio bianco' (whitespace)?",
         "options": [
-          "Lo preserva e lo massimizza come elemento costruttivo che dona respiro, dignità e massima evidenza ai contenuti",
-          "Cerca di eliminarlo inserendo banner pubblicitari e slogan promozionali per non sprecare pixel",
-          "Lo colora con tinte fluorescenti per catturare lo sguardo periferico degli utenti distratti",
-          "Lo considera un difetto imputabile alla risoluzione insufficiente dei monitor moderni"
+          "Lo riduce al minimo per mostrare più contenuti nella stessa schermata",
+          "Lo usa solo come separatore neutro tra blocchi di testo e immagini",
+          "Lo preserva come elemento costruttivo che dà respiro e risalto ai contenuti",
+          "Lo riempie con elementi decorativi leggeri per non lasciarlo vuoto"
         ],
-        "correctIndex": 0,
-        "explanation": "Il designer protegge lo spazio vuoto: 'il nulla è qualcosa', perché riduce il carico cognitivo e fa risaltare l'essenziale."
+        "correctIndex": 2,
+        "explanation": "Per la Legge 6 ciò che sta intorno non è vuoto inutile: lo spazio bianco dà dignità e risalto ai contenuti. Ridurlo per mostrare di più è l'errore più comune che Maeda critica."
       },
       {
         "question": "Quale esempio spirituale giapponese viene rievocato da Maeda per descrivere la sacralità del vuoto?",
         "options": [
-          "La campana di bronzo di un tempio buddista immersa nell'acqua del fiume",
-          "Il recinto di ciottoli bianchi vuoto di un santuario shintoista, gravido di significato e rispetto",
-          "Un giardino roccioso coperto interamente da teli di plastica protettiva",
-          "Una biblioteca monumentale priva di tavoli da lettura per gli studenti"
+          "Il recinto di ciottoli bianchi, vuoto, di un santuario shintoista",
+          "Il giardino di pietre di un tempio zen, con la ghiaia rastrellata",
+          "La sala del tè giapponese, spoglia e illuminata da una sola finestra",
+          "Lo spazio bianco della pagina nella tipografia tradizionale giapponese"
         ],
-        "correctIndex": 1,
-        "explanation": "Il rettangolo vuoto nel santuario dimostra che per la cultura nipponica il vuoto non è assenza, ma concentrazione di significato e purezza."
+        "correctIndex": 0,
+        "explanation": "Maeda ricorda lo spazio vuoto coperto di ciottoli bianchi dei santuari shintoisti, carico di rispetto e significato. Il giardino zen è il distrattore più vicino, ma appartiene alla tradizione buddista ed è uno spazio composto, non un vuoto sacro."
       },
       {
         "question": "Cosa dimostra l'esperienza sensoriale di indossare tappi per le orecchie o una mascherina in aereo?",
         "options": [
-          "Che il cervello umano si disattiva completamente non appena mancano stimoli acustici",
-          "Che gli aerei di linea producono frequenze sonore dannose per la memoria a lungo termine",
-          "Che quando si sopprimono gli stimoli primari, le sensazioni periferiche minori si amplificano a dismisura",
-          "Che i passeggeri preferiscono viaggiare al buio per non consumare l'illuminazione di bordo"
+          "Che, tolti gli stimoli principali, la mente si concentra meglio sul compito",
+          "Che, tolti gli stimoli principali, le sensazioni periferiche si amplificano",
+          "Che, tolti gli stimoli principali, l'attenzione cala e subentra il sonno",
+          "Che, tolti gli stimoli principali, il tempo sembra scorrere più in fretta"
         ],
-        "correctIndex": 2,
-        "explanation": "Nel silenzio o nell'assenza di luce, i micro-segnali del corpo o dell'ambiente diventano giganteschi: il contesto amplifica i dettagli."
+        "correctIndex": 1,
+        "explanation": "Con tappi e mascherina in aereo spariscono gli stimoli principali e quelli minori (vibrazioni, odori, piccoli rumori) diventano enormi: il contesto non scompare mai. È la base della Legge 6."
       }
     ],
     "openQuestions": [
@@ -888,7 +888,7 @@ window.MAEDA_DATA = [
     "title": "Legge 7 — EMOZIONE",
     "subtitle": "Il valore del calore umano, lo Shinto e l'Aichaku, Ron Mueck e il Return on Emotions",
     "readTime": "8 min",
-    "summary": "### L'enunciato della Legge 7: l'eccezione che aggiunge anziché togliere\n> **Legge 7: Meglio emozioni in più piuttosto che in meno.**\n\nA differenza della quasi totalità delle altre leggi della semplicità (che prescrivono di sottrarre, nascondere o comprimere), la settima legge compie una svolta radicale: **essa aggiunge**. La pura funzionalità razionale e il minimalismo spinto rischiano di produrre oggetti glaciali, asettici e disumanizzanti.  \nUn dispositivo elettronico o un software non possono essere ridotti a un mero aggregato di silicio ed efficienza computazionale. Gli accessori esteriori e la personalizzazione estetica (le cover colorate dei telefoni, i cinturini degli orologi, i rivestimenti protettivi) assolvono a due funzioni decisive:\n1. *Conferire valore identitario all'oggetto*;\n2. **Bilanciare con calore umano la freddezza algoritmica del gadget tecnologico**. L'oggetto fondamentale rimane nudo ed essenziale, ma il suo abito permette alle persone di proiettare sentimenti, individualità e affetto.\n\n### Senti e prova: la tradizione Shinto e il concetto di Aichaku (愛着)\nNella tradizione filosofica e religiosa animista giapponese (**Scintoismo**), non esiste una barriera ontologica rigida tra esseri viventi e cose inanimate: **tutto — una tazza, una sedia di legno, una roccia, un foglio di carta di riso — è pervaso da uno spirito vitale (kami)** e merita reverenza e cura. La cultura tecnologica contemporanea ha esteso naturalmente questa sensibilità dando vita a un vero e proprio «animismo elettronico»:\n- Il cane robot **AIBO** di Sony, il cucciolo digitale **Tamagotchi** o le creature virtuali di **Neopets** non sono stati vissuti dai proprietari come semplici giocattoli a circuito integrato, ma hanno suscitato amore autentico, dolore in caso di guasto e rituali funebri dedicati.\n\nDa questa radice scaturisce il termine giapponese intraducibile **AICHAKU** (**愛着**, composto dagli ideogrammi di *Amore* + *Forte attaccamento*):\n> **AICHAKU: l'attaccamento emotivo profondo e duraturo verso un manufatto, che merita affetto non semplicemente per quello che «fa» (la sua mera funzione tecnica), ma per quello che «è» (la sua presenza spirituale e la sua storia materiale).**\n\nRiconoscere l'Aichaku consente ai designer di progettare oggetti in cui l'utente possa specchiarsi e a cui affezionarsi al punto da **desiderare di conservarli per l'intero arco della propria vita** (come le superfici laccate tradizionali di un vassoio *bento box*, che invecchiando con grazia accumulano una patina viva in perfetta simbiosi col loro contenuto).\n\n### L'arte del «più»: Ron Mueck e la distinzione tra Arte e Design\nDi fronte alle sculture monumentali e iperrealistiche dell'artista **Ron Mueck** (giganteschi neonati o volti umani colti nei minimi pori della pelle), gli spettatori rimangono ipnotizzati chiedendosi turbati: *«Ma è reale?»*. L'arte sublime suscita domande profonde anziché fornire rassicurazioni prefabbricate. Maeda traccia così una delle distinzioni più nitide della teoria contemporanea:\n$$\\text{L'ARTE MERAVIGLIA} \\longleftrightarrow \\text{IL DESIGN CHIARISCE}$$\n- Il design ha la missione funzionale di fare chiarezza, rimuovere gli equivoci e facilitare l'azione.\n- Ma **la sola chiarezza funzionale non basta per vivere una vita degna di essere vissuta**.\n\nMaeda racconta la vicenda toccante di un'amica di Milano a cui un illustre oncologo comunicò una diagnosi drammatica di cancro: il medico fu chirurgicamente ineccepibile, efficiente e chiarissimo (puro design funzionale della comunicazione), ma completamente privo di empatia, calore umano o conforto. Quell'esperienza traumatica spinse la donna a fondare centri d'accoglienza calorosi all'interno dei reparti oncologici:\n$$\\text{L'Arte (una ragione per vivere e sperare)} \\;\\;\\text{moderata dal}\\;\\; \\text{Design (la chiarezza del messaggio terapeutico)}.$$\n\n### Il ROE: Return on Emotions\nOttenere la mera chiarezza logica in un'interfaccia è un compito relativamente semplice per un bravo ingegnere; la sfida autentica e suprema del designer risiede nel **generare benessere emotivo e significato esistenziale**.\nNel mondo degli affari si misura ossessivamente il ROI (*Return on Investment*, il ritorno finanziario del capitale investito). Maeda introduce una metrica alternativa indispensabile per l'umanità: il **ROE (Return on Emotions)**, ovvero il *tasso di rendimento delle emozioni*. Un certo tipo di «più» — più calore, più cura, più bellezza, più ascolto — risulterà sempre preferibile ed eticamente superiore a una brutale e fredda sottrazione.",
+    "summary": "### L'enunciato della Legge 7: l'eccezione che aggiunge anziché togliere\n> **Legge 7: Meglio emozioni in più piuttosto che in meno.**\n\nA differenza della quasi totalità delle altre leggi della semplicità (che prescrivono di sottrarre, nascondere o comprimere), la settima legge compie una svolta radicale: **essa aggiunge**. La pura funzionalità razionale e il minimalismo spinto rischiano di produrre oggetti glaciali, asettici e disumanizzanti.  \nUn dispositivo elettronico o un software non possono essere ridotti a un mero aggregato di silicio ed efficienza computazionale. Gli accessori esteriori e la personalizzazione estetica (le cover colorate dei telefoni, i cinturini degli orologi, i rivestimenti protettivi) assolvono a due funzioni decisive:\n1. *Conferire valore identitario all'oggetto*;\n2. **Bilanciare con calore umano la freddezza algoritmica del gadget tecnologico**. L'oggetto fondamentale rimane nudo ed essenziale, ma il suo abito permette alle persone di proiettare sentimenti, individualità e affetto.\n\n### Senti e prova: la tradizione Shinto e il concetto di Aichaku (愛着)\nNella tradizione filosofica e religiosa animista giapponese (**Scintoismo**), non esiste una barriera ontologica rigida tra esseri viventi e cose inanimate: **tutto — una tazza, una sedia di legno, una roccia, un foglio di carta di riso — è pervaso da uno spirito vitale (kami)** e merita reverenza e cura. La cultura tecnologica contemporanea ha esteso naturalmente questa sensibilità dando vita a un vero e proprio «animismo elettronico»:\n- Il cane robot **AIBO** di Sony, il cucciolo digitale **Tamagotchi** o le creature virtuali di **Neopets** non sono stati vissuti dai proprietari come semplici giocattoli a circuito integrato, ma hanno suscitato amore autentico, dolore in caso di guasto e rituali funebri dedicati.\n\nDa questa radice scaturisce il termine giapponese intraducibile **AICHAKU** (**愛着**, composto dagli ideogrammi di *Amore* + *Forte attaccamento*):\n> **AICHAKU: l'attaccamento emotivo profondo e duraturo verso un manufatto, che merita affetto non semplicemente per quello che «fa» (la sua mera funzione tecnica), ma per quello che «è» (la sua presenza spirituale e la sua storia materiale).**\n\nRiconoscere l'Aichaku consente ai designer di progettare oggetti in cui l'utente possa specchiarsi e a cui affezionarsi al punto da **desiderare di conservarli per l'intero arco della propria vita** (come le superfici laccate tradizionali di un vassoio *bento box*, che invecchiando con grazia accumulano una patina viva in perfetta simbiosi col loro contenuto).\n\n### L'arte del «più»: Ron Mueck e la distinzione tra Arte e Design\nDi fronte alle sculture monumentali e iperrealistiche dell'artista **Ron Mueck** (giganteschi neonati o volti umani colti nei minimi pori della pelle), gli spettatori rimangono ipnotizzati chiedendosi turbati: *«Ma è reale?»*. L'arte sublime suscita domande profonde anziché fornire rassicurazioni prefabbricate. Maeda traccia così una delle distinzioni più nitide della teoria contemporanea:\n\n> **L'ARTE MERAVIGLIA <-> IL DESIGN CHIARISCE**\n\n- Il design ha la missione funzionale di fare chiarezza, rimuovere gli equivoci e facilitare l'azione.\n- Ma **la sola chiarezza funzionale non basta per vivere una vita degna di essere vissuta**.\n\nMaeda racconta la vicenda toccante di un'amica di Milano a cui un illustre oncologo comunicò una diagnosi drammatica di cancro: il medico fu chirurgicamente ineccepibile, efficiente e chiarissimo (puro design funzionale della comunicazione), ma completamente privo di empatia, calore umano o conforto. Quell'esperienza traumatica spinse la donna a fondare centri d'accoglienza calorosi all'interno dei reparti oncologici:\n\n> **L'Arte (una ragione per vivere e sperare) \\ \\ moderata dal\\ \\ Design (la chiarezza del messaggio terapeutico)**\n\n### Il ROE: Return on Emotions\nOttenere la mera chiarezza logica in un'interfaccia è un compito relativamente semplice per un bravo ingegnere; la sfida autentica e suprema del designer risiede nel **generare benessere emotivo e significato esistenziale**.\nNel mondo degli affari si misura ossessivamente il ROI (*Return on Investment*, il ritorno finanziario del capitale investito). Maeda introduce una metrica alternativa indispensabile per l'umanità: il **ROE (Return on Emotions)**, ovvero il *tasso di rendimento delle emozioni*. Un certo tipo di «più» — più calore, più cura, più bellezza, più ascolto — risulterà sempre preferibile ed eticamente superiore a una brutale e fredda sottrazione.",
     "keyPoints": [
       "La Legge 7 è l'unica che aggiunge: il calore umano e l'espressività bilanciano la freddezza della tecnologia.",
       "La tradizione Shinto e il concetto di AICHAKU (愛着) definiscono l'amore profondo per un oggetto per ciò che 'è' e non solo per ciò che 'fa'.",
@@ -913,46 +913,46 @@ window.MAEDA_DATA = [
       {
         "question": "In che cosa la Legge 7 («Emozione») si differenzia radicalmente dalle altre leggi della semplicità?",
         "options": [
-          "Richiede la compilazione obbligatoria di questionari cartacei da parte degli acquirenti",
-          "Vieta l'uso di fotografie a colori nei manuali di istruzioni industriali",
-          "Riguarda esclusivamente la composizione di sonetti poetici e non si applica agli oggetti fisici",
-          "A differenza delle altre leggi che sottraggono o nascondono, la Legge 7 afferma che è meglio aggiungere emozioni e calore umano"
+          "Invece di togliere o nascondere, invita ad aggiungere emozione e calore",
+          "Invece di ridurre le funzioni, invita a organizzarle in gruppi coerenti",
+          "Invece di aggiungere spiegazioni, invita a sorprendere l'utente",
+          "Invece di ridurre l'attesa, invita a renderla più tollerabile"
         ],
-        "correctIndex": 3,
-        "explanation": "La Legge 7 è l'eccezione positiva: sottrae l'ovvio ma aggiunge calore umano per non cadere nell'asetticità clinica."
+        "correctIndex": 0,
+        "explanation": "Le altre leggi tolgono, nascondono o riorganizzano; la Legge 7 dice che più emozioni è meglio di meno emozioni, anche a costo di aggiungere qualcosa. Organizzare in gruppi è la Legge 2; rendere tollerabile l'attesa è la Legge 3."
       },
       {
         "question": "Quale fenomeno socioculturale giapponese viene citato da Maeda a testimonianza dell'«animismo elettronico»?",
         "options": [
-          "L'attaccamento affettivo e la cura rituale tributati a creature artificiali come AIBO, Tamagotchi o Neopets",
-          "L'uso esclusivo di lampade a incandescenza all'interno delle sale server",
-          "La sostituzione degli schermi touch con tessere magnetiche perforate",
-          "La distruzione annuale di tutti i telefoni cellulari obsoleti durante i festival di primavera"
+          "La diffusione dei robot industriali nelle fabbriche automobilistiche",
+          "L'abitudine di decorare i telefoni cellulari con ciondoli e adesivi",
+          "L'affetto e le cure rivolte a creature artificiali come AIBO e Tamagotchi",
+          "La passione per i videogiochi di ruolo con personaggi virtuali"
         ],
-        "correctIndex": 0,
-        "explanation": "AIBO e Tamagotchi hanno dimostrato che le persone sanno proiettare amore vivo su manufatti elettronici, trattandoli come compagni di vita."
+        "correctIndex": 2,
+        "explanation": "Maeda cita AIBO, Tamagotchi e Neopets come esempi di animismo: si prova affetto per creature artificiali. Decorare i cellulari è un gesto emotivo vicino, ma non riguarda creature che si accudiscono."
       },
       {
         "question": "Cosa manca a una comunicazione puramente efficiente e chiara secondo la drammatica vicenda medica raccontata da Maeda?",
         "options": [
-          "Un font tipografico moderno ad alta leggibilità ottica",
-          "L'empatia, il calore umano e l'attenzione ai sentimenti della persona, senza i quali la mera chiarezza ferisce",
-          "La traduzione simultanea in almeno quattro lingue dell'Unione Europea",
-          "Una ricevuta fiscale timbrata da presentare alla compagnia assicurativa"
+          "L'empatia, senza la quale la sola chiarezza può ferire chi ascolta",
+          "La sintesi, perché un messaggio lungo confonde chi deve decidere",
+          "La precisione, perché i dati medici richiedono numeri esatti",
+          "La gradualità, perché le informazioni vanno date in ordine logico"
         ],
-        "correctIndex": 1,
-        "explanation": "Il medico comunicò la diagnosi con efficienza tecnica ma senza un grammo di calore: la chiarezza senza empatia devasta l'animo umano."
+        "correctIndex": 0,
+        "explanation": "Nella vicenda medica raccontata da Maeda la comunicazione è chiara ed efficiente, ma priva di calore umano: senza empatia la chiarezza ferisce. Sintesi e precisione sono qualità che la comunicazione aveva già."
       },
       {
         "question": "Cosa contrappone Maeda all'indicatore finanziario tradizionale del ROI (Return on Investment)?",
         "options": [
-          "Il PIL reale corretto per il tasso di svalutazione monetaria",
-          "L'indice di rotazione delle scorte di magazzino per prodotti non deperibili",
-          "Il ROE (Return on Emotions), che misura il rendimento in termini di significato affettivo, felicità e benessere",
-          "Il costo marginale di produzione per unità di memoria a stato solido"
+          "Il ROT, Return on Time, che misura il tempo risparmiato dall'utente",
+          "Il ROK, Return on Knowledge, che misura ciò che l'utente ha imparato",
+          "Il ROS, Return on Simplicity, che misura le funzioni eliminate",
+          "Il ROE, Return on Emotions, che misura il ritorno in significato e benessere"
         ],
-        "correctIndex": 2,
-        "explanation": "Il Return on Emotions (ROE) è la metrica qualitativa che misura la ricchezza emotiva e il valore relazionale generati dal design."
+        "correctIndex": 3,
+        "explanation": "Maeda contrappone al ROI il ROE (Return on Emotions): il valore di un prodotto si misura anche nel significato affettivo che genera. Le altre sigle sono costruite sui temi di altre leggi (tempo, apprendimento, riduzione) ma non compaiono nel testo."
       },
       {
         "question": "Quale scultore contemporaneo viene citato da Maeda per dimostrare la capacità dell'arte di suscitare stupore e domande aperte?",
@@ -1014,7 +1014,7 @@ window.MAEDA_DATA = [
     "title": "Legge 8 — FIDUCIA",
     "subtitle": "Noi crediamo nella semplicità, il dilemma privacy-convenienza, l'Omakase e la funzione Undo",
     "readTime": "8 min",
-    "summary": "### L'enunciato della Legge 8: la fede nella semplicità\n> **Legge 8: Noi crediamo nella semplicità.**\n\nImmaginate un dispositivo avveniristico dotato di **un solo pulsante senza alcuna etichetta**: lo premete e il compito desiderato viene eseguito istantaneamente e alla perfezione (la lettera affettuosa a zia Mabel è scritta, impaginata e spedita esattamente con il tono giusto, perché il sistema informatico vi conosce intimamente da anni). Questa è l'apoteosi della semplicità, e la tecnologia vi si sta avvicinando a passi da gigante.  \nTuttavia, questo scenario idilliaco schiude un **dilemma cognitivo e sociale lacerante**:\n$$\\text{QUANTO DOVETE SAPERE DEL SISTEMA?} \\longleftrightarrow \\text{QUANTO IL SISTEMA DEVE SAPERE DI VOI?}$$\n- A sinistra: per conservare il totale controllo, dovete investire enorme tempo ed energia per **studiare e dominare il sistema**, mantenendo riservati i vostri dati.\n- A destra: per ottenere la massima convenienza e comodità, **dovete cedere la vostra privacy e riporre una fiducia cieca nel sistema**, sperando che non tradisca le vostre aspettative né commetta errori irreparabili.\n\n### Rilassatevi, distendetevi: imparare a nuotare e il design di Bang & Olufsen\nMaeda racconta la propria esperienza autobiografica nell'imparare a nuotare da adulto: per anni aveva lottato freneticamente contro l'acqua per paura di affondare. L'istruttore non gli insegnò complesse bracciate atletiche, ma una sola cosa: **fidarsi dell'acqua e distendersi a braccia aperte**; una volta abbandonata la resistenza, il corpo galleggiò naturalmente.\n\nLo stesso principio governa i manufatti di lusso e l'alta ingegneria ergonomica come il design di **Bang & Olufsen**:\n- I loro straordinari impianti audio non competono unicamente sui decibel o sulla fedeltà acustica di laboratorio, ma sulla **«qualità del distendersi»**.\n- L'attenzione maniacale riservata a ogni scatto meccanico, la purezza dell'alluminio satinato e la grazia silenziosa con cui i vani motorizzati si aprono trasmettono un messaggio inequivocabile di sicurezza: **inducono l'utente ad abbassare la guardia e a rilassarsi**.\n- Possiamo rilassarci veramente solo quando confidiamo al cento per cento di essere in buone mani (e la medesima sublime serenità è accessibile gratuitamente sdraiandosi su un prato verde in una giornata di sole).\n\n### Abbiate fiducia nel maestro: la filosofia dell'Omakase\nDi fronte all'angoscia della scelta tra decine di opzioni sconosciute su un menu, la cultura gastronomica giapponese offre la sublime soluzione dell'**OMAKASE** (お任せ, letteralmente *«mi affido a te / lascio fare a te»*):\n- Al bancone del sushi, il cliente non ordina le singole portate da una lista, ma **si affida totalmente al Maestro chef**.\n- Il maestro osserva con discrezione l'avventore, la stagione dell'anno, la freschezza del pescato del mattino e serve i pezzi uno dopo l'altro in modo incrementale, leggendo le reazioni sul volto del cliente.\n- L'Omakase funziona mirabilmente grazie alla **maestria, all'orgoglio e alla responsabilità incrollabile del maestro**, che non scarica l'incertezza sul cliente.\n- È l'antitesi del «menù degustazione dello chef» della ristorazione occidentale, dove spesso la sequenza è fissa e la responsabilità economica e di gradimento rimane tutta sulle spalle dell'avventore.\n\n### L'alternativa moderna: il potere dell'Undo (Annulla)\nQual è l'alternativa tecnologica alla fiducia incondizionata nel maestro? È la funzione di **Annullamento (Undo)**:\n- Sapere che **qualsiasi scelta, errore o comando può essere immediatamente revocato senza conseguenze disastrose** rende la nostra vita incomparabilmente più semplice.\n- Nel commercio, è la politica del **reso gratuito garantito** (la ricevuta che consente di restituire l'abito entro trenta giorni); le grandi catene si accollano volentieri il costo dei resi pur di conquistare la fiducia dell'acquirente titubante.\n- Nel software, è la combinazione di tasti *Ctrl+Z / Cmd+Z*: il computer è un prodigioso «dispositivo che dimentica», permettendo all'utente di sperimentare senza ansia da prestazione.\n\nTuttavia, Maeda mette in guardia dal lato oscuro dell'Undo:\n> **La fiducia nel maestro si fonda sull'amore, sulla dedizione e sull'impegno reciproco; l'Undo si basa invece su una relazione di interesse, disimpegno e reversibilità.**  \nSe ogni atto può essere revocato in un millisecondo, le scelte perdono di peso e gravità morale. Maeda ammonisce: **«Affidatevi all'Undo come a un partner razionale quando interagite con le macchine e i software; ma liberatevene con coraggio quando avete a che fare con le persone in carne ed ossa!»**.\n\nLa vera padronanza (la conoscenza della Legge 4) permette al maestro di operare *senza aver bisogno dell'Undo*, mentre la fiducia incondizionata — pur esponendo al rischio di essere traditi — è la sola che consenta di vivere relazioni autentiche e profonde.",
+    "summary": "### L'enunciato della Legge 8: la fede nella semplicità\n> **Legge 8: Noi crediamo nella semplicità.**\n\nImmaginate un dispositivo avveniristico dotato di **un solo pulsante senza alcuna etichetta**: lo premete e il compito desiderato viene eseguito istantaneamente e alla perfezione (la lettera affettuosa a zia Mabel è scritta, impaginata e spedita esattamente con il tono giusto, perché il sistema informatico vi conosce intimamente da anni). Questa è l'apoteosi della semplicità, e la tecnologia vi si sta avvicinando a passi da gigante.  \nTuttavia, questo scenario idilliaco schiude un **dilemma cognitivo e sociale lacerante**:\n\n> **QUANTO DOVETE SAPERE DEL SISTEMA? <-> QUANTO IL SISTEMA DEVE SAPERE DI VOI?**\n\n- A sinistra: per conservare il totale controllo, dovete investire enorme tempo ed energia per **studiare e dominare il sistema**, mantenendo riservati i vostri dati.\n- A destra: per ottenere la massima convenienza e comodità, **dovete cedere la vostra privacy e riporre una fiducia cieca nel sistema**, sperando che non tradisca le vostre aspettative né commetta errori irreparabili.\n\n### Rilassatevi, distendetevi: imparare a nuotare e il design di Bang & Olufsen\nMaeda racconta la propria esperienza autobiografica nell'imparare a nuotare da adulto: per anni aveva lottato freneticamente contro l'acqua per paura di affondare. L'istruttore non gli insegnò complesse bracciate atletiche, ma una sola cosa: **fidarsi dell'acqua e distendersi a braccia aperte**; una volta abbandonata la resistenza, il corpo galleggiò naturalmente.\n\nLo stesso principio governa i manufatti di lusso e l'alta ingegneria ergonomica come il design di **Bang & Olufsen**:\n- I loro straordinari impianti audio non competono unicamente sui decibel o sulla fedeltà acustica di laboratorio, ma sulla **«qualità del distendersi»**.\n- L'attenzione maniacale riservata a ogni scatto meccanico, la purezza dell'alluminio satinato e la grazia silenziosa con cui i vani motorizzati si aprono trasmettono un messaggio inequivocabile di sicurezza: **inducono l'utente ad abbassare la guardia e a rilassarsi**.\n- Possiamo rilassarci veramente solo quando confidiamo al cento per cento di essere in buone mani (e la medesima sublime serenità è accessibile gratuitamente sdraiandosi su un prato verde in una giornata di sole).\n\n### Abbiate fiducia nel maestro: la filosofia dell'Omakase\nDi fronte all'angoscia della scelta tra decine di opzioni sconosciute su un menu, la cultura gastronomica giapponese offre la sublime soluzione dell'**OMAKASE** (お任せ, letteralmente *«mi affido a te / lascio fare a te»*):\n- Al bancone del sushi, il cliente non ordina le singole portate da una lista, ma **si affida totalmente al Maestro chef**.\n- Il maestro osserva con discrezione l'avventore, la stagione dell'anno, la freschezza del pescato del mattino e serve i pezzi uno dopo l'altro in modo incrementale, leggendo le reazioni sul volto del cliente.\n- L'Omakase funziona mirabilmente grazie alla **maestria, all'orgoglio e alla responsabilità incrollabile del maestro**, che non scarica l'incertezza sul cliente.\n- È l'antitesi del «menù degustazione dello chef» della ristorazione occidentale, dove spesso la sequenza è fissa e la responsabilità economica e di gradimento rimane tutta sulle spalle dell'avventore.\n\n### L'alternativa moderna: il potere dell'Undo (Annulla)\nQual è l'alternativa tecnologica alla fiducia incondizionata nel maestro? È la funzione di **Annullamento (Undo)**:\n- Sapere che **qualsiasi scelta, errore o comando può essere immediatamente revocato senza conseguenze disastrose** rende la nostra vita incomparabilmente più semplice.\n- Nel commercio, è la politica del **reso gratuito garantito** (la ricevuta che consente di restituire l'abito entro trenta giorni); le grandi catene si accollano volentieri il costo dei resi pur di conquistare la fiducia dell'acquirente titubante.\n- Nel software, è la combinazione di tasti *Ctrl+Z / Cmd+Z*: il computer è un prodigioso «dispositivo che dimentica», permettendo all'utente di sperimentare senza ansia da prestazione.\n\nTuttavia, Maeda mette in guardia dal lato oscuro dell'Undo:\n> **La fiducia nel maestro si fonda sull'amore, sulla dedizione e sull'impegno reciproco; l'Undo si basa invece su una relazione di interesse, disimpegno e reversibilità.**  \nSe ogni atto può essere revocato in un millisecondo, le scelte perdono di peso e gravità morale. Maeda ammonisce: **«Affidatevi all'Undo come a un partner razionale quando interagite con le macchine e i software; ma liberatevene con coraggio quando avete a che fare con le persone in carne ed ossa!»**.\n\nLa vera padronanza (la conoscenza della Legge 4) permette al maestro di operare *senza aver bisogno dell'Undo*, mentre la fiducia incondizionata — pur esponendo al rischio di essere traditi — è la sola che consenta di vivere relazioni autentiche e profonde.",
     "keyPoints": [
       "La Legge 8 esplora la fiducia: l'interfaccia ideale a 'un solo pulsante' richiede di cedere dati personali in cambio di convenienza.",
       "Il dilemma della semplicità: dominare il sistema (sforzo e privacy) oppure fidarsi ciecamente del sistema (comodità e dipendenza).",
@@ -1039,57 +1039,57 @@ window.MAEDA_DATA = [
       {
         "question": "Quale scenario estremo di design illustra Maeda all'inizio della Legge 8 per spiegare il ruolo della fiducia?",
         "options": [
-          "Un dispositivo dotato di un unico pulsante privo di etichette che compie l'azione giusta conoscendoti perfettamente",
-          "Un'automobile dotata di dodici volanti per ciascun passeggero",
-          "Un computer che richiede la scansione dell'iride e delle impronte digitali prima di ogni clic",
-          "Una tastiera musicale che suona unicamente note stonate se l'utente non è diplomato al conservatorio"
+          "Un'interfaccia con tutti i comandi visibili per non nascondere nulla",
+          "Un sistema che chiede conferma prima di eseguire qualsiasi azione",
+          "Un unico pulsante senza etichetta che fa la cosa giusta perché ti conosce",
+          "Un manuale completo che spiega ogni funzione prima dell'uso"
         ],
-        "correctIndex": 0,
-        "explanation": "Il pulsante unico senza etichette incarna la massima fiducia: affidarsi ciecamente al fatto che la macchina indovini i nostri desideri."
+        "correctIndex": 2,
+        "explanation": "Il pulsante unico che sa cosa vuoi è il caso estremo di fiducia (Legge 8): più il sistema ti conosce, meno devi pensare. Le conferme continue e il manuale sono l'opposto della fiducia."
       },
       {
         "question": "Quale trade-off inevitabile governa i sistemi intelligenti e personalizzati moderni secondo la Legge 8?",
         "options": [
-          "Maggiore è la RAM del computer e minore è la velocità di connessione a internet",
-          "Più il sistema sa di te e meno fatica mentale devi fare, ma al prezzo di una cessione massiccia della tua privacy",
-          "I dispositivi che costano di più sono sempre quelli che consumano più kilowattora",
-          "Per avere privacy assoluta è obbligatorio condividere i propri dati bancari sui social network"
+          "Più funzioni offre il sistema, più tempo serve per imparare a usarlo",
+          "Più il sistema è rapido, meno controllo ha l'utente sulle singole azioni",
+          "Più il sistema è semplice, meno è adatto agli utenti esperti",
+          "Più il sistema sa di te, meno devi pensare, ma cedi parte della privacy"
         ],
-        "correctIndex": 1,
-        "explanation": "La comodità predittiva richiede dati: per non dover pensare, dobbiamo permettere all'algoritmo di conoscerci e tracciarci a fondo."
+        "correctIndex": 3,
+        "explanation": "Il compromesso descritto da Maeda riguarda conoscenza e privacy: un sistema che ti conosce ti semplifica la vita, ma in cambio dei tuoi dati. Gli altri sono compromessi reali, legati però ad altre leggi."
       },
       {
         "question": "Cosa caratterizza la pratica giapponese dell'Omakase al ristorante sushi?",
         "options": [
-          "Il cliente prepara da solo il riso e il pesce pagando una quota simbolica all'ingresso",
-          "Il cliente ordina le portate selezionandole da un tablet touch screen multilingue",
-          "Il cliente dice «mi affido a te» e lascia che sia il maestro a scegliere e dosare i piatti con sapienza e orgoglio",
-          "Il cliente partecipa a un'asta al ribasso per aggiudicarsi il pesce rimasto a fine serata"
+          "Il cliente sceglie ogni portata dal menu, controllando quantità e prezzo",
+          "Il cliente dice «mi affido a te» e lascia scegliere i piatti al cuoco",
+          "Il cliente prepara da solo il sushi seguendo le istruzioni del cuoco",
+          "Il cliente ordina un menu fisso, uguale per tutti i commensali"
         ],
-        "correctIndex": 2,
-        "explanation": "Nell'Omakase il cliente cede il controllo a un maestro di cui si fida totalmente, sollevandosi da ogni ansia e godendo dell'eccellenza."
+        "correctIndex": 1,
+        "explanation": "Omakase significa affidarsi: il cliente lascia che sia il maestro a scegliere. È un esempio di fiducia (Legge 8), opposto al controllo totale del menu alla carta."
       },
       {
         "question": "Cosa rende il comando 'Undo' (Annulla / Ctrl+Z) una risorsa cardine per la semplicità nel software?",
         "options": [
-          "La capacità di riparare automaticamente i guasti hardware della scheda madre",
-          "Il ripristino istantaneo della connessione Wi-Fi in caso di temporali",
-          "La possibilità di stampare copie cartacee dei documenti senza spendere inchiostro",
-          "Il fatto di liberare l'utente dalla paura di sbagliare, garantendo che ogni azione azzardata sia reversibile a costo zero"
+          "Riduce i passaggi, perché raccoglie più comandi in un solo tasto",
+          "Insegna il funzionamento del programma mostrando le azioni precedenti",
+          "Libera dalla paura di sbagliare, perché ogni azione diventa reversibile",
+          "Nasconde le funzioni avanzate finché l'utente non ne ha bisogno"
         ],
-        "correctIndex": 3,
-        "explanation": "Sapere che ogni errore può essere annullato infonde sicurezza psicologica: l'utente esplora l'interfaccia senza terrore."
+        "correctIndex": 2,
+        "explanation": "Il comando Annulla genera fiducia (Legge 8): sapere che si può tornare indietro rende l'utente più sicuro e disposto a esplorare. Nascondere le funzioni avanzate è invece la strategia SHE della Legge 1."
       },
       {
         "question": "Per quale motivo la filosofia dei prodotti Bang & Olufsen induce l'utente ad «abbassare la guardia»?",
         "options": [
-          "Perché la cura sublime dei movimenti meccanici e dei materiali infonde un senso profondo di affidabilità e serenità",
-          "Perché contengono microfoni nascosti che registrano le conversazioni ambientali",
-          "Perché emettono onde sonore a bassissima frequenza che inducono il sonno profondo",
-          "Perché vengono forniti senza cavi di alimentazione per evitare incidenti domestici"
+          "La cura dei movimenti e dei materiali trasmette affidabilità e serenità",
+          "Il prezzo elevato convince l'utente di aver fatto la scelta migliore",
+          "L'assenza di pulsanti visibili obbliga l'utente a fidarsi del sistema",
+          "La garanzia estesa elimina il timore di guasti e malfunzionamenti"
         ],
         "correctIndex": 0,
-        "explanation": "La qualità impeccabile di B&O trasmette sicurezza: l'utente percepisce di essere in buone mani e si concede il lusso di rilassarsi."
+        "explanation": "Negli oggetti Bang & Olufsen la qualità dei movimenti meccanici e dei materiali comunica affidabilità: l'utente si fida e abbassa la guardia. Il prezzo elevato può influire sulla percezione, ma non è l'argomento usato da Maeda."
       }
     ],
     "openQuestions": [
@@ -1165,57 +1165,57 @@ window.MAEDA_DATA = [
       {
         "question": "Cosa intende John Maeda affermando che «ci sono cose che non è possibile semplificare»?",
         "options": [
-          "Che i programmatori dovrebbero abbandonare la scrittura di codice per dedicarsi alla pittura a olio",
-          "Che la semplificazione a oltranza rischia di distruggere il senso e la ricchezza di esperienze umane complesse",
-          "Che i manuali di istruzioni cartacei devono essere protetti dal copyright internazionale",
-          "Che gli orologi da polso analogici non possono funzionare senza batterie al litio"
+          "Che ogni oggetto, con il giusto metodo, può essere reso semplice",
+          "Che alcune cose non si possono semplificare per limiti tecnici di produzione",
+          "Che la semplificazione va rimandata finché l'utente non ha imparato il sistema",
+          "Che semplificare a oltranza può distruggere il senso di esperienze complesse"
         ],
-        "correctIndex": 1,
-        "explanation": "Tentare di semplificare tutto banalizza la realtà: accettare la complessità irriducibile è indice di maturità intellettuale."
+        "correctIndex": 3,
+        "explanation": "La Legge 9 («Fallimento») riconosce che certe esperienze perdono valore se semplificate: la complessità è parte del loro senso. Il distrattore sui limiti tecnici riduce a un problema di produzione ciò che Maeda considera una questione di significato."
       },
       {
         "question": "Quale autocritica rivolge Maeda all'uso didattico di sigle come SHE, SLIP e BRAIN?",
         "options": [
-          "Di essere crittografate secondo standard non conformi ai server del MIT",
-          "Di essere leggibili unicamente da utenti di madrelingua giapponese",
-          "Di generare la monotonia stucchevole del 'YAA' (Yet Another Acronym), complicando a volte ciò che vorrebbero spiegare",
-          "Di consumare troppa carta durante la stampa tipografica dei volumi"
+          "Generano la monotonia dello YAA (Yet Another Acronym) e talvolta complicano",
+          "Sono troppo poche per riassumere tutte le dieci leggi della semplicità",
+          "Valgono solo per il software e non si applicano agli oggetti fisici",
+          "Sono nate per i corsi del MIT e non funzionano fuori dall'università"
         ],
-        "correctIndex": 2,
-        "explanation": "Maeda ammette che inventare troppi acronimi stanca l'interlocutore, diventando un esercizio autoreferenziale."
+        "correctIndex": 0,
+        "explanation": "Maeda ammette con autoironia che le sue sigle rischiano di diventare l'ennesimo acronimo (YAA) e di complicare ciò che vogliono semplificare: anche la semplicità può fallire (Legge 9). Gli altri distrattori attribuiscono alle sigle limiti che il testo non indica."
       },
       {
         "question": "Perché le leggi intermedie e profonde (come Differenze, Emozione, Fiducia) contengono inevitabili ambiguità?",
         "options": [
-          "Perché Maeda ha redatto quei capitoli durante viaggi aerei privi di connessione internet",
-          "Perché gli editori imposero di non svelare i segreti industriali dei partner commerciali del consorzio",
-          "Perché la lingua inglese manca di sostantivi adatti a descrivere le interfacce software",
-          "Perché non riguardano oggetti rigidi ma la psicologia, la cultura e le sfumature mutevoli dell'animo umano"
+          "Perché sono state scritte per ultime e non sono state riviste",
+          "Perché si basano su dati di mercato che cambiano ogni anno",
+          "Perché riguardano la psicologia e la cultura, non oggetti rigidi",
+          "Perché valgono solo per il software e non per gli oggetti fisici"
         ],
-        "correctIndex": 3,
-        "explanation": "Le relazioni umane, le emozioni e il contesto non rispondono a regole rigide cartesiane: contengono paradossi fecondi."
+        "correctIndex": 2,
+        "explanation": "Le leggi intermedie e profonde toccano emozioni, fiducia e contesto: ambiti umani mutevoli, che non si possono ridurre a regole rigide come quelle sugli oggetti."
       },
       {
         "question": "A quante leggi era approdato inizialmente Maeda prima di applicare la disciplina della sintesi al proprio saggio?",
         "options": [
-          "A sedici leggi complesse, accorpate poi metodicamente attraverso lo SLIP",
-          "A quattro comandamenti categorici non negoziabili",
-          "A dodici assiomi derivati dalla geometria euclidea",
-          "A cento microsaggi pubblicati quotidianamente su una mailing list accademica"
+          "A dodici leggi, poi ridotte a dieci eliminando le meno usate",
+          "A otto leggi, poi ampliate a dieci con le tre chiavi",
+          "A venti leggi, poi divise tra leggi e chiavi della semplicità",
+          "A sedici leggi, poi accorpate in dieci con il metodo SLIP"
         ],
-        "correctIndex": 0,
-        "explanation": "Maeda stesso dovette applicare lo SLIP al proprio testo: partì da 16 leggi e le ridusse progressivamente fino a 10."
+        "correctIndex": 3,
+        "explanation": "Maeda partì da sedici leggi e le ridusse a dieci applicando a se stesso il metodo SLIP di organizzazione (Legge 2): un esempio di semplicità che usa i propri strumenti."
       },
       {
         "question": "Quale atteggiamento intellettuale caratterizza il designer che fa propria la Legge 9?",
         "options": [
-          "La pigrizia operativa che giustifica qualsiasi disordine visivo come 'scelta artistica inevitabile'",
-          "L'umiltà di riconoscere dove fermarsi, evitando semplificazioni rozze che impoverirebbero l'esperienza dell'utente",
-          "Il rifiuto categorico di collaborare con professionisti appartenenti ad altre discipline",
-          "La pretesa di brevettare ogni errore di fabbricazione come nuova funzionalità premium"
+          "La determinazione a semplificare ogni cosa, anche contro le resistenze",
+          "La fiducia che l'utente imparerà comunque a usare un sistema complesso",
+          "La scelta di nascondere tutta la complessità dietro un'interfaccia unica",
+          "L'umiltà di capire dove fermarsi, evitando semplificazioni che impoveriscono"
         ],
-        "correctIndex": 1,
-        "explanation": "Sapere quando non semplificare è una virtù superiore: protegge l'oggetto dal riduzionismo e rispetta la profondità della vita."
+        "correctIndex": 3,
+        "explanation": "Chi fa propria la Legge 9 sa che non tutto va semplificato: serve umiltà per fermarsi in tempo. Semplificare a ogni costo è proprio l'errore che la legge vuole evitare."
       }
     ],
     "openQuestions": [
@@ -1266,7 +1266,7 @@ window.MAEDA_DATA = [
     "title": "Legge 10 — L'UNICA",
     "subtitle": "«Sottrarre l'ovvio e aggiungere il significativo», l'aneddoto del rugby e la sintesi suprema",
     "readTime": "7 min",
-    "summary": "### L'enunciato della Legge 10: la sintesi suprema\n> **Legge 10: Semplicità significa sottrarre l'ovvio e aggiungere il significativo.**\n\nSe un progettista, manager o studente dovesse dimenticare tutte le leggi precedenti, le formule e i metodi codificati nei capitoli del libro, Maeda raccomanda di trattenere nella memoria una sola e unica sentenza risolutiva: **«Semplicità significa sottrarre l'ovvio e aggiungere il significativo»**.\n\nQuesta formula mirabile racchiude la quintessenza dell'intera disciplina:\n- **Sottrarre l'ovvio**: eliminare senza pietà tutto ciò che è ridondante, rumoroso, banale, autocelebrativo o secondario (l'ingombro visivo, i testi inutili, i comandi duplicati);\n- **Aggiungere il significativo**: valorizzare, impreziosire e proteggere ciò che conta realmente (il senso, la bellezza, l'emozione autentica, la chiarezza dell'obiettivo).\n\n### L'aneddoto della squadra di rugby giapponese: le bolle di champagne\nMaeda racconta un episodio illuminante tratto dallo sport agonistico internazionale. La nazionale giapponese di rugby, guidata dal leggendario commissario tecnico francese **Jean-Pierre Elissalde**, faticava contro squadre fisicamente possenti perché giocava in modo troppo rigido, prevedibile e scolastico (un'applicazione schematica e dottrinaria dei manuali tattici).  \nDurante un celebre discorso motivazionale, Elissalde non impartì l'ennesimo schema geometrico alla lavagna, ma esortò i propri atleti con una metafora poetica:\n> **«Diventate come le bolle in una coppa di champagne: salite verso l'alto in modo fluido, dinamico e imprevedibile!»**\n\nElissalde invitava i giocatori ad abbandonare l'eccesso di intellettualizzazione e calcolo mentale per **affidarsi all'intuito, alla reattività fluida e all'intelligenza contestuale**. La vera semplicità sul campo non nasce da cento regole rigide applicate con ansia, ma da una consapevolezza immediata e istintiva.\n\nMolte delle qualità più sublimi della semplicità sono **implicite** (non a caso, la parola inglese *implicit* è racchiusa dentro *simplicity*): non hanno bisogno di cartelli espliciti per manifestarsi.\n\n### Il gioco numerico della sintesi: da 10 a 1\nMaeda chiude il sistema delle leggi con una suggestiva operazione numerica:\n$$\\mathbf{10} \\;\\;\\longrightarrow\\;\\; \\text{Rimuovi lo } \\mathbf{0} \\text{ (sottrai il nulla/l'ovvio)} \\;\\;\\longrightarrow\\;\\; \\text{Resta l'} \\mathbf{1} \\;\\; (\\text{L'Unica})$$\nQuando vi trovate immersi in un dilemma progettuale intricato e i vari metodi (SHE, SLIP, BRAIN) sembrano contraddirsi a vicenda, **abbandonateli e passate direttamente alla Decima Legge: è la strada più semplice ed efficace per ritrovare la rotta**.\n\nMaeda giustifica anche la presenza delle Tre Chiavi Tecnologiche conclusive: avrebbe potuto eliminarle per purismo formale, ma ha scelto di mantenerle proprio in virtù della decima legge. Non essendo per nulla ovvie nel dibattito sul design dell'epoca, costituivano un'**aggiunta altamente significativa** per il futuro della tecnologia.",
+    "summary": "### L'enunciato della Legge 10: la sintesi suprema\n> **Legge 10: Semplicità significa sottrarre l'ovvio e aggiungere il significativo.**\n\nSe un progettista, manager o studente dovesse dimenticare tutte le leggi precedenti, le formule e i metodi codificati nei capitoli del libro, Maeda raccomanda di trattenere nella memoria una sola e unica sentenza risolutiva: **«Semplicità significa sottrarre l'ovvio e aggiungere il significativo»**.\n\nQuesta formula mirabile racchiude la quintessenza dell'intera disciplina:\n- **Sottrarre l'ovvio**: eliminare senza pietà tutto ciò che è ridondante, rumoroso, banale, autocelebrativo o secondario (l'ingombro visivo, i testi inutili, i comandi duplicati);\n- **Aggiungere il significativo**: valorizzare, impreziosire e proteggere ciò che conta realmente (il senso, la bellezza, l'emozione autentica, la chiarezza dell'obiettivo).\n\n### L'aneddoto della squadra di rugby giapponese: le bolle di champagne\nMaeda racconta un episodio illuminante tratto dallo sport agonistico internazionale. La nazionale giapponese di rugby, guidata dal leggendario commissario tecnico francese **Jean-Pierre Elissalde**, faticava contro squadre fisicamente possenti perché giocava in modo troppo rigido, prevedibile e scolastico (un'applicazione schematica e dottrinaria dei manuali tattici).  \nDurante un celebre discorso motivazionale, Elissalde non impartì l'ennesimo schema geometrico alla lavagna, ma esortò i propri atleti con una metafora poetica:\n> **«Diventate come le bolle in una coppa di champagne: salite verso l'alto in modo fluido, dinamico e imprevedibile!»**\n\nElissalde invitava i giocatori ad abbandonare l'eccesso di intellettualizzazione e calcolo mentale per **affidarsi all'intuito, alla reattività fluida e all'intelligenza contestuale**. La vera semplicità sul campo non nasce da cento regole rigide applicate con ansia, ma da una consapevolezza immediata e istintiva.\n\nMolte delle qualità più sublimi della semplicità sono **implicite** (non a caso, la parola inglese *implicit* è racchiusa dentro *simplicity*): non hanno bisogno di cartelli espliciti per manifestarsi.\n\n### Il gioco numerico della sintesi: da 10 a 1\nMaeda chiude il sistema delle leggi con una suggestiva operazione numerica:\n\n> **10 \\ \\ -> \\ \\ Rimuovi lo 0 (sottrai il nulla/l'ovvio) \\ \\ -> \\ \\ Resta l' 1 \\ \\ (L'Unica)**\n\nQuando vi trovate immersi in un dilemma progettuale intricato e i vari metodi (SHE, SLIP, BRAIN) sembrano contraddirsi a vicenda, **abbandonateli e passate direttamente alla Decima Legge: è la strada più semplice ed efficace per ritrovare la rotta**.\n\nMaeda giustifica anche la presenza delle Tre Chiavi Tecnologiche conclusive: avrebbe potuto eliminarle per purismo formale, ma ha scelto di mantenerle proprio in virtù della decima legge. Non essendo per nulla ovvie nel dibattito sul design dell'epoca, costituivano un'**aggiunta altamente significativa** per il futuro della tecnologia.",
     "keyPoints": [
       "La Legge 10 riassume l'intero saggio: 'Semplicità significa sottrarre l'ovvio e aggiungere il significativo'.",
       "Sottrarre l'ovvio elimina il superfluo; aggiungere il significativo inietta valore, empatia e qualità irrinunciabile.",
@@ -1291,57 +1291,57 @@ window.MAEDA_DATA = [
       {
         "question": "Quale formula compendia l'intero pensiero di John Maeda nella Legge 10?",
         "options": [
-          "Aumentare il numero di pixel per pollice quadrato riducendo la cornice esterna",
-          "La grafica industriale deve coincidere sempre con il risparmio dei materiali ferrosi",
-          "Semplicità significa sottrarre l'ovvio e aggiungere il significativo",
-          "Gli utenti devono adattarsi ai ritmi interni di calcolo delle macchine"
+          "Semplicità è togliere tutto ciò che si può togliere senza eccezioni",
+          "Semplicità è organizzare gli elementi in gruppi chiari e ordinati",
+          "Semplicità è sottrarre l'ovvio e aggiungere il significativo",
+          "Semplicità è nascondere la complessità dietro un'interfaccia piacevole"
         ],
         "correctIndex": 2,
-        "explanation": "La formula cardine è 'sottrarre l'ovvio e aggiungere il significativo', principio guida di tutto il buon design."
+        "explanation": "La Legge 10 («L'unica») riassume tutte le altre: togliere ciò che è ovvio e aggiungere ciò che ha significato. Togliere senza eccezioni dimentica la seconda metà della formula."
       },
       {
         "question": "Cosa intendeva Jean-Pierre Elissalde invitando la squadra di rugby a diventare come 'bolle in una coppa di champagne'?",
         "options": [
-          "Di bere bevande alcoliche negli spogliatoi prima del fischio d'inizio",
-          "Di saltare costantemente in alto per intercettare i passaggi aerei degli avversari",
-          "Di dipingere le proprie divise di colore giallo dorato per confondere la vista",
-          "Di abbandonare la rigidità schematica intellettuale per giocare con intuito, dinamismo e imprevedibile fluidità"
+          "Abbandonare gli schemi rigidi per giocare con intuito e fluidità",
+          "Seguire con precisione gli schemi di gioco studiati in allenamento",
+          "Restare compatti come un blocco unico per resistere agli avversari",
+          "Ridurre il gioco a poche azioni semplici e sempre ripetute"
         ],
-        "correctIndex": 3,
-        "explanation": "Le bolle di champagne salgono in modo fluido e imprevedibile: la metafora esorta a liberarsi da schematismi rigidi."
+        "correctIndex": 0,
+        "explanation": "Elissalde invita i giocatori a muoversi come le bollicine dello champagne, cioè a lasciare la rigidità schematica per un gioco intuitivo e imprevedibile. È l'opposto di seguire schemi studiati, che è il distrattore più vicino all'idea di organizzazione."
       },
       {
         "question": "Quale parola chiave della cognizione è contenuta letteralmente all'interno del termine inglese 'simplicity'?",
         "options": [
-          "'Implicit', a testimonianza del fatto che molte qualità della semplicità sono tacite e intuitive",
-          "'City', a indicare l'urbanizzazione metropolitana del design",
-          "'Plastic', a evidenziare l'uso dei polimeri sintetici nella tecnologia moderna",
-          "'Policy', a riprova dell'importanza delle normative burocratiche statali"
+          "'Simple', perché il termine contiene già la sua definizione",
+          "'Explicit', perché la semplicità richiede istruzioni chiare e visibili",
+          "'Complicity', perché la semplicità nasce dall'intesa con l'utente",
+          "'Implicit', perché molte qualità della semplicità sono tacite e intuitive"
         ],
-        "correctIndex": 0,
-        "explanation": "La radice di 'simplicity' contiene 'implicit': la vera semplicità agisce sottotraccia, senza bisogno di essere proclamata."
+        "correctIndex": 3,
+        "explanation": "Maeda nota che in simplicity è contenuta la parola implicit: molto della semplicità è tacito. 'Explicit' è il suo opposto, e 'complicity' non è contenuta nel termine."
       },
       {
         "question": "Cosa significa operativamente per un web designer 'sottrarre l'ovvio' in una pagina web?",
         "options": [
-          "Cancellare il codice sorgente CSS impedendo il caricamento degli stili tipografici",
-          "Eliminare testi autocelebrativi, banner ridondanti, pulsanti doppioni e spiegazioni ovvie che rallentano la lettura",
-          "Sostituire la barra di navigazione con una serie di quiz a trabocchetto",
-          "Nascondere il nome del brand aziendale per creare mistero tra i visitatori"
+          "Eliminare immagini e colori, lasciando solo il testo su sfondo bianco",
+          "Eliminare testi autocelebrativi, banner e pulsanti doppi che rallentano la lettura",
+          "Eliminare il menu di navigazione, affidando tutta la ricerca al motore interno",
+          "Eliminare i contenuti secondari, anche quando servono a una parte del pubblico"
         ],
         "correctIndex": 1,
-        "explanation": "Sottrarre l'ovvio significa ripulire lo schermo da tutto ciò che è banale e scontato, rispettando il tempo dell'utente."
+        "explanation": "Sottrarre l'ovvio significa togliere ciò che non aggiunge significato (testi autocelebrativi, banner ridondanti, doppioni), aggiungendo significato a ciò che resta. Eliminare contenuti utili a una parte del pubblico tradisce la seconda metà della Legge 10."
       },
       {
         "question": "Cosa rappresenta l'azione di 'aggiungere il significativo' secondo la Legge 10?",
         "options": [
-          "Aumentare il numero di passaggi obbligatori nella procedura di checkout per profilare l'utente",
-          "Aggiungere file musicali di sottofondo in autoplay su tutte le pagine del sito",
-          "Inserire dettagli di altissimo valore, bellezza, cura tipografica e calore emotivo che donano senso al prodotto",
-          "Introdurre watermark protettivi giganti su ogni immagine presente nel catalogo"
+          "Inserire dettagli di valore, cura e calore emotivo che danno senso al prodotto",
+          "Aggiungere nuove funzioni per rendere il prodotto più completo",
+          "Aggiungere spiegazioni testuali accanto a ogni comando",
+          "Aggiungere elementi decorativi per riempire gli spazi rimasti vuoti"
         ],
-        "correctIndex": 2,
-        "explanation": "Aggiungere il significativo trasforma il minimalismo sterile in un'esperienza ricca di senso, eleganza e valore profondo."
+        "correctIndex": 0,
+        "explanation": "Aggiungere il significativo non è aggiungere funzioni o decorazioni, ma ciò che dà senso: cura, bellezza, emozione. Aggiungere funzioni riporterebbe alla complessità che la Legge 1 ha tolto."
       }
     ],
     "openQuestions": [
@@ -1417,57 +1417,57 @@ window.MAEDA_DATA = [
       {
         "question": "Quale paradigma informatico contemporaneo incarna perfettamente la chiave 'LONTANO' («Più sembra meno: basta semplicemente spostarlo lontano»)?",
         "options": [
-          "Il salvataggio esclusivo su supporti a nastro magnetico conservati in cassaforte",
-          "La disconnessione permanente dei computer aziendali da qualsiasi rete locale",
-          "L'obbligo di installare schede madri raffreddate ad azoto liquido",
-          "Il modello del Cloud Computing e del Software-as-a-Service (SaaS), in cui il calcolo avviene su server farm remote"
+          "L'archivio locale, con tutti i dati salvati sul disco del computer",
+          "Il cloud computing e il software come servizio, con calcolo su server remoti",
+          "Il software installato, con aggiornamenti scaricati periodicamente",
+          "Il codice aperto, con il lavoro condiviso da una comunità di sviluppatori"
         ],
-        "correctIndex": 3,
-        "explanation": "Lontano significa spostare l'elaborazione pesante nel cloud (come Google o Salesforce), lasciando il client leggero ed essenziale."
+        "correctIndex": 1,
+        "explanation": "La chiave LONTANO dice che spostare lontano la complessità fa sembrare il sistema più semplice: è il principio del cloud e del SaaS. Il codice aperto corrisponde invece alla chiave APERTO."
       },
       {
         "question": "Per quale motivo il modello Open Source (es. Linux) si rivela formidabile nella gestione della complessità software?",
         "options": [
-          "Perché il potere e l'intelligenza collettiva dei molti consente di scoprire e correggere errori molto più rapidamente di una singola azienda",
-          "Perché vieta l'uso di computer commerciali da parte dei cittadini privati",
-          "Perché rende illegale la retribuzione economica degli sviluppatori di software",
-          "Perché elimina automaticamente la necessità di testare il codice sorgente"
+          "Perché un'unica azienda controlla il codice e ne garantisce la qualità",
+          "Perché l'intelligenza collettiva trova e corregge gli errori più in fretta",
+          "Perché il codice viene sviluppato lontano dall'utente, su server remoti",
+          "Perché il software viene ridotto alle sole funzioni essenziali"
         ],
-        "correctIndex": 0,
-        "explanation": "Il potere dei molti compensa il potere dei pochi: una comunità aperta e diffusa rileva anomalie e ottimizza il sistema in tempo reale."
+        "correctIndex": 1,
+        "explanation": "Nella chiave APERTO la forza dell'open source è il contributo dei molti, che scoprono e correggono errori più rapidamente di una sola azienda. Il calcolo su server remoti è invece il tema della chiave LONTANO."
       },
       {
         "question": "In cosa differisce l'apertura tramite API (Application Programming Interface) rispetto al modello Open Source puro?",
         "options": [
-          "Le API richiedono sempre l'acquisto di server fisici dedicati all'interno della propria abitazione",
-          "Le API espongono funzionalità e dati specifici consentendo l'integrazione tra servizi, senza necessariamente rendere pubblico l'intero codice sorgente",
-          "Le API sono utilizzabili esclusivamente da enti governativi a fini di controllo fiscale",
-          "Le API possono essere scritte unicamente nel linguaggio macchina binario puro"
+          "Rendono pubblico tutto il codice sorgente, come il modello Linux",
+          "Espongono funzioni e dati specifici senza rendere pubblico tutto il codice",
+          "Spostano il calcolo su server remoti senza alcun accesso esterno",
+          "Riducono il programma alle sole funzioni usate più spesso"
         ],
         "correctIndex": 1,
-        "explanation": "Le API aprono l'accesso controllato a dati e servizi (come Google Maps o Amazon), permettendo a terzi di costruire nuovo valore."
+        "explanation": "Le API sono un'apertura parziale: permettono ad altri servizi di integrarsi usando funzioni e dati specifici, senza pubblicare l'intero codice. Pubblicare tutto il codice è invece l'open source puro."
       },
       {
         "question": "Quale ostacolo primario impedisce a un congegno tecnologico di essere veramente semplice secondo la chiave 'ENERGIA'?",
         "options": [
-          "Il colore scuro della plastica impiegata per il telaio portante",
-          "L'assenza di un display a colori con tecnologia OLED flessibile",
-          "La dipendenza perenne dal rifornimento elettrico e l'ansia della batteria scarica",
-          "La velocità di trasmissione dei dati via bluetooth inferiore a un gigabit"
+          "La dipendenza continua dall'energia e l'ansia della batteria scarica",
+          "La quantità di funzioni che i produttori aggiungono a ogni modello",
+          "La lentezza dei processori, che allunga i tempi di risposta",
+          "La difficoltà di imparare comandi diversi per ogni dispositivo"
         ],
-        "correctIndex": 2,
-        "explanation": "Finché un oggetto deve essere ricaricato ogni poche ore o necessita di cavi, l'utente è vincolato all'ansia del consumo energetico."
+        "correctIndex": 0,
+        "explanation": "La chiave ENERGIA osserva che un oggetto non può essere davvero semplice se dipende continuamente da prese e batterie. Le funzioni in eccesso sono un problema reale, ma riguardano la Legge 1."
       },
       {
         "question": "Quale verità sul processo creativo viene ribadita da Maeda nell'analisi della terza chiave tecnologica?",
         "options": [
-          "I migliori progetti si realizzano solo quando il budget finanziario è illimitato",
-          "L'assenza totale di scadenze temporali garantisce sempre l'eccellenza del risultato",
-          "I designer non dovrebbero mai consultare programmatori o ingegneri dei materiali",
-          "Le soluzioni più geniali e brillanti sbocciano in presenza di vincoli e restrizioni severe"
+          "Le soluzioni migliori nascono quando le risorse sono abbondanti",
+          "Le soluzioni migliori nascono dal lavoro individuale e isolato",
+          "Le soluzioni migliori nascono in presenza di vincoli e limiti severi",
+          "Le soluzioni migliori nascono copiando modelli già riusciti"
         ],
-        "correctIndex": 3,
-        "explanation": "La scarsità di risorse è la madre dell'ingegno: quando ci sono vincoli rigidi (di spazio, energia o memoria), nasce il design sublime."
+        "correctIndex": 2,
+        "explanation": "Maeda ribadisce che i vincoli stimolano la creatività: limiti di energia, spazio o budget spingono verso soluzioni più semplici e geniali."
       }
     ],
     "openQuestions": [
@@ -1518,7 +1518,7 @@ window.MAEDA_DATA = [
     "title": "Vita, Tecnologia ed Epilogo",
     "subtitle": "Ivan Illich: abilitazione vs disabilitazione, la lezione di Marc e i ricordi che contano",
     "readTime": "8 min",
-    "summary": "### La tecnologia e la vita: padroni o plasmati?\n> **«La tecnologia e la vita diventano complicate solo se lasciate che lo diventino.»**\n\nCon questa affermazione perentoria si apre l'epilogo filosofico del saggio. Maeda confessa una rivelazione autobiografica maturata durante gli anni giovanili alla scuola d'arte: la sensazione destabilizzante che **la tecnologia informatica stesse plasmando il suo modo di pensare e di vivere molto più di quanto lui riuscisse a plasmare lei**.  \nL'essere umano inventa strumenti per emanciparsi, ma finisce troppo spesso per diventarne il servo involontario, intrappolato in un ciclo continuo di aggiornamenti, compatibilità fallite e manutenzioni coatte.\n\n### Ivan Illich e il paradosso delle professioni disabilitanti\nPer dare profondità sociologica a questa inquietudine, Maeda chiama in causa il pensiero radicale del filosofo e pedagogista **Ivan Illich** (*Nemesi medica*, *Descolarizzare la società*):\n- La progressiva istituzionalizzazione della società e la nascita delle corporazioni professionali iper-specializzate hanno finito per **«mutilare» (disabilitare) l'individuo comune**.\n- Gli avvocati gestiscono dispute che un tempo le comunità civili risolvevano da sole attraverso il dialogo e il buon senso;\n- I sistemi sanitari burocratizzati monopolizzano la cura di malesseri che un tempo venivano affrontati con rimedi domestici e solidarietà di vicinato.\n\nNel mondo digitale contemporaneo si verifica una drammatica duplicità:\n$$\\text{LA TECNOLOGIA È INSIEME UN MEZZO PER } \\mathbf{\\text{ABILITARE}} \\;\\;\\text{E PER } \\mathbf{\\text{MUTILARE}}.$$\n- Ci abilita permettendoci di calcolare, comunicare istantaneamente con l'altro capo del pianeta e disegnare scenari grafici incredibili;\n- Ma contemporaneamente ci disabilita e ci paralizza non appena la macchina si inceppa: l'attesa snervante per la ricarica dell'inchiostro della stampante, la riunione bloccata perché il computer portatile non dialoga con la presa VGA del videoproiettore, il panico se manca la connessione Wi-Fi.\n- In quei momenti di collasso tecnologico, l'esclamazione universale è l'amara constatazione: **«Avrei fatto molto meglio senza!»**.\n\n### La lezione di Marc: una sola mensola sopra il letto\nLa riflessione culmina nel toccante aneddoto di **Marc**, uno studente universitario del MIT che scelse di prestare servizio come volontario all'interno di un ricovero ospedaliero per malati terminali e anziani soli:\n- Marc rimase profondamente colpito da un dettaglio architettonico comune a tutte le stanze: sopra ogni singolo letto dei pazienti **c'era una sola, minuscola mensola**, sulla quale erano riposti tutti i beni personali che all'ospite era concesso portare con sé per l'ultimo tratto della vita.\n- Lo studente si domandò con commozione: *«Quando lo spazio si riduce a un'unica mensola e la vita volge al termine, quali pochissime cose preziose scegli di tenere con te fino alla fine?»*.\n- La risposta dei fatti era disarmante nella sua purezza: nessuno teneva certificati azionari, microchip, gadget elettronici o orologi di lusso. Quasi sempre vi erano soltanto:\n  - Una fotografia sbiadita della famiglia o del partner;\n  - Un anello nuziale o una medaglietta tramandata;\n  - Un piccolo ricordo d'infanzia o una conchiglia raccolta in gioventù.\n\nMaeda commenta la lezione di Marc con una sentenza incancellabile:\n> **«Alla fine i ricordi sono la sola cosa che conta davvero.»**  \nLa vita materiale e tecnologica può apparire mostruosamente complicata, ma nel suo nucleo essenziale può e deve tornare a essere semplice.\n\n### Epilogo: una promessa di semplicità\nLe dieci leggi e le tre chiavi non pretendono di aver esaurito il mistero della semplicità né pongono la parola fine alla ricerca. Il dibattito continuerà finché esisteranno esseri umani che creano artefatti e cercano la serenità. Maeda conclude il suo viaggio con una promessa sincera al lettore e al mondo: **qualunque cosa accada, «rimarrà semplice»**.",
+    "summary": "### La tecnologia e la vita: padroni o plasmati?\n> **«La tecnologia e la vita diventano complicate solo se lasciate che lo diventino.»**\n\nCon questa affermazione perentoria si apre l'epilogo filosofico del saggio. Maeda confessa una rivelazione autobiografica maturata durante gli anni giovanili alla scuola d'arte: la sensazione destabilizzante che **la tecnologia informatica stesse plasmando il suo modo di pensare e di vivere molto più di quanto lui riuscisse a plasmare lei**.  \nL'essere umano inventa strumenti per emanciparsi, ma finisce troppo spesso per diventarne il servo involontario, intrappolato in un ciclo continuo di aggiornamenti, compatibilità fallite e manutenzioni coatte.\n\n### Ivan Illich e il paradosso delle professioni disabilitanti\nPer dare profondità sociologica a questa inquietudine, Maeda chiama in causa il pensiero radicale del filosofo e pedagogista **Ivan Illich** (*Nemesi medica*, *Descolarizzare la società*):\n- La progressiva istituzionalizzazione della società e la nascita delle corporazioni professionali iper-specializzate hanno finito per **«mutilare» (disabilitare) l'individuo comune**.\n- Gli avvocati gestiscono dispute che un tempo le comunità civili risolvevano da sole attraverso il dialogo e il buon senso;\n- I sistemi sanitari burocratizzati monopolizzano la cura di malesseri che un tempo venivano affrontati con rimedi domestici e solidarietà di vicinato.\n\nNel mondo digitale contemporaneo si verifica una drammatica duplicità:\n\n> **LA TECNOLOGIA È INSIEME UN MEZZO PER ABILITARE \\ \\ E PER MUTILARE**\n\n- Ci abilita permettendoci di calcolare, comunicare istantaneamente con l'altro capo del pianeta e disegnare scenari grafici incredibili;\n- Ma contemporaneamente ci disabilita e ci paralizza non appena la macchina si inceppa: l'attesa snervante per la ricarica dell'inchiostro della stampante, la riunione bloccata perché il computer portatile non dialoga con la presa VGA del videoproiettore, il panico se manca la connessione Wi-Fi.\n- In quei momenti di collasso tecnologico, l'esclamazione universale è l'amara constatazione: **«Avrei fatto molto meglio senza!»**.\n\n### La lezione di Marc: una sola mensola sopra il letto\nLa riflessione culmina nel toccante aneddoto di **Marc**, uno studente universitario del MIT che scelse di prestare servizio come volontario all'interno di un ricovero ospedaliero per malati terminali e anziani soli:\n- Marc rimase profondamente colpito da un dettaglio architettonico comune a tutte le stanze: sopra ogni singolo letto dei pazienti **c'era una sola, minuscola mensola**, sulla quale erano riposti tutti i beni personali che all'ospite era concesso portare con sé per l'ultimo tratto della vita.\n- Lo studente si domandò con commozione: *«Quando lo spazio si riduce a un'unica mensola e la vita volge al termine, quali pochissime cose preziose scegli di tenere con te fino alla fine?»*.\n- La risposta dei fatti era disarmante nella sua purezza: nessuno teneva certificati azionari, microchip, gadget elettronici o orologi di lusso. Quasi sempre vi erano soltanto:\n  - Una fotografia sbiadita della famiglia o del partner;\n  - Un anello nuziale o una medaglietta tramandata;\n  - Un piccolo ricordo d'infanzia o una conchiglia raccolta in gioventù.\n\nMaeda commenta la lezione di Marc con una sentenza incancellabile:\n> **«Alla fine i ricordi sono la sola cosa che conta davvero.»**  \nLa vita materiale e tecnologica può apparire mostruosamente complicata, ma nel suo nucleo essenziale può e deve tornare a essere semplice.\n\n### Epilogo: una promessa di semplicità\nLe dieci leggi e le tre chiavi non pretendono di aver esaurito il mistero della semplicità né pongono la parola fine alla ricerca. Il dibattito continuerà finché esisteranno esseri umani che creano artefatti e cercano la serenità. Maeda conclude il suo viaggio con una promessa sincera al lettore e al mondo: **qualunque cosa accada, «rimarrà semplice»**.",
     "keyPoints": [
       "La vita e la tecnologia diventano complicate solo se permettiamo passivamente che prendano il sopravvento su di noi.",
       "Ivan Illich dimostra che la tecnologia possiede una doppia natura: è insieme strumento di abilitazione e di mutilazione umana.",
@@ -1543,57 +1543,57 @@ window.MAEDA_DATA = [
       {
         "question": "Quale consapevolezza inquieta maturò John Maeda durante i suoi studi giovanili alla scuola d'arte?",
         "options": [
-          "Che la tecnologia informatica stava plasmando la sua mente e le sue abitudini molto più di quanto lui plasmasse lei",
-          "Che la pittura a olio sarebbe stata dichiarata illegale dai governi mondiali entro dieci anni",
-          "Che i computer desktop avrebbero sostituito per sempre l'uso delle matite di grafite",
-          "Che non esistevano caratteri tipografici adatti alla stampa dei quotidiani nazionali"
+          "Che la tecnologia avrebbe presto sostituito del tutto il lavoro manuale",
+          "Che la tecnologia era troppo complessa per essere usata dagli artisti",
+          "Che la tecnologia sarebbe diventata più semplice con il passare del tempo",
+          "Che la tecnologia stava plasmando lui molto più di quanto lui plasmasse lei"
         ],
-        "correctIndex": 0,
-        "explanation": "Maeda avvertì il pericolo dell'eterodirezione: l'uomo che si illude di dominare la macchina ne viene invece plasmato e condizionato."
+        "correctIndex": 3,
+        "explanation": "Da giovane Maeda si accorge che i computer stavano modellando la sua mente e le sue abitudini più di quanto lui usasse loro: da qui nasce la sua riflessione sulla semplicità."
       },
       {
         "question": "In che modo il pensiero di Ivan Illich descrive l'impatto della tecnologia moderna sulle capacità umane?",
         "options": [
-          "Come uno strumento di puro progresso che elimina ogni sofferenza psicologica",
-          "Come un dispositivo ambivalente: da un lato conferisce abilità eccezionali, dall'altro 'mutila' e atrofizza l'autonomia della persona comune",
-          "Come un complotto ordito dalle compagnie telefoniche per imporre l'uso dei cavi sottomarini",
-          "Come una scienza esatta priva di ripercussioni ecologiche o filosofiche"
+          "Neutrale: il suo effetto dipende solo dall'uso che ne fa ogni persona",
+          "Ambivalente: dà abilità straordinarie ma atrofizza l'autonomia delle persone",
+          "Liberatoria: riduce la fatica e restituisce alle persone tempo libero",
+          "Inevitabile: si evolve da sola, indipendentemente dalle scelte umane"
         ],
         "correctIndex": 1,
-        "explanation": "Illich teorizza la mutilazione: quando deleghiamo tutto alla tecnica, perdiamo la capacità di fare e risolvere da soli."
+        "explanation": "Per Illich la tecnologia moderna da un lato conferisce capacità eccezionali, dall'altro mutila l'autonomia della persona comune, che diventa dipendente dagli strumenti. La lettura neutrale è il distrattore più insidioso, ma ignora proprio questa ambivalenza."
       },
       {
         "question": "Cosa simboleggia l'aneddoto di Marc e dell'unica mensola sopra il letto dei pazienti nel ricovero?",
         "options": [
-          "La necessità per gli ospedali di dotarsi di magazzini automatizzati sotterranei",
-          "L'errore degli architetti nell'utilizzare mensole in compensato invece che in legno massiccio",
-          "La dimostrazione che alla fine dell'esistenza il superfluo svanisce e rimangono solo i ricordi e i legami affettivi",
-          "L'importanza di archiviare tutti i documenti sanitari su chiavette USB crittografate"
+          "Che i pazienti preferiscono stanze arredate in modo minimale e funzionale",
+          "Che lo spazio ospedaliero deve essere ridotto alle sole attrezzature mediche",
+          "Che alla fine della vita il superfluo sparisce e restano ricordi e affetti",
+          "Che gli oggetti personali vanno organizzati per essere trovati in fretta"
         ],
         "correctIndex": 2,
-        "explanation": "La singola mensola rappresenta la sintesi suprema della vita: quando si può tenere poco, si scopre che contano solo i ricordi."
+        "explanation": "L'unica mensola sopra il letto mostra che, alla fine, contano pochi oggetti carichi di ricordi e legami. Non è una lezione di arredamento minimale, ma di significato."
       },
       {
         "question": "Quale tipica frustrazione moderna riassume il grido «Avrei fatto molto meglio senza!»?",
         "options": [
-          "Il costo del biglietto del treno ad alta velocità per una conferenza accademica",
-          "La mancata vincita alla lotteria nazionale di capodanno",
-          "La lentezza di caricamento delle pagine web create senza fogli di stile CSS",
-          "Il blocco totale di un'attività umana a causa del mancato dialogo tra due connettori tecnologici (es. PC e proiettore)"
+          "L'attività bloccata perché due dispositivi non riescono a comunicare tra loro",
+          "Il tempo perso a imparare un programma nuovo invece di quello abituale",
+          "La difficoltà di scegliere tra troppi modelli dello stesso dispositivo",
+          "L'attesa davanti a un aggiornamento che non si può interrompere"
         ],
-        "correctIndex": 3,
-        "explanation": "Quando la tecnologia che doveva aiutarci fallisce e blocca tutto, scopriamo con rabbia di essere diventati suoi ostaggi."
+        "correctIndex": 0,
+        "explanation": "«Avrei fatto molto meglio senza!» esprime la frustrazione di chi vede un'attività bloccata dal mancato dialogo tra due tecnologie, come un portatile e un proiettore. Gli altri sono disagi reali, ma non è il caso descritto da Maeda."
       },
       {
         "question": "Qual è la massima che Maeda pone a fondamento dell'epilogo sulla vita e sul design?",
         "options": [
-          "La tecnologia e la vita diventano complicate solo se lasciate che lo diventino",
-          "Il profitto trimestrale è l'unico metro di giudizio per un interaction designer",
-          "Chi non possiede uno smartphone di ultima generazione non può comprendere la bellezza",
-          "La complessità deve essere aumentata per scoraggiare la concorrenza straniera"
+          "La tecnologia e la vita diventano semplici solo togliendo tutto il superfluo",
+          "La tecnologia e la vita sono complicate per natura e vanno accettate così",
+          "La tecnologia e la vita diventano complicate solo se lasciamo che lo diventino",
+          "La tecnologia e la vita si semplificano soltanto con l'esperienza"
         ],
-        "correctIndex": 0,
-        "explanation": "La semplicità è una scelta attiva: spetta a noi non permettere che la frenesia tecnologica colonizzi la nostra serenità."
+        "correctIndex": 2,
+        "explanation": "La massima finale affida la responsabilità a noi: la complessità cresce solo se la lasciamo crescere. Il distrattore del togliere tutto riduce Maeda alla sola Legge 1."
       }
     ],
     "openQuestions": [

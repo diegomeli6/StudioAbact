@@ -56,32 +56,32 @@ window.ARTE_DATA = [
       {
         "question": "Quale principio cardine teorizzato da Achille Bonito Oliva definisce l'attitudine dell'artista transavanguardista?",
         "options": [
-          "Il nomadismo culturale ed eclettico che attraversa liberamente la storia dell'arte passata",
-          "L'obbligo di abbandonare definitivamente la pittura su tela a favore delle performance corporee",
-          "La sottomissione rigorosa dell'immagine visiva alle strutture matematiche del calcolatore",
-          "Il divieto assoluto di usare figure umane all'interno della composizione"
+          "Il rifiuto della pittura a favore della performance",
+          "Il nomadismo culturale tra stili ed epoche del passato",
+          "La progettazione dell'immagine con il computer",
+          "L'astrazione geometrica pura e senza figure"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "Bonito Oliva teorizza il nomadismo come superamento della freccia del tempo lineare: l'artista attinge liberamente a qualsiasi stile, epoca o repertorio visivo senza vincoli ideologici."
       },
       {
         "question": "Quale tra i cinque artisti della Transavanguardia si caratterizza per una pittura aniconica, lirica e spaziale definita 'di regno'?",
         "options": [
-          "Nicola De Maria",
+          "Mimmo Paladino",
           "Sandro Chia",
           "Enzo Cucchi",
-          "Mimmo Paladino"
+          "Nicola De Maria"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "Nicola De Maria è l'unico dei cinque artisti a rifiutare la figurazione narrativa, concentrandosi sulla purezza spirituale del colore e sull'invasione cromatica delle pareti architettoniche."
       },
       {
         "question": "Quale tecnica scultoreo-pittorica rende celebre Julian Schnabel all'inizio degli anni Ottanta?",
         "options": [
-          "L'incollaggio di frammenti di piatti e ceramiche frantumate sulla superficie del quadro (Plate Paintings)",
-          "La fusione a cera persa di sculture in bronzo iperrealiste a grandezza naturale",
-          "La stampa serigrafica industriale su fogli di lamiera metallica zincata",
-          "L'uso esclusivo di inchiostri fluorescenti stesi con aerografo da carrozzeria"
+          "I Plate Paintings, con cocci di piatti incollati sulla tela",
+          "I dipinti su velluto con figure prese dai fumetti",
+          "Le tele bruciate e ricucite con filo di ferro",
+          "I grandi ritratti fotografici ritoccati a olio"
         ],
         "correctIndex": 0,
         "explanation": "I Plate Paintings di Schnabel uniscono l'accidentalità materica dei cocci di ceramica alla gestualità espressionista, creando una superficie accidentata e tattile."
@@ -89,21 +89,21 @@ window.ARTE_DATA = [
       {
         "question": "Quale elemento accomuna la ricerca poetica di Enzo Cucchi e Mimmo Paladino?",
         "options": [
-          "Il legame con il substrato arcaico, mitologico e tellurico delle civiltà mediterranee",
-          "L'adesione rigorosa ai canoni dell'astrazione geometrica di matrice optical",
-          "L'uso esclusivo della fotografia a colori di grande formato senza intervento manuale",
-          "La riproduzione fedele dei cartelloni pubblicitari della società dei consumi americana"
+          "L'adesione all'astrazione ottica e cinetica",
+          "Il legame con il mondo arcaico e mitico del Mediterraneo",
+          "L'uso della fotografia di grande formato",
+          "La citazione delle immagini pubblicitarie americane"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "Sia Cucchi che Paladino affondano le radici nella memoria ancestrale: Cucchi evoca le forze primordiali della terra e della morte, mentre Paladino interroga gli archetipi e le maschere del bacino campano e mediterraneo."
       },
       {
         "question": "In quale storica mostra del 1980 viene lanciata internazionalmente la nuova generazione di pittori europei?",
         "options": [
-          "Aperto '80 ai Magazzini del Sale durante la Biennale di Venezia",
-          "Les Magiciens de la Terre al Centre Pompidou di Parigi",
-          "Freeze nei magazzini dismessi dei Docklands a Londra",
-          "Post Human al Castello di Rivoli a Torino"
+          "Aperto '80, alla Biennale di Venezia",
+          "Zeitgeist, al Martin-Gropius-Bau di Berlino",
+          "A New Spirit in Painting, alla Royal Academy",
+          "Westkunst, alla Fiera di Colonia"
         ],
         "correctIndex": 0,
         "explanation": "Aperto '80, ideata da Bonito Oliva e Szeemann, segnò l'irruzione della Transavanguardia e della nuova pittura nella più importante vetrina internazionale d'arte."
@@ -225,54 +225,54 @@ window.ARTE_DATA = [
       {
         "question": "Quale obiettivo formale e teorico persegue Georg Baselitz attraverso il capovolgimento delle figure sulle sue tele?",
         "options": [
-          "Distruggere il primato del soggetto narrativo a favore dell'autonomia pura del colore e della stesura pittorica",
-          "Prendere in giro i visitatori dei musei costringendoli a ruotare la testa per guardare il quadro",
-          "Dimostrare scientificamente gli effetti della forza di gravità sui corpi umani",
-          "Copiare fedelmente i disegni preparatori realizzati per mezzo di specchi concavi"
+          "Studiare scientificamente la percezione rovesciata",
+          "Ridicolizzare il pubblico dei musei",
+          "Liberare la pittura dal soggetto narrativo",
+          "Imitare le icone ortodosse russe"
         ],
-        "correctIndex": 0,
+        "correctIndex": 2,
         "explanation": "Baselitz capovolge il motivo per annullarne la componente illustrativa: il quadro cessa di essere una finestra sul mondo reale e diventa pura pittura."
       },
       {
         "question": "Quale poeta ebreo di lingua tedesca sopravvissuto alla Shoah ispira profondamente i cicli pittorici di Anselm Kiefer?",
         "options": [
-          "Paul Celan",
+          "Bertolt Brecht",
           "Rainer Maria Rilke",
-          "Johann Wolfgang von Goethe",
+          "Paul Celan",
           "Friedrich Hölderlin"
         ],
-        "correctIndex": 0,
+        "correctIndex": 2,
         "explanation": "La poesia Todesfuge (Fuga di morte) di Paul Celan, con i personaggi archetipici di Margarethe (la donna ariana dai capelli d'oro) e Sulamith (l'ebrea dai capelli di cenere), è la matrice poetica di Kiefer."
       },
       {
         "question": "Quale galleria autogestita di Berlino Ovest divenne il quartier generale della Heftige Malerei alla fine degli anni Settanta?",
         "options": [
+          "La Galerie Paul Maenz a Colonia",
+          "La Galerie Michael Werner a Colonia",
           "La Galerie am Moritzplatz a Kreuzberg",
-          "La Fun Gallery nell'East Village",
-          "La Galleria L'Attico a Roma",
-          "La Marlborough Gallery a Londra"
+          "La Galerie Neue Wilde a Monaco"
         ],
-        "correctIndex": 0,
+        "correctIndex": 2,
         "explanation": "Fondata da Rainer Fetting, Helmut Middendorf, Salomé e Bernd Zimmer, la Galerie am Moritzplatz fu la fucina dell'espressionismo selvaggio berlinese."
       },
       {
         "question": "Con quale opera scandalosa Georg Baselitz rappresentò la Germania alla Biennale di Venezia del 1980?",
         "options": [
-          "Modello per una scultura (un idolo lignee intagliato con un braccio teso verso l'alto)",
-          "Una serie di manifesti politici stampati con la tecnica del ciclostile",
-          "Un'automobile rovesciata e coperta di stracci imbevuti di benzina",
-          "Una performance in cui l'artista rimaneva immobile per sei giorni consecutivi"
+          "Un'installazione di sedie bruciate e sacchi di sabbia",
+          "Una serie di grandi tele dipinte a dita sul pavimento",
+          "Un ciclo di ritratti capovolti dei suoi amici pittori",
+          "Modell für eine Skulptur, idolo in legno con il braccio alzato"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "La scultura lignea intagliata rozza a motosega suscitò accese polemiche per il braccio alzato che alcuni critici tedeschi fraintesero come un saluto nazista."
       },
       {
         "question": "Quale mostra epocale del 1982, allestita al Martin-Gropius-Bau a pochi metri dal Muro di Berlino, suggellò il trionfo del Neoespressionismo?",
         "options": [
           "Zeitgeist",
-          "When Attitudes Become Form",
-          "Primary Structures",
-          "Sensation"
+          "Documenta 7",
+          "A New Spirit in Painting",
+          "Westkunst"
         ],
         "correctIndex": 0,
         "explanation": "Curata da Christos Joachimides e Norman Rosenthal, Zeitgeist fu il manifesto definitivo dello spirito del tempo dominato dal Neoespressionismo."
@@ -345,7 +345,7 @@ window.ARTE_DATA = [
     "title": "Graffiti Writing e Street Art",
     "subtitle": "Dai vagoni della metropolitana ai loft di SoHo: la cultura urbana globale",
     "readTime": "12 min",
-    "summary": "### 1. Nascita e fenomenologia del Writing a New York\n\nTra la fine degli anni Sessanta e i primi anni Settanta, nei quartieri degradati e periferici di New York — in particolare il South Bronx, Brooklyn e Harlem — nasce spontaneamente un fenomeno visivo che avrebbe rivoluzionato la percezione dello spazio pubblico: il **Graffiti Writing**. Inizialmente praticato da giovanissimi adolescenti appartenenti alle comunità afroamericane e portoricane, il writing nasce come affermazione radicale di identità individuale in una metropoli alienante. Il gesto primario è la 'tag', la firma stilizzata tracciata a pennarello indelebile o vernice spray sulle superfici urbane: celebre il caso pionieristico di **Taki 183**, un ragazzo greco di Washington Heights la cui firma comparve ovunque a Manhattan, immortalato da un articolo del *New York Times* nel 1971.\n\nRapidamente, il fenomeno evolve dalla semplice firma alla conquista dei treni della metropolitana (le carrozze della MTA). Il vagone della metro è il supporto ideale: è mobile, attraversa tutti e cinque i distretti della città portando il nome del writer dai sobborghi fino al cuore benestante di Manhattan. Nascono stili grafici sempre più complessi e sofisticati:\n* **Throw-up**: Scritta rapida a due colori, con contorno morbido e riempimento veloce.\n* **Bubble letters**: Lettere rigonfie, arrotondate e dinamiche, create da writer come Phase 2.\n* **Wild Style**: Lettere geometriche, intrecciate, spigolose, arricchite da frecce, spuntoni e collegamenti tridimensionali, volutamente indecifrabili per i non addetti ai lavori.\n* **Piece e Whole car**: Grandi capolavori che coprono l'intera fiancata o persino due carrozze consecutive di un convoglio ferroviario.\n\nQuesto movimento clandestino, duramente represso dalle autorità municipali con milioni di dollari spesi in recinzioni e solventi chimici, fa parte di una più vasta rivoluzione culturale: la nascita della **cultura Hip-Hop**, che unisce quattro discipline inseparabili: il writing, il deejaying (lo scratch sui vinili inventato da DJ Kool Herc e Grandmaster Flash), l'emceeing (il rap) e il breakdancing (b-boying).\n\n---\n\n### 2. Il passaggio dalla strada alle gallerie: L'East Village e SoHo\n\nNei primi anni Ottanta avviene il cortocircuito tra la strada e il mercato ufficiale dell'arte. Storici dell'arte, curatori indipendenti come Diego Cortez e galleristi d'avanguardia intuiscono la prorompente vitalità di questi giovani autodidatti:\n* Nel **1981**, al MoMA PS1 di Long Island City, Diego Cortez cura la leggendaria mostra **New York / New Wave**, esponendo fianco a fianco per la prima volta artisti accademici, musicisti no wave (come Blondie e Talking Heads) e writers di strada.\n* Patti Astor apre la **Fun Gallery** nell'East Village, la prima galleria commerciale a rappresentare e promuovere writers come Fab 5 Freddy, Futura 2000, Lee Quiñones, Zephyr, Dondi White e Rammellzee.\n* Tony Shafrazi apre a SoHo una galleria che consacra definitivamente il graffitismo come fenomeno del collezionismo internazionale miliardario.\n\n---\n\n### 3. Keith Haring: L'alfabeto universale e l'attivismo sociale\n\nNato in Pennsylvania e trasferitosi a New York per studiare alla School of Visual Arts, **Keith Haring (Reading, 1958 - New York, 1990)** elabora un linguaggio grafico inconfondibile, sintetico e universale:\n* **I Subway Drawings (1980–1985)**: Haring nota che nella metropolitana i cartelloni pubblicitari scaduti vengono coperti con fogli di carta nera opaca in attesa dei nuovi manifesti. Armato di gessetti bianchi da lavagna, Haring scende nelle banchine sotterranee e realizza migliaia di disegni fulminei di fronte ai passanti. Il suo tratto continuo, senza ripensamenti né cancellature, trasforma la metropolitana in un laboratorio pubblico gratuito.\n* **Il vocabolario iconico**: Haring crea un pantheon di geroglifici contemporanei: il *Radiant Baby* (il bambino che gattona irradiando fasci di energia vitale, simbolo di innocenza e speranza), il cane che abbaia (*Barking Dog*, metafora di violenza cieca e autoritarismo), l'omino con il foro nella pancia, la piramide, l'UFO, il televisore con le ali e la croce.\n* **Il Pop Shop (1986)**: Nel quartiere di SoHo, Haring apre una bottega in cui vende magliette, spille, poster, giocattoli e tazze con i suoi motivi a prezzi popolari, sostenendo che l'arte non deve essere appannaggio esclusivo dei collezionisti ricchi ma appartenere a tutti.\n* **Attivismo politico e lutto**: Omosessuale dichiarato, Haring spende gli ultimi anni della sua breve vita in una febbrile attività di sensibilizzazione contro l'apartheid in Sudafrica, contro l'escalation nucleare e soprattutto per la prevenzione dell'AIDS, malattia che gli viene diagnosticata nel 1988 e che lo porterà alla morte a soli 31 anni nel 1990. Con lo slogan del gruppo ACT UP (*Silence=Death*), realizza opere potenti e drammatiche e lascia grandiosi murales pubblici in tutto il mondo, tra cui *Crack is Wack* a Manhattan e *Tuttomondo* sulla parete del convento di Sant'Antonio a Pisa (1989), il suo testamento spirituale di fratellanza universale.\n\n---\n\n### 4. Jean-Michel Basquiat: La poesia viscerale e la tragedia della diaspora\n\nNato a Brooklyn da padre haitiano e madre portoricana, **Jean-Michel Basquiat (1960–1988)** è una cometa tragica dell'arte mondiale:\n* **Il fenomeno SAMO© (1977–1980)**: Insieme all'amico Al Diaz, Basquiat riempie i muri di SoHo e dell'East Village di aforismi enigmatici, filosofici e anticapitalisti firmati SAMO© (acronimo di *Same Old Shit*), attirando l'attenzione di intellettuali e musicisti.\n* **La poetica e il linguaggio espressivo**: Dopo l'esordio alla mostra *New York / New Wave*, Basquiat viene scoperto dalla gallerista Annina Nosei, che gli mette a disposizione lo scantinato della galleria come studio. La pittura di Basquiat è una fiammata viscerale e coltissima, una stratificazione convulsa di pittura a olio, acrilico, pastelli a cera, fotocopie, ritagli e parole cancellate con tratti neri ('Cancello le parole perché si vedano di più: il fatto che siano cancellate fa venire voglia di leggerle').\n* **I temi portanti**:\n  1. *L'anatomia umana*: Folgorato da bambino dal trattato medico *Gray's Anatomy* (regalatogli dalla madre mentre era ricoverato dopo un incidente stradale), Basquiat dipinge scheletri, crani, gabbie toraciche, muscoli e organi interni, rivelando la fragilità mortale della carne.\n  2. *L'identità nera e il jazz*: Basquiat celebra gli eroi della cultura afroamericana: pugili leggendari (Sugar Ray Robinson, Cassius Clay/Muhammad Ali, Joe Louis) e geni del jazz bebop (Charlie Parker, Dizzy Gillespie, Miles Davis), conferendo loro lo status di re e martiri incoronati con la sua celebre **corona a tre punte**.\n  3. *La denuncia del razzismo e della violenza*: L'opera *The Death of Michael Stewart* (o *Defacement*, 1983) testimonia l'uccisione di un giovane graffitista nero a opera di sei poliziotti bianchi a New York; la violenza coloniale, il commercio degli schiavi e il controllo poliziesco sono ferite aperte costantemente indagate.\n* **Il sodalizio con Andy Warhol e la fine**: Tra il 1984 e il 1985 realizza una serie di grandi tele a quattro mani con Andy Warhol, che diventa per lui una figura paterna e protettiva. La morte di Warhol nel 1987 getta Basquiat in una profonda depressione, aggravata dalla tossicodipendenza da eroina, che lo stroncherà per overdose nell'agosto del 1988 a soli 27 anni.\n\n---\n\n### 5. L'eredità teorica: Dalla strada all'istituzione\n\nIl passaggio del graffitismo dai muri urbani alle tele da galleria ha sollevato un dibattito critico fondamentale:\n* Artisti come **Rammellzee** elaborarono la teoria della *Ikonoklast Panzerism*, concepita come una guerra linguistica e semiotica contro il potere istituzionale attraverso le lettere armate.\n* Se per molti puristi il passaggio al mercato significò una domesticazione e commercializzazione della ribellione originaria, per Haring e Basquiat rappresentò l'occasione storica per imporre le voci emarginate delle minoranze all'interno dei santuari mondiali della cultura bianca ed elitaria.",
+    "summary": "### 1. Nascita e fenomenologia del Writing a New York\n\nTra la fine degli anni Sessanta e i primi anni Settanta, nei quartieri degradati e periferici di New York — in particolare il South Bronx, Brooklyn e Harlem — nasce spontaneamente un fenomeno visivo che avrebbe rivoluzionato la percezione dello spazio pubblico: il **Graffiti Writing**. Inizialmente praticato da giovanissimi adolescenti appartenenti alle comunità afroamericane e portoricane, il writing nasce come affermazione radicale di identità individuale in una metropoli alienante. Il gesto primario è la 'tag', la firma stilizzata tracciata a pennarello indelebile o vernice spray sulle superfici urbane: celebre il caso pionieristico di **Taki 183**, un ragazzo greco di Washington Heights la cui firma comparve ovunque a Manhattan, immortalato da un articolo del *New York Times* nel 1971.\n\nRapidamente, il fenomeno evolve dalla semplice firma alla conquista dei treni della metropolitana (le carrozze della MTA). Il vagone della metro è il supporto ideale: è mobile, attraversa tutti e cinque i distretti della città portando il nome del writer dai sobborghi fino al cuore benestante di Manhattan. Nascono stili grafici sempre più complessi e sofisticati:\n* **Throw-up**: Scritta rapida a due colori, con contorno morbido e riempimento veloce.\n* **Bubble letters**: Lettere rigonfie, arrotondate e dinamiche, create da writer come Phase 2.\n* **Wild Style**: Lettere geometriche, intrecciate, spigolose, arricchite da frecce, spuntoni e collegamenti tridimensionali, volutamente indecifrabili per i non addetti ai lavori.\n* **Piece e Whole car**: Grandi capolavori che coprono l'intera fiancata o persino due carrozze consecutive di un convoglio ferroviario.\n\nQuesto movimento clandestino, duramente represso dalle autorità municipali con milioni di dollari spesi in recinzioni e solventi chimici, fa parte di una più vasta rivoluzione culturale: la nascita della **cultura Hip-Hop**, che unisce quattro discipline inseparabili: il writing, il deejaying (lo scratch sui vinili inventato da DJ Kool Herc e Grandmaster Flash), l'emceeing (il rap) e il breakdancing (b-boying).\n\n---\n\n### 2. Il passaggio dalla strada alle gallerie: L'East Village e SoHo\n\nNei primi anni Ottanta avviene il cortocircuito tra la strada e il mercato ufficiale dell'arte. Storici dell'arte, curatori indipendenti come Diego Cortez e galleristi d'avanguardia intuiscono la prorompente vitalità di questi giovani autodidatti:\n* Nel **1981**, al MoMA PS1 di Long Island City, Diego Cortez cura la leggendaria mostra **New York / New Wave**, esponendo fianco a fianco per la prima volta artisti accademici, musicisti no wave (come Blondie e Talking Heads) e writers di strada.\n* Patti Astor apre la **Fun Gallery** nell'East Village, la prima galleria commerciale a rappresentare e promuovere writers come Fab 5 Freddy, Futura 2000, Lee Quiñones, Zephyr, Dondi White e Rammellzee.\n* Tony Shafrazi apre a SoHo una galleria che consacra definitivamente il graffitismo come fenomeno del collezionismo internazionale miliardario.\n\n---\n\n### 3. Keith Haring: L'alfabeto universale e l'attivismo sociale\n\nNato in Pennsylvania e trasferitosi a New York per studiare alla School of Visual Arts, **Keith Haring (Reading, 1958 - New York, 1990)** elabora un linguaggio grafico inconfondibile, sintetico e universale:\n* **I Subway Drawings (1980–1985)**: Haring nota che nella metropolitana i cartelloni pubblicitari scaduti vengono coperti con fogli di carta nera opaca in attesa dei nuovi manifesti. Armato di gessetti bianchi da lavagna, Haring scende nelle banchine sotterranee e realizza migliaia di disegni fulminei di fronte ai passanti. Il suo tratto continuo, senza ripensamenti né cancellature, trasforma la metropolitana in un laboratorio pubblico gratuito.\n* **Il vocabolario iconico**: Haring crea un pantheon di geroglifici contemporanei: il *Radiant Baby* (il bambino che gattona irradiando fasci di energia vitale, simbolo di innocenza e speranza), il cane che abbaia (*Barking Dog*, metafora di violenza cieca e autoritarismo), l'omino con il foro nella pancia, la piramide, l'UFO, il televisore con le ali e la croce.\n* **Il Pop Shop (1986)**: Nel quartiere di SoHo, Haring apre una bottega in cui vende magliette, spille, poster, giocattoli e tazze con i suoi motivi a prezzi popolari, sostenendo che l'arte non deve essere appannaggio esclusivo dei collezionisti ricchi ma appartenere a tutti.\n* **Attivismo politico e lutto**: Omosessuale dichiarato, Haring spende gli ultimi anni della sua breve vita in una febbrile attività di sensibilizzazione contro l'apartheid in Sudafrica, contro l'escalation nucleare e soprattutto per la prevenzione dell'AIDS, malattia che gli viene diagnosticata nel 1988 e che lo porterà alla morte a soli 31 anni nel 1990. Con lo slogan del gruppo ACT UP (*Silence=Death*), realizza opere potenti e drammatiche e lascia grandiosi murales pubblici in tutto il mondo, tra cui *Crack is Wack* a Manhattan e *Tuttomondo* sulla parete del convento di Sant'Antonio a Pisa (1989), il suo testamento spirituale di fratellanza universale.\n\n---\n\n### 4. Jean-Michel Basquiat: La poesia viscerale e la tragedia della diaspora\n\nNato a Brooklyn da padre haitiano e madre portoricana, **Jean-Michel Basquiat (1960–1988)** è una cometa tragica dell'arte mondiale:\n* **Il fenomeno SAMO© (1977–1980)**: Insieme all'amico Al Diaz, Basquiat riempie i muri di SoHo e dell'East Village di aforismi enigmatici, filosofici e anticapitalisti firmati SAMO© (acronimo di *Same Old Shit*), attirando l'attenzione di intellettuali e musicisti.\n* **La poetica e il linguaggio espressivo**: Dopo l'esordio alla mostra *New York / New Wave*, Basquiat viene scoperto dalla gallerista Annina Nosei, che gli mette a disposizione lo scantinato della galleria come studio. La pittura di Basquiat è una fiammata viscerale e coltissima, una stratificazione convulsa di pittura a olio, acrilico, pastelli a cera, fotocopie, ritagli e parole cancellate con tratti neri ('Cancello le parole perché si vedano di più: il fatto che siano cancellate fa venire voglia di leggerle').\n* **I temi portanti**:\n  1. *L'anatomia umana*: Folgorato da bambino dal trattato medico *Gray's Anatomy* (regalatogli dalla madre mentre era ricoverato dopo un incidente stradale), Basquiat dipinge scheletri, crani, gabbie toraciche, muscoli e organi interni, rivelando la fragilità mortale della carne.\n  2. *L'identità nera e il jazz*: Basquiat celebra gli eroi della cultura afroamericana: pugili leggendari (Sugar Ray Robinson, Cassius Clay/Muhammad Ali, Joe Louis) e geni del jazz bebop (Charlie Parker, Dizzy Gillespie, Miles Davis), conferendo loro lo status di re e martiri incoronati con la sua celebre **corona a tre punte**.\n  3. *La denuncia del razzismo e della violenza*: L'opera *The Death of Michael Stewart* (o *Defacement*, 1983) testimonia l'uccisione di un giovane graffitista nero a opera di sei poliziotti bianchi a New York; la violenza coloniale, il commercio degli schiavi e il controllo poliziesco sono ferite aperte costantemente indagate.\n* **Il sodalizio con Andy Warhol e la fine**: Tra il 1984 e il 1985 realizza una serie di grandi tele a quattro mani con Andy Warhol, che diventa per lui una figura paterna e protettiva. La morte di Warhol nel 1987 getta Basquiat in una profonda depressione, aggravata dalla tossicodipendenza da eroina, che lo stroncherà per overdose nell'agosto del 1988 a soli 27 anni.\n\n---\n\n### 5. L'eredità teorica: Dalla strada all'istituzione\n\nIl passaggio del graffitismo dai muri urbani alle tele da galleria ha sollevato un dibattito critico fondamentale:\n* Artisti come **Rammellzee** elaborarono la teoria della *Ikonoklast Panzerism*, concepita come una guerra linguistica e semiotica contro il potere istituzionale attraverso le lettere armate.\n* Se per molti puristi il passaggio al mercato significò una domesticazione e commercializzazione della ribellione originaria, per Haring e Basquiat rappresentò l'occasione storica per imporre le voci emarginate delle minoranze all'interno dei santuari mondiali della cultura bianca ed elitaria.\n\n---\n\n### Dalla dispensa: le prime mostre del writing\n\n* **1979**: la **Galleria La Medusa** di Roma, diretta da Claudio Bruni, ospita una personale di **Lee Quiñones** (membro dei Fabulous Five, autori del celebre treno *Merry Christmas New York* dipinto da cima a fondo): è uno dei primi riconoscimenti europei del writing.\n* **1980**: il **Times Square Show** e, a settembre, la collettiva **Graffiti Art Success for America** nella galleria **Fashion Moda** del Bronx, diretta da Stefan Eins.\n* **1981**: il **Drawing Show** al **Mudd Club**, organizzato da Keith Haring e Kenny Scharf; la **Fun Gallery** di Patti Astor nell'East Village ospita la prima mostra di **Rammellzee**. Emerge una seconda generazione di writer (Rammellzee, Koor, Toxic, Crash, Daze, Lady Pink).\n* **1982**: dopo **documenta 7**, curata da Rudi Fuchs, il writing entra stabilmente nel circuito delle gallerie.",
     "keyPoints": [
       "Il Graffiti Writing nasce nei quartieri periferici di New York (Bronx, Brooklyn) come affermazione d'identità delle minoranze afroamericane e portoricane, legato alla cultura Hip-Hop.",
       "I vagoni della metropolitana diventano il supporto mobile primario, stimolando l'evoluzione stilistica dalle tag alle bubble letters fino al complesso Wild Style.",
@@ -394,21 +394,21 @@ window.ARTE_DATA = [
       {
         "question": "Quale tra le seguenti affermazioni descrive correttamente la tecnica dei Subway Drawings di Keith Haring?",
         "options": [
-          "Disegni a gesso bianco eseguiti rapidamente sui fogli di carta nera dei cartelloni pubblicitari vuoti della metropolitana",
-          "Incisioni all'acquaforte stampate su carta pergamena e incollate clandestinamente di notte",
-          "Grandi tele a olio dipinte in studio e trasportate illegalmente all'interno delle carrozze ferroviarie",
-          "Scritte realizzate con bombolette spray fluorescenti direttamente sui finestrini dei treni"
+          "Adesivi stampati attaccati ai sedili dei vagoni",
+          "Graffiti a spray sulle fiancate dei vagoni",
+          "Disegni a gesso sui pannelli neri dei cartelloni vuoti",
+          "Stencil a vernice sui muri delle stazioni"
         ],
-        "correctIndex": 0,
+        "correctIndex": 2,
         "explanation": "Haring approfittò dei pannelli neri pubblicitari vuoti per realizzare migliaia di disegni a gesso bianco alla vista del pubblico, democratizzando la fruizione artistica."
       },
       {
         "question": "Quale libro di medicina, ricevuto da bambino durante la degenza ospedaliera, influenzò profondamente l'immaginario di Basquiat?",
         "options": [
-          "L'Anatomia del Gray (Gray's Anatomy)",
-          "Il trattato sulla pittura di Leonardo da Vinci",
-          "I principi di psicologia analitica di Carl Gustav Jung",
-          "Il manuale di chirurgia estetica di Thomas Aquinas"
+          "Gray's Anatomy",
+          "Il Trattato della pittura di Leonardo",
+          "Un atlante di zoologia illustrato",
+          "Un'enciclopedia di storia dell'arte"
         ],
         "correctIndex": 0,
         "explanation": "Regalatogli dalla madre dopo un investimento d'auto a sette anni, il Gray's Anatomy fu una fonte inesauribile per i suoi scheletri, crani e organi interni sezionati."
@@ -416,12 +416,12 @@ window.ARTE_DATA = [
       {
         "question": "Quale leggendaria mostra del 1981 al MoMA PS1 fece dialogare per la prima volta writers di strada e artisti accademici?",
         "options": [
+          "Graffiti Art Success for America, a Fashion Moda",
+          "Times Square Show, curata da Colab",
           "New York / New Wave, curata da Diego Cortez",
-          "Primary Structures, curata da Kynaston McShine",
-          "Information, curata da William Rubin",
-          "Magiciens de la Terre, curata da Jean-Hubert Martin"
+          "Post Graffiti, alla Sidney Janis Gallery"
         ],
-        "correctIndex": 0,
+        "correctIndex": 2,
         "explanation": "New York / New Wave al PS1 fu il trampolino di lancio epocale per Basquiat, Haring, Fab 5 Freddy e la commistione tra arte visiva e musica underground."
       },
       {
@@ -436,14 +436,14 @@ window.ARTE_DATA = [
         "explanation": "Warhol e Basquiat realizzarono insieme decine di tele a quattro mani tra il 1984 e il 1985; la morte di Warhol nel 1987 fu un colpo devastante per il giovane artista."
       },
       {
-        "question": "Quale celebre murale pubblico realizzò Keith Haring in Italia nel 1989 poco prima di morire?",
+        "question": "Quale murale realizzò Keith Haring in Italia nel 1989, poco prima di morire?",
         "options": [
-          "Tuttomondo, sulla parete della chiesa di Sant'Antonio Abate a Pisa",
-          "Il Giudizio Universale metropolitano alla Stazione Centrale di Milano",
-          "La danza della vita sui muraglioni del Tevere a Roma",
-          "Il sole radiante sul porto monumentale di Napoli"
+          "La facciata dell'ospedale Necker di Parigi",
+          "Un murale sul Muro di Berlino a Checkpoint Charlie",
+          "Il murale Crack is Wack su un campo da handball",
+          "Tuttomondo, sulla chiesa di Sant'Antonio Abate a Pisa"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "Tuttomondo, dipinto a Pisa nel giugno 1989 su una superficie di 180 metri quadri, è l'ultimo grande murale pubblico di Haring, inno alla pace e all'armonia universale."
       }
     ],
@@ -562,56 +562,56 @@ window.ARTE_DATA = [
       {
         "question": "Quale scuola d'arte europea è considerata la culla della fotografia oggettiva, tipologica e monumentale contemporanea?",
         "options": [
-          "La Kunstakademie di Düsseldorf, guidata dalla cattedra di Bernd e Hilla Becher",
-          "La Bauhaus di Weimar diretta da Walter Gropius",
-          "L'Accademia di Belle Arti di Brera a Milano",
-          "Il Black Mountain College nel North Carolina"
+          "La Folkwangschule di Essen, con Otto Steinert",
+          "La Bauhaus di Dessau, con László Moholy-Nagy",
+          "Il Black Mountain College, con Aaron Siskind",
+          "La Kunstakademie di Düsseldorf, con Bernd e Hilla Becher"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "Bernd e Hilla Becher trasformarono la cattedra di Düsseldorf nel vivaio dei più celebrati fotografi contemporanei (Gursky, Struth, Ruff, Höfer)."
       },
       {
         "question": "Quale tema cardine caratterizza le celebri 'Museum Photographs' scattate da Thomas Struth?",
         "options": [
-          "Il rapporto speculare e psicologico tra i visitatori contemporanei e i capolavori della storia dell'arte contemplati nelle sale dei musei",
-          "La demolizione abusiva dei musei storici durante i conflitti bellici",
-          "L'inventario dei depositi sotterranei dei musei dove le opere restano imballate nelle casse",
-          "Ritratti di celebri curatori e direttori museali nei loro uffici"
+          "Le sale dei musei fotografate vuote, di notte",
+          "Il rapporto tra i visitatori e le opere nelle sale dei musei",
+          "I depositi museali con le opere ancora imballate",
+          "I ritratti dei direttori nei loro uffici"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "Struth immortala il momento di sospensione contemplativa delle folle dinanzi ai capolavori del passato, riflettendo sulla fruizione dell'arte."
       },
       {
         "question": "Cosa intende Jeff Wall quando definisce le sue fotografie come 'tableaux vivants' moderni?",
         "options": [
-          "Composizioni cinematografiche interamente allestite con attori, set e luci meticolose per ricreare conflitti quotidiani della vita moderna",
-          "Scatti fotografici istantanei realizzati di nascosto con una fotocamera tascabile tra la folla",
-          "Documentari scientifici sui costumi degli animali selvatici nel loro habitat naturale",
-          "Riproduzioni fotostatiche di manoscritti miniati medievali"
+          "Ritratti in studio con un unico fondale neutro",
+          "Istantanee rubate tra la folla con fotocamera tascabile",
+          "Fotografie d'archivio rielaborate al computer",
+          "Scene costruite con attori, set e luci, come nel cinema"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "Wall programma ogni scatto come un film d'autore, riattualizzando la grandiosità della pittura ottocentesca attraverso la precisione del lightbox retroilluminato."
       },
       {
         "question": "Quale fotografo newyorkese fu al centro delle accesissime battaglie sulla censura negli Stati Uniti per i suoi nudi scultorei e l'immaginario BDSM?",
         "options": [
           "Robert Mapplethorpe",
-          "Andreas Gursky",
-          "Thomas Ruff",
-          "Jeff Wall"
+          "Nan Goldin",
+          "Andres Serrano",
+          "David Wojnarowicz"
         ],
         "correctIndex": 0,
-        "explanation": "Le mostre retrospettive di Mapplethorpe provocarono interrogazioni al Congresso americano e denunce penali per oscenità, consacrando la sua estetica neoclassica e provocatoria."
+        "explanation": "Le mostre di Mapplethorpe, con nudi scultorei e immaginario BDSM, furono al centro delle 'culture wars' sulla censura negli Stati Uniti (il caso della mostra The Perfect Moment, 1989-1990)."
       },
       {
         "question": "Chi è l'unica modella che compare in tutte le 69 fotografie della serie 'Untitled Film Stills' di Cindy Sherman?",
         "options": [
-          "Cindy Sherman stessa, travestita con abiti e parrucche differenti",
-          "La cantante rock Deborah Harry",
-          "L'attrice cinematografica Meryl Streep",
-          "Una manichina di cera a grandezza naturale"
+          "Una modella diversa per ogni scatto",
+          "Cindy Sherman stessa, con abiti e parrucche diversi",
+          "Attrici di Hollywood ingaggiate per la serie",
+          "La sorella dell'artista, sempre travestita"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "Sherman impersona tutti i ruoli femminili stereotipati, trasformando il proprio corpo nel banco di prova della decostruzione dello sguardo patriarcale."
       }
     ],
@@ -682,7 +682,7 @@ window.ARTE_DATA = [
     "title": "Neoconcettuale, Neo-Geo e Pictures Generation",
     "subtitle": "Simulacro, critica delle merci e decostruzione del sistema dei mass media",
     "readTime": "12 min",
-    "summary": "### 1. Il contesto teorico: Baudrillard e la società del simulacro\n\nAccanto all'esplosione passionale e materica della pittura (Transavanguardia e Neoespressionismo), gli anni Ottanta vedono affermarsi a New York una corrente intellettuale diametralmente opposta: un'arte fredda, analitica, cerebrale e lucidissima, che interroga i meccanismi profondi del tardo capitalismo, della pubblicità e della comunicazione di massa. Questa tendenza, variamente definita **Neoconcettuale**, **Neo-Geo** (*Neo-Geometric Conceptualism*) o **Appropriazionismo**, affonda le sue radici teoriche nella filosofia francese del post-strutturalismo e in particolare nel saggio *Simulacres et Simulation* (1981) di **Jean Baudrillard**.\n\nSecondo Baudrillard, la società contemporanea non vive più a contatto con la realtà fisica, ma è immersa in una 'iper-realtà' dominata da **simulacri**: immagini, segni e copie che non hanno più alcun referente reale nel mondo materiale, ma rinviano unicamente ad altri segni e messaggi commerciali. Gli artisti neoconcettuali rinunciano al mito modernista dell'originalità, del genio solitario e dell'invenzione formale; decidono invece di appropriarsi delle immagini preesistenti dei media, dei beni di consumo di massa, delle vetrine commerciali e delle geometrie astratte per decostruirne il potere seduttivo e alienante.\n\n---\n\n### 2. Il movimento Neo-Geo (Neo-Geometric Conceptualism)\n\nConsacrato nel 1986 da una storica mostra alla Sonnabend Gallery di New York con quattro protagonisti (Peter Halley, Jeff Koons, Haim Steinbach e Ashley Bickerton), il Neo-Geo rilegge l'astrazione geometrica classica (Malevič, Mondrian, il Minimalismo) non più come ricerca mistica o formale pura, ma come diagramma sociologico dei sistemi di potere:\n\n#### Peter Halley (New York, 1953)\nHalley compie una clamorosa risemantizzazione dell'astrazione: i suoi quadri, composti con colori acrilici fluorescenti industriali (*Day-Glo*) e intonaco sintetico ruvido per edilizia (*Roll-a-Tex*), sembrano a prima vista variazioni geometriche del Minimalismo. In realtà, Halley dichiara che le sue forme sono figurative: i quadrati sono **celle di prigione** (*cells*) e le linee ortogonali che li collegano sono **condotti sotterranei** (*conduits*). Halley illustra visivamente le teorie di Michel Foucault sulla società carceraria e disciplinare e quelle di Paul Virilio sulla rete telematica: la casa, l'ufficio, l'ospedale e il computer sono celle isolate ma perfettamente connesse e sorvegliate dai circuiti dell'informazione e dell'energia.\n\n#### Jeff Koons (York, Pennsylvania, 1955) — Il periodo anni '80\nPrima di diventare l'art-star globale dei Balloon Animals, Koons lavora all'inizio degli anni Ottanta come broker a Wall Street (vendendo materie prime e abbonamenti al MoMA) per finanziare le sue prime serie storiche:\n* **The New (1980–1983)**: Elettrodomestici di consumo (aspirapolvere Hoover e lucidatrici per pavimenti) nuovi di fabbrica, mai usati, sigillati all'interno di teche ermetiche di plexiglas trasparente e illuminati alla base da tubi al neon fluorescenti. Koons celebra e congela il feticismo della merce: l'aspirapolvere, intonso e asessuato, promette un'eterna giovinezza e immortalità che gli esseri umani non potranno mai raggiungere.\n* **Equilibrium (1985)**: Palloni da basket ufficiali Spalding sospesi in perfetto equilibrio idrostatico all'interno di acquari riempiti con una miscela calibrata di acqua distillata e acqua salata (sviluppata con l'aiuto del fisico premio Nobel Richard Feynman); accanto agli acquari, manifesti pubblicitari della Nike con atleti afroamericani ritratti come divinità o modelli sociali e repliche in pesante bronzo fuso di giubbotti salvagente e zattere d'emergenza. Koons indaga l'illusione della scalata sociale della classe lavoratrice e la vulnerabilità esistenziale.\n\n#### Haim Steinbach (Rehovot, Israele, 1944)\nSteinbach crea sculture a mensola (*shelves*) triangolari in legno rivestito di formica laminata a colori contrastanti, su cui dispone in fila con precisione metronomica oggetti industriali nuovi acquistati nei centri commerciali: scarpe da ginnastica Nike, teiere cromate, statuette kitsch di nani da giardino, scatole di detersivo per bucato o maschere di Halloween. Steinbach decostruisce il rituale del consumo, dimostrando come gli oggetti inanimati acquistino valore e identità unicamente attraverso la loro disposizione feticista nello spazio domestico o espositivo.\n\n#### Ashley Bickerton (Barbados, 1959)\nBickerton crea sculture-apparecchio corazzate (*Anthrospheres*), realizzate con alluminio anodizzato, cinghie da imbracatura, parabordi marini in gomma, bulloni industriali e loghi stampati delle maggiori multinazionali e marchi d'arte contemporanea. Le sue sculture recano persino contatori digitali che indicano il valore monetario dell'opera o la quantità di calorie necessarie a distruggerla, dichiarando apertamente l'opera d'arte come una pura merce di lusso adatta alla spedizione transoceanica.\n\n---\n\n### 3. La Pictures Generation e l'Appropriazionismo radicale\n\nContemporaneamente, un gruppo di artiste e artisti emersi dalla storica mostra *Pictures* curata da Douglas Crimp nel 1977 alla galleria Artists Space di New York attacca frontalmente i miti della creatività e dell'autorialità:\n\n#### Barbara Kruger (Newark, 1945)\nFormatasi come grafica editoriale per la rivista *Mademoiselle*, Kruger trasferisce la violenza visiva del cartellone pubblicitario nello spazio museale. Ingrandisce fotografie d'archivio e immagini d'epoca in bianco e nero, le riquadra con bordi rosso brillante e vi sovrappone brevi slogan aforistici, perentori e provocatori, composti con il carattere tipografico **Futura Bold Oblique** in lettere bianche su barre rosse:\n* *'Your body is a battleground'* (creato nel 1989 per la grande marcia a favore del diritto all'aborto a Washington).\n* *'I shop therefore I am'* (parodia consumistica del 'Cogito ergo sum' cartesiano).\n* *'We don't need another hero'*.\nKruger svela come la cultura di massa, la moda e il patriarcato colonizzino il corpo femminile e la soggettività degli individui.\n\n#### Richard Prince (Zona del Canale di Panama, 1949)\nLavorando negli archivi della casa editrice Time-Life, Prince inventa la tecnica della **ri-fotografia** (*re-photography*): fotografa le doppie pagine patinate delle riviste pubblicitarie, eliminando il testo, il logo commerciale e lo slogan, e ingrandisce l'immagine fino a farne un'opera autonoma. Con la serie dei **Cowboy** (avviata nel 1980), Prince ri-fotografa la celebre campagna pubblicitaria delle sigarette Marlboro: il cowboy solitario del Far West, a cavallo sotto cieli al tramonto, viene svelato non come simbolo della natura incontaminata americana ma come finzione cinematografica costruita a tavolino dall'industria del tabacco. Negli anni Ottanta realizza anche i *Jokes*, barzellette e battute sessiste o razziste dipinte con lettere monocrome su grandi tele, mettendo a nudo l'inconscio represso dell'America profonda.\n\n#### Sherrie Levine (Hazleton, 1947)\nLevine compie il gesto più estremo e scandaloso dell'Appropriazionismo: nella celebre serie **After Walker Evans** (1981), Levine fotografa le riproduzioni a stampa presenti nel catalogo delle storiche fotografie della Grande Depressione scattate da Walker Evans nel 1936, e le espone a proprio nome senza alcuna alterazione visiva. Levine mette sotto scacco il concetto giuridico di copyright, il valore di mercato dell'originale e soprattutto smonta l'archetipo patriarcale del 'padre nobile' e del 'genio creatore', dimostrando che nel mondo contemporaneo ogni immagine non è che la copia di un'altra copia.",
+    "summary": "### 1. Il contesto teorico: Baudrillard e la società del simulacro\n\nAccanto all'esplosione passionale e materica della pittura (Transavanguardia e Neoespressionismo), gli anni Ottanta vedono affermarsi a New York una corrente intellettuale diametralmente opposta: un'arte fredda, analitica, cerebrale e lucidissima, che interroga i meccanismi profondi del tardo capitalismo, della pubblicità e della comunicazione di massa. Questa tendenza, variamente definita **Neoconcettuale**, **Neo-Geo** (*Neo-Geometric Conceptualism*) o **Appropriazionismo**, affonda le sue radici teoriche nella filosofia francese del post-strutturalismo e in particolare nel saggio *Simulacres et Simulation* (1981) di **Jean Baudrillard**.\n\nSecondo Baudrillard, la società contemporanea non vive più a contatto con la realtà fisica, ma è immersa in una 'iper-realtà' dominata da **simulacri**: immagini, segni e copie che non hanno più alcun referente reale nel mondo materiale, ma rinviano unicamente ad altri segni e messaggi commerciali. Gli artisti neoconcettuali rinunciano al mito modernista dell'originalità, del genio solitario e dell'invenzione formale; decidono invece di appropriarsi delle immagini preesistenti dei media, dei beni di consumo di massa, delle vetrine commerciali e delle geometrie astratte per decostruirne il potere seduttivo e alienante.\n\n---\n\n### 2. Il movimento Neo-Geo (Neo-Geometric Conceptualism)\n\nConsacrato nel 1986 da una storica mostra alla Sonnabend Gallery di New York con quattro protagonisti (Peter Halley, Jeff Koons, Haim Steinbach e Ashley Bickerton), il Neo-Geo rilegge l'astrazione geometrica classica (Malevič, Mondrian, il Minimalismo) non più come ricerca mistica o formale pura, ma come diagramma sociologico dei sistemi di potere:\n\n#### Peter Halley (New York, 1953)\nHalley compie una clamorosa risemantizzazione dell'astrazione: i suoi quadri, composti con colori acrilici fluorescenti industriali (*Day-Glo*) e intonaco sintetico ruvido per edilizia (*Roll-a-Tex*), sembrano a prima vista variazioni geometriche del Minimalismo. In realtà, Halley dichiara che le sue forme sono figurative: i quadrati sono **celle di prigione** (*cells*) e le linee ortogonali che li collegano sono **condotti sotterranei** (*conduits*). Halley illustra visivamente le teorie di Michel Foucault sulla società carceraria e disciplinare e quelle di Paul Virilio sulla rete telematica: la casa, l'ufficio, l'ospedale e il computer sono celle isolate ma perfettamente connesse e sorvegliate dai circuiti dell'informazione e dell'energia.\n\n#### Jeff Koons (York, Pennsylvania, 1955) — Il periodo anni '80\nPrima di diventare l'art-star globale dei Balloon Animals, Koons lavora all'inizio degli anni Ottanta come broker a Wall Street (vendendo materie prime e abbonamenti al MoMA) per finanziare le sue prime serie storiche:\n* **The New (1980–1983)**: Elettrodomestici di consumo (aspirapolvere Hoover e lucidatrici per pavimenti) nuovi di fabbrica, mai usati, sigillati all'interno di teche ermetiche di plexiglas trasparente e illuminati alla base da tubi al neon fluorescenti. Koons celebra e congela il feticismo della merce: l'aspirapolvere, intonso e asessuato, promette un'eterna giovinezza e immortalità che gli esseri umani non potranno mai raggiungere.\n* **Equilibrium (1985)**: Palloni da basket ufficiali Spalding sospesi in perfetto equilibrio idrostatico all'interno di acquari riempiti con una miscela calibrata di acqua distillata e acqua salata (sviluppata con l'aiuto del fisico premio Nobel Richard Feynman); accanto agli acquari, manifesti pubblicitari della Nike con atleti afroamericani ritratti come divinità o modelli sociali e repliche in pesante bronzo fuso di giubbotti salvagente e zattere d'emergenza. Koons indaga l'illusione della scalata sociale della classe lavoratrice e la vulnerabilità esistenziale.\n\n#### Haim Steinbach (Rehovot, Israele, 1944)\nSteinbach crea sculture a mensola (*shelves*) triangolari in legno rivestito di formica laminata a colori contrastanti, su cui dispone in fila con precisione metronomica oggetti industriali nuovi acquistati nei centri commerciali: scarpe da ginnastica Nike, teiere cromate, statuette kitsch di nani da giardino, scatole di detersivo per bucato o maschere di Halloween. Steinbach decostruisce il rituale del consumo, dimostrando come gli oggetti inanimati acquistino valore e identità unicamente attraverso la loro disposizione feticista nello spazio domestico o espositivo.\n\n#### Ashley Bickerton (Barbados, 1959)\nBickerton crea sculture-apparecchio corazzate (*Anthrospheres*), realizzate con alluminio anodizzato, cinghie da imbracatura, parabordi marini in gomma, bulloni industriali e loghi stampati delle maggiori multinazionali e marchi d'arte contemporanea. Le sue sculture recano persino contatori digitali che indicano il valore monetario dell'opera o la quantità di calorie necessarie a distruggerla, dichiarando apertamente l'opera d'arte come una pura merce di lusso adatta alla spedizione transoceanica.\n\n---\n\n### 3. La Pictures Generation e l'Appropriazionismo radicale\n\nContemporaneamente, un gruppo di artiste e artisti emersi dalla storica mostra *Pictures* curata da Douglas Crimp nel 1977 alla galleria Artists Space di New York attacca frontalmente i miti della creatività e dell'autorialità:\n\n#### Barbara Kruger (Newark, 1945)\nFormatasi come grafica editoriale per la rivista *Mademoiselle*, Kruger trasferisce la violenza visiva del cartellone pubblicitario nello spazio museale. Ingrandisce fotografie d'archivio e immagini d'epoca in bianco e nero, le riquadra con bordi rosso brillante e vi sovrappone brevi slogan aforistici, perentori e provocatori, composti con il carattere tipografico **Futura Bold Oblique** in lettere bianche su barre rosse:\n* *'Your body is a battleground'* (creato nel 1989 per la grande marcia a favore del diritto all'aborto a Washington).\n* *'I shop therefore I am'* (parodia consumistica del 'Cogito ergo sum' cartesiano).\n* *'We don't need another hero'*.\nKruger svela come la cultura di massa, la moda e il patriarcato colonizzino il corpo femminile e la soggettività degli individui.\n\n#### Richard Prince (Zona del Canale di Panama, 1949)\nLavorando negli archivi della casa editrice Time-Life, Prince inventa la tecnica della **ri-fotografia** (*re-photography*): fotografa le doppie pagine patinate delle riviste pubblicitarie, eliminando il testo, il logo commerciale e lo slogan, e ingrandisce l'immagine fino a farne un'opera autonoma. Con la serie dei **Cowboy** (avviata nel 1980), Prince ri-fotografa la celebre campagna pubblicitaria delle sigarette Marlboro: il cowboy solitario del Far West, a cavallo sotto cieli al tramonto, viene svelato non come simbolo della natura incontaminata americana ma come finzione cinematografica costruita a tavolino dall'industria del tabacco. Negli anni Ottanta realizza anche i *Jokes*, barzellette e battute sessiste o razziste dipinte con lettere monocrome su grandi tele, mettendo a nudo l'inconscio represso dell'America profonda.\n\n#### Sherrie Levine (Hazleton, 1947)\nLevine compie il gesto più estremo e scandaloso dell'Appropriazionismo: nella celebre serie **After Walker Evans** (1981), Levine fotografa le riproduzioni a stampa presenti nel catalogo delle storiche fotografie della Grande Depressione scattate da Walker Evans nel 1936, e le espone a proprio nome senza alcuna alterazione visiva. Levine mette sotto scacco il concetto giuridico di copyright, il valore di mercato dell'originale e soprattutto smonta l'archetipo patriarcale del 'padre nobile' e del 'genio creatore', dimostrando che nel mondo contemporaneo ogni immagine non è che la copia di un'altra copia.\n\n---\n\n### Dalla dispensa: la mostra Pictures (1977)\n\nNel 1977 il critico **Douglas Crimp** cura la mostra **Pictures** all'**Artists Space** di New York con cinque giovani artisti: **Troy Brauntuch, Jack Goldstein, Philip Smith, Sherrie Levine e Robert Longo**. L'obiettivo non è creare immagini nuove, ma mostrare immagini come pure rappresentazioni, indipendenti dal mezzo e dalla fonte da cui sono riprese. Da qui il nome **Pictures Generation**, che comprende anche Cindy Sherman, Richard Prince, Barbara Kruger, Louise Lawler e Laurie Simmons. Tra gli artisti legati al **Neoconcettuale** la dispensa ricorda anche **Cady Noland**, che nelle installazioni inserisce oggetti d'uso comune della società americana e immagini prese dai rotocalchi.",
     "keyPoints": [
       "Il Neoconcettuale e il Neo-Geo nascono negli anni Ottanta a New York influenzati dalla teoria del simulacro e dell'iper-realtà di Jean Baudrillard.",
       "Rifiutano l'espressione soggettiva e l'originalità per analizzare criticamente le merci, il packaging, la grafica pubblicitaria e il controllo dei media.",
@@ -732,9 +732,9 @@ window.ARTE_DATA = [
         "question": "Quale filosofo francese ha profondamente influenzato gli artisti del Neoconcettuale e del Neo-Geo con la sua teoria della società dei simulacri?",
         "options": [
           "Jean Baudrillard",
-          "Jean-Paul Sartre",
-          "Albert Camus",
-          "Maurice Merleau-Ponty"
+          "Jean-François Lyotard",
+          "Roland Barthes",
+          "Guy Debord"
         ],
         "correctIndex": 0,
         "explanation": "Baudrillard teorizzò che nel tardo-capitalismo il simulacro sostituisce la realtà: non si consumano oggetti per il loro valore d'uso, ma segni di prestigio all'interno di un'iper-realtà."
@@ -742,45 +742,45 @@ window.ARTE_DATA = [
       {
         "question": "Quale materiale sintetico da edilizia impiega Peter Halley per conferire una superficie granulosa e industriale ai suoi dipinti geometrici?",
         "options": [
-          "Roll-a-Tex, abbinato a colori fluorescenti Day-Glo",
-          "Malta bastarda di calce e polvere di marmo apuano",
-          "Cera d'api vergine mescolata a resine naturali",
-          "Gesso di Bologna steso a spatola su tavola di pioppo"
+          "Il catrame da asfalto steso a spatola",
+          "La sabbia vulcanica mescolata all'acrilico",
+          "Il Roll-a-Tex, con colori fluorescenti Day-Glo",
+          "La vernice metallizzata da carrozzeria"
         ],
-        "correctIndex": 0,
+        "correctIndex": 2,
         "explanation": "Halley usa vernici industriali Day-Glo e l'intonaco commerciale Roll-a-Tex per evocare le pareti prefabbricate degli uffici e dei complessi carcerari moderni."
       },
       {
         "question": "Come riesce Jeff Koons a mantenere i palloni da basket della serie 'Equilibrium' perfettamente sospesi a mezz'altezza nell'acqua?",
         "options": [
-          "Utilizzando una miscela calibrata di acqua distillata e acqua ad alta concentrazione salina con l'aiuto di un fisico",
-          "Fissando i palloni con sottili fili di nylon invisibili legati al coperchio della vasca",
-          "Incollando i palloni alla parete posteriore della teca tramite resine siliconiche trasparenti",
-          "Generando un potente campo magnetico sotto la base della scultura"
+          "Con sottili fili di nylon fissati al coperchio",
+          "Con un equilibrio di acqua distillata e acqua salata",
+          "Con perni trasparenti incollati al fondo",
+          "Con palloni riempiti in parte di sabbia"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "Koons collaborò con il fisico Richard Feynman per calcolare la densità differenziale tra acqua dolce superiore e acqua salata inferiore, raggiungendo l'equilibrio idrostatico."
       },
       {
         "question": "Quale famoso slogan campeggia sulla celebre opera di Barbara Kruger del 1989 creata per la marcia dei diritti all'aborto a Washington?",
         "options": [
-          "Your body is a battleground (Il tuo corpo è un campo di battaglia)",
-          "Make art not war (Fate arte non la guerra)",
-          "Silence equals death (Il silenzio equivale alla morte)",
-          "Less is more (Il meno è più)"
+          "We don't need another hero",
+          "I shop therefore I am",
+          "Your gaze hits the side of my face",
+          "Your body is a battleground"
         ],
-        "correctIndex": 0,
-        "explanation": "Your body is a battleground è una delle opere più iconiche di Kruger, rivendicazione militante dell'autodeterminazione della donna contro le ingerenze politiche e patriarcali."
+        "correctIndex": 3,
+        "explanation": "Kruger realizzò Your body is a battleground (Il tuo corpo è un campo di battaglia) per la marcia per i diritti riproduttivi di Washington del 1989; le altre sono anch'esse sue frasi celebri, ma legate ad altre opere."
       },
       {
         "question": "Cosa ha ri-fotografato Richard Prince per isolare il mito virile del cowboy americano come pura costruzione pubblicitaria?",
         "options": [
-          "Le pubblicità patinate delle sigarette Marlboro prive di testo e marchi",
-          "I fotogrammi originali dei film western di John Wayne proiettati al cinema",
-          "I quadri storici di Frederic Remington conservati al Metropolitan Museum",
-          "Le fotografie segnaletiche dei banditi del Far West negli archivi federali"
+          "Le foto segnaletiche dei banditi del Far West",
+          "I fotogrammi dei film western di John Ford",
+          "I quadri western di Frederic Remington",
+          "Le pubblicità delle sigarette Marlboro, senza testo"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "Prince ri-fotografò le campagne pubblicitarie Marlboro, isolando l'archetipo del cowboy come finzione commerciale fabbricata dai media."
       }
     ],
@@ -901,21 +901,21 @@ window.ARTE_DATA = [
       {
         "question": "Quale materiale di recupero contemporaneo fu impiegato da Tony Cragg nei suoi primi rilievi parietali sagomati?",
         "options": [
-          "Frammenti di plastica colorata trovati sui litorali e nelle discariche urbane",
-          "Pannelli di cartongesso scartati dai cantieri edili metropolitani",
-          "Pellicole cinematografiche bruciate di vecchi film muti",
-          "Scampoli di tessuti sintetici scartati dalle fabbriche tessili"
+          "Lamiera ritagliata da automobili demolite",
+          "Cartongesso recuperato dai cantieri edili",
+          "Plastica colorata trovata in strada e sulle spiagge",
+          "Scampoli di tessuti sintetici di scarto"
         ],
-        "correctIndex": 0,
+        "correctIndex": 2,
         "explanation": "Cragg considerò la plastica come la nuova risorsa fossile e geologica prodotta dall'uomo nell'era industriale, ordinandola a parete per gamme cromatiche."
       },
       {
         "question": "Quale caratteristica costruttiva ed estetica contraddistingue le sculture in compensato curvato e metallo di Richard Deacon?",
         "options": [
-          "L'uso evidente e a vista di centinaia di rivetti e viti che uniscono nastri sinuosi di materia",
-          "L'incollaggio chimico invisibile eseguito sottovuoto in autoclavi industriali",
-          "La doratura integrale a foglia d'oro zecchino di tutte le superfici in legno",
-          "L'intaglio a mano eseguito esclusivamente con scalpelli da ebanista rinascimentale"
+          "I rivetti e le viti lasciati a vista",
+          "Le giunture nascoste e invisibili",
+          "La doratura integrale delle superfici",
+          "L'intaglio a mano del legno massiccio"
         ],
         "correctIndex": 0,
         "explanation": "Deacon si definisce un fabbricatore: mostra orgogliosamente le giunzioni meccaniche, i rivetti e le viti che tengono insieme i nastri curvilinei dei suoi organi spaziali."
@@ -923,21 +923,21 @@ window.ARTE_DATA = [
       {
         "question": "Cosa estrae Bill Woodrow dalla carcassa metallica di una lavatrice o di un cofano d'automobile dismesso?",
         "options": [
-          "Nuove figure sagomate (chitarre, armi, animali) che rimangono collegate alla lamiera d'origine",
-          "Piccoli lingotti di alluminio fuso e raffinato ad altissima temperatura",
-          "Circuiti elettronici funzionanti collegati a sintetizzatori musicali",
-          "Blocchi monolitici di cemento armato colati all'interno del cestello"
+          "Lingotti di metallo fuso e rifinito",
+          "Sagome di oggetti e animali ancora unite alla lamiera",
+          "Calchi in gesso dei vecchi elettrodomestici",
+          "Strumenti musicali funzionanti in alluminio"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "Woodrow ritaglia direttamente la carrozzeria estraendo oggetti scultorei simbolici che restano uniti all'elettrodomestico originario come da un cordone ombelicale."
       },
       {
         "question": "Con quale tecnica scultorea realizzò Antony Gormley le sue celebri figure umane negli anni Ottanta?",
         "options": [
-          "Calchi del proprio corpo umano rivestiti da lastre di piombo battuto e saldate a vista lungo i bordi",
-          "Scolpendo blocchi di marmo di Carrara con il metodo dei punti e del pantografo",
-          "Stampando resine plastiche liquide all'interno di matrici siliconiche tridimensionali",
-          "Intagliando tronchi secolari di quercia con la motosega a scoppio"
+          "Calchi del proprio corpo rivestiti di piombo",
+          "Blocchi di marmo scolpiti con il pantografo",
+          "Figure in resina colata in stampi di silicone",
+          "Tronchi di legno intagliati con la motosega"
         ],
         "correctIndex": 0,
         "explanation": "Gormley usò il proprio corpo come matrice viva, trasformandolo in un involucro ermetico di piombo saldato a stagno, metafora del vuoto interiore dell'essere umano."
@@ -945,12 +945,12 @@ window.ARTE_DATA = [
       {
         "question": "In quale celebre opera scultorea Bertrand Lavier sovrappone due elettrodomestici di consumo per creare un monumento paradossale?",
         "options": [
-          "Brandt/Fichet-Bauche (un frigorifero bianco posizionato sopra una cassaforte blindata)",
-          "Hoover/Singer (un aspirapolvere montato sopra una macchina da cucire)",
-          "Fiat/Ferrari (il cofano di un'utilitaria saldato al tettuccio di una spider)",
-          "Sony/Philips (un televisore a tubo catodico infilato dentro un tostapane)"
+          "Rouge Ferrari, un'auto dipinta di rosso a pennellate",
+          "Hoover/Singer, un aspirapolvere su una macchina da cucire",
+          "Brandt/Fichet-Bauche, un frigorifero sopra una cassaforte",
+          "Giulietta, un'Alfa Romeo incidentata su un piedistallo"
         ],
-        "correctIndex": 0,
+        "correctIndex": 2,
         "explanation": "Brandt/Fichet-Bauche unisce due status symbol della classe media borghese (il cibo fresco e il denaro protetto), trasformandoli in una riflessione scultorea sul piedistallo."
       }
     ],
@@ -1070,56 +1070,56 @@ window.ARTE_DATA = [
       {
         "question": "Quale concetto teorico elabora l'artista cinese Chen Zhen per definire la condizione dell'artista migrante capace di abitare più culture contemporaneamente?",
         "options": [
-          "La trans-esperienza",
-          "Il nomadismo passivo",
-          "L'assimilazione linguistica",
-          "L'iper-realtà simulata"
+          "L'altermodernità",
+          "Il nomadismo culturale",
+          "La radicante",
+          "La trans-esperienza"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "Chen Zhen coniò il termine trans-esperienza per indicare la sintesi virtuosa e sciamanica che nasce dall'incontro tra radici d'origine e contesto d'adozione."
       },
       {
         "question": "Quale elemento anatomico caratterizza in modo costante i manichini vittoriani vestiti con stoffe wax di Yinka Shonibare?",
         "options": [
-          "L'assenza totale della testa, che cancella l'identità individuale e allude alla ghigliottina delle classi dominanti",
-          "Mani giganti in bronzo dorato che stringono sacchi di denaro",
-          "Occhi di cristallo illuminati internamente da fibre ottiche",
-          "Piedi palmati che poggiano su zattere di legno galleggianti"
+          "Indossano parrucche settecentesche dorate",
+          "Hanno il volto coperto da maschere africane",
+          "Sono senza testa",
+          "Hanno mani e piedi in bronzo"
         ],
-        "correctIndex": 0,
-        "explanation": "I manichini di Shonibare sono decapitati per negare una razza fissa e richiamare la caduta violenta dei regimi imperiali e aristocratici."
+        "correctIndex": 2,
+        "explanation": "I manichini di Shonibare, vestiti con stoffe wax, sono sempre acefali: l'assenza della testa cancella l'identità razziale e allude ironicamente alla ghigliottina delle classi dominanti."
       },
       {
         "question": "Quale storico curatore di origini nigeriane ha consacrato a livello mondiale l'arte post-coloniale dirigendo Documenta 11 a Kassel nel 2002?",
         "options": [
-          "Okwui Enwezor",
           "Jean-Hubert Martin",
-          "Hans Ulrich Obrist",
-          "Nicolas Bourriaud"
+          "Okwui Enwezor",
+          "Catherine David",
+          "Harald Szeemann"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "Okwui Enwezor fu il primo curatore africano a guidare Documenta, strutturandola in cinque piattaforme transcontinentali di riflessione geopolitica."
       },
       {
         "question": "Cosa trasforma l'artista palestinese Mona Hatoum in inquietanti e pericolose installazioni d'acciaio elettrificato?",
         "options": [
-          "Oggetti ed elementi rassicuranti dell'arredo domestico quotidiano (culle, grattugie, letti)",
-          "Carrozzerie di aerei militari da combattimento dismessi",
-          "Pietre tombali monumentali prelevate da cimiteri storici",
-          "Vecchie macchine da stampa tipografiche dell'Ottocento"
+          "Oggetti domestici rassicuranti, come culle e grattugie",
+          "Rottami di aerei e mezzi militari",
+          "Lapidi e pietre tombali prelevate dai cimiteri",
+          "Valigie e bagagli abbandonati negli aeroporti"
         ],
         "correctIndex": 0,
         "explanation": "Hatoum rende perturbante e minaccioso il focolare domestico, riflettendo la condizione di precarietà e sradicamento dei popoli rifugiati."
       },
       {
-        "question": "Quale prestigioso premio internazionale ha vinto Shirin Neshat alla 48ª Biennale di Venezia nel 1999 con la video-installazione 'Turbulent'?",
+        "question": "Quale premio vinse Shirin Neshat alla 48a Biennale di Venezia (1999) con la video-installazione Turbulent?",
         "options": [
-          "Il Leone d'Oro per la migliore opera",
-          "Il Turner Prize della Tate Gallery",
-          "Il Premio Wolf per le arti visive",
-          "Il Gran Premio della Giuria di Documenta"
+          "Il Turner Prize della Tate",
+          "Il Leone d'Oro (premio internazionale)",
+          "Il Premio Hugo Boss del Guggenheim",
+          "Il Premio Wolf per le arti"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "Neshat vinse il Leone d'Oro a Venezia nel 1999 con Turbulent, straordinario dittico video sulla voce e sulla condizione della donna nella società iraniana."
       }
     ],
@@ -1239,45 +1239,45 @@ window.ARTE_DATA = [
       {
         "question": "Quale compito etico e operativo impone Felix Gonzalez-Torres al museo che acquisisce ed espone i suoi cumuli di caramelle?",
         "options": [
-          "Pesare regolarmente il cumulo e rifornire quotidianamente le caramelle consumate per ripristinare il peso ideale originario",
-          "Impedire tassativamente ai visitatori di toccare le caramelle pena l'espulsione immediata dalla sala",
-          "Sostituire le caramelle reali con repliche identiche in resina sintetica indeperibile",
-          "Distruggere l'opera al termine della mostra gettando i dolciumi tra i rifiuti speciali"
+          "Lasciare esaurire il cumulo senza reintegrarlo",
+          "Impedire ai visitatori di toccare le caramelle",
+          "Sostituire le caramelle con repliche in resina",
+          "Rifornire le caramelle per ripristinare il peso iniziale"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "La reintegrazione costante delle caramelle è parte integrante del concetto dell'opera, simboleggiando la resurrezione della memoria contro la sparizione fisica causata dalla malattia."
       },
       {
         "question": "Cosa raffiguravano i grandi cartelloni pubblicitari affissi da Felix Gonzalez-Torres a New York nel 1991?",
         "options": [
-          "Un letto matrimoniale disfatto con le lenzuola bianche che portano l'impronta di due corpi assenti",
-          "I volti di statisti politici americani responsabili del taglio ai fondi per la ricerca sanitaria",
-          "Un cielo stellato notturno attraversato da satelliti spia militari",
-          "La fotografia al microscopio del virus dell'immunodeficienza umana"
+          "L'immagine al microscopio del virus HIV",
+          "I volti dei politici che tagliarono i fondi sanitari",
+          "Un cielo notturno con stelle e satelliti",
+          "Un letto vuoto e sfatto con l'impronta di due corpi"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "Il letto vuoto con le impronte dei corpi portò l'intimità dell'amore e del lutto direttamente nel paesaggio urbano e anonimo di Manhattan."
       },
       {
         "question": "Quale elemento scultoreo insolito fa spuntare Robert Gober dai battiscopa delle pareti nei suoi allestimenti?",
         "options": [
-          "Gambe maschili iperrealiste in cera dipinta con veri peli, calzini e scarpe di cuoio",
-          "Braccia metalliche meccaniche che impugnano martelli pneumatici",
-          "Radici nodose di alberi secolari intagliate a forma di serpenti",
-          "Specchi deformanti che riflettono il pavimento al contrario"
+          "Radici di alberi intagliate a forma di serpente",
+          "Mani in bronzo che stringono attrezzi da lavoro",
+          "Gambe maschili in cera con veri peli, calzini e scarpe",
+          "Lavandini bianchi privi di rubinetti"
         ],
-        "correctIndex": 0,
-        "explanation": "Le gambe maschili sporgenti dalle pareti sono tra le immagini più celebri e inquietanti di Gober, sintesi di vulnerabilità, mutilazione e desiderio."
+        "correctIndex": 2,
+        "explanation": "Gober fa spuntare dai muri gambe maschili in cera iperrealiste, con peli veri, calzini e scarpe; i lavandini senza rubinetti sono un'altra sua serie celebre, ma non escono dal battiscopa."
       },
       {
         "question": "Quale fotografa americana ha ritratto con maestosa solennità la comunità queer e BDSM di San Francisco incidendo autoritratti sulla propria pelle?",
         "options": [
+          "Zoe Leonard",
+          "Nan Goldin",
           "Catherine Opie",
-          "Cindy Sherman",
-          "Candida Höfer",
-          "Barbara Kruger"
+          "Collier Schorr"
         ],
-        "correctIndex": 0,
+        "correctIndex": 2,
         "explanation": "Catherine Opie ha unito la classicità del ritratto fiammingo e rinascimentale con le ferite reali e autoinflitte del proprio corpo militante."
       },
       {
@@ -1285,8 +1285,8 @@ window.ARTE_DATA = [
         "options": [
           "VB35",
           "VB45",
-          "The Weather Project",
-          "Cremaster 3"
+          "VB16",
+          "VB52"
         ],
         "correctIndex": 0,
         "explanation": "VB35 al Guggenheim di New York consacrò la Beecroft a livello planetario con schiere di modelle in piedi con intimo color carne e tacchi a spillo."
@@ -1408,56 +1408,56 @@ window.ARTE_DATA = [
       {
         "question": "Quale celebre curatore e mercante d'arte newyorkese ideò nel 1992 la mostra itinerante 'Post Human'?",
         "options": [
-          "Jeffrey Deitch",
+          "Jan Hoet",
           "Achille Bonito Oliva",
           "Nicolas Bourriaud",
-          "Jan Hoet"
+          "Jeffrey Deitch"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "Jeffrey Deitch fu il teorico e curatore della storica rassegna che anticipò l'impatto della clonazione, della chirurgia plastica e della cibernetica sull'arte."
       },
       {
         "question": "Quale materiale insolito e scultoreo impiega frequentemente Matthew Barney nelle sue serie per evocare l'energia corporea e l'isolamento plastico?",
         "options": [
-          "Vaselina solida e cera vergine abbinate a teflon e termoplastica",
-          "Gesso da presa mescolato a polvere di marmo apuano",
-          "Fibre di vetro intrecciate a mano con resine poliestere liquide",
-          "Argilla cruda seccata al sole e dipinta a smalto"
+          "Argilla cruda dipinta a smalto",
+          "Gesso e polvere di marmo",
+          "Fibra di vetro e resina poliestere",
+          "Vaselina, cera, teflon e termoplastica"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "Barney è celebre per l'uso della vaselina solida e della cera, sostanze plastiche malleabili che mantengono una viscosità organica e biologica."
       },
       {
         "question": "Quanti film compongono il ciclo cinematografico 'Cremaster' di Matthew Barney realizzato tra il 1994 e il 2002?",
         "options": [
-          "Cinque lungometraggi (Cremaster 1, 2, 3, 4, 5)",
-          "Tre cortometraggi muti girati in pellicola 16mm",
-          "Sette documentari biografici sulla vita di atleti olimpici",
-          "Dodici episodi televisivi per la rete via cavo HBO"
+          "Dieci episodi, girati per la televisione",
+          "Tre film, come una trilogia",
+          "Sette film, uno per ogni giorno",
+          "Cinque film, da Cremaster 1 a Cremaster 5"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "Il ciclo Cremaster è composto da cinque film senza dialoghi, girati con scenografie monumentali e tecniche scultoree avanzate."
       },
       {
         "question": "Quale pornostar e parlamentare compare insieme a Jeff Koons nelle sculture e serigrafie della serie 'Made in Heaven'?",
         "options": [
-          "Ilona Staller (Cicciolina)",
+          "Brigitte Nielsen",
           "Moana Pozzi",
-          "Pamela Anderson",
-          "Madonna"
+          "Ilona Staller",
+          "Pamela Anderson"
         ],
-        "correctIndex": 0,
+        "correctIndex": 2,
         "explanation": "Koons sposò Ilona Staller nel 1991, trasformando la loro relazione e la sessualità esplicita nella serie scultorea più discussa del decennio."
       },
       {
         "question": "Cosa caratterizza la scultura 'Family Romance' (1993) di Charles Ray?",
         "options": [
-          "Tutti i componenti della famiglia (genitori e due figli) sono scolpiti nudi alla medesima altezza di un bambino di otto anni (135 cm)",
-          "I corpi dei familiari sono interamente fusi in blocchi di piombo e sepolti sotto il pavimento",
-          "Le figure sono realizzate con manichini meccanizzati che ripetono all'infinito la stessa frase",
-          "I personaggi sono dipinti con vernici invisibili che si rivelano solo alla luce ultravioletta"
+          "Figure dipinte con vernice visibile solo all'UV",
+          "Una famiglia fusa in piombo e sepolta",
+          "Manichini meccanici che ripetono gesti",
+          "Genitori e figli nudi, tutti alla stessa altezza"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "Ray altera la percezione biologica e sociale uniformando genitori e figli alla medesima statura, creando un'inquietante distorsione delle gerarchie familiari."
       }
     ],
@@ -1528,7 +1528,7 @@ window.ARTE_DATA = [
     "title": "Arte Relazionale",
     "subtitle": "Nicolas Bourriaud e l'opera d'arte come dispositivo sociale di incontro",
     "readTime": "12 min",
-    "summary": "### 1. Il manifesto teorico di Nicolas Bourriaud (1998)\n\nNel 1998, il critico e curatore francese **Nicolas Bourriaud** pubblica un volumetto teorico destinato a ridefinire il dibattito artistico internazionale: **Esthétique relationnelle** (Estetica Relazionale). Bourriaud analizza le pratiche di una nuova generazione di artisti emersi all'inizio degli anni Novanta (tra cui Rirkrit Tiravanija, Carsten Höller, Pierre Huyghe, Philippe Parreno, Dominique Gonzalez-Foerster, Liam Gillick, Maurizio Cattelan e Vanessa Beecroft) che rifiutano di considerare l'opera d'arte come un monumento finito, un feticcio contemplativo da ammirare passivamente a distanza o una merce esclusiva per le case d'asta.\n\nBourriaud formula una definizione cardine: l'arte contemporanea è **un dispositivo che produce relazioni umane e spazi di convivialità**. In un'epoca dominata dalla virtualizzazione telematica, dalla privatizzazione dello spazio pubblico e dall'alienazione urbana indotta dal consumo di massa, l'opera d'arte diventa un'occasione per creare **micro-utopie del quotidiano**: momenti circoscritti nel tempo e nello spazio in cui le persone possono incontrarsi, dialogare, cooperare e fare esperienza collettiva. Il giudizio estetico non si basa più sulla 'forma' plastica dell'oggetto, ma sulla qualità dei legami intersoggettivi che l'artista è in grado di tessere nel tessuto sociale.\n\n---\n\n### 2. I protagonisti e le strategie relazionali\n\n#### Rirkrit Tiravanija (Buenos Aires, 1961) — L'ospitalità e la cucina come scultura\nFiglio di diplomatici thailandesi, Tiravanija incarna l'essenza dell'estetica relazionale azzerando la tradizionale distanza tra arte e vita quotidiana:\n* Nel **1990**, alla Paula Allen Gallery di New York, presenta l'opera fondamentale **'Untitled' (Pad Thai)**: Tiravanija svuota la galleria da ogni quadro o scultura, trasporta nello spazio espositivo fornelli a gas, bombole, pentole, tavoli pieghevoli e ingredienti freschi, e si mette a cucinare zuppe e tagliolini tradizionali thailandesi (*Pad Thai*), distribuendoli gratuitamente a tutti i visitatori. L'opera d'arte fisica non esiste: consiste nella conversazione, nella condivisione del pasto e nell'atmosfera calda che si genera tra perfetti sconosciuti.\n* Nel 1992 alla 303 Gallery di New York presenta *Untitled (Free)*: smonta l'ufficio della gallerista e trasferisce l'intero archivio privato nello spazio espositivo principale, mentre nello scantinato allestisce una cucina aperta giorno e notte con cibo gratis per gli studenti e gli artisti squattrinati del quartiere.\n\n#### Carsten Höller (Bruxelles, 1961) — Il laboratorio e il dubbio scientifico\nLaureato in scienze agrarie ed entomologia con una specializzazione nella comunicazione olfattiva degli insetti, Höller abbandona la ricerca accademica per trasformare i musei in veri e propri laboratori d'esperimento percettivo e comportamentale:\n* **Gli scivoli monumentali (*Test Site*, 2006)**: Nella gigantesca Turbine Hall della Tate Modern di Londra, Höller installa una serie di colossali scivoli tubolari in acciaio inossidabile e policarbonato trasparente, lunghi fino a sessanta metri, che scendono dai piani alti dell'edificio. Lo scivolo è un dispositivo relazionale: l'adulto che vi sale abbandona il controllo razionale e sperimenta uno stato temporaneo di vertigine e gioia infantile, mentre chi guarda dal basso osserva le espressioni mutevoli dei corpi che sfrecciano nel vuoto.\n* **Le Amanite e i dispositivi di disorientamento**: Le sculture giganti di funghi allucinogeni rotanti (*Flying Mushrooms*), vasche di deprivazione sensoriale dove galleggiare al buio in acqua calda salata (*Upside-Down Goggles*) e occhiali con prismi ottici che capovolgono la visione del mondo a testa in giù; l'obiettivo di Höller è indurre il 'dubbio attivo' nello spettatore, scardinando le certezze percettive consolidate.\n\n#### Dominique Gonzalez-Foerster (Strasburgo, 1965) — Le stanze dell'intimità urbana\nGonzalez-Foerster crea installazioni ambientali immersive che evocano atmosfere letterarie, cinematografiche e urbane: le serie delle **Rooms** e degli **Hotels**. All'interno di stanze illuminate da luci soffuse colorate (blu notte, verde acqua, ambra), l'artista dispone pochi elementi evocativi: tappeti morbidi, libri d'autore lasciati aperti sul pavimento (Duras, Borges, Sebald), tracce audio di pioggia o di conversazioni lontane e proiezioni su schermi sospesi. Sono rifugi protetti, spazi di pausa, introspezione e tempo dilatato che contrastano con la velocità frenetica e caotica delle metropoli contemporanee.\n\n#### Pierre Huyghe e Philippe Parreno: Il progetto No Ghost Just a Shell (1999–2002)\nNel 1999, Pierre Huyghe e Philippe Parreno compiono un'operazione concettuale di straordinaria complessità teorica:\n* Scoprono che le agenzie giapponesi di animazione (come la *Kworks*) creano e vendono sul mercato a prezzi modesti personaggi secondari a due dimensioni, privi di trama o di personalità, destinati a comparire come comparse sacrificabili nei manga e nei cartoni animati commerciali.\n* Per 46.000 yen (circa 400 dollari), Huyghe e Parreno acquistano i diritti d'autore legali completi di un personaggio femminile minore con grandi occhi malinconici, chiamata **Annlee**.\n* Anziché appropriarsene come marchio proprietario, i due artisti decidono di donare gratuitamente l'immagine digitale di Annlee a una comunità aperta di colleghi artisti, scrittori, designer e musicisti (tra cui Dominique Gonzalez-Foerster, Liam Gillick, François Curlet, Pierre Joseph e Rirkrit Tiravanija), affinché ciascuno realizzi un video, un testo o un'opera d'arte autonoma restituendole voce, coscienza e molteplici identità narrative.\n* Al termine del progetto, nel 2002, Huyghe e Parreno trasferiscono legalmente tutti i diritti d'autore direttamente ad Annlee stessa attraverso un'associazione no-profit, 'uccidendola' simbolicamente e liberandola per sempre dallo sfruttamento del mercato dei media: un personaggio artificiale che ottiene l'emancipazione legale dal capitale.\n\n---\n\n### 3. La declinazione dissacrante: Maurizio Cattelan negli anni Novanta\n\nAll'interno della cornice relazionale degli anni Novanta si inserisce anche la figura di **Maurizio Cattelan (Padova, 1960)**, che interpreta la relazione sociale non come armoniosa convivialità, ma come **sabotaggio istituzionale, beffa situazionista e fuga dalle regole**:\n* **Una domenica a Rivara (1992)**: Invitato a una mostra collettiva al Castello di Rivara, Cattelan non realizza alcuna opera; la notte precedente all'inaugurazione annoda tra loro decine di lenzuola bianche e le lascia penzolare dalla finestra più alta del castello fino al fossato, simulando una rocambolesca fuga notturna dell'artista per sottrarsi agli obblighi dell'esposizione.\n* **A.C. Forniture Sud (1991)**: Fonda una vera squadra di calcio dilettantistica composta interamente da operai e immigrati senegalesi residenti in Italia, iscrivendola ai campionati ufficiali regionali; sulle magliette fa stampare come sponsor il nome fittizio *RAUSS* (allusione grottesca al termine nazista *Raus!*, 'fuori!'), costringendo il pubblico di provincia e i media sportivi a confrontarsi con l'ipocrisia del razzismo strisciante.\n* **Another Fucking Readymade (1996)**: Invitato alla prestigiosa De Appel Foundation di Amsterdam, Cattelan svaligia nottetempo l'intera galleria vicina (la Bloom Gallery) portando via quadri, sculture, fax e archivi, esponendoli nelle sale di De Appel come proprio lavoro; la polizia olandese interviene e lo costringe a restituire tutto sotto minaccia d'arresto.",
+    "summary": "### 1. Il manifesto teorico di Nicolas Bourriaud (1998)\n\nNel 1998, il critico e curatore francese **Nicolas Bourriaud** pubblica un volumetto teorico destinato a ridefinire il dibattito artistico internazionale: **Esthétique relationnelle** (Estetica Relazionale). Bourriaud analizza le pratiche di una nuova generazione di artisti emersi all'inizio degli anni Novanta (tra cui Rirkrit Tiravanija, Carsten Höller, Pierre Huyghe, Philippe Parreno, Dominique Gonzalez-Foerster, Liam Gillick, Maurizio Cattelan e Vanessa Beecroft) che rifiutano di considerare l'opera d'arte come un monumento finito, un feticcio contemplativo da ammirare passivamente a distanza o una merce esclusiva per le case d'asta.\n\nBourriaud formula una definizione cardine: l'arte contemporanea è **un dispositivo che produce relazioni umane e spazi di convivialità**. In un'epoca dominata dalla virtualizzazione telematica, dalla privatizzazione dello spazio pubblico e dall'alienazione urbana indotta dal consumo di massa, l'opera d'arte diventa un'occasione per creare **micro-utopie del quotidiano**: momenti circoscritti nel tempo e nello spazio in cui le persone possono incontrarsi, dialogare, cooperare e fare esperienza collettiva. Il giudizio estetico non si basa più sulla 'forma' plastica dell'oggetto, ma sulla qualità dei legami intersoggettivi che l'artista è in grado di tessere nel tessuto sociale.\n\n---\n\n### 2. I protagonisti e le strategie relazionali\n\n#### Rirkrit Tiravanija (Buenos Aires, 1961) — L'ospitalità e la cucina come scultura\nFiglio di diplomatici thailandesi, Tiravanija incarna l'essenza dell'estetica relazionale azzerando la tradizionale distanza tra arte e vita quotidiana:\n* Nel **1990**, alla Paula Allen Gallery di New York, presenta l'opera fondamentale **'Untitled' (Pad Thai)**: Tiravanija svuota la galleria da ogni quadro o scultura, trasporta nello spazio espositivo fornelli a gas, bombole, pentole, tavoli pieghevoli e ingredienti freschi, e si mette a cucinare zuppe e tagliolini tradizionali thailandesi (*Pad Thai*), distribuendoli gratuitamente a tutti i visitatori. L'opera d'arte fisica non esiste: consiste nella conversazione, nella condivisione del pasto e nell'atmosfera calda che si genera tra perfetti sconosciuti.\n* Nel 1992 alla 303 Gallery di New York presenta *Untitled (Free)*: smonta l'ufficio della gallerista e trasferisce l'intero archivio privato nello spazio espositivo principale, mentre nello scantinato allestisce una cucina aperta giorno e notte con cibo gratis per gli studenti e gli artisti squattrinati del quartiere.\n\n#### Carsten Höller (Bruxelles, 1961) — Il laboratorio e il dubbio scientifico\nLaureato in scienze agrarie ed entomologia con una specializzazione nella comunicazione olfattiva degli insetti, Höller abbandona la ricerca accademica per trasformare i musei in veri e propri laboratori d'esperimento percettivo e comportamentale:\n* **Gli scivoli monumentali (*Test Site*, 2006)**: Nella gigantesca Turbine Hall della Tate Modern di Londra, Höller installa una serie di colossali scivoli tubolari in acciaio inossidabile e policarbonato trasparente, lunghi fino a sessanta metri, che scendono dai piani alti dell'edificio. Lo scivolo è un dispositivo relazionale: l'adulto che vi sale abbandona il controllo razionale e sperimenta uno stato temporaneo di vertigine e gioia infantile, mentre chi guarda dal basso osserva le espressioni mutevoli dei corpi che sfrecciano nel vuoto.\n* **Le Amanite e i dispositivi di disorientamento**: Le sculture giganti di funghi allucinogeni rotanti (*Flying Mushrooms*), vasche di deprivazione sensoriale dove galleggiare al buio in acqua calda salata (*Upside-Down Goggles*) e occhiali con prismi ottici che capovolgono la visione del mondo a testa in giù; l'obiettivo di Höller è indurre il 'dubbio attivo' nello spettatore, scardinando le certezze percettive consolidate.\n\n#### Dominique Gonzalez-Foerster (Strasburgo, 1965) — Le stanze dell'intimità urbana\nGonzalez-Foerster crea installazioni ambientali immersive che evocano atmosfere letterarie, cinematografiche e urbane: le serie delle **Rooms** e degli **Hotels**. All'interno di stanze illuminate da luci soffuse colorate (blu notte, verde acqua, ambra), l'artista dispone pochi elementi evocativi: tappeti morbidi, libri d'autore lasciati aperti sul pavimento (Duras, Borges, Sebald), tracce audio di pioggia o di conversazioni lontane e proiezioni su schermi sospesi. Sono rifugi protetti, spazi di pausa, introspezione e tempo dilatato che contrastano con la velocità frenetica e caotica delle metropoli contemporanee.\n\n#### Pierre Huyghe e Philippe Parreno: Il progetto No Ghost Just a Shell (1999–2002)\nNel 1999, Pierre Huyghe e Philippe Parreno compiono un'operazione concettuale di straordinaria complessità teorica:\n* Scoprono che le agenzie giapponesi di animazione (come la *Kworks*) creano e vendono sul mercato a prezzi modesti personaggi secondari a due dimensioni, privi di trama o di personalità, destinati a comparire come comparse sacrificabili nei manga e nei cartoni animati commerciali.\n* Per 46.000 yen (circa 400 dollari), Huyghe e Parreno acquistano i diritti d'autore legali completi di un personaggio femminile minore con grandi occhi malinconici, chiamata **Annlee**.\n* Anziché appropriarsene come marchio proprietario, i due artisti decidono di donare gratuitamente l'immagine digitale di Annlee a una comunità aperta di colleghi artisti, scrittori, designer e musicisti (tra cui Dominique Gonzalez-Foerster, Liam Gillick, François Curlet, Pierre Joseph e Rirkrit Tiravanija), affinché ciascuno realizzi un video, un testo o un'opera d'arte autonoma restituendole voce, coscienza e molteplici identità narrative.\n* Al termine del progetto, nel 2002, Huyghe e Parreno trasferiscono legalmente tutti i diritti d'autore direttamente ad Annlee stessa attraverso un'associazione no-profit, 'uccidendola' simbolicamente e liberandola per sempre dallo sfruttamento del mercato dei media: un personaggio artificiale che ottiene l'emancipazione legale dal capitale.\n\n---\n\n### 3. La declinazione dissacrante: Maurizio Cattelan negli anni Novanta\n\nAll'interno della cornice relazionale degli anni Novanta si inserisce anche la figura di **Maurizio Cattelan (Padova, 1960)**, che interpreta la relazione sociale non come armoniosa convivialità, ma come **sabotaggio istituzionale, beffa situazionista e fuga dalle regole**:\n* **Una domenica a Rivara (1992)**: Invitato a una mostra collettiva al Castello di Rivara, Cattelan non realizza alcuna opera; la notte precedente all'inaugurazione annoda tra loro decine di lenzuola bianche e le lascia penzolare dalla finestra più alta del castello fino al fossato, simulando una rocambolesca fuga notturna dell'artista per sottrarsi agli obblighi dell'esposizione.\n* **A.C. Forniture Sud (1991)**: Fonda una vera squadra di calcio dilettantistica composta interamente da operai e immigrati senegalesi residenti in Italia, iscrivendola ai campionati ufficiali regionali; sulle magliette fa stampare come sponsor il nome fittizio *RAUSS* (allusione grottesca al termine nazista *Raus!*, 'fuori!'), costringendo il pubblico di provincia e i media sportivi a confrontarsi con l'ipocrisia del razzismo strisciante.\n* **Another Fucking Readymade (1996)**: Invitato alla prestigiosa De Appel Foundation di Amsterdam, Cattelan svaligia nottetempo l'intera galleria vicina (la Bloom Gallery) portando via quadri, sculture, fax e archivi, esponendoli nelle sale di De Appel come proprio lavoro; la polizia olandese interviene e lo costringe a restituire tutto sotto minaccia d'arresto.\n\n---\n\n### Dalla dispensa: altri protagonisti\n\n* **Jorge Pardo** (*Pier*, Skulptur Projekte Münster, 1997): un molo in legno funzionante sul lago di Münster, che unisce arte, architettura e design e gioca sulla funzione degli oggetti.\n* **Carsten Höller**: le sue installazioni sono veri esperimenti sulle reazioni fisiche e psicologiche del pubblico; con Pierre Huyghe, Liam Gillick, Dominique Gonzalez-Foerster, Angela Bulloch, Rirkrit Tiravanija e Douglas Gordon partecipa alla mostra *Traffic* (Bordeaux, 1996) curata da Bourriaud, considerata il manifesto dell'Arte Relazionale.\n* **Rirkrit Tiravanija**, *Untitled (The Zoo Society)* (Münster, 1997): un teatro di marionette sul terreno del vecchio zoo, in cui coinvolge bambini e spettatori.",
     "keyPoints": [
       "L'Estetica Relazionale teorizzata da Nicolas Bourriaud nel 1998 definisce l'arte come generatore di convivialità, incontri umani e micro-utopie quotidiane.",
       "L'opera non è più un oggetto autonomo da contemplare passivamente a distanza, ma un dispositivo per tessere relazioni intersoggettive contro l'alienazione urbana.",
@@ -1577,56 +1577,56 @@ window.ARTE_DATA = [
       {
         "question": "Quale definizione di opera d'arte formula Nicolas Bourriaud nel suo celebre saggio del 1998?",
         "options": [
-          "Un dispositivo temporaneo capace di produrre relazioni umane, incontri e spazi di convivialità comunitaria",
-          "Un monumento solenne destinato a durare nei secoli a testimonianza del genio individuale dell'artista",
-          "Un prodotto matematico generato unicamente da algoritmi digitali senza intervento umano",
-          "Un feticcio di puro investimento finanziario destinato a rimanere custodito nei caveau bancari"
+          "Un oggetto unico pensato per il mercato",
+          "Un monumento destinato a durare nei secoli",
+          "Un'immagine generata da algoritmi digitali",
+          "Un dispositivo che produce relazioni umane e incontri"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "Bourriaud teorizza che l'arte relazionale non inventa oggetti, ma istituisce situazioni di incontro per contrastare la mercificazione e l'isolamento della vita metropolitana."
       },
       {
         "question": "In quale galleria di New York nel 1990 Rirkrit Tiravanija cucinò per la prima volta cibo caldo per i visitatori?",
         "options": [
+          "Gavin Brown's Enterprise",
           "Paula Allen Gallery",
-          "Leo Castelli Gallery",
-          "Mary Boone Gallery",
+          "303 Gallery",
           "Sonnabend Gallery"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "Alla Paula Allen Gallery di New York nacque il capolavoro seminale Untitled (Pad Thai), che ridefinì le categorie stesse della scultura e dell'allestimento."
       },
       {
         "question": "Cosa acquistò la coppia di artisti Pierre Huyghe e Philippe Parreno in Giappone nel 1999 per dare inizio a 'No Ghost Just a Shell'?",
         "options": [
-          "I diritti d'autore legali completi di un personaggio secondario di manga e cartoni animati di nome Annlee",
-          "Una fabbrica automobilistica dismessa alla periferia industriale di Yokohama",
-          "Una collezione di cento armature cerimoniali di samurai del periodo Edo",
-          "Un satellite televisivo commerciale per trasmettere programmi artistici pirata"
+          "Una collezione di robot giocattolo degli anni Settanta",
+          "Un vecchio cinema abbandonato a Tokyo",
+          "I diritti di Annlee, un personaggio secondario di manga",
+          "Un videogioco giapponese fuori produzione"
         ],
-        "correctIndex": 0,
+        "correctIndex": 2,
         "explanation": "Comprarono il copyright del personaggio digitale Annlee per sottrarla al destino effimero dell'animazione commerciale e donarle molteplici vite artistiche."
       },
       {
         "question": "Quale provocazione compì Maurizio Cattelan alla De Appel Foundation di Amsterdam nel 1996 con l'opera 'Another Fucking Readymade'?",
         "options": [
-          "Svaligiò di notte la galleria d'arte vicina ed espose tutte le opere rubate come proprio lavoro",
-          "Murò l'ingresso del museo costringendo i visitatori a entrare calandosi dal tetto con una corda",
-          "Sostituì tutti i quadri delle sale con copie stampate su carta igienica",
-          "Rimase seduto in silenzio al centro della stanza senza mai rivolgere lo sguardo al pubblico"
+          "Fece esporre un asino vivo al posto delle opere",
+          "Murò l'ingresso della galleria il giorno dell'apertura",
+          "Affittò il suo spazio come cartellone pubblicitario",
+          "Rubò le opere di una galleria vicina e le espose come sue"
         ],
-        "correctIndex": 0,
-        "explanation": "Cattelan rubò l'intera mostra della vicina Bloom Gallery portando persino i computer e la fotocopiatrice, prima che la polizia lo obbligasse a restituire tutto."
+        "correctIndex": 3,
+        "explanation": "Per Another Fucking Readymade Cattelan svaligiò di notte una galleria di Amsterdam ed espose la refurtiva come propria mostra, finché la polizia non intervenne; l'asino vivo e lo spazio affittato sono altre sue azioni."
       },
       {
         "question": "Cosa installò Carsten Höller nella Turbine Hall della Tate Modern di Londra nel 2006 nell'opera 'Test Site'?",
         "options": [
-          "Cinque monumentali scivoli tubolari in acciaio e policarbonato alti fino a cinque piani d'edificio",
-          "Una pista da pattinaggio sul ghiaccio artificiale illuminata da riflettori ultravioletti",
-          "Un labirinto di specchi deformanti a grandezza naturale con musica classica d'organo",
-          "Una foresta di cinquanta alberi di baobab vivi trasportati dal Madagascar"
+          "Una pista di pattinaggio artificiale",
+          "Cinque grandi scivoli tubolari",
+          "Un labirinto di specchi deformanti",
+          "Una foresta di alberi vivi"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "I colossali scivoli di Höller permisero a centinaia di migliaia di visitatori di scendere a tutta velocità, unendo adrenalina, gioco e riflessione sul controllo del corpo."
       }
     ],
@@ -1746,23 +1746,23 @@ window.ARTE_DATA = [
       {
         "question": "Quale famoso college d'arte londinese fu la culla degli Young British Artists tra la fine degli anni Ottanta e i primi Novanta?",
         "options": [
-          "Goldsmiths College",
           "Royal College of Art",
+          "Goldsmiths College",
           "Slade School of Fine Art",
           "Central Saint Martins"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "Damien Hirst, Sarah Lucas, Gary Hume, Fiona Rae e molti altri YBA si formarono al Goldsmiths College, incoraggiati a un approccio concettuale e manageriale."
       },
       {
         "question": "Quale magnate della pubblicità e collezionista londinese fu il principale mecenate e finanziatore del fenomeno degli Young British Artists?",
         "options": [
+          "Jay Jopling",
           "Charles Saatchi",
-          "Leo Castelli",
           "Larry Gagosian",
           "Anthony d'Offay"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "Charles Saatchi acquistò le opere di Hirst, Emin, Quinn e Lucas in blocco, promuovendoli con campagne d'urto culminate nella mostra Sensation nel 1997."
       },
       {
@@ -1770,8 +1770,8 @@ window.ARTE_DATA = [
         "options": [
           "Sensation",
           "Freeze",
-          "A New Spirit in Painting",
-          "Zeitgeist"
+          "Brilliant!",
+          "Modern Medicine"
         ],
         "correctIndex": 0,
         "explanation": "Sensation fu la mostra-scandalo che attirò centinaia di migliaia di visitatori con le carcasse di Hirst, il letto di Emin e il ritratto della serial killer Myra Hindley di Marcus Harvey."
@@ -1779,24 +1779,24 @@ window.ARTE_DATA = [
       {
         "question": "Chi fu la prima artista donna a vincere il prestigioso Turner Prize britannico nel 1993?",
         "options": [
-          "Rachel Whiteread",
           "Tracey Emin",
+          "Rachel Whiteread",
           "Sarah Lucas",
-          "Tacita Dean"
+          "Gillian Wearing"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "Rachel Whiteread vinse il Turner Prize nel 1993 grazie al monumentale calco House, solidificazione in cemento di una casa vittoriana nell'East London."
       },
       {
         "question": "Cosa è raffigurato nella scultura monumentale 'Tischgesellschaft' (1988) dell'artista tedesca Katharina Fritsch?",
         "options": [
-          "Trentadue uomini identici vestiti di scuro seduti a una lunga tavola coperta da una tovaglia a motivi geometrici rossi",
-          "Un cavallo monumentale dorato che salta sopra una barca a vela rovesciata",
-          "Un topo gigante nero alto quattro metri collocato al centro della piazza cittadina",
-          "Una sequenza di madonne in plastica gialla disposte lungo il marciapiede"
+          "Un grande topo nero seduto su un uomo",
+          "Un cavallo dorato che salta una barca rovesciata",
+          "Trentadue uomini identici seduti a una lunga tavola",
+          "Una fila di madonne gialle sul marciapiede"
         ],
-        "correctIndex": 0,
-        "explanation": "Tischgesellschaft (Compagnia a tavola) mette in scena trentadue manichini identici, simbolo agghiacciante della serialità e conformità sociale della civiltà industriale."
+        "correctIndex": 2,
+        "explanation": "Tischgesellschaft (Compagnia a tavola) mostra trentadue figure maschili identiche sedute ai lati di una lunga tavola: un'immagine di serialità inquietante. Il topo gigante seduto su un uomo è un'altra opera della Fritsch (Rattenkönig / Mann und Maus)."
       }
     ],
     "examQuiz": [
@@ -1866,7 +1866,7 @@ window.ARTE_DATA = [
     "title": "Il Secolo a Uncinetto: Scenari Globali e Grandi Mostre",
     "subtitle": "La caduta del Muro di Berlino, il nuovo millennio e la rete dei curatori mondiali",
     "readTime": "12 min",
-    "summary": "### 1. La tesi di Francesco Bonami: Quando inizia il ventunesimo secolo?\n\nNel celebre saggio critico **Il secolo a uncinetto**, il curatore e critico internazionale **Francesco Bonami** affronta una questione epistemologica capitale: quando ha inizio realmente il ventunesimo secolo per la storia dell'arte? La risposta non coincide con il calendario convenzionale del 1° gennaio 2000. Il nuovo millennio nasce precisamente il **9 novembre 1989**, con la caduta del Muro di Berlino e l'avvio del collasso dell'Unione Sovietica. Quel crollo geopolitico abbatte la divisione bipolare del pianeta e inaugura una trasformazione radicale: la fine dell'eurocentrismo e l'avvento della globalizzazione economica, tecnologica e culturale.\n\nLa metafora dell'**uncinetto** coniata da Bonami descrive perfettamente la nuova morfologia dell'arte contemporanea:\n* Non più una linea retta, rigida e progressiva di avanguardie storiche che si succedono l'una all'altra secondo il modello modernista del Novecento.\n* Ma un **tessuto a maglie fitte e intrecciate**, un ricamo policentrico in cui fili provenienti dall'Africa, dall'Asia, dall'America Latina e dall'Europa si annodano, si incrociano e si sovrappongono. In questa rete complessa, artisti, opere, fiere e biennali viaggiano vorticosamente, guidati da una nuova figura egemone del sistema culturale: **il curatore globale indipendente**.\n\n---\n\n### 2. Le grandi rassegne di passaggio tra i millenni\n\nNegli anni Novanta e all'inizio del Duemila, una serie di grandi mostre storiche ridefinisce radicalmente il canone espositivo:\n\n#### Documenta 9 a Kassel (1992)\nCurata dal belga **Jan Hoet**, è considerata l'ultima edizione guidata da uno dei 'curatori-sciamani' cresciuti tra gli anni Sessanta e Settanta. Hoet concepisce la mostra come un'avventura fisica e sensoriale, facendo invadere l'intera cittadina tedesca: non solo i musei Fridericianum e Documenta-Halle, ma palestre scolastiche, bar e parchi pubblici. È l'edizione che consacra sulla scena internazionale la fisicità dirompente di **Matthew Barney**, che realizza un'azione scultorea arrampicandosi sulle pareti della Neue Galerie.\n\n#### La XLV Biennale di Venezia (1993)\nDiretta da **Achille Bonito Oliva** con il titolo *Punti Cardinali dell'Arte*, vede la storica sezione **Aperto '93** affidata a Helena Kontova, direttrice di *Flash Art*. Kontova coinvolge un gruppo di giovanissimi curatori d'avanguardia (tra cui lo stesso Francesco Bonami e un venticinquenne Hans Ulrich Obrist). Per la prima volta, la mostra sfugge al controllo accademico delle nazioni ufficiali, aprendo le porte a maestri cinesi (Wang Guangyi), installazioni relazionali e presenze diasporiche.\n\n#### Cities on the Move (1997–1999)\nIdeata e curata congiuntamente da **Hans Ulrich Obrist** e dal curatore cinese parigino **Hou Hanru**, *Cities on the Move* è una mostra-evento leggendaria che tocca Vienna, Bordeaux, New York (al MoMA PS1), Danimarca, Londra e Bangkok. La mostra rifiuta di esporre quadri o sculture tradizionali per portare all'interno del museo l'energia caotica, il traffico, i grattacieli, la musica techno, lo smog e le architetture avveniristiche delle **megalopoli dell'Asia orientale** in rapidissima espansione. Obrist e Hou Hanru abbattono i confini tra arte visiva, urbanistica, cinema e design, dimostrando che il baricentro dell'innovazione mondiale si sta spostando verso l'Estremo Oriente.\n\n---\n\n### 3. Matthew Barney e l'epica del Cremaster Cycle (1994–2002)\n\nIl passaggio al nuovo millennio è incarnato plasticamente dalla conclusione dell'opera monumentale di **Matthew Barney**: il ciclo cinematografico e scultoreo **Cremaster**. Cinque film realizzati nell'arco di otto anni (da *Cremaster 4* nel 1994 a *Cremaster 3* nel 2002), privi di dialoghi verbali e accompagnati unicamente dalle musiche visionarie di Jonathan Bepler:\n* L'opera è un'epopea biologica e mitologica che prende il nome dal muscolo cremastere, responsabile dell'ascesa e discesa dei testicoli e della determinazione sessuale dell'embrione.\n* Barney crea una cosmologia visiva totale che unisce sport, culturismo, folklore celtico, architettura massonica e metamorfosi organiche realizzate in vaselina solida, teflon e cera d'api.\n* Quando il ciclo viene esposto integralmente al Guggenheim Museum di New York nel 2002-2003, la spirale di Frank Lloyd Wright viene trasformata in un'arena monumentale, sancendo l'avvento di un'arte che unisce cinema d'autore, scultura monumentale e allestimento scenografico globale.\n\n---\n\n### 4. Gli artisti globali: Yinka Shonibare e il dibattito sull'ibridazione\n\nIn questo scenario internazionalizzato, artisti diasporici come l'anglo-nigeriano **Yinka Shonibare** diventano gli ambasciatori acclamati delle grandi biennali. Tuttavia, Bonami evidenzia le ambiguità critiche di questo successo:\n* Le sculture di Shonibare — manichini vittoriani acefali vestiti con tessuti batik wax olandesi — ottengono un consenso trionfale nel mercato occidentale grazie alla loro impeccabile eleganza visiva e all'ironia post-coloniale.\n* Al contempo, una parte della critica più severa avanza il dubbio che l'Occidente celebri questi artisti anche per appagare un sentimento di compiacimento ed esotismo rassicurante, trasformando l'ibridazione culturale in una formula di successo commerciale per le collezioni private e le aste internazionali.",
+    "summary": "### 1. La tesi di Francesco Bonami: Quando inizia il ventunesimo secolo?\n\nNel celebre saggio critico **Il secolo a uncinetto**, il curatore e critico internazionale **Francesco Bonami** affronta una questione epistemologica capitale: quando ha inizio realmente il ventunesimo secolo per la storia dell'arte? La risposta non coincide con il calendario convenzionale del 1° gennaio 2000. Il nuovo millennio nasce precisamente il **9 novembre 1989**, con la caduta del Muro di Berlino e l'avvio del collasso dell'Unione Sovietica. Quel crollo geopolitico abbatte la divisione bipolare del pianeta e inaugura una trasformazione radicale: la fine dell'eurocentrismo e l'avvento della globalizzazione economica, tecnologica e culturale.\n\nLa metafora dell'**uncinetto** coniata da Bonami descrive perfettamente la nuova morfologia dell'arte contemporanea:\n* Non più una linea retta, rigida e progressiva di avanguardie storiche che si succedono l'una all'altra secondo il modello modernista del Novecento.\n* Ma un **tessuto a maglie fitte e intrecciate**, un ricamo policentrico in cui fili provenienti dall'Africa, dall'Asia, dall'America Latina e dall'Europa si annodano, si incrociano e si sovrappongono. In questa rete complessa, artisti, opere, fiere e biennali viaggiano vorticosamente, guidati da una nuova figura egemone del sistema culturale: **il curatore globale indipendente**.\n\n---\n\n### 2. Le grandi rassegne di passaggio tra i millenni\n\nNegli anni Novanta e all'inizio del Duemila, una serie di grandi mostre storiche ridefinisce radicalmente il canone espositivo:\n\n#### Documenta 9 a Kassel (1992)\nCurata dal belga **Jan Hoet**, è considerata l'ultima edizione guidata da uno dei 'curatori-sciamani' cresciuti tra gli anni Sessanta e Settanta. Hoet concepisce la mostra come un'avventura fisica e sensoriale, facendo invadere l'intera cittadina tedesca: non solo i musei Fridericianum e Documenta-Halle, ma palestre scolastiche, bar e parchi pubblici. È l'edizione che consacra sulla scena internazionale la fisicità dirompente di **Matthew Barney**, che realizza un'azione scultorea arrampicandosi sulle pareti della Neue Galerie.\n\n#### La XLV Biennale di Venezia (1993)\nDiretta da **Achille Bonito Oliva** con il titolo *Punti Cardinali dell'Arte*, vede la storica sezione **Aperto '93** affidata a Helena Kontova, direttrice di *Flash Art*. Kontova coinvolge un gruppo di giovanissimi curatori d'avanguardia (tra cui lo stesso Francesco Bonami e un venticinquenne Hans Ulrich Obrist). Per la prima volta, la mostra sfugge al controllo accademico delle nazioni ufficiali, aprendo le porte a maestri cinesi (Wang Guangyi), installazioni relazionali e presenze diasporiche.\n\n#### Cities on the Move (1997–1999)\nIdeata e curata congiuntamente da **Hans Ulrich Obrist** e dal curatore cinese parigino **Hou Hanru**, *Cities on the Move* è una mostra-evento leggendaria che tocca Vienna, Bordeaux, New York (al MoMA PS1), Danimarca, Londra e Bangkok. La mostra rifiuta di esporre quadri o sculture tradizionali per portare all'interno del museo l'energia caotica, il traffico, i grattacieli, la musica techno, lo smog e le architetture avveniristiche delle **megalopoli dell'Asia orientale** in rapidissima espansione. Obrist e Hou Hanru abbattono i confini tra arte visiva, urbanistica, cinema e design, dimostrando che il baricentro dell'innovazione mondiale si sta spostando verso l'Estremo Oriente.\n\n---\n\n### 3. Matthew Barney e l'epica del Cremaster Cycle (1994–2002)\n\nIl passaggio al nuovo millennio è incarnato plasticamente dalla conclusione dell'opera monumentale di **Matthew Barney**: il ciclo cinematografico e scultoreo **Cremaster**. Cinque film realizzati nell'arco di otto anni (da *Cremaster 4* nel 1994 a *Cremaster 3* nel 2002), privi di dialoghi verbali e accompagnati unicamente dalle musiche visionarie di Jonathan Bepler:\n* L'opera è un'epopea biologica e mitologica che prende il nome dal muscolo cremastere, responsabile dell'ascesa e discesa dei testicoli e della determinazione sessuale dell'embrione.\n* Barney crea una cosmologia visiva totale che unisce sport, culturismo, folklore celtico, architettura massonica e metamorfosi organiche realizzate in vaselina solida, teflon e cera d'api.\n* Quando il ciclo viene esposto integralmente al Guggenheim Museum di New York nel 2002-2003, la spirale di Frank Lloyd Wright viene trasformata in un'arena monumentale, sancendo l'avvento di un'arte che unisce cinema d'autore, scultura monumentale e allestimento scenografico globale.\n\n---\n\n### 4. Gli artisti globali: Yinka Shonibare e il dibattito sull'ibridazione\n\nIn questo scenario internazionalizzato, artisti diasporici come l'anglo-nigeriano **Yinka Shonibare** diventano gli ambasciatori acclamati delle grandi biennali. Tuttavia, Bonami evidenzia le ambiguità critiche di questo successo:\n* Le sculture di Shonibare — manichini vittoriani acefali vestiti con tessuti batik wax olandesi — ottengono un consenso trionfale nel mercato occidentale grazie alla loro impeccabile eleganza visiva e all'ironia post-coloniale.\n* Al contempo, una parte della critica più severa avanza il dubbio che l'Occidente celebri questi artisti anche per appagare un sentimento di compiacimento ed esotismo rassicurante, trasformando l'ibridazione culturale in una formula di successo commerciale per le collezioni private e le aste internazionali.\n\n---\n\n### Dalla dispensa: musei-icona e Biennali di fine secolo\n\nDopo il Guggenheim di Bilbao di Frank Gehry inizia la corsa al **museo icona**: architetti come Gehry, **Rem Koolhaas**, Zaha Hadid, Jean Nouvel e Daniel Libeskind diventano star, e ogni città vuole un edificio firmato. Alla Biennale di Venezia il nuovo presidente **Paolo Baratta** affida le edizioni 1999 e 2001 a **Harald Szeemann** (*dAPERTutto* e *Platea dell'umanità*); gli succede Franco Bernabè. In questo clima emergono artisti come il sudafricano **William Kentridge**, autore di animazioni a carboncino malinconiche e violente sui traumi del Sudafrica.",
     "keyPoints": [
       "Secondo Francesco Bonami ne 'Il secolo a uncinetto', il XXI secolo artistico non inizia nel 2000 ma il 9 novembre 1989 con la caduta del Muro di Berlino.",
       "La metafora dell'uncinetto descrive l'arte contemporanea come una trama fitta, policentrica e orizzontale in cui linguaggi e culture globali si intrecciano.",
@@ -1915,10 +1915,10 @@ window.ARTE_DATA = [
       {
         "question": "Secondo il saggio critico di Francesco Bonami 'Il secolo a uncinetto', in quale data simbolica ha inizio il XXI secolo artistico?",
         "options": [
-          "Il 9 novembre 1989, con l'abbattimento del Muro di Berlino",
-          "Il 1° gennaio 2000, con il passaggio del nuovo millennio",
-          "L'11 settembre 2001, con il crollo delle Torri Gemelle",
-          "Il 1° gennaio 2002, con l'introduzione della moneta unica europea"
+          "Il 9 novembre 1989, con la caduta del Muro di Berlino",
+          "Il 1° gennaio 2000, con il nuovo millennio",
+          "L'11 settembre 2001, con l'attacco alle Torri",
+          "Il 1991, con la dissoluzione dell'URSS"
         ],
         "correctIndex": 0,
         "explanation": "Bonami argomenta che il 1989 è la vera cesura che archivia il secolo breve delle avanguardie moderniste e inaugura la complessità globale."
@@ -1926,32 +1926,32 @@ window.ARTE_DATA = [
       {
         "question": "Cosa caratterizzava l'innovativo allestimento della mostra itinerante 'Cities on the Move' (1997-1999)?",
         "options": [
-          "La commistione tra arte, architettura, cinema, design e vita urbana caotica delle megalopoli asiatiche",
-          "L'esposizione di soli dipinti ad acquerello di paesaggi rurali europei del Settecento",
-          "L'uso esclusivo di sculture in marmo bianco allestite in sale buie con torce elettriche",
-          "La presentazione di reperti archeologici cinesi provenienti da tombe imperiali"
+          "Una mostra di reperti archeologici delle tombe imperiali",
+          "Una rassegna di pittura cinese tradizionale su rotolo",
+          "Una sequenza di sale buie con sculture in marmo",
+          "L'intreccio di arte, architettura e vita delle megalopoli asiatiche"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "Curata da Obrist e Hou Hanru, Cities on the Move ricreò dentro il museo l'energia urbana, le strutture provvisorie e i mercati delle città dell'Asia."
       },
       {
         "question": "In quale celebre museo newyorkese fu esposto integralmente nel 2002-2003 il ciclo Cremaster di Matthew Barney?",
         "options": [
-          "Al Solomon R. Guggenheim Museum, lungo la rampa a spirale di Frank Lloyd Wright",
-          "Al Metropolitan Museum of Art all'interno dell'ala dedicata all'antico Egitto",
-          "Al MoMA all'interno del giardino delle sculture di Abby Aldrich Rockefeller",
-          "Al Whitney Museum of American Art nelle sale dell'arte realista americana"
+          "Al Whitney, nelle sale del realismo americano",
+          "Al Metropolitan, nell'ala dell'antico Egitto",
+          "Al MoMA, nel giardino delle sculture",
+          "Al Guggenheim, lungo la rampa di Frank Lloyd Wright"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "L'intero ciclo Cremaster occupò la grande rampa a spirale del Guggenheim, consacrando Barney come il massimo scultore-cineasta del decennio."
       },
       {
         "question": "Quale storica sezione della 45ª Biennale di Venezia del 1993 aprì la strada alla nuova generazione di curatori e artisti mondiali?",
         "options": [
-          "La sezione 'Aperto '93', coordinata da Helena Kontova",
-          "Il Padiglione della Germania curato da Hans Haacke",
-          "La rassegna sul Futurismo italiano ai Giardini",
-          "La mostra documentaria sulle Biennali storiche dell'Ottocento"
+          "Aperto '93, coordinata da Helena Kontova",
+          "Il Padiglione tedesco di Hans Haacke",
+          "La mostra Punti cardinali dell'arte",
+          "Il padiglione Italia curato da Bonito Oliva"
         ],
         "correctIndex": 0,
         "explanation": "Aperto '93 coinvolse giovani curatori come Bonami e Obrist e artisti emergenti internazionali, decretando la svolta policentrica."
@@ -1959,12 +1959,12 @@ window.ARTE_DATA = [
       {
         "question": "Quale critica ambigua rivolge una parte della stampa internazionale al successo planetario delle sculture di Yinka Shonibare?",
         "options": [
-          "Quella di soddisfare il gusto esotico e rassicurante del collezionismo occidentale borghese",
-          "Quella di utilizzare tessuti industriali sintetici dannosi per l'ambiente",
-          "Quella di rifiutare categoricamente qualsiasi mostra al di fuori della Gran Bretagna",
-          "Quella di non saper disegnare a mano figure realistiche su carta"
+          "Di usare tessuti sintetici dannosi per l'ambiente",
+          "Di assecondare il gusto esotico dei collezionisti occidentali",
+          "Di rifiutare le mostre fuori dalla Gran Bretagna",
+          "Di affidare tutto il lavoro agli assistenti"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "Bonami nota come la seduzione visiva e teatrale di Shonibare rischi talvolta di essere assimilata dal mercato come prodotto esotico di consumo d'élite."
       }
     ],
@@ -2085,20 +2085,20 @@ window.ARTE_DATA = [
         "question": "Quale celebre compositore d'avanguardia suscitò enorme scandalo definendo l'attacco dell'11 settembre 'la più grande opera d'arte mai esistita'?",
         "options": [
           "Karlheinz Stockhausen",
-          "John Cage",
-          "Philip Glass",
-          "Pierre Boulez"
+          "György Ligeti",
+          "Iannis Xenakis",
+          "Luigi Nono"
         ],
         "correctIndex": 0,
         "explanation": "La dichiarazione shock di Stockhausen provocò la cancellazione dei suoi concerti e sollevò un acceso dibattito etico sull'estetizzazione del terrore."
       },
       {
-        "question": "In quante mostre autonome indipendenti suddivise Francesco Bonami la 50ª Biennale di Venezia del 2003?",
+        "question": "In quante mostre fu articolata la 50a Biennale di Venezia (2003) diretta da Francesco Bonami?",
         "options": [
-          "Dieci sezioni affidate a curatori differenti",
-          "Tre grandi padiglioni dedicati a pittura, scultura e video",
-          "Un'unica esposizione monografica su un solo maestro del Novecento",
-          "Cinquanta stanze chiuse ciascuna con una singola opera"
+          "In dieci mostre affidate a curatori diversi",
+          "In tre padiglioni dedicati a pittura, scultura e video",
+          "In un'unica mostra monografica",
+          "In cinquanta stanze con un'opera ciascuna"
         ],
         "correctIndex": 0,
         "explanation": "Bonami frantumò la mostra in dieci sezioni con curatori come Hou Hanru, Basualdo, David, Zabel, Orozco per dare voce al politeismo globale."
@@ -2106,34 +2106,34 @@ window.ARTE_DATA = [
       {
         "question": "Chi ha progettato nel 2001 l'innovativo e scultoreo Prada Store nel quartiere di SoHo a New York?",
         "options": [
-          "Rem Koolhaas (studio OMA)",
+          "Herzog & de Meuron",
           "Frank Gehry",
           "Zaha Hadid",
-          "Renzo Piano"
+          "Rem Koolhaas (OMA)"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "Rem Koolhaas trasformò la boutique di lusso in un anfiteatro di legno zebrano e gabbie sospese, fondendo architettura, moda e arte contemporanea."
       },
       {
         "question": "Quale materiale futuristico e lucente riveste le monumentali forme scultoree del Museo Guggenheim di Bilbao di Frank Gehry?",
         "options": [
-          "Lamelle sottili di titanio abbinate a pietra calcarea e vetro",
-          "Lastre di rame ossidato di colore verde scuro",
-          "Pannelli prefabbricati di cemento grezzo a vista",
-          "Foglie di piombo battuto ossidate alla fiamma"
+          "Acciaio corten color ruggine",
+          "Rame ossidato color verde",
+          "Cemento grezzo lasciato a vista",
+          "Titanio, pietra calcarea e vetro"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "Gehry impiegò il titanio (fino ad allora usato nell'industria aerospaziale), metallo che riflette la luce atmosferica della baia basca con riflessi dorati e cangianti."
       },
       {
         "question": "Quale prestigioso premio internazionale di architettura vinsero nel 2010 Kazuyo Sejima e Ryue Nishizawa (studio SANAA)?",
         "options": [
-          "Il Pritzker Architecture Prize",
-          "Il Leone d'Oro alla carriera per le arti visive",
-          "Il Premio Wolf per la fisica delle strutture",
-          "La Medaglia d'Oro del Senato della Repubblica"
+          "Il Praemium Imperiale",
+          "Il Leone d'Oro per l'architettura",
+          "La Royal Gold Medal",
+          "Il Pritzker Prize"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "Lo studio SANAA vinse il Pritzker Prize nel 2010 per la leggerezza, la trasparenza e l'eleganza democratica delle loro architetture museali (Kanazawa, New Museum, Rolex Learning Center)."
       }
     ],
@@ -2253,21 +2253,21 @@ window.ARTE_DATA = [
       {
         "question": "In quale teatro d'opera si svolse nel luglio 2007 la storica mostra-evento 'Il Tempo del Postino' ideata da Philippe Parreno e Hans Ulrich Obrist?",
         "options": [
-          "Alla Manchester Opera House",
+          "All'Opéra Garnier di Parigi",
           "Al Teatro alla Scala di Milano",
           "Alla Royal Opera House di Londra",
-          "All'Opéra Garnier di Parigi"
+          "Alla Manchester Opera House"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "La Manchester Opera House ospitò tredici artisti che presentarono azioni di quindici minuti ciascuno, trasformando il teatro nella sede della mostra temporale."
       },
       {
         "question": "Quale film indipendente del 1999 dimostrò l'incredibile potenza persuasiva dell'estetica video amatoriale e del falso documentario (mockumentary)?",
         "options": [
           "The Blair Witch Project",
-          "Pulp Fiction",
-          "Matrix",
-          "Titanic"
+          "Festen",
+          "Being John Malkovich",
+          "The Truman Show"
         ],
         "correctIndex": 0,
         "explanation": "The Blair Witch Project dimostrò come una videocamera a mano e una campagna virale su Internet potessero superare la spettacolarità di Hollywood."
@@ -2275,34 +2275,34 @@ window.ARTE_DATA = [
       {
         "question": "Quale artista polacco contemporaneo è celebre per le sue azioni collettive che coinvolgono gli abitanti del quartiere periferico di Bródno a Varsavia?",
         "options": [
-          "Pawel Althamer",
+          "Piotr Uklański",
           "Wilhelm Sasnal",
-          "Piotr Uklanski",
-          "Miroslaw Balka"
+          "Paweł Althamer",
+          "Mirosław Bałka"
         ],
-        "correctIndex": 0,
+        "correctIndex": 2,
         "explanation": "Althamer ha trasformato la pratica artistica in un laboratorio sociale collaborativo, viaggiando con i vicini di casa e trasformando i condomini popolari in sculture vive."
       },
       {
         "question": "Cosa fondò provocatoriamente Christoph Schlingensief nel 2003 per difendere l'autenticità dei sentimenti umani contro la mercificazione televisiva?",
         "options": [
-          "La Church of Fear (Chiesa della Paura)",
-          "Il Partito della Malinconia",
-          "L'Istituto per la Pace Universale",
-          "Il Tempio del Consumo Digitale"
+          "Un villaggio dell'opera in Burkina Faso",
+          "Un partito politico per i disoccupati",
+          "Un talk show televisivo di protesta",
+          "La Church of Fear (Chiesa della paura)"
         ],
-        "correctIndex": 0,
-        "explanation": "Schlingensief fondò la Church of Fear per risvegliare le coscienze dall'indifferenza anestetizzante dei mass media moderni."
+        "correctIndex": 3,
+        "explanation": "Alla Biennale del 2003 Schlingensief fondò la Church of Fear, una 'chiesa' che invitava a riconoscere la paura come sentimento autentico contro la sua manipolazione mediatica; il partito Chance 2000 e il villaggio-opera in Burkina Faso sono progetti di altri anni."
       },
       {
         "question": "Quale parametro fondamentale sostituisce lo 'spazio fisico' come materia prima dell'opera d'arte nel format 'Il Tempo del Postino'?",
         "options": [
-          "Il tempo vissuto e la durata dell'attenzione sincronizzata dello spettatore",
-          "La quantità di denaro raccolta dalla vendita dei biglietti d'ingresso",
-          "Il peso complessivo dei materiali scultorei trasportati sul palcoscenico",
-          "La distanza geografica tra i paesi di nascita dei tredici artisti partecipanti"
+          "La distanza tra i paesi degli artisti",
+          "Il ricavato della vendita dei biglietti",
+          "Il peso dei materiali portati in scena",
+          "Il tempo vissuto e la durata dell'attenzione"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "Parreno e Obrist dimostrarono che l'arte contemporanea non è solo occupazione di metri quadri in un museo, ma modulazione e partitura del tempo condiviso."
       }
     ],
@@ -2422,56 +2422,56 @@ window.ARTE_DATA = [
       {
         "question": "Quale evento accadde durante l'esposizione de 'La Nona Ora' di Cattelan alla Galleria Zacheta di Varsavia nel 2000?",
         "options": [
-          "Due parlamentari conservatori entrarono nel museo e tentarono di rimuovere fisicamente il meteorite per liberare il Papa",
-          "Un gruppo di attivisti ecologisti versò vernice rossa sulla scultura per protestare contro l'inquinamento",
-          "La scultura fu rubata nottetempo e ritrovata una settimana dopo sulle rive della Vistola",
-          "Il Santo Padre inviò una lettera di congratulazioni all'artista elogiando la profondità teologica dell'opera"
+          "Attivisti versarono vernice rossa sulla scultura",
+          "Due parlamentari cercarono di rimuovere il meteorite dalla statua",
+          "La scultura fu rubata e ritrovata sulla Vistola",
+          "Il Vaticano chiese ufficialmente la chiusura della mostra"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "I due deputati polacchi considerarono l'opera una bestemmia intollerabile, innescando una bufera politica che portò alle dimissioni della direttrice Anda Rottenberg."
       },
       {
         "question": "Quale astuzia allestitiva obbliga lo spettatore a vivere il cortocircuito visivo nell'opera 'Him' (2001)?",
         "options": [
-          "La scultura è collocata di spalle all'ingresso di una stanza vuota, costringendo lo spettatore ad avvicinarsi pensando a un bambino prima di scoprire il viso di Hitler",
-          "L'opera è posta all'interno di una stanza completamente buia illuminata solo da una torcia tascabile",
-          "La testa della scultura è coperta da un sacco di iuta che il visitatore deve sollevare manualmente",
-          "L'immagine è visibile solo attraverso un sistema di specchi concavi che deformano la figura"
+          "Ha la testa coperta da un sacco che il visitatore solleva",
+          "È in una stanza buia, illuminata solo da una torcia",
+          "È di spalle: sembra un bambino finché non si vede il volto di Hitler",
+          "È visibile solo attraverso un gioco di specchi"
         ],
-        "correctIndex": 0,
+        "correctIndex": 2,
         "explanation": "Cattelan predispone una vera e propria trappola percettiva: lo spettatore prova prima compassione per il fanciullo, per poi scoprire con orrore il volto del carnefice."
       },
       {
         "question": "Dove è collocata permanentemente la colossale scultura in marmo di Carrara 'L.O.V.E.' (2010)?",
         "options": [
-          "In Piazza degli Affari a Milano, di fronte a Palazzo Mezzanotte sede della Borsa",
-          "In Piazza del Campidoglio a Roma, davanti ai Musei Capitolini",
-          "In Piazza San Marco a Venezia, di fronte a Palazzo Ducale",
-          "Nel cortile della Borsa Valori di Wall Street a New York"
+          "In piazza del Campidoglio a Roma, sul colle",
+          "In piazza Affari a Milano, davanti alla Borsa",
+          "In piazza San Marco a Venezia, sul molo",
+          "Davanti al palazzo di Wall Street a New York"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "L.O.V.E. erge il suo dito medio monumentale proprio davanti alla sede della Borsa milanese, simbolo di ribellione contro la speculazione finanziaria."
       },
       {
         "question": "Cosa certifica la reale autenticità dell'opera 'Comedian' (la banana attaccata al muro con nastro adesivo)?",
         "options": [
-          "Un certificato di autenticità numerato e firmato dall'artista con un diagramma rigoroso per l'installazione",
-          "La presenza del marchio a fuoco impresso sulla buccia biologica della banana",
-          "Una ricevuta fiscale del fruttivendolo di Miami vidimata dalla fiera d'arte",
-          "Un microchip a radiofrequenza inserito all'interno della polpa del frutto"
+          "Un certificato firmato con le istruzioni di installazione",
+          "La banana originale, conservata sotto vuoto",
+          "Un nastro adesivo speciale prodotto per l'artista",
+          "Un numero di serie impresso sulla buccia"
         ],
         "correctIndex": 0,
-        "explanation": "Come nel concettuale puro, l'opera consiste nel certificato d'autenticità: la banana e il nastro adesivo possono essere acquistati in qualunque negozio e sostituiti all'infinito."
+        "explanation": "Comedian esiste come certificato di autenticità con istruzioni: la banana è deperibile e va sostituita, l'opera è l'idea certificata dall'artista."
       },
       {
         "question": "Quanti corpi velati compongono l'opera monumentale in marmo 'All' realizzata da Cattelan nel 2011?",
         "options": [
-          "Nove sculture distese sul pavimento",
-          "Tre grandi statue verticali",
-          "Dodici apostoli monumentali",
-          "Un unico corpo solitario collocato al centro della sala"
+          "Tre statue in piedi",
+          "Nove figure distese",
+          "Dodici figure inginocchiate",
+          "Un'unica figura al centro della sala"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "All è composta da nove sculture in marmo di Carrara allineate a terra, evocazione muta e solenne dei caduti anonimi della storia."
       }
     ],
@@ -2591,54 +2591,54 @@ window.ARTE_DATA = [
       {
         "question": "Quale percentuale chimica ha la soluzione acquosa impiegata da Hirst per conservare le carcasse biologiche nelle teche d'acciaio?",
         "options": [
-          "Soluzione di formaldeide al 5%",
-          "Acido cloridrico concentrato al 90%",
-          "Etanolo puro denaturato al 100%",
-          "Soluzione salina di cloruro di sodio al 30%"
+          "Glicerina pura",
+          "Alcol etilico al 70%",
+          "Formaldeide al 5%",
+          "Soluzione salina al 30%"
         ],
-        "correctIndex": 0,
+        "correctIndex": 2,
         "explanation": "La formaldeide al 5% è la soluzione standard impiegata nei laboratori di anatomia patologica per bloccare la putrefazione dei tessuti organici."
       },
       {
         "question": "Quale diamante eccezionale campeggia sulla fronte del teschio 'For the Love of God' di Damien Hirst?",
         "options": [
-          "Un diamante rosa a goccia da 52,4 carati privo di difetti",
-          "Il celebre diamante Koh-i-Noor della Corona britannica",
-          "Un diamante nero sintetico coltivato in laboratorio da 100 carati",
-          "Un rubino birmano a taglio cuscino da 30 carati"
+          "Un diamante nero sintetico da 100 carati",
+          "Il diamante Koh-i-Noor della Corona inglese",
+          "Un diamante rosa a goccia da 52,4 carati",
+          "Uno zaffiro blu a taglio ovale da 40 carati"
         ],
-        "correctIndex": 0,
+        "correctIndex": 2,
         "explanation": "Al centro della fronte risplende un leggendario diamante rosa naturale da 52,4 carati circondato da migliaia di diamanti bianchi purissimi."
       },
       {
         "question": "Quante opere cartacee originali furono bruciate personalmente da Hirst nella performance di 'The Currency' nel 2022?",
         "options": [
-          "4.851 opere, corrispondenti a coloro che avevano scelto di conservare il token digitale NFT",
           "Tutte le 10.000 opere del progetto",
-          "Soltanto dieci fogli scelti a sorte tra i collezionisti",
-          "Nessuna opera, poiché il fuoco era un effetto olografico digitale"
+          "4.851, quelle di chi aveva scelto l'NFT",
+          "Mille, scelte a sorte tra i collezionisti",
+          "Nessuna: il rogo era un effetto digitale"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "Hirst bruciò nei forni della galleria le 4.851 opere fisiche i cui proprietari avevano preferito detenere il titolo digitale NFT sulla blockchain."
       },
       {
-        "question": "Quale personaggio pop della cultura di massa americana compare coperto di coralli marini tra i falsi reperti antichi a Palazzo Grassi?",
+        "question": "Quale personaggio dei cartoni americani compare incrostato di coralli tra i falsi reperti di Treasures from the Wreck of the Unbelievable a Venezia?",
         "options": [
-          "Mickey Mouse (Topolino) che tiene per mano uno scugnizzo",
-          "Bugs Bunny con una carota in bronzo dorato",
-          "Spider-Man intrappolato in una rete da pesca fenicia",
-          "Homer Simpson scolpito in un blocco di malachite verde"
+          "Superman avvolto in una rete da pesca",
+          "Bugs Bunny in bronzo dorato",
+          "Topolino incrostato di coralli",
+          "Homer Simpson in malachite verde"
         ],
-        "correctIndex": 0,
-        "explanation": "Tra le divinità egizie e i guerrieri greci emergevano Mickey Mouse e Pippo, svelando il gioco ironico della colossale finzione archeologica."
+        "correctIndex": 2,
+        "explanation": "In Treasures from the Wreck of the Unbelievable (Palazzo Grassi e Punta della Dogana, 2017) Hirst mescola finti reperti antichi e icone pop come Topolino, presentandoli come recuperati da un naufragio."
       },
       {
         "question": "In quale anno Damien Hirst organizzò la storica vendita all'asta da Sotheby's incassando 111 milioni di sterline?",
         "options": [
-          "2008 (Beautiful Inside My Head Forever)",
-          "1997 (durante la mostra Sensation)",
-          "2017 (in concomitanza con la Biennale di Venezia)",
-          "1988 (durante l'esposizione di Freeze)"
+          "Nel 2008, con Beautiful Inside My Head Forever",
+          "Nel 1997, durante la mostra Sensation",
+          "Nel 2017, durante la mostra veneziana",
+          "Nel 1988, subito dopo Freeze"
         ],
         "correctIndex": 0,
         "explanation": "Il 15 e 16 settembre 2008 Hirst scavalcò il sistema delle gallerie vendendo direttamente all'asta 223 opere nuove alla vigilia del crollo di Lehman Brothers."
@@ -2760,32 +2760,32 @@ window.ARTE_DATA = [
       {
         "question": "In quale città inglese ha avuto inizio nei primi anni Novanta l'attività clandestina di Banksy?",
         "options": [
-          "Bristol",
           "Londra",
+          "Bristol",
           "Manchester",
           "Liverpool"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "Banksy iniziò a operare nella scena underground di Bristol, celebre focolaio culturale di graffiti, musica trip-hop e ribellione sociale."
       },
       {
         "question": "Quale risposta diede Banksy a un soldato israeliano che gli disse che i suoi murales rendevano bello il muro di Betlemme?",
         "options": [
-          "'Noi non vogliamo che sia bello: vogliamo che questo muro non esista'",
-          "'Grazie, sono un ammiratore delle grandi architetture militari'",
-          "'Lo faccio per promuovere il turismo nei territori occupati'",
-          "'Dipingo solo dove trovo la superficie di cemento più liscia'"
+          "\"Lo dipingo per attirare i turisti\"",
+          "\"Non vogliamo che sia bello: vogliamo che non esista\"",
+          "\"Il muro è solo un supporto come un altro\"",
+          "\"Dipingo dove la gente può vederlo\""
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "Banksy chiarì che il suo intervento non era decorazione urbana, ma denuncia politica radicale dell'illegittimità della barriera di segregazione."
       },
       {
         "question": "Cosa fece Banksy con i materiali e le strutture edili di Dismaland dopo la chiusura del parco nel settembre 2015?",
         "options": [
-          "Li spedì a Calais in Francia per costruire rifugi d'emergenza per i migranti della 'Giungla'",
-          "Li vendette all'asta a collezionisti privati ricavandone decine di milioni di sterline",
-          "Li affondò nel mare davanti alla costa inglese per creare una barriera corallina artificiale",
-          "Li incendiò completamente durante un concerto segreto trasmesso sul web"
+          "Li inviò a Calais per costruire rifugi per i migranti",
+          "Li vendette all'asta come opere singole",
+          "Li donò a un parco divertimenti di Bristol",
+          "Li fece distruggere in una performance pubblica"
         ],
         "correctIndex": 0,
         "explanation": "Tutti i materiali di Dismaland furono inviati nel campo profughi di Calais per offrire ripari caldi e alloggi d'emergenza a migliaia di richiedenti asilo."
@@ -2793,10 +2793,10 @@ window.ARTE_DATA = [
       {
         "question": "A quale cifra record fu ri-aggiudicata all'asta nel 2021 la tela parzialmente triturata 'Love is in the Bin'?",
         "options": [
-          "18,5 milioni di sterline (oltre 21 milioni di euro)",
-          "100.000 sterline, con una forte svalutazione per il danno subito",
-          "Un milione di sterline esatto, lo stesso prezzo della prima asta",
-          "50 milioni di dollari ad Art Basel Miami Beach"
+          "18,5 milioni di sterline",
+          "100.000 sterline",
+          "1 milione di sterline",
+          "50 milioni di dollari"
         ],
         "correctIndex": 0,
         "explanation": "Nel 2021 Love is in the Bin fu rivenduta da Sotheby's moltiplicando di diciotto volte il valore originario, confermando il paradosso del mercato globale."
@@ -2804,12 +2804,12 @@ window.ARTE_DATA = [
       {
         "question": "A quale istituzione pubblica furono interamente devoluti i 16,7 milioni di sterline ricavati dalla vendita dell'opera 'Game Changer'?",
         "options": [
-          "Al Servizio Sanitario Nazionale britannico (NHS) e agli ospedali pubblici",
-          "Al fondo monetario della Royal Academy of Arts per il restauro di sculture classiche",
-          "Al Ministero della Difesa britannico per la sorveglianza delle coste",
-          "Alla casa d'aste Christie's per finanziare borse di studio a giovani artisti di strada"
+          "Alla Tate per nuove acquisizioni",
+          "Alla Royal Academy per i suoi restauri",
+          "A un fondo per gli artisti di strada",
+          "Al servizio sanitario britannico (NHS)"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "I proventi miliardari dell'asta di Game Changer furono devoluti a favore del personale e dei pazienti del servizio sanitario pubblico inglese."
       }
     ],
@@ -2929,10 +2929,10 @@ window.ARTE_DATA = [
       {
         "question": "In quale città della Cina furono cotti a 1.300 °C i cento milioni di semi di porcellana di 'Sunflower Seeds'?",
         "options": [
-          "A Jingdezhen, millenaria capitale imperiale della porcellana",
-          "A Pechino, nei forni della Città Proibita",
-          "A Shanghai, nelle moderne acciaierie industriali",
-          "A Hong Kong, nei laboratori del porto commerciale"
+          "Jingdezhen",
+          "Pechino",
+          "Shanghai",
+          "Canton"
         ],
         "correctIndex": 0,
         "explanation": "Jingdezhen vanta una tradizione secolare nella manifattura della porcellana per la corte imperiale; Ai Weiwei ha impiegato 1.600 artigiani locali per oltre due anni."
@@ -2940,32 +2940,32 @@ window.ARTE_DATA = [
       {
         "question": "Per quanti giorni Ai Weiwei fu incarcerato illegalmente in isolamento dalla polizia segreta cinese nella primavera del 2011?",
         "options": [
+          "Un anno",
+          "3 giorni",
           "81 giorni",
-          "Tre giorni",
-          "Un intero anno",
-          "Cinquanta ore"
+          "18 mesi"
         ],
-        "correctIndex": 0,
+        "correctIndex": 2,
         "explanation": "Fu arrestato all'aeroporto di Pechino e detenuto in un luogo segreto per 81 giorni con due guardie a pochi centimetri da lui giorno e notte, evento che documentò poi nella serie scultorea S.A.C.R.E.D."
       },
       {
         "question": "Cosa formavano visivamente i novemila zaini scolastici colorati installati sulla facciata della Haus der Kunst a Monaco?",
         "options": [
-          "Una gigantesca frase in caratteri cinesi pronunciata dalla madre di una bambina vittima del terremoto",
-          "Un ritratto stilizzato del Presidente Mao Zedong",
-          "La mappa geografica della provincia del Sichuan",
-          "Una bandiera della Repubblica Popolare Cinese a lutto"
+          "La bandiera della Cina listata a lutto",
+          "Un grande ritratto stilizzato di Mao Zedong",
+          "La mappa della provincia del Sichuan colpita",
+          "Una frase della madre di una bambina morta nel terremoto"
         ],
-        "correctIndex": 0,
-        "explanation": "I colori degli zainetti componevano la frase 'Ha vissuto felicemente su questa terra per sette anni', toccante testimonianza di una madre contro l'oblio statale."
+        "correctIndex": 3,
+        "explanation": "In Remembering (Haus der Kunst, Monaco, 2009) novemila zaini compongono la frase 'Ha vissuto felice per sette anni in questo mondo', pronunciata dalla madre di una bambina morta nel terremoto del Sichuan del 2008, dove crollarono scuole costruite male."
       },
       {
         "question": "Quale grande evento cinematografico documentario ha presentato Ai Weiwei nel 2017 per denunciare la crisi dei profughi?",
         "options": [
-          "Human Flow, presentato alla Mostra del Cinema di Venezia",
-          "The Blair Witch Project",
-          "Cremaster 3",
-          "Tuttomondo"
+          "Human Flow, presentato alla Mostra di Venezia",
+          "Never Sorry, presentato al Sundance",
+          "So Sorry, girato a Monaco",
+          "Coronation, girato a Wuhan"
         ],
         "correctIndex": 0,
         "explanation": "Human Flow fu girato in ventidue paesi del mondo, monumentale inchiesta sul dramma di oltre 65 milioni di esseri umani costretti a fuggire da guerre e carestie."
@@ -2973,12 +2973,12 @@ window.ARTE_DATA = [
       {
         "question": "Cosa intendeva dimostrare Ai Weiwei lasciando cadere a terra e distruggendo l'urna della dinastia Han?",
         "options": [
-          "Che un nuovo significato concettuale contemporaneo può nascere solo attraverso la rottura critica con l'autorità del passato",
-          "Che la terracotta antica è un materiale fragile non adatto alla conservazione",
-          "Che l'antichità non ha alcun valore economico per il mercato dell'arte moderna",
-          "Che l'artigianato del periodo Han era tecnicamente inferiore a quello moderno"
+          "Che i reperti Han non hanno valore di mercato",
+          "Che la terracotta antica è fragile e va protetta",
+          "Che il nuovo nasce dalla rottura con l'autorità del passato",
+          "Che l'artigianato antico era tecnicamente rozzo"
         ],
-        "correctIndex": 0,
+        "correctIndex": 2,
         "explanation": "Il gesto iconoclasta duchampiano dimostra che per generare nuova libertà e consapevolezza storica è necessario liberarsi dal culto feticista dell'autorità passata."
       }
     ],
@@ -3098,21 +3098,21 @@ window.ARTE_DATA = [
       {
         "question": "Quale effetto ottico producevano le lampade a vapori di sodio impiegate in 'The Weather Project' nella Turbine Hall?",
         "options": [
-          "Annullavano la percezione di tutti gli altri colori, riducendo lo spettro visivo a gradazioni pure di giallo, ambra e nero",
-          "Riflettevano ologrammi tridimensionali di nuvole tempestose sul soffitto",
-          "Emettevano una luce stroboscopica intermittente che paralizzava i movimenti dei visitatori",
-          "Coloravano il pavimento di rosso fluorescente attraverso un prisma laser"
+          "Proiettavano nuvole tridimensionali sul soffitto",
+          "Riducevano tutti i colori a gradazioni di giallo e nero",
+          "Creavano un effetto stroboscopico intermittente",
+          "Tingevano il pavimento di rosso acceso"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "La luce a singola frequenza dei vapori di sodio assorbe le lunghezze d'onda dei vestiti e della pelle, trasformando la folla in un'immagine monocromatica unificata."
       },
       {
         "question": "Con quale celebre scienziato e geologo della Groenlandia collaborò Eliasson per realizzare 'Ice Watch'?",
         "options": [
           "Minik Rosing",
-          "Richard Feynman",
-          "Stephen Hawking",
-          "James Lovelock"
+          "James Lovelock",
+          "Jason Box",
+          "Konrad Steffen"
         ],
         "correctIndex": 0,
         "explanation": "Minik Rosing ha affiancato Eliasson nella selezione e nel trasporto etico del ghiaccio staccatosi naturalmente dalla calotta glaciale groenlandese."
@@ -3120,34 +3120,34 @@ window.ARTE_DATA = [
       {
         "question": "A quale altezza dal suolo è collocata la passerella circolare arcobaleno di 'Your Rainbow Panorama' ad Aarhus?",
         "options": [
-          "A circa 50 metri d'altezza sopra il tetto del museo",
-          "A livello della spiaggia lungo la riva del mare",
-          "A dieci metri dentro una galleria sotterranea",
-          "A cinquecento metri sulla cima di una torre di trasmissione televisiva"
+          "Sotto terra, in una galleria del museo",
+          "Al piano terra, nell'atrio d'ingresso",
+          "Sul tetto del museo, a circa 50 metri d'altezza",
+          "Sulla spiaggia, davanti al porto"
         ],
-        "correctIndex": 0,
+        "correctIndex": 2,
         "explanation": "La passerella a 360 gradi corona il tetto dell'ARoS Museum a cinquanta metri d'altezza, trasformando la città in un panorama cromatico continuo."
       },
       {
         "question": "A quale scopo venivano destinati i proventi delle donazioni per le lampade 'Green Light' alla Biennale di Venezia?",
         "options": [
-          "A finanziare corsi di lingua, supporto legale e integrazione per rifugiati e richiedenti asilo",
-          "Ad acquistare quote di società petrolifere per influenzarne le politiche ambientali",
-          "A finanziare la costruzione di un nuovo studio privato per l'artista in Islanda",
-          "A pagare i diritti d'ingresso per la visita della Peggy Guggenheim Collection"
+          "A finanziare progetti di energia solare in Africa",
+          "A sostenere corsi e integrazione per rifugiati",
+          "A restaurare i padiglioni dei Giardini",
+          "A piantare alberi nella laguna di Venezia"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "Tutte le donazioni raccolte con la distribuzione delle lampade modulari Green Light furono impiegate da ONG partner per l'accoglienza e la formazione professionale dei migranti."
       },
       {
         "question": "In quale città europea ha sede il grande studio-laboratorio multidisciplinare fondato da Olafur Eliasson nel 1995?",
         "options": [
-          "Berlino",
-          "Reykjavik",
           "Londra",
-          "Zurigo"
+          "Reykjavik",
+          "Copenaghen",
+          "Berlino"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "Lo Studio Olafur Eliasson ha sede a Berlino, dove operano oltre cento collaboratori tra scienziati, architetti, designer e tecnici specializzati."
       }
     ],
@@ -3267,32 +3267,32 @@ window.ARTE_DATA = [
       {
         "question": "Quale biologo ungherese ha formulato nel 1968 gli L-systems (sistemi algoritmici di crescita vegetale) applicati da Chevalier?",
         "options": [
-          "Aristid Lindenmayer",
-          "Gregor Mendel",
-          "Charles Darwin",
-          "Konrad Lorenz"
+          "D'Arcy Thompson",
+          "Benoît Mandelbrot",
+          "Alan Turing",
+          "Aristid Lindenmayer"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "Aristid Lindenmayer teorizzò gli L-systems per descrivere la morfogenesi cellulare, divenuti la matrice matematica per i giardini generativi di Chevalier."
       },
       {
         "question": "In quale celebre monumento federiciano ottagonale del XIII secolo in Puglia fu allestita l'opera 'Magic Carpets'?",
         "options": [
-          "Castel del Monte ad Andria",
           "Castello Svevo di Bari",
-          "Castello Maniace a Siracusa",
-          "Castello Ursino a Catania"
+          "Castel del Monte",
+          "Castello Maniace di Siracusa",
+          "Castello Ursino di Catania"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "La corte interna ottagonale di Castel del Monte fu trasformata in un monumentale tappeto di pixel generativi da Miguel Chevalier."
       },
       {
         "question": "Cosa distingue le opere software di Chevalier dai video d'animazione digitale convenzionali?",
         "options": [
-          "Sono generate in tempo reale da algoritmi software e non si ripetono mai identiche a se stesse",
-          "Sono filmate in pellicola 35mm e poi riversate su videocassette magnetiche VHS",
-          "Possono essere visualizzate solo su schermi a tubo catodico in bianco e nero",
-          "Richiedono l'uso obbligatorio di caschi per la realtà virtuale immersiva"
+          "Sono generate in tempo reale e non si ripetono mai",
+          "Sono girate in pellicola e poi digitalizzate",
+          "Funzionano solo su schermi a tubo catodico",
+          "Richiedono un visore per la realtà virtuale"
         ],
         "correctIndex": 0,
         "explanation": "Chevalier programma software generativi in real-time che calcolano ogni fotogramma in tempo reale, rendendo l'opera vivente e mutevole all'infinito."
@@ -3300,23 +3300,23 @@ window.ARTE_DATA = [
       {
         "question": "In quale prestigiosa mostra parigina del 2018 al Grand Palais fu esposta l'opera 'Extra-Natural'?",
         "options": [
-          "Artistes & Robots",
-          "Les Magiciens de la Terre",
-          "Sensation",
-          "Aperto '80"
+          "Digital Revolution",
+          "Les Immatériaux",
+          "Electra",
+          "Artistes & Robots"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "Artistes & Robots al Grand Palais consacrò l'interazione tra intelligenza artificiale, robotica e arte contemporanea d'avanguardia."
       },
       {
         "question": "Quale compositore contemporaneo collabora frequentemente con Chevalier per creare il sound design generativo interattivo delle sue mostre?",
         "options": [
+          "Alva Noto (Carsten Nicolai)",
           "Jacopo Baboni Schilingi",
-          "Brian Eno",
-          "Philip Glass",
-          "Karlheinz Stockhausen"
+          "Ryoji Ikeda",
+          "Jean-Michel Jarre"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "Baboni Schilingi compone architetture sonore algoritmiche che mutano in tempo reale dialogando con le proiezioni visive di Chevalier."
       }
     ],
@@ -3435,56 +3435,56 @@ window.ARTE_DATA = [
       {
         "question": "Quale polarità dialettica d'esame vede a confronto Damien Hirst e Maurizio Cattelan?",
         "options": [
-          "Finzione vs Realtà: Simulacro, Inganno e Iperrealismo",
-          "Arte e Politica: Dissidenza e Clandestinità",
-          "Arte e Scienza: Morfogenesi Digitale e Fisica Ottica",
-          "Arte Astratta vs Realismo Socialista"
+          "Arte e politica: dissidenza e clandestinità",
+          "Finzione e realtà: simulacro e inganno",
+          "Arte e scienza: percezione e algoritmi",
+          "Astrazione e figurazione"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "Hirst e Cattelan interrogano entrambi il confine tra verità e finzione: Hirst attraverso il falso archeologico monumentale, Cattelan attraverso la maschera dell'iperrealismo."
       },
       {
         "question": "Quale elemento accomuna la poetica di Olafur Eliasson e Miguel Chevalier?",
         "options": [
-          "La trasformazione della ricerca scientifica in dispositivo poetico ed ecologico che coinvolge attivamente la percezione dello spettatore",
-          "L'uso esclusivo della pittura a olio su tela senza alcun ausilio tecnologico",
-          "La militanza politica clandestina in paesi governati da dittature militari",
-          "La produzione seriale di sculture in bronzo destinate esclusivamente alle collezioni private"
+          "La produzione seriale di grandi bronzi",
+          "L'uso esclusivo della pittura a olio su tela",
+          "La militanza politica in paesi autoritari",
+          "La scienza trasformata in esperienza percettiva"
         ],
-        "correctIndex": 0,
+        "correctIndex": 3,
         "explanation": "Sia Eliasson che Chevalier utilizzano la scienza (ottica e fisica l'uno, informatica e algoritmi l'altro) per risvegliare la sensibilità e la coscienza dello spettatore."
       },
       {
         "question": "Quale delle seguenti coppie di opere affronta direttamente il tema drammatico delle migrazioni globali e dei rifugiati?",
         "options": [
-          "Law of the Journey di Ai Weiwei e Green Light di Olafur Eliasson",
-          "The Weather Project di Eliasson e Comedian di Cattelan",
           "For the Love of God di Hirst e Sur-Natures di Chevalier",
-          "Him di Cattelan e Dropping a Han Dynasty Urn di Ai Weiwei"
+          "The Weather Project di Eliasson e Comedian di Cattelan",
+          "Law of the Journey di Ai Weiwei e Green Light di Eliasson",
+          "Him di Cattelan e la Han Dynasty Urn di Ai Weiwei"
         ],
-        "correctIndex": 0,
+        "correctIndex": 2,
         "explanation": "Sia il gommone nero lungo 70 metri di Ai Weiwei che il workshop partecipativo Green Light di Eliasson mettono al centro la dignità e la protezione dei migranti."
       },
       {
         "question": "In quale modo Banksy e Damien Hirst hanno entrambi attaccato o decostruito il sistema delle case d'asta londinesi?",
         "options": [
-          "Hirst vendendo direttamente all'asta scavalcando le gallerie (2008) e Banksy triturando la tela 'Girl with Balloon' in diretta durante la vendita (2018)",
-          "Occupando fisicamente la sede di Christie's con una manifestazione sindacale di protesta",
-          "Inondando le sale d'asta con migliaia di litri d'acqua salata per simulare un allagamento",
-          "Rifiutando categoricamente che le loro opere venissero inserite nei cataloghi di vendita"
+          "Entrambi occupando la sede di Christie's a Londra",
+          "Hirst vendendo all'asta da solo, Banksy triturando la tela",
+          "Entrambi vietando ogni vendita delle proprie opere",
+          "Entrambi vendendo le loro opere solo come NFT"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "Entrambi hanno dimostrato come l'asta stessa possa essere trasformata nell'arena spettacolare della performance concettuale dell'artista."
       },
       {
         "question": "Quale concetto sociologico definisce la convergenza contemporanea tra arte, moda, finanza e celebrità incarnata dagli artisti del nuovo millennio?",
         "options": [
-          "L'art-star system globale del tardo-capitalismo",
-          "L'artigianato corporativo medievale",
-          "L'isolamento accademico neoclassico",
-          "La censura statale centralizzata"
+          "Il mecenatismo di corte",
+          "L'art-star system globale",
+          "L'accademismo neoclassico",
+          "Il realismo socialista"
         ],
-        "correctIndex": 0,
+        "correctIndex": 1,
         "explanation": "La scena contemporanea è dominata dall'art-star system, in cui gli artisti operano come figure pubbliche complesse tra provocazione, mercato e coscienza etica."
       }
     ],

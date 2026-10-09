@@ -21,6 +21,16 @@
   let isSyncing = false;
   let syncDebounceTimer = null;
   let toastTimer = null;
+  let stateDebounceTimer = null;
+  let stateTableMissing = false;
+
+  // Debounce dell'invio dello stato completo (ripasso, quiz, attività, esami, orale)
+  const STATE_PUSH_DELAY = 4000;
+
+  // core.js dichiara `const StudyCore` a livello globale: non è una proprietà di window
+  function getCore() {
+    return (typeof StudyCore !== 'undefined') ? StudyCore : null;
+  }
 
   // Inizializza il client Supabase
   function initSupabase() {
@@ -93,10 +103,10 @@
     } catch (e) {}
 
     // Resetta lo stato in memoria se StudyCore e' disponibile
-    if (window.StudyCore && window.StudyCore.state) {
-      window.StudyCore.state.completed = {};
-      window.StudyCore.state.quizAnswers = {};
-      window.StudyCore.state.flashcardStatus = {};
+    if (getCore() && getCore().state) {
+      getCore().state.completed = {};
+      getCore().state.quizAnswers = {};
+      getCore().state.flashcardStatus = {};
     }
 
     // Ricarica la pagina per azzerare completamente il DOM e mostrare il login wall
@@ -149,8 +159,8 @@
     try {
       // 1. Recupera stato locale attuale
       let localCompleted = {};
-      if (window.StudyCore && window.StudyCore.state && window.StudyCore.state.completed) {
-        localCompleted = { ...window.StudyCore.state.completed };
+      if (getCore() && getCore().state && getCore().state.completed) {
+        localCompleted = { ...getCore().state.completed };
       }
       try {
         const saved = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY) || '{}');
@@ -204,20 +214,210 @@
       } catch (e) {}
 
       // 7. Aggiorna StudyCore in memoria se ci troviamo in una pagina di studio
-      if (window.StudyCore && window.StudyCore.state) {
-        window.StudyCore.state.completed = mergedCompleted;
+      if (getCore() && getCore().state) {
+        getCore().state.completed = mergedCompleted;
       }
 
-      // 8. Aggiorna l'interfaccia utente grafica su tutta la pagina
+      // 8. Ripasso, quiz, attività, esami e orale (tabella user_state)
+      await syncCloudState(user);
+
+      // 9. Aggiorna l'interfaccia utente grafica su tutta la pagina
       triggerUIProgressRefresh(mergedCompleted);
 
-      // 9. Attiva canale Realtime per ascoltare modifiche da altri dispositivi
+      // 10. Attiva canale Realtime per ascoltare modifiche da altri dispositivi
       setupRealtimeSubscription(user.id);
     } catch (err) {
       console.warn('[Cloud Sync] Errore durante la sincronizzazione:', err);
     } finally {
       isSyncing = false;
     }
+  }
+
+  // -- Sincronizzazione dello stato completo (tabella user_state) --
+  // Una riga per utente: { user_id, data jsonb, updated_at }. I capitoli completati restano in user_progress.
+
+  const SYNCED_STATE_KEYS = ['srs', 'quizAnswers', 'activity', 'examHistory', 'oralLog', 'lastSubject'];
+  const EXAM_HISTORY_LIMIT = 30;
+
+  function isPlainObject(v) {
+    return !!v && typeof v === 'object' && !Array.isArray(v);
+  }
+
+  function pickSyncedState(src) {
+    const out = {};
+    if (!isPlainObject(src)) return out;
+    SYNCED_STATE_KEYS.forEach(k => { if (src[k] !== undefined) out[k] = src[k]; });
+    return out;
+  }
+
+  function examKey(h) {
+    return [h.date, h.subject, h.scope, h.correct, h.total, h.grade].join('|');
+  }
+
+  // Fonde due stati senza perdere dati: l'operazione è idempotente e simmetrica
+  // (a parte lastSubject, dove vince lo stato locale se presente).
+  function mergeStudyState(local, remote) {
+    local = isPlainObject(local) ? local : {};
+    remote = isPlainObject(remote) ? remote : {};
+    const merged = {};
+
+    // srs: vince la scheda con più ripassi, a parità la scadenza più lontana
+    const srs = {};
+    [remote.srs, local.srs].forEach(src => {
+      if (!isPlainObject(src)) return;
+      Object.entries(src).forEach(([id, card]) => {
+        if (!isPlainObject(card)) return;
+        const cur = srs[id];
+        if (!cur) { srs[id] = card; return; }
+        const a = card.reviews || 0, b = cur.reviews || 0;
+        if (a > b || (a === b && String(card.due || '') > String(cur.due || ''))) srs[id] = card;
+      });
+    });
+    merged.srs = srs;
+
+    // quizAnswers: unione delle chiavi (a parità di chiave vince il locale)
+    merged.quizAnswers = Object.assign({},
+      isPlainObject(remote.quizAnswers) ? remote.quizAnswers : {},
+      isPlainObject(local.quizAnswers) ? local.quizAnswers : {});
+
+    // oralLog: unione delle chiavi (a parità di chiave vince la valutazione più recente)
+    const oralLog = Object.assign({}, isPlainObject(remote.oralLog) ? remote.oralLog : {});
+    if (isPlainObject(local.oralLog)) {
+      Object.entries(local.oralLog).forEach(([id, entry]) => {
+        const cur = oralLog[id];
+        if (!cur || !isPlainObject(entry) || String(entry.date || '') >= String(cur.date || '')) oralLog[id] = entry;
+      });
+    }
+    merged.oralLog = oralLog;
+
+    // activity: massimo per giorno
+    const activity = {};
+    [remote.activity, local.activity].forEach(src => {
+      if (!isPlainObject(src)) return;
+      Object.entries(src).forEach(([day, n]) => {
+        activity[day] = Math.max(activity[day] || 0, Number(n) || 0);
+      });
+    });
+    merged.activity = activity;
+
+    // examHistory: unione deduplicata in ordine di data, ultime 30
+    const seen = new Set();
+    const history = [];
+    [remote.examHistory, local.examHistory].forEach(src => {
+      if (!Array.isArray(src)) return;
+      src.forEach(h => {
+        if (!isPlainObject(h)) return;
+        const k = examKey(h);
+        if (seen.has(k)) return;
+        seen.add(k);
+        history.push(h);
+      });
+    });
+    history.sort((a, b) => String(a.date || '').localeCompare(String(b.date || '')));
+    merged.examHistory = history.slice(-EXAM_HISTORY_LIMIT);
+
+    const lastSubject = local.lastSubject || remote.lastSubject;
+    if (lastSubject) merged.lastSubject = lastSubject;
+
+    return merged;
+  }
+
+  function readLocalBlob() {
+    try {
+      const saved = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY) || '{}');
+      return isPlainObject(saved) ? saved : {};
+    } catch (e) {
+      return {};
+    }
+  }
+
+  // Stato locale da sincronizzare: localStorage più eventuale stato in memoria della pagina di studio
+  function collectLocalSyncedState() {
+    let local = pickSyncedState(readLocalBlob());
+    const core = getCore();
+    if (core && core.state) {
+      const mem = pickSyncedState(core.state);
+      if (core.state.currentSubject) mem.lastSubject = core.state.currentSubject;
+      local = mergeStudyState(mem, local);
+    }
+    return local;
+  }
+
+  async function fetchCloudState(userId) {
+    if (!supabase || !userId || stateTableMissing) return null;
+    try {
+      const { data, error } = await supabase
+        .from('user_state')
+        .select('data')
+        .eq('user_id', userId)
+        .maybeSingle();
+      if (error) {
+        // Tabella non ancora creata: si continua con i soli capitoli completati
+        if (error.code === '42P01' || error.code === 'PGRST205' || /user_state/.test(error.message || '')) {
+          stateTableMissing = true;
+        }
+        console.warn('[Cloud Sync] Stato completo non disponibile:', error);
+        return null;
+      }
+      return (data && isPlainObject(data.data)) ? data.data : {};
+    } catch (e) {
+      console.warn('[Cloud Sync] Errore di rete durante lettura stato:', e);
+      return null;
+    }
+  }
+
+  async function pushCloudState(userId, stateData) {
+    if (!supabase || !userId || stateTableMissing) return;
+    try {
+      const { error } = await supabase
+        .from('user_state')
+        .upsert({ user_id: userId, data: stateData, updated_at: new Date().toISOString() }, { onConflict: 'user_id' });
+      if (error) console.warn('[Cloud Sync] Errore salvataggio stato:', error);
+    } catch (e) {
+      console.warn('[Cloud Sync] Errore di rete durante salvataggio stato:', e);
+    }
+  }
+
+  // Scarica lo stato remoto, lo fonde con quello locale e carica il risultato se diverso
+  async function syncCloudState(user) {
+    const remote = await fetchCloudState(user.id);
+    if (remote === null) return;
+
+    const merged = mergeStudyState(collectLocalSyncedState(), remote);
+
+    try {
+      const saved = readLocalBlob();
+      Object.assign(saved, merged);
+      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(saved));
+    } catch (e) {}
+
+    const core = getCore();
+    if (core && core.state) {
+      ['srs', 'quizAnswers', 'activity', 'examHistory', 'oralLog'].forEach(k => { core.state[k] = merged[k]; });
+    }
+
+    if (JSON.stringify(mergeStudyState(remote, {})) !== JSON.stringify(mergeStudyState(merged, {}))) {
+      await pushCloudState(user.id, merged);
+    }
+
+    window.dispatchEvent(new CustomEvent('study:state-synced', { detail: { state: merged } }));
+  }
+
+  // Fonde con il remoto prima di caricare: un altro dispositivo potrebbe aver salvato nel frattempo.
+  // Lo stato locale non viene toccato qui: il remoto arriva alla prossima sincronizzazione (focus, accesso).
+  async function pushMergedState(userId) {
+    const remote = await fetchCloudState(userId);
+    if (remote === null) return;
+    await pushCloudState(userId, mergeStudyState(collectLocalSyncedState(), remote));
+  }
+
+  function scheduleStatePush() {
+    if (!currentUser || stateTableMissing) return;
+    if (stateDebounceTimer) clearTimeout(stateDebounceTimer);
+    stateDebounceTimer = setTimeout(() => {
+      stateDebounceTimer = null;
+      if (currentUser) pushMergedState(currentUser.id);
+    }, STATE_PUSH_DELAY);
   }
 
   // Notifica UI e componenti grafici di studio o home
@@ -231,11 +431,11 @@
     if (typeof window.doRenderChapter === 'function') {
       window.doRenderChapter();
     }
-    if (window.StudyCore && typeof window.StudyCore.updateCompleteButtonState === 'function') {
+    if (getCore() && typeof getCore().updateCompleteButtonState === 'function') {
       const chaps = (typeof window.getCurrentPdfChapters === 'function') ? window.getCurrentPdfChapters() : [];
-      const currentChap = chaps[window.StudyCore.state.activeChapIndex];
+      const currentChap = chaps[getCore().state.activeChapIndex];
       if (currentChap) {
-        window.StudyCore.updateCompleteButtonState(!!completedMap[currentChap.id]);
+        getCore().updateCompleteButtonState(!!completedMap[currentChap.id]);
       }
     }
     // Evento globale personalizzato per la Home (index.html) e altri listener
@@ -287,8 +487,8 @@
   // Applica progressi ricevuti in tempo reale da un altro dispositivo
   function applyRemoteProgressUpdate(incomingMap) {
     let currentMap = {};
-    if (window.StudyCore && window.StudyCore.state && window.StudyCore.state.completed) {
-      currentMap = window.StudyCore.state.completed;
+    if (getCore() && getCore().state && getCore().state.completed) {
+      currentMap = getCore().state.completed;
     } else {
       try {
         const saved = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY) || '{}');
@@ -304,8 +504,8 @@
       localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(saved));
     } catch (e) {}
 
-    if (window.StudyCore && window.StudyCore.state) {
-      window.StudyCore.state.completed = merged;
+    if (getCore() && getCore().state) {
+      getCore().state.completed = merged;
     }
 
     triggerUIProgressRefresh(merged);
@@ -313,7 +513,11 @@
 
   // Hook chiamato da core.js quando l'utente modifica lo stato di un capitolo
   function onStateSaved(payload) {
-    if (!currentUser || !supabase || isSyncing) return;
+    if (!currentUser || !supabase) return;
+
+    // Stato completo: invio con debounce di qualche secondo
+    scheduleStatePush();
+    if (isSyncing) return;
 
     if (syncDebounceTimer) clearTimeout(syncDebounceTimer);
     syncDebounceTimer = setTimeout(async () => {
@@ -480,7 +684,7 @@
             <!-- VISTA FORM LOGIN / REGISTRAZIONE -->
             <div id="auth-guest-view">
               <p class="auth-intro-desc">
-                Crea un account o accedi per utilizzare la piattaforma di studio.
+                L'accesso è facoltativo: serve a sincronizzare tutti i progressi (capitoli completati, ripasso delle flashcard, quiz, simulazioni e orale) tra computer e smartphone.
               </p>
               <form id="form-auth-action">
                 <div class="form-group" id="group-display-name" style="display: none;">
@@ -590,7 +794,7 @@
     if (isRegisterMode) {
       nameGroup.style.display = 'block';
       submitBtn.textContent = 'Crea Account Gratuito';
-      question.textContent = 'Hai gia un account?';
+      question.textContent = 'Hai già un account?';
       toggleBtn.textContent = 'Accedi';
     } else {
       nameGroup.style.display = 'none';
@@ -910,7 +1114,7 @@
           sessionStorage.setItem('aba_login_prompt_shown', 'true');
           setTimeout(() => {
             if (!currentUser) {
-              showToast('Accedi al tuo account per sincronizzare i progressi completati su PC.', 'info', 6000);
+              showToast('Accedi al tuo account per sincronizzare i progressi con il computer.', 'info', 6000);
             }
           }, 1500);
         }
@@ -941,8 +1145,8 @@
           localStorage.removeItem(LOCAL_STORAGE_KEY);
           localStorage.removeItem('aba_studio_state_v2');
         } catch (e) {}
-        if (window.StudyCore && window.StudyCore.state) {
-          window.StudyCore.state.completed = {};
+        if (getCore() && getCore().state) {
+          getCore().state.completed = {};
         }
         updateAuthUI();
         triggerUIProgressRefresh({});
@@ -960,6 +1164,7 @@
     updateUserPassword,
     onStateSaved,
     syncCloudProgress,
+    mergeStudyState,
     showToast,
     getUser: () => currentUser,
     openModal: openAuthModal,

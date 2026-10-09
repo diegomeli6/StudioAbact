@@ -1,81 +1,82 @@
 /**
  * Studio ABA Catania — Core Engine
- * Modulo condiviso: stato, localStorage, rendering, esame, tema, utility
- * Caricato da ogni pagina-materia
+ * Modulo condiviso: stato, localStorage, rendering capitolo/flashcard/quiz,
+ * simulatore d'esame, lettore vocale (TTS), tema, parser Markdown.
+ * Caricato da ogni pagina di studio dopo js/layout.js; inizializzato da js/subject-app.js.
  */
 
 const StudyCore = (function () {
   'use strict';
 
   // CHIAVE LOCAL STORAGE
+  // Chiave storica mantenuta per non perdere i progressi già salvati dagli studenti
   const STORAGE_KEY = 'ux_web_study_state_v1';
+  const THEME_KEY = 'aba_studio_theme';
 
   // STATO APPLICATIVO
   const state = {
-    currentSubject: 'web-design',
-    activePdf: 'dispense',
+    currentSubject: '',
+    activePdf: '',
     activeChapIndex: 0,
     activeSubtab: 'summary',
     activeView: 'study',
     theme: 'light',
-    sidebarOpen: true,
     completed: {},
     flashcardStatus: {},
     quizAnswers: {},
+    srs: {},
+    activity: {},
+    examHistory: [],
+    oralLog: {},
     examSession: null,
     ttsSpeed: 1
   };
 
-  // SVG Icons — sostituzione emoji
+  // Icone SVG usate dal motore (le icone del layout sono in js/layout.js)
   const ICONS = {
-    study: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>',
-    exam: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>',
-    theme: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>',
-    save: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>',
-    menu: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>',
-    lock: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>',
-    home: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>',
-    summary: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>',
-    flashcard: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M12 4v16"/></svg>',
-    quiz: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>',
-    check: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>',
     circle: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>',
     circleFilled: '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>',
-    arrowLeft: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>',
-    arrowRight: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>',
-    anchor: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><line x1="12" y1="22" x2="12" y2="8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/></svg>',
-    pin: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>',
     checkCircle: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent-success)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>',
     xCircle: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent-danger)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>',
-    download: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>',
-    upload: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>',
-    trash: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>',
     thumbsUp: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>',
     repeat: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>',
-    close: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>',
     star: '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>'
   };
 
   // ── localStorage ──
 
-  function loadLocalState() {
+  // Posizione di lettura salvata per ogni materia: { [subjectId]: { activePdf, activeChapIndex } }
+  let positions = {};
+
+  function loadLocalState(subjectId) {
+    if (subjectId) state.currentSubject = subjectId;
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (parsed.currentSubject) state.currentSubject = parsed.currentSubject;
         if (parsed.completed) state.completed = parsed.completed;
         if (parsed.flashcardStatus) state.flashcardStatus = parsed.flashcardStatus;
         if (parsed.quizAnswers) state.quizAnswers = parsed.quizAnswers;
-        if (parsed.activePdf) state.activePdf = parsed.activePdf;
-        if (typeof parsed.activeChapIndex === 'number') state.activeChapIndex = parsed.activeChapIndex;
-        if (parsed.activeView) {
-          state.activeView = (parsed.activeView === 'cram' || parsed.activeView === 'glossary') ? 'study' : parsed.activeView;
+        if (parsed.srs) state.srs = parsed.srs;
+        if (parsed.activity) state.activity = parsed.activity;
+        if (Array.isArray(parsed.examHistory)) state.examHistory = parsed.examHistory;
+        if (parsed.oralLog) state.oralLog = parsed.oralLog;
+        if (parsed.positions) positions = parsed.positions;
+
+        const pos = positions[state.currentSubject];
+        if (pos) {
+          state.activePdf = pos.activePdf;
+          state.activeChapIndex = pos.activeChapIndex || 0;
+        } else {
+          // Formato precedente: un'unica posizione condivisa (subject-app.js la scarta se non valida)
+          if (parsed.activePdf) state.activePdf = parsed.activePdf;
+          if (typeof parsed.activeChapIndex === 'number') state.activeChapIndex = parsed.activeChapIndex;
         }
+        state.activeView = parsed.activeView === 'exam' ? 'exam' : 'study';
         if (parsed.theme) state.theme = parsed.theme;
       }
 
-      const globalTheme = localStorage.getItem('aba_studio_theme') || localStorage.getItem('studio_home_theme');
+      const globalTheme = localStorage.getItem(THEME_KEY);
       if (globalTheme) {
         state.theme = globalTheme;
       }
@@ -94,16 +95,22 @@ const StudyCore = (function () {
 
   function saveLocalState() {
     try {
+      positions[state.currentSubject] = {
+        activePdf: state.activePdf,
+        activeChapIndex: state.activeChapIndex
+      };
       const payload = {
-        currentSubject: state.currentSubject,
         completed: state.completed,
         flashcardStatus: state.flashcardStatus,
         quizAnswers: state.quizAnswers,
-        activePdf: state.activePdf,
-        activeChapIndex: state.activeChapIndex,
+        srs: state.srs,
+        activity: state.activity,
+        examHistory: state.examHistory.slice(-30),
+        oralLog: state.oralLog,
+        positions: positions,
+        lastSubject: state.currentSubject,
         activeView: state.activeView,
-        theme: state.theme,
-        ttsSpeed: state.ttsSpeed
+        theme: state.theme
       };
       localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
       if (typeof updateProgressIndicators === 'function') updateProgressIndicators();
@@ -127,8 +134,7 @@ const StudyCore = (function () {
       document.body.classList.add('theme-light');
     }
     try {
-      localStorage.setItem('aba_studio_theme', theme);
-      localStorage.setItem('studio_home_theme', theme);
+      localStorage.setItem(THEME_KEY, theme);
     } catch (e) {}
   }
 
@@ -149,30 +155,6 @@ const StudyCore = (function () {
     document.querySelectorAll('.view-panel').forEach(panel => {
       panel.classList.toggle('active', panel.id === `view-${viewName}`);
     });
-
-    const sidebar = document.getElementById('sidebar');
-    const pdfNav = document.getElementById('pdf-selector-nav');
-    const sessionBar = document.getElementById('session-bar');
-    const viewPills = document.getElementById('header-view-pills');
-    const contentArea = document.getElementById('content-area');
-
-    if (viewName === 'hub') {
-      if (sidebar) sidebar.style.display = 'none';
-      if (pdfNav) pdfNav.style.display = 'none';
-      if (sessionBar) sessionBar.style.display = 'none';
-      if (viewPills) viewPills.style.opacity = '0.35';
-      if (contentArea) contentArea.style.maxWidth = '1050px';
-    } else {
-      if (sidebar) sidebar.style.display = 'flex';
-      if (pdfNav) pdfNav.style.display = 'flex';
-      if (sessionBar) sessionBar.style.display = 'flex';
-      if (viewPills) viewPills.style.opacity = '1';
-      if (contentArea) contentArea.style.maxWidth = '940px';
-    }
-
-    if (viewName === 'exam') {
-      updateExamFreemiumState();
-    }
   }
 
   function switchSubtab(subtabName) {
@@ -210,87 +192,6 @@ const StudyCore = (function () {
     }, 60);
   }
 
-  function isUserAuthenticated() {
-    return !!(window.AppAuth && typeof window.AppAuth.getUser === 'function' && window.AppAuth.getUser());
-  }
-
-  function isChapterLocked(chapIndex) {
-    if (isUserAuthenticated()) return false;
-    // Senza login: capitolo 0 (primo capitolo di ogni dispensa/materia) e' accessibile, tutti i successivi sono bloccati
-    return chapIndex > 0;
-  }
-
-  function updateChapterLockOverlay(isLocked) {
-    const studyView = document.getElementById('view-study');
-    if (!studyView) return;
-
-    let overlay = document.getElementById('chapter-lock-overlay');
-
-    if (isLocked) {
-      studyView.classList.add('chapter-locked-view');
-      stopSpeech();
-
-      // Disabilita audio vocale per capitoli bloccati
-      const listenBtn = document.getElementById('btn-audio-listen');
-      if (listenBtn) {
-        listenBtn.disabled = true;
-        listenBtn.title = 'Accesso richiesto per ascoltare la sintesi';
-      }
-
-      // Disabilita pulsanti completa (sia sopra che sotto)
-      const completeBtns = document.querySelectorAll('#btn-toggle-complete, .btn-toggle-complete');
-      completeBtns.forEach(btn => {
-        btn.disabled = true;
-        btn.style.opacity = '0.4';
-        btn.style.cursor = 'not-allowed';
-      });
-
-      if (!overlay) {
-        overlay = document.createElement('div');
-        overlay.id = 'chapter-lock-overlay';
-        overlay.className = 'chapter-lock-overlay';
-        overlay.innerHTML = `
-          <div class="chapter-lock-card">
-            <div class="chapter-lock-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-              </svg>
-            </div>
-            <h3>Capitolo riservato</h3>
-            <p>Questo capitolo, con le relative flashcard e i quiz di preparazione, è riservato agli utenti registrati.</p>
-            <button id="btn-lock-overlay-login" class="btn-primary-action auth-submit-btn">Accedi o Registrati</button>
-          </div>
-        `;
-        studyView.appendChild(overlay);
-
-        overlay.querySelector('#btn-lock-overlay-login').addEventListener('click', () => {
-          if (window.AppAuth && typeof window.AppAuth.openModal === 'function') {
-            window.AppAuth.openModal();
-          }
-        });
-      } else {
-        overlay.style.display = 'flex';
-      }
-    } else {
-      studyView.classList.remove('chapter-locked-view');
-      if (overlay) overlay.remove();
-
-      const listenBtn = document.getElementById('btn-audio-listen');
-      if (listenBtn) {
-        listenBtn.disabled = false;
-        listenBtn.title = 'Ascolta sintesi vocale';
-      }
-
-      const completeBtns = document.querySelectorAll('#btn-toggle-complete, .btn-toggle-complete');
-      completeBtns.forEach(btn => {
-        btn.disabled = false;
-        btn.style.opacity = '1';
-        btn.style.cursor = 'pointer';
-      });
-    }
-  }
-
   // ── Rendering sidebar ──
 
   function renderSidebar(getCurrentPdfChapters, onNavigate) {
@@ -321,15 +222,8 @@ const StudyCore = (function () {
       item.className = 'chapter-nav-item';
       if (idx === state.activeChapIndex) item.classList.add('active');
 
-      const locked = isChapterLocked(idx);
-      if (locked) {
-        item.classList.add('is-locked');
-      }
-
       let statusIcon;
-      if (locked) {
-        statusIcon = `<span class="nav-icon locked" title="Capitolo riservato">${ICONS.lock}</span>`;
-      } else if (isDone) {
+      if (isDone) {
         statusIcon = `<span class="nav-icon done">${ICONS.checkCircle}</span>`;
       } else if (idx === state.activeChapIndex) {
         statusIcon = `<span class="nav-icon active-dot">${ICONS.circleFilled}</span>`;
@@ -421,8 +315,13 @@ const StudyCore = (function () {
       });
     }
 
+    applyGlossary(summaryBody);
+    renderOpenQuestions(chap);
     renderFlashcards(chap);
     renderQuiz(chap);
+
+    replayAnimation(document.querySelector('#view-study .chapter-hero'), 'anim-enter');
+    replayAnimation(document.getElementById('chap-summary-body'), 'anim-enter');
 
     const isDone = !!state.completed[chap.id];
     updateCompleteButtonState(isDone);
@@ -446,12 +345,264 @@ const StudyCore = (function () {
 
     const pdfNameEl = document.getElementById('active-pdf-name');
     if (pdfNameEl) pdfNameEl.textContent = getPdfDisplayName(state.activePdf);
+  }
 
-    const isLocked = isChapterLocked(state.activeChapIndex);
-    updateChapterLockOverlay(isLocked);
+  // ── Glossario ──
+  // Se la pagina carica un glossario (window.GLOSSARY_DATA), la prima occorrenza di ogni termine
+  // nella sintesi diventa un pulsante che mostra la definizione.
+
+  let glossaryIndex = null;
+
+  function getGlossaryIndex() {
+    if (glossaryIndex) return glossaryIndex;
+    const data = window.GLOSSARY_DATA || [];
+    const entries = [];
+    data.forEach(g => {
+      const keys = [g.term.split(' (')[0].trim()];
+      const inner = (g.term.match(/\(([^)]+)\)/) || [])[1];
+      if (inner && !/\d|«/.test(inner)) {
+        const alias = inner.split(' - ')[0].trim();
+        if (alias.split(/\s+/).length >= 2) keys.push(alias);
+      }
+      keys.filter(k => k.length >= 4).forEach(k => entries.push({ key: k, entry: g }));
+    });
+    entries.sort((a, b) => b.key.length - a.key.length);
+    const escRe = t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    glossaryIndex = {
+      entries,
+      re: entries.length ? new RegExp('(^|[^\\p{L}])(' + entries.map(e => escRe(e.key)).join('|') + ')(?![\\p{L}])', 'iu') : null
+    };
+    return glossaryIndex;
+  }
+
+  function applyGlossary(container) {
+    if (!container || !window.GLOSSARY_DATA) return;
+    const idx = getGlossaryIndex();
+    if (!idx.re) return;
+    const used = new Set();
+    const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, {
+      acceptNode: n => n.parentElement.closest('h2, h3, h4, figcaption, .glossary-term, code, th')
+        ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT
+    });
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(node => {
+      let text = node.nodeValue;
+      let m;
+      const frag = document.createDocumentFragment();
+      let changed = false;
+      while (text && (m = idx.re.exec(text))) {
+        const word = m[2];
+        const hit = idx.entries.find(e => e.key.toLowerCase() === word.toLowerCase());
+        const start = m.index + m[1].length;
+        // I termini di una sola parola (es. "Contrasto") valgono solo con la maiuscola, per non marcare l'uso comune
+        const skip = !hit || used.has(hit.entry.term) || (!/\s/.test(hit.key) && word !== hit.key);
+        if (skip) {
+          frag.appendChild(document.createTextNode(text.slice(0, start + word.length)));
+          text = text.slice(start + word.length);
+          continue;
+        }
+        used.add(hit.entry.term);
+        frag.appendChild(document.createTextNode(text.slice(0, start)));
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'glossary-term';
+        btn.textContent = word;
+        btn.dataset.term = hit.entry.term;
+        btn.dataset.def = hit.entry.def;
+        btn.dataset.source = hit.entry.source || '';
+        frag.appendChild(btn);
+        text = text.slice(start + word.length);
+        changed = true;
+      }
+      if (changed) {
+        if (text) frag.appendChild(document.createTextNode(text));
+        node.parentNode.replaceChild(frag, node);
+      }
+    });
+  }
+
+  function setupGlossaryPopover() {
+    let pop = null;
+    function close() {
+      if (pop) { pop.remove(); pop = null; }
+    }
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest('.glossary-term');
+      if (!btn) {
+        if (pop && !e.target.closest('.glossary-popover')) close();
+        return;
+      }
+      const same = pop && pop.dataset.term === btn.dataset.term;
+      close();
+      if (same) return;
+      pop = document.createElement('div');
+      pop.className = 'glossary-popover';
+      pop.dataset.term = btn.dataset.term;
+      pop.setAttribute('role', 'dialog');
+      pop.innerHTML = `
+        <div class="glossary-popover-head">
+          <strong>${escapeHtml(btn.dataset.term)}</strong>
+          ${btn.dataset.source ? `<span>${escapeHtml(btn.dataset.source)}</span>` : ''}
+        </div>
+        <p>${escapeHtml(btn.dataset.def)}</p>`;
+      document.body.appendChild(pop);
+      const r = btn.getBoundingClientRect();
+      const w = Math.min(340, window.innerWidth - 32);
+      pop.style.width = w + 'px';
+      pop.style.left = Math.max(16, Math.min(window.scrollX + r.left, window.scrollX + window.innerWidth - w - 16)) + 'px';
+      pop.style.top = (window.scrollY + r.bottom + 8) + 'px';
+    });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+    window.addEventListener('resize', close);
+  }
+
+  // ── Domande da orale ──
+  // Formati accettati: "testo domanda" oppure { question, modelAnswer }
+
+  function renderOpenQuestions(chap) {
+    const section = document.getElementById('open-questions-section');
+    const listEl = document.getElementById('chap-open-questions');
+    if (!section || !listEl) return;
+    const items = (chap.openQuestions || [])
+      .map(q => (typeof q === 'string' ? { question: q } : q))
+      .filter(q => q && q.question);
+
+    section.style.display = items.length ? '' : 'none';
+    listEl.innerHTML = items.map(q => q.modelAnswer ? `
+      <details class="open-question-item">
+        <summary>${escapeHtml(q.question)}</summary>
+        <div class="open-question-answer">${formatMarkdown(q.modelAnswer)}</div>
+      </details>` : `
+      <div class="open-question-item open-question-plain">${escapeHtml(q.question)}</div>`).join('');
+  }
+
+  // ── Ripasso a intervalli (flashcard) ──
+  // Ogni scheda ha una "scatola" (0-5): più la ricordi, più il ripasso successivo si allontana.
+  // state.srs[cardId] = { box, due: 'AAAA-MM-GG', reviews }
+  const SRS_INTERVALS = [0, 1, 3, 7, 14, 30];
+
+  function todayKey(date) {
+    const d = date || new Date();
+    const z = n => String(n).padStart(2, '0');
+    return `${d.getFullYear()}-${z(d.getMonth() + 1)}-${z(d.getDate())}`;
+  }
+
+  function addDays(days) {
+    const d = new Date();
+    d.setDate(d.getDate() + days);
+    return todayKey(d);
+  }
+
+  function daysUntil(key) {
+    return Math.round((new Date(key) - new Date(todayKey())) / 86400000);
+  }
+
+  // Le schede valutate con la versione precedente ("Lo so bene" / "Da rivedere") entrano nel ripasso
+  function getCardSrs(cardId) {
+    if (state.srs[cardId]) return state.srs[cardId];
+    const legacy = state.flashcardStatus[cardId];
+    if (legacy === 'known') return { box: 2, due: todayKey(), reviews: 1 };
+    if (legacy === 'cram') return { box: 0, due: todayKey(), reviews: 1 };
+    return null;
+  }
+
+  function isCardDue(cardId) {
+    const s = getCardSrs(cardId);
+    return !!s && s.due <= todayKey();
+  }
+
+  // grade: 'again' (non la sapevo), 'hard' (incerta), 'good' (la sapevo)
+  function gradeCard(cardId, grade) {
+    const cur = getCardSrs(cardId) || { box: 0, reviews: 0 };
+    let box;
+    let days;
+    if (grade === 'again') {
+      box = 0; days = 0;
+    } else if (grade === 'hard') {
+      box = Math.max(1, cur.box); days = 1;
+    } else {
+      box = Math.min(SRS_INTERVALS.length - 1, Math.max(cur.box + 1, 2)); days = SRS_INTERVALS[box];
+    }
+    state.srs[cardId] = { box, due: addDays(days), reviews: (cur.reviews || 0) + 1 };
+    state.flashcardStatus[cardId] = grade === 'good' ? 'known' : 'cram';
+    logActivity();
+    saveLocalState();
+    return state.srs[cardId];
+  }
+
+  function describeCard(cardId) {
+    const s = getCardSrs(cardId);
+    if (!s) return { text: 'Nuova', cls: 'is-new' };
+    const d = daysUntil(s.due);
+    if (d <= 0) return { text: 'Da ripassare oggi', cls: 'is-due' };
+    if (d === 1) return { text: 'Prossimo ripasso: domani', cls: 'is-scheduled' };
+    return { text: `Prossimo ripasso: tra ${d} giorni`, cls: s.box >= 4 ? 'is-learned' : 'is-scheduled' };
+  }
+
+  // Attività giornaliera (per la serie di giorni di studio nelle statistiche)
+  function logActivity() {
+    const k = todayKey();
+    state.activity[k] = (state.activity[k] || 0) + 1;
+  }
+
+  // Riavvia un'animazione CSS sullo stesso elemento
+  function replayAnimation(el, cls) {
+    if (!el) return;
+    el.classList.remove(cls);
+    void el.offsetWidth;
+    el.classList.add(cls);
   }
 
   // ── Flashcards ──
+
+  // Scheda con rotazione 3D e tre pulsanti di valutazione; usata nel capitolo e nel ripasso
+  function buildFlashcard(card, cardId, onGraded) {
+    const el = document.createElement('div');
+    el.className = 'flashcard-card';
+    const status = describeCard(cardId);
+    el.innerHTML = `
+      <button type="button" class="flashcard-flip" aria-label="Gira la scheda" aria-pressed="false">
+        <span class="flashcard-inner">
+          <span class="flashcard-face flashcard-front">
+            <span class="flashcard-label">Domanda</span>
+            <span class="flashcard-content">${escapeHtml(card.question)}</span>
+            <span class="flashcard-hint">${ICONS.repeat} Tocca per girare</span>
+          </span>
+          <span class="flashcard-face flashcard-back">
+            <span class="flashcard-label">Risposta</span>
+            <span class="flashcard-answer">${escapeHtml(card.answer)}</span>
+          </span>
+        </span>
+      </button>
+      <div class="flashcard-footer">
+        <span class="flashcard-due ${status.cls}">${status.text}</span>
+        <div class="flashcard-grades" role="group" aria-label="Quanto la ricordavi?">
+          <button type="button" class="btn-grade grade-again" data-grade="again">Non la sapevo</button>
+          <button type="button" class="btn-grade grade-hard" data-grade="hard">Incerta</button>
+          <button type="button" class="btn-grade grade-good" data-grade="good">La sapevo</button>
+        </div>
+      </div>
+    `;
+    const flip = el.querySelector('.flashcard-flip');
+    flip.addEventListener('click', () => {
+      const flipped = el.classList.toggle('is-flipped');
+      flip.setAttribute('aria-pressed', String(flipped));
+    });
+    el.querySelectorAll('.btn-grade').forEach(btn => {
+      btn.addEventListener('click', () => {
+        gradeCard(cardId, btn.dataset.grade);
+        const st = describeCard(cardId);
+        const due = el.querySelector('.flashcard-due');
+        due.className = `flashcard-due ${st.cls}`;
+        due.textContent = st.text;
+        el.querySelectorAll('.btn-grade').forEach(b => b.classList.toggle('active', b === btn));
+        replayAnimation(due, 'anim-pop');
+        if (onGraded) onGraded(btn.dataset.grade);
+      });
+    });
+    return el;
+  }
 
   function renderFlashcards(chap) {
     const listEl = document.getElementById('chap-flashcards-list');
@@ -467,84 +618,38 @@ const StudyCore = (function () {
       return;
     }
 
-    const isAuth = isUserAuthenticated();
-
     cards.forEach((card, idx) => {
-      // Se non autenticato, solo la prima flashcard (idx === 0) è accessibile
-      if (!isAuth && idx === 1) {
-        const banner = document.createElement('div');
-        banner.className = 'freemium-lock-banner';
-        banner.innerHTML = `
-          <div class="freemium-lock-icon">${ICONS.lock}</div>
-          <div class="freemium-lock-info">
-            <h4>Flashcard successive riservate</h4>
-            <p>Accedi o registrati per sbloccare tutte le ${cards.length} flashcard di questo capitolo e memorizzare i concetti chiave.</p>
-          </div>
-          <button class="btn-primary-action btn-freemium-auth" type="button">Accedi o Registrati</button>
-        `;
-        banner.querySelector('.btn-freemium-auth').addEventListener('click', () => {
-          if (window.AppAuth && typeof window.AppAuth.openAuthModal === 'function') {
-            window.AppAuth.openAuthModal('register');
-          }
-        });
-        listEl.appendChild(banner);
-      }
-
-      const cardId = `${chap.id}-fc-${idx}`;
-      const status = state.flashcardStatus[cardId];
-      const isLockedItem = !isAuth && idx > 0;
-
-      const cardEl = document.createElement('div');
-      cardEl.className = `flashcard-card ${isLockedItem ? 'item-locked' : ''}`;
-
-      cardEl.innerHTML = `
-        <div class="flashcard-body" id="fc-body-${cardId}">
-          <span class="flashcard-label">Domanda (Clicca per girare)</span>
-          <div class="flashcard-content">${escapeHtml(card.question)}</div>
-          <div class="flashcard-answer-revealed" style="display: none;" id="fc-ans-${cardId}">
-            <span class="flashcard-label" style="color: var(--accent-primary);">Risposta</span>
-            <p>${escapeHtml(card.answer)}</p>
-          </div>
-        </div>
-        <div class="flashcard-footer">
-          <button class="btn-card-action known ${status === 'known' ? 'active' : ''}" data-act="known" data-id="${cardId}">
-            ${ICONS.thumbsUp} Lo so bene
-          </button>
-          <button class="btn-card-action cram ${status === 'cram' ? 'active' : ''}" data-act="cram" data-id="${cardId}">
-            ${ICONS.repeat} Da rivedere
-          </button>
-        </div>
-      `;
-
-      if (!isLockedItem) {
-        const body = cardEl.querySelector(`#fc-body-${cardId}`);
-        const ans = cardEl.querySelector(`#fc-ans-${cardId}`);
-        body.addEventListener('click', (e) => {
-          if (e.target.closest('.flashcard-footer')) return;
-          const isHidden = ans.style.display === 'none';
-          ans.style.display = isHidden ? 'block' : 'none';
-        });
-
-        cardEl.querySelectorAll('.btn-card-action').forEach(btn => {
-          btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const act = btn.dataset.act;
-            const id = btn.dataset.id;
-            state.flashcardStatus[id] = act;
-            saveLocalState();
-            cardEl.querySelectorAll('.btn-card-action').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-          });
-        });
-      }
-
+      const cardEl = buildFlashcard(card, `${chap.id}-fc-${idx}`);
+      cardEl.style.setProperty('--stagger', idx);
       listEl.appendChild(cardEl);
     });
   }
 
   // ── Quiz ──
 
-  function renderQuiz(chap) {
+  // Indice della risposta corretta (alcuni file dati storici usano "correct")
+  function getCorrectIndex(q) {
+    return typeof q.correctIndex === 'number' ? q.correctIndex : q.correct;
+  }
+
+  // Ordine di visualizzazione delle opzioni, mescolato in modo stabile per ogni quiz:
+  // la posizione della risposta giusta non è prevedibile ma non cambia a ogni ricarica.
+  function getShuffledOrder(seedText, length) {
+    let h = 2166136261;
+    for (let i = 0; i < seedText.length; i++) {
+      h ^= seedText.charCodeAt(i);
+      h = Math.imul(h, 16777619);
+    }
+    const order = Array.from({ length }, (_, i) => i);
+    for (let i = length - 1; i > 0; i--) {
+      h = Math.imul(h ^ (h >>> 15), 2246822507) >>> 0;
+      const j = h % (i + 1);
+      [order[i], order[j]] = [order[j], order[i]];
+    }
+    return order;
+  }
+
+  function renderQuiz(chap, justAnsweredId) {
     const listEl = document.getElementById('chap-quiz-list');
     const quizzes = chap.quiz || [];
     if (!listEl) return;
@@ -555,52 +660,32 @@ const StudyCore = (function () {
       return;
     }
 
-    const isAuth = isUserAuthenticated();
-
     quizzes.forEach((q, qIdx) => {
-      // Se non autenticato, solo il primo quiz (qIdx === 0) è accessibile
-      if (!isAuth && qIdx === 1) {
-        const banner = document.createElement('div');
-        banner.className = 'freemium-lock-banner';
-        banner.innerHTML = `
-          <div class="freemium-lock-icon">${ICONS.lock}</div>
-          <div class="freemium-lock-info">
-            <h4>Quiz successivi riservati</h4>
-            <p>Accedi o registrati per sbloccare tutti i ${quizzes.length} quiz e verificare la tua preparazione.</p>
-          </div>
-          <button class="btn-primary-action btn-freemium-auth" type="button">Accedi o Registrati</button>
-        `;
-        banner.querySelector('.btn-freemium-auth').addEventListener('click', () => {
-          if (window.AppAuth && typeof window.AppAuth.openAuthModal === 'function') {
-            window.AppAuth.openAuthModal('register');
-          }
-        });
-        listEl.appendChild(banner);
-      }
-
       const quizId = `${chap.id}-quiz-${qIdx}`;
       const savedAns = state.quizAnswers[quizId];
-      const isLockedItem = !isAuth && qIdx > 0;
 
       const qCard = document.createElement('div');
-      qCard.className = `quiz-card ${isLockedItem ? 'item-locked' : ''}`;
+      qCard.className = 'quiz-card' + (quizId === justAnsweredId ? ' just-answered' : '');
+      qCard.style.setProperty('--stagger', qIdx);
 
-      const optionsHtml = q.options.map((opt, oIdx) => {
+      // data-oidx conserva l'indice originale dell'opzione: le risposte salvate restano valide
+      const correctIndex = getCorrectIndex(q);
+      const optionsHtml = getShuffledOrder(quizId, q.options.length).map(oIdx => {
         let extraClass = '';
         if (savedAns) {
-          if (oIdx === q.correctIndex) extraClass = 'selected-correct';
+          if (oIdx === correctIndex) extraClass = 'selected-correct';
           else if (oIdx === savedAns.selectedIndex) extraClass = 'selected-wrong';
         }
         return `
-          <button class="quiz-option-btn ${extraClass}" data-quizid="${quizId}" data-oidx="${oIdx}" ${savedAns || isLockedItem ? 'disabled' : ''}>
-            ${escapeHtml(opt)}
+          <button class="quiz-option-btn ${extraClass}" data-quizid="${quizId}" data-oidx="${oIdx}" ${savedAns ? 'disabled' : ''}>
+            ${escapeHtml(q.options[oIdx])}
           </button>
         `;
       }).join('');
 
       const explanationHtml = savedAns ? `
-        <div class="quiz-explanation-box">
-          <strong>${savedAns.isCorrect ? ICONS.checkCircle + ' Corretto!' : ICONS.xCircle + ' Non corretto.'}</strong> ${escapeHtml(q.explanation || '')}
+        <div class="quiz-explanation-box ${savedAns.selectedIndex === correctIndex ? 'is-correct' : 'is-wrong'}">
+          <strong>${savedAns.selectedIndex === correctIndex ? ICONS.checkCircle + ' Corretto!' : ICONS.xCircle + ' Non corretto.'}</strong> ${escapeHtml(q.explanation || '')}
         </div>
       ` : '';
 
@@ -610,23 +695,45 @@ const StudyCore = (function () {
         <div class="quiz-exp-container" id="exp-${quizId}">${explanationHtml}</div>
       `;
 
-      if (!isLockedItem) {
+      if (!savedAns) {
         qCard.querySelectorAll('.quiz-option-btn').forEach(btn => {
           btn.addEventListener('click', () => {
             const oIdx = parseInt(btn.dataset.oidx, 10);
-            const isCorrect = oIdx === q.correctIndex;
+            const isCorrect = oIdx === correctIndex;
             state.quizAnswers[quizId] = { selectedIndex: oIdx, isCorrect: isCorrect };
             if (!isCorrect) {
               state.flashcardStatus[`quiz-error-${quizId}`] = 'cram';
             }
+            logActivity();
             saveLocalState();
-            renderQuiz(chap);
+            renderQuiz(chap, quizId);
           });
         });
       }
 
       listEl.appendChild(qCard);
     });
+
+
+    const answeredIds = quizzes.map((_, i) => `${chap.id}-quiz-${i}`).filter(id => state.quizAnswers[id]);
+    if (answeredIds.length > 0) {
+      const correct = quizzes.filter((q, i) => {
+        const a = state.quizAnswers[`${chap.id}-quiz-${i}`];
+        return a && a.selectedIndex === getCorrectIndex(q);
+      }).length;
+      const footer = document.createElement('div');
+      footer.className = 'quiz-reset-bar';
+      footer.innerHTML = `
+        <span>Risposte corrette: <strong>${correct} / ${answeredIds.length}</strong></span>
+        <button type="button" class="btn-secondary-action">${ICONS.repeat} Rifai i quiz del capitolo</button>
+      `;
+      footer.querySelector('button').addEventListener('click', () => {
+        answeredIds.forEach(id => { delete state.quizAnswers[id]; });
+        saveLocalState();
+        renderQuiz(chap);
+      });
+      listEl.appendChild(footer);
+    }
   }
 
   // ── Completamento ──
@@ -685,65 +792,11 @@ const StudyCore = (function () {
       retryBtn.addEventListener('click', () => {
         document.getElementById('exam-result-box').style.display = 'none';
         document.getElementById('exam-setup-box').style.display = 'flex';
-        updateExamFreemiumState();
       });
-    }
-
-    updateExamFreemiumState();
-  }
-
-  function updateExamFreemiumState() {
-    const isAuth = isUserAuthenticated();
-    const examView = document.getElementById('view-exam');
-    const setupBox = document.getElementById('exam-setup-box');
-    const startBtn = document.getElementById('btn-start-exam');
-    if (!examView || !setupBox) return;
-
-    let banner = document.getElementById('exam-freemium-lock-banner');
-    if (!isAuth) {
-      if (!banner) {
-        banner = document.createElement('div');
-        banner.id = 'exam-freemium-lock-banner';
-        banner.className = 'freemium-lock-banner';
-        banner.style.marginBottom = '20px';
-        banner.innerHTML = `
-          <div class="freemium-lock-icon">${ICONS.lock}</div>
-          <div class="freemium-lock-info">
-            <h4>Simulatore d'esame riservato</h4>
-            <p>Accedi o registrati per sbloccare le simulazioni d'esame complete a domande casuali e verificare la tua preparazione.</p>
-          </div>
-          <button class="btn-primary-action btn-freemium-auth" type="button">Accedi o Registrati</button>
-        `;
-        banner.querySelector('.btn-freemium-auth').addEventListener('click', () => {
-          if (window.AppAuth && typeof window.AppAuth.openAuthModal === 'function') {
-            window.AppAuth.openAuthModal('register');
-          } else if (window.AppAuth && typeof window.AppAuth.openModal === 'function') {
-            window.AppAuth.openModal();
-          }
-        });
-        setupBox.parentElement.insertBefore(banner, setupBox);
-      }
-      if (startBtn) {
-        startBtn.textContent = 'Accedi per avviare il Test';
-      }
-    } else {
-      if (banner) banner.remove();
-      if (startBtn) {
-        startBtn.textContent = 'Inizia il Test d\'Esame';
-      }
     }
   }
 
   function startExamSession(scope, count, getCurrentPdfChapters, getPdfDisplayName, getExamPool) {
-    if (!isUserAuthenticated()) {
-      if (window.AppAuth && typeof window.AppAuth.openAuthModal === 'function') {
-        window.AppAuth.openAuthModal('register');
-      } else if (window.AppAuth && typeof window.AppAuth.openModal === 'function') {
-        window.AppAuth.openModal();
-      }
-      return;
-    }
-
     let pool = getExamPool(scope, getCurrentPdfChapters, getPdfDisplayName);
 
     if (!pool || pool.length === 0) {
@@ -760,7 +813,7 @@ const StudyCore = (function () {
     const selectedQuestions = rawSelected.map(q => {
       const opts = q.options.map((opt, idx) => ({
         text: opt,
-        isCorrect: idx === q.correctIndex
+        isCorrect: idx === getCorrectIndex(q)
       }));
       for (let i = opts.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -773,7 +826,10 @@ const StudyCore = (function () {
       };
     });
 
+    const scopeSelect = document.getElementById('exam-scope-select');
+    const scopeLabel = scopeSelect && scopeSelect.selectedOptions[0] ? scopeSelect.selectedOptions[0].textContent : '';
     state.examSession = {
+      scopeLabel: scope === 'current' ? getPdfDisplayName(state.activePdf) : scopeLabel,
       questions: selectedQuestions,
       currentIndex: 0,
       answers: []
@@ -796,9 +852,11 @@ const StudyCore = (function () {
 
     const q = session.questions[session.currentIndex];
     counterEl.textContent = `Domanda ${session.currentIndex + 1} di ${session.questions.length} (${q.sourceName})`;
+    const progressFill = document.getElementById('exam-progress-fill');
+    if (progressFill) progressFill.style.width = `${Math.round((session.currentIndex / session.questions.length) * 100)}%`;
 
     container.innerHTML = `
-      <div class="quiz-card" style="margin-top: 14px;">
+      <div class="quiz-card anim-enter" style="margin-top: 14px;">
         <div style="font-size: 11px; color: var(--text-muted); font-weight: 700; margin-bottom: 6px;">
           ${q.sourceName} - Capitolo ${q.chapNum}: ${escapeHtml(q.chapTitle)}
         </div>
@@ -851,7 +909,10 @@ const StudyCore = (function () {
     const feedbackEl = document.getElementById('exam-score-feedback');
     const reviewList = document.getElementById('exam-review-list');
 
-    titleEl.textContent = `Punteggio Finale: ${correctCount} / ${total} (${scorePct}%)`;
+    // Voto indicativo in trentesimi (sufficienza a 18, come all'esame)
+    const grade = Math.round((correctCount / total) * 30);
+    const gradeText = grade >= 18 ? `${grade}/30` : `${grade}/30 (insufficiente)`;
+    titleEl.textContent = `Voto stimato: ${gradeText} — ${correctCount} risposte corrette su ${total} (${scorePct}%)`;
 
     if (scorePct >= 80) {
       feedbackEl.innerHTML = `${ICONS.star} Ottima preparazione! Hai dimostrato una comprensione solida dei concetti.`;
@@ -860,6 +921,13 @@ const StudyCore = (function () {
     } else {
       feedbackEl.innerHTML = `${ICONS.repeat} Ti consigliamo di ripassare i capitoli con la modalità guidata e le flashcard.`;
     }
+
+    state.examHistory.push({
+      date: todayKey(), subject: state.currentSubject, scope: session.scopeLabel,
+      correct: correctCount, total: total, grade: grade
+    });
+    logActivity();
+    saveLocalState();
 
     reviewList.innerHTML = '';
     session.answers.forEach((ans, idx) => {
@@ -1272,6 +1340,7 @@ const StudyCore = (function () {
 
     syncStickyHeaderHeight();
     window.addEventListener('resize', syncStickyHeaderHeight, { passive: true });
+    setupGlossaryPopover();
     if (typeof ResizeObserver !== 'undefined') {
       const stickyHeader = document.querySelector('.study-sticky-header');
       if (stickyHeader) {
@@ -1326,18 +1395,15 @@ const StudyCore = (function () {
 
     // Sincronizzazione tema globale in tempo reale fra schede/pagine
     window.addEventListener('storage', (e) => {
-      if ((e.key === 'aba_studio_theme' || e.key === 'studio_home_theme') && e.newValue) {
+      if (e.key === THEME_KEY && e.newValue) {
         if (e.newValue !== state.theme) {
           applyTheme(e.newValue);
         }
       }
     });
 
-    // Sidebar toggle (Desktop & Mobile)
-    const sidebarToggleBtn = document.getElementById('btn-sidebar-toggle');
+    // Sidebar (desktop: collassabile; mobile: drawer)
     const sidebar = document.getElementById('sidebar');
-    const mobileChaptersBtn = document.getElementById('btn-mobile-chapters');
-    const mobileDispenseBtn = document.getElementById('btn-mobile-dispense');
     const sidebarCloseBtn = document.getElementById('btn-sidebar-close');
     const sidebarBackdrop = document.getElementById('sidebar-backdrop');
     const mobileDispenseModal = document.getElementById('mobile-dispense-overlay');
@@ -1410,28 +1476,12 @@ const StudyCore = (function () {
       });
     }
 
-    if (sidebarToggleBtn && sidebar) {
-      sidebarToggleBtn.addEventListener('click', () => {
-        if (window.innerWidth <= 860) {
-          if (sidebar.classList.contains('mobile-open')) {
-            closeMobileSidebar();
-          } else {
-            openMobileSidebar();
-          }
-        } else {
-          sidebar.classList.toggle('collapsed');
-        }
-      });
-    }
-
-    if (mobileChaptersBtn) mobileChaptersBtn.addEventListener('click', openMobileSidebar);
     if (sidebarCloseBtn) sidebarCloseBtn.addEventListener('click', closeMobileSidebar);
     if (sidebarBackdrop) sidebarBackdrop.addEventListener('click', () => {
       closeMobileSidebar();
       closeMobileDispense();
     });
 
-    if (mobileDispenseBtn) mobileDispenseBtn.addEventListener('click', openMobileDispense);
     if (closeDispenseSheetBtn) closeDispenseSheetBtn.addEventListener('click', closeMobileDispense);
     if (mobileDispenseModal) {
       mobileDispenseModal.addEventListener('click', (e) => {
@@ -1461,12 +1511,6 @@ const StudyCore = (function () {
         } else {
           openMobileDispense();
         }
-      });
-    }
-
-    if (bottomMaterieBtn) {
-      bottomMaterieBtn.addEventListener('click', () => {
-        window.location.href = '../index.html?view=materie&course=DAPL08&anno=2';
       });
     }
 
@@ -1536,6 +1580,7 @@ const StudyCore = (function () {
         const chaps = getCurrentPdfChapters();
         const currentChap = chaps[state.activeChapIndex];
         if (currentChap) {
+          if (!state.completed[currentChap.id]) logActivity();
           state.completed[currentChap.id] = true;
           saveLocalState();
         }
@@ -1555,24 +1600,20 @@ const StudyCore = (function () {
         if (currentChap) {
           const isCurrentlyDone = !!state.completed[currentChap.id];
           state.completed[currentChap.id] = !isCurrentlyDone;
+          if (!isCurrentlyDone) logActivity();
           updateCompleteButtonState(!isCurrentlyDone);
+          if (!isCurrentlyDone) document.querySelectorAll('.btn-toggle-complete').forEach(b => replayAnimation(b, 'anim-pop'));
           saveLocalState();
           renderSidebarFn();
         }
       });
     });
 
-    // Pulsante Indietro (Torna alla selezione materie)
+    // Pulsante Indietro desktop e tasto "Materie" mobile: tornano al corso/anno della materia
     const homeBtn = document.getElementById('btn-hub-nav');
-    if (homeBtn) {
-      homeBtn.addEventListener('click', () => {
-        window.location.href = homeBtn.dataset.href || '../index.html?view=materie&course=DAPL08&anno=2';
-      });
-    }
-
-    // Re-check exam freemium lock state on auth change
-    window.addEventListener('auth:change', () => {
-      updateExamFreemiumState();
+    const hubHref = (homeBtn && homeBtn.dataset.href) || '../corsi.html';
+    [homeBtn, bottomMaterieBtn].forEach(btn => {
+      if (btn) btn.addEventListener('click', () => { window.location.href = hubHref; });
     });
 
     // Lightbox modal per le opere d'arte
@@ -1640,6 +1681,13 @@ const StudyCore = (function () {
     setupCoreEvents,
     formatMarkdown,
     escapeHtml,
+    getCorrectIndex,
+    buildFlashcard,
+    getCardSrs,
+    isCardDue,
+    todayKey,
+    logActivity,
+    replayAnimation,
     stopSpeech,
     toggleSpeech
   };

@@ -2500,7 +2500,7 @@
                     "page": "pages/storia-arte-1.html",
                     "stats": {
                         "capitoli": 20,
-                        "quiz": 100,
+                        "quiz": 102,
                         "fonti": 6
                     }
                 },
@@ -2693,7 +2693,7 @@
                     "page": "pages/archetipi.html",
                     "stats": {
                         "capitoli": 21,
-                        "quiz": 105,
+                        "quiz": 116,
                         "fonti": 3
                     }
                 },

@@ -11,22 +11,22 @@ window.INTERACTION_DATA = [
     "id": "ixd-c1",
     "number": 1,
     "title": "Definizione di Interaction Design e Interazione",
-    "subtitle": "Relazione uomo-dispositivo, usabilita, contesto d'uso e qualita della vita",
+    "subtitle": "Relazione uomo-dispositivo, usabilità, contesto d'uso e qualità della vita",
     "readTime": "8 min",
     "module": "ixd-fondamenti-design-thinking",
     "image": "assets/corsi/dapl08/anno-1/interaction-design/images/schema_interaction_matrix.svg",
-    "summary": "### 1. Definizione Disciplinare dell'Interaction Design (IxD)\n\nL'**Interaction Design (IxD)** e la specializzazione del design che studia, progetta e modella le **relazioni dinamiche tra gli esseri umani e i dispositivi computerizzati interattivi**. \nA differenza del design del prodotto industriale tradizionale (focalizzato primariamente sulla conformazione fisica dell'oggetto, sulle sue proprieta plastiche, materiche e produttive), l'Interaction Design si concentra sulle **qualita immateriali dell'interazione**:\n- L'integrazione di sistemi di calcolo, sensori e attuatori all'interno di artefatti fisici e contesti d'uso quotidiani.\n- L'**usabilita** (*usability*): l'efficacia, l'efficienza e la soddisfazione con cui un individuo raggiunge uno scopo specifico.\n- La capacita reale del sistema di migliorare la funzionalita, la comprensibilita e la trasparenza degli artefatti, elevando in ultima istanza la **qualita della vita dell'utilizzatore**.\n\n---\n\n### 2. Il Concetto Filosofico ed Ecologico di 'Interazione'\n\nSul piano epistemologico, l'**Interazione** e definita come:\n> *\"Azione, reazione, influenza reciproca di cause, fenomeni, forze, elementi, sostanze, agenti naturali, fisici, chimici e, per estensione, psicologici, cognitivi e sociali.\"*\n\nNel contesto del design digitale, l'interazione non e un atto unidirezionale in cui l'utente comanda e la macchina esegue passivamente, ma un **dialogo cibernetico continuo a circuito chiuso (*feedback loop*)**:\n1. L'utente formula un'intenzione ed esegue un'azione motoria sull'interfaccia (input).\n2. Il sistema digitale elabora lo stimolo e restituisce una risposta visiva, uditiva o aptica (output/feedback).\n3. L'utente percepisce il mutamento di stato, aggiorna il proprio **modello mentale** e formula l'azione successiva.\n\n---\n\n### 3. I Campi di Applicazione Contemporanei\n\nL'Interaction Design non si esaurisce nelle interfacce grafiche su schermo (GUI per smartphone e siti web), ma governa l'intero ecosistema della computazione pervasiva:\n- **Prodotti Connessi e IoT (*Internet of Things*)**: Elettrodomestici intelligenti, wearable device, domotica.\n- **Ambienti Reattivi (*Responsive Environments*)**: Spazi museali interattivi, architetture computazionali, installazioni multimediali immersive.\n- **Interfacce Tangibili (TUI - *Tangible User Interfaces*)**: Sistemi fisici in cui la manipolazione di oggetti reali controlla dati digitali invisibili.\n- **Sistemi e Servizi Complessi**: Piattaforme digitali per la mobilita condivisa, sistemi bancari, interfacce sanitarie e sistemi operativi critici.",
+    "summary": "### 1. Definizione Disciplinare dell'Interaction Design (IxD)\n\nL'**Interaction Design (IxD)** è la specializzazione del design che studia, progetta e modella le **relazioni dinamiche tra gli esseri umani e i dispositivi computerizzati interattivi**. \nA differenza del design del prodotto industriale tradizionale (focalizzato primariamente sulla conformazione fisica dell'oggetto, sulle sue proprietà plastiche, materiche e produttive), l'Interaction Design si concentra sulle **qualità immateriali dell'interazione**:\n- L'integrazione di sistemi di calcolo, sensori e attuatori all'interno di artefatti fisici e contesti d'uso quotidiani.\n- L'**usabilità** (*usability*): l'efficacia, l'efficienza e la soddisfazione con cui un individuo raggiunge uno scopo specifico.\n- La capacità reale del sistema di migliorare la funzionalità, la comprensibilita e la trasparenza degli artefatti, elevando in ultima istanza la **qualità della vita dell'utilizzatore**.\n\n---\n\n### 2. Il Concetto Filosofico ed Ecologico di 'Interazione'\n\nSul piano epistemologico, l'**Interazione** è definita come:\n> *\"Azione, reazione, influenza reciproca di cause, fenomeni, forze, elementi, sostanze, agenti naturali, fisici, chimici e, per estensione, psicologici, cognitivi e sociali.\"*\n\nNel contesto del design digitale, l'interazione non è un atto unidirezionale in cui l'utente comanda e la macchina esegue passivamente, ma un **dialogo cibernetico continuo a circuito chiuso (*feedback loop*)**:\n1. L'utente formula un'intenzione ed esegue un'azione motoria sull'interfaccia (input).\n2. Il sistema digitale elabora lo stimolo e restituisce una risposta visiva, uditiva o aptica (output/feedback).\n3. L'utente percepisce il mutamento di stato, aggiorna il proprio **modello mentale** e formula l'azione successiva.\n\n---\n\n### 3. I Campi di Applicazione Contemporanei\n\nL'Interaction Design non si esaurisce nelle interfacce grafiche su schermo (GUI per smartphone e siti web), ma governa l'intero ecosistema della computazione pervasiva:\n- **Prodotti Connessi e IoT (*Internet of Things*)**: Elettrodomestici intelligenti, wearable device, domotica.\n- **Ambienti Reattivi (*Responsive Environments*)**: Spazi museali interattivi, architetture computazionali, installazioni multimediali immersive.\n- **Interfacce Tangibili (TUI - *Tangible User Interfaces*)**: Sistemi fisici in cui la manipolazione di oggetti reali controlla dati digitali invisibili.\n- **Sistemi e Servizi Complessi**: Piattaforme digitali per la mobilita condivisa, sistemi bancari, interfacce sanitarie e sistemi operativi critici.",
     "keyPoints": [
-      "L'Interaction Design e la disciplina che progetta le relazioni tra persone e sistemi interattivi computazionali.",
-      "Il suo scopo primario e migliorare usabilita, comprensibilita degli artefatti e qualita della vita.",
-      "L'interazione e un'influenza reciproca fondata su un circuito chiuso di azione, feedback e modello mentale.",
+      "L'Interaction Design è la disciplina che progetta le relazioni tra persone e sistemi interattivi computazionali.",
+      "Il suo scopo primario e migliorare usabilità, comprensibilita degli artefatti e qualità della vita.",
+      "L'interazione è un'influenza reciproca fondata su un circuito chiuso di azione, feedback e modello mentale.",
       "L'IxD supera la forma fisica dell'oggetto per modellare il comportamento temporale e cognitivo del sistema.",
       "I campi applicativi spaziano dalle GUI alle interfacce tangibili (TUI), IoT e ambienti responsivi."
     ],
     "flashcards": [
       {
-        "question": "Qual e la definizione canonica di Interaction Design?",
-        "answer": "La specializzazione del design che progetta le relazioni tra l'uomo e i sistemi computazionali per migliorarne usabilita e qualita della vita."
+        "question": "Qual è la definizione canonica di Interaction Design?",
+        "answer": "La specializzazione del design che progetta le relazioni tra l'uomo e i sistemi computazionali per migliorarne usabilità e qualità della vita."
       },
       {
         "question": "Cosa si intende per 'Interazione' in senso scientifico ed ecologico?",
@@ -41,65 +41,65 @@ window.INTERACTION_DATA = [
         "answer": "Un'interfaccia tangibile in cui l'utente interagisce con dati digitali attraverso la manipolazione diretta di oggetti fisici nello spazio."
       },
       {
-        "question": "Qual e il ruolo del modello mentale nell'interazione uomo-macchina?",
-        "answer": "E la mappa cognitiva interna che l'utente si costruisce sul funzionamento del sistema, guidando le sue azioni e interpretando i feedback."
+        "question": "Qual è il ruolo del modello mentale nell'interazione uomo-macchina?",
+        "answer": "È la mappa cognitiva interna che l'utente si costruisce sul funzionamento del sistema, guidando le sue azioni e interpretando i feedback."
       }
     ],
     "quiz": [
       {
-        "question": "Qual e l'obiettivo primario dell'Interaction Design secondo la teoria del progetto?",
+        "question": "Secondo la definizione della dispensa, l'Interaction Design è una specializzazione di quale disciplina?",
         "options": [
-          "Permettere all'utente di raggiungere i propri scopi nel miglior modo possibile, migliorando funzionalita e qualita della vita",
-          "Scrivere codice assembly per velocizzare la scheda madre",
-          "Vendere il maggior numero di circuiti stampati",
-          "Realizzare unicamente manifesti pubblicitari stampati"
+          "Dell'ingegneria del software, focalizzata sul codice delle interfacce",
+          "Dell'ergonomia fisica, focalizzata sulle misure antropometriche del corpo",
+          "Della grafica pubblicitaria, focalizzata sulla comunicazione visiva a schermo",
+          "Del product design, focalizzata sulle relazioni tra uomo e dispositivi interattivi"
         ],
-        "correctIndex": 0,
-        "explanation": "L'Interaction Design e intrinsecamente antropocentrico: punta a facilitare gli obiettivi umani rendendo la tecnologia trasparente e utile."
+        "correctIndex": 3,
+        "explanation": "La definizione d'esame parla di 'specializzazione del product design' che studia le relazioni tra l'uomo e i dispositivi computerizzati interattivi. L'ergonomia è una disciplina vicina (ne parla il modulo sugli studi sull'utente), ma riguarda capacità fisiche e cognitive, non è la disciplina madre dell'IxD."
       },
       {
-        "question": "Cosa caratterizza in modo distintivo un'interazione rispetto a una semplice trasmissione unidirezionale?",
+        "question": "Quale elemento distingue un'interazione da una semplice trasmissione di informazioni?",
         "options": [
-          "La reciprocita: un'influenza bidirezionale continua di azione e retroazione (feedback loop)",
-          "La totale assenza di segnali elettrici",
-          "L'esclusione della figura umana",
-          "La presenza di almeno 10 schermi televisivi"
+          "La presenza di uno schermo che visualizza i dati all'utente",
+          "La velocità con cui il sistema elabora il comando ricevuto",
+          "L'uso di un linguaggio di programmazione comprensibile all'utente",
+          "L'influenza reciproca: azione e reazione si condizionano a vicenda"
         ],
-        "correctIndex": 0,
-        "explanation": "L'interazione presuppone che le azioni di una parte modifichino lo stato dell'altra, provocando risposte che retroagiscono sulla prima."
+        "correctIndex": 3,
+        "explanation": "La definizione di 'interazione' riportata in dispensa è 'azione, reazione, influenza reciproca'. Lo schermo non è necessario: l'IxD comprende anche interfacce tangibili e ambienti reattivi senza display."
       },
       {
-        "question": "Quale delle seguenti aree di progetto rientra pienamente nell'Interaction Design?",
+        "question": "Un museo progetta una sala che modifica luci e suoni in base ai movimenti dei visitatori. In quale campo dell'IxD rientra il progetto?",
         "options": [
-          "La progettazione del comportamento interattivo di un sistema domotico e delle sue risposte sensoriali all'utente",
-          "Il calcolo strutturale della fondazione di un ponte in cemento armato",
-          "La sola scelta del colore di vernice per un'automobile",
-          "La composizione musicale per pianoforte classico senza alcun dispositivo digitale"
+          "Interfacce grafiche per siti web (GUI)",
+          "Ambienti reattivi (responsive environments)",
+          "Artefatti personali indossabili",
+          "Interfacce tangibili (TUI)"
         ],
-        "correctIndex": 0,
-        "explanation": "I sistemi interattivi intelligenti, gli ambienti responsivi e le loro modalita di dialogo con le persone sono il cuore dell'IxD."
+        "correctIndex": 1,
+        "explanation": "Uno spazio che risponde ai comportamenti delle persone è un ambiente reattivo. Le interfacce tangibili (TUI) sono un distrattore vicino, ma implicano la manipolazione fisica di oggetti che controllano dati, non uno spazio che reagisce al movimento."
       },
       {
-        "question": "Cosa indica l'acronimo IoT nel panorama applicativo dell'Interaction Design contemporaneo?",
+        "question": "Qual è, secondo la dispensa, l'obiettivo dell'Interaction Design?",
         "options": [
-          "Internet of Things (Internet delle Cose: artefatti fisici quotidiani connessi in rete)",
-          "Input Output Total",
-          "Internal Operating Testing",
-          "Iterative Optical Technology"
+          "Permettere all'utente di raggiungere i propri obiettivi nel modo migliore",
+          "Rendere l'aspetto estetico del dispositivo riconoscibile sul mercato",
+          "Ridurre al minimo il numero di funzioni disponibili nel prodotto",
+          "Adattare il comportamento dell'utente alle regole del sistema digitale"
         ],
         "correctIndex": 0,
-        "explanation": "L'IoT integra microprocessori e connettivita negli oggetti d'uso quotidiano, richiedendo un design accurato delle loro interazioni."
+        "explanation": "La dispensa indica come obiettivo 'permettere all'utente di raggiungere i propri obiettivi nel miglior modo possibile'. Adattare l'utente al sistema è esattamente il paradigma technology-centered che l'IxD rovescia."
       },
       {
-        "question": "Nell'interazione uomo-macchina, cosa accade quando l'utente percepisce il feedback del sistema?",
+        "question": "Nel ciclo di interazione, che cosa fa l'utente subito dopo aver percepito il feedback del sistema?",
         "options": [
-          "Aggiorna il proprio modello mentale e decide la mossa successiva verso il raggiungimento del suo obiettivo",
-          "Spegne immediatamente il computer",
-          "Dimentica quale fosse il suo scopo originario",
-          "Riformatta il disco rigido"
+          "Ripete l'azione per verificare che il sistema risponda sempre allo stesso modo",
+          "Aggiorna il proprio modello mentale e sceglie l'azione successiva",
+          "Invia una segnalazione al progettista sull'esito dell'operazione",
+          "Attende che il sistema proponga in automatico il passo seguente"
         ],
-        "correctIndex": 0,
-        "explanation": "Il feedback informa l'utente sull'esito dell'azione, permettendo di correggere il tiro e completare il ciclo cognitivo d'uso."
+        "correctIndex": 1,
+        "explanation": "Il ciclo è chiuso: intenzione e azione, risposta del sistema, aggiornamento del modello mentale e nuova azione. Ripetere l'azione è il comportamento tipico quando il feedback manca, non la fase normale del ciclo."
       }
     ]
   },
@@ -111,18 +111,18 @@ window.INTERACTION_DATA = [
     "readTime": "9 min",
     "module": "ixd-fondamenti-design-thinking",
     "image": "assets/corsi/dapl08/anno-1/interaction-design/images/design_thinking_fasi.png",
-    "summary": "### 1. Il Paradigma del Design Thinking\n\nIl **Design Thinking** e una metodologia di risoluzione creativa e strutturata dei problemi (*problem solving*) che combina organicamente due vettori primari:\n1. **La Desiderabilita Umana**: Cio che e significativo, emotivamente rilevante e autenticamente utile per le persone.\n2. **La Fattibilita Tecnologica ed Economica**: Cio che e concretamente realizzabile sul piano ingegneristico e sostenibile nel modello di business.\n\nNato alla Stanford d.school e diffuso globalmente dall'agenzia IDEO (David Kelley, Tim Brown), il Design Thinking emancipa il progetto dall'arbitrio estetico soggettivo per radicarlo in un processo empirico e collaborativo.\n\n![Schema Fasi del Design Thinking](assets/corsi/dapl08/anno-1/interaction-design/images/design_thinking_fasi.png)\n\n---\n\n### 2. Le Cinque Fasi Canoniche del Processo\n\nIl percorso si struttura in cinque tappe essenziali:\n\n1. **EMPATHIZE (Empatizzare)**:\n   - Immersione profonda nel mondo vitale degli utenti attraverso interviste qualitative, osservazione sul campo ed etnografia.\n   - Sospensione totale dei propri pregiudizi per comprendere bisogni, desideri inconsci, difficolta emotive e contesti reali.\n2. **DEFINE (Definire)**:\n   - Sintesi delle informazioni raccolte per isolare il problema fondamentale.\n   - Formulazione del **Problem Statement** (o *Point of View - POV*): circoscrivere la sfida progettuale in modo chiaro e orientato alla persona.\n3. **IDEATE (Ideare)**:\n   - Fase di brainstorming intensivo e generazione del piu alto numero possibile di soluzioni alternative e non convenzionali.\n   - Regola d'oro: la quantita genera qualita; non giudicare le idee nella fase iniziale di divergenza.\n4. **PROTOTYPE (Prototipare)**:\n   - Costruzione rapida, economica e tangibile di artefatti sperimentali (*low-fidelity prototypes*: carta, cartone, wireframe cliccabili, storyboard interattivi).\n   - *\"Pensare con le mani\"*: il prototipo serve a verificare ipotesi a basso costo prima di investire risorse ingegneristiche complesse.\n5. **TEST (Testare)**:\n   - Collaudo dei prototipi con utenti reali in contesti d'uso simulati o sul campo.\n   - Raccolta di feedback analitici per validare soluzioni, individuare attriti (*pain points*) e correggere gli errori.\n   - *Fase accessoria (IMPLEMENT)*: Quando il prototipo e validato e solido, si passa all'ingegnerizzazione industriale e al lancio sul mercato.\n\n---\n\n### 3. La Natura Non-Lineare e Iterativa del Modello\n\nIl Design Thinking **non e una procedura sequenziale a cascata (*waterfall*)**, bensi un sistema ciclico e retroattivo:\n\n![Schema Iterativo del Design Thinking](assets/corsi/dapl08/anno-1/interaction-design/images/design_thinking_iterativo.png)\n\n- Se durante la fase di **Test** emergono difficolta impreviste, il team puo retrocedere direttamente alla fase **Ideate** per concepire nuove varianti, oppure tornare a **Empathize** qualora si scopra di aver frainteso il bisogno reale dell'utente.\n- Se in fase di **Prototype** ci si accorge che la tecnologia ipotizzata e inaccessibile, si rimodella la fase **Define**.\nIl fallimento precoce ed economico (*fail early, fail cheap*) e considerato il motore primario dell'apprendimento e dell'innovazione sostenibile.",
+    "summary": "### 1. Il Paradigma del Design Thinking\n\nIl **Design Thinking** è una metodologia di risoluzione creativa e strutturata dei problemi (*problem solving*) che combina organicamente due vettori primari:\n1. **La Desiderabilita Umana**: Ciò che è significativo, emotivamente rilevante e autenticamente utile per le persone.\n2. **La Fattibilità Tecnologica ed Economica**: Ciò che è concretamente realizzabile sul piano ingegneristico e sostenibile nel modello di business.\n\nNato alla Stanford d.school e diffuso globalmente dall'agenzia IDEO (David Kelley, Tim Brown), il Design Thinking emancipa il progetto dall'arbitrio estetico soggettivo per radicarlo in un processo empirico e collaborativo.\n\n![Schema Fasi del Design Thinking](assets/corsi/dapl08/anno-1/interaction-design/images/design_thinking_fasi.png)\n\n---\n\n### 2. Le Cinque Fasi Canoniche del Processo\n\nIl percorso si struttura in cinque tappe essenziali:\n\n1. **EMPATHIZE (Empatizzare)**:\n   - Immersione profonda nel mondo vitale degli utenti attraverso interviste qualitative, osservazione sul campo ed etnografia.\n   - Sospensione totale dei propri pregiudizi per comprendere bisogni, desideri inconsci, difficoltà emotive e contesti reali.\n2. **DEFINE (Definire)**:\n   - Sintesi delle informazioni raccolte per isolare il problema fondamentale.\n   - Formulazione del **Problem Statement** (o *Point of View - POV*): circoscrivere la sfida progettuale in modo chiaro è orientato alla persona.\n3. **IDEATE (Ideare)**:\n   - Fase di brainstorming intensivo e generazione del più alto numero possibile di soluzioni alternative e non convenzionali.\n   - Regola d'oro: la quantità genera qualità; non giudicare le idee nella fase iniziale di divergenza.\n4. **PROTOTYPE (Prototipare)**:\n   - Costruzione rapida, economica e tangibile di artefatti sperimentali (*low-fidelity prototypes*: carta, cartone, wireframe cliccabili, storyboard interattivi).\n   - *\"Pensare con le mani\"*: il prototipo serve a verificare ipotesi a basso costo prima di investire risorse ingegneristiche complesse.\n5. **TEST (Testare)**:\n   - Collaudo dei prototipi con utenti reali in contesti d'uso simulati o sul campo.\n   - Raccolta di feedback analitici per validare soluzioni, individuare attriti (*pain points*) e correggere gli errori.\n   - *Fase accessoria (IMPLEMENT)*: Quando il prototipo è validato e solido, si passa all'ingegnerizzazione industriale e al lancio sul mercato.\n\n---\n\n### 3. La Natura Non-Lineare e Iterativa del Modello\n\nIl Design Thinking **non è una procedura sequenziale a cascata (*waterfall*)**, bensì un sistema ciclico e retroattivo:\n\n![Schema Iterativo del Design Thinking](assets/corsi/dapl08/anno-1/interaction-design/images/design_thinking_iterativo.png)\n\n- Se durante la fase di **Test** emergono difficoltà impreviste, il team può retrocedere direttamente alla fase **Ideate** per concepire nuove varianti, oppure tornare a **Empathize** qualora si scopra di aver frainteso il bisogno reale dell'utente.\n- Se in fase di **Prototype** ci si accorge che la tecnologia ipotizzata è inaccessibile, si rimodella la fase **Define**.\nIl fallimento precoce ed economico (*fail early, fail cheap*) è considerato il motore primario dell'apprendimento e dell'innovazione sostenibile.",
     "keyPoints": [
-      "Il Design Thinking unisce la desiderabilita umana con la fattibilita tecnologica ed economica.",
+      "Il Design Thinking unisce la desiderabilita umana con la fattibilità tecnologica ed economica.",
       "Le 5 fasi canoniche sono: Empathize, Define, Ideate, Prototype, Test.",
-      "Non e un processo lineare ma iterativo: consente continui ritorni alle fasi precedenti in base ai feedback.",
+      "Non è un processo lineare ma iterativo: consente continui ritorni alle fasi precedenti in base ai feedback.",
       "La prototipazione rapida a basso costo permette di 'pensare con le mani' e collaudare subito le idee.",
-      "Il fallimento precoce ed economico e un valore fondamentale per prevenire errori catastrofici sul mercato."
+      "Il fallimento precoce ed economico è un valore fondamentale per prevenire errori catastrofici sul mercato."
     ],
     "flashcards": [
       {
         "question": "Quali sono le due componenti che il Design Thinking combina sistematicamente?",
-        "answer": "La desiderabilita umana (bisogni e valori delle persone) e la fattibilita/sostenibilita tecnologica ed economica."
+        "answer": "La desiderabilita umana (bisogni e valori delle persone) e la fattibilità/sostenibilità tecnologica ed economica."
       },
       {
         "question": "Quali sono le 5 fasi del Design Thinking secondo la Stanford d.school?",
@@ -133,69 +133,69 @@ window.INTERACTION_DATA = [
         "answer": "La dichiarazione concisa che inquadra il problema centrale dell'utente e la sfida progettuale da risolvere."
       },
       {
-        "question": "Perche la prototipazione rapida a bassa fedelta (Low-Fi) e considerata vantaggiosa?",
-        "answer": "Perche permette di testare velocemente le idee spendendo pochissimo tempo e denaro, imparando subito dagli errori."
+        "question": "Perché la prototipazione rapida a bassa fedeltà (Low-Fi) è considerata vantaggiosa?",
+        "answer": "Perché permette di testare velocemente le idee spendendo pochissimo tempo e denaro, imparando subito dagli errori."
       },
       {
-        "question": "Cosa significa che il Design Thinking e un processo non lineare?",
-        "answer": "Significa che in qualsiasi momento, se i test o le idee falliscono, e possibile e doveroso tornare a fasi precedenti."
+        "question": "Cosa significa che il Design Thinking è un processo non lineare?",
+        "answer": "Significa che in qualsiasi momento, se i test o le idee falliscono, è possibile e doveroso tornare a fasi precedenti."
       }
     ],
     "quiz": [
       {
-        "question": "In quale fase del Design Thinking si conducono interviste qualitative sul campo per comprendere le emozioni degli utenti?",
+        "question": "Quali due fattori combina il Design Thinking secondo la dispensa?",
         "options": [
-          "EMPATHIZE",
-          "IMPLEMENT",
-          "PROTOTYPE",
-          "BENCHMARK"
+          "Ciò che è desiderabile per le persone e ciò che è realizzabile e sostenibile",
+          "Ciò che è innovativo tecnologicamente e ciò che è brevettabile",
+          "Ciò che è economico da produrre e ciò che è facile da vendere",
+          "Ciò che è esteticamente coerente e ciò che rispetta le tendenze del mercato"
         ],
         "correctIndex": 0,
-        "explanation": "La fase Empathize e dedicata all'ascolto empatico e alla ricerca sul campo per comprendere in profondita la vita delle persone."
+        "explanation": "Il Design Thinking unisce desiderabilità umana e fattibilità/sostenibilità. Le altre coppie mettono al centro mercato o tecnologia, che sono solo vincoli del progetto."
       },
       {
-        "question": "Qual e la regola cardine della fase di brainstorming durante la fase IDEATE?",
+        "question": "In quale fase del Design Thinking si formula il Problem Statement (Point of View)?",
         "options": [
-          "Generare il maggior numero possibile di idee alternative astenendosi dal giudizio critico prematuro",
-          "Accettare solo l'idea proposta dal capo progetto",
-          "Scrivere direttamente il codice sorgente del database",
-          "Calcolare il bilancio economico dell'azienda"
+          "Empathize",
+          "Define",
+          "Ideate",
+          "Prototype"
         ],
-        "correctIndex": 0,
-        "explanation": "La fase divergente di Ideazione incoraggia la quantita e l'audacia delle proposte, posticipando la selezione razionale al momento convergente."
+        "correctIndex": 1,
+        "explanation": "Define è la fase di sintesi in cui, dai dati raccolti con l'Empathize, si isola il problema e si formula il Problem Statement. Ideate viene dopo e genera soluzioni al problema già definito."
       },
       {
-        "question": "Cosa deve fare il team di design se durante la fase di TEST emergono gravi difetti di usabilita nel prototipo?",
+        "question": "Durante il Test emerge che il prodotto non risolve il bisogno reale degli utenti, che era stato frainteso. A quale fase conviene tornare?",
         "options": [
-          "Tornare iterativamente alle fasi precedenti (Ideate o Empathize) per rielaborare le soluzioni sulla base dei nuovi dati",
-          "Ignorare i feedback degli utenti e lanciare il prodotto comunque",
-          "Licenziare gli utenti che hanno riscontrato il problema",
-          "Cancellare l'intero progetto senza fare analisi"
+          "Prototype, per realizzare una versione più rifinita",
+          "Empathize, per comprendere di nuovo il bisogno",
+          "Ideate, per scegliere un'altra delle idee scartate",
+          "Implement, per correggere il prodotto dopo il lancio"
         ],
-        "correctIndex": 0,
-        "explanation": "La forza del Design Thinking risiede proprio nella sua natura ciclica: il feedback del test guida la riconfigurazione dell'idea."
+        "correctIndex": 1,
+        "explanation": "Se il problema è un bisogno frainteso, occorre ripartire dall'Empathize. Tornare a Ideate (come previsto dalla dispensa per altri tipi di difetti) servirebbe solo se il bisogno fosse corretto e la soluzione sbagliata."
       },
       {
-        "question": "Cosa si intende con il principio 'Fail early, fail cheap' (Fallisci presto, fallisci spendendo poco)?",
+        "question": "Quando entra in gioco la fase aggiuntiva IMPLEMENT?",
         "options": [
-          "Individuare e correggere gli errori nelle prime fasi attraverso prototipi grezzi prima che costino milioni sul mercato reale",
-          "Portare l'azienda alla bancarotta volontaria",
-          "Vendere prodotti difettosi a basso costo",
-          "Evitare del tutto di fare test per risparmiare"
+          "Prima del Test, per costruire il prototipo definitivo da far provare",
+          "Dopo l'Empathize, per tradurre subito le interviste in requisiti",
+          "Quando i test confermano che il prodotto soddisfa i bisogni e può andare sul mercato",
+          "In parallelo all'Ideate, per valutare i costi di ogni idea"
         ],
-        "correctIndex": 0,
-        "explanation": "Sbagliare con un prototipo di carta costa pochi minuti, mentre correggere un software o un hardware gia prodotto costa cifre colossali."
+        "correctIndex": 2,
+        "explanation": "La dispensa colloca IMPLEMENT dopo test positivi, quando il prodotto può essere lanciato. Le altre opzioni anticipano decisioni di produzione che il processo rimanda proprio per non sprecare risorse."
       },
       {
-        "question": "Quale scuola universitaria e considerata il punto di riferimento globale per la formalizzazione del Design Thinking?",
+        "question": "Perché nella fase Prototype si preferiscono prototipi rapidi ed economici?",
         "options": [
-          "Stanford University (Hasso Plattner Institute of Design / d.school)",
-          "L'Accademia di Atene di Platone",
-          "La Sorbona di Parigi nel Medioevo",
-          "L'Universita di Oxford nel Seicento"
+          "Perché sostituiscono definitivamente la fase di test con utenti reali",
+          "Perché gli utenti preferiscono valutare oggetti volutamente incompleti",
+          "Perché la qualità estetica non ha alcun ruolo nel Design Thinking",
+          "Perché permettono di verificare le ipotesi prima di investire nello sviluppo"
         ],
-        "correctIndex": 0,
-        "explanation": "La d.school di Stanford, in sinergia con David Kelley e IDEO, ha formalizzato il modello dei 5 stadi adottato a livello globale."
+        "correctIndex": 3,
+        "explanation": "Il prototipo 'facilmente utilizzabile, accessibile economicamente' serve a sbagliare presto e a basso costo. Non sostituisce il Test: ne è il presupposto."
       }
     ]
   },
@@ -207,13 +207,13 @@ window.INTERACTION_DATA = [
     "readTime": "8 min",
     "module": "ixd-fondamenti-design-thinking",
     "image": "assets/corsi/dapl08/anno-1/interaction-design/images/schema_design_thinking_diamond.svg",
-    "summary": "### 1. Genesi e Struttura del 'Double Diamond'\n\nFormalizzato dal **Design Council britannico nel 2005**, il modello del **Doppio Diamante (*Double Diamond*)** e la rappresentazione grafica e concettuale piu limpida per comprendere l'alternanza delle modalita di pensiero durante l'iter progettuale.\nIl processo si suddivide in due grandi 'diamanti' affiancati, ciascuno composto da un triangolo di apertura e uno di chiusura:\n\n1. **Diamante 1: Progettare la Cosa Giusta (*Designing the Right Thing*)**: Esplorazione del contesto e definizione precisa del problema reale da affrontare.\n2. **Diamante 2: Progettare nel Modo Giusto (*Designing Things Right*)**: Esplorazione delle soluzioni possibili, prototipazione e consegna del prodotto finale.\n\n![Schema Tecnico del Doppio Diamante](assets/corsi/dapl08/anno-1/interaction-design/images/schema_design_thinking_diamond.svg)\n\n---\n\n### 2. Le Quattro Fasi del Doppio Diamante\n\n#### 1. SCOPRI (Discover - Pensiero Divergente)\n- **Modalita mentale**: Espansione, apertura a 360 gradi, curiosita esplorativa.\n- **Attivita**: Il team non assume come verita il brief iniziale del committente, ma esplora il contesto indagando con ricerche qualitative, interviste e osservazioni sul campo. Si cercano bisogni inespressi (*insights*) allargando l'orizzonte delle domande.\n\n#### 2. DEFINISCI (Define - Pensiero Convergente)\n- **Modalita mentale**: Sintesi, focalizzazione, selezione rigorosa.\n- **Attivita**: Si analizzano i dati grezzi raccolti nella fase divergente; si raggruppano le informazioni in pattern coerenti (*clustering*), si creano le Personas e si formula un **Problem Statement** chiaro e circoscritto. Si chiude il primo diamante: la sfida progettuale e definita in modo inequivocabile.\n\n#### 3. SVILUPPA (Develop - Pensiero Divergente)\n- **Modalita mentale**: Generazione creativa, brainstorming multidisciplinare.\n- **Attivita**: Di fronte al problema definito, il team apre un nuovo spazio divergente: genera decine di concept alternativi, abbozza wireframe, sperimenta modelli mentali e realizza prototipi a bassa e media fedelta.\n\n#### 4. CONSEGNA (Deliver - Pensiero Convergente)\n- **Modalita mentale**: Valutazione, test, scarto e rifinitura finale.\n- **Attivita**: I prototipi vengono sottoposti a test di usabilita (*usability testing*) con campioni di utenti diversi. Si eliminano le soluzioni inefficaci, si raffinano i dettagli tecnici e si giunge alla produzione e consegna del prodotto o servizio.\n\n![Doppio Diamante e Fasi Divergenti](assets/corsi/dapl08/anno-1/interaction-design/images/double_diamond_divergente.png)\n\n---\n\n### 3. La Dinamica tra Pensiero Divergente e Convergente\n\nLa maggioranza dei fallimenti nei progetti convenzionali deriva dal confondere o sovrapporre queste due modalita:\n- Se si esercita la critica convergente (giudicare, scartare, dire 'non funzionera mai') durante la fase divergente, si uccide l'innovazione sul nascere.\n- Se si continua a divergere all'infinito senza convergere, non si consegnera mai un prodotto finito.\nIl Doppio Diamante impone la disciplina metodologica di **separare nettamente il momento dell'apertura delle opzioni dal momento della scelta razionale**.",
+    "summary": "### 1. Genesi e Struttura del 'Double Diamond'\n\nFormalizzato dal **Design Council britannico nel 2005**, il modello del **Doppio Diamante (*Double Diamond*)** è la rappresentazione grafica e concettuale più limpida per comprendere l'alternanza delle modalità di pensiero durante l'iter progettuale.\nIl processo si suddivide in due grandi 'diamanti' affiancati, ciascuno composto da un triangolo di apertura e uno di chiusura:\n\n1. **Diamante 1: Progettare la Cosa Giusta (*Designing the Right Thing*)**: Esplorazione del contesto e definizione precisa del problema reale da affrontare.\n2. **Diamante 2: Progettare nel Modo Giusto (*Designing Things Right*)**: Esplorazione delle soluzioni possibili, prototipazione e consegna del prodotto finale.\n\n![Schema Tecnico del Doppio Diamante](assets/corsi/dapl08/anno-1/interaction-design/images/schema_design_thinking_diamond.svg)\n\n---\n\n### 2. Le Quattro Fasi del Doppio Diamante\n\n#### 1. SCOPRI (Discover - Pensiero Divergente)\n- **Modalità mentale**: Espansione, apertura a 360 gradi, curiosità esplorativa.\n- **Attività**: Il team non assume come verità il brief iniziale del committente, ma esplora il contesto indagando con ricerche qualitative, interviste e osservazioni sul campo. Si cercano bisogni inespressi (*insights*) allargando l'orizzonte delle domande.\n\n#### 2. DEFINISCI (Define - Pensiero Convergente)\n- **Modalità mentale**: Sintesi, focalizzazione, selezione rigorosa.\n- **Attività**: Si analizzano i dati grezzi raccolti nella fase divergente; si raggruppano le informazioni in pattern coerenti (*clustering*), si creano le Personas e si formula un **Problem Statement** chiaro e circoscritto. Si chiude il primo diamante: la sfida progettuale è definita in modo inequivocabile.\n\n#### 3. SVILUPPA (Develop - Pensiero Divergente)\n- **Modalità mentale**: Generazione creativa, brainstorming multidisciplinare.\n- **Attività**: Di fronte al problema definito, il team apre un nuovo spazio divergente: genera decine di concept alternativi, abbozza wireframe, sperimenta modelli mentali e realizza prototipi a bassa e media fedeltà.\n\n#### 4. CONSEGNA (Deliver - Pensiero Convergente)\n- **Modalità mentale**: Valutazione, test, scarto e rifinitura finale.\n- **Attività**: I prototipi vengono sottoposti a test di usabilità (*usability testing*) con campioni di utenti diversi. Si eliminano le soluzioni inefficaci, si raffinano i dettagli tecnici e si giunge alla produzione e consegna del prodotto o servizio.\n\n![Doppio Diamante e Fasi Divergenti](assets/corsi/dapl08/anno-1/interaction-design/images/double_diamond_divergente.png)\n\n---\n\n### 3. La Dinamica tra Pensiero Divergente e Convergente\n\nLa maggioranza dei fallimenti nei progetti convenzionali deriva dal confondere o sovrapporre queste due modalità:\n- Se si esercita la critica convergente (giudicare, scartare, dire 'non funzionera mai') durante la fase divergente, si uccide l'innovazione sul nascere.\n- Se si continua a divergere all'infinito senza convergere, non si consegnera mai un prodotto finito.\nIl Doppio Diamante impone la disciplina metodologica di **separare nettamente il momento dell'apertura delle opzioni dal momento della scelta razionale**.",
     "keyPoints": [
-      "Il Double Diamond e stato codificato dal British Design Council nel 2005.",
+      "Il Double Diamond è stato codificato dal British Design Council nel 2005.",
       "Il primo diamante identifica il problema giusto (Discover e Define); il secondo modella la soluzione giusta (Develop e Deliver).",
       "Il pensiero divergente apre la ricerca a molteplici opzioni; il pensiero convergente sintetizza e seleziona.",
-      "Confondere divergenza e convergenza soffoca la creativita o impedisce di finalizzare il prodotto.",
-      "Il punto centrale tra i due diamanti e il Problem Statement, la sfida precisa scaturita dalla ricerca."
+      "Confondere divergenza e convergenza soffoca la creatività o impedisce di finalizzare il prodotto.",
+      "Il punto centrale tra i due diamanti è il Problem Statement, la sfida precisa scaturita dalla ricerca."
     ],
     "flashcards": [
       {
@@ -225,7 +225,7 @@ window.INTERACTION_DATA = [
         "answer": "1. Discover (Scopri); 2. Define (Definisci); 3. Develop (Sviluppa); 4. Deliver (Consegna)."
       },
       {
-        "question": "Qual e lo scopo del primo diamante rispetto al secondo?",
+        "question": "Qual è lo scopo del primo diamante rispetto al secondo?",
         "answer": "Il primo serve a 'progettare la cosa giusta' (capire il problema reale); il secondo serve a 'progettarla nel modo giusto' (trovare la soluzione ottima)."
       },
       {
@@ -239,59 +239,59 @@ window.INTERACTION_DATA = [
     ],
     "quiz": [
       {
-        "question": "Nel modello a Doppio Diamante, in quale fase si collocano l'etnografia e la ricerca esplorativa sul campo?",
+        "question": "Nel Doppio Diamante, quale coppia di fasi compone il primo diamante?",
         "options": [
-          "Nella fase di DISCOVER (Scoperta - pensiero divergente iniziale)",
-          "Nella fase di DELIVER",
-          "Nel montaggio video",
-          "Nel marketing finale"
+          "Develop e Deliver",
+          "Discover e Define",
+          "Define e Develop",
+          "Empathize e Ideate"
         ],
-        "correctIndex": 0,
-        "explanation": "La fase Discover e il momento di massima apertura divergente in cui si indagano i contesti di vita delle persone."
+        "correctIndex": 1,
+        "explanation": "Il primo diamante serve a 'progettare la cosa giusta': Discover (divergente) e Define (convergente). Empathize e Ideate sono fasi del Design Thinking, un modello diverso."
       },
       {
-        "question": "Qual e l'obiettivo primario della fase 'DEFINE' all'interno del primo diamante?",
+        "question": "Che tipo di pensiero caratterizza la fase di ricerca iniziale e quella di brainstorming?",
         "options": [
-          "Filtrare e convergere sui dati raccolti per formulare un chiaro Problem Statement incentrato sui bisogni reali",
-          "Comprare i computer per la redazione",
-          "Scrivere il comunicato stampa",
-          "Cancellare tutte le interviste raccolte"
+          "Divergente, perché si allarga il campo delle possibilità",
+          "Convergente, perché si seleziona subito l'opzione migliore",
+          "Convergente nella ricerca e divergente nel brainstorming",
+          "Divergente nella ricerca e convergente nel brainstorming"
         ],
         "correctIndex": 0,
-        "explanation": "Define e convergente: prende la massa di dati esplorativi e isola la specifica sfida che merita di essere risolta."
+        "explanation": "Sia la ricerca sia il brainstorming sono fasi divergenti: 'non ci si deve fermare alla prima' idea o fonte. Le fasi convergenti sono la sintesi e la prototipazione/consegna."
       },
       {
-        "question": "Cosa accade se un team applica il giudizio critico convergente nel pieno di una sessione divergente di brainstorming (DEVELOP)?",
+        "question": "Secondo la dispensa, perché la fase di test è considerata divergente?",
         "options": [
-          "Si blocca la creativita, inibendo le persone ed eliminando sul nascere idee potenzialmente dirompenti",
-          "Si raddoppia la velocita di esecuzione",
-          "Il software diventa automaticamente perfetto",
-          "Aumenta la qualita del codice CSS"
+          "Perché il team torna a generare nuove idee senza vincoli di budget",
+          "Perché il prodotto viene messo alla prova da molti tipi diversi di persone",
+          "Perché i risultati dei test vengono ignorati fino alla consegna",
+          "Perché si producono più prototipi alternativi dello stesso concept"
         ],
-        "correctIndex": 0,
-        "explanation": "La divergenza esige la sospensione del giudizio: criticare prematuramente impedisce la nascita di soluzioni originali."
+        "correctIndex": 1,
+        "explanation": "La dispensa spiega che il test diventa divergente perché il prodotto viene messo alla prova da 'tantissimi archetipi di persone diverse'. Generare nuove idee è tipico del brainstorming, non del test."
       },
       {
-        "question": "Nella fase 'DELIVER' del secondo diamante, quale attivita consolida la scelta finale del design?",
+        "question": "Un team critica e scarta ogni proposta durante il brainstorming. Quale errore metodologico commette?",
         "options": [
-          "I test di usabilita con utenti reali e la valutazione dei prototipi per la consegna finale",
-          "La cancellazione del progetto",
-          "L'inizio di una nuova ricerca storica sul Rinascimento",
-          "La vendita delle quote societarie"
+          "Diverge troppo a lungo e non arriva mai a una soluzione",
+          "Salta la fase di ricerca e parte direttamente dalle soluzioni",
+          "Applica il giudizio convergente in una fase che dovrebbe essere divergente",
+          "Confonde il primo diamante con il secondo e ripete la ricerca"
         ],
-        "correctIndex": 0,
-        "explanation": "Deliver e l'atto convergente finale: si collaudano i prototipi, si raffinano i dettagli e si consegna il prodotto pronto all'uso."
+        "correctIndex": 2,
+        "explanation": "Il brainstorming è divergente: giudicare subito le idee blocca la creatività. Divergere troppo a lungo è l'errore opposto, cioè non convergere mai."
       },
       {
-        "question": "Qual e la distinzione fondamentale tra il primo diamante e il secondo diamante?",
+        "question": "Quale elemento fa da cerniera tra il primo e il secondo diamante?",
         "options": [
-          "Il primo diamante riguarda il 'Cosa risolvere' (il problema); il secondo riguarda il 'Come risolverlo' (la soluzione)",
-          "Il primo diamante e a colori e il secondo in bianco e nero",
-          "Il primo diamante riguarda l'hardware e il secondo solo l'audio",
-          "Non c'e alcuna differenza, sono due figure casuali"
+          "Il prototipo ad alta fedeltà",
+          "Il brief iniziale del committente",
+          "Il report dei test di usabilità",
+          "Il Problem Statement"
         ],
-        "correctIndex": 0,
-        "explanation": "Il primo diamante indaga il problema da chiarire; il secondo diamante costruisce e valida la risposta progettuale."
+        "correctIndex": 3,
+        "explanation": "Il primo diamante si chiude con un problema definito (Problem Statement), da cui parte il secondo. Il brief del committente invece viene messo in discussione proprio nella fase Discover."
       }
     ]
   },
@@ -303,7 +303,7 @@ window.INTERACTION_DATA = [
     "readTime": "8 min",
     "module": "ixd-fondamenti-design-thinking",
     "image": "assets/corsi/dapl08/anno-1/interaction-design/images/interaction_matrix_raw.png",
-    "summary": "### 1. La Struttura dell'Interaction Matrix\n\nL'**Interaction Matrix (Matrice di Interazione)** e uno strumento analitico essenziale per mappare scientificamente tutti i canali fisici, sensoriali e comunicativi attraverso cui si attua lo scambio di informazioni tra l'essere umano e il dispositivo informatico.\nLa matrice e divisa lungo due assi speculari:\n- **Il Polo Superiore (L'Uomo)**: Il soggetto biologico cosciente, dotato di recettori sensoriali e attuatori motori.\n- **Il Polo Inferiore (La Macchina)**: L'artefatto tecnologico o sistema digitale, dotato di sensori/controlli di input e display/attuatori di output.\n\n![Schema Tecnico Interaction Matrix](assets/corsi/dapl08/anno-1/interaction-design/images/schema_interaction_matrix.svg)\n\n---\n\n### 2. I Quattro Quadranti del Circuito Interattivo\n\n![Matrice d'Interazione Raw da Dispensa](assets/corsi/dapl08/anno-1/interaction-design/images/interaction_matrix_raw.png)\n\n#### 1. Input dell'Uomo (Attuatori Motori Umani -> Macchina)\n- **Mezzi fisici impiegati**: Mani, dita, voce, postura corporea, movimento degli occhi (*eye gaze*).\n- **Azione**: L'uomo trasforma il proprio volere mentale in un'azione fisica tangibile (pressione di un tasto, tocco capacitivo, swipe, pronuncia di una parola, sguardo fisso su un pulsante visivo).\n\n#### 2. Input della Macchina (Controlli e Ricezione)\n- **Componenti tecnologiche**: Pulsanti fisici, tastiere, schermi touch capacitivi, encoder rotativi, microfoni, sensori inerziali (giroscopi, accelerometri), telecamere e sensori di prossimita.\n- **Funzione**: Trasducono l'energia fisica, meccanica, acustica o ottica impressa dall'utente in segnali elettrici discreti elaborabili dalla CPU.\n\n#### 3. Output della Macchina (Mezzi di Risposta e Segnalazione)\n- **Componenti tecnologiche**: Display a pixel (LCD, OLED, schermi flessibili), altoparlanti audio, buzzer, indicatori LED, attuatori aptici a vibrazione (ERM, LRA, solenoidi).\n- **Funzione**: Rendono percepibile lo stato interno del sistema informatico traducendo codici binari in forme visive, melodie acustiche o risposte tattili.\n\n#### 4. Ricezione dell'Uomo (Recettori Sensoriali Umani)\n- **Apparato percettivo**: Occhi (visione centrale e periferica), orecchie (udito spaziale, frequenze sonore), pelle e terminazioni nervose (tatto, propriocezione, temperatura).\n- **Funzione**: Decodificano il feedback della macchina chiudendo il circuito cognitivo e confermando il successo o il fallimento dell'azione.\n\n---\n\n### 3. Importanza Metodologica per l'Interaction Designer\n\nMappare la matrice d'interazione evita il riduzionismo del 'solo schermo' (*screen-centrism*):\n- Permette di progettare interazioni **multimodali** (es. un'interfaccia automotive che unisce un comando vocale, un feedback visivo head-up display e una vibrazione sul volante).\n- E la chiave per il **design dell'accessibilita**: se un utente ha una disabilita visiva (canale recettore visivo compromesso), la matrice evidenzia come convogliare il feedback sui canali acustico e aptico.",
+    "summary": "### 1. La Struttura dell'Interaction Matrix\n\nL'**Interaction Matrix (Matrice di Interazione)** è uno strumento analitico essenziale per mappare scientificamente tutti i canali fisici, sensoriali e comunicativi attraverso cui si attua lo scambio di informazioni tra l'essere umano e il dispositivo informatico.\nLa matrice e divisa lungo due assi speculari:\n- **Il Polo Superiore (L'Uomo)**: Il soggetto biologico cosciente, dotato di recettori sensoriali e attuatori motori.\n- **Il Polo Inferiore (La Macchina)**: L'artefatto tecnologico o sistema digitale, dotato di sensori/controlli di input e display/attuatori di output.\n\n![Schema Tecnico Interaction Matrix](assets/corsi/dapl08/anno-1/interaction-design/images/schema_interaction_matrix.svg)\n\n---\n\n### 2. I Quattro Quadranti del Circuito Interattivo\n\n![Matrice d'Interazione Raw da Dispensa](assets/corsi/dapl08/anno-1/interaction-design/images/interaction_matrix_raw.png)\n\n#### 1. Input dell'Uomo (Attuatori Motori Umani -> Macchina)\n- **Mezzi fisici impiegati**: Mani, dita, voce, postura corporea, movimento degli occhi (*eye gaze*).\n- **Azione**: L'uomo trasforma il proprio volere mentale in un'azione fisica tangibile (pressione di un tasto, tocco capacitivo, swipe, pronuncia di una parola, sguardo fisso su un pulsante visivo).\n\n#### 2. Input della Macchina (Controlli e Ricezione)\n- **Componenti tecnologiche**: Pulsanti fisici, tastiere, schermi touch capacitivi, encoder rotativi, microfoni, sensori inerziali (giroscopi, accelerometri), telecamere e sensori di prossimità.\n- **Funzione**: Trasducono l'energia fisica, meccanica, acustica o ottica impressa dall'utente in segnali elettrici discreti elaborabili dalla CPU.\n\n#### 3. Output della Macchina (Mezzi di Risposta e Segnalazione)\n- **Componenti tecnologiche**: Display a pixel (LCD, OLED, schermi flessibili), altoparlanti audio, buzzer, indicatori LED, attuatori aptici a vibrazione (ERM, LRA, solenoidi).\n- **Funzione**: Rendono percepibile lo stato interno del sistema informatico traducendo codici binari in forme visive, melodie acustiche o risposte tattili.\n\n#### 4. Ricezione dell'Uomo (Recettori Sensoriali Umani)\n- **Apparato percettivo**: Occhi (visione centrale e periferica), orecchie (udito spaziale, frequenze sonore), pelle e terminazioni nervose (tatto, propriocezione, temperatura).\n- **Funzione**: Decodificano il feedback della macchina chiudendo il circuito cognitivo e confermando il successo o il fallimento dell'azione.\n\n---\n\n### 3. Importanza Metodologica per l'Interaction Designer\n\nMappare la matrice d'interazione evita il riduzionismo del 'solo schermo' (*screen-centrism*):\n- Permette di progettare interazioni **multimodali** (es. un'interfaccia automotive che unisce un comando vocale, un feedback visivo head-up display e una vibrazione sul volante).\n- È la chiave per il **design dell'accessibilità**: se un utente ha una disabilita visiva (canale recettore visivo compromesso), la matrice evidenzia come convogliare il feedback sui canali acustico e aptico.",
     "keyPoints": [
       "L'Interaction Matrix mappa i flussi di scambio tra il polo umano e il polo della macchina.",
       "L'uomo agisce tramite attuatori motori (mani, voce) e riceve tramite recettori sensoriali (vista, udito, tatto).",
@@ -313,19 +313,19 @@ window.INTERACTION_DATA = [
     ],
     "flashcards": [
       {
-        "question": "Come e strutturata l'Interaction Matrix?",
+        "question": "Come è strutturata l'Interaction Matrix?",
         "answer": "Polo superiore dedicato all'Uomo (recettori a sinistra, attuatori motori a destra); polo inferiore per la Macchina (display a sinistra, controlli a destra)."
       },
       {
         "question": "Cosa si intende per 'Multimodalita' nell'interazione uomo-macchina?",
-        "answer": "La combinazione integrata di piu canali sensoriali e motori contemporanei (es. voce, tocco, segnali grafici e vibrazioni aptiche)."
+        "answer": "La combinazione integrata di più canali sensoriali e motori contemporanei (es. voce, tocco, segnali grafici e vibrazioni aptiche)."
       },
       {
-        "question": "Qual e il ruolo del feedback aptico nella matrice d'interazione?",
+        "question": "Qual è il ruolo del feedback aptico nella matrice d'interazione?",
         "answer": "Fornire una risposta tattile attraverso attuatori a vibrazione, confermando la riuscita di un'azione senza dover guardare lo schermo."
       },
       {
-        "question": "In che modo l'Interaction Matrix favorisce il design per l'accessibilita?",
+        "question": "In che modo l'Interaction Matrix favorisce il design per l'accessibilità?",
         "answer": "Permette di ridirezionare input e output su canali sensoriali alternativi per utenti con disabilita sensoriali o motorie."
       },
       {
@@ -335,59 +335,59 @@ window.INTERACTION_DATA = [
     ],
     "quiz": [
       {
-        "question": "Nell'Interaction Matrix, quale elemento rappresenta l'output del polo umano verso la macchina?",
+        "question": "Nell'Interaction Matrix, che cosa si trova sul polo superiore?",
         "options": [
-          "I mezzi fisici motori dell'uomo (dita, mani, gestualita, voce, movimento degli occhi)",
-          "La vista e l'udito",
-          "Lo schermo OLED",
-          "Il cavo di alimentazione a 220V"
+          "La macchina, con controlli in ingresso e mezzi di risposta",
+          "L'uomo, con i mezzi fisici per agire e i recettori per percepire",
+          "L'ambiente, con le condizioni di luce, rumore e spazio d'uso",
+          "Il progettista, con gli strumenti di ricerca e prototipazione"
         ],
-        "correctIndex": 0,
-        "explanation": "Gli attuatori motori corporei (mani, voce, sguardo) sono i vettori con cui l'uomo agisce fisicamente sui controlli della macchina."
+        "correctIndex": 1,
+        "explanation": "Il polo superiore è dedicato all'uomo: da un lato i mezzi fisici con cui comunica con la macchina, dall'altro i recettori con cui riceve la risposta. La macchina occupa il polo inferiore."
       },
       {
-        "question": "Quale canale recettivo umano viene stimolato dai motori a vibrazione (LRA/ERM) di uno smartphone?",
+        "question": "In uno smart speaker, quale coppia rappresenta l'input e l'output della macchina?",
         "options": [
-          "Il canale tattile / aptico (meccanocettori della pelle)",
-          "La vista",
-          "Il gusto",
-          "L'olfatto"
+          "La voce dell'utente e l'udito dell'utente",
+          "Il processore e la memoria interna",
+          "Il microfono e l'altoparlante",
+          "Il comando vocale e la connessione di rete"
         ],
-        "correctIndex": 0,
-        "explanation": "La vibrazione aptica stimola le terminazioni nervose cutanee fornendo un riscontro fisico immediato."
+        "correctIndex": 2,
+        "explanation": "Sul polo della macchina si trovano i controlli che ricevono (microfono) e i mezzi di risposta (altoparlante). Voce e udito sono invece mezzi e recettori del polo umano."
       },
       {
-        "question": "Perche l'Interaction Design rifiuta la visione 'screen-centrica' (focalizzata unicamente sul display grafico)?",
+        "question": "La vibrazione di uno smartphone alla ricezione di un messaggio coinvolge quale recettore umano?",
         "options": [
-          "Perche l'esperienza umana e corporea e multisensoriale, integrando tatto, spazio, suoni e comandi fisici",
-          "Perche gli schermi si romperanno tutti entro il 2030",
-          "Perche il display consuma troppa memoria RAM",
-          "Perche i caratteri grafici sono illeggibili"
+          "La vista periferica",
+          "L'udito spaziale",
+          "Il tatto",
+          "La propriocezione dello sguardo"
         ],
-        "correctIndex": 0,
-        "explanation": "Un design evoluto dialoga con l'intero apparato percettivo e motorio dell'individuo, sfruttando la multimodalita."
+        "correctIndex": 2,
+        "explanation": "Il motore a vibrazione è un mezzo di risposta della macchina che stimola il canale tattile/aptico. Anche se la vibrazione può produrre un leggero rumore, il canale progettato è il tatto."
       },
       {
-        "question": "Cosa avviene se in un'interfaccia manca totalmente il feedback della macchina a seguito di un'azione dell'utente?",
+        "question": "Un utente ipovedente usa un'app di navigazione. Come aiuta la matrice d'interazione a progettare per lui?",
         "options": [
-          "L'utente si disorienta, non comprende se il comando e stato recepito e ripete compulsivamente l'azione creando errori",
-          "La macchina funziona il doppio piu velocemente",
-          "L'utente e sempre piu soddisfatto",
-          "Il software si aggiorna automaticamente"
+          "Indica di aumentare il contrasto dello schermo, unico canale disponibile",
+          "Mostra quali canali alternativi usare per il feedback, come suono e vibrazione",
+          "Suggerisce di eliminare il feedback per non sovraccaricare l'utente",
+          "Impone di sostituire l'app con un dispositivo fisico dedicato"
         ],
-        "correctIndex": 0,
-        "explanation": "L'assenza di feedback rompe il circuito cibernetico dell'interazione generando ansia e incertezza operativa nell'utente."
+        "correctIndex": 1,
+        "explanation": "Mappando tutti i canali, la matrice evidenzia che il feedback può passare per udito e tatto quando la vista è compromessa. Aumentare il contrasto aiuta alcuni ipovedenti, ma resta legato al solo canale visivo."
       },
       {
-        "question": "In un sistema interattivo vocale (come uno smart speaker), quali sono i componenti di input e output della macchina?",
+        "question": "Cosa succede se un sistema non dà alcun feedback dopo un'azione dell'utente?",
         "options": [
-          "Microfono per l'input e Altoparlante per l'output vocale",
-          "Mouse ottico e schermo touch",
-          "Tastiera meccanica e stampante laser",
-          "Cavo seriale e floppy disk"
+          "L'utente si concentra meglio perché non viene distratto da segnali",
+          "L'utente non capisce se il comando è stato ricevuto e tende a ripeterlo",
+          "Il sistema risulta più veloce perché non deve elaborare risposte",
+          "Il modello mentale dell'utente si aggiorna comunque in modo corretto"
         ],
-        "correctIndex": 0,
-        "explanation": "Nel paradigma vocale, la matrice si focalizza sul canale acustico: microfoni in ingresso e sintesi vocale in uscita."
+        "correctIndex": 1,
+        "explanation": "Senza la risposta della macchina il circuito resta aperto: l'utente non sa se l'azione ha avuto effetto e spesso la ripete, generando errori. Il modello mentale si aggiorna proprio grazie al feedback."
       }
     ]
   },
@@ -395,95 +395,95 @@ window.INTERACTION_DATA = [
     "id": "ixd-c5",
     "number": 5,
     "title": "Human-Centered Design e User-Centered Design",
-    "subtitle": "La centralita della persona, diversita, genere, potere e l'etica del sistema",
+    "subtitle": "La centralità della persona, diversità, genere, potere e l'etica del sistema",
     "readTime": "9 min",
     "module": "ixd-fondamenti-design-thinking",
     "image": "assets/corsi/dapl08/anno-1/interaction-design/images/design_thinking_iterativo.png",
-    "summary": "### 1. Dalla Tecnologia all'Uomo: L'Evoluzione dei Paradigmi\n\nNei primi decenni dell'informatica, la progettazione era dominata dal paradigma **Technology-Centered**: gli ingegneri creavano hardware e software secondo le proprie logiche interne di efficienza computazionale e costringevano gli utenti ad adattarsi con faticosi manuali d'istruzione o a subire gli errori del sistema.\nLa rivoluzione dell'Interaction Design risiede nel capovolgimento di questa prospettiva: **e la tecnologia che deve modellarsi intorno all'uomo, non l'uomo che deve modellarsi intorno alla tecnologia**.\n\n---\n\n### 2. User-Centered Design (UCD)\n\nCodificato da Norman e Draper negli anni '80 (*User Centered System Design*), l'**UCD** stabilisce un principio deontologico categorico:\n> *\"Lo scopo del sistema e servire l'utente, non utilizzare una tecnologia specifica, ne fare un elegante esercizio di programmazione astratta. I bisogni dell'utente devono dominare il design dell'interfaccia, e i bisogni dell'interfaccia devono dominare il design del resto del sistema.\"*\n\nPrincipi fondanti dell'UCD:\n- **Chiarezza dei compiti**: Comprendere gli obiettivi operativi degli utenti specifici.\n- **Coinvolgimento attivo**: Integrare gli utenti finali in tutte le fasi di ideazione e verifica.\n- **Misurazione empirica**: Testare costantemente efficienza, errori e facilita d'apprendimento (*learnability*).\n\n---\n\n### 3. Human-Centered Design (HCD): Una Visione Sistemica ed Etica\n\nMentre l'UCD si focalizza spesso sul rapporto pragmatico tra un utilizzatore e uno strumento specifico, l'**Human-Centered Design (HCD)** adotta un orizzonte antropologico, etico e sociale molto piu vasto:\n- Le persone non sono meri 'operatori di tasti' o 'consumatori di pixel', ma esseri umani complessi immersi in ecosistemi sociali, culturali ed economici.\n- **Inclusione e Diversita**: L'HCD considera esplicitamente variabili come il **genere, l'etnia, l'eta, la classe sociale, le abilita fisiche e cognitive, e le asimmetrie di potere**.\n- **Impatto Sistemico**: Valuta le conseguenze ecologiche e sociali a lungo termine della tecnologia (dipendenza psicologica da algoritmi, tutela della privacy, polarizzazione sociale, sostenibilita ambientale).",
+    "summary": "### 1. Dalla Tecnologia all'Uomo: L'Evoluzione dei Paradigmi\n\nNei primi decenni dell'informatica, la progettazione era dominata dal paradigma **Technology-Centered**: gli ingegneri creavano hardware e software secondo le proprie logiche interne di efficienza computazionale e costringevano gli utenti ad adattarsi con faticosi manuali d'istruzione o a subire gli errori del sistema.\nLa rivoluzione dell'Interaction Design risiede nel capovolgimento di questa prospettiva: **e la tecnologia che deve modellarsi intorno all'uomo, non l'uomo che deve modellarsi intorno alla tecnologia**.\n\n---\n\n### 2. User-Centered Design (UCD)\n\nCodificato da Norman e Draper negli anni '80 (*User Centered System Design*), l'**UCD** stabilisce un principio deontologico categorico:\n> *\"Lo scopo del sistema e servire l'utente, non utilizzare una tecnologia specifica, né fare un elegante esercizio di programmazione astratta. I bisogni dell'utente devono dominare il design dell'interfaccia, e i bisogni dell'interfaccia devono dominare il design del resto del sistema.\"*\n\nPrincipi fondanti dell'UCD:\n- **Chiarezza dei compiti**: Comprendere gli obiettivi operativi degli utenti specifici.\n- **Coinvolgimento attivo**: Integrare gli utenti finali in tutte le fasi di ideazione e verifica.\n- **Misurazione empirica**: Testare costantemente efficienza, errori e facilita d'apprendimento (*learnability*).\n\n---\n\n### 3. Human-Centered Design (HCD): Una Visione Sistemica ed Etica\n\nMentre l'UCD si focalizza spesso sul rapporto pragmatico tra un utilizzatore e uno strumento specifico, l'**Human-Centered Design (HCD)** adotta un orizzonte antropologico, etico e sociale molto più vasto:\n- Le persone non sono meri 'operatori di tasti' o 'consumatori di pixel', ma esseri umani complessi immersi in ecosistemi sociali, culturali ed economici.\n- **Inclusione e Diversità**: L'HCD considera esplicitamente variabili come il **genere, l'etnia, l'età, la classe sociale, le abilita fisiche e cognitive, e le asimmetrie di potere**.\n- **Impatto Sistemico**: Valuta le conseguenze ecologiche e sociali a lungo termine della tecnologia (dipendenza psicologica da algoritmi, tutela della privacy, polarizzazione sociale, sostenibilità ambientale).",
     "keyPoints": [
       "L'approccio storico Technology-Centered costringeva l'uomo ad adattarsi alla logica rigida delle macchine.",
       "L'User-Centered Design (UCD) impone che i bisogni dell'utente dominino l'interfaccia e l'architettura tecnica.",
       "Lo scopo del sistema e servire l'utilizzatore, non celebrare l'eleganza astratta del codice.",
-      "Lo Human-Centered Design (HCD) amplia l'UCD considerando le persone nella loro complessita sociale ed etica.",
-      "L'HCD integra attivamente questioni di genere, potere, accessibilita universale e impatto ecologico."
+      "Lo Human-Centered Design (HCD) amplia l'UCD considerando le persone nella loro complessità sociale ed etica.",
+      "L'HCD integra attivamente questioni di genere, potere, accessibilità universale e impatto ecologico."
     ],
     "flashcards": [
       {
-        "question": "Qual e la critica primaria rivolta all'approccio Technology-Centered?",
-        "answer": "Che progetta in base ai limiti e alle comodita della macchina, costringendo l'essere umano a comportamenti innaturali e frustranti."
+        "question": "Qual è la critica primaria rivolta all'approccio Technology-Centered?",
+        "answer": "Che progetta in base ai limiti e alle comodità della macchina, costringendo l'essere umano a comportamenti innaturali e frustranti."
       },
       {
         "question": "Cosa afferma il postulato fondamentale dello User-Centered Design?",
         "answer": "Che lo scopo del sistema e servire l'utente e che i bisogni della persona devono guidare l'interfaccia e l'intera architettura."
       },
       {
-        "question": "Qual e la differenza di respiro tra UCD e Human-Centered Design (HCD)?",
-        "answer": "L'UCD e focalizzato sull'usabilita operativa specifica; l'HCD considera la persona nella sua globalita sociale, etica, culturale e politica."
+        "question": "Qual è la differenza di respiro tra UCD e Human-Centered Design (HCD)?",
+        "answer": "L'UCD è focalizzato sull'usabilità operativa specifica; l'HCD considera la persona nella sua globalita sociale, etica, culturale e politica."
       },
       {
         "question": "Quali dimensioni sociali include esplicitamente l'Human-Centered Design?",
         "answer": "Genere, etnia, classe sociale, disabilita, asimmetrie di potere e conseguenze sistemiche a lungo termine."
       },
       {
-        "question": "Cosa significa 'Learnability' nell'usabilita di un sistema centrato sull'utente?",
-        "answer": "La facilita e rapidita con cui un nuovo utente impara a interagire con l'interfaccia senza necessita di formazione preliminare."
+        "question": "Cosa significa 'Learnability' nell'usabilità di un sistema centrato sull'utente?",
+        "answer": "La facilita e rapidità con cui un nuovo utente impara a interagire con l'interfaccia senza necessita di formazione preliminare."
       }
     ],
     "quiz": [
       {
-        "question": "Secondo i principi dello User-Centered Design, da cosa deve essere dominato il design dell'intero sistema computazionale?",
+        "question": "Secondo lo User Centered Design, che cosa dovrebbe dominare il design del resto del sistema?",
         "options": [
-          "Dai bisogni dell'interfaccia modellata intorno alle esigenze concrete dell'utente",
-          "Dalla novita dell'ultimo linguaggio di programmazione sul mercato",
-          "Dalle preferenze estetiche personali del programmatore capo",
-          "Dalla volonta di vendere hardware sempre piu costoso"
+          "Le scelte tecnologiche più efficienti",
+          "I bisogni dell'interfaccia",
+          "Le esigenze di chi scrive il codice",
+          "Le richieste del reparto marketing"
         ],
-        "correctIndex": 0,
-        "explanation": "L'UCD stabilisce una gerarchia ferrea: i bisogni dell'utente guidano l'interfaccia, e l'interfaccia governa lo sviluppo del software."
+        "correctIndex": 1,
+        "explanation": "La formula d'esame è: i bisogni degli utenti dominano il design dell'interfaccia, e i bisogni dell'interfaccia dominano il design del resto del sistema. La tecnologia viene dopo, non prima."
       },
       {
-        "question": "Perche l'Human-Centered Design (HCD) rifiuta di considerare le persone come semplici 'utenti' generici?",
+        "question": "Che cosa aggiunge lo Human-Centered Design rispetto all'UCD, secondo la dispensa?",
         "options": [
-          "Perche gli individui possiedono identita culturali, disabilita, contesti sociali e asimmetrie di potere che influenzano profondamente l'interazione",
-          "Perche la parola utente e troppo breve",
-          "Perche le persone non usano mai la tecnologia",
-          "Per risparmiare sui costi dei server"
+          "L'uso sistematico di test quantitativi su grandi campioni",
+          "L'eliminazione degli utenti dalle fasi di ideazione",
+          "La priorità della fattibilità tecnica sulla desiderabilità",
+          "La considerazione esplicita di genere, etnia, classe e potere"
         ],
-        "correctIndex": 0,
-        "explanation": "L'HCD abbraccia l'essere umano a tutto tondo, considerando contesti di vita reali, etica, inclusione e diversita."
+        "correctIndex": 3,
+        "explanation": "L'HCD studia il contesto umano e considera esplicitamente dimensioni come genere, etnia, classe e potere. I test quantitativi possono far parte di entrambi gli approcci e non sono ciò che li distingue."
       },
       {
-        "question": "Nel vecchio approccio 'Technology-Centered', chi era costretto a modificarsi e adattarsi?",
+        "question": "Nell'approccio technology-centered, chi deve adattarsi?",
         "options": [
-          "L'essere umano, costretto a imparare procedure complesse per non mandare in crash la macchina",
-          "Il microprocessore",
-          "L'elettricita",
-          "I transistor"
+          "L'utente, che impara le logiche imposte dalla macchina",
+          "La tecnologia, che si modella sulle abitudini delle persone",
+          "Il mercato, che si adegua alle innovazioni disponibili",
+          "Il progettista, che segue le richieste di ogni utente"
         ],
         "correctIndex": 0,
-        "explanation": "Nel design tecno-centrico il sistema e rigido e la persona viene colpevolizzata quando commette un errore d'uso."
+        "explanation": "Nel paradigma technology-centered è l'uomo ad adattarsi alla macchina. L'opzione sulla tecnologia che si modella sulle persone descrive invece l'UCD."
       },
       {
-        "question": "Quale studioso e celebre per aver promosso il concetto di User Centered System Design negli anni Ottanta?",
+        "question": "In quale decennio Donald Norman e Stephen Draper pubblicano 'User Centered System Design'?",
         "options": [
-          "Donald Norman",
-          "Steve Jobs",
-          "Bill Gates",
-          "Alan Turing"
+          "Anni Ottanta",
+          "Anni Settanta",
+          "Anni Sessanta",
+          "Anni Novanta"
         ],
         "correctIndex": 0,
-        "explanation": "Don Norman con il saggio 'User Centered System Design' (1986) ha fondato la moderna filosofia del design centrato sull'utente."
+        "explanation": "Il volume curato da Norman e Draper è del 1986. Negli anni Settanta Norman non aveva ancora formalizzato l'approccio, mentre negli anni Novanta il termine era già diffuso."
       },
       {
-        "question": "In che modo l'Human-Centered Design valuta l'impatto a lungo termine di un social network o di un'app?",
+        "question": "Quale frase rispecchia il principio dello User Centered Design citato in dispensa?",
         "options": [
-          "Valutando il benessere mentale, la trasparenza dei dati, la prevenzione delle dipendenze e la coesione democratica",
-          "Calcolando solo i guadagni degli inserzionisti pubblicitari",
-          "Verificando quanti gigabyte occupa il server",
-          "Contando il numero di pixel visualizzati al secondo"
+          "Lo scopo del sistema è adottare sempre la tecnologia più recente",
+          "Lo scopo del sistema è dimostrare l'eleganza della programmazione",
+          "Lo scopo del sistema è ridurre i costi di sviluppo e manutenzione",
+          "Lo scopo del sistema è servire l'utente, non usare una tecnologia specifica"
         ],
-        "correctIndex": 0,
-        "explanation": "L'HCD introduce la responsabilita etica, monitorando come l'artefatto modifichi le relazioni umane e la salute psichica."
+        "correctIndex": 3,
+        "explanation": "La dispensa riporta che lo scopo del sistema è servire l'utente, 'non utilizzare una tecnologia specifica, né fare un elegante lavoro di programmazione'."
       }
     ]
   },
@@ -495,13 +495,13 @@ window.INTERACTION_DATA = [
     "readTime": "10 min",
     "module": "ixd-fondamenti-design-thinking",
     "image": "assets/corsi/dapl08/anno-1/interaction-design/images/peak_end_rule.png",
-    "summary": "### 1. Che Cos'e l'Esperienza?\n\nNel design, un'**esperienza (*Experience*)** e la rappresentazione soggettiva, cosciente, emotiva e cognitiva che un individuo sviluppa nell'interazione con un artefatto o un contesto nel corso del tempo.\nProprieta fenomenologiche dell'esperienza:\n- E un **flusso di coscienza immersivo** (*flow*).\n- Si articola lungo un arco temporale scandito in tre stadi: **Prima** (anticipazione, immaginazione, aspettative), **Durante** (interazione fisica, percezione sensoriale, usabilita reale) e **Dopo** (ricordo, narrazione retrospettiva, cambiamento di abitudini).\n- Ha la capacita trasformativa di mutare la percezione di noi stessi e del mondo.\n\n![Fasi Temporali dell'Esperienza](assets/corsi/dapl08/anno-1/interaction-design/images/esperienza_fasi.png)\n\n---\n\n### 2. La Peak-End Rule (Daniel Kahneman)\n\nUno dei contributi piu rivoluzionari delle scienze cognitive e della psicologia comportamentale applicate all'Interaction Design e la **Peak-End Rule (Regola del Picco e della Fine)**, formulata dal premio Nobel **Daniel Kahneman**:\n\n> *\"Le persone non valutano ne ricordano un'esperienza come la somma matematica o la media algebrica di tutti i momenti vissuti. Al contrario, la memoria umana giudica l'intera esperienza basandosi quasi esclusivamente su due soli istanti: **il picco massimo** (il momento di massima intensita emotiva, positiva o negativa) e **la sua fine** (come l'esperienza si e conclusa).\"*\n\n![Grafico Peak-End Rule](assets/corsi/dapl08/anno-1/interaction-design/images/peak_end_rule.png)\n\n#### Implicazioni Progettuali per l'IxD:\n- Un servizio che funziona mediamente bene ma si conclude con un errore frustrante al checkout verra archiviato nella memoria dell'utente come un'esperienza totalmente fallimentare.\n- Al contrario, un'applicazione che presenta qualche piccola frizione ma regala un **momento di delizia e meraviglia (*peak*)** e si conclude con una **gratificazione impeccabile (*end*)** verra ricordata come eccellente e consigliata ad altri.\n- Il fenomeno della **durata trascurata (*duration neglect*)**: la durata temporale effettiva dell'evento ha un impatto irrisorio rispetto all'intensita emotiva del picco e della conclusione.\n\n---\n\n### 3. L'Evoluzione del Mercato: Verso l'Economia della Trasformazione\n\nSecondo l'analisi socio-economica di B. Joseph Pine II e James H. Gilmore (*The Experience Economy*), la storia del valore economico attraversa una progressione ineludibile:\n\n![Evoluzione del Mercato verso la Trasformazione](assets/corsi/dapl08/anno-1/interaction-design/images/economia_esperienze_trasformazione.png)\n\n1. **Materie Prime (*Commodities*)**: Il caffe grezzo non lavorato estratto dalla terra (valore monetario fungibile: centesimi).\n2. **Beni Tangibili (*Goods*)**: Il caffe tostato e confezionato in fabbrica al supermercato.\n3. **Servizi (*Services*)**: La tazzina di caffe servita al bancone del bar (si paga il servizio e la comodita).\n4. **Esperienze (*Experiences*)**: Il caffe consumato in Piazza San Marco a Venezia o da Starbucks (si paga l'atmosfera teatrale, la musica, il rito e la memorabilita).\n5. **Trasformazioni (*Transformations*)**: **Il nuovo stadio contemporaneo**. Le persone non si accontentano piu di pagare per un'esperienza effimera, ma esigono che l'interazione **trasformi la loro identita, la loro salute e le loro capacita** (es. app di fitness, piattaforme formative personalizzate, strumenti creativi generativi). Il cliente non e piu solo spettatore: e il prodotto stesso che cambia e si evolve.",
+    "summary": "### 1. Che Cos'è l'Esperienza?\n\nNel design, un'**esperienza (*Experience*)** è la rappresentazione soggettiva, cosciente, emotiva e cognitiva che un individuo sviluppa nell'interazione con un artefatto o un contesto nel corso del tempo.\nProprietà fenomenologiche dell'esperienza:\n- È un **flusso di coscienza immersivo** (*flow*).\n- Si articola lungo un arco temporale scandito in tre stadi: **Prima** (anticipazione, immaginazione, aspettative), **Durante** (interazione fisica, percezione sensoriale, usabilità reale) e **Dopo** (ricordo, narrazione retrospettiva, cambiamento di abitudini).\n- Ha la capacità trasformativa di mutare la percezione di noi stessi e del mondo.\n\n![Fasi Temporali dell'Esperienza](assets/corsi/dapl08/anno-1/interaction-design/images/esperienza_fasi.png)\n\n---\n\n### 2. La Peak-End Rule (Daniel Kahneman)\n\nUno dei contributi più rivoluzionari delle scienze cognitive e della psicologia comportamentale applicate all'Interaction Design è la **Peak-End Rule (Regola del Picco e della Fine)**, formulata dal premio Nobel **Daniel Kahneman**:\n\n> *\"Le persone non valutano né ricordano un'esperienza come la somma matematica o la media algebrica di tutti i momenti vissuti. Al contrario, la memoria umana giudica l'intera esperienza basandosi quasi esclusivamente su due soli istanti: **il picco massimo** (il momento di massima intensità emotiva, positiva o negativa) e **la sua fine** (come l'esperienza si e conclusa).\"*\n\n![Grafico Peak-End Rule](assets/corsi/dapl08/anno-1/interaction-design/images/peak_end_rule.png)\n\n#### Implicazioni Progettuali per l'IxD:\n- Un servizio che funziona mediamente bene ma si conclude con un errore frustrante al checkout verrà archiviato nella memoria dell'utente come un'esperienza totalmente fallimentare.\n- Al contrario, un'applicazione che presenta qualche piccola frizione ma regala un **momento di delizia e meraviglia (*peak*)** e si conclude con una **gratificazione impeccabile (*end*)** verrà ricordata come eccellente e consigliata ad altri.\n- Il fenomeno della **durata trascurata (*duration neglect*)**: la durata temporale effettiva dell'evento ha un impatto irrisorio rispetto all'intensità emotiva del picco e della conclusione.\n\n---\n\n### 3. L'Evoluzione del Mercato: Verso l'Economia della Trasformazione\n\nSecondo l'analisi socio-economica di B. Joseph Pine II e James H. Gilmore (*The Experience Economy*), la storia del valore economico attraversa una progressione ineludibile:\n\n![Evoluzione del Mercato verso la Trasformazione](assets/corsi/dapl08/anno-1/interaction-design/images/economia_esperienze_trasformazione.png)\n\n1. **Materie Prime (*Commodities*)**: Il caffè grezzo non lavorato estratto dalla terra (valore monetario fungibile: centesimi).\n2. **Beni Tangibili (*Goods*)**: Il caffè tostato e confezionato in fabbrica al supermercato.\n3. **Servizi (*Services*)**: La tazzina di caffè servita al bancone del bar (si paga il servizio e la comodità).\n4. **Esperienze (*Experiences*)**: Il caffè consumato in Piazza San Marco a Venezia o da Starbucks (si paga l'atmosfera teatrale, la musica, il rito e la memorabilita).\n5. **Trasformazioni (*Transformations*)**: **Il nuovo stadio contemporaneo**. Le persone non si accontentano più di pagare per un'esperienza effimera, ma esigono che l'interazione **trasformi la loro identità, la loro salute e le loro capacità** (es. app di fitness, piattaforme formative personalizzate, strumenti creativi generativi). Il cliente non è più solo spettatore: e il prodotto stesso che cambia e si evolve.",
     "keyPoints": [
-      "L'esperienza e un flusso cosciente che si estende in tre tempi: Prima, Durante e Dopo l'uso.",
+      "L'esperienza è un flusso cosciente che si estende in tre tempi: Prima, Durante e Dopo l'uso.",
       "La Peak-End Rule (Kahneman) dimostra che ricordiamo un'esperienza solo in base al picco emotivo e alla fine.",
-      "La durata temporale dell'esperienza e trascurata dalla memoria rispetto all'intensita emotiva dei punti salienti.",
+      "La durata temporale dell'esperienza è trascurata dalla memoria rispetto all'intensità emotiva dei punti salienti.",
       "Pine e Gilmore tracciano la scala del valore: Materie prime -> Beni -> Servizi -> Esperienze -> Trasformazioni.",
-      "Nell'economia contemporanea gli utenti pagano per la Trasformazione duratura della propria identita."
+      "Nell'economia contemporanea gli utenti pagano per la Trasformazione duratura della propria identità."
     ],
     "flashcards": [
       {
@@ -509,8 +509,8 @@ window.INTERACTION_DATA = [
         "answer": "Che la memoria umana giudica un'esperienza passata quasi esclusivamente in base all'apice emotivo (peak) e alla sua conclusione (end)."
       },
       {
-        "question": "Cos'e il fenomeno della 'Duration Neglect' nella memoria dell'esperienza?",
-        "answer": "La tendenza cognitiva a dimenticare la durata effettiva di un evento, ricordando solo l'intensita dei momenti salienti."
+        "question": "Cos'è il fenomeno della 'Duration Neglect' nella memoria dell'esperienza?",
+        "answer": "La tendenza cognitiva a dimenticare la durata effettiva di un evento, ricordando solo l'intensità dei momenti salienti."
       },
       {
         "question": "Quali sono le tre fasi temporali di qualsiasi esperienza d'uso?",
@@ -521,65 +521,65 @@ window.INTERACTION_DATA = [
         "answer": "1. Commodities (materie prime); 2. Goods (beni fisici); 3. Services (servizi); 4. Experiences (esperienze); 5. Transformations (trasformazioni)."
       },
       {
-        "question": "Perche l'economia contemporanea punta al 'Design della Trasformazione'?",
-        "answer": "Perche gli utenti cercano prodotti e servizi capaci di modificare in modo duraturo il proprio benessere, la conoscenza e l'identita personale."
+        "question": "Perché l'economia contemporanea punta al 'Design della Trasformazione'?",
+        "answer": "Perché gli utenti cercano prodotti e servizi capaci di modificare in modo duraturo il proprio benessere, la conoscenza e l'identità personale."
       }
     ],
     "quiz": [
       {
-        "question": "Secondo la Peak-End Rule, su quali due momenti si concentra primariamente il ricordo emotivo dell'utente?",
+        "question": "Secondo la Peak-End Rule, su che cosa si basa il ricordo di un'esperienza?",
         "options": [
-          "Sul punto di massima intensita emotiva (il picco) e su come l'esperienza si e conclusa (la fine)",
-          "Sui primi tre secondi e sui titoli di testa",
-          "Sulla media aritmetica di ogni singolo minuto trascorso",
-          "Sul costo economico della fattura"
+          "Sulla media di tutti i momenti vissuti",
+          "Sul momento iniziale e sulla durata complessiva",
+          "Sul picco emotivo e sul momento finale",
+          "Sul numero di problemi incontrati"
         ],
-        "correctIndex": 0,
-        "explanation": "Kahneman ha dimostrato che la mente non somma i minuti vissuti ma fissa il ricordo sul picco piu intenso e sull'impressione finale."
+        "correctIndex": 2,
+        "explanation": "Le persone ricordano un'esperienza in base a come si sono sentite nel picco e alla fine, non alla somma o alla media dei momenti. Anche la durata ha un peso molto ridotto (duration neglect)."
       },
       {
-        "question": "Se un utente completa un lungo acquisto online con facilita ma alla fine riceve una schermata di errore misteriosa, quale sara il suo ricordo?",
+        "question": "Un acquisto online è fluido fino al pagamento, dove compare un errore incomprensibile. Come sarà probabilmente ricordato?",
         "options": [
-          "Negativo ed esasperante, perche la conclusione fallimentare (End) cancella retroattivamente la precedente fluidita dell'esperienza",
-          "Estremamente positivo",
-          "Perfettamente neutro",
-          "Dimentichera subito di aver usato il sito"
+          "Come negativo, perché la fine pesa più dei momenti precedenti",
+          "Come neutro, perché i momenti positivi compensano l'errore",
+          "Come positivo, perché quasi tutto il percorso è andato bene",
+          "Come positivo, se il sito è esteticamente curato"
         ],
         "correctIndex": 0,
-        "explanation": "La chiusura dell'interazione determina il giudizio memorizzato: un finale amaro rovina l'intera percezione del servizio."
+        "explanation": "Per la Peak-End Rule una conclusione negativa condiziona l'intero ricordo. L'idea di compensazione tra momenti positivi e negativi è proprio la 'somma' che la regola smentisce."
       },
       {
-        "question": "Nel saggio 'The Experience Economy', qual e lo stadio superiore all'esperienza pura per cui oggi i consumatori sono disposti a pagare?",
+        "question": "Quale caratteristica dell'esperienza è elencata nella dispensa?",
         "options": [
-          "La Trasformazione (un cambiamento duraturo e positivo di se stessi e delle proprie capacita)",
-          "La fornitura di metallo grezzo",
-          "La pubblicita cartacea",
-          "Un abbonamento telefonico a consumo"
+          "È sempre involontaria e non può essere pianificata",
+          "È identica per tutti gli utenti dello stesso prodotto",
+          "Coincide con l'uso fisico del prodotto",
+          "Può essere immaginata, anticipata e ricordata"
         ],
-        "correctIndex": 0,
-        "explanation": "Dalle esperienze temporanee si e passati al valore supremo della trasformazione personale (salute, apprendimento, identita)."
+        "correctIndex": 3,
+        "explanation": "La dispensa elenca: si può immaginare e anticipare, pianificare, ricordare, può cambiarci e diventare abitudine. È soggettiva, quindi non identica per tutti, e non si limita all'uso fisico ('prima, durante e dopo')."
       },
       {
-        "question": "Cosa comprende la fase 'Prima' all'interno della teoria dell'esperienza d'uso?",
+        "question": "Secondo la dispensa, per che cosa oggi le persone sono disposte a pagare oltre l'esperienza?",
         "options": [
-          "L'immaginazione, il desiderio, le aspettative culturali e l'anticipazione prima del contatto reale con l'oggetto",
-          "Lo smaltimento dell'imballaggio nei rifiuti",
-          "Il pagamento della tassa di possesso",
-          "La sostituzione della batteria esaurita"
+          "Per il possesso esclusivo del prodotto",
+          "Per la garanzia di qualità",
+          "Per il servizio personalizzato",
+          "Per la trasformazione"
         ],
-        "correctIndex": 0,
-        "explanation": "L'esperienza inizia ben prima dell'interfaccia: comincia con il bisogno, il racconto e l'aspettativa dell'utente."
+        "correctIndex": 3,
+        "explanation": "La dispensa afferma che fino a poco tempo fa il massimo stadio era l'esperienza, mentre ora la gente vuole pagare per la trasformazione. Il servizio è uno stadio precedente all'esperienza."
       },
       {
-        "question": "Chi e lo psicologo premio Nobel autore degli studi sulla Peak-End Rule e sul funzionamento della memoria autobiografica?",
+        "question": "Nella scala del valore di Pine e Gilmore, quale sequenza è corretta?",
         "options": [
-          "Daniel Kahneman",
-          "Sigmund Freud",
-          "Carl Gustav Jung",
-          "Lev Vygotskij"
+          "Beni, materie prime, servizi, trasformazioni, esperienze",
+          "Materie prime, servizi, beni, esperienze, trasformazioni",
+          "Servizi, beni, materie prime, esperienze, trasformazioni",
+          "Materie prime, beni, servizi, esperienze, trasformazioni"
         ],
-        "correctIndex": 0,
-        "explanation": "Daniel Kahneman (premio Nobel per l'economia 2002) ha rivoluzionato l'economia comportamentale con gli studi sui bias e sul ricordo."
+        "correctIndex": 3,
+        "explanation": "La progressione è: materie prime (caffè grezzo), beni (caffè confezionato), servizi (caffè al bar), esperienze (caffè in un luogo memorabile), trasformazioni."
       }
     ]
   },
@@ -591,12 +591,12 @@ window.INTERACTION_DATA = [
     "readTime": "8 min",
     "module": "ixd-fondamenti-design-thinking",
     "image": "assets/corsi/dapl08/anno-1/interaction-design/images/esperienza_fasi.png",
-    "summary": "### 1. La Definizione Formale ISO 9241-220 di User Experience\n\nPer superare la vaghezza colloquiale del termine, l'Organizzazione Internazionale per la Standardizzazione (ISO) nella norma **ISO 9241-220** (Ergonomia dell'interazione uomo-sistema) definisce formalmente la **User Experience (Esperienza dell'Utente)** come:\n\n> *\"Le percezioni e le risposte dell'utente che includono le emozioni, le credenze, le preferenze, le sensazioni fisiche e psicologiche, il comfort, i comportamenti e le realizzazioni cognitive che si verificano **prima, durante e dopo** l'uso di un prodotto, sistema o servizio.\"*\n\nQuesta definizione sancisce tre principi irrevocabili:\n1. La natura eminentemente **soggettiva e psicologica** della UX.\n2. L'estensione temporale che abbraccia l'intero ciclo vitale (prima, durante, dopo).\n3. L'interdipendenza tra funzionalita tecnica, ergonomia cognitiva e risonanza emotiva.\n\n---\n\n### 2. Le Tre Principali Scuole di Pensiero dell'Interaction Design\n\nNell'evoluzione storica della disciplina si sono delineate tre correnti filosofiche e metodologiche:\n\n1. **Scuola Tecnologia-Centrica (*Technology-Centered*)**:\n   - Considera l'Interaction Designer come il traduttore che rende la tecnologia computazionale complessa accessibile, utile e gradevole. E la corrente che ha accompagnato la nascita del personal computer, del web e degli smartphone.\n2. **Scuola Comportamentale (*Behaviorist*)**:\n   - Definisce l'Interaction Design come la disciplina specificamente votata a **modellare e descrivere il comportamento degli artefatti, degli ambienti e dei sistemi**. Il focus non e sul dispositivo statico, ma sulle sue reazioni nel tempo alle sollecitazioni umane.\n3. **Scuola dell'Interazione Sociale (*Social Interaction Design*)**:\n   - Interpreta il design come un catalizzatore sociale: la tecnologia non e il fine, ma il **mezzo per facilitare la comunicazione, la cooperazione e le relazioni profonde tra esseri umani** (es. piattaforme collaborative, social software, strumenti di co-creazione civica).\n\n---\n\n### 3. Le Tre Domande dell'Esperienza: What, How, Why?\n\nQuando progetta un'interazione significativa, il designer deve interrogare il sistema secondo una triade concettuale gerarchica (teorizzata da Gillian Crampton Smith e Bill Moggridge):\n\n- **WHAT (Cosa?)**:\n  - Rappresenta le **funzionalita oggettive** del prodotto e cio che consente di compiere. E strettamente legato alla tecnologia e alla categoria del dispositivo (es. un'app bancaria permette di trasferire denaro).\n- **HOW (Come?)**:\n  - E il regno operativo d'elezione dell'Interaction Designer. Si occupa delle **azioni a livello pratico, sensoriale, cinestetico e mentale**: la forma e la posizione dei pulsanti, il layout dei menu, i gesti touch, le transizioni animate, la sequenza dei passaggi, il contesto fisico d'uso.\n- **WHY (Perche?)**:\n  - E il livello piu profondo e determinante. Riguarda le **motivazioni interiori, i bisogni emotivi, i valori etici e le aspirazioni** che spingono un individuo a voler utilizzare quell'artefatto (es. sentirsi sicuro, prendersi cura dei propri cari, esprimere la propria creativita). Se il *Why* non e chiaro, anche un prodotto con un perfetto *How* fallira sul mercato.",
+    "summary": "### 1. La Definizione Formale ISO 9241-220 di User Experience\n\nPer superare la vaghezza colloquiale del termine, l'Organizzazione Internazionale per la Standardizzazione (ISO) nella norma **ISO 9241-220** (Ergonomia dell'interazione uomo-sistema) definisce formalmente la **User Experience (Esperienza dell'Utente)** come:\n\n> *\"Le percezioni e le risposte dell'utente che includono le emozioni, le credenze, le preferenze, le sensazioni fisiche e psicologiche, il comfort, i comportamenti e le realizzazioni cognitive che si verificano **prima, durante e dopo** l'uso di un prodotto, sistema o servizio.\"*\n\nQuesta definizione sancisce tre principi irrevocabili:\n1. La natura eminentemente **soggettiva e psicologica** della UX.\n2. L'estensione temporale che abbraccia l'intero ciclo vitale (prima, durante, dopo).\n3. L'interdipendenza tra funzionalità tecnica, ergonomia cognitiva e risonanza emotiva.\n\n---\n\n### 2. Le Tre Principali Scuole di Pensiero dell'Interaction Design\n\nNell'evoluzione storica della disciplina si sono delineate tre correnti filosofiche e metodologiche:\n\n1. **Scuola Tecnologia-Centrica (*Technology-Centered*)**:\n   - Considera l'Interaction Designer come il traduttore che rende la tecnologia computazionale complessa accessibile, utile e gradevole. È la corrente che ha accompagnato la nascita del personal computer, del web e degli smartphone.\n2. **Scuola Comportamentale (*Behaviorist*)**:\n   - Definisce l'Interaction Design come la disciplina specificamente votata a **modellare e descrivere il comportamento degli artefatti, degli ambienti e dei sistemi**. Il focus non è sul dispositivo statico, ma sulle sue reazioni nel tempo alle sollecitazioni umane.\n3. **Scuola dell'Interazione Sociale (*Social Interaction Design*)**:\n   - Interpreta il design come un catalizzatore sociale: la tecnologia non è il fine, ma il **mezzo per facilitare la comunicazione, la cooperazione e le relazioni profonde tra esseri umani** (es. piattaforme collaborative, social software, strumenti di co-creazione civica).\n\n---\n\n### 3. Le Tre Domande dell'Esperienza: What, How, Why?\n\nQuando progetta un'interazione significativa, il designer deve interrogare il sistema secondo una triade concettuale gerarchica (il modello \"Why, What, How\" proposto da Marc Hassenzahl in *Experience Design*, 2010; la dispensa lo riporta senza indicarne l'autore):\n\n- **WHAT (Cosa?)**:\n  - Rappresenta le **funzionalità oggettive** del prodotto e ciò che consente di compiere. È strettamente legato alla tecnologia e alla categoria del dispositivo (es. un'app bancaria permette di trasferire denaro).\n- **HOW (Come?)**:\n  - È il regno operativo d'elezione dell'Interaction Designer. Si occupa delle **azioni a livello pratico, sensoriale, cinestetico e mentale**: la forma e la posizione dei pulsanti, il layout dei menu, i gesti touch, le transizioni animate, la sequenza dei passaggi, il contesto fisico d'uso.\n- **WHY (Perché?)**:\n  - È il livello più profondo e determinante. Riguarda le **motivazioni interiori, i bisogni emotivi, i valori etici e le aspirazioni** che spingono un individuo a voler utilizzare quell'artefatto (es. sentirsi sicuro, prendersi cura dei propri cari, esprimere la propria creatività). Se il *Why* non è chiaro, anche un prodotto con un perfetto *How* fallira sul mercato.",
     "keyPoints": [
       "Lo standard ISO 9241-220 definisce la UX come percezioni, emozioni, comfort e comportamenti prima, durante e dopo l'uso.",
       "Le 3 scuole di pensiero sono: Technology-Centered (rendere utile la tecnica), Behaviorist (progetto del comportamento), Social (comunicazione tra umani).",
-      "What riguarda le funzionalita e il genere del prodotto.",
-      "How e il regno dell'IxD: gesti, controlli fisici/digitali, layout e contesto d'uso.",
+      "What riguarda le funzionalità e il genere del prodotto.",
+      "How è il regno dell'IxD: gesti, controlli fisici/digitali, layout e contesto d'uso.",
       "Why indaga le motivazioni psicologiche profonde, i bisogni e i valori che danno senso all'esperienza."
     ],
     "flashcards": [
@@ -609,73 +609,73 @@ window.INTERACTION_DATA = [
         "answer": "La concezione del design come disciplina dedicata alla progettazione del comportamento dinamico di artefatti e sistemi."
       },
       {
-        "question": "Qual e la visione della scuola 'Social Interaction Design'?",
+        "question": "Qual è la visione della scuola 'Social Interaction Design'?",
         "answer": "Considerare la tecnologia come uno strumento il cui scopo primario e facilitare la comunicazione e la relazione tra persone."
       },
       {
         "question": "A cosa si riferiscono le tre dimensioni 'What, How, Why' nel progetto dell'interazione?",
-        "answer": "What = funzionalita del prodotto; How = modalita pratica e sensoriale dell'interazione; Why = motivazioni interiori ed emotive dell'utente."
+        "answer": "What = funzionalità del prodotto; How = modalità pratica e sensoriale dell'interazione; Why = motivazioni interiori ed emotive dell'utente."
       },
       {
-        "question": "Perche il livello 'Why' e considerato il piu importante?",
-        "answer": "Perche senza una motivazione o un bisogno umano autentico, anche l'interfaccia piu fluida e bella risultera inutile e verra abbandonata."
+        "question": "Perché il livello 'Why' è considerato il più importante?",
+        "answer": "Perché senza una motivazione o un bisogno umano autentico, anche l'interfaccia più fluida e bella risulterà inutile e verrà abbandonata."
       }
     ],
     "quiz": [
       {
-        "question": "In base allo standard internazionale ISO 9241-220, la User Experience riguarda:",
+        "question": "Secondo la norma ISO citata in dispensa, quando si verificano le percezioni e risposte che costituiscono la User Experience?",
         "options": [
-          "Le percezioni, emozioni e risposte soggettive che si manifestano prima, durante e dopo l'uso del sistema",
-          "Solo il colore del pulsante 'Acquista'",
-          "La quantita di megabyte consumati dalla connessione Wi-Fi",
-          "Il prezzo di listino del computer"
+          "Solo durante l'uso effettivo del prodotto",
+          "Prima, durante e dopo l'uso",
+          "Solo dopo l'uso, nel ricordo dell'utente",
+          "Durante l'acquisto e il primo utilizzo"
         ],
-        "correctIndex": 0,
-        "explanation": "La norma ISO certifica che la UX comprende tutta la sfera emotiva e comportamentale dell'utente nell'intero arco temporale."
+        "correctIndex": 1,
+        "explanation": "La definizione ISO 9241-220 riportata in dispensa include percezioni e risposte 'che si verificano prima, durante e dopo l'uso'. Limitarla all'uso effettivo è il riduzionismo che la definizione vuole superare."
       },
       {
-        "question": "Quale scuola di pensiero dell'Interaction Design definisce la disciplina come 'il progetto del comportamento di artefatti, ambienti e sistemi'?",
+        "question": "Quale scuola di pensiero definisce l'IxD come 'disciplina dedicata alla definizione del comportamento di artefatti, ambienti e sistemi'?",
         "options": [
-          "La scuola Behaviorist (comportamentale)",
-          "La scuola Neoclassica",
-          "La scuola Barocca",
-          "L'ingegneria dei materiali plastici"
-        ],
-        "correctIndex": 0,
-        "explanation": "L'approccio behaviorista sposta il fuoco dalla forma visiva statica al comportamento reattivo dell'oggetto nel tempo."
-      },
-      {
-        "question": "Nella triade progettuale dell'esperienza, quale domanda riguarda specificamente le motivazioni profonde e i valori dell'utente?",
-        "options": [
-          "WHY (Perche?)",
-          "WHAT (Cosa?)",
-          "HOW (Come?)",
-          "WHEN (Quando?)"
-        ],
-        "correctIndex": 0,
-        "explanation": "Why e la dimensione di senso: esplora il perche le persone scelgono di incorporare quell'artefatto nella propria esistenza."
-      },
-      {
-        "question": "Cosa comprende la dimensione dell'HOW (Come) nel lavoro dell'Interaction Designer?",
-        "options": [
-          "I controlli pratici, i menu, il tocco capacitivo, il feedback aptico e le azioni sensoriali e fisiche",
-          "La stipulazione dei contratti commerciali con i fornitori",
-          "L'allacciamento della rete fognaria del laboratorio",
-          "La programmazione del BIOS della scheda madre"
-        ],
-        "correctIndex": 0,
-        "explanation": "How e il territorio pratico e sensoriale dell'IxD: come si aziona, come risponde e come si percepisce il prodotto."
-      },
-      {
-        "question": "Quale scuola dell'IxD pone l'accento sulla tecnologia come abilitatore di comunicazione e dialogo tra esseri umani?",
-        "options": [
+          "Behaviorist (comportamentale)",
           "Social Interaction Design",
-          "Technology-Centered assoluto",
-          "Design Militare",
-          "Design Meccanico"
+          "Human-Centered Design",
+          "Technology-Centered"
         ],
         "correctIndex": 0,
-        "explanation": "Il Social IxD guarda all'interazione tra persone mediata dalla tecnologia, come nei social network e nelle piattaforme collaborative."
+        "explanation": "È la definizione della scuola comportamentale. La Technology-Centered punta invece a rendere la tecnologia utile, usabile e piacevole; lo Human-Centered Design è un approccio, non una delle tre scuole."
+      },
+      {
+        "question": "Secondo la scuola Technology-Centered, perché l'ascesa di software e Internet ha coinciso con l'ascesa dell'IxD?",
+        "options": [
+          "Perché Internet ha reso inutile la progettazione dei prodotti fisici",
+          "Perché l'IxD si occupa principalmente della scrittura del codice delle applicazioni",
+          "Perché il compito dell'IxD è rendere la tecnologia digitale utile, usabile e piacevole",
+          "Perché i software hanno sostituito le ricerche sugli utenti"
+        ],
+        "correctIndex": 2,
+        "explanation": "Per questa scuola l'interaction designer rende la tecnologia digitale utile, usabile e piacevole: più tecnologia digitale significa più bisogno di IxD. La scrittura del codice non è il suo compito."
+      },
+      {
+        "question": "Nel modello What, How, Why, quale livello è indicato come 'il regno tipico dell'interaction designer'?",
+        "options": [
+          "What, perché definisce le funzionalità",
+          "Why, perché indaga le motivazioni",
+          "How, perché riguarda le azioni su pulsanti, menu e touch screen",
+          "Nessuno dei tre in particolare, perché sono equivalenti"
+        ],
+        "correctIndex": 2,
+        "explanation": "La dispensa dice che il Come è il regno tipico dell'interaction designer: azioni pratiche, sensoriali e mentali su pulsanti, manopole, menu, touch screen. Il Why è il livello delle motivazioni e dei bisogni."
+      },
+      {
+        "question": "Un'app per la meditazione ha funzioni complete e comandi chiari, ma gli utenti non capiscono perché dovrebbero usarla. Quale livello del modello è debole?",
+        "options": [
+          "What",
+          "Why",
+          "How",
+          "What e How insieme"
+        ],
+        "correctIndex": 1,
+        "explanation": "Funzioni (What) e comandi (How) funzionano; manca la motivazione, cioè il Why, il livello dei bisogni e delle emozioni. Senza un Why chiaro anche un buon How non basta."
       }
     ]
   },
@@ -687,9 +687,9 @@ window.INTERACTION_DATA = [
     "readTime": "8 min",
     "module": "ixd-user-research",
     "image": "assets/corsi/dapl08/anno-1/interaction-design/images/schema_user_journey_touchpoints.svg",
-    "summary": "### 1. Definizione Disciplinare della Customer / User Journey Map\n\nNell'ambito dell'Interaction Design e del Service Design, la **User Journey Map** (o Customer Journey Map) e un'interpretazione visiva e grafica strutturata della storia complessiva dell'interazione tra un individuo e un'organizzazione, un servizio o un prodotto digitale, articolata lungo l'asse temporale e attraverso una molteplicita di canali.\n\nA differenza di un diagramma di flusso logico (flowchart) o di un diagramma d'architettura del software che descrivono il funzionamento tecnico del sistema, la Journey Map e rigorosamente **orientata alla prospettiva soggettiva dell'utente** (*first-person user perspective*): non illustra solo cosa il sistema elabora, ma cosa la persona prova, desidera, compie e incontra in ogni istante del suo tragitto.\n\n---\n\n### 2. Concetto e Tipologie di Touchpoint\n\nIl **Touchpoint (Punto di Contatto)** rappresenta l'interfaccia, lo snodo di comunicazione o il canale attraverso cui la persona entra in relazione con il servizio o il prodotto.\nOgni touchpoint si realizza in un momento temporale definito, all'interno di uno specifico contesto ambientale o cognitivo, con l'obiettivo di soddisfare un bisogno parziale o complessivo:\n- **Touchpoint Digitali**: Interfacce web, applicazioni mobili, totem multimediali, notifiche push, messaggi email o SMS transazionali.\n- **Touchpoint Fisici e Materiali**: Packaging del prodotto, ricevute cartacee, arredi di uno spazio espositivo, segnaletica ambientale.\n- **Touchpoint Umani e Relazionali**: Personale di front-office, operatori di supporto help-desk, addetti alle vendite.\n- **Touchpoint Ambientali e Spaziali**: Architettura dello store fisico, microclima, illuminazione, paesaggio acustico.\n\n---\n\n![Schema Tecnico User Journey e Touchpoints](assets/corsi/dapl08/anno-1/interaction-design/images/schema_user_journey_touchpoints.svg)\n\n---\n\n### 3. Anatomia Strutturale di una Journey Map\n\nUna matrice di mappatura del percorso utente si articola tipicamente attraverso le seguenti corsie orizzontali (*swimlanes*):\n\n1. **Fasi Temporali dell'Esperienza**:\n   - *Prima (Awareness & Discovery)*: Come l'utente percepisce il bisogno e scopre il servizio.\n   - *Durante (Onboarding & Usage)*: Il compimento dell'azione principale e l'interazione operativa con l'interfaccia.\n   - *Dopo (Retention & Advocacy)*: Il supporto post-interazione, la memorizzazione e la raccomandazione ad altri pari.\n2. **Azioni dell'Utente (*User Actions*)**: I gesti concreti e le operazioni intraprese ad ogni step.\n3. **Punti di Contatto (*Touchpoints & Channels*)**: Il mezzo specifico adoperato per quell'azione.\n4. **Curva Emotiva (*Empathy Curve*)**: Grafico sinusoidale che registra gli stati d'animo (soddisfazione, ansia, confusione, fiducia, sollievo).\n5. **Punti di Frizione (*Pain Points*)**: Ostacoli procedurali, errori di sistema, ritardi di caricamento o ambiguità di linguaggio.\n6. **Opportunita Progettuali (*Opportunities*)**: Idee e interventi correttivi che il designer puo implementare per trasformare un punto di frizione in un momento memorabile di valore (*moment of truth*).",
+    "summary": "### 1. Definizione Disciplinare della Customer / User Journey Map\n\nNell'ambito dell'Interaction Design e del Service Design, la **User Journey Map** (o Customer Journey Map) è un'interpretazione visiva e grafica strutturata della storia complessiva dell'interazione tra un individuo e un'organizzazione, un servizio o un prodotto digitale, articolata lungo l'asse temporale e attraverso una molteplicità di canali.\n\nA differenza di un diagramma di flusso logico (flowchart) o di un diagramma d'architettura del software che descrivono il funzionamento tecnico del sistema, la Journey Map è rigorosamente **orientata alla prospettiva soggettiva dell'utente** (*first-person user perspective*): non illustra solo cosa il sistema elabora, ma cosa la persona prova, desidera, compie e incontra in ogni istante del suo tragitto.\n\n---\n\n### 2. Concetto e Tipologie di Touchpoint\n\nIl **Touchpoint (Punto di Contatto)** rappresenta l'interfaccia, lo snodo di comunicazione o il canale attraverso cui la persona entra in relazione con il servizio o il prodotto.\nOgni touchpoint si realizza in un momento temporale definito, all'interno di uno specifico contesto ambientale o cognitivo, con l'obiettivo di soddisfare un bisogno parziale o complessivo:\n- **Touchpoint Digitali**: Interfacce web, applicazioni mobili, totem multimediali, notifiche push, messaggi email o SMS transazionali.\n- **Touchpoint Fisici e Materiali**: Packaging del prodotto, ricevute cartacee, arredi di uno spazio espositivo, segnaletica ambientale.\n- **Touchpoint Umani e Relazionali**: Personale di front-office, operatori di supporto help-desk, addetti alle vendite.\n- **Touchpoint Ambientali e Spaziali**: Architettura dello store fisico, microclima, illuminazione, paesaggio acustico.\n\n---\n\n![Schema Tecnico User Journey e Touchpoints](assets/corsi/dapl08/anno-1/interaction-design/images/schema_user_journey_touchpoints.svg)\n\n---\n\n### 3. Anatomia Strutturale di una Journey Map\n\nUna matrice di mappatura del percorso utente si articola tipicamente attraverso le seguenti corsie orizzontali (*swimlanes*):\n\n1. **Fasi Temporali dell'Esperienza**:\n   - *Prima (Awareness & Discovery)*: Come l'utente percepisce il bisogno e scopre il servizio.\n   - *Durante (Onboarding & Usage)*: Il compimento dell'azione principale e l'interazione operativa con l'interfaccia.\n   - *Dopo (Retention & Advocacy)*: Il supporto post-interazione, la memorizzazione e la raccomandazione ad altri pari.\n2. **Azioni dell'Utente (*User Actions*)**: I gesti concreti e le operazioni intraprese ad ogni step.\n3. **Punti di Contatto (*Touchpoints & Channels*)**: Il mezzo specifico adoperato per quell'azione.\n4. **Curva Emotiva (*Empathy Curve*)**: Grafico sinusoidale che registra gli stati d'animo (soddisfazione, ansia, confusione, fiducia, sollievo).\n5. **Punti di Frizione (*Pain Points*)**: Ostacoli procedurali, errori di sistema, ritardi di caricamento o ambiguità di linguaggio.\n6. **Opportunità Progettuali (*Opportunities*)**: Idee e interventi correttivi che il designer può implementare per trasformare un punto di frizione in un momento memorabile di valore (*moment of truth*).",
     "keyPoints": [
-      "La User Journey Map e una rappresentazione grafica temporale e soggettiva della relazione tra utente e servizio.",
+      "La User Journey Map è una rappresentazione grafica temporale e soggettiva della relazione tra utente e servizio.",
       "Un touchpoint e qualunque canale o interfaccia (digitale, fisica, umana) in cui avviene lo scambio tra utente e brand.",
       "La mappa organizza orizzontalmente le fasi (Before, During, After) e verticalmente azioni, canali, emozioni e frizioni.",
       "La curva dell'empatia evidenzia visivamente i picchi di ansia o frustrazione permettendo interventi mirati.",
@@ -697,7 +697,7 @@ window.INTERACTION_DATA = [
     ],
     "flashcards": [
       {
-        "question": "Cos'e una User Journey Map nell'Interaction Design?",
+        "question": "Cos'è una User Journey Map nell'Interaction Design?",
         "answer": "La rappresentazione visiva e grafica dell'esperienza complessiva dell'utente con un servizio nel tempo e attraverso i canali."
       },
       {
@@ -719,59 +719,59 @@ window.INTERACTION_DATA = [
     ],
     "quiz": [
       {
-        "question": "Cosa differenzia primariamente una User Journey Map da un tradizionale diagramma di flusso del software?",
+        "question": "Che cosa distingue una User Journey Map da un diagramma di flusso tecnico del sistema?",
         "options": [
-          "La Journey Map e orientata alla prospettiva soggettiva ed emotiva dell'utente anziche alla logica computazionale delle macchine",
-          "La Journey Map contiene unicamente codice sorgente e parametri tecnici di rendering grafico",
-          "Il diagramma di flusso analizza gli stati d'animo mentre la Journey Map analizza solo i database",
-          "La Journey Map non tiene conto del tempo ma solo della geolocalizzazione fisica"
+          "Descrive la sequenza delle operazioni eseguite dal software lato server",
+          "Rappresenta il percorso dal punto di vista dell'utente, nel tempo e attraverso i canali",
+          "Elenca le funzionalità del prodotto ordinate per priorità di sviluppo",
+          "Mostra la struttura gerarchica delle pagine e dei menu dell'interfaccia"
         ],
-        "correct": 0,
-        "explanation": "La User Journey Map nasce per adottare l'ottica in prima persona dell'utente, mappandone bisogni, ostacoli e percezioni lungo il tempo, laddove il diagramma di flusso descrive l'architettura dei processi di sistema."
+        "correctIndex": 1,
+        "explanation": "La dispensa definisce la Journey Map come 'interpretazione visiva della storia complessiva, dalla prospettiva di un individuo', nel tempo e attraverso i canali. La struttura di pagine e menu è invece un'architettura dell'informazione (sitemap)."
       },
       {
-        "question": "Quale tra i seguenti elementi NON costituisce un touchpoint di un servizio di mobilità sharing?",
+        "question": "Secondo la dispensa, che cos'è un touchpoint?",
         "options": [
-          "L'applicazione mobile per sbloccare il veicolo",
-          "Il QR-code fisico stampato sul manubrio del monopattino",
-          "Il server cloud privato dove risiede il database aziendale, inaccessibile all'utente",
-          "La notifica push che conferma la fine del noleggio e l'addebito"
+          "Il momento in cui l'utente decide di acquistare il servizio",
+          "Il punto di contatto o canale tra la persona e il servizio o prodotto",
+          "La funzione più usata di un'applicazione secondo gli analytics",
+          "L'area dello schermo in cui l'utente tocca più spesso"
         ],
-        "correct": 2,
-        "explanation": "Il server cloud privato e un elemento infrastrutturale di back-end invisibile all'utente. Un touchpoint richiede per definizione un'interazione o punto di contatto percepibile (app, QR-code, notifica, veicolo)."
+        "correctIndex": 1,
+        "explanation": "Il touchpoint è il punto di contatto/canale tra persona e servizio. L'area dello schermo toccata più spesso è un dato da heatmap, non un touchpoint."
       },
       {
-        "question": "In una Journey Map, che cosa rappresentano i cosiddetti 'Pain Points'?",
+        "question": "In un servizio di bike sharing, quale di questi NON è un touchpoint per l'utente?",
         "options": [
-          "I costi di acquisto della licenza del software per i progettisti",
-          "I momenti di frustrazione, ansia o difficolta operativa riscontrati dall'utente durante l'interazione",
-          "I punti di massimo guadagno economico per l'azienda fornitrice",
-          "I linguaggi di programmazione obsoleti utilizzati nel back-end"
+          "L'app per sbloccare la bicicletta",
+          "Il database interno dei noleggi",
+          "L'email di riepilogo del noleggio",
+          "La stazione fisica di aggancio"
         ],
-        "correct": 1,
-        "explanation": "I Pain Points sono i punti critici o di attrito (frizione cognitiva, ostacoli procedurali, errori di interfaccia) che deteriorano l'esperienza d'uso dell'utente."
+        "correctIndex": 1,
+        "explanation": "Il database è infrastruttura interna: l'utente non vi entra mai in contatto. App, stazione ed email sono canali (digitali e fisici) attraverso cui la persona interagisce con il servizio."
       },
       {
-        "question": "Quale funzione svolgono le 'Swimlanes' (corsie orizzontali) in una Customer Journey Map?",
+        "question": "In una Journey Map, a che cosa servono i pain points?",
         "options": [
-          "Separare i vari livelli di analisi (fasi temporali, azioni utente, touchpoint, emozioni, criticita, opportunita)",
-          "Regolare la velocita di download della banda internet dei server",
-          "Definire i contratti lavorativi dei programmatori e dei grafici",
-          "Crittografare i dati sensibili raccolti durante le interviste"
+          "A indicare i momenti di massima soddisfazione da replicare",
+          "A misurare quanto tempo l'utente passa in ogni fase",
+          "A segnalare ostacoli e frustrazioni da cui partire per nuove soluzioni",
+          "A elencare i canali con il maggior numero di contatti"
         ],
-        "correct": 0,
-        "explanation": "Le swimlanes consentono di ordinare simultaneamente molteplici dimensioni informative per ciascuna fase temporale, incrociando azioni, canali, curva emotiva e spunti progettuali."
+        "correctIndex": 2,
+        "explanation": "I pain points sono i punti di frizione (errori, attese, ambiguità) e costituiscono il punto di partenza per le opportunità progettuali. I momenti di soddisfazione si leggono sulla curva emotiva."
       },
       {
-        "question": "Perche la fase del 'Dopo' (Post-Service) e strategica nell'Interaction Design?",
+        "question": "Perché la fase 'dopo' l'uso è strategica in una Journey Map, collegandola alla Peak-End Rule?",
         "options": [
-          "Perche e la fase in cui il sistema cancella automaticamente tutti i dati dell'utente",
-          "Perche determina la memorizzazione dell'esperienza (Peak-End Rule), la fidelizzazione e il passaparola",
-          "Perche non richiede alcun touchpoint ed elimina i costi di manutenzione",
-          "Perche consente di spegnere i server durante le ore notturne"
+          "Perché è la fase in cui l'utente paga e quindi genera ricavi",
+          "Perché dopo l'uso l'utente non ha più contatti con il servizio",
+          "Perché è l'unica fase in cui si possono raccogliere dati quantitativi",
+          "Perché la conclusione dell'esperienza pesa molto sul ricordo complessivo"
         ],
-        "correct": 1,
-        "explanation": "In conformita con la Peak-End Rule, la fase conclusiva modella il ricordo mnemonico complessivo del servizio, trasformando l'utente occasionale in un sostenitore attivo (advocate) o allontanandolo per sempre."
+        "correctIndex": 3,
+        "explanation": "Per la Peak-End Rule la fine dell'esperienza condiziona il ricordo: supporto, conferme e follow-up determinano fidelizzazione e passaparola. Dire che dopo l'uso non ci sono più contatti è falso: email, assistenza e recensioni sono touchpoint del 'dopo'."
       }
     ]
   },
@@ -783,13 +783,13 @@ window.INTERACTION_DATA = [
     "readTime": "8 min",
     "module": "ixd-user-research",
     "image": "assets/corsi/dapl08/anno-1/interaction-design/images/framework_ricerca_design.png",
-    "summary": "### 1. La Ricerca Progettuale e la Tripartizione di Christopher Frayling (1993)\n\nNel saggio fondamentale *Research in Art and Design* (1993), il teorico britannico **Sir Christopher Frayling** ha introdotto una celebre categorizzazione epistemologica per chiarire i diversi modi in cui la ricerca accademica e scientifica si rapporta al fare progettuale:\n\n1. **Research into / on Design (Ricerca SUL Design)**:\n   - E la modalita di ricerca piu tradizionale di matrice storico-critica, sociologica ed epistemologica.\n   - Ha per oggetto lo studio del design stesso: la storia degli artefatti, l'analisi delle metodologie progettuali (*design methodology*), lo studio dell'impatto sociale, ecologico ed economico dei prodotti.\n   - La prassi del design e l'oggetto d'indagine osservato dall'esterno.\n2. **Research for Design (Ricerca PER il Design)**:\n   - E la ricerca strumentale, applicata e propedeutica alla pratica professionale.\n   - Il suo scopo primario non e creare teorie astratte, ma generare strumenti, nozioni, test sui materiali, linee guida e dati utili a produrre un artefatto o un sistema specifico.\n   - Include il collaudo di nuovi polimeri, lo studio di librerie di codice, o la profilazione del target per uno specifico brief aziendale.\n3. **Research through Design - RtD (Ricerca ATTRAVERSO il Design)**:\n   - Rappresenta l'approccio piu distintivo e rivoluzionario dell'Interaction Design contemporaneo.\n   - In questo modello, **l'atto stesso del progettare (il making, il prototipo, la sperimentazione iterativa) e il veicolo primario per produrre nuova conoscenza teorica e scientifica**.\n   - Prototipando un'interfaccia insolita o speculativa, il designer scopre fenomenologie cognitive ed ecologiche altrimenti inaccessibili alla pura speculazione teorica.\n\n---\n\n### 2. Le Categorie Epistemologiche: Epistemologia, Prasseologia e Fenomenologia\n\nLa ricerca progettuale si articola inoltre su tre assi teorici complementari:\n- **Epistemologia del Design**: Lo studio dei modi propri del design di conoscere, apprendere e strutturare il pensiero (*Designerly Ways of Knowing*, teorizzati da Nigel Cross).\n- **Prasseologia del Design**: L'indagine sistematica sulle pratiche, sui processi mentali, sui flussi decisionali e sulle tecniche operative del progettista al lavoro.\n- **Fenomenologia del Design**: Lo studio della configurazione sensibile, della morfologia, dei comportamenti dinamici e delle manifestazioni percettive degli artefatti nella vita quotidiana.\n\n---\n\n![Framework di Ricerca nel Design](assets/corsi/dapl08/anno-1/interaction-design/images/framework_ricerca_design.png)\n\n---\n\n### 3. La Dimensione Attitudinale vs Comportamentale (Framework di Christian Rohrer)\n\nNello studio dell'utente, e fondamentale distinguere tra la dimensione attitudinale e quella comportamentale:\n- **Dimensione Attitudinale (Ciò che le persone DICONO)**:\n  Misura le credenze, le opinioni esplicite, le percezioni dichiarate, le aspettative e le preferenze coscienti dell'utente. Si investiga tipicamente mediante interviste, survey o focus group.\n- **Dimensione Comportamentale (Ciò che le persone FANNO)**:\n  Analizza le azioni effettive, i gesti motori, i percorsi di navigazione reali e gli errori commessi sul campo o sul display. Spesso esiste una vistosa discrepanza tra cio che le persone dicono di fare e cio che fanno realmente: le persone tendono a razionalizzare a posteriori o a dichiarare comportamenti socialmente desiderabili (*social desirability bias*).\n- **La Matrice di Ricerca**: L'incrocio tra l'asse Attitudinale/Comportamentale e l'asse Qualitativo/Quantitativo consente di collocare metodologie e strumenti specifici in base agli obiettivi d'indagine.",
+    "summary": "### 1. La Ricerca Progettuale e la Tripartizione di Christopher Frayling (1993)\n\nNel saggio fondamentale *Research in Art and Design* (1993), il teorico britannico **Sir Christopher Frayling** ha introdotto una celebre categorizzazione epistemologica per chiarire i diversi modi in cui la ricerca accademica e scientifica si rapporta al fare progettuale:\n\n1. **Research into / on Design (Ricerca SUL Design)**:\n   - È la modalità di ricerca più tradizionale di matrice storico-critica, sociologica ed epistemologica.\n   - Ha per oggetto lo studio del design stesso: la storia degli artefatti, l'analisi delle metodologie progettuali (*design methodology*), lo studio dell'impatto sociale, ecologico ed economico dei prodotti.\n   - La prassi del design è l'oggetto d'indagine osservato dall'esterno.\n2. **Research for Design (Ricerca PER il Design)**:\n   - È la ricerca strumentale, applicata e propedeutica alla pratica professionale.\n   - Il suo scopo primario non è creare teorie astratte, ma generare strumenti, nozioni, test sui materiali, linee guida e dati utili a produrre un artefatto o un sistema specifico.\n   - Include il collaudo di nuovi polimeri, lo studio di librerie di codice, o la profilazione del target per uno specifico brief aziendale.\n3. **Research through Design - RtD (Ricerca ATTRAVERSO il Design)**:\n   - Rappresenta l'approccio più distintivo e rivoluzionario dell'Interaction Design contemporaneo.\n   - In questo modello, **l'atto stesso del progettare (il making, il prototipo, la sperimentazione iterativa) è il veicolo primario per produrre nuova conoscenza teorica e scientifica**.\n   - Prototipando un'interfaccia insolita o speculativa, il designer scopre fenomenologie cognitive ed ecologiche altrimenti inaccessibili alla pura speculazione teorica.\n\n---\n\n### 2. Le Categorie Epistemologiche: Epistemologia, Prasseologia e Fenomenologia\n\nLa ricerca progettuale si articola inoltre su tre assi teorici complementari:\n- **Epistemologia del Design**: Lo studio dei modi propri del design di conoscere, apprendere e strutturare il pensiero (*Designerly Ways of Knowing*, teorizzati da Nigel Cross).\n- **Prasseologia del Design**: L'indagine sistematica sulle pratiche, sui processi mentali, sui flussi decisionali e sulle tecniche operative del progettista al lavoro.\n- **Fenomenologia del Design**: Lo studio della configurazione sensibile, della morfologia, dei comportamenti dinamici e delle manifestazioni percettive degli artefatti nella vita quotidiana.\n\n---\n\n![Framework di Ricerca nel Design](assets/corsi/dapl08/anno-1/interaction-design/images/framework_ricerca_design.png)\n\n---\n\n### 3. La Dimensione Attitudinale vs Comportamentale (Framework di Christian Rohrer)\n\nNello studio dell'utente, è fondamentale distinguere tra la dimensione attitudinale e quella comportamentale:\n- **Dimensione Attitudinale (Ciò che le persone DICONO)**:\n  Misura le credenze, le opinioni esplicite, le percezioni dichiarate, le aspettative e le preferenze coscienti dell'utente. Si investiga tipicamente mediante interviste, survey o focus group.\n- **Dimensione Comportamentale (Ciò che le persone FANNO)**:\n  Analizza le azioni effettive, i gesti motori, i percorsi di navigazione reali e gli errori commessi sul campo o sul display. Spesso esiste una vistosa discrepanza tra ciò che le persone dicono di fare e ciò che fanno realmente: le persone tendono a razionalizzare a posteriori o a dichiarare comportamenti socialmente desiderabili (*social desirability bias*).\n- **La Matrice di Ricerca**: L'incrocio tra l'asse Attitudinale/Comportamentale e l'asse Qualitativo/Quantitativo consente di collocare metodologie e strumenti specifici in base agli obiettivi d'indagine.",
     "keyPoints": [
       "Christopher Frayling classifica la ricerca in: sul design (into), per il design (for), attraverso il design (through).",
       "Nella 'Research through Design' il prototipo e l'atto pratico costituiscono il mezzo per generare conoscenza teorica.",
       "Epistemologia, prasseologia e fenomenologia indagano rispettivamente la conoscenza, i processi e la forma degli artefatti.",
       "La ricerca attitudinale indaga ciò che le persone dicono, mentre la comportamentale analizza ciò che fanno sul campo.",
-      "Spesso esiste uno scarto tra opinioni dichiarate e comportamenti reali: per questo l'osservazione e indispensabile."
+      "Spesso esiste uno scarto tra opinioni dichiarate e comportamenti reali: per questo l'osservazione è indispensabile."
     ],
     "flashcards": [
       {
@@ -805,69 +805,69 @@ window.INTERACTION_DATA = [
         "answer": "I processi operativi, i metodi di lavoro e le pratiche concrete adottate dai progettisti."
       },
       {
-        "question": "Qual e la differenza tra ricerca attitudinale e comportamentale?",
+        "question": "Qual è la differenza tra ricerca attitudinale e comportamentale?",
         "answer": "L'attitudinale analizza ciò che gli utenti dicono (opinioni, credenze), la comportamentale ciò che fanno (azioni reali)."
       },
       {
-        "question": "Perche nell'Interaction Design non basta affidarsi a ciò che l'utente dichiara?",
-        "answer": "Perche gli utenti tendono a razionalizzare i comportamenti o a dichiarare risposte ideali, difformi dall'uso effettivo."
+        "question": "Perché nell'Interaction Design non basta affidarsi a ciò che l'utente dichiara?",
+        "answer": "Perché gli utenti tendono a razionalizzare i comportamenti o a dichiarare risposte ideali, difformi dall'uso effettivo."
       }
     ],
     "quiz": [
       {
-        "question": "Nella tassonomia di Christopher Frayling, cosa si intende per 'Research through Design'?",
+        "question": "Secondo la dispensa, che cosa significa fare 'Research through design'?",
         "options": [
-          "Usare il progetto pratico, la fabbricazione e la prototipazione come veicolo per generare nuova conoscenza",
-          "Fare unicamente ricerche storiche sui brevetti industriali del passato senza costruire prototipi",
-          "Delegare interamente la ricerca a laboratori di marketing esterni all'accademia",
-          "Scrivere manuali d'uso per software commerciali gia esistenti"
+          "Fare ricerca sulla storia e sulle teorie del design",
+          "Raccogliere dati utili a produrre uno specifico artefatto",
+          "Usare il progetto stesso come mezzo per creare conoscenza",
+          "Studiare i processi mentali dei progettisti al lavoro"
         ],
-        "correct": 0,
-        "explanation": "La 'Research through Design' (RtD) teorizza che la produzione di artefatti e prototipi funzionanti sia un metodo scientifico di indagine capace di svelare insight teorici non raggiungibili con la sola astrazione."
+        "correctIndex": 2,
+        "explanation": "Research through design: 'uso il design come strumento per fare ricerca e creare conoscenza'. Raccogliere dati per produrre un artefatto è Research for design; studiare la disciplina è Research on design."
       },
       {
-        "question": "Quale branca della teoria del design indaga 'i modi progettuali di conoscere' (Designerly Ways of Knowing)?",
+        "question": "Un team testa diversi materiali per scegliere quello più adatto alla cover di un dispositivo da progettare. Quale tipo di ricerca sta facendo?",
         "options": [
-          "L'Econometria aziendale",
-          "L'Epistemologia del Design",
-          "La Fenomenologia della materia",
-          "La Cinetica dei fluidi computazionali"
+          "Research on design",
+          "Research through design",
+          "Research for design",
+          "Ricerca fenomenologica del design"
         ],
-        "correct": 1,
-        "explanation": "L'Epistemologia del design studia la natura della conoscenza progettuale, i suoi fondamenti logici e il modo in cui i designer pensano e risolvono problemi complessi (wicked problems)."
+        "correctIndex": 2,
+        "explanation": "La ricerca è finalizzata a produrre uno specifico artefatto: è Research for design ('faccio ricerca per creare strumenti utili alla progettazione o per produrre un artefatto')."
       },
       {
-        "question": "Quale strumento di indagine e tipicamente focalizzato sulla dimensione ATTITUDINALE (ciò che la persona dice)?",
+        "question": "Nella tripartizione epistemologia, prasseologia e fenomenologia del design, che cosa studia la prasseologia?",
         "options": [
-          "L'intervista semi-strutturata o il sondaggio d'opinione",
-          "L'analisi dei log di traffico server Apache",
-          "La registrazione oculare (Eye-tracking) in laboratorio",
-          "L'A/B testing automatico sul bounce rate"
+          "Le pratiche e i processi progettuali",
+          "La forma e la configurazione degli artefatti",
+          "I modi progettuali di conoscere",
+          "Il valore economico dei prodotti"
         ],
-        "correct": 0,
-        "explanation": "Le interviste e i sondaggi raccolgono dichiarazioni coscienti, credenze, opinioni e autovalutazioni verbali dell'utente, posizionandosi sul polo attitudinale."
+        "correctIndex": 0,
+        "explanation": "La dispensa distingue: epistemologia (modi progettuali di conoscere), prasseologia (pratiche e processi), fenomenologia (forma e configurazione degli artefatti)."
       },
       {
-        "question": "Per quale motivo un Interaction Designer deve integrare metodologie comportamentali alle indagini attitudinali?",
+        "question": "Un utente dichiara in un'intervista di leggere sempre le istruzioni, ma le registrazioni mostrano che non le apre mai. Che cosa illustra questo caso?",
         "options": [
-          "Perche gli utenti spesso non sono consapevoli dei propri automatismi d'uso o alterano involontariamente il racconto",
-          "Perche i software di disegno grafico accettano solo dati numerici e non frasi",
-          "Perche le interviste verbali sono proibite dagli standard ISO di usabilita",
-          "Perche i test comportamentali non richiedono l'interazione con esseri umani"
+          "Un errore di campionamento dovuto a un gruppo troppo piccolo",
+          "La superiorità della ricerca quantitativa sulla qualitativa",
+          "Lo scarto tra ciò che le persone dicono e ciò che fanno",
+          "La differenza tra Research on design e Research for design"
         ],
-        "correct": 0,
-        "explanation": "Gli utenti possono essere vittime di bias di memoria o desiderabilità sociale; l'osservazione comportamentale diretta consente di verificare le reali dinamiche d'interazione sul campo."
+        "correctIndex": 2,
+        "explanation": "La ricerca attitudinale misura ciò che le persone dicono, quella comportamentale ciò che fanno: spesso non coincidono. Per questo l'osservazione affianca sempre le interviste."
       },
       {
-        "question": "La 'Research into Design' (sul design) si occupa prevalentemente di:",
+        "question": "Chi ha proposto la distinzione tra ricerca 'into', 'for' e 'through' design?",
         "options": [
-          "Storia, teoria, critica, sociologia e metodologie dell'attivita progettuale",
-          "Progettare un nuovo layout per uno smartphone pieghevole",
-          "Programmare l'algoritmo di rendering di una scheda grafica 3D",
-          "Calcolare il budget annuale per la campagna pubblicitaria"
+          "Victor Margolin",
+          "Christopher Frayling",
+          "Richard Buchanan",
+          "Nigel Cross"
         ],
-        "correct": 0,
-        "explanation": "La 'Research into Design' assume il design come oggetto di studio scientifico, storico o sociologico, esaminandone l'evoluzione, il linguaggio e l'impatto culturale."
+        "correctIndex": 1,
+        "explanation": "La tripartizione è di Christopher Frayling (Research in Art and Design, 1993). Nigel Cross è legato invece ai 'designerly ways of knowing', cioè all'epistemologia del design."
       }
     ]
   },
@@ -878,18 +878,18 @@ window.INTERACTION_DATA = [
     "subtitle": "Metodi socio-antropologici, prospettiva emica, Cultural Behaviour, Knowledge e Artefacts",
     "readTime": "9 min",
     "module": "ixd-user-research",
-    "summary": "### 1. La Polarità Metodologica: Ricerca Qualitativa vs Ricerca Quantitativa\n\nNell'Interaction Design, la conoscenza dei bisogni degli individui poggia sull'impiego integrato di due grandi paradigmi di ricerca:\n\n| Dimensione | Ricerca Qualitativa | Ricerca Quantitativa |\n| :--- | :--- | :--- |\n| **Scopo Primario** | Capire in profondita il *'perche'* e il *'come'* di un fenomeno | Misurare con precisione il *'quanto'* e il *'quanti'* |\n| **Dimensione Campionaria** | Campioni ridotti (8-20 partecipanti attentamente selezionati) | Campioni ampi e statisticamente rappresentativi (centinaia o migliaia) |\n| **Natura del Dato** | Narrazioni, video, trascrizioni, osservazioni descrittive (*thick data*) | Valori numerici, percentuali, metriche temporali (*hard data*) |\n| **Modalita di Raccolta** | Osservazione diretta, interviste aperte, studi sul campo | Rilevamento indiretto, telemetria, questionari a risposta chiusa, analytics |\n| **Applicazione in IxD** | Fase di scoperta ed empatia (generazione di insight e problem definition) | Fase di verifica, benchmarking prestazionale e A/B testing |\n\n---\n\n### 2. L'Etnografia Applicata al Design\n\nL'**Etnografia** e la branca dell'antropologia culturale che ha per oggetto lo studio e la descrizione sistematica delle pratiche di vita, dei valori e dei modelli cognitivi di una determinata comunita umana.\n\nIntrodotta nella cultura del progetto per superare i limiti delle asettiche prove di laboratorio, l'etnografia nel design persegue un principio epistemologico cardine:\n> *\"Piuttosto che studiare le persone come oggetti passivi da laboratorio, l'etnografia vuole imparare dalle persone all'interno del loro habitat naturale.\"*\n\nQuesto approccio adotta una **prospettiva emica** (la visione 'dal di dentro', focalizzata sui significati attribuiti dai soggetti stessi alle proprie azioni), contrastando la tentazione del designer di proiettare i propri pregiudizi tecnici o culturali sul target (*prospettiva etica*).\n\n---\n\n### 3. I Tre Livelli Fondamentali dell'Esperienza Culturale (James Spradley)\n\nSecondo il framework antropologico di James Spradley, l'esperienza umana in qualsiasi contesto si articola in tre sfere interconnesse che l'interaction designer deve saper indagare:\n1. **Cultural Behaviour (Comportamento Culturale)**:\n   - Cio che le persone fanno concretamente nel loro quotidiano.\n   - Comprende posture corporee, abitudini d'uso, scorciatoie gestuali, riti interattivi ed espressioni mimiche durante l'impiego di una tecnologia.\n2. **Cultural Knowledge (Conoscenza Culturale)**:\n   - Cio che le persone sanno, credono e usano come mappa mentale per interpretare il mondo e generare comportamenti.\n   - Comprende il linguaggio gergale, le convenzioni sociali tacite, i valori simbolici e i modelli mentali con cui decodificano un'interfaccia.\n3. **Cultural Artefacts (Artefatti Culturali)**:\n   - Le cose che le persone producono, possiedono, manipolano e adattano.\n   - Nel digitale, comprende gli strumenti hardware, le schermate personalizzate, i post-it attaccati sui monitor per ricordare password, le copertine degli smartphone modificate: tutte spie visive di bisogni non soddisfatti dalle interfacce ufficiali (*workarounds*).\n\n---\n\n### 4. Tecniche di Osservazione Etnografica sul Campo\n\n- **Shadowing**: Il ricercatore segue il soggetto come un'ombra durante la sua giornata tipo, registrandone senza interferire ogni micro-azione, interruzione o cambio di contesto.\n- **Fly-on-the-wall (Mosca sul muro)**: Osservazione discreta in luoghi pubblici o semipubblici (es. stazioni, uffici postali) in cui il ricercatore non interagisce con le persone per registrarne il comportamento naturale non artefatto.\n- **Osservazione Partecipante**: Il designer si immerge attivamente nella comunita, svolgendo le stesse mansioni dei partecipanti per vivere in prima persona le frizioni operative.",
+    "summary": "### 1. La Polarità Metodologica: Ricerca Qualitativa vs Ricerca Quantitativa\n\nNell'Interaction Design, la conoscenza dei bisogni degli individui poggia sull'impiego integrato di due grandi paradigmi di ricerca:\n\n| Dimensione | Ricerca Qualitativa | Ricerca Quantitativa |\n| :--- | :--- | :--- |\n| **Scopo Primario** | Capire in profondita il *'perché'* e il *'come'* di un fenomeno | Misurare con precisione il *'quanto'* e il *'quanti'* |\n| **Dimensione Campionaria** | Campioni ridotti (8-20 partecipanti attentamente selezionati) | Campioni ampi e statisticamente rappresentativi (centinaia o migliaia) |\n| **Natura del Dato** | Narrazioni, video, trascrizioni, osservazioni descrittive (*thick data*) | Valori numerici, percentuali, metriche temporali (*hard data*) |\n| **Modalità di Raccolta** | Osservazione diretta, interviste aperte, studi sul campo | Rilevamento indiretto, telemetria, questionari a risposta chiusa, analytics |\n| **Applicazione in IxD** | Fase di scoperta ed empatia (generazione di insight e problem definition) | Fase di verifica, benchmarking prestazionale e A/B testing |\n\n---\n\n### 2. L'Etnografia Applicata al Design\n\nL'**Etnografia** è la branca dell'antropologia culturale che ha per oggetto lo studio e la descrizione sistematica delle pratiche di vita, dei valori e dei modelli cognitivi di una determinata comunità umana.\n\nIntrodotta nella cultura del progetto per superare i limiti delle asettiche prove di laboratorio, l'etnografia nel design persegue un principio epistemologico cardine:\n> *\"Piuttosto che studiare le persone come oggetti passivi da laboratorio, l'etnografia vuole imparare dalle persone all'interno del loro habitat naturale.\"*\n\nQuesto approccio adotta una **prospettiva emica** (la visione 'dal di dentro', focalizzata sui significati attribuiti dai soggetti stessi alle proprie azioni), contrastando la tentazione del designer di proiettare i propri pregiudizi tecnici o culturali sul target (*prospettiva etica*).\n\n---\n\n### 3. I Tre Livelli Fondamentali dell'Esperienza Culturale (James Spradley)\n\nSecondo il framework antropologico di James Spradley, l'esperienza umana in qualsiasi contesto si articola in tre sfere interconnesse che l'interaction designer deve saper indagare:\n1. **Cultural Behaviour (Comportamento Culturale)**:\n   - Ciò che le persone fanno concretamente nel loro quotidiano.\n   - Comprende posture corporee, abitudini d'uso, scorciatoie gestuali, riti interattivi ed espressioni mimiche durante l'impiego di una tecnologia.\n2. **Cultural Knowledge (Conoscenza Culturale)**:\n   - Ciò che le persone sanno, credono e usano come mappa mentale per interpretare il mondo e generare comportamenti.\n   - Comprende il linguaggio gergale, le convenzioni sociali tacite, i valori simbolici e i modelli mentali con cui decodificano un'interfaccia.\n3. **Cultural Artefacts (Artefatti Culturali)**:\n   - Le cose che le persone producono, possiedono, manipolano e adattano.\n   - Nel digitale, comprende gli strumenti hardware, le schermate personalizzate, i post-it attaccati sui monitor per ricordare password, le copertine degli smartphone modificate: tutte spie visive di bisogni non soddisfatti dalle interfacce ufficiali (*workarounds*).\n\n---\n\n### 4. Tecniche di Osservazione Etnografica sul Campo\n\n- **Shadowing**: Il ricercatore segue il soggetto come un'ombra durante la sua giornata tipo, registrandone senza interferire ogni micro-azione, interruzione o cambio di contesto.\n- **Fly-on-the-wall (Mosca sul muro)**: Osservazione discreta in luoghi pubblici o semipubblici (es. stazioni, uffici postali) in cui il ricercatore non interagisce con le persone per registrarne il comportamento naturale non artefatto.\n- **Osservazione Partecipante**: Il designer si immerge attivamente nella comunità, svolgendo le stesse mansioni dei partecipanti per vivere in prima persona le frizioni operative.",
     "keyPoints": [
-      "La ricerca qualitativa esplora il perche su piccoli campioni; la quantitativa misura il quanto su basi numeriche ampie.",
-      "L'etnografia nel design e la pratica antropologica di imparare dalle persone all'interno del loro contesto di vita reale.",
+      "La ricerca qualitativa esplora il perché su piccoli campioni; la quantitativa misura il quanto su basi numeriche ampie.",
+      "L'etnografia nel design è la pratica antropologica di imparare dalle persone all'interno del loro contesto di vita reale.",
       "I tre pilastri culturali sono: Cultural Behaviour (azioni), Cultural Knowledge (significati) e Cultural Artefacts (oggetti).",
-      "I 'workaround' (es. post-it con password) sono artefatti culturali spontanei che rivelano fallimenti di usabilita del sistema.",
+      "I 'workaround' (es. post-it con password) sono artefatti culturali spontanei che rivelano fallimenti di usabilità del sistema.",
       "Shadowing e Fly-on-the-wall sono tecniche osservative mirate a cogliere comportamenti non alterati da filtri razionali."
     ],
     "flashcards": [
       {
         "question": "A quale domanda fondamentale risponde la ricerca qualitativa nell'IxD?",
-        "answer": "Risponde al 'perche' le persone agiscono in un certo modo e a 'come' risolvere i loro problemi."
+        "answer": "Risponde al 'perché' le persone agiscono in un certo modo e a 'come' risolvere i loro problemi."
       },
       {
         "question": "Cosa significa studiare gli utenti con approccio etnografico?",
@@ -900,69 +900,69 @@ window.INTERACTION_DATA = [
         "answer": "Cultural Behaviour (cosa fanno), Cultural Knowledge (cosa sanno e credono) e Cultural Artefacts (cosa usano e creano)."
       },
       {
-        "question": "Cos'e la tecnica dello 'Shadowing'?",
-        "answer": "Una forma di osservazione sul campo in cui il ricercatore segue l'utente come un'ombra per tracciarne le attivita reali."
+        "question": "Cos'è la tecnica dello 'Shadowing'?",
+        "answer": "Una forma di osservazione sul campo in cui il ricercatore segue l'utente come un'ombra per tracciarne le attività reali."
       },
       {
         "question": "Cosa indica un 'Workaround' nella ricerca etnografica?",
-        "answer": "Una soluzione artigianale adottata dall'utente per compensare una lacuna o difficolta dell'interfaccia ufficiale."
+        "answer": "Una soluzione artigianale adottata dall'utente per compensare una lacuna o difficoltà dell'interfaccia ufficiale."
       }
     ],
     "quiz": [
       {
-        "question": "Qual e la caratteristica epistemologica distintiva dell'approccio etnografico applicato al design?",
+        "question": "A quale tipo di domanda risponde meglio la ricerca qualitativa?",
         "options": [
-          "Imparare dalle persone osservandole nel loro contesto reale di vita, anziche studiarle come soggetti asettici in laboratorio",
-          "Distribuire questionari telefonici a oltre diecimila consumatori anonimi",
-          "Misurare esclusivamente i millisecondi di risposta del server durante i picchi di traffico",
-          "Evitare qualunque contatto visivo o relazionale con gli utenti finali"
+          "Perché gli utenti abbandonano il carrello",
+          "Quanti utenti abbandonano il carrello",
+          "Quale percentuale di utenti usa lo smartphone",
+          "Quanto tempo medio dura una sessione"
         ],
-        "correct": 0,
-        "explanation": "L'etnografia nel design mira a comprendere la prospettiva interna (emica) degli individui all'interno del loro habitat d'uso quotidiano, apprendendo direttamente dalle loro pratiche."
+        "correctIndex": 0,
+        "explanation": "La dispensa: la ricerca qualitativa serve a capire più che a misurare ed è adatta alle domande sul 'perché' o 'come risolvere un problema'. Le altre opzioni sono domande sul 'quanto/quanti', tipiche della ricerca quantitativa."
       },
       {
-        "question": "Un post-it attaccato al bordo dello schermo con una sequenza di comandi abbreviati e un chiaro esempio di:",
+        "question": "Qual è lo scopo dell'etnografia secondo la dispensa?",
         "options": [
-          "Errore hardware della scheda madre",
-          "Cultural Artefact (e workaround spontaneo) che segnala una criticita di usabilita dell'interfaccia",
-          "Metrica puramente quantitativa priva di rilevanza per il design",
-          "Violazione del copyright intellettuale del software"
+          "Misurare i comportamenti di una popolazione con grandi campioni",
+          "Capire un altro modo di vivere imparando dalle persone, non solo studiandole",
+          "Verificare in laboratorio l'usabilità di un prototipo",
+          "Classificare le persone in segmenti di mercato"
         ],
-        "correct": 1,
-        "explanation": "I workaround e gli artefatti fisici aggiunti spontaneamente dagli utenti (come i post-it con istruzioni o password) costituiscono 'Cultural Artefacts' che evidenziano una difficolta del software a supportare la memoria dell'utente."
+        "correctIndex": 1,
+        "explanation": "L'etnografia è la pratica di descrivere una cultura: 'piuttosto che studiare le persone, vuole imparare dalle persone'. La classificazione in segmenti è tipica di modelli come VALS, non dell'etnografia."
       },
       {
-        "question": "In cosa consiste la tecnica etnografica denominata 'Shadowing'?",
+        "question": "Un impiegato tiene un post-it sul monitor con le scorciatoie del gestionale. Secondo i tre aspetti della cultura, il post-it è:",
         "options": [
-          "Nel proiettare ombre cinesi durante i test di usabilita per rilassare i candidati",
-          "Nel seguire l'utente da vicino durante le sue reali attivita quotidiane documentandone le interazioni senza interferire",
-          "Nell'oscurare il codice sorgente per proteggerlo da attacchi informatici",
-          "Nel condurre interviste al buio per non condizionare visivamente il soggetto"
+          "Cultural behaviour",
+          "Cultural artefact",
+          "Cultural knowledge",
+          "Un dato quantitativo"
         ],
-        "correct": 1,
-        "explanation": "Lo Shadowing consiste nell'accompagnare il soggetto come una 'ombra' nel suo ambiente operativo, registrando flussi di lavoro, interruzioni e criticita concrete nel momento in cui accadono."
+        "correctIndex": 1,
+        "explanation": "È un oggetto prodotto e usato dalle persone, quindi un Cultural artefact. Le scorciatoie che conosce sono Cultural knowledge, ma il post-it in sé è l'artefatto, e segnala un problema di usabilità."
       },
       {
-        "question": "Cosa si intende per 'Cultural Knowledge' secondo il modello di James Spradley?",
+        "question": "In che cosa consiste lo shadowing?",
         "options": [
-          "La conoscenza teorica e i modelli mentali condivisi che le persone usano per interpretare l'esperienza e orientare le azioni",
-          "Il numero di lauree universitarie possedute dai programmatori del software",
-          "Il manuale di istruzioni PDF fornito dal produttore hardware",
-          "Il database MySQL installato sul server centrale"
+          "Nell'osservare un luogo pubblico senza interagire con nessuno",
+          "Nel far registrare all'utente un diario delle proprie giornate",
+          "Nel seguire da vicino l'utente nelle sue attività quotidiane",
+          "Nel discutere con un gruppo di utenti guidato da un moderatore"
         ],
-        "correct": 0,
-        "explanation": "La Cultural Knowledge e il bagaglio di credenze, codici comunicativi, modelli mentali e categorie di pensiero con cui un gruppo sociale attribuisce significato alla realta circostante."
+        "correctIndex": 2,
+        "explanation": "Nello shadowing l'osservatore segue l'utente 'letteralmente al suo fianco', evitando che diventi un intervistato. Osservare un luogo pubblico senza interagire è il fly on the wall."
       },
       {
-        "question": "Quale tra queste affermazioni sintetizza meglio il rapporto tra ricerca qualitativa e quantitativa?",
+        "question": "Che cosa indica il 'Cultural knowledge'?",
         "options": [
-          "La ricerca qualitativa e obsoleta e va sempre sostituita con metriche numeriche e algoritmi",
-          "Sono approcci complementari: la qualitativa individua problemi, modelli mentali e perche; la quantitativa ne misura diffusione e impatto numerico",
-          "La ricerca quantitativa serve solo all'amministrazione contabile e non ha alcun valore per il design",
-          "Non possono mai essere utilizzate nello stesso progetto a causa di incompatibilita epistemologica"
+          "Ciò che la gente fa nella vita quotidiana",
+          "Ciò che la gente sa e usa per interpretare il mondo",
+          "Ciò che la gente produce e usa nel proprio ambiente",
+          "Ciò che la gente dichiara di pensare nei questionari"
         ],
-        "correct": 1,
-        "explanation": "Nell'Interaction Design contemporaneo il metodo misto (*mixed methods*) e lo standard: i metodi qualitativi permettono di empatizzare e comprendere il contesto, mentre i metodi quantitativi validano la portata statistica delle soluzioni."
+        "correctIndex": 1,
+        "explanation": "La dispensa definisce il Cultural knowledge come conoscenza acquisita usata per interpretare e generare comportamenti e visione del mondo. 'Ciò che la gente fa' è il Cultural behaviour."
       }
     ]
   },
@@ -973,12 +973,12 @@ window.INTERACTION_DATA = [
     "subtitle": "Gaver, Dunne & Pacenti: diari, kit di auto-documentazione, mappe soggettive e compiti provocatori",
     "readTime": "8 min",
     "module": "ixd-user-research",
-    "summary": "### 1. Nascita e Filosofia delle Cultural Probes (1999)\n\nLa metodologia delle **Cultural Probes (Sonde Culturali)** e stata concepita nel 1999 da un celebre collettivo di ricercatori e interaction designer composto da **Bill Gaver**, **Anthony Dunne** ed **Elena Pacenti** presso il Royal College of Art di Londra (nell'ambito del progetto europeo *Presence* dedicato agli anziani residenti in comunita locali).\n\nLe Sonde Culturali nascono come deliberata rottura epistemologica rispetto ai rigidi questionari scientifici e ai test quantitativi di laboratorio:\n> *\"Le Sonde Culturali non servono a estrarre risposte oggettive e standardizzate per convalidare ipotesi a priori, ma a stimolare l'immaginazione dei designer attraverso frammenti intimi, evocativi e provocatori della vita quotidiana dei partecipanti.\"*\n\nSi tratta di una tecnica di **ricerca esplorativa e partecipativa basata sull'auto-documentazione (*self-documentation*)**: invece di invadere la sfera privata delle persone con telecamere e ricercatori, si affida loro un pacchetto di materiali con cui raccontarsi in totale liberta e intimita.\n\n---\n\n### 2. Anatomia di un Kit di Sonda Culturale\n\nUn kit di Cultural Probes si presenta tipicamente come una scatola o un plico progettato con estrema cura grafica, contenente una serie di artefatti insoliti e provocatori:\n- **Macchine Fotografiche Monouso con Prompt Emotivi**: Fotocamere usa-e-getta provviste di etichette con richieste eccentriche (es. *\"Fotografa la cosa piu noiosa della tua stanza\"*, *\"Fotografa qualcosa che vorresti nascondere\"*, *\"Fotografa il tuo punto di contatto con il mondo esterno\"*).\n- **Diari Personali (*Diary Studies*)**: Quaderni guidati con spazi per brevi annotazioni serali, pensieri ricorrenti o stati d'ansia.\n- **Mappe Soggettive e Affettive**: Piantine del quartiere o della casa accompagnate da bollini adesivi colorati (es. *\"Attacca un bollino nero dove ti senti a disagio, un bollino giallo dove ti senti felice\"*).\n- **Cartoline Preaffrancate con Domande Aperte**: Cartoline con domande bizzarre o intime destinate a essere spedite al team di design una per volta per posta ordinaria (es. *\"Cosa vorresti dire all'architetto della tua citta?\"*, *\"Qual e l'oggetto che salveresti da un incendio?\"*).\n- **Oggetti Elicitatori Simbolici**: Nastri adesivi, dadi dei sentimenti, registratori vocali portatili per catturare paesaggi sonori.\n\n---\n\n### 3. La Natura dei Dati: Ispirazione vs Prescrizione\n\nI materiali restituiti dalle Cultural Probes possiedono una natura qualitativa unica:\n- **Ispirazionali, non Prescrittivi**: Non dicono al designer *\"fai questo pulsante largo 40 pixel\"*, ma trasmettono l'atmosfera emotiva, le fragilita esistenziali e i desideri inespressi degli individui.\n- **Rispetto dell'Intimita**: Consentono di documentare momenti intimi (es. il risveglio mattutino, la solitudine serale) in cui la presenza di un ricercatore altererebbe irrimediabilmente la naturalezza dell'azione.\n- **Apertura all'Inaspettato**: Lasciano spazio a risposte divergenti e impreviste, sfidando i preconcetti del team di progetto.\n- **Evoluzione Digitale**: Oggi le sonde culturali si traducono anche in **Digital Probes** o Mobile Diary Studies, attraverso micro-task inviati via smartphone (messaggi vocali, foto istantanee su canali dedicati), pur mantenendo l'approccio narrativo e non intrusivo delle origini.",
+    "summary": "### 1. Nascita e Filosofia delle Cultural Probes (1999)\n\nLa metodologia delle **Cultural Probes (Sonde Culturali)** è stata concepita nel 1999 da un celebre collettivo di ricercatori e interaction designer composto da **Bill Gaver**, **Anthony Dunne** ed **Elena Pacenti** presso il Royal College of Art di Londra (nell'ambito del progetto europeo *Presence* dedicato agli anziani residenti in comunità locali).\n\nLe Sonde Culturali nascono come deliberata rottura epistemologica rispetto ai rigidi questionari scientifici e ai test quantitativi di laboratorio:\n> *\"Le Sonde Culturali non servono a estrarre risposte oggettive e standardizzate per convalidare ipotesi a priori, ma a stimolare l'immaginazione dei designer attraverso frammenti intimi, evocativi e provocatori della vita quotidiana dei partecipanti.\"*\n\nSi tratta di una tecnica di **ricerca esplorativa e partecipativa basata sull'auto-documentazione (*self-documentation*)**: invece di invadere la sfera privata delle persone con telecamere e ricercatori, si affida loro un pacchetto di materiali con cui raccontarsi in totale libertà e intimità.\n\n---\n\n### 2. Anatomia di un Kit di Sonda Culturale\n\nUn kit di Cultural Probes si presenta tipicamente come una scatola o un plico progettato con estrema cura grafica, contenente una serie di artefatti insoliti e provocatori:\n- **Macchine Fotografiche Monouso con Prompt Emotivi**: Fotocamere usa-e-getta provviste di etichette con richieste eccentriche (es. *\"Fotografa la cosa più noiosa della tua stanza\"*, *\"Fotografa qualcosa che vorresti nascondere\"*, *\"Fotografa il tuo punto di contatto con il mondo esterno\"*).\n- **Diari Personali (*Diary Studies*)**: Quaderni guidati con spazi per brevi annotazioni serali, pensieri ricorrenti o stati d'ansia.\n- **Mappe Soggettive e Affettive**: Piantine del quartiere o della casa accompagnate da bollini adesivi colorati (es. *\"Attacca un bollino nero dove ti senti a disagio, un bollino giallo dove ti senti felice\"*).\n- **Cartoline Preaffrancate con Domande Aperte**: Cartoline con domande bizzarre o intime destinate a essere spedite al team di design una per volta per posta ordinaria (es. *\"Cosa vorresti dire all'architetto della tua città?\"*, *\"Qual è l'oggetto che salveresti da un incendio?\"*).\n- **Oggetti Elicitatori Simbolici**: Nastri adesivi, dadi dei sentimenti, registratori vocali portatili per catturare paesaggi sonori.\n\n---\n\n### 3. La Natura dei Dati: Ispirazione vs Prescrizione\n\nI materiali restituiti dalle Cultural Probes possiedono una natura qualitativa unica:\n- **Ispirazionali, non Prescrittivi**: Non dicono al designer *\"fai questo pulsante largo 40 pixel\"*, ma trasmettono l'atmosfera emotiva, le fragilità esistenziali e i desideri inespressi degli individui.\n- **Rispetto dell'Intimità**: Consentono di documentare momenti intimi (es. il risveglio mattutino, la solitudine serale) in cui la presenza di un ricercatore altererebbe irrimediabilmente la naturalezza dell'azione.\n- **Apertura all'Inaspettato**: Lasciano spazio a risposte divergenti e impreviste, sfidando i preconcetti del team di progetto.\n- **Evoluzione Digitale**: Oggi le sonde culturali si traducono anche in **Digital Probes** o Mobile Diary Studies, attraverso micro-task inviati via smartphone (messaggi vocali, foto istantanee su canali dedicati), pur mantenendo l'approccio narrativo e non intrusivo delle origini.",
     "keyPoints": [
       "Le Cultural Probes sono state create nel 1999 da Bill Gaver, Anthony Dunne ed Elena Pacenti al Royal College of Art.",
-      "E una metodologia basata sull'auto-documentazione non invasiva della vita quotidiana e della dimensione soggettiva.",
+      "È una metodologia basata sull'auto-documentazione non invasiva della vita quotidiana e della dimensione soggettiva.",
       "I kit contengono artefatti stimolanti: fotocamere monouso con prompt, mappe emotive, cartoline e diari personali.",
-      "La natura dei dati raccolti e provocatoria e ispirazionale, non prescrittiva o quantitativamente statistica.",
+      "La natura dei dati raccolti e provocatoria è ispirazionale, non prescrittiva o quantitativamente statistica.",
       "Consentono di accedere a contesti intimi e momenti privati senza l'interferenza della presenza fisica del ricercatore."
     ],
     "flashcards": [
@@ -987,16 +987,16 @@ window.INTERACTION_DATA = [
         "answer": "Bill Gaver, Anthony Dunne ed Elena Pacenti nel 1999 presso il Royal College of Art."
       },
       {
-        "question": "Qual e lo scopo principale delle Cultural Probes?",
-        "answer": "Ispirare e provocare la creativita dei designer attraverso l'auto-documentazione soggettiva della vita dei partecipanti."
+        "question": "Qual è lo scopo principale delle Cultural Probes?",
+        "answer": "Ispirare e provocare la creatività dei designer attraverso l'auto-documentazione soggettiva della vita dei partecipanti."
       },
       {
         "question": "Quali materiali include tipicamente un kit di Sonde Culturali?",
         "answer": "Fotocamere monouso con prompt insoliti, diari guidati, mappe affettive con adesivi e cartoline preaffrancate."
       },
       {
-        "question": "Perche i dati delle sonde sono definiti 'ispirazionali e non prescrittivi'?",
-        "answer": "Perche non dettano regole rigide di interfaccia, ma aprono spazi empatici di opportunita ed evocazione poetica."
+        "question": "Perché i dati delle sonde sono definiti 'ispirazionali e non prescrittivi'?",
+        "answer": "Perché non dettano regole rigide di interfaccia, ma aprono spazi empatici di opportunità ed evocazione poetica."
       },
       {
         "question": "Come si chiama l'evoluzione contemporanea delle sonde tramite app e smartphone?",
@@ -1005,59 +1005,59 @@ window.INTERACTION_DATA = [
     ],
     "quiz": [
       {
-        "question": "Quale gruppo di studiosi ha introdotto la metodologia delle Cultural Probes nel 1999?",
+        "question": "Su che cosa si basano le sonde culturali?",
+        "options": [
+          "Sull'osservazione diretta del ricercatore nel contesto d'uso",
+          "Su test di usabilità in laboratorio con un moderatore",
+          "Su questionari standardizzati a risposta chiusa",
+          "Sull'auto-documentazione dei partecipanti, con carattere esplorativo"
+        ],
+        "correctIndex": 3,
+        "explanation": "La dispensa: le sonde sono 'basate sull'auto-documentazione e hanno un carattere esplorativo'; riducono al minimo l'interferenza dei ricercatori, a differenza dell'osservazione diretta."
+      },
+      {
+        "question": "A che cosa si ispira il nome 'sonda culturale'?",
+        "options": [
+          "Alla sonda medica che esplora l'interno del corpo",
+          "Al sondaggio d'opinione con campioni rappresentativi",
+          "Allo scandaglio usato per misurare la profondità del mare",
+          "Alla sonda spaziale che raccoglie segnali da ambienti inaccessibili"
+        ],
+        "correctIndex": 3,
+        "explanation": "La dispensa spiega che il metodo si ispira alla sonda spaziale, che raccoglie segnali da ambienti altrimenti inaccessibili, come la vita privata dei partecipanti."
+      },
+      {
+        "question": "Che cosa significa che i dati delle sonde culturali sono 'ispirazionali' più che prescrittivi?",
+        "options": [
+          "Che vengono usati per calcolare statistiche affidabili",
+          "Che devono essere interpretati dai partecipanti stessi",
+          "Che sostituiscono la fase di test dei prototipi",
+          "Che stimolano l'immaginazione dei designer senza dettare soluzioni"
+        ],
+        "correctIndex": 3,
+        "explanation": "Le sonde servono a 'ispirare i designer': danno atmosfere, desideri e frammenti di vita, non specifiche tecniche. I dati vanno tradotti e rielaborati dai ricercatori, non dai partecipanti."
+      },
+      {
+        "question": "Quale sequenza corrisponde ai passaggi tipici di uno studio con sonde culturali?",
+        "options": [
+          "Interviste, selezione partecipanti, consegna, progettazione kit, raccolta, analisi",
+          "Progettazione kit, analisi, selezione partecipanti, consegna, raccolta, interviste",
+          "Selezione partecipanti, progettazione kit, consegna, raccolta, interviste, analisi",
+          "Selezione partecipanti, interviste, analisi, progettazione kit, consegna, raccolta"
+        ],
+        "correctIndex": 2,
+        "explanation": "La dispensa elenca: selezione dei partecipanti, progettazione del kit, contatto e consegna, attesa e raccolta, interviste di approfondimento, analisi e interpretazione."
+      },
+      {
+        "question": "Chi ha introdotto le Cultural Probes nel 1999?",
         "options": [
           "Bill Gaver, Anthony Dunne ed Elena Pacenti",
-          "Alan Cooper, Donald Norman e Jakob Nielsen",
-          "Victor Margolin e Giampaolo Fabris",
-          "Steve Jobs e Jonathan Ive"
+          "Robert Kozinets e il gruppo della netnografia",
+          "Donald Norman e Stephen Draper",
+          "David Kelley e Tim Brown di IDEO"
         ],
-        "correct": 0,
-        "explanation": "Le Cultural Probes sono state sviluppate da Bill Gaver, Anthony Dunne ed Elena Pacenti nell'ambito del progetto europeo 'Presence' al Royal College of Art di Londra."
-      },
-      {
-        "question": "Cosa caratterizza in modo distintivo le richieste (prompt) contenute nelle Cultural Probes?",
-        "options": [
-          "Sono domande provocatorie, aperte ed evocative (es. 'Fotografa la cosa piu noiosa della tua stanza')",
-          "Sono quesiti a risposta multipla standardizzati per la lettura ottica",
-          "Sono test di velocita di battitura su tastiera",
-          "Sono contratti formali di cessione dei diritti di immagine"
-        ],
-        "correct": 0,
-        "explanation": "I prompt delle sonde culturali sono volutamente eccentrici, poetici o provocatori, per spingere le persone ad abbandonare le risposte di convenienza e rivelare il loro sguardo soggettivo sul mondo."
-      },
-      {
-        "question": "Quale vantaggio metodologico fondamentale offre l'auto-documentazione rispetto all'osservazione diretta del designer?",
-        "options": [
-          "Permette ai partecipanti di registrare la propria intimita quotidiana senza l'imbarazzo o l'intrusione fisica del ricercatore",
-          "Elimina del tutto la necessita di interpretare i dati raccolti",
-          "Garantisce che i dati abbiano sempre validita statistica al 100%",
-          "Consente di automatizzare la programmazione del software mediante script Python"
-        ],
-        "correct": 0,
-        "explanation": "L'auto-documentazione tutela la privacy e la naturalezza dell'ambiente domestico, permettendo al partecipante di compilare il diario o scattare foto nei momenti in cui la presenza di un estraneo risulterebbe inaccettabile."
-      },
-      {
-        "question": "Cosa significa affermare che i dati delle Cultural Probes sono 'ispirazionali e non prescrittivi'?",
-        "options": [
-          "Che non forniscono soluzioni tecniche preconfezionate ma stimolano l'immaginazione e la sensibilita del team di design",
-          "Che i dati sono privi di qualsiasi utilita pratica e devono essere cestinati",
-          "Che possono essere adoperati unicamente per redigere ricette mediche",
-          "Che il designer deve applicare pedissequamente ogni singola parola dell'utente senza mediazione critica"
-        ],
-        "correct": 0,
-        "explanation": "I fondatori delle Sonde Culturali ribadirono con forza che le risposte non vanno trattate come specifiche tecniche rigide, ma come spunti empatici per aprire nuovi orizzonti di senso nel progetto."
-      },
-      {
-        "question": "Quale dei seguenti artefatti NON appartiene alla dotazione tipica di una Cultural Probe cartacea tradizionale?",
-        "options": [
-          "Un oscilloscopio da banco per testare la continuita elettrica dei circuiti",
-          "Una cartolina preaffrancata con una domanda aperta da rispedire al team",
-          "Una mappa del quartiere corredata da bollini adesivi colorati per segnalare emozioni",
-          "Una fotocamera monouso corredata da prompt d'osservazione visiva"
-        ],
-        "correct": 0,
-        "explanation": "Un oscilloscopio e uno strumento di laboratorio elettronico. Le sonde culturali adottano materiali espressivi, accessibili e stimolanti per individui non tecnici."
+        "correctIndex": 0,
+        "explanation": "Le Cultural Probes nascono nel 1999 da Gaver, Dunne e Pacenti al Royal College of Art. Kozinets ha coniato la netnografia, Kelley e Brown sono legati alla diffusione del Design Thinking."
       }
     ]
   },
@@ -1068,21 +1068,21 @@ window.INTERACTION_DATA = [
     "subtitle": "Elicitazione verbale, tipologie di intervista, le 6 fasi del sondaggio e regole di campionamento",
     "readTime": "9 min",
     "module": "ixd-user-research",
-    "summary": "### 1. L'Intervista come Strumento di Indagine Verbale nell'IxD\n\nL'**Intervista** e uno scambio verbale asimmetrico e orientato a uno scopo in cui il ricercatore pone quesiti ed ascolta attentamente l'intervistato per esplorarne motivazioni, significati attribuiti, aspettative e modelli mentali.\n\nIn base al grado di vincolo e flessibilità della traccia, si distinguono tre tipologie principali:\n1. **Intervista Strutturata**:\n   - Prevede una lista rigida di domande lette nell'esatto ordine prestabilito, senza deviazioni.\n   - [VANTAGGI]: Massima standardizzazione e comparabilita tra diversi intervistatori.\n   - [LIMITI]: Rigidità assoluta, impossibilita di approfondire insight inaspettati emersi durante il dialogo.\n2. **Intervista Semi-Strutturata**:\n   - E la forma d'elezione nell'Interaction Design.\n   - Si basa su una *guida d'intervista* (topic list o serie di macro-domande aperte), ma consente all'intervistatore di variare l'ordine, riformulare le frasi ed inserire domande di approfondimento (*probing questions*, es. *\"Cosa intendi con quella parola?\"*, *\"Come ti ha fatto sentire quell'errore?\"*).\n3. **Intervista Non Strutturata (Narrativa o in Profondita)**:\n   - Conversazione libera incentrata su un tema generico; l'intervistato conduce la narrazione seguendo il proprio flusso mnemonico ed associativo.\n\n---\n\n### 2. Best Practice di Conduzione dell'Intervista\n\nPer evitare di inquinare i dati raccolti, il ricercatore deve rispettare rigorosi principi deontologici e tecnici:\n- **Evitare Domande Pilota (*Leading Questions*)**: Non chiedere *\"Non trovi che questa funzione sia comodissima?\"*, ma *\"Come descriveresti la tua esperienza con questa funzione?\"*.\n- **Chiedere di Esperienze Passate Concrete**: Piuttosto che interrogare su scenari ipotetici (*\"Compreresti un'app che fa X?\"* a cui tutti rispondono ingenuamente si), indagare episodi realmente accaduti (*\"Raccontami l'ultima volta che hai dovuto prenotare un biglietto...\"*).\n- **La Tecnica dei 'Cinque Perche' (*5 Whys*)**: Scavare a fondo nella catena causale per raggiungere la radice motivazionale del problema.\n- **Accogliere il Silenzio**: Concedere all'intervistato qualche secondo di riflessione senza riempire ansiosamente i vuoti di conversazione.\n\n---\n\n### 3. Il Sondaggio (Survey) e la Progettazione del Questionario\n\nUn **Sondaggio (Survey)** e un metodo di indagine quantitativo o misto mirato a raccogliere informazioni da un campione rappresentativo per descrivere, confrontare o spiegare conoscenze, attitudini o comportamenti di una popolazione estesa.\n\nIl processo di pianificazione di un sondaggio si articola in **6 fasi canoniche**:\n1. **Pianificazione Preliminare**: Definizione delle domande di ricerca, della tipologia d'informazione necessaria, del campione bersaglio e della modalita di somministrazione (web, cartaceo, telefonico).\n2. **Progettazione del Questionario**: Formulazione delle domande (aperte vs chiuse, scale Likert a 5 o 7 punti), sequenziamento logico (dalle domande generali a quelle piu specifiche) ed impostazione dell'analisi dei dati.\n3. **Pre-testing (Studio Pilota)**: Verifica del questionario con un campione ristretto (spesso all'interno di un focus group o test individuale) per individuare ambiguita terminologiche, doppi sensi o tempi di compilazione eccessivi.\n4. **Progetto Finale e Pianificazione**: Ottimizzazione del testo e configurazione tecnica della piattaforma di raccolta.\n5. **Raccolta dei Dati**: Somministrazione e monitoraggio del tasso di completamento e del tasso di abbandono (*drop-off rate*).\n6. **Analisi dei Dati**: Pulizia dei record incongrui, codifica delle risposte aperte ed elaborazione statistica descrittiva ed inferenziale.\n\n---\n\n### 4. Vantaggi e Criticita del Questionario nell'IxD\n\n- **Vantaggi**: Basso costo marginale di somministrazione, rapidita nella raccolta su larga scala geografica, assenza dell'effetto presenza del ricercatore, facilita di analisi dei dati chiusi.\n- **Criticita**: Mancanza di profondita contestuale, impossibilita di verificare se l'utente ha compreso la domanda o ha risposto a caso (*frettolosità*), impossibilita di porre domande di follow-up.",
+    "summary": "### 1. L'Intervista come Strumento di Indagine Verbale nell'IxD\n\nL'**Intervista** è uno scambio verbale asimmetrico è orientato a uno scopo in cui il ricercatore pone quesiti ed ascolta attentamente l'intervistato per esplorarne motivazioni, significati attribuiti, aspettative e modelli mentali.\n\nIn base al grado di vincolo e flessibilità della traccia, si distinguono tre tipologie principali:\n1. **Intervista Strutturata**:\n   - Prevede una lista rigida di domande lette nell'esatto ordine prestabilito, senza deviazioni.\n   - [VANTAGGI]: Massima standardizzazione e comparabilita tra diversi intervistatori.\n   - [LIMITI]: Rigidità assoluta, impossibilità di approfondire insight inaspettati emersi durante il dialogo.\n2. **Intervista Semi-Strutturata**:\n   - È la forma d'elezione nell'Interaction Design.\n   - Si basa su una *guida d'intervista* (topic list o serie di macro-domande aperte), ma consente all'intervistatore di variare l'ordine, riformulare le frasi ed inserire domande di approfondimento (*probing questions*, es. *\"Cosa intendi con quella parola?\"*, *\"Come ti ha fatto sentire quell'errore?\"*).\n3. **Intervista Non Strutturata (Narrativa o in Profondità)**:\n   - Conversazione libera incentrata su un tema generico; l'intervistato conduce la narrazione seguendo il proprio flusso mnemonico ed associativo.\n\n---\n\n### 2. Best Practice di Conduzione dell'Intervista\n\nPer evitare di inquinare i dati raccolti, il ricercatore deve rispettare rigorosi principi deontologici e tecnici:\n- **Evitare Domande Pilota (*Leading Questions*)**: Non chiedere *\"Non trovi che questa funzione sia comodissima?\"*, ma *\"Come descriveresti la tua esperienza con questa funzione?\"*.\n- **Chiedere di Esperienze Passate Concrete**: Piuttosto che interrogare su scenari ipotetici (*\"Compreresti un'app che fa X?\"* a cui tutti rispondono ingenuamente si), indagare episodi realmente accaduti (*\"Raccontami l'ultima volta che hai dovuto prenotare un biglietto...\"*).\n- **La Tecnica dei 'Cinque Perché' (*5 Whys*)**: Scavare a fondo nella catena causale per raggiungere la radice motivazionale del problema.\n- **Accogliere il Silenzio**: Concedere all'intervistato qualche secondo di riflessione senza riempire ansiosamente i vuoti di conversazione.\n\n---\n\n### 3. Il Sondaggio (Survey) e la Progettazione del Questionario\n\nUn **Sondaggio (Survey)** è un metodo di indagine quantitativo o misto mirato a raccogliere informazioni da un campione rappresentativo per descrivere, confrontare o spiegare conoscenze, attitudini o comportamenti di una popolazione estesa.\n\nIl processo di pianificazione di un sondaggio si articola in **6 fasi canoniche**:\n1. **Pianificazione Preliminare**: Definizione delle domande di ricerca, della tipologia d'informazione necessaria, del campione bersaglio e della modalità di somministrazione (web, cartaceo, telefonico).\n2. **Progettazione del Questionario**: Formulazione delle domande (aperte vs chiuse, scale Likert a 5 o 7 punti), sequenziamento logico (dalle domande generali a quelle più specifiche) ed impostazione dell'analisi dei dati.\n3. **Pre-testing (Studio Pilota)**: Verifica del questionario con un campione ristretto (spesso all'interno di un focus group o test individuale) per individuare ambiguità terminologiche, doppi sensi o tempi di compilazione eccessivi.\n4. **Progetto Finale e Pianificazione**: Ottimizzazione del testo e configurazione tecnica della piattaforma di raccolta.\n5. **Raccolta dei Dati**: Somministrazione e monitoraggio del tasso di completamento e del tasso di abbandono (*drop-off rate*).\n6. **Analisi dei Dati**: Pulizia dei record incongrui, codifica delle risposte aperte ed elaborazione statistica descrittiva ed inferenziale.\n\n---\n\n### 4. Vantaggi e Criticità del Questionario nell'IxD\n\n- **Vantaggi**: Basso costo marginale di somministrazione, rapidità nella raccolta su larga scala geografica, assenza dell'effetto presenza del ricercatore, facilita di analisi dei dati chiusi.\n- **Criticità**: Mancanza di profondita contestuale, impossibilità di verificare se l'utente ha compreso la domanda o ha risposto a caso (*frettolosità*), impossibilità di porre domande di follow-up.",
     "keyPoints": [
-      "L'intervista semi-strutturata e lo standard nell'IxD poiche concilia una traccia guida con la flessibilita del follow-up.",
-      "Le domande devono ancorarsi a episodi reali passati anziche a promesse ipotetiche su comportamenti futuri.",
+      "L'intervista semi-strutturata è lo standard nell'IxD poiché concilia una traccia guida con la flessibilità del follow-up.",
+      "Le domande devono ancorarsi a episodi reali passati anziché a promesse ipotetiche su comportamenti futuri.",
       "Il sondaggio raccoglie dati strutturati e comparabili seguendo 6 fasi (pianificazione, design, pre-test, lancio, raccolta, analisi).",
-      "Il pre-testing su un piccolo campione e indispensabile per eliminare ambiguita semantiche prima del lancio massivo.",
-      "I questionari garantiscono ampiezza statistica a basso costo, ma sacrificano la comprensione profonda del perche."
+      "Il pre-testing su un piccolo campione è indispensabile per eliminare ambiguità semantiche prima del lancio massivo.",
+      "I questionari garantiscono ampiezza statistica a basso costo, ma sacrificano la comprensione profonda del perché."
     ],
     "flashcards": [
       {
-        "question": "Qual e la tipologia di intervista piu diffusa nell'Interaction Design?",
-        "answer": "L'intervista semi-strutturata, perche unisce una scaletta di temi alla flessibilita di approfondire le risposte."
+        "question": "Qual è la tipologia di intervista più diffusa nell'Interaction Design?",
+        "answer": "L'intervista semi-strutturata, perché unisce una scaletta di temi alla flessibilità di approfondire le risposte."
       },
       {
-        "question": "Cosa sono le 'Leading Questions' e perche vanno evitate?",
+        "question": "Cosa sono le 'Leading Questions' e perché vanno evitate?",
         "answer": "Sono domande suggestive o guidate che inducono l'intervistato a rispondere come desidera il ricercatore, falsando i dati."
       },
       {
@@ -1094,65 +1094,65 @@ window.INTERACTION_DATA = [
         "answer": "A testare il questionario su un gruppo ristretto per individuare domande poco chiare, refusi o lunghezze eccessive."
       },
       {
-        "question": "Perche chiedere 'Useresti un'app ipotetica con la funzione X?' produce dati inaffidabili?",
-        "answer": "Perche le persone sono pessime nel prevedere i propri comportamenti futuri e tendono all'accondiscendenza."
+        "question": "Perché chiedere 'Useresti un'app ipotetica con la funzione X?' produce dati inaffidabili?",
+        "answer": "Perché le persone sono pessime nel prevedere i propri comportamenti futuri e tendono all'accondiscendenza."
       }
     ],
     "quiz": [
       {
-        "question": "Quale tra le seguenti formulazioni rappresenta una domanda d'intervista condotta correttamente secondo i canoni dell'IxD?",
+        "question": "Quale domanda d'intervista è formulata meglio?",
         "options": [
-          "Non credi anche tu che il nostro nuovo menu sia molto piu intuitivo rispetto al precedente?",
-          "Puoi raccontarmi l'ultima volta in cui hai cercato di richiedere un rimborso su questa piattaforma?",
-          "Sicuramente compreresti questa applicazione se costasse solo un euro, giusto?",
-          "Perche non ami le interfacce grafiche minimaliste?"
+          "Non trovi che la nuova funzione sia molto comoda?",
+          "Compreresti un'app che prenota il treno in un clic?",
+          "Raccontami l'ultima volta che hai prenotato un treno online.",
+          "Preferisci la versione vecchia o quella nuova, che è più veloce?"
         ],
-        "correct": 1,
-        "explanation": "Chiedere di narrare un episodio passato concreto senza formulazioni suggestive permette di accedere al racconto veritiero dell'esperienza senza indurre bias o risposte compiacenti."
+        "correctIndex": 2,
+        "explanation": "Chiedere di un episodio reale passato evita risposte ipotetiche e influenzate. Le domande che contengono già un giudizio ('comoda', 'più veloce') sono domande pilota; quella sull'app che 'compreresti' è ipotetica e quasi tutti rispondono di sì."
       },
       {
-        "question": "In quale fase della pianificazione di un sondaggio viene verificata la comprensibilita delle domande tramite un gruppo pilota ristretto?",
+        "question": "In un sondaggio, a che cosa servono le domande filtro?",
         "options": [
-          "Fase 1: Pianificazione preliminare",
-          "Fase 3: Pre-testing",
-          "Fase 5: Raccolta dei dati",
-          "Fase 6: Analisi dei dati"
+          "A lasciare libertà di risposta senza opzioni",
+          "A escludere alcuni intervistati dal sondaggio",
+          "A verificare la coerenza delle risposte precedenti",
+          "A ordinare le risposte per importanza"
         ],
-        "correct": 1,
-        "explanation": "La Fase 3 (Pre-testing) consiste nel somministrare la bozza del questionario a un piccolo campione per correggere domande ambigue, calcolare i tempi medi e tarare le opzioni di risposta."
+        "correctIndex": 1,
+        "explanation": "La dispensa: le domande filtro sono 'usate per escludere alcuni intervistati nel survey'. Le domande senza opzioni predefinite sono le domande aperte."
       },
       {
-        "question": "Cosa caratterizza l'intervista 'semi-strutturata' rispetto a quella rigida?",
+        "question": "In quale fase della pianificazione di un sondaggio si prova il questionario con un piccolo campione?",
         "options": [
-          "Il fatto che l'intervistatore ha una traccia tematica ma puo approfondire liberamente spunti imprevisti emersi dall'utente",
-          "Il fatto che meta delle domande vengono scritte in latino antico",
-          "Il fatto che l'intervistato puo rispondere soltanto con 'vero' o 'falso'",
-          "Il fatto che viene condotta esclusivamente da intelligenze artificiali senza supervisione umana"
+          "Pre-testing",
+          "Progettazione del questionario",
+          "Pianificazione preliminare",
+          "Raccolta dei dati"
         ],
-        "correct": 0,
-        "explanation": "L'intervista semi-strutturata combina rigore e apertura: garantisce la copertura di tutti i temi chiave previsti dalla traccia, concedendo spazio per follow-up spontanei e chiarimenti contestuali."
+        "correctIndex": 0,
+        "explanation": "La terza fase, il pre-testing, prova il questionario su un campione limitato (anche in un focus group) per scoprire ambiguità prima della raccolta vera e propria."
       },
       {
-        "question": "Qual e il principale limite intrinseco dei questionari quantitativi online rispetto alle interviste dirette?",
+        "question": "Quale di questi è un vantaggio del questionario elencato in dispensa?",
         "options": [
-          "Non permettono di chiarire i fraintendimenti dell'utente ne di comprendere le motivazioni profonde dietro a una crocetta",
-          "Hanno costi di distribuzione superiori a qualunque altro strumento di ricerca",
-          "Possono essere compilati unicamente da programmatori esperti",
-          "Non consentono la conservazione digitale dei risultati"
+          "Permette di porre domande di approfondimento",
+          "Garantisce risposte sempre molto dettagliate",
+          "Assicura anonimato e assenza di pregiudizi",
+          "Consente di osservare il comportamento reale"
         ],
-        "correct": 0,
-        "explanation": "Nei questionari online chiusi manca la presenza del ricercatore: se l'utente interpreta male un termine o seleziona una risposta frettolosamente, il dato verra registrato come valido senza alcuna possibilita di follow-up."
+        "correctIndex": 2,
+        "explanation": "Tra i vantaggi: basso costo, raccolta veloce, anonimato, assenza di pregiudizi dell'intervistatore. Tra i problemi: può essere poco dettagliato o inaccurato e non permette approfondimenti."
       },
       {
-        "question": "A quale scopo si adotta la tecnica dei 'Cinque Perche' (5 Whys) durante un'intervista con l'utente?",
+        "question": "Quando conviene usare un questionario secondo la dispensa?",
         "options": [
-          "Per innervosire l'intervistato e testarne la resistenza psicologica",
-          "Per scavare oltre la risposta superficiale iniziale e identificare la radice motivazionale o il bisogno profondo",
-          "Per compilare automaticamente cinque diverse schede anagrafiche",
-          "Per estendere la durata dell'intervista e addebitare piu ore al cliente"
+          "Quando il campione è piccolo e si vogliono storie personali",
+          "Quando si vuole osservare l'utente nel suo ambiente",
+          "Quando il campione è ampio e le domande sono standard",
+          "Quando i temi della ricerca non sono ancora chiari"
         ],
-        "correct": 1,
-        "explanation": "La tecnica dei 5 Whys (di derivazione Toyota e design thinking) serve a risalire alla causa radice di un comportamento o di una frustrazione, superando le razionalizzazioni di facciata."
+        "correctIndex": 2,
+        "explanation": "Il questionario si usa con campioni ampi e domande standard. Quando i temi non sono ancora chiari, la dispensa indica invece il focus group, tipico della fase esplorativa."
       }
     ]
   },
@@ -1163,12 +1163,12 @@ window.INTERACTION_DATA = [
     "subtitle": "Gruppi di discussione guidata, bias di conformismo, specchi unidirezionali e fonti secondarie",
     "readTime": "8 min",
     "module": "ixd-user-research",
-    "summary": "### 1. I Focus Group: Metodologia e Dinamiche Collettive\n\nIl **Focus Group** e una tecnica qualitativa di discussione guidata in cui un piccolo gruppo di partecipanti (tipicamente tra gli **8 e i 12 individui** accuratamente reclutati) si confronta su un tema, un concept di prodotto o un servizio sotto la guida di un **moderatore neutrale**, per una durata media di 90-120 minuti.\n\nNato nelle scienze sociali negli anni '40 e diffusosi massicciamente nel marketing e nel design:\n- **Scopo**: Esplorare percezioni, reazioni istintive, linguaggi condivisi, obiezioni e associazioni simboliche generate dall'interazione di gruppo.\n- **Setting Fisico**: Le sessioni si tengono tradizionalmente in stanze dotate di **specchio unidirezionale (*one-way mirror*)**, consentendo ai designer e ai committenti di osservare dal vivo le reazioni, la mimica facciale e il linguaggio corporeo senza intimidire i partecipanti. L'intera sessione viene videoregistrata per consentire successive analisi linguistiche e relazionali.\n\n---\n\n### 2. Vantaggi e Rischi Metodologici del Focus Group\n\nL'interazione di gruppo genera fenomeni psicosociali che il designer deve conoscere:\n- [VANTAGGI]:\n  - *Effetto Sinergico e Valanga*: Le dichiarazioni di un partecipante stimolano ricordi e riflessioni negli altri (*snowballing effect*).\n  - Rapidita nella raccolta simultanea di molteplici punti di vista e linguaggi gergali.\n- [CRITICITA]:\n  - **Groupthink (Conformismo di Gruppo)**: I partecipanti tendono ad allinearsi all'opinione espressa per prima o sostenuta dagli elementi piu carismatici per evitare il conflitto sociale.\n  - **Dominanza Individuale**: Rischio che 1-2 individui monopolizzino la discussione silenziando gli elementi piu timidi.\n  - **Scarsa Affidabilità per l'Usabilità**: I focus group sono efficaci per testare reazioni a concept astratti o valori di brand, ma sono del tutto inadatti a valutare l'usabilità di un'interfaccia (l'usabilità si testa individualmente osservando l'interazione, non chiedendo a un gruppo di discutere se trova un'app facile).\n\n---\n\n### 3. L'Osservazione Diretta: Non Intrusiva vs Partecipata\n\nAccanto al dialogo verbale, l'osservazione diretta sul campo costituisce il cardine della comprensione contestuale:\n- **Shadowing**: Il ricercatore accompagna un singolo individuo per un arco temporale prolungato registrando ogni transizione di stato, interruzione e manipolazione di artefatti.\n- **Fly-on-the-wall**: Il ricercatore si posiziona come osservatore neutrale e invisibile in un contesto pubblico (es. sala d'aspetto, supermercato, biblioteca) annotando flussi di folla, punti di congestione e modi d'interazione spontanei.\n\n---\n\n### 4. La Ricerca Desk (Fonti Secondarie)\n\nMentre la ricerca primaria (*field research*) raccoglie dati direttamente sul campo, la **Ricerca Desk** consiste nello studio sistematico e nell'analisi critica di informazioni e dati gia esistenti, prodotti da terzi (*secondary data*):\n- **Fonti Statistiche e Istituzionali**: Censimenti demografici (ISTAT, Eurostat), report ministeriali, atti normativi e direttive sull'accessibilita (es. normative WCAG / EAA).\n- **Letteratura Scientifica e Brevetti**: Articoli peer-reviewed (ACM, IEEE, Design Studies) e registri brevettuali.\n- **Report di Mercato e Benchmark di Settore**: Analisi dei competitor, recensioni d'uso sui marketplace digitali, analisi dei trend socioculturali.\n- **Funzione Progettuale**: La ricerca desk non sostituisce la ricerca sul campo, ma la precede e la inquadra, evitando di reinventare soluzioni gia ampiamente documentate e consentendo di formulare ipotesi d'indagine solide.",
+    "summary": "### 1. I Focus Group: Metodologia e Dinamiche Collettive\n\nIl **Focus Group** è una tecnica qualitativa di discussione guidata in cui un piccolo gruppo di partecipanti (tipicamente tra gli **8 e i 12 individui** accuratamente reclutati) si confronta su un tema, un concept di prodotto o un servizio sotto la guida di un **moderatore neutrale**, per una durata media di 90-120 minuti.\n\nNato nelle scienze sociali negli anni '40 e diffusosi massicciamente nel marketing e nel design:\n- **Scopo**: Esplorare percezioni, reazioni istintive, linguaggi condivisi, obiezioni e associazioni simboliche generate dall'interazione di gruppo.\n- **Setting Fisico**: Le sessioni si tengono tradizionalmente in stanze dotate di **specchio unidirezionale (*one-way mirror*)**, consentendo ai designer e ai committenti di osservare dal vivo le reazioni, la mimica facciale e il linguaggio corporeo senza intimidire i partecipanti. L'intera sessione viene videoregistrata per consentire successive analisi linguistiche e relazionali.\n\n---\n\n### 2. Vantaggi e Rischi Metodologici del Focus Group\n\nL'interazione di gruppo genera fenomeni psicosociali che il designer deve conoscere:\n- [VANTAGGI]:\n  - *Effetto Sinergico e Valanga*: Le dichiarazioni di un partecipante stimolano ricordi e riflessioni negli altri (*snowballing effect*).\n  - Rapidità nella raccolta simultanea di molteplici punti di vista e linguaggi gergali.\n- [CRITICITA]:\n  - **Groupthink (Conformismo di Gruppo)**: I partecipanti tendono ad allinearsi all'opinione espressa per prima o sostenuta dagli elementi più carismatici per evitare il conflitto sociale.\n  - **Dominanza Individuale**: Rischio che 1-2 individui monopolizzino la discussione silenziando gli elementi più timidi.\n  - **Scarsa Affidabilità per l'Usabilità**: I focus group sono efficaci per testare reazioni a concept astratti o valori di brand, ma sono del tutto inadatti a valutare l'usabilità di un'interfaccia (l'usabilità si testa individualmente osservando l'interazione, non chiedendo a un gruppo di discutere se trova un'app facile).\n\n---\n\n### 3. L'Osservazione Diretta: Non Intrusiva vs Partecipata\n\nAccanto al dialogo verbale, l'osservazione diretta sul campo costituisce il cardine della comprensione contestuale:\n- **Shadowing**: Il ricercatore accompagna un singolo individuo per un arco temporale prolungato registrando ogni transizione di stato, interruzione e manipolazione di artefatti.\n- **Fly-on-the-wall**: Il ricercatore si posiziona come osservatore neutrale e invisibile in un contesto pubblico (es. sala d'aspetto, supermercato, biblioteca) annotando flussi di folla, punti di congestione e modi d'interazione spontanei.\n\n---\n\n### 4. La Ricerca Desk (Fonti Secondarie)\n\nMentre la ricerca primaria (*field research*) raccoglie dati direttamente sul campo, la **Ricerca Desk** consiste nello studio sistematico e nell'analisi critica di informazioni e dati già esistenti, prodotti da terzi (*secondary data*):\n- **Fonti Statistiche e Istituzionali**: Censimenti demografici (ISTAT, Eurostat), report ministeriali, atti normativi e direttive sull'accessibilità (es. normative WCAG / EAA).\n- **Letteratura Scientifica e Brevetti**: Articoli peer-reviewed (ACM, IEEE, Design Studies) e registri brevettuali.\n- **Report di Mercato e Benchmark di Settore**: Analisi dei competitor, recensioni d'uso sui marketplace digitali, analisi dei trend socioculturali.\n- **Funzione Progettuale**: La ricerca desk non sostituisce la ricerca sul campo, ma la precede e la inquadra, evitando di reinventare soluzioni già ampiamente documentate e consentendo di formulare ipotesi d'indagine solide.",
     "keyPoints": [
       "Il focus group coinvolge 8-12 persone guidate da un moderatore neutrale per esplorare atteggiamenti e reazioni collettive.",
       "Lo specchio unidirezionale e la registrazione video permettono l'osservazione non invasiva del linguaggio corporeo.",
-      "Il principale rischio del focus group e il Groupthink (conformismo sociale), che silenzia le voci divergenti.",
-      "I focus group servono a sondare percezioni di concept, ma non devono mai sostituire i test di usabilita individuali.",
+      "Il principale rischio del focus group è il Groupthink (conformismo sociale), che silenzia le voci divergenti.",
+      "I focus group servono a sondare percezioni di concept, ma non devono mai sostituire i test di usabilità individuali.",
       "La ricerca desk analizza fonti secondarie (statistiche, brevetti, competitor) e fornisce il quadro teorico preliminare al progetto."
     ],
     "flashcards": [
@@ -1181,12 +1181,12 @@ window.INTERACTION_DATA = [
         "answer": "A consentire al team di ricerca di osservare la discussione e il linguaggio corporeo senza interferire con i partecipanti."
       },
       {
-        "question": "Cos'e il fenomeno del 'Groupthink'?",
+        "question": "Cos'è il fenomeno del 'Groupthink'?",
         "answer": "La tendenza dei membri del gruppo a conformarsi all'opinione dominante per evitare il disaccordo o l'isolamento sociale."
       },
       {
-        "question": "Perche un focus group non e adatto a testare l'usabilita di un software?",
-        "answer": "Perche l'usabilita richiede una prova empirica individuale, non una discussione retorica di gruppo."
+        "question": "Perché un focus group non è adatto a testare l'usabilità di un software?",
+        "answer": "Perché l'usabilità richiede una prova empirica individuale, non una discussione retorica di gruppo."
       },
       {
         "question": "Cosa si intende per 'Ricerca Desk'?",
@@ -1195,59 +1195,59 @@ window.INTERACTION_DATA = [
     ],
     "quiz": [
       {
-        "question": "Qual e il ruolo fondamentale del moderatore all'interno di una sessione di Focus Group?",
+        "question": "Secondo la dispensa, quante persone compongono in genere un focus group?",
         "options": [
-          "Facilitare la conversazione in modo imparziale, garantendo che tutti esprimano la propria opinione e limitando i soggetti dominanti",
-          "Convincere i partecipanti ad acquistare il prodotto pubblicizzato dall'azienda",
-          "Giudicare ad alta voce le risposte errate dei partecipanti e correggerle",
-          "Scrivere il codice di programmazione dell'applicazione in tempo reale"
+          "Da 3 a 5 persone",
+          "Da 8 a 12 persone",
+          "Da 15 a 20 persone",
+          "Almeno 50 persone"
         ],
-        "correct": 0,
-        "explanation": "Il moderatore deve rimanere neutrale, stimolare la partecipazione equilibrata di tutti i membri, contenere le personalita debordanti e non manifestare approvazione o disapprovazione per le tesi espresse."
+        "correctIndex": 1,
+        "explanation": "Un gruppo rappresentativo di 8-12 persone partecipa a una sessione di 1,5-2 ore guidata da un moderatore imparziale."
       },
       {
-        "question": "Il fenomeno psicosociale del 'Groupthink' (pensiero di gruppo) rappresenta una seria criticita perche:",
+        "question": "In quale fase della ricerca si usano tipicamente i focus group?",
         "options": [
-          "Spinge i partecipanti ad autocensurarsi e ad allinearsi al consenso comune, oscurando pareri critici preziosi",
-          "Provoca il blocco immediato delle connessioni Wi-Fi della struttura",
-          "Rende impossibile registrare la voce del moderatore",
-          "Costringe i partecipanti ad abbandonare la stanza entro cinque minuti"
+          "Nella fase finale, per misurare la soddisfazione dopo il lancio",
+          "Durante i test di usabilità individuali dei prototipi",
+          "Nella fase esplorativa, quando temi e confini non sono ancora chiari",
+          "Solo per sostituire i questionari quando mancano fondi"
         ],
-        "correct": 0,
-        "explanation": "Il Groupthink porta alla soppressione del pensiero critico divergente per compiacere il gruppo o il moderatore, producendo un'illusione di consenso che falsa la ricerca."
+        "correctIndex": 2,
+        "explanation": "La dispensa: i focus group si usano in fase esplorativa, quando i temi non sono chiari e i costrutti dell'indagine vanno ancora identificati (ad esempio prima di un questionario quantitativo)."
       },
       {
-        "question": "Perche per valutare l'usabilità (efficacia ed efficienza) di un'interfaccia utente il Focus Group e sconsigliato?",
+        "question": "A che cosa serve lo specchio unidirezionale nelle sessioni di focus group?",
         "options": [
-          "Perche l'usabilita e una misura performativa dell'interazione individuale e non puo essere validata da un dibattito verbale collettivo",
-          "Perche i partecipanti ai focus group non sanno leggere",
-          "Perche costa meno assumere un solo esperto anziche invitare 8 persone",
-          "Perche gli specchi unidirezionali riflettono le onde laser dei mouse ottici"
+          "A far vedere ai partecipanti le proprie reazioni",
+          "A impedire che i partecipanti si conoscano tra loro",
+          "A osservare il gruppo senza influenzarlo",
+          "A registrare in automatico le risposte verbali"
         ],
-        "correct": 0,
-        "explanation": "L'usabilità si misura osservando un utente che esegue compiti specifici su uno schermo (errori, tempi, esitazioni). Chiedere a un gruppo se un sito sia usabile genera opinioni astratte, non dati d'uso."
+        "correctIndex": 2,
+        "explanation": "Lo specchio unidirezionale consente di osservare senza influenzare; le discussioni vengono poi registrate per analizzare anche linguaggio del corpo e dinamiche interpersonali."
       },
       {
-        "question": "Cosa include tipicamente l'attivita di Ricerca Desk?",
+        "question": "Che cosa si intende per ricerca desk?",
         "options": [
-          "Analisi di fonti statistiche ufficiali (es. ISTAT), report di settore, norme di accessibilita e letteratura scientifica preesistente",
-          "Interviste dal vivo condotte alla fermata della metropolitana",
-          "La fabbricazione manuale di prototipi in legno o argilla",
-          "L'interrogatorio formale dei clienti all'interno dello store fisico"
+          "L'intervista condotta a distanza via videochiamata",
+          "L'osservazione degli utenti alla loro scrivania di lavoro",
+          "Lo studio di dati da fonti secondarie già disponibili",
+          "La raccolta di dati di navigazione dagli analytics"
         ],
-        "correct": 0,
-        "explanation": "La ricerca Desk (a tavolino) si basa sulla revisione sistematica di fonti secondarie documentali gia esistenti, prima di intraprendere l'indagine empirica primaria sul campo."
+        "correctIndex": 2,
+        "explanation": "La ricerca desk studia fonti secondarie: archivi, report, statistiche ufficiali, fonti accademiche. Il nome può trarre in inganno, ma non riguarda l'osservazione alla scrivania."
       },
       {
-        "question": "Quale tecnica di osservazione sul campo prevede che il ricercatore si mimetizzi nell'ambiente pubblico senza interagire coi soggetti?",
+        "question": "Un ricercatore osserva i passeggeri in stazione senza interagire con loro. Quale tecnica usa?",
         "options": [
-          "Fly-on-the-wall",
-          "Focus Group speculare",
-          "Informance performativa",
-          "Bodystorming immersivo"
+          "Shadowing",
+          "Fly on the wall",
+          "Osservazione partecipante",
+          "Netnografia"
         ],
-        "correct": 0,
-        "explanation": "Nella tecnica 'Fly-on-the-wall' (mosca sul muro) il ricercatore osserva e registra i comportamenti naturali delle persone in spazi condivisi senza attirare l'attenzione ne intervenire nella scena."
+        "correctIndex": 1,
+        "explanation": "Fly on the wall è l'osservazione non intrusiva di un contesto. Nello shadowing invece si segue da vicino un singolo utente; nell'osservazione partecipante il ricercatore prende parte alle attività."
       }
     ]
   },
@@ -1258,11 +1258,11 @@ window.INTERACTION_DATA = [
     "subtitle": "Tracciamento comportamentale, test multivariati, click maps, scroll depth, funnel e triangolazione",
     "readTime": "9 min",
     "module": "ixd-user-research",
-    "summary": "### 1. Il Ruolo dei Dati Quantitativi di Navigazione nell'IxD\n\nCon la digitalizzazione pervasiva, le interazioni su interfacce web, software e applicazioni generano continuamente flussi di eventi telemetrici (*event-driven analytics*).\nL'analisi degli **User Data & Analytics** consente all'interaction designer di osservare il **comportamento reale ed oggettivo** di milioni di utenti simultaneamente, superando le autovalutazioni verbali:\n- Cosa gli utenti guardano e dove cliccano.\n- Quanto tempo impiegano per completare un'azione.\n- In quale esatto passaggio abbandonano un percorso (*drop-off rate*).\n\n---\n\n### 2. A/B Testing e Test Multivariati\n\nL'**A/B Testing (Split Testing)** e una metodologia sperimentale rigorosa basata sul confronto simultaneo tra due varianti della medesima interfaccia:\n- **Versione A (Controllo)**: La versione attualmente in produzione o di base.\n- **Versione B (Variante)**: Una versione identica alla precedente eccetto per **una singola variabile progettuale** (es. colore del pulsante di call-to-action, testo di un'etichetta, posizione di un form, layout della scheda prodotto).\n\nI visitatori vengono smistati in modo casuale (*randomized control trial*): il 50% interagisce con la versione A e il 50% con la versione B. Si monitora quindi una metrica di successo prestabilita (es. *Conversion Rate*, percentuale di iscrizioni, tasso di click).\nSe la differenza di performance e statisticamente significativa (p-value < 0.05), la variante vincente viene adottata definitivamente.\nNei **Test Multivariati (MVT)** si testano simultaneamente combinazioni di piu elementi (es. titolo + immagine + bottone), richiedendo volumi di traffico notevolmente piu elevati per raggiungere la significatività statistica.\n\n---\n\n### 3. Heatmaps (Mappe di Calore Visive)\n\nLe **Heatmaps** sono rappresentazioni grafiche bidimensionali in cui i dati di interazione aggregati vengono visualizzati mediante una scala cromatica termografica (dal blu/freddo al rosso intenso/caldo):\n1. **Click / Tap Heatmaps**:\n   - Mostrano dove gli utenti cliccano col mouse o toccano con le dita.\n   - Fondamentali per individuare i cosiddetti **'Rage Clicks'** (quando l'utente clicca ripetutamente e rabbiosamente su un elemento non interattivo credendo erroneamente che sia un link) e per verificare se gli inviti all'uso (affordance visiva) funzionano.\n2. **Move / Hover Heatmaps**:\n   - Tracciano il movimento del cursore sullo schermo.\n   - Numerosi studi dimostrano una correlazione significativa tra la traiettoria del mouse e la fissazione visiva della persona, offrendo una stima non intrusiva dell'attenzione.\n3. **Scroll Heatmaps (Scroll Depth)**:\n   - Visualizzano la percentuale decrescente di utenti che scorre la pagina verso il basso.\n   - Mostrano visivamente la cosiddetta **linea di piegatura (*the fold*)**: identificano il punto esatto oltre il quale la maggioranza dei visitatori smette di scorrere, evidenziando se contenuti critici sono posizionati troppo in basso.\n\n---\n\n### 4. Session Recordings, Analisi dei Funnel e Triangolazione\n\n- **Session Recordings**: Videoriproduzioni anonimizzate dell'intera sessione di un singolo visitatore (movimenti mouse, scorrimento, battiture mascherate). Consentono di cogliere l'esitazione cognitiva dell'utente nel momento esatto in cui incontra un bug o una label fuorviante.\n- **Analisi dei Funnel di Conversione**: Mappatura lineare dei passaggi necessari a completare un obiettivo (es. Registrazione -> Inserimento dati -> Caricamento documento -> Pagamento). Permette di identificare la fase con il tasso di abbandono piu allarmante.\n- **Il Principio della Triangolazione**:\n  > *\"I dati quantitativi e gli analytics mostrano COSA sta accadendo e QUANTO accade; la ricerca qualitativa ed etnografica spiega PERCHE accade.\"*\n  Un interaction designer completo integra sempre entrambi i fronti.",
+    "summary": "### 1. Il Ruolo dei Dati Quantitativi di Navigazione nell'IxD\n\nCon la digitalizzazione pervasiva, le interazioni su interfacce web, software e applicazioni generano continuamente flussi di eventi telemetrici (*event-driven analytics*).\nL'analisi degli **User Data & Analytics** consente all'interaction designer di osservare il **comportamento reale ed oggettivo** di milioni di utenti simultaneamente, superando le autovalutazioni verbali:\n- Cosa gli utenti guardano e dove cliccano.\n- Quanto tempo impiegano per completare un'azione.\n- In quale esatto passaggio abbandonano un percorso (*drop-off rate*).\n\n---\n\n### 2. A/B Testing e Test Multivariati\n\nL'**A/B Testing (Split Testing)** è una metodologia sperimentale rigorosa basata sul confronto simultaneo tra due varianti della medesima interfaccia:\n- **Versione A (Controllo)**: La versione attualmente in produzione o di base.\n- **Versione B (Variante)**: Una versione identica alla precedente eccetto per **una singola variabile progettuale** (es. colore del pulsante di call-to-action, testo di un'etichetta, posizione di un form, layout della scheda prodotto).\n\nI visitatori vengono smistati in modo casuale (*randomized control trial*): il 50% interagisce con la versione A e il 50% con la versione B. Si monitora quindi una metrica di successo prestabilita (es. *Conversion Rate*, percentuale di iscrizioni, tasso di click).\nSe la differenza di performance è statisticamente significativa (p-value < 0.05), la variante vincente viene adottata definitivamente.\nNei **Test Multivariati (MVT)** si testano simultaneamente combinazioni di più elementi (es. titolo + immagine + bottone), richiedendo volumi di traffico notevolmente più elevati per raggiungere la significatività statistica.\n\n---\n\n### 3. Heatmaps (Mappe di Calore Visive)\n\nLe **Heatmaps** sono rappresentazioni grafiche bidimensionali in cui i dati di interazione aggregati vengono visualizzati mediante una scala cromatica termografica (dal blu/freddo al rosso intenso/caldo):\n1. **Click / Tap Heatmaps**:\n   - Mostrano dove gli utenti cliccano col mouse o toccano con le dita.\n   - Fondamentali per individuare i cosiddetti **'Rage Clicks'** (quando l'utente clicca ripetutamente e rabbiosamente su un elemento non interattivo credendo erroneamente che sia un link) e per verificare se gli inviti all'uso (affordance visiva) funzionano.\n2. **Move / Hover Heatmaps**:\n   - Tracciano il movimento del cursore sullo schermo.\n   - Numerosi studi dimostrano una correlazione significativa tra la traiettoria del mouse e la fissazione visiva della persona, offrendo una stima non intrusiva dell'attenzione.\n3. **Scroll Heatmaps (Scroll Depth)**:\n   - Visualizzano la percentuale decrescente di utenti che scorre la pagina verso il basso.\n   - Mostrano visivamente la cosiddetta **linea di piegatura (*the fold*)**: identificano il punto esatto oltre il quale la maggioranza dei visitatori smette di scorrere, evidenziando se contenuti critici sono posizionati troppo in basso.\n\n---\n\n### 4. Session Recordings, Analisi dei Funnel e Triangolazione\n\n- **Session Recordings**: Videoriproduzioni anonimizzate dell'intera sessione di un singolo visitatore (movimenti mouse, scorrimento, battiture mascherate). Consentono di cogliere l'esitazione cognitiva dell'utente nel momento esatto in cui incontra un bug o una label fuorviante.\n- **Analisi dei Funnel di Conversione**: Mappatura lineare dei passaggi necessari a completare un obiettivo (es. Registrazione -> Inserimento dati -> Caricamento documento -> Pagamento). Permette di identificare la fase con il tasso di abbandono più allarmante.\n- **Il Principio della Triangolazione**:\n  > *\"I dati quantitativi e gli analytics mostrano COSA sta accadendo e QUANTO accade; la ricerca qualitativa ed etnografica spiega PERCHE accade.\"*\n  Un interaction designer completo integra sempre entrambi i fronti.",
     "keyPoints": [
       "Gli Analytics tracciano il comportamento reale e oggettivo degli utenti su larga scala numerica.",
       "L'A/B testing confronta due versioni dell'interfaccia modificando una singola variabile per validare ipotesi statistiche.",
-      "Le Click Maps rivelano i 'Rage Clicks', indicando elementi che simulano erroneamente affordance di cliccabilita.",
+      "Le Click Maps rivelano i 'Rage Clicks', indicando elementi che simulano erroneamente affordance di cliccabilità.",
       "Le Scroll Maps misurano la profondita di lettura, evidenziando cosa resta al di sotto della linea di piegatura (the fold).",
       "La triangolazione metodologica unisce il COSA (Analytics quantitativi) con il PERCHE (ricerca qualitativa)."
     ],
@@ -1280,7 +1280,7 @@ window.INTERACTION_DATA = [
         "answer": "La percentuale di utenti che raggiunge ciascuna altezza della pagina e l'impatto della linea di piegatura (fold)."
       },
       {
-        "question": "Cos'e l'Analisi dei Funnel?",
+        "question": "Cos'è l'Analisi dei Funnel?",
         "answer": "La misurazione del tasso di completamento e di abbandono dell'utente lungo i passaggi successivi di un processo critico."
       },
       {
@@ -1290,59 +1290,59 @@ window.INTERACTION_DATA = [
     ],
     "quiz": [
       {
-        "question": "Qual e la condizione metodologica fondamentale affinche un test A/B sia valido e scientificamente attendibile?",
+        "question": "Quale condizione rende affidabile un test A/B?",
         "options": [
-          "Modificare una sola variabile progettuale alla volta tra la versione di controllo A e la variante B",
-          "Cambiare completamente tutti i testi, i colori e le immagini contemporaneamente",
-          "Mostrare la versione A solo agli uomini e la versione B solo alle donne",
-          "Eseguire il test per un periodo non superiore a due minuti complessivi"
+          "Mostrare entrambe le versioni allo stesso utente in sequenza",
+          "Coinvolgere un gruppo ristretto di utenti esperti",
+          "Cambiare una sola variabile tra versione A e versione B",
+          "Modificare più elementi insieme per ottenere differenze evidenti"
         ],
-        "correct": 0,
-        "explanation": "Isolare una singola variabile (es. solo il colore del pulsante o solo il testo del titolo) consente di attribuire con certezza matematica qualsiasi variazione di conversione a quello specifico elemento."
+        "correctIndex": 2,
+        "explanation": "Se cambia una sola variabile, la differenza di risultato si può attribuire a quella. Modificare più elementi insieme è un test multivariato, che richiede molto più traffico."
       },
       {
-        "question": "Durante l'analisi di una Click Heatmap su una pagina web, si notano concentrazioni di colore rosso su un'immagine statica priva di link. Cosa denota questo fenomeno?",
+        "question": "Una heatmap mostra molti clic su un'immagine che non è un link. Che cosa suggerisce?",
         "options": [
-          "Un attacco hacker da parte di bot malevoli",
-          "Una falsa affordance visiva: gli utenti scambiano l'immagine per un pulsante o link e tentano invano di cliccarla",
-          "Che il monitor degli utenti e rotto nello stesso punto",
-          "Che gli utenti amano particolarmente i pixel di quell'immagine"
+          "Che l'immagine è troppo piccola e va ingrandita",
+          "Che la pagina ha un errore nel caricamento",
+          "Che sembra cliccabile: un segnale visivo fuorviante",
+          "Che gli utenti leggono con attenzione quella sezione"
         ],
-        "correct": 1,
-        "explanation": "Quando gli utenti cliccano ripetutamente su un elemento statico, l'interfaccia ha inviato un indizio visivo fuorviante (affordance ingannevole), inducendo in errore l'utente e generando frustrazione."
+        "correctIndex": 2,
+        "explanation": "Clic ripetuti su un elemento non interattivo indicano che qualcosa lo fa sembrare cliccabile (affordance percepita o signifier fuorviante). È il collegamento con la teoria dell'affordance di Norman."
       },
       {
-        "question": "Cosa rappresenta la 'linea di piegatura' (above the fold) visualizzata attraverso una Scroll Map?",
+        "question": "Un funnel di acquisto mostra un abbandono del 75% al passaggio di pagamento. Qual è il passo successivo più corretto?",
         "options": [
-          "Il punto in cui lo schermo fisico dello smartphone si piega nei modelli a conchiglia",
-          "La porzione di interfaccia visibile all'apertura della pagina prima che l'utente compia qualsiasi scorrimento",
-          "Il bordo inferiore del tavolo su cui poggia il computer portatile",
-          "Il punto in cui il cavo di alimentazione si collega alla presa"
+          "Eliminare del tutto il passaggio di pagamento",
+          "Avviare un test multivariato su tutta la pagina",
+          "Aumentare il traffico con nuove campagne pubblicitarie",
+          "Osservare registrazioni e testare con utenti quel passaggio"
         ],
-        "correct": 1,
-        "explanation": "Ereditato dalla stampa cartacea, 'the fold' nel web design indica il confine inferiore della prima schermata visibile. I contenuti situati 'below the fold' vengono visualizzati solo dagli utenti che decidono attivamente di scorrere."
+        "correctIndex": 3,
+        "explanation": "Gli analytics dicono dove e quanto; per capire perché servono metodi qualitativi (registrazioni, test con utenti). È il principio della triangolazione."
       },
       {
-        "question": "In un funnel di acquisto e-commerce composto da quattro step, si riscontra un tasso di abbandono (drop-off) del 75% al passaggio 3 (inserimento dati di pagamento). Qual e la reazione corretta del designer?",
+        "question": "Che cosa mostra una scroll map?",
         "options": [
-          "Cancellare l'intero sito e ricominciare da zero",
-          "Analizzare session recordings e fare test qualitativi mirati al passaggio 3 per comprendere quali attriti, paure o errori bloccano gli utenti",
-          "Aumentare il prezzo dei prodotti per compensare gli abbandoni",
-          "Ignorare il dato perche il 25% che completa l'acquisto e sufficiente"
+          "Dove gli utenti cliccano più spesso",
+          "Il percorso del cursore sullo schermo",
+          "Le pagine visitate prima di uscire dal sito",
+          "Fino a che punto della pagina scorrono gli utenti"
         ],
-        "correct": 1,
-        "explanation": "L'analisi dei funnel circoscrive con esattezza il punto di crisi quantitativo; il designer deve quindi focalizzare la ricerca qualitativa (session recording, test di usabilita) sul passaggio 3 per risolverne le criticita."
+        "correctIndex": 3,
+        "explanation": "La scroll map visualizza la profondità di scorrimento e rivela se contenuti importanti stanno sotto la linea di piegatura. Clic e movimento del cursore sono altri tipi di heatmap."
       },
       {
-        "question": "Qual e il valore epistemologico fondamentale del combinare Web Analytics ed Etnografia qualitativa?",
+        "question": "Perché combinare analytics e ricerca qualitativa?",
         "options": [
-          "I dati quantitativi fotografano cosa accade su larga scala, mentre la ricerca qualitativa fornisce le motivazioni cognitive ed emotive del perche",
-          "Permette di evitare completamente il pagamento delle tasse sui software",
-          "Rende superflua la scrittura del codice CSS",
-          "Sostituisce del tutto il lavoro dei programmatori informatici con grafici statistici"
+          "Perché gli analytics mostrano cosa accade e la ricerca qualitativa spiega perché",
+          "Perché gli analytics sono poco affidabili e vanno sempre ricontrollati",
+          "Perché la ricerca qualitativa costa meno degli analytics",
+          "Perché gli analytics funzionano solo su campioni piccoli"
         ],
-        "correct": 0,
-        "explanation": "Gli analytics quantitativi rilevano anomalie e pattern comportamentali (cosa), ma solo la ricerca qualitativa a contatto con l'utente permette di comprenderne le cause profonde, le emozioni e le motivazioni (perche)."
+        "correctIndex": 0,
+        "explanation": "I dati quantitativi rispondono a cosa e quanto, quelli qualitativi a perché: insieme danno un quadro completo. È lo stesso rapporto tra ricerca quantitativa e qualitativa visto nel capitolo sull'etnografia."
       }
     ]
   },
@@ -1350,15 +1350,15 @@ window.INTERACTION_DATA = [
     "id": "ixd-c15",
     "number": 15,
     "title": "La Svolta Antropocentrica: Victor Margolin e il Milieu dell'Utente",
-    "subtitle": "Getting to Know the User, microprocessori, orizzonte espanso di funzioni e la fine della centralita dell'oggetto",
+    "subtitle": "Getting to Know the User, microprocessori, orizzonte espanso di funzioni e la fine della centralità dell'oggetto",
     "readTime": "9 min",
     "module": "ixd-teoria-sociologia",
-    "summary": "### 1. La Transizione Storica: Dalla Centralita dell'Oggetto alla Centralita dell'Utente\n\nNegli ultimi decenni del Novecento, la cultura del progetto industriale ha vissuto un radicale mutamento di paradigma epistemologico. Fino agli anni '70, il design era primariamente **oggetto-centrico**: il progettista focalizzava la propria indagine sulla conformazione morfologica dell'artefatto fisico, sulle sue qualita plastiche, sulle tolleranze meccaniche e sulla sua ottimizzazione per la produzione seriale di massa.\n\nCon la diffusione pervasiva dei **microprocessori e del software**, questa relazione subisce una rottura irreversibile:\n- La forma fisica dell'oggetto non e piu vincolata univocamente alla sua funzione meccanica interna (un display alfanumerico o uno schermo touch possono assumere infinite configurazioni funzionali invisibili).\n- Si dischiude un **orizzonte allargato e flessibile di funzioni** ad alto contenuto tecnologico, in cui l'utente naviga tra menu interattivi, sottomenu e sequenze operative programmate.\n- Sorge un fenomeno inedito: l'utente sperimenta difficolta crescenti o totale incapacita nell'accedere all'intero ventaglio di funzioni disponibili. L'interfaccia cessa di essere una semplice scocca e diviene un complesso ambiente di apprendimento e mediazione cognitiva.\n\n---\n\n### 2. Il Pensiero di Victor Margolin: 'Getting to Know the User' (1997)\n\nNel celebre saggio *Getting to Know the User* (1997), lo storico e teorico del design **Victor Margolin** sancisce la necessita di rifondare la disciplina:\n> *\"La difficolta per l'utente di accedere alle funzioni rese possibili dai microprocessori impone ai progettisti di spostare lo studio dalla centralita del prodotto in se alla relazione tra prodotto e utilizzatore.\"*\n\nSe il disegno industriale classico si era limitato a studiare la relazione fisica attraverso l'ergonomia tradizionale (antropometria, leve, impugnature), l'era computazionale impone lo studio sistematico delle **relazioni cognitive, percettive ed emozionali**. L'attivazione delle funzioni richiede la partecipazione attiva e consapevole dell'essere umano.\n\n---\n\n### 3. Il Concetto di 'Milieu dell'Utente'\n\nMargolin introduce l'importante nozione ecologica di **Milieu dell'Utente**:\n- Gli artefatti interattivi non operano in un vuoto asettico o isolato, ma si inseriscono all'interno di un tessuto denso e preesistente fatto di abitudini quotidiane, rituali sociali, altri oggetti materiali, vincoli fisici e sistemi di valori.\n- Il *milieu* e l'ambiente vitale integrato in cui l'individuo agisce: un nuovo dispositivo tecnologico avra successo solo se sapra armonizzarsi con l'ecosistema di relazioni e significati gia attivi nella vita della persona.\n\n---\n\n### 4. Il Passaggio dal 'Market-Driven' allo 'User-Driven'\n\nQuesto cambio di prospettiva teorica segna il tramonto dell'epoca guidata unicamente dal mercato (*market-driven*, in cui il consumatore era un bersaglio passivo a cui imporre beni standardizzati) e l'inaugurazione dell'era **basata sull'utente (*user-driven*)**:\n- I confini disciplinari del design sfumano: non esiste piu netta demarcazione tra artefatti fisici, software immateriale e architettura dei servizi.\n- La ricerca sull'utente cessa di essere un accessorio promozionale a fine percorso e diventa la matrice generativa iniziale di ogni scelta progettuale.",
+    "summary": "### 1. La Transizione Storica: Dalla Centralità dell'Oggetto alla Centralità dell'Utente\n\nNegli ultimi decenni del Novecento, la cultura del progetto industriale ha vissuto un radicale mutamento di paradigma epistemologico. Fino agli anni '70, il design era primariamente **oggetto-centrico**: il progettista focalizzava la propria indagine sulla conformazione morfologica dell'artefatto fisico, sulle sue qualità plastiche, sulle tolleranze meccaniche e sulla sua ottimizzazione per la produzione seriale di massa.\n\nCon la diffusione pervasiva dei **microprocessori e del software**, questa relazione subisce una rottura irreversibile:\n- La forma fisica dell'oggetto non è più vincolata univocamente alla sua funzione meccanica interna (un display alfanumerico o uno schermo touch possono assumere infinite configurazioni funzionali invisibili).\n- Si dischiude un **orizzonte allargato e flessibile di funzioni** ad alto contenuto tecnologico, in cui l'utente naviga tra menu interattivi, sottomenu e sequenze operative programmate.\n- Sorge un fenomeno inedito: l'utente sperimenta difficoltà crescenti o totale incapacità nell'accedere all'intero ventaglio di funzioni disponibili. L'interfaccia cessa di essere una semplice scocca e diviene un complesso ambiente di apprendimento e mediazione cognitiva.\n\n---\n\n### 2. Il Pensiero di Victor Margolin: 'Getting to Know the User' (1997)\n\nNel celebre saggio *Getting to Know the User* (1997), lo storico e teorico del design **Victor Margolin** sancisce la necessita di rifondare la disciplina:\n> *\"La difficoltà per l'utente di accedere alle funzioni rese possibili dai microprocessori impone ai progettisti di spostare lo studio dalla centralità del prodotto in se alla relazione tra prodotto e utilizzatore.\"*\n\nSe il disegno industriale classico si era limitato a studiare la relazione fisica attraverso l'ergonomia tradizionale (antropometria, leve, impugnature), l'era computazionale impone lo studio sistematico delle **relazioni cognitive, percettive ed emozionali**. L'attivazione delle funzioni richiede la partecipazione attiva e consapevole dell'essere umano.\n\n---\n\n### 3. Il Concetto di 'Milieu dell'Utente'\n\nMargolin introduce l'importante nozione ecologica di **Milieu dell'Utente**:\n- Gli artefatti interattivi non operano in un vuoto asettico o isolato, ma si inseriscono all'interno di un tessuto denso e preesistente fatto di abitudini quotidiane, rituali sociali, altri oggetti materiali, vincoli fisici e sistemi di valori.\n- Il *milieu* è l'ambiente vitale integrato in cui l'individuo agisce: un nuovo dispositivo tecnologico avrà successo solo se saprà armonizzarsi con l'ecosistema di relazioni e significati già attivi nella vita della persona.\n\n---\n\n### 4. Il Passaggio dal 'Market-Driven' allo 'User-Driven'\n\nQuesto cambio di prospettiva teorica segna il tramonto dell'epoca guidata unicamente dal mercato (*market-driven*, in cui il consumatore era un bersaglio passivo a cui imporre beni standardizzati) e l'inaugurazione dell'era **basata sull'utente (*user-driven*)**:\n- I confini disciplinari del design sfumano: non esiste più netta demarcazione tra artefatti fisici, software immateriale e architettura dei servizi.\n- La ricerca sull'utente cessa di essere un accessorio promozionale a fine percorso e diventa la matrice generativa iniziale di ogni scelta progettuale.",
     "keyPoints": [
       "L'introduzione dei microprocessori ha scisso il legame rigido tra forma fisica e funzione meccanica del prodotto.",
-      "L'orizzonte allargato di funzioni digitali ha reso l'usabilita e l'apprendimento il problema centrale del design.",
-      "Victor Margolin (1997) ha teorizzato il passaggio dalla centralita del prodotto alla relazione cognitiva uomo-artefatto.",
-      "Il 'Milieu dell'Utente' e l'ecosistema vitale, relazionale e materiale in cui il prodotto viene inserito e agisce.",
+      "L'orizzonte allargato di funzioni digitali ha reso l'usabilità e l'apprendimento il problema centrale del design.",
+      "Victor Margolin (1997) ha teorizzato il passaggio dalla centralità del prodotto alla relazione cognitiva uomo-artefatto.",
+      "Il 'Milieu dell'Utente' è l'ecosistema vitale, relazionale e materiale in cui il prodotto viene inserito e agisce.",
       "Il design contemporaneo si trasforma da disciplina 'market-driven' a disciplina antropocentrica 'user-driven'."
     ],
     "flashcards": [
@@ -1367,77 +1367,77 @@ window.INTERACTION_DATA = [
         "answer": "L'introduzione dei microprocessori e del software, che ha moltiplicato le funzioni rendendo critica la mediazione dell'interfaccia."
       },
       {
-        "question": "Qual e la tesi centrale del saggio 'Getting to Know the User' di Victor Margolin (1997)?",
+        "question": "Qual è la tesi centrale del saggio 'Getting to Know the User' di Victor Margolin (1997)?",
         "answer": "Che il design deve spostare il proprio asse dalla conformazione dell'oggetto alla relazione cognitiva ed ecologica con l'utente."
       },
       {
-        "question": "Cos'e il 'Milieu dell'Utente'?",
+        "question": "Cos'è il 'Milieu dell'Utente'?",
         "answer": "L'ambiente complessivo fatto di relazioni, abitudini, altri artefatti e contesti in cui l'utente vive e usa i prodotti."
       },
       {
-        "question": "Qual e la differenza tra ergonomia classica ed ergonomia cognitiva?",
+        "question": "Qual è la differenza tra ergonomia classica ed ergonomia cognitiva?",
         "answer": "L'ergonomia classica studia le relazioni fisiche e dimensionali del corpo; la cognitiva studia carichi mentali e percezioni."
       },
       {
         "question": "Cosa significa passare da un approccio 'market-driven' a uno 'user-driven'?",
-        "answer": "Progettare partendo dai bisogni reali e profondi delle persone anziche dalle sole logiche distributive del mercato."
+        "answer": "Progettare partendo dai bisogni reali e profondi delle persone anziché dalle sole logiche distributive del mercato."
       }
     ],
     "quiz": [
       {
-        "question": "Secondo Victor Margolin, quale evento tecnologico ha imposto di spostare l'attenzione dalla centralita dell'oggetto alla relazione uomo-prodotto?",
+        "question": "Secondo Victor Margolin, quale innovazione ha reso necessario spostare l'attenzione dal prodotto alla relazione prodotto-utente?",
         "options": [
-          "L'introduzione dei microprocessori e del software, che ha generato funzioni flessibili non piu vincolate alla meccanica fisica",
-          "L'invenzione della catena di montaggio fordista nei primi anni del Novecento",
-          "L'adozione esclusiva della gomma naturale per la produzione di pneumatici",
-          "La scoperta dell'elettricita alternata da parte di Nikola Tesla"
+          "La produzione industriale in serie",
+          "La diffusione della grafica pubblicitaria",
+          "L'introduzione di microprocessori e software",
+          "L'invenzione delle materie plastiche"
         ],
-        "correct": 0,
-        "explanation": "Margolin evidenzia come i microchip abbiano reso i prodotti entita programmabili complesse con menu e modalita invisibili, rendendo la relazione cognitiva con l'utente l'elemento determinante del progetto."
+        "correctIndex": 2,
+        "explanation": "Microprocessori e software hanno portato prodotti con molte funzioni flessibili, difficili da usare per intero: per questo i progettisti iniziano a prevedere come gli utenti imparano a usarli."
       },
       {
-        "question": "Cosa si intende con il termine 'Milieu dell'Utente' coniato nella teoria del design?",
+        "question": "Prima di questo cambiamento, in quale dimensione veniva studiata la relazione utente-prodotto?",
         "options": [
-          "Il conto bancario e il punteggio creditizio dell'acquirente del software",
-          "Il contesto vitale, materiale, relazionale e simbolico complessivo in cui la persona agisce e usa gli artefatti",
-          "Il codice sorgente binario compilato all'interno del microprocessore",
-          "Il manuale di riparazione hardware fornito agli installatori tecnici"
+          "Nella dimensione cognitiva, con la psicologia della percezione",
+          "Nella dimensione emozionale, con studi di marketing",
+          "Nella dimensione fisica, con l'ergonomia",
+          "Nella dimensione sociale, con l'etnografia"
         ],
-        "correct": 1,
-        "explanation": "Il milieu dell'utente rappresenta l'ecosistema ecologico e relazionale in cui l'utente e immerso: comprendere il milieu significa progettare oggetti che dialoghino armonicamente con la vita reale dell'individuo."
+        "correctIndex": 2,
+        "explanation": "La dispensa: nel disegno industriale la relazione utente-prodotto era affrontata soprattutto nella dimensione fisica, da cui nasce l'ergonomia. Lo studio delle relazioni cognitive ed emozionali inizia dopo."
       },
       {
-        "question": "Qual e il limite principale dell'ergonomia tradizionale di matrice industriale rispetto ai dispositivi computazionali moderni?",
+        "question": "Che cosa distingue, per Margolin, la 'funzione' di un prodotto dalla sua 'azione'?",
         "options": [
-          "Si focalizzava quasi esclusivamente sulle dimensioni fisiche e biomeccaniche del corpo, trascurando i processi cognitivi ed emotivi",
-          "Non utilizzava il sistema metrico decimale per le misurazioni antropometriche",
-          "Si occupava unicamente di computer quantistici e intelligenza artificiale",
-          "Rifiutava l'uso di materie plastiche nella produzione degli arredi"
+          "Sono sinonimi usati in contesti diversi",
+          "La funzione riguarda l'uso quotidiano, l'azione il funzionamento interno",
+          "La funzione riguarda il prezzo, l'azione la pubblicità",
+          "La funzione riguarda l'aspetto tecnico, l'azione l'uso concreto nella vita quotidiana"
         ],
-        "correct": 0,
-        "explanation": "L'ergonomia classica nacque per adattare leve e sedute al corpo umano. Nei sistemi digitali, la maggioranza dei problemi risiede invece nella comprensione logica, nella memoria di lavoro e nell'interazione cognitiva."
+        "correctIndex": 3,
+        "explanation": "Per Margolin la funzione ha valore operativo e tecnico, mentre l'uso (l'azione) introduce una dimensione sociale ed esperienziale. Attribuire alla funzione l'uso quotidiano e all'azione il funzionamento interno significa invertire i due concetti."
       },
       {
-        "question": "Nel passaggio teorico descritto da Margolin e Buchanan, quale mutamento investe i confini disciplinari del design?",
+        "question": "Che cos'è il 'product milieu' secondo Margolin?",
         "options": [
-          "I confini tra prodotto fisico, interfaccia software e servizio immateriale diventano fluidi e sfumati in un'unica esperienza d'uso",
-          "Il design viene suddiviso rigidamente in 150 corporazioni chiuse e non comunicanti",
-          "I progettisti smettono completamente di disegnare interfacce grafiche",
-          "Tutti i corsi accademici di design vengono convertiti in facolta di chimica farmaceutica"
+          "Il catalogo dei prodotti venduti da un'azienda",
+          "Un ambiente socioculturale dinamico di prodotti e utenti",
+          "Lo spazio fisico del negozio in cui il prodotto è esposto",
+          "L'insieme dei materiali con cui il prodotto è costruito"
         ],
-        "correct": 0,
-        "explanation": "Nell'ecosistema digitale contemporaneo il prodotto fisico e indissolubile dal software che lo anima e dal servizio cloud a cui si collega: la progettazione si trasforma in design dell'esperienza olistica."
+        "correctIndex": 1,
+        "explanation": "Il product milieu non è solo l'insieme dei prodotti esistenti, ma un ambiente sociale e culturale, dinamico e fluido. È anche un 'user milieu', plasmato dalle esperienze d'uso accumulate."
       },
       {
-        "question": "Cosa significa che un progetto adotta una filosofia 'User-Driven' anziche 'Market-Driven'?",
+        "question": "Come viene descritto il cambio di prospettiva nel design contemporaneo?",
         "options": [
-          "Che il processo ideativo e guidato dalla comprensione profonda dei bisogni e del contesto delle persone, anziche dalla vendita di massa di beni standard",
-          "Che il prodotto viene venduto a costo zero senza fini di lucro",
-          "Che la societa non esegue alcun test di sicurezza sui prototipi",
-          "Che gli utenti scrivono direttamente il codice sorgente del firmware"
+          "Dal design basato sull'utente a quello guidato dal mercato",
+          "Dal design artigianale a quello industriale",
+          "Dal design dei servizi al design degli oggetti",
+          "Dall'epoca guidata dal mercato a una basata sull'utente"
         ],
-        "correct": 0,
-        "explanation": "L'approccio user-driven mette i bisogni espliciti, impliciti e latenti delle persone al centro della generazione del valore, superando la logica 'market-driven' che considerava l'utente un mero consumatore passivo."
+        "correctIndex": 3,
+        "explanation": "La dispensa parla del passaggio 'dall'epoca guidata dal mercato a una basata sull'utente'. Il passaggio dal design basato sull'utente a quello guidato dal mercato è il percorso inverso."
       }
     ]
   },
@@ -1449,91 +1449,91 @@ window.INTERACTION_DATA = [
     "readTime": "9 min",
     "module": "ixd-teoria-sociologia",
     "image": "assets/corsi/dapl08/anno-1/interaction-design/images/schema_affordance_gibson_norman.svg",
-    "summary": "### 1. La Nascita Ecologica dell'Affordance: James J. Gibson (1979)\n\nIl neologismo **Affordance** (derivato dal verbo inglese *to afford*, ovvero offrire, consentire, rendere disponibile) e stato coniato dallo psicologo cognitivo ed ecologico statunitense **James Jerome Gibson** nel testo fondamentale *The Ecological Approach to Visual Perception* (1979).\n\nNella teorizzazione originale di Gibson:\n- L'affordance e una **proprieta fisica oggettiva, reale e invariante dell'ambiente**, definita sempre in relazione alle capacita biomeccaniche di una specifica specie animale o umana.\n- Essa **esiste indipendentemente dalla consapevolezza, dai bisogni o dalla capacita dell'attore di riconoscerla**: una roccia piatta e solida offre l'affordance di seduta (*chair-affordance*) a un essere umano per via della compatibilita tra la sua altezza e la conformazione articolare delle gambe, anche se nessuno vi si e mai seduto sopra.\n- Secondo Gibson, la percezione e **diretta (*direct perception*)**: l'ambiente contiene informazioni ottiche ricche ed ecologiche (*optical array*) che consentono all'organismo di cogliere immediatamente le possibilita di azione, senza mediazione di elaborazioni mentali complesse.\n\n---\n\n### 2. La Traslazione nel Design: Donald Norman e la 'Perceived Affordance' (1988)\n\nNel celebre volume *The Psychology of Everyday Things* (poi reintitolato *The Design of Everyday Things*, 1988), lo scienziato cognitivo **Donald A. Norman** adotta il concetto di Gibson e lo applica all'interazione con gli oggetti d'uso quotidiano e con le interfacce digitali.\nTuttavia, Norman introduce una distinzione semantica decisiva:\n> *\"Nell'Interaction Design, cio che conta non e tanto l'affordance reale fisica in senso gibsoniano, quanto l'**Affordance Percepita (Perceived Affordance)**: cio che l'utente crede o presume che l'oggetto possa fare sulla base degli indizi visivi e del proprio modello mentale.\"*\n\nSu uno schermo digitale (fatto di pixel piatti di vetro), non esistono leve fisiche o fori reali: esistono unicamente illusioni visive di rilievo, ombre o contrasti che invitano il cervello a compiere un clic o un tocco.\n\n---\n\n![Schema Teoria dell'Affordance Gibson vs Norman](assets/corsi/dapl08/anno-1/interaction-design/images/schema_affordance_gibson_norman.svg)\n\n---\n\n### 3. La Risoluzione dell'Equivoco: Affordance vs Signifier (Segnalatore)\n\nA causa delle frequenti confusioni tra designer (che chiamavano \"affordance\" qualsiasi freccia o scritta), nel 2008 Norman ha chiarito formalmente la differenza epistemologica:\n- **Affordance Reale**: La possibilita fisica effettiva di eseguire un'azione (es. una superficie touch riconosce il contatto del polpastrello).\n- **Segnalatore (Signifier)**: Qualsiasi segnale percettibile (visivo, acustico o tattile) che comunica alla persona **DOVE** e **COME** l'azione deve avere luogo.\n- *Esempio*: Un rettangolo blu con angoli arrotondati e una leggera ombreggiatura e un *signifier* visivo che segnala all'utente che quell'area dello schermo e cliccabile per confermare un comando.\n\n---\n\n### 4. Il Paradosso delle 'Porte di Norman'\n\nL'esempio piu iconico di fallimento progettuale citato da Norman e la cosiddetta **Porta di Norman (*Norman Door*)**:\n- Porte dotate di una maniglia a staffa verticale che istintivamente comunica il gesto di *tirare*, ma che sul bordo presentano una targhetta metallica che recita disperatamente *\"SPINGERE\"*.\n- **La Regola Aurea del Design**:\n  > *\"Se un artefatto ha bisogno di un cartello con istruzioni scritte per far compiere un'azione elementare (come spingere una porta), il suo design ha fallito.\"*\n  Una piastra piatta comunica visivamente e fisicamente l'impossibilita di essere afferrata e invita spontaneamente a spingere; una maniglia invita ad afferrare e tirare.",
+    "summary": "### 1. La Nascita Ecologica dell'Affordance: James J. Gibson (1979)\n\nIl neologismo **Affordance** (derivato dal verbo inglese *to afford*, ovvero offrire, consentire, rendere disponibile) è stato coniato dallo psicologo cognitivo ed ecologico statunitense **James Jerome Gibson** nel testo fondamentale *The Ecological Approach to Visual Perception* (1979).\n\nNella teorizzazione originale di Gibson:\n- L'affordance è una **proprietà fisica oggettiva, reale e invariante dell'ambiente**, definita sempre in relazione alle capacità biomeccaniche di una specifica specie animale o umana.\n- Essa **esiste indipendentemente dalla consapevolezza, dai bisogni o dalla capacità dell'attore di riconoscerla**: una roccia piatta e solida offre l'affordance di seduta (*chair-affordance*) a un essere umano per via della compatibilità tra la sua altezza e la conformazione articolare delle gambe, anche se nessuno vi si e mai seduto sopra.\n- Secondo Gibson, la percezione e **diretta (*direct perception*)**: l'ambiente contiene informazioni ottiche ricche ed ecologiche (*optical array*) che consentono all'organismo di cogliere immediatamente le possibilità di azione, senza mediazione di elaborazioni mentali complesse.\n\n---\n\n### 2. La Traslazione nel Design: Donald Norman e la 'Perceived Affordance' (1988)\n\nNel celebre volume *The Psychology of Everyday Things* (poi reintitolato *The Design of Everyday Things*, 1988), lo scienziato cognitivo **Donald A. Norman** adotta il concetto di Gibson e lo applica all'interazione con gli oggetti d'uso quotidiano e con le interfacce digitali.\nTuttavia, Norman introduce una distinzione semantica decisiva:\n> *\"Nell'Interaction Design, ciò che conta non è tanto l'affordance reale fisica in senso gibsoniano, quanto l'**Affordance Percepita (Perceived Affordance)**: ciò che l'utente crede o presume che l'oggetto possa fare sulla base degli indizi visivi e del proprio modello mentale.\"*\n\nSu uno schermo digitale (fatto di pixel piatti di vetro), non esistono leve fisiche o fori reali: esistono unicamente illusioni visive di rilievo, ombre o contrasti che invitano il cervello a compiere un clic o un tocco.\n\n---\n\n![Schema Teoria dell'Affordance Gibson vs Norman](assets/corsi/dapl08/anno-1/interaction-design/images/schema_affordance_gibson_norman.svg)\n\n---\n\n### 3. La Risoluzione dell'Equivoco: Affordance vs Signifier (Segnalatore)\n\nA causa delle frequenti confusioni tra designer (che chiamavano \"affordance\" qualsiasi freccia o scritta), nel 2008 Norman ha chiarito formalmente la differenza epistemologica:\n- **Affordance Reale**: La possibilità fisica effettiva di eseguire un'azione (es. una superficie touch riconosce il contatto del polpastrello).\n- **Segnalatore (Signifier)**: Qualsiasi segnale percettibile (visivo, acustico o tattile) che comunica alla persona **DOVE** e **COME** l'azione deve avere luogo.\n- *Esempio*: Un rettangolo blu con angoli arrotondati e una leggera ombreggiatura e un *signifier* visivo che segnala all'utente che quell'area dello schermo è cliccabile per confermare un comando.\n\n---\n\n### 4. Il Paradosso delle 'Porte di Norman'\n\nL'esempio più iconico di fallimento progettuale citato da Norman e la cosiddetta **Porta di Norman (*Norman Door*)**:\n- Porte dotate di una maniglia a staffa verticale che istintivamente comunica il gesto di *tirare*, ma che sul bordo presentano una targhetta metallica che recita disperatamente *\"SPINGERE\"*.\n- **La Regola Aurea del Design**:\n  > *\"Se un artefatto ha bisogno di un cartello con istruzioni scritte per far compiere un'azione elementare (come spingere una porta), il suo design ha fallito.\"*\n  Una piastra piatta comunica visivamente e fisicamente l'impossibilità di essere afferrata e invita spontaneamente a spingere; una maniglia invita ad afferrare e tirare.",
     "keyPoints": [
-      "James Gibson (1979) ha coniato l'affordance come proprieta ecologica oggettiva della relazione corpo-ambiente.",
+      "James Gibson (1979) ha coniato l'affordance come proprietà ecologica oggettiva della relazione corpo-ambiente.",
       "Donald Norman (1988) ha introdotto l'Affordance Percepita nel design, legandola ai modelli mentali dell'utente.",
-      "L'affordance e cio che e possibile fare fisicamente; il Signifier (segnalatore) e l'indizio che mostra dove e come agire.",
+      "L'affordance e ciò che è possibile fare fisicamente; il Signifier (segnalatore) è l'indizio che mostra dove e come agire.",
       "Le 'Porte di Norman' sono l'emblema di un design difettoso in cui la forma fisica comunica l'azione opposta a quella richiesta.",
       "Un'interfaccia eccellente non richiede cartelli esplicativi ma guida l'azione attraverso indizi percettivi immediati."
     ],
     "flashcards": [
       {
-        "question": "Qual e la definizione originaria di Affordance data da James Gibson?",
-        "answer": "Una proprieta fisica oggettiva dell'ambiente che offre possibilita di azione ad un organismo vivente compatibile."
+        "question": "Qual è la definizione originaria di Affordance data da James Gibson?",
+        "answer": "Una proprietà fisica oggettiva dell'ambiente che offre possibilità di azione ad un organismo vivente compatibile."
       },
       {
         "question": "Come modifica Donald Norman il concetto di affordance per il design?",
-        "answer": "Focalizzandosi sull'Affordance Percepita, ovvero su cio che l'utente crede che l'oggetto consenta di fare."
+        "answer": "Focalizzandosi sull'Affordance Percepita, ovvero su ciò che l'utente crede che l'oggetto consenta di fare."
       },
       {
-        "question": "Qual e la differenza tra Affordance e Signifier (Segnalatore)?",
+        "question": "Qual è la differenza tra Affordance e Signifier (Segnalatore)?",
         "answer": "L'affordance determina l'azione potenziale; il signifier comunica percettivamente dove e come eseguire l'azione."
       },
       {
         "question": "Cosa si intende per 'Porta di Norman'?",
-        "answer": "Una porta che induce in errore l'utente (es. maniglia da tirare montata su una porta che si puo solo spingere)."
+        "answer": "Una porta che induce in errore l'utente (es. maniglia da tirare montata su una porta che si può solo spingere)."
       },
       {
-        "question": "Perche la presenza di un cartello 'Spingere' segnala un difetto di design?",
-        "answer": "Perche evidenzia che la forma dell'oggetto non e stata capace di guidare l'azione spontanea dell'utente."
+        "question": "Perché la presenza di un cartello 'Spingere' segnala un difetto di design?",
+        "answer": "Perché evidenzia che la forma dell'oggetto non è stata capace di guidare l'azione spontanea dell'utente."
       }
     ],
     "quiz": [
       {
-        "question": "In che cosa differisce primariamente la concezione di Affordance di James Gibson da quella di Donald Norman?",
+        "question": "Come viene rielaborata da Donald Norman la nozione di affordance?",
         "options": [
-          "Per Gibson l'affordance e una proprieta oggettiva ecologica indipendente dalla percezione; per Norman conta l'affordance percepita dall'utente",
-          "Gibson si occupava unicamente di computer quantistici, mentre Norman di sedie in legno",
-          "Per Gibson l'affordance e un software a pagamento, per Norman una licenza open source",
-          "Non vi e alcuna differenza: i due autori hanno firmato insieme lo stesso libro nel 1979"
+          "Come proprietà fisica dell'ambiente, indipendente da chi percepisce",
+          "Come regola tipografica per rendere leggibili le interfacce digitali",
+          "Come proprietà dell'artefatto che ne determinano l'uso: un invito all'uso",
+          "Come misura del tempo necessario per imparare a usare un prodotto"
         ],
-        "correct": 0,
-        "explanation": "Gibson teorizzava l'affordance come relazione fisica e invariante tra ambiente e biomeccanica animale; Norman l'ha ricondotta alle scienze cognitive, focalizzandosi su cio che l'utente percepisce ed interpreta."
+        "correctIndex": 2,
+        "explanation": "Norman la rielabora come insieme delle proprietà che determinano le possibilità d'uso, cioè un 'invito all'uso'. La proprietà ambientale indipendente da chi percepisce è la concezione originaria di Gibson."
       },
       {
-        "question": "Secondo la definizione introdotta da Donald Norman nel 2008, che cos'e un 'Signifier' (Segnalatore)?",
+        "question": "Chi ha introdotto originariamente il concetto di affordance, alla fine degli anni Settanta?",
         "options": [
-          "Un virus informatico che cancella le icone dal desktop",
-          "Un indizio visivo, acustico o tattile percepibile che indica alla persona dove e quale azione compiere",
-          "La ricevuta fiscale rilasciata al termine di un acquisto e-commerce",
-          "Il cavo di rete Ethernet che collega due personal computer"
+          "James J. Gibson",
+          "Donald Norman",
+          "Victor Margolin",
+          "Richard Buchanan"
         ],
-        "correct": 1,
-        "explanation": "Il Signifier e il componente espressivo dell'interfaccia (come un'icona, una freccia o un'ombreggiatura) che segnala esplicitamente all'utente dove si trova l'affordance e come attivarla."
+        "correctIndex": 0,
+        "explanation": "L'affordance nasce con lo psicologo James J. Gibson (1979). Norman la porta nel design nel 1988 con il concetto di affordance percepita."
       },
       {
-        "question": "Quale elemento morfologico rappresenta il migliore 'invito all'uso' (affordance corretta) per una porta che deve essere unicamente SPINTA?",
+        "question": "Su una porta da spingere, quale soluzione comunica meglio l'azione corretta?",
         "options": [
-          "Una piastra metallica liscia priva di prese",
-          "Una maniglia ad anello sporgente",
-          "Una corda annodata che pende dal soffitto",
-          "Una maniglia a staffa verticale per entrambe le mani"
+          "Una maniglia verticale con un cartello 'spingere'",
+          "Un pomello rotondo",
+          "Una maniglia orizzontale a leva",
+          "Una piastra piatta senza prese"
         ],
-        "correct": 0,
-        "explanation": "Una piastra liscia e piatta impedisce fisicamente la presa per tirare e suggerisce in modo inequivocabile e immediato l'azione di appoggiare il palmo e spingere in avanti."
+        "correctIndex": 3,
+        "explanation": "Una piastra piatta non si può afferrare e invita a spingere. La maniglia con cartello è proprio la 'porta di Norman': se servono istruzioni scritte, il design ha fallito."
       },
       {
-        "question": "Cosa accade sul piano cognitivo quando un utente incontra una cosiddetta 'Porta di Norman'?",
+        "question": "Secondo la distinzione chiarita da Norman, che cos'è un signifier?",
         "options": [
-          "L'utente compie l'azione sbagliata (tira anziche spingere), sentendosi ingiustamente stupido o goffo a causa di un fallimento progettuale",
-          "L'utente decodifica istantaneamente il codice macchina della serratura",
-          "La porta invia automaticamente un messaggio di allerta alle autorita di polizia",
-          "L'interfaccia si adatta autonomamente alle dimensioni della mano dell'individuo"
+          "La possibilità fisica reale di compiere un'azione",
+          "Il modello mentale che l'utente si costruisce del sistema",
+          "Un segnale percepibile che indica dove e come agire",
+          "Il feedback che il sistema restituisce dopo l'azione"
         ],
-        "correct": 0,
-        "explanation": "Norman sottolinea come un pessimo design induca le persone a colpevolizzare se stesse per errori commessi su oggetti quotidiani, quando in realta la colpa e interamente dell'indizio fuorviante progettato."
+        "correctIndex": 2,
+        "explanation": "Il signifier è l'indizio (visivo, sonoro, tattile) che comunica dove e come agire; l'affordance è la possibilità d'azione. Il feedback arriva dopo l'azione, il signifier prima."
       },
       {
-        "question": "Nelle interfacce grafiche touch (GUI), un pulsante con un'ombra morbida e un gradiente che simula il rilievo e un esempio di:",
+        "question": "Secondo la dispensa, quali concetti vengono reinterpretati alla luce della nuova idea di affordance?",
         "options": [
-          "Un'affordance reale fisica tridimensionale",
-          "Un Signifier visivo che evoca un modello mentale di cliccabilita",
-          "Un errore di programmazione nei fogli di stile CSS",
-          "Un problema di calibrazione dello schermo LCD"
+          "Prezzo e distribuzione",
+          "Usabilità e utente",
+          "Forma e materiale",
+          "Mercato e consumo"
         ],
-        "correct": 1,
-        "explanation": "Sullo schermo piatto l'affordance fisica reale e solo il tocco sul vetro; l'ombreggiatura e il rilievo visivo sono *signifiers* che simulano la fisicità per comunicare intuitivamente che quell'area reagisce alla pressione."
+        "correctIndex": 1,
+        "explanation": "Con il nuovo significato di affordance vengono reinterpretati i concetti di usabilità e utente in ingegneria, scienze cognitive, disegno industriale e ricerca progettuale."
       }
     ]
   },
@@ -1542,16 +1542,16 @@ window.INTERACTION_DATA = [
     "number": 17,
     "title": "Le Dimensioni dell'Esperienza: Utile, Usabile e Desiderabile (Buchanan)",
     "subtitle": "Richard Buchanan, l'evoluzione del pensiero progettuale e le dimensioni dell'artefatto contemporaneo",
-    "readTime": "8 min",
+    "readTime": "5 min",
     "module": "ixd-teoria-sociologia",
     "image": "assets/corsi/dapl08/anno-1/interaction-design/images/schema_piramide_esperienza_trasformazione.svg",
-    "summary": "### 1. Richard Buchanan e la Rifondazione Epistemologica del Design\n\nNei suoi celebri saggi epistemologici (tra cui *Declaration by Design* e *Wicked Problems in Design Thinking*), il teorico statunitense **Richard Buchanan** ha proposto una celebre classificazione evolutiva dell'attivita progettuale attraverso i cosiddetti **Quattro Ordini del Design**:\n1. **Primo Ordine**: Design della Comunicazione Visiva e Grafica (simboli, caratteri tipografici, immagini, segni).\n2. **Secondo Ordine**: Design degli Oggetti Materiali (prodotti industriali tangibili, strumenti fisici, arredamento).\n3. **Terzo Ordine**: Design delle Interazioni e delle Esperienze (processi, flussi temporali, attivita, relazioni uomo-macchina).\n4. **Quarto Ordine**: Design dei Sistemi e degli Ambienti Complessi (ecosistemi di servizi, organizzazioni, politiche pubbliche).\n\n---\n\n### 2. La Triade di Buchanan: Utile, Usabile e Desiderabile\n\nNello studio della transizione contemporanea verso prodotti modellati sulla dimensione umana, Buchanan individua tre qualita inseparabili che ogni artefatto interattivo deve possedere per raggiungere l'eccellenza:\n\n| Dimensione | Significato Primario | Focus di Progetto |\n| :--- | :--- | :--- |\n| **UTILE (*Useful*)** | Cio di cui i consumatori hanno realmente **bisogno** | Efficacia oggettiva, capacita di risolvere un problema reale della vita quotidiana o lavorativa |\n| **USABILE (*Usable*)** | Cio che e **immediatamente utilizzabile** o che e facile imparare a usare | Ergonomia cognitiva, assenza di attrito, chiarezza percettiva, trasparenza del modello concettuale |\n| **DESIDERABILE (*Desirable*)** | Cio che le persone **vogliono** e bramano possedere o vivere | Piacere estetico, risonanza emotiva, prestigio simbolico, gratificazione identitaria |\n\nSe un prodotto e:\n- *Utile e usabile ma non desiderabile*: sara un freddo strumento di dovere, utilizzato solo per obbligo professionale ma abbandonato alla prima alternativa piacevole.\n- *Usabile e desiderabile ma non utile*: sara un giocattolo effimero, presto dimenticato perche privo di valore reale.\n- *Utile e desiderabile ma inutilizzabile*: generera immensa frustrazione e rabbia nell'utente per via dei continui errori operativi.\n\n---\n\n### 3. Vecchio vs Nuovo Pensiero Progettuale\n\nBuchanan evidenzia con chiarezza la frattura tra i due approcci:\n- **Teoria del Design Convenzionale (Vecchio Pensiero)**:\n  I prodotti sono studiati dall'**esterno**: la forma plastica, le proprieta fisiche dei materiali, la razionalizzazione dei cicli di stampaggio industriale e i canali distributivi determinano l'oggetto.\n- **Teoria del Design Antropocentrico (Nuovo Pensiero)**:\n  L'ideazione e condizionata dall'**interno** dell'individuo: i bisogni espliciti, i bisogni taciti e i desideri latenti dell'utilizzatore determinano la conformazione del sistema interattivo.\n\n---\n\n![Piramide dell'Esperienza e della Trasformazione](assets/corsi/dapl08/anno-1/interaction-design/images/schema_piramide_esperienza_trasformazione.svg)\n\n---\n\n### 4. La Convergenza tra Prodotto, Servizio ed Esperienza Trasformativa\n\nNell'economia contemporanea (Pine & Gilmore), il valore migra dalla vendita di merci fisiche alla fornitura di **esperienze memorabili e trasformative**: l'interaction designer non progetta piu un dispositivo hardware separato, ma modella l'ecosistema in cui l'utente evolve le proprie competenze e ridefinisce la propria identita personale.",
+    "summary": "### 1. Richard Buchanan e la Rifondazione Epistemologica del Design\n\nNei suoi celebri saggi epistemologici (tra cui *Declaration by Design* e *Wicked Problems in Design Thinking*), il teorico statunitense **Richard Buchanan** ha proposto una celebre classificazione evolutiva dell'attività progettuale attraverso i cosiddetti **Quattro Ordini del Design**:\n1. **Primo Ordine**: Design della Comunicazione Visiva e Grafica (simboli, caratteri tipografici, immagini, segni).\n2. **Secondo Ordine**: Design degli Oggetti Materiali (prodotti industriali tangibili, strumenti fisici, arredamento).\n3. **Terzo Ordine**: Design delle Interazioni e delle Esperienze (processi, flussi temporali, attività, relazioni uomo-macchina).\n4. **Quarto Ordine**: Design dei Sistemi e degli Ambienti Complessi (ecosistemi di servizi, organizzazioni, politiche pubbliche).\n\n---\n\n### 2. La Triade di Buchanan: Utile, Usabile e Desiderabile\n\nNello studio della transizione contemporanea verso prodotti modellati sulla dimensione umana, Buchanan individua tre qualità inseparabili che ogni artefatto interattivo deve possedere per raggiungere l'eccellenza:\n\n| Dimensione | Significato Primario | Focus di Progetto |\n| :--- | :--- | :--- |\n| **UTILE (*Useful*)** | Ciò di cui i consumatori hanno realmente **bisogno** | Efficacia oggettiva, capacità di risolvere un problema reale della vita quotidiana o lavorativa |\n| **USABILE (*Usable*)** | Ciò che e **immediatamente utilizzabile** o che è facile imparare a usare | Ergonomia cognitiva, assenza di attrito, chiarezza percettiva, trasparenza del modello concettuale |\n| **DESIDERABILE (*Desirable*)** | Ciò che le persone **vogliono** e bramano possedere o vivere | Piacere estetico, risonanza emotiva, prestigio simbolico, gratificazione identitaria |\n\nSe un prodotto e:\n- *Utile e usabile ma non desiderabile*: sarà un freddo strumento di dovere, utilizzato solo per obbligo professionale ma abbandonato alla prima alternativa piacevole.\n- *Usabile e desiderabile ma non utile*: sarà un giocattolo effimero, presto dimenticato perché privo di valore reale.\n- *Utile e desiderabile ma inutilizzabile*: generera immensa frustrazione e rabbia nell'utente per via dei continui errori operativi.\n\n---\n\n### 3. Vecchio vs Nuovo Pensiero Progettuale\n\nBuchanan evidenzia con chiarezza la frattura tra i due approcci:\n- **Teoria del Design Convenzionale (Vecchio Pensiero)**:\n  I prodotti sono studiati dall'**esterno**: la forma plastica, le proprietà fisiche dei materiali, la razionalizzazione dei cicli di stampaggio industriale e i canali distributivi determinano l'oggetto.\n- **Teoria del Design Antropocentrico (Nuovo Pensiero)**:\n  L'ideazione è condizionata dall'**interno** dell'individuo: i bisogni espliciti, i bisogni taciti e i desideri latenti dell'utilizzatore determinano la conformazione del sistema interattivo.\n\n---\n\n![Piramide dell'Esperienza e della Trasformazione](assets/corsi/dapl08/anno-1/interaction-design/images/schema_piramide_esperienza_trasformazione.svg)\n\n---\n\n### 4. La Convergenza tra Prodotto, Servizio ed Esperienza Trasformativa\n\nNell'economia contemporanea (Pine & Gilmore), il valore migra dalla vendita di merci fisiche alla fornitura di **esperienze memorabili e trasformative**: l'interaction designer non progetta più un dispositivo hardware separato, ma modella l'ecosistema in cui l'utente evolve le proprie competenze e ridefinisce la propria identità personale.\n\n---\n\n### 5. Le metodologie antropocentriche e il bilancio della transizione\n\nIl design passa da un modello orientato al mercato a uno incentrato sull'utente: i confini tra le discipline progettuali diventano più fluidi, le componenti fisiche si integrano con quelle esperienziali e si riduce la separazione tra prodotto e servizio. La dispensa elenca le principali metodologie basate sull'uomo:\n\n| Metodologia | Idea chiave |\n| :--- | :--- |\n| **User-Centered Design (UCD)** | Il design si basa sulle esigenze e sui comportamenti degli utenti finali |\n| **Human-Centered Innovation** | L'innovazione nasce per migliorare la vita delle persone |\n| **User-Centered Innovation** | L'innovazione viene co-creata con gli utenti, che partecipano attivamente |\n| **Co-Creation** | Utenti e stakeholder collaborano portando esperienze e competenze |\n| **Co-Design** | Processo partecipativo che coinvolge direttamente gli utilizzatori finali |\n| **Empathic Design** | Comprensione profonda di emozioni, bisogni ed esperienze delle persone |\n\n**Aspetti positivi**\n- *Maggiore innovazione*: integrare esperienza e fisicità permette soluzioni più coinvolgenti e personalizzate.\n- *Nuove opportunità progettuali*: la fusione tra prodotti e servizi apre scenari come il design per l'**economia circolare** o la **servitizzazione**, cioè il passaggio dal possesso all'uso (Spotify per la musica, car sharing per la mobilità).\n- *Migliore risposta ai bisogni umani*: interazioni più intuitive e soddisfacenti.\n\n**Criticità e sfide**\n- *Perdita di riferimenti chiari*: la flessibilità tra discipline rende più difficile definire ruoli, competenze e metodi.\n- *Complessità nella progettazione*: integrare aspetti materiali ed esperienziali richiede nuove competenze e strumenti.\n- *Rischio di superficialità*: se non ben strutturata, l'enfasi sull'esperienza può produrre soluzioni effimere, prive di reale valore funzionale.",
     "keyPoints": [
       "Richard Buchanan articola il design in 4 ordini: simboli, cose fisiche, interazioni ed ecosistemi sistemici.",
       "La triade fondamentale di Buchanan definisce il valore: Utile (bisogno), Usabile (facilita), Desiderabile (emozione).",
       "Il vecchio design guardava il prodotto dall'esterno (forma e materiali); il nuovo design lo modella dall'interno (bisogni utente).",
-      "Un prodotto eccellente richiede l'equilibrio simultaneo di utilita pratica, usabilita intuitiva e risonanza affettiva.",
-      "La frontiera contemporanea unisce prodotto e servizio per offrire esperienze trasformative dell'identita."
+      "Un prodotto eccellente richiede l'equilibrio simultaneo di utilità pratica, usabilità intuitiva e risonanza affettiva.",
+      "La frontiera contemporanea unisce prodotto e servizio per offrire esperienze trasformative dell'identità."
     ],
     "flashcards": [
       {
@@ -1564,72 +1564,72 @@ window.INTERACTION_DATA = [
       },
       {
         "question": "Cosa definisce la dimensione 'Usabile'?",
-        "answer": "L'essere immediatamente comprensibile e facile da utilizzare con minimo sforzo cognitivo."
+        "answer": "L'essere immediatamente comprensibile è facile da utilizzare con minimo sforzo cognitivo."
       },
       {
         "question": "Cosa rappresenta la dimensione 'Desiderabile'?",
         "answer": "Il valore emotivo, estetico e simbolico che spinge le persone a desiderare l'esperienza con l'artefatto."
       },
       {
-        "question": "Qual e la differenza tra vecchio e nuovo pensiero progettuale?",
+        "question": "Qual è la differenza tra vecchio e nuovo pensiero progettuale?",
         "answer": "Il vecchio partiva dall'esterno (forma, materiali); il nuovo parte dall'interno dell'utente (bisogni, emozioni)."
       }
     ],
     "quiz": [
       {
-        "question": "Nella triade concettuale teorizzata da Richard Buchanan, a cosa corrisponde la dimensione dell'UTILE?",
+        "question": "Nella triade utile, usabile, desiderabile, che cosa definisce l'usabile?",
         "options": [
-          "A cio di cui i consumatori hanno oggettivamente bisogno per risolvere un problema",
-          "Al prezzo piu basso possibile di cartellino",
-          "Al numero di pixel visualizzabili sullo schermo",
-          "All'obbligo di legge di stampare il manuale cartaceo"
+          "Ciò che è facile da usare o da imparare",
+          "Ciò che le persone desiderano possedere",
+          "Ciò di cui i consumatori hanno bisogno",
+          "Ciò che è sostenibile da produrre in serie"
         ],
-        "correct": 0,
-        "explanation": "L'Utile incarna la rispondenza ai bisogni reali dell'utente; l'Usabile riguarda la facilità operativa; il Desiderabile risponde a ciò che le persone vogliono emotivamente."
+        "correctIndex": 0,
+        "explanation": "Dispensa: utile è ciò di cui c'è bisogno, usabile ciò che è immediatamente utilizzabile o facile da imparare, desiderabile ciò che le persone vogliono."
       },
       {
-        "question": "Cosa accade a un prodotto digitale che sia 'utile' e 'desiderabile' ma totalmente privo di 'usabilità'?",
+        "question": "Un'app risolve un problema reale ed è molto attraente, ma i comandi sono incomprensibili. Quale qualità manca?",
         "options": [
-          "Genera forte frustrazione ed esasperazione nell'utente, che non riesce ad attivare le funzioni sperate",
-          "Diventa automaticamente il leader indiscusso del mercato globale",
-          "Cancella istantaneamente i dati personali dai server cloud",
-          "Viene premiato con il Compasso d'Oro per la velocita di caricamento"
+          "Utilità",
+          "Usabilità",
+          "Desiderabilità",
+          "Sostenibilità"
         ],
-        "correct": 0,
-        "explanation": "Se un'applicazione promette funzioni utilissime e ha una grafica desiderabile ma e inutilizzabile (complicata, confusa, ricca di errori), l'utente si scontrera con barriere cognitive insormontabili abbandonandola con risentimento."
+        "correctIndex": 1,
+        "explanation": "Utile (risolve il problema) e desiderabile (attraente) sì; manca l'usabilità. Il risultato è frustrazione, perché l'utente non riesce ad attivare le funzioni."
       },
       {
-        "question": "A quale 'Ordine del Design' appartiene tipicamente l'Interaction Design nella classificazione di Buchanan?",
+        "question": "Secondo Buchanan, come vengono studiati i prodotti nella teoria del design convenzionale?",
         "options": [
-          "Al Terzo Ordine (Design delle azioni, dei processi, delle interazioni e delle esperienze)",
-          "Al Primo Ordine (pura calligrafia su pergamena)",
-          "Al Secondo Ordine (fabbricazione di mattoni in argilla)",
-          "A nessun ordine poiche Buchanan nega l'esistenza del digitale"
+          "Dall'esterno: forma, funzione, materiali, produzione e consumo",
+          "Dall'interno, a partire dai bisogni taciti dell'utente",
+          "Attraverso il coinvolgimento degli utenti come co-progettisti",
+          "Attraverso la misura delle emozioni durante l'uso"
         ],
-        "correct": 0,
-        "explanation": "Mentre il Primo e Secondo Ordine riguardano segni e cose fisiche, il Terzo Ordine si focalizza sui flussi temporali d'azione e sulle esperienze interattive mediate dalla tecnologia."
+        "correctIndex": 0,
+        "explanation": "Il design convenzionale ha una prospettiva esteriore (forma, funzione, materiali, produzione); il nuovo approccio parte dalle esigenze interne e dai bisogni anche latenti dell'utente."
       },
       {
-        "question": "Qual e la contrapposizione chiave tra la teoria del design convenzionale e l'approccio antropocentrico contemporaneo?",
+        "question": "Quale di queste è una criticità del passaggio al design centrato sull'esperienza, secondo la dispensa?",
         "options": [
-          "Il design convenzionale partiva dalla prospettiva esteriore dell'oggetto (forma e materiali); il nuovo approccio parte dai bisogni interiori dell'utente",
-          "Il design convenzionale non usava computer, mentre il nuovo usa solo macchine da scrivere",
-          "Il design convenzionale era gratuito, il nuovo approccio e a pagamento",
-          "Non esiste alcuna differenza concettuale tra i due periodi storici"
+          "La scomparsa della ricerca sugli utenti",
+          "Il rischio di superficialità e soluzioni effimere",
+          "La riduzione delle possibilità di innovazione",
+          "La separazione netta tra prodotti e servizi"
         ],
-        "correct": 0,
-        "explanation": "Buchanan sintetizza la rivoluzione progettuale evidenziando come la genesi del progetto non sia piu la scocca esteriore dell'oggetto industriale, ma la mappa interna dei bisogni e delle facolta cognitive dell'utilizzatore."
+        "correctIndex": 1,
+        "explanation": "Tra le criticità: perdita di riferimenti chiari, complessità progettuale e rischio di superficialità. La fusione (non la separazione) tra prodotti e servizi è invece indicata tra le opportunità."
       },
       {
-        "question": "Cosa caratterizza la dimensione 'Desiderabile' rispetto alla pura funzionalita?",
+        "question": "Quale esempio di 'servitizzazione' riporta la dispensa?",
         "options": [
-          "Coinvolge la sfera estetica, affettiva, simbolica e identitaria, rendendo l'esperienza gratificante e memorabile",
-          "Garantisce che il software consumi zero watt di elettricita",
-          "Impedisce che il programma possa mai bloccarsi",
-          "Assicura che il codice sia scritto unicamente in linguaggio C++"
+          "Spotify per la musica o il car sharing per la mobilità",
+          "L'acquisto di un'auto con garanzia estesa",
+          "La vendita di un software in licenza perpetua",
+          "Un negozio che offre consegne a domicilio"
         ],
-        "correct": 0,
-        "explanation": "La desiderabilità trascende la mera efficienza: connette l'artefatto alla sfera del piacere, dell'autostima e della risonanza estetica dell'individuo."
+        "correctIndex": 0,
+        "explanation": "La servitizzazione è il passaggio dal possesso all'uso: Spotify e il car sharing sono gli esempi citati. Garanzia estesa e licenza perpetua restano forme di possesso."
       }
     ]
   },
@@ -1638,24 +1638,24 @@ window.INTERACTION_DATA = [
     "number": 18,
     "title": "Co-Design, Empathic Design e Coinvolgimento dell'Utente",
     "subtitle": "Design partecipativo, Liz Sanders, livelli di conoscenza latente e l'approccio Say, Do, Make",
-    "readTime": "8 min",
+    "readTime": "6 min",
     "module": "ixd-teoria-sociologia",
-    "summary": "### 1. Dall'Utente come Oggetto di Ricerca all'Utente come Co-Designer\n\nNel modello tradizionale, l'utente era trattato come un soggetto passivo di studio: i ricercatori raccoglievano dati su di lui, li elaboravano in laboratorio e trasmettevano le specifiche al designer, che creava il prodotto *per* l'utente (*Design FOR users*).\n\nCon la maturazione del **Design Partecipativo (*Co-Design*)**, originatosi nelle democrazie industriali scandinave negli anni '70 per garantire ai lavoratori il diritto di co-decisione sull'introduzione dei computer nelle fabbriche, la relazione si capovolge:\n- L'utente viene riconosciuto come **l'esperto indiscusso della propria esperienza di vita quotidiana**.\n- Il progettista non e piu un demiurgo solitario che cala soluzioni dall'alto, ma un **facilitatore empatico** che dota le persone di strumenti espressivi per progettare *con* loro (*Design WITH users*).\n\n---\n\n### 2. Elizabeth Sanders e i Livelli di Conoscenza dell'Utente\n\nLa ricercatrice e pioniera del co-design **Elizabeth B.-N. Sanders** (fondatrice di *MakeTools*) ha formalizzato un celebre framework epistemologico per comprendere la profondita dei bisogni umani:\n\n1. **Conoscenza Esplicita (Cio che la gente DICE)**:\n   - Bisogni consapevoli e facilmente verbalizzabili. Si indagano attraverso interviste, sondaggi e focus group tradizionali.\n2. **Conoscenza Osservabile (Cio che la gente FA)**:\n   - Comportamenti, automatismi motori e abitudini pratiche. Si indagano mediante osservazione etnografica, shadowing e registrazioni video.\n3. **Conoscenza Tacita e Latente (Cio che la gente SENTE, SOGNA e PENSA)**:\n   - Emozioni profonde, paure inespresse, aspirazioni future e desideri non ancora formulati in parole.\n   - Poiche le persone non possono descrivere cio di cui non sono ancora pienamente coscienti, le interviste verbali falliscono miseramente. Per accedere a questo livello piu profondo sono necessari **strumenti generativi**.\n\n---\n\n### 3. Il Metodo 'Say, Do, Make' e gli Strumenti Generativi (MakeTools)\n\nPer scandagliare l'intero spettro dell'esperienza, la Sanders propone l'integrazione di tre verbi operativi:\n- **SAY (Dire)**: Raccogliere le opinioni dichiarate.\n- **DO (Fare)**: Osservare le azioni concrete sul campo.\n- **MAKE (Creare)**: Fornire ai partecipanti dei **toolkit generativi** (forme geometriche in legno, velcro, blocchi magnetici, tessere con parole emotive, schede visive) con cui costruire prototipi simbolici, mappe dei propri sogni o collage evocativi.\nManipolando oggetti con le mani, le persone attivano la propria creativita latente, superando le inibizioni razionali e rivelando ai designer orizzonti di innovazione inaspettati.\n\n---\n\n### 4. L'Empathic Design: Progettare con il Cuore dell'Altro\n\nL'**Empathic Design** costituisce la postura etica ed emotiva che consente al team di sviluppo di comprendere non solo i compiti tecnici (*tasks*) dell'utente, ma il suo carico emotivo, il suo stress e le sue vulnerabilita.\nAttraverso simulazioni sensoriali (es. tute che simulano i tremori dell'eta senile o occhiali che riducono il campo visivo), i progettisti sperimentano direttamente il mondo dell'altro, trasformando l'empatia da concetto astratto a pratica generatrice di accessibilita universale.",
+    "summary": "### 1. Dall'Utente come Oggetto di Ricerca all'Utente come Co-Designer\n\nNel modello tradizionale, l'utente era trattato come un soggetto passivo di studio: i ricercatori raccoglievano dati su di lui, li elaboravano in laboratorio e trasmettevano le specifiche al designer, che creava il prodotto *per* l'utente (*Design FOR users*).\n\nCon la maturazione del **Design Partecipativo (*Co-Design*)**, originatosi nelle democrazie industriali scandinave negli anni '70 per garantire ai lavoratori il diritto di co-decisione sull'introduzione dei computer nelle fabbriche, la relazione si capovolge:\n- L'utente viene riconosciuto come **l'esperto indiscusso della propria esperienza di vita quotidiana**.\n- Il progettista non è più un demiurgo solitario che cala soluzioni dall'alto, ma un **facilitatore empatico** che dota le persone di strumenti espressivi per progettare *con* loro (*Design WITH users*).\n\n---\n\n### 2. Elizabeth Sanders e i Livelli di Conoscenza dell'Utente\n\nLa ricercatrice e pioniera del co-design **Elizabeth B.-N. Sanders** (fondatrice di *MakeTools*) ha formalizzato un celebre framework epistemologico per comprendere la profondita dei bisogni umani:\n\n1. **Conoscenza Esplicita (Ciò che la gente DICE)**:\n   - Bisogni consapevoli e facilmente verbalizzabili. Si indagano attraverso interviste, sondaggi e focus group tradizionali.\n2. **Conoscenza Osservabile (Ciò che la gente FA)**:\n   - Comportamenti, automatismi motori e abitudini pratiche. Si indagano mediante osservazione etnografica, shadowing e registrazioni video.\n3. **Conoscenza Tacita e Latente (Ciò che la gente SENTE, SOGNA e PENSA)**:\n   - Emozioni profonde, paure inespresse, aspirazioni future e desideri non ancora formulati in parole.\n   - Poiché le persone non possono descrivere ciò di cui non sono ancora pienamente coscienti, le interviste verbali falliscono miseramente. Per accedere a questo livello più profondo sono necessari **strumenti generativi**.\n\n---\n\n### 3. Il Metodo 'Say, Do, Make' e gli Strumenti Generativi (MakeTools)\n\nPer scandagliare l'intero spettro dell'esperienza, la Sanders propone l'integrazione di tre verbi operativi:\n- **SAY (Dire)**: Raccogliere le opinioni dichiarate.\n- **DO (Fare)**: Osservare le azioni concrete sul campo.\n- **MAKE (Creare)**: Fornire ai partecipanti dei **toolkit generativi** (forme geometriche in legno, velcro, blocchi magnetici, tessere con parole emotive, schede visive) con cui costruire prototipi simbolici, mappe dei propri sogni o collage evocativi.\nManipolando oggetti con le mani, le persone attivano la propria creatività latente, superando le inibizioni razionali e rivelando ai designer orizzonti di innovazione inaspettati.\n\n---\n\n### 4. L'Empathic Design: Progettare con il Cuore dell'Altro\n\nL'**Empathic Design** costituisce la postura etica ed emotiva che consente al team di sviluppo di comprendere non solo i compiti tecnici (*tasks*) dell'utente, ma il suo carico emotivo, il suo stress e le sue vulnerabilità.\nAttraverso simulazioni sensoriali (es. tute che simulano i tremori dell'età senile o occhiali che riducono il campo visivo), i progettisti sperimentano direttamente il mondo dell'altro, trasformando l'empatia da concetto astratto a pratica generatrice di accessibilità universale.\n\n---\n\n### 5. Definizioni d'esame: UCD, empathic design, co-design e co-creation\n\n- **User-Centred Design**: non riguarda solo interfacce o tecnologie. È una metodologia con processi multilivello di risoluzione dei problemi: il progettista deve **analizzare e prevedere** come un utente userà il prodotto e **verificare** il comportamento di utenti reali. La differenza decisiva rispetto ad altri approcci è modellare il prodotto intorno a come le persone possono, vogliono o hanno bisogno di usarlo, invece di indurle a cambiare i propri comportamenti. L'UCD mira ad anticipare gli usi già in fase di progetto, anche coinvolgendo potenziali utilizzatori (ad esempio con test per capire se un progetto è facile da capire e da usare).\n- **Human-centered research and design**: accezione più ampia, un processo integrato con la consultazione attiva delle persone attraverso varie forme di ricerca **in tutte le fasi** del progetto.\n- **Empathic design**: si basa sull'osservazione per identificare **bisogni latenti** e concepire prodotti che le persone *neppure sanno di desiderare*. Le osservazioni sono condotte da squadre di specialisti (ingegneri, ergonomi, progettisti) che documentano anche linguaggio del corpo ed espressioni del viso. La relazione empatica ha **due direzioni**: verso gli utenti, per creare un dialogo facilitato, e verso i progettisti, per favorirne l'immersione nel mondo degli utenti.\n- **Co-design**: processi di cooperazione creativa condivisi da portatori di interessi eterogenei e sostenuti da utenti come partecipanti; può essere guidato dalla ricerca o basato sul coinvolgimento partecipativo, sia quando sono i progettisti a rivolgersi agli utenti sia nel caso opposto. Due definizioni: (1) una forma di **creatività collettiva** che si esprime lungo tutte le fasi del progetto; (2) il processo in cui attori di discipline diverse **condividono il loro sapere progettuale** (metodo e contenuti) per creare una comprensione comune e dare forma all'obiettivo di un nuovo prodotto.\n- **Co-creation**: forma speciale di collaborazione con l'obiettivo di **generare nuove idee**. Co-design e co-creation sono direttamente correlati: il co-design è una **specifica istanza** della co-creation.",
     "keyPoints": [
       "Il Co-Design trasforma l'utente da soggetto passivo di studio a partner attivo e co-creatore del progetto.",
       "Affonda le sue radici storiche nel Design Partecipativo scandinavo per la democratizzazione del lavoro.",
       "Liz Sanders distingue 3 livelli: Conoscenza Esplicita (Say), Osservabile (Do) e Tacita/Latente (Make).",
       "I bisogni latenti non emergono dalle interviste verbali ma richiedono toolkit generativi e manipolazione fisica.",
-      "L'Empathic Design richiede l'immersione emotiva e sensoriale del designer nelle fragilita reali dell'utente."
+      "L'Empathic Design richiede l'immersione emotiva e sensoriale del designer nelle fragilità reali dell'utente."
     ],
     "flashcards": [
       {
-        "question": "Qual e la differenza fondamentale tra 'Design for Users' e 'Co-Design'?",
-        "answer": "Nel Design for Users l'utente e studiato passivamente; nel Co-Design e partner attivo ed esperto della propria vita."
+        "question": "Qual è la differenza fondamentale tra 'Design for Users' e 'Co-Design'?",
+        "answer": "Nel Design for Users l'utente è studiato passivamente; nel Co-Design e partner attivo ed esperto della propria vita."
       },
       {
         "question": "Quali sono i tre livelli della conoscenza teorizzati da Elizabeth Sanders?",
-        "answer": "Conoscenza Esplicita (cio che dice), Conoscenza Osservabile (cio che fa) e Conoscenza Tacita/Latente (cio che sente/sogna)."
+        "answer": "Conoscenza Esplicita (ciò che dice), Conoscenza Osservabile (ciò che fa) e Conoscenza Tacita/Latente (ciò che sente/sogna)."
       },
       {
         "question": "In cosa consiste l'approccio 'Say, Do, Make'?",
@@ -1666,65 +1666,65 @@ window.INTERACTION_DATA = [
         "answer": "A far emergere i bisogni taciti e latenti non verbalizzabili attraverso la costruzione di collage e manufatti simbolici."
       },
       {
-        "question": "Cos'e l'Empathic Design?",
-        "answer": "L'approccio progettuale basato sulla comprensione affettiva e sull'immersione nelle difficolta emotive dell'utente."
+        "question": "Cos'è l'Empathic Design?",
+        "answer": "L'approccio progettuale basato sulla comprensione affettiva e sull'immersione nelle difficoltà emotive dell'utente."
       }
     ],
     "quiz": [
       {
-        "question": "Secondo il framework di Elizabeth Sanders, qual e il metodo piu efficace per far emergere i bisogni TACITI e LATENTI degli utenti?",
+        "question": "Secondo la dispensa, su che cosa si basa l'empathic design?",
         "options": [
-          "Fornire toolkit generativi visivi e manipolativi (Make), perche la creazione manuale supera i blocchi della verbalizzazione",
-          "Distribuire un sondaggio telefonico automatico registrato",
-          "Chiedere all'utente di firmare una liberatoria notarile",
-          "Spiare le credenziali di accesso al computer del soggetto"
+          "Sull'osservazione per identificare bisogni latenti che le persone non sanno di avere",
+          "Su questionari che chiedono agli utenti quali funzioni desiderano",
+          "Sulla collaborazione tra aziende concorrenti per definire standard",
+          "Sull'analisi statistica delle vendite dei prodotti esistenti"
         ],
-        "correct": 0,
-        "explanation": "La Sanders ha dimostrato che i bisogni latenti (sogni, paure, desideri non ancora consci) non possono essere espressi a parole in un'intervista, ma affiorano quando le persone compiono atti creativi ed espressivi (Make)."
+        "correctIndex": 0,
+        "explanation": "L'empathic design osserva i consumatori per identificare bisogni latenti e concepire prodotti che le persone 'neppure sanno di desiderare'. Chiedere direttamente le funzioni desiderate fa emergere solo bisogni espliciti."
       },
       {
-        "question": "Qual e il ruolo del designer all'interno di una sessione di Co-Design (Design Partecipativo)?",
+        "question": "Che relazione c'è tra co-design e co-creation secondo la dispensa?",
         "options": [
-          "Il designer agisce da facilitatore, fornendo strumenti espressivi e guidando gli utenti a co-creare soluzioni",
-          "Il designer ordina rigidamente ai partecipanti cosa disegnare senza ammettere suggerimenti",
-          "Il designer resta chiuso in un'altra stanza a programmare e non parla con i partecipanti",
-          "Il designer funge da giudice che assegna voti numerici da 1 a 10 ai disegni degli utenti"
+          "Sono termini opposti: il primo esclude gli utenti, il secondo li include",
+          "Il co-design è una specifica istanza della co-creation",
+          "La co-creation è una fase successiva al co-design",
+          "Il co-design riguarda i servizi, la co-creation solo i prodotti fisici"
         ],
-        "correct": 0,
-        "explanation": "Nel co-design la gerarchia si appiattisce: il designer non e piu l'unico depositario della creativita, ma assume il ruolo di facilitatore che aiuta gli esperti della propria esperienza (gli utenti) a esprimersi."
+        "correctIndex": 1,
+        "explanation": "La dispensa afferma che co-creation e co-design sono direttamente correlati, 'intendendo per co-design una specifica istanza della co-creation'. Entrambi coinvolgono gli utenti."
       },
       {
-        "question": "Le origini storiche del Design Partecipativo risalgono agli anni '70 in quale area geografica e contesto?",
+        "question": "Per far emergere i bisogni latenti, quale attività del modello Say-Do-Make è più efficace?",
         "options": [
-          "Nei Paesi Scandinavi (Norvegia, Svezia, Danimarca) all'interno dei movimenti democratici di tutela dei lavoratori industriali",
-          "Nella Silicon Valley californiana per vendere videogiochi da bar",
-          "A Tokyo durante il boom della produzione automobilistica robotizzata",
-          "A Londra durante la prima Esposizione Universale del 1851"
+          "Say: chiedere agli utenti di descrivere i propri desideri",
+          "Make: far costruire loro oggetti e collage con toolkit generativi",
+          "Do: osservare cosa fanno nel loro ambiente",
+          "Nessuna: i bisogni latenti emergono solo dai dati di vendita"
         ],
-        "correct": 0,
-        "explanation": "Il Participatory Design e nato nei paesi nordici per dare voce ai lavoratori sindacalizzati durante l'introduzione dei primi calcolatori nelle aziende (progetti come Utopia e DEMOS)."
+        "correctIndex": 1,
+        "explanation": "I bisogni latenti non sono ancora verbalizzabili, quindi le interviste (Say) non bastano; l'osservazione (Do) mostra i comportamenti. Il Make, con strumenti generativi, fa emergere desideri non formulati."
       },
       {
-        "question": "Quale tra i seguenti costituisce un esempio tipico di pratica di 'Empathic Design'?",
+        "question": "In una sessione di co-design, qual è il ruolo del designer?",
         "options": [
-          "Far indossare ai giovani designer speciali guanti che limitano la mobilita articolare per simulare l'artrite reumatoide prima di progettare un'app medica",
-          "Inviare una newsletter promozionale per fare gli auguri di compleanno agli utenti",
-          "Raddoppiare il canone mensile di abbonamento al servizio",
-          "Sostituire tutte le foto del sito con illustrazioni monocromatiche"
+          "Decidere da solo la soluzione e presentarla agli utenti per l'approvazione",
+          "Raccogliere i dati e consegnarli a un ricercatore esterno",
+          "Limitarsi a osservare senza intervenire nella discussione",
+          "Facilitare il processo e dare agli utenti strumenti per progettare insieme"
         ],
-        "correct": 0,
-        "explanation": "L'Empathic Design utilizza tute di simulazione, occhiali oscurati o vincoli fisici per consentire ai progettisti di sperimentare in prima persona le disabilita o limitazioni dei propri utenti."
+        "correctIndex": 3,
+        "explanation": "Nel co-design il progettista diventa un facilitatore che progetta con gli utenti. Osservare senza intervenire è tipico di tecniche come il fly on the wall, non del co-design."
       },
       {
-        "question": "Cosa include il livello 'Conoscenza Osservabile' (Do) del modello di Liz Sanders?",
+        "question": "Secondo la dispensa, chi può far parte delle squadre di osservazione dell'empathic design?",
         "options": [
-          "Cio che le persone fanno concretamente (comportamenti reali, posture, gesti e abitudini visibili)",
-          "Cio che le persone hanno studiato all'asilo",
-          "Le cartelle cliniche riservate depositate presso le ASL",
-          "Il testo di un contratto di assunzione a tempo indeterminato"
+          "Solo i responsabili marketing, che conoscono il mercato",
+          "Esclusivamente gli utenti finali, che si osservano tra loro",
+          "Ingegneri, ergonomi e progettisti che documentano interazioni",
+          "Attori professionisti che recitano scene di vita quotidiana"
         ],
-        "correct": 0,
-        "explanation": "La dimensione del 'Do' comprende l'insieme delle pratiche osservabili dall'esterno mediante telecamere o note di campo, cogliendo la discrepanza con quanto dichiarato a voce (Say)."
+        "correctIndex": 2,
+        "explanation": "Le squadre di specialisti possono includere ingegneri, ergonomi e progettisti, che documentano anche linguaggio del corpo ed espressioni del viso. Gli attori professionisti caratterizzano invece il focus troupe."
       }
     ]
   },
@@ -1735,9 +1735,9 @@ window.INTERACTION_DATA = [
     "subtitle": "L'evoluzione sociologica e tecnologica della figura dell'utente, dal gergo hacker all'ibridazione digitale",
     "readTime": "8 min",
     "module": "ixd-teoria-sociologia",
-    "summary": "### 1. Genealogia dell'Utente nella Cultura Informatica\n\nNel discorso tecnologico e progettuale, il termine **Utente (*User*)** non e una categoria naturale ma una costruzione semantica ed epistemologica evolutasi nel tempo:\n- **End-User (Utente Finale)**:\n  Astrazione concettuale coniata dall'ingegneria del software per indicare la persona destinataria dell'applicativo che non possiede competenze di programmazione. Nella progettazione delle interfacce, definire l'end-user serve a calibrare il vocabolario a schermo, evitando di esporre log di errore tecnici incomprensibili.\n- **Il Gergo Hacker: Da 'User' a 'Luser'**:\n  Nelle comunita hacker degli anni '70 e '80 (MIT, usenet, Jargon File), l'utente inesperto che non comprendeva la logica della macchina veniva definito con disprezzo **'luser'** (crasi tra *loser*, perdente, e *user*). Questa etichetta rivelava la postura originaria dell'ingegneria: la macchina era perfetta, e se qualcosa non funzionava la colpa era attribuita all'ignoranza o alla stupidita dell'utilizzatore (*User Error*).\n  L'Interaction Design contemporaneo ribalta questa visione: non esistono errori dell'utente, esistono solo sistemi mal progettati.\n\n---\n\n### 2. Distinzione Giuridica e Sociologica: Utente vs Cliente\n\nNel design dei servizi, e fondamentale distinguere tra la figura dell'utente e quella del cliente:\n- **Utente**: Colui che fruisce di un servizio pubblico o regolamentato **senza avere la possibilita di scegliere tra enti concorrenti** (es. i passeggeri del trasporto pubblico locale, i cittadini che usano il portale delle imposte o l'anagrafe digitale, i pazienti del servizio sanitario). L'utente non puo \"abbandonare il servizio per andare dalla concorrenza\": per questo l'accessibilita e l'usabilita di tali interfacce e un dovere democratico fondamentale.\n- **Cliente**: Colui che acquista un servizio in un regime di **libero mercato e concorrenza**, avendo facolta di scegliere tra molteplici fornitori alternativi (negozi, ristoranti, piattaforme streaming private). Se l'esperienza d'uso e insoddisfacente, il cliente esercita il diritto di recesso (*churn rate*).\n\n---\n\n### 3. Alvin Toffler e la Nascita del 'Prosumer' (1980)\n\nNel visionario saggio *The Third Wave* (La Terza Ondata, 1980), il sociologo e futurologo statunitense **Alvin Toffler** conia il termine **Prosumer** (fusione di *Producer* e *Consumer*):\n- *Prima Ondata (Societa Agricola)*: Produzione e consumo coincidevano; le comunita producevano cio che consumavano per la sussistenza.\n- *Seconda Ondata (Societa Industriale)*: Separazione rigida e artificiale tra produzione di massa (fabbriche) e consumo passivo (cittadini).\n- *Terza Ondata (Societa Post-Industriale e Digitale)*: Riunificazione dialettica. Con la diffusione del Web 2.0, dei social network e degli strumenti digitali a basso costo, le persone smettono di essere meri ricettori passivi e diventano **produttori attivi di valore, contenuti e conoscenza** (*User Generated Content* - UGC, Wikipedia, software open source, YouTuber, maker e stampa 3D).\n\n---\n\n### 4. I Lead Users (Eric von Hippel)\n\nAccanto al prosumer, il docente del MIT **Eric von Hippel** ha concettualizzato i **Lead Users (Utenti Guida)**:\n- Consumatori o professionisti all'avanguardia che avvertono bisogni mesi o anni prima del mercato di massa.\n- Poiche il mercato non offre soluzioni per le loro esigenze estreme, i lead users modificano, riprogrammano e adattano artigianalmente i prodotti esistenti in totale autonomia.\n- Per l'interaction designer, i lead users sono la risorsa piu preziosa: osservare i loro prototipi spontanei permette di anticipare le future tendenze di mercato.",
+    "summary": "### 1. Genealogia dell'Utente nella Cultura Informatica\n\nNel discorso tecnologico e progettuale, il termine **Utente (*User*)** non è una categoria naturale ma una costruzione semantica ed epistemologica evolutasi nel tempo:\n- **End-User (Utente Finale)**:\n  Astrazione concettuale coniata dall'ingegneria del software per indicare la persona destinataria dell'applicativo che non possiede competenze di programmazione. Nella progettazione delle interfacce, definire l'end-user serve a calibrare il vocabolario a schermo, evitando di esporre log di errore tecnici incomprensibili.\n- **Il Gergo Hacker: Da 'User' a 'Luser'**:\n  Nelle comunità hacker degli anni '70 e '80 (MIT, usenet, Jargon File), l'utente inesperto che non comprendeva la logica della macchina veniva definito con disprezzo **'luser'** (crasi tra *loser*, perdente, e *user*). Questa etichetta rivelava la postura originaria dell'ingegneria: la macchina era perfetta, e se qualcosa non funzionava la colpa era attribuita all'ignoranza o alla stupidita dell'utilizzatore (*User Error*).\n  L'Interaction Design contemporaneo ribalta questa visione: non esistono errori dell'utente, esistono solo sistemi mal progettati.\n\n---\n\n### 2. Distinzione Giuridica e Sociologica: Utente vs Cliente\n\nNel design dei servizi, è fondamentale distinguere tra la figura dell'utente e quella del cliente:\n- **Utente**: Colui che fruisce di un servizio pubblico o regolamentato **senza avere la possibilità di scegliere tra enti concorrenti** (es. i passeggeri del trasporto pubblico locale, i cittadini che usano il portale delle imposte o l'anagrafe digitale, i pazienti del servizio sanitario). L'utente non può \"abbandonare il servizio per andare dalla concorrenza\": per questo l'accessibilità e l'usabilità di tali interfacce è un dovere democratico fondamentale.\n- **Cliente**: Colui che acquista un servizio in un regime di **libero mercato e concorrenza**, avendo facoltà di scegliere tra molteplici fornitori alternativi (negozi, ristoranti, piattaforme streaming private). Se l'esperienza d'uso è insoddisfacente, il cliente esercita il diritto di recesso (*churn rate*).\n\n---\n\n### 3. Alvin Toffler e la Nascita del 'Prosumer' (1980)\n\nNel visionario saggio *The Third Wave* (La Terza Ondata, 1980), il sociologo e futurologo statunitense **Alvin Toffler** conia il termine **Prosumer** (fusione di *Producer* e *Consumer*):\n- *Prima Ondata (Società Agricola)*: Produzione e consumo coincidevano; le comunità producevano ciò che consumavano per la sussistenza.\n- *Seconda Ondata (Società Industriale)*: Separazione rigida e artificiale tra produzione di massa (fabbriche) e consumo passivo (cittadini).\n- *Terza Ondata (Società Post-Industriale e Digitale)*: Riunificazione dialettica. Con la diffusione del Web 2.0, dei social network e degli strumenti digitali a basso costo, le persone smettono di essere meri ricettori passivi e diventano **produttori attivi di valore, contenuti e conoscenza** (*User Generated Content* - UGC, Wikipedia, software open source, YouTuber, maker e stampa 3D).\n\n---\n\n### 4. I Lead Users (Eric von Hippel)\n\nAccanto al prosumer, il docente del MIT **Eric von Hippel** ha concettualizzato i **Lead Users (Utenti Guida)**:\n- Consumatori o professionisti all'avanguardia che avvertono bisogni mesi o anni prima del mercato di massa.\n- Poiché il mercato non offre soluzioni per le loro esigenze estreme, i lead users modificano, riprogrammano e adattano artigianalmente i prodotti esistenti in totale autonomia.\n- Per l'interaction designer, i lead users sono la risorsa più preziosa: osservare i loro prototipi spontanei permette di anticipare le future tendenze di mercato.\n\n---\n\n### 5. Le accezioni del termine 'utente' (dispensa)\n\n- **Utente** è chi usa un bene o un servizio; è anche chi usa un comune patrimonio culturale o sociale; l'utente della pubblicità è il **destinatario** di un messaggio; l'**utente finale** è chi usa sistemi elettronici per ottenere ed elaborare dati e scambiare informazioni.\n- In italiano esiste il sinonimo **fruitore**: chi fa uso di qualcosa *traendone un beneficio*.\n- Nei sistemi operativi l'utente si identifica con **account** e **username** (spesso con password); l'accesso avviene tramite un'**interfaccia utente** che media il rapporto con il computer. Nel gergo hacker gli utenti inesperti sono chiamati **lusers** (loser + user).\n- Per la **cultura del progetto** gli utenti sono **attori sociali** che valutano un prodotto in base ad aspettative e attività; alcuni preferiscono schemi d'uso costanti, altri cercano novità; tutti accumulano **esperienza**, un patrimonio di conoscenza utile a valutare i prodotti e prevederne l'evoluzione.\n- Negli ultimi 50 anni l'utente è passato dal **ruolo passivo di cliente-acquirente** al **ruolo attivo di co-progettista**.\n\n**Metamorfosi dei consumatori**: l'*end user* è spesso sinonimo di consumatore (*consumer*), cioè di chi userà il prodotto; il *customer* è invece chi lo **acquista** senza necessariamente usarlo. Le imprese non si rivolgono più a una massa indistinta ma al singolo consumatore e alle sue aspettative.\n\n### 6. Oltre l'utente generico: le parole alternative\n\nIl termine 'utente' è considerato da alcuni un relitto di quando non esistevano le interfacce elettroniche. Alternative citate in dispensa:\n\n| Termine | Sfumatura |\n| :--- | :--- |\n| Attore | Termine specialistico dell'analisi del comportamento |\n| Consumatore | Esprime i significati psicologici e sociali del consumo |\n| Customer (cliente) | Più specialistico, usato per i siti web |\n| Essere umano / Uomo | Vivi nell'interazione uomo-macchina e nell'ergonomia |\n| Partecipante | Suggerisce il coinvolgimento attivo |\n| Patient | In italiano limitato al contesto medico |\n| Persone / Gente (*people*) | Tra i candidati più forti a sostituire 'utenti' |\n| Stakeholder | I professionisti della marca |\n| Target | Termine proprio del marketing |\n\n**Partecipante** è sostenuto con forza perché stabilisce il ruolo dell'individuo ed è abbastanza neutro per il linguaggio del progetto. Si innesta sulla tradizione della **progettazione partecipata**: *cooperative design* (coinvolgimento di progettisti e utenti), *participatory design* (termine americano per lo stesso concetto), *contextual design* (ulteriore aggiornamento). Con il termine **co-creator** i partecipanti diventano parte non solo attiva ma **ideativa** del progetto.\n\n### 7. Prosumer, consum-attore e consum-autore\n\nLa dispensa collega il prosumer di Toffler alla collaborazione diffusa online e al **crowdsourcing**. Nascono nuove figure: il **consum-attore**, che partecipa consapevolmente ai processi economici e culturali, e il **consum-autore**, che aggiunge valore creativo ai prodotti. Si diffondono **co-consumo** e condivisione (car sharing, bike sharing, sofa surfing): il sapere non è più centralizzato nelle aziende ma distribuito in una rete di utenti e produttori, con una forma di **intelligenza collettiva**.\n\n### 8. L'utente tra progetto e prodotto\n\nIl disegno industriale, che investiva sulla forma fisica e sui materiali, oggi pone al centro l'utente oltre l'oggetto (experience design e user experience design). La critica: *\"In primo luogo sono le persone, non gli utenti. Un utente è qualcosa che creano i progettisti\"*: una persona diventa utente solo quando inizia a usare un oggetto. Per questo è più corretto parlare di **utenti immaginati, potenziali**: l'uso simulato può solo essere previsto e le persone possono sovvertire o convertire l'uso progettato. Da qui l'invito a chiamarle con il loro nome: *\"siamo persone, e progettiamo per le persone\"*.",
     "keyPoints": [
-      "L'End-User e l'astrazione informatica che identifica il destinatario non tecnico del software.",
+      "L'End-User è l'astrazione informatica che identifica il destinatario non tecnico del software.",
       "Il termine hacker 'luser' denotava la vecchia colpevolizzazione dell'utente, oggi superata dall'IxD.",
       "L'utente usa servizi spesso privi di alternative (es. PA); il cliente opera in regimi concorrenziali di mercato.",
       "Alvin Toffler (1980) ha coniato il 'Prosumer' (Producer + Consumer) per definire l'utente che co-produce valore.",
@@ -1746,15 +1746,15 @@ window.INTERACTION_DATA = [
     "flashcards": [
       {
         "question": "Cosa indica il termine 'End-User' nell'ingegneria del software?",
-        "answer": "La persona reale a cui e destinato il programma, che non possiede competenze tecniche di programmazione."
+        "answer": "La persona reale a cui è destinato il programma, che non possiede competenze tecniche di programmazione."
       },
       {
         "question": "Cosa indicava il termine gergale hacker 'luser'?",
         "answer": "Una fusione spregiativa di 'loser' e 'user' usata per colpevolizzare l'inesperienza tecnica dell'utilizzatore."
       },
       {
-        "question": "Qual e la differenza strutturale tra Utente e Cliente?",
-        "answer": "L'utente spesso non puo scegliere fornitori alternativi (es. trasporti pubblici); il cliente ha libera scelta di mercato."
+        "question": "Qual è la differenza strutturale tra Utente e Cliente?",
+        "answer": "L'utente spesso non può scegliere fornitori alternativi (es. trasporti pubblici); il cliente ha libera scelta di mercato."
       },
       {
         "question": "Chi ha coniato il termine 'Prosumer' e cosa significa?",
@@ -1767,59 +1767,59 @@ window.INTERACTION_DATA = [
     ],
     "quiz": [
       {
-        "question": "Quale concetto sociologico e stato introdotto da Alvin Toffler nel 1980 per descrivere il superamento della separazione tra chi produce e chi consuma?",
+        "question": "Secondo la dispensa, che cosa distingue un utente da un cliente?",
         "options": [
-          "Prosumer (Producer + Consumer)",
-          "Luser sistemico",
-          "End-User automatizzato",
-          "Netizen corporativo"
+          "Il cliente paga, l'utente usa sempre servizi gratuiti",
+          "Il cliente usa il prodotto, l'utente lo compra per altri",
+          "L'utente è un esperto tecnico, il cliente no",
+          "L'utente non può scegliere tra più fornitori, il cliente sì"
         ],
-        "correct": 0,
-        "explanation": "Alvin Toffler ha coniato il concetto di Prosumer per indicare la figura ibrida che partecipa attivamente alla creazione, personalizzazione e distribuzione dei beni e contenuti che consuma."
+        "correctIndex": 3,
+        "explanation": "La dispensa: l'utente finale usa un servizio senza poter scegliere tra enti che lo erogano (es. trasporti pubblici); il cliente può scegliere tra più offerenti (negozi, ristoranti). Il pagamento non è il criterio."
       },
       {
-        "question": "Perche l'Interaction Design rifiuta la concezione storicamente sintetizzata nel termine hacker 'luser'?",
+        "question": "Chi ha introdotto il termine prosumer, e in quale periodo?",
         "options": [
-          "Perche considera che se un utente non riesce a compiere un'operazione, la responsabilita e del design difettoso e non della persona",
-          "Perche gli hacker non avevano diritto di voto negli anni '80",
-          "Perche il termine viola il copyright della Microsoft",
-          "Perche i software attuali non necessitano di alcuna interfaccia utente"
+          "Thorstein Veblen, alla fine dell'Ottocento",
+          "Alvin Toffler, negli anni Ottanta",
+          "Pierre Bourdieu, negli anni Settanta",
+          "Robert Kozinets, negli anni Novanta"
         ],
-        "correct": 0,
-        "explanation": "L'IxD e l'Human-Centered Design fondano la propria etica sul principio che 'non esistono errori dell'utente, ma solo interfacce mal progettate': incolpare l'utente e il sintomo di una cattiva cultura progettuale."
+        "correctIndex": 1,
+        "explanation": "Il prosumer (producer + consumer) è stato introdotto negli anni '80 da Alvin Toffler. Veblen, Bourdieu e Kozinets sono autori dello stesso corso, ma legati a consumo vistoso, habitus e netnografia."
       },
       {
-        "question": "In cosa differisce sociologicamente un 'Utente' di un servizio anagrafico comunale rispetto al 'Cliente' di una piattaforma di streaming?",
+        "question": "Che cosa sono i lead users?",
         "options": [
-          "L'utente dell'anagrafe non ha la possibilita di rivolgersi a un concorrente privato, rendendo l'usabilita un dovere civico e universale",
-          "Il cliente non paga mai per i servizi che riceve",
-          "L'utente anagrafico e obbligato a conoscere il linguaggio Python",
-          "Non vi e alcuna differenza: sono termini del tutto intercambiabili"
+          "I clienti più fedeli, che generano la maggior parte dei ricavi",
+          "Gli utenti che acquistano per primi un prodotto appena lanciato",
+          "Consumatori competenti e innovativi che sviluppano autonomamente nuove soluzioni",
+          "Gli utenti che guidano i focus group come moderatori"
         ],
-        "correct": 0,
-        "explanation": "I servizi pubblici in monopolio non consentono all'utente di esercitare l'opzione di uscita (exit): pertanto, un'interfaccia pubblica ostica priva il cittadino dell'esercizio di un diritto civile fondamentale."
+        "correctIndex": 2,
+        "explanation": "Il lead user è un consumatore particolarmente competente e innovativo che può sviluppare in autonomia nuove soluzioni. Comprare per primi (early adopter) o essere fedeli non implica innovare."
       },
       {
-        "question": "Quale comportamento contraddistingue i 'Lead Users' teorizzati da Eric von Hippel?",
+        "question": "Quale termine la dispensa indica come uno dei più adatti a sostituire 'utente', e perché?",
         "options": [
-          "Sperimentano necessita prima del mercato di massa e modificano autonomamente i prodotti per superarne i limiti",
-          "Rifiutano categoricamente l'uso di qualsiasi apparecchiatura digitale",
-          "Acquistano unicamente prodotti obsoleti a prezzo di saldo",
-          "Lavorano come avvocati specializzati in diritto societario"
+          "Partecipante, perché è neutro e indica un ruolo attivo",
+          "Customer, perché è il più usato nei siti web",
+          "Target, perché è preciso e misurabile",
+          "Stakeholder, perché comprende tutti i portatori di interesse"
         ],
-        "correct": 0,
-        "explanation": "I Lead Users si trovano sulla frontiera del bisogno: poiche l'industria non produce ancora cio di cui necessitano, sono i primi a inventare prototipi e 'hacks' che anticipano l'innovazione commerciale."
+        "correctIndex": 0,
+        "explanation": "'Partecipante' è sostenuto con forza perché stabilisce il ruolo dell'individuo ed è abbastanza neutro per il linguaggio del progetto, legandosi alla progettazione partecipata. Target è un termine del marketing."
       },
       {
-        "question": "Quale delle seguenti piattaforme rappresenta l'incarnazione contemporanea del concetto di 'Prosumer'?",
+        "question": "Che cosa descrive il termine 'consum-autore'?",
         "options": [
-          "Wikipedia (in cui gli utenti leggono le voci e contemporaneamente le scrivono, correggono e aggiornano)",
-          "Un vecchio televisore a tubo catodico privo di telecomando",
-          "Un cartellone pubblicitario stradale in cartone",
-          "Un distributore automatico di bibite in lattina a moneta"
+          "Un consumatore che aggiunge valore creativo ai prodotti",
+          "Un consumatore che scrive recensioni a pagamento",
+          "Un autore che vende direttamente i propri libri",
+          "Un consumatore che rinuncia del tutto al possesso"
         ],
-        "correct": 0,
-        "explanation": "Wikipedia vive della produzione collaborativa dei suoi stessi fruitori: ogni lettore e potenzialmente redattore, realizzando in modo emblematico la profezia del prosumer di Toffler."
+        "correctIndex": 0,
+        "explanation": "La dispensa distingue il consum-attore, che partecipa consapevolmente ai processi economici e culturali, dal consum-autore, che aggiunge valore creativo ai prodotti."
       }
     ]
   },
@@ -1828,11 +1828,11 @@ window.INTERACTION_DATA = [
     "number": 20,
     "title": "Teoria Sociale del Consumo: Thorstein Veblen e il Consumo Vistoso",
     "subtitle": "The Theory of the Leisure Class (1899), emulazione pecuniaria, spreco vistoso e beni posizionali",
-    "readTime": "8 min",
+    "readTime": "6 min",
     "module": "ixd-teoria-sociologia",
-    "summary": "### 1. Thorstein Veblen e le Origini della Critica del Consumo\n\nNel 1899, l'economista e sociologo statunitense di origini norvegesi **Thorstein Veblen** pubblica una delle opere cardine delle scienze sociali moderne: *The Theory of the Leisure Class* (La teoria della classe agiata).\n\nVeblen demolisce il presupposto dell'economia classica secondo cui l'essere umano agirebbe come un calcolatore razionale (*homo oeconomicus*) teso unicamente a massimizzare l'utilità materiale dei beni a parità di costo. Al contrario, Veblen dimostra che:\n- Il consumo e primariamente un **fenomeno sociale, comunicativo e relazionale**.\n- Gli individui acquistano ed esibiscono beni materiali non tanto per soddisfare bisogni biologici primari, quanto per **segnalare pubblicamente il proprio status sociale, potere economico e reputazione** all'interno della comunita.\n\n---\n\n### 2. Le Tre Categorie Fondamentali del Modello Vebleniano\n\n1. **Consumo Vistoso (*Conspicuous Consumption*)**:\n   - L'acquisto e l'esibizione plateale di merci superflue, costose o lussuose al solo scopo di rendere manifesta a tutti la propria capacita pecuniaria.\n   - Il valore del bene non risiede nelle sue prestazioni d'uso (*valore d'uso*), ma nella sua visibilita e nel suo costo inaccessibile alla maggioranza (*valore posizionale*).\n2. **Agiatezza Vistosa (*Conspicuous Leisure*)**:\n   - L'ostentazione pubblica dell'astensione da qualsiasi forma di lavoro manuale o produttivo.\n   - Si manifesta nella dedizione a discipline disinteressate e costose (sport d'elite, collezionismo d'arte antica, studio di lingue morte, viaggi prolungati), che provano che l'individuo non ha bisogno di lavorare per vivere.\n3. **Spreco Vistoso (*Conspicuous Waste*)**:\n   - La distruzione deliberata o il mancato utilizzo di risorse preziose (es. abiti talmente delicati da poter essere indossati una sola volta, o cerimonie sfarzose con spreco di cibo) come attestato supremo di ricchezza inesauribile.\n\n---\n\n### 3. L'Emulazione Pecuniaria e l'Effetto Cascata (*Trickle-Down*)\n\nSecondo Veblen, la stratificazione sociale si regge sul meccanismo dell'**Emulazione Pecuniaria**:\n- Le classi subordinate non covano il desiderio di distruggere la classe dominante, ma ambiscono a **imitarne i modelli di consumo e gli stili di vita** non appena dispongono di un minimo margine economico.\n- I canoni estetici e le mode dettati dalla classe agiata scendono a cascata (*trickle-down effect*) verso i ceti medi e popolari. Non appena un bene o un'estetica si diffonde eccessivamente perdendo la propria carica di esclusivita, la classe agiata lo abbandona per cercare nuovi simboli di distinzione.\n\n---\n\n### 4. Il Paradosso dei 'Beni di Veblen' e il Design Contemporaneo\n\nIn economia, un **Bene di Veblen** viola la legge fondamentale della domanda e dell'offerta:\n- Normalmente, all'aumentare del prezzo la domanda di un bene diminuisce. Per i beni di Veblen accade l'opposto: **all'aumentare del prezzo la domanda aumenta**, poiche il prezzo proibitivo accresce l'esclusivita e il valore di status dell'oggetto.\n- *Nell'Interaction Design contemporaneo*: Si pensi agli smartphone in titanio in edizione limitata, agli orologi smart dal costo di svariate migliaia di euro con identiche funzionalita di un modello base, o all'acquisto di beni digitali unici (skin rare, avatar di lusso nei mondi virtuali). Il designer deve essere conscio che ogni interfaccia incorpora e trasmette potenti segnali di status socio-economico.",
+    "summary": "### 1. Thorstein Veblen e le Origini della Critica del Consumo\n\nNel 1899, l'economista e sociologo statunitense di origini norvegesi **Thorstein Veblen** pubblica una delle opere cardine delle scienze sociali moderne: *The Theory of the Leisure Class* (La teoria della classe agiata).\n\nVeblen demolisce il presupposto dell'economia classica secondo cui l'essere umano agirebbe come un calcolatore razionale (*homo oeconomicus*) teso unicamente a massimizzare l'utilità materiale dei beni a parità di costo. Al contrario, Veblen dimostra che:\n- Il consumo è primariamente un **fenomeno sociale, comunicativo e relazionale**.\n- Gli individui acquistano ed esibiscono beni materiali non tanto per soddisfare bisogni biologici primari, quanto per **segnalare pubblicamente il proprio status sociale, potere economico e reputazione** all'interno della comunità.\n\n---\n\n### 2. Le Tre Categorie Fondamentali del Modello Vebleniano\n\n1. **Consumo Vistoso (*Conspicuous Consumption*)**:\n   - L'acquisto e l'esibizione plateale di merci superflue, costose o lussuose al solo scopo di rendere manifesta a tutti la propria capacità pecuniaria.\n   - Il valore del bene non risiede nelle sue prestazioni d'uso (*valore d'uso*), ma nella sua visibilità e nel suo costo inaccessibile alla maggioranza (*valore posizionale*).\n2. **Agiatezza Vistosa (*Conspicuous Leisure*)**:\n   - L'ostentazione pubblica dell'astensione da qualsiasi forma di lavoro manuale o produttivo.\n   - Si manifesta nella dedizione a discipline disinteressate e costose (sport d'elite, collezionismo d'arte antica, studio di lingue morte, viaggi prolungati), che provano che l'individuo non ha bisogno di lavorare per vivere.\n3. **Spreco Vistoso (*Conspicuous Waste*)**:\n   - La distruzione deliberata o il mancato utilizzo di risorse preziose (es. abiti talmente delicati da poter essere indossati una sola volta, o cerimonie sfarzose con spreco di cibo) come attestato supremo di ricchezza inesauribile.\n\n---\n\n### 3. L'Emulazione Pecuniaria e l'Effetto Cascata (*Trickle-Down*)\n\nSecondo Veblen, la stratificazione sociale si regge sul meccanismo dell'**Emulazione Pecuniaria**:\n- Le classi subordinate non covano il desiderio di distruggere la classe dominante, ma ambiscono a **imitarne i modelli di consumo e gli stili di vita** non appena dispongono di un minimo margine economico.\n- I canoni estetici e le mode dettati dalla classe agiata scendono a cascata (*trickle-down effect*) verso i ceti medi e popolari. Non appena un bene o un'estetica si diffonde eccessivamente perdendo la propria carica di esclusivita, la classe agiata lo abbandona per cercare nuovi simboli di distinzione.\n\n---\n\n### 4. Il Paradosso dei 'Beni di Veblen' e il Design Contemporaneo\n\nIn economia, un **Bene di Veblen** viola la legge fondamentale della domanda e dell'offerta:\n- Normalmente, all'aumentare del prezzo la domanda di un bene diminuisce. Per i beni di Veblen accade l'opposto: **all'aumentare del prezzo la domanda aumenta**, poiché il prezzo proibitivo accresce l'esclusivita e il valore di status dell'oggetto.\n- *Nell'Interaction Design contemporaneo*: Si pensi agli smartphone in titanio in edizione limitata, agli orologi smart dal costo di svariate migliaia di euro con identiche funzionalità di un modello base, o all'acquisto di beni digitali unici (skin rare, avatar di lusso nei mondi virtuali). Il designer deve essere conscio che ogni interfaccia incorpora e trasmette potenti segnali di status socio-economico.\n\n---\n\n### 5. Studi sul consumo e studi sull'utente\n\nGli studi sui consumi sono una fonte di riferimento per gli studi sull'utente: entrambi interdisciplinari, i primi studiano il rapporto **produzione-consumo**, i secondi il rapporto **progetto-utente**. Il consumo non è solo il complemento economico della produzione, ma un fenomeno culturale fatto di valori, stili di vita e aspirazioni, uno spazio in cui esprimere la propria soggettività. Fino agli anni '70 il consumatore è visto come **passivo**; poi si afferma un ruolo **attivo**, con le aziende che lo coinvolgono in promozione, comunicazione, vendita e distribuzione.\n\nIl consumatore e il **cittadino** tendono a sovrapporsi nel **cittadino-consumatore**, che partecipa alla società anche con le scelte d'acquisto: ne sono esempi il **consumerismo** (difesa dei diritti dei consumatori) e il giornalismo partecipativo online. La dispensa avverte però che non tutti i consumatori sono sempre critici o responsabili.\n\n### 6. Nuovi equilibri nel consumo (Giampaolo Fabris)\n\nNella **società del desiderio** si consuma a ritmi frenetici e i concetti di soddisfazione e sazietà perdono senso: l'accesso a sempre più beni genera **insoddisfazione e disagio**, un consumo eccessivo con comportamenti *oversize*. La risposta non è la rinuncia ascetica ma un consumo più **discreto e consapevole**, orientato al benessere: nasce l'**utente riflessivo**, che pratica un consumo critico, responsabile e solidale attraverso **localismo, gruppi di acquisto collettivo, commercio equo e solidale, riciclo, riuso e condivisione**.\n\n### 7. Il consumo vistoso rivisitato: il trading up\n\nAccanto al consumo consapevole esiste il **trading up**: acquistare beni che simboleggiano un avanzamento sociale anche in situazioni economiche difficili. È la riproposizione moderna del consumo vistoso di Veblen: ancora oggi i beni di prestigio servono a distinguersi e a dichiarare l'appartenenza a uno stile di vita superiore, indipendentemente dalle reali possibilità economiche.",
     "keyPoints": [
-      "Thorstein Veblen (1899) smonta il mito dell'homo oeconomicus: il consumo e uno strumento di segnalazione sociale.",
+      "Thorstein Veblen (1899) smonta il mito dell'homo oeconomicus: il consumo è uno strumento di segnalazione sociale.",
       "Il Consumo Vistoso (Conspicuous Consumption) consiste nell'esibire beni costosi per attestare potere e prestigio.",
       "L'Agiatezza Vistosa e lo Spreco Vistoso certificano pubblicamente l'astensione dal lavoro produttivo manuale.",
       "L'emulazione pecuniaria spinge le classi medie a imitare i consumi dei ceti dominanti con effetto a cascata.",
@@ -1840,81 +1840,81 @@ window.INTERACTION_DATA = [
     ],
     "flashcards": [
       {
-        "question": "Qual e la tesi centrale de 'La teoria della classe agiata' di Thorstein Veblen (1899)?",
-        "answer": "Che i beni vengono consumati non per utilita biologica ma per segnalare pubblicamente ricchezza e prestigio."
+        "question": "Qual è la tesi centrale de 'La teoria della classe agiata' di Thorstein Veblen (1899)?",
+        "answer": "Che i beni vengono consumati non per utilità biologica ma per segnalare pubblicamente ricchezza e prestigio."
       },
       {
         "question": "Cosa si intende per 'Consumo Vistoso' (Conspicuous Consumption)?",
         "answer": "L'acquisto e l'esibizione palese di merci costose al solo scopo di attestare il proprio status economico elevato."
       },
       {
-        "question": "Cos'e l'Agiatezza Vistosa (Conspicuous Leisure)?",
-        "answer": "L'ostentazione del non dover lavorare, manifestata attraverso attivita improduttive e costose."
+        "question": "Cos'è l'Agiatezza Vistosa (Conspicuous Leisure)?",
+        "answer": "L'ostentazione del non dover lavorare, manifestata attraverso attività improduttive e costose."
       },
       {
         "question": "Come funziona l'emulazione pecuniaria tra le classi sociali?",
-        "answer": "Le classi subordinate imitano i consumi della classe agiata per sembrare piu ricche (effetto trickle-down)."
+        "answer": "Le classi subordinate imitano i consumi della classe agiata per sembrare più ricche (effetto trickle-down)."
       },
       {
         "question": "Cosa caratterizza un 'Bene di Veblen' in economia?",
-        "answer": "La sua domanda aumenta all'aumentare del prezzo, poiche il prezzo alto accresce la sua carica di esclusivita."
+        "answer": "La sua domanda aumenta all'aumentare del prezzo, poiché il prezzo alto accresce la sua carica di esclusivita."
       }
     ],
     "quiz": [
       {
-        "question": "Secondo Thorstein Veblen, qual e la motivazione primaria che spinge le persone al 'Consumo Vistoso'?",
+        "question": "In quale opera e anno Veblen espone la teoria del consumo vistoso?",
         "options": [
-          "La necessita di segnalare pubblicamente il proprio status sociale, ricchezza e potenza pecuniaria alla comunita",
-          "L'esigenza biologica di sopravvivere ai climi invernali rigidi",
-          "Il rispetto dei dettami religiosi della poverta evangelica",
-          "Il calcolo scientifico per ridurre a zero i rifiuti domestici"
+          "La terza ondata, 1980",
+          "La distinzione, 1979",
+          "La teoria della classe agiata, 1899",
+          "Consumer Culture and Postmodernism, 1991"
         ],
-        "correct": 0,
-        "explanation": "Veblen individua nel consumo vistoso un potente codice di comunicazione posizionale: spendere denaro in beni superflui e visibili serve ad attestare a tutti la propria collocazione ai vertici della piramide sociale."
+        "correctIndex": 2,
+        "explanation": "Veblen pubblica La teoria della classe agiata nel 1899. Le altre opere sono di Bourdieu (1979), Toffler (1980) e Featherstone (1991), tutti autori dello stesso modulo."
       },
       {
-        "question": "Cosa accade alla domanda di un cosiddetto 'Bene di Veblen' quando il suo prezzo di mercato sale notevolmente?",
+        "question": "Secondo Veblen, in quali due modi la classe agiata esprime il proprio prestigio?",
         "options": [
-          "La domanda paradossalmente aumenta, perche il prezzo elevato ne accresce l'esclusivita e il valore di status simbolico",
-          "La domanda crolla immediatamente a zero come previsto dalla fisica newtoniana",
-          "La merce viene ritirata per legge da tutti i negozi mondiali",
-          "Il governo interviene confiscando i beni per redistribuirli"
+          "Con il risparmio e con gli investimenti finanziari prudenti",
+          "Con la beneficenza pubblica e con l'impegno politico attivo",
+          "Con l'istruzione elevata e con una rete di relazioni influenti",
+          "Con il non lavorare e con l'acquisto di beni di lusso inutili"
         ],
-        "correct": 0,
-        "explanation": "Nei beni di Veblen il prezzo elevato e parte integrante dell'attrattiva del bene: se il prezzo scendesse, il bene perderebbe la sua funzione di distinzione e i clienti facoltosi smetterebbero di desiderarlo."
+        "correctIndex": 3,
+        "explanation": "Conspicuous leisure (il lusso di non lavorare) e conspicuous consumption (beni di lusso inutili). Istruzione e relazioni ricordano invece i capitali culturale e sociale di Bourdieu."
       },
       {
-        "question": "Nel pensiero vebleniano, quale meccanismo psicosociale alimenta la diffusione delle mode della classe agiata verso i ceti popolari?",
+        "question": "Secondo Veblen, quale delle due forme di ostentazione diventa un modello aspirazionale per tutte le classi?",
         "options": [
-          "L'emulazione pecuniaria a cascata (trickle-down), per cui le classi inferiori imitano i modelli di consumo dell'elite",
-          "L'imposizione coercitiva mediante decreti militari d'urgenza",
-          "La totale indifferenza reciproca tra i diversi strati sociali",
-          "La decisione unanime presa nei congressi operai"
+          "L'agiatezza vistosa, perché tutti desiderano non lavorare",
+          "Il consumo vistoso, che le classi inferiori cercano di emulare",
+          "Nessuna delle due: restano prerogative della classe agiata",
+          "Entrambe in egual misura"
         ],
-        "correct": 0,
-        "explanation": "L'emulazione pecuniaria e la molla che diffonde i modelli di consumo verso il basso: i ceti subalterni tentano di avvicinarsi all'estetica dell'elite acquistandone versioni accessibili."
+        "correctIndex": 1,
+        "explanation": "L'agiatezza vistosa resta prerogativa delle classi più elevate, mentre il consumo vistoso diventa un modello aspirazionale che le altre classi emulano."
       },
       {
-        "question": "Quale tra i seguenti costituisce un esempio contemporaneo di 'Consumo Vistoso' nell'ecosistema digitale?",
+        "question": "Che cos'è il fenomeno del trading up citato in dispensa?",
         "options": [
-          "L'acquisto di smartphone con scocca in oro massiccio o skin virtuali ultra-rare ed esclusive esibite nei profili social",
-          "L'installazione di una distribuzione Linux open-source e gratuita su un vecchio computer portatile",
-          "La navigazione anonima per proteggere la propria privacy online",
-          "L'uso della modalita aereo per risparmiare la carica della batteria"
+          "Passare da un abbonamento base a uno premium per ottenere più funzioni",
+          "Rivendere oggetti usati per comprarne di nuovi più economici",
+          "Scegliere prodotti locali e del commercio equo e solidale",
+          "Acquistare beni che simboleggiano avanzamento sociale anche in difficoltà economiche"
         ],
-        "correct": 0,
-        "explanation": "I beni digitali e gli smartphone di lusso con materiali esotici svolgono la medesima funzione descritta da Veblen nel 1899: segnalare ricchezza ed esclusivita all'interno della rete sociale dei pari."
+        "correctIndex": 3,
+        "explanation": "Il trading up porta ad acquistare beni simbolo di avanzamento sociale anche in situazioni difficili: è una versione moderna del consumo vistoso. Il commercio equo è invece un tratto del consumo consapevole."
       },
       {
-        "question": "In cosa consiste l'Agiatezza Vistosa (Conspicuous Leisure) secondo Veblen?",
+        "question": "In che cosa la visione di Veblen si oppone a quella dell'economia classica?",
         "options": [
-          "Nell'ostentare il possesso di tempo libero e l'astensione dal lavoro manuale attraverso attivita non produttive ma costose",
-          "Nel dormire 14 ore a notte a causa di una patologia clinica certificata",
-          "Nel lavorare 80 ore a settimana in una miniera di carbone",
-          "Nel fare la spesa nei discount alimentari per risparmiare stipendio"
+          "Sostiene che il consumatore è sempre razionale e calcolatore",
+          "Sostiene che il prezzo non influenza mai le scelte d'acquisto",
+          "Sostiene che il consumo serve spesso a ostentare prestigio",
+          "Sostiene che la ricchezza va accumulata senza essere mostrata"
         ],
-        "correct": 0,
-        "explanation": "L'agiatezza vistosa e la dimostrazione pubblica che non si e costretti alla fatica del lavoro quotidiano per sostenersi, esibita attraverso pratiche culturali, etichette di buone maniere e sport elitari."
+        "correctIndex": 2,
+        "explanation": "L'economia classica descrive un consumatore razionale guidato da costi e benefici; per Veblen la ricchezza non solo si accumula ma viene esibita per dimostrare uno status superiore."
       }
     ]
   },
@@ -1926,25 +1926,25 @@ window.INTERACTION_DATA = [
     "readTime": "10 min",
     "module": "ixd-teoria-sociologia",
     "image": "assets/corsi/dapl08/anno-1/interaction-design/images/schema_stili_di_vita_bourdieu.svg",
-    "summary": "### 1. Pierre Bourdieu e la Demolizione della 'Naturalezza' del Gusto\n\nNel 1979, il sociologo ed etnografo francese **Pierre Bourdieu** pubblica una delle vette assolute del pensiero contemporaneo: *La Distinction: Critique sociale du jugement* (La distinzione. Critica sociale del gusto).\n\nLa tesi fondamentale di Bourdieu scuote le basi dell'estetica idealista:\n> *\"Il gusto non e una predisposizione innata dello spirito o un dono naturale, ma il prodotto di un'educazione sociale e familiare interiorizzata. Il gusto unisce e separa: e l'operatore pratico attraverso cui le disuguaglianze di classe vengono trasfigurate in differenze di valore morale ed estetico.\"*\n\nCi piace cio che siamo stati socialmente addestrati ad amare. Chi possiede codici culturali complessi reputa \"volgare\" cio che e accessibile a tutti, mentre le classi popolari prediligono un'estetica pragmatica e funzionale (*il gusto del necessario*).\n\n---\n\n### 2. Le Tre Forme Fondamentali del Capitale (e il Capitale Simbolico)\n\nBourdieu estende il concetto marxiano di capitale oltre la pura dimensione finanziaria, identificando **tre forme di capitale** che si compongono e si convertono reciprocamente:\n1. **Capitale Economico**: Il volume di denaro, reddito, titoli finanziari, patrimoni immobiliari e beni materiali posseduti direttamente.\n2. **Capitale Culturale**: Le competenze conoscitive, i titoli di studio, la padronanza del linguaggio, la familiarita con l'arte e la tecnologia. Si declina in tre stati:\n   - *Incorporato*: Disposizioni mentali e schemi cognitivi duraturi nel corpo e nella mente.\n   - *Oggettivato*: Libri, quadri, opere d'arte, dispositivi e strumenti posseduti.\n   - *Istituzionalizzato*: Titoli di studio accademici, certificazioni e abilitazioni formalmente riconosciute dallo Stato.\n3. **Capitale Sociale**: La rete duratura di relazioni, amicizie, legami di parentela e affiliazioni a circoli influenti (*il network*) che un individuo puo mobilitare per accrescere i propri vantaggi.\n4. **Capitale Simbolico**: La reputazione, il prestigio, la legittimita morale e l'onore sociale che gli altri riconoscono a un individuo in base al volume degli altri tre capitali.\n\n---\n\n### 3. La Teoria dell'Habitus\n\nL'**Habitus** costituisce il concetto teorico piu celebre e potente di Bourdieu:\n- E un sistema di **disposizioni durature e trasferibili**, strutture strutturate predisposte a funzionare come strutture strutturanti (*strutture mentali interiorizzate* fin dall'infanzia all'interno del proprio ambiente familiare e sociale).\n- L'habitus non e un insieme rigido di regole formali, ma una specie di \"senso del gioco\" inconscio: orienta le posture del corpo, il tono di voce, il modo di vestirsi, la scelta del cibo e il modo in cui ci si rapporta a un'interfaccia tecnologica.\n- Fa apparire come ovvio, spontaneo e \"naturale\" cio che in realta e storicamente e socialmente determinato.\n\n---\n\n![Spazio Sociale e Stili di Vita secondo Pierre Bourdieu](assets/corsi/dapl08/anno-1/interaction-design/images/schema_stili_di_vita_bourdieu.svg)\n\n---\n\n### 4. Lo Spazio Sociale e la Mappatura delle Pratiche\n\nBourdieu mappa la societa come un campo cartesiano bidimensionale:\n- **Asse Verticale**: Il *Volume Globale del Capitale* (in alto le classi dominanti con alti capitali; in basso le classi popolari con scarse risorse).\n- **Asse Orizzontale**: La *Struttura o Composizione del Capitale* (a sinistra chi ha alto capitale culturale ma basso economico, come insegnanti, ricercatori e artisti d'avanguardia; a destra chi ha alto capitale economico ma basso culturale, come industriali e commercianti).\n- Questa mappa spaziale predice con impressionante precisione le preferenze dei consumatori: dalle preferenze gastronomiche alla musica ascoltata, fino all'attitudine verso l'innovazione digitale (es. chi ama le interfacce essenziali e sofisticate vs chi preferisce icone vistose e rassicuranti).",
+    "summary": "### 1. Pierre Bourdieu e la Demolizione della 'Naturalezza' del Gusto\n\nNel 1979, il sociologo ed etnografo francese **Pierre Bourdieu** pubblica una delle vette assolute del pensiero contemporaneo: *La Distinction: Critique sociale du jugement* (La distinzione. Critica sociale del gusto).\n\nLa tesi fondamentale di Bourdieu scuote le basi dell'estetica idealista:\n> *\"Il gusto non è una predisposizione innata dello spirito o un dono naturale, ma il prodotto di un'educazione sociale e familiare interiorizzata. Il gusto unisce e separa: e l'operatore pratico attraverso cui le disuguaglianze di classe vengono trasfigurate in differenze di valore morale ed estetico.\"*\n\nCi piace ciò che siamo stati socialmente addestrati ad amare. Chi possiede codici culturali complessi reputa \"volgare\" ciò che è accessibile a tutti, mentre le classi popolari prediligono un'estetica pragmatica e funzionale (*il gusto del necessario*).\n\n---\n\n### 2. Le Tre Forme Fondamentali del Capitale (e il Capitale Simbolico)\n\nBourdieu estende il concetto marxiano di capitale oltre la pura dimensione finanziaria, identificando **tre forme di capitale** che si compongono e si convertono reciprocamente:\n1. **Capitale Economico**: Il volume di denaro, reddito, titoli finanziari, patrimoni immobiliari e beni materiali posseduti direttamente.\n2. **Capitale Culturale**: Le competenze conoscitive, i titoli di studio, la padronanza del linguaggio, la familiarità con l'arte e la tecnologia. Si declina in tre stati:\n   - *Incorporato*: Disposizioni mentali e schemi cognitivi duraturi nel corpo e nella mente.\n   - *Oggettivato*: Libri, quadri, opere d'arte, dispositivi e strumenti posseduti.\n   - *Istituzionalizzato*: Titoli di studio accademici, certificazioni e abilitazioni formalmente riconosciute dallo Stato.\n3. **Capitale Sociale**: La rete duratura di relazioni, amicizie, legami di parentela e affiliazioni a circoli influenti (*il network*) che un individuo può mobilitare per accrescere i propri vantaggi.\n4. **Capitale Simbolico**: La reputazione, il prestigio, la legittimita morale e l'onore sociale che gli altri riconoscono a un individuo in base al volume degli altri tre capitali.\n\n---\n\n### 3. La Teoria dell'Habitus\n\nL'**Habitus** costituisce il concetto teorico più celebre e potente di Bourdieu:\n- È un sistema di **disposizioni durature e trasferibili**, strutture strutturate predisposte a funzionare come strutture strutturanti (*strutture mentali interiorizzate* fin dall'infanzia all'interno del proprio ambiente familiare e sociale).\n- L'habitus non è un insieme rigido di regole formali, ma una specie di \"senso del gioco\" inconscio: orienta le posture del corpo, il tono di voce, il modo di vestirsi, la scelta del cibo e il modo in cui ci si rapporta a un'interfaccia tecnologica.\n- Fa apparire come ovvio, spontaneo e \"naturale\" ciò che in realtà è storicamente e socialmente determinato.\n\n---\n\n![Spazio Sociale e Stili di Vita secondo Pierre Bourdieu](assets/corsi/dapl08/anno-1/interaction-design/images/schema_stili_di_vita_bourdieu.svg)\n\n---\n\n### 4. Lo Spazio Sociale e la Mappatura delle Pratiche\n\nBourdieu mappa la società come un campo cartesiano bidimensionale:\n- **Asse Verticale**: Il *Volume Globale del Capitale* (in alto le classi dominanti con alti capitali; in basso le classi popolari con scarse risorse).\n- **Asse Orizzontale**: La *Struttura o Composizione del Capitale* (a sinistra chi ha alto capitale culturale ma basso economico, come insegnanti, ricercatori e artisti d'avanguardia; a destra chi ha alto capitale economico ma basso culturale, come industriali e commercianti).\n- Questa mappa spaziale predice con impressionante precisione le preferenze dei consumatori: dalle preferenze gastronomiche alla musica ascoltata, fino all'attitudine verso l'innovazione digitale (es. chi ama le interfacce essenziali e sofisticate vs chi preferisce icone vistose e rassicuranti).",
     "keyPoints": [
-      "Pierre Bourdieu (1979) dimostra che il gusto non e innato ma e un prodotto sociale di classe (La Distinzione).",
+      "Pierre Bourdieu (1979) dimostra che il gusto non è innato ma è un prodotto sociale di classe (La Distinzione).",
       "Il capitale si articola in: Economico (denaro), Culturale (conoscenze e titoli) e Sociale (network di relazioni).",
-      "Il Capitale Simbolico e il prestigio e la legittimita riconosciuti alla combinazione degli altri capitali.",
-      "L'Habitus e il sistema di schemi mentali e corporei interiorizzati che guida spontaneamente scelte, gusti e posture.",
+      "Il Capitale Simbolico è il prestigio e la legittimita riconosciuti alla combinazione degli altri capitali.",
+      "L'Habitus è il sistema di schemi mentali e corporei interiorizzati che guida spontaneamente scelte, gusti e posture.",
       "Lo spazio sociale distribuisce gli individui lungo il volume e la composizione (culturale vs economica) del capitale."
     ],
     "flashcards": [
       {
         "question": "Cosa sostiene Pierre Bourdieu riguardo all'origine del gusto individuale?",
-        "answer": "Che il gusto non e un fatto naturale o innato, ma il risultato di condizionamenti sociali e familiari (habitus)."
+        "answer": "Che il gusto non è un fatto naturale o innato, ma il risultato di condizionamenti sociali e familiari (habitus)."
       },
       {
         "question": "Quali sono le tre forme fondamentali di capitale secondo Bourdieu?",
         "answer": "Capitale Economico (denaro), Capitale Culturale (conoscenze, titoli) e Capitale Sociale (rete di relazioni)."
       },
       {
-        "question": "Qual e la definizione canonica di 'Habitus'?",
+        "question": "Qual è la definizione canonica di 'Habitus'?",
         "answer": "Un sistema di disposizioni durature e schemi mentali interiorizzati che generano pratiche e giudizi di gusto."
       },
       {
@@ -1952,65 +1952,65 @@ window.INTERACTION_DATA = [
         "answer": "Incorporato (competenze mentali/corporee), Oggettivato (libri, strumenti) e Istituzionalizzato (lauree, diplomi)."
       },
       {
-        "question": "Cos'e il Capitale Simbolico?",
-        "answer": "Il prestigio, la reputazione e il riconoscimento sociale accordato a una persona dagli altri membri della societa."
+        "question": "Cos'è il Capitale Simbolico?",
+        "answer": "Il prestigio, la reputazione e il riconoscimento sociale accordato a una persona dagli altri membri della società."
       }
     ],
     "quiz": [
       {
-        "question": "Secondo Pierre Bourdieu nell'opera 'La Distinzione' (1979), su cosa poggia primariamente il giudizio di gusto e di bellezza?",
+        "question": "Secondo Bourdieu, da quali tre forme di capitale dipendono le scelte di consumo?",
         "options": [
-          "Su schemi culturali e sociali interiorizzati durante la vita (Habitus), che riflettono la posizione di classe del soggetto",
-          "Sulla composizione genetica del DNA determinata alla nascita",
-          "Sulle leggi universali dell'ottica e della fisica acustica",
-          "Sulle decisioni prese dai comitati tecnici dei ministeri dell'economia"
+          "Economico, simbolico e politico",
+          "Economico, culturale e sociale",
+          "Finanziario, immobiliare e umano",
+          "Culturale, artistico e relazionale"
         ],
-        "correct": 0,
-        "explanation": "Bourdieu dimostra sociologicamente che il gusto e un prodotto dell'habitus di classe: cio che definiamo 'bello' o 'volgare' riflette l'incorporazione delle disuguaglianze e delle distanze sociali tra gruppi."
+        "correctIndex": 1,
+        "explanation": "La dispensa elenca capitale economico (reddito e professione), culturale (istruzione e formazione) e sociale (relazioni). Il capitale simbolico deriva dal riconoscimento degli altri tre."
       },
       {
-        "question": "Un diploma di laurea magistrale conseguito presso un'Accademia di Belle Arti o un'Universita e un esempio di:",
+        "question": "Un diploma accademico è un esempio di quale capitale?",
         "options": [
-          "Capitale Culturale Istituzionalizzato",
-          "Capitale Economico liquido",
-          "Capitale Sociale informale",
-          "Bancarotta fraudolenta"
+          "Capitale economico",
+          "Capitale culturale",
+          "Capitale sociale",
+          "Capitale simbolico"
         ],
-        "correct": 0,
-        "explanation": "I titoli di studio formalmente riconosciuti dallo Stato e dal sistema formativo appartengono alla categoria del Capitale Culturale Istituzionalizzato, che conferisce valore legale e certificato alle competenze."
+        "correctIndex": 1,
+        "explanation": "Il capitale culturale è determinato dal livello di istruzione e dal tipo di formazione; il titolo di studio ne è la forma istituzionalizzata."
       },
       {
-        "question": "Come definisce Pierre Bourdieu il concetto cardine di 'Habitus'?",
+        "question": "Che cos'è l'habitus?",
         "options": [
-          "Un sistema di disposizioni durature, strutture mentali e corporee interiorizzate che orientano pratiche e scelte quotidiane",
-          "Un tipo di costume tradizionale indossato durante il Carnevale di Venezia",
-          "Il regolamento edilizio per la costruzione di grattacieli commerciali",
-          "L'algoritmo di compressione per immagini JPEG"
+          "L'insieme delle abitudini d'acquisto registrate dalle aziende",
+          "Disposizioni inconsce che orientano gusti e comportamenti",
+          "La casa e lo stile di arredamento tipici di una classe sociale",
+          "Le regole esplicite di comportamento insegnate a scuola"
         ],
-        "correct": 0,
-        "explanation": "L'habitus e la struttura interiorizzata (incorporata) che funziona da principio generatore di tutte le pratiche dell'individuo: fa apparire naturale ed ovvio cio che e il frutto della propria storia sociale."
+        "correctIndex": 1,
+        "explanation": "L'habitus è l'insieme di disposizioni inconsce che si manifestano nel consumo, nel modo di parlare, muoversi, mangiare e perfino nella postura. Non sono regole esplicite."
       },
       {
-        "question": "Nello 'Spazio Sociale' di Bourdieu, quale gruppo si colloca tipicamente nell'area a ELEVATO capitale culturale ma MODESTO capitale economico?",
+        "question": "Secondo Bourdieu, cosa fanno i gruppi dominanti quando i gruppi subordinati imitano i loro gusti?",
         "options": [
-          "Insegnanti, ricercatori accademici e artisti indipendenti",
-          "Imprenditori industriali del settore petrolifero",
-          "Operai non qualificati della metalmeccanica pesante",
-          "Banchieri d'affari internazionali"
+          "Accettano l'imitazione come conferma del proprio prestigio",
+          "Rinunciano del tutto al consumo di beni di prestigio",
+          "Abbassano i prezzi dei beni per renderli più accessibili",
+          "Cambiano stile di vita per mantenere la distanza sociale"
         ],
-        "correct": 0,
-        "explanation": "Nel quadrante in alto a sinistra si posizionano coloro che hanno alti titoli di studio e padronanza dei codici estetici avanzati, ma redditi e patrimoni economici limitati (insegnanti, intellettuali, artisti)."
+        "correctIndex": 3,
+        "explanation": "È il meccanismo di emulazione e distinzione: i dominanti cambiano stile per mantenere la distanza, anche grazie a 'merci di posizione' con scarsità artificiale."
       },
       {
-        "question": "Per quale motivo la teoria di Bourdieu e preziosa per un Interaction Designer?",
+        "question": "In che cosa Bourdieu va oltre la visione di Veblen?",
         "options": [
-          "Perche rivela che utenti con habitus e capitali diversi decodificano simboli, linguaggi e interfacce in modi radicalmente differenti",
-          "Perche insegna a scrivere algoritmi di intelligenza artificiale in linguaggio Java",
-          "Perche impone di usare un unico stile grafico universale identico per tutti gli esseri umani del pianeta",
-          "Perche elimina l'obbligo di pagare le licenze dei software grafici"
+          "Mostra che le classi sociali sono scomparse nella società moderna",
+          "Mostra che il consumo è sempre razionale e strettamente funzionale",
+          "Mostra che contano anche le differenze culturali, non solo economiche",
+          "Mostra che il gusto è innato e indipendente dall'educazione ricevuta"
         ],
-        "correct": 0,
-        "explanation": "Comprendere Bourdieu impedisce al designer di cadere nell'errore etnocentrico di credere che il proprio gusto personale (tipico di una classe colta e tecnologica) sia universale, consentendo di progettare per pubblici con habitus eterogenei."
+        "correctIndex": 2,
+        "explanation": "La dispensa: per Bourdieu la stratificazione non è determinata solo da fattori economici, come sosteneva Veblen, ma anche da differenze culturali. Il gusto, per Bourdieu, è prodotto socialmente, non innato."
       }
     ]
   },
@@ -2019,12 +2019,12 @@ window.INTERACTION_DATA = [
     "number": 22,
     "title": "Stili di Vita, Sintalità e Mike Featherstone",
     "subtitle": "Consumer Culture and Postmodernism, aggregazione sociale orizzontale e autocoscienza stilistica",
-    "readTime": "8 min",
+    "readTime": "5 min",
     "module": "ixd-teoria-sociologia",
-    "summary": "### 1. Il Tramonto delle Classi Rigide e l'Avvento degli Stili di Vita\n\nNelle societa avanzate della tarda modernita, l'identita degli individui cessa di essere rigidamente predeterminata dalla casta d'origine, dal rango nobiliare o dalla pura classe occupazionale. Come osserva la sociologia contemporanea:\n- L'individuo sperimenta una **liberta inedita di autoespressione e autodeterminazione**, in linea con i bisogni superiori di autorealizzazione descritti al vertice della piramide di Maslow.\n- Il reddito e il patrimonio economico continuano a influenzare le possibilita di spesa, ma **non costituiscono piu un vincolo deterministico assoluto**: persone con identico reddito possono manifestare stili di consumo e scale valoriali diametralmente opposti.\n- Gli **Stili di Vita (*Lifestyles*)** diventano la forma dominante di aggregazione sociale: sono costellazioni aperte, fluide, permeabili e non rigidamente gerarchiche, all'interno delle quali le persone scelgono liberamente di transitare.\n\n---\n\n### 2. Il Concetto Psicosociale di 'Sintalità'\n\nIn questo contesto teorico si afferma il concetto di **Sintalità (*Syntality*)**:\n- Originariamente mutuato dalla psicologia dei piccoli gruppi (Raymond Cattell), nell'analisi dei consumi la sintalita indica:\n  > *\"Il processo dinamico attraverso cui un gruppo di persone interpreta e rende unitaria, coerente e condivisa la propria esperienza collettiva.\"*\n- La sintalita e la forza coesiva immateriale attraverso cui individui dispersi geograficamente si riconoscono appartenenti alla medesima sensibilita, dando forma e sostanza a un determinato stile di vita.\n\n---\n\n### 3. Mike Featherstone: 'Consumer Culture and Postmodernism' (1991)\n\nNel saggio cardine *Consumer Culture and Postmodernism* (1991), il sociologo britannico **Mike Featherstone** ridefinisce il ruolo del consumo nell'era postmoderna, superando due opposti estremismi teorici:\n1. Supera la visione pessimistica della **Scuola di Francoforte** (Adorno e Horkheimer), che considerava il consumatore come una marionetta alienata e passiva, interamente manipolata dall'industria culturale di massa.\n2. Supera l'ottimismo ingenuo dell'economia neoliberista, che presupponeva un consumatore del tutto sovrano, onnisciente e razionale.\n\nFeatherstone dimostra che nella cultura contemporanea lo stile di vita e l'espressione tangibile di una **costante autocoscienza stilistica (*stylistic self-consciousness*)**:\n- Il corpo (la cura fisica, il fitness, i tatuaggi), l'abbigliamento, il design degli interni domestici, la scelta dell'auto, le abitudini alimentari e i dispositivi digitali adoperati cessano di essere semplici strumenti d'uso e diventano **indicatori identitari del gusto personale**.\n- Ciascun individuo concepisce la propria vita come un'opera aperta, un progetto estetico in divenire in cui la scelta degli oggetti e dei servizi segnala agli altri chi si e e chi si intende diventare.\n\n---\n\n### 4. Implicazioni per il Design delle Interfacce e dei Servizi Digitali\n\nPer l'interaction designer, comprendere l'autocoscienza stilistica postmoderna implica comprendere che:\n- Un'applicazione o un software non vengono scelti unicamente per la loro efficienza algoritmica, ma per il modo in cui **si integrano nel codice stilistico dell'utente**.\n- Le interfacce digitali sono diventate estensioni intime del corpo e della personalita: il design dei temi (dark mode, palette cromatiche, micro-animazioni, suoni di notifica) agisce come segnale d'appartenenza subculturale e rafforza la sintalita del gruppo di riferimento.",
+    "summary": "### 1. Il Tramonto delle Classi Rigide e l'Avvento degli Stili di Vita\n\nNelle società avanzate della tarda modernità, l'identità degli individui cessa di essere rigidamente predeterminata dalla casta d'origine, dal rango nobiliare o dalla pura classe occupazionale. Come osserva la sociologia contemporanea:\n- L'individuo sperimenta una **libertà inedita di autoespressione e autodeterminazione**, in linea con i bisogni superiori di autorealizzazione descritti al vertice della piramide di Maslow.\n- Il reddito e il patrimonio economico continuano a influenzare le possibilità di spesa, ma **non costituiscono più un vincolo deterministico assoluto**: persone con identico reddito possono manifestare stili di consumo e scale valoriali diametralmente opposti.\n- Gli **Stili di Vita (*Lifestyles*)** diventano la forma dominante di aggregazione sociale: sono costellazioni aperte, fluide, permeabili e non rigidamente gerarchiche, all'interno delle quali le persone scelgono liberamente di transitare.\n\n---\n\n### 2. Il Concetto Psicosociale di 'Sintalità'\n\nIn questo contesto teorico si afferma il concetto di **Sintalità (*Syntality*)**:\n- Originariamente mutuato dalla psicologia dei piccoli gruppi (Raymond Cattell), nell'analisi dei consumi la sintalita indica:\n  > *\"Il processo dinamico attraverso cui un gruppo di persone interpreta e rende unitaria, coerente e condivisa la propria esperienza collettiva.\"*\n- La sintalita è la forza coesiva immateriale attraverso cui individui dispersi geograficamente si riconoscono appartenenti alla medesima sensibilità, dando forma e sostanza a un determinato stile di vita.\n\n---\n\n### 3. Mike Featherstone: 'Consumer Culture and Postmodernism' (1991)\n\nNel saggio cardine *Consumer Culture and Postmodernism* (1991), il sociologo britannico **Mike Featherstone** ridefinisce il ruolo del consumo nell'era postmoderna, superando due opposti estremismi teorici:\n1. Supera la visione pessimistica della **Scuola di Francoforte** (Adorno e Horkheimer), che considerava il consumatore come una marionetta alienata e passiva, interamente manipolata dall'industria culturale di massa.\n2. Supera l'ottimismo ingenuo dell'economia neoliberista, che presupponeva un consumatore del tutto sovrano, onnisciente e razionale.\n\nFeatherstone dimostra che nella cultura contemporanea lo stile di vita è l'espressione tangibile di una **costante autocoscienza stilistica (*stylistic self-consciousness*)**:\n- Il corpo (la cura fisica, il fitness, i tatuaggi), l'abbigliamento, il design degli interni domestici, la scelta dell'auto, le abitudini alimentari e i dispositivi digitali adoperati cessano di essere semplici strumenti d'uso e diventano **indicatori identitari del gusto personale**.\n- Ciascun individuo concepisce la propria vita come un'opera aperta, un progetto estetico in divenire in cui la scelta degli oggetti e dei servizi segnala agli altri chi si e e chi si intende diventare.\n\n---\n\n### 4. Implicazioni per il Design delle Interfacce e dei Servizi Digitali\n\nPer l'interaction designer, comprendere l'autocoscienza stilistica postmoderna implica comprendere che:\n- Un'applicazione o un software non vengono scelti unicamente per la loro efficienza algoritmica, ma per il modo in cui **si integrano nel codice stilistico dell'utente**.\n- Le interfacce digitali sono diventate estensioni intime del corpo e della personalità: il design dei temi (dark mode, palette cromatiche, micro-animazioni, suoni di notifica) agisce come segnale d'appartenenza subculturale e rafforza la sintalita del gruppo di riferimento.\n\n---\n\n### 5. Dalle classi alla stratificazione sociale\n\nCon l'espansione del consumismo la rigida opposizione tra borghesia e proletariato lascia il posto a una struttura **più fluida e piramidale**, basata su reddito, istruzione, professione e tipologia dei consumi. Nei ceti dominanti i consumi sono più eterogenei e distintivi, nelle fasce subalterne più omogenei; il consumo diventa un **motore di mobilità sociale**, spesso in forma ostentativa ed emulativa. La piramide ha un ampio strato di **ceti medi**: ne derivano il *consumatore medio*, il **prodotto ecumenico** è una crescente omogeneizzazione dei gusti. Infine la società si frammenta: i nuovi gruppi non coincidono né con le classi né con gli strati, e il fattore unificante diventa **condividere uno stesso stile di vita**.\n\nLo studio degli stili di vita, spesso banalizzato dai media, richiede un censimento e un monitoraggio continui con metodi statistici e socio-antropologici: gli esempi più importanti sono il progetto **VALS** negli Stati Uniti e la ricerca **Le otto Italie** in Italia.",
     "keyPoints": [
-      "Nelle societa avanzate gli stili di vita sostituiscono le caste rigide come modello di aggregazione sociale aperto.",
-      "La Sintalita e il processo psicosociale con cui un gruppo rende unitaria e condivisa la propria esperienza collettiva.",
+      "Nelle società avanzate gli stili di vita sostituiscono le caste rigide come modello di aggregazione sociale aperto.",
+      "La Sintalita è il processo psicosociale con cui un gruppo rende unitaria e condivisa la propria esperienza collettiva.",
       "Mike Featherstone (1991) supera la visione del consumatore alienato: il consumo e autocoscienza stilistica.",
       "Corpo, abbigliamento, arredi e dispositivi tecnologici diventano indicatori del progetto di vita ed estetico dell'individuo.",
       "Le interfacce e i dispositivi digitali operano come estensioni identitarie e rafforzatori di appartenenza sociale."
@@ -2035,77 +2035,77 @@ window.INTERACTION_DATA = [
         "answer": "Sono sistemi aperti, permeabili, non rigidamente gerarchici, scelti liberamente come forma di autoespressione."
       },
       {
-        "question": "Cos'e la 'Sintalità' nell'analisi dei consumi?",
+        "question": "Cos'è la 'Sintalità' nell'analisi dei consumi?",
         "answer": "Il processo attraverso cui un gruppo di persone rende unitaria e coerente la propria esperienza collettiva."
       },
       {
-        "question": "Qual e la tesi centrale di Mike Featherstone in 'Consumer Culture and Postmodernism'?",
-        "answer": "Che il consumo contemporaneo esprime individualita, progetto estetico personale e autocoscienza stilistica."
+        "question": "Qual è la tesi centrale di Mike Featherstone in 'Consumer Culture and Postmodernism'?",
+        "answer": "Che il consumo contemporaneo esprime individualità, progetto estetico personale e autocoscienza stilistica."
       },
       {
         "question": "Quali due visioni estreme del consumatore vengono superate da Featherstone?",
         "answer": "Quella del consumatore marionetta alienata (Francoforte) e quella del consumatore puramente razionale."
       },
       {
-        "question": "Perche per l'IxD e fondamentale l'autocoscienza stilistica dell'utente?",
-        "answer": "Perche i dispositivi e le interfacce digitali sono percepiti come estensioni intime dell'identita personale."
+        "question": "Perché per l'IxD è fondamentale l'autocoscienza stilistica dell'utente?",
+        "answer": "Perché i dispositivi e le interfacce digitali sono percepiti come estensioni intime dell'identità personale."
       }
     ],
     "quiz": [
       {
-        "question": "In che cosa differiscono gli 'Stili di Vita' contemporanei rispetto alle antiche divisioni in caste o classi rigide?",
+        "question": "Che cosa indica il concetto di sintalità?",
         "options": [
-          "Rappresentano sistemi aperti, permeabili e liberamente scelti, fondati sul bisogno di autoespressione individuale anziche sulla nascita",
-          "Sono imposti per legge dai tribunali civili",
-          "Possono essere scelti solo da chi possiede patrimoni superiori a dieci milioni di euro",
-          "Riguardano unicamente la tipologia di pneumatici installati sulle automobili"
+          "La sincronia tra produzione e consumo nella società di massa",
+          "La somiglianza tra i redditi di persone della stessa classe",
+          "La capacità di un individuo di cambiare stile di vita",
+          "Il modo in cui un gruppo rende unitaria la propria esperienza"
         ],
-        "correct": 0,
-        "explanation": "Gli stili di vita nelle societa avanzate sono costellazioni culturali flessibili in cui l'individuo manifesta la propria identita, superando il determinismo ereditario delle caste o della classe originaria."
+        "correctIndex": 3,
+        "explanation": "La sintalità è il processo con cui i nuovi gruppi sociali costruiscono la propria identità rendendo unitaria l'esperienza collettiva, dando vita agli stili di vita."
       },
       {
-        "question": "Cosa indica il concetto di 'Sintalità' elaborato nelle scienze sociali e applicato ai consumi?",
+        "question": "Quale caratteristica degli stili di vita li distingue da caste e classi?",
         "options": [
-          "Il modo in cui un gruppo umano interpreta e rende unitaria, solida e condivisa la propria esperienza collettiva",
-          "La velocità di trasmissione dei segnali elettrici lungo una fibra ottica sottomarina",
-          "La quantita di zucchero presente nelle bevande gassate analcoliche",
-          "Il tasso di svalutazione monetaria annuale stabilito dalla Banca Centrale"
+          "Sono ordinati gerarchicamente in base al reddito",
+          "Sono ereditati dalla famiglia d'origine",
+          "Sono un sistema aperto: si possono scegliere e cambiare liberamente",
+          "Sono assegnati dalle aziende attraverso il marketing"
         ],
-        "correct": 0,
-        "explanation": "La sintalita rappresenta la personalita collettiva del gruppo: il collante psicosociale che unifica percezioni, valori e riti quotidiani in uno stile di vita condiviso."
+        "correctIndex": 2,
+        "explanation": "Gli stili di vita sono flessibili, permeabili e non gerarchici: si possono scegliere e cambiare. Proprio perché non sono gerarchici, non permettono di dedurre il potere di una persona."
       },
       {
-        "question": "Quale visione del consumatore demolisce Mike Featherstone nel suo saggio del 1991?",
+        "question": "Secondo Featherstone, che cosa esprime lo stile di vita nella cultura del consumo contemporanea?",
         "options": [
-          "La visione del consumatore come semplice vittima passiva e manipolata totalmente dall'industria culturale di massa",
-          "La convinzione che le persone necessitino di ossigeno per respirare",
-          "La teoria secondo cui il computer consuma energia elettrica",
-          "L'idea che i libri abbiano pagine stampate"
+          "Un prodotto interamente manipolato dalla società di massa",
+          "Uno spazio di totale autonomia senza condizionamenti",
+          "Individualità e autocoscienza stilistica",
+          "L'appartenenza a una classe sociale fissa"
         ],
-        "correct": 0,
-        "explanation": "Featherstone supera il pessimismo della Scuola di Francoforte, mostrando come gli individui attuino percorsi attivi di riappropriazione, usando le merci per plasmare la propria identita stilistica."
+        "correctIndex": 2,
+        "explanation": "Featherstone supera sia la visione dello stile di vita come prodotto manipolato sia quella di totale autonomia: lo stile esprime individualità e autocoscienza stilistica."
       },
       {
-        "question": "Cosa intende Featherstone per 'Autocoscienza Stilistica' nell'era postmoderna?",
+        "question": "Per Fabris, quale bisogno diventa fondamentale nella definizione dello stile di vita, in linea con la gerarchia di Maslow?",
         "options": [
-          "L'attenzione vigile con cui ogni persona modella il proprio corpo, abiti, casa e tecnologie come indicatori visibili del proprio gusto",
-          "L'obbligo di frequentare corsi serali di sartoria industriale",
-          "L'incapacita patologica di distinguere i colori primari",
-          "La paura irrazionale dei grandi magazzini e centri commerciali"
+          "Il bisogno di sicurezza economica",
+          "Il bisogno di risparmio",
+          "Il bisogno di appartenenza religiosa",
+          "Il bisogno di autoespressione"
         ],
-        "correct": 0,
-        "explanation": "L'autocoscienza stilistica riflette il fatto che nella societa postmoderna la vita stessa viene vissuta come un progetto estetico in cui ogni scelta quotidiana di consumo diventa veicolo espressivo del se."
+        "correctIndex": 3,
+        "explanation": "Oggi l'identità sociale si basa sulla libertà individuale di esprimersi: l'autoespressione diventa un bisogno fondamentale, in linea con Maslow."
       },
       {
-        "question": "Per un progettista di interfacce interattive, riconoscere che il software e un marcatore stilistico dell'utente comporta che:",
+        "question": "Reddito, istruzione e capacità personali, secondo la dispensa, rispetto allo stile di vita:",
         "options": [
-          "Le scelte visive, le micro-interazioni e la personalizzazione dell'UI devono gratificare l'identita e il senso di appartenenza dell'utente",
-          "Tutte le interfacce debbano contenere animazioni tridimensionali pesantissime e rallentate",
-          "Il codice sorgente dell'applicazione non debba mai essere testato",
-          "Si debba eliminare la tastiera a favore di comandi impartiti esclusivamente con la telepatia"
+          "Possono influenzarlo, ma non lo vincolano",
+          "Lo determinano in modo rigido e immutabile",
+          "Non hanno su di esso alcuna influenza",
+          "Contano solo nelle società tradizionali"
         ],
-        "correct": 0,
-        "explanation": "I dispositivi e le app sono oggi oggetti identitari intimi: l'eleganza estetica, la coerenza tipografica e il tono di voce dell'interfaccia comunicano valori in cui l'utente deve potersi rispecchiare con orgoglio."
+        "correctIndex": 0,
+        "explanation": "La dispensa afferma che reddito, istruzione e capacità possono influenzare uno stile di vita, ma 'non costituiscono un vincolo determinante'."
       }
     ]
   },
@@ -2116,9 +2116,9 @@ window.INTERACTION_DATA = [
     "subtitle": "Stanford Research Institute, valori e consumi, Need-driven, Outer-driven, Inner-driven e la mappatura italiana",
     "readTime": "10 min",
     "module": "ixd-teoria-sociologia",
-    "summary": "### 1. Il Tramonto dei Dati Puramente Anagrafici nella Segmentazione\n\nFino agli anni '70, il marketing e la ricerca applicata segmentavano i consumatori basandosi su parametri demografici lineari (eta, sesso, residenza geografica, livello di reddito). Tuttavia, la crescente complessita sociale ha reso inservibili tali generalizzazioni: due individui con la stessa eta e lo stesso stipendio possono avere abitudini e visioni del mondo totalmente incompatibili.\n\nPer comprendere la varieta dei comportamenti d'uso, sono nati i **Modelli di Segmentazione Psico-Sociale e Valoriale**, capaci di incrociare stili di vita, orientamenti etici, credenze e gerarchie di bisogni.\n\n---\n\n### 2. Il Modello VALS (Values and Lifestyles) di Arnold Mitchell (1978)\n\nSviluppato da **Arnold Mitchell** presso lo **Stanford Research Institute (SRI)**, il programma **VALS** ha costituito una pietra miliare mondiale nello studio sistematico della popolazione attraverso i consumi.\nIl modello fonde la **Piramide dei Bisogni di Abraham Maslow** con la teoria della personalità di **David Riesman** (*The Lonely Crowd*: personalita autodirette vs eterodirette).\n\nMitchell divide la societa in **tre grandi macrocategorie**, articolate in **nove stili di vita specifici**:\n\n1. **Need-Driven (Guidati dai Bisogni Primari)**:\n   - Persone condizionate da limitazioni economiche gravi, focalizzate sulla sopravvivenza quotidiana e sulla sicurezza minima.\n   - *Survivors (Sopravvissuti)*: Anziani, poveri, emarginati, pessimisti e diffidenti.\n   - *Sustainers (Sostenitori)*: Arrabbiati, insicuri, vicini alla soglia di poverta, in lotta per non scivolare in basso.\n2. **Outer-Directed (Orientati dagli Altri / Eterodiretti)**:\n   - Individui sensibili al giudizio dei pari, desiderosi di appartenenza, status sociale e conformita alle mode dominanti.\n   - *Belongers (Conservatori/Tradizionalisti)*: Patriottici, tradizionalisti, fedeli alla famiglia, ostili ai cambiamenti bruschi.\n   - *Emulators (Emulatori)*: Giovani ambiziosi, competitivi e ostentativi, imitano il lusso per sembrare piu ricchi di quanto siano.\n   - *Achievers (Realizzati/Leader)*: Figure di successo economico e sociale, incarnazione del sogno americano, affluenti e pragmatici.\n3. **Inner-Directed (Guidati da Valori Interiori / Autodiretti)**:\n   - Persone che consumano per gratificazione interiore, autoespressione, crescita culturale e sensibilita sociale, incuranti del conformismo esterno.\n   - *I-am-me (Individualisti impulsivi)*: Giovani narcisisti, ribelli, alla ricerca spasmodica di novita sensoriali.\n   - *Experientials (Esperienziali)*: Giovani attratti dalla vita interiore, dall'estetica raffinata, dal benessere olistico e dalla sperimentazione.\n   - *Societally Conscious (Consapevoli socialmente)*: Maturi, eticamente impegnati verso l'ecologia, la sostenibilita e la giustizia sociale.\n4. **Al Vertice: Gli Integrated (Integrati)**:\n   - Una ristretta minoranza di individui maturi, tolleranti e cosmopoliti, capaci di conciliare l'autodirezione interiore con il senso di responsabilita per la comunita globale.\n\n*(Nel 1989 il modello e stato riformulato in VALS-2, orientandosi verso la combinazione di risorse disponibili e motivazioni primarie).*\n\n---\n\n### 3. La Mappatura della Societa Italiana: 'Le Otto Italie' di Giampaolo Fabris\n\nNegli anni '80, il celebre sociologo dei consumi italiano **Giampaolo Fabris** ha applicato l'indagine psicosociale alla specificita culturale del nostro Paese attraverso il monumentale monitoraggio permanente *3P (Pratiche, Politiche, Personaggi)* e *Sinottica*, identificando **Le Otto Italie (8 Stili di Vita)**:\n\n1. **Innovatori (ca. 8-10%)**: Aperti al nuovo e alla tecnologia, laicizzati, sensibili alle innovazioni internazionali, cosmopoliti.\n2. **Autodiretti**: Maturi, indipendenti, colti, impermeabili alle lusinghe effimere del consumismo di massa, guidati da valori interiori.\n3. **Affluenti**: Edonisti metropolitani, narcisisti, disimpegnati dalla politica, votati al piacere immediato, al tempo libero e alle mode di marca.\n4. **Radical**: Impegnati sul fronte civile ed ecologico, consumatori critici, piu etici che dogmatici, attenti al biologico e all'equita.\n5. **Eterodiretti**: Conformisti acritici, consumatori vistosi e insicuri, timorosi dell'emarginazione sociale, dipendenti dall'opinione dei pari.\n6. **Integrati**: Il ceto medio tradizionale della provincia italiana; moderati, attaccati alla famiglia, alla casa di proprieta e ai valori rassicuranti.\n7. **Autarchici**: Minimalisti diffidenti, tradizionalisti difensivi, poco inclini all'innovazione tecnologica, ancorati a pratiche conservative.\n8. **Disorientati**: Confusi, apatici, isolati, privi di mappe cognitive definite, vittime di un consumismo disordinato e non consapevole.\n\n---\n\n### 4. Il Valore della Segmentazione per l'Interaction Designer\n\nNon esiste \"l'utente\": progettare un'interfaccia significa sapere a quale constellazione valoriale ci si rivolge:\n- Un'applicazione per *Innovatori/Experientials* puo osare paradigmi interattivi inediti, micro-animazioni fluide ed estetica dark-mode d'avanguardia.\n- La stessa interfaccia proposta a *Belongers/Integrati* provochera panico, disorientamento e rifiuto immediato, esigendo invece rassicuranti convenzioni visive, testi esplicativi chiari e supporto umano rintracciabile.",
+    "summary": "### 1. Il Tramonto dei Dati Puramente Anagrafici nella Segmentazione\n\nFino agli anni '70, il marketing e la ricerca applicata segmentavano i consumatori basandosi su parametri demografici lineari (età, sesso, residenza geografica, livello di reddito). Tuttavia, la crescente complessità sociale ha reso inservibili tali generalizzazioni: due individui con la stessa età e lo stesso stipendio possono avere abitudini e visioni del mondo totalmente incompatibili.\n\nPer comprendere la varietà dei comportamenti d'uso, sono nati i **Modelli di Segmentazione Psico-Sociale e Valoriale**, capaci di incrociare stili di vita, orientamenti etici, credenze e gerarchie di bisogni.\n\n---\n\n### 2. Il Modello VALS (Values and Lifestyles) di Arnold Mitchell (1978)\n\nSviluppato da **Arnold Mitchell** presso lo **Stanford Research Institute (SRI)**, il programma **VALS** ha costituito una pietra miliare mondiale nello studio sistematico della popolazione attraverso i consumi.\nIl modello fonde la **Piramide dei Bisogni di Abraham Maslow** con la teoria della personalità di **David Riesman** (*The Lonely Crowd*: personalità autodirette vs eterodirette).\n\nMitchell divide la società in **tre grandi macrocategorie**, articolate in **nove stili di vita specifici**:\n\n1. **Need-Driven (Guidati dai Bisogni Primari)**:\n   - Persone condizionate da limitazioni economiche gravi, focalizzate sulla sopravvivenza quotidiana e sulla sicurezza minima.\n   - *Survivors (Sopravvissuti)*: Anziani, poveri, emarginati, pessimisti e diffidenti.\n   - *Sustainers (Sostenitori)*: Arrabbiati, insicuri, vicini alla soglia di povertà, in lotta per non scivolare in basso.\n2. **Outer-Directed (Orientati dagli Altri / Eterodiretti)**:\n   - Individui sensibili al giudizio dei pari, desiderosi di appartenenza, status sociale e conformità alle mode dominanti.\n   - *Belongers (Conservatori/Tradizionalisti)*: Patriottici, tradizionalisti, fedeli alla famiglia, ostili ai cambiamenti bruschi.\n   - *Emulators (Emulatori)*: Giovani ambiziosi, competitivi e ostentativi, imitano il lusso per sembrare più ricchi di quanto siano.\n   - *Achievers (Realizzati/Leader)*: Figure di successo economico e sociale, incarnazione del sogno americano, affluenti e pragmatici.\n3. **Inner-Directed (Guidati da Valori Interiori / Autodiretti)**:\n   - Persone che consumano per gratificazione interiore, autoespressione, crescita culturale e sensibilità sociale, incuranti del conformismo esterno.\n   - *I-am-me (Individualisti impulsivi)*: Giovani narcisisti, ribelli, alla ricerca spasmodica di novità sensoriali.\n   - *Experientials (Esperienziali)*: Giovani attratti dalla vita interiore, dall'estetica raffinata, dal benessere olistico e dalla sperimentazione.\n   - *Societally Conscious (Consapevoli socialmente)*: Maturi, eticamente impegnati verso l'ecologia, la sostenibilità e la giustizia sociale.\n4. **Al Vertice: Gli Integrated (Integrati)**:\n   - Una ristretta minoranza di individui maturi, tolleranti e cosmopoliti, capaci di conciliare l'autodirezione interiore con il senso di responsabilità per la comunità globale.\n\n*(Nel 1989 il modello è stato riformulato in VALS-2, orientandosi verso la combinazione di risorse disponibili e motivazioni primarie).*\n\n---\n\n### 3. La Mappatura della Società Italiana: 'Le Otto Italie' di Giampaolo Fabris\n\nNegli anni '80 il sociologo **Giampaolo Fabris** applica il concetto di stile di vita alla società italiana, integrando i metodi dell'analisi di mercato con un'indagine sui **valori condivisi** dai consumatori. Il risultato è una mappatura della popolazione in **otto gruppi** (definizioni della dispensa):\n\n1. **Innovatori**: aperti al nuovo, sensibili alle mode e ai temi sociali.\n2. **Autodiretti**: laicizzati, indipendenti, poco influenzati dai valori del consumo.\n3. **Affluenti**: edonisti, narcisisti, disimpegnati, attenti alle tendenze.\n4. **Radical**: impegnati socialmente, più etici che ideologici.\n5. **Eterodiretti**: conformisti, consumatori ostentativi, passivi socialmente.\n6. **Integrati**: conservatori con sensibilità partecipativa, consumisti moderati.\n7. **Autarchici**: minimalisti, scettici verso il consumismo.\n8. **Disorientati**: apatici, privi di valori definiti, consumisti senza consapevolezza.\n\nAttenzione a non confondere i nomi con quelli del VALS: gli *Integrati* di Fabris (conservatori moderati) non coincidono con gli *Integrated* di Mitchell (vertice maturo e tollerante del modello americano).\n\n---\n\n### 4. Il Valore della Segmentazione per l'Interaction Designer\n\nNon esiste \"l'utente\": progettare un'interfaccia significa sapere a quale constellazione valoriale ci si rivolge:\n- Un'applicazione per *Innovatori/Experientials* può osare paradigmi interattivi inediti, micro-animazioni fluide ed estetica dark-mode d'avanguardia.\n- La stessa interfaccia proposta a *Belongers/Integrati* provocherà panico, disorientamento e rifiuto immediato, esigendo invece rassicuranti convenzioni visive, testi esplicativi chiari e supporto umano rintracciabile.",
     "keyPoints": [
-      "I dati puramente demografici (eta, reddito) non bastano a spiegare i comportamenti d'uso digitali.",
+      "I dati puramente demografici (età, reddito) non bastano a spiegare i comportamenti d'uso digitali.",
       "Il modello VALS di Mitchell (1978) combina Maslow e Riesman in 3 macro-aree: Need, Outer e Inner-directed.",
       "Le 3 anime del VALS generano 9 stili di vita (Survivors, Belongers, Emulators, Achievers, Experientials, ecc.).",
       "Giampaolo Fabris mappa l'Italia negli anni '80 in 'Otto Italie' (Innovatori, Autodiretti, Affluenti, Radical, ecc.).",
@@ -2127,7 +2127,7 @@ window.INTERACTION_DATA = [
     "flashcards": [
       {
         "question": "Quali due teorie scientifiche sono alla base del modello VALS di Arnold Mitchell?",
-        "answer": "La gerarchia dei bisogni di Maslow e la teoria delle personalita (autodiretta/eterodiretta) di David Riesman."
+        "answer": "La gerarchia dei bisogni di Maslow e la teoria delle personalità (autodiretta/eterodiretta) di David Riesman."
       },
       {
         "question": "Quali sono le tre macro-categorie del modello VALS originale?",
@@ -2139,68 +2139,68 @@ window.INTERACTION_DATA = [
       },
       {
         "question": "Chi ha elaborato la ricerca 'Le Otto Italie' e quale fenomeno analizzava?",
-        "answer": "Il sociologo Giampaolo Fabris negli anni '80; analizzava la segmentazione della societa italiana per stili di vita."
+        "answer": "Il sociologo Giampaolo Fabris negli anni '80; analizzava la segmentazione della società italiana per stili di vita."
       },
       {
-        "question": "Perche l'IxD non puo progettare per un 'utente medio' universale?",
-        "answer": "Perche individui con stili di vita diversi esigono linguaggi, modelli mentali e livelli di complessita differenti."
+        "question": "Perché l'IxD non può progettare per un 'utente medio' universale?",
+        "answer": "Perché individui con stili di vita diversi esigono linguaggi, modelli mentali e livelli di complessità differenti."
       }
     ],
     "quiz": [
       {
-        "question": "Nel celebre modello VALS ideato da Arnold Mitchell, da cosa sono caratterizzati i consumatori definiti 'Outer-Directed' (eterodiretti)?",
+        "question": "Su quali teorie si basa il modello VALS di Arnold Mitchell?",
         "options": [
-          "Dall'essere fortemente influenzati dalle opinioni altrui, dallo status sociale, dalle mode e dal desiderio di appartenenza",
-          "Dal vivere isolati in baite montane senza contatto con la civilta",
-          "Dall'acquistare unicamente merci che non contengono imballaggi plastici",
-          "Dall'essere programmatori di intelligenze artificiali neurali"
+          "Sulla teoria dei capitali e sull'habitus di Pierre Bourdieu",
+          "Sulla teoria delle tre ondate di Alvin Toffler",
+          "Sulla teoria della classe agiata di Thorstein Veblen",
+          "Sui bisogni di Maslow e sulla personalità secondo Riesman"
         ],
-        "correct": 0,
-        "explanation": "Gli Outer-directed orientano i propri consumi verso l'esterno: acquistano beni che fungono da distintivi di appartenenza, prestigio o successo visibile per compiacere e impressionare gli altri (Belongers, Emulators, Achievers)."
+        "correctIndex": 3,
+        "explanation": "VALS (Stanford Research Institute) si basa su Maslow e sulla distinzione di David Riesman tra personalità inner-directed e other-directed."
       },
       {
-        "question": "A quale profilo della segmentazione 'Le Otto Italie' di Giampaolo Fabris corrisponde un individuo cosmopolita, aperto all'innovazione tecnologica e sensibile ai mutamenti socioculturali?",
+        "question": "Quali sono le tre macrocategorie del modello VALS?",
         "options": [
-          "All'Innovatore",
-          "All'Autarchico",
-          "Al Disorientato",
-          "Al Conservatore arcaico"
+          "Economico, culturale, sociale",
+          "Survivors, Achievers, Integrated",
+          "Innovatori, Integrati, Disorientati",
+          "Need-driven, Outer-directed, Inner-directed"
         ],
-        "correct": 0,
-        "explanation": "Gli 'Innovatori' rappresentano l'avanguardia culturale e tecnologica del Paese: sono i primi ad adottare nuovi dispositivi, viaggiano frequentemente e manifestano curiosita verso linguaggi alternativi."
+        "correctIndex": 3,
+        "explanation": "Le macrocategorie sono Need-driven, Outer-directed e Inner-directed, da cui derivano nove stili di vita (Survivors, Achievers e Integrated sono tra questi). Innovatori e Integrati appartengono alle Otto Italie."
       },
       {
-        "question": "Cosa contraddistingue i profili 'Inner-Directed' (autodiretti) nel modello VALS rispetto agli 'Outer-Directed'?",
+        "question": "Nelle 'Otto Italie' di Fabris, quale gruppo è descritto come 'laicizzati, indipendenti, poco influenzati dai valori del consumo'?",
         "options": [
-          "Consumano per gratificazione intima, coerenza etica e sviluppo interiore, disinteressandosi del giudizio o dell'approvazione altrui",
-          "Non hanno un conto in banca e utilizzano solo monete d'oro",
-          "Hanno meno di dieci anni di eta",
-          "Seguono fedelmente ogni singola pubblicita televisiva senza porsi domande"
+          "Innovatori",
+          "Autodiretti",
+          "Affluenti",
+          "Autarchici"
         ],
-        "correct": 0,
-        "explanation": "Gli Inner-directed (come gli Experientials o i Societally Conscious) scelgono in base alla propria bussola valoriale interna: non cercano di ostentare il consumo per conformismo, ma cercano autenticità ed etica."
+        "correctIndex": 1,
+        "explanation": "È la definizione degli Autodiretti. Gli Innovatori sono aperti al nuovo e sensibili a mode e temi sociali; gli Autarchici sono minimalisti e scettici verso il consumismo."
       },
       {
-        "question": "Qual e il pericolo per un designer che scelga di basare la propria ricerca utente unicamente su metriche demografiche (eta e sesso)?",
+        "question": "Nel VALS, come vengono descritti gli Emulators?",
         "options": [
-          "Trattare come omogenei individui che, pur avendo la stessa eta, possiedono habitus, valori e attitudini tecnologiche opposte",
-          "Pagare tariffe doppie ai server di cloud storage",
-          "Provocare l'espulsione immediata dall'ordine professionale degli architetti",
-          "Ricevere sanzioni per violazione delle frequenze radiofoniche"
+          "Anziani, poveri e sfiduciati",
+          "Maturi, tolleranti, orientati al mondo",
+          "Giovani ambiziosi e ostentativi",
+          "Impegnati socialmente ed eticamente motivati"
         ],
-        "correct": 0,
-        "explanation": "Due donne di 35 anni residenti a Milano possono essere l'una una ricercatrice 'Radical/Inner-directed' che rifiuta gli smartphone proprietari e l'altra una manager 'Affluente/Achiever' dedita al lusso: progettare basandosi solo sull'eta condanna il prodotto al fallimento."
+        "correctIndex": 2,
+        "explanation": "Gli Emulators sono giovani ambiziosi e ostentativi (outer-directed). Anziani e sfiduciati sono i Survivors, i maturi e tolleranti sono gli Integrated, gli impegnati sono i Societally conscious."
       },
       {
-        "question": "Quale stile di vita si trova al vertice evolutivo del modello VALS di Arnold Mitchell?",
+        "question": "Come cambia il modello VALS nella riformulazione del 1989?",
         "options": [
-          "Gli Integrated (Integrati), che conciliano armoniosamente autodirezione interiore e responsabilita verso la societa globale",
-          "I Survivors, perche sono i piu anziani",
-          "I Disorientati, perche rappresentano la maggioranza numerica",
-          "Gli Autarchici, perche non spendono denaro"
+          "Passa a un approccio sociologico basato su risorse e status",
+          "Passa da un approccio sociologico a uno di tipo psicologico",
+          "Riduce il numero degli stili di vita da nove a soli tre",
+          "Viene esteso da Fabris allo studio della società italiana"
         ],
-        "correct": 0,
-        "explanation": "Gli Integrated rappresentano il culmine del modello VALS: soggetti rari e maturi che hanno integrato la liberta dell'autodirezione con una profonda responsabilita civile ed etica."
+        "correctIndex": 0,
+        "explanation": "Nel 1989 il VALS abbandona l'approccio psicologico in favore di una prospettiva sociologica basata su risorse disponibili, propensione al consumo e status. Fabris lavora in modo indipendente sull'Italia negli anni '80."
       }
     ]
   },
@@ -2208,33 +2208,33 @@ window.INTERACTION_DATA = [
     "id": "ixd-c24",
     "number": 24,
     "title": "Etnografia Rapida, Video-Etnografia e Netnografia (Robert Kozinets)",
-    "subtitle": "Metodi etnografici avanzati, ricerca immersiva digitale, analisi longitudinale e comunita online",
-    "readTime": "8 min",
+    "subtitle": "Metodi etnografici avanzati, ricerca immersiva digitale, analisi longitudinale e comunità online",
+    "readTime": "5 min",
     "module": "ixd-strumenti-prototipazione",
-    "summary": "### 1. L'Evoluzione dell'Etnografia nei Processi di Design Industriale\n\nL'etnografia antropologica tradizionale prevedeva periodi di permanenza sul campo di mesi o anni. Nell'industria dell'Interaction Design, dominata da cicli di sviluppo agili (*Agile/Scrum*) e scadenze produttive serrate, questa temporalita estesa risultava impraticabile.\nPer superare questa frizione metodologica sono nate declinazioni specializzate:\n- **Etnografia Rapida (*Rapid Ethnography / Quick-and-Dirty Ethnography*)**:\n  Un approccio condensato che comprime l'indagine in giorni o poche settimane. Il ricercatore entra nel contesto d'uso con focus iper-mirati, conducendo osservazioni intensive in orari critici, brevi interviste contestuali e raccogliendo reperti visivi mirati per estrarre insight operativi tempestivi per il team di sviluppo.\n\n---\n\n### 2. Video-Etnografia: La Telecamera come Strumento di Indagine e Allineamento\n\nLa **Video-Etnografia** consiste nell'impiego rigoroso e sistematico della ripresa audiovisiva durante l'osservazione sul campo:\n- **Cattura del Non-Verbale**: Registra micro-espressioni di confusione, sguardi esitanti verso lo schermo, pause prima di un clic, posture rigide e gesti di frustrazione che sfuggirebbero alle sole note scritte.\n- **Micro-Analisi Temporale**: Permette di riprodurre al rallentatore la sequenza fotogramma per fotogramma, misurando con precisione al millisecondo dove si blocca il flusso operativo dell'utente.\n- **Evidenza Inconfutabile (*Video Evidence*)**:\n  > *\"Un report scritto di cinquanta pagine non convincera mai i manager o i programmatori con la stessa forza di un filmato di trenta secondi in cui cinque utenti diversi rimangono bloccati sullo stesso menu.\"*\n  Il video genera empatia immediata e azzera le dispute astratte all'interno del team aziendale.\n\n---\n\n### 3. Netnografia: L'Etnografia delle Culture Online (Robert Kozinets)\n\nFondata alla fine degli anni '90 dal sociologo canadese **Robert V. Kozinets**, la **Netnografia** (crasi di *InterNET* ed *Etnografia*) adatta i metodi di ricerca antropologici allo studio delle **comunita virtuali, dei social network e delle culture native del cyberspazio**:\n- **Ambiente Naturale Digitale**: L'osservazione non si svolge in una stanza fisica, ma all'interno di forum tematici, canali Discord, subreddit, commenti di app store e gruppi specializzati.\n- **Spontaneita e Assenza di Interferenza**: Il netnografo analizza conversazioni spontanee che nascono senza la sollecitazione artificiale di un questionario o la presenza inibitoria di un moderatore. Gli utenti condividono liberamente frustrazioni, trucchi operativi (*workarounds*) e recensioni viscerali.\n- **Decodifica Semiotica**: La netnografia decodifica il gergo subculturale, i meme visivi, gli acronimi tecnici e i valori identitari che governano le comunita di fruitori digitali.\n\n---\n\n### 4. Analisi Longitudinale dei Comportamenti\n\nL'**Analisi Longitudinale** comprende studi ripetuti nel tempo sugli stessi individui a distanza di mesi o decenni:\n- **Obiettivo**: Comprendere come cambiano nel tempo le abitudini d'uso, come evolve l'apprendimento di una tecnologia e quali barriere emergono con l'avanzare dell'eta biologica.\n- **Requisiti Metodologici**: Dati raccolti sul medesimo campione in almeno due periodi distinti; soggetti comparabili; strumenti di tracciamento stabili (diari continuativi o rilevazioni periodiche).",
+    "summary": "### 1. L'Evoluzione dell'Etnografia nei Processi di Design Industriale\n\nL'etnografia antropologica tradizionale prevedeva periodi di permanenza sul campo di mesi o anni. Nell'industria dell'Interaction Design, dominata da cicli di sviluppo agili (*Agile/Scrum*) e scadenze produttive serrate, questa temporalità estesa risultava impraticabile.\nPer superare questa frizione metodologica sono nate declinazioni specializzate:\n- **Etnografia Rapida (*Rapid Ethnography / Quick-and-Dirty Ethnography*)**:\n  Un approccio condensato che comprime l'indagine in giorni o poche settimane. Il ricercatore entra nel contesto d'uso con focus iper-mirati, conducendo osservazioni intensive in orari critici, brevi interviste contestuali e raccogliendo reperti visivi mirati per estrarre insight operativi tempestivi per il team di sviluppo.\n\n---\n\n### 2. Video-Etnografia: La Telecamera come Strumento di Indagine e Allineamento\n\nLa **Video-Etnografia** consiste nell'impiego rigoroso e sistematico della ripresa audiovisiva durante l'osservazione sul campo:\n- **Cattura del Non-Verbale**: Registra micro-espressioni di confusione, sguardi esitanti verso lo schermo, pause prima di un clic, posture rigide e gesti di frustrazione che sfuggirebbero alle sole note scritte.\n- **Micro-Analisi Temporale**: Permette di riprodurre al rallentatore la sequenza fotogramma per fotogramma, misurando con precisione al millisecondo dove si blocca il flusso operativo dell'utente.\n- **Evidenza Inconfutabile (*Video Evidence*)**:\n  > *\"Un report scritto di cinquanta pagine non convincera mai i manager o i programmatori con la stessa forza di un filmato di trenta secondi in cui cinque utenti diversi rimangono bloccati sullo stesso menu.\"*\n  Il video genera empatia immediata e azzera le dispute astratte all'interno del team aziendale.\n\n---\n\n### 3. Netnografia: L'Etnografia delle Culture Online (Robert Kozinets)\n\nFondata alla fine degli anni '90 dal sociologo canadese **Robert V. Kozinets**, la **Netnografia** (crasi di *InterNET* ed *Etnografia*) adatta i metodi di ricerca antropologici allo studio delle **comunità virtuali, dei social network e delle culture native del cyberspazio**:\n- **Ambiente Naturale Digitale**: L'osservazione non si svolge in una stanza fisica, ma all'interno di forum tematici, canali Discord, subreddit, commenti di app store e gruppi specializzati.\n- **Spontaneità e Assenza di Interferenza**: Il netnografo analizza conversazioni spontanee che nascono senza la sollecitazione artificiale di un questionario o la presenza inibitoria di un moderatore. Gli utenti condividono liberamente frustrazioni, trucchi operativi (*workarounds*) e recensioni viscerali.\n- **Decodifica Semiotica**: La netnografia decodifica il gergo subculturale, i meme visivi, gli acronimi tecnici e i valori identitari che governano le comunità di fruitori digitali.\n\n---\n\n### 4. Analisi Longitudinale dei Comportamenti\n\nL'**Analisi Longitudinale** comprende studi ripetuti nel tempo sugli stessi individui a distanza di mesi o decenni:\n- **Obiettivo**: Comprendere come cambiano nel tempo le abitudini d'uso, come evolve l'apprendimento di una tecnologia e quali barriere emergono con l'avanzare dell'età biologica.\n- **Requisiti Metodologici**: Dati raccolti sul medesimo campione in almeno due periodi distinti; soggetti comparabili; strumenti di tracciamento stabili (diari continuativi o rilevazioni periodiche).\n\n---\n\n### 5. La ricerca etnografica per lo sviluppo di concept\n\nLa ricerca etnografica è il metodo d'indagine sul campo basato sull'**osservazione partecipante**, spesso integrata da altre tecniche. Nel design è utile nelle **primissime fasi** di concezione e generazione di idee. La pianificazione prevede: sopralluogo sul campo, scelta delle attività da osservare, osservazione sistematica, controllo della quantità di informazioni, analisi, interpretazione e sintesi, **validazione** dei risultati con gli utenti e gli altri soggetti coinvolti. Principio fondante: **non interferire** con le azioni degli utenti.\n\nTra i metodi per studiare l'utente con naturalezza la dispensa segnala il **pensiero ad alta voce** (*think aloud*): l'utente verbalizza e commenta liberamente le proprie azioni mentre gli osservatori annotano tutto **senza interpretare**, per rendere espliciti gli elementi impliciti o latenti di un compito.\n\n### 6. Tecniche esplorative, rappresentative e valutative\n\nGli studi sull'utente usano tecniche quantitative e qualitative, raggruppate in:\n- **Tecniche esplorative**: colgono l'esperienza dell'utente con l'osservazione diretta (etnografia e varianti, shadowing, sondaggi, lead users, analisi longitudinale, focus group, diari, sonde culturali).\n- **Tecniche rappresentative**: formalizzano e rappresentano esperienze vicine o future (scenari, personas, bodystorming, experience prototyping, focus troupe, informance).\n- Le **tecniche valutative** non sono comprese, perché più adatte agli studi centrati sulle caratteristiche del prodotto.\n\nGli strumenti essenziali della ricerca qualitativa sono **interviste, osservazione partecipante, osservazione a distanza e focus group**: non serve osservare grandi numeri, ma indagare in profondità singoli aspetti. A seconda del punto di vista, gli utenti sono osservati come attori sociali, utilizzatori, consumatori, clienti, fruitori, partecipanti; talvolta come classi specifiche (svantaggiati, persone con disabilità, vulnerabili, anziani).",
     "keyPoints": [
       "L'Etnografia Rapida comprime i tempi dell'antropologia per adattarsi ai ritmi agili dell'Interaction Design.",
       "La Video-Etnografia cattura il linguaggio non verbale e fornisce evidenze inconfutabili per gli stakeholder.",
-      "La Netnografia (Robert Kozinets) applica l'etnografia allo studio delle comunita native del cyberspazio.",
-      "Nelle comunita online gli utenti esprimono liberamente bisogni e workaround senza l'artificio del laboratorio.",
+      "La Netnografia (Robert Kozinets) applica l'etnografia allo studio delle comunità native del cyberspazio.",
+      "Nelle comunità online gli utenti esprimono liberamente bisogni e workaround senza l'artificio del laboratorio.",
       "L'Analisi Longitudinale monitora gli stessi soggetti a intervalli temporali per tracciare mutamenti duraturi."
     ],
     "flashcards": [
       {
-        "question": "Cos'e l'Etnografia Rapida (Rapid Ethnography)?",
+        "question": "Cos'è l'Etnografia Rapida (Rapid Ethnography)?",
         "answer": "Un adattamento dell'etnografia a tempi ristretti (giorni o settimane) per generare insight operativi rapidi per il design."
       },
       {
-        "question": "Qual e il valore principale della Video-Etnografia nei team di progetto?",
+        "question": "Qual è il valore principale della Video-Etnografia nei team di progetto?",
         "answer": "Fornire prove visive inconfutabili (video evidence) dei problemi dell'utente, superando dispute teoriche."
       },
       {
         "question": "Chi ha fondato la Netnografia e cosa studia?",
-        "answer": "Robert Kozinets; studia i comportamenti, linguaggi e culture delle comunita online negli spazi digitali."
+        "answer": "Robert Kozinets; studia i comportamenti, linguaggi e culture delle comunità online negli spazi digitali."
       },
       {
-        "question": "Qual e il vantaggio epistemologico dell'osservazione netnografica?",
-        "answer": "La totale spontaneita dei dati, prodotti dagli utenti senza l'interferenza artificiale di un intervistatore."
+        "question": "Qual è il vantaggio epistemologico dell'osservazione netnografica?",
+        "answer": "La totale spontaneità dei dati, prodotti dagli utenti senza l'interferenza artificiale di un intervistatore."
       },
       {
         "question": "In cosa consiste l'Analisi Longitudinale nell'IxD?",
@@ -2243,59 +2243,59 @@ window.INTERACTION_DATA = [
     ],
     "quiz": [
       {
-        "question": "Quale studioso ha ideato la Netnografia alla fine degli anni '90 per studiare i consumi e le culture nel web?",
+        "question": "Perché è nata l'etnografia rapida (quick and dirty ethnography)?",
         "options": [
-          "Robert Kozinets",
-          "Donald Norman",
-          "Thorstein Veblen",
-          "Alan Cooper"
+          "Perché l'etnografia tradizionale era ritenuta poco scientifica",
+          "Perché i tempi dell'etnografia classica erano troppo lunghi",
+          "Perché gli utenti rifiutavano di essere osservati troppo a lungo",
+          "Perché i costi delle videocamere per le riprese erano troppo alti"
         ],
-        "correct": 0,
-        "explanation": "Robert Kozinets ha formalizzato la Netnografia, definendo le linee guida metodologiche per condurre ricerca etnografica rigorosa all'interno delle comunita e culture online."
+        "correctIndex": 1,
+        "explanation": "La dispensa spiega che informazioni eccedenti e tempi lunghi erano incompatibili con lo sviluppo dei prodotti: l'etnografia rapida offre una focalizzazione più specifica e controllabile."
       },
       {
-        "question": "Perche la Video-Etnografia si dimostra uno strumento di persuasione straordinario nei confronti degli stakeholder aziendali?",
+        "question": "Chi ha coniato la netnografia?",
         "options": [
-          "Perche mostrare brevi filmati reali di utenti in difficolta elimina ogni dubbio astratto sull'esistenza del problema",
-          "Perche consente di vendere i biglietti del cinema ai dipendenti dell'azienda",
-          "Perche il video impedisce ai programmatori di continuare a scrivere codice",
-          "Perche la risoluzione in 4K garantisce l'assenza automatica di bug nel software"
+          "Mike Featherstone",
+          "Eric von Hippel",
+          "Victor Margolin",
+          "Robert Kozinets"
         ],
-        "correct": 0,
-        "explanation": "I report testuali possono essere liquidati come opinioni soggettive del designer; il filmato di un utente reale che si blocca visibilmente davanti all'interfaccia costituisce una prova empirica inoppugnabile."
+        "correctIndex": 3,
+        "explanation": "La netnografia è stata coniata da Robert Kozinets come evoluzione dell'etnografia adattata al digitale. Von Hippel è l'autore dei lead users."
       },
       {
-        "question": "Qual e la caratteristica temporale distintiva di un'Indagine Longitudinale?",
+        "question": "In che cosa la netnografia differisce dall'etnografia tradizionale?",
         "options": [
-          "La raccolta di dati sul medesimo campione di soggetti ripetuta in almeno due o piu periodi temporali distinti",
-          "La conduzione dell'intervista esclusivamente lungo il meridiano di Greenwich",
-          "La somministrazione di domande lunghissime della durata di oltre 100 righe ciascuna",
-          "L'obbligo di completare la ricerca in meno di ventiquattro ore"
+          "Usa solo dati quantitativi provenienti dagli analytics",
+          "Richiede che il ricercatore viva per mesi nella comunità",
+          "Analizza in modo indiretto contenuti e dinamiche delle comunità online",
+          "Si limita a studiare le recensioni dei prodotti"
         ],
-        "correct": 0,
-        "explanation": "Uno studio longitudinale traccia i medesimi individui lungo una linea temporale estesa per comprendere l'evoluzione nel tempo di comportamenti, apprendimento e trasformazioni culturali."
+        "correctIndex": 2,
+        "explanation": "L'etnografia osserva direttamente le interazioni; la netnografia analizza indirettamente contenuti, linguaggi e dinamiche delle web tribe. È comunque un metodo qualitativo, non basato sugli analytics."
       },
       {
-        "question": "Quale tra le seguenti fonti e un oggetto tipico di indagine Netnografica?",
+        "question": "Quali requisiti caratterizzano un'analisi longitudinale?",
         "options": [
-          "Thread di discussione su Reddit, forum specialistici e recensioni spontanee su app store",
-          "Antichi papiri egizi conservati nei musei archeologici",
-          "Libri mastri contabili stampati nel diciottesimo secolo",
-          "I registri di presenza cartacei dei dipendenti statali"
+          "Stessi soggetti osservati in almeno due periodi distinti",
+          "Un unico grande campione intervistato una sola volta",
+          "Soggetti diversi osservati tutti nello stesso giorno",
+          "Due prodotti concorrenti confrontati in laboratorio"
         ],
-        "correct": 0,
-        "explanation": "La netnografia si nutre delle tracce testuali, multimediali e discorsive lasciate liberamente dagli internauti all'interno degli spazi e delle piattaforme del web sociale."
+        "correctIndex": 0,
+        "explanation": "L'analisi longitudinale raccoglie dati sullo stesso soggetto in almeno due periodi, con soggetti uguali o comparabili, per capire i cambiamenti nel tempo."
       },
       {
-        "question": "Qual e il motivo principale per cui l'antropologia classica e stata riformulata in 'Etnografia Rapida' nel contesto aziendale?",
+        "question": "Che cosa aggiunge la video-etnografia rispetto all'osservazione diretta?",
         "options": [
-          "Perche i tempi produttivi del design (giorni o settimane) non sono compatibili con gli anni di permanenza sul campo dell'antropologia",
-          "Perche i ricercatori si stancavano rapidamente di fare interviste",
-          "Perche la legge vieta di condurre ricerche sul campo per piu di tre giorni",
-          "Perche il computer smette di funzionare se una ricerca dura piu di un mese"
+          "Permette di intervistare più persone contemporaneamente",
+          "Trasforma i dati qualitativi in percentuali affidabili",
+          "Elimina del tutto la necessità di andare sul campo",
+          "Integra l'osservazione diretta con le riprese filmate"
         ],
-        "correct": 0,
-        "explanation": "L'etnografia rapida risponde alla necessita di fornire risposte progettuali in tempi stretti, mantenendo il rigore dell'osservazione sul campo ma focalizzandola su compiti specifici."
+        "correctIndex": 3,
+        "explanation": "La video-etnografia sostituisce o integra l'osservazione diretta con le riprese: si possono rivedere gesti, esitazioni e linguaggio del corpo. Il ricercatore resta comunque sul campo."
       }
     ]
   },
@@ -2306,9 +2306,9 @@ window.INTERACTION_DATA = [
     "subtitle": "Narrazione contestuale, storyboard visivi, diegesi progettuale e prototipazione dell'esperienza futura",
     "readTime": "8 min",
     "module": "ixd-strumenti-prototipazione",
-    "summary": "### 1. La Narrazione come Strumento Epistemologico: Lo Scenario d'Uso\n\nNell'Interaction Design, un'idea progettuale non puo essere compresa isolandola dal suo contesto vitale. Lo **Scenario d'Uso (*Use Scenario*)** e una descrizione narrativa e sequenziale, redatta in linguaggio accessibile, che illustra come uno specifico archetipo di utente (la Persona) interagisce con l'artefatto all'interno di una situazione concreta della propria vita quotidiana per raggiungere un obiettivo significativo.\n\nUno scenario non e un elenco asettico di specifiche funzionali (*\"il sistema preme il tasto X\"*), ma una **storia ricca di dettagli ecologici e cognitivi**:\n- Descrive l'ambiente fisico e acustico (es. una stazione affollata e rumorosa, sotto la pioggia, con una mano occupata da una valigia).\n- Descrive la motivazione iniziale, le aspettative emotive e i vincoli di tempo dell'utente.\n- Descrive il dialogo interattivo tra persona e interfaccia e il beneficio finale ottenuto.\n\n---\n\n### 2. Dallo Scenario allo Storyboard Visivo\n\nMutuato dalla tradizione cinematografica e dell'animazione (Disney, Hitchcock), lo **Storyboard** nel design e la traduzione visiva dello scenario d'uso in una sequenza temporale di vignette illustrate o fotografiche:\n- **Superamento della 'Schermo-Centricita'**: Un errore comune dei grafici e disegnare unicamente schermate digitali (*UI screens*). Lo storyboard invece contestualizza lo schermo nella realta: inquadra il volto dell'utente, la postura del corpo, le distrazioni ambientali, gli altri individui presenti nella stanza.\n- **Le Tre Fasi Narratologiche dello Storyboard**:\n  1. *Apertura (Inquadramento del Contesto e del Problema)*: L'utente manifesta un bisogno o sperimenta un ostacolo (*trigger* emotivo).\n  2. *Svolgimento (L'Interazione col Prodotto)*: Come l'interfaccia guida la persona in modo fluido, superando l'attrito.\n  3. *Chiusura (Risoluzione e Stato d'Animo Finale)*: Il problema e felicemente risolto, generando sollievo e soddisfazione.\n\n---\n\n### 3. Video-Scenari e Design Fiction: Mettere in Scena il Futuro\n\nIl **Video-Scenario** costituisce un cortometraggio cinematografico in cui attori o i designer stessi interpretano l'uso di un sistema futuro, adoperando prototipi o simulazioni grafiche:\n- **Efficacia Diegetica**: Permette a chiunque di \"vedere e toccare\" un'innovazione che non e ancora stata programmata, anticipando discussioni su usabilita, etica e gradimento prima di spendere milioni in software.\n- **Design Fiction e Prototipi Diegetici**: Oggetti scenici inseriti in una trama narrativa per interrogarsi sulle derive sociali e morali delle nuove tecnologie (es. speculazioni su interfacce neurali o intelligenze artificiali invasive).\n\n---\n\n### 4. Il Ruolo di Allineamento dei 'Boundary Objects'\n\nScenari, storyboard e video-scenari operano nella sociologia del design come **Boundary Objects (Oggetti Limite o Ponte)**:\n- Sono artefatti comunicativi sufficientemente flessibili da permettere a figure professionali con linguaggi eterogenei (ingegneri informatici, designer visivi, sociologi, dirigenti aziendali e utenti) di dialogare e comprendere reciprocamente la medesima visione senza incomprensioni gergali.",
+    "summary": "### 1. La Narrazione come Strumento Epistemologico: Lo Scenario d'Uso\n\nNell'Interaction Design, un'idea progettuale non può essere compresa isolandola dal suo contesto vitale. Lo **Scenario d'Uso (*Use Scenario*)** è una descrizione narrativa e sequenziale, redatta in linguaggio accessibile, che illustra come uno specifico archetipo di utente (la Persona) interagisce con l'artefatto all'interno di una situazione concreta della propria vita quotidiana per raggiungere un obiettivo significativo.\n\nUno scenario non è un elenco asettico di specifiche funzionali (*\"il sistema preme il tasto X\"*), ma una **storia ricca di dettagli ecologici e cognitivi**:\n- Descrive l'ambiente fisico e acustico (es. una stazione affollata e rumorosa, sotto la pioggia, con una mano occupata da una valigia).\n- Descrive la motivazione iniziale, le aspettative emotive e i vincoli di tempo dell'utente.\n- Descrive il dialogo interattivo tra persona e interfaccia e il beneficio finale ottenuto.\n\n---\n\n### 2. Dallo Scenario allo Storyboard Visivo\n\nMutuato dalla tradizione cinematografica e dell'animazione (Disney, Hitchcock), lo **Storyboard** nel design è la traduzione visiva dello scenario d'uso in una sequenza temporale di vignette illustrate o fotografiche:\n- **Superamento della 'Schermo-Centricita'**: Un errore comune dei grafici e disegnare unicamente schermate digitali (*UI screens*). Lo storyboard invece contestualizza lo schermo nella realtà: inquadra il volto dell'utente, la postura del corpo, le distrazioni ambientali, gli altri individui presenti nella stanza.\n- **Le Tre Fasi Narratologiche dello Storyboard**:\n  1. *Apertura (Inquadramento del Contesto e del Problema)*: L'utente manifesta un bisogno o sperimenta un ostacolo (*trigger* emotivo).\n  2. *Svolgimento (L'Interazione col Prodotto)*: Come l'interfaccia guida la persona in modo fluido, superando l'attrito.\n  3. *Chiusura (Risoluzione e Stato d'Animo Finale)*: Il problema è felicemente risolto, generando sollievo e soddisfazione.\n\n---\n\n### 3. Video-Scenari e Design Fiction: Mettere in Scena il Futuro\n\nIl **Video-Scenario** costituisce un cortometraggio cinematografico in cui attori o i designer stessi interpretano l'uso di un sistema futuro, adoperando prototipi o simulazioni grafiche:\n- **Efficacia Diegetica**: Permette a chiunque di \"vedere e toccare\" un'innovazione che non è ancora stata programmata, anticipando discussioni su usabilità, etica e gradimento prima di spendere milioni in software.\n- **Design Fiction e Prototipi Diegetici**: Oggetti scenici inseriti in una trama narrativa per interrogarsi sulle derive sociali e morali delle nuove tecnologie (es. speculazioni su interfacce neurali o intelligenze artificiali invasive).\n\n---\n\n### 4. Il Ruolo di Allineamento dei 'Boundary Objects'\n\nScenari, storyboard e video-scenari operano nella sociologia del design come **Boundary Objects (Oggetti Limite o Ponte)**:\n- Sono artefatti comunicativi sufficientemente flessibili da permettere a figure professionali con linguaggi eterogenei (ingegneri informatici, designer visivi, sociologi, dirigenti aziendali e utenti) di dialogare e comprendere reciprocamente la medesima visione senza incomprensioni gergali.",
     "keyPoints": [
-      "Lo scenario d'uso e una narrazione ricca di dettagli contestuali che racconta l'interazione della Persona.",
+      "Lo scenario d'uso è una narrazione ricca di dettagli contestuali che racconta l'interazione della Persona.",
       "Lo storyboard visualizza graficamente in vignette l'esperienza prima, durante e dopo l'uso dell'interfaccia.",
       "A differenza delle schermate UI, lo storyboard mostra il corpo dell'utente, l'ambiente e le distrazioni fisiche.",
       "I Video-Scenari mettono in scena prototipi fittizi o funzionanti per valutare il valore dell'esperienza in anticipo.",
@@ -2316,7 +2316,7 @@ window.INTERACTION_DATA = [
     ],
     "flashcards": [
       {
-        "question": "Cos'e uno Scenario d'Uso nell'Interaction Design?",
+        "question": "Cos'è uno Scenario d'Uso nell'Interaction Design?",
         "answer": "Una narrazione che descrive come una Persona specifica usa un prodotto in un contesto reale per raggiungere un obiettivo."
       },
       {
@@ -2328,7 +2328,7 @@ window.INTERACTION_DATA = [
         "answer": "L'inizio mostra il problema e la frustrazione iniziale; la fine mostra la risoluzione e lo stato d'animo gratificato."
       },
       {
-        "question": "Cos'e un Video-Scenario?",
+        "question": "Cos'è un Video-Scenario?",
         "answer": "Un cortometraggio che mette in scena l'uso di un prodotto futuro prima ancora che venga programmato."
       },
       {
@@ -2338,59 +2338,59 @@ window.INTERACTION_DATA = [
     ],
     "quiz": [
       {
-        "question": "Qual e l'elemento fondamentale che differenzia uno Scenario d'Uso narrativo da un diagramma di specifiche tecniche?",
+        "question": "Secondo la dispensa, che cosa descrivono gli scenari d'uso?",
         "options": [
-          "Lo scenario descrive il contesto ecologico, le motivazioni intime, le emozioni e i vincoli reali della Persona",
-          "Lo scenario e scritto in codice assembly per processori ARM",
-          "Lo scenario contiene solo numeri e formule algebriche",
-          "Lo scenario non cita mai gli esseri umani"
+          "Le specifiche tecniche dei componenti del prodotto",
+          "Le statistiche di vendita previste per il lancio",
+          "Il contesto in cui un prodotto viene usato, passo dopo passo",
+          "La gerarchia delle pagine di un sito web"
         ],
-        "correct": 0,
-        "explanation": "Lo scenario racconta una storia viva in cui l'interazione e immersa in un ambiente reale (rumore, fretta, luce solare), mettendo in luce l'esperienza umana e non il mero funzionamento dell'algoritmo."
+        "correctIndex": 2,
+        "explanation": "Gli scenari d'uso descrivono in dettaglio il contesto d'uso documentando passo dopo passo le azioni degli utenti, anche in forma di testi, storyboard, fotografie e video."
       },
       {
-        "question": "Perche nello Storyboard e un grave errore metodologico disegnare unicamente le schermate dell'interfaccia grafica?",
+        "question": "Chi sono spesso i protagonisti degli scenari?",
         "options": [
-          "Perche si cancella il contesto umano, la postura fisica, le distrazioni ambientali e il mondo reale in cui vive l'utente",
-          "Perche gli storyboard devono contenere unicamente spartiti musicali",
-          "Perche disegnare persone e proibito dalle licenze Creative Commons",
-          "Perche le matite colorate non possono riprodurre i display digitali"
+          "I progettisti stessi",
+          "Gli azionisti dell'azienda",
+          "Le personae, archetipi basati su caratteristiche reali",
+          "Utenti reali intervistati, con nome e cognome veri"
         ],
-        "correct": 0,
-        "explanation": "Lo scopo dello storyboard e contestualizzare l'interazione: inquadrare il contesto, le mani, il volto dell'utente e gli ostacoli circostanti (es. camminare con una borsa) per verificare se l'interfaccia regge alla prova della realta."
+        "correctIndex": 2,
+        "explanation": "I protagonisti sono spesso le personae, archetipi basati su dati reali. Non sono persone reali con nome vero: sono sintesi della ricerca."
       },
       {
-        "question": "Nella sociologia del design, perche scenari e storyboard vengono definiti 'Boundary Objects' (Oggetti Limite)?",
+        "question": "Quali caratteristiche deve avere uno scenario efficace secondo la dispensa?",
         "options": [
-          "Perche permettono a programmatori, manager, committenti e designer di dialogare su una base visiva comune superando i linguaggi gergali",
-          "Perche segnano il confine invalicabile tra un'azienda e i suoi concorrenti",
-          "Perche vengono posizionati sul confine geografico di una nazione",
-          "Perche scadono entro 24 ore dalla loro creazione"
+          "Realismo fotografico, colonna sonora, attori, montaggio",
+          "Lunghezza, precisione numerica, linguaggio tecnico, riservatezza",
+          "Originalità assoluta, umorismo, brevità, assenza di dati",
+          "Credibilità, chiarezza, pertinenza economica, capacità di coinvolgimento"
         ],
-        "correct": 0,
-        "explanation": "I Boundary Objects (Star & Griesemer) sono artefatti intermedi capaci di mediare tra mondi professionali diversi, offrendo un terreno di comprensione condiviso a figure con background eterogenei."
+        "correctIndex": 3,
+        "explanation": "Le quattro caratteristiche elencate sono credibilità (basata su ricerche), chiarezza e semplicità, pertinenza economica e capacità di coinvolgimento."
       },
       {
-        "question": "Cosa rappresenta la 'Design Fiction' all'interno della video-prototipazione?",
+        "question": "Che cosa offrono gli scenari rispetto a semplici disegni o prototipi?",
         "options": [
-          "La narrazione diegetica di futuri tecnologici plausibili per stimolare dibattiti etici e sociali sulle implicazioni del design",
-          "La vendita di romanzi d'avventura all'interno dei negozi di informatica",
-          "La falsificazione intenzionale dei dati di bilancio economico",
-          "La creazione di loghi pubblicitari per aziende inesistenti"
+          "Una rappresentazione statica e più precisa del prodotto",
+          "Una sequenza di eventi nel tempo, quindi dinamica",
+          "Una stima dettagliata dei costi di produzione",
+          "Una verifica tecnica del funzionamento interno"
         ],
-        "correct": 0,
-        "explanation": "La Design Fiction mette in scena scenari futuri diegetici per interrogarsi criticamente sulle conseguenze sociali, etiche e politiche delle tecnologie emergenti prima che vengano commercializzate."
+        "correctIndex": 1,
+        "explanation": "A differenza di disegni e prototipi, gli scenari illustrano sequenze di eventi nel tempo; i video-scenari in particolare danno una visione immersiva del contesto d'uso."
       },
       {
-        "question": "Quale struttura in tre atti caratterizza tipicamente uno storyboard narrativo efficace?",
+        "question": "Perché uno storyboard non dovrebbe mostrare solo le schermate dell'interfaccia?",
         "options": [
-          "1. Problema nel contesto, 2. Interazione con la soluzione, 3. Risoluzione felice e appagamento emotivo",
-          "1. Pagamento bancario, 2. Firma del contratto, 3. Disdetta del servizio",
-          "1. Nascita, 2. Matrimonio, 3. Pensione lavorativa",
-          "1. Schermata nera, 2. Schermata bianca, 3. Spegnimento monitor"
+          "Perché le schermate cambiano spesso durante lo sviluppo",
+          "Perché i programmatori non sanno leggere le schermate",
+          "Perché perderebbe il contesto: persona, ambiente, corpo e distrazioni",
+          "Perché le schermate vanno mostrate solo nei prototipi ad alta fedeltà"
         ],
-        "correct": 0,
-        "explanation": "Uno storyboard d'esperienza segue la struttura drammatica classica: introduce l'attrito iniziale, mostra come l'artefatto supporta l'azione e si conclude con la gratificazione dell'utente."
+        "correctIndex": 2,
+        "explanation": "Lo storyboard serve a contestualizzare l'interazione nella realtà; limitarsi alle schermate ripete il riduzionismo 'screen-centrico' già criticato con l'Interaction Matrix."
       }
     ]
   },
@@ -2402,13 +2402,13 @@ window.INTERACTION_DATA = [
     "readTime": "10 min",
     "module": "ixd-strumenti-prototipazione",
     "image": "assets/corsi/dapl08/anno-1/interaction-design/images/schema_personas_cooper_template.svg",
-    "summary": "### 1. Alan Cooper e la Nascita delle Personas (1999)\n\nLa metodologia delle **Personas** e stata teorizzata e diffusa dal celebre pioniere del software e dell'Interaction Design **Alan Cooper** nel volume cardine *The Inmates Are Running the Asylum* (I matti hanno preso il controllo del manicomio, 1999).\n\nCooper denunciava la grave patologia che affliggeva l'industria informatica:\n- I programmatori progettavano software pensando a se stessi (*\"se e ovvio per me, sara ovvio per tutti\"*).\n- Quando erano costretti a pensare a un utente, creavano il cosiddetto **'Utente Elastico' (*The Elastic User*)**: un'astrazione comoda che cambiava arbitrariamente forma e competenze a seconda delle difficolta di programmazione (se il codice era difficile, l'utente elastico diventava magicamente un esperto che amava digitare stringhe complicate; se si doveva tagliare una funzione, diventava un principiante che non ne aveva bisogno).\n- Per spezzare questa deformazione, Cooper propone di **sostituire l'utente elastico con una persona concreta, precisa e indeformabile**: la Persona.\n\n---\n\n### 2. Definizione Rigorosa di Persona\n\n> *\"Una Persona e un modello archetipico di utente, un personaggio fittizio ma basato rigorosamente su dati ed evidenze concrete ricavate dalla ricerca qualitativa ed etnografica sul campo.\"*\n\nPunti cardinali della Persona:\n- **Non e una persona reale**: Non descrive il signor Rossi intervistato giovedi scorso (la cui specificita individuale potrebbe contenere manie irrilevanti per il progetto).\n- **Non e una media statistica astratta**: Una media aritmetica produce mostruosita inservibili (es. *\"ha 1,7 figli, possiede 0,8 automobili\"*). La Persona possiede un volto, un nome, un'eta, un lavoro e abitudini di vita verosimili che generano immediata risonanza empatica.\n- **Rappresenta un Cluster Comportamentale**: Incarna un insieme coerente di bisogni, atteggiamenti, modelli mentali e abitudini rilevati in piu soggetti durante la ricerca.\n\n---\n\n![Template Strutturale delle Personas di Alan Cooper](assets/corsi/dapl08/anno-1/interaction-design/images/schema_personas_cooper_template.svg)\n\n---\n\n### 3. La Tassonomia degli Obiettivi della Persona (Goals)\n\nCooper ribadisce che il design non deve modellarsi sui *compiti tecnici (*tasks*)* ma sugli **Obiettivi (*Goals*)**. I compiti cambiano con la tecnologia; gli obiettivi umani restano stabili:\n1. **Life Goals (Obiettivi di Vita)**:\n   - Rappresentano le aspirazioni profonde dell'essere umano (es. sentirsi competente, preservare la propria autostima, vivere con dignita, essere stimato dai colleghi).\n2. **End Goals (Obiettivi Finali)**:\n   - Rappresentano i risultati operativi concreti che la persona vuole ottenere usando il prodotto (es. inviare una fattura fiscale corretta, prenotare un volo aereo in due minuti, ascoltare la propria musica preferita).\n3. **Experience Goals (Obiettivi Esperienziali)**:\n   - Rappresentano come la persona vuole sentirsi durante l'interazione (es. non sentirsi stupido o disorientato, provare un senso di efficienza, divertirsi, sentirsi sicuro e al riparo da truffe).\n\n---\n\n### 4. Personas Primarie, Secondarie e Negative\n\nIn un progetto complesso non si progetta per un'unica persona, ma si definisce una chiara gerarchia:\n- **Persona Primaria**: L'archetipo principale le cui esigenze devono essere soddisfatte pienamente. Se il design non soddisfa la Persona Primaria, il prodotto fallisce. Progettare per la persona primaria soddisfa a cascata gran parte degli altri utenti.\n- **Persona Secondaria**: Le sue esigenze sono in gran parte coincidenti con la primaria, ma presenta requisiti aggiuntivi che possono essere integrati purche non danneggino la persona primaria.\n- **Persona Negativa (o Anti-Persona)**: L'archetipo per cui **esplicitamente NON si sta progettando** (es. hacker informatici, super-esperti di programmazione per un'app di alfabetizzazione senile). Definire chi escludere evita dispersioni energetiche e discussioni infinite nel team.",
+    "summary": "### 1. Alan Cooper e la Nascita delle Personas (1999)\n\nLa metodologia delle **Personas** è stata teorizzata e diffusa dal celebre pioniere del software e dell'Interaction Design **Alan Cooper** nel volume cardine *The Inmates Are Running the Asylum* (I matti hanno preso il controllo del manicomio, 1999).\n\nCooper denunciava la grave patologia che affliggeva l'industria informatica:\n- I programmatori progettavano software pensando a se stessi (*\"se e ovvio per me, sarà ovvio per tutti\"*).\n- Quando erano costretti a pensare a un utente, creavano il cosiddetto **'Utente Elastico' (*The Elastic User*)**: un'astrazione comoda che cambiava arbitrariamente forma e competenze a seconda delle difficoltà di programmazione (se il codice era difficile, l'utente elastico diventava magicamente un esperto che amava digitare stringhe complicate; se si doveva tagliare una funzione, diventava un principiante che non ne aveva bisogno).\n- Per spezzare questa deformazione, Cooper propone di **sostituire l'utente elastico con una persona concreta, precisa e indeformabile**: la Persona.\n\n---\n\n### 2. Definizione Rigorosa di Persona\n\n> *\"Una Persona è un modello archetipico di utente, un personaggio fittizio ma basato rigorosamente su dati ed evidenze concrete ricavate dalla ricerca qualitativa ed etnografica sul campo.\"*\n\nPunti cardinali della Persona:\n- **Non è una persona reale**: Non descrive il signor Rossi intervistato giovedi scorso (la cui specificità individuale potrebbe contenere manie irrilevanti per il progetto).\n- **Non è una media statistica astratta**: Una media aritmetica produce mostruosita inservibili (es. *\"ha 1,7 figli, possiede 0,8 automobili\"*). La Persona possiede un volto, un nome, un'età, un lavoro e abitudini di vita verosimili che generano immediata risonanza empatica.\n- **Rappresenta un Cluster Comportamentale**: Incarna un insieme coerente di bisogni, atteggiamenti, modelli mentali e abitudini rilevati in più soggetti durante la ricerca.\n\n---\n\n![Template Strutturale delle Personas di Alan Cooper](assets/corsi/dapl08/anno-1/interaction-design/images/schema_personas_cooper_template.svg)\n\n---\n\n### 3. La Tassonomia degli Obiettivi della Persona (Goals)\n\nCooper ribadisce che il design non deve modellarsi sui *compiti tecnici (*tasks*)* ma sugli **Obiettivi (*Goals*)**. I compiti cambiano con la tecnologia; gli obiettivi umani restano stabili:\n1. **Life Goals (Obiettivi di Vita)**:\n   - Rappresentano le aspirazioni profonde dell'essere umano (es. sentirsi competente, preservare la propria autostima, vivere con dignità, essere stimato dai colleghi).\n2. **End Goals (Obiettivi Finali)**:\n   - Rappresentano i risultati operativi concreti che la persona vuole ottenere usando il prodotto (es. inviare una fattura fiscale corretta, prenotare un volo aereo in due minuti, ascoltare la propria musica preferita).\n3. **Experience Goals (Obiettivi Esperienziali)**:\n   - Rappresentano come la persona vuole sentirsi durante l'interazione (es. non sentirsi stupido o disorientato, provare un senso di efficienza, divertirsi, sentirsi sicuro e al riparo da truffe).\n\n---\n\n### 4. Personas Primarie, Secondarie e Negative\n\nIn un progetto complesso non si progetta per un'unica persona, ma si definisce una chiara gerarchia:\n- **Persona Primaria**: L'archetipo principale le cui esigenze devono essere soddisfatte pienamente. Se il design non soddisfa la Persona Primaria, il prodotto fallisce. Progettare per la persona primaria soddisfa a cascata gran parte degli altri utenti.\n- **Persona Secondaria**: Le sue esigenze sono in gran parte coincidenti con la primaria, ma presenta requisiti aggiuntivi che possono essere integrati purché non danneggino la persona primaria.\n- **Persona Negativa (o Anti-Persona)**: L'archetipo per cui **esplicitamente NON si sta progettando** (es. hacker informatici, super-esperti di programmazione per un'app di alfabetizzazione senile). Definire chi escludere evita dispersioni energetiche e discussioni infinite nel team.",
     "keyPoints": [
       "Alan Cooper (1999) ha introdotto le Personas per eliminare l'errore dell''Utente Elastico'.",
-      "Una Persona e un archetipo fittizio costruito su dati reali di ricerca etnografica e qualitativa.",
-      "Non e ne un individuo singolo ne una media statistica: incarna un modello comportamentale e mentale.",
+      "Una Persona è un archetipo fittizio costruito su dati reali di ricerca etnografica e qualitativa.",
+      "Non è né un individuo singolo né una media statistica: incarna un modello comportamentale e mentale.",
       "I Goals della persona si dividono in: Life Goals (vita), End Goals (risultati pratici), Experience Goals (emozioni).",
-      "La Persona Primaria e il cardine insostituibile del progetto; la Persona Negativa identifica chi escludere."
+      "La Persona Primaria è il cardine insostituibile del progetto; la Persona Negativa identifica chi escludere."
     ],
     "flashcards": [
       {
@@ -2420,8 +2420,8 @@ window.INTERACTION_DATA = [
         "answer": "Un utente fittizio le cui competenze venivano manipolate dai programmatori per giustificare scelte di comodo."
       },
       {
-        "question": "Qual e la differenza tra una Persona e una media statistica?",
-        "answer": "La media genera astrazioni sterili; la Persona e un archetipo realistico dotato di identita ed empatia."
+        "question": "Qual è la differenza tra una Persona e una media statistica?",
+        "answer": "La media genera astrazioni sterili; la Persona è un archetipo realistico dotato di identità ed empatia."
       },
       {
         "question": "Quali sono le tre categorie di 'Goals' (Obiettivi) di una Persona?",
@@ -2434,59 +2434,59 @@ window.INTERACTION_DATA = [
     ],
     "quiz": [
       {
-        "question": "Nel libro 'The Inmates Are Running the Asylum' (1999), quale problema metodologico spinge Alan Cooper a teorizzare le Personas?",
+        "question": "Da che cosa vengono create le personas, secondo la dispensa?",
         "options": [
-          "La tendenza dei programmatori a piegare la figura dell'utente (Utente Elastico) per adattarla alle proprie comodita tecniche",
-          "L'aumento improvviso del costo dei monitor a fosfori verdi",
-          "La carenza di elettricita negli uffici della Silicon Valley",
-          "L'obbligo federale di registrare ogni cittadino all'interno di un database unico"
+          "Dalla fantasia del designer",
+          "Dalla media statistica delle caratteristiche degli utenti",
+          "Da una ricerca etnografica e da dati reali sugli utenti",
+          "Dalle indicazioni del reparto vendite"
         ],
-        "correct": 0,
-        "explanation": "Cooper dimostro che i programmatori definivano un utente generico e informe che mutava arbitrariamente a seconda dei capricci del codice: la Persona nasce come vincolo concreto e indeformabile basato su ricerca reale."
+        "correctIndex": 2,
+        "explanation": "Le personas 'non sono inventate ma create a partire da una ricerca etnografica'; sono tanto buone quanto la ricerca che c'è dietro. Una media statistica produrrebbe un profilo irrealistico."
       },
       {
-        "question": "Quale tra le seguenti affermazioni definisce con precisione epistemologica una Persona nell'IxD?",
+        "question": "Quale limite delle personas segnala la dispensa?",
         "options": [
-          "Un archetipo fittizio e verosimile che sintetizza comportamenti, modelli mentali e obiettivi riscontrati in utenti reali durante la ricerca",
-          "Una persona reale assunta a libro paga dall'azienda con contratto part-time",
-          "La media aritmetica di tutti i consumatori censiti dall'anagrafe comunale",
-          "Un'illustrazione decorativa generata a caso per abbellire le slide di presentazione"
+          "Sono troppo costose da realizzare per i piccoli team",
+          "Non possono essere condivise con il resto del team",
+          "Possono diventare stereotipi e valgono poco per utenti futuri",
+          "Richiedono sempre la presenza fisica di utenti reali"
         ],
-        "correct": 0,
-        "explanation": "La Persona non e un individuo reale specifico (che avrebbe troppe manie personali) ne una media fredda: e la distillazione archetipica di bisogni e schemi mentali reali emersi dal campo."
+        "correctIndex": 2,
+        "explanation": "I limiti sono la sintesi che può produrre stereotipi e la scarsa applicabilità per futuri utenti dai tratti non ancora noti. Al contrario, sono utili proprio quando non si possono osservare utenti reali."
       },
       {
-        "question": "Nella tassonomia di Cooper, quale tipo di obiettivo esprime il desiderio dell'utente di 'non sentirsi stupido o inadeguato' durante l'interazione?",
+        "question": "Che cosa intendeva Alan Cooper con 'utente elastico'?",
         "options": [
-          "Experience Goal (Obiettivo Esperienziale)",
-          "End Goal (Obiettivo Finale pratico)",
-          "Life Goal (Obiettivo di Vita trascendente)",
-          "Financial Goal (Obiettivo Economico aziendale)"
+          "Un utente capace di adattarsi a qualsiasi interfaccia",
+          "Un'idea di utente piegata alle comodità del team",
+          "Un utente che usa il prodotto su dispositivi diversi",
+          "Un utente che cambia spesso fornitore di servizi"
         ],
-        "correct": 0,
-        "explanation": "Gli Experience Goals definiscono lo stato emotivo desiderato durante l'uso dell'interfaccia: sentirsi competenti, calmi, rassicurati e al riparo da sentimenti di umiliazione cognitiva."
+        "correctIndex": 1,
+        "explanation": "L'utente elastico cambia forma a seconda delle convenienze: esperto quando una funzione è difficile da semplificare, principiante quando si vuole tagliarla. La persona serve a fissarlo."
       },
       {
-        "question": "A quale scopo un team di design identifica formalmente una 'Persona Negativa' (Anti-Persona)?",
+        "question": "Il desiderio di 'non sentirsi stupidi' usando un'app è, secondo Cooper, un:",
         "options": [
-          "Per circoscrivere chiaramente chi NON e il destinatario del prodotto, evitando compromessi deleteri e dispersione di risorse",
-          "Per sporgere denuncia penale contro i consumatori piu antipatici",
-          "Per bloccare l'accesso al sito a chi naviga senza consenso dei cookie",
-          "Per applicare tariffe di vendita punitive a determinati gruppi etnici"
+          "Life goal",
+          "End goal",
+          "Experience goal",
+          "Business goal"
         ],
-        "correct": 0,
-        "explanation": "Definire la Persona Negativa chiarisce per chi NON stiamo progettando, evitando l'errore fatale di voler accontentare tutti e realizzando interfacce focalizzate e coerenti per il target primario."
+        "correctIndex": 2,
+        "explanation": "Gli experience goals descrivono come la persona vuole sentirsi durante l'interazione. Gli end goals sono i risultati pratici (es. prenotare un volo), i life goals le aspirazioni di vita."
       },
       {
-        "question": "Perche Alan Cooper consiglia di identificare UNA SOLA 'Persona Primaria' per ciascun nucleo di interfaccia?",
+        "question": "A che cosa serve definire una persona negativa?",
         "options": [
-          "Perche soddisfare pienamente le necessita dell'archetipo fondamentale evita compromessi mediocri e soddisfa a cascata la maggioranza degli utenti",
-          "Perche i software di disegno grafico ammettono un unico profilo utente nei livelli",
-          "Perche le aziende non hanno il budget per stampare piu di un foglio di carta",
-          "Perche le leggi internazionali sul copyright vietano l'uso del plurale"
+          "A rappresentare gli utenti insoddisfatti da recuperare",
+          "A indicare per chi esplicitamente non si sta progettando",
+          "A descrivere i concorrenti dell'azienda",
+          "A simulare un attacco informatico al sistema"
         ],
-        "correct": 0,
-        "explanation": "Progettare per tutti significa progettare per nessuno. Mirare con precisione chirurgica alla Persona Primaria permette di creare un'interfaccia impeccabile per quel nucleo di bisogni, che risultera usabile anche per target secondari."
+        "correctIndex": 1,
+        "explanation": "La persona negativa identifica chi è escluso dal target (es. esperti di programmazione per un'app destinata ad anziani): evita dispersioni e discussioni infinite nel team."
       }
     ]
   },
@@ -2494,13 +2494,13 @@ window.INTERACTION_DATA = [
     "id": "ixd-c27",
     "number": 27,
     "title": "Experience Prototyping, Bodystorming, Focus Troupe e Informance",
-    "subtitle": "Simulazione teatrale e performativa, prototipi a bassa e alta fedelta, recitazione e incarnazione del progetto",
+    "subtitle": "Simulazione teatrale e performativa, prototipi a bassa e alta fedeltà, recitazione e incarnazione del progetto",
     "readTime": "9 min",
     "module": "ixd-strumenti-prototipazione",
-    "summary": "### 1. Il Paradigma dell'Experience Prototyping (Buchenau & Suri, 2000)\n\nNei modelli industriali classici, il prototipo serviva unicamente a validare tolleranze ingegneristiche o forme estetiche. Nel celebre saggio del 2000 pubblicato dai ricercatori di IDEO **Marion Buchenau e Jane Fulton Suri**, si afferma il concetto di **Experience Prototyping**:\n> *\"Un prototipo di esperienza e qualunque forma di rappresentazione, simulazione o messa in scena che consenta ai designer, ai clienti e agli utenti di vivere soggettivamente in prima persona l'esperienza d'uso futura, provandone sensazioni, vincoli corporei ed emozioni reali.\"*\n\nL'experience prototyping supera le discussioni astratte: l'immedesimazione corporea permette di scoprire criticita invisibili sulla carta (pesi eccessivi, riflessi di luce, difficolta di presa con una mano sola, sforzo cognitivo in contesti rumorosi).\n\n---\n\n### 2. Bodystorming: Il Brainstorming Incarnato nello Spazio Fisico\n\nIl **Bodystorming** rappresenta l'evoluzione performativa e cinestesica del brainstorming tradizionale:\n- Invece di restare seduti attorno a un tavolo a redigere post-it, i designer **mettono in scena fisicamente l'interazione con il proprio corpo all'interno dell'ambiente reale** o di un setting ricostruito in scala 1:1.\n- Si utilizzano **prototipi a bassissima fedelta (*Low-Fi*)** costruiti con scatole di cartone, blocchi di polistirolo, nastro adesivo e tubi di gomma.\n- Vivere fisicamente i gesti motori (chinarsi, sollevare un oggetto, camminare cercando una fermata d'autobus guardando uno smartphone) svela istantaneamente le barriere biomeccaniche e contestuali dell'artefatto.\n\n---\n\n### 3. Focus Troupe: Il Teatro Professionale per Concetti Emergenti\n\nLa tecnica del **Focus Troupe** costituisce un sofisticato metodo performativo impiegato nelle prime fasi ideative per testare prodotti o servizi **non ancora esistenti sul mercato**:\n- Durante un incontro progettuale, **attori professionisti e designer recitano copioni drammatici** preparati in precedenza, mettendo in scena scenette di vita quotidiana futura in cui compare il nuovo concept.\n- La rappresentazione si articola alternando brevi scene teatrali, monologhi interiori degli attori (che esprimono dubbi, entusiasmi o frustrazioni verso l'oggetto fittizio) e discussioni collettive facilitate da un designer moderatore.\n- Gli utenti assistono come spettatori partecipi: vedere gli attori recitare dilemmi realistici sblocca la loro timidezza e permette di discutere reazioni emotive profonde ed obiezioni etiche prima ancora che il software venga programmato.\n\n---\n\n### 4. Informance (Informative Performance)\n\nIl concetto di **Informance** (contrazione di *informative performance*) designa una tecnica teatrale in cui **sono i designer stessi a recitare la parte degli utenti**, vestendone i panni e simulandone l'habitus di fronte a un pubblico di stakeholder aziendali, ingegneri o dirigenti:\n- I designer utilizzano i prototipi come oggetti di scena (*props* teatrali).\n- L'informance comunica il senso e il valore umano del progetto con un impatto empatico infinitamente superiore a una tradizionale presentazione in slide di PowerPoint, illustrando concretamente come il sistema trasformera la vita delle persone.\n\n---\n\n### 5. Dalla Bassa Fedeltà (Low-Fi) all'Alta Fedeltà (Hi-Fi)\n\n- **Prototipi a Bassa Fedelta (*Paper Prototyping / Cardboard*)**: Rapidi, economici, usa-e-getta. Favoriscono il distacco emotivo e spingono l'utente a criticare liberamente l'architettura logica senza farsi distrarre dall'estetica grafica.\n- **Prototipi ad Alta Fedelta (*Interactive Software / Connected Hardware*)**: Simulano fedelmente la grafica, i tempi di latenza e le animazioni finali. Servono a testare micro-interazioni, leggibilita tipografica e prestazioni reali a ridosso del lancio sul mercato.",
+    "summary": "### 1. Il Paradigma dell'Experience Prototyping (Buchenau & Suri, 2000)\n\nNei modelli industriali classici, il prototipo serviva unicamente a validare tolleranze ingegneristiche o forme estetiche. Nel celebre saggio del 2000 pubblicato dai ricercatori di IDEO **Marion Buchenau e Jane Fulton Suri**, si afferma il concetto di **Experience Prototyping**:\n> *\"Un prototipo di esperienza e qualunque forma di rappresentazione, simulazione o messa in scena che consenta ai designer, ai clienti e agli utenti di vivere soggettivamente in prima persona l'esperienza d'uso futura, provandone sensazioni, vincoli corporei ed emozioni reali.\"*\n\nL'experience prototyping supera le discussioni astratte: l'immedesimazione corporea permette di scoprire criticità invisibili sulla carta (pesi eccessivi, riflessi di luce, difficoltà di presa con una mano sola, sforzo cognitivo in contesti rumorosi).\n\n---\n\n### 2. Bodystorming: Il Brainstorming Incarnato nello Spazio Fisico\n\nIl **Bodystorming** rappresenta l'evoluzione performativa e cinestesica del brainstorming tradizionale:\n- Invece di restare seduti attorno a un tavolo a redigere post-it, i designer **mettono in scena fisicamente l'interazione con il proprio corpo all'interno dell'ambiente reale** o di un setting ricostruito in scala 1:1.\n- Si utilizzano **prototipi a bassissima fedeltà (*Low-Fi*)** costruiti con scatole di cartone, blocchi di polistirolo, nastro adesivo e tubi di gomma.\n- Vivere fisicamente i gesti motori (chinarsi, sollevare un oggetto, camminare cercando una fermata d'autobus guardando uno smartphone) svela istantaneamente le barriere biomeccaniche e contestuali dell'artefatto.\n\n---\n\n### 3. Focus Troupe: Il Teatro Professionale per Concetti Emergenti\n\nLa tecnica del **Focus Troupe** costituisce un sofisticato metodo performativo impiegato nelle prime fasi ideative per testare prodotti o servizi **non ancora esistenti sul mercato**:\n- Durante un incontro progettuale, **attori professionisti e designer recitano copioni drammatici** preparati in precedenza, mettendo in scena scenette di vita quotidiana futura in cui compare il nuovo concept.\n- La rappresentazione si articola alternando brevi scene teatrali, monologhi interiori degli attori (che esprimono dubbi, entusiasmi o frustrazioni verso l'oggetto fittizio) e discussioni collettive facilitate da un designer moderatore.\n- Gli utenti assistono come spettatori partecipi: vedere gli attori recitare dilemmi realistici sblocca la loro timidezza e permette di discutere reazioni emotive profonde ed obiezioni etiche prima ancora che il software venga programmato.\n\n---\n\n### 4. Informance (Informative Performance)\n\nIl concetto di **Informance** (contrazione di *informative performance*) designa una tecnica teatrale in cui **sono i designer stessi a recitare la parte degli utenti**, vestendone i panni e simulandone l'habitus di fronte a un pubblico di stakeholder aziendali, ingegneri o dirigenti:\n- I designer utilizzano i prototipi come oggetti di scena (*props* teatrali).\n- L'informance comunica il senso e il valore umano del progetto con un impatto empatico infinitamente superiore a una tradizionale presentazione in slide di PowerPoint, illustrando concretamente come il sistema trasformera la vita delle persone.\n\n---\n\n### 5. Dalla Bassa Fedeltà (Low-Fi) all'Alta Fedeltà (Hi-Fi)\n\n- **Prototipi a Bassa Fedeltà (*Paper Prototyping / Cardboard*)**: Rapidi, economici, usa-e-getta. Favoriscono il distacco emotivo e spingono l'utente a criticare liberamente l'architettura logica senza farsi distrarre dall'estetica grafica.\n- **Prototipi ad Alta Fedeltà (*Interactive Software / Connected Hardware*)**: Simulano fedelmente la grafica, i tempi di latenza e le animazioni finali. Servono a testare micro-interazioni, leggibilità tipografica e prestazioni reali a ridosso del lancio sul mercato.",
     "keyPoints": [
       "L'Experience Prototyping (IDEO 2000) fa vivere soggettivamente in prima persona l'esperienza d'uso futura.",
-      "Il Bodystorming e la recitazione fisica nello spazio dell'interazione con prototipi low-fi di cartone e foam.",
+      "Il Bodystorming è la recitazione fisica nello spazio dell'interazione con prototipi low-fi di cartone e foam.",
       "Il Focus Troupe usa attori professionisti che recitano copioni per stimolare la discussione su prodotti inesistenti.",
       "L'Informance vede i designer recitare la parte degli utenti davanti agli stakeholder aziendali.",
       "I prototipi Low-Fi stimolano il feedback strutturale; i prototipi Hi-Fi validano micro-interazioni e rendering."
@@ -2511,7 +2511,7 @@ window.INTERACTION_DATA = [
         "answer": "Qualunque prototipo o messa in scena che permetta di sperimentare soggettivamente in prima persona l'uso futuro."
       },
       {
-        "question": "Cos'e il 'Bodystorming'?",
+        "question": "Cos'è il 'Bodystorming'?",
         "answer": "La simulazione fisica cinestesica nello spazio delle interazioni dell'utente, usando il corpo e mockup grezzi."
       },
       {
@@ -2519,69 +2519,69 @@ window.INTERACTION_DATA = [
         "answer": "Nell'uso di attori che recitano scene con concept futuri davanti agli utenti per stimolare dibattiti profondi."
       },
       {
-        "question": "Cos'e l'Informance (Informative Performance)?",
+        "question": "Cos'è l'Informance (Informative Performance)?",
         "answer": "Una performance teatrale in cui i designer recitano il ruolo degli utenti mostrando i prototipi a manager ed esperti."
       },
       {
-        "question": "Qual e il vantaggio cognitivo dei prototipi cartacei Low-Fi sui test utente?",
+        "question": "Qual è il vantaggio cognitivo dei prototipi cartacei Low-Fi sui test utente?",
         "answer": "Fanno sentire l'utente a proprio agio nel criticare il flusso logico senza farsi inibire dall'estetica rifinita."
       }
     ],
     "quiz": [
       {
-        "question": "In cosa consiste la tecnica performativa denominata 'Bodystorming'?",
+        "question": "Che cosa caratterizza il bodystorming rispetto al brainstorming tradizionale?",
         "options": [
-          "Nel mettere in scena fisicamente l'interazione con il corpo nello spazio reale o simulato, usando prototipi grezzi di cartone",
-          "Nel fare sedute di ginnastica aerobica prima di iniziare a programmare in Python",
-          "Nel sottoporre gli utenti a scariche elettriche per misurarne i riflessi muscolari",
-          "Nel calcolare il peso corporeo medio degli acquirenti di un e-commerce"
+          "Il ricorso a movimento, azioni simulate e materiali grezzi",
+          "L'uso esclusivo di software di modellazione 3D",
+          "La presenza di attori professionisti che recitano copioni",
+          "Il divieto di coinvolgere gli utenti finali nella sessione"
         ],
-        "correct": 0,
-        "explanation": "Il Bodystorming unisce corpo e mente: i designer si muovono nello spazio e incarnano i compiti dell'utente per cogliere gli attriti fisici, posturali e contestuali impossibili da percepire stando seduti."
+        "correctIndex": 0,
+        "explanation": "Il bodystorming estende il brainstorming con l'interazione fisica: movimento, simulazione di azioni, materiali grezzi o prototipi informali. Gli attori professionisti caratterizzano il focus troupe."
       },
       {
-        "question": "Cosa caratterizza la metodologia del 'Focus Troupe' ideata per testare concept di prodotti non ancora esistenti?",
+        "question": "Nel focus troupe, chi recita i copioni?",
         "options": [
-          "L'intervento di attori che recitano copioni con prototipi scenici per stimolare riflessioni ed emozioni autentiche negli utenti",
-          "L'interrogatorio formale dei partecipanti da parte di ufficiali di polizia giudiziaria",
-          "L'uso esclusivo di marionette di legno mosse con fili invisibili",
-          "La vendita promozionale dei biglietti teatrali durante le ore di lavoro"
+          "Gli utenti finali",
+          "Solo il moderatore",
+          "Progettisti e attori professionisti",
+          "I manager dell'azienda committente"
         ],
-        "correct": 0,
-        "explanation": "Il Focus Troupe impiega attori professionisti che mettono in scena dilemmi e situazioni d'uso realistiche di fronte a un pubblico di utenti, stimolando una discussione ricca su desideri e obiezioni morali o pratiche."
+        "correctIndex": 2,
+        "explanation": "Nel focus troupe progettisti e attori professionisti recitano copioni per stimolare la discussione con gli utenti, utile per valutare prodotti non ancora esistenti."
       },
       {
-        "question": "Qual e la caratteristica fondamentale dell'Informance (Informative Performance)?",
+        "question": "Nell'informance, chi interpreta il ruolo degli utenti?",
         "options": [
-          "I designer stessi salgono sul palco e recitano la parte degli utenti per dimostrare dal vivo il valore del progetto agli stakeholder",
-          "Il computer legge automaticamente ad alta voce i messaggi di posta elettronica aziendale",
-          "L'azienda trasmette un concerto musicale in streaming per pubblicizzare il software",
-          "I clienti compilano un questionario cartaceo di duecento domande a risposta chiusa"
+          "I progettisti stessi",
+          "Gli utenti reali",
+          "Attori professionisti",
+          "Un pubblico di esperti"
         ],
-        "correct": 0,
-        "explanation": "Nell'Informance il team di design si fa attore: recitando i ruoli delle Personas con i prototipi tra le mani, mostra ai decisori aziendali in modo vivido ed empatico come il nuovo prodotto trasformera la vita quotidiana."
+        "correctIndex": 0,
+        "explanation": "Nell'informance sono i progettisti a recitare la parte degli utenti, usando prototipi come oggetti di scena davanti a un pubblico di esperti. È la differenza principale rispetto al focus troupe."
       },
       {
-        "question": "Quale vantaggio insostituibile offre l'uso di prototipi a BASSA FEDELTA (Low-Fi) nelle fasi iniziali di co-design?",
+        "question": "Secondo la dispensa, che cosa permette l'experience prototyping ai progettisti?",
         "options": [
-          "Invogliano gli utenti a criticare liberamente la logica e i flussi, poiche l'aspetto grezzo comunica che nulla e ancora definitivo",
-          "Possono essere collegati direttamente alla presa della corrente a 220 Volt",
-          "Garantiscono la massima risoluzione grafica retina ad altissima definizione",
-          "Eliminano per sempre il bisogno di condurre ricerche di mercato"
+          "Di sostituire definitivamente la ricerca sugli utenti",
+          "Di ottenere dati statistici sul gradimento del prodotto",
+          "Di presentare il prodotto finito agli investitori",
+          "Di vivere in prima persona l'esperienza dell'utente"
         ],
-        "correct": 0,
-        "explanation": "Se un prototipo appare iper-rifinito (*Hi-Fi*), l'utente si concentra sui dettagli estetici (colori, font) ed esita a criticare la struttura per non offendere il designer; un prototipo grezzo invita alla collaborazione e alla critica radicale."
+        "correctIndex": 3,
+        "explanation": "L'experience prototyping fa assumere ai progettisti il ruolo dell'utente, coinvolgendo aspetto fisico ed emozionale. Non produce statistiche e non sostituisce la ricerca."
       },
       {
-        "question": "Secondo Marion Buchenau e Jane Fulton Suri (IDEO), l'Experience Prototyping ha come obiettivo primario:",
+        "question": "Un team vuole valutare con gli utenti un servizio che ancora non esiste, stimolando la discussione con scene recitate. Quale tecnica è più adatta?",
         "options": [
-          "Far vivere soggettivamente in prima persona le condizioni sensoriali ed emotive dell'uso futuro ai progettisti e agli utenti",
-          "Calcolare i costi fiscali di sdoganamento dei materiali plastici",
-          "Testare la resistenza meccanica dei bulloni di metallo alle intemperie",
-          "Scrivere il bilancio contabile certificato di fine anno"
+          "Analisi longitudinale",
+          "Focus troupe",
+          "Ricerca desk",
+          "Test A/B"
         ],
-        "correct": 0,
-        "explanation": "L'Experience Prototyping punta sull'esperienza soggettiva fenomenologica: comprendere come ci si sente a usare il sistema e il miglior indicatore per progettarne l'usabilita e la risonanza emotiva."
+        "correctIndex": 1,
+        "explanation": "Il focus troupe è 'particolarmente utile per valutare prodotti non ancora esistenti' attraverso scene recitate e discussioni. Il test A/B richiede invece un prodotto già online."
       }
     ]
   },
@@ -2590,93 +2590,93 @@ window.INTERACTION_DATA = [
     "number": 28,
     "title": "L'Applicability Gap nel Design e Sintesi Metodologica per l'Esame",
     "subtitle": "Integrazione della ricerca nel progetto, frattura ricercatore-designer, transdisciplinarita e conclusioni",
-    "readTime": "10 min",
+    "readTime": "8 min",
     "module": "ixd-strumenti-prototipazione",
-    "summary": "### 1. Il Fenomeno dell'Applicability Gap\n\nUno dei dilemmi teorici ed operativi piu discussi nell'Interaction Design contemporaneo e il cosiddetto **Applicability Gap (Divario di Applicabilita)**:\n- Consiste nella frequente e dolorosa **difficolta di trasferire ed integrare le conoscenze prodotte dalla ricerca sull'utente all'interno del processo decisionale e formale del design**.\n- Spesso, dopo mesi di indagini socio-antropologiche, interviste e sondaggi, i report finali rimangono documenti teorici inerti (*'shelfware'*), mentre i designer continuano a prendere decisioni formali basandosi sulla propria intuizione personale o su preferenze estetiche estemporanee.\n\n---\n\n### 2. Cause della Frattura e Strategie di Superamento\n\nLe cause principali dell'Applicability Gap risiedono nella **distanza epistemologica tra ricercatori e progettisti**:\n1. *Incompatibilita dei Linguaggi*: I ricercatori sociali producono corposi dossier analitici densi di teoria e cautela accademica; i designer operano per sintesi visiva, necessitando di parametri operativi, vincoli spaziali e modelli di comportamento chiari.\n2. *Tempistiche Sfasate*: Spesso la ricerca si conclude quando la finestra decisionale del progetto si e gia chiusa.\n3. *Mancanza di Allineamento*: La separazione rigida dei ruoli tra chi raccoglie i dati e chi disegna.\n\n**Come si colma il divario?**\nAttraverso **Strumenti di Sintesi e Boundary Objects**:\n- Le **Personas** trasformano tabelle statistiche in interlocutori empatici vividi.\n- Le **User Journey Map** traducono centinaia di risposte aperte in una chiara matrice cronologica visiva che evidenzia immediatamente i pain points.\n- Il coinvolgimento congiunto: i designer devono scendere sul campo a condurre interviste insieme ai ricercatori (*designers on the field*).\n\n---\n\n### 3. La Progettazione come Disciplina Umanistica e Socio-Tecnica\n\nL'evoluzione tracciata nel nostro percorso di studio dimostra una verita fondamentale:\n> *\"L'Interaction Design non e mera cosmetica grafica ne puro esercizio di ingegneria del software: e una disciplina umanistica, sociale ed ecologica, che governa la relazione tra la mente delle persone, gli artefatti computazionali e l'ambiente vitale circostante.\"*\n\nProgettare interfacce significa progettare le condizioni stesse attraverso cui gli individui conoscono il mondo, comunicano affetti, esercitano diritti di cittadinanza e trasformano la propria identita (Pine & Gilmore).\n\n---\n\n### 4. Quadro di Sintesi Metodologica per il Colloquio d'Esame\n\nIn sede di colloquio accademico con il docente, lo studente deve saper connettere in modo organico e rigoroso i quattro pilastri della disciplina:\n\n1. **Il Processo Operativo (Design Thinking & Double Diamond)**:\n   - Alternanza sistematica tra pensiero divergente (esplorazione del problema e brainstorming) e pensiero convergente (sintesi del brief e prototipazione/test).\n2. **I Fondamenti Teorici ed Epistemologici (Margolin, Buchanan, Gibson e Norman)**:\n   - Svolta antropocentrica: dai microprocessori al *Milieu dell'utente* (Margolin).\n   - I 4 ordini e la triade *Utile, Usabile e Desiderabile* (Buchanan).\n   - L'ecologia dell'affordance (Gibson) e l'affordance percepita con i *Signifiers* (Norman).\n3. **Le Teorie Socioculturali dei Consumi (Toffler, Veblen, Bourdieu, Fabris e Mitchell)**:\n   - Dalla passivita al *Prosumer* (Toffler) e ai *Lead Users* (Von Hippel).\n   - Segnalazione di status e *Consumo Vistoso* (Veblen).\n   - *Capitale Culturale, Economico e Habitus* nello spazio sociale (Bourdieu).\n   - Gli *Stili di Vita* aperti e la *Sintalita* collettiva (Featherstone, VALS di Mitchell, 8 Italie di Fabris).\n4. **La Cassetta degli Attrezzi della Ricerca e Prototipazione**:\n   - Etnografia, Cultural Probes, Interviste ed Analytics comportamentali.\n   - Personas di Alan Cooper, Scenari, Storyboard, Bodystorming, Focus Troupe e Informance.",
+    "summary": "### 1. Il Fenomeno dell'Applicability Gap\n\nUno dei dilemmi teorici ed operativi più discussi nell'Interaction Design contemporaneo è il cosiddetto **Applicability Gap (Divario di Applicabilita)**:\n- Consiste nella frequente e dolorosa **difficoltà di trasferire ed integrare le conoscenze prodotte dalla ricerca sull'utente all'interno del processo decisionale e formale del design**.\n- Spesso, dopo mesi di indagini socio-antropologiche, interviste e sondaggi, i report finali rimangono documenti teorici inerti (*'shelfware'*), mentre i designer continuano a prendere decisioni formali basandosi sulla propria intuizione personale o su preferenze estetiche estemporanee.\n\n---\n\n### 2. Cause della Frattura e Strategie di Superamento\n\nLe cause principali dell'Applicability Gap risiedono nella **distanza epistemologica tra ricercatori e progettisti**:\n1. *Incompatibilità dei Linguaggi*: I ricercatori sociali producono corposi dossier analitici densi di teoria e cautela accademica; i designer operano per sintesi visiva, necessitando di parametri operativi, vincoli spaziali e modelli di comportamento chiari.\n2. *Tempistiche Sfasate*: Spesso la ricerca si conclude quando la finestra decisionale del progetto si e già chiusa.\n3. *Mancanza di Allineamento*: La separazione rigida dei ruoli tra chi raccoglie i dati e chi disegna.\n\n**Come si colma il divario?**\nAttraverso **Strumenti di Sintesi e Boundary Objects**:\n- Le **Personas** trasformano tabelle statistiche in interlocutori empatici vividi.\n- Le **User Journey Map** traducono centinaia di risposte aperte in una chiara matrice cronologica visiva che evidenzia immediatamente i pain points.\n- Il coinvolgimento congiunto: i designer devono scendere sul campo a condurre interviste insieme ai ricercatori (*designers on the field*).\n\n---\n\n### 3. La Progettazione come Disciplina Umanistica e Socio-Tecnica\n\nL'evoluzione tracciata nel nostro percorso di studio dimostra una verità fondamentale:\n> *\"L'Interaction Design non è mera cosmetica grafica né puro esercizio di ingegneria del software: e una disciplina umanistica, sociale ed ecologica, che governa la relazione tra la mente delle persone, gli artefatti computazionali e l'ambiente vitale circostante.\"*\n\nProgettare interfacce significa progettare le condizioni stesse attraverso cui gli individui conoscono il mondo, comunicano affetti, esercitano diritti di cittadinanza e trasformano la propria identità (Pine & Gilmore).\n\n---\n\n### 4. Quadro di Sintesi Metodologica per il Colloquio d'Esame\n\nIn sede di colloquio accademico con il docente, lo studente deve saper connettere in modo organico e rigoroso i quattro pilastri della disciplina:\n\n1. **Il Processo Operativo (Design Thinking & Double Diamond)**:\n   - Alternanza sistematica tra pensiero divergente (esplorazione del problema e brainstorming) e pensiero convergente (sintesi del brief e prototipazione/test).\n2. **I Fondamenti Teorici ed Epistemologici (Margolin, Buchanan, Gibson e Norman)**:\n   - Svolta antropocentrica: dai microprocessori al *Milieu dell'utente* (Margolin).\n   - I 4 ordini e la triade *Utile, Usabile e Desiderabile* (Buchanan).\n   - L'ecologia dell'affordance (Gibson) e l'affordance percepita con i *Signifiers* (Norman).\n3. **Le Teorie Socioculturali dei Consumi (Toffler, Veblen, Bourdieu, Fabris e Mitchell)**:\n   - Dalla passivita al *Prosumer* (Toffler) e ai *Lead Users* (Von Hippel).\n   - Segnalazione di status e *Consumo Vistoso* (Veblen).\n   - *Capitale Culturale, Economico e Habitus* nello spazio sociale (Bourdieu).\n   - Gli *Stili di Vita* aperti e la *Sintalita* collettiva (Featherstone, VALS di Mitchell, 8 Italie di Fabris).\n4. **La Cassetta degli Attrezzi della Ricerca e Prototipazione**:\n   - Etnografia, Cultural Probes, Interviste ed Analytics comportamentali.\n   - Personas di Alan Cooper, Scenari, Storyboard, Bodystorming, Focus Troupe e Informance.\n\n---\n\n### 5. Un assetto multidisciplinare\n\nGli studi sull'utente attingono a molte discipline:\n- **Antropologia culturale, scienze sociali del comportamento, etnografia e psicologia**: interviste e osservazione diretta.\n- **Marketing**: focus group e questionari strutturati.\n- **Psicologia ambientale** (detta anche sociologia ambientale o ecologia umana): tecniche come l'osservazione sistematica dei bisogni ambientali di gruppi di utenti.\n- **Psicologia dei consumi**: come gli atteggiamenti si trasformano in intenzioni e comportamenti d'acquisto.\n\n**Antropologia dei consumi e studi sull'utente**. L'antropologia, con psicologia sociale e sociologia una delle tre scienze sociali fondamentali, è la *scienza della cultura*; dagli anni Sessanta studia anche il consumo nelle società contemporanee (con contributi come quelli di **Jean Baudrillard**). Ma le finalità divergono: l'antropologia vuole **comprendere e descrivere**, gli user studies vogliono **orientare il progetto**, individuando *traguardi da raggiungere, problemi da evitare, opportunità* per soluzioni più vicine ai bisogni reali.\n\n**Ergonomia**. Studia capacità fisiche e cognitive e caratteristiche antropometriche. Per la **IEA (International Ergonomics Association)** l'ergonomia studia l'interazione tra esseri umani e altri elementi di un sistema per migliorare **benessere umano e prestazioni del sistema**. Nata in ambito industriale e militare, si è estesa a tutte le interazioni uomo-macchina e dialoga con antropometria, biomeccanica, ingegneria e design industriale.\n\n**Strumenti di impronta economica**. Le **ricerche di mercato** puntano a soddisfazione del cliente, nuove opportunità e nuovi segmenti, per prevedere *cosa verrà acquistato e perché*; gli **studi sull'utente** esplorano comportamenti e culture per individuare bisogni espliciti, inespressi e latenti. Dagli anni '80 il marketing, prima quantitativo e sperimentale, si apre all'etnografia e integra nuovi temi: resistenza al consumo e comportamenti disfunzionali; aspetti sociali degli acquisti; **macro-marketing** (efficienza economica e bisogni sociali); **psicografia** (segmentazione su variabili culturali e psicologiche); marketing personalizzato; valore simbolico e rituale del consumo.\n\n### 6. Prospettive\n\nL'ergonomia valuta con metodi **quantitativi** la relazione fisica e funzionale tra utente e prodotto; gli studi sull'utente si orientano verso la **dimensione culturale** dell'uso con metodi qualitativi. Due livelli di approfondimento:\n1. **Capovolgimento della priorità**: dallo studio dell'uso in sé a un approccio che considera insieme **uso e utente**; la collaborazione tra progettisti e utenti permette alle persone di appropriarsi del progetto dell'uso.\n2. **Singolarità individuale**: gli studi delineano sempre più le esigenze del singolo, fondendo funzioni, soggetti e azioni in contesti spazio-temporali specifici.\n\n### 7. Conclusioni della dispensa\n\n- La ricerca sull'utente si svolge in laboratorio o sul campo; il **campo** riflette meglio le condizioni reali.\n- Sul grado di coinvolgimento degli utenti le opinioni variano (sempre, o solo in certe fasi), ma è condiviso che il contatto con le loro esperienze arricchisca il progetto.\n- Criticità: i **metodi semplificati** possono dare risultati non significativi; l'**applicability gap** si supera solo con l'allineamento tra ricercatori e progettisti.\n- La progettazione del prodotto diventa sempre più una **disciplina umanistica**, centrata sulla relazione tra persona e prodotto.",
     "keyPoints": [
-      "L'Applicability Gap e la difficolta di integrare i dati di ricerca nelle scelte concrete di design.",
+      "L'Applicability Gap è la difficoltà di integrare i dati di ricerca nelle scelte concrete di design.",
       "Si supera usando Personas e Journey Map come Boundary Objects e portando i designer sul campo.",
-      "L'Interaction Design e una disciplina umanistica e socio-tecnica che modella le relazioni umane.",
+      "L'Interaction Design è una disciplina umanistica e socio-tecnica che modella le relazioni umane.",
       "Il colloquio d'esame richiede la padronanza di: Design Thinking, teoria dell'esperienza, sociologia dei consumi e prototipazione.",
       "Rigore terminologico assoluto: distinguere metodo, strumento, affordance e signifier."
     ],
     "flashcards": [
       {
-        "question": "Cos'e l'Applicability Gap nella ricerca di design?",
-        "answer": "La difficolta di tradurre e integrare i risultati teorici della ricerca sulle persone nelle scelte pratiche di progetto."
+        "question": "Cos'è l'Applicability Gap nella ricerca di design?",
+        "answer": "La difficoltà di tradurre e integrare i risultati teorici della ricerca sulle persone nelle scelte pratiche di progetto."
       },
       {
         "question": "Quali strumenti colmano il divario dell'Applicability Gap?",
         "answer": "Strumenti di sintesi visiva come Personas, Customer Journey Map e la partecipazione diretta dei designer alla ricerca."
       },
       {
-        "question": "Perche l'Interaction Design e definita una disciplina umanistica?",
-        "answer": "Perche mette al centro la persona, la percezione, l'etica e il miglioramento della qualita della vita."
+        "question": "Perché l'Interaction Design è definita una disciplina umanistica?",
+        "answer": "Perché mette al centro la persona, la percezione, l'etica e il miglioramento della qualità della vita."
       },
       {
         "question": "Quali sono i quattro pilastri metodologici della materia per l'esame?",
         "answer": "1. Design Thinking, 2. Teoria dell'esperienza (Margolin/Norman), 3. Sociologia (Bourdieu/Fabris), 4. Strumenti/Personas."
       },
       {
-        "question": "Qual e la regola fondamentale per un'ottima esposizione all'orale?",
+        "question": "Qual è la regola fondamentale per un'ottima esposizione all'orale?",
         "answer": "Utilizzare un lessico rigoroso, evitando luoghi comuni ed evidenziando i collegamenti interdisciplinari."
       }
     ],
     "quiz": [
       {
-        "question": "Cosa indica con esattezza l'espressione 'Applicability Gap' nel dibattito metodologico sul design?",
+        "question": "Che cos'è l'applicability gap?",
         "options": [
-          "La frattura e la difficolta di trasferire efficacemente le conoscenze teoriche della ricerca utente nelle decisioni progettuali d'interfaccia",
-          "Il divario di prezzo tra due computer di marche diverse",
-          "L'intervallo di tempo necessario a scaricare un file multimediale pesante",
-          "La distanza fisica espressa in chilometri tra il server e lo schermo dell'utente"
+          "La difficoltà di integrare le conoscenze sugli utenti nel processo progettuale",
+          "Il ritardo tra la progettazione di un prodotto e il suo lancio",
+          "La differenza di prezzo tra prototipo e prodotto finale",
+          "La distanza tra le funzioni previste e quelle realizzate"
         ],
-        "correct": 0,
-        "explanation": "L'applicability gap descrive la discrepanza tra l'abbondanza di dati raccolti dai ricercatori e la loro reale traduzione in scelte di design, spesso ostacolata da linguaggi tecnici non comunicanti."
+        "correctIndex": 0,
+        "explanation": "La dispensa: esiste una difficoltà nell'integrare efficacemente le conoscenze degli utenti nel processo progettuale, nota come applicability gap."
       },
       {
-        "question": "In che modo la metodologia delle Personas e delle Customer Journey Map contribuisce a sanare l'Applicability Gap?",
+        "question": "Come si può superare l'applicability gap secondo la dispensa?",
         "options": [
-          "Fungendo da 'Boundary Objects' sintetici e visivi che traducono dati sociologici complessi in modelli operativi comprensibili ai designer",
-          "Sostituendosi alla scrittura del codice HTML e JavaScript",
-          "Impedendo agli utenti di esprimere critiche negative",
-          "Raddoppiando il numero di riunioni aziendali settimanali"
+          "Riducendo il numero di ricerche sugli utenti",
+          "Usando solo metodi quantitativi",
+          "Affidando tutta la ricerca a società esterne",
+          "Allineando ricercatori e progettisti"
         ],
-        "correct": 0,
-        "explanation": "Le Personas e le Journey Map sintetizzano l'essenza della ricerca in formati narrativi e visuali immediatamente spendibili durante l'ideazione e la prototipazione."
+        "correctIndex": 3,
+        "explanation": "Il problema 'può essere superato solo attraverso un allineamento tra ricercatori e progettisti'. Strumenti come personas e journey map aiutano proprio a creare questo linguaggio comune."
       },
       {
-        "question": "Quale tra le seguenti affermazioni sintetizza con maggior rigore epistemologico la natura dell'Interaction Design?",
+        "question": "Secondo le conclusioni della dispensa, perché la ricerca sul campo è particolarmente preziosa rispetto al laboratorio?",
         "options": [
-          "Una disciplina umanistica e socio-tecnica che indaga e progetta le relazioni cognitive, percettive ed emozionali tra esseri umani e sistemi interattivi",
-          "Una branca minore del disegno tecnico meccanico per tornitori industriali",
-          "La pratica commerciale di inserire banner pubblicitari su siti internet",
-          "L'arte manuale di rilegare libri di carta antichi"
+          "Perché riflette meglio le condizioni reali d'uso",
+          "Perché costa meno",
+          "Perché produce dati più numerosi",
+          "Perché non richiede il coinvolgimento degli utenti"
         ],
-        "correct": 0,
-        "explanation": "L'IxD e una scienza del progetto profondamente umanistica ed ecologica: connette la psicologia cognitiva, la sociologia e la cibernetica per migliorare la qualita dell'esistenza umana."
+        "correctIndex": 0,
+        "explanation": "La ricerca può avvenire in laboratorio o sul campo, ma quest'ultimo valorizza maggiormente la conoscenza del mondo reale perché riflette meglio le condizioni d'uso."
       },
       {
-        "question": "Quale errore comune commette il designer che trascura la teoria sociologica di Pierre Bourdieu e di Giampaolo Fabris?",
+        "question": "Quale rischio dei metodi di ricerca semplificati segnala la dispensa?",
         "options": [
-          "Progettare credendo ingenuamente che il proprio gusto e habitus personale siano universali, fallendo nel comunicare con stili di vita differenti",
-          "Scrivere il codice in un linguaggio di programmazione non certificato ISO",
-          "Acquistare monitor con una risoluzione grafica troppo elevata",
-          "Impiegare meno di tre ore per completare un'illustrazione vettoriale"
+          "Sono vietati in ambito accademico",
+          "Richiedono troppo tempo",
+          "Possono produrre risultati non significativi",
+          "Escludono il designer dal processo"
         ],
-        "correct": 0,
-        "explanation": "Ignorare la sociologia dei consumi porta il designer all'etnocentrismo progettuale: imporre la propria sensibilita di classe a un pubblico che possiede capitali culturali, habitus e scale di priorita del tutto eterogenei."
+        "correctIndex": 2,
+        "explanation": "Tra le criticità: 'l'adozione di metodi semplificati può produrre risultati non significativi'. È il rovescio della medaglia di approcci come l'etnografia rapida."
       },
       {
-        "question": "All'esame accademico di Interaction Design, come va illustrato il rapporto tra 'Metodo' e 'Strumento'?",
+        "question": "Un designer progetta un'app pensando che il proprio gusto valga per tutti gli utenti. Quali teorie del corso lo smentiscono più direttamente?",
         "options": [
-          "Il metodo e il quadro epistemologico e la traiettoria di pensiero (es. Design Thinking); lo strumento e il mezzo operativo concreto (es. Personas, Storyboard)",
-          "Il metodo e un programma software a pagamento, lo strumento e un cacciavite in ferro",
-          "Sono due vocaboli identici del tutto intercambiabili in qualsiasi contesto",
-          "Il metodo si usa solo in matematica, mentre lo strumento si usa solo in fisica acustica"
+          "Il Double Diamond e il Design Thinking",
+          "L'Interaction Matrix e l'affordance di Gibson",
+          "L'habitus di Bourdieu e gli stili di vita di Fabris",
+          "Il test A/B e le heatmap"
         ],
-        "correct": 0,
-        "explanation": "La distinzione concettuale e rigorosa: il metodo governa la filosofia e la logica del processo (l'approccio); gli strumenti sono i dispositivi specifici adoperati all'interno delle singole fasi per raccogliere o formalizzare dati."
+        "correctIndex": 2,
+        "explanation": "Habitus e stili di vita mostrano che gusti e preferenze dipendono da capitali, educazione e appartenenze: il gusto del designer non è universale. Le altre teorie riguardano processo, percezione e misura."
       }
     ]
   }
