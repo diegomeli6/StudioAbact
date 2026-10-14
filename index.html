@@ -66,18 +66,18 @@
             <a href="#materie" class="landing-btn landing-btn-ghost" id="landing-resume">Vedi le materie</a>
           </div>
         </div>
-        <div class="landing-hero-visual">
-          <div class="hero-video-frame">
-            <video class="hero-video" id="hero-video" autoplay muted loop playsinline preload="metadata"
-              poster="assets/media/hero-poster.jpg" aria-label="Anteprima della piattaforma: sintesi, flashcard e quiz">
-              <source src="assets/media/hero-loop.webm" type="video/webm">
-              <source src="assets/media/hero-loop.mp4" type="video/mp4">
-            </video>
-            <button type="button" class="hero-play-spot" id="btn-open-spot" aria-haspopup="dialog">
-              <span class="hero-play-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="7 4 20 12 7 20 7 4"/></svg></span>
-              Guarda lo spot <span class="hero-play-time">1 min</span>
-            </button>
-          </div>
+      </section>
+
+      <section class="spot-band" aria-label="Spot di Studio ABA Catania">
+        <div class="spot-stage" id="spot-stage">
+          <video class="spot-video" id="spot-video" muted loop playsinline preload="none"
+            poster="assets/media/spot-16x9-poster.jpg"
+            aria-label="Spot di Studio ABA Catania: sintesi, flashcard, quiz, simulatore d'esame, orale e progressi"></video>
+          <button type="button" class="spot-sound" id="spot-sound" aria-pressed="false" aria-label="Attiva l'audio">
+            <svg class="icon-muted" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+            <svg class="icon-sound" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+            <span class="spot-sound-hint">Tocca per l'audio</span>
+          </button>
         </div>
       </section>
 
@@ -291,63 +291,105 @@
     })();
   </script>
 
-  <div class="spot-modal" id="spot-modal" role="dialog" aria-modal="true" aria-label="Spot di Studio ABA Catania" hidden>
-    <button type="button" class="spot-modal-close" id="btn-close-spot" aria-label="Chiudi lo spot">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-    </button>
-    <div class="spot-modal-body">
-      <video class="spot-video" id="spot-video" controls playsinline preload="none"></video>
-    </div>
-  </div>
-
   <script>
-    // Video della home: clip in loop nell'introduzione e spot completo in una finestra.
-    // Lo spot si scarica solo al clic; su schermi verticali si usa la versione 9:16 (più leggera).
+    // Spot nella home: parte senza audio, in loop, quando è visibile; un tocco attiva o toglie l'audio.
+    // Si carica solo quando arriva sullo schermo. Schermi in verticale: versione 9:16 (più leggera).
+    // Con "riduci movimento" o risparmio dati non parte da solo: si avvia al primo tocco, con l'audio.
     (function () {
       'use strict';
-      const hero = document.getElementById('hero-video');
-      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
-      if (hero && reduce.matches) {
-        hero.removeAttribute('autoplay');
-        hero.pause();
-      }
-
-      const modal = document.getElementById('spot-modal');
+      const stage = document.getElementById('spot-stage');
       const video = document.getElementById('spot-video');
-      const openBtn = document.getElementById('btn-open-spot');
-      const closeBtn = document.getElementById('btn-close-spot');
-      let lastFocus = null;
+      const soundBtn = document.getElementById('spot-sound');
+      if (!stage || !video) return;
 
-      function open() {
-        const vertical = window.matchMedia('(max-aspect-ratio: 4/5)').matches;
-        const src = vertical ? 'assets/media/studioabact-vertical.mp4' : 'assets/media/studioabact-promo.mp4';
-        if (video.dataset.src !== src) {
-          video.src = src;
-          video.dataset.src = src;
-          video.poster = vertical ? '' : 'assets/media/studioabact-promo-poster.jpg';
+      const vertical = window.matchMedia('(max-aspect-ratio: 4/5)');
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const saveData = !!(navigator.connection && navigator.connection.saveData);
+      const autoplay = !reduce && !saveData;
+      let visible = false;
+      let started = autoplay;   // l'utente ha avviato lo spot (o può partire da solo)
+      let heardOnce = false;    // alla prima attivazione dell'audio lo spot riparte dall'inizio
+
+      function source() {
+        return vertical.matches
+          ? { src: 'assets/media/spot-9x16.mp4', poster: 'assets/media/spot-9x16-poster.jpg' }
+          : { src: 'assets/media/spot-16x9.mp4', poster: 'assets/media/spot-16x9-poster.jpg' };
+      }
+
+      function play() {
+        const p = video.play();
+        if (p && p.catch) p.catch(() => {});
+      }
+
+      function load() {
+        const s = source();
+        stage.classList.toggle('is-vertical', vertical.matches);
+        video.poster = s.poster;
+        if (video.dataset.src !== s.src && (visible || video.dataset.src)) {
+          const t = video.currentTime;
+          video.src = s.src;
+          video.dataset.src = s.src;
+          if (heardOnce && t) video.currentTime = t;
         }
-        modal.classList.toggle('is-vertical', vertical);
-        lastFocus = document.activeElement;
-        modal.hidden = false;
-        document.body.style.overflow = 'hidden';
-        if (hero) hero.pause();
-        const playing = video.play();
-        if (playing && playing.catch) playing.catch(() => {});
-        closeBtn.focus();
+        if (visible && started) play();
       }
 
-      function close() {
-        video.pause();
-        modal.hidden = true;
-        document.body.style.overflow = '';
-        if (hero && !reduce.matches) hero.play().catch(() => {});
-        if (lastFocus) lastFocus.focus();
+      function render() {
+        const on = !video.muted && !video.paused;
+        stage.classList.toggle('has-sound', on);
+        soundBtn.setAttribute('aria-pressed', String(on));
+        soundBtn.setAttribute('aria-label', on ? "Disattiva l'audio" : "Attiva l'audio");
       }
 
-      openBtn.addEventListener('click', open);
-      closeBtn.addEventListener('click', close);
-      modal.addEventListener('click', e => { if (e.target === modal) close(); });
-      document.addEventListener('keydown', e => { if (e.key === 'Escape' && !modal.hidden) close(); });
+      function toggleSound() {
+        stage.classList.add('was-touched');
+        if (!video.dataset.src) { visible = true; load(); }
+        if (video.paused || video.muted) {
+          started = true;
+          if (!heardOnce) { video.currentTime = 0; heardOnce = true; }
+          video.muted = false;
+          play();
+        } else {
+          video.muted = true;
+        }
+        render();
+      }
+
+      stage.addEventListener('click', toggleSound);
+      video.addEventListener('volumechange', render);
+      video.addEventListener('play', render);
+      video.addEventListener('pause', render);
+      vertical.addEventListener('change', load);
+
+      // Il suggerimento "Tocca per l'audio" sparisce dopo qualche secondo di visione
+      video.addEventListener('playing', () => {
+        setTimeout(() => stage.classList.add('was-touched'), 5000);
+      }, { once: true });
+
+      // Visibilità calcolata a ogni scorrimento (una volta per fotogramma): parte se se ne vede almeno il 20%
+      let ticking = false;
+      function check() {
+        ticking = false;
+        const r = stage.getBoundingClientRect();
+        const seen = Math.min(r.bottom, window.innerHeight) - Math.max(r.top, 0);
+        const now = r.height > 0 && seen / r.height >= 0.2;
+        if (now === visible) return;
+        visible = now;
+        if (visible) load();
+        else if (!video.paused) video.pause();
+      }
+      function schedule() {
+        if (!ticking) { ticking = true; requestAnimationFrame(check); }
+      }
+      window.addEventListener('scroll', schedule, { passive: true });
+      window.addEventListener('resize', schedule);
+      document.addEventListener('visibilitychange', () => {
+        if (document.hidden) video.pause();
+        else if (visible && started) play();
+      });
+      check();
+      video.poster = source().poster;
+      stage.classList.toggle('is-vertical', vertical.matches);
     })();
   </script>
 

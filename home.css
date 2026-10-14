@@ -10,6 +10,8 @@
   transition: background 0.3s, color 0.3s;
   display: flex;
   flex-direction: column;
+  /* la fascia dello spot è larga 100vw: evita lo scorrimento orizzontale dovuto alla barra di scorrimento */
+  overflow-x: clip;
 }
 
 .materia-card-prof {
@@ -790,11 +792,19 @@ body.theme-light .home-toast {
 }
 
 .landing-hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-  gap: 48px;
-  align-items: center;
-  padding: 64px 0 56px;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 0 32px;
+  text-align: center;
+}
+
+.landing-hero p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.landing-cta {
+  justify-content: center;
 }
 
 .landing-eyebrow {
@@ -857,96 +867,28 @@ body.theme-light .home-toast {
   background: var(--bg-surface);
 }
 
-/* Clip in loop dell'interfaccia (assets/media/hero-loop.*) */
-.landing-hero-visual {
-  position: relative;
+/* Spot a tutta larghezza (assets/media/spot-*.mp4): parte muto in loop, un tocco attiva l'audio */
+.spot-band {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 0 24px 24px;
 }
 
-.hero-video-frame {
+.spot-stage {
   position: relative;
-  border-radius: 16px;
-  overflow: hidden;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-color);
-  box-shadow: 0 24px 48px -24px rgba(15, 23, 42, 0.35);
+  width: min(100%, calc((100svh - 120px) * 16 / 9), 1600px);
   aspect-ratio: 16 / 9;
-}
-
-.hero-video {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* La clip ha ampi margini attorno all'interfaccia: un leggero ingrandimento la rende leggibile */
-  transform: scale(1.22);
-}
-
-.hero-play-spot {
-  position: absolute;
-  left: 14px;
-  bottom: 14px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 7px 14px 7px 7px;
-  border: 0;
-  border-radius: 999px;
-  background: rgba(15, 23, 42, 0.82);
-  color: #fff;
-  font: inherit;
-  font-size: 13.5px;
-  font-weight: 700;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #141414;
+  box-shadow: 0 30px 60px -30px rgba(15, 23, 42, 0.45);
   cursor: pointer;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  transition: transform 0.15s ease, background-color 0.15s ease;
+  animation: fadeUp 0.5s ease-out both;
 }
 
-.hero-play-spot:hover {
-  transform: translateY(-2px);
-  background: rgba(15, 23, 42, 0.95);
-}
-
-.hero-play-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: #feb940;
-  color: #141414;
-}
-
-.hero-play-time {
-  font-weight: 500;
-  opacity: 0.75;
-}
-
-/* Finestra dello spot */
-.spot-modal {
-  position: fixed;
-  inset: 0;
-  z-index: 10001;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-  background: rgba(10, 10, 12, 0.88);
-  animation: fadeUp 0.25s ease-out both;
-}
-
-.spot-modal[hidden] {
-  display: none;
-}
-
-.spot-modal-body {
-  width: min(1200px, 94vw);
-}
-
-.spot-modal.is-vertical .spot-modal-body {
-  width: auto;
-  height: min(86vh, 900px);
+.spot-stage.is-vertical {
+  width: min(100%, calc((100svh - 96px) * 9 / 16));
   aspect-ratio: 9 / 16;
 }
 
@@ -954,29 +896,65 @@ body.theme-light .home-toast {
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: 12px;
-  background: #000;
+  object-fit: cover;
 }
 
-.spot-modal-close {
-  position: fixed;
-  top: 20px;
-  right: 24px;
-  z-index: 10002;
+/* Comando audio: piccolo, in un angolo; il suggerimento testuale sparisce dopo qualche secondo */
+.spot-sound {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
+  gap: 8px;
+  height: 40px;
+  min-width: 40px;
+  padding: 0 11px;
   border: 0;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  background: rgba(20, 20, 20, 0.55);
   color: #fff;
+  font: inherit;
+  font-size: 12.5px;
+  font-weight: 600;
   cursor: pointer;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  opacity: 0.85;
+  transition: opacity 0.2s ease, background-color 0.2s ease;
 }
 
-.spot-modal-close:hover {
-  background: rgba(255, 255, 255, 0.26);
+.spot-stage:hover .spot-sound,
+.spot-sound:focus-visible {
+  opacity: 1;
+  background: rgba(20, 20, 20, 0.75);
+}
+
+.spot-sound .icon-sound,
+.spot-stage.has-sound .spot-sound .icon-muted {
+  display: none;
+}
+
+.spot-stage.has-sound .spot-sound .icon-sound {
+  display: block;
+}
+
+.spot-sound-hint {
+  max-width: 140px;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: max-width 0.35s ease, opacity 0.25s ease;
+}
+
+.spot-stage.was-touched .spot-sound-hint,
+.spot-stage.has-sound .spot-sound-hint {
+  max-width: 0;
+  opacity: 0;
+  margin-left: -8px;
+}
+
+.spot-stage.was-touched:not(:hover) .spot-sound {
+  opacity: 0.6;
 }
 
 /* Sezioni */
@@ -1163,9 +1141,7 @@ body.theme-light .home-toast {
 
 @media (max-width: 860px) {
   .landing-hero {
-    grid-template-columns: 1fr;
-    gap: 32px;
-    padding: 40px 0 32px;
+    padding: 40px 0 28px;
   }
 
   .landing-hero h2 {
@@ -1203,10 +1179,19 @@ body.theme-light .home-toast {
     margin-right: auto;
   }
 
-  .hero-play-spot {
-    left: 10px;
-    bottom: 10px;
-    font-size: 12.5px;
+  /* Su smartphone lo spot verticale occupa tutta la larghezza dello schermo */
+  .spot-band {
+    padding: 0 0 16px;
+  }
+
+  .spot-stage,
+  .spot-stage.is-vertical {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .spot-stage.is-vertical {
+    width: 100%;
   }
 
   .landing-band {

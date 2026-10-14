@@ -47,14 +47,14 @@ data/
 
 pages/{materia}.html  Guscio della pagina di studio (circa 25 righe, nessun markup di layout)
 tools/check-data.js   Verifica di qualità (da eseguire dopo ogni modifica)
+tools/encode-spot.sh  Ricomprime gli spot di Remotion per il web e li copia in assets/media/
 tools/supabase-user-state.sql  SQL della tabella user_state (da eseguire una volta nella dashboard Supabase)
 assets/
   favicon.svg         Favicon: logo semplificato, inchiostro nero/bianco secondo il tema del browser
   logo.svg            Logo del sito (evidenziatore), inchiostro nero: README, anteprime, materiali esterni
   logo-white.svg      Lo stesso logo con inchiostro bianco, per fondi scuri (spot, social)
-  media/              Output dello spot Remotion: hero-loop.webm/.mp4 + hero-poster.jpg (clip nella home),
-                      studioabact-promo.mp4 (16:9) e studioabact-vertical.mp4 (9:16) per la finestra "Guarda lo spot",
-                      studioabact-promo-poster.jpg, og-image.jpg (anteprima dei link, 1200x630)
+  media/              Spot per il web: spot-16x9.mp4 e spot-9x16.mp4 (con audio) + spot-16x9-poster.jpg /
+                      spot-9x16-poster.jpg, og-image.jpg (anteprima dei link, 1200x630). Generati da tools/encode-spot.sh
   app-icon-180.png    Icona per la schermata home (apple-touch-icon); app-icon-512.png per site.webmanifest
   corsi/{CORSO}/anno-{N}/{materia}/images/    Immagini e schemi SVG delle sintesi
   corsi/{CORSO}/anno-{N}/{materia}/dispense/  PDF sorgente (ignorati da git, solo in locale)
@@ -255,8 +255,10 @@ Altri token (`styles.css`): sfondi `--bg-main`, `--bg-surface`, `--bg-sidebar`; 
 
 ### 7.0 Video e anteprime
 
-- Lo spot si rigenera nel progetto Remotion (fuori da questo repository) e gli output si copiano in `assets/media/` **con gli stessi nomi**: nessun file HTML va modificato.
-- Nella home la clip `hero-loop` parte da sola senza audio (ferma con `prefers-reduced-motion`); lo spot completo si scarica solo quando si apre la finestra, in versione verticale sugli schermi in verticale.
+- Lo spot si rigenera nel progetto Remotion (fuori da questo repository). Poi `sh tools/encode-spot.sh /percorso/progetto-remotion` crea le versioni leggere per il web (720p circa 4 MB, verticale circa 2 MB) e i poster in `assets/media/`: nessun file HTML va modificato. Non copiare nel sito gli originali da 20 MB.
+- Nella home lo spot è una fascia a tutta larghezza sotto l'introduzione: si scarica solo quando arriva sullo schermo, parte **senza audio e in loop** quando se ne vede almeno il 20%, si ferma quando esce. Un tocco ovunque sul video (o il piccolo comando nell'angolo) attiva o toglie l'audio; alla prima attivazione riparte dall'inizio.
+- Sugli schermi in verticale si usa `spot-9x16.mp4` a tutta larghezza; altrove `spot-16x9.mp4`. Con `prefers-reduced-motion` o risparmio dati non parte da solo: si avvia al primo tocco.
+- Niente pulsanti grandi sopra il video: solo il comando audio nell'angolo, con il suggerimento "Tocca per l'audio" che sparisce dopo qualche secondo.
 - Ogni pagina ha i meta Open Graph con URL assoluti su `https://diegomeli6.github.io/StudioAbact/` (immagine `assets/media/og-image.jpg`), l'icona `apple-touch-icon` e `site.webmanifest`. Una pagina nuova va creata copiando questi meta da un guscio esistente.
 
 ### 7.1 Logo
